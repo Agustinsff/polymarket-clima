@@ -10,7 +10,10 @@ Todo corre solo en GitHub Actions, así que no hace falta tener ninguna PC prend
 | `diario` | 10:05 y 20:05 | Anota los mercados de mañana frente al modelo y completa los resultados de ayer | `registro.csv`, `resultados.csv` |
 | `liquidez` | cada 15 min (GitHub a veces se atrasa) | Foto del libro de órdenes y recompensas estimadas por dar liquidez | `liquidez.csv` |
 | `papel_sp14` | 14:11 (con reintentos) | Prueba en papel "São Paulo 14 hs" (regla fija, no se cambia) | `papel_libro.csv`, `papel_operaciones.csv` |
+| `cosechador` | siempre (corridas de ~5 h 40 min encadenadas) | Cosechador **en papel** multi-ciudad: "compra" el No de cajas que ya son imposibles cuando alguien todavía paga ≥3 ¢ por el Yes | `cosecha.csv` |
 | `carrera` | 08:00-13:50 y 14:00-19:50 | Carrera de fuentes: qué fuente publica primero cada METAR de Ezeiza | `carrera.csv` |
+
+Resumen del cosechador: `python cosechador.py resumen`.
 
 Para correr una tarea a mano: pestaña **Actions** → elegir la tarea → **Run workflow**.
 Para pausar una tarea: **Actions** → la tarea → menú `...` → **Disable workflow**.

@@ -1,0 +1,42 @@
+name: cosechador
+on:
+  schedule:
+    - cron: "7 */6 * * *"   # respaldo: si la cadena se corta, vuelve a arrancar
+  workflow_dispatch:
+permissions:
+  contents: write
+  actions: write
+concurrency:
+  group: cosechador
+  cancel-in-progress: false
+jobs:
+  correr:
+    runs-on: ubuntu-latest
+    timeout-minutes: 355
+    env:
+      TZ: America/Montevideo
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -r requirements.txt
+      - name: Cosechar (en papel) durante ~5 h 40 min
+        run: python cosechador.py 340 || true
+      - name: Guardar resultados en el repositorio
+        run: |
+          git config user.name "polymarket-clima-bot"
+          git config user.email "actions@users.noreply.github.com"
+          for f in cosecha.csv cosecha_estado.json; do [ -e "$f" ] && git add "$f"; done
+          git diff --cached --quiet && exit 0
+          git commit -m "datos: cosechador $(date -u +%Y-%m-%dT%H:%MZ)"
+          for i in 1 2 3 4 5; do
+            git pull --rebase --autostash && git push && exit 0
+            sleep $((RANDOM % 20 + 5))
+          done
+          exit 1
+      - name: Encadenar la proxima corrida
+        if: always()
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh workflow run cosechador.yml --ref main -R ${{ github.repository }}
