@@ -1,0 +1,39 @@
+name: papel_sp14
+on:
+  schedule:
+    - cron: "11 17 * * *"  # 14:11 Montevideo (la regla registra entre 14:10 y 14:59)
+    - cron: "25 17 * * *"  # reintentos por si GitHub se atrasa
+    - cron: "40 17 * * *"
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: papel_sp14
+  cancel-in-progress: false
+jobs:
+  correr:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    env:
+      TZ: America/Montevideo
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -r requirements.txt
+      - name: Ejecutar
+        run: |
+          python papel_sp14.py
+      - name: Guardar resultados en el repositorio
+        run: |
+          git config user.name "polymarket-clima-bot"
+          git config user.email "actions@users.noreply.github.com"
+          for f in papel_libro.csv papel_operaciones.csv; do [ -e "$f" ] && git add "$f"; done
+          git diff --cached --quiet && exit 0
+          git commit -m "datos: papel SP 14hs $(date -u +%Y-%m-%dT%H:%MZ)"
+          for i in 1 2 3 4 5; do
+            git pull --rebase --autostash && git push && exit 0
+            sleep $((RANDOM % 20 + 5))
+          done
+          exit 1

@@ -1,0 +1,39 @@
+name: diario
+on:
+  schedule:
+    - cron: "5 13 * * *"   # 10:05 Montevideo
+    - cron: "5 23 * * *"   # 20:05 Montevideo
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: diario
+  cancel-in-progress: false
+jobs:
+  correr:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    env:
+      TZ: America/Montevideo
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -r requirements.txt
+      - name: Ejecutar
+        run: |
+          python resultados.py || true
+          python monitor.py
+      - name: Guardar resultados en el repositorio
+        run: |
+          git config user.name "polymarket-clima-bot"
+          git config user.email "actions@users.noreply.github.com"
+          for f in registro.csv resultados.csv; do [ -e "$f" ] && git add "$f"; done
+          git diff --cached --quiet && exit 0
+          git commit -m "datos: monitor y resultados $(date -u +%Y-%m-%dT%H:%MZ)"
+          for i in 1 2 3 4 5; do
+            git pull --rebase --autostash && git push && exit 0
+            sleep $((RANDOM % 20 + 5))
+          done
+          exit 1
