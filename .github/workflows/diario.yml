@@ -1,8 +1,5 @@
 name: diario
-on:
-  schedule:
-    - cron: "5 13 * * *"   # 10:05 Montevideo
-    - cron: "5 23 * * *"   # 20:05 Montevideo
+on:   # ahora lo corre el workflow 'reloj'; esto queda solo para correrlo a mano
   workflow_dispatch:
 permissions:
   contents: write

@@ -1,7 +1,5 @@
 name: liquidez
-on:
-  schedule:
-    - cron: "*/15 * * * *"
+on:   # ahora lo corre el workflow 'reloj'; esto queda solo para correrlo a mano
   workflow_dispatch:
 permissions:
   contents: write

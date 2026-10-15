@@ -7,11 +7,13 @@ Todo corre solo en GitHub Actions, así que no hace falta tener ninguna PC prend
 
 | Tarea | Cuándo | Qué hace | Archivo |
 |---|---|---|---|
-| `diario` | 10:05 y 20:05 | Anota los mercados de mañana frente al modelo y completa los resultados de ayer | `registro.csv`, `resultados.csv` |
-| `liquidez` | cada 15 min (GitHub a veces se atrasa) | Foto del libro de órdenes y recompensas estimadas por dar liquidez | `liquidez.csv` |
-| `papel_sp14` | 14:11 (con reintentos) | Prueba en papel "São Paulo 14 hs" (regla fija, no se cambia) | `papel_libro.csv`, `papel_operaciones.csv` |
+| `diario` (lo dispara `reloj`) | 10:05 y 20:05 | Anota los mercados de mañana frente al modelo y completa los resultados de ayer | `registro.csv`, `resultados.csv` |
+| `liquidez` (lo dispara `reloj`) | cada 15 min | Foto del libro de órdenes y recompensas estimadas por dar liquidez | `liquidez.csv` |
+| `papel_sp14` (lo dispara `reloj`) | 14:12 (reintenta hasta 14:50) | Prueba en papel "São Paulo 14 hs" (regla fija, no se cambia) | `papel_libro.csv`, `papel_operaciones.csv` |
 | `cosechador` | siempre (corridas de ~5 h 40 min encadenadas) | Cosechador **en papel** multi-ciudad: "compra" el No de cajas que ya son imposibles cuando alguien todavía paga ≥3 ¢ por el Yes | `cosecha.csv` |
 | `carrera` | 08:00-13:50 y 14:00-19:50 | Carrera de fuentes: qué fuente publica primero cada METAR de Ezeiza | `carrera.csv` |
+
+**`reloj`**: corre 24/7 en tandas encadenadas de ~5 h 40 min y lanza liquidez, diario y papel_sp14 en su horario. Los horarios automáticos de GitHub resultaron poco confiables.
 
 Resumen del cosechador: `python cosechador.py resumen`.
 

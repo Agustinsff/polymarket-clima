@@ -1,0 +1,34 @@
+name: reloj
+on:
+  schedule:
+    - cron: "37 */6 * * *"   # respaldo si la cadena se corta
+  workflow_dispatch:
+permissions:
+  contents: write
+  actions: write
+concurrency:
+  group: reloj
+  cancel-in-progress: false
+jobs:
+  correr:
+    runs-on: ubuntu-latest
+    timeout-minutes: 355
+    env:
+      TZ: America/Montevideo
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -r requirements.txt
+      - name: Configurar git
+        run: |
+          git config user.name "polymarket-clima-bot"
+          git config user.email "actions@users.noreply.github.com"
+      - name: Reloj (~5 h 40 min) - liquidez, diario y papel SP
+        run: python reloj.py 340 || true
+      - name: Encadenar la proxima corrida
+        if: always()
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh workflow run reloj.yml --ref main -R ${{ github.repository }}

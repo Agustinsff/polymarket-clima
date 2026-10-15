@@ -1,12 +1,5 @@
 name: papel_sp14
-on:
-  schedule:
-    - cron: "11 17 * * *"  # 14:11 Montevideo (la regla registra entre 14:10 y 14:59)
-    - cron: "18 17 * * *"  # reintentos por si GitHub se atrasa (el script registra una sola vez)
-    - cron: "25 17 * * *"
-    - cron: "33 17 * * *"
-    - cron: "41 17 * * *"
-    - cron: "49 17 * * *"
+on:   # ahora lo corre el workflow 'reloj'; esto queda solo para correrlo a mano
   workflow_dispatch:
 permissions:
   contents: write
