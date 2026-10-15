@@ -180,6 +180,9 @@ def correr(minutos):
             for k, v in nuevos.items():
                 obs.setdefault(k, {}).update(v)
             ahora = time.time()
+            diag = {"momento_utc": datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M"), "series": len(series),
+                    "estaciones_con_datos": sum(1 for k in {x["icao"] for x in series} if obs.get(k)),
+                    "cajas_muertas": 0, "muertas_con_comprador": 0}
             for s in series:
                 o = [(t, c, rec) for t, (c, rec) in obs.get(s["icao"], {}).items() if t >= s["inicio"]]
                 if not o:
@@ -202,6 +205,9 @@ def correr(minutos):
                         t_ref = min(t for (t, c, r), v in zip(o, vals) if v <= lo - 1 - MARGEN) if muerta else None
                     if not muerta:
                         continue
+                    diag["cajas_muertas"] += 1
+                    if float(m.get("bestBid") or 0) >= PRECIO_MIN:
+                        diag["muertas_con_comprador"] += 1
                     cid = m["conditionId"]
                     ya = est["llenado"].get(cid, 0)
                     if ya >= ACC_MAX or float(m.get("bestBid") or 0) < PRECIO_MIN:
@@ -222,6 +228,9 @@ def correr(minutos):
                         log(f"COSECHA {s['ciudad']} {s['tipo']} {m['groupItemTitle']} (extremo {extremo}): "
                             f"{q:.0f} acc a {p:.3f} -> +${q * (p - fee(p)):.2f} si sale bien")
                     est["llenado"][cid] = ya
+            est["diagnostico"] = diag
+            est.setdefault("max_muertas_con_comprador", 0)
+            est["max_muertas_con_comprador"] = max(est["max_muertas_con_comprador"], diag["muertas_con_comprador"])
             if time.time() - ult_liq > 1800:
                 liquidar(est)
                 ult_liq = time.time()
@@ -254,7 +263,7 @@ def liquidar(est):
 def resumen():
     est = cargar()
     if not os.path.exists(F_CSV):
-        print("Todavia no hay cosechas.")
+        print("Todavia no hay cosechas. Ultimo ciclo:", est.get("diagnostico"))
         return
     with open(F_CSV, encoding="utf-8") as f:
         filas = list(csv.DictReader(f, delimiter=";"))
@@ -276,6 +285,7 @@ def resumen():
         else:
             perdido += g
             n_mal += 1
+    print(f"\nUltimo ciclo: {est.get('diagnostico')}")
     print(f"\n=== Cosechador en papel: {len(filas)} operaciones ===")
     print(f"Liquidadas: {n_ok} bien (+${ganado:.2f}), {n_mal} mal (${perdido:.2f}) | pendientes: {n_pend} (+${pendiente:.2f} si salen bien)")
     print(f"Resultado neto liquidado: ${ganado + perdido:+.2f}")
