@@ -1,0 +1,3 @@
+momento_utc;serie;fecha_local;caja;estacion;extremo_actual;precio_yes;acciones;ganancia_si_sale_bien;seg_desde_obs;seg_desde_publicacion_noaa;condition_id
+2026-10-18 10:40:34;highest|cape-town;2026-10-18;17°C;FACT;19;0.04;100;3.808;18754;18397;0xba559054238b851414e7a7bdaf7858ad17db0921bafcdff15b695a2ee4230893
+2026-10-18 11:32:35;highest|cape-town;2026-10-18;16°C;FACT;19;0.03;100;2.854;21875;21518;0x5a0933e8d971bec6d5658b20eb302fb84f1ec8000786a0f80a997330616816d7
