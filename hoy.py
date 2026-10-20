@@ -28,7 +28,7 @@ from datetime import datetime, timedelta, timezone
 from zoneinfo import ZoneInfo
 
 import pronostico as P
-from estaciones import TZ, leer_caja
+from estaciones import TZ, SIN_METAR, leer_caja
 
 MOMENTOS = {"highest": [12, 15], "lowest": [9]}
 VENTANA_MIN = 60
@@ -80,7 +80,7 @@ def main():
     for e in evs:
         tz = ZoneInfo(TZ[e["ciudad"]])
         local = ahora.astimezone(tz)
-        if e["fecha"] != local.date():
+        if e["fecha"] != local.date() or e["icao"] in SIN_METAR:
             continue
         for h in MOMENTOS[e["tipo"]]:
             k = f"{e['tipo']}|{e['ciudad']}|{e['fecha']}|{h}"

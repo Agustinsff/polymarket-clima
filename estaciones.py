@@ -18,7 +18,13 @@ TZ = {"london": "Europe/London", "paris": "Europe/Paris", "ankara": "Europe/Ista
       "buenos-aires": "America/Argentina/Buenos_Aires", "toronto": "America/Toronto", "mexico-city": "America/Mexico_City",
       "panama-city": "America/Panama", "seoul": "Asia/Seoul", "wellington": "Pacific/Auckland", "tokyo": "Asia/Tokyo",
       "beijing": "Asia/Shanghai", "chengdu": "Asia/Shanghai", "busan": "Asia/Seoul", "guangzhou": "Asia/Shanghai",
-      "qingdao": "Asia/Shanghai"}
+      "qingdao": "Asia/Shanghai", "istanbul": "Europe/Istanbul", "hong-kong": "Asia/Hong_Kong",
+      "taipei": "Asia/Taipei", "tel-aviv": "Asia/Jerusalem", "moscow": "Europe/Moscow", "jinan": "Asia/Shanghai",
+      "zhengzhou": "Asia/Shanghai"}
+
+# Hong Kong no resuelve con un METAR sino con el Observatorio (HKO): no sirve para el cosechador
+# ni para el pronostico del mismo dia, solo para el del dia anterior (con estas coordenadas).
+SIN_METAR = {"HKO": {"lat": 22.302, "lon": 114.174, "elev": 32}}
 
 # Estaciones donde el METAR no coincidio con la resolucion oficial (ver PECULIARIDADES)
 EXCLUIR = {"LFPB", "VILK", "KBKF"}
@@ -34,6 +40,24 @@ PECULIARIDADES = {
     "KMIA": "Miami (minima): 17-oct METAR 76 °F, gano 74-75. Vigilar.",
     "FACT": "Ciudad del Cabo: 18-oct un METAR suelto de 19 °C con tormenta; resolucion en disputa.",
 }
+
+
+def estacion_de_evento(e):
+    """ICAO de la estacion oficial de un evento de temperatura (o 'HKO'), mirando la fuente
+    de resolucion y, si esta vacia, la descripcion. None si no se reconoce."""
+    textos = [e.get("resolutionSource") or "", e.get("description") or ""]
+    for m in (e.get("markets") or [])[:1]:
+        textos.append(m.get("description") or "")
+    for t in textos:
+        x = re.search(r"site=([a-z0-9]{4})", t, re.I)
+        if x:
+            return x.group(1).upper()
+        x = re.search(r"wunderground\.com/history/daily/[a-z]{2}/[^/\s]+/([A-Z0-9]{4})", t, re.I)
+        if x:
+            return x.group(1).upper()
+        if "Hong Kong Observatory" in t or "weather.gov.hk" in t:
+            return "HKO"
+    return None
 
 
 def fee(p):

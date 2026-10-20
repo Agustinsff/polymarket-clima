@@ -34,7 +34,7 @@ from zoneinfo import ZoneInfo
 
 import requests
 
-from estaciones import TZ, EXCLUIR, leer_caja, centro_caja, fee
+from estaciones import TZ, EXCLUIR, SIN_METAR, leer_caja, centro_caja, fee, estacion_de_evento
 
 # ---- reglas fijadas ANTES de mirar resultados (no cambiarlas sobre la marcha) ----
 UMBRAL = 0.10        # diferencia minima modelo - precio (puntos de probabilidad)
@@ -121,10 +121,9 @@ def eventos_abiertos():
     out = []
     for e in evs:
         m = re.match(r"^(highest|lowest)-temperature-in-(.+)-on-([a-z]+)-(\d+)-(\d{4})$", e.get("slug", ""))
-        st = re.search(r"site=([a-z0-9]{4})", e.get("resolutionSource") or "", re.I)
-        if not m or not st or m.group(2) not in TZ:
+        icao = estacion_de_evento(e) if m else None
+        if not m or not icao or m.group(2) not in TZ:
             continue
-        icao = st.group(1).upper()
         if icao in EXCLUIR:
             continue
         fecha = datetime.strptime(f"{m.group(3)} {m.group(4)} {m.group(5)}", "%B %d %Y").date()
@@ -135,6 +134,7 @@ def eventos_abiertos():
 
 def coordenadas(icaos):
     sta = cargar(F_STA, {})
+    sta.update(SIN_METAR)
     faltan = sorted(i for i in icaos if i not in sta)
     for i in range(0, len(faltan), 50):
         try:

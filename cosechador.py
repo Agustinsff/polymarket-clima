@@ -43,19 +43,7 @@ ACC_MAX = 100
 EXCLUIR = {"LFPB", "VILK", "KBKF"}   # ver estaciones.py (PECULIARIDADES)
 ESPERA = 60
 
-TZ = {"london": "Europe/London", "paris": "Europe/Paris", "ankara": "Europe/Istanbul", "munich": "Europe/Berlin",
-      "shanghai": "Asia/Shanghai", "milan": "Europe/Rome", "madrid": "Europe/Madrid", "warsaw": "Europe/Warsaw",
-      "chongqing": "Asia/Shanghai", "wuhan": "Asia/Shanghai", "shenzhen": "Asia/Shanghai", "amsterdam": "Europe/Amsterdam",
-      "helsinki": "Europe/Helsinki", "jeddah": "Asia/Riyadh", "lucknow": "Asia/Kolkata", "singapore": "Asia/Singapore",
-      "kuala-lumpur": "Asia/Kuala_Lumpur", "cape-town": "Africa/Johannesburg", "karachi": "Asia/Karachi",
-      "manila": "Asia/Manila", "nyc": "America/New_York", "dallas": "America/Chicago", "atlanta": "America/New_York",
-      "miami": "America/New_York", "chicago": "America/Chicago", "austin": "America/Chicago", "denver": "America/Denver",
-      "houston": "America/Chicago", "seattle": "America/Los_Angeles", "los-angeles": "America/Los_Angeles",
-      "san-francisco": "America/Los_Angeles", "sao-paulo": "America/Sao_Paulo",
-      "buenos-aires": "America/Argentina/Buenos_Aires", "toronto": "America/Toronto", "mexico-city": "America/Mexico_City",
-      "panama-city": "America/Panama", "seoul": "Asia/Seoul", "wellington": "Pacific/Auckland", "tokyo": "Asia/Tokyo",
-      "beijing": "Asia/Shanghai", "chengdu": "Asia/Shanghai", "busan": "Asia/Seoul", "guangzhou": "Asia/Shanghai",
-      "qingdao": "Asia/Shanghai"}
+from estaciones import TZ, SIN_METAR, estacion_de_evento   # zonas horarias y estacion oficial
 
 CARPETA = os.path.dirname(os.path.abspath(__file__))
 F_CSV = os.path.join(CARPETA, "cosecha.csv")
@@ -139,11 +127,10 @@ def series_de_hoy():
     out = []
     for e in evs:
         m = re.match(r"^(highest|lowest)-temperature-in-(.+)-on-([a-z]+)-(\d+)-(\d{4})$", e.get("slug", ""))
-        st = re.search(r"site=([a-z0-9]{4})", e.get("resolutionSource") or "", re.I)
-        if not m or not st or m.group(2) not in TZ:
+        icao = estacion_de_evento(e) if m else None
+        if not m or not icao or m.group(2) not in TZ:
             continue
-        icao = st.group(1).upper()
-        if icao in EXCLUIR:
+        if icao in EXCLUIR or icao in SIN_METAR:
             continue
         tz = ZoneInfo(TZ[m.group(2)])
         hoy_local = datetime.now(tz).date()

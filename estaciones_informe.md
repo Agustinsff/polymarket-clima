@@ -46,3 +46,9 @@ Datos: 1250 mercados cerrados de temperatura (6 al 19-oct, 44 ciudades), todas s
 - **Fuera de muestra** (9 días entre el 22-sep y el 5-oct; 723 mercados que no se habían mirado), en todas las horas: precio 14,4 %, ganó el 14,2 %, ROI **−1,6 %**. Ningún tramo de 5 a 30 ¢ es positivo.
 - Con la regla exacta de `hoy.py` (máxima a las 12/15 y mínima a las 9) fuera de muestra: +1,6 % con 1 ¢ de deslizamiento y +0,6 % con el bid real. El intervalo de confianza incluye el cero holgadamente.
 - **Conclusión:** no hay anomalía aprovechable. Era sobre todo el margen entre compra y venta más ruido. La regla `no80_90` queda solo como control en papel.
+
+## 5. Ciudades nuevas (20-oct)
+- Se agregaron Estambul (LTFM), Taipéi (RCSS), Tel Aviv (LLBG), Moscú (UUWW), Jinan (ZSJN), Zhengzhou (ZHCC) y Hong Kong (Observatorio, HKO).
+- El METAR coincidió con la caja ganadora en **152 de 152** días (1 al 19-oct, máxima y mínima) en Estambul, Taipéi, Tel Aviv y Moscú.
+- Zhengzhou: 2 de 2. Jinan es nueva y todavía no tiene días cerrados.
+- Hong Kong resuelve con el Observatorio, no con un METAR, así que solo entra en el pronóstico del día anterior. No entra en el del mismo día ni en el cosechador.
