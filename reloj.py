@@ -40,6 +40,8 @@ def guardar(e):
 
 
 def correr(cmds, archivos, mensaje):
+    cmds = cmds + [["resumen_diario.py"]]          # siempre se actualiza RESUMEN.md
+    archivos = archivos + ["RESUMEN.md"]
     for c in cmds:
         r = subprocess.run([sys.executable] + c, cwd=CARPETA, capture_output=True, text=True, timeout=900)
         log(f"  {' '.join(c)} -> codigo {r.returncode}")

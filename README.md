@@ -1,5 +1,7 @@
 # polymarket-clima
 
+👉 **[Ver el RESUMEN del día](RESUMEN.md)**: estado de las tareas, resultados, prueba de São Paulo, cosechador y liquidez. Se actualiza solo cada 15 minutos.
+
 Experimentos **en papel**, sin dinero real, con los mercados de temperatura de Polymarket (Buenos Aires y São Paulo).
 Todo corre solo en GitHub Actions, así que no hace falta tener ninguna PC prendida.
 
