@@ -40,7 +40,7 @@ CONFIRMAR = 2            # observaciones que tienen que superar el umbral (no al
 MAX_BID_SOSPECHOSO = 0.25  # si alguien paga mas que esto por una caja "muerta", no tocar
 PRECIO_MIN = 0.03
 ACC_MAX = 100
-EXCLUIR = {"LFPB", "VILK"}
+EXCLUIR = {"LFPB", "VILK", "KBKF"}   # ver estaciones.py (PECULIARIDADES)
 ESPERA = 60
 
 TZ = {"london": "Europe/London", "paris": "Europe/Paris", "ankara": "Europe/Istanbul", "munich": "Europe/Berlin",
@@ -108,6 +108,17 @@ def anotar(fila):
         if nuevo:
             w.writerow(["momento_utc", "serie", "fecha_local", "caja", "estacion", "extremo_actual", "precio_yes",
                         "acciones", "ganancia_si_sale_bien", "seg_desde_obs", "seg_desde_publicacion_noaa", "condition_id"])
+        w.writerow(fila)
+
+
+def anotar_muerta(fila):
+    f_m = os.path.join(CARPETA, "cosecha_muertas.csv")
+    nuevo = not os.path.exists(f_m)
+    with open(f_m, "a", newline="", encoding="utf-8") as f:
+        w = csv.writer(f, delimiter=";")
+        if nuevo:
+            w.writerow(["momento_utc", "serie", "fecha_local", "caja", "estacion", "extremo_actual", "ts_detectada",
+                        "ts_obs", "bid", "ask", "condition_id"])
         w.writerow(fila)
 
 
@@ -218,6 +229,13 @@ def correr(minutos):
                     if not muerta:
                         continue
                     diag["cajas_muertas"] += 1
+                    cid = m["conditionId"]
+                    if cid not in est.setdefault("muertas", {}):
+                        # para la version "maker" (sombra_maker.py): cuando detectamos la caja muerta
+                        est["muertas"][cid] = round(ahora)
+                        anotar_muerta([datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M:%S"),
+                                       f"{s['tipo']}|{s['ciudad']}", s["fecha"], m["groupItemTitle"], s["icao"],
+                                       extremo, round(ahora), round(t_ref), m.get("bestBid"), m.get("bestAsk"), cid])
                     if float(m.get("bestBid") or 0) >= PRECIO_MIN:
                         diag["muertas_con_comprador"] += 1
                     cid = m["conditionId"]
@@ -257,6 +275,8 @@ def correr(minutos):
 
 
 def liquidar(est):
+    viejo = time.time() - 3 * 86400
+    est["muertas"] = {k: v for k, v in est.get("muertas", {}).items() if v > viejo}
     if not os.path.exists(F_CSV):
         return
     with open(F_CSV, encoding="utf-8") as f:

@@ -180,6 +180,61 @@ def seccion_liquidez():
     return lineas + [""]
 
 
+def seccion_pronostico():
+    if not os.path.exists(F("pronostico.csv")):
+        return []
+    try:
+        import pronostico
+        br, ops = pronostico.evaluar()
+    except Exception as e:
+        return ["## Pronóstico vs. mercado (todas las ciudades)", "", f"Error al evaluar: {e}", ""]
+    lineas = ["## Pronóstico vs. mercado (todas las ciudades, día anterior)", ""]
+    n = sum(b["n"] for b in br.values())
+    if n:
+        bm = sum(b["modelo"] for b in br.values()) / n
+        bk = sum(b["mercado"] for b in br.values()) / n
+        lineas.append(f"Puntaje Brier (más bajo = mejor) en {n} cajas liquidadas: **modelo {bm:.4f}** vs **mercado {bk:.4f}**.")
+        mejores = sorted(((b["mercado"] - b["modelo"]) / b["n"], s, len(b["dias"])) for s, b in br.items()
+                         if len(b["dias"]) >= 5)
+        if mejores:
+            lineas.append("Series donde el modelo le gana al mercado (≥5 días): " + (", ".join(
+                f"{s.replace('highest|', 'máx ').replace('lowest|', 'mín ')} ({d} días)" for v, s, d in reversed(mejores) if v > 0)[:600] or "ninguna todavía") + ".")
+    else:
+        lineas.append("Todavía no hay días liquidados.")
+    lineas += ["", "| Modo | Serie calibrada | Liquidadas | Ganadas | Neto (10 acc. c/u) | Pendientes |", "|---|---|---|---|---|---|"]
+    for modo in ("taker", "maker", "cola_taker", "cola_maker"):
+        for cal in ("1", "0"):
+            xs = [(o, r, q) for o, r, q in ops if o["modo"] == modo and o["calibrada"] == cal]
+            liq = [r for o, r, q in xs if r is not None]
+            lineas.append(f"| {modo} | {'sí' if cal == '1' else 'no'} | {len(liq)} | {sum(1 for r in liq if r > 0)} | "
+                          f"US${sum(liq):+.2f} | {len(xs) - len(liq)} |")
+    lineas.append("")
+    lineas.append("_Taker = compra al instante pagando comisión. Maker = orden en el libro, solo cuenta si alguien la habría tomado (sin comisión). Cola = cajas de ≤10 ¢ a las que el modelo les da ≥2,5 veces el precio._")
+    return lineas + [""]
+
+
+def seccion_sombra():
+    s = cargar_json("sombra_maker.json")
+    if not s:
+        return []
+    lineas = ["## Sombra maker (¿y si dejábamos la orden en vez de comprar al toque?)", ""]
+    cos = s.get("cosechador", {})
+    if cos:
+        lineas.append(f"Cosechador: {len(cos)} cajas muertas ya liquidadas.")
+        for p in ("0.02", "0.03", "0.05"):
+            q = sum(v[p]["acciones"] for v in cos.values())
+            r = sum(v[p]["resultado"] for v in cos.values())
+            mal = sum(1 for v in cos.values() if v["gano"] == 1 and v[p]["acciones"] > 0)
+            lineas.append(f"- Vender el Yes a {float(p) * 100:.0f} ¢: {q:.0f} acciones llenadas, neto **US${r:+.2f}** "
+                          f"({mal} cajas 'muertas' que terminaron ganando)")
+    sp = s.get("sp14", {})
+    if sp:
+        r = sum(v["resultado_maker"] for v in sp.values())
+        q = sum(1 for v in sp.values() if v["acciones"] > 0)
+        lineas.append(f"Prueba SP: {len(sp)} operaciones; como maker se habrían llenado {q}, neto **US${r:+.2f}** (sin comisión).")
+    return lineas + [""]
+
+
 def main():
     ahora_utc = datetime.now(timezone.utc)
     ahora_local = datetime.now()  # el workflow usa TZ=America/Montevideo
@@ -189,6 +244,8 @@ def main():
     md += seccion_resultados()
     md += seccion_papel()
     md += seccion_cosechador()
+    md += seccion_pronostico()
+    md += seccion_sombra()
     md += seccion_liquidez()
     with open(F("RESUMEN.md"), "w", encoding="utf-8") as f:
         f.write("\n".join(md) + "\n")

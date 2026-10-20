@@ -10,6 +10,7 @@ Tareas (hora de Montevideo):
   liquidez    cada 15 minutos
   diario      10:05 y 20:05 (resultados.py + monitor.py)
   papel_sp14  14:12 (la regla registra entre 14:10 y 14:59; reintenta hasta 14:50)
+  multi       10:20 y 20:20 (pronostico.py en todas las ciudades + sombra_maker.py)
 """
 
 import json
@@ -86,6 +87,15 @@ def main(minutos):
                 est[etiqueta] = hoy
                 guardar(est)
                 correr([["resultados.py"], ["monitor.py"]], ["registro.csv", "resultados.csv"], "monitor y resultados")
+        # pronostico vs mercado en todas las ciudades + sombra maker, 10:20 y 20:20
+        for etiqueta, desde in (("multi_am", 10 * 60 + 20), ("multi_pm", 20 * 60 + 20)):
+            if hm >= desde and est.get(etiqueta) != hoy:
+                log(etiqueta)
+                est[etiqueta] = hoy
+                guardar(est)
+                correr([["pronostico.py", "liquidar"], ["pronostico.py"], ["sombra_maker.py"]],
+                       ["pronostico.csv", "pronostico_ops.csv", "pronostico_estado.json", "estaciones.json",
+                        "sombra_maker.json"], "pronostico multi-ciudad y sombra maker")
         # papel SP 14hs
         if 14 * 60 + 12 <= hm <= 14 * 60 + 50 and est.get("papel") != hoy:
             log("papel_sp14")
