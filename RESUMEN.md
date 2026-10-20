@@ -1,12 +1,12 @@
 # Resumen polymarket-clima
 
-_Actualizado: 2026-10-20 18:24 (Montevideo). Todo es **en papel**: no se usa plata real._
+_Actualizado: 2026-10-20 18:39 (Montevideo). Todo es **en papel**: no se usa plata real._
 
 ## Estado de las tareas
 
 ✅ Todo corriendo normalmente.
 
-- Última foto de liquidez: 2026-10-20T18:24:11
+- Última foto de liquidez: 2026-10-20T18:39:21
 - Monitor: mañana 2026-10-20, noche 2026-10-19
 - Prueba São Paulo: último día registrado 2026-10-20
 - Cosechador: último ciclo 2026-10-20 17:48 UTC, 78 mercados, 41 estaciones
@@ -76,6 +76,17 @@ Todavía no hay días liquidados.
 | no80_90 | no | 0 | 0 | US$+0.00 | 13 |
 
 _Taker = compra al instante pagando comisión. Maker = orden en el libro, solo cuenta si alguien la habría tomado (sin comisión). Cola = cajas de ≤10 ¢ a las que el modelo les da ≥2,5 veces el precio. no80_90 = comprar el No de cajas todavía posibles que cotizan 10–20 ¢ (solo en el pronóstico del mismo día)._
+
+## Cripto en papel (Bitcoin / Ethereum: above, rango y toca; modelo de opciones)
+
+Operaciones: 2 (0 liquidadas, 0 ganadas). **Neto US$+0.00** sobre US$0.00 invertidos.
+
+| Activo | Tipo | Liquidadas | Neto |
+|---|---|---|---|
+| BTC | toca | 0 | US$+0.00 |
+| ETH | toca | 0 | US$+0.00 |
+
+_Regla fija: comprar el lado que el modelo ve ≥5 puntos más barato, a 48/24/12/6/3/1 h del cierre (18/12/6/3/1 h en 'toca'), 10 acciones al precio real del libro, con comisión. Backtest may-oct: +6,7 % con 1 ¢ de deslizamiento (Ethereum +17 %, Bitcoin ~0 %)._
 
 ## Sombra maker (¿y si dejábamos la orden en vez de comprar al toque?)
 
