@@ -17,6 +17,8 @@ jobs:
       TZ: America/Montevideo
     steps:
       - uses: actions/checkout@v4
+        with:
+          ref: main   # siempre el codigo mas nuevo, aunque la corrida se haya encolado antes
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
