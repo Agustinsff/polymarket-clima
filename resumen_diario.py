@@ -250,14 +250,22 @@ def seccion_cripto():
     liq = [(o, r) for o, r in ops if r is not None]
     costo = sum(float(o["precio"]) * float(o["acciones"]) for o, r in liq)
     neto = sum(r for o, r in liq)
-    lineas = ["## Cripto en papel (Bitcoin / Ethereum above, modelo de opciones)", "",
+    lineas = ["## Cripto en papel (Bitcoin / Ethereum: above, rango y toca; modelo de opciones)", "",
               f"Operaciones: {len(ops)} ({len(liq)} liquidadas, {sum(1 for o, r in liq if r > 0)} ganadas). "
               f"**Neto US${neto:+.2f}** sobre US${costo:.2f} invertidos"
               + (f" (ROI {100 * neto / costo:+.1f} %)." if costo else ".")]
     if b["n"]:
         lineas.append(f"Brier en {b['n']} strikes: modelo {b['modelo'] / b['n']:.4f} vs mercado {b['mercado'] / b['n']:.4f}.")
-    lineas.append("_Regla fija: comprar el lado que el modelo ve ≥5 puntos más barato, a 48/24/12/6/3/1 h del cierre, "
-                  "10 acciones al precio real del libro, con comisión. Backtest may-oct: +6,9 % con 1 ¢ de deslizamiento._")
+    claves = sorted({(o["activo"], o.get("tipo", "above")) for o, r in ops})
+    if claves:
+        lineas += ["", "| Activo | Tipo | Liquidadas | Neto |", "|---|---|---|---|"]
+        for a, t in claves:
+            xs = [r for o, r in liq if (o["activo"], o.get("tipo", "above")) == (a, t)]
+            lineas.append(f"| {a} | {t} | {len(xs)} | US${sum(xs):+.2f} |")
+    lineas.append("")
+    lineas.append("_Regla fija: comprar el lado que el modelo ve ≥5 puntos más barato, a 48/24/12/6/3/1 h del cierre "
+                  "(18/12/6/3/1 h en 'toca'), 10 acciones al precio real del libro, con comisión. "
+                  "Backtest may-oct: +6,7 % con 1 ¢ de deslizamiento (Ethereum +17 %, Bitcoin ~0 %)._")
     return lineas + [""]
 
 

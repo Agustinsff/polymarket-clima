@@ -33,3 +33,19 @@
   - Las favoritas (65–85 %) ganaron el 79,5 % (precio 72,8 %), pero n = 44.
 - Trump: sin un patrón claro.
 - Muestra chica (40 eventos) y riesgo de que el propio interesado influya. No se avanza por ahora.
+
+## Ampliación (20-oct, tarde): "Bitcoin price on" (rangos) y "What price will Bitcoin hit" (toca)
+- Mismo modelo de opciones. Para "toca" se usa la fórmula de barrera: P = 2·(1−Φ(|ln(H/S)|/(σ√t))).
+- **Rango** (291 eventos, may–oct): Brier igual al mercado.
+  - Regla de borde 5: +5,7 % con 1 ¢ de deslizamiento (P(<0) ≈ 11 %).
+  - ETH +24 %, BTC −2 %.
+- **Toca** (126 eventos, ago–oct): Brier igual al mercado.
+  - +9,1 % con 1 ¢ de deslizamiento (P(<0) ≈ 10 %).
+  - BTC +10 %, ETH +18 %.
+- **Los tres tipos juntos** (2121 operaciones, 283 días): **+6,7 %** con 1 ¢ de deslizamiento (P(<0) ≈ 4 %) y +4,2 % con 2 ¢.
+  - **Ethereum: +17,2 %** (P(<0) ≈ 0,6 %, 141 días).
+  - **Bitcoin: +0,4 %** (nada).
+  - Opciones baratas (<20 ¢): +34 %.
+  - Por mes: −3 %, +10 %, +3 %, +1 %, +4 % y +17 %.
+- Lectura: el mercado de Bitcoin en Polymarket ya está alineado con las opciones. El de **Ethereum, que tiene menos volumen, no**, sobre todo en los extremos baratos.
+- Ojo: lo de Ethereum se vio *después* de mirar los datos. La prueba en papel (`cripto.py`, que ahora incluye los tres tipos) es la que lo confirma o lo descarta.
