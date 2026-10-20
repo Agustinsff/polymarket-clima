@@ -1,6 +1,6 @@
 # Resumen polymarket-clima
 
-_Actualizado: 2026-10-20 20:10 (Montevideo). Todo es **en papel**: no se usa plata real._
+_Actualizado: 2026-10-20 20:22 (Montevideo). Todo es **en papel**: no se usa plata real._
 
 ## Estado de las tareas
 
@@ -56,10 +56,10 @@ Todavía no hay días liquidados.
 
 | Modo | Serie calibrada | Liquidadas | Ganadas | Neto (10 acc. c/u) | Pendientes |
 |---|---|---|---|---|---|
-| taker | no | 0 | 0 | US$+0.00 | 112 |
-| maker | no | 0 | 0 | US$+0.00 | 429 |
-| cola_taker | no | 0 | 0 | US$+0.00 | 69 |
-| cola_maker | no | 0 | 0 | US$+0.00 | 131 |
+| taker | no | 0 | 0 | US$+0.00 | 241 |
+| maker | no | 0 | 0 | US$+0.00 | 913 |
+| cola_taker | no | 0 | 0 | US$+0.00 | 158 |
+| cola_maker | no | 0 | 0 | US$+0.00 | 225 |
 
 _Taker = compra al instante pagando comisión. Maker = orden en el libro, solo cuenta si alguien la habría tomado (sin comisión). Cola = cajas de ≤10 ¢ a las que el modelo les da ≥2,5 veces el precio. no80_90 = comprar el No de cajas todavía posibles que cotizan 10–20 ¢ (solo en el pronóstico del mismo día)._
 
@@ -90,9 +90,10 @@ _Regla fija: comprar el lado que el modelo ve ≥5 puntos más barato, a 48/24/1
 
 ## Sombra maker (¿y si dejábamos la orden en vez de comprar al toque?)
 
+Prueba SP: 4 operaciones; como maker se habrían llenado 2, neto **US$-7.76** (sin comisión).
 
 ## Recompensas de liquidez (estimación, últimas 24 h)
 
-- Buenos Aires: ~US$43/día con 100 acciones a 1 ¢ en todas las cajas del mercado de mañana (sin contar pérdidas por quedar 'tomado').
+- Buenos Aires: ~US$42/día con 100 acciones a 1 ¢ en todas las cajas del mercado de mañana (sin contar pérdidas por quedar 'tomado').
 - Sao Paulo: ~US$44/día con 100 acciones a 1 ¢ en todas las cajas del mercado de mañana (sin contar pérdidas por quedar 'tomado').
 
