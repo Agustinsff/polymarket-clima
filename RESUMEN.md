@@ -1,6 +1,6 @@
 # Resumen polymarket-clima
 
-_Actualizado: 2026-10-20 10:18 (Montevideo). Todo es **en papel**: no se usa plata real._
+_Actualizado: 2026-10-20 10:21 (Montevideo). Todo es **en papel**: no se usa plata real._
 
 ## Estado de las tareas
 
@@ -50,6 +50,19 @@ Nota: las operaciones de Ciudad del Cabo del 18-oct se hicieron con la regla vie
 | 2026-10-18 | cape-town | 17°C | 0.04 | 100 | pendiente |
 | 2026-10-18 | cape-town | 16°C | 0.03 | 100 | pendiente |
 
+## Pronóstico vs. mercado (todas las ciudades, día anterior)
+
+Todavía no hay días liquidados.
+
+| Modo | Serie calibrada | Liquidadas | Ganadas | Neto (10 acc. c/u) | Pendientes |
+|---|---|---|---|---|---|
+| taker | no | 0 | 0 | US$+0.00 | 112 |
+| maker | no | 0 | 0 | US$+0.00 | 429 |
+| cola_taker | no | 0 | 0 | US$+0.00 | 69 |
+| cola_maker | no | 0 | 0 | US$+0.00 | 131 |
+
+_Taker = compra al instante pagando comisión. Maker = orden en el libro, solo cuenta si alguien la habría tomado (sin comisión). Cola = cajas de ≤10 ¢ a las que el modelo les da ≥2,5 veces el precio. no80_90 = comprar el No de cajas todavía posibles que cotizan 10–20 ¢ (solo en el pronóstico del mismo día)._
+
 ## Pronóstico del mismo día (12 y 15 hs locales la máxima, 9 hs la mínima)
 
 Todavía no hay días liquidados.
@@ -63,6 +76,10 @@ Todavía no hay días liquidados.
 | no80_90 | no | 0 | 0 | US$+0.00 | 4 |
 
 _Taker = compra al instante pagando comisión. Maker = orden en el libro, solo cuenta si alguien la habría tomado (sin comisión). Cola = cajas de ≤10 ¢ a las que el modelo les da ≥2,5 veces el precio. no80_90 = comprar el No de cajas todavía posibles que cotizan 10–20 ¢ (solo en el pronóstico del mismo día)._
+
+## Sombra maker (¿y si dejábamos la orden en vez de comprar al toque?)
+
+Prueba SP: 4 operaciones; como maker se habrían llenado 4, neto **US$-1.72** (sin comisión).
 
 ## Recompensas de liquidez (estimación, últimas 24 h)
 

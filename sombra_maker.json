@@ -1,0 +1,29 @@
+{
+"cosechador": {},
+"sp14": {
+"2026-10-15|27°C|Yes": {
+"precio_maker": 0.55,
+"precio_taker": 0.55,
+"acciones": 10.0,
+"resultado_maker": 4.5
+},
+"2026-10-15|28°C|No": {
+"precio_maker": 0.614,
+"precio_taker": 0.6142,
+"acciones": 10.0,
+"resultado_maker": 3.86
+},
+"2026-10-17|20°C or below|Yes": {
+"precio_maker": 0.288,
+"precio_taker": 0.288,
+"acciones": 10.0,
+"resultado_maker": -2.88
+},
+"2026-10-17|22°C|No": {
+"precio_maker": 0.72,
+"precio_taker": 0.72,
+"acciones": 10.0,
+"resultado_maker": -7.2
+}
+}
+}
