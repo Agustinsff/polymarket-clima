@@ -28,3 +28,15 @@ Datos: 1250 mercados cerrados de temperatura (6 al 19-oct, 44 ciudades), todas s
   - 0xbF26: 303 compras a <10 ¢, ganó el 12 % y sumó ~US$9.300.
   - Lex-tang: 946 compras, ganó el 8 % y sumó ~US$1.400.
 - La ventaja está en el pronóstico, no en la orden. Por eso `pronostico.py` registra colas solo cuando el modelo les da ≥2,5 veces el precio.
+
+## 4. ¿El mercado del mismo día está bien calibrado? (cajas todavía posibles, precio = última operación)
+- Sí, y mucho. En todos los tramos de precio, el % de veces que gana la caja es casi igual al precio:
+  - <2 ¢ ganó el 0,3 %;
+  - 2–5 ¢, el 2,7 %;
+  - 5–10 ¢, el 6,3 %;
+  - 20–50 ¢ (precio medio 33,8 ¢), el 33,8 %;
+  - 80 ¢ o más, el 96,1 %.
+- Un pronóstico armado solo con el historial de la estación (cuánto sube después de las 12 o las 15 en los 75 días anteriores) es **peor que el mercado**: Brier 0,075 contra 0,048. Comprar colas con ese pronóstico perdió el 33 %.
+- Dejar órdenes en el libro (maker) también pierde en casi todos los tramos: las que se llenan son las malas.
+- **Única anomalía:** las cajas de **10–20 ¢** ganaron el 11,2 % (precio medio 14,2 %), en 1805 casos. Comprar su No dio ~+1,6 % y fue positivo a las 9, 12 y 15 hs y el día anterior. Puede ser casualidad, porque se probaron varios tramos, así que se valida en papel con la regla **no80_90** de `hoy.py`.
+- Conclusión: el mercado ya incorpora el pronóstico del día. Para ganar hace falta un pronóstico **mejor que el del mercado** (lo mide `pronostico.py` / `hoy.py`) o más velocidad.

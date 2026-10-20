@@ -203,14 +203,17 @@ def seccion_pronostico(csv_nom="pronostico.csv", ops_nom="pronostico_ops.csv",
     else:
         lineas.append("Todavía no hay días liquidados.")
     lineas += ["", "| Modo | Serie calibrada | Liquidadas | Ganadas | Neto (10 acc. c/u) | Pendientes |", "|---|---|---|---|---|---|"]
-    for modo in ("taker", "maker", "cola_taker", "cola_maker"):
+    modos = sorted({o["modo"] for o, r, q in ops}, key=lambda m: ["taker", "maker", "cola_taker", "cola_maker", "no80_90"].index(m) if m in ["taker", "maker", "cola_taker", "cola_maker", "no80_90"] else 9)
+    for modo in modos or ["taker"]:
         for cal in ("1", "0"):
             xs = [(o, r, q) for o, r, q in ops if o["modo"] == modo and o["calibrada"] == cal]
+            if not xs:
+                continue
             liq = [r for o, r, q in xs if r is not None]
             lineas.append(f"| {modo} | {'sí' if cal == '1' else 'no'} | {len(liq)} | {sum(1 for r in liq if r > 0)} | "
                           f"US${sum(liq):+.2f} | {len(xs) - len(liq)} |")
     lineas.append("")
-    lineas.append("_Taker = compra al instante pagando comisión. Maker = orden en el libro, solo cuenta si alguien la habría tomado (sin comisión). Cola = cajas de ≤10 ¢ a las que el modelo les da ≥2,5 veces el precio._")
+    lineas.append("_Taker = compra al instante pagando comisión. Maker = orden en el libro, solo cuenta si alguien la habría tomado (sin comisión). Cola = cajas de ≤10 ¢ a las que el modelo les da ≥2,5 veces el precio. no80_90 = comprar el No de cajas todavía posibles que cotizan 10–20 ¢ (solo en el pronóstico del mismo día)._")
     return lineas + [""]
 
 

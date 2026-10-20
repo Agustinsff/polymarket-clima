@@ -166,6 +166,13 @@ def main():
                 ops.append(base + ["Yes", "maker", bid, round(p, 4), 0, P.ACCIONES, fin])
             if ask and P.PRECIO_MIN <= 1 - ask <= P.PRECIO_MAX and ask - p >= P.UMBRAL:
                 ops.append(base + ["No", "maker", round(1 - ask, 4), round(p, 4), 0, P.ACCIONES, fin])
+            # Regla "No 80-90": en el backtest del 6 al 19-oct, las cajas TODAVIA POSIBLES que cotizaban
+            # 10-20 c ganaron el 11,2 % de las veces (precio medio 14,2 c): vender ese Yes (= comprar el
+            # No a 80-90 c) dio ~+1,6 % sobre lo invertido. Puede ser casualidad (probamos varios
+            # tramos), asi que se valida aca, en papel y sin mirar el modelo.
+            muerta = (hi is not None and O > hi) if alta else (lo is not None and O < lo)
+            if bid and 0.10 <= bid <= 0.20 and not muerta:
+                ops.append(base + ["No", "no80_90", round(1 - bid, 4), round(p, 4), 0, P.ACCIONES, fin])
             if ask and 0.01 <= ask <= 0.10 and p >= 2.5 * ask and p - ask >= 0.04:
                 ops.append(base + ["Yes", "cola_taker", ask, round(p, 4), 0, P.ACCIONES, fin])
             if bid and 0.01 <= bid <= 0.10 and p >= 2.5 * bid and p - bid >= 0.04:

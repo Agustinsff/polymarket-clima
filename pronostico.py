@@ -411,7 +411,7 @@ def evaluar(f_csv=F_CSV, f_ops=F_OPS):
         y = gan_cid[o["condition_id"]]
         gana = (y == 1) == (o["lado"] == "Yes")
         p = float(o["precio"])
-        if o["modo"].endswith("taker"):
+        if o["modo"].endswith("taker") or o["modo"] == "no80_90":
             q = float(o["acciones"])
             res = q * ((1 - p) if gana else -p) - q * fee(p)
         else:
