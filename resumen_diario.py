@@ -180,15 +180,16 @@ def seccion_liquidez():
     return lineas + [""]
 
 
-def seccion_pronostico():
-    if not os.path.exists(F("pronostico.csv")):
+def seccion_pronostico(csv_nom="pronostico.csv", ops_nom="pronostico_ops.csv",
+                       titulo="Pronóstico vs. mercado (todas las ciudades, día anterior)"):
+    if not os.path.exists(F(csv_nom)):
         return []
     try:
         import pronostico
-        br, ops = pronostico.evaluar()
+        br, ops = pronostico.evaluar(F(csv_nom), F(ops_nom))
     except Exception as e:
-        return ["## Pronóstico vs. mercado (todas las ciudades)", "", f"Error al evaluar: {e}", ""]
-    lineas = ["## Pronóstico vs. mercado (todas las ciudades, día anterior)", ""]
+        return [f"## {titulo}", "", f"Error al evaluar: {e}", ""]
+    lineas = [f"## {titulo}", ""]
     n = sum(b["n"] for b in br.values())
     if n:
         bm = sum(b["modelo"] for b in br.values()) / n
@@ -245,6 +246,8 @@ def main():
     md += seccion_papel()
     md += seccion_cosechador()
     md += seccion_pronostico()
+    md += seccion_pronostico("hoy.csv", "hoy_ops.csv",
+                             "Pronóstico del mismo día (12 y 15 hs locales la máxima, 9 hs la mínima)")
     md += seccion_sombra()
     md += seccion_liquidez()
     with open(F("RESUMEN.md"), "w", encoding="utf-8") as f:

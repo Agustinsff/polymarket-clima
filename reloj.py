@@ -7,7 +7,7 @@ guarda el resultado en el repositorio (git commit + push). Al terminar,
 el workflow lanza la siguiente corrida (cadena 24/7).
 
 Tareas (hora de Montevideo):
-  liquidez    cada 15 minutos
+  liquidez    cada 15 minutos (+ hoy.py: pronostico del mismo dia a las 12 y 15 locales / 9 la minima)
   diario      10:05 y 20:05 (resultados.py + monitor.py)
   papel_sp14  14:12 (la regla registra entre 14:10 y 14:59; reintenta hasta 14:50)
   multi       10:20 y 20:20 (pronostico.py en todas las ciudades + sombra_maker.py)
@@ -79,7 +79,9 @@ def main(minutos):
             log("liquidez")
             est["liquidez"] = ahora.isoformat(timespec="seconds")
             guardar(est)
-            correr([["liquidez.py"]], ["liquidez.csv"], "liquidez")
+            correr([["liquidez.py"], ["hoy.py"]],
+                   ["liquidez.csv", "hoy.csv", "hoy_ops.csv", "pronostico_estado.json", "estaciones.json"],
+                   "liquidez y pronostico del mismo dia")
         # diario 10:05 y 20:05
         for etiqueta, desde in (("diario_am", 10 * 60 + 5), ("diario_pm", 20 * 60 + 5)):
             if hm >= desde and est.get(etiqueta) != hoy:

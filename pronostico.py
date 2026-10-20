@@ -314,14 +314,18 @@ def trades(cid):
     return out
 
 
+F_HOY, F_HOY_OPS = F("hoy.csv"), F("hoy_ops.csv")   # los escribe hoy.py (pronostico del mismo dia)
+
+
 def liquidar():
-    """Ganadora de cada dia terminado + si las ordenes 'maker' se habrian llenado."""
+    """Ganadora de cada dia terminado + si las ordenes 'maker' se habrian llenado
+    (para pronostico.py y para hoy.py)."""
     est = cargar(F_EST, {})
     gan = est.setdefault("ganadoras", {})
     llen = est.setdefault("maker_llenado", {})
     pend = defaultdict(set)
     hoy = datetime.now(timezone.utc).date()
-    for r in leer(F_CSV):
+    for r in leer(F_CSV) + leer(F_HOY):
         clave = f"{r['serie']}|{r['fecha']}"
         if clave not in gan and r["fecha"] < (hoy - timedelta(days=1)).isoformat():
             tipo, ciudad = r["serie"].split("|")
@@ -348,7 +352,7 @@ def liquidar():
         time.sleep(0.2)
     # ordenes maker: llenada si DESPUES de ponerla alguien opero a un precio peor que el nuestro
     # (estrictamente: si opero justo a nuestro precio, asumimos que habia otros antes en la fila)
-    for o in leer(F_OPS):
+    for o in leer(F_OPS) + leer(F_HOY_OPS):
         if not o["modo"].endswith("maker"):
             continue
         k = f"{o['condition_id']}|{o['momento_utc']}|{o['lado']}"
@@ -374,19 +378,20 @@ def liquidar():
     log(f"ganadoras conocidas: {len(gan)}; ordenes maker revisadas: {len(llen)}")
 
 
-def evaluar():
+def evaluar(f_csv=F_CSV, f_ops=F_OPS):
     """Devuelve (por_serie, operaciones) para el resumen."""
     est = cargar(F_EST, {})
     gan_cid = est.get("cid_ganadoras", {})
     llen = est.get("maker_llenado", {})
     # Brier modelo vs mercado: primera foto de cada dia y serie
     primera = {}
-    for r in leer(F_CSV):
+    filas = leer(f_csv)
+    for r in filas:
         k = (r["serie"], r["fecha"])
         primera.setdefault(k, r["momento_utc"])
         primera[k] = min(primera[k], r["momento_utc"])
     br = defaultdict(lambda: {"n": 0, "dias": set(), "modelo": 0.0, "mercado": 0.0})
-    for r in leer(F_CSV):
+    for r in filas:
         if r["momento_utc"] != primera[(r["serie"], r["fecha"])] or r["condition_id"] not in gan_cid:
             continue
         bid, ask, p = num(r["bid"]), num(r["ask"]), num(r["p_modelo"])
@@ -399,7 +404,7 @@ def evaluar():
         b["modelo"] += (p - y) ** 2
         b["mercado"] += ((bid + ask) / 2 - y) ** 2
     ops = []
-    for o in leer(F_OPS):
+    for o in leer(f_ops):
         if o["condition_id"] not in gan_cid:
             ops.append((o, None, None))
             continue
