@@ -239,6 +239,28 @@ def seccion_sombra():
     return lineas + [""]
 
 
+def seccion_cripto():
+    if not os.path.exists(F("cripto_ops.csv")) and not os.path.exists(F("cripto.csv")):
+        return []
+    try:
+        import cripto
+        b, ops = cripto.evaluar()
+    except Exception as e:
+        return ["## Cripto en papel (Bitcoin / Ethereum above)", "", f"Error al evaluar: {e}", ""]
+    liq = [(o, r) for o, r in ops if r is not None]
+    costo = sum(float(o["precio"]) * float(o["acciones"]) for o, r in liq)
+    neto = sum(r for o, r in liq)
+    lineas = ["## Cripto en papel (Bitcoin / Ethereum above, modelo de opciones)", "",
+              f"Operaciones: {len(ops)} ({len(liq)} liquidadas, {sum(1 for o, r in liq if r > 0)} ganadas). "
+              f"**Neto US${neto:+.2f}** sobre US${costo:.2f} invertidos"
+              + (f" (ROI {100 * neto / costo:+.1f} %)." if costo else ".")]
+    if b["n"]:
+        lineas.append(f"Brier en {b['n']} strikes: modelo {b['modelo'] / b['n']:.4f} vs mercado {b['mercado'] / b['n']:.4f}.")
+    lineas.append("_Regla fija: comprar el lado que el modelo ve ≥5 puntos más barato, a 48/24/12/6/3/1 h del cierre, "
+                  "10 acciones al precio real del libro, con comisión. Backtest may-oct: +6,9 % con 1 ¢ de deslizamiento._")
+    return lineas + [""]
+
+
 def main():
     ahora_utc = datetime.now(timezone.utc)
     ahora_local = datetime.now()  # el workflow usa TZ=America/Montevideo
@@ -251,6 +273,7 @@ def main():
     md += seccion_pronostico()
     md += seccion_pronostico("hoy.csv", "hoy_ops.csv",
                              "Pronóstico del mismo día (12 y 15 hs locales la máxima, 9 hs la mínima)")
+    md += seccion_cripto()
     md += seccion_sombra()
     md += seccion_liquidez()
     with open(F("RESUMEN.md"), "w", encoding="utf-8") as f:

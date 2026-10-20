@@ -10,7 +10,8 @@ Tareas (hora de Montevideo):
   liquidez    cada 15 minutos (+ hoy.py: pronostico del mismo dia a las 12 y 15 locales / 9 la minima)
   diario      10:05 y 20:05 (resultados.py + monitor.py)
   papel_sp14  14:12 (la regla registra entre 14:10 y 14:59; reintenta hasta 14:50)
-  multi       10:20 y 20:20 (pronostico.py en todas las ciudades + sombra_maker.py)
+  multi       10:20 y 20:20 (pronostico.py en todas las ciudades + sombra_maker.py + cripto liquidar)
+  cripto      cada 15 min junto con liquidez (mercados 'Bitcoin/Ethereum above')
 """
 
 import json
@@ -79,8 +80,9 @@ def main(minutos):
             log("liquidez")
             est["liquidez"] = ahora.isoformat(timespec="seconds")
             guardar(est)
-            correr([["liquidez.py"], ["hoy.py"]],
-                   ["liquidez.csv", "hoy.csv", "hoy_ops.csv", "pronostico_estado.json", "estaciones.json"],
+            correr([["liquidez.py"], ["hoy.py"], ["cripto.py"]],
+                   ["liquidez.csv", "hoy.csv", "hoy_ops.csv", "pronostico_estado.json", "estaciones.json",
+                    "cripto.csv", "cripto_ops.csv", "cripto_estado.json"],
                    "liquidez y pronostico del mismo dia")
         # diario 10:05 y 20:05
         for etiqueta, desde in (("diario_am", 10 * 60 + 5), ("diario_pm", 20 * 60 + 5)):
@@ -95,9 +97,9 @@ def main(minutos):
                 log(etiqueta)
                 est[etiqueta] = hoy
                 guardar(est)
-                correr([["pronostico.py", "liquidar"], ["pronostico.py"], ["sombra_maker.py"]],
+                correr([["pronostico.py", "liquidar"], ["pronostico.py"], ["sombra_maker.py"], ["cripto.py", "liquidar"]],
                        ["pronostico.csv", "pronostico_ops.csv", "pronostico_estado.json", "estaciones.json",
-                        "sombra_maker.json"], "pronostico multi-ciudad y sombra maker")
+                        "sombra_maker.json", "cripto_estado.json"], "pronostico multi-ciudad, sombra maker y cripto")
         # papel SP 14hs
         if 14 * 60 + 12 <= hm <= 14 * 60 + 50 and est.get("papel") != hoy:
             log("papel_sp14")

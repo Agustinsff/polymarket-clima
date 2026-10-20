@@ -15,6 +15,7 @@ Todo corre solo en GitHub Actions, así que no hace falta tener ninguna PC prend
 | `cosechador` | siempre (corridas de ~5 h 40 min encadenadas) | Cosechador **en papel** multi-ciudad: "compra" el No de cajas que ya son imposibles cuando alguien todavía paga ≥3 ¢ por el Yes | `cosecha.csv` |
 | `multi` (dentro del reloj) | 10:20 y 20:20 | Pronóstico vs. mercado del día siguiente en **todas las ciudades**, con operaciones simuladas *taker* y *maker* | `pronostico.csv`, `pronostico_ops.csv`, `pronostico_estado.json` |
 | `hoy` (dentro del reloj, cada 15 min) | 12:00 y 15:00 locales de cada ciudad (máxima), 09:00 (mínima) | Pronóstico del mismo día usando lo que ya marcó la estación, con operaciones simuladas | `hoy.csv`, `hoy_ops.csv` |
+| `cripto` (dentro del reloj, cada 15 min) | a 48/24/12/6/3/1 h del cierre | Mercados "Bitcoin/Ethereum above" vs. modelo de opciones (Binance + Deribit), en papel | `cripto.csv`, `cripto_ops.csv` |
 | `sombra_maker` (dentro del reloj) | 10:20 y 20:20 | Qué hubiera pasado si el cosechador y la prueba SP dejaban la orden en el libro en vez de comprar al toque | `sombra_maker.json` |
 | `cosechador` | siempre (cadena) | Cajas imposibles en todas las ciudades; anota cada caja que "muere" | `cosecha.csv`, `cosecha_muertas.csv` |
 | `carrera` | 08:00-13:50 y 14:00-19:50 | Carrera de fuentes: qué fuente publica primero cada METAR de Ezeiza | `carrera.csv` |
