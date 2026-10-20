@@ -40,3 +40,9 @@ Datos: 1250 mercados cerrados de temperatura (6 al 19-oct, 44 ciudades), todas s
 - Dejar órdenes en el libro (maker) también pierde en casi todos los tramos: las que se llenan son las malas.
 - **Única anomalía:** las cajas de **10–20 ¢** ganaron el 11,2 % (precio medio 14,2 %), en 1805 casos. Comprar su No dio ~+1,6 % y fue positivo a las 9, 12 y 15 hs y el día anterior. Puede ser casualidad, porque se probaron varios tramos, así que se valida en papel con la regla **no80_90** de `hoy.py`.
 - Conclusión: el mercado ya incorpora el pronóstico del día. Para ganar hace falta un pronóstico **mejor que el del mercado** (lo mide `pronostico.py` / `hoy.py`) o más velocidad.
+
+### 4b. La anomalía de 10–20 ¢, revisada (20-oct, más tarde)
+- **Con el precio de venta real** (el último que se pagó al vender en la hora previa), dentro de la muestra (6–19 oct): bid medio 13,2 ¢, la caja ganó el 12,2 % y el ROI fue **+0,5 %**. Con 2 ¢ de diferencia entre compra y venta ya no se distingue de cero; con 3 ¢ es negativo.
+- **Fuera de muestra** (9 días entre el 22-sep y el 5-oct; 723 mercados que no se habían mirado), en todas las horas: precio 14,4 %, ganó el 14,2 %, ROI **−1,6 %**. Ningún tramo de 5 a 30 ¢ es positivo.
+- Con la regla exacta de `hoy.py` (máxima a las 12/15 y mínima a las 9) fuera de muestra: +1,6 % con 1 ¢ de deslizamiento y +0,6 % con el bid real. El intervalo de confianza incluye el cero holgadamente.
+- **Conclusión:** no hay anomalía aprovechable. Era sobre todo el margen entre compra y venta más ruido. La regla `no80_90` queda solo como control en papel.
