@@ -36,6 +36,8 @@ from zoneinfo import ZoneInfo
 import requests
 
 MARGEN = 1
+CONFIRMAR = 2            # observaciones que tienen que superar el umbral (no alcanza con un METAR suelto)
+MAX_BID_SOSPECHOSO = 0.25  # si alguien paga mas que esto por una caja "muerta", no tocar
 PRECIO_MIN = 0.03
 ACC_MAX = 100
 EXCLUIR = {"LFPB", "VILK"}
@@ -194,15 +196,25 @@ def correr(minutos):
                         lo, hi, en_f = leer_caja(m["groupItemTitle"])
                     except Exception:
                         continue
-                    vals = [round(c * 9 / 5 + 32) if en_f else round(c) for _, c, _ in o]
+                    o_ord = sorted(o)
+                    vals = [round(c * 9 / 5 + 32) if en_f else round(c) for _, c, _ in o_ord]
+                    # CONFIRMACION: el umbral tiene que aparecer en al menos CONFIRMAR observaciones.
+                    # Un solo METAR raro (p.ej. Ciudad del Cabo 18-oct: un 19 suelto entre puros 16)
+                    # puede no contar para la resolucion oficial y la caja "muerta" termina ganando.
                     if s["tipo"] == "highest":
-                        extremo = max(vals)
-                        muerta = hi is not None and extremo >= hi + 1 + MARGEN
-                        t_ref = min(t for (t, c, r), v in zip(o, vals) if v >= hi + 1 + MARGEN) if muerta else None
+                        umbral = None if hi is None else hi + 1 + MARGEN
+                        ok = [] if umbral is None else [t for (t, c, r), v in zip(o_ord, vals) if v >= umbral]
+                        extremo = sorted(vals)[-CONFIRMAR] if len(vals) >= CONFIRMAR else None
                     else:
-                        extremo = min(vals)
-                        muerta = lo is not None and extremo <= lo - 1 - MARGEN
-                        t_ref = min(t for (t, c, r), v in zip(o, vals) if v <= lo - 1 - MARGEN) if muerta else None
+                        umbral = None if lo is None else lo - 1 - MARGEN
+                        ok = [] if umbral is None else [t for (t, c, r), v in zip(o_ord, vals) if v <= umbral]
+                        extremo = sorted(vals)[CONFIRMAR - 1] if len(vals) >= CONFIRMAR else None
+                    muerta = len(ok) >= CONFIRMAR
+                    t_ref = ok[CONFIRMAR - 1] if muerta else None
+                    # FRENO: si el mercado igual paga mucho por esa caja, alguien sabe algo que nosotros no.
+                    if muerta and float(m.get("bestBid") or 0) > MAX_BID_SOSPECHOSO:
+                        diag["sospechosas"] = diag.get("sospechosas", 0) + 1
+                        continue
                     if not muerta:
                         continue
                     diag["cajas_muertas"] += 1
@@ -216,6 +228,8 @@ def correr(minutos):
                     b = S.get(BOOK, params={"token_id": token}, timeout=20).json()
                     bids = sorted(((float(x["price"]), float(x["size"])) for x in b.get("bids", [])), reverse=True)
                     for p, tam in bids:
+                        if p > MAX_BID_SOSPECHOSO:
+                            break   # el libro real dice otra cosa: no tocar
                         if p < PRECIO_MIN or ya >= ACC_MAX:
                             break
                         q = min(tam, ACC_MAX - ya)
