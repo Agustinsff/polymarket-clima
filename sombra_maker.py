@@ -117,11 +117,14 @@ def sp(res):
         t0 = datetime(d.year, d.month, d.day, 17, 15, tzinfo=timezone.utc).timestamp()
         gano_yes = o["ganadora"] == o["caja"]
         if o["lado"] == "Yes":
-            p = num(b.get("yes_mejor_compra"))
+            # orden de compra del Yes en el mejor bid (yes_mejor_venta = precio al que se podia vender = bid)
+            p = num(b.get("yes_mejor_venta"))
             q = 0 if p is None else sum(s for ts, py, s, compra in tr if ts > t0 and not compra and py < p - 1e-9)
             gana = gano_yes
         else:
-            p = num(b.get("no_mejor_compra"))
+            # orden de compra del No en su mejor bid = 1 - ask del Yes (yes_mejor_compra = ask del Yes)
+            ask_yes = num(b.get("yes_mejor_compra"))
+            p = None if ask_yes is None else round(1 - ask_yes, 4)
             q = 0 if p is None else sum(s for ts, py, s, compra in tr if ts > t0 and compra and py > 1 - p + 1e-9)
             gana = not gano_yes
         q = min(q, num(o["acciones"]))
