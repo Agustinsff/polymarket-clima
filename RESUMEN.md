@@ -1,6 +1,6 @@
 # Resumen polymarket-clima
 
-_Actualizado: 2026-10-21 10:19 (Montevideo). Todo es **en papel**: no se usa plata real._
+_Actualizado: 2026-10-21 10:22 (Montevideo). Todo es **en papel**: no se usa plata real._
 
 ## Estado de las tareas
 
@@ -56,10 +56,10 @@ Todavía no hay días liquidados.
 
 | Modo | Serie calibrada | Liquidadas | Ganadas | Neto (10 acc. c/u) | Pendientes |
 |---|---|---|---|---|---|
-| taker | no | 0 | 0 | US$+0.00 | 241 |
-| maker | no | 0 | 0 | US$+0.00 | 913 |
-| cola_taker | no | 0 | 0 | US$+0.00 | 158 |
-| cola_maker | no | 0 | 0 | US$+0.00 | 225 |
+| taker | no | 0 | 0 | US$+0.00 | 342 |
+| maker | no | 0 | 0 | US$+0.00 | 1327 |
+| cola_taker | no | 0 | 0 | US$+0.00 | 227 |
+| cola_maker | no | 0 | 0 | US$+0.00 | 285 |
 
 _Taker = compra al instante pagando comisión. Maker = orden en el libro, solo cuenta si alguien la habría tomado (sin comisión). Cola = cajas de ≤10 ¢ a las que el modelo les da ≥2,5 veces el precio. no80_90 = comprar el No de cajas todavía posibles que cotizan 10–20 ¢ (solo en el pronóstico del mismo día)._
 
@@ -79,21 +79,26 @@ _Taker = compra al instante pagando comisión. Maker = orden en el libro, solo c
 
 ## Cripto en papel (Bitcoin / Ethereum: above, rango y toca; modelo de opciones)
 
-Operaciones: 13 (0 liquidadas, 0 ganadas). **Neto US$+0.00** sobre US$0.00 invertidos.
+Operaciones: 13 (3 liquidadas, 0 ganadas). **Neto US$-2.45** sobre US$2.34 invertidos (ROI -104.6 %).
+Brier en 6 strikes: modelo 0.0135 vs mercado 0.0039.
 
 | Activo | Tipo | Liquidadas | Neto |
 |---|---|---|---|
 | BTC | above | 0 | US$+0.00 |
 | BTC | rango | 0 | US$+0.00 |
-| BTC | toca | 0 | US$+0.00 |
+| BTC | toca | 2 | US$-1.46 |
 | ETH | above | 0 | US$+0.00 |
 | ETH | rango | 0 | US$+0.00 |
-| ETH | toca | 0 | US$+0.00 |
+| ETH | toca | 1 | US$-0.98 |
 
 _Regla fija: comprar el lado que el modelo ve ≥5 puntos más barato, a 48/24/12/6/3/1 h del cierre (18/12/6/3/1 h en 'toca'), 10 acciones al precio real del libro, con comisión. Backtest may-oct: +6,7 % con 1 ¢ de deslizamiento (Ethereum +17 %, Bitcoin ~0 %)._
 
 ## Sombra maker (¿y si dejábamos la orden en vez de comprar al toque?)
 
+Cosechador: 98 cajas muertas ya liquidadas.
+- Vender el Yes a 2 ¢: 0 acciones llenadas, neto **US$+0.00** (0 cajas 'muertas' que terminaron ganando)
+- Vender el Yes a 3 ¢: 0 acciones llenadas, neto **US$+0.00** (0 cajas 'muertas' que terminaron ganando)
+- Vender el Yes a 5 ¢: 0 acciones llenadas, neto **US$+0.00** (0 cajas 'muertas' que terminaron ganando)
 Prueba SP: 4 operaciones; como maker se habrían llenado 2, neto **US$-7.76** (sin comisión).
 
 ## Recompensas de liquidez (estimación, últimas 24 h)
