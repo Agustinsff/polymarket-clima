@@ -1,12 +1,12 @@
 # Resumen polymarket-clima
 
-_Actualizado: 2026-10-21 03:00 (Montevideo). Todo es **en papel**: no se usa plata real._
+_Actualizado: 2026-10-21 03:15 (Montevideo). Todo es **en papel**: no se usa plata real._
 
 ## Estado de las tareas
 
 ✅ Todo corriendo normalmente.
 
-- Última foto de liquidez: 2026-10-21T03:00:01
+- Última foto de liquidez: 2026-10-21T03:15:12
 - Monitor: mañana 2026-10-20, noche 2026-10-20
 - Prueba São Paulo: último día registrado 2026-10-20
 - Cosechador: último ciclo 2026-10-21 05:09 UTC, 86 mercados, 45 estaciones
@@ -99,5 +99,5 @@ Prueba SP: 4 operaciones; como maker se habrían llenado 2, neto **US$-7.76** (s
 ## Recompensas de liquidez (estimación, últimas 24 h)
 
 - Buenos Aires: ~US$48/día con 100 acciones a 1 ¢ en todas las cajas del mercado de mañana (sin contar pérdidas por quedar 'tomado').
-- Sao Paulo: ~US$49/día con 100 acciones a 1 ¢ en todas las cajas del mercado de mañana (sin contar pérdidas por quedar 'tomado').
+- Sao Paulo: ~US$48/día con 100 acciones a 1 ¢ en todas las cajas del mercado de mañana (sin contar pérdidas por quedar 'tomado').
 
