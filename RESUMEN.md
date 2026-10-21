@@ -1,12 +1,12 @@
 # Resumen polymarket-clima
 
-_Actualizado: 2026-10-21 08:48 (Montevideo). Todo es **en papel**: no se usa plata real._
+_Actualizado: 2026-10-21 09:03 (Montevideo). Todo es **en papel**: no se usa plata real._
 
 ## Estado de las tareas
 
 ✅ Todo corriendo normalmente.
 
-- Última foto de liquidez: 2026-10-21T08:48:07
+- Última foto de liquidez: 2026-10-21T09:03:13
 - Monitor: mañana 2026-10-20, noche 2026-10-20
 - Prueba São Paulo: último día registrado 2026-10-20
 - Cosechador: último ciclo 2026-10-21 10:49 UTC, 86 mercados, 45 estaciones
@@ -69,11 +69,11 @@ Todavía no hay días liquidados.
 
 | Modo | Serie calibrada | Liquidadas | Ganadas | Neto (10 acc. c/u) | Pendientes |
 |---|---|---|---|---|---|
-| taker | no | 0 | 0 | US$+0.00 | 93 |
-| maker | no | 0 | 0 | US$+0.00 | 333 |
-| cola_taker | no | 0 | 0 | US$+0.00 | 39 |
-| cola_maker | no | 0 | 0 | US$+0.00 | 115 |
-| no80_90 | no | 0 | 0 | US$+0.00 | 30 |
+| taker | no | 0 | 0 | US$+0.00 | 100 |
+| maker | no | 0 | 0 | US$+0.00 | 349 |
+| cola_taker | no | 0 | 0 | US$+0.00 | 40 |
+| cola_maker | no | 0 | 0 | US$+0.00 | 117 |
+| no80_90 | no | 0 | 0 | US$+0.00 | 31 |
 
 _Taker = compra al instante pagando comisión. Maker = orden en el libro, solo cuenta si alguien la habría tomado (sin comisión). Cola = cajas de ≤10 ¢ a las que el modelo les da ≥2,5 veces el precio. no80_90 = comprar el No de cajas todavía posibles que cotizan 10–20 ¢ (solo en el pronóstico del mismo día)._
 
