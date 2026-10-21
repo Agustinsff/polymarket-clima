@@ -1,15 +1,15 @@
 # Resumen polymarket-clima
 
-_Actualizado: 2026-10-21 13:36 (Montevideo). Todo es **en papel**: no se usa plata real._
+_Actualizado: 2026-10-21 13:51 (Montevideo). Todo es **en papel**: no se usa plata real._
 
 ## Estado de las tareas
 
 ✅ Todo corriendo normalmente.
 
-- Última foto de liquidez: 2026-10-21T13:36:16
+- Última foto de liquidez: 2026-10-21T13:51:23
 - Monitor: mañana 2026-10-21, noche 2026-10-20
 - Prueba São Paulo: último día registrado 2026-10-20
-- Cosechador: último ciclo 2026-10-21 10:49 UTC, 86 mercados, 45 estaciones
+- Cosechador: último ciclo 2026-10-21 16:30 UTC, 86 mercados, 45 estaciones
 
 ## Temperatura máxima: mercado vs. modelo (BA y SP)
 
@@ -42,13 +42,14 @@ Operaciones: 4 (2 ganadas, 2 perdidas, 0 pendientes). **Neto con comisiones: US$
 
 ## Cosechador en papel (cajas imposibles, todas las ciudades)
 
-Operaciones: 2. **Neto liquidado: US$+0.00**. Pendientes: +US$6.66 si salen bien.
+Operaciones: 3. **Neto liquidado: US$+0.00**. Pendientes: +US$15.25 si salen bien.
 Nota: las operaciones de Ciudad del Cabo del 18-oct se hicieron con la regla vieja (sin confirmación) y su resolución está en disputa.
 
 | Día | Ciudad | Caja | Precio Yes | Acciones | Resultado |
 |---|---|---|---|---|---|
 | 2026-10-18 | cape-town | 17°C | 0.04 | 100 | pendiente |
 | 2026-10-18 | cape-town | 16°C | 0.03 | 100 | pendiente |
+| 2026-10-21 | istanbul | 15°C or below | 0.09 | 100 | pendiente |
 
 ## Pronóstico vs. mercado (todas las ciudades, día anterior)
 
@@ -103,6 +104,6 @@ Prueba SP: 4 operaciones; como maker se habrían llenado 2, neto **US$-7.76** (s
 
 ## Recompensas de liquidez (estimación, últimas 24 h)
 
-- Buenos Aires: ~US$54/día con 100 acciones a 1 ¢ en todas las cajas del mercado de mañana (sin contar pérdidas por quedar 'tomado').
+- Buenos Aires: ~US$55/día con 100 acciones a 1 ¢ en todas las cajas del mercado de mañana (sin contar pérdidas por quedar 'tomado').
 - Sao Paulo: ~US$55/día con 100 acciones a 1 ¢ en todas las cajas del mercado de mañana (sin contar pérdidas por quedar 'tomado').
 
