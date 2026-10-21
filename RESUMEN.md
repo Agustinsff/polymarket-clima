@@ -1,12 +1,12 @@
 # Resumen polymarket-clima
 
-_Actualizado: 2026-10-21 00:28 (Montevideo). Todo es **en papel**: no se usa plata real._
+_Actualizado: 2026-10-21 00:43 (Montevideo). Todo es **en papel**: no se usa plata real._
 
 ## Estado de las tareas
 
 ✅ Todo corriendo normalmente.
 
-- Última foto de liquidez: 2026-10-21T00:28:32
+- Última foto de liquidez: 2026-10-21T00:43:40
 - Monitor: mañana 2026-10-20, noche 2026-10-20
 - Prueba São Paulo: último día registrado 2026-10-20
 - Cosechador: último ciclo 2026-10-20 23:29 UTC, 86 mercados, 45 estaciones
@@ -79,11 +79,15 @@ _Taker = compra al instante pagando comisión. Maker = orden en el libro, solo c
 
 ## Cripto en papel (Bitcoin / Ethereum: above, rango y toca; modelo de opciones)
 
-Operaciones: 3 (0 liquidadas, 0 ganadas). **Neto US$+0.00** sobre US$0.00 invertidos.
+Operaciones: 8 (0 liquidadas, 0 ganadas). **Neto US$+0.00** sobre US$0.00 invertidos.
 
 | Activo | Tipo | Liquidadas | Neto |
 |---|---|---|---|
+| BTC | above | 0 | US$+0.00 |
+| BTC | rango | 0 | US$+0.00 |
 | BTC | toca | 0 | US$+0.00 |
+| ETH | above | 0 | US$+0.00 |
+| ETH | rango | 0 | US$+0.00 |
 | ETH | toca | 0 | US$+0.00 |
 
 _Regla fija: comprar el lado que el modelo ve ≥5 puntos más barato, a 48/24/12/6/3/1 h del cierre (18/12/6/3/1 h en 'toca'), 10 acciones al precio real del libro, con comisión. Backtest may-oct: +6,7 % con 1 ¢ de deslizamiento (Ethereum +17 %, Bitcoin ~0 %)._
