@@ -29,6 +29,7 @@ import re
 import sys
 import time
 from collections import defaultdict
+from concurrent.futures import ThreadPoolExecutor
 from datetime import datetime, timedelta, timezone
 from zoneinfo import ZoneInfo
 
@@ -54,6 +55,7 @@ F_CSV, F_OPS, F_EST, F_STA = F("pronostico.csv"), F("pronostico_ops.csv"), F("pr
 GAMMA = "https://gamma-api.polymarket.com/events"
 ENS = "https://ensemble-api.open-meteo.com/v1/ensemble"
 TRADES = "https://data-api.polymarket.com/trades"
+BOOK = "https://clob.polymarket.com/book"
 S = requests.Session()
 S.headers["User-Agent"] = "polymarket-clima-pronostico/1.0 (investigacion personal)"
 
@@ -106,6 +108,80 @@ def guardar(nombre, d):
     with open(nombre + ".tmp", "w", encoding="utf-8") as f:
         json.dump(d, f, indent=0, ensure_ascii=False)
     os.replace(nombre + ".tmp", nombre)
+
+
+# ---------------------------------------------------------------------------
+# PRECIO EJECUTABLE: el libro de ordenes real (no el resumen bestBid/bestAsk de gamma,
+# que puede ir atrasado y no dice cuantas acciones hay a ese precio)
+# ---------------------------------------------------------------------------
+
+def libro(token):
+    """(bids, asks) del Yes, ordenados del mejor al peor. None si no se pudo leer."""
+    try:
+        r = S.get(BOOK, params={"token_id": token}, timeout=20)
+        r.raise_for_status()
+        b = r.json()
+    except Exception:
+        return None
+    bids = sorted(((float(x["price"]), float(x["size"])) for x in b.get("bids", [])), reverse=True)
+    asks = sorted((float(x["price"]), float(x["size"])) for x in b.get("asks", []))
+    return bids, asks
+
+
+def libros(tokens):
+    tokens = list(dict.fromkeys(tokens))
+    with ThreadPoolExecutor(6) as ex:
+        return dict(zip(tokens, ex.map(libro, tokens)))
+
+
+def precio_medio(niveles, cantidad):
+    """Precio medio de 'cantidad' acciones recorriendo el libro; None si no alcanza."""
+    falta, total = cantidad, 0.0
+    for precio, tam in niveles:
+        toma = min(falta, tam)
+        total += toma * precio
+        falta -= toma
+        if falta <= 1e-9:
+            return round(total / cantidad, 4)
+    return None
+
+
+# Hasta 'desde_libro' (pronostico_estado.json, UTC) las operaciones usaban el resumen de gamma;
+# desde ahi, el libro real. Lo anota la primera corrida con este codigo.
+
+def operaciones(p, lib, muerta=None):
+    """Reglas fijas de siempre, con precios del libro real. Devuelve [(lado, modo, precio)].
+    taker = recorrer el libro para ACCIONES acciones (con comision al liquidar);
+    maker = orden en el mejor precio del mismo lado (se llena solo si despues alguien opera peor).
+    muerta: solo el pronostico del mismo dia la pasa (activa el control no80_90)."""
+    bids, asks = lib
+    bid = bids[0][0] if bids else None
+    ask = asks[0][0] if asks else None
+    yes10 = precio_medio(asks, ACCIONES)                      # comprar Yes
+    venta = precio_medio(bids, ACCIONES)
+    no10 = None if venta is None else round(1 - venta, 4)     # comprar No = vender Yes
+    ops = []
+    if yes10 and PRECIO_MIN <= yes10 <= PRECIO_MAX and p - yes10 >= UMBRAL:
+        ops.append(("Yes", "taker", yes10))
+    if no10 and PRECIO_MIN <= no10 <= PRECIO_MAX and (1 - p) - no10 >= UMBRAL:
+        ops.append(("No", "taker", no10))
+    if bid and PRECIO_MIN <= bid <= PRECIO_MAX and p - bid >= UMBRAL:
+        ops.append(("Yes", "maker", bid))
+    if ask and PRECIO_MIN <= 1 - ask <= PRECIO_MAX and ask - p >= UMBRAL:
+        ops.append(("No", "maker", round(1 - ask, 4)))
+    # Regla "No 80-90" (control, solo mismo dia): en el 6-19 oct las cajas posibles a 10-20 c parecian caras,
+    # pero con el precio de venta real y en semanas nuevas (22-sep a 5-oct) el efecto casi
+    # desaparece (~0 %). Se deja en papel solo como control; no se espera ganancia.
+    if muerta is not None and bid and 0.10 <= bid <= 0.20 and not muerta and no10:
+        ops.append(("No", "no80_90", no10))
+    # colas baratas (lo que hacen las billeteras "cola barata" que ganan): solo si el modelo
+    # le da al menos 2,5 veces el precio. El backtest del 20-oct mostro que comprar colas
+    # baratas SIN elegir pierde 60-75%: lo que importa es elegir bien.
+    if yes10 and 0.01 <= yes10 <= 0.10 and p >= 2.5 * yes10 and p - yes10 >= 0.04:
+        ops.append(("Yes", "cola_taker", yes10))
+    if bid and 0.01 <= bid <= 0.10 and p >= 2.5 * bid and p - bid >= 0.04:
+        ops.append(("Yes", "cola_maker", bid))
+    return ops
 
 
 # ---------------------------------------------------------------------------
@@ -219,7 +295,7 @@ def foto():
     log(f"{len(evs)} eventos abiertos, {len(objetivo)} del dia siguiente")
     sta = coordenadas({e["icao"] for e in objetivo})
     calib = calibrar()
-    filas, ops = [], []
+    filas, ops, pend = [], [], []
     cache = {}
     for e in objetivo:
         serie = f"{e['tipo']}|{e['ciudad']}"
@@ -265,36 +341,31 @@ def foto():
                 p += (1.0 if alto == math.inf else ncdf((alto - c) / s)) - \
                      (0.0 if bajo == -math.inf else ncdf((bajo - c) / s))
             p /= len(esc)
-            bid, ask = num(m.get("bestBid")), num(m.get("bestAsk"))
+            try:
+                token = json.loads(m["clobTokenIds"])[0]
+            except Exception:
+                continue
             filas.append([ahora.strftime("%Y-%m-%d %H:%M"), serie, e["fecha"].isoformat(), e["icao"], horas,
-                          m["groupItemTitle"], m["conditionId"], round(p, 4), bid, ask, round(cv(media), 2),
+                          m["groupItemTitle"], m["conditionId"], round(p, 4), None, None, round(cv(media), 2),
                           round(disp * k, 2), len(esc), sesgo, error, int(calibrada)])
-            fin = e["fin"] or ""
-            # --- operaciones simuladas (reglas fijas) ---
-            if ask and PRECIO_MIN <= ask <= PRECIO_MAX and p - ask >= UMBRAL:
-                ops.append([ahora.strftime("%Y-%m-%d %H:%M:%S"), serie, e["fecha"].isoformat(), m["groupItemTitle"],
-                            m["conditionId"], "Yes", "taker", ask, round(p, 4), int(calibrada), ACCIONES, fin])
-            if bid and PRECIO_MIN <= 1 - bid <= PRECIO_MAX and bid - p >= UMBRAL:
-                ops.append([ahora.strftime("%Y-%m-%d %H:%M:%S"), serie, e["fecha"].isoformat(), m["groupItemTitle"],
-                            m["conditionId"], "No", "taker", round(1 - bid, 4), round(p, 4), int(calibrada), ACCIONES, fin])
-            # maker: dejamos la orden donde esta el mejor precio del mismo lado y esperamos
-            if bid and PRECIO_MIN <= bid <= PRECIO_MAX and p - bid >= UMBRAL:
-                ops.append([ahora.strftime("%Y-%m-%d %H:%M:%S"), serie, e["fecha"].isoformat(), m["groupItemTitle"],
-                            m["conditionId"], "Yes", "maker", bid, round(p, 4), int(calibrada), ACCIONES, fin])
-            if ask and PRECIO_MIN <= 1 - ask <= PRECIO_MAX and ask - p >= UMBRAL:
-                ops.append([ahora.strftime("%Y-%m-%d %H:%M:%S"), serie, e["fecha"].isoformat(), m["groupItemTitle"],
-                            m["conditionId"], "No", "maker", round(1 - ask, 4), round(p, 4), int(calibrada), ACCIONES, fin])
-            # colas baratas (lo que hacen las billeteras "cola barata" que ganan): solo si el modelo
-            # le da al menos 2,5 veces el precio. El backtest del 20-oct mostro que comprar colas
-            # baratas SIN elegir pierde 60-75%: lo que importa es elegir bien.
-            if ask and 0.01 <= ask <= 0.10 and p >= 2.5 * ask and p - ask >= 0.04:
-                ops.append([ahora.strftime("%Y-%m-%d %H:%M:%S"), serie, e["fecha"].isoformat(), m["groupItemTitle"],
-                            m["conditionId"], "Yes", "cola_taker", ask, round(p, 4), int(calibrada), ACCIONES, fin])
-            if bid and 0.01 <= bid <= 0.10 and p >= 2.5 * bid and p - bid >= 0.04:
-                ops.append([ahora.strftime("%Y-%m-%d %H:%M:%S"), serie, e["fecha"].isoformat(), m["groupItemTitle"],
-                            m["conditionId"], "Yes", "cola_maker", bid, round(p, 4), int(calibrada), ACCIONES, fin])
+            pend.append((filas[-1], token, p, [ahora.strftime("%Y-%m-%d %H:%M:%S"), serie, e["fecha"].isoformat(),
+                                                m["groupItemTitle"], m["conditionId"]], int(calibrada), e["fin"] or ""))
+    # --- operaciones simuladas (reglas fijas), con el libro real de cada caja ---
+    libs = libros([t for _, t, *_ in pend])
+    for fila, token, p, base, cal, fin in pend:
+        lib = libs.get(token)
+        if lib is None:
+            continue
+        fila[8] = lib[0][0][0] if lib[0] else None     # mejor bid
+        fila[9] = lib[1][0][0] if lib[1] else None     # mejor ask
+        for lado, modo, precio in operaciones(p, lib):
+            ops.append(base + [lado, modo, precio, round(p, 4), cal, ACCIONES, fin])
     agregar(F_CSV, COLS, filas)
     agregar(F_OPS, COLS_OPS, ops)
+    est = cargar(F_EST, {})
+    if "desde_libro" not in est:
+        est["desde_libro"] = ahora.strftime("%Y-%m-%d %H:%M:%S")
+        guardar(F_EST, est)
     log(f"{len(filas)} cajas anotadas, {len(ops)} operaciones simuladas")
 
 

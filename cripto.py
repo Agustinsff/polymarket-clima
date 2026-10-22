@@ -27,7 +27,8 @@ Por eso se prueba en papel, con las reglas fijas de abajo.
 REGLAS FIJAS (decididas antes de empezar, no cambiarlas):
   - Se mira cada mercado cuando le faltan 48, 24, 12, 6, 3 y 1 h (+-30 min);
     los de "toca" a 18, 12, 6, 3 y 1 h.
-  - Precio REAL del libro (mejor ask para comprar Yes, mejor bid -> No a 1-bid).
+  - Precio REAL del libro: lo que cuesta comprar 10 acciones recorriendo el libro
+    (Yes con las ventas; No = vender Yes contra las compras, a 1 - precio medio).
   - Operar si modelo - precio >= 5 puntos; precio entre 3 y 97 c; 10 acciones.
   - Una sola operacion por mercado y horizonte.
 
@@ -174,7 +175,20 @@ def libro(token):
     b = S.get("https://clob.polymarket.com/book", params={"token_id": token}, timeout=20).json()
     bids = sorted(((float(x["price"]), float(x["size"])) for x in b.get("bids", [])), reverse=True)
     asks = sorted((float(x["price"]), float(x["size"])) for x in b.get("asks", []))
-    return (bids[0] if bids else (None, None)), (asks[0] if asks else (None, None))
+    return bids, asks
+
+
+def precio_medio(niveles, cantidad):
+    """Precio medio de 'cantidad' acciones recorriendo el libro; None si no alcanza.
+    (Hasta 'desde_libro' en cripto_estado.json se usaba solo el primer escalon.)"""
+    falta, total = cantidad, 0.0
+    for precio, tam in niveles:
+        toma = min(falta, tam)
+        total += toma * precio
+        falta -= toma
+        if falta <= 1e-9:
+            return round(total / cantidad, 4)
+    return None
 
 
 def foto():
@@ -223,19 +237,25 @@ def foto():
                 if p is None:
                     continue
                 try:
-                    (bid, bid_t), (ask, ask_t) = libro(tok_yes)
+                    bids, asks = libro(tok_yes)
                 except Exception:
                     continue
+                bid, bid_t = bids[0] if bids else (None, None)
+                ask, ask_t = asks[0] if asks else (None, None)
+                yes10 = precio_medio(asks, ACCIONES)             # comprar Yes
+                venta = precio_medio(bids, ACCIONES)             # comprar No = vender Yes
+                no10 = None if venta is None else round(1 - venta, 4)
                 filas.append([ahora.strftime("%Y-%m-%d %H:%M:%S"), activo, tipo, e["slug"], h, round(horas, 2),
                               m["groupItemTitle"], m["conditionId"], s, v, round(p, 4), bid, ask, ask_t, bid_t])
                 base = [ahora.strftime("%Y-%m-%d %H:%M:%S"), activo, tipo, e["slug"], h, m["groupItemTitle"],
                         m["conditionId"]]
-                if ask is not None and PRECIO_MIN <= ask <= PRECIO_MAX and p - ask >= BORDE:
-                    ops.append(base + ["Yes", ask, round(p, 4), ACCIONES])
-                elif bid is not None and PRECIO_MIN <= 1 - bid <= PRECIO_MAX and bid - p >= BORDE:
-                    ops.append(base + ["No", round(1 - bid, 4), round(p, 4), ACCIONES])
+                if yes10 is not None and PRECIO_MIN <= yes10 <= PRECIO_MAX and p - yes10 >= BORDE:
+                    ops.append(base + ["Yes", yes10, round(p, 4), ACCIONES])
+                elif no10 is not None and PRECIO_MIN <= no10 <= PRECIO_MAX and (1 - p) - no10 >= BORDE:
+                    ops.append(base + ["No", no10, round(p, 4), ACCIONES])
                 time.sleep(0.1)
     # limpiar marcas de mas de 4 dias
+    est.setdefault("desde_libro", ahora.strftime("%Y-%m-%d %H:%M:%S"))
     est["hechos"] = {k: t for k, t in hechos.items() if t >= datetime.fromtimestamp(time.time() - 4 * 86400,
                                                                                          timezone.utc).strftime("%Y-%m-%d")}
     guardar(est)
