@@ -1,15 +1,15 @@
 # Resumen polymarket-clima
 
-_Actualizado: 2026-10-22 12:28 (Montevideo). Todo es **en papel**: no se usa plata real._
+_Actualizado: 2026-10-22 12:43 (Montevideo). Todo es **en papel**: no se usa plata real._
 
 ## Estado de las tareas
 
 ✅ Todo corriendo normalmente.
 
-- Última foto de liquidez: 2026-10-22T12:27:54
+- Última foto de liquidez: 2026-10-22T12:43:04
 - Monitor: mañana 2026-10-22, noche 2026-10-21
 - Prueba São Paulo: último día registrado 2026-10-21
-- Cosechador: último ciclo 2026-10-22 09:33 UTC, 86 mercados, 45 estaciones
+- Cosechador: último ciclo 2026-10-22 15:14 UTC, 78 mercados, 41 estaciones
 
 ## Temperatura máxima: mercado vs. modelo (BA y SP)
 
@@ -42,7 +42,7 @@ Operaciones: 4 (2 ganadas, 2 perdidas, 0 pendientes). **Neto con comisiones: US$
 
 ## Cosechador en papel (cajas imposibles, todas las ciudades)
 
-Operaciones: 3. **Neto liquidado: US$+0.00**. Pendientes: +US$15.25 si salen bien.
+Operaciones: 5. **Neto liquidado: US$+0.00**. Pendientes: +US$31.82 si salen bien.
 Nota: las operaciones de Ciudad del Cabo del 18-oct se hicieron con la regla vieja (sin confirmación) y su resolución está en disputa.
 
 | Día | Ciudad | Caja | Precio Yes | Acciones | Resultado |
@@ -50,6 +50,8 @@ Nota: las operaciones de Ciudad del Cabo del 18-oct se hicieron con la regla vie
 | 2026-10-18 | cape-town | 17°C | 0.04 | 100 | pendiente |
 | 2026-10-18 | cape-town | 16°C | 0.03 | 100 | pendiente |
 | 2026-10-21 | istanbul | 15°C or below | 0.09 | 100 | pendiente |
+| 2026-10-22 | istanbul | 15°C or below | 0.17 | 61 | pendiente |
+| 2026-10-22 | istanbul | 15°C or below | 0.17 | 39 | pendiente |
 
 ## Pronóstico vs. mercado (todas las ciudades, día anterior)
 
@@ -80,7 +82,7 @@ _Taker = compra al instante pagando comisión. Maker = orden en el libro, solo c
 
 ## Cripto en papel (Bitcoin / Ethereum: above, rango y toca; modelo de opciones)
 
-Operaciones: 28 (20 liquidadas, 4 ganadas). **Neto US$-9.69** sobre US$48.25 invertidos (ROI -20.1 %).
+Operaciones: 33 (20 liquidadas, 4 ganadas). **Neto US$-9.69** sobre US$48.25 invertidos (ROI -20.1 %).
 Brier en 62 strikes: modelo 0.2673 vs mercado 0.2620.
 
 | Activo | Tipo | Liquidadas | Neto |
