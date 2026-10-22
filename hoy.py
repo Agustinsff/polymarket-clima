@@ -21,6 +21,7 @@ Lo corre el reloj cada 15 minutos.
 Uso: python hoy.py
 """
 
+import json
 import math
 import sys
 import time
@@ -92,7 +93,7 @@ def main():
         return
     sta = P.coordenadas({e["icao"] for e, h, k in toca})
     obs = metars({e["icao"] for e, h, k in toca})
-    filas, ops = [], []
+    filas, ops, pend = [], [], []
     for e, h, k in toca:
         serie = f"{e['tipo']}|{e['ciudad']}"
         tzs = TZ[e["ciudad"]]
@@ -151,34 +152,30 @@ def main():
             else:
                 p = p_desde(lo) - (0.0 if hi is None else p_desde(hi + 1))
             p = min(max(p, 0.0), 1.0)
-            bid, ask = P.num(m.get("bestBid")), P.num(m.get("bestAsk"))
-            mom = ahora.strftime("%Y-%m-%d %H:%M:%S")
+            try:
+                token = json.loads(m["clobTokenIds"])[0]
+            except Exception:
+                continue
             filas.append([ahora.strftime("%Y-%m-%d %H:%M"), serie, e["fecha"].isoformat(), e["icao"], h,
-                          m["groupItemTitle"], m["conditionId"], round(p, 4), bid, ask, O, round(u(c_ult), 1),
+                          m["groupItemTitle"], m["conditionId"], round(p, 4), None, None, O, round(u(c_ult), 1),
                           round(sum(errores) / len(errores), 2), round(sum(cs) / len(cs), 2), len(cs), 0])
-            base = [mom, serie, e["fecha"].isoformat(), m["groupItemTitle"], m["conditionId"]]
-            fin = e["fin"] or ""
-            if ask and P.PRECIO_MIN <= ask <= P.PRECIO_MAX and p - ask >= P.UMBRAL:
-                ops.append(base + ["Yes", "taker", ask, round(p, 4), 0, P.ACCIONES, fin])
-            if bid and P.PRECIO_MIN <= 1 - bid <= P.PRECIO_MAX and bid - p >= P.UMBRAL:
-                ops.append(base + ["No", "taker", round(1 - bid, 4), round(p, 4), 0, P.ACCIONES, fin])
-            if bid and P.PRECIO_MIN <= bid <= P.PRECIO_MAX and p - bid >= P.UMBRAL:
-                ops.append(base + ["Yes", "maker", bid, round(p, 4), 0, P.ACCIONES, fin])
-            if ask and P.PRECIO_MIN <= 1 - ask <= P.PRECIO_MAX and ask - p >= P.UMBRAL:
-                ops.append(base + ["No", "maker", round(1 - ask, 4), round(p, 4), 0, P.ACCIONES, fin])
-            # Regla "No 80-90" (control): en el 6-19 oct las cajas posibles a 10-20 c parecian caras,
-            # pero con el precio de venta real y en semanas nuevas (22-sep a 5-oct) el efecto casi
-            # desaparece (~0 %). Se deja en papel solo como control; no se espera ganancia.
             muerta = (hi is not None and O > hi) if alta else (lo is not None and O < lo)
-            if bid and 0.10 <= bid <= 0.20 and not muerta:
-                ops.append(base + ["No", "no80_90", round(1 - bid, 4), round(p, 4), 0, P.ACCIONES, fin])
-            if ask and 0.01 <= ask <= 0.10 and p >= 2.5 * ask and p - ask >= 0.04:
-                ops.append(base + ["Yes", "cola_taker", ask, round(p, 4), 0, P.ACCIONES, fin])
-            if bid and 0.01 <= bid <= 0.10 and p >= 2.5 * bid and p - bid >= 0.04:
-                ops.append(base + ["Yes", "cola_maker", bid, round(p, 4), 0, P.ACCIONES, fin])
+            pend.append((filas[-1], token, p, muerta, [ahora.strftime("%Y-%m-%d %H:%M:%S"), serie, e["fecha"].isoformat(),
+                                                       m["groupItemTitle"], m["conditionId"]], e["fin"] or ""))
+    # operaciones simuladas: mismas reglas que pronostico.py, con el libro real de cada caja
+    libs = P.libros([t for _, t, *_ in pend])
+    for fila, token, p, muerta, base, fin in pend:
+        lib = libs.get(token)
+        if lib is None:
+            continue
+        fila[8] = lib[0][0][0] if lib[0] else None     # mejor bid
+        fila[9] = lib[1][0][0] if lib[1] else None     # mejor ask
+        for lado, modo, precio in P.operaciones(p, lib, muerta):
+            ops.append(base + [lado, modo, precio, round(p, 4), 0, P.ACCIONES, fin])
     # limpiar marcas viejas
     viejo = (ahora - timedelta(days=3)).strftime("%Y-%m-%d")
     est["hoy_hechas"] = {k: v for k, v in hechas.items() if v >= viejo}
+    est.setdefault("desde_libro", ahora.strftime("%Y-%m-%d %H:%M:%S"))
     P.guardar(P.F_EST, est)
     P.agregar(P.F_HOY, COLS, filas)
     P.agregar(P.F_HOY_OPS, P.COLS_OPS, ops)
