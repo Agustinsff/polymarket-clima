@@ -1,12 +1,12 @@
 # Resumen polymarket-clima
 
-_Actualizado: 2026-10-22 12:58 (Montevideo). Todo es **en papel**: no se usa plata real._
+_Actualizado: 2026-10-22 13:13 (Montevideo). Todo es **en papel**: no se usa plata real._
 
 ## Estado de las tareas
 
 ✅ Todo corriendo normalmente.
 
-- Última foto de liquidez: 2026-10-22T12:58:22
+- Última foto de liquidez: 2026-10-22T13:13:32
 - Monitor: mañana 2026-10-22, noche 2026-10-21
 - Prueba São Paulo: último día registrado 2026-10-21
 - Cosechador: último ciclo 2026-10-22 15:14 UTC, 78 mercados, 41 estaciones
@@ -72,11 +72,11 @@ Puntaje Brier (más bajo = mejor) en 212 cajas liquidadas: **modelo 0.0536** vs 
 
 | Modo | Serie calibrada | Liquidadas | Ganadas | Neto (10 acc. c/u) | Pendientes |
 |---|---|---|---|---|---|
-| taker | no | 38 | 10 | US$-16.87 | 168 |
-| maker | no | 100 | 7 | US$-53.07 | 613 |
-| cola_taker | no | 19 | 1 | US$+3.15 | 64 |
-| cola_maker | no | 40 | 0 | US$-8.77 | 153 |
-| no80_90 | no | 12 | 9 | US$-13.57 | 62 |
+| taker | no | 38 | 10 | US$-16.87 | 172 |
+| maker | no | 100 | 7 | US$-53.07 | 629 |
+| cola_taker | no | 19 | 1 | US$+3.15 | 65 |
+| cola_maker | no | 40 | 0 | US$-8.77 | 158 |
+| no80_90 | no | 12 | 9 | US$-13.57 | 66 |
 
 _Taker = compra al instante pagando comisión. Maker = orden en el libro, solo cuenta si alguien la habría tomado (sin comisión). Cola = cajas de ≤10 ¢ a las que el modelo les da ≥2,5 veces el precio. no80_90 = comprar el No de cajas todavía posibles que cotizan 10–20 ¢ (solo en el pronóstico del mismo día)._
 
