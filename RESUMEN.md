@@ -1,22 +1,24 @@
 # Resumen polymarket-clima
 
-_Actualizado: 2026-10-22 09:50 (Montevideo). Todo es **en papel**: no se usa plata real._
+_Actualizado: 2026-10-22 10:05 (Montevideo). Todo es **en papel**: no se usa plata real._
 
 ## Estado de las tareas
 
 ✅ Todo corriendo normalmente.
 
 - Última foto de liquidez: 2026-10-22T09:50:37
-- Monitor: mañana 2026-10-21, noche 2026-10-21
+- Monitor: mañana 2026-10-22, noche 2026-10-21
 - Prueba São Paulo: último día registrado 2026-10-21
 - Cosechador: último ciclo 2026-10-22 09:33 UTC, 86 mercados, 45 estaciones
 
 ## Temperatura máxima: mercado vs. modelo (BA y SP)
 
-Acumulado: la caja favorita del **mercado** acertó 5/12, la del **modelo** 4/12.
+Acumulado: la caja favorita del **mercado** acertó 7/14, la del **modelo** 4/14.
 
 | Día | Ciudad | Ganó | Favorita del mercado | Favorita del modelo |
 |---|---|---|---|---|
+| 2026-10-20 | Sao Paulo | 23°C | 23°C (38%) ✅ | 24°C or higher (21%) ❌ |
+| 2026-10-20 | Buenos Aires | 21°C | 21°C (50%) ✅ | 20°C (25%) ❌ |
 | 2026-10-19 | Sao Paulo | 22°C | 22°C (34%) ✅ | 22°C (17%) ✅ |
 | 2026-10-19 | Buenos Aires | 19°C | 18°C (48%) ❌ | 18°C (25%) ❌ |
 | 2026-10-18 | Sao Paulo | 24°C | 25°C (46%) ❌ | 24°C (22%) ✅ |
@@ -25,8 +27,6 @@ Acumulado: la caja favorita del **mercado** acertó 5/12, la del **modelo** 4/12
 | 2026-10-17 | Buenos Aires | 13°C | 14°C (48%) ❌ | 14°C (25%) ❌ |
 | 2026-10-16 | Sao Paulo | 27°C | 27°C (37%) ✅ | 26°C (24%) ❌ |
 | 2026-10-16 | Buenos Aires | 15°C | 17°C (40%) ❌ | 18°C (23%) ❌ |
-| 2026-10-15 | Sao Paulo | 27°C | 28°C (35%) ❌ | 26°C (24%) ❌ |
-| 2026-10-15 | Buenos Aires | 21°C | 19°C (46%) ❌ | 19°C (25%) ❌ |
 
 ## Prueba en papel São Paulo 14 hs (regla fija)
 
@@ -105,5 +105,5 @@ Prueba SP: 4 operaciones; como maker se habrían llenado 2, neto **US$-7.76** (s
 ## Recompensas de liquidez (estimación, últimas 24 h)
 
 - Buenos Aires: ~US$38/día con 100 acciones a 1 ¢ en todas las cajas del mercado de mañana (sin contar pérdidas por quedar 'tomado').
-- Sao Paulo: ~US$49/día con 100 acciones a 1 ¢ en todas las cajas del mercado de mañana (sin contar pérdidas por quedar 'tomado').
+- Sao Paulo: ~US$48/día con 100 acciones a 1 ¢ en todas las cajas del mercado de mañana (sin contar pérdidas por quedar 'tomado').
 
