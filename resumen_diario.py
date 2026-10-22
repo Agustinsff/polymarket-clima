@@ -42,25 +42,40 @@ def fee(p):
 
 # ---------------------------------------------------------------------------
 
-def seccion_alarmas(ahora_local):
+CADA_15_MIN = {"liquidez.py", "hoy.py", "cripto.py"}   # una falla suelta se arregla sola en la vuelta siguiente
+
+
+def alarmas(ahora_local):
+    """Lista de problemas. La usan RESUMEN.md y el vigia (que abre un aviso en GitHub)."""
     rel = cargar_json("reloj_estado.json")
     cos = cargar_json("cosecha_estado.json")
-    alarmas = []
+    avisos = []
     ult = rel.get("liquidez")
     if not ult or ahora_local - datetime.fromisoformat(ult) > timedelta(hours=1):
-        alarmas.append(f"⚠️ La medición de liquidez no corre desde {ult or 'nunca'} (el reloj puede estar caído).")
+        avisos.append(f"⚠️ La medición de liquidez no corre desde {ult or 'nunca'} (el reloj puede estar caído).")
     hoy = ahora_local.date().isoformat()
     if ahora_local.hour * 60 + ahora_local.minute > 10 * 60 + 40 and rel.get("diario_am") != hoy:
-        alarmas.append(f"⚠️ El monitor de las 10:05 de hoy no corrió (último: {rel.get('diario_am')}).")
+        avisos.append(f"⚠️ El monitor de las 10:05 de hoy no corrió (último: {rel.get('diario_am')}).")
     if ahora_local.hour * 60 + ahora_local.minute > 15 * 60 and rel.get("papel") != hoy:
-        alarmas.append(f"⚠️ La prueba de São Paulo de hoy no se registró (último: {rel.get('papel')}).")
+        avisos.append(f"⚠️ La prueba de São Paulo de hoy no se registró (último: {rel.get('papel')}).")
     diag = cos.get("diagnostico") or {}
     if diag.get("momento_utc"):
         t = datetime.strptime(diag["momento_utc"], "%Y-%m-%d %H:%M").replace(tzinfo=timezone.utc)
         if datetime.now(timezone.utc) - t > timedelta(hours=7):
-            alarmas.append(f"⚠️ El cosechador no actualiza desde {diag['momento_utc']} UTC.")
+            avisos.append(f"⚠️ El cosechador no actualiza desde {diag['momento_utc']} UTC.")
+    for tarea, f in sorted(cargar_json("fallas.json").items()):
+        if tarea in CADA_15_MIN and f.get("veces", 0) < 2:
+            continue
+        veces = "en su última corrida" if f.get("veces") == 1 else f"{f.get('veces')} veces seguidas"
+        avisos.append(f"⚠️ `{tarea}` falló {veces} (desde {f.get('desde')}): {f.get('detalle')}")
+    return avisos
+
+
+def seccion_alarmas(ahora_local):
+    rel = cargar_json("reloj_estado.json")
+    diag = cargar_json("cosecha_estado.json").get("diagnostico") or {}
     lineas = ["## Estado de las tareas", ""]
-    lineas += alarmas or ["✅ Todo corriendo normalmente."]
+    lineas += alarmas(ahora_local) or ["✅ Todo corriendo normalmente."]
     lineas += ["", f"- Última foto de liquidez: {rel.get('liquidez', '-')}",
                f"- Monitor: mañana {rel.get('diario_am', '-')}, noche {rel.get('diario_pm', '-')}",
                f"- Prueba São Paulo: último día registrado {rel.get('papel', '-')}",

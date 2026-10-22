@@ -23,6 +23,7 @@ from datetime import datetime, timedelta
 
 CARPETA = os.path.dirname(os.path.abspath(__file__))
 F_EST = os.path.join(CARPETA, "reloj_estado.json")
+F_FALLAS = os.path.join(CARPETA, "fallas.json")
 
 
 def log(m):
@@ -41,15 +42,40 @@ def guardar(e):
         json.dump(e, f, indent=1)
 
 
+def anotar_falla(tarea, r):
+    """fallas.json: tareas cuya ultima corrida fallo (lo lee resumen_diario.py y el vigia)."""
+    try:
+        with open(F_FALLAS, encoding="utf-8") as f:
+            fallas = json.load(f)
+    except (OSError, ValueError):
+        fallas = {}
+    if r.returncode == 0:
+        if tarea not in fallas:
+            return
+        fallas.pop(tarea)
+    else:
+        previa = fallas.get(tarea, {})
+        detalle = (r.stderr.strip() or r.stdout.strip()).splitlines()[-1:] or [""]
+        fallas[tarea] = {"desde": previa.get("desde", datetime.now().isoformat(timespec="seconds")),
+                         "ultima": datetime.now().isoformat(timespec="seconds"),
+                         "veces": previa.get("veces", 0) + 1, "codigo": r.returncode, "detalle": detalle[0][-300:]}
+    with open(F_FALLAS, "w", encoding="utf-8") as f:
+        json.dump(fallas, f, indent=1, ensure_ascii=False)
+
+
 def correr(cmds, archivos, mensaje):
     cmds = cmds + [["resumen_diario.py"]]          # siempre se actualiza RESUMEN.md
     archivos = archivos + ["RESUMEN.md"]
     for c in cmds:
-        r = subprocess.run([sys.executable] + c, cwd=CARPETA, capture_output=True, text=True, timeout=900)
+        try:
+            r = subprocess.run([sys.executable] + c, cwd=CARPETA, capture_output=True, text=True, timeout=900)
+        except subprocess.TimeoutExpired:
+            r = subprocess.CompletedProcess(c, -1, "", "se colgo: mas de 15 minutos sin terminar")
         log(f"  {' '.join(c)} -> codigo {r.returncode}")
         if r.returncode != 0:
             log(r.stdout[-1500:] + r.stderr[-1500:])
-    subir(archivos + ["reloj_estado.json"], mensaje)
+        anotar_falla(" ".join(c), r)
+    subir(archivos + ["reloj_estado.json", "fallas.json"], mensaje)
 
 
 def subir(archivos, mensaje):
