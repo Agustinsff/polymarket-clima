@@ -1,6 +1,6 @@
 # Resumen polymarket-clima
 
-_Actualizado: 2026-10-22 10:06 (Montevideo). Todo es **en papel**: no se usa plata real._
+_Actualizado: 2026-10-22 10:25 (Montevideo). Todo es **en papel**: no se usa plata real._
 
 ## Estado de las tareas
 
@@ -57,49 +57,49 @@ Todavía no hay días liquidados.
 
 | Modo | Serie calibrada | Liquidadas | Ganadas | Neto (10 acc. c/u) | Pendientes |
 |---|---|---|---|---|---|
-| taker | no | 0 | 0 | US$+0.00 | 380 |
-| maker | no | 0 | 0 | US$+0.00 | 1493 |
-| cola_taker | no | 0 | 0 | US$+0.00 | 249 |
-| cola_maker | no | 0 | 0 | US$+0.00 | 302 |
+| taker | no | 0 | 0 | US$+0.00 | 384 |
+| maker | no | 0 | 0 | US$+0.00 | 1498 |
+| cola_taker | no | 0 | 0 | US$+0.00 | 251 |
+| cola_maker | no | 0 | 0 | US$+0.00 | 304 |
 
 _Taker = compra al instante pagando comisión. Maker = orden en el libro, solo cuenta si alguien la habría tomado (sin comisión). Cola = cajas de ≤10 ¢ a las que el modelo les da ≥2,5 veces el precio. no80_90 = comprar el No de cajas todavía posibles que cotizan 10–20 ¢ (solo en el pronóstico del mismo día)._
 
 ## Pronóstico del mismo día (12 y 15 hs locales la máxima, 9 hs la mínima)
 
-Todavía no hay días liquidados.
+Puntaje Brier (más bajo = mejor) en 212 cajas liquidadas: **modelo 0.0536** vs **mercado 0.0443**.
 
 | Modo | Serie calibrada | Liquidadas | Ganadas | Neto (10 acc. c/u) | Pendientes |
 |---|---|---|---|---|---|
-| taker | no | 0 | 0 | US$+0.00 | 204 |
-| maker | no | 0 | 0 | US$+0.00 | 683 |
-| cola_taker | no | 0 | 0 | US$+0.00 | 83 |
-| cola_maker | no | 0 | 0 | US$+0.00 | 188 |
-| no80_90 | no | 0 | 0 | US$+0.00 | 72 |
+| taker | no | 38 | 10 | US$-16.87 | 166 |
+| maker | no | 100 | 7 | US$-53.07 | 583 |
+| cola_taker | no | 19 | 1 | US$+3.15 | 64 |
+| cola_maker | no | 40 | 0 | US$-8.77 | 148 |
+| no80_90 | no | 12 | 9 | US$-13.57 | 60 |
 
 _Taker = compra al instante pagando comisión. Maker = orden en el libro, solo cuenta si alguien la habría tomado (sin comisión). Cola = cajas de ≤10 ¢ a las que el modelo les da ≥2,5 veces el precio. no80_90 = comprar el No de cajas todavía posibles que cotizan 10–20 ¢ (solo en el pronóstico del mismo día)._
 
 ## Cripto en papel (Bitcoin / Ethereum: above, rango y toca; modelo de opciones)
 
-Operaciones: 28 (10 liquidadas, 4 ganadas). **Neto US$+16.26** sobre US$23.04 invertidos (ROI +70.6 %).
-Brier en 42 strikes: modelo 0.3539 vs mercado 0.3621.
+Operaciones: 28 (20 liquidadas, 4 ganadas). **Neto US$-9.69** sobre US$48.25 invertidos (ROI -20.1 %).
+Brier en 62 strikes: modelo 0.2673 vs mercado 0.2620.
 
 | Activo | Tipo | Liquidadas | Neto |
 |---|---|---|---|
 | BTC | above | 1 | US$-2.08 |
 | BTC | rango | 1 | US$+6.69 |
-| BTC | toca | 3 | US$+1.43 |
+| BTC | toca | 10 | US$-18.70 |
 | ETH | above | 1 | US$-1.15 |
 | ETH | rango | 2 | US$+6.98 |
-| ETH | toca | 2 | US$+4.39 |
+| ETH | toca | 5 | US$-1.43 |
 
 _Regla fija: comprar el lado que el modelo ve ≥5 puntos más barato, a 48/24/12/6/3/1 h del cierre (18/12/6/3/1 h en 'toca'), 10 acciones al precio real del libro, con comisión. Backtest may-oct: +6,7 % con 1 ¢ de deslizamiento (Ethereum +17 %, Bitcoin ~0 %)._
 
 ## Sombra maker (¿y si dejábamos la orden en vez de comprar al toque?)
 
-Cosechador: 106 cajas muertas ya liquidadas.
-- Vender el Yes a 2 ¢: 0 acciones llenadas, neto **US$+0.00** (0 cajas 'muertas' que terminaron ganando)
-- Vender el Yes a 3 ¢: 0 acciones llenadas, neto **US$+0.00** (0 cajas 'muertas' que terminaron ganando)
-- Vender el Yes a 5 ¢: 0 acciones llenadas, neto **US$+0.00** (0 cajas 'muertas' que terminaron ganando)
+Cosechador: 408 cajas muertas ya liquidadas.
+- Vender el Yes a 2 ¢: 860 acciones llenadas, neto **US$+17.20** (0 cajas 'muertas' que terminaron ganando)
+- Vender el Yes a 3 ¢: 536 acciones llenadas, neto **US$+16.07** (0 cajas 'muertas' que terminaron ganando)
+- Vender el Yes a 5 ¢: 344 acciones llenadas, neto **US$+17.23** (0 cajas 'muertas' que terminaron ganando)
 Prueba SP: 4 operaciones; como maker se habrían llenado 2, neto **US$-7.76** (sin comisión).
 
 ## Recompensas de liquidez (estimación, últimas 24 h)
