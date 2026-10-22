@@ -7343,6 +7343,186 @@
 "acciones": 0,
 "resultado": 0.0
 }
+},
+"0x14f1ca617f89ee3b9789a63a220ab31853a5208b5a923321a561a160289294b0": {
+"serie": "lowest|taipei",
+"fecha": "2026-10-22",
+"caja": "27°C",
+"gano": 0,
+"0.02": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.03": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.05": {
+"acciones": 0,
+"resultado": 0.0
+}
+},
+"0x536d2db1ba7defbe2c015c4715727cb32495f1716d8b2366341d8e6c5b66e006": {
+"serie": "lowest|taipei",
+"fecha": "2026-10-22",
+"caja": "28°C or higher",
+"gano": 0,
+"0.02": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.03": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.05": {
+"acciones": 0,
+"resultado": 0.0
+}
+},
+"0xfa9c69fbf92c6d046887216292de1c6feaabad423757ba8fe1f2850d7574f0b1": {
+"serie": "highest|taipei",
+"fecha": "2026-10-22",
+"caja": "19°C or below",
+"gano": 0,
+"0.02": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.03": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.05": {
+"acciones": 0,
+"resultado": 0.0
+}
+},
+"0xc3f86bcaf9c21a183f888d0b796e91a9377cb7babb9ebce2d4b684dc1d538ab7": {
+"serie": "highest|taipei",
+"fecha": "2026-10-22",
+"caja": "20°C",
+"gano": 0,
+"0.02": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.03": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.05": {
+"acciones": 0,
+"resultado": 0.0
+}
+},
+"0xa6633bfbfb93099a03350087e821373280f25b18ee2a9ea576a7246dd46e7ba6": {
+"serie": "highest|taipei",
+"fecha": "2026-10-22",
+"caja": "21°C",
+"gano": 0,
+"0.02": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.03": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.05": {
+"acciones": 0,
+"resultado": 0.0
+}
+},
+"0x222a02dfee2a1ceb52d47ed1e8ec9513937047f8a8b17446e4e59630779fe128": {
+"serie": "highest|taipei",
+"fecha": "2026-10-22",
+"caja": "22°C",
+"gano": 0,
+"0.02": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.03": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.05": {
+"acciones": 0,
+"resultado": 0.0
+}
+},
+"0xade51f7d2a30af6df4789a04b3232ae6be5a8865175cc846079fc35e3db8f542": {
+"serie": "highest|taipei",
+"fecha": "2026-10-22",
+"caja": "23°C",
+"gano": 0,
+"0.02": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.03": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.05": {
+"acciones": 0,
+"resultado": 0.0
+}
+},
+"0x7f8946b01252dd8be28d41b2d08a3008ed79567dbef14fe0fe6fdbfb4d016c8d": {
+"serie": "lowest|taipei",
+"fecha": "2026-10-22",
+"caja": "25°C",
+"gano": 0,
+"0.02": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.03": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.05": {
+"acciones": 0,
+"resultado": 0.0
+}
+},
+"0x1f975ef0405c27ce756901d5770fcc8ab0744389bbaac8478cefeaa586d1cf05": {
+"serie": "lowest|taipei",
+"fecha": "2026-10-22",
+"caja": "26°C",
+"gano": 0,
+"0.02": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.03": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.05": {
+"acciones": 0,
+"resultado": 0.0
+}
+},
+"0x7eadfc879b174967c4d225db68d5477a16f7d90fa9cec7aedc8c3ef9196ae73c": {
+"serie": "lowest|taipei",
+"fecha": "2026-10-22",
+"caja": "24°C",
+"gano": 0,
+"0.02": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.03": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.05": {
+"acciones": 0,
+"resultado": 0.0
+}
 }
 },
 "sp14": {

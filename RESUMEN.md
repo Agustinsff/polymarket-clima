@@ -1,6 +1,6 @@
 # Resumen polymarket-clima
 
-_Actualizado: 2026-10-22 20:18 (Montevideo). Todo es **en papel**: no se usa plata real._
+_Actualizado: 2026-10-22 20:22 (Montevideo). Todo es **en papel**: no se usa plata real._
 
 ## Estado de las tareas
 
@@ -59,10 +59,10 @@ Todavía no hay días liquidados.
 
 | Modo | Serie calibrada | Liquidadas | Ganadas | Neto (10 acc. c/u) | Pendientes |
 |---|---|---|---|---|---|
-| taker | no | 0 | 0 | US$+0.00 | 384 |
-| maker | no | 0 | 0 | US$+0.00 | 1498 |
-| cola_taker | no | 0 | 0 | US$+0.00 | 251 |
-| cola_maker | no | 0 | 0 | US$+0.00 | 304 |
+| taker | no | 0 | 0 | US$+0.00 | 386 |
+| maker | no | 0 | 0 | US$+0.00 | 1502 |
+| cola_taker | no | 0 | 0 | US$+0.00 | 254 |
+| cola_maker | no | 0 | 0 | US$+0.00 | 307 |
 
 _Taker = compra al instante pagando comisión. Maker = orden en el libro, solo cuenta si alguien la habría tomado (sin comisión). Cola = cajas de ≤10 ¢ a las que el modelo les da ≥2,5 veces el precio. no80_90 = comprar el No de cajas todavía posibles que cotizan 10–20 ¢ (solo en el pronóstico del mismo día)._
 
@@ -82,14 +82,14 @@ _Taker = compra al instante pagando comisión. Maker = orden en el libro, solo c
 
 ## Cripto en papel (Bitcoin / Ethereum: above, rango y toca; modelo de opciones)
 
-Operaciones: 34 (20 liquidadas, 4 ganadas). **Neto US$-9.69** sobre US$48.25 invertidos (ROI -20.1 %).
-Brier en 62 strikes: modelo 0.2673 vs mercado 0.2620.
+Operaciones: 34 (25 liquidadas, 8 ganadas). **Neto US$+10.18** sobre US$67.85 invertidos (ROI +15.0 %).
+Brier en 96 strikes: modelo 0.2366 vs mercado 0.2404.
 
 | Activo | Tipo | Liquidadas | Neto |
 |---|---|---|---|
 | BTC | above | 1 | US$-2.08 |
-| BTC | rango | 1 | US$+6.69 |
-| BTC | toca | 10 | US$-18.70 |
+| BTC | rango | 4 | US$+17.01 |
+| BTC | toca | 12 | US$-9.15 |
 | ETH | above | 1 | US$-1.15 |
 | ETH | rango | 2 | US$+6.98 |
 | ETH | toca | 5 | US$-1.43 |
@@ -98,7 +98,7 @@ _Regla fija: comprar el lado que el modelo ve ≥5 puntos más barato, a 48/24/1
 
 ## Sombra maker (¿y si dejábamos la orden en vez de comprar al toque?)
 
-Cosechador: 408 cajas muertas ya liquidadas.
+Cosechador: 418 cajas muertas ya liquidadas.
 - Vender el Yes a 2 ¢: 860 acciones llenadas, neto **US$+17.20** (0 cajas 'muertas' que terminaron ganando)
 - Vender el Yes a 3 ¢: 536 acciones llenadas, neto **US$+16.07** (0 cajas 'muertas' que terminaron ganando)
 - Vender el Yes a 5 ¢: 344 acciones llenadas, neto **US$+17.23** (0 cajas 'muertas' que terminaron ganando)
