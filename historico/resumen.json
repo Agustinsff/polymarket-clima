@@ -20,1011 +20,1059 @@
   "3": 1,
   "4": 0
  },
- "filas": 8910,
- "eventos": 529,
+ "filas": 67672,
+ "eventos": 5093,
  "corte_mitades": "2026-10-01",
  "por_h": {
   "1": {
-   "cajas": 4136,
-   "dias": 376,
+   "cajas": 20889,
+   "dias": 1899,
    "puntaje": {
     "mercado": [
-     0.058777538986943906,
-     0.1835821713391765
+     0.055064418773038436,
+     0.17247900471297514
     ],
     "Promedio": [
-     0.06418470936333942,
-     0.20683539514285157
+     0.06439840013651288,
+     0.2061556501231137
     ],
     "GFS+ECMWF": [
-     0.06741356823840265,
-     0.22030997622749302
+     0.06824885510936975,
+     0.2217875173985092
     ]
    },
    "lambda": {
     "Promedio": [
-     0.05,
-     -0.025,
-     0.175
+     -0.05,
+     -0.075,
+     -0.025
     ],
     "GFS+ECMWF": [
-     0.0,
      -0.05,
-     0.05
+     -0.075,
+     -0.05
     ]
    },
    "ops": {
     "Promedio|0.1|medido": {
-     "n": 574,
+     "n": 2954,
      "dias": 43,
-     "gasto": 2145.76,
-     "ganancia": 84.25,
-     "roi": 0.0393,
-     "p_neg": 0.232,
-     "acierto": 0.389
+     "gasto": 10832.27,
+     "ganancia": -502.27,
+     "roi": -0.0464,
+     "p_neg": 0.975,
+     "acierto": 0.35
     },
     "Promedio|0.1|medido|highest": {
-     "n": 574,
+     "n": 2954,
      "dias": 43,
-     "gasto": 2145.76,
-     "ganancia": 84.25,
-     "roi": 0.0393,
-     "p_neg": 0.232,
-     "acierto": 0.389
+     "gasto": 10832.27,
+     "ganancia": -502.27,
+     "roi": -0.0464,
+     "p_neg": 0.975,
+     "acierto": 0.35
     },
     "Promedio|0.1|medido|lowest": {
      "n": 0
     },
     "Promedio|0.1|medido|1a mitad": {
-     "n": 282,
+     "n": 1392,
      "dias": 21,
-     "gasto": 1029.92,
-     "ganancia": 30.08,
-     "roi": 0.0292,
-     "p_neg": 0.376,
-     "acierto": 0.376
+     "gasto": 5048.05,
+     "ganancia": -358.05,
+     "roi": -0.0709,
+     "p_neg": 0.97,
+     "acierto": 0.337
     },
     "Promedio|0.1|medido|2a mitad": {
-     "n": 292,
+     "n": 1562,
      "dias": 22,
-     "gasto": 1115.83,
-     "ganancia": 54.17,
-     "roi": 0.0485,
-     "p_neg": 0.231,
-     "acierto": 0.401
+     "gasto": 5784.23,
+     "ganancia": -144.22,
+     "roi": -0.0249,
+     "p_neg": 0.789,
+     "acierto": 0.361
     },
     "Promedio|0.1|fijo 0c": {
-     "n": 630,
+     "n": 3205,
      "dias": 43,
-     "gasto": 2353.24,
-     "ganancia": 176.75,
-     "roi": 0.0751,
-     "p_neg": 0.04,
-     "acierto": 0.402
+     "gasto": 11721.72,
+     "ganancia": -161.71,
+     "roi": -0.0138,
+     "p_neg": 0.731,
+     "acierto": 0.361
     },
     "Promedio|0.1|fijo 1c": {
-     "n": 587,
+     "n": 3031,
      "dias": 43,
-     "gasto": 2193.3,
-     "ganancia": 76.7,
-     "roi": 0.035,
-     "p_neg": 0.253,
-     "acierto": 0.387
+     "gasto": 11078.07,
+     "ganancia": -468.07,
+     "roi": -0.0423,
+     "p_neg": 0.96,
+     "acierto": 0.35
     },
     "Promedio|0.1|fijo 2c": {
-     "n": 531,
+     "n": 2826,
      "dias": 43,
-     "gasto": 2030.16,
-     "ganancia": 39.83,
-     "roi": 0.0196,
-     "p_neg": 0.374,
-     "acierto": 0.39
+     "gasto": 10367.65,
+     "ganancia": -757.65,
+     "roi": -0.0731,
+     "p_neg": 0.999,
+     "acierto": 0.34
     },
     "Promedio|0.1|fijo 3c": {
-     "n": 495,
+     "n": 2674,
      "dias": 43,
-     "gasto": 1882.66,
-     "ganancia": -22.66,
-     "roi": -0.012,
-     "p_neg": 0.599,
-     "acierto": 0.376
+     "gasto": 9609.86,
+     "ganancia": -1149.87,
+     "roi": -0.1197,
+     "p_neg": 1.0,
+     "acierto": 0.316
     },
     "Promedio|0.05|medido": {
-     "n": 950,
+     "n": 4710,
      "dias": 43,
-     "gasto": 3479.44,
-     "ganancia": 20.56,
-     "roi": 0.0059,
-     "p_neg": 0.419,
-     "acierto": 0.368
+     "gasto": 17099.16,
+     "ganancia": -919.16,
+     "roi": -0.0538,
+     "p_neg": 1.0,
+     "acierto": 0.344
     },
     "Promedio|0.05|medido|highest": {
-     "n": 950,
+     "n": 4710,
      "dias": 43,
-     "gasto": 3479.44,
-     "ganancia": 20.56,
-     "roi": 0.0059,
-     "p_neg": 0.419,
-     "acierto": 0.368
+     "gasto": 17099.16,
+     "ganancia": -919.16,
+     "roi": -0.0538,
+     "p_neg": 1.0,
+     "acierto": 0.344
     },
     "Promedio|0.05|medido|lowest": {
      "n": 0
     },
     "Promedio|0.05|medido|1a mitad": {
-     "n": 476,
+     "n": 2340,
      "dias": 21,
-     "gasto": 1748.72,
-     "ganancia": 11.28,
-     "roi": 0.0065,
-     "p_neg": 0.434,
-     "acierto": 0.37
+     "gasto": 8385.2,
+     "ganancia": -565.2,
+     "roi": -0.0674,
+     "p_neg": 1.0,
+     "acierto": 0.334
     },
     "Promedio|0.05|medido|2a mitad": {
-     "n": 474,
+     "n": 2370,
      "dias": 22,
-     "gasto": 1730.72,
-     "ganancia": 9.28,
-     "roi": 0.0054,
-     "p_neg": 0.456,
-     "acierto": 0.367
+     "gasto": 8713.96,
+     "ganancia": -353.96,
+     "roi": -0.0406,
+     "p_neg": 0.966,
+     "acierto": 0.353
     },
     "Promedio|0.05|fijo 0c": {
-     "n": 1023,
+     "n": 5021,
      "dias": 43,
-     "gasto": 3876.24,
-     "ganancia": 113.77,
-     "roi": 0.0293,
-     "p_neg": 0.182,
-     "acierto": 0.39
+     "gasto": 18566.42,
+     "ganancia": -456.41,
+     "roi": -0.0246,
+     "p_neg": 0.943,
+     "acierto": 0.361
     },
     "Promedio|0.05|fijo 1c": {
-     "n": 981,
+     "n": 4842,
      "dias": 43,
-     "gasto": 3590.21,
-     "ganancia": 9.79,
-     "roi": 0.0027,
-     "p_neg": 0.457,
-     "acierto": 0.367
+     "gasto": 17534.06,
+     "ganancia": -914.07,
+     "roi": -0.0521,
+     "p_neg": 1.0,
+     "acierto": 0.343
     },
     "Promedio|0.05|fijo 2c": {
-     "n": 926,
+     "n": 4647,
      "dias": 43,
-     "gasto": 3335.22,
-     "ganancia": -25.22,
-     "roi": -0.0076,
-     "p_neg": 0.581,
-     "acierto": 0.357
+     "gasto": 16454.29,
+     "ganancia": -1224.29,
+     "roi": -0.0744,
+     "p_neg": 1.0,
+     "acierto": 0.328
     },
     "Promedio|0.05|fijo 3c": {
-     "n": 872,
+     "n": 4520,
      "dias": 43,
-     "gasto": 3141.75,
-     "ganancia": -121.75,
-     "roi": -0.0388,
-     "p_neg": 0.854,
-     "acierto": 0.346
+     "gasto": 15483.8,
+     "ganancia": -1693.8,
+     "roi": -0.1094,
+     "p_neg": 1.0,
+     "acierto": 0.305
     },
     "GFS+ECMWF|0.1|medido": {
-     "n": 726,
+     "n": 3700,
      "dias": 43,
-     "gasto": 2787.51,
-     "ganancia": 42.5,
-     "roi": 0.0152,
-     "p_neg": 0.349,
-     "acierto": 0.39
+     "gasto": 14155.14,
+     "ganancia": -625.14,
+     "roi": -0.0442,
+     "p_neg": 0.995,
+     "acierto": 0.366
     },
     "GFS+ECMWF|0.1|medido|highest": {
-     "n": 726,
+     "n": 3700,
      "dias": 43,
-     "gasto": 2787.51,
-     "ganancia": 42.5,
-     "roi": 0.0152,
-     "p_neg": 0.349,
-     "acierto": 0.39
+     "gasto": 14155.14,
+     "ganancia": -625.14,
+     "roi": -0.0442,
+     "p_neg": 0.995,
+     "acierto": 0.366
     },
     "GFS+ECMWF|0.1|medido|lowest": {
      "n": 0
     },
     "GFS+ECMWF|0.1|medido|1a mitad": {
-     "n": 364,
+     "n": 1820,
      "dias": 21,
-     "gasto": 1366.52,
-     "ganancia": 93.48,
-     "roi": 0.0684,
-     "p_neg": 0.124,
-     "acierto": 0.401
+     "gasto": 6871.79,
+     "ganancia": -421.79,
+     "roi": -0.0614,
+     "p_neg": 0.989,
+     "acierto": 0.354
     },
     "GFS+ECMWF|0.1|medido|2a mitad": {
-     "n": 362,
+     "n": 1880,
      "dias": 22,
-     "gasto": 1420.98,
-     "ganancia": -50.98,
-     "roi": -0.0359,
-     "p_neg": 0.761,
-     "acierto": 0.378
+     "gasto": 7283.35,
+     "ganancia": -203.35,
+     "roi": -0.0279,
+     "p_neg": 0.912,
+     "acierto": 0.377
     },
     "GFS+ECMWF|0.1|fijo 0c": {
-     "n": 755,
+     "n": 3888,
      "dias": 43,
-     "gasto": 2952.05,
-     "ganancia": 147.95,
-     "roi": 0.0501,
-     "p_neg": 0.096,
-     "acierto": 0.411
-    },
-    "GFS+ECMWF|0.1|fijo 1c": {
-     "n": 744,
-     "dias": 43,
-     "gasto": 2821.17,
-     "ganancia": 48.83,
-     "roi": 0.0173,
-     "p_neg": 0.332,
-     "acierto": 0.386
-    },
-    "GFS+ECMWF|0.1|fijo 2c": {
-     "n": 706,
-     "dias": 43,
-     "gasto": 2691.48,
-     "ganancia": -11.48,
-     "roi": -0.0043,
-     "p_neg": 0.542,
+     "gasto": 15025.55,
+     "ganancia": -255.54,
+     "roi": -0.017,
+     "p_neg": 0.841,
      "acierto": 0.38
     },
-    "GFS+ECMWF|0.1|fijo 3c": {
-     "n": 702,
+    "GFS+ECMWF|0.1|fijo 1c": {
+     "n": 3782,
      "dias": 43,
-     "gasto": 2563.16,
-     "ganancia": -53.17,
-     "roi": -0.0207,
-     "p_neg": 0.68,
-     "acierto": 0.358
+     "gasto": 14354.8,
+     "ganancia": -634.8,
+     "roi": -0.0442,
+     "p_neg": 0.996,
+     "acierto": 0.363
+    },
+    "GFS+ECMWF|0.1|fijo 2c": {
+     "n": 3654,
+     "dias": 43,
+     "gasto": 13705.35,
+     "ganancia": -935.35,
+     "roi": -0.0682,
+     "p_neg": 1.0,
+     "acierto": 0.349
+    },
+    "GFS+ECMWF|0.1|fijo 3c": {
+     "n": 3703,
+     "dias": 43,
+     "gasto": 13078.73,
+     "ganancia": -1318.73,
+     "roi": -0.1008,
+     "p_neg": 1.0,
+     "acierto": 0.318
     },
     "GFS+ECMWF|0.05|medido": {
-     "n": 1021,
+     "n": 5150,
      "dias": 43,
-     "gasto": 3937.11,
-     "ganancia": 32.9,
-     "roi": 0.0084,
-     "p_neg": 0.383,
-     "acierto": 0.389
+     "gasto": 19539.88,
+     "ganancia": -1039.87,
+     "roi": -0.0532,
+     "p_neg": 1.0,
+     "acierto": 0.359
     },
     "GFS+ECMWF|0.05|medido|highest": {
-     "n": 1021,
+     "n": 5150,
      "dias": 43,
-     "gasto": 3937.11,
-     "ganancia": 32.9,
-     "roi": 0.0084,
-     "p_neg": 0.383,
-     "acierto": 0.389
+     "gasto": 19539.88,
+     "ganancia": -1039.87,
+     "roi": -0.0532,
+     "p_neg": 1.0,
+     "acierto": 0.359
     },
     "GFS+ECMWF|0.05|medido|lowest": {
      "n": 0
     },
     "GFS+ECMWF|0.05|medido|1a mitad": {
-     "n": 518,
+     "n": 2590,
      "dias": 21,
-     "gasto": 1974.42,
-     "ganancia": 35.58,
-     "roi": 0.018,
-     "p_neg": 0.326,
-     "acierto": 0.388
+     "gasto": 9742.77,
+     "ganancia": -622.77,
+     "roi": -0.0639,
+     "p_neg": 1.0,
+     "acierto": 0.352
     },
     "GFS+ECMWF|0.05|medido|2a mitad": {
-     "n": 503,
+     "n": 2560,
      "dias": 22,
-     "gasto": 1962.68,
-     "ganancia": -2.68,
-     "roi": -0.0014,
-     "p_neg": 0.515,
-     "acierto": 0.39
+     "gasto": 9797.1,
+     "ganancia": -417.1,
+     "roi": -0.0426,
+     "p_neg": 0.999,
+     "acierto": 0.366
     },
     "GFS+ECMWF|0.05|fijo 0c": {
-     "n": 1066,
+     "n": 5398,
      "dias": 43,
-     "gasto": 4232.49,
-     "ganancia": 157.5,
-     "roi": 0.0372,
-     "p_neg": 0.11,
-     "acierto": 0.412
+     "gasto": 20855.28,
+     "ganancia": -445.28,
+     "roi": -0.0214,
+     "p_neg": 0.952,
+     "acierto": 0.378
     },
     "GFS+ECMWF|0.05|fijo 1c": {
-     "n": 1056,
+     "n": 5346,
      "dias": 43,
-     "gasto": 4015.55,
-     "ganancia": 54.45,
-     "roi": 0.0136,
-     "p_neg": 0.32,
-     "acierto": 0.385
+     "gasto": 20020.21,
+     "ganancia": -990.21,
+     "roi": -0.0495,
+     "p_neg": 1.0,
+     "acierto": 0.356
     },
     "GFS+ECMWF|0.05|fijo 2c": {
-     "n": 1047,
+     "n": 5365,
      "dias": 43,
-     "gasto": 3878.41,
-     "ganancia": -58.41,
-     "roi": -0.0151,
-     "p_neg": 0.695,
-     "acierto": 0.365
+     "gasto": 19321.74,
+     "ganancia": -1541.74,
+     "roi": -0.0798,
+     "p_neg": 1.0,
+     "acierto": 0.331
     },
     "GFS+ECMWF|0.05|fijo 3c": {
-     "n": 1108,
+     "n": 5737,
      "dias": 43,
-     "gasto": 3818.62,
-     "ganancia": -218.62,
-     "roi": -0.0572,
-     "p_neg": 0.972,
-     "acierto": 0.325
+     "gasto": 18873.94,
+     "ganancia": -2233.94,
+     "roi": -0.1184,
+     "p_neg": 1.0,
+     "acierto": 0.29
     }
    }
   },
   "2": {
-   "cajas": 3938,
-   "dias": 358,
+   "cajas": 38038,
+   "dias": 3458,
    "puntaje": {
     "mercado": [
-     0.0629426591543931,
-     0.20182084004619905
+     0.08650981053814608,
+     0.28089091521927917
     ],
     "Promedio": [
-     0.06814753124295987,
-     0.22327332553961804
+     0.06697499955994043,
+     0.21681694395065798
     ],
     "GFS+ECMWF": [
-     0.07081595671255908,
-     0.23540184986425192
+     0.07015449808267475,
+     0.231256275826369
     ]
    },
    "lambda": {
     "Promedio": [
-     0.0,
-     -0.1,
-     0.125
+     0.975,
+     0.975,
+     0.975
     ],
     "GFS+ECMWF": [
-     -0.05,
-     -0.125,
-     0.025
+     0.925,
+     0.925,
+     0.925
     ]
    },
    "ops": {
     "Promedio|0.1|medido": {
-     "n": 530,
+     "n": 12691,
      "dias": 41,
-     "gasto": 2249.96,
-     "ganancia": 30.04,
-     "roi": 0.0134,
-     "p_neg": 0.391,
-     "acierto": 0.43
+     "gasto": 76834.62,
+     "ganancia": 25195.38,
+     "roi": 0.3279,
+     "p_neg": 0.0,
+     "acierto": 0.804
     },
     "Promedio|0.1|medido|highest": {
-     "n": 530,
+     "n": 2760,
      "dias": 41,
-     "gasto": 2249.96,
-     "ganancia": 30.04,
-     "roi": 0.0134,
-     "p_neg": 0.391,
-     "acierto": 0.43
+     "gasto": 11181.91,
+     "ganancia": -381.9,
+     "roi": -0.0342,
+     "p_neg": 0.949,
+     "acierto": 0.391
     },
     "Promedio|0.1|medido|lowest": {
-     "n": 0
+     "n": 9931,
+     "dias": 41,
+     "gasto": 65652.71,
+     "ganancia": 25577.29,
+     "roi": 0.3896,
+     "p_neg": 0.0,
+     "acierto": 0.919
     },
     "Promedio|0.1|medido|1a mitad": {
-     "n": 229,
+     "n": 4651,
      "dias": 19,
-     "gasto": 938.26,
-     "ganancia": 11.73,
-     "roi": 0.0125,
-     "p_neg": 0.431,
-     "acierto": 0.415
+     "gasto": 27864.31,
+     "ganancia": 7595.69,
+     "roi": 0.2726,
+     "p_neg": 0.0,
+     "acierto": 0.762
     },
     "Promedio|0.1|medido|2a mitad": {
-     "n": 301,
+     "n": 8040,
      "dias": 22,
-     "gasto": 1311.69,
-     "ganancia": 18.31,
-     "roi": 0.014,
-     "p_neg": 0.43,
-     "acierto": 0.442
+     "gasto": 48970.31,
+     "ganancia": 17599.69,
+     "roi": 0.3594,
+     "p_neg": 0.0,
+     "acierto": 0.828
     },
     "Promedio|0.1|fijo 0c": {
-     "n": 587,
+     "n": 13463,
      "dias": 41,
-     "gasto": 2487.33,
-     "ganancia": 42.67,
-     "roi": 0.0172,
-     "p_neg": 0.385,
-     "acierto": 0.431
+     "gasto": 80037.93,
+     "ganancia": 26992.07,
+     "roi": 0.3372,
+     "p_neg": 0.0,
+     "acierto": 0.795
     },
     "Promedio|0.1|fijo 1c": {
-     "n": 540,
+     "n": 12912,
      "dias": 41,
-     "gasto": 2306.69,
-     "ganancia": 33.31,
-     "roi": 0.0144,
-     "p_neg": 0.381,
-     "acierto": 0.433
+     "gasto": 77946.92,
+     "ganancia": 25523.08,
+     "roi": 0.3274,
+     "p_neg": 0.0,
+     "acierto": 0.801
     },
     "Promedio|0.1|fijo 2c": {
-     "n": 495,
+     "n": 12304,
      "dias": 41,
-     "gasto": 2069.82,
-     "ganancia": 0.18,
-     "roi": 0.0001,
-     "p_neg": 0.508,
-     "acierto": 0.418
+     "gasto": 75559.43,
+     "ganancia": 24180.57,
+     "roi": 0.32,
+     "p_neg": 0.0,
+     "acierto": 0.811
     },
     "Promedio|0.1|fijo 3c": {
-     "n": 435,
+     "n": 11667,
      "dias": 41,
-     "gasto": 1867.9,
-     "ganancia": -67.9,
-     "roi": -0.0364,
-     "p_neg": 0.737,
-     "acierto": 0.414
+     "gasto": 73326.21,
+     "ganancia": 22843.79,
+     "roi": 0.3115,
+     "p_neg": 0.0,
+     "acierto": 0.824
     },
     "Promedio|0.05|medido": {
-     "n": 924,
+     "n": 16386,
      "dias": 41,
-     "gasto": 3694.24,
-     "ganancia": -104.24,
-     "roi": -0.0282,
-     "p_neg": 0.777,
-     "acierto": 0.389
+     "gasto": 94298.0,
+     "ganancia": 25602.0,
+     "roi": 0.2715,
+     "p_neg": 0.0,
+     "acierto": 0.732
     },
     "Promedio|0.05|medido|highest": {
-     "n": 924,
+     "n": 4734,
      "dias": 41,
-     "gasto": 3694.24,
-     "ganancia": -104.24,
-     "roi": -0.0282,
-     "p_neg": 0.777,
-     "acierto": 0.389
+     "gasto": 18490.85,
+     "ganancia": -870.85,
+     "roi": -0.0471,
+     "p_neg": 1.0,
+     "acierto": 0.372
     },
     "Promedio|0.05|medido|lowest": {
-     "n": 0
+     "n": 11652,
+     "dias": 41,
+     "gasto": 75807.15,
+     "ganancia": 26472.85,
+     "roi": 0.3492,
+     "p_neg": 0.0,
+     "acierto": 0.878
     },
     "Promedio|0.05|medido|1a mitad": {
-     "n": 434,
+     "n": 6616,
      "dias": 19,
-     "gasto": 1670.6,
-     "ganancia": -90.59,
-     "roi": -0.0542,
-     "p_neg": 0.854,
-     "acierto": 0.364
+     "gasto": 37068.98,
+     "ganancia": 7741.02,
+     "roi": 0.2088,
+     "p_neg": 0.0,
+     "acierto": 0.677
     },
     "Promedio|0.05|medido|2a mitad": {
-     "n": 490,
+     "n": 9770,
      "dias": 22,
-     "gasto": 2023.65,
-     "ganancia": -13.65,
-     "roi": -0.0067,
-     "p_neg": 0.531,
-     "acierto": 0.41
+     "gasto": 57229.02,
+     "ganancia": 17860.98,
+     "roi": 0.3121,
+     "p_neg": 0.0,
+     "acierto": 0.769
     },
     "Promedio|0.05|fijo 0c": {
-     "n": 1008,
+     "n": 17321,
      "dias": 41,
-     "gasto": 4072.03,
-     "ganancia": -2.03,
-     "roi": -0.0005,
-     "p_neg": 0.515,
-     "acierto": 0.404
+     "gasto": 98126.64,
+     "ganancia": 27793.36,
+     "roi": 0.2832,
+     "p_neg": 0.0,
+     "acierto": 0.727
     },
     "Promedio|0.05|fijo 1c": {
-     "n": 953,
+     "n": 16714,
      "dias": 41,
-     "gasto": 3791.17,
-     "ganancia": -111.17,
-     "roi": -0.0293,
-     "p_neg": 0.787,
-     "acierto": 0.386
+     "gasto": 95710.27,
+     "ganancia": 26029.72,
+     "roi": 0.272,
+     "p_neg": 0.0,
+     "acierto": 0.728
     },
     "Promedio|0.05|fijo 2c": {
-     "n": 884,
+     "n": 15965,
      "dias": 41,
-     "gasto": 3487.91,
-     "ganancia": -187.91,
-     "roi": -0.0539,
-     "p_neg": 0.911,
-     "acierto": 0.373
+     "gasto": 92771.87,
+     "ganancia": 24078.13,
+     "roi": 0.2595,
+     "p_neg": 0.0,
+     "acierto": 0.732
     },
     "Promedio|0.05|fijo 3c": {
-     "n": 784,
+     "n": 15169,
      "dias": 41,
-     "gasto": 3202.42,
-     "ganancia": -202.42,
-     "roi": -0.0632,
-     "p_neg": 0.936,
-     "acierto": 0.383
+     "gasto": 90147.82,
+     "ganancia": 22612.18,
+     "roi": 0.2508,
+     "p_neg": 0.0,
+     "acierto": 0.743
     },
     "GFS+ECMWF|0.1|medido": {
-     "n": 653,
+     "n": 13467,
      "dias": 41,
-     "gasto": 2769.68,
-     "ganancia": -19.68,
-     "roi": -0.0071,
-     "p_neg": 0.578,
-     "acierto": 0.421
+     "gasto": 80659.79,
+     "ganancia": 24180.21,
+     "roi": 0.2998,
+     "p_neg": 0.0,
+     "acierto": 0.778
     },
     "GFS+ECMWF|0.1|medido|highest": {
-     "n": 653,
+     "n": 3442,
      "dias": 41,
-     "gasto": 2769.68,
-     "ganancia": -19.68,
-     "roi": -0.0071,
-     "p_neg": 0.578,
-     "acierto": 0.421
+     "gasto": 14439.72,
+     "ganancia": -719.71,
+     "roi": -0.0498,
+     "p_neg": 0.997,
+     "acierto": 0.399
     },
     "GFS+ECMWF|0.1|medido|lowest": {
-     "n": 0
+     "n": 10025,
+     "dias": 41,
+     "gasto": 66220.08,
+     "ganancia": 24899.92,
+     "roi": 0.376,
+     "p_neg": 0.0,
+     "acierto": 0.909
     },
     "GFS+ECMWF|0.1|medido|1a mitad": {
-     "n": 303,
+     "n": 4911,
      "dias": 19,
-     "gasto": 1249.43,
-     "ganancia": -19.43,
-     "roi": -0.0156,
-     "p_neg": 0.638,
-     "acierto": 0.406
+     "gasto": 28854.7,
+     "ganancia": 6875.3,
+     "roi": 0.2383,
+     "p_neg": 0.0,
+     "acierto": 0.728
     },
     "GFS+ECMWF|0.1|medido|2a mitad": {
-     "n": 350,
+     "n": 8556,
      "dias": 22,
-     "gasto": 1520.24,
-     "ganancia": -0.24,
-     "roi": -0.0002,
-     "p_neg": 0.491,
-     "acierto": 0.434
+     "gasto": 51805.09,
+     "ganancia": 17304.91,
+     "roi": 0.334,
+     "p_neg": 0.0,
+     "acierto": 0.808
     },
     "GFS+ECMWF|0.1|fijo 0c": {
-     "n": 704,
+     "n": 14183,
      "dias": 41,
-     "gasto": 3007.67,
-     "ganancia": 12.33,
-     "roi": 0.0041,
-     "p_neg": 0.464,
-     "acierto": 0.429
+     "gasto": 83874.55,
+     "ganancia": 26075.45,
+     "roi": 0.3109,
+     "p_neg": 0.0,
+     "acierto": 0.775
     },
     "GFS+ECMWF|0.1|fijo 1c": {
-     "n": 661,
+     "n": 13666,
      "dias": 41,
-     "gasto": 2838.86,
-     "ganancia": 11.14,
-     "roi": 0.0039,
-     "p_neg": 0.461,
-     "acierto": 0.431
+     "gasto": 81686.51,
+     "ganancia": 24443.49,
+     "roi": 0.2992,
+     "p_neg": 0.0,
+     "acierto": 0.777
     },
     "GFS+ECMWF|0.1|fijo 2c": {
-     "n": 641,
+     "n": 13202,
      "dias": 41,
-     "gasto": 2687.95,
-     "ganancia": -97.95,
-     "roi": -0.0364,
-     "p_neg": 0.807,
-     "acierto": 0.404
+     "gasto": 79663.73,
+     "ganancia": 22826.27,
+     "roi": 0.2865,
+     "p_neg": 0.0,
+     "acierto": 0.776
     },
     "GFS+ECMWF|0.1|fijo 3c": {
-     "n": 599,
+     "n": 12617,
      "dias": 41,
-     "gasto": 2528.38,
-     "ganancia": -178.38,
-     "roi": -0.0705,
-     "p_neg": 0.94,
-     "acierto": 0.392
+     "gasto": 77125.09,
+     "ganancia": 21384.91,
+     "roi": 0.2773,
+     "p_neg": 0.0,
+     "acierto": 0.781
     },
     "GFS+ECMWF|0.05|medido": {
-     "n": 1048,
+     "n": 17135,
      "dias": 41,
-     "gasto": 4354.53,
-     "ganancia": -124.53,
-     "roi": -0.0286,
-     "p_neg": 0.82,
-     "acierto": 0.404
+     "gasto": 98569.88,
+     "ganancia": 24670.12,
+     "roi": 0.2503,
+     "p_neg": 0.0,
+     "acierto": 0.719
     },
     "GFS+ECMWF|0.05|medido|highest": {
-     "n": 1048,
+     "n": 5325,
      "dias": 41,
-     "gasto": 4354.53,
-     "ganancia": -124.53,
-     "roi": -0.0286,
-     "p_neg": 0.82,
-     "acierto": 0.404
+     "gasto": 21540.62,
+     "ganancia": -1060.61,
+     "roi": -0.0492,
+     "p_neg": 1.0,
+     "acierto": 0.385
     },
     "GFS+ECMWF|0.05|medido|lowest": {
-     "n": 0
+     "n": 11810,
+     "dias": 41,
+     "gasto": 77029.27,
+     "ganancia": 25730.73,
+     "roi": 0.334,
+     "p_neg": 0.0,
+     "acierto": 0.87
     },
     "GFS+ECMWF|0.05|medido|1a mitad": {
-     "n": 512,
+     "n": 6938,
      "dias": 19,
-     "gasto": 2054.81,
-     "ganancia": -94.81,
-     "roi": -0.0461,
-     "p_neg": 0.875,
-     "acierto": 0.383
+     "gasto": 38693.11,
+     "ganancia": 6986.89,
+     "roi": 0.1806,
+     "p_neg": 0.0,
+     "acierto": 0.658
     },
     "GFS+ECMWF|0.05|medido|2a mitad": {
-     "n": 536,
+     "n": 10197,
      "dias": 22,
-     "gasto": 2299.72,
-     "ganancia": -29.72,
-     "roi": -0.0129,
-     "p_neg": 0.59,
-     "acierto": 0.424
+     "gasto": 59876.77,
+     "ganancia": 17683.23,
+     "roi": 0.2953,
+     "p_neg": 0.0,
+     "acierto": 0.761
     },
     "GFS+ECMWF|0.05|fijo 0c": {
-     "n": 1111,
+     "n": 17961,
      "dias": 41,
-     "gasto": 4628.02,
-     "ganancia": 11.97,
-     "roi": 0.0026,
-     "p_neg": 0.485,
-     "acierto": 0.418
+     "gasto": 102251.74,
+     "ganancia": 26938.26,
+     "roi": 0.2635,
+     "p_neg": 0.0,
+     "acierto": 0.719
     },
     "GFS+ECMWF|0.05|fijo 1c": {
-     "n": 1077,
+     "n": 17484,
      "dias": 41,
-     "gasto": 4410.77,
-     "ganancia": -120.78,
-     "roi": -0.0274,
-     "p_neg": 0.81,
-     "acierto": 0.398
+     "gasto": 99756.09,
+     "ganancia": 25023.92,
+     "roi": 0.2509,
+     "p_neg": 0.0,
+     "acierto": 0.714
     },
     "GFS+ECMWF|0.05|fijo 2c": {
-     "n": 1066,
+     "n": 17052,
      "dias": 41,
-     "gasto": 4242.92,
-     "ganancia": -242.92,
-     "roi": -0.0573,
-     "p_neg": 0.965,
-     "acierto": 0.375
+     "gasto": 97348.91,
+     "ganancia": 23101.09,
+     "roi": 0.2373,
+     "p_neg": 0.0,
+     "acierto": 0.706
     },
     "GFS+ECMWF|0.05|fijo 3c": {
-     "n": 1023,
+     "n": 16537,
      "dias": 41,
-     "gasto": 3981.53,
-     "ganancia": -281.53,
-     "roi": -0.0707,
-     "p_neg": 0.99,
-     "acierto": 0.362
+     "gasto": 95107.71,
+     "ganancia": 21312.29,
+     "roi": 0.2241,
+     "p_neg": 0.0,
+     "acierto": 0.704
     }
    }
   },
   "3": {
-   "cajas": 836,
-   "dias": 76,
+   "cajas": 8745,
+   "dias": 795,
    "puntaje": {
     "mercado": [
-     0.07030444766746412,
-     0.24178608281562308
+     0.09802998925100058,
+     0.32650931399489225
     ],
     "Promedio": [
-     0.06730069506411104,
-     0.22244443227770871
+     0.06828995158448815,
+     0.22255079468980066
     ],
     "GFS+ECMWF": [
-     0.07166500398260511,
-     0.23604941590283926
+     0.07182844176116863,
+     0.23950740985904398
     ]
    },
    "lambda": {
     "Promedio": [
-     0.825,
-     0.625,
-     0.975
+     0.975,
+     0.975,
+     1.0
     ],
     "GFS+ECMWF": [
-     0.675,
-     0.425,
-     0.875
+     0.975,
+     0.975,
+     0.975
     ]
    },
    "ops": {
     "Promedio|0.1|medido": {
-     "n": 166,
+     "n": 3577,
      "dias": 38,
-     "gasto": 865.17,
-     "ganancia": 164.82,
-     "roi": 0.1905,
-     "p_neg": 0.001,
-     "acierto": 0.62
+     "gasto": 23033.9,
+     "ganancia": 8076.1,
+     "roi": 0.3506,
+     "p_neg": 0.0,
+     "acierto": 0.87
     },
     "Promedio|0.1|medido|highest": {
-     "n": 166,
+     "n": 783,
      "dias": 38,
-     "gasto": 865.17,
-     "ganancia": 164.82,
-     "roi": 0.1905,
-     "p_neg": 0.001,
-     "acierto": 0.62
+     "gasto": 4585.16,
+     "ganancia": 574.83,
+     "roi": 0.1254,
+     "p_neg": 0.0,
+     "acierto": 0.659
     },
     "Promedio|0.1|medido|lowest": {
-     "n": 0
+     "n": 2794,
+     "dias": 38,
+     "gasto": 18448.74,
+     "ganancia": 7501.26,
+     "roi": 0.4066,
+     "p_neg": 0.0,
+     "acierto": 0.929
     },
     "Promedio|0.1|medido|1a mitad": {
-     "n": 49,
+     "n": 1113,
      "dias": 16,
-     "gasto": 219.26,
-     "ganancia": 70.74,
-     "roi": 0.3226,
-     "p_neg": 0.005,
-     "acierto": 0.592
+     "gasto": 7302.69,
+     "ganancia": 1967.31,
+     "roi": 0.2694,
+     "p_neg": 0.0,
+     "acierto": 0.833
     },
     "Promedio|0.1|medido|2a mitad": {
-     "n": 117,
+     "n": 2464,
      "dias": 22,
-     "gasto": 645.91,
-     "ganancia": 94.08,
-     "roi": 0.1457,
-     "p_neg": 0.019,
-     "acierto": 0.632
+     "gasto": 15731.21,
+     "ganancia": 6108.79,
+     "roi": 0.3883,
+     "p_neg": 0.0,
+     "acierto": 0.886
     },
     "Promedio|0.1|fijo 0c": {
-     "n": 200,
+     "n": 3813,
      "dias": 38,
-     "gasto": 1049.0,
-     "ganancia": 201.0,
-     "roi": 0.1916,
-     "p_neg": 0.001,
-     "acierto": 0.625
+     "gasto": 23900.92,
+     "ganancia": 8719.08,
+     "roi": 0.3648,
+     "p_neg": 0.0,
+     "acierto": 0.855
     },
     "Promedio|0.1|fijo 1c": {
-     "n": 177,
+     "n": 3643,
      "dias": 38,
-     "gasto": 912.65,
-     "ganancia": 157.35,
-     "roi": 0.1724,
-     "p_neg": 0.001,
-     "acierto": 0.605
+     "gasto": 23347.54,
+     "ganancia": 8192.46,
+     "roi": 0.3509,
+     "p_neg": 0.0,
+     "acierto": 0.866
     },
     "Promedio|0.1|fijo 2c": {
-     "n": 154,
-     "dias": 37,
-     "gasto": 808.55,
-     "ganancia": 141.45,
-     "roi": 0.1749,
-     "p_neg": 0.002,
-     "acierto": 0.617
+     "n": 3475,
+     "dias": 38,
+     "gasto": 22723.89,
+     "ganancia": 7706.11,
+     "roi": 0.3391,
+     "p_neg": 0.0,
+     "acierto": 0.876
     },
     "Promedio|0.1|fijo 3c": {
-     "n": 139,
-     "dias": 36,
-     "gasto": 738.55,
-     "ganancia": 101.45,
-     "roi": 0.1374,
-     "p_neg": 0.015,
-     "acierto": 0.604
+     "n": 3310,
+     "dias": 38,
+     "gasto": 22117.59,
+     "ganancia": 7202.41,
+     "roi": 0.3256,
+     "p_neg": 0.0,
+     "acierto": 0.886
     },
     "Promedio|0.05|medido": {
-     "n": 257,
+     "n": 4484,
      "dias": 38,
-     "gasto": 1290.88,
-     "ganancia": 199.12,
-     "roi": 0.1543,
-     "p_neg": 0.002,
-     "acierto": 0.58
+     "gasto": 27564.69,
+     "ganancia": 8395.31,
+     "roi": 0.3046,
+     "p_neg": 0.0,
+     "acierto": 0.802
     },
     "Promedio|0.05|medido|highest": {
-     "n": 257,
+     "n": 1263,
      "dias": 38,
-     "gasto": 1290.88,
-     "ganancia": 199.12,
-     "roi": 0.1543,
-     "p_neg": 0.002,
-     "acierto": 0.58
+     "gasto": 6771.79,
+     "ganancia": 428.21,
+     "roi": 0.0632,
+     "p_neg": 0.001,
+     "acierto": 0.57
     },
     "Promedio|0.05|medido|lowest": {
-     "n": 0
+     "n": 3221,
+     "dias": 38,
+     "gasto": 20792.9,
+     "ganancia": 7967.1,
+     "roi": 0.3832,
+     "p_neg": 0.0,
+     "acierto": 0.893
     },
     "Promedio|0.05|medido|1a mitad": {
-     "n": 93,
+     "n": 1554,
      "dias": 16,
-     "gasto": 391.54,
-     "ganancia": 98.46,
-     "roi": 0.2515,
-     "p_neg": 0.005,
-     "acierto": 0.527
+     "gasto": 9339.61,
+     "ganancia": 2190.38,
+     "roi": 0.2345,
+     "p_neg": 0.0,
+     "acierto": 0.742
     },
     "Promedio|0.05|medido|2a mitad": {
-     "n": 164,
+     "n": 2930,
      "dias": 22,
-     "gasto": 899.34,
-     "ganancia": 100.66,
-     "roi": 0.1119,
-     "p_neg": 0.037,
-     "acierto": 0.61
+     "gasto": 18225.08,
+     "ganancia": 6204.93,
+     "roi": 0.3405,
+     "p_neg": 0.0,
+     "acierto": 0.834
     },
     "Promedio|0.05|fijo 0c": {
-     "n": 296,
+     "n": 4805,
      "dias": 38,
-     "gasto": 1510.72,
-     "ganancia": 249.28,
-     "roi": 0.165,
-     "p_neg": 0.001,
-     "acierto": 0.595
+     "gasto": 28816.75,
+     "ganancia": 9043.25,
+     "roi": 0.3138,
+     "p_neg": 0.0,
+     "acierto": 0.788
     },
     "Promedio|0.05|fijo 1c": {
-     "n": 267,
+     "n": 4571,
      "dias": 38,
-     "gasto": 1372.8,
-     "ganancia": 217.2,
-     "roi": 0.1582,
-     "p_neg": 0.002,
-     "acierto": 0.596
+     "gasto": 27955.83,
+     "ganancia": 8534.16,
+     "roi": 0.3053,
+     "p_neg": 0.0,
+     "acierto": 0.798
     },
     "Promedio|0.05|fijo 2c": {
-     "n": 232,
+     "n": 4327,
      "dias": 38,
-     "gasto": 1213.85,
-     "ganancia": 206.15,
-     "roi": 0.1698,
-     "p_neg": 0.002,
-     "acierto": 0.612
+     "gasto": 27151.58,
+     "ganancia": 8088.41,
+     "roi": 0.2979,
+     "p_neg": 0.0,
+     "acierto": 0.814
     },
     "Promedio|0.05|fijo 3c": {
-     "n": 212,
+     "n": 4111,
      "dias": 38,
-     "gasto": 1104.55,
-     "ganancia": 165.45,
-     "roi": 0.1498,
-     "p_neg": 0.005,
-     "acierto": 0.599
+     "gasto": 26306.83,
+     "ganancia": 7613.17,
+     "roi": 0.2894,
+     "p_neg": 0.0,
+     "acierto": 0.825
     },
     "GFS+ECMWF|0.1|medido": {
-     "n": 187,
-     "dias": 35,
-     "gasto": 930.41,
-     "ganancia": 99.58,
-     "roi": 0.107,
-     "p_neg": 0.03,
-     "acierto": 0.551
+     "n": 3610,
+     "dias": 38,
+     "gasto": 23269.15,
+     "ganancia": 7550.86,
+     "roi": 0.3245,
+     "p_neg": 0.0,
+     "acierto": 0.854
     },
     "GFS+ECMWF|0.1|medido|highest": {
-     "n": 187,
-     "dias": 35,
-     "gasto": 930.41,
-     "ganancia": 99.58,
-     "roi": 0.107,
-     "p_neg": 0.03,
-     "acierto": 0.551
+     "n": 876,
+     "dias": 38,
+     "gasto": 5042.22,
+     "ganancia": 317.78,
+     "roi": 0.063,
+     "p_neg": 0.0,
+     "acierto": 0.612
     },
     "GFS+ECMWF|0.1|medido|lowest": {
-     "n": 0
+     "n": 2734,
+     "dias": 38,
+     "gasto": 18226.92,
+     "ganancia": 7233.08,
+     "roi": 0.3968,
+     "p_neg": 0.0,
+     "acierto": 0.931
     },
     "GFS+ECMWF|0.1|medido|1a mitad": {
-     "n": 48,
-     "dias": 14,
-     "gasto": 194.15,
-     "ganancia": 25.85,
-     "roi": 0.1331,
-     "p_neg": 0.158,
-     "acierto": 0.458
+     "n": 1046,
+     "dias": 16,
+     "gasto": 6964.47,
+     "ganancia": 1635.54,
+     "roi": 0.2348,
+     "p_neg": 0.0,
+     "acierto": 0.822
     },
     "GFS+ECMWF|0.1|medido|2a mitad": {
-     "n": 139,
-     "dias": 21,
-     "gasto": 736.26,
-     "ganancia": 73.73,
-     "roi": 0.1001,
-     "p_neg": 0.059,
-     "acierto": 0.583
+     "n": 2564,
+     "dias": 22,
+     "gasto": 16304.68,
+     "ganancia": 5915.32,
+     "roi": 0.3628,
+     "p_neg": 0.0,
+     "acierto": 0.867
     },
     "GFS+ECMWF|0.1|fijo 0c": {
-     "n": 218,
-     "dias": 36,
-     "gasto": 1083.37,
-     "ganancia": 136.63,
-     "roi": 0.1261,
-     "p_neg": 0.004,
-     "acierto": 0.56
+     "n": 3859,
+     "dias": 38,
+     "gasto": 24348.72,
+     "ganancia": 8081.28,
+     "roi": 0.3319,
+     "p_neg": 0.0,
+     "acierto": 0.84
     },
     "GFS+ECMWF|0.1|fijo 1c": {
-     "n": 192,
-     "dias": 35,
-     "gasto": 947.99,
-     "ganancia": 102.01,
-     "roi": 0.1076,
-     "p_neg": 0.029,
-     "acierto": 0.547
+     "n": 3653,
+     "dias": 38,
+     "gasto": 23482.62,
+     "ganancia": 7647.38,
+     "roi": 0.3257,
+     "p_neg": 0.0,
+     "acierto": 0.852
     },
     "GFS+ECMWF|0.1|fijo 2c": {
-     "n": 168,
-     "dias": 35,
-     "gasto": 853.72,
-     "ganancia": 96.28,
-     "roi": 0.1128,
-     "p_neg": 0.028,
-     "acierto": 0.565
+     "n": 3496,
+     "dias": 38,
+     "gasto": 22934.31,
+     "ganancia": 7245.69,
+     "roi": 0.3159,
+     "p_neg": 0.0,
+     "acierto": 0.863
     },
     "GFS+ECMWF|0.1|fijo 3c": {
-     "n": 153,
-     "dias": 34,
-     "gasto": 819.87,
-     "ganancia": 90.13,
-     "roi": 0.1099,
-     "p_neg": 0.031,
-     "acierto": 0.595
+     "n": 3324,
+     "dias": 38,
+     "gasto": 22257.47,
+     "ganancia": 6862.53,
+     "roi": 0.3083,
+     "p_neg": 0.0,
+     "acierto": 0.876
     },
     "GFS+ECMWF|0.05|medido": {
-     "n": 286,
+     "n": 4643,
      "dias": 38,
-     "gasto": 1354.74,
-     "ganancia": 125.26,
-     "roi": 0.0925,
-     "p_neg": 0.02,
-     "acierto": 0.517
+     "gasto": 28451.78,
+     "ganancia": 7758.22,
+     "roi": 0.2727,
+     "p_neg": 0.0,
+     "acierto": 0.78
     },
     "GFS+ECMWF|0.05|medido|highest": {
-     "n": 286,
+     "n": 1433,
      "dias": 38,
-     "gasto": 1354.74,
-     "ganancia": 125.26,
-     "roi": 0.0925,
-     "p_neg": 0.02,
-     "acierto": 0.517
+     "gasto": 7517.66,
+     "ganancia": 162.34,
+     "roi": 0.0216,
+     "p_neg": 0.076,
+     "acierto": 0.536
     },
     "GFS+ECMWF|0.05|medido|lowest": {
-     "n": 0
+     "n": 3210,
+     "dias": 38,
+     "gasto": 20934.12,
+     "ganancia": 7595.88,
+     "roi": 0.3628,
+     "p_neg": 0.0,
+     "acierto": 0.889
     },
     "GFS+ECMWF|0.05|medido|1a mitad": {
-     "n": 99,
+     "n": 1573,
      "dias": 16,
-     "gasto": 415.66,
-     "ganancia": 44.34,
-     "roi": 0.1067,
-     "p_neg": 0.16,
-     "acierto": 0.465
+     "gasto": 9468.39,
+     "ganancia": 1691.61,
+     "roi": 0.1787,
+     "p_neg": 0.0,
+     "acierto": 0.709
     },
     "GFS+ECMWF|0.05|medido|2a mitad": {
-     "n": 187,
+     "n": 3070,
      "dias": 22,
-     "gasto": 939.08,
-     "ganancia": 80.92,
-     "roi": 0.0862,
-     "p_neg": 0.049,
-     "acierto": 0.545
+     "gasto": 18983.39,
+     "ganancia": 6066.61,
+     "roi": 0.3196,
+     "p_neg": 0.0,
+     "acierto": 0.816
     },
     "GFS+ECMWF|0.05|fijo 0c": {
-     "n": 326,
+     "n": 4973,
      "dias": 38,
-     "gasto": 1613.42,
-     "ganancia": 176.58,
-     "roi": 0.1094,
-     "p_neg": 0.002,
-     "acierto": 0.549
+     "gasto": 29835.3,
+     "ganancia": 8434.7,
+     "roi": 0.2827,
+     "p_neg": 0.0,
+     "acierto": 0.77
     },
     "GFS+ECMWF|0.05|fijo 1c": {
-     "n": 297,
+     "n": 4715,
      "dias": 38,
-     "gasto": 1427.29,
-     "ganancia": 152.71,
-     "roi": 0.107,
-     "p_neg": 0.007,
-     "acierto": 0.532
+     "gasto": 28833.07,
+     "ganancia": 7876.93,
+     "roi": 0.2732,
+     "p_neg": 0.0,
+     "acierto": 0.779
     },
     "GFS+ECMWF|0.05|fijo 2c": {
-     "n": 270,
+     "n": 4488,
      "dias": 38,
-     "gasto": 1308.79,
-     "ganancia": 91.21,
-     "roi": 0.0697,
-     "p_neg": 0.062,
-     "acierto": 0.519
+     "gasto": 28110.3,
+     "ganancia": 7359.7,
+     "roi": 0.2618,
+     "p_neg": 0.0,
+     "acierto": 0.79
     },
     "GFS+ECMWF|0.05|fijo 3c": {
-     "n": 239,
-     "dias": 37,
-     "gasto": 1153.09,
-     "ganancia": 66.91,
-     "roi": 0.058,
-     "p_neg": 0.13,
-     "acierto": 0.51
+     "n": 4217,
+     "dias": 38,
+     "gasto": 27046.89,
+     "ganancia": 6893.11,
+     "roi": 0.2549,
+     "p_neg": 0.0,
+     "acierto": 0.805
     }
    }
   }
  },
  "criterio": {
-  "roi_pos_y_p_neg_<5%": false,
-  "lambda_sin_0": false,
+  "roi_pos_y_p_neg_<5%": true,
+  "lambda_sin_0": true,
   "dos_mitades_pos": true,
-  "hay_ventaja": false
+  "hay_ventaja": true
  }
 }
