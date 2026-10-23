@@ -1,0 +1,15 @@
+"""Estaciones de los mercados de temperatura y ciudad de cada una (para la investigacion de velocidad)."""
+
+CIUDAD_ESTACION = {
+    "amsterdam": "EHAM", "ankara": "LTAC", "atlanta": "KATL", "austin": "KAUS", "beijing": "ZBAA",
+    "buenos-aires": "SAEZ", "busan": "RKPK", "cape-town": "FACT", "chengdu": "ZUUU", "chicago": "KORD",
+    "chongqing": "ZUCK", "dallas": "KDAL", "denver": "KBKF", "guangzhou": "ZGGG", "helsinki": "EFHK",
+    "houston": "KHOU", "istanbul": "LTFM", "jeddah": "OEJN", "jinan": "ZSJN", "karachi": "OPKC",
+    "kuala-lumpur": "WMKK", "london": "EGLC", "los-angeles": "KLAX", "lucknow": "VILK", "madrid": "LEMD",
+    "manila": "RPLL", "mexico-city": "MMMX", "miami": "KMIA", "milan": "LIMC", "moscow": "UUWW",
+    "munich": "EDDM", "nyc": "KLGA", "panama-city": "MPMG", "paris": "LFPB", "qingdao": "ZSQD",
+    "san-francisco": "KSFO", "sao-paulo": "SBGR", "seattle": "KSEA", "seoul": "RKSI", "shanghai": "ZSPD",
+    "shenzhen": "ZGSZ", "singapore": "WSSS", "taipei": "RCSS", "tel-aviv": "LLBG", "tokyo": "RJTT",
+    "toronto": "CYYZ", "warsaw": "EPWA", "wellington": "NZWN", "wuhan": "ZHHH", "zhengzhou": "ZHCC",
+}
+ESTACIONES = sorted(set(CIUDAD_ESTACION.values()))

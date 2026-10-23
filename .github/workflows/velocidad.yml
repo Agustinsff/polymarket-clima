@@ -1,0 +1,58 @@
+name: velocidad
+# INVESTIGACION (no opera): ¿llegariamos a tiempo a las cajas que mata un METAR? Ver velocidad/README.md.
+# Todo corre y guarda en la rama investigacion-velocidad (no en main). Una corrida por push (no se encadena).
+on:
+  push:
+    branches: [investigacion-velocidad]
+    paths: [velocidad/*.py, .github/workflows/velocidad.yml]
+permissions:
+  contents: write
+concurrency:
+  group: velocidad
+  cancel-in-progress: false
+jobs:
+  historia:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: investigacion-velocidad
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -r requirements.txt
+      - run: timeout 100m python velocidad/bajar_metar.py 35 || true
+      - name: Guardar en la rama investigacion-velocidad
+        run: |
+          git config user.name "polymarket-clima-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add velocidad/datos/ && git commit -m "velocidad: historia de METAR $(date -u +%Y-%m-%dT%H:%MZ)" || exit 0
+          for i in 1 2 3 4 5 6; do
+            git pull --rebase origin investigacion-velocidad && git push origin HEAD:investigacion-velocidad && exit 0
+            sleep $((RANDOM % 20 + 5))
+          done
+          exit 1
+  vivo:
+    runs-on: ubuntu-latest
+    timeout-minutes: 355
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: investigacion-velocidad
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -r requirements.txt
+      - name: Mirar METAR y libros (~5 h 30 min)
+        run: python velocidad/vivo.py 330 || true
+      - name: Guardar en la rama investigacion-velocidad
+        run: |
+          git config user.name "polymarket-clima-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add velocidad/datos/ && git commit -m "velocidad: datos en vivo $(date -u +%Y-%m-%dT%H:%MZ)" || exit 0
+          for i in 1 2 3 4 5 6; do
+            git pull --rebase origin investigacion-velocidad && git push origin HEAD:investigacion-velocidad && exit 0
+            sleep $((RANDOM % 20 + 5))
+          done
+          exit 1
