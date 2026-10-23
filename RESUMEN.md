@@ -1,12 +1,12 @@
 # Resumen polymarket-clima
 
-_Actualizado: 2026-10-23 13:51 (Montevideo). Todo es **en papel**: no se usa plata real._
+_Actualizado: 2026-10-23 14:06 (Montevideo). Todo es **en papel**: no se usa plata real._
 
 ## Estado de las tareas
 
 ⚠️ El cosechador no encuentra ningún mercado de temperatura abierto en Polymarket (¿dejaron de crearlos o les cambiaron el nombre?).
 
-- Última foto de liquidez: 2026-10-23T13:51:29
+- Última foto de liquidez: 2026-10-23T14:06:35
 - Monitor: mañana 2026-10-23, noche 2026-10-22
 - Prueba São Paulo: último día registrado 2026-10-22
 - Cosechador: último ciclo 2026-10-23 13:57 UTC, 0 mercados, 0 estaciones
@@ -74,11 +74,11 @@ Puntaje Brier (más bajo = mejor) en 674 cajas liquidadas: **modelo 0.0545** vs 
 
 | Modo | Serie calibrada | Liquidadas | Ganadas | Neto (10 acc. c/u) | Pendientes |
 |---|---|---|---|---|---|
-| taker | no | 134 | 39 | US$-34.37 | 123 |
-| maker | no | 444 | 47 | US$-46.38 | 404 |
-| cola_taker | no | 58 | 3 | US$+7.68 | 39 |
-| cola_maker | no | 140 | 3 | US$-8.74 | 100 |
-| no80_90 | no | 43 | 33 | US$-40.28 | 57 |
+| taker | no | 134 | 39 | US$-34.37 | 130 |
+| maker | no | 444 | 47 | US$-46.38 | 414 |
+| cola_taker | no | 58 | 3 | US$+7.68 | 43 |
+| cola_maker | no | 140 | 3 | US$-8.74 | 102 |
+| no80_90 | no | 43 | 33 | US$-40.28 | 60 |
 
 Taker en total: US$-66.97. _Con la comisión vieja (0,05 para todo) sería US$-66.97._
 
