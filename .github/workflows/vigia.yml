@@ -3,7 +3,7 @@ on:
   schedule:
     - cron: "23 * * * *"   # cada hora
   workflow_run:            # y apenas termina cada corrida de las cadenas
-    workflows: [reloj, cosechador]
+    workflows: [reloj, cosechador, reglas]
     types: [completed]
   workflow_dispatch:
 permissions:
