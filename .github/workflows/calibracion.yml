@@ -1,0 +1,23 @@
+name: calibracion
+on:
+  push:
+    branches: [calibracion-ciudades]
+    paths: [calib/calibracion.py, .github/workflows/calibracion.yml]
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  correr:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -r requirements.txt
+      - run: python calib/calibracion.py 2> calib/log.txt || true
+      - run: |
+          git config user.name "polymarket-clima-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add calib/ && git commit -m "calib: resultados" && git push
