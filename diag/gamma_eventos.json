@@ -1,0 +1,5633 @@
+{
+ "n_eventos": 351,
+ "eventos": [
+  {
+   "slug": "highest-temperature-in-jinan-on-may-20-2026",
+   "regex": true,
+   "ciudad_en_TZ": true,
+   "icao": "ZSJN",
+   "resolutionSource": "https://www.wunderground.com/history/daily/cn/jinan/ZSJN",
+   "tags": [
+    "weather",
+    "recurring",
+    "hide-from-new",
+    "daily-temperature",
+    "jinan",
+    "rewards-automation-50-4pt5-50",
+    "highest-temperature"
+   ],
+   "endDate": "2026-05-20T12:00:00Z"
+  },
+  {
+   "slug": "highest-temperature-in-zhengzhou-on-may-20-2026",
+   "regex": true,
+   "ciudad_en_TZ": true,
+   "icao": "ZHCC",
+   "resolutionSource": "https://www.wunderground.com/history/daily/cn/zhengzhou/ZHCC",
+   "tags": [
+    "weather",
+    "recurring",
+    "hide-from-new",
+    "daily-temperature",
+    "zhengzhou",
+    "rewards-automation-50-4pt5-50",
+    "highest-temperature"
+   ],
+   "endDate": "2026-05-20T12:00:00Z"
+  },
+  {
+   "slug": "highest-temperature-in-jinan-on-may-21-2026",
+   "regex": true,
+   "ciudad_en_TZ": true,
+   "icao": "ZSJN",
+   "resolutionSource": "https://www.wunderground.com/history/daily/cn/jinan/ZSJN",
+   "tags": [
+    "weather",
+    "recurring",
+    "hide-from-new",
+    "daily-temperature",
+    "jinan",
+    "rewards-automation-50-4pt5-50",
+    "highest-temperature"
+   ],
+   "endDate": "2026-05-21T12:00:00Z"
+  },
+  {
+   "slug": "highest-temperature-in-zhengzhou-on-may-21-2026",
+   "regex": true,
+   "ciudad_en_TZ": true,
+   "icao": "ZHCC",
+   "resolutionSource": "https://www.wunderground.com/history/daily/cn/zhengzhou/ZHCC",
+   "tags": [
+    "weather",
+    "recurring",
+    "hide-from-new",
+    "daily-temperature",
+    "zhengzhou",
+    "rewards-automation-50-4pt5-50",
+    "highest-temperature"
+   ],
+   "endDate": "2026-05-21T12:00:00Z"
+  },
+  {
+   "slug": "highest-temperature-in-cape-town-on-october-18-2026",
+   "regex": true,
+   "ciudad_en_TZ": true,
+   "icao": "FACT",
+   "resolutionSource": "https://www.weather.gov/wrh/timeseries?site=fact",
+   "tags": [
+    "weather",
+    "recurring",
+    "hide-from-new",
+    "daily-temperature",
+    "cape-town",
+    "highest-temperature"
+   ],
+   "endDate": "2026-10-18T12:00:00Z"
+  },
+  {
+   "slug": "lowest-temperature-in-sao-paulo-on-october-19-2026",
+   "regex": true,
+   "ciudad_en_TZ": true,
+   "icao": "SBGR",
+   "resolutionSource": "https://www.weather.gov/wrh/timeseries?site=sbgr",
+   "tags": [
+    "weather",
+    "recurring",
+    "hide-from-new",
+    "sao-paulo",
+    "daily-temperature",
+    "lowest-temperature"
+   ],
+   "endDate": "2026-10-19T12:00:00Z"
+  },
+  {
+   "slug": "highest-temperature-in-sao-paulo-on-october-19-2026",
+   "regex": true,
+   "ciudad_en_TZ": true,
+   "icao": "SBGR",
+   "resolutionSource": "https://www.weather.gov/wrh/timeseries?site=sbgr",
+   "tags": [
+    "weather",
+    "recurring",
+    "hide-from-new",
+    "sao-paulo",
+    "daily-temperature",
+    "highest-temperature"
+   ],
+   "endDate": "2026-10-19T12:00:00Z"
+  },
+  {
+   "slug": "lowest-temperature-in-shenzhen-on-october-21-2026",
+   "regex": true,
+   "ciudad_en_TZ": true,
+   "icao": "ZGSZ",
+   "resolutionSource": "https://www.weather.gov/wrh/timeseries?site=zgsz",
+   "tags": [
+    "weather",
+    "recurring",
+    "hide-from-new",
+    "daily-temperature",
+    "shenzhen",
+    "lowest-temperature"
+   ],
+   "endDate": "2026-10-21T12:00:00Z"
+  },
+  {
+   "slug": "lowest-temperature-in-london-on-october-22-2026",
+   "regex": true,
+   "ciudad_en_TZ": true,
+   "icao": "EGLC",
+   "resolutionSource": "https://www.weather.gov/wrh/timeseries?site=eglc",
+   "tags": [
+    "weather",
+    "recurring",
+    "hide-from-new",
+    "london",
+    "daily-temperature",
+    "lowest-temperature"
+   ],
+   "endDate": "2026-10-22T12:00:00Z"
+  },
+  {
+   "slug": "lowest-temperature-in-paris-on-october-22-2026",
+   "regex": true,
+   "ciudad_en_TZ": true,
+   "icao": "LFPB",
+   "resolutionSource": "https://www.weather.gov/wrh/timeseries?site=lfpb",
+   "tags": [
+    "weather",
+    "recurring",
+    "hide-from-new",
+    "paris",
+    "france",
+    "daily-temperature",
+    "lowest-temperature"
+   ],
+   "endDate": "2026-10-22T12:00:00Z"
+  },
+  {
+   "slug": "lowest-temperature-in-seoul-on-october-22-2026",
+   "regex": true,
+   "ciudad_en_TZ": true,
+   "icao": "RKSI",
+   "resolutionSource": "https://www.weather.gov/wrh/timeseries?site=rksi",
+   "tags": [
+    "weather",
+    "recurring",
+    "hide-from-new",
+    "seoul",
+    "daily-temperature",
+    "lowest-temperature"
+   ],
+   "endDate": "2026-10-22T12:00:00Z"
+  },
+  {
+   "slug": "lowest-temperature-in-ankara-on-october-22-2026",
+   "regex": true,
+   "ciudad_en_TZ": true,
+   "icao": "LTAC",
+   "resolutionSource": "https://www.weather.gov/wrh/timeseries?site=ltac",
+   "tags": [
+    "weather",
+    "recurring",
+    "hide-from-new",
+    "ankara",
+    "daily-temperature",
+    "lowest-temperature"
+   ],
+   "endDate": "2026-10-22T12:00:00Z"
+  },
+  {
+   "slug": "lowest-temperature-in-wellington-on-october-22-2026",
+   "regex": true,
+   "ciudad_en_TZ": true,
+   "icao": "NZWN",
+   "resolutionSource": "https://www.weather.gov/wrh/timeseries?site=nzwn",
+   "tags": [
+    "weather",
+    "recurring",
+    "hide-from-new",
+    "auckland",
+    "daily-temperature",
+    "lowest-temperature"
+   ],
+   "endDate": "2026-10-22T12:00:00Z"
+  },
+  {
+   "slug": "lowest-temperature-in-lucknow-on-october-22-2026",
+   "regex": true,
+   "ciudad_en_TZ": true,
+   "icao": "VILK",
+   "resolutionSource": "https://www.weather.gov/wrh/timeseries?site=vilk",
+   "tags": [
+    "weather",
+    "recurring",
+    "hide-from-new",
+    "daily-temperature",
+    "lucknow",
+    "lowest-temperature"
+   ],
+   "endDate": "2026-10-22T12:00:00Z"
+  },
+  {
+   "slug": "lowest-temperature-in-munich-on-october-22-2026",
+   "regex": true,
+   "ciudad_en_TZ": true,
+   "icao": "EDDM",
+   "resolutionSource": "https://www.weather.gov/wrh/timeseries?site=eddm",
+   "tags": [
+    "weather",
+    "recurring",
+    "hide-from-new",
+    "daily-temperature",
+    "munich",
+    "lowest-temperature"
+   ],
+   "endDate": "2026-10-22T12:00:00Z"
+  },
+  {
+   "slug": "lowest-temperature-in-tel-aviv-on-october-22-2026",
+   "regex": true,
+   "ciudad_en_TZ": true,
+   "icao": "LLBG",
+   "resolutionSource": null,
+   "tags": [
+    "weather",
+    "recurring",
+    "hide-from-new",
+    "daily-temperature",
+    "tel-aviv",
+    "lowest-temperature"
+   ],
+   "endDate": "2026-10-22T12:00:00Z"
+  },
+  {
+   "slug": "lowest-temperature-in-tokyo-on-october-22-2026",
+   "regex": true,
+   "ciudad_en_TZ": true,
+   "icao": "RJTT",
+   "resolutionSource": "https://www.weather.gov/wrh/timeseries?site=rjtt",
+   "tags": [
+    "weather",
+    "recurring",
+    "hide-from-new",
+    "daily-temperature",
+    "tokyo",
+    "lowest-temperature"
+   ],
+   "endDate": "2026-10-22T12:00:00Z"
+  },
+  {
+   "slug": "lowest-temperature-in-shanghai-on-october-22-2026",
+   "regex": true,
+   "ciudad_en_TZ": true,
+   "icao": "ZSPD",
+   "resolutionSource": "https://www.weather.gov/wrh/timeseries?site=zspd",
+   "tags": [
+    "weather",
+    "recurring",
+    "hide-from-new",
+    "daily-temperature",
+    "shanghai",
+    "lowest-temperature"
+   ],
+   "endDate": "2026-10-22T12:00:00Z"
+  },
+  {
+   "slug": "lowest-temperature-in-milan-on-october-22-2026",
+   "regex": true,
+   "ciudad_en_TZ": true,
+   "icao": "LIMC",
+   "resolutionSource": "https://www.weather.gov/wrh/timeseries?site=limc",
+   "tags": [
+    "weather",
+    "recurring",
+    "hide-from-new",
+    "daily-temperature",
+    "milan",
+    "lowest-temperature"
+   ],
+   "endDate": "2026-10-22T12:00:00Z"
+  },
+  {
+   "slug": "lowest-temperature-in-madrid-on-october-22-2026",
+   "regex": true,
+   "ciudad_en_TZ": true,
+   "icao": "LEMD",
+   "resolutionSource": "https://www.weather.gov/wrh/timeseries?site=lemd",
+   "tags": [
+    "weather",
+    "recurring",
+    "hide-from-new",
+    "daily-temperature",
+    "madrid",
+    "lowest-temperature"
+   ],
+   "endDate": "2026-10-22T12:00:00Z"
+  },
+  {
+   "slug": "lowest-temperature-in-warsaw-on-october-22-2026",
+   "regex": true,
+   "ciudad_en_TZ": true,
+   "icao": "EPWA",
+   "resolutionSource": "https://www.weather.gov/wrh/timeseries?site=epwa",
+   "tags": [
+    "weather",
+    "recurring",
+    "hide-from-new",
+    "daily-temperature",
+    "warsaw",
+    "lowest-temperature"
+   ],
+   "endDate": "2026-10-22T12:00:00Z"
+  },
+  {
+   "slug": "lowest-temperature-in-chongqing-on-october-22-2026",
+   "regex": true,
+   "ciudad_en_TZ": true,
+   "icao": "ZUCK",
+   "resolutionSource": "https://www.weather.gov/wrh/timeseries?site=zuck",
+   "tags": [
+    "weather",
+    "recurring",
+    "hide-from-new",
+    "daily-temperature",
+    "chongqing",
+    "lowest-temperature"
+   ],
+   "endDate": "2026-10-22T12:00:00Z"
+  },
+  {
+   "slug": "lowest-temperature-in-beijing-on-october-22-2026",
+   "regex": true,
+   "ciudad_en_TZ": true,
+   "icao": "ZBAA",
+   "resolutionSource": "https://www.weather.gov/wrh/timeseries?site=zbaa",
+   "tags": [
+    "weather",
+    "recurring",
+    "hide-from-new",
+    "daily-temperature",
+    "beijing",
+    "lowest-temperature"
+   ],
+   "endDate": "2026-10-22T12:00:00Z"
+  },
+  {
+   "slug": "lowest-temperature-in-wuhan-on-october-22-2026",
+   "regex": true,
+   "ciudad_en_TZ": true,
+   "icao": "ZHHH",
+   "resolutionSource": "https://www.weather.gov/wrh/timeseries?site=zhhh",
+   "tags": [
+    "weather",
+    "recurring",
+    "hide-from-new",
+    "daily-temperature",
+    "wuhan",
+    "lowest-temperature"
+   ],
+   "endDate": "2026-10-22T12:00:00Z"
+  },
+  {
+   "slug": "lowest-temperature-in-chengdu-on-october-22-2026",
+   "regex": true,
+   "ciudad_en_TZ": true,
+   "icao": "ZUUU",
+   "resolutionSource": "https://www.weather.gov/wrh/timeseries?site=zuuu",
+   "tags": [
+    "weather",
+    "recurring",
+    "hide-from-new",
+    "daily-temperature",
+    "chengdu",
+    "lowest-temperature"
+   ],
+   "endDate": "2026-10-22T12:00:00Z"
+  },
+  {
+   "slug": "lowest-temperature-in-shenzhen-on-october-22-2026",
+   "regex": true,
+   "ciudad_en_TZ": true,
+   "icao": "ZGSZ",
+   "resolutionSource": "https://www.weather.gov/wrh/timeseries?site=zgsz",
+   "tags": [
+    "weather",
+    "recurring",
+    "hide-from-new",
+    "daily-temperature",
+    "shenzhen",
+    "lowest-temperature"
+   ],
+   "endDate": "2026-10-22T12:00:00Z"
+  },
+  {
+   "slug": "lowest-temperature-in-moscow-on-october-22-2026",
+   "regex": true,
+   "ciudad_en_TZ": true,
+   "icao": "UUWW",
+   "resolutionSource": null,
+   "tags": [
+    "weather",
+    "recurring",
+    "hide-from-new",
+    "daily-temperature",
+    "moscow",
+    "lowest-temperature"
+   ],
+   "endDate": "2026-10-22T12:00:00Z"
+  },
+  {
+   "slug": "lowest-temperature-in-istanbul-on-october-22-2026",
+   "regex": true,
+   "ciudad_en_TZ": true,
+   "icao": "LTFM",
+   "resolutionSource": null,
+   "tags": [
+    "weather",
+    "recurring",
+    "hide-from-new",
+    "daily-temperature",
+    "istanbul",
+    "lowest-temperature"
+   ],
+   "endDate": "2026-10-22T12:00:00Z"
+  },
+  {
+   "slug": "lowest-temperature-in-busan-on-october-22-2026",
+   "regex": true,
+   "ciudad_en_TZ": true,
+   "icao": "RKPK",
+   "resolutionSource": "https://www.weather.gov/wrh/timeseries?site=rkpk",
+   "tags": [
+    "weather",
+    "recurring",
+    "hide-from-new",
+    "daily-temperature",
+    "busan",
+    "lowest-temperature"
+   ],
+   "endDate": "2026-10-22T12:00:00Z"
+  },
+  {
+   "slug": "lowest-temperature-in-amsterdam-on-october-22-2026",
+   "regex": true,
+   "ciudad_en_TZ": true,
+   "icao": "EHAM",
+   "resolutionSource": "https://www.weather.gov/wrh/timeseries?site=eham",
+   "tags": [
+    "weather",
+    "recurring",
+    "hide-from-new",
+    "daily-temperature",
+    "amsterdam",
+    "lowest-temperature"
+   ],
+   "endDate": "2026-10-22T12:00:00Z"
+  },
+  {
+   "slug": "lowest-temperature-in-helsinki-on-october-22-2026",
+   "regex": true,
+   "ciudad_en_TZ": true,
+   "icao": "EFHK",
+   "resolutionSource": "https://www.weather.gov/wrh/timeseries?site=efhk",
+   "tags": [
+    "weather",
+    "recurring",
+    "hide-from-new",
+    "daily-temperature",
+    "helsinki",
+    "lowest-temperature"
+   ],
+   "endDate": "2026-10-22T12:00:00Z"
+  },
+  {
+   "slug": "lowest-temperature-in-jeddah-on-october-22-2026",
+   "regex": true,
+   "ciudad_en_TZ": true,
+   "icao": "OEJN",
+   "resolutionSource": "https://www.weather.gov/wrh/timeseries?site=oejn",
+   "tags": [
+    "weather",
+    "recurring",
+    "hide-from-new",
+    "daily-temperature",
+    "jeddah",
+    "lowest-temperature"
+   ],
+   "endDate": "2026-10-22T12:00:00Z"
+  },
+  {
+   "slug": "lowest-temperature-in-cape-town-on-october-22-2026",
+   "regex": true,
+   "ciudad_en_TZ": true,
+   "icao": "FACT",
+   "resolutionSource": "https://www.weather.gov/wrh/timeseries?site=fact",
+   "tags": [
+    "weather",
+    "recurring",
+    "hide-from-new",
+    "daily-temperature",
+    "cape-town",
+    "lowest-temperature"
+   ],
+   "endDate": "2026-10-22T12:00:00Z"
+  },
+  {
+   "slug": "lowest-temperature-in-guangzhou-on-october-22-2026",
+   "regex": true,
+   "ciudad_en_TZ": true,
+   "icao": "ZGGG",
+   "resolutionSource": "https://www.weather.gov/wrh/timeseries?site=zggg",
+   "tags": [
+    "weather",
+    "recurring",
+    "hide-from-new",
+    "daily-temperature",
+    "guangzhou",
+    "lowest-temperature"
+   ],
+   "endDate": "2026-10-22T12:00:00Z"
+  },
+  {
+   "slug": "lowest-temperature-in-qingdao-on-october-22-2026",
+   "regex": true,
+   "ciudad_en_TZ": true,
+   "icao": "ZSQD",
+   "resolutionSource": "https://www.weather.gov/wrh/timeseries?site=zsqd",
+   "tags": [
+    "weather",
+    "recurring",
+    "hide-from-new",
+    "daily-temperature",
+    "qingdao",
+    "lowest-temperature"
+   ],
+   "endDate": "2026-10-22T12:00:00Z"
+  },
+  {
+   "slug": "lowest-temperature-in-karachi-on-october-22-2026",
+   "regex": true,
+   "ciudad_en_TZ": true,
+   "icao": "OPKC",
+   "resolutionSource": "https://www.weather.gov/wrh/timeseries?site=opkc",
+   "tags": [
+    "weather",
+    "recurring",
+    "hide-from-new",
+    "daily-temperature",
+    "karachi",
+    "lowest-temperature"
+   ],
+   "endDate": "2026-10-22T12:00:00Z"
+  },
+  {
+   "slug": "highest-temperature-in-london-on-october-22-2026",
+   "regex": true,
+   "ciudad_en_TZ": true,
+   "icao": "EGLC",
+   "resolutionSource": "https://www.weather.gov/wrh/timeseries?site=eglc",
+   "tags": [
+    "weather",
+    "recurring",
+    "hide-from-new",
+    "london",
+    "daily-temperature",
+    "highest-temperature"
+   ],
+   "endDate": "2026-10-22T12:00:00Z"
+  },
+  {
+   "slug": "highest-temperature-in-paris-on-october-22-2026",
+   "regex": true,
+   "ciudad_en_TZ": true,
+   "icao": "LFPB",
+   "resolutionSource": "https://www.weather.gov/wrh/timeseries?site=lfpb",
+   "tags": [
+    "weather",
+    "recurring",
+    "hide-from-new",
+    "paris",
+    "france",
+    "daily-temperature",
+    "highest-temperature"
+   ],
+   "endDate": "2026-10-22T12:00:00Z"
+  },
+  {
+   "slug": "highest-temperature-in-seoul-on-october-22-2026",
+   "regex": true,
+   "ciudad_en_TZ": true,
+   "icao": "RKSI",
+   "resolutionSource": "https://www.weather.gov/wrh/timeseries?site=rksi",
+   "tags": [
+    "weather",
+    "recurring",
+    "hide-from-new",
+    "seoul",
+    "daily-temperature",
+    "highest-temperature"
+   ],
+   "endDate": "2026-10-22T12:00:00Z"
+  },
+  {
+   "slug": "highest-temperature-in-ankara-on-october-22-2026",
+   "regex": true,
+   "ciudad_en_TZ": true,
+   "icao": "LTAC",
+   "resolutionSource": "https://www.weather.gov/wrh/timeseries?site=ltac",
+   "tags": [
+    "weather",
+    "recurring",
+    "hide-from-new",
+    "ankara",
+    "daily-temperature",
+    "highest-temperature"
+   ],
+   "endDate": "2026-10-22T12:00:00Z"
+  },
+  {
+   "slug": "highest-temperature-in-wellington-on-october-22-2026",
+   "regex": true,
+   "ciudad_en_TZ": true,
+   "icao": "NZWN",
+   "resolutionSource": "https://www.weather.gov/wrh/timeseries?site=nzwn",
+   "tags": [
+    "weather",
+    "recurring",
+    "hide-from-new",
+    "auckland",
+    "daily-temperature",
+    "highest-temperature"
+   ],
+   "endDate": "2026-10-22T12:00:00Z"
+  },
+  {
+   "slug": "highest-temperature-in-lucknow-on-october-22-2026",
+   "regex": true,
+   "ciudad_en_TZ": true,
+   "icao": "VILK",
+   "resolutionSource": "https://www.weather.gov/wrh/timeseries?site=vilk",
+   "tags": [
+    "weather",
+    "recurring",
+    "hide-from-new",
+    "daily-temperature",
+    "lucknow",
+    "highest-temperature"
+   ],
+   "endDate": "2026-10-22T12:00:00Z"
+  },
+  {
+   "slug": "highest-temperature-in-munich-on-october-22-2026",
+   "regex": true,
+   "ciudad_en_TZ": true,
+   "icao": "EDDM",
+   "resolutionSource": "https://www.weather.gov/wrh/timeseries?site=eddm",
+   "tags": [
+    "weather",
+    "recurring",
+    "hide-from-new",
+    "daily-temperature",
+    "munich",
+    "highest-temperature"
+   ],
+   "endDate": "2026-10-22T12:00:00Z"
+  },
+  {
+   "slug": "highest-temperature-in-tel-aviv-on-october-22-2026",
+   "regex": true,
+   "ciudad_en_TZ": true,
+   "icao": "LLBG",
+   "resolutionSource": null,
+   "tags": [
+    "weather",
+    "recurring",
+    "hide-from-new",
+    "daily-temperature",
+    "tel-aviv",
+    "highest-temperature"
+   ],
+   "endDate": "2026-10-22T12:00:00Z"
+  },
+  {
+   "slug": "highest-temperature-in-tokyo-on-october-22-2026",
+   "regex": true,
+   "ciudad_en_TZ": true,
+   "icao": "RJTT",
+   "resolutionSource": "https://www.weather.gov/wrh/timeseries?site=rjtt",
+   "tags": [
+    "weather",
+    "recurring",
+    "hide-from-new",
+    "daily-temperature",
+    "tokyo",
+    "highest-temperature"
+   ],
+   "endDate": "2026-10-22T12:00:00Z"
+  },
+  {
+   "slug": "highest-temperature-in-shanghai-on-october-22-2026",
+   "regex": true,
+   "ciudad_en_TZ": true,
+   "icao": "ZSPD",
+   "resolutionSource": "https://www.weather.gov/wrh/timeseries?site=zspd",
+   "tags": [
+    "weather",
+    "recurring",
+    "hide-from-new",
+    "daily-temperature",
+    "shanghai",
+    "highest-temperature"
+   ],
+   "endDate": "2026-10-22T12:00:00Z"
+  },
+  {
+   "slug": "highest-temperature-in-singapore-on-october-22-2026",
+   "regex": true,
+   "ciudad_en_TZ": true,
+   "icao": "WSSS",
+   "resolutionSource": "https://www.weather.gov/wrh/timeseries?site=wsss",
+   "tags": [
+    "weather",
+    "recurring",
+    "hide-from-new",
+    "daily-temperature",
+    "singapore",
+    "highest-temperature"
+   ],
+   "endDate": "2026-10-22T12:00:00Z"
+  },
+  {
+   "slug": "highest-temperature-in-milan-on-october-22-2026",
+   "regex": true,
+   "ciudad_en_TZ": true,
+   "icao": "LIMC",
+   "resolutionSource": "https://www.weather.gov/wrh/timeseries?site=limc",
+   "tags": [
+    "weather",
+    "recurring",
+    "hide-from-new",
+    "daily-temperature",
+    "milan",
+    "highest-temperature"
+   ],
+   "endDate": "2026-10-22T12:00:00Z"
+  },
+  {
+   "slug": "highest-temperature-in-madrid-on-october-22-2026",
+   "regex": true,
+   "ciudad_en_TZ": true,
+   "icao": "LEMD",
+   "resolutionSource": "https://www.weather.gov/wrh/timeseries?site=lemd",
+   "tags": [
+    "weather",
+    "recurring",
+    "hide-from-new",
+    "daily-temperature",
+    "madrid",
+    "highest-temperature"
+   ],
+   "endDate": "2026-10-22T12:00:00Z"
+  },
+  {
+   "slug": "highest-temperature-in-warsaw-on-october-22-2026",
+   "regex": true,
+   "ciudad_en_TZ": true,
+   "icao": "EPWA",
+   "resolutionSource": "https://www.weather.gov/wrh/timeseries?site=epwa",
+   "tags": [
+    "weather",
+    "recurring",
+    "hide-from-new",
+    "daily-temperature",
+    "warsaw",
+    "highest-temperature"
+   ],
+   "endDate": "2026-10-22T12:00:00Z"
+  },
+  {
+   "slug": "highest-temperature-in-chongqing-on-october-22-2026",
+   "regex": true,
+   "ciudad_en_TZ": true,
+   "icao": "ZUCK",
+   "resolutionSource": "https://www.weather.gov/wrh/timeseries?site=zuck",
+   "tags": [
+    "weather",
+    "recurring",
+    "hide-from-new",
+    "daily-temperature",
+    "chongqing",
+    "highest-temperature"
+   ],
+   "endDate": "2026-10-22T12:00:00Z"
+  },
+  {
+   "slug": "highest-temperature-in-beijing-on-october-22-2026",
+   "regex": true,
+   "ciudad_en_TZ": true,
+   "icao": "ZBAA",
+   "resolutionSource": "https://www.weather.gov/wrh/timeseries?site=zbaa",
+   "tags": [
+    "weather",
+    "recurring",
+    "hide-from-new",
+    "daily-temperature",
+    "beijing",
+    "highest-temperature"
+   ],
+   "endDate": "2026-10-22T12:00:00Z"
+  },
+  {
+   "slug": "highest-temperature-in-wuhan-on-october-22-2026",
+   "regex": true,
+   "ciudad_en_TZ": true,
+   "icao": "ZHHH",
+   "resolutionSource": "https://www.weather.gov/wrh/timeseries?site=zhhh",
+   "tags": [
+    "weather",
+    "recurring",
+    "hide-from-new",
+    "daily-temperature",
+    "wuhan",
+    "highest-temperature"
+   ],
+   "endDate": "2026-10-22T12:00:00Z"
+  },
+  {
+   "slug": "highest-temperature-in-chengdu-on-october-22-2026",
+   "regex": true,
+   "ciudad_en_TZ": true,
+   "icao": "ZUUU",
+   "resolutionSource": "https://www.weather.gov/wrh/timeseries?site=zuuu",
+   "tags": [
+    "weather",
+    "recurring",
+    "hide-from-new",
+    "daily-temperature",
+    "chengdu",
+    "highest-temperature"
+   ],
+   "endDate": "2026-10-22T12:00:00Z"
+  },
+  {
+   "slug": "highest-temperature-in-shenzhen-on-october-22-2026",
+   "regex": true,
+   "ciudad_en_TZ": true,
+   "icao": "ZGSZ",
+   "resolutionSource": "https://www.weather.gov/wrh/timeseries?site=zgsz",
+   "tags": [
+    "weather",
+    "recurring",
+    "hide-from-new",
+    "daily-temperature",
+    "shenzhen",
+    "highest-temperature"
+   ],
+   "endDate": "2026-10-22T12:00:00Z"
+  },
+  {
+   "slug": "highest-temperature-in-moscow-on-october-22-2026",
+   "regex": true,
+   "ciudad_en_TZ": true,
+   "icao": "UUWW",
+   "resolutionSource": null,
+   "tags": [
+    "weather",
+    "recurring",
+    "hide-from-new",
+    "daily-temperature",
+    "moscow",
+    "highest-temperature"
+   ],
+   "endDate": "2026-10-22T12:00:00Z"
+  },
+  {
+   "slug": "highest-temperature-in-istanbul-on-october-22-2026",
+   "regex": true,
+   "ciudad_en_TZ": true,
+   "icao": "LTFM",
+   "resolutionSource": null,
+   "tags": [
+    "weather",
+    "recurring",
+    "hide-from-new",
+    "daily-temperature",
+    "istanbul",
+    "highest-temperature"
+   ],
+   "endDate": "2026-10-22T12:00:00Z"
+  },
+  {
+   "slug": "highest-temperature-in-busan-on-october-22-2026",
+   "regex": true,
+   "ciudad_en_TZ": true,
+   "icao": "RKPK",
+   "resolutionSource": "https://www.weather.gov/wrh/timeseries?site=rkpk",
+   "tags": [
+    "weather",
+    "recurring",
+    "hide-from-new",
+    "daily-temperature",
+    "busan",
+    "highest-temperature"
+   ],
+   "endDate": "2026-10-22T12:00:00Z"
+  },
+  {
+   "slug": "highest-temperature-in-amsterdam-on-october-22-2026",
+   "regex": true,
+   "ciudad_en_TZ": true,
+   "icao": "EHAM",
+   "resolutionSource": "https://www.weather.gov/wrh/timeseries?site=eham",
+   "tags": [
+    "weather",
+    "recurring",
+    "hide-from-new",
+    "daily-temperature",
+    "amsterdam",
+    "highest-temperature"
+   ],
+   "endDate": "2026-10-22T12:00:00Z"
+  },
+  {
+   "slug": "highest-temperature-in-helsinki-on-october-22-2026",
+   "regex": true,
+   "ciudad_en_TZ": true,
+   "icao": "EFHK",
+   "resolutionSource": "https://www.weather.gov/wrh/timeseries?site=efhk",
+   "tags": [
+    "weather",
+    "recurring",
+    "hide-from-new",
+    "daily-temperature",
+    "helsinki",
+    "highest-temperature"
+   ],
+   "endDate": "2026-10-22T12:00:00Z"
+  },
+  {
+   "slug": "highest-temperature-in-kuala-lumpur-on-october-22-2026",
+   "regex": true,
+   "ciudad_en_TZ": true,
+   "icao": "WMKK",
+   "resolutionSource": "https://www.weather.gov/wrh/timeseries?site=wmkk",
+   "tags": [
+    "weather",
+    "recurring",
+    "hide-from-new",
+    "daily-temperature",
+    "kuala-lampur",
+    "highest-temperature"
+   ],
+   "endDate": "2026-10-22T12:00:00Z"
+  },
+  {
+   "slug": "highest-temperature-in-jeddah-on-october-22-2026",
+   "regex": true,
+   "ciudad_en_TZ": true,
+   "icao": "OEJN",
+   "resolutionSource": "https://www.weather.gov/wrh/timeseries?site=oejn",
+   "tags": [
+    "weather",
+    "recurring",
+    "hide-from-new",
+    "daily-temperature",
+    "jeddah",
+    "highest-temperature"
+   ],
+   "endDate": "2026-10-22T12:00:00Z"
+  },
+  {
+   "slug": "highest-temperature-in-cape-town-on-october-22-2026",
+   "regex": true,
+   "ciudad_en_TZ": true,
+   "icao": "FACT",
+   "resolutionSource": "https://www.weather.gov/wrh/timeseries?site=fact",
+   "tags": [
+    "weather",
+    "recurring",
+    "hide-from-new",
+    "daily-temperature",
+    "cape-town",
+    "highest-temperature"
+   ],
+   "endDate": "2026-10-22T12:00:00Z"
+  },
+  {
+   "slug": "highest-temperature-in-guangzhou-on-october-22-2026",
+   "regex": true,
+   "ciudad_en_TZ": true,
+   "icao": "ZGGG",
+   "resolutionSource": "https://www.weather.gov/wrh/timeseries?site=zggg",
+   "tags": [
+    "weather",
+    "recurring",
+    "hide-from-new",
+    "daily-temperature",
+    "guangzhou",
+    "highest-temperature"
+   ],
+   "endDate": "2026-10-22T12:00:00Z"
+  },
+  {
+   "slug": "highest-temperature-in-qingdao-on-october-22-2026",
+   "regex": true,
+   "ciudad_en_TZ": true,
+   "icao": "ZSQD",
+   "resolutionSource": "https://www.weather.gov/wrh/timeseries?site=zsqd",
+   "tags": [
+    "weather",
+    "recurring",
+    "hide-from-new",
+    "daily-temperature",
+    "qingdao",
+    "highest-temperature"
+   ],
+   "endDate": "2026-10-22T12:00:00Z"
+  },
+  {
+   "slug": "highest-temperature-in-karachi-on-october-22-2026",
+   "regex": true,
+   "ciudad_en_TZ": true,
+   "icao": "OPKC",
+   "resolutionSource": "https://www.weather.gov/wrh/timeseries?site=opkc",
+   "tags": [
+    "weather",
+    "recurring",
+    "hide-from-new",
+    "daily-temperature",
+    "karachi",
+    "highest-temperature"
+   ],
+   "endDate": "2026-10-22T12:00:00Z"
+  },
+  {
+   "slug": "highest-temperature-in-manila-on-october-22-2026",
+   "regex": true,
+   "ciudad_en_TZ": true,
+   "icao": "RPLL",
+   "resolutionSource": "https://www.weather.gov/wrh/timeseries?site=rpll",
+   "tags": [
+    "weather",
+    "recurring",
+    "hide-from-new",
+    "daily-temperature",
+    "manila",
+    "highest-temperature"
+   ],
+   "endDate": "2026-10-22T12:00:00Z"
+  },
+  {
+   "slug": "lowest-temperature-in-sao-paulo-on-october-22-2026",
+   "regex": true,
+   "ciudad_en_TZ": true,
+   "icao": "SBGR",
+   "resolutionSource": "https://www.weather.gov/wrh/timeseries?site=sbgr",
+   "tags": [
+    "weather",
+    "recurring",
+    "hide-from-new",
+    "sao-paulo",
+    "daily-temperature",
+    "lowest-temperature"
+   ],
+   "endDate": "2026-10-22T12:00:00Z"
+  },
+  {
+   "slug": "lowest-temperature-in-buenos-aires-on-october-22-2026",
+   "regex": true,
+   "ciudad_en_TZ": true,
+   "icao": "SAEZ",
+   "resolutionSource": "https://www.weather.gov/wrh/timeseries?site=saez",
+   "tags": [
+    "weather",
+    "recurring",
+    "hide-from-new",
+    "buenos-aires",
+    "daily-temperature",
+    "lowest-temperature"
+   ],
+   "endDate": "2026-10-22T12:00:00Z"
+  },
+  {
+   "slug": "lowest-temperature-in-toronto-on-october-22-2026",
+   "regex": true,
+   "ciudad_en_TZ": true,
+   "icao": "CYYZ",
+   "resolutionSource": "https://www.weather.gov/wrh/timeseries?site=cyyz",
+   "tags": [
+    "weather",
+    "recurring",
+    "hide-from-new",
+    "toronto",
+    "daily-temperature",
+    "lowest-temperature"
+   ],
+   "endDate": "2026-10-22T12:00:00Z"
+  },
+  {
+   "slug": "lowest-temperature-in-mexico-city-on-october-22-2026",
+   "regex": true,
+   "ciudad_en_TZ": true,
+   "icao": "MMMX",
+   "resolutionSource": "https://www.weather.gov/wrh/timeseries?site=mmmx",
+   "tags": [
+    "weather",
+    "recurring",
+    "hide-from-new",
+    "daily-temperature",
+    "mexico",
+    "lowest-temperature"
+   ],
+   "endDate": "2026-10-22T12:00:00Z"
+  },
+  {
+   "slug": "highest-temperature-in-sao-paulo-on-october-22-2026",
+   "regex": true,
+   "ciudad_en_TZ": true,
+   "icao": "SBGR",
+   "resolutionSource": "https://www.weather.gov/wrh/timeseries?site=sbgr",
+   "tags": [
+    "weather",
+    "recurring",
+    "hide-from-new",
+    "sao-paulo",
+    "daily-temperature",
+    "highest-temperature"
+   ],
+   "endDate": "2026-10-22T12:00:00Z"
+  },
+  {
+   "slug": "highest-temperature-in-buenos-aires-on-october-22-2026",
+   "regex": true,
+   "ciudad_en_TZ": true,
+   "icao": "SAEZ",
+   "resolutionSource": "https://www.weather.gov/wrh/timeseries?site=saez",
+   "tags": [
+    "weather",
+    "recurring",
+    "hide-from-new",
+    "buenos-aires",
+    "daily-temperature",
+    "highest-temperature"
+   ],
+   "endDate": "2026-10-22T12:00:00Z"
+  },
+  {
+   "slug": "highest-temperature-in-toronto-on-october-22-2026",
+   "regex": true,
+   "ciudad_en_TZ": true,
+   "icao": "CYYZ",
+   "resolutionSource": "https://www.weather.gov/wrh/timeseries?site=cyyz",
+   "tags": [
+    "weather",
+    "recurring",
+    "hide-from-new",
+    "toronto",
+    "daily-temperature",
+    "highest-temperature"
+   ],
+   "endDate": "2026-10-22T12:00:00Z"
+  },
+  {
+   "slug": "highest-temperature-in-mexico-city-on-october-22-2026",
+   "regex": true,
+   "ciudad_en_TZ": true,
+   "icao": "MMMX",
+   "resolutionSource": "https://www.weather.gov/wrh/timeseries?site=mmmx",
+   "tags": [
+    "weather",
+    "recurring",
+    "hide-from-new",
+    "daily-temperature",
+    "mexico",
+    "highest-temperature"
+   ],
+   "endDate": "2026-10-22T12:00:00Z"
+  },
+  {
+   "slug": "highest-temperature-in-panama-city-on-october-22-2026",
+   "regex": true,
+   "ciudad_en_TZ": true,
+   "icao": "MPMG",
+   "resolutionSource": "https://www.weather.gov/wrh/timeseries?site=mpmg",
+   "tags": [
+    "weather",
+    "recurring",
+    "hide-from-new",
+    "daily-temperature",
+    "panama",
+    "highest-temperature"
+   ],
+   "endDate": "2026-10-22T12:00:00Z"
+  },
+  {
+   "slug": "lowest-temperature-in-london-on-october-23-2026",
+   "regex": true,
+   "ciudad_en_TZ": true,
+   "icao": null,
+   "resolutionSource": "https://aviationweather.gov/api/data/metar?ids=EGLC&format=raw&date=2026-10-23T23:00:00Z&hours=27",
+   "tags": [
+    "weather",
+    "recurring",
+    "hide-from-new",
+    "london",
+    "daily-temperature",
+    "lowest-temperature"
+   ],
+   "endDate": "2026-10-23T12:00:00Z"
+  },
+  {
+   "slug": "lowest-temperature-in-paris-on-october-23-2026",
+   "regex": true,
+   "ciudad_en_TZ": true,
+   "icao": null,
+   "resolutionSource": "https://aviationweather.gov/api/data/metar?ids=LFPB&format=raw&date=2026-10-23T22:00:00Z&hours=27",
+   "tags": [
+    "weather",
+    "recurring",
+    "hide-from-new",
+    "paris",
+    "france",
+    "daily-temperature",
+    "lowest-temperature"
+   ],
+   "endDate": "2026-10-23T12:00:00Z"
+  },
+  {
+   "slug": "lowest-temperature-in-seoul-on-october-23-2026",
+   "regex": true,
+   "ciudad_en_TZ": true,
+   "icao": null,
+   "resolutionSource": "https://aviationweather.gov/api/data/metar?ids=RKSI&format=raw&date=2026-10-23T15:00:00Z&hours=27",
+   "tags": [
+    "weather",
+    "recurring",
+    "hide-from-new",
+    "seoul",
+    "daily-temperature",
+    "lowest-temperature"
+   ],
+   "endDate": "2026-10-23T12:00:00Z"
+  },
+  {
+   "slug": "lowest-temperature-in-ankara-on-october-23-2026",
+   "regex": true,
+   "ciudad_en_TZ": true,
+   "icao": null,
+   "resolutionSource": "https://aviationweather.gov/api/data/metar?ids=LTAC&format=raw&date=2026-10-23T21:00:00Z&hours=27",
+   "tags": [
+    "weather",
+    "recurring",
+    "hide-from-new",
+    "ankara",
+    "daily-temperature",
+    "lowest-temperature"
+   ],
+   "endDate": "2026-10-23T12:00:00Z"
+  },
+  {
+   "slug": "lowest-temperature-in-munich-on-october-23-2026",
+   "regex": true,
+   "ciudad_en_TZ": true,
+   "icao": null,
+   "resolutionSource": "https://aviationweather.gov/api/data/metar?ids=EDDM&format=raw&date=2026-10-23T22:00:00Z&hours=27",
+   "tags": [
+    "weather",
+    "recurring",
+    "hide-from-new",
+    "daily-temperature",
+    "munich",
+    "lowest-temperature"
+   ],
+   "endDate": "2026-10-23T12:00:00Z"
+  },
+  {
+   "slug": "lowest-temperature-in-tel-aviv-on-october-23-2026",
+   "regex": true,
+   "ciudad_en_TZ": true,
+   "icao": null,
+   "resolutionSource": "https://aviationweather.gov/api/data/metar?ids=LLBG&format=raw&date=2026-10-23T21:00:00Z&hours=27",
+   "tags": [
+    "weather",
+    "recurring",
+    "hide-from-new",
+    "daily-temperature",
+    "tel-aviv",
+    "lowest-temperature"
+   ],
+   "endDate": "2026-10-23T12:00:00Z"
+  },
+  {
+   "slug": "lowest-temperature-in-tokyo-on-october-23-2026",
+   "regex": true,
+   "ciudad_en_TZ": true,
+   "icao": null,
+   "resolutionSource": "https://aviationweather.gov/api/data/metar?ids=RJTT&format=raw&date=2026-10-23T15:00:00Z&hours=27",
+   "tags": [
+    "weather",
+    "recurring",
+    "hide-from-new",
+    "daily-temperature",
+    "tokyo",
+    "lowest-temperature"
+   ],
+   "endDate": "2026-10-23T12:00:00Z"
+  },
+  {
+   "slug": "lowest-temperature-in-hong-kong-on-october-23-2026",
+   "regex": true,
+   "ciudad_en_TZ": true,
+   "icao": "HKO",
+   "resolutionSource": null,
+   "tags": [
+    "weather",
+    "recurring",
+    "hide-from-new",
+    "daily-temperature",
+    "hong-kong",
+    "lowest-temperature"
+   ],
+   "endDate": "2026-10-23T12:00:00Z"
+  },
+  {
+   "slug": "lowest-temperature-in-shanghai-on-october-23-2026",
+   "regex": true,
+   "ciudad_en_TZ": true,
+   "icao": null,
+   "resolutionSource": "https://aviationweather.gov/api/data/metar?ids=ZSPD&format=raw&date=2026-10-23T16:00:00Z&hours=27",
+   "tags": [
+    "weather",
+    "recurring",
+    "hide-from-new",
+    "daily-temperature",
+    "shanghai",
+    "lowest-temperature"
+   ],
+   "endDate": "2026-10-23T12:00:00Z"
+  },
+  {
+   "slug": "lowest-temperature-in-milan-on-october-23-2026",
+   "regex": true,
+   "ciudad_en_TZ": true,
+   "icao": null,
+   "resolutionSource": "https://aviationweather.gov/api/data/metar?ids=LIMC&format=raw&date=2026-10-23T22:00:00Z&hours=27",
+   "tags": [
+    "weather",
+    "recurring",
+    "hide-from-new",
+    "daily-temperature",
+    "milan",
+    "lowest-temperature"
+   ],
+   "endDate": "2026-10-23T12:00:00Z"
+  },
+  {
+   "slug": "lowest-temperature-in-madrid-on-october-23-2026",
+   "regex": true,
+   "ciudad_en_TZ": true,
+   "icao": null,
+   "resolutionSource": "https://aviationweather.gov/api/data/metar?ids=LEMD&format=raw&date=2026-10-23T22:00:00Z&hours=27",
+   "tags": [
+    "weather",
+    "recurring",
+    "hide-from-new",
+    "daily-temperature",
+    "madrid",
+    "lowest-temperature"
+   ],
+   "endDate": "2026-10-23T12:00:00Z"
+  },
+  {
+   "slug": "lowest-temperature-in-warsaw-on-october-23-2026",
+   "regex": true,
+   "ciudad_en_TZ": true,
+   "icao": null,
+   "resolutionSource": "https://aviationweather.gov/api/data/metar?ids=EPWA&format=raw&date=2026-10-23T22:00:00Z&hours=27",
+   "tags": [
+    "weather",
+    "recurring",
+    "hide-from-new",
+    "daily-temperature",
+    "warsaw",
+    "lowest-temperature"
+   ],
+   "endDate": "2026-10-23T12:00:00Z"
+  },
+  {
+   "slug": "lowest-temperature-in-taipei-on-october-23-2026",
+   "regex": true,
+   "ciudad_en_TZ": true,
+   "icao": null,
+   "resolutionSource": "https://aviationweather.gov/api/data/metar?ids=RCSS&format=raw&date=2026-10-23T16:00:00Z&hours=27",
+   "tags": [
+    "weather",
+    "recurring",
+    "hide-from-new",
+    "daily-temperature",
+    "taipei",
+    "lowest-temperature"
+   ],
+   "endDate": "2026-10-23T12:00:00Z"
+  },
+  {
+   "slug": "lowest-temperature-in-chongqing-on-october-23-2026",
+   "regex": true,
+   "ciudad_en_TZ": true,
+   "icao": null,
+   "resolutionSource": "https://aviationweather.gov/api/data/metar?ids=ZUCK&format=raw&date=2026-10-23T16:00:00Z&hours=27",
+   "tags": [
+    "weather",
+    "recurring",
+    "hide-from-new",
+    "daily-temperature",
+    "chongqing",
+    "lowest-temperature"
+   ],
+   "endDate": "2026-10-23T12:00:00Z"
+  },
+  {
+   "slug": "lowest-temperature-in-beijing-on-october-23-2026",
+   "regex": true,
+   "ciudad_en_TZ": true,
+   "icao": null,
+   "resolutionSource": "https://aviationweather.gov/api/data/metar?ids=ZBAA&format=raw&date=2026-10-23T16:00:00Z&hours=27",
+   "tags": [
+    "weather",
+    "recurring",
+    "hide-from-new",
+    "daily-temperature",
+    "beijing",
+    "lowest-temperature"
+   ],
+   "endDate": "2026-10-23T12:00:00Z"
+  },
+  {
+   "slug": "lowest-temperature-in-wuhan-on-october-23-2026",
+   "regex": true,
+   "ciudad_en_TZ": true,
+   "icao": null,
+   "resolutionSource": "https://aviationweather.gov/api/data/metar?ids=ZHHH&format=raw&date=2026-10-23T16:00:00Z&hours=27",
+   "tags": [
+    "weather",
+    "recurring",
+    "hide-from-new",
+    "daily-temperature",
+    "wuhan",
+    "lowest-temperature"
+   ],
+   "endDate": "2026-10-23T12:00:00Z"
+  },
+  {
+   "slug": "lowest-temperature-in-chengdu-on-october-23-2026",
+   "regex": true,
+   "ciudad_en_TZ": true,
+   "icao": null,
+   "resolutionSource": "https://aviationweather.gov/api/data/metar?ids=ZUUU&format=raw&date=2026-10-23T16:00:00Z&hours=27",
+   "tags": [
+    "weather",
+    "recurring",
+    "hide-from-new",
+    "daily-temperature",
+    "chengdu",
+    "lowest-temperature"
+   ],
+   "endDate": "2026-10-23T12:00:00Z"
+  },
+  {
+   "slug": "lowest-temperature-in-shenzhen-on-october-23-2026",
+   "regex": true,
+   "ciudad_en_TZ": true,
+   "icao": null,
+   "resolutionSource": "https://aviationweather.gov/api/data/metar?ids=ZGSZ&format=raw&date=2026-10-23T16:00:00Z&hours=27",
+   "tags": [
+    "weather",
+    "recurring",
+    "hide-from-new",
+    "daily-temperature",
+    "shenzhen",
+    "lowest-temperature"
+   ],
+   "endDate": "2026-10-23T12:00:00Z"
+  },
+  {
+   "slug": "lowest-temperature-in-moscow-on-october-23-2026",
+   "regex": true,
+   "ciudad_en_TZ": true,
+   "icao": null,
+   "resolutionSource": "https://aviationweather.gov/api/data/metar?ids=UUWW&format=raw&date=2026-10-23T21:00:00Z&hours=27",
+   "tags": [
+    "weather",
+    "recurring",
+    "hide-from-new",
+    "daily-temperature",
+    "moscow",
+    "lowest-temperature"
+   ],
+   "endDate": "2026-10-23T12:00:00Z"
+  },
+  {
+   "slug": "lowest-temperature-in-istanbul-on-october-23-2026",
+   "regex": true,
+   "ciudad_en_TZ": true,
+   "icao": null,
+   "resolutionSource": "https://aviationweather.gov/api/data/metar?ids=LTFM&format=raw&date=2026-10-23T21:00:00Z&hours=27",
+   "tags": [
+    "weather",
+    "recurring",
+    "hide-from-new",
+    "daily-temperature",
+    "istanbul",
+    "lowest-temperature"
+   ],
+   "endDate": "2026-10-23T12:00:00Z"
+  },
+  {
+   "slug": "lowest-temperature-in-busan-on-october-23-2026",
+   "regex": true,
+   "ciudad_en_TZ": true,
+   "icao": null,
+   "resolutionSource": "https://aviationweather.gov/api/data/metar?ids=RKPK&format=raw&date=2026-10-23T15:00:00Z&hours=27",
+   "tags": [
+    "weather",
+    "recurring",
+    "hide-from-new",
+    "daily-temperature",
+    "busan",
+    "lowest-temperature"
+   ],
+   "endDate": "2026-10-23T12:00:00Z"
+  },
+  {
+   "slug": "lowest-temperature-in-amsterdam-on-october-23-2026",
+   "regex": true,
+   "ciudad_en_TZ": true,
+   "icao": null,
+   "resolutionSource": "https://aviationweather.gov/api/data/metar?ids=EHAM&format=raw&date=2026-10-23T22:00:00Z&hours=27",
+   "tags": [
+    "weather",
+    "recurring",
+    "hide-from-new",
+    "daily-temperature",
+    "amsterdam",
+    "lowest-temperature"
+   ],
+   "endDate": "2026-10-23T12:00:00Z"
+  },
+  {
+   "slug": "lowest-temperature-in-helsinki-on-october-23-2026",
+   "regex": true,
+   "ciudad_en_TZ": true,
+   "icao": null,
+   "resolutionSource": "https://aviationweather.gov/api/data/metar?ids=EFHK&format=raw&date=2026-10-23T21:00:00Z&hours=27",
+   "tags": [
+    "weather",
+    "recurring",
+    "hide-from-new",
+    "daily-temperature",
+    "helsinki",
+    "lowest-temperature"
+   ],
+   "endDate": "2026-10-23T12:00:00Z"
+  },
+  {
+   "slug": "lowest-temperature-in-jeddah-on-october-23-2026",
+   "regex": true,
+   "ciudad_en_TZ": true,
+   "icao": null,
+   "resolutionSource": "https://aviationweather.gov/api/data/metar?ids=OEJN&format=raw&date=2026-10-23T21:00:00Z&hours=27",
+   "tags": [
+    "weather",
+    "recurring",
+    "hide-from-new",
+    "daily-temperature",
+    "jeddah",
+    "lowest-temperature"
+   ],
+   "endDate": "2026-10-23T12:00:00Z"
+  },
+  {
+   "slug": "lowest-temperature-in-guangzhou-on-october-23-2026",
+   "regex": true,
+   "ciudad_en_TZ": true,
+   "icao": null,
+   "resolutionSource": "https://aviationweather.gov/api/data/metar?ids=ZGGG&format=raw&date=2026-10-23T16:00:00Z&hours=27",
+   "tags": [
+    "weather",
+    "recurring",
+    "hide-from-new",
+    "daily-temperature",
+    "guangzhou",
+    "lowest-temperature"
+   ],
+   "endDate": "2026-10-23T12:00:00Z"
+  },
+  {
+   "slug": "lowest-temperature-in-qingdao-on-october-23-2026",
+   "regex": true,
+   "ciudad_en_TZ": true,
+   "icao": null,
+   "resolutionSource": "https://aviationweather.gov/api/data/metar?ids=ZSQD&format=raw&date=2026-10-23T16:00:00Z&hours=27",
+   "tags": [
+    "weather",
+    "recurring",
+    "hide-from-new",
+    "daily-temperature",
+    "qingdao",
+    "lowest-temperature"
+   ],
+   "endDate": "2026-10-23T12:00:00Z"
+  },
+  {
+   "slug": "highest-temperature-in-london-on-october-23-2026",
+   "regex": true,
+   "ciudad_en_TZ": true,
+   "icao": null,
+   "resolutionSource": "https://aviationweather.gov/api/data/metar?ids=EGLC&format=raw&date=2026-10-23T23:00:00Z&hours=27",
+   "tags": [
+    "weather",
+    "recurring",
+    "hide-from-new",
+    "london",
+    "daily-temperature",
+    "highest-temperature"
+   ],
+   "endDate": "2026-10-23T12:00:00Z"
+  },
+  {
+   "slug": "highest-temperature-in-paris-on-october-23-2026",
+   "regex": true,
+   "ciudad_en_TZ": true,
+   "icao": null,
+   "resolutionSource": "https://aviationweather.gov/api/data/metar?ids=LFPB&format=raw&date=2026-10-23T22:00:00Z&hours=27",
+   "tags": [
+    "weather",
+    "recurring",
+    "hide-from-new",
+    "paris",
+    "france",
+    "daily-temperature",
+    "highest-temperature"
+   ],
+   "endDate": "2026-10-23T12:00:00Z"
+  },
+  {
+   "slug": "highest-temperature-in-seoul-on-october-23-2026",
+   "regex": true,
+   "ciudad_en_TZ": true,
+   "icao": null,
+   "resolutionSource": "https://aviationweather.gov/api/data/metar?ids=RKSI&format=raw&date=2026-10-23T15:00:00Z&hours=27",
+   "tags": [
+    "weather",
+    "recurring",
+    "hide-from-new",
+    "seoul",
+    "daily-temperature",
+    "highest-temperature"
+   ],
+   "endDate": "2026-10-23T12:00:00Z"
+  },
+  {
+   "slug": "highest-temperature-in-ankara-on-october-23-2026",
+   "regex": true,
+   "ciudad_en_TZ": true,
+   "icao": null,
+   "resolutionSource": "https://aviationweather.gov/api/data/metar?ids=LTAC&format=raw&date=2026-10-23T21:00:00Z&hours=27",
+   "tags": [
+    "weather",
+    "recurring",
+    "hide-from-new",
+    "ankara",
+    "daily-temperature",
+    "highest-temperature"
+   ],
+   "endDate": "2026-10-23T12:00:00Z"
+  },
+  {
+   "slug": "highest-temperature-in-lucknow-on-october-23-2026",
+   "regex": true,
+   "ciudad_en_TZ": true,
+   "icao": null,
+   "resolutionSource": "https://aviationweather.gov/api/data/metar?ids=VILK&format=raw&date=2026-10-23T18:30:00Z&hours=27",
+   "tags": [
+    "weather",
+    "recurring",
+    "hide-from-new",
+    "daily-temperature",
+    "lucknow",
+    "highest-temperature"
+   ],
+   "endDate": "2026-10-23T12:00:00Z"
+  },
+  {
+   "slug": "highest-temperature-in-munich-on-october-23-2026",
+   "regex": true,
+   "ciudad_en_TZ": true,
+   "icao": null,
+   "resolutionSource": "https://aviationweather.gov/api/data/metar?ids=EDDM&format=raw&date=2026-10-23T22:00:00Z&hours=27",
+   "tags": [
+    "weather",
+    "recurring",
+    "hide-from-new",
+    "daily-temperature",
+    "munich",
+    "highest-temperature"
+   ],
+   "endDate": "2026-10-23T12:00:00Z"
+  },
+  {
+   "slug": "highest-temperature-in-tel-aviv-on-october-23-2026",
+   "regex": true,
+   "ciudad_en_TZ": true,
+   "icao": null,
+   "resolutionSource": "https://aviationweather.gov/api/data/metar?ids=LLBG&format=raw&date=2026-10-23T21:00:00Z&hours=27",
+   "tags": [
+    "weather",
+    "recurring",
+    "hide-from-new",
+    "daily-temperature",
+    "tel-aviv",
+    "highest-temperature"
+   ],
+   "endDate": "2026-10-23T12:00:00Z"
+  },
+  {
+   "slug": "highest-temperature-in-tokyo-on-october-23-2026",
+   "regex": true,
+   "ciudad_en_TZ": true,
+   "icao": null,
+   "resolutionSource": "https://aviationweather.gov/api/data/metar?ids=RJTT&format=raw&date=2026-10-23T15:00:00Z&hours=27",
+   "tags": [
+    "weather",
+    "recurring",
+    "hide-from-new",
+    "daily-temperature",
+    "tokyo",
+    "highest-temperature"
+   ],
+   "endDate": "2026-10-23T12:00:00Z"
+  },
+  {
+   "slug": "highest-temperature-in-hong-kong-on-october-23-2026",
+   "regex": true,
+   "ciudad_en_TZ": true,
+   "icao": "HKO",
+   "resolutionSource": null,
+   "tags": [
+    "weather",
+    "recurring",
+    "hide-from-new",
+    "daily-temperature",
+    "hong-kong",
+    "highest-temperature"
+   ],
+   "endDate": "2026-10-23T12:00:00Z"
+  },
+  {
+   "slug": "highest-temperature-in-shanghai-on-october-23-2026",
+   "regex": true,
+   "ciudad_en_TZ": true,
+   "icao": null,
+   "resolutionSource": "https://aviationweather.gov/api/data/metar?ids=ZSPD&format=raw&date=2026-10-23T16:00:00Z&hours=27",
+   "tags": [
+    "weather",
+    "recurring",
+    "hide-from-new",
+    "daily-temperature",
+    "shanghai",
+    "highest-temperature"
+   ],
+   "endDate": "2026-10-23T12:00:00Z"
+  },
+  {
+   "slug": "highest-temperature-in-singapore-on-october-23-2026",
+   "regex": true,
+   "ciudad_en_TZ": true,
+   "icao": null,
+   "resolutionSource": "https://aviationweather.gov/api/data/metar?ids=WSSS&format=raw&date=2026-10-23T16:00:00Z&hours=27",
+   "tags": [
+    "weather",
+    "recurring",
+    "hide-from-new",
+    "daily-temperature",
+    "singapore",
+    "highest-temperature"
+   ],
+   "endDate": "2026-10-23T12:00:00Z"
+  },
+  {
+   "slug": "highest-temperature-in-milan-on-october-23-2026",
+   "regex": true,
+   "ciudad_en_TZ": true,
+   "icao": null,
+   "resolutionSource": "https://aviationweather.gov/api/data/metar?ids=LIMC&format=raw&date=2026-10-23T22:00:00Z&hours=27",
+   "tags": [
+    "weather",
+    "recurring",
+    "hide-from-new",
+    "daily-temperature",
+    "milan",
+    "highest-temperature"
+   ],
+   "endDate": "2026-10-23T12:00:00Z"
+  },
+  {
+   "slug": "highest-temperature-in-madrid-on-october-23-2026",
+   "regex": true,
+   "ciudad_en_TZ": true,
+   "icao": null,
+   "resolutionSource": "https://aviationweather.gov/api/data/metar?ids=LEMD&format=raw&date=2026-10-23T22:00:00Z&hours=27",
+   "tags": [
+    "weather",
+    "recurring",
+    "hide-from-new",
+    "daily-temperature",
+    "madrid",
+    "highest-temperature"
+   ],
+   "endDate": "2026-10-23T12:00:00Z"
+  },
+  {
+   "slug": "highest-temperature-in-warsaw-on-october-23-2026",
+   "regex": true,
+   "ciudad_en_TZ": true,
+   "icao": null,
+   "resolutionSource": "https://aviationweather.gov/api/data/metar?ids=EPWA&format=raw&date=2026-10-23T22:00:00Z&hours=27",
+   "tags": [
+    "weather",
+    "recurring",
+    "hide-from-new",
+    "daily-temperature",
+    "warsaw",
+    "highest-temperature"
+   ],
+   "endDate": "2026-10-23T12:00:00Z"
+  },
+  {
+   "slug": "highest-temperature-in-taipei-on-october-23-2026",
+   "regex": true,
+   "ciudad_en_TZ": true,
+   "icao": null,
+   "resolutionSource": "https://aviationweather.gov/api/data/metar?ids=RCSS&format=raw&date=2026-10-23T16:00:00Z&hours=27",
+   "tags": [
+    "weather",
+    "recurring",
+    "hide-from-new",
+    "daily-temperature",
+    "taipei",
+    "highest-temperature"
+   ],
+   "endDate": "2026-10-23T12:00:00Z"
+  },
+  {
+   "slug": "highest-temperature-in-chongqing-on-october-23-2026",
+   "regex": true,
+   "ciudad_en_TZ": true,
+   "icao": null,
+   "resolutionSource": "https://aviationweather.gov/api/data/metar?ids=ZUCK&format=raw&date=2026-10-23T16:00:00Z&hours=27",
+   "tags": [
+    "weather",
+    "recurring",
+    "hide-from-new",
+    "daily-temperature",
+    "chongqing",
+    "highest-temperature"
+   ],
+   "endDate": "2026-10-23T12:00:00Z"
+  },
+  {
+   "slug": "highest-temperature-in-beijing-on-october-23-2026",
+   "regex": true,
+   "ciudad_en_TZ": true,
+   "icao": null,
+   "resolutionSource": "https://aviationweather.gov/api/data/metar?ids=ZBAA&format=raw&date=2026-10-23T16:00:00Z&hours=27",
+   "tags": [
+    "weather",
+    "recurring",
+    "hide-from-new",
+    "daily-temperature",
+    "beijing",
+    "highest-temperature"
+   ],
+   "endDate": "2026-10-23T12:00:00Z"
+  },
+  {
+   "slug": "highest-temperature-in-wuhan-on-october-23-2026",
+   "regex": true,
+   "ciudad_en_TZ": true,
+   "icao": null,
+   "resolutionSource": "https://aviationweather.gov/api/data/metar?ids=ZHHH&format=raw&date=2026-10-23T16:00:00Z&hours=27",
+   "tags": [
+    "weather",
+    "recurring",
+    "hide-from-new",
+    "daily-temperature",
+    "wuhan",
+    "highest-temperature"
+   ],
+   "endDate": "2026-10-23T12:00:00Z"
+  },
+  {
+   "slug": "highest-temperature-in-chengdu-on-october-23-2026",
+   "regex": true,
+   "ciudad_en_TZ": true,
+   "icao": null,
+   "resolutionSource": "https://aviationweather.gov/api/data/metar?ids=ZUUU&format=raw&date=2026-10-23T16:00:00Z&hours=27",
+   "tags": [
+    "weather",
+    "recurring",
+    "hide-from-new",
+    "daily-temperature",
+    "chengdu",
+    "highest-temperature"
+   ],
+   "endDate": "2026-10-23T12:00:00Z"
+  },
+  {
+   "slug": "highest-temperature-in-shenzhen-on-october-23-2026",
+   "regex": true,
+   "ciudad_en_TZ": true,
+   "icao": null,
+   "resolutionSource": "https://aviationweather.gov/api/data/metar?ids=ZGSZ&format=raw&date=2026-10-23T16:00:00Z&hours=27",
+   "tags": [
+    "weather",
+    "recurring",
+    "hide-from-new",
+    "daily-temperature",
+    "shenzhen",
+    "highest-temperature"
+   ],
+   "endDate": "2026-10-23T12:00:00Z"
+  },
+  {
+   "slug": "highest-temperature-in-moscow-on-october-23-2026",
+   "regex": true,
+   "ciudad_en_TZ": true,
+   "icao": null,
+   "resolutionSource": "https://aviationweather.gov/api/data/metar?ids=UUWW&format=raw&date=2026-10-23T21:00:00Z&hours=27",
+   "tags": [
+    "weather",
+    "recurring",
+    "hide-from-new",
+    "daily-temperature",
+    "moscow",
+    "highest-temperature"
+   ],
+   "endDate": "2026-10-23T12:00:00Z"
+  },
+  {
+   "slug": "highest-temperature-in-istanbul-on-october-23-2026",
+   "regex": true,
+   "ciudad_en_TZ": true,
+   "icao": null,
+   "resolutionSource": "https://aviationweather.gov/api/data/metar?ids=LTFM&format=raw&date=2026-10-23T21:00:00Z&hours=27",
+   "tags": [
+    "weather",
+    "recurring",
+    "hide-from-new",
+    "daily-temperature",
+    "istanbul",
+    "highest-temperature"
+   ],
+   "endDate": "2026-10-23T12:00:00Z"
+  },
+  {
+   "slug": "highest-temperature-in-busan-on-october-23-2026",
+   "regex": true,
+   "ciudad_en_TZ": true,
+   "icao": null,
+   "resolutionSource": "https://aviationweather.gov/api/data/metar?ids=RKPK&format=raw&date=2026-10-23T15:00:00Z&hours=27",
+   "tags": [
+    "weather",
+    "recurring",
+    "hide-from-new",
+    "daily-temperature",
+    "busan",
+    "highest-temperature"
+   ],
+   "endDate": "2026-10-23T12:00:00Z"
+  },
+  {
+   "slug": "highest-temperature-in-amsterdam-on-october-23-2026",
+   "regex": true,
+   "ciudad_en_TZ": true,
+   "icao": null,
+   "resolutionSource": "https://aviationweather.gov/api/data/metar?ids=EHAM&format=raw&date=2026-10-23T22:00:00Z&hours=27",
+   "tags": [
+    "weather",
+    "recurring",
+    "hide-from-new",
+    "daily-temperature",
+    "amsterdam",
+    "highest-temperature"
+   ],
+   "endDate": "2026-10-23T12:00:00Z"
+  },
+  {
+   "slug": "highest-temperature-in-helsinki-on-october-23-2026",
+   "regex": true,
+   "ciudad_en_TZ": true,
+   "icao": null,
+   "resolutionSource": "https://aviationweather.gov/api/data/metar?ids=EFHK&format=raw&date=2026-10-23T21:00:00Z&hours=27",
+   "tags": [
+    "weather",
+    "recurring",
+    "hide-from-new",
+    "daily-temperature",
+    "helsinki",
+    "highest-temperature"
+   ],
+   "endDate": "2026-10-23T12:00:00Z"
+  },
+  {
+   "slug": "highest-temperature-in-kuala-lumpur-on-october-23-2026",
+   "regex": true,
+   "ciudad_en_TZ": true,
+   "icao": null,
+   "resolutionSource": "https://aviationweather.gov/api/data/metar?ids=WMKK&format=raw&date=2026-10-23T16:00:00Z&hours=27",
+   "tags": [
+    "weather",
+    "recurring",
+    "hide-from-new",
+    "daily-temperature",
+    "kuala-lampur",
+    "highest-temperature"
+   ],
+   "endDate": "2026-10-23T12:00:00Z"
+  },
+  {
+   "slug": "highest-temperature-in-jeddah-on-october-23-2026",
+   "regex": true,
+   "ciudad_en_TZ": true,
+   "icao": null,
+   "resolutionSource": "https://aviationweather.gov/api/data/metar?ids=OEJN&format=raw&date=2026-10-23T21:00:00Z&hours=27",
+   "tags": [
+    "weather",
+    "recurring",
+    "hide-from-new",
+    "daily-temperature",
+    "jeddah",
+    "highest-temperature"
+   ],
+   "endDate": "2026-10-23T12:00:00Z"
+  },
+  {
+   "slug": "highest-temperature-in-cape-town-on-october-23-2026",
+   "regex": true,
+   "ciudad_en_TZ": true,
+   "icao": null,
+   "resolutionSource": "https://aviationweather.gov/api/data/metar?ids=FACT&format=raw&date=2026-10-23T22:00:00Z&hours=27",
+   "tags": [
+    "weather",
+    "recurring",
+    "hide-from-new",
+    "daily-temperature",
+    "cape-town",
+    "highest-temperature"
+   ],
+   "endDate": "2026-10-23T12:00:00Z"
+  },
+  {
+   "slug": "highest-temperature-in-guangzhou-on-october-23-2026",
+   "regex": true,
+   "ciudad_en_TZ": true,
+   "icao": null,
+   "resolutionSource": "https://aviationweather.gov/api/data/metar?ids=ZGGG&format=raw&date=2026-10-23T16:00:00Z&hours=27",
+   "tags": [
+    "weather",
+    "recurring",
+    "hide-from-new",
+    "daily-temperature",
+    "guangzhou",
+    "highest-temperature"
+   ],
+   "endDate": "2026-10-23T12:00:00Z"
+  },
+  {
+   "slug": "highest-temperature-in-qingdao-on-october-23-2026",
+   "regex": true,
+   "ciudad_en_TZ": true,
+   "icao": null,
+   "resolutionSource": "https://aviationweather.gov/api/data/metar?ids=ZSQD&format=raw&date=2026-10-23T16:00:00Z&hours=27",
+   "tags": [
+    "weather",
+    "recurring",
+    "hide-from-new",
+    "daily-temperature",
+    "qingdao",
+    "highest-temperature"
+   ],
+   "endDate": "2026-10-23T12:00:00Z"
+  },
+  {
+   "slug": "highest-temperature-in-karachi-on-october-23-2026",
+   "regex": true,
+   "ciudad_en_TZ": true,
+   "icao": null,
+   "resolutionSource": "https://aviationweather.gov/api/data/metar?ids=OPKC&format=raw&date=2026-10-23T19:00:00Z&hours=27",
+   "tags": [
+    "weather",
+    "recurring",
+    "hide-from-new",
+    "daily-temperature",
+    "karachi",
+    "highest-temperature"
+   ],
+   "endDate": "2026-10-23T12:00:00Z"
+  },
+  {
+   "slug": "highest-temperature-in-manila-on-october-23-2026",
+   "regex": true,
+   "ciudad_en_TZ": true,
+   "icao": null,
+   "resolutionSource": "https://aviationweather.gov/api/data/metar?ids=RPLL&format=raw&date=2026-10-23T16:00:00Z&hours=27",
+   "tags": [
+    "weather",
+    "recurring",
+    "hide-from-new",
+    "daily-temperature",
+    "manila",
+    "highest-temperature"
+   ],
+   "endDate": "2026-10-23T12:00:00Z"
+  },
+  {
+   "slug": "lowest-temperature-in-lucknow-on-october-23-2026",
+   "regex": true,
+   "ciudad_en_TZ": true,
+   "icao": null,
+   "resolutionSource": "https://aviationweather.gov/api/data/metar?ids=VILK&format=raw&date=2026-10-23T18:30:00Z&hours=27",
+   "tags": [
+    "weather",
+    "recurring",
+    "hide-from-new",
+    "daily-temperature",
+    "lucknow",
+    "lowest-temperature"
+   ],
+   "endDate": "2026-10-23T12:00:00Z"
+  },
+  {
+   "slug": "lowest-temperature-in-cape-town-on-october-23-2026",
+   "regex": true,
+   "ciudad_en_TZ": true,
+   "icao": null,
+   "resolutionSource": "https://aviationweather.gov/api/data/metar?ids=FACT&format=raw&date=2026-10-23T22:00:00Z&hours=27",
+   "tags": [
+    "weather",
+    "recurring",
+    "hide-from-new",
+    "daily-temperature",
+    "cape-town",
+    "lowest-temperature"
+   ],
+   "endDate": "2026-10-23T12:00:00Z"
+  },
+  {
+   "slug": "lowest-temperature-in-karachi-on-october-23-2026",
+   "regex": true,
+   "ciudad_en_TZ": true,
+   "icao": null,
+   "resolutionSource": "https://aviationweather.gov/api/data/metar?ids=OPKC&format=raw&date=2026-10-23T19:00:00Z&hours=27",
+   "tags": [
+    "weather",
+    "recurring",
+    "hide-from-new",
+    "daily-temperature",
+    "karachi",
+    "lowest-temperature"
+   ],
+   "endDate": "2026-10-23T12:00:00Z"
+  },
+  {
+   "slug": "lowest-temperature-in-nyc-on-october-23-2026",
+   "regex": true,
+   "ciudad_en_TZ": true,
+   "icao": null,
+   "resolutionSource": "https://aviationweather.gov/api/data/metar?ids=KLGA&format=raw&date=2026-10-24T04:00:00Z&hours=27",
+   "tags": [
+    "weather",
+    "recurring",
+    "hide-from-new",
+    "new-york-city",
+    "daily-temperature",
+    "lowest-temperature"
+   ],
+   "endDate": "2026-10-23T12:00:00Z"
+  },
+  {
+   "slug": "lowest-temperature-in-dallas-on-october-23-2026",
+   "regex": true,
+   "ciudad_en_TZ": true,
+   "icao": null,
+   "resolutionSource": "https://aviationweather.gov/api/data/metar?ids=KDAL&format=raw&date=2026-10-24T05:00:00Z&hours=27",
+   "tags": [
+    "weather",
+    "recurring",
+    "hide-from-new",
+    "dallas",
+    "daily-temperature",
+    "lowest-temperature"
+   ],
+   "endDate": "2026-10-23T12:00:00Z"
+  },
+  {
+   "slug": "lowest-temperature-in-atlanta-on-october-23-2026",
+   "regex": true,
+   "ciudad_en_TZ": true,
+   "icao": null,
+   "resolutionSource": "https://aviationweather.gov/api/data/metar?ids=KATL&format=raw&date=2026-10-24T04:00:00Z&hours=27",
+   "tags": [
+    "weather",
+    "recurring",
+    "hide-from-new",
+    "atlanta",
+    "daily-temperature",
+    "lowest-temperature"
+   ],
+   "endDate": "2026-10-23T12:00:00Z"
+  },
+  {
+   "slug": "lowest-temperature-in-miami-on-october-23-2026",
+   "regex": true,
+   "ciudad_en_TZ": true,
+   "icao": null,
+   "resolutionSource": "https://aviationweather.gov/api/data/metar?ids=KMIA&format=raw&date=2026-10-24T04:00:00Z&hours=27",
+   "tags": [
+    "weather",
+    "recurring",
+    "hide-from-new",
+    "miami",
+    "daily-temperature",
+    "lowest-temperature"
+   ],
+   "endDate": "2026-10-23T12:00:00Z"
+  },
+  {
+   "slug": "lowest-temperature-in-chicago-on-october-23-2026",
+   "regex": true,
+   "ciudad_en_TZ": true,
+   "icao": null,
+   "resolutionSource": "https://aviationweather.gov/api/data/metar?ids=KORD&format=raw&date=2026-10-24T05:00:00Z&hours=27",
+   "tags": [
+    "weather",
+    "recurring",
+    "hide-from-new",
+    "chicago",
+    "daily-temperature",
+    "lowest-temperature"
+   ],
+   "endDate": "2026-10-23T12:00:00Z"
+  },
+  {
+   "slug": "lowest-temperature-in-austin-on-october-23-2026",
+   "regex": true,
+   "ciudad_en_TZ": true,
+   "icao": null,
+   "resolutionSource": "https://aviationweather.gov/api/data/metar?ids=KAUS&format=raw&date=2026-10-24T05:00:00Z&hours=27",
+   "tags": [
+    "weather",
+    "recurring",
+    "hide-from-new",
+    "daily-temperature",
+    "austin",
+    "lowest-temperature"
+   ],
+   "endDate": "2026-10-23T12:00:00Z"
+  },
+  {
+   "slug": "lowest-temperature-in-denver-on-october-23-2026",
+   "regex": true,
+   "ciudad_en_TZ": true,
+   "icao": null,
+   "resolutionSource": "https://aviationweather.gov/api/data/metar?ids=KDEN&format=raw&date=2026-10-24T06:00:00Z&hours=27",
+   "tags": [
+    "weather",
+    "recurring",
+    "hide-from-new",
+    "daily-temperature",
+    "denver",
+    "lowest-temperature"
+   ],
+   "endDate": "2026-10-23T12:00:00Z"
+  },
+  {
+   "slug": "lowest-temperature-in-houston-on-october-23-2026",
+   "regex": true,
+   "ciudad_en_TZ": true,
+   "icao": null,
+   "resolutionSource": "https://aviationweather.gov/api/data/metar?ids=KHOU&format=raw&date=2026-10-24T05:00:00Z&hours=27",
+   "tags": [
+    "weather",
+    "recurring",
+    "hide-from-new",
+    "daily-temperature",
+    "houston",
+    "lowest-temperature"
+   ],
+   "endDate": "2026-10-23T12:00:00Z"
+  },
+  {
+   "slug": "highest-temperature-in-nyc-on-october-23-2026",
+   "regex": true,
+   "ciudad_en_TZ": true,
+   "icao": null,
+   "resolutionSource": "https://aviationweather.gov/api/data/metar?ids=KLGA&format=raw&date=2026-10-24T04:00:00Z&hours=27",
+   "tags": [
+    "weather",
+    "recurring",
+    "hide-from-new",
+    "new-york-city",
+    "daily-temperature",
+    "highest-temperature"
+   ],
+   "endDate": "2026-10-23T12:00:00Z"
+  },
+  {
+   "slug": "highest-temperature-in-dallas-on-october-23-2026",
+   "regex": true,
+   "ciudad_en_TZ": true,
+   "icao": null,
+   "resolutionSource": "https://aviationweather.gov/api/data/metar?ids=KDAL&format=raw&date=2026-10-24T05:00:00Z&hours=27",
+   "tags": [
+    "weather",
+    "recurring",
+    "hide-from-new",
+    "dallas",
+    "daily-temperature",
+    "highest-temperature"
+   ],
+   "endDate": "2026-10-23T12:00:00Z"
+  },
+  {
+   "slug": "highest-temperature-in-atlanta-on-october-23-2026",
+   "regex": true,
+   "ciudad_en_TZ": true,
+   "icao": null,
+   "resolutionSource": "https://aviationweather.gov/api/data/metar?ids=KATL&format=raw&date=2026-10-24T04:00:00Z&hours=27",
+   "tags": [
+    "weather",
+    "recurring",
+    "hide-from-new",
+    "atlanta",
+    "daily-temperature",
+    "highest-temperature"
+   ],
+   "endDate": "2026-10-23T12:00:00Z"
+  },
+  {
+   "slug": "highest-temperature-in-miami-on-october-23-2026",
+   "regex": true,
+   "ciudad_en_TZ": true,
+   "icao": null,
+   "resolutionSource": "https://aviationweather.gov/api/data/metar?ids=KMIA&format=raw&date=2026-10-24T04:00:00Z&hours=27",
+   "tags": [
+    "weather",
+    "recurring",
+    "hide-from-new",
+    "miami",
+    "daily-temperature",
+    "highest-temperature"
+   ],
+   "endDate": "2026-10-23T12:00:00Z"
+  },
+  {
+   "slug": "highest-temperature-in-chicago-on-october-23-2026",
+   "regex": true,
+   "ciudad_en_TZ": true,
+   "icao": null,
+   "resolutionSource": "https://aviationweather.gov/api/data/metar?ids=KORD&format=raw&date=2026-10-24T05:00:00Z&hours=27",
+   "tags": [
+    "weather",
+    "recurring",
+    "hide-from-new",
+    "chicago",
+    "daily-temperature",
+    "highest-temperature"
+   ],
+   "endDate": "2026-10-23T12:00:00Z"
+  },
+  {
+   "slug": "highest-temperature-in-austin-on-october-23-2026",
+   "regex": true,
+   "ciudad_en_TZ": true,
+   "icao": null,
+   "resolutionSource": "https://aviationweather.gov/api/data/metar?ids=KAUS&format=raw&date=2026-10-24T05:00:00Z&hours=27",
+   "tags": [
+    "weather",
+    "recurring",
+    "hide-from-new",
+    "daily-temperature",
+    "austin",
+    "highest-temperature"
+   ],
+   "endDate": "2026-10-23T12:00:00Z"
+  },
+  {
+   "slug": "highest-temperature-in-denver-on-october-23-2026",
+   "regex": true,
+   "ciudad_en_TZ": true,
+   "icao": null,
+   "resolutionSource": "https://aviationweather.gov/api/data/metar?ids=KDEN&format=raw&date=2026-10-24T06:00:00Z&hours=27",
+   "tags": [
+    "weather",
+    "recurring",
+    "hide-from-new",
+    "daily-temperature",
+    "denver",
+    "highest-temperature"
+   ],
+   "endDate": "2026-10-23T12:00:00Z"
+  },
+  {
+   "slug": "highest-temperature-in-houston-on-october-23-2026",
+   "regex": true,
+   "ciudad_en_TZ": true,
+   "icao": null,
+   "resolutionSource": "https://aviationweather.gov/api/data/metar?ids=KHOU&format=raw&date=2026-10-24T05:00:00Z&hours=27",
+   "tags": [
+    "weather",
+    "recurring",
+    "hide-from-new",
+    "daily-temperature",
+    "houston",
+    "highest-temperature"
+   ],
+   "endDate": "2026-10-23T12:00:00Z"
+  },
+  {
+   "slug": "lowest-temperature-in-seattle-on-october-23-2026",
+   "regex": true,
+   "ciudad_en_TZ": true,
+   "icao": null,
+   "resolutionSource": "https://aviationweather.gov/api/data/metar?ids=KSEA&format=raw&date=2026-10-24T07:00:00Z&hours=27",
+   "tags": [
+    "weather",
+    "recurring",
+    "hide-from-new",
+    "seattle",
+    "daily-temperature",
+    "lowest-temperature"
+   ],
+   "endDate": "2026-10-23T12:00:00Z"
+  },
+  {
+   "slug": "lowest-temperature-in-los-angeles-on-october-23-2026",
+   "regex": true,
+   "ciudad_en_TZ": true,
+   "icao": null,
+   "resolutionSource": "https://aviationweather.gov/api/data/metar?ids=KLAX&format=raw&date=2026-10-24T07:00:00Z&hours=27",
+   "tags": [
+    "weather",
+    "recurring",
+    "hide-from-new",
+    "daily-temperature",
+    "los-angeles",
+    "lowest-temperature"
+   ],
+   "endDate": "2026-10-23T12:00:00Z"
+  },
+  {
+   "slug": "lowest-temperature-in-san-francisco-on-october-23-2026",
+   "regex": true,
+   "ciudad_en_TZ": true,
+   "icao": null,
+   "resolutionSource": "https://aviationweather.gov/api/data/metar?ids=KSFO&format=raw&date=2026-10-24T07:00:00Z&hours=27",
+   "tags": [
+    "weather",
+    "recurring",
+    "hide-from-new",
+    "daily-temperature",
+    "san-fransisco",
+    "lowest-temperature"
+   ],
+   "endDate": "2026-10-23T12:00:00Z"
+  },
+  {
+   "slug": "highest-temperature-in-seattle-on-october-23-2026",
+   "regex": true,
+   "ciudad_en_TZ": true,
+   "icao": null,
+   "resolutionSource": "https://aviationweather.gov/api/data/metar?ids=KSEA&format=raw&date=2026-10-24T07:00:00Z&hours=27",
+   "tags": [
+    "weather",
+    "recurring",
+    "hide-from-new",
+    "seattle",
+    "daily-temperature",
+    "highest-temperature"
+   ],
+   "endDate": "2026-10-23T12:00:00Z"
+  },
+  {
+   "slug": "highest-temperature-in-los-angeles-on-october-23-2026",
+   "regex": true,
+   "ciudad_en_TZ": true,
+   "icao": null,
+   "resolutionSource": "https://aviationweather.gov/api/data/metar?ids=KLAX&format=raw&date=2026-10-24T07:00:00Z&hours=27",
+   "tags": [
+    "weather",
+    "recurring",
+    "hide-from-new",
+    "daily-temperature",
+    "los-angeles",
+    "highest-temperature"
+   ],
+   "endDate": "2026-10-23T12:00:00Z"
+  },
+  {
+   "slug": "highest-temperature-in-san-francisco-on-october-23-2026",
+   "regex": true,
+   "ciudad_en_TZ": true,
+   "icao": null,
+   "resolutionSource": "https://aviationweather.gov/api/data/metar?ids=KSFO&format=raw&date=2026-10-24T07:00:00Z&hours=27",
+   "tags": [
+    "weather",
+    "recurring",
+    "hide-from-new",
+    "daily-temperature",
+    "san-fransisco",
+    "highest-temperature"
+   ],
+   "endDate": "2026-10-23T12:00:00Z"
+  },
+  {
+   "slug": "lowest-temperature-in-sao-paulo-on-october-23-2026",
+   "regex": true,
+   "ciudad_en_TZ": true,
+   "icao": null,
+   "resolutionSource": "https://aviationweather.gov/api/data/metar?ids=SBGR&format=raw&date=2026-10-24T03:00:00Z&hours=27",
+   "tags": [
+    "weather",
+    "recurring",
+    "hide-from-new",
+    "sao-paulo",
+    "daily-temperature",
+    "lowest-temperature"
+   ],
+   "endDate": "2026-10-23T12:00:00Z"
+  },
+  {
+   "slug": "lowest-temperature-in-buenos-aires-on-october-23-2026",
+   "regex": true,
+   "ciudad_en_TZ": true,
+   "icao": null,
+   "resolutionSource": "https://aviationweather.gov/api/data/metar?ids=SAEZ&format=raw&date=2026-10-24T03:00:00Z&hours=27",
+   "tags": [
+    "weather",
+    "recurring",
+    "hide-from-new",
+    "buenos-aires",
+    "daily-temperature",
+    "lowest-temperature"
+   ],
+   "endDate": "2026-10-23T12:00:00Z"
+  },
+  {
+   "slug": "lowest-temperature-in-toronto-on-october-23-2026",
+   "regex": true,
+   "ciudad_en_TZ": true,
+   "icao": null,
+   "resolutionSource": "https://aviationweather.gov/api/data/metar?ids=CYYZ&format=raw&date=2026-10-24T04:00:00Z&hours=27",
+   "tags": [
+    "weather",
+    "recurring",
+    "hide-from-new",
+    "toronto",
+    "daily-temperature",
+    "lowest-temperature"
+   ],
+   "endDate": "2026-10-23T12:00:00Z"
+  },
+  {
+   "slug": "lowest-temperature-in-mexico-city-on-october-23-2026",
+   "regex": true,
+   "ciudad_en_TZ": true,
+   "icao": null,
+   "resolutionSource": "https://aviationweather.gov/api/data/metar?ids=MMMX&format=raw&date=2026-10-24T06:00:00Z&hours=27",
+   "tags": [
+    "weather",
+    "recurring",
+    "hide-from-new",
+    "daily-temperature",
+    "mexico",
+    "lowest-temperature"
+   ],
+   "endDate": "2026-10-23T12:00:00Z"
+  },
+  {
+   "slug": "highest-temperature-in-sao-paulo-on-october-23-2026",
+   "regex": true,
+   "ciudad_en_TZ": true,
+   "icao": null,
+   "resolutionSource": "https://aviationweather.gov/api/data/metar?ids=SBGR&format=raw&date=2026-10-24T03:00:00Z&hours=27",
+   "tags": [
+    "weather",
+    "recurring",
+    "hide-from-new",
+    "sao-paulo",
+    "daily-temperature",
+    "highest-temperature"
+   ],
+   "endDate": "2026-10-23T12:00:00Z"
+  },
+  {
+   "slug": "highest-temperature-in-buenos-aires-on-october-23-2026",
+   "regex": true,
+   "ciudad_en_TZ": true,
+   "icao": null,
+   "resolutionSource": "https://aviationweather.gov/api/data/metar?ids=SAEZ&format=raw&date=2026-10-24T03:00:00Z&hours=27",
+   "tags": [
+    "weather",
+    "recurring",
+    "hide-from-new",
+    "buenos-aires",
+    "daily-temperature",
+    "highest-temperature"
+   ],
+   "endDate": "2026-10-23T12:00:00Z"
+  },
+  {
+   "slug": "highest-temperature-in-toronto-on-october-23-2026",
+   "regex": true,
+   "ciudad_en_TZ": true,
+   "icao": null,
+   "resolutionSource": "https://aviationweather.gov/api/data/metar?ids=CYYZ&format=raw&date=2026-10-24T04:00:00Z&hours=27",
+   "tags": [
+    "weather",
+    "recurring",
+    "hide-from-new",
+    "toronto",
+    "daily-temperature",
+    "highest-temperature"
+   ],
+   "endDate": "2026-10-23T12:00:00Z"
+  },
+  {
+   "slug": "highest-temperature-in-mexico-city-on-october-23-2026",
+   "regex": true,
+   "ciudad_en_TZ": true,
+   "icao": null,
+   "resolutionSource": "https://aviationweather.gov/api/data/metar?ids=MMMX&format=raw&date=2026-10-24T06:00:00Z&hours=27",
+   "tags": [
+    "weather",
+    "recurring",
+    "hide-from-new",
+    "daily-temperature",
+    "mexico",
+    "highest-temperature"
+   ],
+   "endDate": "2026-10-23T12:00:00Z"
+  },
+  {
+   "slug": "highest-temperature-in-panama-city-on-october-23-2026",
+   "regex": true,
+   "ciudad_en_TZ": true,
+   "icao": null,
+   "resolutionSource": "https://aviationweather.gov/api/data/metar?ids=MPMG&format=raw&date=2026-10-24T05:00:00Z&hours=27",
+   "tags": [
+    "weather",
+    "recurring",
+    "hide-from-new",
+    "daily-temperature",
+    "panama",
+    "highest-temperature"
+   ],
+   "endDate": "2026-10-23T12:00:00Z"
+  },
+  {
+   "slug": "lowest-temperature-in-london-on-october-24-2026",
+   "regex": true,
+   "ciudad_en_TZ": true,
+   "icao": null,
+   "resolutionSource": "https://aviationweather.gov/api/data/metar?ids=EGLC&format=raw&date=2026-10-25T02:00:00Z&hours=30",
+   "tags": [
+    "weather",
+    "recurring",
+    "hide-from-new",
+    "london",
+    "daily-temperature",
+    "lowest-temperature"
+   ],
+   "endDate": "2026-10-24T12:00:00Z"
+  },
+  {
+   "slug": "lowest-temperature-in-paris-on-october-24-2026",
+   "regex": true,
+   "ciudad_en_TZ": true,
+   "icao": null,
+   "resolutionSource": "https://aviationweather.gov/api/data/metar?ids=LFPB&format=raw&date=2026-10-25T01:00:00Z&hours=30",
+   "tags": [
+    "weather",
+    "recurring",
+    "hide-from-new",
+    "paris",
+    "france",
+    "daily-temperature",
+    "lowest-temperature"
+   ],
+   "endDate": "2026-10-24T12:00:00Z"
+  },
+  {
+   "slug": "lowest-temperature-in-seoul-on-october-24-2026",
+   "regex": true,
+   "ciudad_en_TZ": true,
+   "icao": null,
+   "resolutionSource": "https://aviationweather.gov/api/data/metar?ids=RKSI&format=raw&date=2026-10-24T18:00:00Z&hours=30",
+   "tags": [
+    "weather",
+    "recurring",
+    "hide-from-new",
+    "seoul",
+    "daily-temperature",
+    "lowest-temperature"
+   ],
+   "endDate": "2026-10-24T12:00:00Z"
+  },
+  {
+   "slug": "lowest-temperature-in-ankara-on-october-24-2026",
+   "regex": true,
+   "ciudad_en_TZ": true,
+   "icao": null,
+   "resolutionSource": "https://aviationweather.gov/api/data/metar?ids=LTAC&format=raw&date=2026-10-25T00:00:00Z&hours=30",
+   "tags": [
+    "weather",
+    "recurring",
+    "hide-from-new",
+    "ankara",
+    "daily-temperature",
+    "lowest-temperature"
+   ],
+   "endDate": "2026-10-24T12:00:00Z"
+  },
+  {
+   "slug": "lowest-temperature-in-wellington-on-october-24-2026",
+   "regex": true,
+   "ciudad_en_TZ": true,
+   "icao": null,
+   "resolutionSource": "https://aviationweather.gov/api/data/metar?ids=NZWN&format=raw&date=2026-10-24T14:00:00Z&hours=30",
+   "tags": [
+    "weather",
+    "recurring",
+    "hide-from-new",
+    "auckland",
+    "daily-temperature",
+    "lowest-temperature"
+   ],
+   "endDate": "2026-10-24T12:00:00Z"
+  },
+  {
+   "slug": "lowest-temperature-in-lucknow-on-october-24-2026",
+   "regex": true,
+   "ciudad_en_TZ": true,
+   "icao": null,
+   "resolutionSource": "https://aviationweather.gov/api/data/metar?ids=VILK&format=raw&date=2026-10-24T21:30:00Z&hours=30",
+   "tags": [
+    "weather",
+    "recurring",
+    "hide-from-new",
+    "daily-temperature",
+    "lucknow",
+    "lowest-temperature"
+   ],
+   "endDate": "2026-10-24T12:00:00Z"
+  },
+  {
+   "slug": "lowest-temperature-in-munich-on-october-24-2026",
+   "regex": true,
+   "ciudad_en_TZ": true,
+   "icao": null,
+   "resolutionSource": "https://aviationweather.gov/api/data/metar?ids=EDDM&format=raw&date=2026-10-25T01:00:00Z&hours=30",
+   "tags": [
+    "weather",
+    "recurring",
+    "hide-from-new",
+    "daily-temperature",
+    "munich",
+    "lowest-temperature"
+   ],
+   "endDate": "2026-10-24T12:00:00Z"
+  },
+  {
+   "slug": "lowest-temperature-in-tel-aviv-on-october-24-2026",
+   "regex": true,
+   "ciudad_en_TZ": true,
+   "icao": null,
+   "resolutionSource": "https://aviationweather.gov/api/data/metar?ids=LLBG&format=raw&date=2026-10-25T00:00:00Z&hours=30",
+   "tags": [
+    "weather",
+    "recurring",
+    "hide-from-new",
+    "daily-temperature",
+    "tel-aviv",
+    "lowest-temperature"
+   ],
+   "endDate": "2026-10-24T12:00:00Z"
+  },
+  {
+   "slug": "lowest-temperature-in-tokyo-on-october-24-2026",
+   "regex": true,
+   "ciudad_en_TZ": true,
+   "icao": null,
+   "resolutionSource": "https://aviationweather.gov/api/data/metar?ids=RJTT&format=raw&date=2026-10-24T18:00:00Z&hours=30",
+   "tags": [
+    "weather",
+    "recurring",
+    "hide-from-new",
+    "daily-temperature",
+    "tokyo",
+    "lowest-temperature"
+   ],
+   "endDate": "2026-10-24T12:00:00Z"
+  },
+  {
+   "slug": "lowest-temperature-in-hong-kong-on-october-24-2026",
+   "regex": true,
+   "ciudad_en_TZ": true,
+   "icao": "HKO",
+   "resolutionSource": null,
+   "tags": [
+    "weather",
+    "recurring",
+    "hide-from-new",
+    "daily-temperature",
+    "hong-kong",
+    "lowest-temperature"
+   ],
+   "endDate": "2026-10-24T12:00:00Z"
+  },
+  {
+   "slug": "lowest-temperature-in-shanghai-on-october-24-2026",
+   "regex": true,
+   "ciudad_en_TZ": true,
+   "icao": null,
+   "resolutionSource": "https://aviationweather.gov/api/data/metar?ids=ZSPD&format=raw&date=2026-10-24T19:00:00Z&hours=30",
+   "tags": [
+    "weather",
+    "recurring",
+    "hide-from-new",
+    "daily-temperature",
+    "shanghai",
+    "lowest-temperature"
+   ],
+   "endDate": "2026-10-24T12:00:00Z"
+  },
+  {
+   "slug": "lowest-temperature-in-milan-on-october-24-2026",
+   "regex": true,
+   "ciudad_en_TZ": true,
+   "icao": null,
+   "resolutionSource": "https://aviationweather.gov/api/data/metar?ids=LIMC&format=raw&date=2026-10-25T01:00:00Z&hours=30",
+   "tags": [
+    "weather",
+    "recurring",
+    "hide-from-new",
+    "daily-temperature",
+    "milan",
+    "lowest-temperature"
+   ],
+   "endDate": "2026-10-24T12:00:00Z"
+  },
+  {
+   "slug": "lowest-temperature-in-madrid-on-october-24-2026",
+   "regex": true,
+   "ciudad_en_TZ": true,
+   "icao": null,
+   "resolutionSource": "https://aviationweather.gov/api/data/metar?ids=LEMD&format=raw&date=2026-10-25T01:00:00Z&hours=30",
+   "tags": [
+    "weather",
+    "recurring",
+    "hide-from-new",
+    "daily-temperature",
+    "madrid",
+    "lowest-temperature"
+   ],
+   "endDate": "2026-10-24T12:00:00Z"
+  },
+  {
+   "slug": "lowest-temperature-in-warsaw-on-october-24-2026",
+   "regex": true,
+   "ciudad_en_TZ": true,
+   "icao": null,
+   "resolutionSource": "https://aviationweather.gov/api/data/metar?ids=EPWA&format=raw&date=2026-10-25T01:00:00Z&hours=30",
+   "tags": [
+    "weather",
+    "recurring",
+    "hide-from-new",
+    "daily-temperature",
+    "warsaw",
+    "lowest-temperature"
+   ],
+   "endDate": "2026-10-24T12:00:00Z"
+  },
+  {
+   "slug": "lowest-temperature-in-taipei-on-october-24-2026",
+   "regex": true,
+   "ciudad_en_TZ": true,
+   "icao": null,
+   "resolutionSource": "https://aviationweather.gov/api/data/metar?ids=RCSS&format=raw&date=2026-10-24T19:00:00Z&hours=30",
+   "tags": [
+    "weather",
+    "recurring",
+    "hide-from-new",
+    "daily-temperature",
+    "taipei",
+    "lowest-temperature"
+   ],
+   "endDate": "2026-10-24T12:00:00Z"
+  },
+  {
+   "slug": "lowest-temperature-in-chongqing-on-october-24-2026",
+   "regex": true,
+   "ciudad_en_TZ": true,
+   "icao": null,
+   "resolutionSource": "https://aviationweather.gov/api/data/metar?ids=ZUCK&format=raw&date=2026-10-24T19:00:00Z&hours=30",
+   "tags": [
+    "weather",
+    "recurring",
+    "hide-from-new",
+    "daily-temperature",
+    "chongqing",
+    "lowest-temperature"
+   ],
+   "endDate": "2026-10-24T12:00:00Z"
+  },
+  {
+   "slug": "lowest-temperature-in-beijing-on-october-24-2026",
+   "regex": true,
+   "ciudad_en_TZ": true,
+   "icao": null,
+   "resolutionSource": "https://aviationweather.gov/api/data/metar?ids=ZBAA&format=raw&date=2026-10-24T19:00:00Z&hours=30",
+   "tags": [
+    "weather",
+    "recurring",
+    "hide-from-new",
+    "daily-temperature",
+    "beijing",
+    "lowest-temperature"
+   ],
+   "endDate": "2026-10-24T12:00:00Z"
+  },
+  {
+   "slug": "lowest-temperature-in-wuhan-on-october-24-2026",
+   "regex": true,
+   "ciudad_en_TZ": true,
+   "icao": null,
+   "resolutionSource": "https://aviationweather.gov/api/data/metar?ids=ZHHH&format=raw&date=2026-10-24T19:00:00Z&hours=30",
+   "tags": [
+    "weather",
+    "recurring",
+    "hide-from-new",
+    "daily-temperature",
+    "wuhan",
+    "lowest-temperature"
+   ],
+   "endDate": "2026-10-24T12:00:00Z"
+  },
+  {
+   "slug": "lowest-temperature-in-chengdu-on-october-24-2026",
+   "regex": true,
+   "ciudad_en_TZ": true,
+   "icao": null,
+   "resolutionSource": "https://aviationweather.gov/api/data/metar?ids=ZUUU&format=raw&date=2026-10-24T19:00:00Z&hours=30",
+   "tags": [
+    "weather",
+    "recurring",
+    "hide-from-new",
+    "daily-temperature",
+    "chengdu",
+    "lowest-temperature"
+   ],
+   "endDate": "2026-10-24T12:00:00Z"
+  },
+  {
+   "slug": "lowest-temperature-in-shenzhen-on-october-24-2026",
+   "regex": true,
+   "ciudad_en_TZ": true,
+   "icao": null,
+   "resolutionSource": "https://aviationweather.gov/api/data/metar?ids=ZGSZ&format=raw&date=2026-10-24T19:00:00Z&hours=30",
+   "tags": [
+    "weather",
+    "recurring",
+    "hide-from-new",
+    "daily-temperature",
+    "shenzhen",
+    "lowest-temperature"
+   ],
+   "endDate": "2026-10-24T12:00:00Z"
+  },
+  {
+   "slug": "lowest-temperature-in-moscow-on-october-24-2026",
+   "regex": true,
+   "ciudad_en_TZ": true,
+   "icao": null,
+   "resolutionSource": "https://aviationweather.gov/api/data/metar?ids=UUWW&format=raw&date=2026-10-25T00:00:00Z&hours=30",
+   "tags": [
+    "weather",
+    "recurring",
+    "hide-from-new",
+    "daily-temperature",
+    "moscow",
+    "lowest-temperature"
+   ],
+   "endDate": "2026-10-24T12:00:00Z"
+  },
+  {
+   "slug": "lowest-temperature-in-istanbul-on-october-24-2026",
+   "regex": true,
+   "ciudad_en_TZ": true,
+   "icao": null,
+   "resolutionSource": "https://aviationweather.gov/api/data/metar?ids=LTFM&format=raw&date=2026-10-25T00:00:00Z&hours=30",
+   "tags": [
+    "weather",
+    "recurring",
+    "hide-from-new",
+    "daily-temperature",
+    "istanbul",
+    "lowest-temperature"
+   ],
+   "endDate": "2026-10-24T12:00:00Z"
+  },
+  {
+   "slug": "lowest-temperature-in-busan-on-october-24-2026",
+   "regex": true,
+   "ciudad_en_TZ": true,
+   "icao": null,
+   "resolutionSource": "https://aviationweather.gov/api/data/metar?ids=RKPK&format=raw&date=2026-10-24T18:00:00Z&hours=30",
+   "tags": [
+    "weather",
+    "recurring",
+    "hide-from-new",
+    "daily-temperature",
+    "busan",
+    "lowest-temperature"
+   ],
+   "endDate": "2026-10-24T12:00:00Z"
+  },
+  {
+   "slug": "lowest-temperature-in-amsterdam-on-october-24-2026",
+   "regex": true,
+   "ciudad_en_TZ": true,
+   "icao": null,
+   "resolutionSource": "https://aviationweather.gov/api/data/metar?ids=EHAM&format=raw&date=2026-10-25T01:00:00Z&hours=30",
+   "tags": [
+    "weather",
+    "recurring",
+    "hide-from-new",
+    "daily-temperature",
+    "amsterdam",
+    "lowest-temperature"
+   ],
+   "endDate": "2026-10-24T12:00:00Z"
+  },
+  {
+   "slug": "lowest-temperature-in-helsinki-on-october-24-2026",
+   "regex": true,
+   "ciudad_en_TZ": true,
+   "icao": null,
+   "resolutionSource": "https://aviationweather.gov/api/data/metar?ids=EFHK&format=raw&date=2026-10-25T00:00:00Z&hours=30",
+   "tags": [
+    "weather",
+    "recurring",
+    "hide-from-new",
+    "daily-temperature",
+    "helsinki",
+    "lowest-temperature"
+   ],
+   "endDate": "2026-10-24T12:00:00Z"
+  },
+  {
+   "slug": "lowest-temperature-in-jeddah-on-october-24-2026",
+   "regex": true,
+   "ciudad_en_TZ": true,
+   "icao": null,
+   "resolutionSource": "https://aviationweather.gov/api/data/metar?ids=OEJN&format=raw&date=2026-10-25T00:00:00Z&hours=30",
+   "tags": [
+    "weather",
+    "recurring",
+    "hide-from-new",
+    "daily-temperature",
+    "jeddah",
+    "lowest-temperature"
+   ],
+   "endDate": "2026-10-24T12:00:00Z"
+  },
+  {
+   "slug": "lowest-temperature-in-cape-town-on-october-24-2026",
+   "regex": true,
+   "ciudad_en_TZ": true,
+   "icao": null,
+   "resolutionSource": "https://aviationweather.gov/api/data/metar?ids=FACT&format=raw&date=2026-10-25T01:00:00Z&hours=30",
+   "tags": [
+    "weather",
+    "recurring",
+    "hide-from-new",
+    "daily-temperature",
+    "cape-town",
+    "lowest-temperature"
+   ],
+   "endDate": "2026-10-24T12:00:00Z"
+  },
+  {
+   "slug": "lowest-temperature-in-guangzhou-on-october-24-2026",
+   "regex": true,
+   "ciudad_en_TZ": true,
+   "icao": null,
+   "resolutionSource": "https://aviationweather.gov/api/data/metar?ids=ZGGG&format=raw&date=2026-10-24T19:00:00Z&hours=30",
+   "tags": [
+    "weather",
+    "recurring",
+    "hide-from-new",
+    "daily-temperature",
+    "guangzhou",
+    "lowest-temperature"
+   ],
+   "endDate": "2026-10-24T12:00:00Z"
+  },
+  {
+   "slug": "lowest-temperature-in-qingdao-on-october-24-2026",
+   "regex": true,
+   "ciudad_en_TZ": true,
+   "icao": null,
+   "resolutionSource": "https://aviationweather.gov/api/data/metar?ids=ZSQD&format=raw&date=2026-10-24T19:00:00Z&hours=30",
+   "tags": [
+    "weather",
+    "recurring",
+    "hide-from-new",
+    "daily-temperature",
+    "qingdao",
+    "lowest-temperature"
+   ],
+   "endDate": "2026-10-24T12:00:00Z"
+  },
+  {
+   "slug": "lowest-temperature-in-karachi-on-october-24-2026",
+   "regex": true,
+   "ciudad_en_TZ": true,
+   "icao": null,
+   "resolutionSource": "https://aviationweather.gov/api/data/metar?ids=OPKC&format=raw&date=2026-10-24T22:00:00Z&hours=30",
+   "tags": [
+    "weather",
+    "recurring",
+    "hide-from-new",
+    "daily-temperature",
+    "karachi",
+    "lowest-temperature"
+   ],
+   "endDate": "2026-10-24T12:00:00Z"
+  },
+  {
+   "slug": "highest-temperature-in-london-on-october-24-2026",
+   "regex": true,
+   "ciudad_en_TZ": true,
+   "icao": null,
+   "resolutionSource": "https://aviationweather.gov/api/data/metar?ids=EGLC&format=raw&date=2026-10-25T02:00:00Z&hours=30",
+   "tags": [
+    "weather",
+    "recurring",
+    "hide-from-new",
+    "london",
+    "daily-temperature",
+    "highest-temperature"
+   ],
+   "endDate": "2026-10-24T12:00:00Z"
+  },
+  {
+   "slug": "highest-temperature-in-paris-on-october-24-2026",
+   "regex": true,
+   "ciudad_en_TZ": true,
+   "icao": null,
+   "resolutionSource": "https://aviationweather.gov/api/data/metar?ids=LFPB&format=raw&date=2026-10-25T01:00:00Z&hours=30",
+   "tags": [
+    "weather",
+    "recurring",
+    "hide-from-new",
+    "paris",
+    "france",
+    "daily-temperature",
+    "highest-temperature"
+   ],
+   "endDate": "2026-10-24T12:00:00Z"
+  },
+  {
+   "slug": "highest-temperature-in-seoul-on-october-24-2026",
+   "regex": true,
+   "ciudad_en_TZ": true,
+   "icao": null,
+   "resolutionSource": "https://aviationweather.gov/api/data/metar?ids=RKSI&format=raw&date=2026-10-24T18:00:00Z&hours=30",
+   "tags": [
+    "weather",
+    "recurring",
+    "hide-from-new",
+    "seoul",
+    "daily-temperature",
+    "highest-temperature"
+   ],
+   "endDate": "2026-10-24T12:00:00Z"
+  },
+  {
+   "slug": "highest-temperature-in-ankara-on-october-24-2026",
+   "regex": true,
+   "ciudad_en_TZ": true,
+   "icao": null,
+   "resolutionSource": "https://aviationweather.gov/api/data/metar?ids=LTAC&format=raw&date=2026-10-25T00:00:00Z&hours=30",
+   "tags": [
+    "weather",
+    "recurring",
+    "hide-from-new",
+    "ankara",
+    "daily-temperature",
+    "highest-temperature"
+   ],
+   "endDate": "2026-10-24T12:00:00Z"
+  },
+  {
+   "slug": "highest-temperature-in-wellington-on-october-24-2026",
+   "regex": true,
+   "ciudad_en_TZ": true,
+   "icao": null,
+   "resolutionSource": "https://aviationweather.gov/api/data/metar?ids=NZWN&format=raw&date=2026-10-24T14:00:00Z&hours=30",
+   "tags": [
+    "weather",
+    "recurring",
+    "hide-from-new",
+    "auckland",
+    "daily-temperature",
+    "highest-temperature"
+   ],
+   "endDate": "2026-10-24T12:00:00Z"
+  },
+  {
+   "slug": "highest-temperature-in-lucknow-on-october-24-2026",
+   "regex": true,
+   "ciudad_en_TZ": true,
+   "icao": null,
+   "resolutionSource": "https://aviationweather.gov/api/data/metar?ids=VILK&format=raw&date=2026-10-24T21:30:00Z&hours=30",
+   "tags": [
+    "weather",
+    "recurring",
+    "hide-from-new",
+    "daily-temperature",
+    "lucknow",
+    "highest-temperature"
+   ],
+   "endDate": "2026-10-24T12:00:00Z"
+  },
+  {
+   "slug": "highest-temperature-in-munich-on-october-24-2026",
+   "regex": true,
+   "ciudad_en_TZ": true,
+   "icao": null,
+   "resolutionSource": "https://aviationweather.gov/api/data/metar?ids=EDDM&format=raw&date=2026-10-25T01:00:00Z&hours=30",
+   "tags": [
+    "weather",
+    "recurring",
+    "hide-from-new",
+    "daily-temperature",
+    "munich",
+    "highest-temperature"
+   ],
+   "endDate": "2026-10-24T12:00:00Z"
+  },
+  {
+   "slug": "highest-temperature-in-tel-aviv-on-october-24-2026",
+   "regex": true,
+   "ciudad_en_TZ": true,
+   "icao": null,
+   "resolutionSource": "https://aviationweather.gov/api/data/metar?ids=LLBG&format=raw&date=2026-10-25T00:00:00Z&hours=30",
+   "tags": [
+    "weather",
+    "recurring",
+    "hide-from-new",
+    "daily-temperature",
+    "tel-aviv",
+    "highest-temperature"
+   ],
+   "endDate": "2026-10-24T12:00:00Z"
+  },
+  {
+   "slug": "highest-temperature-in-tokyo-on-october-24-2026",
+   "regex": true,
+   "ciudad_en_TZ": true,
+   "icao": null,
+   "resolutionSource": "https://aviationweather.gov/api/data/metar?ids=RJTT&format=raw&date=2026-10-24T18:00:00Z&hours=30",
+   "tags": [
+    "weather",
+    "recurring",
+    "hide-from-new",
+    "daily-temperature",
+    "tokyo",
+    "highest-temperature"
+   ],
+   "endDate": "2026-10-24T12:00:00Z"
+  },
+  {
+   "slug": "highest-temperature-in-hong-kong-on-october-24-2026",
+   "regex": true,
+   "ciudad_en_TZ": true,
+   "icao": "HKO",
+   "resolutionSource": null,
+   "tags": [
+    "weather",
+    "recurring",
+    "hide-from-new",
+    "daily-temperature",
+    "hong-kong",
+    "highest-temperature"
+   ],
+   "endDate": "2026-10-24T12:00:00Z"
+  },
+  {
+   "slug": "highest-temperature-in-shanghai-on-october-24-2026",
+   "regex": true,
+   "ciudad_en_TZ": true,
+   "icao": null,
+   "resolutionSource": "https://aviationweather.gov/api/data/metar?ids=ZSPD&format=raw&date=2026-10-24T19:00:00Z&hours=30",
+   "tags": [
+    "weather",
+    "recurring",
+    "hide-from-new",
+    "daily-temperature",
+    "shanghai",
+    "highest-temperature"
+   ],
+   "endDate": "2026-10-24T12:00:00Z"
+  },
+  {
+   "slug": "highest-temperature-in-singapore-on-october-24-2026",
+   "regex": true,
+   "ciudad_en_TZ": true,
+   "icao": null,
+   "resolutionSource": "https://aviationweather.gov/api/data/metar?ids=WSSS&format=raw&date=2026-10-24T19:00:00Z&hours=30",
+   "tags": [
+    "weather",
+    "recurring",
+    "hide-from-new",
+    "daily-temperature",
+    "singapore",
+    "highest-temperature"
+   ],
+   "endDate": "2026-10-24T12:00:00Z"
+  },
+  {
+   "slug": "highest-temperature-in-milan-on-october-24-2026",
+   "regex": true,
+   "ciudad_en_TZ": true,
+   "icao": null,
+   "resolutionSource": "https://aviationweather.gov/api/data/metar?ids=LIMC&format=raw&date=2026-10-25T01:00:00Z&hours=30",
+   "tags": [
+    "weather",
+    "recurring",
+    "hide-from-new",
+    "daily-temperature",
+    "milan",
+    "highest-temperature"
+   ],
+   "endDate": "2026-10-24T12:00:00Z"
+  },
+  {
+   "slug": "highest-temperature-in-madrid-on-october-24-2026",
+   "regex": true,
+   "ciudad_en_TZ": true,
+   "icao": null,
+   "resolutionSource": "https://aviationweather.gov/api/data/metar?ids=LEMD&format=raw&date=2026-10-25T01:00:00Z&hours=30",
+   "tags": [
+    "weather",
+    "recurring",
+    "hide-from-new",
+    "daily-temperature",
+    "madrid",
+    "highest-temperature"
+   ],
+   "endDate": "2026-10-24T12:00:00Z"
+  },
+  {
+   "slug": "highest-temperature-in-warsaw-on-october-24-2026",
+   "regex": true,
+   "ciudad_en_TZ": true,
+   "icao": null,
+   "resolutionSource": "https://aviationweather.gov/api/data/metar?ids=EPWA&format=raw&date=2026-10-25T01:00:00Z&hours=30",
+   "tags": [
+    "weather",
+    "recurring",
+    "hide-from-new",
+    "daily-temperature",
+    "warsaw",
+    "highest-temperature"
+   ],
+   "endDate": "2026-10-24T12:00:00Z"
+  },
+  {
+   "slug": "highest-temperature-in-taipei-on-october-24-2026",
+   "regex": true,
+   "ciudad_en_TZ": true,
+   "icao": null,
+   "resolutionSource": "https://aviationweather.gov/api/data/metar?ids=RCSS&format=raw&date=2026-10-24T19:00:00Z&hours=30",
+   "tags": [
+    "weather",
+    "recurring",
+    "hide-from-new",
+    "daily-temperature",
+    "taipei",
+    "highest-temperature"
+   ],
+   "endDate": "2026-10-24T12:00:00Z"
+  },
+  {
+   "slug": "highest-temperature-in-chongqing-on-october-24-2026",
+   "regex": true,
+   "ciudad_en_TZ": true,
+   "icao": null,
+   "resolutionSource": "https://aviationweather.gov/api/data/metar?ids=ZUCK&format=raw&date=2026-10-24T19:00:00Z&hours=30",
+   "tags": [
+    "weather",
+    "recurring",
+    "hide-from-new",
+    "daily-temperature",
+    "chongqing",
+    "highest-temperature"
+   ],
+   "endDate": "2026-10-24T12:00:00Z"
+  },
+  {
+   "slug": "highest-temperature-in-beijing-on-october-24-2026",
+   "regex": true,
+   "ciudad_en_TZ": true,
+   "icao": null,
+   "resolutionSource": "https://aviationweather.gov/api/data/metar?ids=ZBAA&format=raw&date=2026-10-24T19:00:00Z&hours=30",
+   "tags": [
+    "weather",
+    "recurring",
+    "hide-from-new",
+    "daily-temperature",
+    "beijing",
+    "highest-temperature"
+   ],
+   "endDate": "2026-10-24T12:00:00Z"
+  },
+  {
+   "slug": "highest-temperature-in-wuhan-on-october-24-2026",
+   "regex": true,
+   "ciudad_en_TZ": true,
+   "icao": null,
+   "resolutionSource": "https://aviationweather.gov/api/data/metar?ids=ZHHH&format=raw&date=2026-10-24T19:00:00Z&hours=30",
+   "tags": [
+    "weather",
+    "recurring",
+    "hide-from-new",
+    "daily-temperature",
+    "wuhan",
+    "highest-temperature"
+   ],
+   "endDate": "2026-10-24T12:00:00Z"
+  },
+  {
+   "slug": "highest-temperature-in-chengdu-on-october-24-2026",
+   "regex": true,
+   "ciudad_en_TZ": true,
+   "icao": null,
+   "resolutionSource": "https://aviationweather.gov/api/data/metar?ids=ZUUU&format=raw&date=2026-10-24T19:00:00Z&hours=30",
+   "tags": [
+    "weather",
+    "recurring",
+    "hide-from-new",
+    "daily-temperature",
+    "chengdu",
+    "highest-temperature"
+   ],
+   "endDate": "2026-10-24T12:00:00Z"
+  },
+  {
+   "slug": "highest-temperature-in-shenzhen-on-october-24-2026",
+   "regex": true,
+   "ciudad_en_TZ": true,
+   "icao": null,
+   "resolutionSource": "https://aviationweather.gov/api/data/metar?ids=ZGSZ&format=raw&date=2026-10-24T19:00:00Z&hours=30",
+   "tags": [
+    "weather",
+    "recurring",
+    "hide-from-new",
+    "daily-temperature",
+    "shenzhen",
+    "highest-temperature"
+   ],
+   "endDate": "2026-10-24T12:00:00Z"
+  },
+  {
+   "slug": "highest-temperature-in-moscow-on-october-24-2026",
+   "regex": true,
+   "ciudad_en_TZ": true,
+   "icao": null,
+   "resolutionSource": "https://aviationweather.gov/api/data/metar?ids=UUWW&format=raw&date=2026-10-25T00:00:00Z&hours=30",
+   "tags": [
+    "weather",
+    "recurring",
+    "hide-from-new",
+    "daily-temperature",
+    "moscow",
+    "highest-temperature"
+   ],
+   "endDate": "2026-10-24T12:00:00Z"
+  },
+  {
+   "slug": "highest-temperature-in-istanbul-on-october-24-2026",
+   "regex": true,
+   "ciudad_en_TZ": true,
+   "icao": null,
+   "resolutionSource": "https://aviationweather.gov/api/data/metar?ids=LTFM&format=raw&date=2026-10-25T00:00:00Z&hours=30",
+   "tags": [
+    "weather",
+    "recurring",
+    "hide-from-new",
+    "daily-temperature",
+    "istanbul",
+    "highest-temperature"
+   ],
+   "endDate": "2026-10-24T12:00:00Z"
+  },
+  {
+   "slug": "highest-temperature-in-busan-on-october-24-2026",
+   "regex": true,
+   "ciudad_en_TZ": true,
+   "icao": null,
+   "resolutionSource": "https://aviationweather.gov/api/data/metar?ids=RKPK&format=raw&date=2026-10-24T18:00:00Z&hours=30",
+   "tags": [
+    "weather",
+    "recurring",
+    "hide-from-new",
+    "daily-temperature",
+    "busan",
+    "highest-temperature"
+   ],
+   "endDate": "2026-10-24T12:00:00Z"
+  },
+  {
+   "slug": "highest-temperature-in-amsterdam-on-october-24-2026",
+   "regex": true,
+   "ciudad_en_TZ": true,
+   "icao": null,
+   "resolutionSource": "https://aviationweather.gov/api/data/metar?ids=EHAM&format=raw&date=2026-10-25T01:00:00Z&hours=30",
+   "tags": [
+    "weather",
+    "recurring",
+    "hide-from-new",
+    "daily-temperature",
+    "amsterdam",
+    "highest-temperature"
+   ],
+   "endDate": "2026-10-24T12:00:00Z"
+  },
+  {
+   "slug": "highest-temperature-in-helsinki-on-october-24-2026",
+   "regex": true,
+   "ciudad_en_TZ": true,
+   "icao": null,
+   "resolutionSource": "https://aviationweather.gov/api/data/metar?ids=EFHK&format=raw&date=2026-10-25T00:00:00Z&hours=30",
+   "tags": [
+    "weather",
+    "recurring",
+    "hide-from-new",
+    "daily-temperature",
+    "helsinki",
+    "highest-temperature"
+   ],
+   "endDate": "2026-10-24T12:00:00Z"
+  },
+  {
+   "slug": "highest-temperature-in-kuala-lumpur-on-october-24-2026",
+   "regex": true,
+   "ciudad_en_TZ": true,
+   "icao": null,
+   "resolutionSource": "https://aviationweather.gov/api/data/metar?ids=WMKK&format=raw&date=2026-10-24T19:00:00Z&hours=30",
+   "tags": [
+    "weather",
+    "recurring",
+    "hide-from-new",
+    "daily-temperature",
+    "kuala-lampur",
+    "highest-temperature"
+   ],
+   "endDate": "2026-10-24T12:00:00Z"
+  },
+  {
+   "slug": "highest-temperature-in-jeddah-on-october-24-2026",
+   "regex": true,
+   "ciudad_en_TZ": true,
+   "icao": null,
+   "resolutionSource": "https://aviationweather.gov/api/data/metar?ids=OEJN&format=raw&date=2026-10-25T00:00:00Z&hours=30",
+   "tags": [
+    "weather",
+    "recurring",
+    "hide-from-new",
+    "daily-temperature",
+    "jeddah",
+    "highest-temperature"
+   ],
+   "endDate": "2026-10-24T12:00:00Z"
+  },
+  {
+   "slug": "highest-temperature-in-cape-town-on-october-24-2026",
+   "regex": true,
+   "ciudad_en_TZ": true,
+   "icao": null,
+   "resolutionSource": "https://aviationweather.gov/api/data/metar?ids=FACT&format=raw&date=2026-10-25T01:00:00Z&hours=30",
+   "tags": [
+    "weather",
+    "recurring",
+    "hide-from-new",
+    "daily-temperature",
+    "cape-town",
+    "highest-temperature"
+   ],
+   "endDate": "2026-10-24T12:00:00Z"
+  },
+  {
+   "slug": "highest-temperature-in-guangzhou-on-october-24-2026",
+   "regex": true,
+   "ciudad_en_TZ": true,
+   "icao": null,
+   "resolutionSource": "https://aviationweather.gov/api/data/metar?ids=ZGGG&format=raw&date=2026-10-24T19:00:00Z&hours=30",
+   "tags": [
+    "weather",
+    "recurring",
+    "hide-from-new",
+    "daily-temperature",
+    "guangzhou",
+    "highest-temperature"
+   ],
+   "endDate": "2026-10-24T12:00:00Z"
+  },
+  {
+   "slug": "highest-temperature-in-qingdao-on-october-24-2026",
+   "regex": true,
+   "ciudad_en_TZ": true,
+   "icao": null,
+   "resolutionSource": "https://aviationweather.gov/api/data/metar?ids=ZSQD&format=raw&date=2026-10-24T19:00:00Z&hours=30",
+   "tags": [
+    "weather",
+    "recurring",
+    "hide-from-new",
+    "daily-temperature",
+    "qingdao",
+    "highest-temperature"
+   ],
+   "endDate": "2026-10-24T12:00:00Z"
+  },
+  {
+   "slug": "highest-temperature-in-karachi-on-october-24-2026",
+   "regex": true,
+   "ciudad_en_TZ": true,
+   "icao": null,
+   "resolutionSource": "https://aviationweather.gov/api/data/metar?ids=OPKC&format=raw&date=2026-10-24T22:00:00Z&hours=30",
+   "tags": [
+    "weather",
+    "recurring",
+    "hide-from-new",
+    "daily-temperature",
+    "karachi",
+    "highest-temperature"
+   ],
+   "endDate": "2026-10-24T12:00:00Z"
+  },
+  {
+   "slug": "highest-temperature-in-manila-on-october-24-2026",
+   "regex": true,
+   "ciudad_en_TZ": true,
+   "icao": null,
+   "resolutionSource": "https://aviationweather.gov/api/data/metar?ids=RPLL&format=raw&date=2026-10-24T19:00:00Z&hours=30",
+   "tags": [
+    "weather",
+    "recurring",
+    "hide-from-new",
+    "daily-temperature",
+    "manila",
+    "highest-temperature"
+   ],
+   "endDate": "2026-10-24T12:00:00Z"
+  },
+  {
+   "slug": "highest-temperature-in-nyc-on-october-24-2026",
+   "regex": true,
+   "ciudad_en_TZ": true,
+   "icao": null,
+   "resolutionSource": "https://aviationweather.gov/api/data/metar?ids=KLGA&format=raw&date=2026-10-25T07:00:00Z&hours=30",
+   "tags": [
+    "weather",
+    "recurring",
+    "hide-from-new",
+    "new-york-city",
+    "daily-temperature",
+    "highest-temperature"
+   ],
+   "endDate": "2026-10-24T12:00:00Z"
+  },
+  {
+   "slug": "highest-temperature-in-atlanta-on-october-24-2026",
+   "regex": true,
+   "ciudad_en_TZ": true,
+   "icao": null,
+   "resolutionSource": "https://aviationweather.gov/api/data/metar?ids=KATL&format=raw&date=2026-10-25T07:00:00Z&hours=30",
+   "tags": [
+    "weather",
+    "recurring",
+    "hide-from-new",
+    "atlanta",
+    "daily-temperature",
+    "highest-temperature"
+   ],
+   "endDate": "2026-10-24T12:00:00Z"
+  },
+  {
+   "slug": "highest-temperature-in-austin-on-october-24-2026",
+   "regex": true,
+   "ciudad_en_TZ": true,
+   "icao": null,
+   "resolutionSource": "https://aviationweather.gov/api/data/metar?ids=KAUS&format=raw&date=2026-10-25T08:00:00Z&hours=30",
+   "tags": [
+    "weather",
+    "recurring",
+    "hide-from-new",
+    "daily-temperature",
+    "austin",
+    "highest-temperature"
+   ],
+   "endDate": "2026-10-24T12:00:00Z"
+  },
+  {
+   "slug": "lowest-temperature-in-nyc-on-october-24-2026",
+   "regex": true,
+   "ciudad_en_TZ": true,
+   "icao": null,
+   "resolutionSource": "https://aviationweather.gov/api/data/metar?ids=KLGA&format=raw&date=2026-10-25T07:00:00Z&hours=30",
+   "tags": [
+    "weather",
+    "recurring",
+    "hide-from-new",
+    "new-york-city",
+    "daily-temperature",
+    "lowest-temperature"
+   ],
+   "endDate": "2026-10-24T12:00:00Z"
+  },
+  {
+   "slug": "lowest-temperature-in-dallas-on-october-24-2026",
+   "regex": true,
+   "ciudad_en_TZ": true,
+   "icao": null,
+   "resolutionSource": "https://aviationweather.gov/api/data/metar?ids=KDAL&format=raw&date=2026-10-25T08:00:00Z&hours=30",
+   "tags": [
+    "weather",
+    "recurring",
+    "hide-from-new",
+    "dallas",
+    "daily-temperature",
+    "lowest-temperature"
+   ],
+   "endDate": "2026-10-24T12:00:00Z"
+  },
+  {
+   "slug": "lowest-temperature-in-atlanta-on-october-24-2026",
+   "regex": true,
+   "ciudad_en_TZ": true,
+   "icao": null,
+   "resolutionSource": "https://aviationweather.gov/api/data/metar?ids=KATL&format=raw&date=2026-10-25T07:00:00Z&hours=30",
+   "tags": [
+    "weather",
+    "recurring",
+    "hide-from-new",
+    "atlanta",
+    "daily-temperature",
+    "lowest-temperature"
+   ],
+   "endDate": "2026-10-24T12:00:00Z"
+  },
+  {
+   "slug": "lowest-temperature-in-miami-on-october-24-2026",
+   "regex": true,
+   "ciudad_en_TZ": true,
+   "icao": null,
+   "resolutionSource": "https://aviationweather.gov/api/data/metar?ids=KMIA&format=raw&date=2026-10-25T07:00:00Z&hours=30",
+   "tags": [
+    "weather",
+    "recurring",
+    "hide-from-new",
+    "miami",
+    "daily-temperature",
+    "lowest-temperature"
+   ],
+   "endDate": "2026-10-24T12:00:00Z"
+  },
+  {
+   "slug": "lowest-temperature-in-chicago-on-october-24-2026",
+   "regex": true,
+   "ciudad_en_TZ": true,
+   "icao": null,
+   "resolutionSource": "https://aviationweather.gov/api/data/metar?ids=KORD&format=raw&date=2026-10-25T08:00:00Z&hours=30",
+   "tags": [
+    "weather",
+    "recurring",
+    "hide-from-new",
+    "chicago",
+    "daily-temperature",
+    "lowest-temperature"
+   ],
+   "endDate": "2026-10-24T12:00:00Z"
+  },
+  {
+   "slug": "lowest-temperature-in-austin-on-october-24-2026",
+   "regex": true,
+   "ciudad_en_TZ": true,
+   "icao": null,
+   "resolutionSource": "https://aviationweather.gov/api/data/metar?ids=KAUS&format=raw&date=2026-10-25T08:00:00Z&hours=30",
+   "tags": [
+    "weather",
+    "recurring",
+    "hide-from-new",
+    "daily-temperature",
+    "austin",
+    "lowest-temperature"
+   ],
+   "endDate": "2026-10-24T12:00:00Z"
+  },
+  {
+   "slug": "lowest-temperature-in-denver-on-october-24-2026",
+   "regex": true,
+   "ciudad_en_TZ": true,
+   "icao": null,
+   "resolutionSource": "https://aviationweather.gov/api/data/metar?ids=KDEN&format=raw&date=2026-10-25T09:00:00Z&hours=30",
+   "tags": [
+    "weather",
+    "recurring",
+    "hide-from-new",
+    "daily-temperature",
+    "denver",
+    "lowest-temperature"
+   ],
+   "endDate": "2026-10-24T12:00:00Z"
+  },
+  {
+   "slug": "lowest-temperature-in-houston-on-october-24-2026",
+   "regex": true,
+   "ciudad_en_TZ": true,
+   "icao": null,
+   "resolutionSource": "https://aviationweather.gov/api/data/metar?ids=KHOU&format=raw&date=2026-10-25T08:00:00Z&hours=30",
+   "tags": [
+    "weather",
+    "recurring",
+    "hide-from-new",
+    "daily-temperature",
+    "houston",
+    "lowest-temperature"
+   ],
+   "endDate": "2026-10-24T12:00:00Z"
+  },
+  {
+   "slug": "highest-temperature-in-dallas-on-october-24-2026",
+   "regex": true,
+   "ciudad_en_TZ": true,
+   "icao": null,
+   "resolutionSource": "https://aviationweather.gov/api/data/metar?ids=KDAL&format=raw&date=2026-10-25T08:00:00Z&hours=30",
+   "tags": [
+    "weather",
+    "recurring",
+    "hide-from-new",
+    "dallas",
+    "daily-temperature",
+    "highest-temperature"
+   ],
+   "endDate": "2026-10-24T12:00:00Z"
+  },
+  {
+   "slug": "highest-temperature-in-miami-on-october-24-2026",
+   "regex": true,
+   "ciudad_en_TZ": true,
+   "icao": null,
+   "resolutionSource": "https://aviationweather.gov/api/data/metar?ids=KMIA&format=raw&date=2026-10-25T07:00:00Z&hours=30",
+   "tags": [
+    "weather",
+    "recurring",
+    "hide-from-new",
+    "miami",
+    "daily-temperature",
+    "highest-temperature"
+   ],
+   "endDate": "2026-10-24T12:00:00Z"
+  },
+  {
+   "slug": "highest-temperature-in-chicago-on-october-24-2026",
+   "regex": true,
+   "ciudad_en_TZ": true,
+   "icao": null,
+   "resolutionSource": "https://aviationweather.gov/api/data/metar?ids=KORD&format=raw&date=2026-10-25T08:00:00Z&hours=30",
+   "tags": [
+    "weather",
+    "recurring",
+    "hide-from-new",
+    "chicago",
+    "daily-temperature",
+    "highest-temperature"
+   ],
+   "endDate": "2026-10-24T12:00:00Z"
+  },
+  {
+   "slug": "highest-temperature-in-denver-on-october-24-2026",
+   "regex": true,
+   "ciudad_en_TZ": true,
+   "icao": null,
+   "resolutionSource": "https://aviationweather.gov/api/data/metar?ids=KDEN&format=raw&date=2026-10-25T09:00:00Z&hours=30",
+   "tags": [
+    "weather",
+    "recurring",
+    "hide-from-new",
+    "daily-temperature",
+    "denver",
+    "highest-temperature"
+   ],
+   "endDate": "2026-10-24T12:00:00Z"
+  },
+  {
+   "slug": "highest-temperature-in-houston-on-october-24-2026",
+   "regex": true,
+   "ciudad_en_TZ": true,
+   "icao": null,
+   "resolutionSource": "https://aviationweather.gov/api/data/metar?ids=KHOU&format=raw&date=2026-10-25T08:00:00Z&hours=30",
+   "tags": [
+    "weather",
+    "recurring",
+    "hide-from-new",
+    "daily-temperature",
+    "houston",
+    "highest-temperature"
+   ],
+   "endDate": "2026-10-24T12:00:00Z"
+  },
+  {
+   "slug": "lowest-temperature-in-seattle-on-october-24-2026",
+   "regex": true,
+   "ciudad_en_TZ": true,
+   "icao": null,
+   "resolutionSource": "https://aviationweather.gov/api/data/metar?ids=KSEA&format=raw&date=2026-10-25T10:00:00Z&hours=30",
+   "tags": [
+    "weather",
+    "recurring",
+    "hide-from-new",
+    "seattle",
+    "daily-temperature",
+    "lowest-temperature"
+   ],
+   "endDate": "2026-10-24T12:00:00Z"
+  },
+  {
+   "slug": "lowest-temperature-in-los-angeles-on-october-24-2026",
+   "regex": true,
+   "ciudad_en_TZ": true,
+   "icao": null,
+   "resolutionSource": "https://aviationweather.gov/api/data/metar?ids=KLAX&format=raw&date=2026-10-25T10:00:00Z&hours=30",
+   "tags": [
+    "weather",
+    "recurring",
+    "hide-from-new",
+    "daily-temperature",
+    "los-angeles",
+    "lowest-temperature"
+   ],
+   "endDate": "2026-10-24T12:00:00Z"
+  },
+  {
+   "slug": "lowest-temperature-in-san-francisco-on-october-24-2026",
+   "regex": true,
+   "ciudad_en_TZ": true,
+   "icao": null,
+   "resolutionSource": "https://aviationweather.gov/api/data/metar?ids=KSFO&format=raw&date=2026-10-25T10:00:00Z&hours=30",
+   "tags": [
+    "weather",
+    "recurring",
+    "hide-from-new",
+    "daily-temperature",
+    "san-fransisco",
+    "lowest-temperature"
+   ],
+   "endDate": "2026-10-24T12:00:00Z"
+  },
+  {
+   "slug": "highest-temperature-in-seattle-on-october-24-2026",
+   "regex": true,
+   "ciudad_en_TZ": true,
+   "icao": null,
+   "resolutionSource": "https://aviationweather.gov/api/data/metar?ids=KSEA&format=raw&date=2026-10-25T10:00:00Z&hours=30",
+   "tags": [
+    "weather",
+    "recurring",
+    "hide-from-new",
+    "seattle",
+    "daily-temperature",
+    "highest-temperature"
+   ],
+   "endDate": "2026-10-24T12:00:00Z"
+  },
+  {
+   "slug": "highest-temperature-in-los-angeles-on-october-24-2026",
+   "regex": true,
+   "ciudad_en_TZ": true,
+   "icao": null,
+   "resolutionSource": "https://aviationweather.gov/api/data/metar?ids=KLAX&format=raw&date=2026-10-25T10:00:00Z&hours=30",
+   "tags": [
+    "weather",
+    "recurring",
+    "hide-from-new",
+    "daily-temperature",
+    "los-angeles",
+    "highest-temperature"
+   ],
+   "endDate": "2026-10-24T12:00:00Z"
+  },
+  {
+   "slug": "highest-temperature-in-san-francisco-on-october-24-2026",
+   "regex": true,
+   "ciudad_en_TZ": true,
+   "icao": null,
+   "resolutionSource": "https://aviationweather.gov/api/data/metar?ids=KSFO&format=raw&date=2026-10-25T10:00:00Z&hours=30",
+   "tags": [
+    "weather",
+    "recurring",
+    "hide-from-new",
+    "daily-temperature",
+    "san-fransisco",
+    "highest-temperature"
+   ],
+   "endDate": "2026-10-24T12:00:00Z"
+  },
+  {
+   "slug": "lowest-temperature-in-sao-paulo-on-october-24-2026",
+   "regex": true,
+   "ciudad_en_TZ": true,
+   "icao": null,
+   "resolutionSource": "https://aviationweather.gov/api/data/metar?ids=SBGR&format=raw&date=2026-10-25T06:00:00Z&hours=30",
+   "tags": [
+    "weather",
+    "recurring",
+    "hide-from-new",
+    "sao-paulo",
+    "daily-temperature",
+    "lowest-temperature"
+   ],
+   "endDate": "2026-10-24T12:00:00Z"
+  },
+  {
+   "slug": "lowest-temperature-in-buenos-aires-on-october-24-2026",
+   "regex": true,
+   "ciudad_en_TZ": true,
+   "icao": null,
+   "resolutionSource": "https://aviationweather.gov/api/data/metar?ids=SAEZ&format=raw&date=2026-10-25T06:00:00Z&hours=30",
+   "tags": [
+    "weather",
+    "recurring",
+    "hide-from-new",
+    "buenos-aires",
+    "daily-temperature",
+    "lowest-temperature"
+   ],
+   "endDate": "2026-10-24T12:00:00Z"
+  },
+  {
+   "slug": "lowest-temperature-in-toronto-on-october-24-2026",
+   "regex": true,
+   "ciudad_en_TZ": true,
+   "icao": null,
+   "resolutionSource": "https://aviationweather.gov/api/data/metar?ids=CYYZ&format=raw&date=2026-10-25T07:00:00Z&hours=30",
+   "tags": [
+    "weather",
+    "recurring",
+    "hide-from-new",
+    "toronto",
+    "daily-temperature",
+    "lowest-temperature"
+   ],
+   "endDate": "2026-10-24T12:00:00Z"
+  },
+  {
+   "slug": "lowest-temperature-in-mexico-city-on-october-24-2026",
+   "regex": true,
+   "ciudad_en_TZ": true,
+   "icao": null,
+   "resolutionSource": "https://aviationweather.gov/api/data/metar?ids=MMMX&format=raw&date=2026-10-25T09:00:00Z&hours=30",
+   "tags": [
+    "weather",
+    "recurring",
+    "hide-from-new",
+    "daily-temperature",
+    "mexico",
+    "lowest-temperature"
+   ],
+   "endDate": "2026-10-24T12:00:00Z"
+  },
+  {
+   "slug": "highest-temperature-in-sao-paulo-on-october-24-2026",
+   "regex": true,
+   "ciudad_en_TZ": true,
+   "icao": null,
+   "resolutionSource": "https://aviationweather.gov/api/data/metar?ids=SBGR&format=raw&date=2026-10-25T06:00:00Z&hours=30",
+   "tags": [
+    "weather",
+    "recurring",
+    "hide-from-new",
+    "sao-paulo",
+    "daily-temperature",
+    "highest-temperature"
+   ],
+   "endDate": "2026-10-24T12:00:00Z"
+  },
+  {
+   "slug": "highest-temperature-in-buenos-aires-on-october-24-2026",
+   "regex": true,
+   "ciudad_en_TZ": true,
+   "icao": null,
+   "resolutionSource": "https://aviationweather.gov/api/data/metar?ids=SAEZ&format=raw&date=2026-10-25T06:00:00Z&hours=30",
+   "tags": [
+    "weather",
+    "recurring",
+    "hide-from-new",
+    "buenos-aires",
+    "daily-temperature",
+    "highest-temperature"
+   ],
+   "endDate": "2026-10-24T12:00:00Z"
+  },
+  {
+   "slug": "highest-temperature-in-toronto-on-october-24-2026",
+   "regex": true,
+   "ciudad_en_TZ": true,
+   "icao": null,
+   "resolutionSource": "https://aviationweather.gov/api/data/metar?ids=CYYZ&format=raw&date=2026-10-25T07:00:00Z&hours=30",
+   "tags": [
+    "weather",
+    "recurring",
+    "hide-from-new",
+    "toronto",
+    "daily-temperature",
+    "highest-temperature"
+   ],
+   "endDate": "2026-10-24T12:00:00Z"
+  },
+  {
+   "slug": "highest-temperature-in-mexico-city-on-october-24-2026",
+   "regex": true,
+   "ciudad_en_TZ": true,
+   "icao": null,
+   "resolutionSource": "https://aviationweather.gov/api/data/metar?ids=MMMX&format=raw&date=2026-10-25T09:00:00Z&hours=30",
+   "tags": [
+    "weather",
+    "recurring",
+    "hide-from-new",
+    "daily-temperature",
+    "mexico",
+    "highest-temperature"
+   ],
+   "endDate": "2026-10-24T12:00:00Z"
+  },
+  {
+   "slug": "highest-temperature-in-panama-city-on-october-24-2026",
+   "regex": true,
+   "ciudad_en_TZ": true,
+   "icao": null,
+   "resolutionSource": "https://aviationweather.gov/api/data/metar?ids=MPMG&format=raw&date=2026-10-25T08:00:00Z&hours=30",
+   "tags": [
+    "weather",
+    "recurring",
+    "hide-from-new",
+    "daily-temperature",
+    "panama",
+    "highest-temperature"
+   ],
+   "endDate": "2026-10-24T12:00:00Z"
+  },
+  {
+   "slug": "lowest-temperature-in-paris-on-october-25-2026",
+   "regex": true,
+   "ciudad_en_TZ": true,
+   "icao": null,
+   "resolutionSource": "https://aviationweather.gov/api/data/metar?ids=LFPB&format=raw&date=2026-10-26T02:00:00Z&hours=30",
+   "tags": [
+    "weather",
+    "recurring",
+    "hide-from-new",
+    "paris",
+    "france",
+    "daily-temperature",
+    "lowest-temperature"
+   ],
+   "endDate": "2026-10-25T12:00:00Z"
+  },
+  {
+   "slug": "lowest-temperature-in-seoul-on-october-25-2026",
+   "regex": true,
+   "ciudad_en_TZ": true,
+   "icao": null,
+   "resolutionSource": "https://aviationweather.gov/api/data/metar?ids=RKSI&format=raw&date=2026-10-25T18:00:00Z&hours=30",
+   "tags": [
+    "weather",
+    "recurring",
+    "hide-from-new",
+    "seoul",
+    "daily-temperature",
+    "lowest-temperature"
+   ],
+   "endDate": "2026-10-25T12:00:00Z"
+  },
+  {
+   "slug": "lowest-temperature-in-ankara-on-october-25-2026",
+   "regex": true,
+   "ciudad_en_TZ": true,
+   "icao": null,
+   "resolutionSource": "https://aviationweather.gov/api/data/metar?ids=LTAC&format=raw&date=2026-10-26T00:00:00Z&hours=30",
+   "tags": [
+    "weather",
+    "recurring",
+    "hide-from-new",
+    "ankara",
+    "daily-temperature",
+    "lowest-temperature"
+   ],
+   "endDate": "2026-10-25T12:00:00Z"
+  },
+  {
+   "slug": "lowest-temperature-in-wellington-on-october-25-2026",
+   "regex": true,
+   "ciudad_en_TZ": true,
+   "icao": null,
+   "resolutionSource": "https://aviationweather.gov/api/data/metar?ids=NZWN&format=raw&date=2026-10-25T14:00:00Z&hours=30",
+   "tags": [
+    "weather",
+    "recurring",
+    "hide-from-new",
+    "auckland",
+    "daily-temperature",
+    "lowest-temperature"
+   ],
+   "endDate": "2026-10-25T12:00:00Z"
+  },
+  {
+   "slug": "lowest-temperature-in-lucknow-on-october-25-2026",
+   "regex": true,
+   "ciudad_en_TZ": true,
+   "icao": null,
+   "resolutionSource": "https://aviationweather.gov/api/data/metar?ids=VILK&format=raw&date=2026-10-25T21:30:00Z&hours=30",
+   "tags": [
+    "weather",
+    "recurring",
+    "hide-from-new",
+    "daily-temperature",
+    "lucknow",
+    "lowest-temperature"
+   ],
+   "endDate": "2026-10-25T12:00:00Z"
+  },
+  {
+   "slug": "lowest-temperature-in-munich-on-october-25-2026",
+   "regex": true,
+   "ciudad_en_TZ": true,
+   "icao": null,
+   "resolutionSource": "https://aviationweather.gov/api/data/metar?ids=EDDM&format=raw&date=2026-10-26T02:00:00Z&hours=30",
+   "tags": [
+    "weather",
+    "recurring",
+    "hide-from-new",
+    "daily-temperature",
+    "munich",
+    "lowest-temperature"
+   ],
+   "endDate": "2026-10-25T12:00:00Z"
+  },
+  {
+   "slug": "lowest-temperature-in-tel-aviv-on-october-25-2026",
+   "regex": true,
+   "ciudad_en_TZ": true,
+   "icao": null,
+   "resolutionSource": "https://aviationweather.gov/api/data/metar?ids=LLBG&format=raw&date=2026-10-26T01:00:00Z&hours=30",
+   "tags": [
+    "weather",
+    "recurring",
+    "hide-from-new",
+    "daily-temperature",
+    "tel-aviv",
+    "lowest-temperature"
+   ],
+   "endDate": "2026-10-25T12:00:00Z"
+  },
+  {
+   "slug": "lowest-temperature-in-tokyo-on-october-25-2026",
+   "regex": true,
+   "ciudad_en_TZ": true,
+   "icao": null,
+   "resolutionSource": "https://aviationweather.gov/api/data/metar?ids=RJTT&format=raw&date=2026-10-25T18:00:00Z&hours=30",
+   "tags": [
+    "weather",
+    "recurring",
+    "hide-from-new",
+    "daily-temperature",
+    "tokyo",
+    "lowest-temperature"
+   ],
+   "endDate": "2026-10-25T12:00:00Z"
+  },
+  {
+   "slug": "lowest-temperature-in-hong-kong-on-october-25-2026",
+   "regex": true,
+   "ciudad_en_TZ": true,
+   "icao": "HKO",
+   "resolutionSource": null,
+   "tags": [
+    "weather",
+    "recurring",
+    "hide-from-new",
+    "daily-temperature",
+    "hong-kong",
+    "lowest-temperature"
+   ],
+   "endDate": "2026-10-25T12:00:00Z"
+  },
+  {
+   "slug": "lowest-temperature-in-shanghai-on-october-25-2026",
+   "regex": true,
+   "ciudad_en_TZ": true,
+   "icao": null,
+   "resolutionSource": "https://aviationweather.gov/api/data/metar?ids=ZSPD&format=raw&date=2026-10-25T19:00:00Z&hours=30",
+   "tags": [
+    "weather",
+    "recurring",
+    "hide-from-new",
+    "daily-temperature",
+    "shanghai",
+    "lowest-temperature"
+   ],
+   "endDate": "2026-10-25T12:00:00Z"
+  },
+  {
+   "slug": "lowest-temperature-in-milan-on-october-25-2026",
+   "regex": true,
+   "ciudad_en_TZ": true,
+   "icao": null,
+   "resolutionSource": "https://aviationweather.gov/api/data/metar?ids=LIMC&format=raw&date=2026-10-26T02:00:00Z&hours=30",
+   "tags": [
+    "weather",
+    "recurring",
+    "hide-from-new",
+    "daily-temperature",
+    "milan",
+    "lowest-temperature"
+   ],
+   "endDate": "2026-10-25T12:00:00Z"
+  },
+  {
+   "slug": "lowest-temperature-in-madrid-on-october-25-2026",
+   "regex": true,
+   "ciudad_en_TZ": true,
+   "icao": null,
+   "resolutionSource": "https://aviationweather.gov/api/data/metar?ids=LEMD&format=raw&date=2026-10-26T02:00:00Z&hours=30",
+   "tags": [
+    "weather",
+    "recurring",
+    "hide-from-new",
+    "daily-temperature",
+    "madrid",
+    "lowest-temperature"
+   ],
+   "endDate": "2026-10-25T12:00:00Z"
+  },
+  {
+   "slug": "lowest-temperature-in-warsaw-on-october-25-2026",
+   "regex": true,
+   "ciudad_en_TZ": true,
+   "icao": null,
+   "resolutionSource": "https://aviationweather.gov/api/data/metar?ids=EPWA&format=raw&date=2026-10-26T02:00:00Z&hours=30",
+   "tags": [
+    "weather",
+    "recurring",
+    "hide-from-new",
+    "daily-temperature",
+    "warsaw",
+    "lowest-temperature"
+   ],
+   "endDate": "2026-10-25T12:00:00Z"
+  },
+  {
+   "slug": "lowest-temperature-in-taipei-on-october-25-2026",
+   "regex": true,
+   "ciudad_en_TZ": true,
+   "icao": null,
+   "resolutionSource": "https://aviationweather.gov/api/data/metar?ids=RCSS&format=raw&date=2026-10-25T19:00:00Z&hours=30",
+   "tags": [
+    "weather",
+    "recurring",
+    "hide-from-new",
+    "daily-temperature",
+    "taipei",
+    "lowest-temperature"
+   ],
+   "endDate": "2026-10-25T12:00:00Z"
+  },
+  {
+   "slug": "lowest-temperature-in-chongqing-on-october-25-2026",
+   "regex": true,
+   "ciudad_en_TZ": true,
+   "icao": null,
+   "resolutionSource": "https://aviationweather.gov/api/data/metar?ids=ZUCK&format=raw&date=2026-10-25T19:00:00Z&hours=30",
+   "tags": [
+    "weather",
+    "recurring",
+    "hide-from-new",
+    "daily-temperature",
+    "chongqing",
+    "lowest-temperature"
+   ],
+   "endDate": "2026-10-25T12:00:00Z"
+  },
+  {
+   "slug": "lowest-temperature-in-beijing-on-october-25-2026",
+   "regex": true,
+   "ciudad_en_TZ": true,
+   "icao": null,
+   "resolutionSource": "https://aviationweather.gov/api/data/metar?ids=ZBAA&format=raw&date=2026-10-25T19:00:00Z&hours=30",
+   "tags": [
+    "weather",
+    "recurring",
+    "hide-from-new",
+    "daily-temperature",
+    "beijing",
+    "lowest-temperature"
+   ],
+   "endDate": "2026-10-25T12:00:00Z"
+  },
+  {
+   "slug": "lowest-temperature-in-wuhan-on-october-25-2026",
+   "regex": true,
+   "ciudad_en_TZ": true,
+   "icao": null,
+   "resolutionSource": "https://aviationweather.gov/api/data/metar?ids=ZHHH&format=raw&date=2026-10-25T19:00:00Z&hours=30",
+   "tags": [
+    "weather",
+    "recurring",
+    "hide-from-new",
+    "daily-temperature",
+    "wuhan",
+    "lowest-temperature"
+   ],
+   "endDate": "2026-10-25T12:00:00Z"
+  },
+  {
+   "slug": "lowest-temperature-in-chengdu-on-october-25-2026",
+   "regex": true,
+   "ciudad_en_TZ": true,
+   "icao": null,
+   "resolutionSource": "https://aviationweather.gov/api/data/metar?ids=ZUUU&format=raw&date=2026-10-25T19:00:00Z&hours=30",
+   "tags": [
+    "weather",
+    "recurring",
+    "hide-from-new",
+    "daily-temperature",
+    "chengdu",
+    "lowest-temperature"
+   ],
+   "endDate": "2026-10-25T12:00:00Z"
+  },
+  {
+   "slug": "lowest-temperature-in-shenzhen-on-october-25-2026",
+   "regex": true,
+   "ciudad_en_TZ": true,
+   "icao": null,
+   "resolutionSource": "https://aviationweather.gov/api/data/metar?ids=ZGSZ&format=raw&date=2026-10-25T19:00:00Z&hours=30",
+   "tags": [
+    "weather",
+    "recurring",
+    "hide-from-new",
+    "daily-temperature",
+    "shenzhen",
+    "lowest-temperature"
+   ],
+   "endDate": "2026-10-25T12:00:00Z"
+  },
+  {
+   "slug": "lowest-temperature-in-moscow-on-october-25-2026",
+   "regex": true,
+   "ciudad_en_TZ": true,
+   "icao": null,
+   "resolutionSource": "https://aviationweather.gov/api/data/metar?ids=UUWW&format=raw&date=2026-10-26T00:00:00Z&hours=30",
+   "tags": [
+    "weather",
+    "recurring",
+    "hide-from-new",
+    "daily-temperature",
+    "moscow",
+    "lowest-temperature"
+   ],
+   "endDate": "2026-10-25T12:00:00Z"
+  },
+  {
+   "slug": "lowest-temperature-in-istanbul-on-october-25-2026",
+   "regex": true,
+   "ciudad_en_TZ": true,
+   "icao": null,
+   "resolutionSource": "https://aviationweather.gov/api/data/metar?ids=LTFM&format=raw&date=2026-10-26T00:00:00Z&hours=30",
+   "tags": [
+    "weather",
+    "recurring",
+    "hide-from-new",
+    "daily-temperature",
+    "istanbul",
+    "lowest-temperature"
+   ],
+   "endDate": "2026-10-25T12:00:00Z"
+  },
+  {
+   "slug": "lowest-temperature-in-busan-on-october-25-2026",
+   "regex": true,
+   "ciudad_en_TZ": true,
+   "icao": null,
+   "resolutionSource": "https://aviationweather.gov/api/data/metar?ids=RKPK&format=raw&date=2026-10-25T18:00:00Z&hours=30",
+   "tags": [
+    "weather",
+    "recurring",
+    "hide-from-new",
+    "daily-temperature",
+    "busan",
+    "lowest-temperature"
+   ],
+   "endDate": "2026-10-25T12:00:00Z"
+  },
+  {
+   "slug": "lowest-temperature-in-amsterdam-on-october-25-2026",
+   "regex": true,
+   "ciudad_en_TZ": true,
+   "icao": null,
+   "resolutionSource": "https://aviationweather.gov/api/data/metar?ids=EHAM&format=raw&date=2026-10-26T02:00:00Z&hours=30",
+   "tags": [
+    "weather",
+    "recurring",
+    "hide-from-new",
+    "daily-temperature",
+    "amsterdam",
+    "lowest-temperature"
+   ],
+   "endDate": "2026-10-25T12:00:00Z"
+  },
+  {
+   "slug": "lowest-temperature-in-helsinki-on-october-25-2026",
+   "regex": true,
+   "ciudad_en_TZ": true,
+   "icao": null,
+   "resolutionSource": "https://aviationweather.gov/api/data/metar?ids=EFHK&format=raw&date=2026-10-26T01:00:00Z&hours=30",
+   "tags": [
+    "weather",
+    "recurring",
+    "hide-from-new",
+    "daily-temperature",
+    "helsinki",
+    "lowest-temperature"
+   ],
+   "endDate": "2026-10-25T12:00:00Z"
+  },
+  {
+   "slug": "lowest-temperature-in-jeddah-on-october-25-2026",
+   "regex": true,
+   "ciudad_en_TZ": true,
+   "icao": null,
+   "resolutionSource": "https://aviationweather.gov/api/data/metar?ids=OEJN&format=raw&date=2026-10-26T00:00:00Z&hours=30",
+   "tags": [
+    "weather",
+    "recurring",
+    "hide-from-new",
+    "daily-temperature",
+    "jeddah",
+    "lowest-temperature"
+   ],
+   "endDate": "2026-10-25T12:00:00Z"
+  },
+  {
+   "slug": "lowest-temperature-in-cape-town-on-october-25-2026",
+   "regex": true,
+   "ciudad_en_TZ": true,
+   "icao": null,
+   "resolutionSource": "https://aviationweather.gov/api/data/metar?ids=FACT&format=raw&date=2026-10-26T01:00:00Z&hours=30",
+   "tags": [
+    "weather",
+    "recurring",
+    "hide-from-new",
+    "daily-temperature",
+    "cape-town",
+    "lowest-temperature"
+   ],
+   "endDate": "2026-10-25T12:00:00Z"
+  },
+  {
+   "slug": "lowest-temperature-in-guangzhou-on-october-25-2026",
+   "regex": true,
+   "ciudad_en_TZ": true,
+   "icao": null,
+   "resolutionSource": "https://aviationweather.gov/api/data/metar?ids=ZGGG&format=raw&date=2026-10-25T19:00:00Z&hours=30",
+   "tags": [
+    "weather",
+    "recurring",
+    "hide-from-new",
+    "daily-temperature",
+    "guangzhou",
+    "lowest-temperature"
+   ],
+   "endDate": "2026-10-25T12:00:00Z"
+  },
+  {
+   "slug": "lowest-temperature-in-qingdao-on-october-25-2026",
+   "regex": true,
+   "ciudad_en_TZ": true,
+   "icao": null,
+   "resolutionSource": "https://aviationweather.gov/api/data/metar?ids=ZSQD&format=raw&date=2026-10-25T19:00:00Z&hours=30",
+   "tags": [
+    "weather",
+    "recurring",
+    "hide-from-new",
+    "daily-temperature",
+    "qingdao",
+    "lowest-temperature"
+   ],
+   "endDate": "2026-10-25T12:00:00Z"
+  },
+  {
+   "slug": "lowest-temperature-in-karachi-on-october-25-2026",
+   "regex": true,
+   "ciudad_en_TZ": true,
+   "icao": null,
+   "resolutionSource": "https://aviationweather.gov/api/data/metar?ids=OPKC&format=raw&date=2026-10-25T22:00:00Z&hours=30",
+   "tags": [
+    "weather",
+    "recurring",
+    "hide-from-new",
+    "daily-temperature",
+    "karachi",
+    "lowest-temperature"
+   ],
+   "endDate": "2026-10-25T12:00:00Z"
+  },
+  {
+   "slug": "highest-temperature-in-paris-on-october-25-2026",
+   "regex": true,
+   "ciudad_en_TZ": true,
+   "icao": null,
+   "resolutionSource": "https://aviationweather.gov/api/data/metar?ids=LFPB&format=raw&date=2026-10-26T02:00:00Z&hours=30",
+   "tags": [
+    "weather",
+    "recurring",
+    "hide-from-new",
+    "paris",
+    "france",
+    "daily-temperature",
+    "highest-temperature"
+   ],
+   "endDate": "2026-10-25T12:00:00Z"
+  },
+  {
+   "slug": "highest-temperature-in-seoul-on-october-25-2026",
+   "regex": true,
+   "ciudad_en_TZ": true,
+   "icao": null,
+   "resolutionSource": "https://aviationweather.gov/api/data/metar?ids=RKSI&format=raw&date=2026-10-25T18:00:00Z&hours=30",
+   "tags": [
+    "weather",
+    "recurring",
+    "hide-from-new",
+    "seoul",
+    "daily-temperature",
+    "highest-temperature"
+   ],
+   "endDate": "2026-10-25T12:00:00Z"
+  },
+  {
+   "slug": "highest-temperature-in-ankara-on-october-25-2026",
+   "regex": true,
+   "ciudad_en_TZ": true,
+   "icao": null,
+   "resolutionSource": "https://aviationweather.gov/api/data/metar?ids=LTAC&format=raw&date=2026-10-26T00:00:00Z&hours=30",
+   "tags": [
+    "weather",
+    "recurring",
+    "hide-from-new",
+    "ankara",
+    "daily-temperature",
+    "highest-temperature"
+   ],
+   "endDate": "2026-10-25T12:00:00Z"
+  },
+  {
+   "slug": "highest-temperature-in-wellington-on-october-25-2026",
+   "regex": true,
+   "ciudad_en_TZ": true,
+   "icao": null,
+   "resolutionSource": "https://aviationweather.gov/api/data/metar?ids=NZWN&format=raw&date=2026-10-25T14:00:00Z&hours=30",
+   "tags": [
+    "weather",
+    "recurring",
+    "hide-from-new",
+    "auckland",
+    "daily-temperature",
+    "highest-temperature"
+   ],
+   "endDate": "2026-10-25T12:00:00Z"
+  },
+  {
+   "slug": "highest-temperature-in-lucknow-on-october-25-2026",
+   "regex": true,
+   "ciudad_en_TZ": true,
+   "icao": null,
+   "resolutionSource": "https://aviationweather.gov/api/data/metar?ids=VILK&format=raw&date=2026-10-25T21:30:00Z&hours=30",
+   "tags": [
+    "weather",
+    "recurring",
+    "hide-from-new",
+    "daily-temperature",
+    "lucknow",
+    "highest-temperature"
+   ],
+   "endDate": "2026-10-25T12:00:00Z"
+  },
+  {
+   "slug": "highest-temperature-in-munich-on-october-25-2026",
+   "regex": true,
+   "ciudad_en_TZ": true,
+   "icao": null,
+   "resolutionSource": "https://aviationweather.gov/api/data/metar?ids=EDDM&format=raw&date=2026-10-26T02:00:00Z&hours=30",
+   "tags": [
+    "weather",
+    "recurring",
+    "hide-from-new",
+    "daily-temperature",
+    "munich",
+    "highest-temperature"
+   ],
+   "endDate": "2026-10-25T12:00:00Z"
+  },
+  {
+   "slug": "highest-temperature-in-tel-aviv-on-october-25-2026",
+   "regex": true,
+   "ciudad_en_TZ": true,
+   "icao": null,
+   "resolutionSource": "https://aviationweather.gov/api/data/metar?ids=LLBG&format=raw&date=2026-10-26T01:00:00Z&hours=30",
+   "tags": [
+    "weather",
+    "recurring",
+    "hide-from-new",
+    "daily-temperature",
+    "tel-aviv",
+    "highest-temperature"
+   ],
+   "endDate": "2026-10-25T12:00:00Z"
+  },
+  {
+   "slug": "highest-temperature-in-tokyo-on-october-25-2026",
+   "regex": true,
+   "ciudad_en_TZ": true,
+   "icao": null,
+   "resolutionSource": "https://aviationweather.gov/api/data/metar?ids=RJTT&format=raw&date=2026-10-25T18:00:00Z&hours=30",
+   "tags": [
+    "weather",
+    "recurring",
+    "hide-from-new",
+    "daily-temperature",
+    "tokyo",
+    "highest-temperature"
+   ],
+   "endDate": "2026-10-25T12:00:00Z"
+  },
+  {
+   "slug": "highest-temperature-in-hong-kong-on-october-25-2026",
+   "regex": true,
+   "ciudad_en_TZ": true,
+   "icao": "HKO",
+   "resolutionSource": null,
+   "tags": [
+    "weather",
+    "recurring",
+    "hide-from-new",
+    "daily-temperature",
+    "hong-kong",
+    "highest-temperature"
+   ],
+   "endDate": "2026-10-25T12:00:00Z"
+  },
+  {
+   "slug": "highest-temperature-in-shanghai-on-october-25-2026",
+   "regex": true,
+   "ciudad_en_TZ": true,
+   "icao": null,
+   "resolutionSource": "https://aviationweather.gov/api/data/metar?ids=ZSPD&format=raw&date=2026-10-25T19:00:00Z&hours=30",
+   "tags": [
+    "weather",
+    "recurring",
+    "hide-from-new",
+    "daily-temperature",
+    "shanghai",
+    "highest-temperature"
+   ],
+   "endDate": "2026-10-25T12:00:00Z"
+  },
+  {
+   "slug": "highest-temperature-in-singapore-on-october-25-2026",
+   "regex": true,
+   "ciudad_en_TZ": true,
+   "icao": null,
+   "resolutionSource": "https://aviationweather.gov/api/data/metar?ids=WSSS&format=raw&date=2026-10-25T19:00:00Z&hours=30",
+   "tags": [
+    "weather",
+    "recurring",
+    "hide-from-new",
+    "daily-temperature",
+    "singapore",
+    "highest-temperature"
+   ],
+   "endDate": "2026-10-25T12:00:00Z"
+  },
+  {
+   "slug": "highest-temperature-in-milan-on-october-25-2026",
+   "regex": true,
+   "ciudad_en_TZ": true,
+   "icao": null,
+   "resolutionSource": "https://aviationweather.gov/api/data/metar?ids=LIMC&format=raw&date=2026-10-26T02:00:00Z&hours=30",
+   "tags": [
+    "weather",
+    "recurring",
+    "hide-from-new",
+    "daily-temperature",
+    "milan",
+    "highest-temperature"
+   ],
+   "endDate": "2026-10-25T12:00:00Z"
+  },
+  {
+   "slug": "highest-temperature-in-madrid-on-october-25-2026",
+   "regex": true,
+   "ciudad_en_TZ": true,
+   "icao": null,
+   "resolutionSource": "https://aviationweather.gov/api/data/metar?ids=LEMD&format=raw&date=2026-10-26T02:00:00Z&hours=30",
+   "tags": [
+    "weather",
+    "recurring",
+    "hide-from-new",
+    "daily-temperature",
+    "madrid",
+    "highest-temperature"
+   ],
+   "endDate": "2026-10-25T12:00:00Z"
+  },
+  {
+   "slug": "highest-temperature-in-warsaw-on-october-25-2026",
+   "regex": true,
+   "ciudad_en_TZ": true,
+   "icao": null,
+   "resolutionSource": "https://aviationweather.gov/api/data/metar?ids=EPWA&format=raw&date=2026-10-26T02:00:00Z&hours=30",
+   "tags": [
+    "weather",
+    "recurring",
+    "hide-from-new",
+    "daily-temperature",
+    "warsaw",
+    "highest-temperature"
+   ],
+   "endDate": "2026-10-25T12:00:00Z"
+  },
+  {
+   "slug": "highest-temperature-in-taipei-on-october-25-2026",
+   "regex": true,
+   "ciudad_en_TZ": true,
+   "icao": null,
+   "resolutionSource": "https://aviationweather.gov/api/data/metar?ids=RCSS&format=raw&date=2026-10-25T19:00:00Z&hours=30",
+   "tags": [
+    "weather",
+    "recurring",
+    "hide-from-new",
+    "daily-temperature",
+    "taipei",
+    "highest-temperature"
+   ],
+   "endDate": "2026-10-25T12:00:00Z"
+  },
+  {
+   "slug": "highest-temperature-in-chongqing-on-october-25-2026",
+   "regex": true,
+   "ciudad_en_TZ": true,
+   "icao": null,
+   "resolutionSource": "https://aviationweather.gov/api/data/metar?ids=ZUCK&format=raw&date=2026-10-25T19:00:00Z&hours=30",
+   "tags": [
+    "weather",
+    "recurring",
+    "hide-from-new",
+    "daily-temperature",
+    "chongqing",
+    "highest-temperature"
+   ],
+   "endDate": "2026-10-25T12:00:00Z"
+  },
+  {
+   "slug": "highest-temperature-in-beijing-on-october-25-2026",
+   "regex": true,
+   "ciudad_en_TZ": true,
+   "icao": null,
+   "resolutionSource": "https://aviationweather.gov/api/data/metar?ids=ZBAA&format=raw&date=2026-10-25T19:00:00Z&hours=30",
+   "tags": [
+    "weather",
+    "recurring",
+    "hide-from-new",
+    "daily-temperature",
+    "beijing",
+    "highest-temperature"
+   ],
+   "endDate": "2026-10-25T12:00:00Z"
+  },
+  {
+   "slug": "highest-temperature-in-wuhan-on-october-25-2026",
+   "regex": true,
+   "ciudad_en_TZ": true,
+   "icao": null,
+   "resolutionSource": "https://aviationweather.gov/api/data/metar?ids=ZHHH&format=raw&date=2026-10-25T19:00:00Z&hours=30",
+   "tags": [
+    "weather",
+    "recurring",
+    "hide-from-new",
+    "daily-temperature",
+    "wuhan",
+    "highest-temperature"
+   ],
+   "endDate": "2026-10-25T12:00:00Z"
+  },
+  {
+   "slug": "highest-temperature-in-chengdu-on-october-25-2026",
+   "regex": true,
+   "ciudad_en_TZ": true,
+   "icao": null,
+   "resolutionSource": "https://aviationweather.gov/api/data/metar?ids=ZUUU&format=raw&date=2026-10-25T19:00:00Z&hours=30",
+   "tags": [
+    "weather",
+    "recurring",
+    "hide-from-new",
+    "daily-temperature",
+    "chengdu",
+    "highest-temperature"
+   ],
+   "endDate": "2026-10-25T12:00:00Z"
+  },
+  {
+   "slug": "highest-temperature-in-shenzhen-on-october-25-2026",
+   "regex": true,
+   "ciudad_en_TZ": true,
+   "icao": null,
+   "resolutionSource": "https://aviationweather.gov/api/data/metar?ids=ZGSZ&format=raw&date=2026-10-25T19:00:00Z&hours=30",
+   "tags": [
+    "weather",
+    "recurring",
+    "hide-from-new",
+    "daily-temperature",
+    "shenzhen",
+    "highest-temperature"
+   ],
+   "endDate": "2026-10-25T12:00:00Z"
+  },
+  {
+   "slug": "highest-temperature-in-moscow-on-october-25-2026",
+   "regex": true,
+   "ciudad_en_TZ": true,
+   "icao": null,
+   "resolutionSource": "https://aviationweather.gov/api/data/metar?ids=UUWW&format=raw&date=2026-10-26T00:00:00Z&hours=30",
+   "tags": [
+    "weather",
+    "recurring",
+    "hide-from-new",
+    "daily-temperature",
+    "moscow",
+    "highest-temperature"
+   ],
+   "endDate": "2026-10-25T12:00:00Z"
+  },
+  {
+   "slug": "highest-temperature-in-istanbul-on-october-25-2026",
+   "regex": true,
+   "ciudad_en_TZ": true,
+   "icao": null,
+   "resolutionSource": "https://aviationweather.gov/api/data/metar?ids=LTFM&format=raw&date=2026-10-26T00:00:00Z&hours=30",
+   "tags": [
+    "weather",
+    "recurring",
+    "hide-from-new",
+    "daily-temperature",
+    "istanbul",
+    "highest-temperature"
+   ],
+   "endDate": "2026-10-25T12:00:00Z"
+  },
+  {
+   "slug": "highest-temperature-in-busan-on-october-25-2026",
+   "regex": true,
+   "ciudad_en_TZ": true,
+   "icao": null,
+   "resolutionSource": "https://aviationweather.gov/api/data/metar?ids=RKPK&format=raw&date=2026-10-25T18:00:00Z&hours=30",
+   "tags": [
+    "weather",
+    "recurring",
+    "hide-from-new",
+    "daily-temperature",
+    "busan",
+    "highest-temperature"
+   ],
+   "endDate": "2026-10-25T12:00:00Z"
+  },
+  {
+   "slug": "highest-temperature-in-amsterdam-on-october-25-2026",
+   "regex": true,
+   "ciudad_en_TZ": true,
+   "icao": null,
+   "resolutionSource": "https://aviationweather.gov/api/data/metar?ids=EHAM&format=raw&date=2026-10-26T02:00:00Z&hours=30",
+   "tags": [
+    "weather",
+    "recurring",
+    "hide-from-new",
+    "daily-temperature",
+    "amsterdam",
+    "highest-temperature"
+   ],
+   "endDate": "2026-10-25T12:00:00Z"
+  },
+  {
+   "slug": "highest-temperature-in-helsinki-on-october-25-2026",
+   "regex": true,
+   "ciudad_en_TZ": true,
+   "icao": null,
+   "resolutionSource": "https://aviationweather.gov/api/data/metar?ids=EFHK&format=raw&date=2026-10-26T01:00:00Z&hours=30",
+   "tags": [
+    "weather",
+    "recurring",
+    "hide-from-new",
+    "daily-temperature",
+    "helsinki",
+    "highest-temperature"
+   ],
+   "endDate": "2026-10-25T12:00:00Z"
+  },
+  {
+   "slug": "highest-temperature-in-kuala-lumpur-on-october-25-2026",
+   "regex": true,
+   "ciudad_en_TZ": true,
+   "icao": null,
+   "resolutionSource": "https://aviationweather.gov/api/data/metar?ids=WMKK&format=raw&date=2026-10-25T19:00:00Z&hours=30",
+   "tags": [
+    "weather",
+    "recurring",
+    "hide-from-new",
+    "daily-temperature",
+    "kuala-lampur",
+    "highest-temperature"
+   ],
+   "endDate": "2026-10-25T12:00:00Z"
+  },
+  {
+   "slug": "highest-temperature-in-jeddah-on-october-25-2026",
+   "regex": true,
+   "ciudad_en_TZ": true,
+   "icao": null,
+   "resolutionSource": "https://aviationweather.gov/api/data/metar?ids=OEJN&format=raw&date=2026-10-26T00:00:00Z&hours=30",
+   "tags": [
+    "weather",
+    "recurring",
+    "hide-from-new",
+    "daily-temperature",
+    "jeddah",
+    "highest-temperature"
+   ],
+   "endDate": "2026-10-25T12:00:00Z"
+  },
+  {
+   "slug": "highest-temperature-in-cape-town-on-october-25-2026",
+   "regex": true,
+   "ciudad_en_TZ": true,
+   "icao": null,
+   "resolutionSource": "https://aviationweather.gov/api/data/metar?ids=FACT&format=raw&date=2026-10-26T01:00:00Z&hours=30",
+   "tags": [
+    "weather",
+    "recurring",
+    "hide-from-new",
+    "daily-temperature",
+    "cape-town",
+    "highest-temperature"
+   ],
+   "endDate": "2026-10-25T12:00:00Z"
+  },
+  {
+   "slug": "highest-temperature-in-guangzhou-on-october-25-2026",
+   "regex": true,
+   "ciudad_en_TZ": true,
+   "icao": null,
+   "resolutionSource": "https://aviationweather.gov/api/data/metar?ids=ZGGG&format=raw&date=2026-10-25T19:00:00Z&hours=30",
+   "tags": [
+    "weather",
+    "recurring",
+    "hide-from-new",
+    "daily-temperature",
+    "guangzhou",
+    "highest-temperature"
+   ],
+   "endDate": "2026-10-25T12:00:00Z"
+  },
+  {
+   "slug": "highest-temperature-in-qingdao-on-october-25-2026",
+   "regex": true,
+   "ciudad_en_TZ": true,
+   "icao": null,
+   "resolutionSource": "https://aviationweather.gov/api/data/metar?ids=ZSQD&format=raw&date=2026-10-25T19:00:00Z&hours=30",
+   "tags": [
+    "weather",
+    "recurring",
+    "hide-from-new",
+    "daily-temperature",
+    "qingdao",
+    "highest-temperature"
+   ],
+   "endDate": "2026-10-25T12:00:00Z"
+  },
+  {
+   "slug": "highest-temperature-in-karachi-on-october-25-2026",
+   "regex": true,
+   "ciudad_en_TZ": true,
+   "icao": null,
+   "resolutionSource": "https://aviationweather.gov/api/data/metar?ids=OPKC&format=raw&date=2026-10-25T22:00:00Z&hours=30",
+   "tags": [
+    "weather",
+    "recurring",
+    "hide-from-new",
+    "daily-temperature",
+    "karachi",
+    "highest-temperature"
+   ],
+   "endDate": "2026-10-25T12:00:00Z"
+  },
+  {
+   "slug": "highest-temperature-in-manila-on-october-25-2026",
+   "regex": true,
+   "ciudad_en_TZ": true,
+   "icao": null,
+   "resolutionSource": "https://aviationweather.gov/api/data/metar?ids=RPLL&format=raw&date=2026-10-25T19:00:00Z&hours=30",
+   "tags": [
+    "weather",
+    "recurring",
+    "hide-from-new",
+    "daily-temperature",
+    "manila",
+    "highest-temperature"
+   ],
+   "endDate": "2026-10-25T12:00:00Z"
+  },
+  {
+   "slug": "lowest-temperature-in-london-on-october-25-2026",
+   "regex": true,
+   "ciudad_en_TZ": true,
+   "icao": null,
+   "resolutionSource": "https://aviationweather.gov/api/data/metar?ids=EGLC&format=raw&date=2026-10-26T03:00:00Z&hours=30",
+   "tags": [
+    "weather",
+    "recurring",
+    "hide-from-new",
+    "london",
+    "daily-temperature",
+    "lowest-temperature"
+   ],
+   "endDate": "2026-10-25T12:00:00Z"
+  },
+  {
+   "slug": "highest-temperature-in-london-on-october-25-2026",
+   "regex": true,
+   "ciudad_en_TZ": true,
+   "icao": null,
+   "resolutionSource": "https://aviationweather.gov/api/data/metar?ids=EGLC&format=raw&date=2026-10-26T03:00:00Z&hours=30",
+   "tags": [
+    "weather",
+    "recurring",
+    "hide-from-new",
+    "london",
+    "daily-temperature",
+    "highest-temperature"
+   ],
+   "endDate": "2026-10-25T12:00:00Z"
+  },
+  {
+   "slug": "highest-temperature-in-miami-on-october-25-2026",
+   "regex": true,
+   "ciudad_en_TZ": true,
+   "icao": null,
+   "resolutionSource": "https://aviationweather.gov/api/data/metar?ids=KMIA&format=raw&date=2026-10-26T07:00:00Z&hours=30",
+   "tags": [
+    "weather",
+    "recurring",
+    "hide-from-new",
+    "miami",
+    "daily-temperature",
+    "highest-temperature"
+   ],
+   "endDate": "2026-10-25T12:00:00Z"
+  },
+  {
+   "slug": "lowest-temperature-in-nyc-on-october-25-2026",
+   "regex": true,
+   "ciudad_en_TZ": true,
+   "icao": null,
+   "resolutionSource": "https://aviationweather.gov/api/data/metar?ids=KLGA&format=raw&date=2026-10-26T07:00:00Z&hours=30",
+   "tags": [
+    "weather",
+    "recurring",
+    "hide-from-new",
+    "new-york-city",
+    "daily-temperature",
+    "lowest-temperature"
+   ],
+   "endDate": "2026-10-25T12:00:00Z"
+  },
+  {
+   "slug": "lowest-temperature-in-dallas-on-october-25-2026",
+   "regex": true,
+   "ciudad_en_TZ": true,
+   "icao": null,
+   "resolutionSource": "https://aviationweather.gov/api/data/metar?ids=KDAL&format=raw&date=2026-10-26T08:00:00Z&hours=30",
+   "tags": [
+    "weather",
+    "recurring",
+    "hide-from-new",
+    "dallas",
+    "daily-temperature",
+    "lowest-temperature"
+   ],
+   "endDate": "2026-10-25T12:00:00Z"
+  },
+  {
+   "slug": "lowest-temperature-in-atlanta-on-october-25-2026",
+   "regex": true,
+   "ciudad_en_TZ": true,
+   "icao": null,
+   "resolutionSource": "https://aviationweather.gov/api/data/metar?ids=KATL&format=raw&date=2026-10-26T07:00:00Z&hours=30",
+   "tags": [
+    "weather",
+    "recurring",
+    "hide-from-new",
+    "atlanta",
+    "daily-temperature",
+    "lowest-temperature"
+   ],
+   "endDate": "2026-10-25T12:00:00Z"
+  },
+  {
+   "slug": "lowest-temperature-in-miami-on-october-25-2026",
+   "regex": true,
+   "ciudad_en_TZ": true,
+   "icao": null,
+   "resolutionSource": "https://aviationweather.gov/api/data/metar?ids=KMIA&format=raw&date=2026-10-26T07:00:00Z&hours=30",
+   "tags": [
+    "weather",
+    "recurring",
+    "hide-from-new",
+    "miami",
+    "daily-temperature",
+    "lowest-temperature"
+   ],
+   "endDate": "2026-10-25T12:00:00Z"
+  },
+  {
+   "slug": "lowest-temperature-in-chicago-on-october-25-2026",
+   "regex": true,
+   "ciudad_en_TZ": true,
+   "icao": null,
+   "resolutionSource": "https://aviationweather.gov/api/data/metar?ids=KORD&format=raw&date=2026-10-26T08:00:00Z&hours=30",
+   "tags": [
+    "weather",
+    "recurring",
+    "hide-from-new",
+    "chicago",
+    "daily-temperature",
+    "lowest-temperature"
+   ],
+   "endDate": "2026-10-25T12:00:00Z"
+  },
+  {
+   "slug": "lowest-temperature-in-austin-on-october-25-2026",
+   "regex": true,
+   "ciudad_en_TZ": true,
+   "icao": null,
+   "resolutionSource": "https://aviationweather.gov/api/data/metar?ids=KAUS&format=raw&date=2026-10-26T08:00:00Z&hours=30",
+   "tags": [
+    "weather",
+    "recurring",
+    "hide-from-new",
+    "daily-temperature",
+    "austin",
+    "lowest-temperature"
+   ],
+   "endDate": "2026-10-25T12:00:00Z"
+  },
+  {
+   "slug": "lowest-temperature-in-denver-on-october-25-2026",
+   "regex": true,
+   "ciudad_en_TZ": true,
+   "icao": null,
+   "resolutionSource": "https://aviationweather.gov/api/data/metar?ids=KDEN&format=raw&date=2026-10-26T09:00:00Z&hours=30",
+   "tags": [
+    "weather",
+    "recurring",
+    "hide-from-new",
+    "daily-temperature",
+    "denver",
+    "lowest-temperature"
+   ],
+   "endDate": "2026-10-25T12:00:00Z"
+  },
+  {
+   "slug": "lowest-temperature-in-houston-on-october-25-2026",
+   "regex": true,
+   "ciudad_en_TZ": true,
+   "icao": null,
+   "resolutionSource": "https://aviationweather.gov/api/data/metar?ids=KHOU&format=raw&date=2026-10-26T08:00:00Z&hours=30",
+   "tags": [
+    "weather",
+    "recurring",
+    "hide-from-new",
+    "daily-temperature",
+    "houston",
+    "lowest-temperature"
+   ],
+   "endDate": "2026-10-25T12:00:00Z"
+  },
+  {
+   "slug": "highest-temperature-in-nyc-on-october-25-2026",
+   "regex": true,
+   "ciudad_en_TZ": true,
+   "icao": null,
+   "resolutionSource": "https://aviationweather.gov/api/data/metar?ids=KLGA&format=raw&date=2026-10-26T07:00:00Z&hours=30",
+   "tags": [
+    "weather",
+    "recurring",
+    "hide-from-new",
+    "new-york-city",
+    "daily-temperature",
+    "highest-temperature"
+   ],
+   "endDate": "2026-10-25T12:00:00Z"
+  },
+  {
+   "slug": "highest-temperature-in-dallas-on-october-25-2026",
+   "regex": true,
+   "ciudad_en_TZ": true,
+   "icao": null,
+   "resolutionSource": "https://aviationweather.gov/api/data/metar?ids=KDAL&format=raw&date=2026-10-26T08:00:00Z&hours=30",
+   "tags": [
+    "weather",
+    "recurring",
+    "hide-from-new",
+    "dallas",
+    "daily-temperature",
+    "highest-temperature"
+   ],
+   "endDate": "2026-10-25T12:00:00Z"
+  },
+  {
+   "slug": "highest-temperature-in-atlanta-on-october-25-2026",
+   "regex": true,
+   "ciudad_en_TZ": true,
+   "icao": null,
+   "resolutionSource": "https://aviationweather.gov/api/data/metar?ids=KATL&format=raw&date=2026-10-26T07:00:00Z&hours=30",
+   "tags": [
+    "weather",
+    "recurring",
+    "hide-from-new",
+    "atlanta",
+    "daily-temperature",
+    "highest-temperature"
+   ],
+   "endDate": "2026-10-25T12:00:00Z"
+  },
+  {
+   "slug": "highest-temperature-in-chicago-on-october-25-2026",
+   "regex": true,
+   "ciudad_en_TZ": true,
+   "icao": null,
+   "resolutionSource": "https://aviationweather.gov/api/data/metar?ids=KORD&format=raw&date=2026-10-26T08:00:00Z&hours=30",
+   "tags": [
+    "weather",
+    "recurring",
+    "hide-from-new",
+    "chicago",
+    "daily-temperature",
+    "highest-temperature"
+   ],
+   "endDate": "2026-10-25T12:00:00Z"
+  },
+  {
+   "slug": "highest-temperature-in-austin-on-october-25-2026",
+   "regex": true,
+   "ciudad_en_TZ": true,
+   "icao": null,
+   "resolutionSource": "https://aviationweather.gov/api/data/metar?ids=KAUS&format=raw&date=2026-10-26T08:00:00Z&hours=30",
+   "tags": [
+    "weather",
+    "recurring",
+    "hide-from-new",
+    "daily-temperature",
+    "austin",
+    "highest-temperature"
+   ],
+   "endDate": "2026-10-25T12:00:00Z"
+  },
+  {
+   "slug": "highest-temperature-in-denver-on-october-25-2026",
+   "regex": true,
+   "ciudad_en_TZ": true,
+   "icao": null,
+   "resolutionSource": "https://aviationweather.gov/api/data/metar?ids=KDEN&format=raw&date=2026-10-26T09:00:00Z&hours=30",
+   "tags": [
+    "weather",
+    "recurring",
+    "hide-from-new",
+    "daily-temperature",
+    "denver",
+    "highest-temperature"
+   ],
+   "endDate": "2026-10-25T12:00:00Z"
+  },
+  {
+   "slug": "highest-temperature-in-houston-on-october-25-2026",
+   "regex": true,
+   "ciudad_en_TZ": true,
+   "icao": null,
+   "resolutionSource": "https://aviationweather.gov/api/data/metar?ids=KHOU&format=raw&date=2026-10-26T08:00:00Z&hours=30",
+   "tags": [
+    "weather",
+    "recurring",
+    "hide-from-new",
+    "daily-temperature",
+    "houston",
+    "highest-temperature"
+   ],
+   "endDate": "2026-10-25T12:00:00Z"
+  },
+  {
+   "slug": "lowest-temperature-in-seattle-on-october-25-2026",
+   "regex": true,
+   "ciudad_en_TZ": true,
+   "icao": null,
+   "resolutionSource": "https://aviationweather.gov/api/data/metar?ids=KSEA&format=raw&date=2026-10-26T10:00:00Z&hours=30",
+   "tags": [
+    "weather",
+    "recurring",
+    "hide-from-new",
+    "seattle",
+    "daily-temperature",
+    "lowest-temperature"
+   ],
+   "endDate": "2026-10-25T12:00:00Z"
+  },
+  {
+   "slug": "lowest-temperature-in-los-angeles-on-october-25-2026",
+   "regex": true,
+   "ciudad_en_TZ": true,
+   "icao": null,
+   "resolutionSource": "https://aviationweather.gov/api/data/metar?ids=KLAX&format=raw&date=2026-10-26T10:00:00Z&hours=30",
+   "tags": [
+    "weather",
+    "recurring",
+    "hide-from-new",
+    "daily-temperature",
+    "los-angeles",
+    "lowest-temperature"
+   ],
+   "endDate": "2026-10-25T12:00:00Z"
+  },
+  {
+   "slug": "lowest-temperature-in-san-francisco-on-october-25-2026",
+   "regex": true,
+   "ciudad_en_TZ": true,
+   "icao": null,
+   "resolutionSource": "https://aviationweather.gov/api/data/metar?ids=KSFO&format=raw&date=2026-10-26T10:00:00Z&hours=30",
+   "tags": [
+    "weather",
+    "recurring",
+    "hide-from-new",
+    "daily-temperature",
+    "san-fransisco",
+    "lowest-temperature"
+   ],
+   "endDate": "2026-10-25T12:00:00Z"
+  },
+  {
+   "slug": "highest-temperature-in-seattle-on-october-25-2026",
+   "regex": true,
+   "ciudad_en_TZ": true,
+   "icao": null,
+   "resolutionSource": "https://aviationweather.gov/api/data/metar?ids=KSEA&format=raw&date=2026-10-26T10:00:00Z&hours=30",
+   "tags": [
+    "weather",
+    "recurring",
+    "hide-from-new",
+    "seattle",
+    "daily-temperature",
+    "highest-temperature"
+   ],
+   "endDate": "2026-10-25T12:00:00Z"
+  },
+  {
+   "slug": "highest-temperature-in-los-angeles-on-october-25-2026",
+   "regex": true,
+   "ciudad_en_TZ": true,
+   "icao": null,
+   "resolutionSource": "https://aviationweather.gov/api/data/metar?ids=KLAX&format=raw&date=2026-10-26T10:00:00Z&hours=30",
+   "tags": [
+    "weather",
+    "recurring",
+    "hide-from-new",
+    "daily-temperature",
+    "los-angeles",
+    "highest-temperature"
+   ],
+   "endDate": "2026-10-25T12:00:00Z"
+  },
+  {
+   "slug": "highest-temperature-in-san-francisco-on-october-25-2026",
+   "regex": true,
+   "ciudad_en_TZ": true,
+   "icao": null,
+   "resolutionSource": "https://aviationweather.gov/api/data/metar?ids=KSFO&format=raw&date=2026-10-26T10:00:00Z&hours=30",
+   "tags": [
+    "weather",
+    "recurring",
+    "hide-from-new",
+    "daily-temperature",
+    "san-fransisco",
+    "highest-temperature"
+   ],
+   "endDate": "2026-10-25T12:00:00Z"
+  },
+  {
+   "slug": "lowest-temperature-in-sao-paulo-on-october-25-2026",
+   "regex": true,
+   "ciudad_en_TZ": true,
+   "icao": null,
+   "resolutionSource": "https://aviationweather.gov/api/data/metar?ids=SBGR&format=raw&date=2026-10-26T06:00:00Z&hours=30",
+   "tags": [
+    "weather",
+    "recurring",
+    "hide-from-new",
+    "sao-paulo",
+    "daily-temperature",
+    "lowest-temperature"
+   ],
+   "endDate": "2026-10-25T12:00:00Z"
+  },
+  {
+   "slug": "lowest-temperature-in-buenos-aires-on-october-25-2026",
+   "regex": true,
+   "ciudad_en_TZ": true,
+   "icao": null,
+   "resolutionSource": "https://aviationweather.gov/api/data/metar?ids=SAEZ&format=raw&date=2026-10-26T06:00:00Z&hours=30",
+   "tags": [
+    "weather",
+    "recurring",
+    "hide-from-new",
+    "buenos-aires",
+    "daily-temperature",
+    "lowest-temperature"
+   ],
+   "endDate": "2026-10-25T12:00:00Z"
+  },
+  {
+   "slug": "lowest-temperature-in-toronto-on-october-25-2026",
+   "regex": true,
+   "ciudad_en_TZ": true,
+   "icao": null,
+   "resolutionSource": "https://aviationweather.gov/api/data/metar?ids=CYYZ&format=raw&date=2026-10-26T07:00:00Z&hours=30",
+   "tags": [
+    "weather",
+    "recurring",
+    "hide-from-new",
+    "toronto",
+    "daily-temperature",
+    "lowest-temperature"
+   ],
+   "endDate": "2026-10-25T12:00:00Z"
+  },
+  {
+   "slug": "lowest-temperature-in-mexico-city-on-october-25-2026",
+   "regex": true,
+   "ciudad_en_TZ": true,
+   "icao": null,
+   "resolutionSource": "https://aviationweather.gov/api/data/metar?ids=MMMX&format=raw&date=2026-10-26T09:00:00Z&hours=30",
+   "tags": [
+    "weather",
+    "recurring",
+    "hide-from-new",
+    "daily-temperature",
+    "mexico",
+    "lowest-temperature"
+   ],
+   "endDate": "2026-10-25T12:00:00Z"
+  }
+ ]
+}
