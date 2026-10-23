@@ -47,6 +47,7 @@ ACCIONES = 10
 TRAMOS = ((0, .10), (.10, .30), (.30, .70), (.70, .90), (.90, 1.01))
 COSTOS_FIJOS = (0.0, 0.01, 0.02, 0.03)
 REMUESTREOS = 2000
+SUMA_MIN, SUMA_MAX = 0.90, 1.15   # agregado despues (ver analizar)
 
 _ses = threading.local()
 
@@ -329,6 +330,8 @@ def filas_base(cache, dias, sig):
                     pm[m] = s
             if len(pm) < len(MODELOS):
                 continue                 # los dos modelos sobre los mismos dias
+            ps = [c["p"].get(str(h)) for c in ev["cajas"]]
+            suma = None if None in ps else sum(ps)
             for c in ev["cajas"]:
                 p = c["p"].get(str(h))
                 if p is None:
@@ -338,7 +341,7 @@ def filas_base(cache, dias, sig):
                 except Exception:
                     continue
                 out.append({"serie": serie, "fecha": fecha, "h": h, "caja": c["caja"], "precio": p, "y": c["gano"],
-                            **{f"p_{m}": probs[m] for m in MODELOS}})
+                            "suma": suma, **{f"p_{m}": probs[m] for m in MODELOS}})
     return out
 
 
@@ -400,23 +403,9 @@ def resumen_ops(ops, semilla=1):
             "acierto": round(sum(o[2] > 0 for o in ops) / len(ops), 3)}
 
 
-def analizar():
-    cache = cargar_cache()
-    dias = leer_dias()
-    sig = sigmas(dias)
-    cy, cn, ncal = costos_medidos(cache)
-
-    def medido(p, lado):
-        c = (cy if lado == "Yes" else cn)[tramo(p)]
-        c = 0.02 if c is None else c          # tramo sin fotos (no deberia pasar)
-        return (p if lado == "Yes" else 1 - p) + c
-
-    fs = filas_base(cache, dias, sig)
-    fechas = sorted({f["fecha"] for f in fs})
-    corte = fechas[len(fechas) // 2] if fechas else ""
-    res = {"costo_yes": cy, "costo_no": cn, "n_calibracion": ncal, "filas": len(fs),
-           "eventos": sum("cajas" in v for v in cache["eventos"].values()), "corte_mitades": corte, "por_h": {}}
-    todas_ops = []
+def cuentas(fs, corte, medido):
+    """Medidas por horizonte, criterio de REGLAS.md y la lista de operaciones (umbral principal)."""
+    por_h, todas_ops = {}, []
     for h in HORIZONTES:
         fh = [f for f in fs if f["h"] == h]
         if not fh:
@@ -437,17 +426,42 @@ def analizar():
                 for c in COSTOS_FIJOS:
                     fijo = lambda p, lado, c=c: (p if lado == "Yes" else 1 - p) + c
                     r["ops"][f"{m}|{u}|fijo {int(c * 100)}c"] = resumen_ops(operar(fh, m, u, fijo))
-        res["por_h"][h] = r
-    # criterio fijado de antemano (REGLAS.md)
-    r2 = res["por_h"].get(2)
+        por_h[h] = r
+    crit = None
+    r2 = por_h.get(2)
     if r2:
         o = r2["ops"]["Promedio|0.1|medido"]
         l = r2["lambda"]["Promedio"]
         m1, m2 = r2["ops"]["Promedio|0.1|medido|1a mitad"], r2["ops"]["Promedio|0.1|medido|2a mitad"]
-        res["criterio"] = {"roi_pos_y_p_neg_<5%": bool(o.get("n") and o["roi"] > 0 and o["p_neg"] < 0.05),
-                           "lambda_sin_0": l[1] > 0,
-                           "dos_mitades_pos": bool(m1.get("n") and m2.get("n") and m1["roi"] > 0 and m2["roi"] > 0)}
-        res["criterio"]["hay_ventaja"] = all(res["criterio"].values())
+        crit = {"roi_pos_y_p_neg_<5%": bool(o.get("n") and o["roi"] > 0 and o["p_neg"] < 0.05),
+                "lambda_sin_0": l[1] > 0,
+                "dos_mitades_pos": bool(m1.get("n") and m2.get("n") and m1["roi"] > 0 and m2["roi"] > 0)}
+        crit["hay_ventaja"] = all(crit.values())
+    return por_h, crit, todas_ops
+
+
+def analizar():
+    cache = cargar_cache()
+    dias = leer_dias()
+    sig = sigmas(dias)
+    cy, cn, ncal = costos_medidos(cache)
+
+    def medido(p, lado):
+        c = (cy if lado == "Yes" else cn)[tramo(p)]
+        c = 0.02 if c is None else c          # tramo sin fotos (no deberia pasar)
+        return (p if lado == "Yes" else 1 - p) + c
+
+    fs = filas_base(cache, dias, sig)
+    fechas = sorted({f["fecha"] for f in fs})
+    corte = fechas[len(fechas) // 2] if fechas else ""
+    res = {"costo_yes": cy, "costo_no": cn, "n_calibracion": ncal, "filas": len(fs),
+           "eventos": sum("cajas" in v for v in cache["eventos"].values()), "corte_mitades": corte}
+    res["por_h"], res["criterio"], todas_ops = cuentas(fs, corte, medido)
+    # AGREGADO DESPUES de ver resultados: solo momentos en que los precios de las cajas del evento suman
+    # entre SUMA_MIN y SUMA_MAX (si suman 2-4, el "precio" es el medio de un libro vacio, no se puede operar)
+    sano = [f for f in fs if f["suma"] is not None and SUMA_MIN <= f["suma"] <= SUMA_MAX]
+    res["filas_sano"] = len(sano)
+    res["por_h_sano"], res["criterio_sano"], _ = cuentas(sano, corte, medido)
     with open(os.path.join(OUT, "resumen.json"), "w", encoding="utf-8") as f:
         json.dump(res, f, indent=1, ensure_ascii=False, default=str)
     with gzip.open(os.path.join(OUT, "ops.csv.gz"), "wt", newline="", encoding="utf-8") as f:
@@ -460,6 +474,34 @@ def analizar():
     log(f"{len(fs)} filas, {len(todas_ops)} ops")
 
 
+def seccion(por_h, c, titulo):
+    L = []
+    if c:
+        L += ["", titulo, "",
+              f"- ROI > 0 y P(ROI<0) < 5 %: {'sí' if c['roi_pos_y_p_neg_<5%'] else 'no'}",
+              f"- λ con intervalo sin 0: {'sí' if c['lambda_sin_0'] else 'no'}",
+              f"- ROI positivo en las dos mitades: {'sí' if c['dos_mitades_pos'] else 'no'}",
+              f"- **Hay ventaja: {'SÍ' if c['hay_ventaja'] else 'NO'}**"]
+    for h, r in por_h.items():
+        L += ["", f"## Horizonte {h} ({r['dias']} serie-días, {r['cajas']} cajas)", "",
+              "| | Brier | log-score | λ (IC 95 %) |", "|---|---|---|---|",
+              f"| Mercado | {r['puntaje']['mercado'][0]:.4f} | {r['puntaje']['mercado'][1]:.4f} | |"]
+        for m in MODELOS:
+            l = r["lambda"][m]
+            L.append(f"| {m} | {r['puntaje'][m][0]:.4f} | {r['puntaje'][m][1]:.4f} | {l[0]:.2f} [{l[1]:.2f}, {l[2]:.2f}] |")
+        L += ["", "| Modelo | Umbral | Costo | n | días | acierto | puesto | ganancia | ROI | P(ROI<0) |",
+              "|---|---|---|---|---|---|---|---|---|---|"]
+        for k, o in r["ops"].items():
+            m, u, cc = k.split("|", 2)
+            cc = cc.replace("|", ", ")
+            if not o.get("n"):
+                L.append(f"| {m} | {u} | {cc} | 0 | | | | | | |")
+                continue
+            L.append(f"| {m} | {u} | {cc} | {o['n']} | {o['dias']} | {o['acierto'] * 100:.0f}% | {o['gasto']:.0f} | "
+                     f"{o['ganancia']:+.1f} | {o['roi'] * 100:+.1f}% | {o['p_neg'] * 100:.0f}% |")
+    return L
+
+
 def informe(res):
     L = ["# Promedio de 11 modelos contra precios históricos (backtest)", "",
          "Reglas fijadas antes de bajar precios: `historico/REGLAS.md`. Generado por `historico/backtest.py`.", "",
@@ -470,30 +512,12 @@ def informe(res):
         y, n = res["costo_yes"].get(i), res["costo_no"].get(i)
         L.append(f"| {int(a * 100)}-{int(min(b, 1) * 100)} ¢ | {'' if y is None else f'{y * 100:+.1f} ¢'} | "
                  f"{'' if n is None else f'{n * 100:+.1f} ¢'} | {res['n_calibracion'].get(i, 0)} |")
-    if "criterio" in res:
-        c = res["criterio"]
-        L += ["", "## Veredicto (criterio fijado antes, h = 2, Promedio, costo medido, umbral 10)", "",
-              f"- ROI > 0 y P(ROI<0) < 5 %: {'sí' if c['roi_pos_y_p_neg_<5%'] else 'no'}",
-              f"- λ con intervalo sin 0: {'sí' if c['lambda_sin_0'] else 'no'}",
-              f"- ROI positivo en las dos mitades: {'sí' if c['dos_mitades_pos'] else 'no'}",
-              f"- **Hay ventaja: {'SÍ' if c['hay_ventaja'] else 'NO'}**"]
-    for h, r in res["por_h"].items():
-        L += ["", f"## Horizonte {h} ({r['dias']} serie-días, {r['cajas']} cajas)", "",
-              "| | Brier | log-score | λ (IC 95 %) |", "|---|---|---|---|",
-              f"| Mercado | {r['puntaje']['mercado'][0]:.4f} | {r['puntaje']['mercado'][1]:.4f} | |"]
-        for m in MODELOS:
-            l = r["lambda"][m]
-            L.append(f"| {m} | {r['puntaje'][m][0]:.4f} | {r['puntaje'][m][1]:.4f} | {l[0]:.2f} [{l[1]:.2f}, {l[2]:.2f}] |")
-        L += ["", "| Modelo | Umbral | Costo | n | días | acierto | puesto | ganancia | ROI | P(ROI<0) |",
-              "|---|---|---|---|---|---|---|---|---|---|"]
-        for k, o in r["ops"].items():
-            m, u, c = k.split("|", 2)
-            c = c.replace("|", ", ")
-            if not o.get("n"):
-                L.append(f"| {m} | {u} | {c} | 0 | | | | | | |")
-                continue
-            L.append(f"| {m} | {u} | {c} | {o['n']} | {o['dias']} | {o['acierto'] * 100:.0f}% | {o['gasto']:.0f} | "
-                     f"{o['ganancia']:+.1f} | {o['roi'] * 100:+.1f}% | {o['p_neg'] * 100:.0f}% |")
+    L += seccion(res["por_h"], res["criterio"], "## Veredicto (criterio fijado antes, h = 2, Promedio, costo medido, umbral 10)")
+    L += ["", "---", "", "# Agregado después de ver resultados: solo precios con libro de verdad", "",
+          f"Las cajas de un evento deberían sumar ~1. En muchas mínimas (y a 3 días) sumaban 2-4: el precio histórico era el "
+          f"medio de un libro casi vacío (ej. bid 1 ¢ / ask 66 ¢ → 33,5 ¢), que no se puede operar. Acá quedan solo los "
+          f"momentos en que las cajas del evento suman entre {SUMA_MIN} y {SUMA_MAX} ({res['filas_sano']} filas)."]
+    L += seccion(res["por_h_sano"], res["criterio_sano"], "## Veredicto con libro de verdad (misma regla)")
     with open(os.path.join(OUT, "informe.md"), "w", encoding="utf-8") as f:
         f.write("\n".join(L) + "\n")
 

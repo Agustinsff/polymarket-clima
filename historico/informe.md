@@ -161,3 +161,157 @@ Eventos con ganadora y precios: 5093; filas (caja × horizonte): 67672.
 | GFS+ECMWF | 0.05 | fijo 1c | 4715 | 38 | 78% | 28833 | +7876.9 | +27.3% | 0% |
 | GFS+ECMWF | 0.05 | fijo 2c | 4488 | 38 | 79% | 28110 | +7359.7 | +26.2% | 0% |
 | GFS+ECMWF | 0.05 | fijo 3c | 4217 | 38 | 80% | 27047 | +6893.1 | +25.5% | 0% |
+
+---
+
+# Agregado después de ver resultados: solo precios con libro de verdad
+
+Las cajas de un evento deberían sumar ~1. En muchas mínimas (y a 3 días) sumaban 2-4: el precio histórico era el medio de un libro casi vacío (ej. bid 1 ¢ / ask 66 ¢ → 33,5 ¢), que no se puede operar. Acá quedan solo los momentos en que las cajas del evento suman entre 0.9 y 1.15 (42185 filas).
+
+## Veredicto con libro de verdad (misma regla)
+
+- ROI > 0 y P(ROI<0) < 5 %: no
+- λ con intervalo sin 0: no
+- ROI positivo en las dos mitades: no
+- **Hay ventaja: NO**
+
+## Horizonte 1 (1899 serie-días, 20889 cajas)
+
+| | Brier | log-score | λ (IC 95 %) |
+|---|---|---|---|
+| Mercado | 0.0551 | 0.1725 | |
+| Promedio | 0.0644 | 0.2062 | -0.05 [-0.07, -0.03] |
+| GFS+ECMWF | 0.0682 | 0.2218 | -0.05 [-0.07, -0.05] |
+
+| Modelo | Umbral | Costo | n | días | acierto | puesto | ganancia | ROI | P(ROI<0) |
+|---|---|---|---|---|---|---|---|---|---|
+| Promedio | 0.1 | medido | 2954 | 43 | 35% | 10832 | -502.3 | -4.6% | 98% |
+| Promedio | 0.1 | medido, highest | 2954 | 43 | 35% | 10832 | -502.3 | -4.6% | 98% |
+| Promedio | 0.1 | medido, lowest | 0 | | | | | | |
+| Promedio | 0.1 | medido, 1a mitad | 1392 | 21 | 34% | 5048 | -358.1 | -7.1% | 97% |
+| Promedio | 0.1 | medido, 2a mitad | 1562 | 22 | 36% | 5784 | -144.2 | -2.5% | 79% |
+| Promedio | 0.1 | fijo 0c | 3205 | 43 | 36% | 11722 | -161.7 | -1.4% | 73% |
+| Promedio | 0.1 | fijo 1c | 3031 | 43 | 35% | 11078 | -468.1 | -4.2% | 96% |
+| Promedio | 0.1 | fijo 2c | 2826 | 43 | 34% | 10368 | -757.6 | -7.3% | 100% |
+| Promedio | 0.1 | fijo 3c | 2674 | 43 | 32% | 9610 | -1149.9 | -12.0% | 100% |
+| Promedio | 0.05 | medido | 4710 | 43 | 34% | 17099 | -919.2 | -5.4% | 100% |
+| Promedio | 0.05 | medido, highest | 4710 | 43 | 34% | 17099 | -919.2 | -5.4% | 100% |
+| Promedio | 0.05 | medido, lowest | 0 | | | | | | |
+| Promedio | 0.05 | medido, 1a mitad | 2340 | 21 | 33% | 8385 | -565.2 | -6.7% | 100% |
+| Promedio | 0.05 | medido, 2a mitad | 2370 | 22 | 35% | 8714 | -354.0 | -4.1% | 97% |
+| Promedio | 0.05 | fijo 0c | 5021 | 43 | 36% | 18566 | -456.4 | -2.5% | 94% |
+| Promedio | 0.05 | fijo 1c | 4842 | 43 | 34% | 17534 | -914.1 | -5.2% | 100% |
+| Promedio | 0.05 | fijo 2c | 4647 | 43 | 33% | 16454 | -1224.3 | -7.4% | 100% |
+| Promedio | 0.05 | fijo 3c | 4520 | 43 | 30% | 15484 | -1693.8 | -10.9% | 100% |
+| GFS+ECMWF | 0.1 | medido | 3700 | 43 | 37% | 14155 | -625.1 | -4.4% | 100% |
+| GFS+ECMWF | 0.1 | medido, highest | 3700 | 43 | 37% | 14155 | -625.1 | -4.4% | 100% |
+| GFS+ECMWF | 0.1 | medido, lowest | 0 | | | | | | |
+| GFS+ECMWF | 0.1 | medido, 1a mitad | 1820 | 21 | 35% | 6872 | -421.8 | -6.1% | 99% |
+| GFS+ECMWF | 0.1 | medido, 2a mitad | 1880 | 22 | 38% | 7283 | -203.3 | -2.8% | 91% |
+| GFS+ECMWF | 0.1 | fijo 0c | 3888 | 43 | 38% | 15026 | -255.5 | -1.7% | 84% |
+| GFS+ECMWF | 0.1 | fijo 1c | 3782 | 43 | 36% | 14355 | -634.8 | -4.4% | 100% |
+| GFS+ECMWF | 0.1 | fijo 2c | 3654 | 43 | 35% | 13705 | -935.4 | -6.8% | 100% |
+| GFS+ECMWF | 0.1 | fijo 3c | 3703 | 43 | 32% | 13079 | -1318.7 | -10.1% | 100% |
+| GFS+ECMWF | 0.05 | medido | 5150 | 43 | 36% | 19540 | -1039.9 | -5.3% | 100% |
+| GFS+ECMWF | 0.05 | medido, highest | 5150 | 43 | 36% | 19540 | -1039.9 | -5.3% | 100% |
+| GFS+ECMWF | 0.05 | medido, lowest | 0 | | | | | | |
+| GFS+ECMWF | 0.05 | medido, 1a mitad | 2590 | 21 | 35% | 9743 | -622.8 | -6.4% | 100% |
+| GFS+ECMWF | 0.05 | medido, 2a mitad | 2560 | 22 | 37% | 9797 | -417.1 | -4.3% | 100% |
+| GFS+ECMWF | 0.05 | fijo 0c | 5398 | 43 | 38% | 20855 | -445.3 | -2.1% | 95% |
+| GFS+ECMWF | 0.05 | fijo 1c | 5346 | 43 | 36% | 20020 | -990.2 | -5.0% | 100% |
+| GFS+ECMWF | 0.05 | fijo 2c | 5365 | 43 | 33% | 19322 | -1541.7 | -8.0% | 100% |
+| GFS+ECMWF | 0.05 | fijo 3c | 5737 | 43 | 29% | 18874 | -2233.9 | -11.8% | 100% |
+
+## Horizonte 2 (1859 serie-días, 20449 cajas)
+
+| | Brier | log-score | λ (IC 95 %) |
+|---|---|---|---|
+| Mercado | 0.0601 | 0.1914 | |
+| Promedio | 0.0670 | 0.2172 | -0.05 [-0.07, -0.03] |
+| GFS+ECMWF | 0.0702 | 0.2309 | -0.05 [-0.07, -0.03] |
+
+| Modelo | Umbral | Costo | n | días | acierto | puesto | ganancia | ROI | P(ROI<0) |
+|---|---|---|---|---|---|---|---|---|---|
+| Promedio | 0.1 | medido | 2811 | 41 | 39% | 11356 | -396.0 | -3.5% | 95% |
+| Promedio | 0.1 | medido, highest | 2734 | 41 | 39% | 11040 | -389.5 | -3.5% | 95% |
+| Promedio | 0.1 | medido, lowest | 77 | 21 | 40% | 316 | -6.5 | -2.0% | 59% |
+| Promedio | 0.1 | medido, 1a mitad | 1272 | 19 | 37% | 5064 | -303.6 | -6.0% | 100% |
+| Promedio | 0.1 | medido, 2a mitad | 1539 | 22 | 40% | 6292 | -92.3 | -1.5% | 70% |
+| Promedio | 0.1 | fijo 0c | 3122 | 41 | 40% | 12715 | -225.0 | -1.8% | 81% |
+| Promedio | 0.1 | fijo 1c | 2890 | 41 | 39% | 11641 | -390.7 | -3.4% | 94% |
+| Promedio | 0.1 | fijo 2c | 2644 | 41 | 38% | 10668 | -577.5 | -5.4% | 99% |
+| Promedio | 0.1 | fijo 3c | 2362 | 41 | 38% | 9786 | -796.3 | -8.1% | 100% |
+| Promedio | 0.05 | medido | 4832 | 41 | 37% | 18814 | -934.4 | -5.0% | 100% |
+| Promedio | 0.05 | medido, highest | 4673 | 41 | 37% | 18167 | -876.9 | -4.8% | 100% |
+| Promedio | 0.05 | medido, lowest | 159 | 23 | 37% | 648 | -57.5 | -8.9% | 89% |
+| Promedio | 0.05 | medido, 1a mitad | 2287 | 19 | 35% | 8672 | -681.8 | -7.9% | 100% |
+| Promedio | 0.05 | medido, 2a mitad | 2545 | 22 | 39% | 10143 | -252.7 | -2.5% | 89% |
+| Promedio | 0.05 | fijo 0c | 5202 | 41 | 39% | 20712 | -362.4 | -1.8% | 87% |
+| Promedio | 0.05 | fijo 1c | 4995 | 41 | 37% | 19403 | -902.8 | -4.7% | 100% |
+| Promedio | 0.05 | fijo 2c | 4702 | 41 | 36% | 18127 | -1407.1 | -7.8% | 100% |
+| Promedio | 0.05 | fijo 3c | 4296 | 41 | 35% | 16816 | -1636.2 | -9.7% | 100% |
+| GFS+ECMWF | 0.1 | medido | 3506 | 41 | 40% | 14639 | -799.1 | -5.5% | 100% |
+| GFS+ECMWF | 0.1 | medido, highest | 3405 | 41 | 40% | 14222 | -721.7 | -5.1% | 100% |
+| GFS+ECMWF | 0.1 | medido, lowest | 101 | 20 | 34% | 417 | -77.4 | -18.6% | 99% |
+| GFS+ECMWF | 0.1 | medido, 1a mitad | 1625 | 19 | 38% | 6696 | -556.4 | -8.3% | 100% |
+| GFS+ECMWF | 0.1 | medido, 2a mitad | 1881 | 22 | 41% | 7943 | -242.7 | -3.1% | 89% |
+| GFS+ECMWF | 0.1 | fijo 0c | 3765 | 41 | 41% | 15971 | -421.2 | -2.6% | 95% |
+| GFS+ECMWF | 0.1 | fijo 1c | 3583 | 41 | 40% | 14961 | -791.0 | -5.3% | 100% |
+| GFS+ECMWF | 0.1 | fijo 2c | 3453 | 41 | 38% | 14176 | -1125.9 | -7.9% | 100% |
+| GFS+ECMWF | 0.1 | fijo 3c | 3234 | 41 | 37% | 13197 | -1326.9 | -10.1% | 100% |
+| GFS+ECMWF | 0.05 | medido | 5425 | 41 | 38% | 21904 | -1164.3 | -5.3% | 100% |
+| GFS+ECMWF | 0.05 | medido, highest | 5245 | 41 | 38% | 21134 | -1054.2 | -5.0% | 100% |
+| GFS+ECMWF | 0.05 | medido, lowest | 180 | 23 | 37% | 770 | -110.1 | -14.3% | 99% |
+| GFS+ECMWF | 0.05 | medido, 1a mitad | 2624 | 19 | 36% | 10340 | -869.7 | -8.4% | 100% |
+| GFS+ECMWF | 0.05 | medido, 2a mitad | 2801 | 22 | 40% | 11565 | -294.6 | -2.5% | 92% |
+| GFS+ECMWF | 0.05 | fijo 0c | 5694 | 41 | 40% | 23589 | -569.2 | -2.4% | 98% |
+| GFS+ECMWF | 0.05 | fijo 1c | 5629 | 41 | 38% | 22345 | -1125.4 | -5.0% | 100% |
+| GFS+ECMWF | 0.05 | fijo 2c | 5627 | 41 | 35% | 21485 | -1734.5 | -8.1% | 100% |
+| GFS+ECMWF | 0.05 | fijo 3c | 5507 | 41 | 33% | 20584 | -2274.2 | -11.1% | 100% |
+
+## Horizonte 3 (77 serie-días, 847 cajas)
+
+| | Brier | log-score | λ (IC 95 %) |
+|---|---|---|---|
+| Mercado | 0.0702 | 0.2336 | |
+| Promedio | 0.0675 | 0.2192 | 0.90 [0.60, 1.05] |
+| GFS+ECMWF | 0.0706 | 0.2331 | 0.57 [0.17, 0.90] |
+
+| Modelo | Umbral | Costo | n | días | acierto | puesto | ganancia | ROI | P(ROI<0) |
+|---|---|---|---|---|---|---|---|---|---|
+| Promedio | 0.1 | medido | 79 | 15 | 47% | 268 | +101.9 | +38.0% | 0% |
+| Promedio | 0.1 | medido, highest | 60 | 14 | 47% | 219 | +61.0 | +27.9% | 1% |
+| Promedio | 0.1 | medido, lowest | 19 | 6 | 47% | 49 | +40.9 | +83.4% | 0% |
+| Promedio | 0.1 | medido, 1a mitad | 60 | 11 | 52% | 202 | +108.3 | +53.7% | 0% |
+| Promedio | 0.1 | medido, 2a mitad | 19 | 4 | 32% | 66 | -6.4 | -9.6% | 76% |
+| Promedio | 0.1 | fijo 0c | 101 | 15 | 46% | 327 | +142.9 | +43.7% | 0% |
+| Promedio | 0.1 | fijo 1c | 86 | 15 | 46% | 291 | +109.1 | +37.5% | 0% |
+| Promedio | 0.1 | fijo 2c | 68 | 14 | 46% | 234 | +76.1 | +32.6% | 2% |
+| Promedio | 0.1 | fijo 3c | 57 | 13 | 42% | 200 | +39.7 | +19.8% | 8% |
+| Promedio | 0.05 | medido | 177 | 16 | 43% | 606 | +154.1 | +25.4% | 0% |
+| Promedio | 0.05 | medido, highest | 124 | 15 | 43% | 445 | +84.8 | +19.1% | 4% |
+| Promedio | 0.05 | medido, lowest | 53 | 6 | 43% | 161 | +69.3 | +43.1% | 0% |
+| Promedio | 0.05 | medido, 1a mitad | 147 | 12 | 45% | 478 | +182.0 | +38.1% | 0% |
+| Promedio | 0.05 | medido, 2a mitad | 30 | 4 | 33% | 128 | -27.9 | -21.8% | 100% |
+| Promedio | 0.05 | fijo 0c | 204 | 16 | 44% | 738 | +162.5 | +22.0% | 0% |
+| Promedio | 0.05 | fijo 1c | 181 | 16 | 44% | 623 | +167.0 | +26.8% | 0% |
+| Promedio | 0.05 | fijo 2c | 159 | 16 | 45% | 565 | +154.6 | +27.3% | 0% |
+| Promedio | 0.05 | fijo 3c | 143 | 16 | 47% | 509 | +160.6 | +31.5% | 0% |
+| GFS+ECMWF | 0.1 | medido | 75 | 15 | 40% | 270 | +30.0 | +11.1% | 14% |
+| GFS+ECMWF | 0.1 | medido, highest | 62 | 13 | 40% | 231 | +19.3 | +8.3% | 23% |
+| GFS+ECMWF | 0.1 | medido, lowest | 13 | 5 | 38% | 39 | +10.8 | +27.4% | 3% |
+| GFS+ECMWF | 0.1 | medido, 1a mitad | 60 | 11 | 38% | 201 | +29.1 | +14.5% | 11% |
+| GFS+ECMWF | 0.1 | medido, 2a mitad | 15 | 4 | 47% | 69 | +0.9 | +1.3% | 48% |
+| GFS+ECMWF | 0.1 | fijo 0c | 90 | 16 | 41% | 324 | +46.1 | +14.2% | 5% |
+| GFS+ECMWF | 0.1 | fijo 1c | 78 | 16 | 40% | 288 | +22.4 | +7.8% | 23% |
+| GFS+ECMWF | 0.1 | fijo 2c | 62 | 15 | 40% | 230 | +20.5 | +8.9% | 22% |
+| GFS+ECMWF | 0.1 | fijo 3c | 51 | 14 | 43% | 208 | +12.3 | +5.9% | 28% |
+| GFS+ECMWF | 0.05 | medido | 179 | 16 | 41% | 658 | +71.7 | +10.9% | 5% |
+| GFS+ECMWF | 0.05 | medido, highest | 132 | 16 | 42% | 495 | +64.8 | +13.1% | 5% |
+| GFS+ECMWF | 0.05 | medido, lowest | 47 | 6 | 36% | 163 | +6.9 | +4.2% | 43% |
+| GFS+ECMWF | 0.05 | medido, 1a mitad | 148 | 12 | 42% | 533 | +87.3 | +16.4% | 1% |
+| GFS+ECMWF | 0.05 | medido, 2a mitad | 31 | 4 | 36% | 126 | -15.6 | -12.4% | 100% |
+| GFS+ECMWF | 0.05 | fijo 0c | 218 | 16 | 41% | 797 | +103.0 | +12.9% | 5% |
+| GFS+ECMWF | 0.05 | fijo 1c | 190 | 16 | 42% | 698 | +91.5 | +13.1% | 3% |
+| GFS+ECMWF | 0.05 | fijo 2c | 167 | 16 | 40% | 629 | +41.5 | +6.6% | 18% |
+| GFS+ECMWF | 0.05 | fijo 3c | 143 | 16 | 40% | 553 | +16.6 | +3.0% | 38% |
