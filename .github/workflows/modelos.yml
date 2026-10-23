@@ -16,7 +16,6 @@ jobs:
         with:
           python-version: "3.12"
       - run: pip install -r requirements.txt
-      - run: python modelos/sonda.py > modelos/sonda.txt 2>&1 || true
       - run: |
           if [ -f modelos/comparar.py ]; then python modelos/comparar.py 2> modelos/log.txt || true; fi
       - run: |
