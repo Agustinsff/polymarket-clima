@@ -1,12 +1,12 @@
 # Resumen polymarket-clima
 
-_Actualizado: 2026-10-23 20:05 (Montevideo). Todo es **en papel**: no se usa plata real._
+_Actualizado: 2026-10-23 20:11 (Montevideo). Todo es **en papel**: no se usa plata real._
 
 ## Estado de las tareas
 
 🔔 Polymarket cambió algo en **temperatura mínima** (reglamento, aparece el 2026-10-23 19:31 UTC): `#°C is exactly #°F and counts as #°F.` y 4 más. Ver [reglas_informe.md](reglas_informe.md).
 
-- Última foto de liquidez: 2026-10-23T19:55:33
+- Última foto de liquidez: 2026-10-23T20:10:45
 - Monitor: mañana 2026-10-23, noche 2026-10-23
 - Prueba São Paulo: último día registrado 2026-10-23
 - Cosechador: último ciclo 2026-10-23 19:38 UTC, 88 mercados, 46 estaciones
@@ -75,7 +75,7 @@ Puntaje Brier (más bajo = mejor) en 674 cajas liquidadas: **modelo 0.0545** vs 
 | Modo | Serie calibrada | Liquidadas | Ganadas | Neto (10 acc. c/u) | Pendientes |
 |---|---|---|---|---|---|
 | taker | no | 134 | 39 | US$-34.37 | 155 |
-| maker | no | 444 | 47 | US$-46.38 | 454 |
+| maker | no | 444 | 47 | US$-46.38 | 455 |
 | cola_taker | no | 58 | 3 | US$+7.68 | 52 |
 | cola_maker | no | 140 | 3 | US$-8.74 | 121 |
 | no80_90 | no | 43 | 33 | US$-40.28 | 63 |
