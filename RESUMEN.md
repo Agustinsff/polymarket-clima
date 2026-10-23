@@ -1,6 +1,6 @@
 # Resumen polymarket-clima
 
-_Actualizado: 2026-10-23 14:06 (Montevideo). Todo es **en papel**: no se usa plata real._
+_Actualizado: 2026-10-23 14:12 (Montevideo). Todo es **en papel**: no se usa plata real._
 
 ## Estado de las tareas
 
@@ -30,7 +30,7 @@ Acumulado: la caja favorita del **mercado** acertó 8/16, la del **modelo** 6/16
 
 ## Prueba en papel São Paulo 14 hs (regla fija)
 
-Días registrados: 9 (desde 2026-10-14).
+Días registrados: 10 (desde 2026-10-14).
 Operaciones: 4 (2 ganadas, 2 perdidas, 0 pendientes). **Neto con comisiones: US$-2.17** (bruto -1.72, comisiones −0.45). _Con la comisión vieja (0,05 para todo) sería US$-2.17._
 
 | Día | Caja | Lado | Precio | Modelo | Resultado |
