@@ -63,6 +63,14 @@ def alarmas(ahora_local):
         t = datetime.strptime(diag["momento_utc"], "%Y-%m-%d %H:%M").replace(tzinfo=timezone.utc)
         if datetime.now(timezone.utc) - t > timedelta(hours=7):
             avisos.append(f"⚠️ El cosechador no actualiza desde {diag['momento_utc']} UTC.")
+    if diag.get("momento_utc") and diag.get("series") == 0:
+        avisos.append("⚠️ El cosechador no encuentra ningún mercado de temperatura abierto en Polymarket "
+                      "(¿dejaron de crearlos o les cambiaron el nombre?).")
+    hoy_filas = leer("hoy.csv")
+    if hoy_filas:
+        ult_hoy = datetime.strptime(hoy_filas[-1]["momento_utc"][:16], "%Y-%m-%d %H:%M").replace(tzinfo=timezone.utc)
+        if datetime.now(timezone.utc) - ult_hoy > timedelta(hours=4):
+            avisos.append(f"⚠️ El pronóstico del mismo día no registra nada desde {hoy_filas[-1]['momento_utc'][:16]} UTC.")
     for tarea, f in sorted(cargar_json("fallas.json").items()):
         if tarea in CADA_15_MIN and f.get("veces", 0) < 2:
             continue
