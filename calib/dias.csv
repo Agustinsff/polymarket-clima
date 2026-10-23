@@ -43,7 +43,7 @@ highest|amsterdam;2026-10-18;EHAM;EHAM;11.6;11.8;11.7;11;11°C;1;0
 highest|amsterdam;2026-10-19;EHAM;EHAM;16.0;13.9;14.95;15;15°C;1;0
 highest|amsterdam;2026-10-20;EHAM;EHAM;13.1;11.1;12.1;12;12°C;1;0
 highest|amsterdam;2026-10-21;EHAM;EHAM;12.5;12.4;12.45;13;13°C;1;0
-highest|amsterdam;2026-10-22;EHAM;EHAM;12.2;12.0;12.1;13;;;0
+highest|amsterdam;2026-10-22;EHAM;EHAM;12.2;12.0;12.1;14;;;0
 highest|ankara;2026-09-08;LTAC;LTAC;22.3;22.8;22.55;23;23°C;1;0
 highest|ankara;2026-09-09;LTAC;LTAC;26.4;26.8;26.6;27;27°C;1;0
 highest|ankara;2026-09-10;LTAC;LTAC;29.1;30.1;29.6;30;30°C;1;0
@@ -87,7 +87,7 @@ highest|ankara;2026-10-17;LTAC;LTAC;9.9;11.4;10.65;12;12°C;1;0
 highest|ankara;2026-10-18;LTAC;LTAC;11.3;11.2;11.25;11;11°C;1;0
 highest|ankara;2026-10-19;LTAC;LTAC;13.2;13.7;13.45;14;14°C;1;0
 highest|ankara;2026-10-20;LTAC;LTAC;15.4;16.0;15.7;17;17°C;1;0
-highest|ankara;2026-10-21;LTAC;LTAC;16.8;17.6;17.2;19;20°C or higher;0;0
+highest|ankara;2026-10-21;LTAC;LTAC;16.8;17.6;17.2;20;20°C or higher;1;0
 highest|ankara;2026-10-22;LTAC;LTAC;18.5;18.5;18.5;20;;;0
 highest|atlanta;2026-09-08;KATL;KATL;32.4;31.1;31.75;31.1;88-89°F;1;1
 highest|atlanta;2026-09-09;KATL;KATL;32.7;32.4;32.55;31.7;88-89°F;1;1
@@ -582,7 +582,7 @@ highest|guangzhou;2026-10-17;ZGGG;ZGGG;33.1;31.5;32.3;33;33°C;1;0
 highest|guangzhou;2026-10-18;ZGGG;ZGGG;31.6;31.4;31.5;34;34°C;1;0
 highest|guangzhou;2026-10-19;ZGGG;ZGGG;33.5;33.3;33.4;35;35°C;1;0
 highest|guangzhou;2026-10-20;ZGGG;ZGGG;33.7;32.4;33.05;35;35°C;1;0
-highest|guangzhou;2026-10-21;ZGGG;ZGGG;33.6;32.2;32.9;34;35°C;0;0
+highest|guangzhou;2026-10-21;ZGGG;ZGGG;33.6;32.2;32.9;35;35°C;1;0
 highest|guangzhou;2026-10-22;ZGGG;ZGGG;29.8;29.3;29.55;30;;;0
 highest|helsinki;2026-09-08;EFHK;EFHK;15.9;16.6;16.25;17;17°C;1;0
 highest|helsinki;2026-09-09;EFHK;EFHK;18.3;17.1;17.7;18;18°C;1;0
@@ -762,7 +762,7 @@ highest|istanbul;2026-10-17;LTFM;LTFM;13.3;13.1;13.2;14;14°C;1;0
 highest|istanbul;2026-10-18;LTFM;LTFM;16.5;16.0;16.25;15;15°C;1;0
 highest|istanbul;2026-10-19;LTFM;LTFM;16.2;17.7;16.95;18;18°C;1;0
 highest|istanbul;2026-10-20;LTFM;LTFM;20.2;20.5;20.35;21;13°C or below;0;0
-highest|istanbul;2026-10-21;LTFM;LTFM;21.6;21.2;21.4;21;22°C;0;0
+highest|istanbul;2026-10-21;LTFM;LTFM;21.6;21.2;21.4;22;22°C;1;0
 highest|istanbul;2026-10-22;LTFM;LTFM;21.7;22.6;22.15;24;;;0
 highest|jeddah;2026-09-08;OEJN;OEJN;36.1;37.5;36.8;38;38°C;1;0
 highest|jeddah;2026-09-09;OEJN;OEJN;38.7;39.9;39.3;38;38°C;1;0
@@ -852,7 +852,7 @@ highest|karachi;2026-10-17;OPKC;OPKC;34.3;36.0;35.15;36;36°C;1;0
 highest|karachi;2026-10-18;OPKC;OPKC;34.8;36.3;35.55;38;38°C;1;0
 highest|karachi;2026-10-19;OPKC;OPKC;35.2;36.6;35.9;37;37°C;1;0
 highest|karachi;2026-10-20;OPKC;OPKC;36.0;37.0;36.5;38;38°C;1;0
-highest|karachi;2026-10-21;OPKC;OPKC;34.0;37.6;35.8;37;38°C;0;0
+highest|karachi;2026-10-21;OPKC;OPKC;34.0;37.6;35.8;38;38°C;1;0
 highest|karachi;2026-10-22;OPKC;OPKC;36.0;37.5;36.75;39;;;0
 highest|kuala-lumpur;2026-09-08;WMKK;WMKK;32.1;33.2;32.65;33;33°C;1;0
 highest|kuala-lumpur;2026-09-09;WMKK;WMKK;33.1;29.5;31.3;33;33°C;1;0
@@ -2023,7 +2023,7 @@ highest|wellington;2026-10-18;NZWN;NZWN;15.5;14.2;14.85;15;15°C;1;0
 highest|wellington;2026-10-19;NZWN;NZWN;15.5;15.7;15.6;17;17°C;1;0
 highest|wellington;2026-10-20;NZWN;NZWN;15.8;16.1;15.95;16;16°C;1;0
 highest|wellington;2026-10-21;NZWN;NZWN;19.0;17.3;18.15;18;18°C;1;0
-highest|wellington;2026-10-22;NZWN;NZWN;16.8;17.0;16.9;18;;;0
+highest|wellington;2026-10-22;NZWN;NZWN;16.8;17.0;16.9;19;;;0
 highest|wuhan;2026-09-08;ZHHH;ZHHH;32.8;33.5;33.15;35;35°C;1;0
 highest|wuhan;2026-09-09;ZHHH;ZHHH;27.0;29.1;28.05;24;26°C or below;1;0
 highest|wuhan;2026-09-10;ZHHH;ZHHH;24.7;26.0;25.35;25;25°C;1;0
@@ -2157,8 +2157,8 @@ lowest|ankara;2026-10-17;LTAC;LTAC;7.8;9.4;8.6;8;8°C;1;0
 lowest|ankara;2026-10-18;LTAC;LTAC;5.1;4.5;4.8;4;4°C;1;0
 lowest|ankara;2026-10-19;LTAC;LTAC;5.6;2.8;4.2;1;1°C;1;0
 lowest|ankara;2026-10-20;LTAC;LTAC;7.4;4.2;5.8;1;1°C;1;0
-lowest|ankara;2026-10-21;LTAC;LTAC;8.8;6.5;7.65;2;1°C;0;0
-lowest|ankara;2026-10-22;LTAC;LTAC;9.6;6.1;7.85;3;;;0
+lowest|ankara;2026-10-21;LTAC;LTAC;8.8;6.5;7.65;1;1°C;1;0
+lowest|ankara;2026-10-22;LTAC;LTAC;9.6;6.1;7.85;2;;;0
 lowest|atlanta;2026-09-08;KATL;KATL;22.4;21.6;22.0;21.7;70-71°F;1;1
 lowest|atlanta;2026-09-09;KATL;KATL;22.5;20.3;21.4;21.7;70-71°F;1;1
 lowest|atlanta;2026-09-10;KATL;KATL;23.4;22.0;22.7;22.8;72-73°F;1;1
@@ -2292,8 +2292,8 @@ lowest|beijing;2026-10-17;ZBAA;ZBAA;14.7;12.3;13.5;13;13°C;1;0
 lowest|beijing;2026-10-18;ZBAA;ZBAA;13.3;10.2;11.75;5;5°C;1;0
 lowest|beijing;2026-10-19;ZBAA;ZBAA;10.9;7.2;9.05;3;3°C;1;0
 lowest|beijing;2026-10-20;ZBAA;ZBAA;8.7;5.9;7.3;4;4°C;1;0
-lowest|beijing;2026-10-21;ZBAA;ZBAA;8.1;5.0;6.55;1;0°C or below;0;0
-lowest|beijing;2026-10-22;ZBAA;ZBAA;7.8;3.7;5.75;1;;;0
+lowest|beijing;2026-10-21;ZBAA;ZBAA;8.1;5.0;6.55;0;0°C or below;1;0
+lowest|beijing;2026-10-22;ZBAA;ZBAA;7.8;3.7;5.75;0;;;0
 lowest|buenos-aires;2026-09-08;SAEZ;SAEZ;4.8;4.6;4.7;8;8°C;1;0
 lowest|buenos-aires;2026-09-09;SAEZ;SAEZ;7.5;7.7;7.6;5;5°C or below;1;0
 lowest|buenos-aires;2026-09-10;SAEZ;SAEZ;9.4;9.3;9.35;7;7°C;1;0
@@ -2968,7 +2968,7 @@ lowest|london;2026-10-18;EGLC;EGLC;10.8;7.8;9.3;8;8°C;1;0
 lowest|london;2026-10-19;EGLC;EGLC;9.6;7.4;8.5;9;9°C;1;0
 lowest|london;2026-10-20;EGLC;EGLC;11.0;10.9;10.95;11;11°C;1;0
 lowest|london;2026-10-21;EGLC;EGLC;8.8;8.5;8.65;9;9°C;1;0
-lowest|london;2026-10-22;EGLC;EGLC;8.2;8.3;8.25;10;;;0
+lowest|london;2026-10-22;EGLC;EGLC;8.2;8.3;8.25;9;;;0
 lowest|los-angeles;2026-09-08;KLAX;KLAX;25.5;21.6;23.55;23.9;74-75°F;1;1
 lowest|los-angeles;2026-09-09;KLAX;KLAX;26.0;23.4;24.7;25.0;76-77°F;1;1
 lowest|los-angeles;2026-09-10;KLAX;KLAX;24.8;24.2;24.5;24.4;76-77°F;1;1
