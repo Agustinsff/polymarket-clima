@@ -1,0 +1,1550 @@
+[
+ {
+  "serie": "highest|amsterdam",
+  "n": 45,
+  "sesgo": 0.4388888888888889,
+  "mae": 0.5922222222222223,
+  "desvio": 0.6431358622979576,
+  "mae_gfs": 0.6644444444444441,
+  "mae_ecmwf": 0.9333333333333337,
+  "acierto": 0.4444444444444444,
+  "n_caja": 45,
+  "acierto_corr": 0.55,
+  "n_corr": 40,
+  "metar_vs_caja": 40,
+  "n_metar_caja": 44,
+  "estaciones_mercado": [
+   "EHAM"
+  ]
+ },
+ {
+  "serie": "highest|ankara",
+  "n": 45,
+  "sesgo": 0.20444444444444435,
+  "mae": 0.9111111111111111,
+  "desvio": 1.2135982478030805,
+  "mae_gfs": 0.9844444444444443,
+  "mae_ecmwf": 0.9933333333333334,
+  "acierto": 0.3333333333333333,
+  "n_caja": 45,
+  "acierto_corr": 0.35,
+  "n_corr": 40,
+  "metar_vs_caja": 35,
+  "n_metar_caja": 44,
+  "estaciones_mercado": [
+   "LTAC"
+  ]
+ },
+ {
+  "serie": "highest|atlanta",
+  "n": 45,
+  "sesgo": -0.6244444444444444,
+  "mae": 0.8266666666666662,
+  "desvio": 0.8149611132818642,
+  "mae_gfs": 1.544444444444444,
+  "mae_ecmwf": 0.691111111111111,
+  "acierto": 0.4666666666666667,
+  "n_caja": 45,
+  "acierto_corr": 0.525,
+  "n_corr": 40,
+  "metar_vs_caja": 45,
+  "n_metar_caja": 45,
+  "estaciones_mercado": [
+   "KATL"
+  ]
+ },
+ {
+  "serie": "highest|austin",
+  "n": 45,
+  "sesgo": 0.29111111111111104,
+  "mae": 0.8622222222222221,
+  "desvio": 1.0909383413586964,
+  "mae_gfs": 0.9533333333333331,
+  "mae_ecmwf": 1.153333333333333,
+  "acierto": 0.35555555555555557,
+  "n_caja": 45,
+  "acierto_corr": 0.425,
+  "n_corr": 40,
+  "metar_vs_caja": 45,
+  "n_metar_caja": 45,
+  "estaciones_mercado": [
+   "KAUS"
+  ]
+ },
+ {
+  "serie": "highest|beijing",
+  "n": 45,
+  "sesgo": 0.04888888888888875,
+  "mae": 0.8844444444444444,
+  "desvio": 1.1266648735865235,
+  "mae_gfs": 1.1111111111111112,
+  "mae_ecmwf": 1.0044444444444447,
+  "acierto": 0.3333333333333333,
+  "n_caja": 45,
+  "acierto_corr": 0.425,
+  "n_corr": 40,
+  "metar_vs_caja": 36,
+  "n_metar_caja": 44,
+  "estaciones_mercado": [
+   "ZBAA"
+  ]
+ },
+ {
+  "serie": "highest|buenos-aires",
+  "n": 45,
+  "sesgo": 0.5944444444444444,
+  "mae": 1.318888888888889,
+  "desvio": 1.5405954509326398,
+  "mae_gfs": 1.6600000000000001,
+  "mae_ecmwf": 1.1733333333333336,
+  "acierto": 0.17777777777777778,
+  "n_caja": 45,
+  "acierto_corr": 0.25,
+  "n_corr": 40,
+  "metar_vs_caja": 44,
+  "n_metar_caja": 44,
+  "estaciones_mercado": [
+   "SAEZ"
+  ]
+ },
+ {
+  "serie": "highest|busan",
+  "n": 45,
+  "sesgo": 0.4455555555555556,
+  "mae": 0.9322222222222223,
+  "desvio": 1.1572313266734284,
+  "mae_gfs": 1.0111111111111115,
+  "mae_ecmwf": 0.9777777777777777,
+  "acierto": 0.4,
+  "n_caja": 45,
+  "acierto_corr": 0.275,
+  "n_corr": 40,
+  "metar_vs_caja": 42,
+  "n_metar_caja": 44,
+  "estaciones_mercado": [
+   "RKPK"
+  ]
+ },
+ {
+  "serie": "highest|cape-town",
+  "n": 45,
+  "sesgo": -0.24444444444444452,
+  "mae": 0.9466666666666665,
+  "desvio": 1.3023676962216222,
+  "mae_gfs": 1.1977777777777778,
+  "mae_ecmwf": 1.184444444444444,
+  "acierto": 0.37777777777777777,
+  "n_caja": 45,
+  "acierto_corr": 0.375,
+  "n_corr": 40,
+  "metar_vs_caja": 42,
+  "n_metar_caja": 43,
+  "estaciones_mercado": [
+   "FACT"
+  ]
+ },
+ {
+  "serie": "highest|chengdu",
+  "n": 45,
+  "sesgo": 0.7100000000000002,
+  "mae": 1.4833333333333334,
+  "desvio": 1.7571477404641254,
+  "mae_gfs": 2.0577777777777775,
+  "mae_ecmwf": 1.5,
+  "acierto": 0.2222222222222222,
+  "n_caja": 45,
+  "acierto_corr": 0.25,
+  "n_corr": 40,
+  "metar_vs_caja": 44,
+  "n_metar_caja": 44,
+  "estaciones_mercado": [
+   "ZUUU"
+  ]
+ },
+ {
+  "serie": "highest|chicago",
+  "n": 45,
+  "sesgo": 0.35888888888888903,
+  "mae": 1.0077777777777779,
+  "desvio": 1.122967299415061,
+  "mae_gfs": 1.0266666666666668,
+  "mae_ecmwf": 1.5399999999999996,
+  "acierto": 0.28888888888888886,
+  "n_caja": 45,
+  "acierto_corr": 0.375,
+  "n_corr": 40,
+  "metar_vs_caja": 43,
+  "n_metar_caja": 45,
+  "estaciones_mercado": [
+   "KORD"
+  ]
+ },
+ {
+  "serie": "highest|chongqing",
+  "n": 45,
+  "sesgo": 0.25000000000000017,
+  "mae": 1.1966666666666665,
+  "desvio": 1.506991283077884,
+  "mae_gfs": 1.6177777777777778,
+  "mae_ecmwf": 1.5622222222222224,
+  "acierto": 0.3333333333333333,
+  "n_caja": 45,
+  "acierto_corr": 0.275,
+  "n_corr": 40,
+  "metar_vs_caja": 44,
+  "n_metar_caja": 44,
+  "estaciones_mercado": [
+   "ZUCK"
+  ]
+ },
+ {
+  "serie": "highest|dallas",
+  "n": 45,
+  "sesgo": 0.0077777777777780464,
+  "mae": 0.9433333333333334,
+  "desvio": 1.1906336908800228,
+  "mae_gfs": 1.0844444444444445,
+  "mae_ecmwf": 1.1844444444444442,
+  "acierto": 0.37777777777777777,
+  "n_caja": 45,
+  "acierto_corr": 0.325,
+  "n_corr": 40,
+  "metar_vs_caja": 45,
+  "n_metar_caja": 45,
+  "estaciones_mercado": [
+   "KDAL"
+  ]
+ },
+ {
+  "serie": "highest|guangzhou",
+  "n": 45,
+  "sesgo": 1.487777777777778,
+  "mae": 1.487777777777778,
+  "desvio": 0.8945005942598995,
+  "mae_gfs": 1.488888888888889,
+  "mae_ecmwf": 1.5888888888888884,
+  "acierto": 0.1111111111111111,
+  "n_caja": 45,
+  "acierto_corr": 0.5,
+  "n_corr": 40,
+  "metar_vs_caja": 33,
+  "n_metar_caja": 44,
+  "estaciones_mercado": [
+   "ZGGG"
+  ]
+ },
+ {
+  "serie": "highest|helsinki",
+  "n": 45,
+  "sesgo": 0.29888888888888887,
+  "mae": 0.678888888888889,
+  "desvio": 0.8601327123347203,
+  "mae_gfs": 0.8222222222222222,
+  "mae_ecmwf": 0.731111111111111,
+  "acierto": 0.37777777777777777,
+  "n_caja": 45,
+  "acierto_corr": 0.625,
+  "n_corr": 40,
+  "metar_vs_caja": 41,
+  "n_metar_caja": 44,
+  "estaciones_mercado": [
+   "EFHK"
+  ]
+ },
+ {
+  "serie": "highest|houston",
+  "n": 45,
+  "sesgo": 0.1411111111111109,
+  "mae": 0.676666666666667,
+  "desvio": 0.8910086782105237,
+  "mae_gfs": 0.8333333333333334,
+  "mae_ecmwf": 1.0888888888888886,
+  "acierto": 0.5333333333333333,
+  "n_caja": 45,
+  "acierto_corr": 0.55,
+  "n_corr": 40,
+  "metar_vs_caja": 45,
+  "n_metar_caja": 45,
+  "estaciones_mercado": [
+   "KHOU"
+  ]
+ },
+ {
+  "serie": "highest|istanbul",
+  "n": 45,
+  "sesgo": 0.19888888888888878,
+  "mae": 0.7344444444444443,
+  "desvio": 0.9927286139777078,
+  "mae_gfs": 0.9866666666666669,
+  "mae_ecmwf": 0.7488888888888889,
+  "acierto": 0.4888888888888889,
+  "n_caja": 45,
+  "acierto_corr": 0.375,
+  "n_corr": 40,
+  "metar_vs_caja": 39,
+  "n_metar_caja": 44,
+  "estaciones_mercado": [
+   "LTFM"
+  ]
+ },
+ {
+  "serie": "highest|jeddah",
+  "n": 45,
+  "sesgo": -0.7033333333333333,
+  "mae": 1.0144444444444445,
+  "desvio": 0.9797611026070683,
+  "mae_gfs": 0.9755555555555558,
+  "mae_ecmwf": 2.0355555555555553,
+  "acierto": 0.26666666666666666,
+  "n_caja": 45,
+  "acierto_corr": 0.475,
+  "n_corr": 40,
+  "metar_vs_caja": 44,
+  "n_metar_caja": 44,
+  "estaciones_mercado": [
+   "OEJN"
+  ]
+ },
+ {
+  "serie": "highest|karachi",
+  "n": 45,
+  "sesgo": 1.0244444444444443,
+  "mae": 1.1688888888888889,
+  "desvio": 0.8964337311499576,
+  "mae_gfs": 2.1533333333333333,
+  "mae_ecmwf": 0.8866666666666669,
+  "acierto": 0.17777777777777778,
+  "n_caja": 45,
+  "acierto_corr": 0.4,
+  "n_corr": 40,
+  "metar_vs_caja": 36,
+  "n_metar_caja": 44,
+  "estaciones_mercado": [
+   "OPKC"
+  ]
+ },
+ {
+  "serie": "highest|kuala-lumpur",
+  "n": 45,
+  "sesgo": 1.018888888888889,
+  "mae": 1.192222222222222,
+  "desvio": 1.0610505562075174,
+  "mae_gfs": 1.1977777777777776,
+  "mae_ecmwf": 1.5066666666666668,
+  "acierto": 0.15555555555555556,
+  "n_caja": 45,
+  "acierto_corr": 0.475,
+  "n_corr": 40,
+  "metar_vs_caja": 38,
+  "n_metar_caja": 44,
+  "estaciones_mercado": [
+   "WMKK"
+  ]
+ },
+ {
+  "serie": "highest|london",
+  "n": 45,
+  "sesgo": 0.42777777777777765,
+  "mae": 0.7899999999999999,
+  "desvio": 0.8873835106364636,
+  "mae_gfs": 0.8422222222222223,
+  "mae_ecmwf": 0.9866666666666668,
+  "acierto": 0.28888888888888886,
+  "n_caja": 45,
+  "acierto_corr": 0.375,
+  "n_corr": 40,
+  "metar_vs_caja": 38,
+  "n_metar_caja": 44,
+  "estaciones_mercado": [
+   "EGLC"
+  ]
+ },
+ {
+  "serie": "highest|los-angeles",
+  "n": 45,
+  "sesgo": -1.3911111111111114,
+  "mae": 1.9866666666666668,
+  "desvio": 2.0833290909047713,
+  "mae_gfs": 1.4466666666666663,
+  "mae_ecmwf": 3.7044444444444453,
+  "acierto": 0.17777777777777778,
+  "n_caja": 45,
+  "acierto_corr": 0.125,
+  "n_corr": 40,
+  "metar_vs_caja": 45,
+  "n_metar_caja": 45,
+  "estaciones_mercado": [
+   "KLAX"
+  ]
+ },
+ {
+  "serie": "highest|madrid",
+  "n": 45,
+  "sesgo": 0.7633333333333335,
+  "mae": 1.0166666666666668,
+  "desvio": 0.8910157635581375,
+  "mae_gfs": 1.1933333333333331,
+  "mae_ecmwf": 1.048888888888889,
+  "acierto": 0.2,
+  "n_caja": 45,
+  "acierto_corr": 0.425,
+  "n_corr": 40,
+  "metar_vs_caja": 41,
+  "n_metar_caja": 44,
+  "estaciones_mercado": [
+   "LEMD"
+  ]
+ },
+ {
+  "serie": "highest|manila",
+  "n": 45,
+  "sesgo": 1.3877777777777778,
+  "mae": 1.4366666666666668,
+  "desvio": 0.9476739199671259,
+  "mae_gfs": 1.1466666666666665,
+  "mae_ecmwf": 1.913333333333333,
+  "acierto": 0.17777777777777778,
+  "n_caja": 45,
+  "acierto_corr": 0.4,
+  "n_corr": 40,
+  "metar_vs_caja": 43,
+  "n_metar_caja": 44,
+  "estaciones_mercado": [
+   "RPLL"
+  ]
+ },
+ {
+  "serie": "highest|mexico-city",
+  "n": 44,
+  "sesgo": -0.19886363636363627,
+  "mae": 0.9306818181818179,
+  "desvio": 1.1300590968475341,
+  "mae_gfs": 0.815909090909091,
+  "mae_ecmwf": 1.3545454545454545,
+  "acierto": 0.24444444444444444,
+  "n_caja": 45,
+  "acierto_corr": 0.275,
+  "n_corr": 40,
+  "metar_vs_caja": 41,
+  "n_metar_caja": 43,
+  "estaciones_mercado": [
+   "MMMX"
+  ]
+ },
+ {
+  "serie": "highest|miami",
+  "n": 45,
+  "sesgo": 0.37333333333333396,
+  "mae": 0.7511111111111114,
+  "desvio": 0.8864895015529716,
+  "mae_gfs": 1.2266666666666661,
+  "mae_ecmwf": 1.8044444444444447,
+  "acierto": 0.4666666666666667,
+  "n_caja": 45,
+  "acierto_corr": 0.4,
+  "n_corr": 40,
+  "metar_vs_caja": 45,
+  "n_metar_caja": 45,
+  "estaciones_mercado": [
+   "KMIA"
+  ]
+ },
+ {
+  "serie": "highest|milan",
+  "n": 45,
+  "sesgo": 0.5211111111111112,
+  "mae": 0.9455555555555559,
+  "desvio": 1.0738889019527926,
+  "mae_gfs": 1.0822222222222222,
+  "mae_ecmwf": 1.0666666666666667,
+  "acierto": 0.24444444444444444,
+  "n_caja": 45,
+  "acierto_corr": 0.275,
+  "n_corr": 40,
+  "metar_vs_caja": 35,
+  "n_metar_caja": 44,
+  "estaciones_mercado": [
+   "LIMC"
+  ]
+ },
+ {
+  "serie": "highest|moscow",
+  "n": 45,
+  "sesgo": -0.30000000000000016,
+  "mae": 0.9311111111111112,
+  "desvio": 1.2354149100605838,
+  "mae_gfs": 1.0044444444444443,
+  "mae_ecmwf": 1.0133333333333334,
+  "acierto": 0.4666666666666667,
+  "n_caja": 45,
+  "acierto_corr": 0.325,
+  "n_corr": 40,
+  "metar_vs_caja": 35,
+  "n_metar_caja": 44,
+  "estaciones_mercado": [
+   "UUWW"
+  ]
+ },
+ {
+  "serie": "highest|munich",
+  "n": 45,
+  "sesgo": 0.6633333333333331,
+  "mae": 1.2211111111111108,
+  "desvio": 1.494360611219272,
+  "mae_gfs": 1.1644444444444446,
+  "mae_ecmwf": 1.3755555555555554,
+  "acierto": 0.2222222222222222,
+  "n_caja": 45,
+  "acierto_corr": 0.425,
+  "n_corr": 40,
+  "metar_vs_caja": 38,
+  "n_metar_caja": 44,
+  "estaciones_mercado": [
+   "EDDM"
+  ]
+ },
+ {
+  "serie": "highest|nyc",
+  "n": 45,
+  "sesgo": -0.2211111111111111,
+  "mae": 0.9477777777777779,
+  "desvio": 1.0920419202372937,
+  "mae_gfs": 1.1333333333333335,
+  "mae_ecmwf": 0.9844444444444443,
+  "acierto": 0.3333333333333333,
+  "n_caja": 45,
+  "acierto_corr": 0.325,
+  "n_corr": 40,
+  "metar_vs_caja": 44,
+  "n_metar_caja": 45,
+  "estaciones_mercado": [
+   "KLGA"
+  ]
+ },
+ {
+  "serie": "highest|panama-city",
+  "n": 45,
+  "sesgo": 1.1222222222222222,
+  "mae": 1.4622222222222219,
+  "desvio": 1.2233316819409215,
+  "mae_gfs": 1.3355555555555556,
+  "mae_ecmwf": 1.8511111111111112,
+  "acierto": 0.13333333333333333,
+  "n_caja": 45,
+  "acierto_corr": 0.375,
+  "n_corr": 40,
+  "metar_vs_caja": 43,
+  "n_metar_caja": 44,
+  "estaciones_mercado": [
+   "MPMG"
+  ]
+ },
+ {
+  "serie": "highest|qingdao",
+  "n": 45,
+  "sesgo": -0.5944444444444444,
+  "mae": 0.738888888888889,
+  "desvio": 0.7626376345396035,
+  "mae_gfs": 1.1711111111111108,
+  "mae_ecmwf": 0.6133333333333333,
+  "acierto": 0.4444444444444444,
+  "n_caja": 45,
+  "acierto_corr": 0.4,
+  "n_corr": 40,
+  "metar_vs_caja": 43,
+  "n_metar_caja": 44,
+  "estaciones_mercado": [
+   "ZSQD"
+  ]
+ },
+ {
+  "serie": "highest|san-francisco",
+  "n": 45,
+  "sesgo": -2.9511111111111115,
+  "mae": 3.008888888888889,
+  "desvio": 2.3670678277164137,
+  "mae_gfs": 3.9555555555555557,
+  "mae_ecmwf": 2.1466666666666665,
+  "acierto": 0.13333333333333333,
+  "n_caja": 45,
+  "acierto_corr": 0.175,
+  "n_corr": 40,
+  "metar_vs_caja": 45,
+  "n_metar_caja": 45,
+  "estaciones_mercado": [
+   "KSFO"
+  ]
+ },
+ {
+  "serie": "highest|sao-paulo",
+  "n": 45,
+  "sesgo": -0.23000000000000004,
+  "mae": 1.2944444444444445,
+  "desvio": 1.782057034083722,
+  "mae_gfs": 1.7155555555555557,
+  "mae_ecmwf": 1.4733333333333336,
+  "acierto": 0.26666666666666666,
+  "n_caja": 45,
+  "acierto_corr": 0.225,
+  "n_corr": 40,
+  "metar_vs_caja": 44,
+  "n_metar_caja": 44,
+  "estaciones_mercado": [
+   "SBGR"
+  ]
+ },
+ {
+  "serie": "highest|seattle",
+  "n": 45,
+  "sesgo": -0.3300000000000004,
+  "mae": 0.9322222222222223,
+  "desvio": 1.2296248504024605,
+  "mae_gfs": 1.857777777777778,
+  "mae_ecmwf": 1.033333333333333,
+  "acierto": 0.4,
+  "n_caja": 45,
+  "acierto_corr": 0.3,
+  "n_corr": 40,
+  "metar_vs_caja": 45,
+  "n_metar_caja": 45,
+  "estaciones_mercado": [
+   "KSEA"
+  ]
+ },
+ {
+  "serie": "highest|seoul",
+  "n": 45,
+  "sesgo": 0.9966666666666667,
+  "mae": 1.1966666666666668,
+  "desvio": 1.0645848529313713,
+  "mae_gfs": 1.8711111111111112,
+  "mae_ecmwf": 0.7177777777777777,
+  "acierto": 0.17777777777777778,
+  "n_caja": 45,
+  "acierto_corr": 0.35,
+  "n_corr": 40,
+  "metar_vs_caja": 41,
+  "n_metar_caja": 44,
+  "estaciones_mercado": [
+   "RKSI"
+  ]
+ },
+ {
+  "serie": "highest|shanghai",
+  "n": 45,
+  "sesgo": 0.7966666666666665,
+  "mae": 1.0766666666666667,
+  "desvio": 0.9967789031767184,
+  "mae_gfs": 1.5177777777777774,
+  "mae_ecmwf": 0.8622222222222221,
+  "acierto": 0.13333333333333333,
+  "n_caja": 45,
+  "acierto_corr": 0.4,
+  "n_corr": 40,
+  "metar_vs_caja": 38,
+  "n_metar_caja": 44,
+  "estaciones_mercado": [
+   "ZSPD"
+  ]
+ },
+ {
+  "serie": "highest|shenzhen",
+  "n": 45,
+  "sesgo": -0.63,
+  "mae": 0.9388888888888889,
+  "desvio": 0.9053126029670131,
+  "mae_gfs": 1.3599999999999997,
+  "mae_ecmwf": 0.833333333333333,
+  "acierto": 0.26666666666666666,
+  "n_caja": 45,
+  "acierto_corr": 0.4,
+  "n_corr": 40,
+  "metar_vs_caja": 43,
+  "n_metar_caja": 44,
+  "estaciones_mercado": [
+   "ZGSZ"
+  ]
+ },
+ {
+  "serie": "highest|singapore",
+  "n": 45,
+  "sesgo": 1.308888888888889,
+  "mae": 1.4111111111111112,
+  "desvio": 0.9441379478902776,
+  "mae_gfs": 1.3400000000000003,
+  "mae_ecmwf": 1.5533333333333332,
+  "acierto": 0.13333333333333333,
+  "n_caja": 45,
+  "acierto_corr": 0.375,
+  "n_corr": 40,
+  "metar_vs_caja": 39,
+  "n_metar_caja": 44,
+  "estaciones_mercado": [
+   "WSSS"
+  ]
+ },
+ {
+  "serie": "highest|taipei",
+  "n": 45,
+  "sesgo": 1.1122222222222224,
+  "mae": 1.2388888888888892,
+  "desvio": 0.8818340621292154,
+  "mae_gfs": 1.368888888888889,
+  "mae_ecmwf": 1.1755555555555557,
+  "acierto": 0.13333333333333333,
+  "n_caja": 45,
+  "acierto_corr": 0.4,
+  "n_corr": 40,
+  "metar_vs_caja": 41,
+  "n_metar_caja": 45,
+  "estaciones_mercado": [
+   "RCSS"
+  ]
+ },
+ {
+  "serie": "highest|tel-aviv",
+  "n": 44,
+  "sesgo": -0.022727272727272322,
+  "mae": 0.5886363636363637,
+  "desvio": 0.7472005541192469,
+  "mae_gfs": 0.7181818181818181,
+  "mae_ecmwf": 0.9499999999999996,
+  "acierto": 0.4666666666666667,
+  "n_caja": 45,
+  "acierto_corr": 0.4,
+  "n_corr": 40,
+  "metar_vs_caja": 39,
+  "n_metar_caja": 43,
+  "estaciones_mercado": [
+   "LLBG"
+  ]
+ },
+ {
+  "serie": "highest|tokyo",
+  "n": 45,
+  "sesgo": -0.46777777777777785,
+  "mae": 0.8922222222222224,
+  "desvio": 1.0700018880376054,
+  "mae_gfs": 0.9911111111111112,
+  "mae_ecmwf": 1.0911111111111111,
+  "acierto": 0.3333333333333333,
+  "n_caja": 45,
+  "acierto_corr": 0.275,
+  "n_corr": 40,
+  "metar_vs_caja": 36,
+  "n_metar_caja": 44,
+  "estaciones_mercado": [
+   "RJTT"
+  ]
+ },
+ {
+  "serie": "highest|toronto",
+  "n": 45,
+  "sesgo": 0.2944444444444445,
+  "mae": 0.8633333333333331,
+  "desvio": 1.0910911043445444,
+  "mae_gfs": 1.0111111111111113,
+  "mae_ecmwf": 1.0133333333333332,
+  "acierto": 0.37777777777777777,
+  "n_caja": 45,
+  "acierto_corr": 0.45,
+  "n_corr": 40,
+  "metar_vs_caja": 44,
+  "n_metar_caja": 44,
+  "estaciones_mercado": [
+   "CYYZ"
+  ]
+ },
+ {
+  "serie": "highest|warsaw",
+  "n": 45,
+  "sesgo": -0.20555555555555552,
+  "mae": 0.9055555555555554,
+  "desvio": 1.0817821061805954,
+  "mae_gfs": 1.328888888888889,
+  "mae_ecmwf": 1.0377777777777777,
+  "acierto": 0.35555555555555557,
+  "n_caja": 45,
+  "acierto_corr": 0.3,
+  "n_corr": 40,
+  "metar_vs_caja": 43,
+  "n_metar_caja": 44,
+  "estaciones_mercado": [
+   "EPWA"
+  ]
+ },
+ {
+  "serie": "highest|wellington",
+  "n": 45,
+  "sesgo": 0.9988888888888892,
+  "mae": 1.0322222222222224,
+  "desvio": 0.6735665662664077,
+  "mae_gfs": 1.0755555555555556,
+  "mae_ecmwf": 1.0733333333333335,
+  "acierto": 0.17777777777777778,
+  "n_caja": 45,
+  "acierto_corr": 0.55,
+  "n_corr": 40,
+  "metar_vs_caja": 40,
+  "n_metar_caja": 44,
+  "estaciones_mercado": [
+   "NZWN"
+  ]
+ },
+ {
+  "serie": "highest|wuhan",
+  "n": 45,
+  "sesgo": -0.04777777777777782,
+  "mae": 1.1900000000000002,
+  "desvio": 1.5442693018925413,
+  "mae_gfs": 1.3600000000000003,
+  "mae_ecmwf": 1.5844444444444443,
+  "acierto": 0.3111111111111111,
+  "n_caja": 45,
+  "acierto_corr": 0.3,
+  "n_corr": 40,
+  "metar_vs_caja": 44,
+  "n_metar_caja": 44,
+  "estaciones_mercado": [
+   "ZHHH"
+  ]
+ },
+ {
+  "serie": "lowest|amsterdam",
+  "n": 45,
+  "sesgo": -0.7077777777777776,
+  "mae": 1.0677777777777777,
+  "desvio": 1.1630170187312765,
+  "mae_gfs": 1.4,
+  "mae_ecmwf": 0.9088888888888887,
+  "acierto": 0.3333333333333333,
+  "n_caja": 45,
+  "acierto_corr": 0.3,
+  "n_corr": 40,
+  "metar_vs_caja": 42,
+  "n_metar_caja": 44,
+  "estaciones_mercado": [
+   "EHAM"
+  ]
+ },
+ {
+  "serie": "lowest|ankara",
+  "n": 45,
+  "sesgo": -2.5744444444444445,
+  "mae": 2.792222222222222,
+  "desvio": 2.5528420486298256,
+  "mae_gfs": 3.5599999999999996,
+  "mae_ecmwf": 2.197777777777778,
+  "acierto": 0.06666666666666667,
+  "n_caja": 45,
+  "acierto_corr": 0.075,
+  "n_corr": 40,
+  "metar_vs_caja": 38,
+  "n_metar_caja": 44,
+  "estaciones_mercado": [
+   "LTAC"
+  ]
+ },
+ {
+  "serie": "lowest|atlanta",
+  "n": 45,
+  "sesgo": -0.08000000000000021,
+  "mae": 0.5844444444444444,
+  "desvio": 0.7631722074222947,
+  "mae_gfs": 1.508888888888889,
+  "mae_ecmwf": 1.1711111111111112,
+  "acierto": 0.5333333333333333,
+  "n_caja": 45,
+  "acierto_corr": 0.55,
+  "n_corr": 40,
+  "metar_vs_caja": 45,
+  "n_metar_caja": 45,
+  "estaciones_mercado": [
+   "KATL"
+  ]
+ },
+ {
+  "serie": "lowest|austin",
+  "n": 45,
+  "sesgo": -1.5922222222222224,
+  "mae": 1.8633333333333335,
+  "desvio": 1.8111697486944336,
+  "mae_gfs": 1.9644444444444447,
+  "mae_ecmwf": 1.8688888888888888,
+  "acierto": 0.2,
+  "n_caja": 45,
+  "acierto_corr": 0.225,
+  "n_corr": 40,
+  "metar_vs_caja": 44,
+  "n_metar_caja": 45,
+  "estaciones_mercado": [
+   "KAUS"
+  ]
+ },
+ {
+  "serie": "lowest|beijing",
+  "n": 45,
+  "sesgo": -2.997777777777778,
+  "mae": 3.102222222222222,
+  "desvio": 2.0528515520975925,
+  "mae_gfs": 3.92,
+  "mae_ecmwf": 2.368888888888889,
+  "acierto": 0.06666666666666667,
+  "n_caja": 45,
+  "acierto_corr": 0.225,
+  "n_corr": 40,
+  "metar_vs_caja": 35,
+  "n_metar_caja": 44,
+  "estaciones_mercado": [
+   "ZBAA"
+  ]
+ },
+ {
+  "serie": "lowest|buenos-aires",
+  "n": 45,
+  "sesgo": -0.69,
+  "mae": 1.7655555555555553,
+  "desvio": 2.142391399602535,
+  "mae_gfs": 1.8355555555555558,
+  "mae_ecmwf": 2.037777777777778,
+  "acierto": 0.15555555555555556,
+  "n_caja": 45,
+  "acierto_corr": 0.175,
+  "n_corr": 40,
+  "metar_vs_caja": 43,
+  "n_metar_caja": 44,
+  "estaciones_mercado": [
+   "SAEZ"
+  ]
+ },
+ {
+  "serie": "lowest|busan",
+  "n": 45,
+  "sesgo": 0.5977777777777776,
+  "mae": 1.1,
+  "desvio": 1.1888189113739756,
+  "mae_gfs": 1.2666666666666668,
+  "mae_ecmwf": 1.2266666666666668,
+  "acierto": 0.24444444444444444,
+  "n_caja": 45,
+  "acierto_corr": 0.225,
+  "n_corr": 40,
+  "metar_vs_caja": 44,
+  "n_metar_caja": 44,
+  "estaciones_mercado": [
+   "RKPK"
+  ]
+ },
+ {
+  "serie": "lowest|cape-town",
+  "n": 45,
+  "sesgo": -1.0699999999999998,
+  "mae": 1.538888888888889,
+  "desvio": 1.6983079814921676,
+  "mae_gfs": 1.8111111111111111,
+  "mae_ecmwf": 1.3644444444444443,
+  "acierto": 0.26666666666666666,
+  "n_caja": 45,
+  "acierto_corr": 0.225,
+  "n_corr": 40,
+  "metar_vs_caja": 44,
+  "n_metar_caja": 44,
+  "estaciones_mercado": [
+   "FACT"
+  ]
+ },
+ {
+  "serie": "lowest|chengdu",
+  "n": 45,
+  "sesgo": 0.2700000000000001,
+  "mae": 0.85,
+  "desvio": 1.018265012834889,
+  "mae_gfs": 1.0133333333333334,
+  "mae_ecmwf": 0.9711111111111114,
+  "acierto": 0.35555555555555557,
+  "n_caja": 45,
+  "acierto_corr": 0.375,
+  "n_corr": 40,
+  "metar_vs_caja": 44,
+  "n_metar_caja": 44,
+  "estaciones_mercado": [
+   "ZUUU"
+  ]
+ },
+ {
+  "serie": "lowest|chicago",
+  "n": 45,
+  "sesgo": -0.5422222222222223,
+  "mae": 0.82,
+  "desvio": 0.8700806882355243,
+  "mae_gfs": 1.631111111111111,
+  "mae_ecmwf": 0.7377777777777779,
+  "acierto": 0.35555555555555557,
+  "n_caja": 45,
+  "acierto_corr": 0.425,
+  "n_corr": 40,
+  "metar_vs_caja": 45,
+  "n_metar_caja": 45,
+  "estaciones_mercado": [
+   "KORD"
+  ]
+ },
+ {
+  "serie": "lowest|chongqing",
+  "n": 45,
+  "sesgo": 0.6233333333333331,
+  "mae": 0.85,
+  "desvio": 0.9454195797730138,
+  "mae_gfs": 1.0799999999999998,
+  "mae_ecmwf": 0.94,
+  "acierto": 0.37777777777777777,
+  "n_caja": 45,
+  "acierto_corr": 0.45,
+  "n_corr": 40,
+  "metar_vs_caja": 44,
+  "n_metar_caja": 44,
+  "estaciones_mercado": [
+   "ZUCK"
+  ]
+ },
+ {
+  "serie": "lowest|dallas",
+  "n": 45,
+  "sesgo": -0.5722222222222224,
+  "mae": 0.91,
+  "desvio": 1.008630684931734,
+  "mae_gfs": 1.7422222222222223,
+  "mae_ecmwf": 0.9000000000000001,
+  "acierto": 0.35555555555555557,
+  "n_caja": 45,
+  "acierto_corr": 0.475,
+  "n_corr": 40,
+  "metar_vs_caja": 45,
+  "n_metar_caja": 45,
+  "estaciones_mercado": [
+   "KDAL"
+  ]
+ },
+ {
+  "serie": "lowest|guangzhou",
+  "n": 45,
+  "sesgo": 1.7333333333333334,
+  "mae": 1.8044444444444443,
+  "desvio": 1.0095566083457357,
+  "mae_gfs": 1.9711111111111115,
+  "mae_ecmwf": 1.6555555555555554,
+  "acierto": 0.06666666666666667,
+  "n_caja": 45,
+  "acierto_corr": 0.375,
+  "n_corr": 40,
+  "metar_vs_caja": 37,
+  "n_metar_caja": 44,
+  "estaciones_mercado": [
+   "ZGGG"
+  ]
+ },
+ {
+  "serie": "lowest|helsinki",
+  "n": 45,
+  "sesgo": -0.9444444444444444,
+  "mae": 1.52,
+  "desvio": 1.9667758059085103,
+  "mae_gfs": 1.5844444444444443,
+  "mae_ecmwf": 1.5933333333333335,
+  "acierto": 0.37777777777777777,
+  "n_caja": 45,
+  "acierto_corr": 0.225,
+  "n_corr": 40,
+  "metar_vs_caja": 37,
+  "n_metar_caja": 44,
+  "estaciones_mercado": [
+   "EFHK"
+  ]
+ },
+ {
+  "serie": "lowest|houston",
+  "n": 45,
+  "sesgo": -0.3177777777777779,
+  "mae": 0.7488888888888888,
+  "desvio": 0.8791237602627893,
+  "mae_gfs": 1.1755555555555555,
+  "mae_ecmwf": 0.8244444444444443,
+  "acierto": 0.4222222222222222,
+  "n_caja": 45,
+  "acierto_corr": 0.4,
+  "n_corr": 40,
+  "metar_vs_caja": 45,
+  "n_metar_caja": 45,
+  "estaciones_mercado": [
+   "KHOU"
+  ]
+ },
+ {
+  "serie": "lowest|istanbul",
+  "n": 45,
+  "sesgo": 0.8411111111111111,
+  "mae": 1.232222222222222,
+  "desvio": 1.3062476136945966,
+  "mae_gfs": 1.6777777777777778,
+  "mae_ecmwf": 1.133333333333333,
+  "acierto": 0.35555555555555557,
+  "n_caja": 45,
+  "acierto_corr": 0.125,
+  "n_corr": 40,
+  "metar_vs_caja": 37,
+  "n_metar_caja": 44,
+  "estaciones_mercado": [
+   "LTFM"
+  ]
+ },
+ {
+  "serie": "lowest|jeddah",
+  "n": 45,
+  "sesgo": 2.3011111111111116,
+  "mae": 2.3011111111111116,
+  "desvio": 0.6000462945103116,
+  "mae_gfs": 2.648888888888889,
+  "mae_ecmwf": 1.9533333333333334,
+  "acierto": 0.0,
+  "n_caja": 45,
+  "acierto_corr": 0.625,
+  "n_corr": 40,
+  "metar_vs_caja": 44,
+  "n_metar_caja": 44,
+  "estaciones_mercado": [
+   "OEJN"
+  ]
+ },
+ {
+  "serie": "lowest|karachi",
+  "n": 45,
+  "sesgo": 0.4855555555555555,
+  "mae": 1.067777777777778,
+  "desvio": 1.1853088503453735,
+  "mae_gfs": 1.051111111111111,
+  "mae_ecmwf": 1.7200000000000002,
+  "acierto": 0.2,
+  "n_caja": 45,
+  "acierto_corr": 0.5,
+  "n_corr": 40,
+  "metar_vs_caja": 43,
+  "n_metar_caja": 44,
+  "estaciones_mercado": [
+   "OPKC"
+  ]
+ },
+ {
+  "serie": "lowest|london",
+  "n": 45,
+  "sesgo": 0.14555555555555547,
+  "mae": 0.6388888888888888,
+  "desvio": 0.8140682223911401,
+  "mae_gfs": 0.9066666666666667,
+  "mae_ecmwf": 0.7444444444444446,
+  "acierto": 0.5111111111111111,
+  "n_caja": 45,
+  "acierto_corr": 0.475,
+  "n_corr": 40,
+  "metar_vs_caja": 42,
+  "n_metar_caja": 44,
+  "estaciones_mercado": [
+   "EGLC"
+  ]
+ },
+ {
+  "serie": "lowest|los-angeles",
+  "n": 45,
+  "sesgo": -0.662222222222222,
+  "mae": 0.8599999999999999,
+  "desvio": 0.9393031481052344,
+  "mae_gfs": 2.008888888888889,
+  "mae_ecmwf": 0.9599999999999999,
+  "acierto": 0.4666666666666667,
+  "n_caja": 45,
+  "acierto_corr": 0.5,
+  "n_corr": 40,
+  "metar_vs_caja": 45,
+  "n_metar_caja": 45,
+  "estaciones_mercado": [
+   "KLAX"
+  ]
+ },
+ {
+  "serie": "lowest|madrid",
+  "n": 45,
+  "sesgo": -2.0444444444444443,
+  "mae": 2.1933333333333334,
+  "desvio": 1.474873731969122,
+  "mae_gfs": 3.7022222222222223,
+  "mae_ecmwf": 0.9777777777777777,
+  "acierto": 0.13333333333333333,
+  "n_caja": 45,
+  "acierto_corr": 0.375,
+  "n_corr": 40,
+  "metar_vs_caja": 39,
+  "n_metar_caja": 44,
+  "estaciones_mercado": [
+   "LEMD"
+  ]
+ },
+ {
+  "serie": "lowest|mexico-city",
+  "n": 44,
+  "sesgo": -0.15340909090909083,
+  "mae": 0.9147727272727273,
+  "desvio": 1.1017110227232239,
+  "mae_gfs": 1.1704545454545454,
+  "mae_ecmwf": 1.0045454545454546,
+  "acierto": 0.3333333333333333,
+  "n_caja": 45,
+  "acierto_corr": 0.25,
+  "n_corr": 40,
+  "metar_vs_caja": 43,
+  "n_metar_caja": 43,
+  "estaciones_mercado": [
+   "MMMX"
+  ]
+ },
+ {
+  "serie": "lowest|miami",
+  "n": 45,
+  "sesgo": -0.4655555555555557,
+  "mae": 0.7322222222222223,
+  "desvio": 0.8780674947021587,
+  "mae_gfs": 1.797777777777778,
+  "mae_ecmwf": 1.0222222222222226,
+  "acierto": 0.4444444444444444,
+  "n_caja": 45,
+  "acierto_corr": 0.4,
+  "n_corr": 40,
+  "metar_vs_caja": 41,
+  "n_metar_caja": 45,
+  "estaciones_mercado": [
+   "KMIA"
+  ]
+ },
+ {
+  "serie": "lowest|milan",
+  "n": 45,
+  "sesgo": -0.6533333333333333,
+  "mae": 1.4111111111111112,
+  "desvio": 1.541118248073604,
+  "mae_gfs": 1.9822222222222219,
+  "mae_ecmwf": 1.0844444444444445,
+  "acierto": 0.24444444444444444,
+  "n_caja": 45,
+  "acierto_corr": 0.175,
+  "n_corr": 40,
+  "metar_vs_caja": 31,
+  "n_metar_caja": 44,
+  "estaciones_mercado": [
+   "LIMC"
+  ]
+ },
+ {
+  "serie": "lowest|moscow",
+  "n": 45,
+  "sesgo": -0.016666666666666573,
+  "mae": 1.0233333333333332,
+  "desvio": 1.2306687021881455,
+  "mae_gfs": 1.1688888888888889,
+  "mae_ecmwf": 1.051111111111111,
+  "acierto": 0.2,
+  "n_caja": 45,
+  "acierto_corr": 0.25,
+  "n_corr": 40,
+  "metar_vs_caja": 40,
+  "n_metar_caja": 44,
+  "estaciones_mercado": [
+   "UUWW"
+  ]
+ },
+ {
+  "serie": "lowest|munich",
+  "n": 45,
+  "sesgo": -2.767777777777778,
+  "mae": 2.8722222222222222,
+  "desvio": 1.814122488709184,
+  "mae_gfs": 3.1,
+  "mae_ecmwf": 2.68,
+  "acierto": 0.1111111111111111,
+  "n_caja": 45,
+  "acierto_corr": 0.25,
+  "n_corr": 40,
+  "metar_vs_caja": 40,
+  "n_metar_caja": 44,
+  "estaciones_mercado": [
+   "EDDM"
+  ]
+ },
+ {
+  "serie": "lowest|nyc",
+  "n": 45,
+  "sesgo": 0.9188888888888891,
+  "mae": 1.038888888888889,
+  "desvio": 0.7026968252972459,
+  "mae_gfs": 0.6466666666666667,
+  "mae_ecmwf": 1.7466666666666668,
+  "acierto": 0.24444444444444444,
+  "n_caja": 45,
+  "acierto_corr": 0.55,
+  "n_corr": 40,
+  "metar_vs_caja": 45,
+  "n_metar_caja": 45,
+  "estaciones_mercado": [
+   "KLGA"
+  ]
+ },
+ {
+  "serie": "lowest|qingdao",
+  "n": 45,
+  "sesgo": -1.727777777777778,
+  "mae": 1.8211111111111111,
+  "desvio": 1.3560703402393135,
+  "mae_gfs": 2.088888888888889,
+  "mae_ecmwf": 1.6599999999999997,
+  "acierto": 0.17777777777777778,
+  "n_caja": 45,
+  "acierto_corr": 0.25,
+  "n_corr": 40,
+  "metar_vs_caja": 44,
+  "n_metar_caja": 44,
+  "estaciones_mercado": [
+   "ZSQD"
+  ]
+ },
+ {
+  "serie": "lowest|san-francisco",
+  "n": 45,
+  "sesgo": -1.1266666666666665,
+  "mae": 1.6044444444444446,
+  "desvio": 1.9085513306741797,
+  "mae_gfs": 2.362222222222222,
+  "mae_ecmwf": 1.14,
+  "acierto": 0.26666666666666666,
+  "n_caja": 45,
+  "acierto_corr": 0.2,
+  "n_corr": 40,
+  "metar_vs_caja": 44,
+  "n_metar_caja": 45,
+  "estaciones_mercado": [
+   "KSFO"
+  ]
+ },
+ {
+  "serie": "lowest|sao-paulo",
+  "n": 45,
+  "sesgo": 0.013333333333333286,
+  "mae": 0.7688888888888887,
+  "desvio": 0.9626785548665762,
+  "mae_gfs": 0.7933333333333332,
+  "mae_ecmwf": 0.8333333333333334,
+  "acierto": 0.37777777777777777,
+  "n_caja": 45,
+  "acierto_corr": 0.375,
+  "n_corr": 40,
+  "metar_vs_caja": 44,
+  "n_metar_caja": 44,
+  "estaciones_mercado": [
+   "SBGR"
+  ]
+ },
+ {
+  "serie": "lowest|seattle",
+  "n": 45,
+  "sesgo": 0.3033333333333334,
+  "mae": 0.8388888888888889,
+  "desvio": 0.9781359823664602,
+  "mae_gfs": 1.0822222222222222,
+  "mae_ecmwf": 0.8266666666666668,
+  "acierto": 0.4222222222222222,
+  "n_caja": 45,
+  "acierto_corr": 0.35,
+  "n_corr": 40,
+  "metar_vs_caja": 44,
+  "n_metar_caja": 45,
+  "estaciones_mercado": [
+   "KSEA"
+  ]
+ },
+ {
+  "serie": "lowest|seoul",
+  "n": 45,
+  "sesgo": -0.8177777777777777,
+  "mae": 0.9222222222222223,
+  "desvio": 0.784375515614141,
+  "mae_gfs": 2.3666666666666663,
+  "mae_ecmwf": 1.0155555555555553,
+  "acierto": 0.24444444444444444,
+  "n_caja": 45,
+  "acierto_corr": 0.275,
+  "n_corr": 40,
+  "metar_vs_caja": 35,
+  "n_metar_caja": 44,
+  "estaciones_mercado": [
+   "RKSI"
+  ]
+ },
+ {
+  "serie": "lowest|shanghai",
+  "n": 45,
+  "sesgo": 0.3377777777777779,
+  "mae": 0.8200000000000002,
+  "desvio": 0.9068649515799144,
+  "mae_gfs": 1.3444444444444446,
+  "mae_ecmwf": 0.8333333333333334,
+  "acierto": 0.3111111111111111,
+  "n_caja": 45,
+  "acierto_corr": 0.375,
+  "n_corr": 40,
+  "metar_vs_caja": 39,
+  "n_metar_caja": 44,
+  "estaciones_mercado": [
+   "ZSPD"
+  ]
+ },
+ {
+  "serie": "lowest|shenzhen",
+  "n": 45,
+  "sesgo": 0.7177777777777777,
+  "mae": 1.0155555555555553,
+  "desvio": 1.0013715341944516,
+  "mae_gfs": 0.8200000000000003,
+  "mae_ecmwf": 1.3622222222222222,
+  "acierto": 0.3333333333333333,
+  "n_caja": 45,
+  "acierto_corr": 0.55,
+  "n_corr": 40,
+  "metar_vs_caja": 42,
+  "n_metar_caja": 43,
+  "estaciones_mercado": [
+   "ZGSZ"
+  ]
+ },
+ {
+  "serie": "lowest|taipei",
+  "n": 45,
+  "sesgo": 1.0544444444444443,
+  "mae": 1.1144444444444443,
+  "desvio": 0.7714229931389356,
+  "mae_gfs": 0.9199999999999998,
+  "mae_ecmwf": 1.4466666666666668,
+  "acierto": 0.15555555555555556,
+  "n_caja": 45,
+  "acierto_corr": 0.475,
+  "n_corr": 40,
+  "metar_vs_caja": 44,
+  "n_metar_caja": 45,
+  "estaciones_mercado": [
+   "RCSS"
+  ]
+ },
+ {
+  "serie": "lowest|tel-aviv",
+  "n": 44,
+  "sesgo": 0.6136363636363634,
+  "mae": 0.8840909090909093,
+  "desvio": 0.857888405246415,
+  "mae_gfs": 0.7931818181818183,
+  "mae_ecmwf": 1.4704545454545455,
+  "acierto": 0.3333333333333333,
+  "n_caja": 45,
+  "acierto_corr": 0.475,
+  "n_corr": 40,
+  "metar_vs_caja": 39,
+  "n_metar_caja": 43,
+  "estaciones_mercado": [
+   "LLBG"
+  ]
+ },
+ {
+  "serie": "lowest|tokyo",
+  "n": 45,
+  "sesgo": 0.5611111111111112,
+  "mae": 0.9811111111111113,
+  "desvio": 1.0805032964953758,
+  "mae_gfs": 0.9555555555555557,
+  "mae_ecmwf": 1.7177777777777774,
+  "acierto": 0.28888888888888886,
+  "n_caja": 45,
+  "acierto_corr": 0.225,
+  "n_corr": 40,
+  "metar_vs_caja": 42,
+  "n_metar_caja": 44,
+  "estaciones_mercado": [
+   "RJTT"
+  ]
+ },
+ {
+  "serie": "lowest|toronto",
+  "n": 45,
+  "sesgo": 0.21666666666666676,
+  "mae": 0.9855555555555556,
+  "desvio": 1.1924954735953737,
+  "mae_gfs": 1.117777777777778,
+  "mae_ecmwf": 0.9911111111111109,
+  "acierto": 0.28888888888888886,
+  "n_caja": 45,
+  "acierto_corr": 0.3,
+  "n_corr": 40,
+  "metar_vs_caja": 44,
+  "n_metar_caja": 44,
+  "estaciones_mercado": [
+   "CYYZ"
+  ]
+ },
+ {
+  "serie": "lowest|warsaw",
+  "n": 45,
+  "sesgo": -2.1488888888888886,
+  "mae": 2.362222222222222,
+  "desvio": 1.7453017741434527,
+  "mae_gfs": 3.3,
+  "mae_ecmwf": 1.4777777777777779,
+  "acierto": 0.1111111111111111,
+  "n_caja": 45,
+  "acierto_corr": 0.25,
+  "n_corr": 40,
+  "metar_vs_caja": 37,
+  "n_metar_caja": 44,
+  "estaciones_mercado": [
+   "EPWA"
+  ]
+ },
+ {
+  "serie": "lowest|wellington",
+  "n": 45,
+  "sesgo": -0.07888888888888884,
+  "mae": 0.8233333333333335,
+  "desvio": 1.0603113226831549,
+  "mae_gfs": 0.9622222222222222,
+  "mae_ecmwf": 0.8666666666666665,
+  "acierto": 0.26666666666666666,
+  "n_caja": 45,
+  "acierto_corr": 0.4,
+  "n_corr": 40,
+  "metar_vs_caja": 34,
+  "n_metar_caja": 44,
+  "estaciones_mercado": [
+   "NZWN"
+  ]
+ },
+ {
+  "serie": "lowest|wuhan",
+  "n": 45,
+  "sesgo": -0.4111111111111108,
+  "mae": 0.9244444444444443,
+  "desvio": 1.0556605476758105,
+  "mae_gfs": 1.1822222222222225,
+  "mae_ecmwf": 1.12,
+  "acierto": 0.26666666666666666,
+  "n_caja": 45,
+  "acierto_corr": 0.375,
+  "n_corr": 40,
+  "metar_vs_caja": 44,
+  "n_metar_caja": 44,
+  "estaciones_mercado": [
+   "ZHHH"
+  ]
+ }
+]
