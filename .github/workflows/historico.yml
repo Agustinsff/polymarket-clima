@@ -18,7 +18,7 @@ jobs:
       - run: pip install -r requirements.txt
       - run: python historico/backtest.py 2>&1 | tee historico/log.txt || true
         env:
-          LIMITE_MIN: "3"
+          LIMITE_MIN: "150"
       - run: |
           git config user.name "polymarket-clima-bot"
           git config user.email "actions@users.noreply.github.com"
