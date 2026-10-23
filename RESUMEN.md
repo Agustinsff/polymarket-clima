@@ -1,12 +1,12 @@
 # Resumen polymarket-clima
 
-_Actualizado: 2026-10-23 10:49 (Montevideo). Todo es **en papel**: no se usa plata real._
+_Actualizado: 2026-10-23 11:04 (Montevideo). Todo es **en papel**: no se usa plata real._
 
 ## Estado de las tareas
 
 ⚠️ El cosechador no encuentra ningún mercado de temperatura abierto en Polymarket (¿dejaron de crearlos o les cambiaron el nombre?).
 
-- Última foto de liquidez: 2026-10-23T10:49:06
+- Última foto de liquidez: 2026-10-23T11:04:16
 - Monitor: mañana 2026-10-23, noche 2026-10-22
 - Prueba São Paulo: último día registrado 2026-10-22
 - Cosechador: último ciclo 2026-10-23 08:16 UTC, 0 mercados, 0 estaciones
@@ -31,7 +31,7 @@ Acumulado: la caja favorita del **mercado** acertó 8/16, la del **modelo** 6/16
 ## Prueba en papel São Paulo 14 hs (regla fija)
 
 Días registrados: 9 (desde 2026-10-14).
-Operaciones: 4 (2 ganadas, 2 perdidas, 0 pendientes). **Neto con comisiones: US$-2.17** (bruto -1.72, comisiones −0.45).
+Operaciones: 4 (2 ganadas, 2 perdidas, 0 pendientes). **Neto con comisiones: US$-2.17** (bruto -1.72, comisiones −0.45). _Con la comisión vieja (0,05 para todo) sería US$-2.17._
 
 | Día | Caja | Lado | Precio | Modelo | Resultado |
 |---|---|---|---|---|---|
@@ -42,7 +42,7 @@ Operaciones: 4 (2 ganadas, 2 perdidas, 0 pendientes). **Neto con comisiones: US$
 
 ## Cosechador en papel (cajas imposibles, todas las ciudades)
 
-Operaciones: 5. **Neto liquidado: US$+8.59**. Pendientes: +US$23.23 si salen bien.
+Operaciones: 5. **Neto liquidado: US$+8.59**. Pendientes: +US$23.23 si salen bien. _Con la comisión vieja (0,05 para todo) sería US$+8.59._
 Nota: las operaciones de Ciudad del Cabo del 18-oct se hicieron con la regla vieja (sin confirmación) y su resolución está en disputa.
 
 | Día | Ciudad | Caja | Precio Yes | Acciones | Resultado |
@@ -64,6 +64,8 @@ Puntaje Brier (más bajo = mejor) en 486 cajas liquidadas: **modelo 0.0739** vs 
 | cola_taker | no | 90 | 3 | US$+0.94 | 247 |
 | cola_maker | no | 152 | 3 | US$-8.77 | 216 |
 
+Taker en total: US$-23.44. _Con la comisión vieja (0,05 para todo) sería US$-23.44._
+
 _Taker = compra al instante pagando comisión. Maker = orden en el libro, solo cuenta si alguien la habría tomado (sin comisión). Cola = cajas de ≤10 ¢ a las que el modelo les da ≥2,5 veces el precio. no80_90 = comprar el No de cajas todavía posibles que cotizan 10–20 ¢ (solo en el pronóstico del mismo día)._
 
 ## Pronóstico del mismo día (12 y 15 hs locales la máxima, 9 hs la mínima)
@@ -73,16 +75,18 @@ Puntaje Brier (más bajo = mejor) en 674 cajas liquidadas: **modelo 0.0545** vs 
 | Modo | Serie calibrada | Liquidadas | Ganadas | Neto (10 acc. c/u) | Pendientes |
 |---|---|---|---|---|---|
 | taker | no | 134 | 39 | US$-34.37 | 111 |
-| maker | no | 444 | 47 | US$-46.38 | 356 |
+| maker | no | 444 | 47 | US$-46.38 | 372 |
 | cola_taker | no | 58 | 3 | US$+7.68 | 36 |
-| cola_maker | no | 140 | 3 | US$-8.74 | 83 |
-| no80_90 | no | 43 | 33 | US$-40.28 | 51 |
+| cola_maker | no | 140 | 3 | US$-8.74 | 85 |
+| no80_90 | no | 43 | 33 | US$-40.28 | 52 |
+
+Taker en total: US$-66.97. _Con la comisión vieja (0,05 para todo) sería US$-66.97._
 
 _Taker = compra al instante pagando comisión. Maker = orden en el libro, solo cuenta si alguien la habría tomado (sin comisión). Cola = cajas de ≤10 ¢ a las que el modelo les da ≥2,5 veces el precio. no80_90 = comprar el No de cajas todavía posibles que cotizan 10–20 ¢ (solo en el pronóstico del mismo día)._
 
 ## Cripto en papel (Bitcoin / Ethereum: above, rango y toca; modelo de opciones)
 
-Operaciones: 39 (29 liquidadas, 8 ganadas). **Neto US$+0.36** sobre US$77.33 invertidos (ROI +0.5 %).
+Operaciones: 39 (29 liquidadas, 8 ganadas). **Neto US$+0.36** sobre US$77.33 invertidos (ROI +0.5 %). _Con la comisión vieja (0,05 para todo) sería US$+0.36._
 Brier en 118 strikes: modelo 0.1995 vs mercado 0.1997.
 
 | Activo | Tipo | Liquidadas | Neto |
@@ -106,6 +110,6 @@ Prueba SP: 4 operaciones; como maker se habrían llenado 2, neto **US$-7.76** (s
 
 ## Recompensas de liquidez (estimación, últimas 24 h)
 
-- Buenos Aires: ~US$49/día con 100 acciones a 1 ¢ en todas las cajas del mercado de mañana (sin contar pérdidas por quedar 'tomado').
+- Buenos Aires: ~US$48/día con 100 acciones a 1 ¢ en todas las cajas del mercado de mañana (sin contar pérdidas por quedar 'tomado').
 - Sao Paulo: ~US$59/día con 100 acciones a 1 ¢ en todas las cajas del mercado de mañana (sin contar pérdidas por quedar 'tomado').
 
