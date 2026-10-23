@@ -4,8 +4,9 @@ CALIBRACION DEL PRONOSTICO POR CIUDAD (investigacion, en papel; no toca a los bo
 Para cada serie (maxima o minima de cada ciudad) y cada dia de los ultimos DIAS dias:
   - pronostico del dia anterior de GFS y ECMWF (Open-Meteo "previous runs", corrida de ~24 h antes),
     maximo/minimo del dia local en la estacion oficial;
-  - temperatura real: maximo/minimo de los METAR de rutina de esa estacion (archivo de IEM),
-    en decimas del grupo T, como cuenta Polymarket desde el 21-oct (estaciones.temp_metar);
+  - temperatura real: maximo/minimo de los METAR de esa estacion (archivo de IEM) como resolvia
+    Polymarket ese dia: hasta el 20-oct todos (Wunderground), desde el 21-oct solo los de rutina,
+    en decimas del grupo T (estaciones.temp_metar);
   - caja ganadora de Polymarket (gamma), cuando hubo mercado.
 Ademas compara los pronosticos que anotaron los bots (pronostico.csv) con lo real.
 
@@ -124,31 +125,38 @@ def temp_raw(raw):
     return None
 
 
+CAMBIO_FUENTE = "2026-10-21"   # hasta el 20-oct resolvia Wunderground (cuenta tambien los SPECI)
+
+
 def metar(icao, tz):
-    """{fecha_local: (max, min, n_reportes)} con los METAR de rutina (IEM)."""
+    """{fecha_local: (max, min, n_reportes)} como resolvia Polymarket ese dia (IEM):
+    hasta el 20-oct todos los reportes (Wunderground); desde el 21-oct solo los de rutina."""
     ini = DESDE - timedelta(days=1)
     fin = HASTA + timedelta(days=2)
     base = {"data": "metar", "tz": "Etc/UTC", "format": "onlycomma", "latlon": "no", "missing": "empty",
-            "report_type": "3", "year1": ini.year, "month1": ini.month, "day1": ini.day,
+            "year1": ini.year, "month1": ini.month, "day1": ini.day,
             "year2": fin.year, "month2": fin.month, "day2": fin.day}
-    filas = []
-    for sid in ([icao, icao[1:]] if icao.startswith("K") else [icao]):
-        r = get(IEM, dict(base, station=sid), timeout=120)
-        if r is None or r.status_code != 200:
-            continue
-        filas = list(csv.DictReader(io.StringIO(r.text)))
-        if filas:
-            break
     zona = ZoneInfo(tz)
     dias = defaultdict(list)
-    for f in filas:
-        try:
-            t = temp_raw(f["metar"])
-            ts = datetime.strptime(f["valid"], "%Y-%m-%d %H:%M").replace(tzinfo=timezone.utc)
-        except Exception:
-            continue
-        if t is not None:
-            dias[ts.astimezone(zona).date().isoformat()].append(t)
+    for tipo in ("3", "4"):          # 3 = rutina, 4 = especiales (SPECI)
+        filas = []
+        for sid in ([icao, icao[1:]] if icao.startswith("K") else [icao]):
+            r = get(IEM, dict(base, station=sid, report_type=tipo), timeout=120)
+            if r is None or r.status_code != 200:
+                continue
+            filas = list(csv.DictReader(io.StringIO(r.text)))
+            if filas:
+                break
+        for f in filas:
+            try:
+                t = temp_raw(f["metar"].replace("SPECI ", ""))
+                ts = datetime.strptime(f["valid"], "%Y-%m-%d %H:%M").replace(tzinfo=timezone.utc)
+            except Exception:
+                continue
+            d = ts.astimezone(zona).date().isoformat()
+            if t is not None and (tipo == "3" or d < CAMBIO_FUENTE):
+                dias[d].append(t)
+        time.sleep(1)
     return {d: (max(v), min(v), len(v)) for d, v in dias.items() if len(v) >= 12}
 
 
@@ -309,7 +317,7 @@ def informe(filas):
     b = bots(ser_real)
     L = [f"# Calibración del pronóstico por ciudad ({DESDE} a {HASTA})", "",
          "error = real − pronóstico (°C). Pronóstico: GFS+ECMWF del día anterior (Open-Meteo, corrida ~24 h antes). "
-         "Real: máximo/mínimo de los METAR de rutina de la estación oficial (IEM). "
+         "Real: máximo/mínimo de los METAR de la estación oficial (IEM), como resolvía Polymarket ese día. "
          f"Acierto de caja: el pronóstico redondeado cae en la caja ganadora; 'corregido' suma el sesgo de los días previos (≥{MIN_PREVIOS}).",
          "", "Ordenado por desvío (el error que queda después de corregir el sesgo, que es lo que los bots no pueden aprender).", ""]
     for tipo, titulo in (("highest", "Máximas"), ("lowest", "Mínimas")):
