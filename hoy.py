@@ -29,7 +29,7 @@ from datetime import datetime, timedelta, timezone
 from zoneinfo import ZoneInfo
 
 import pronostico as P
-from estaciones import TZ, SIN_METAR, leer_caja
+from estaciones import TZ, SIN_METAR, leer_caja, redondear, temp_metar
 
 MOMENTOS = {"highest": [12, 15], "lowest": [9]}
 VENTANA_MIN = 60
@@ -48,8 +48,9 @@ def metars(icaos):
         j = P.S.get("https://aviationweather.gov/api/data/metar",
                     params={"ids": ",".join(lista[i:i + 40]), "format": "json", "hours": 30}, timeout=30).json()
         for x in j:
-            if x.get("temp") is not None and x.get("obsTime"):
-                datos.setdefault(x["icaoId"], {})[int(x["obsTime"])] = float(x["temp"])
+            c = temp_metar(x)
+            if c is not None and x.get("obsTime"):
+                datos.setdefault(x["icaoId"], {})[int(x["obsTime"])] = c
     return datos
 
 
@@ -134,7 +135,7 @@ def main():
                 continue
             u = (lambda c: c * 9 / 5 + 32) if en_f else (lambda c: c)
             s = SIGMA * (1.8 if en_f else 1.0)
-            O = (max if alta else min)(round(u(c)) for t, c in o)
+            O = (max if alta else min)(redondear(c, en_f) for t, c in o)
             cs = [u(c) for c in centros]
 
             def p_hasta(kk):     # maxima: P(resultado <= kk)

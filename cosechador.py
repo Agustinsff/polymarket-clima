@@ -43,7 +43,7 @@ ACC_MAX = 100
 EXCLUIR = {"LFPB", "VILK", "KBKF"}   # ver estaciones.py (PECULIARIDADES)
 ESPERA = 60
 
-from estaciones import TZ, SIN_METAR, estacion_de_evento   # zonas horarias y estacion oficial
+from estaciones import TZ, SIN_METAR, estacion_de_evento, redondear, temp_metar   # zonas horarias y estacion oficial
 
 CARPETA = os.path.dirname(os.path.abspath(__file__))
 F_CSV = os.path.join(CARPETA, "cosecha.csv")
@@ -149,10 +149,11 @@ def metars(icaos, horas):
     for i in range(0, len(lista), 40):
         j = S.get(AWC, params={"ids": ",".join(lista[i:i + 40]), "format": "json", "hours": horas}, timeout=30).json()
         for x in j:
-            if x.get("temp") is None:
+            c = temp_metar(x)
+            if c is None:
                 continue
             rec = datetime.fromisoformat(x["receiptTime"].replace("Z", "+00:00")).timestamp() if x.get("receiptTime") else None
-            datos.setdefault(x["icaoId"], {})[x["obsTime"]] = (float(x["temp"]), rec)
+            datos.setdefault(x["icaoId"], {})[x["obsTime"]] = (c, rec)
     return datos
 
 
@@ -195,7 +196,7 @@ def correr(minutos):
                     except Exception:
                         continue
                     o_ord = sorted(o)
-                    vals = [round(c * 9 / 5 + 32) if en_f else round(c) for _, c, _ in o_ord]
+                    vals = [redondear(c, en_f) for _, c, _ in o_ord]
                     # CONFIRMACION: el umbral tiene que aparecer en al menos CONFIRMAR observaciones.
                     # Un solo METAR raro (p.ej. Ciudad del Cabo 18-oct: un 19 suelto entre puros 16)
                     # puede no contar para la resolucion oficial y la caja "muerta" termina ganando.

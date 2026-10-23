@@ -4,6 +4,7 @@ excluidas, como leer el nombre de una caja y PECULIARIDADES de cada estacion
 (ver PECULIARIDADES y el informe estaciones_informe.md).
 """
 
+import math
 import re
 
 TZ = {"london": "Europe/London", "paris": "Europe/Paris", "ankara": "Europe/Istanbul", "munich": "Europe/Berlin",
@@ -52,12 +53,36 @@ def estacion_de_evento(e):
         x = re.search(r"site=([a-z0-9]{4})", t, re.I)
         if x:
             return x.group(1).upper()
+        # desde el 21-oct-2026 Polymarket resuelve con aviationweather.gov/api/data/metar?ids=XXXX
+        x = re.search(r"aviationweather\.gov/api/data/metar\?ids=([A-Z0-9]{4})", t, re.I)
+        if x:
+            return x.group(1).upper()
         x = re.search(r"wunderground\.com/history/daily/[a-z]{2}/[^/\s]+/([A-Z0-9]{4})", t, re.I)
         if x:
             return x.group(1).upper()
         if "Hong Kong Observatory" in t or "weather.gov.hk" in t:
             return "HKO"
     return None
+
+
+def temp_metar(x):
+    """Temperatura de un METAR del JSON de aviationweather como la cuenta Polymarket desde el 21-oct-2026:
+    solo reportes de rutina (los SPECI no cuentan), en decimas del grupo T de las observaciones
+    si esta, y si no la temperatura del cuerpo. None si no cuenta."""
+    raw = x.get("rawOb") or ""
+    if x.get("metarType") == "SPECI" or raw.startswith("SPECI"):
+        return None
+    g = re.search(r"\bT([01])(\d{3})[01]\d{3}\b", raw)
+    if g:
+        return (-1 if g.group(1) == "1" else 1) * int(g.group(2)) / 10
+    return None if x.get("temp") is None else float(x["temp"])
+
+
+def redondear(c, en_f=False):
+    """Grado entero de Polymarket: (en °F, convertido antes) al entero mas cercano, .5 hacia arriba.
+    (round() de Python redondea .5 al par: 16.5 -> 16, y Polymarket cuenta 17.)"""
+    v = c * 9 / 5 + 32 if en_f else c
+    return math.floor(v + 0.5 + 1e-9)
 
 
 def fee(p):
