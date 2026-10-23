@@ -16,7 +16,7 @@ jobs:
         with:
           python-version: "3.12"
       - run: pip install -r requirements.txt
-      - run: python rivales/bajar.py 2 1 2>&1 | tee rivales/log.txt || true
+      - run: python rivales/bajar.py 30 14 2>&1 | tee rivales/bajar_log.md || true
       - run: |
           git config user.name "polymarket-clima-bot"
           git config user.email "actions@users.noreply.github.com"
