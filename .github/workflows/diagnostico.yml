@@ -19,4 +19,4 @@ jobs:
       - run: |
           git config user.name "polymarket-clima-bot"
           git config user.email "actions@users.noreply.github.com"
-          git add diag/*.json diag/error.txt && git commit -m "diag: resultados" && git push
+          git add diag/por_ciudad.json diag/error.txt && git commit -m "diag: resultados" && git push
