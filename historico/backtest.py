@@ -34,7 +34,7 @@ GAMMA = "https://gamma-api.polymarket.com/events"
 HIST = "https://clob.polymarket.com/prices-history"
 HORIZONTES = (1, 2, 3)
 VENTANA = 6 * 3600           # el precio es el ultimo punto en las 6 h previas a la decision
-LIMITE_MIN = 150             # corta la bajada a los 150 min (se sigue en la proxima corrida)
+LIMITE_MIN = int(os.environ.get("LIMITE_MIN", 150))   # corta la bajada (se sigue en la proxima corrida)
 
 # ---- reglas fijas (REGLAS.md) ----
 MODELOS = ("Promedio", "GFS+ECMWF")
@@ -229,7 +229,7 @@ def bajar():
                 log(f"  {hechos}/{len(pend)}")
                 guardar_cache(cache)
     guardar_cache(cache)
-    bajar_spread(cache, fin + 20 * 60)
+    bajar_spread(cache, time.time() + max(2, LIMITE_MIN // 6) * 60)
     guardar_cache(cache)
     n = defaultdict(int)
     for v in cache["eventos"].values():
