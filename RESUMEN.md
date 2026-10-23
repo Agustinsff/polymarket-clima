@@ -1,12 +1,12 @@
 # Resumen polymarket-clima
 
-_Actualizado: 2026-10-23 12:36 (Montevideo). Todo es **en papel**: no se usa plata real._
+_Actualizado: 2026-10-23 12:50 (Montevideo). Todo es **en papel**: no se usa plata real._
 
 ## Estado de las tareas
 
 ⚠️ El cosechador no encuentra ningún mercado de temperatura abierto en Polymarket (¿dejaron de crearlos o les cambiaron el nombre?).
 
-- Última foto de liquidez: 2026-10-23T12:35:37
+- Última foto de liquidez: 2026-10-23T12:50:40
 - Monitor: mañana 2026-10-23, noche 2026-10-22
 - Prueba São Paulo: último día registrado 2026-10-22
 - Cosechador: último ciclo 2026-10-23 13:57 UTC, 0 mercados, 0 estaciones
