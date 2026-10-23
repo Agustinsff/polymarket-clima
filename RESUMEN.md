@@ -1,6 +1,6 @@
 # Resumen polymarket-clima
 
-_Actualizado: 2026-10-23 20:11 (Montevideo). Todo es **en papel**: no se usa plata real._
+_Actualizado: 2026-10-23 20:25 (Montevideo). Todo es **en papel**: no se usa plata real._
 
 ## Estado de las tareas
 
@@ -59,10 +59,10 @@ Puntaje Brier (más bajo = mejor) en 486 cajas liquidadas: **modelo 0.0739** vs 
 
 | Modo | Serie calibrada | Liquidadas | Ganadas | Neto (10 acc. c/u) | Pendientes |
 |---|---|---|---|---|---|
-| taker | no | 146 | 65 | US$-24.38 | 358 |
-| maker | no | 559 | 64 | US$-141.21 | 1406 |
-| cola_taker | no | 90 | 3 | US$+0.94 | 247 |
-| cola_maker | no | 152 | 3 | US$-8.77 | 216 |
+| taker | no | 146 | 65 | US$-24.38 | 449 |
+| maker | no | 559 | 64 | US$-141.21 | 1856 |
+| cola_taker | no | 90 | 3 | US$+0.94 | 292 |
+| cola_maker | no | 152 | 3 | US$-8.77 | 272 |
 
 Taker en total: US$-23.44. _Con la comisión vieja (0,05 para todo) sería US$-23.44._
 
@@ -86,14 +86,14 @@ _Taker = compra al instante pagando comisión. Maker = orden en el libro, solo c
 
 ## Cripto en papel (Bitcoin / Ethereum: above, rango y toca; modelo de opciones)
 
-Operaciones: 60 (29 liquidadas, 8 ganadas). **Neto US$+0.36** sobre US$77.33 invertidos (ROI +0.5 %). _Con la comisión vieja (0,05 para todo) sería US$+0.36._
-Brier en 118 strikes: modelo 0.1995 vs mercado 0.1997.
+Operaciones: 60 (36 liquidadas, 15 ganadas). **Neto US$+26.25** sobre US$120.54 invertidos (ROI +21.8 %). _Con la comisión vieja (0,05 para todo) sería US$+26.41._
+Brier en 186 strikes: modelo 0.1747 vs mercado 0.1780.
 
 | Activo | Tipo | Liquidadas | Neto |
 |---|---|---|---|
-| BTC | above | 1 | US$-2.08 |
-| BTC | rango | 4 | US$+17.01 |
-| BTC | toca | 14 | US$-14.33 |
+| BTC | above | 2 | US$-0.29 |
+| BTC | rango | 6 | US$+22.48 |
+| BTC | toca | 18 | US$+4.30 |
 | ETH | above | 1 | US$-1.15 |
 | ETH | rango | 2 | US$+6.98 |
 | ETH | toca | 7 | US$-6.07 |
@@ -102,7 +102,7 @@ _Regla fija: comprar el lado que el modelo ve ≥5 puntos más barato, a 48/24/1
 
 ## Sombra maker (¿y si dejábamos la orden en vez de comprar al toque?)
 
-Cosechador: 796 cajas muertas ya liquidadas.
+Cosechador: 964 cajas muertas ya liquidadas.
 - Vender el Yes a 2 ¢: 1514 acciones llenadas, neto **US$+30.28** (0 cajas 'muertas' que terminaron ganando)
 - Vender el Yes a 3 ¢: 1029 acciones llenadas, neto **US$+30.89** (0 cajas 'muertas' que terminaron ganando)
 - Vender el Yes a 5 ¢: 593 acciones llenadas, neto **US$+29.64** (0 cajas 'muertas' que terminaron ganando)
@@ -110,6 +110,6 @@ Prueba SP: 4 operaciones; como maker se habrían llenado 2, neto **US$-7.76** (s
 
 ## Recompensas de liquidez (estimación, últimas 24 h)
 
-- Buenos Aires: ~US$42/día con 100 acciones a 1 ¢ en todas las cajas del mercado de mañana (sin contar pérdidas por quedar 'tomado').
+- Buenos Aires: ~US$43/día con 100 acciones a 1 ¢ en todas las cajas del mercado de mañana (sin contar pérdidas por quedar 'tomado').
 - Sao Paulo: ~US$61/día con 100 acciones a 1 ¢ en todas las cajas del mercado de mañana (sin contar pérdidas por quedar 'tomado').
 
