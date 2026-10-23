@@ -1,0 +1,38 @@
+name: reglas
+on:
+  schedule:
+    - cron: "41 */3 * * *"   # cada 3 h
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: reglas
+  cancel-in-progress: false
+jobs:
+  revisar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    env:
+      TZ: America/Montevideo
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -r requirements.txt
+      - name: Comparar las reglas de Polymarket con la corrida anterior
+        run: python reglas.py
+      - name: Guardar en el repositorio
+        run: |
+          git config user.name "polymarket-clima-bot"
+          git config user.email "actions@users.noreply.github.com"
+          for f in reglas_estado.json reglas_cambios.csv reglas_informe.md; do [ -e "$f" ] && git add "$f"; done
+          git diff --cached --quiet && exit 0
+          git commit -m "datos: reglas de Polymarket $(date -u +%Y-%m-%dT%H:%MZ)"
+          for i in 1 2 3 4 5; do
+            git pull --rebase --autostash && git push && exit 0
+            sleep $((RANDOM % 20 + 5))
+          done
+          exit 1

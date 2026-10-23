@@ -19,6 +19,7 @@ Todo corre solo en GitHub Actions, así que no hace falta tener ninguna PC prend
 | `sombra_maker` (dentro del reloj) | 10:20 y 20:20 | Qué hubiera pasado si el cosechador y la prueba SP dejaban la orden en el libro en vez de comprar al toque | `sombra_maker.json` |
 | `cosechador` | siempre (cadena) | Cajas imposibles en todas las ciudades; anota cada caja que "muere" | `cosecha.csv`, `cosecha_muertas.csv` |
 | `carrera` | 08:00-13:50 y 14:00-19:50 | Carrera de fuentes: qué fuente publica primero cada METAR de Ezeiza | `carrera.csv` |
+| `reglas` | cada 3 h | Saca una huella de cada familia de mercados (fuente de resolución, comisión, orden mínima, texto del reglamento, ciudades, mercados de clima nuevos) y anota lo que cambia. Los cambios de las últimas 48 h salen arriba de RESUMEN.md y el vigía los manda por mail | `reglas_cambios.csv`, `reglas_informe.md`, `reglas_estado.json` |
 | `vigia` | cada hora y al terminar cada tanda del reloj o del cosechador | Si algo dejó de andar, abre un aviso (issue con la etiqueta `alerta`) y GitHub te manda un mail. Lo cierra solo cuando todo vuelve a la normalidad | (no guarda datos) |
 
 **`reloj`**: corre 24/7 en tandas encadenadas de ~5 h 40 min y lanza liquidez, diario y papel_sp14 en su horario. Los horarios automáticos de GitHub resultaron poco confiables.

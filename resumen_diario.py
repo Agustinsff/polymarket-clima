@@ -76,6 +76,11 @@ def alarmas(ahora_local):
             continue
         veces = "en su última corrida" if f.get("veces") == 1 else f"{f.get('veces')} veces seguidas"
         avisos.append(f"⚠️ `{tarea}` falló {veces} (desde {f.get('desde')}): {f.get('detalle')}")
+    try:
+        import reglas                                  # cambios de reglas de Polymarket (ultimas 48 h)
+        avisos += reglas.avisos()
+    except Exception as e:
+        avisos.append(f"⚠️ No pude leer reglas_cambios.csv: {e}")
     return avisos
 
 
