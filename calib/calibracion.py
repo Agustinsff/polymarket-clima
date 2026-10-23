@@ -5,7 +5,7 @@ Para cada serie (maxima o minima de cada ciudad) y cada dia de los ultimos DIAS 
   - pronostico del dia anterior de GFS y ECMWF (Open-Meteo "previous runs", corrida de ~24 h antes),
     maximo/minimo del dia local en la estacion oficial;
   - temperatura real: maximo/minimo de los METAR de esa estacion (archivo de IEM) como resolvia
-    Polymarket ese dia: hasta el 20-oct todos (Wunderground), desde el 21-oct solo los de rutina,
+    Polymarket ese dia: hasta el 22-oct todos (con SPECI), desde el 23-oct solo los de rutina,
     en decimas del grupo T (estaciones.temp_metar);
   - caja ganadora de Polymarket (gamma), cuando hubo mercado.
 Ademas compara los pronosticos que anotaron los bots (pronostico.csv) con lo real.
@@ -125,12 +125,12 @@ def temp_raw(raw):
     return None
 
 
-CAMBIO_FUENTE = "2026-10-21"   # hasta el 20-oct resolvia Wunderground (cuenta tambien los SPECI)
+CAMBIO_FUENTE = "2026-10-23"   # hasta el 22-oct contaban tambien los SPECI (Wunderground y luego weather.gov)
 
 
 def metar(icao, tz):
     """{fecha_local: (max, min, n_reportes)} como resolvia Polymarket ese dia (IEM):
-    hasta el 20-oct todos los reportes (Wunderground); desde el 21-oct solo los de rutina."""
+    hasta el 22-oct todos los reportes (Wunderground, y el 21 y 22 weather.gov); desde el 23-oct solo los de rutina."""
     ini = DESDE - timedelta(days=1)
     fin = HASTA + timedelta(days=2)
     base = {"data": "metar", "tz": "Etc/UTC", "format": "onlycomma", "latlon": "no", "missing": "empty",
