@@ -1,15 +1,15 @@
 # Resumen polymarket-clima
 
-_Actualizado: 2026-10-23 05:24 (Montevideo). Todo es **en papel**: no se usa plata real._
+_Actualizado: 2026-10-23 05:39 (Montevideo). Todo es **en papel**: no se usa plata real._
 
 ## Estado de las tareas
 
 ✅ Todo corriendo normalmente.
 
-- Última foto de liquidez: 2026-10-23T05:24:22
+- Última foto de liquidez: 2026-10-23T05:39:29
 - Monitor: mañana 2026-10-22, noche 2026-10-22
 - Prueba São Paulo: último día registrado 2026-10-22
-- Cosechador: último ciclo 2026-10-23 02:36 UTC, 29 mercados, 15 estaciones
+- Cosechador: último ciclo 2026-10-23 08:16 UTC, 0 mercados, 0 estaciones
 
 ## Temperatura máxima: mercado vs. modelo (BA y SP)
 
@@ -42,14 +42,14 @@ Operaciones: 4 (2 ganadas, 2 perdidas, 0 pendientes). **Neto con comisiones: US$
 
 ## Cosechador en papel (cajas imposibles, todas las ciudades)
 
-Operaciones: 5. **Neto liquidado: US$+0.00**. Pendientes: +US$31.82 si salen bien.
+Operaciones: 5. **Neto liquidado: US$+8.59**. Pendientes: +US$23.23 si salen bien.
 Nota: las operaciones de Ciudad del Cabo del 18-oct se hicieron con la regla vieja (sin confirmación) y su resolución está en disputa.
 
 | Día | Ciudad | Caja | Precio Yes | Acciones | Resultado |
 |---|---|---|---|---|---|
 | 2026-10-18 | cape-town | 17°C | 0.04 | 100 | pendiente |
 | 2026-10-18 | cape-town | 16°C | 0.03 | 100 | pendiente |
-| 2026-10-21 | istanbul | 15°C or below | 0.09 | 100 | pendiente |
+| 2026-10-21 | istanbul | 15°C or below | 0.09 | 100 | +8.59 |
 | 2026-10-22 | istanbul | 15°C or below | 0.17 | 61 | pendiente |
 | 2026-10-22 | istanbul | 15°C or below | 0.17 | 39 | pendiente |
 
