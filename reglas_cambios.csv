@@ -7,3 +7,8 @@ momento_utc,familia,que,cambio,detalle,ejemplo,origen
 2026-10-23 19:31,temperatura mínima,reglamento,aparece,Each market in this event states its range in whole degrees Fahrenheit.,lowest-temperature-in-nyc-on-october-23-2026,auto
 2026-10-23 19:31,temperatura mínima,reglamento,aparece,"The qualifying value is converted using °F = °C × #/# + # and rounded to the nearest whole degree, with a value ending in exactly half rounded up to the next higher whole degree, and that whole Fahrenheit value determines which range contains it.",lowest-temperature-in-nyc-on-october-23-2026,auto
 2026-10-23 19:31,temperatura mínima,reglamento,aparece,#°C is exactly #°F and counts as #°F.,lowest-temperature-in-nyc-on-october-23-2026,auto
+2026-10-23 23:58,temperatura máxima,reglamento,aparece,#°C is #°F and counts as #°F;,highest-temperature-in-nyc-on-october-23-2026,auto
+2026-10-23 23:58,temperatura máxima,reglamento,aparece,#°C is exactly #°F and counts as #°F.,highest-temperature-in-nyc-on-october-23-2026,auto
+2026-10-23 23:58,temperatura máxima,reglamento,aparece,"For example, #°C is #°F and counts as #°F;",highest-temperature-in-nyc-on-october-23-2026,auto
+2026-10-23 23:58,temperatura máxima,reglamento,aparece,Each market in this event states its range in whole degrees Fahrenheit.,highest-temperature-in-nyc-on-october-23-2026,auto
+2026-10-23 23:58,temperatura máxima,reglamento,aparece,"The qualifying value is converted using °F = °C × #/# + # and rounded to the nearest whole degree, with a value ending in exactly half rounded up to the next higher whole degree, and that whole Fahrenheit value determines which range contains it.",highest-temperature-in-nyc-on-october-23-2026,auto
