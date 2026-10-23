@@ -1,7 +1,7 @@
 name: modelos
 on:
   push:
-    branches: [modelos-pronostico]
+    branches: [modelos-pronostico]   # en main se corre a mano (workflow_dispatch)
     paths: [modelos/*.py, .github/workflows/modelos.yml]
   workflow_dispatch:
 permissions:

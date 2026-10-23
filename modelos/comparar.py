@@ -19,11 +19,12 @@ primera mitad de los dias y se mide en la segunda.
 Los ensambles (GFS y ECMWF, lo que usa pronostico.py) no tienen historia en Open-Meteo: se comparan
 solo con lo que anotaron los bots en pronostico.csv (desde el 20-oct).
 
-Salida: modelos/dias.csv, modelos/resumen.json y modelos/informe.md.
+Salida: modelos/dias.csv.gz (comprimido, ~15 MB sin comprimir), modelos/resumen.json y modelos/informe.md.
 error = real - pronostico, en °C.
 """
 
 import csv
+import gzip
 import io
 import json
 import math
@@ -350,7 +351,7 @@ def main():
                                   "modelo": m, "pron": round(v, 2), "real": o[ix]})
     log(f"{len(filas)} filas")
     corregir(filas)
-    with open(os.path.join(OUT, "dias.csv"), "w", newline="", encoding="utf-8") as f:
+    with gzip.open(os.path.join(OUT, "dias.csv.gz"), "wt", newline="", encoding="utf-8") as f:
         w = csv.DictWriter(f, fieldnames=["serie", "fecha", "icao", "en_f", "horizonte", "modelo", "pron", "corr", "real"],
                            delimiter=";")
         w.writeheader()
