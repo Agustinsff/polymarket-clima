@@ -1,4 +1,5 @@
-import json, re, requests
+import json, re, sys, requests
+sys.path.insert(0, ".")
 from estaciones import estacion_de_evento, TZ
 S = requests.Session()
 evs = []
