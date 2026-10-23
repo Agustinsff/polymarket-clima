@@ -1,151 +1,152 @@
 # Profundidad del libro: costo real de entrar
 
-6 fotos (2026-10-23 14:28 a 2026-10-23 19:29 UTC), solo cajas entre 5 y 95 c.
+7 fotos (2026-10-23 14:28 a 2026-10-23 20:30 UTC), solo cajas entre 5 y 95 c.
 Costo = lo que se paga por encima del precio medio del libro + comision de taker, en centavos por accion, promediando comprar Yes y comprar No. Generado por `python libros.py resumen`.
 
 ### Clima por ciudad y tipo
 
 | | libros | spread mediano (c) | costo mediano 10 acc. (c) | % entradas ≤2 c | % sin libro para 10 | acciones a ≤2 c del medio |
 |---|---|---|---|---|---|---|
-| highest|busan | 43 | 2.4 | 1.2 | 100 % | 0 % | 338 |
-| highest|chicago | 61 | 3.0 | 1.5 | 73 % | 0 % | 227 |
-| highest|chongqing | 48 | 3.0 | 1.5 | 85 % | 0 % | 282 |
-| highest|hong-kong | 44 | 3.0 | 1.5 | 94 % | 0 % | 246 |
-| highest|istanbul | 40 | 2.7 | 1.5 | 75 % | 0 % | 233 |
-| highest|jeddah | 48 | 3.0 | 1.5 | 96 % | 0 % | 282 |
-| highest|kuala-lumpur | 54 | 3.0 | 1.5 | 68 % | 0 % | 103 |
-| highest|london | 39 | 3.0 | 1.5 | 85 % | 0 % | 261 |
-| highest|qingdao | 37 | 3.0 | 1.5 | 92 % | 0 % | 211 |
-| highest|seoul | 56 | 3.0 | 1.5 | 76 % | 0 % | 118 |
-| highest|tel-aviv | 36 | 3.0 | 1.5 | 88 % | 0 % | 202 |
-| highest|wuhan | 48 | 2.5 | 1.5 | 88 % | 0 % | 247 |
-| highest|nyc | 50 | 3.0 | 1.5 | 70 % | 0 % | 164 |
-| highest|singapore | 43 | 3.0 | 1.6 | 77 % | 0 % | 134 |
-| highest|tokyo | 50 | 3.0 | 1.7 | 77 % | 0 % | 150 |
-| highest|miami | 47 | 3.0 | 1.7 | 81 % | 0 % | 164 |
-| highest|guangzhou | 42 | 3.0 | 1.8 | 86 % | 0 % | 241 |
-| highest|wellington | 36 | 3.0 | 1.8 | 83 % | 0 % | 265 |
-| highest|taipei | 51 | 3.0 | 1.8 | 65 % | 1 % | 133 |
-| highest|atlanta | 56 | 3.0 | 1.9 | 74 % | 0 % | 157 |
-| highest|warsaw | 39 | 3.0 | 1.9 | 69 % | 0 % | 100 |
-| highest|manila | 40 | 3.4 | 2.0 | 75 % | 0 % | 174 |
-| highest|amsterdam | 30 | 3.0 | 2.0 | 67 % | 0 % | 302 |
-| highest|ankara | 37 | 4.0 | 2.0 | 86 % | 0 % | 231 |
-| highest|austin | 32 | 4.0 | 2.0 | 58 % | 0 % | 62 |
-| highest|beijing | 54 | 4.0 | 2.0 | 66 % | 0 % | 101 |
-| highest|chengdu | 54 | 3.0 | 2.0 | 73 % | 0 % | 141 |
-| highest|dallas | 31 | 4.0 | 2.0 | 60 % | 0 % | 134 |
-| highest|helsinki | 31 | 4.0 | 2.0 | 55 % | 0 % | 122 |
-| highest|karachi | 42 | 4.0 | 2.0 | 54 % | 0 % | 168 |
-| highest|madrid | 44 | 3.0 | 2.0 | 81 % | 0 % | 138 |
-| highest|milan | 42 | 3.5 | 2.0 | 75 % | 0 % | 163 |
-| highest|munich | 48 | 4.0 | 2.0 | 58 % | 0 % | 120 |
-| highest|panama-city | 44 | 4.0 | 2.0 | 66 % | 0 % | 125 |
-| highest|san-francisco | 35 | 4.0 | 2.0 | 61 % | 0 % | 95 |
-| highest|shanghai | 49 | 3.0 | 2.0 | 82 % | 0 % | 144 |
-| highest|shenzhen | 48 | 3.6 | 2.0 | 81 % | 0 % | 251 |
-| highest|sao-paulo | 79 | 4.0 | 2.0 | 50 % | 0 % | 30 |
-| highest|cape-town | 57 | 4.0 | 2.1 | 50 % | 0 % | 75 |
-| highest|toronto | 63 | 4.0 | 2.2 | 50 % | 0 % | 40 |
-| highest|houston | 44 | 4.3 | 2.3 | 49 % | 0 % | 9 |
-| lowest|london | 52 | 4.4 | 2.3 | 48 % | 1 % | 0 |
-| highest|buenos-aires | 67 | 5.0 | 2.5 | 46 % | 0 % | 0 |
-| highest|denver | 63 | 5.0 | 2.5 | 35 % | 0 % | 0 |
-| highest|los-angeles | 49 | 5.0 | 2.5 | 47 % | 0 % | 0 |
-| highest|mexico-city | 66 | 4.5 | 2.5 | 44 % | 0 % | 8 |
-| highest|moscow | 53 | 4.0 | 2.5 | 46 % | 0 % | 45 |
-| highest|seattle | 67 | 5.0 | 2.5 | 42 % | 0 % | 0 |
-| lowest|warsaw | 52 | 5.5 | 3.0 | 42 % | 0 % | 0 |
-| lowest|nyc | 59 | 6.0 | 3.2 | 33 % | 0 % | 0 |
-| lowest|miami | 68 | 7.0 | 3.5 | 29 % | 0 % | 0 |
-| lowest|seoul | 45 | 7.0 | 3.8 | 32 % | 0 % | 0 |
-| lowest|wellington | 33 | 7.5 | 3.9 | 17 % | 0 % | 0 |
+| highest|busan | 50 | 2.8 | 1.5 | 99 % | 0 % | 314 |
+| highest|chicago | 70 | 3.0 | 1.5 | 73 % | 0 % | 202 |
+| highest|chongqing | 56 | 3.0 | 1.5 | 87 % | 0 % | 290 |
+| highest|hong-kong | 51 | 3.0 | 1.5 | 95 % | 0 % | 245 |
+| highest|istanbul | 47 | 2.9 | 1.5 | 79 % | 0 % | 269 |
+| highest|jeddah | 55 | 3.0 | 1.5 | 96 % | 0 % | 295 |
+| highest|kuala-lumpur | 63 | 3.0 | 1.5 | 72 % | 0 % | 116 |
+| highest|london | 45 | 3.0 | 1.5 | 87 % | 0 % | 283 |
+| highest|miami | 53 | 3.0 | 1.5 | 83 % | 0 % | 179 |
+| highest|qingdao | 43 | 3.0 | 1.5 | 93 % | 0 % | 220 |
+| highest|seoul | 65 | 3.0 | 1.5 | 73 % | 0 % | 115 |
+| highest|tel-aviv | 42 | 3.0 | 1.5 | 89 % | 0 % | 202 |
+| highest|warsaw | 45 | 3.0 | 1.5 | 71 % | 0 % | 120 |
+| highest|wuhan | 56 | 2.5 | 1.5 | 87 % | 0 % | 256 |
+| highest|nyc | 58 | 3.0 | 1.6 | 70 % | 0 % | 164 |
+| highest|atlanta | 63 | 3.0 | 1.6 | 75 % | 0 % | 160 |
+| highest|madrid | 51 | 3.0 | 1.7 | 81 % | 0 % | 165 |
+| highest|singapore | 50 | 3.0 | 1.7 | 76 % | 0 % | 109 |
+| highest|chengdu | 63 | 3.0 | 1.7 | 75 % | 0 % | 149 |
+| highest|amsterdam | 35 | 3.0 | 1.7 | 71 % | 0 % | 304 |
+| highest|guangzhou | 48 | 3.0 | 1.8 | 85 % | 0 % | 250 |
+| highest|taipei | 58 | 3.0 | 1.8 | 68 % | 1 % | 134 |
+| highest|tokyo | 58 | 3.0 | 1.8 | 76 % | 0 % | 142 |
+| highest|shenzhen | 56 | 3.1 | 1.8 | 83 % | 0 % | 255 |
+| highest|wellington | 41 | 3.0 | 1.9 | 80 % | 0 % | 268 |
+| highest|manila | 46 | 3.4 | 2.0 | 76 % | 0 % | 260 |
+| highest|ankara | 43 | 4.0 | 2.0 | 86 % | 0 % | 224 |
+| highest|austin | 37 | 4.0 | 2.0 | 58 % | 0 % | 53 |
+| highest|beijing | 63 | 4.0 | 2.0 | 67 % | 0 % | 109 |
+| highest|cape-town | 66 | 4.0 | 2.0 | 53 % | 0 % | 107 |
+| highest|dallas | 36 | 4.0 | 2.0 | 60 % | 0 % | 154 |
+| highest|helsinki | 36 | 4.0 | 2.0 | 58 % | 0 % | 138 |
+| highest|karachi | 49 | 4.0 | 2.0 | 57 % | 0 % | 173 |
+| highest|milan | 49 | 3.0 | 2.0 | 77 % | 0 % | 170 |
+| highest|moscow | 62 | 4.0 | 2.0 | 51 % | 0 % | 50 |
+| highest|munich | 57 | 4.0 | 2.0 | 58 % | 0 % | 106 |
+| highest|panama-city | 53 | 3.0 | 2.0 | 68 % | 0 % | 120 |
+| highest|san-francisco | 40 | 4.0 | 2.0 | 64 % | 0 % | 97 |
+| highest|sao-paulo | 89 | 4.0 | 2.0 | 54 % | 0 % | 41 |
+| highest|shanghai | 57 | 3.0 | 2.0 | 81 % | 0 % | 131 |
+| highest|toronto | 70 | 4.0 | 2.0 | 54 % | 0 % | 72 |
+| highest|buenos-aires | 75 | 4.0 | 2.0 | 50 % | 0 % | 10 |
+| highest|houston | 52 | 4.3 | 2.3 | 48 % | 0 % | 9 |
+| highest|los-angeles | 57 | 5.0 | 2.5 | 49 % | 0 % | 0 |
+| highest|mexico-city | 78 | 4.0 | 2.5 | 46 % | 0 % | 22 |
+| highest|seattle | 81 | 5.0 | 2.5 | 45 % | 0 % | 0 |
+| lowest|london | 63 | 5.8 | 2.9 | 46 % | 2 % | 0 |
+| highest|denver | 74 | 5.0 | 3.0 | 35 % | 0 % | 0 |
+| lowest|nyc | 67 | 6.0 | 3.0 | 36 % | 0 % | 0 |
+| lowest|seoul | 51 | 6.0 | 3.0 | 37 % | 0 % | 0 |
+| lowest|warsaw | 59 | 6.0 | 3.0 | 42 % | 0 % | 0 |
+| lowest|wellington | 37 | 7.2 | 3.7 | 20 % | 0 % | 0 |
+| lowest|miami | 80 | 7.7 | 3.9 | 24 % | 0 % | 0 |
 | lowest|atlanta | 10 | 8.5 | 4.5 | 0 % | 0 % | 0 |
-| lowest|los-angeles | 55 | 10.0 | 5.0 | 26 % | 0 % | 0 |
-| lowest|madrid | 50 | 8.5 | 5.8 | 24 % | 0 % | 0 |
-| lowest|hong-kong | 53 | 12.3 | 6.3 | 8 % | 0 % | 0 |
-| lowest|shanghai | 57 | 14.8 | 7.5 | 17 % | 0 % | 0 |
-| lowest|tokyo | 49 | 14.0 | 7.8 | 32 % | 0 % | 0 |
-| lowest|karachi | 25 | 37.0 | 18.8 | 0 % | 0 % | 0 |
-| lowest|helsinki | 24 | 44.0 | 22.2 | 0 % | 0 % | 0 |
-| lowest|jeddah | 11 | 45.0 | 22.5 | 0 % | 0 % | 0 |
-| lowest|dallas | 10 | 47.0 | 23.8 | 0 % | 0 % | 0 |
-| lowest|sao-paulo | 29 | 61.0 | 30.5 | 0 % | 0 % | 0 |
-| lowest|toronto | 7 | 61.0 | 30.5 | 0 % | 0 % | 0 |
-| lowest|tel-aviv | 18 | 69.0 | 34.5 | 0 % | 0 % | 0 |
-| lowest|milan | 24 | 70.0 | 35.0 | 0 % | 0 % | 0 |
-| lowest|mexico-city | 37 | 72.0 | 36.0 | 0 % | 0 % | 0 |
-| lowest|guangzhou | 30 | 73.5 | 37.0 | 0 % | 0 % | 0 |
-| lowest|chengdu | 18 | 74.0 | 37.2 | 0 % | 0 % | 0 |
-| lowest|beijing | 29 | 74.0 | 37.5 | 0 % | 0 % | 0 |
-| lowest|amsterdam | 9 | 77.0 | 38.8 | 0 % | 0 % | 0 |
-| lowest|wuhan | 24 | 81.0 | 40.8 | 0 % | 0 % | 0 |
-| lowest|shenzhen | 18 | 86.0 | 43.2 | 0 % | 0 % | 0 |
-| lowest|cape-town | 24 | 86.3 | 43.4 | 0 % | 0 % | 0 |
-| lowest|seattle | 24 | 88.0 | 44.0 | 0 % | 0 % | 0 |
-| lowest|houston | 7 | 89.0 | 44.5 | 0 % | 0 % | 0 |
-| lowest|taipei | 15 | 89.0 | 44.5 | 0 % | 0 % | 0 |
-| lowest|austin | 5 | 89.7 | 44.9 | 0 % | 0 % | 0 |
-| lowest|chongqing | 26 | 90.0 | 45.2 | 0 % | 0 % | 0 |
-| lowest|qingdao | 7 | 91.0 | 45.5 | 0 % | 0 % | 0 |
-| lowest|buenos-aires | 42 | 92.0 | 46.0 | 0 % | 7 % | 0 |
-| lowest|denver | 23 | 93.0 | 46.5 | 0 % | 0 % | 0 |
-| lowest|istanbul | 24 | 93.0 | 47.0 | 0 % | 0 % | 0 |
-| lowest|ankara | 6 | 99.6 | 49.8 | 0 % | 0 % | 0 |
-| lowest|munich | 9 | 99.6 | 49.8 | 0 % | 0 % | 0 |
-| lowest|busan | 6 | 99.8 | 49.9 | 0 % | 0 % | 0 |
-| lowest|moscow | 10 | 99.8 | 49.9 | 0 % | 0 % | 0 |
+| lowest|madrid | 59 | 8.0 | 4.5 | 29 % | 0 % | 0 |
+| lowest|los-angeles | 61 | 10.0 | 5.0 | 29 % | 0 % | 0 |
+| lowest|hong-kong | 61 | 12.0 | 6.1 | 8 % | 0 % | 0 |
+| lowest|shanghai | 66 | 14.8 | 7.5 | 14 % | 0 % | 0 |
+| lowest|tokyo | 56 | 16.0 | 8.5 | 29 % | 0 % | 0 |
+| lowest|helsinki | 28 | 44.0 | 22.2 | 0 % | 0 % | 0 |
+| lowest|jeddah | 13 | 46.0 | 23.0 | 0 % | 0 % | 0 |
+| lowest|dallas | 12 | 46.5 | 23.2 | 0 % | 0 % | 0 |
+| lowest|sao-paulo | 33 | 61.0 | 30.8 | 0 % | 0 % | 0 |
+| lowest|toronto | 8 | 62.5 | 31.2 | 0 % | 0 % | 0 |
+| lowest|tel-aviv | 21 | 67.0 | 33.5 | 0 % | 0 % | 0 |
+| lowest|milan | 28 | 70.0 | 35.0 | 0 % | 0 % | 0 |
+| lowest|karachi | 31 | 72.0 | 36.5 | 0 % | 0 % | 0 |
+| lowest|mexico-city | 43 | 72.0 | 36.5 | 0 % | 0 % | 0 |
+| lowest|guangzhou | 36 | 73.5 | 37.0 | 0 % | 0 % | 0 |
+| lowest|beijing | 33 | 74.0 | 37.5 | 0 % | 0 % | 0 |
+| lowest|chengdu | 22 | 76.0 | 38.0 | 0 % | 0 % | 0 |
+| lowest|amsterdam | 10 | 80.0 | 40.2 | 0 % | 0 % | 0 |
+| lowest|wuhan | 28 | 84.0 | 42.0 | 0 % | 0 % | 0 |
+| lowest|cape-town | 28 | 86.3 | 43.4 | 0 % | 0 % | 0 |
+| lowest|seattle | 28 | 87.5 | 44.0 | 0 % | 0 % | 0 |
+| lowest|houston | 8 | 88.0 | 44.2 | 0 % | 0 % | 0 |
+| lowest|austin | 6 | 89.5 | 44.8 | 0 % | 0 % | 0 |
+| lowest|shenzhen | 22 | 90.0 | 45.0 | 0 % | 0 % | 0 |
+| lowest|taipei | 18 | 90.0 | 45.5 | 0 % | 0 % | 0 |
+| lowest|buenos-aires | 49 | 92.0 | 46.0 | 0 % | 7 % | 0 |
+| lowest|denver | 27 | 93.0 | 46.5 | 0 % | 0 % | 0 |
+| lowest|qingdao | 8 | 93.0 | 46.5 | 0 % | 0 % | 0 |
+| lowest|chongqing | 31 | 94.0 | 47.0 | 0 % | 0 % | 0 |
+| lowest|istanbul | 27 | 93.0 | 47.0 | 0 % | 0 % | 0 |
+| lowest|ankara | 7 | 99.6 | 49.8 | 0 % | 0 % | 0 |
+| lowest|munich | 10 | 99.6 | 49.8 | 0 % | 0 % | 0 |
+| lowest|busan | 7 | 99.8 | 49.9 | 0 % | 0 % | 0 |
+| lowest|moscow | 14 | 97.9 | 49.9 | 0 % | 11 % | 0 |
 
 ### Clima por hora local de la ciudad
 
 | | libros | spread mediano (c) | costo mediano 10 acc. (c) | % entradas ≤2 c | % sin libro para 10 | acciones a ≤2 c del medio |
 |---|---|---|---|---|---|---|
-| 00-02 h local | 595 | 4.0 | 2.0 | 56 % | 0 % | 72 |
-| 03-05 h local | 270 | 4.0 | 2.0 | 55 % | 0 % | 71 |
+| 00-02 h local | 608 | 4.0 | 2.0 | 55 % | 0 % | 70 |
+| 03-05 h local | 454 | 4.0 | 2.0 | 57 % | 0 % | 71 |
+| 15-17 h local | 496 | 4.0 | 2.0 | 51 % | 0 % | 37 |
 | 18-20 h local | 445 | 4.0 | 2.0 | 51 % | 0 % | 39 |
-| 21-23 h local | 532 | 4.0 | 2.0 | 56 % | 0 % | 68 |
-| 15-17 h local | 378 | 4.0 | 2.3 | 50 % | 0 % | 30 |
+| 21-23 h local | 675 | 4.0 | 2.0 | 57 % | 0 % | 79 |
 | 06-08 h local | 144 | 5.0 | 2.5 | 42 % | 0 % | 0 |
-| 09-11 h local | 496 | 5.0 | 2.5 | 41 % | 0 % | 0 |
-| 12-14 h local | 507 | 5.0 | 2.5 | 43 % | 0 % | 0 |
+| 09-11 h local | 505 | 5.0 | 2.5 | 42 % | 0 % | 0 |
+| 12-14 h local | 577 | 5.0 | 2.5 | 43 % | 0 % | 0 |
 
 ### Clima por horas hasta el cierre
 
 | | libros | spread mediano (c) | costo mediano 10 acc. (c) | % entradas ≤2 c | % sin libro para 10 | acciones a ≤2 c del medio |
 |---|---|---|---|---|---|---|
-| 12-24 h | 1262 | 3.5 | 2.0 | 68 % | 0 % | 146 |
-| >36 h | 1455 | 4.0 | 2.0 | 50 % | 0 % | 40 |
-| ≤12 h | 650 | 23.8 | 13.5 | 13 % | 1 % | 0 |
+| 12-24 h | 1472 | 3.6 | 2.0 | 68 % | 0 % | 141 |
+| >36 h | 1697 | 4.0 | 2.0 | 53 % | 0 % | 50 |
+| ≤12 h | 735 | 30.0 | 17.0 | 12 % | 1 % | 0 |
 
 ### Clima con 50 acciones
 
 | | libros | spread mediano (c) | costo mediano 50 acc. (c) | % entradas ≤2 c | % sin libro para 50 | acciones a ≤2 c del medio |
 |---|---|---|---|---|---|---|
-| highest | 2237 | 4.0 | 2.0 | 53 % | 0 % | 140 |
-| lowest | 1130 | 37.0 | 14.5 | 10 % | 24 % | 0 |
+| highest | 2592 | 3.1 | 2.0 | 54 % | 0 % | 146 |
+| lowest | 1312 | 38.0 | 14.8 | 10 % | 24 % | 0 |
 
 ### Clima con 100 acciones
 
 | | libros | spread mediano (c) | costo mediano 100 acc. (c) | % entradas ≤2 c | % sin libro para 100 | acciones a ≤2 c del medio |
 |---|---|---|---|---|---|---|
-| highest | 2237 | 4.0 | 2.3 | 43 % | 0 % | 140 |
-| lowest | 1130 | 37.0 | 20.3 | 6 % | 31 % | 0 |
+| highest | 2592 | 3.1 | 2.2 | 45 % | 0 % | 146 |
+| lowest | 1312 | 38.0 | 20.8 | 6 % | 32 % | 0 |
 
 ### Cripto por activo y tipo
 
 | | libros | spread mediano (c) | costo mediano 10 acc. (c) | % entradas ≤2 c | % sin libro para 10 | acciones a ≤2 c del medio |
 |---|---|---|---|---|---|---|
-| BTC|above | 35 | 1.0 | 1.8 | 60 % | 0 % | 8012 |
-| BTC|toca | 16 | 2.0 | 2.1 | 47 % | 0 % | 5748 |
-| ETH|toca | 13 | 3.0 | 2.3 | 27 % | 0 % | 2419 |
-| ETH|above | 27 | 2.0 | 2.5 | 22 % | 0 % | 4930 |
-| BTC|rango | 52 | 4.0 | 3.2 | 19 % | 0 % | 2925 |
-| ETH|rango | 50 | 6.0 | 4.7 | 4 % | 0 % | 0 |
+| BTC|above | 41 | 1.0 | 1.7 | 61 % | 0 % | 8296 |
+| BTC|toca | 17 | 2.0 | 2.3 | 44 % | 0 % | 5474 |
+| ETH|toca | 14 | 3.0 | 2.3 | 29 % | 0 % | 1374 |
+| ETH|above | 32 | 2.0 | 2.6 | 23 % | 0 % | 4892 |
+| BTC|rango | 61 | 3.3 | 3.0 | 25 % | 0 % | 5110 |
+| ETH|rango | 57 | 6.0 | 4.2 | 5 % | 0 % | 0 |
 
 ### Cripto por hora UTC
 
 | | libros | spread mediano (c) | costo mediano 10 acc. (c) | % entradas ≤2 c | % sin libro para 10 | acciones a ≤2 c del medio |
 |---|---|---|---|---|---|---|
+| 20-23 h UTC | 29 | 2.0 | 2.5 | 41 % | 0 % | 5320 |
 | 16-19 h UTC | 129 | 3.0 | 2.5 | 31 % | 0 % | 4967 |
 | 12-15 h UTC | 64 | 4.0 | 3.6 | 15 % | 0 % | 40 |
 
@@ -153,28 +154,28 @@ Costo = lo que se paga por encima del precio medio del libro + comision de taker
 
 | | libros | spread mediano (c) | costo mediano 10 acc. (c) | % entradas ≤2 c | % sin libro para 10 | acciones a ≤2 c del medio |
 |---|---|---|---|---|---|---|
-| 6-24 h | 54 | 2.0 | 2.3 | 36 % | 0 % | 4946 |
-| 24-72 h | 129 | 3.3 | 3.1 | 22 % | 0 % | 2825 |
+| 6-24 h | 62 | 2.0 | 2.3 | 37 % | 0 % | 4946 |
+| 24-72 h | 150 | 3.0 | 2.9 | 25 % | 0 % | 4030 |
 | ≤6 h | 10 | 4.0 | 3.5 | 20 % | 0 % | 375 |
 
 ### Cripto con 50 acciones
 
 | | libros | spread mediano (c) | costo mediano 50 acc. (c) | % entradas ≤2 c | % sin libro para 50 | acciones a ≤2 c del medio |
 |---|---|---|---|---|---|---|
-| BTC|above | 35 | 1.0 | 1.8 | 60 % | 0 % | 8012 |
-| BTC|toca | 16 | 2.0 | 2.3 | 44 % | 0 % | 5748 |
-| ETH|toca | 13 | 3.0 | 2.5 | 15 % | 0 % | 2419 |
-| ETH|above | 27 | 2.0 | 2.7 | 19 % | 0 % | 4930 |
-| BTC|rango | 52 | 4.0 | 3.4 | 18 % | 0 % | 2925 |
-| ETH|rango | 50 | 6.0 | 4.7 | 3 % | 0 % | 0 |
+| BTC|above | 41 | 1.0 | 1.8 | 61 % | 0 % | 8296 |
+| BTC|toca | 17 | 2.0 | 2.3 | 41 % | 0 % | 5474 |
+| ETH|toca | 14 | 3.0 | 2.5 | 18 % | 0 % | 1374 |
+| ETH|above | 32 | 2.0 | 2.7 | 20 % | 0 % | 4892 |
+| BTC|rango | 61 | 3.3 | 3.1 | 24 % | 0 % | 5110 |
+| ETH|rango | 57 | 6.0 | 4.6 | 4 % | 0 % | 0 |
 
 ### Cripto con 100 acciones
 
 | | libros | spread mediano (c) | costo mediano 100 acc. (c) | % entradas ≤2 c | % sin libro para 100 | acciones a ≤2 c del medio |
 |---|---|---|---|---|---|---|
-| BTC|above | 35 | 1.0 | 1.9 | 59 % | 0 % | 8012 |
-| BTC|toca | 16 | 2.0 | 2.3 | 41 % | 0 % | 5748 |
-| ETH|toca | 13 | 3.0 | 2.7 | 15 % | 0 % | 2419 |
-| ETH|above | 27 | 2.0 | 2.7 | 17 % | 0 % | 4930 |
-| BTC|rango | 52 | 4.0 | 3.4 | 17 % | 0 % | 2925 |
-| ETH|rango | 50 | 6.0 | 4.7 | 3 % | 0 % | 0 |
+| BTC|above | 41 | 1.0 | 1.9 | 60 % | 0 % | 8296 |
+| BTC|toca | 17 | 2.0 | 2.3 | 38 % | 0 % | 5474 |
+| ETH|toca | 14 | 3.0 | 2.7 | 18 % | 0 % | 1374 |
+| ETH|above | 32 | 2.0 | 2.8 | 19 % | 0 % | 4892 |
+| BTC|rango | 61 | 3.3 | 3.1 | 22 % | 0 % | 5110 |
+| ETH|rango | 57 | 6.0 | 4.6 | 4 % | 0 % | 0 |
