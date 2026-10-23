@@ -32,6 +32,7 @@ from datetime import date, datetime, timedelta
 
 import requests
 
+from estaciones import tasa_de
 from monitor import CIUDADES, GAMMA_API, leer_caja, slug_evento
 from backtest import leer_historial, MODELOS
 from intradia import (armar_casos, bajar_metar, cargar_json, distribucion_subida,
@@ -56,7 +57,7 @@ PRECIO_MIN, PRECIO_MAX = 0.02, 0.98
 VENTANA_MIN, VENTANA_MAX = (14, 10), (14, 59)
 
 COLS_OPS = ["fecha", "caja", "lado", "prob_modelo", "precio_medio", "acciones",
-            "costo", "maxima_hasta_14", "ganadora", "resultado"]
+            "costo", "maxima_hasta_14", "ganadora", "resultado", "tasa_comision"]   # comision: RESUMEN.md
 
 
 # ---------------------------------------------------------------------------
@@ -225,7 +226,7 @@ def registrar_hoy():
                 ops.append({"fecha": hoy.isoformat(), "caja": m["groupItemTitle"], "lado": lado,
                             "prob_modelo": num(prob), "precio_medio": num(precio),
                             "acciones": ACCIONES, "costo": num(precio * ACCIONES),
-                            "maxima_hasta_14": hasta, "ganadora": "", "resultado": ""})
+                            "maxima_hasta_14": hasta, "ganadora": "", "resultado": "", "tasa_comision": num(tasa_de(m))})
                 op = f"<- compraria {ACCIONES} {lado} a {precio*100:.1f}¢"
             fmt = lambda x: "  -" if x is None else f"{x*100:.1f}¢"
             print(f"  {m['groupItemTitle']:<16}{prob*100:>6.0f}%{fmt(yes_ask):>11}{fmt(yes_bid):>10}"

@@ -41,7 +41,6 @@ GAMMA = "https://gamma-api.polymarket.com/events"
 COMUN = 0.20             # una frase es "del reglamento" si esta en al menos el 20 % de los eventos
 OLVIDO_DIAS = 3          # lo que no se ve hace 3 dias se anota como "ya no aparece"
 AVISO_HORAS = 48         # cuanto tiempo queda el aviso en RESUMEN.md / vigia
-FEE_ASUMIDA = 0.05       # lo que usan fee() de nuestros scripts: 0.05 * p * (1 - p)
 COLUMNAS = ["momento_utc", "familia", "que", "cambio", "detalle", "ejemplo", "origen"]
 NOMBRES = {"comisiones": "comisión", "fuentes": "fuente de resolución", "parametros": "parámetros",
            "reglamento": "reglamento", "ciudades": "ciudades", "clima_otros": "mercado de clima nuevo"}
@@ -270,17 +269,17 @@ def informe(est, ahora):
          "Lo que Polymarket usa hoy en cada familia de mercados, y los cambios que se detectaron.", ""]
     av = avisos(ahora)
     L += (av or ["✅ Sin cambios en las últimas 48 h."]) + [""]
-    L += ["## Comisiones: lo que cobra Polymarket vs. lo que suponemos", "",
-          f"Nuestros scripts calculan la comisión del taker como **{FEE_ASUMIDA} × p × (1 − p)** por acción "
-          "(`fee()` en estaciones, cosechador, pronóstico, cripto y resumen_diario). Según la ayuda de Polymarket "
-          "(julio 2026) la tasa es 0.05 en clima y 0.07 en cripto, pero cada mercado trae la suya en `feeSchedule`.", "",
-          "| Familia | Eventos abiertos | Comisión que trae el mercado (cajas) | ¿Coincide con 0.05? |", "|---|---|---|---|"]
+    L += ["## Comisiones", "",
+          "Comisión del taker = **tasa × p × (1 − p)** por acción. Desde el 23-oct cada operación en papel anota la "
+          "tasa que trae su mercado (`feeSchedule.rate`, columna `tasa_comision`); las de antes usan 0.05 para todo. "
+          "Según la ayuda de Polymarket (julio 2026) la tasa es 0.05 en clima y 0.07 en cripto.", "",
+          "| Familia | Eventos abiertos | Comisión que trae el mercado (cajas) | Tasa |", "|---|---|---|---|"]
     fams = est.get("familias", {})
     for fam in sorted(fams):
         vivas = {v: i for v, i in fams[fam].get("comisiones", {}).items() if i.get("ultima") == est.get("actualizado")}
         for v, i in sorted(vivas.items(), key=lambda x: -x[1]["eventos"]):
             r = tasa(v)
-            ok = "—" if r is None else ("✅" if abs(r - FEE_ASUMIDA) < 1e-9 else f"⚠️ cobra {r}")
+            ok = "—" if r is None else f"{r:g}"
             L.append(f"| {fam} | {fams[fam].get('_eventos', 0)} | `{v}` ({i['eventos']}) | {ok} |")
     L += ["", "## Fuente de resolución y parámetros", "", "| Familia | Qué | Variante (eventos o cajas) | Desde |", "|---|---|---|---|"]
     for fam in sorted(fams):

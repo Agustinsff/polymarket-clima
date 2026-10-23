@@ -36,8 +36,7 @@ def cargar_json(nombre):
         return {}
 
 
-def fee(p):
-    return 0.05 * p * (1 - p)
+from estaciones import TASA_VIEJA, fee, tasa_fila   # comision: la de cada operacion (0.05 en las viejas)
 
 
 # ---------------------------------------------------------------------------
@@ -133,17 +132,22 @@ def seccion_resultados():
     return lineas + [""]
 
 
+def vieja(neto):
+    """Para comparar: el mismo neto con la comision que suponiamos antes del 23-oct (0.05 para todo)."""
+    return f"_Con la comisión vieja (0,05 para todo) sería US${neto:+.2f}._"
+
+
 def seccion_papel():
     ops = leer("papel_operaciones.csv")
     dias = sorted({r["fecha"] for r in leer("papel_libro.csv")})
     lineas = ["## Prueba en papel São Paulo 14 hs (regla fija)", "",
               f"Días registrados: {len(dias)} (desde {dias[0] if dias else '-'})."]
-    neto = bruto = comis = 0.0
+    neto = bruto = comis = neto_viejo = 0.0
     n_ok = n_mal = n_pend = 0
     tabla = []
     for r in ops:
         p, q, res = num(r["precio_medio"]), num(r["acciones"]), num(r["resultado"])
-        c = q * fee(p)
+        c = q * fee(p, tasa_fila(r))
         if res is None:
             n_pend += 1
             estado = "pendiente"
@@ -151,12 +155,14 @@ def seccion_papel():
             bruto += res
             comis += c
             neto += res - c
+            neto_viejo += res - q * fee(p)
             n_ok += res > 0
             n_mal += res <= 0
             estado = f"{res - c:+.2f}"
         tabla.append(f"| {r['fecha']} | {r['caja']} | {r['lado']} | {p:.3f} | {num(r['prob_modelo']) * 100:.0f}% | {estado} |")
     lineas.append(f"Operaciones: {len(ops)} ({n_ok} ganadas, {n_mal} perdidas, {n_pend} pendientes). "
-                  f"**Neto con comisiones: US${neto:+.2f}** (bruto {bruto:+.2f}, comisiones −{comis:.2f}).")
+                  f"**Neto con comisiones: US${neto:+.2f}** (bruto {bruto:+.2f}, comisiones −{comis:.2f}). "
+                  f"{vieja(neto_viejo)}")
     if tabla:
         lineas += ["", "| Día | Caja | Lado | Precio | Modelo | Resultado |", "|---|---|---|---|---|---|"] + tabla[-10:]
     return lineas + [""]
@@ -169,21 +175,23 @@ def seccion_cosechador():
     lineas = ["## Cosechador en papel (cajas imposibles, todas las ciudades)", ""]
     if not filas:
         return lineas + ["Todavía sin operaciones.", ""]
-    neto = pend = 0.0
+    neto = pend = neto_viejo = 0.0
     tabla = []
     for r in filas:
         p, q = num(r["precio_yes"]), num(r["acciones"])
+        c = fee(p, tasa_fila(r))
         gano_caja = liq.get(r["condition_id"])
         if gano_caja is None:
-            pend += q * (p - fee(p))
+            pend += q * (p - c)
             estado = "pendiente"
         else:
-            g = q * (p - fee(p)) if gano_caja == 0 else -q * (1 - p) - q * fee(p)
+            g = q * (p - c) if gano_caja == 0 else -q * (1 - p) - q * c
             neto += g
+            neto_viejo += q * (p - fee(p)) if gano_caja == 0 else -q * (1 - p) - q * fee(p)
             estado = f"{g:+.2f}"
         tabla.append(f"| {r['fecha_local']} | {r['serie'].split('|')[1]} | {r['caja']} | {p:.2f} | {q:.0f} | {estado} |")
     lineas.append(f"Operaciones: {len(filas)}. **Neto liquidado: US${neto:+.2f}**. "
-                  f"Pendientes: +US${pend:.2f} si salen bien.")
+                  f"Pendientes: +US${pend:.2f} si salen bien. {vieja(neto_viejo)}")
     lineas.append("Nota: las operaciones de Ciudad del Cabo del 18-oct se hicieron con la regla vieja (sin confirmación) "
                   "y su resolución está en disputa.")
     lineas += ["", "| Día | Ciudad | Caja | Precio Yes | Acciones | Resultado |", "|---|---|---|---|---|---|"] + tabla[-12:]
@@ -215,6 +223,7 @@ def seccion_pronostico(csv_nom="pronostico.csv", ops_nom="pronostico_ops.csv",
     try:
         import pronostico
         br, ops = pronostico.evaluar(F(csv_nom), F(ops_nom))
+        _, ops_viejas = pronostico.evaluar(F(csv_nom), F(ops_nom), tasa_fija=TASA_VIEJA)
     except Exception as e:
         return [f"## {titulo}", "", f"Error al evaluar: {e}", ""]
     lineas = [f"## {titulo}", ""]
@@ -240,6 +249,8 @@ def seccion_pronostico(csv_nom="pronostico.csv", ops_nom="pronostico_ops.csv",
             liq = [r for o, r, q in xs if r is not None]
             lineas.append(f"| {modo} | {'sí' if cal == '1' else 'no'} | {len(liq)} | {sum(1 for r in liq if r > 0)} | "
                           f"US${sum(liq):+.2f} | {len(xs) - len(liq)} |")
+    taker = lambda xs: sum(r for o, r, q in xs if r is not None and (o["modo"].endswith("taker") or o["modo"] == "no80_90"))
+    lineas += ["", f"Taker en total: US${taker(ops):+.2f}. {vieja(taker(ops_viejas))}"]
     lineas.append("")
     lineas.append("_Taker = compra al instante pagando comisión. Maker = orden en el libro, solo cuenta si alguien la habría tomado (sin comisión). Cola = cajas de ≤10 ¢ a las que el modelo les da ≥2,5 veces el precio. no80_90 = comprar el No de cajas todavía posibles que cotizan 10–20 ¢ (solo en el pronóstico del mismo día)._")
     return lineas + [""]
@@ -273,6 +284,7 @@ def seccion_cripto():
     try:
         import cripto
         b, ops = cripto.evaluar()
+        _, ops_viejas = cripto.evaluar(tasa_fija=TASA_VIEJA)
     except Exception as e:
         return ["## Cripto en papel (Bitcoin / Ethereum above)", "", f"Error al evaluar: {e}", ""]
     liq = [(o, r) for o, r in ops if r is not None]
@@ -281,7 +293,8 @@ def seccion_cripto():
     lineas = ["## Cripto en papel (Bitcoin / Ethereum: above, rango y toca; modelo de opciones)", "",
               f"Operaciones: {len(ops)} ({len(liq)} liquidadas, {sum(1 for o, r in liq if r > 0)} ganadas). "
               f"**Neto US${neto:+.2f}** sobre US${costo:.2f} invertidos"
-              + (f" (ROI {100 * neto / costo:+.1f} %)." if costo else ".")]
+              + (f" (ROI {100 * neto / costo:+.1f} %)." if costo else ".")
+              + f" {vieja(sum(r for o, r in ops_viejas if r is not None))}"]
     if b["n"]:
         lineas.append(f"Brier en {b['n']} strikes: modelo {b['modelo'] / b['n']:.4f} vs mercado {b['mercado'] / b['n']:.4f}.")
     claves = sorted({(o["activo"], o.get("tipo", "above")) for o, r in ops})

@@ -29,7 +29,7 @@ from datetime import datetime, timedelta, timezone
 from zoneinfo import ZoneInfo
 
 import pronostico as P
-from estaciones import TZ, SIN_METAR, leer_caja, redondear, temp_metar
+from estaciones import TZ, SIN_METAR, leer_caja, redondear, temp_metar, tasa_de
 
 MOMENTOS = {"highest": [12, 15], "lowest": [9]}
 VENTANA_MIN = 60
@@ -162,21 +162,23 @@ def main():
                           round(sum(errores) / len(errores), 2), round(sum(cs) / len(cs), 2), len(cs), 0])
             muerta = (hi is not None and O > hi) if alta else (lo is not None and O < lo)
             pend.append((filas[-1], token, p, muerta, [ahora.strftime("%Y-%m-%d %H:%M:%S"), serie, e["fecha"].isoformat(),
-                                                       m["groupItemTitle"], m["conditionId"]], e["fin"] or ""))
+                                                       m["groupItemTitle"], m["conditionId"]], e["fin"] or "",
+                         tasa_de(m)))
     # operaciones simuladas: mismas reglas que pronostico.py, con el libro real de cada caja
     libs = P.libros([t for _, t, *_ in pend])
-    for fila, token, p, muerta, base, fin in pend:
+    for fila, token, p, muerta, base, fin, tasa in pend:
         lib = libs.get(token)
         if lib is None:
             continue
         fila[8] = lib[0][0][0] if lib[0] else None     # mejor bid
         fila[9] = lib[1][0][0] if lib[1] else None     # mejor ask
         for lado, modo, precio in P.operaciones(p, lib, muerta):
-            ops.append(base + [lado, modo, precio, round(p, 4), 0, P.ACCIONES, fin])
+            ops.append(base + [lado, modo, precio, round(p, 4), 0, P.ACCIONES, fin, tasa])
     # limpiar marcas viejas
     viejo = (ahora - timedelta(days=3)).strftime("%Y-%m-%d")
     est["hoy_hechas"] = {k: v for k, v in hechas.items() if v >= viejo}
     est.setdefault("desde_libro", ahora.strftime("%Y-%m-%d %H:%M:%S"))
+    est.setdefault("desde_comision_real", ahora.strftime("%Y-%m-%d %H:%M:%S"))
     P.guardar(P.F_EST, est)
     P.agregar(P.F_HOY, COLS, filas)
     P.agregar(P.F_HOY_OPS, P.COLS_OPS, ops)
