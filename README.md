@@ -26,6 +26,8 @@ Todo corre solo en GitHub Actions, así que no hace falta tener ninguna PC prend
 
 **Avisos**: si un script falla, el reloj lo anota en `fallas.json` y aparece arriba de todo en RESUMEN.md. El `vigia` junta eso, los atrasos (liquidez, monitor, prueba SP, cosechador) y las corridas que terminaron en error, y te avisa por mail a través de un issue. Para dejar de recibirlos: **Actions** → `vigia` → **Disable workflow**.
 
+**Comisiones**: desde el 23-oct-2026 cada operación en papel anota en `tasa_comision` la tasa de comisión que trae su mercado (`feeSchedule` de Polymarket: hoy 0 en temperatura y 0.07 en cripto). Las operaciones anteriores quedan con 0.05, que era lo que suponíamos para todo. RESUMEN.md muestra al lado cuánto daría cada prueba con 0.05 para todo.
+
 Resumen del cosechador: `python cosechador.py resumen`.
 
 Para correr una tarea a mano: pestaña **Actions** → elegir la tarea → **Run workflow**.

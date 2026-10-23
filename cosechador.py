@@ -44,6 +44,7 @@ EXCLUIR = {"LFPB", "VILK", "KBKF"}   # ver estaciones.py (PECULIARIDADES)
 ESPERA = 60
 
 from estaciones import TZ, SIN_METAR, estacion_de_evento, redondear, temp_metar   # zonas horarias y estacion oficial
+from estaciones import fee, tasa_de, tasa_fila, asegurar_columnas                  # comision: la que trae cada mercado
 
 CARPETA = os.path.dirname(os.path.abspath(__file__))
 F_CSV = os.path.join(CARPETA, "cosecha.csv")
@@ -57,10 +58,6 @@ S.headers["User-Agent"] = "polymarket-clima-cosechador/1.0 (investigacion person
 
 def log(m):
     print(f"{datetime.now(timezone.utc):%Y-%m-%d %H:%M:%S}Z {m}", flush=True)
-
-
-def fee(p):
-    return 0.05 * p * (1 - p)
 
 
 def leer_caja(t):
@@ -89,13 +86,18 @@ def guardar(e):
     os.replace(F_EST + ".tmp", F_EST)
 
 
+COLS = ["momento_utc", "serie", "fecha_local", "caja", "estacion", "extremo_actual", "precio_yes",
+        "acciones", "ganancia_si_sale_bien", "seg_desde_obs", "seg_desde_publicacion_noaa", "condition_id",
+        "tasa_comision"]
+
+
 def anotar(fila):
+    asegurar_columnas(F_CSV, COLS)
     nuevo = not os.path.exists(F_CSV)
     with open(F_CSV, "a", newline="", encoding="utf-8") as f:
         w = csv.writer(f, delimiter=";")
         if nuevo:
-            w.writerow(["momento_utc", "serie", "fecha_local", "caja", "estacion", "extremo_actual", "precio_yes",
-                        "acciones", "ganancia_si_sale_bien", "seg_desde_obs", "seg_desde_publicacion_noaa", "condition_id"])
+            w.writerow(COLS)
         w.writerow(fila)
 
 
@@ -241,14 +243,16 @@ def correr(minutos):
                         q = min(tam, ACC_MAX - ya)
                         ya += q
                         rec = obs[s["icao"]][t_ref][1]
+                        tasa = tasa_de(m)
                         anotar([datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M:%S"),
                                 f"{s['tipo']}|{s['ciudad']}", s["fecha"], m["groupItemTitle"], s["icao"], extremo,
-                                p, round(q, 2), round(q * (p - fee(p)), 3), round(ahora - t_ref),
-                                round(ahora - rec) if rec else "", cid])
+                                p, round(q, 2), round(q * (p - fee(p, tasa)), 3), round(ahora - t_ref),
+                                round(ahora - rec) if rec else "", cid, tasa])
                         log(f"COSECHA {s['ciudad']} {s['tipo']} {m['groupItemTitle']} (extremo {extremo}): "
-                            f"{q:.0f} acc a {p:.3f} -> +${q * (p - fee(p)):.2f} si sale bien")
+                            f"{q:.0f} acc a {p:.3f} -> +${q * (p - fee(p, tasa)):.2f} si sale bien")
                     est["llenado"][cid] = ya
             est["diagnostico"] = diag
+            est.setdefault("desde_comision_real", datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M:%S"))
             est.setdefault("max_muertas_con_comprador", 0)
             est["max_muertas_con_comprador"] = max(est["max_muertas_con_comprador"], diag["muertas_con_comprador"])
             if time.time() - ult_liq > 1800:
@@ -293,13 +297,13 @@ def resumen():
     n_ok = n_mal = n_pend = 0
     por_serie = {}
     for r in filas:
-        p, q = float(r["precio_yes"]), float(r["acciones"])
+        p, q, c = float(r["precio_yes"]), float(r["acciones"]), fee(float(r["precio_yes"]), tasa_fila(r))
         res = est["liquidadas"].get(r["condition_id"])
         if res is None:
-            pendiente += q * (p - fee(p))
+            pendiente += q * (p - c)
             n_pend += 1
             continue
-        g = q * (p - fee(p)) if res == 0 else -q * (1 - p) - q * fee(p)
+        g = q * (p - c) if res == 0 else -q * (1 - p) - q * c
         por_serie[r["serie"]] = por_serie.get(r["serie"], 0) + g
         if g >= 0:
             ganado += g

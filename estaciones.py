@@ -85,9 +85,43 @@ def redondear(c, en_f=False):
     return math.floor(v + 0.5 + 1e-9)
 
 
-def fee(p):
+TASA_VIEJA = 0.05   # la que suponiamos para todo hasta el 23-oct-2026 (filas sin 'tasa_comision')
+
+
+def fee(p, tasa=TASA_VIEJA):
     """Comision del que toma la orden (taker), por accion."""
-    return 0.05 * p * (1 - p)
+    return tasa * p * (1 - p)
+
+
+def tasa_de(m):
+    """Tasa de comision que trae el mercado de gamma (feeSchedule.rate; 0 si feesEnabled es False).
+    Sin dato, la vieja (0.05)."""
+    if m.get("feesEnabled") is False:
+        return 0.0
+    fs = m.get("feeSchedule")
+    if isinstance(fs, dict) and fs.get("rate") is not None:
+        return float(fs["rate"])
+    return TASA_VIEJA
+
+
+def tasa_fila(r):
+    """La tasa anotada en una operacion; las de antes del 23-oct no la tienen y usan la vieja."""
+    v = str(r.get("tasa_comision") or "").replace(",", ".")
+    return float(v) if v else TASA_VIEJA
+
+
+def asegurar_columnas(nombre, cols, delim=";", enc="utf-8"):
+    """Si el CSV existe con la cabecera vieja (le faltan columnas nuevas al final), le pone la nueva.
+    Las filas viejas quedan con esas columnas vacias."""
+    import os
+    if not os.path.exists(nombre):
+        return
+    with open(nombre, encoding=enc, newline="") as f:
+        lineas = f.read().split("\n", 1)
+    if lineas[0].rstrip("\r") == delim.join(cols):
+        return
+    with open(nombre, "w", encoding=enc, newline="") as f:
+        f.write(delim.join(cols) + "\r\n" + (lineas[1] if len(lineas) > 1 else ""))
 
 
 def leer_caja(t):

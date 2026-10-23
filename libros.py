@@ -7,6 +7,7 @@ Cada hora saca una foto del libro de ordenes de las cajas "vivas" (precio entre 
 
 Para cada caja guarda el costo de entrar como taker, recorriendo el libro real y con la comision:
   costo = (precio medio pagado - precio medio del libro) + comision, en centavos por accion
+  (comision: la que trae cada mercado desde el 23-oct; antes 0.05 para todo)
 para 10, 50 y 100 acciones, comprando Yes (contra las ventas) y comprando No (vendiendo Yes
 contra las compras). Tambien guarda cuantas acciones hay a menos de 2 c del medio.
 
@@ -27,7 +28,7 @@ from datetime import date, datetime, timezone
 from statistics import median
 from zoneinfo import ZoneInfo
 
-from estaciones import TZ, fee
+from estaciones import TZ, fee, tasa_de, asegurar_columnas
 import pronostico
 import cripto
 
@@ -44,7 +45,7 @@ F_INF = os.path.join(CARPETA, "libros_informe.md")
 S = pronostico.S
 COLS = (["momento_utc", "grupo", "serie", "evento", "caja", "hora_local", "horas_hasta_fin", "medio", "bid", "ask",
          "bid_tam", "ask_tam", "prof2_compra", "prof2_venta"]
-        + [f"costo_yes_{n}" for n in TAMANOS] + [f"costo_no_{n}" for n in TAMANOS])
+        + [f"costo_yes_{n}" for n in TAMANOS] + [f"costo_no_{n}" for n in TAMANOS] + ["tasa_comision"])
 
 
 def log(m):
@@ -62,18 +63,18 @@ def vivas(markets):
         except (ValueError, IndexError):
             continue
         if 0.03 <= p <= 0.97:
-            out.append((m.get("groupItemTitle") or m.get("question", ""), json.loads(m["clobTokenIds"])[0]))
+            out.append((m.get("groupItemTitle") or m.get("question", ""), tasa_de(m), json.loads(m["clobTokenIds"])[0]))
     return out
 
 
-def costo(niveles, cantidad, medio, lado):
+def costo(niveles, cantidad, medio, lado, tasa):
     """Centavos por accion por encima del medio (comprando Yes) o por debajo (vendiendo Yes = comprar No),
     con comision. Vacio si el libro no alcanza."""
     p = pronostico.precio_medio(niveles, cantidad)
     if p is None:
         return ""
     desliz = (p - medio) if lado == "yes" else (medio - p)
-    return round((desliz + fee(p)) * 100, 2)
+    return round((desliz + fee(p, tasa)) * 100, 2)
 
 
 def foto():
@@ -81,14 +82,14 @@ def foto():
     if ahora.date() > FIN:
         log(f"periodo de medicion terminado ({FIN}); no se toma foto")
         return
-    cajas = []   # (grupo, serie, evento, caja, hora_local, horas_hasta_fin, token)
+    cajas = []   # (grupo, serie, evento, caja, hora_local, horas_hasta_fin, tasa_comision, token)
     try:
         for e in pronostico.eventos_abiertos():
             fin = datetime.fromisoformat(e["fin"].replace("Z", "+00:00")) if e.get("fin") else None
             hl = ahora.astimezone(ZoneInfo(TZ[e["ciudad"]])).hour
-            for caja, tok in vivas(e["markets"]):
+            for caja, tasa, tok in vivas(e["markets"]):
                 cajas.append(("clima", f"{e['tipo']}|{e['ciudad']}", e["slug"], caja, hl,
-                              round((fin - ahora).total_seconds() / 3600, 1) if fin else "", tok))
+                              round((fin - ahora).total_seconds() / 3600, 1) if fin else "", tasa, tok))
     except Exception as ex:
         log(f"clima fallo: {ex}")
     n_clima = len(cajas)
@@ -105,8 +106,8 @@ def foto():
             horas = (datetime.fromisoformat(e["endDate"].replace("Z", "+00:00")) - ahora).total_seconds() / 3600
             if not 0 < horas <= 72:
                 continue
-            for caja, tok in vivas(e.get("markets", [])):
-                cajas.append(("cripto", f"{activo}|{tipo}", e["slug"], caja, ahora.hour, round(horas, 1), tok))
+            for caja, tasa, tok in vivas(e.get("markets", [])):
+                cajas.append(("cripto", f"{activo}|{tipo}", e["slug"], caja, ahora.hour, round(horas, 1), tasa, tok))
     log(f"{n_clima} cajas de clima y {len(cajas) - n_clima} de cripto")
     with ThreadPoolExecutor(8) as ex:
         libs = list(ex.map(pronostico.libro, [c[-1] for c in cajas]))
@@ -118,10 +119,12 @@ def foto():
         medio = (bids[0][0] + asks[0][0]) / 2
         p2c = sum(t for p, t in bids if medio - p <= 0.02 + 1e-9)
         p2v = sum(t for p, t in asks if p - medio <= 0.02 + 1e-9)
-        filas.append([ahora.strftime("%Y-%m-%d %H:%M"), *c[:-1], round(medio, 4), bids[0][0], asks[0][0],
+        tasa = c[-2]
+        filas.append([ahora.strftime("%Y-%m-%d %H:%M"), *c[:-2], round(medio, 4), bids[0][0], asks[0][0],
                       round(bids[0][1], 1), round(asks[0][1], 1), round(p2c, 1), round(p2v, 1)]
-                     + [costo(asks, n, medio, "yes") for n in TAMANOS]
-                     + [costo(bids, n, medio, "no") for n in TAMANOS])
+                     + [costo(asks, n, medio, "yes", tasa) for n in TAMANOS]
+                     + [costo(bids, n, medio, "no", tasa) for n in TAMANOS] + [tasa])
+    asegurar_columnas(F_CSV, COLS)
     nuevo = not os.path.exists(F_CSV)
     with open(F_CSV, "a", newline="", encoding="utf-8") as f:
         w = csv.writer(f, delimiter=";")

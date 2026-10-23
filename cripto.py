@@ -49,6 +49,8 @@ from datetime import datetime, timezone
 
 import requests
 
+from estaciones import fee, tasa_de, tasa_fila, asegurar_columnas   # comision: la que trae cada mercado
+
 HORIZONTES = {"above": [48, 24, 12, 6, 3, 1], "rango": [48, 24, 12, 6, 3, 1], "toca": [18, 12, 6, 3, 1]}
 TOLERANCIA_H = 0.5
 BORDE = 0.05
@@ -67,7 +69,7 @@ S.headers["User-Agent"] = "polymarket-clima-cripto/1.0 (investigacion personal)"
 COLS = ["momento_utc", "activo", "tipo", "evento", "horizonte", "horas", "strike", "condition_id", "spot", "dvol",
         "p_modelo", "bid", "ask", "ask_tam", "bid_tam"]
 COLS_OPS = ["momento_utc", "activo", "tipo", "evento", "horizonte", "strike", "condition_id", "lado", "precio",
-            "p_modelo", "acciones"]
+            "p_modelo", "acciones", "tasa_comision"]
 
 
 def log(m):
@@ -76,10 +78,6 @@ def log(m):
 
 def phi(x):
     return 0.5 * (1 + math.erf(x / math.sqrt(2)))
-
-
-def fee(p):
-    return 0.05 * p * (1 - p)
 
 
 def leer(n):
@@ -92,6 +90,7 @@ def leer(n):
 def agregar(n, cols, filas):
     if not filas:
         return
+    asegurar_columnas(n, cols)
     nuevo = not os.path.exists(n)
     with open(n, "a", newline="", encoding="utf-8") as f:
         w = csv.writer(f, delimiter=";")
@@ -250,12 +249,13 @@ def foto():
                 base = [ahora.strftime("%Y-%m-%d %H:%M:%S"), activo, tipo, e["slug"], h, m["groupItemTitle"],
                         m["conditionId"]]
                 if yes10 is not None and PRECIO_MIN <= yes10 <= PRECIO_MAX and p - yes10 >= BORDE:
-                    ops.append(base + ["Yes", yes10, round(p, 4), ACCIONES])
+                    ops.append(base + ["Yes", yes10, round(p, 4), ACCIONES, tasa_de(m)])
                 elif no10 is not None and PRECIO_MIN <= no10 <= PRECIO_MAX and (1 - p) - no10 >= BORDE:
-                    ops.append(base + ["No", no10, round(p, 4), ACCIONES])
+                    ops.append(base + ["No", no10, round(p, 4), ACCIONES, tasa_de(m)])
                 time.sleep(0.1)
     # limpiar marcas de mas de 4 dias
     est.setdefault("desde_libro", ahora.strftime("%Y-%m-%d %H:%M:%S"))
+    est.setdefault("desde_comision_real", ahora.strftime("%Y-%m-%d %H:%M:%S"))
     est["hechos"] = {k: t for k, t in hechos.items() if t >= datetime.fromtimestamp(time.time() - 4 * 86400,
                                                                                          timezone.utc).strftime("%Y-%m-%d")}
     guardar(est)
@@ -281,7 +281,8 @@ def liquidar():
     guardar(est)
 
 
-def evaluar():
+def evaluar(tasa_fija=None):
+    """Comision: la que traia cada mercado (0.05 en las filas viejas); tasa_fija=0.05 = la cuenta de antes."""
     gan = cargar().get("ganadoras", {})
     ops, brier = [], {"n": 0, "modelo": 0.0, "mercado": 0.0}
     for r in leer(F_CSV):
@@ -302,7 +303,8 @@ def evaluar():
             continue
         p, q = float(o["precio"]), float(o["acciones"])
         gana = (y == 1) == (o["lado"] == "Yes")
-        ops.append((o, q * ((1 - p) if gana else -p) - q * fee(p)))
+        tasa = tasa_fija if tasa_fija is not None else tasa_fila(o)
+        ops.append((o, q * ((1 - p) if gana else -p) - q * fee(p, tasa)))
     return brier, ops
 
 

@@ -35,7 +35,8 @@ from zoneinfo import ZoneInfo
 
 import requests
 
-from estaciones import TZ, EXCLUIR, SIN_METAR, leer_caja, centro_caja, fee, estacion_de_evento
+from estaciones import TZ, EXCLUIR, SIN_METAR, leer_caja, centro_caja, fee, estacion_de_evento, tasa_de, tasa_fila, \
+    asegurar_columnas
 
 # ---- reglas fijadas ANTES de mirar resultados (no cambiarlas sobre la marcha) ----
 UMBRAL = 0.10        # diferencia minima modelo - precio (puntos de probabilidad)
@@ -62,7 +63,7 @@ S.headers["User-Agent"] = "polymarket-clima-pronostico/1.0 (investigacion person
 COLS = ["momento_utc", "serie", "fecha", "icao", "horas_hasta", "caja", "condition_id", "p_modelo", "bid", "ask",
         "media_cruda", "dispersion", "n_escenarios", "sesgo_usado", "error_usado", "calibrada"]
 COLS_OPS = ["momento_utc", "serie", "fecha", "caja", "condition_id", "lado", "modo", "precio", "p_modelo", "calibrada",
-            "acciones", "fin_utc"]
+            "acciones", "fin_utc", "tasa_comision"]
 
 
 def log(m):
@@ -88,6 +89,7 @@ def leer(nombre):
 
 
 def agregar(nombre, cols, filas):
+    asegurar_columnas(nombre, cols)
     nuevo = not os.path.exists(nombre)
     with open(nombre, "a", newline="", encoding="utf-8") as f:
         w = csv.writer(f, delimiter=";")
@@ -349,22 +351,24 @@ def foto():
                           m["groupItemTitle"], m["conditionId"], round(p, 4), None, None, round(cv(media), 2),
                           round(disp * k, 2), len(esc), sesgo, error, int(calibrada)])
             pend.append((filas[-1], token, p, [ahora.strftime("%Y-%m-%d %H:%M:%S"), serie, e["fecha"].isoformat(),
-                                                m["groupItemTitle"], m["conditionId"]], int(calibrada), e["fin"] or ""))
+                                                m["groupItemTitle"], m["conditionId"]], int(calibrada), e["fin"] or "",
+                         tasa_de(m)))
     # --- operaciones simuladas (reglas fijas), con el libro real de cada caja ---
     libs = libros([t for _, t, *_ in pend])
-    for fila, token, p, base, cal, fin in pend:
+    for fila, token, p, base, cal, fin, tasa in pend:
         lib = libs.get(token)
         if lib is None:
             continue
         fila[8] = lib[0][0][0] if lib[0] else None     # mejor bid
         fila[9] = lib[1][0][0] if lib[1] else None     # mejor ask
         for lado, modo, precio in operaciones(p, lib):
-            ops.append(base + [lado, modo, precio, round(p, 4), cal, ACCIONES, fin])
+            ops.append(base + [lado, modo, precio, round(p, 4), cal, ACCIONES, fin, tasa])
     agregar(F_CSV, COLS, filas)
     agregar(F_OPS, COLS_OPS, ops)
     est = cargar(F_EST, {})
-    if "desde_libro" not in est:
-        est["desde_libro"] = ahora.strftime("%Y-%m-%d %H:%M:%S")
+    if "desde_libro" not in est or "desde_comision_real" not in est:
+        est.setdefault("desde_libro", ahora.strftime("%Y-%m-%d %H:%M:%S"))
+        est.setdefault("desde_comision_real", ahora.strftime("%Y-%m-%d %H:%M:%S"))
         guardar(F_EST, est)
     log(f"{len(filas)} cajas anotadas, {len(ops)} operaciones simuladas")
 
@@ -449,8 +453,10 @@ def liquidar():
     log(f"ganadoras conocidas: {len(gan)}; ordenes maker revisadas: {len(llen)}")
 
 
-def evaluar(f_csv=F_CSV, f_ops=F_OPS):
-    """Devuelve (por_serie, operaciones) para el resumen."""
+def evaluar(f_csv=F_CSV, f_ops=F_OPS, tasa_fija=None):
+    """Devuelve (por_serie, operaciones) para el resumen.
+    Comision: la que traia cada mercado (columna tasa_comision; 0.05 en las filas viejas).
+    tasa_fija=0.05 rehace la cuenta como antes del 23-oct, para comparar."""
     est = cargar(F_EST, {})
     gan_cid = est.get("cid_ganadoras", {})
     llen = est.get("maker_llenado", {})
@@ -484,7 +490,7 @@ def evaluar(f_csv=F_CSV, f_ops=F_OPS):
         p = float(o["precio"])
         if o["modo"].endswith("taker") or o["modo"] == "no80_90":
             q = float(o["acciones"])
-            res = q * ((1 - p) if gana else -p) - q * fee(p)
+            res = q * ((1 - p) if gana else -p) - q * fee(p, tasa_fija if tasa_fija is not None else tasa_fila(o))
         else:
             q = llen.get(f"{o['condition_id']}|{o['momento_utc']}|{o['lado']}")
             if q is None:
