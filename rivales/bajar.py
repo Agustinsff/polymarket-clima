@@ -7,7 +7,9 @@ Baja de Polymarket, para los eventos de temperatura cerrados de los ultimos N di
   rivales/precios.csv.gz   historia de precio por minuto (clob prices-history) de las cajas de los ultimos dias
 El analisis se hace aparte (rivales/analizar.py). Corre en GitHub Actions porque el contenedor no llega a Polymarket.
 
-Uso: python rivales/bajar.py DIAS [DIAS_PRECIOS]
+Uso: python rivales/bajar.py DESDE HASTA PRECIOS
+  baja los eventos que terminaron entre hace HASTA y hace DESDE dias; PRECIOS=1 tambien baja precios por minuto.
+  Cada tramo escribe sus propios archivos (rivales/datos/*_DESDE_HASTA.csv.gz) para correr en paralelo.
 """
 
 import csv
@@ -50,12 +52,14 @@ def get(url, params, intentos=5):
     return None
 
 
-def eventos(dias):
-    desde = (datetime.now(timezone.utc) - timedelta(days=dias)).strftime("%Y-%m-%dT%H:%M:%SZ")
+def eventos(d0, d1):
+    hoy = datetime.now(timezone.utc).replace(hour=0, minute=0, second=0, microsecond=0)
+    desde = (hoy - timedelta(days=d1)).strftime("%Y-%m-%dT%H:%M:%SZ")
+    hasta = (hoy - timedelta(days=d0 - 1)).strftime("%Y-%m-%dT%H:%M:%SZ")
     out, off = [], 0
     while True:
         r = get(GAMMA, {"tag_slug": "daily-temperature", "closed": "true", "limit": 100, "offset": off,
-                        "end_date_min": desde, "order": "endDate", "ascending": "false"})
+                        "end_date_min": desde, "end_date_max": hasta, "order": "endDate", "ascending": "false"})
         if not r:
             break
         out += r
@@ -67,10 +71,11 @@ def eventos(dias):
 
 
 def main():
-    dias = int(sys.argv[1]) if len(sys.argv) > 1 else 21
-    dias_precios = int(sys.argv[2]) if len(sys.argv) > 2 else 7
-    evs = eventos(dias)
-    log(f"{len(evs)} eventos cerrados en {dias} dias")
+    d0, d1, con_precios = int(sys.argv[1]), int(sys.argv[2]), sys.argv[3] == "1"
+    suf = f"_{d0:02d}_{d1:02d}"
+    os.makedirs(os.path.join(CARPETA, "datos"), exist_ok=True)
+    evs = eventos(d0, d1)
+    log(f"{len(evs)} eventos cerrados entre hace {d1} y hace {d0} dias")
     if evs:
         e0 = dict(evs[0])
         m0 = (e0.pop("markets", None) or [{}])[0]
@@ -99,7 +104,7 @@ def main():
                 "cerrado_hora": mk.get("closedTime") or "", "volumen": mk.get("volumeNum") or mk.get("volume") or "",
                 "fee": mk.get("feesEnabled") if "feesEnabled" in mk else "",
             })
-    with gzip.open(os.path.join(CARPETA, "eventos.csv.gz"), "wt", newline="") as f:
+    with gzip.open(os.path.join(CARPETA, "datos", "eventos" + suf + ".csv.gz"), "wt", newline="") as f:
         w = csv.DictWriter(f, fieldnames=list(filas_ev[0]))
         w.writeheader()
         w.writerows(filas_ev)
@@ -109,7 +114,7 @@ def main():
     campos = ["condition_id", "asset", "outcome_index", "side", "price", "size", "timestamp", "wallet", "name",
               "pseudonym", "tx"]
     n_tot, primero = 0, True
-    with gzip.open(os.path.join(CARPETA, "trades.csv.gz"), "wt", newline="") as f:
+    with gzip.open(os.path.join(CARPETA, "datos", "trades" + suf + ".csv.gz"), "wt", newline="") as f:
         w = csv.writer(f)
         w.writerow(campos)
         for i, fe in enumerate(filas_ev):
@@ -129,9 +134,9 @@ def main():
                                 t.get("timestamp"), t.get("proxyWallet"), (t.get("name") or "")[:40],
                                 (t.get("pseudonym") or "")[:40], t.get("transactionHash")])
                 n_tot += len(r)
-                if len(r) < 1000 or off >= 9000:
-                    if off >= 9000 and len(r) == 1000:
-                        log(f"tope de 10000 operaciones en {fe['slug']} {fe['caja']}")
+                if len(r) < 1000 or off >= 4000:
+                    if off >= 4000 and len(r) == 1000:
+                        log(f"tope de 5000 operaciones en {fe['slug']} {fe['caja']}")
                     break
                 off += 1000
             if i % 200 == 0:
@@ -139,12 +144,13 @@ def main():
     log(f"{n_tot} operaciones")
 
     # --- historia de precios por minuto (ultimos dias) ---------------------------
-    lim = (datetime.now(timezone.utc) - timedelta(days=dias_precios)).date().isoformat()
+    if not con_precios:
+        return
     n_p, vacios = 0, 0
-    with gzip.open(os.path.join(CARPETA, "precios.csv.gz"), "wt", newline="") as f:
+    with gzip.open(os.path.join(CARPETA, "datos", "precios" + suf + ".csv.gz"), "wt", newline="") as f:
         w = csv.writer(f)
         w.writerow(["condition_id", "t", "p"])
-        sel = [fe for fe in filas_ev if fe["fecha"] >= lim and fe["token_si"]]
+        sel = [fe for fe in filas_ev if fe["token_si"]]
         for i, fe in enumerate(sel):
             try:
                 fin = int(datetime.fromisoformat(fe["fin"].replace("Z", "+00:00")).timestamp())

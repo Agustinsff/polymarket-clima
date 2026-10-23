@@ -9,15 +9,24 @@ permissions:
 jobs:
   bajar:
     runs-on: ubuntu-latest
-    timeout-minutes: 300
+    timeout-minutes: 120
+    strategy:
+      fail-fast: false
+      matrix:
+        tramo: ["0 4 1", "5 9 1", "10 14 1", "15 19 0", "20 24 0", "25 30 0"]
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
       - run: pip install -r requirements.txt
-      - run: python rivales/bajar.py 30 14 2>&1 | tee rivales/bajar_log.md || true
+      - run: timeout 100m python rivales/bajar.py ${{ matrix.tramo }} 2>&1 | tee "rivales/datos/log_$(echo ${{ matrix.tramo }} | tr ' ' _).md" || true
       - run: |
           git config user.name "polymarket-clima-bot"
           git config user.email "actions@users.noreply.github.com"
-          git add rivales/ && git commit -m "rivales: datos bajados" && git push
+          git add rivales/datos/ && git commit -m "rivales: datos tramo ${{ matrix.tramo }}"
+          for i in 1 2 3 4 5 6 7 8; do
+            git pull --rebase && git push && exit 0
+            sleep $((RANDOM % 20 + 5))
+          done
+          exit 1

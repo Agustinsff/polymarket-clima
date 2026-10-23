@@ -6,6 +6,7 @@ Uso: python rivales/analizar.py
 """
 
 import csv
+import glob
 import gzip
 import math
 import os
@@ -27,8 +28,12 @@ def p(*a):
 
 
 def leer(nombre):
-    with gzip.open(os.path.join(CARPETA, nombre), "rt", newline="") as f:
-        yield from csv.DictReader(f)
+    for ruta in sorted(glob.glob(os.path.join(CARPETA, "datos", nombre + "_*.csv.gz"))):
+        try:
+            with gzip.open(ruta, "rt", newline="") as f:
+                yield from csv.DictReader(f)
+        except (EOFError, OSError) as ex:   # tramo cortado por el tiempo limite
+            print(f"aviso: {ruta} incompleto ({ex})", file=sys.stderr)
 
 
 def tabla(cab, filas):
@@ -47,7 +52,7 @@ def usd(x):
 # cajas
 # ---------------------------------------------------------------------------
 CAJAS = {}
-for r in leer("eventos.csv.gz"):
+for r in leer("eventos"):
     if r["precio_final_si"] not in ("0", "1"):
         continue
     tz = ZoneInfo(TZ.get(r["ciudad"], "UTC"))
@@ -60,7 +65,7 @@ for r in leer("eventos.csv.gz"):
 # operaciones
 # ---------------------------------------------------------------------------
 OPS = []
-for r in leer("trades.csv.gz"):
+for r in leer("trades"):
     c = CAJAS.get(r["condition_id"])
     if not c:
         continue
@@ -230,12 +235,9 @@ tabla(["hora UTC", "ciudad", "tipo", "fecha", "caja", "lado", "token", "precio",
 # ---------------------------------------------------------------------------
 p("## 4. ¿Cuándo se mueve el precio? (cajas que todavía no empezaron su día)\n")
 SER = defaultdict(list)
-try:
-    for r in leer("precios.csv.gz"):
-        if r["condition_id"] in CAJAS:
-            SER[r["condition_id"]].append((int(r["t"]), float(r["p"])))
-except FileNotFoundError:
-    pass
+for r in leer("precios"):
+    if r["condition_id"] in CAJAS:
+        SER[r["condition_id"]].append((int(r["t"]), float(r["p"])))
 mov = defaultdict(float)
 cnt = defaultdict(int)
 dias = set()
