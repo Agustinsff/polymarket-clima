@@ -57,3 +57,5 @@ momento_utc;activo;tipo;evento;horizonte;strike;condition_id;lado;precio;p_model
 2026-10-23 15:35:41;BTC;toca;what-price-will-bitcoin-hit-on-october-23-2026;12;↑ 83,000;0xcf201474ef7c865fdab10780384185c54a5a54cf278a346984453b414a1df3a7;Yes;0.1526;0.2436;10;0.07
 2026-10-23 15:35:41;BTC;toca;what-price-will-bitcoin-hit-on-october-23-2026;12;↓ 81,000;0x1ff0c58fa2ec8b3ced733bee2a3fbc51c5f8313ee151996b556469cacfa9d948;Yes;0.45;0.5716;10;0.07
 2026-10-23 15:35:41;ETH;toca;what-price-will-ethereum-hit-on-october-23-2026;12;↑ 2,450;0x8f1cf04a7a538eda2c4fb1ceba44e30387506a5b867295b63ac032f550247659;Yes;0.2;0.3395;10;0.07
+2026-10-23 21:39:43;BTC;toca;what-price-will-bitcoin-hit-on-october-23-2026;6;↓ 81,000;0x1ff0c58fa2ec8b3ced733bee2a3fbc51c5f8313ee151996b556469cacfa9d948;Yes;0.3351;0.6245;10;0.07
+2026-10-23 21:39:43;ETH;toca;what-price-will-ethereum-hit-on-october-23-2026;6;↑ 2,450;0x8f1cf04a7a538eda2c4fb1ceba44e30387506a5b867295b63ac032f550247659;Yes;0.057;0.1489;10;0.07
