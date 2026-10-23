@@ -12,6 +12,7 @@ Tareas (hora de Montevideo):
   papel_sp14  14:12 (la regla registra entre 14:10 y 14:59; reintenta hasta 14:50)
   multi       10:20 y 20:20 (pronostico.py en todas las ciudades + sombra_maker.py + cripto liquidar)
   cripto      cada 15 min junto con liquidez (mercados 'Bitcoin/Ethereum above')
+  libros      cada hora (profundidad del libro de clima y cripto, hasta el 2-nov)
 """
 
 import json
@@ -110,6 +111,14 @@ def main(minutos):
                    ["liquidez.csv", "hoy.csv", "hoy_ops.csv", "pronostico_estado.json", "estaciones.json",
                     "cripto.csv", "cripto_ops.csv", "cripto_estado.json"],
                    "liquidez y pronostico del mismo dia")
+        # profundidad del libro (libros.py) cada hora; deja de medir sola despues de su FIN
+        ult = est.get("libros")
+        if not ult or (ahora - datetime.fromisoformat(ult)) >= timedelta(minutes=60):
+            log("libros")
+            est["libros"] = ahora.isoformat(timespec="seconds")
+            guardar(est)
+            correr([["libros.py"], ["libros.py", "resumen"]], ["libros.csv", "libros_informe.md"],
+                   "profundidad del libro")
         # diario 10:05 y 20:05
         for etiqueta, desde in (("diario_am", 10 * 60 + 5), ("diario_pm", 20 * 60 + 5)):
             if hm >= desde and est.get(etiqueta) != hoy:
