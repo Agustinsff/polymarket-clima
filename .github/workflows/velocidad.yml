@@ -4,35 +4,13 @@ name: velocidad
 on:
   push:
     branches: [investigacion-velocidad]
-    paths: [velocidad/*.py, .github/workflows/velocidad.yml]
+    paths: [velocidad/vivo.py, .github/workflows/velocidad.yml]
 permissions:
   contents: write
 concurrency:
   group: velocidad
   cancel-in-progress: false
 jobs:
-  historia:
-    runs-on: ubuntu-latest
-    timeout-minutes: 120
-    steps:
-      - uses: actions/checkout@v4
-        with:
-          ref: investigacion-velocidad
-      - uses: actions/setup-python@v5
-        with:
-          python-version: "3.12"
-      - run: pip install -r requirements.txt
-      - run: timeout 100m python velocidad/bajar_metar.py 35 || true
-      - name: Guardar en la rama investigacion-velocidad
-        run: |
-          git config user.name "polymarket-clima-bot"
-          git config user.email "actions@users.noreply.github.com"
-          git add velocidad/datos/ && git commit -m "velocidad: historia de METAR $(date -u +%Y-%m-%dT%H:%MZ)" || exit 0
-          for i in 1 2 3 4 5 6; do
-            git pull --rebase origin investigacion-velocidad && git push origin HEAD:investigacion-velocidad && exit 0
-            sleep $((RANDOM % 20 + 5))
-          done
-          exit 1
   vivo:
     runs-on: ubuntu-latest
     timeout-minutes: 355

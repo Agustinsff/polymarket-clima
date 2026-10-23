@@ -52,13 +52,15 @@ def get(url, params, json_=True):
 
 
 def awc(dias):
+    """De a una estacion y en ventanas de 72 h: la API devuelve como mucho 400 reportes por consulta."""
     filas, vistos = [], set()
-    hoy = datetime.now(timezone.utc).replace(minute=0, second=0, microsecond=0)
-    for d in range(dias):
-        fin = hoy - timedelta(hours=24 * d)
-        for i in range(0, len(ESTACIONES), 25):
-            j = get(AWC, {"ids": ",".join(ESTACIONES[i:i + 25]), "format": "json", "hours": 25,
-                          "date": fin.strftime("%Y-%m-%dT%H:%M:%SZ")})
+    hoy = datetime.now(timezone.utc).replace(minute=0, second=0, microsecond=0) + timedelta(hours=1)
+    for est in ESTACIONES:
+        for d in range(0, dias, 3):
+            fin = hoy - timedelta(hours=24 * d)
+            j = get(AWC, {"ids": est, "format": "json", "hours": 73, "date": fin.strftime("%Y-%m-%dT%H:%M:%SZ")})
+            if j and len(j) >= 400:
+                log(f"ojo: {est} -{d}: 400 reportes (puede faltar alguno)")
             for x in j or []:
                 k = (x.get("icaoId"), x.get("obsTime"), x.get("rawOb"))
                 if k in vistos:
@@ -66,8 +68,8 @@ def awc(dias):
                 vistos.add(k)
                 filas.append([x.get("icaoId"), x.get("obsTime"), x.get("reportTime"), x.get("receiptTime"),
                               x.get("metarType"), x.get("temp"), x.get("rawOb")])
-            time.sleep(0.5)
-        log(f"awc dia -{d}: {len(filas)} reportes acumulados")
+            time.sleep(0.3)
+        log(f"awc {est}: {len(filas)} reportes acumulados")
     with gzip.open(os.path.join(CARPETA, "metar_awc.csv.gz"), "wt", newline="") as f:
         w = csv.writer(f)
         w.writerow(["icao", "obs_epoch", "report_time", "receipt_time", "tipo", "temp", "raw"])
@@ -98,4 +100,5 @@ if __name__ == "__main__":
     os.makedirs(CARPETA, exist_ok=True)
     dias = int(sys.argv[1]) if len(sys.argv) > 1 else 35
     awc(dias)
-    iem(dias)
+    if "--sin-iem" not in sys.argv:
+        iem(dias)
