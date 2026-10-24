@@ -5,7 +5,7 @@ on:
     branches: [arbitraje]
     paths: [arbitraje/medir.py, arbitraje/minutos.txt, .github/workflows/arbitraje.yml]
   schedule:
-    - cron: "30 10 25 10 *"   # 25-oct de dia (la primera corrida cubre la noche del 24)
+    - cron: "30 10,16 25 10 *"   # 25-oct de dia (la primera corrida cubre la noche del 24)
   workflow_dispatch:
 permissions:
   contents: write
@@ -24,7 +24,7 @@ jobs:
         with:
           python-version: "3.12"
       - run: pip install -r requirements.txt
-      - run: mkdir -p arbitraje/datos && python arbitraje/medir.py "$(cat arbitraje/minutos.txt)" 2>&1 | tee -a arbitraje/datos/log.txt || true
+      - run: mkdir -p arbitraje/datos && python arbitraje/medir.py "$(cat arbitraje/minutos.txt)" 2>&1 | tee -a arbitraje/datos/registro.txt || true
       - run: |
           git config user.name "polymarket-clima-bot"
           git config user.email "actions@users.noreply.github.com"

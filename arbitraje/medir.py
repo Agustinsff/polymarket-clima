@@ -36,7 +36,7 @@ S.headers["User-Agent"] = "polymarket-clima-arbitraje/1.0 (investigacion persona
 COLS = ["ts", "grupo", "slug", "aumentado", "n", "tasa_max", "min_orden", "edad_libro_s",
         "suma_ask_si", "suma_ask_no",
         "borde_si_c", "juegos_si", "ganancia_si", "ganancia_min_si",
-        "borde_no_c", "juegos_no", "ganancia_no", "ganancia_min_no"]
+        "borde_no_c", "juegos_no", "ganancia_no", "ganancia_min_no", "espejo"]
 
 
 def log(m):
@@ -134,7 +134,8 @@ def bajar_libros(tokens):
             for b in res or []:
                 if isinstance(b, dict) and b.get("asset_id"):
                     asks = sorted(((float(a["price"]), float(a["size"])) for a in b.get("asks", [])), key=lambda x: x[0])
-                    libros[b["asset_id"]] = (asks, int(b.get("timestamp") or 0))
+                    bid = max((float(x["price"]) for x in b.get("bids", [])), default=None)
+                    libros[b["asset_id"]] = (asks, int(b.get("timestamp") or 0), bid)
     return libros
 
 
@@ -202,6 +203,9 @@ def foto(evs, libros, ts):
         for r in (si, no):
             fila += ["", "", "", ""] if r is None else [round(r[0], 3), round(r[1], 2), round(r[2], 4),
                                                          "" if r[3] != r[3] else round(r[3], 4)]
+        # control: el ask del No es 1 - bid del Si (libro espejado)? fraccion de mercados donde se cumple
+        pares = [(libros[nt][0][0][0], libros[t][2]) for t, nt, _, _ in p if libros[nt][0] and libros[t][2] is not None]
+        fila.append(round(sum(abs(a + b - 1) < 1e-6 for a, b in pares) / len(pares), 2) if pares else "")
         filas.append(fila)
     return filas
 
