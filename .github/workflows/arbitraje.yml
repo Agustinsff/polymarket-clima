@@ -1,0 +1,36 @@
+name: arbitraje
+# Investigacion: solo mide si los precios de un mismo evento suman menos de 1 (ver arbitraje/REGLA.md). No opera.
+on:
+  push:
+    branches: [arbitraje]
+    paths: [arbitraje/medir.py, arbitraje/minutos.txt, .github/workflows/arbitraje.yml]
+  schedule:
+    - cron: "30 10 25 10 *"   # 25-oct de dia (la primera corrida cubre la noche del 24)
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: arbitraje
+  cancel-in-progress: false
+jobs:
+  medir:
+    runs-on: ubuntu-latest
+    timeout-minutes: 360
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: arbitraje
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -r requirements.txt
+      - run: python arbitraje/medir.py "$(cat arbitraje/minutos.txt)" 2>&1 | tee -a arbitraje/datos/log.txt || true
+      - run: |
+          git config user.name "polymarket-clima-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add arbitraje/datos/ && git commit -m "arbitraje: fotos $(date -u +%Y-%m-%dT%H:%MZ)" || exit 0
+          for i in 1 2 3 4 5 6 7 8; do
+            git pull --rebase origin arbitraje && git push origin HEAD:arbitraje && exit 0
+            sleep $((RANDOM % 20 + 5))
+          done
+          exit 1
