@@ -24,7 +24,7 @@ jobs:
         with:
           python-version: "3.12"
       - run: pip install -r requirements.txt
-      - run: python arbitraje/medir.py "$(cat arbitraje/minutos.txt)" 2>&1 | tee -a arbitraje/datos/log.txt || true
+      - run: mkdir -p arbitraje/datos && python arbitraje/medir.py "$(cat arbitraje/minutos.txt)" 2>&1 | tee -a arbitraje/datos/log.txt || true
       - run: |
           git config user.name "polymarket-clima-bot"
           git config user.email "actions@users.noreply.github.com"
