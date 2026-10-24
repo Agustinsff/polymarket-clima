@@ -1,6 +1,6 @@
 # Reglas de los mercados de Polymarket
 
-Actualizado 2026-10-23 23:58 UTC por `reglas.py` (cada 3 h). Lo que Polymarket usa hoy en cada familia de mercados, y los cambios que se detectaron.
+Actualizado 2026-10-24 04:59 UTC por `reglas.py` (cada 3 h). Lo que Polymarket usa hoy en cada familia de mercados, y los cambios que se detectaron.
 
 🔔 Polymarket cambió algo en **temperatura máxima** (reglamento, aparece el 2026-10-23 23:58 UTC): `The qualifying value is converted using °F = °C × #/# + # and rounded to the nearest whole degree, with a value ending in exactly half rounded up to t` y 4 más. Ver [reglas_informe.md](reglas_informe.md).
 🔔 Polymarket cambió algo en **temperatura mínima** (reglamento, aparece el 2026-10-23 19:31 UTC): `#°C is exactly #°F and counts as #°F.` y 4 más. Ver [reglas_informe.md](reglas_informe.md).
@@ -17,8 +17,8 @@ Comisión del taker = **tasa × p × (1 − p)** por acción. Desde el 23-oct ca
 | cripto ethereum-hit-price-daily | 1 | `feesEnabled=True feeType=crypto_fees_v2 feeSchedule={"exponent": 1, "rate": 0.07, "rebateRate": 0.2, "takerOnly": true} takerBaseFee=1000` (1) | 0.07 |
 | cripto ethereum-multi-strikes-weekly | 8 | `feesEnabled=True feeType=crypto_fees_v2 feeSchedule={"exponent": 1, "rate": 0.07, "rebateRate": 0.2, "takerOnly": true} takerBaseFee=1000` (8) | 0.07 |
 | cripto ethereum-neg-risk-weekly | 8 | `feesEnabled=True feeType=crypto_fees_v2 feeSchedule={"exponent": 1, "rate": 0.07, "rebateRate": 0.2, "takerOnly": true} takerBaseFee=1000` (8) | 0.07 |
-| temperatura máxima | 157 | `feesEnabled=True feeType=zero_fees feeSchedule={"exponent": 1, "rate": 0, "rebateRate": 0, "takerOnly": true} takerBaseFee=1000` (153) | 0 |
-| temperatura máxima | 157 | `feesEnabled=True feeType=weather_fees feeSchedule={"exponent": 1, "rate": 0.05, "rebateRate": 0.25, "takerOnly": true} takerBaseFee=1000` (6) | 0.05 |
+| temperatura máxima | 125 | `feesEnabled=True feeType=zero_fees feeSchedule={"exponent": 1, "rate": 0, "rebateRate": 0, "takerOnly": true} takerBaseFee=1000` (121) | 0 |
+| temperatura máxima | 125 | `feesEnabled=True feeType=weather_fees feeSchedule={"exponent": 1, "rate": 0.05, "rebateRate": 0.25, "takerOnly": true} takerBaseFee=1000` (6) | 0.05 |
 | temperatura mínima | 140 | `feesEnabled=True feeType=zero_fees feeSchedule={"exponent": 1, "rate": 0, "rebateRate": 0, "takerOnly": true} takerBaseFee=1000` (140) | 0 |
 
 ## Fuente de resolución y parámetros
@@ -26,6 +26,7 @@ Comisión del taker = **tasa × p × (1 − p)** por acción. Desde el 23-oct ca
 | Familia | Qué | Variante (eventos o cajas) | Desde |
 |---|---|---|---|
 | cripto bitcoin-hit-price-daily | fuente de resolución | `binance.com/en/trade/BTC_USDT` (1) | 2026-10-23 13:08 |
+| cripto bitcoin-hit-price-daily | parámetros | `orden minima=5 tick=0.01` (1) | 2026-10-23 13:08 |
 | cripto bitcoin-hit-price-daily | parámetros | `orden minima=5 tick=0.001` (1) | 2026-10-23 13:08 |
 | cripto bitcoin-neg-risk-weekly | fuente de resolución | `binance.com/en/trade/BTC_USDT` (7) | 2026-10-23 13:08 |
 | cripto bitcoin-neg-risk-weekly | parámetros | `orden minima=5 tick=0.01` (7) | 2026-10-23 13:08 |
@@ -42,17 +43,17 @@ Comisión del taker = **tasa × p × (1 − p)** por acción. Desde el 23-oct ca
 | cripto ethereum-neg-risk-weekly | fuente de resolución | `binance.com/en/trade/ETH_USDT` (8) | 2026-10-23 13:08 |
 | cripto ethereum-neg-risk-weekly | parámetros | `orden minima=5 tick=0.001` (8) | 2026-10-23 13:08 |
 | cripto ethereum-neg-risk-weekly | parámetros | `orden minima=5 tick=0.01` (7) | 2026-10-23 13:08 |
-| temperatura máxima | fuente de resolución | `aviationweather.gov/api/data/metar` (112) | 2026-10-23 13:08 |
-| temperatura máxima | fuente de resolución | `weather.gov/wrh/timeseries` (35) | 2026-10-23 13:08 |
-| temperatura máxima | fuente de resolución | `(sin fuente)` (6) | 2026-10-23 13:08 |
+| temperatura máxima | fuente de resolución | `aviationweather.gov/api/data/metar` (109) | 2026-10-23 13:08 |
+| temperatura máxima | fuente de resolución | `weather.gov/wrh/timeseries` (7) | 2026-10-23 13:08 |
+| temperatura máxima | fuente de resolución | `(sin fuente)` (5) | 2026-10-23 13:08 |
 | temperatura máxima | fuente de resolución | `wunderground.com/history/daily` (4) | 2026-10-23 13:08 |
-| temperatura máxima | parámetros | `orden minima=5 tick=0.001` (153) | 2026-10-23 13:08 |
-| temperatura máxima | parámetros | `orden minima=5 tick=0.01` (102) | 2026-10-23 13:08 |
-| temperatura mínima | fuente de resolución | `aviationweather.gov/api/data/metar` (103) | 2026-10-23 13:08 |
-| temperatura mínima | fuente de resolución | `weather.gov/wrh/timeseries` (31) | 2026-10-23 13:08 |
+| temperatura máxima | parámetros | `orden minima=5 tick=0.001` (121) | 2026-10-23 13:08 |
+| temperatura máxima | parámetros | `orden minima=5 tick=0.01` (100) | 2026-10-23 13:08 |
+| temperatura mínima | fuente de resolución | `aviationweather.gov/api/data/metar` (128) | 2026-10-23 13:08 |
+| temperatura mínima | fuente de resolución | `weather.gov/wrh/timeseries` (6) | 2026-10-23 13:08 |
 | temperatura mínima | fuente de resolución | `(sin fuente)` (6) | 2026-10-23 13:08 |
 | temperatura mínima | parámetros | `orden minima=5 tick=0.01` (128) | 2026-10-23 13:08 |
-| temperatura mínima | parámetros | `orden minima=5 tick=0.001` (99) | 2026-10-23 13:08 |
+| temperatura mínima | parámetros | `orden minima=5 tick=0.001` (85) | 2026-10-23 13:08 |
 
 ## Mercados de clima que no son de temperatura diaria
 
@@ -62,7 +63,7 @@ Comisión del taker = **tasa × p × (1 − p)** por acción. Desde el 23-oct ca
 - `9pt0-or-above-earthquake-before`: 1 abiertos (ej. `9pt0-or-above-earthquake-before-2027`), visto desde 2026-10-23 13:08
 - `ai-data-center`: 1 abiertos (ej. `ai-data-center-in-space-by`), visto desde 2026-10-23 13:08
 - `all-time-pacific-category`: 1 abiertos (ej. `all-time-pacific-category-5-hurricane-record-broken-in-2026`), visto desde 2026-10-23 13:08
-- `biggest-earthquake`: 3 abiertos (ej. `biggest-earthquake-2026-10-23`), visto desde 2026-10-23 13:08
+- `biggest-earthquake`: 4 abiertos (ej. `biggest-earthquake-2026-10-23`), visto desde 2026-10-23 13:08
 - `blue-origin-new-glenn-launch`: 1 abiertos (ej. `blue-origin-new-glenn-launch-in-2026`), visto desde 2026-10-23 13:08
 - `california-winter`: 1 abiertos (ej. `california-winter-2026-27-wetter-or-drier`), visto desde 2026-10-23 13:08
 - `ebola-pandemic`: 1 abiertos (ej. `ebola-pandemic-in-2026`), visto desde 2026-10-23 13:08
@@ -109,7 +110,6 @@ Comisión del taker = **tasa × p × (1 − p)** por acción. Desde el 23-oct ca
 - `where-will-a`: 1 abiertos (ej. `where-will-a-6pt0-magnitude-earthquake-occur-by-end-of-october-20260928t160000000z`), visto desde 2026-10-23 13:08
 - `where-will-a-hurricane-make-landfall`: 1 abiertos (ej. `where-will-a-hurricane-make-landfall-in-the-us-during-the-2026-hurricane-season`), visto desde 2026-10-23 13:08
 - `where-will-it-rain`: 2 abiertos (ej. `where-will-it-rain-on-october-23-2026`), visto desde 2026-10-23 13:08
-- `which-cities-face-tornado-risk`: 1 abiertos (ej. `which-cities-face-tornado-risk-on-october-23-2026`), visto desde 2026-10-23 13:08
 - `which-countries-will-have-an-ebola-case`: 1 abiertos (ej. `which-countries-will-have-an-ebola-case-in-2026`), visto desde 2026-10-23 13:08
 - `will`: 1 abiertos (ej. `will-2-or-more-hurricanes-make-landfall-in-the-us-in-2026-20260721164140039`), visto desde 2026-10-23 13:08
 - `will-a-hurricane-make-landfall`: 1 abiertos (ej. `will-a-hurricane-make-landfall-in-hawaii-before-2027-20260721182828397`), visto desde 2026-10-23 13:08
@@ -200,7 +200,7 @@ Comisión del taker = **tasa × p × (1 − p)** por acción. Desde el 23-oct ca
 
 </details>
 
-<details><summary>temperatura máxima (40 frases)</summary>
+<details><summary>temperatura máxima (32 frases)</summary>
 
 - #°C is #°F and counts as #°F;
 - #°C is exactly #°F and counts as #°F.
@@ -215,37 +215,29 @@ Comisión del taker = **tasa × p × (1 − p)** por acción. Desde el 23-oct ca
 - For How to Read the METAR Report, see:
 - For example, #°C counts as #°C;
 - For example, #°C is #°F and counts as #°F;
-- If <estacion> data for the observation date is unavailable by #:# PM ET on the day following the observation date, the Weather Underground Daily Observations table will be used as the resolution source.
 - If a routine observation does not carry the hourly temperature remark, the temperature group in the body of that observation governs for that observation, in whole degrees Celsius as reported.
 - If no corrected value is published within that period, Polymarket will issue a Clarification to determine whether the originally published value may be eligible for resolution, or whether other action is required to preserve the orderly functioning of the Market.
 - If the Resolution Source publishes a corrected value within that period, that value will be eligible for resolution.
 - In the case that the Resolution Source publishes data, sufficient to settle a Market, that is clearly erroneous and the result of technical or operational error, or of unauthorized interference with the Resolution Source or its data, the Market may remain open for a period of up to seven (#) calendar days (ET) from the time of the original release, in anticipation of a correction by the Resolution
 - In the event that neither source has published data sufficient to determine a temperature for the observation date by #:# PM ET on the day following the observation date, this market will resolve to the lowest bracket.
 - In the event that the Aviation Weather Center has published no routine observation reporting a temperature for the observation date by #:# PM ET on the day following the observation date, the Weather Underground Daily Observations table will be used as the resolution source.
-- In the event that there is no data for the observation date by #:# PM ET on the day following the observation date, this market will resolve to the lowest bracket.
 - It appears as temperature and dew point separated by a slash, with M marking a negative value:
 - Resolution is determined from the observations the resolution source shows for the observation date.
-- Revisions to temperatures recorded within this market's timeframe will be considered until the first datapoint for the following date has been published, after which any alterations will not be considered.
 - The hourly temperature remark is the group beginning with the letter T followed by exactly eight digits.
 - The qualifying value is converted using °F = °C × #/# + # and rounded to the nearest whole degree, with a value ending in exactly half rounded up to the next higher whole degree, and that whole Fahrenheit value determines which range contains it.
 - The qualifying value is rounded to the nearest whole degree, with a value ending in exactly half rounded up to the next higher whole degree, and that whole Celsius value determines which range contains it.
 - The qualifying value is the highest temperature reported in the hourly temperature remark of any routine (METAR) observation for <estacion> on that date, in tenths of a degree Celsius as reported.
 - The report the resolution source shows for a given observation time is the one that counts, whether or not it is marked as a correction (COR).
-- The resolution source for this market measures temperatures to whole degrees Celsius (eg, #°C).
-- The resolution source for this market will be information from <estacion>, specifically the highest reading under the "Temp" column for all times on this day, available here:
 - The resolution source for this market will be the routine observations for <estacion> published here:
 - This market will resolve at the issuance of the first METAR observation for the station on the day following the observation date or by #:# PM ET on the day following the observation date, whichever comes first.
-- This market will resolve once the first data point for the following date has been published on the resolution source, or by #:# PM ET on the day following the observation date, whichever comes first.
 - This market will resolve to the temperature range that contains the highest temperature reported at <estacion> on # <mes> #.
-- Thus, this is the level of precision that will be used when resolving the market.
-- To toggle between Fahrenheit and Celsius, click the "Switch to Metric Units" button until the relevant table displays °C.
 - Where it is not, resolution is determined from a read taken at that deadline.
 - Where the first routine observation for the following date is published before that deadline, resolution is determined from a read taken after it.
 - the following four are the dew point and are not used.
 
 </details>
 
-<details><summary>temperatura mínima (40 frases)</summary>
+<details><summary>temperatura mínima (32 frases)</summary>
 
 - #°C is #°F and counts as #°F;
 - #°C is exactly #°F and counts as #°F.
@@ -260,30 +252,22 @@ Comisión del taker = **tasa × p × (1 − p)** por acción. Desde el 23-oct ca
 - For How to Read the METAR Report, see:
 - For example, #°C counts as #°C;
 - For example, #°C is #°F and counts as #°F;
-- If <estacion> data for the observation date is unavailable by #:# PM ET on the day following the observation date, the Weather Underground Daily Observations table will be used as the resolution source.
 - If a routine observation does not carry the hourly temperature remark, the temperature group in the body of that observation governs for that observation, in whole degrees Celsius as reported.
 - If no corrected value is published within that period, Polymarket will issue a Clarification to determine whether the originally published value may be eligible for resolution, or whether other action is required to preserve the orderly functioning of the Market.
 - If the Resolution Source publishes a corrected value within that period, that value will be eligible for resolution.
 - In the case that the Resolution Source publishes data, sufficient to settle a Market, that is clearly erroneous and the result of technical or operational error, or of unauthorized interference with the Resolution Source or its data, the Market may remain open for a period of up to seven (#) calendar days (ET) from the time of the original release, in anticipation of a correction by the Resolution
 - In the event that neither source has published data sufficient to determine a temperature for the observation date by #:# PM ET on the day following the observation date, this market will resolve to the lowest bracket.
 - In the event that the Aviation Weather Center has published no routine observation reporting a temperature for the observation date by #:# PM ET on the day following the observation date, the Weather Underground Daily Observations table will be used as the resolution source.
-- In the event that there is no data for the observation date by #:# PM ET on the day following the observation date, this market will resolve to the lowest bracket.
 - It appears as temperature and dew point separated by a slash, with M marking a negative value:
 - Resolution is determined from the observations the resolution source shows for the observation date.
-- Revisions to temperatures recorded within this market's timeframe will be considered until the first datapoint for the following date has been published, after which any alterations will not be considered.
 - The hourly temperature remark is the group beginning with the letter T followed by exactly eight digits.
 - The qualifying value is converted using °F = °C × #/# + # and rounded to the nearest whole degree, with a value ending in exactly half rounded up to the next higher whole degree, and that whole Fahrenheit value determines which range contains it.
 - The qualifying value is rounded to the nearest whole degree, with a value ending in exactly half rounded up to the next higher whole degree, and that whole Celsius value determines which range contains it.
 - The qualifying value is the lowest temperature reported in the hourly temperature remark of any routine (METAR) observation for <estacion> on that date, in tenths of a degree Celsius as reported.
 - The report the resolution source shows for a given observation time is the one that counts, whether or not it is marked as a correction (COR).
-- The resolution source for this market measures temperatures to whole degrees Celsius (eg, #°C).
-- The resolution source for this market will be information from <estacion>, specifically the lowest reading under the "Temp" column for all times on this day, available here:
 - The resolution source for this market will be the routine observations for <estacion> published here:
 - This market will resolve at the issuance of the first METAR observation for the station on the day following the observation date or by #:# PM ET on the day following the observation date, whichever comes first.
-- This market will resolve once the first data point for the following date has been published on the resolution source, or by #:# PM ET on the day following the observation date, whichever comes first.
 - This market will resolve to the temperature range that contains the lowest temperature reported at <estacion> on # <mes> #.
-- Thus, this is the level of precision that will be used when resolving the market.
-- To toggle between Fahrenheit and Celsius, click the "Switch to Metric Units" button until the relevant table displays °C.
 - Where it is not, resolution is determined from a read taken at that deadline.
 - Where the first routine observation for the following date is published before that deadline, resolution is determined from a read taken after it.
 - the following four are the dew point and are not used.
