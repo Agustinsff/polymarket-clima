@@ -25397,6 +25397,3768 @@
 "acciones": 0,
 "resultado": 0.0
 }
+},
+"0x85dc6f6e2eede8be38b8612481cf500a721e2f1b816755c297f310ea75613c96": {
+"serie": "lowest|shenzhen",
+"fecha": "2026-10-21",
+"caja": "30°C or higher",
+"gano": 0,
+"0.02": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.03": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.05": {
+"acciones": 0,
+"resultado": 0.0
+}
+},
+"0xbc3d09c73225cfb19cde34b57eb4d31652983175a7ca443ca16fa308eddf83da": {
+"serie": "lowest|shenzhen",
+"fecha": "2026-10-21",
+"caja": "29°C",
+"gano": 0,
+"0.02": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.03": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.05": {
+"acciones": 0,
+"resultado": 0.0
+}
+},
+"0x1d38b1bf5caa93c603a650ca86edf206871a1c9a98a5e77099b2ecd160c4e253": {
+"serie": "highest|shenzhen",
+"fecha": "2026-10-22",
+"caja": "25°C or below",
+"gano": 0,
+"0.02": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.03": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.05": {
+"acciones": 0,
+"resultado": 0.0
+}
+},
+"0x5a570612a473be20d80447c66b78f75ed65156f72751340398c76f3727d94681": {
+"serie": "lowest|shenzhen",
+"fecha": "2026-10-22",
+"caja": "28°C or higher",
+"gano": 0,
+"0.02": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.03": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.05": {
+"acciones": 0,
+"resultado": 0.0
+}
+},
+"0x7ffb82cccf3ebfa4d24790dd88b2ceb808fd2f8fc31eef71166775c51735ad31": {
+"serie": "lowest|shenzhen",
+"fecha": "2026-10-22",
+"caja": "27°C",
+"gano": 0,
+"0.02": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.03": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.05": {
+"acciones": 0,
+"resultado": 0.0
+}
+},
+"0xb426aa3fa1f75b1570abcf98b740ce42af297f9debe7c3705abaaaf2c0c572cd": {
+"serie": "highest|shanghai",
+"fecha": "2026-10-22",
+"caja": "18°C",
+"gano": 0,
+"0.02": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.03": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.05": {
+"acciones": 0,
+"resultado": 0.0
+}
+},
+"0x3212ab4b8d96fb787ac038af35c7a501557b4dcc7fb8c9489bddce1fea73fe42": {
+"serie": "highest|shenzhen",
+"fecha": "2026-10-22",
+"caja": "26°C",
+"gano": 0,
+"0.02": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.03": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.05": {
+"acciones": 0,
+"resultado": 0.0
+}
+},
+"0x863bbee33278eb1835c00e4483a74485c42bd7f6e299ee2cb600b482d2475dc0": {
+"serie": "highest|wuhan",
+"fecha": "2026-10-22",
+"caja": "14°C",
+"gano": 0,
+"0.02": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.03": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.05": {
+"acciones": 0,
+"resultado": 0.0
+}
+},
+"0x9782301234add1ddfd7f50f93cec3423af97d741a5427f3a2d3d9341372b2f6a": {
+"serie": "highest|shenzhen",
+"fecha": "2026-10-22",
+"caja": "27°C",
+"gano": 0,
+"0.02": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.03": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.05": {
+"acciones": 0,
+"resultado": 0.0
+}
+},
+"0x7539dbbb4ec544bd5d8d2419418c6e68db1aa9ac791ba8da7e4b407878f743ee": {
+"serie": "highest|shenzhen",
+"fecha": "2026-10-22",
+"caja": "28°C",
+"gano": 0,
+"0.02": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.03": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.05": {
+"acciones": 0,
+"resultado": 0.0
+}
+},
+"0xf52ac06d72e0df451e7122a0a53dc6a0f456ae8b35ad3ebc4161c85b29afeba0": {
+"serie": "highest|shenzhen",
+"fecha": "2026-10-22",
+"caja": "29°C",
+"gano": 0,
+"0.02": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.03": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.05": {
+"acciones": 0,
+"resultado": 0.0
+}
+},
+"0xb4dc5d2340355a33b72f0b748e855b4a571347513c0e8d131a09ccf6cccb8666": {
+"serie": "highest|istanbul",
+"fecha": "2026-10-22",
+"caja": "19°C",
+"gano": 0,
+"0.02": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.03": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.05": {
+"acciones": 0,
+"resultado": 0.0
+}
+},
+"0x9585fd2a4a1a985e6dbfd4fccfc43b3d360e128a10b22b973ae718549655ebf1": {
+"serie": "highest|munich",
+"fecha": "2026-10-22",
+"caja": "9°C",
+"gano": 0,
+"0.02": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.03": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.05": {
+"acciones": 0,
+"resultado": 0.0
+}
+},
+"0x6ac9771a8c2b0ee77889451ea64b5231095a7558d4d50e4287bdfe8d6019bd72": {
+"serie": "lowest|seoul",
+"fecha": "2026-10-24",
+"caja": "18°C",
+"gano": 0,
+"0.02": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.03": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.05": {
+"acciones": 0,
+"resultado": 0.0
+}
+},
+"0x811328dbd17ff1e2f3368cbd3436bbc8c8aa88faa56d1c5f50fae4c7d80dab13": {
+"serie": "lowest|seoul",
+"fecha": "2026-10-24",
+"caja": "19°C or higher",
+"gano": 0,
+"0.02": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.03": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.05": {
+"acciones": 0,
+"resultado": 0.0
+}
+},
+"0xdf545910ecb093d2b7b8996a795136d2d055337368bae056dd81050e77a2e181": {
+"serie": "lowest|tokyo",
+"fecha": "2026-10-24",
+"caja": "21°C",
+"gano": 0,
+"0.02": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.03": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.05": {
+"acciones": 0,
+"resultado": 0.0
+}
+},
+"0x23cf9b893fae4b4cd7dfaaad550f12720eeff4682190932618071da58e930505": {
+"serie": "lowest|tokyo",
+"fecha": "2026-10-24",
+"caja": "22°C",
+"gano": 0,
+"0.02": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.03": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.05": {
+"acciones": 0,
+"resultado": 0.0
+}
+},
+"0x59511aacfec66cf0536d26304fb9b7772205656ba1581f522f178099db235b59": {
+"serie": "lowest|tokyo",
+"fecha": "2026-10-24",
+"caja": "23°C or higher",
+"gano": 0,
+"0.02": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.03": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.05": {
+"acciones": 0,
+"resultado": 0.0
+}
+},
+"0xb3813ee73459b36d09f14786bc98185989b4e612bd8e62186273d3d187c21a8b": {
+"serie": "highest|tokyo",
+"fecha": "2026-10-24",
+"caja": "14°C or below",
+"gano": 0,
+"0.02": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.03": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.05": {
+"acciones": 0,
+"resultado": 0.0
+}
+},
+"0xc6eec93dec9686ebf42b2689fdc62f7d2b2a4fbbb6c5e81a1b43c477a691e4c8": {
+"serie": "highest|tokyo",
+"fecha": "2026-10-24",
+"caja": "15°C",
+"gano": 0,
+"0.02": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.03": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.05": {
+"acciones": 0,
+"resultado": 0.0
+}
+},
+"0x853fdd4dfd23b718e1c981ccc802578d67e6fcff31b02a8944b1995715d87bb0": {
+"serie": "highest|tokyo",
+"fecha": "2026-10-24",
+"caja": "16°C",
+"gano": 0,
+"0.02": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.03": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.05": {
+"acciones": 0,
+"resultado": 0.0
+}
+},
+"0x8cdfbb005e5c2c3bd9f3d168cf7fc564cb6e3876d0212f5e20bef35b80e2db2d": {
+"serie": "highest|tokyo",
+"fecha": "2026-10-24",
+"caja": "17°C",
+"gano": 0,
+"0.02": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.03": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.05": {
+"acciones": 0,
+"resultado": 0.0
+}
+},
+"0x0f4971624a3fcc470b727f0bffc8bc6fa1c39d908694a03ef3b62a5268dcacd8": {
+"serie": "lowest|busan",
+"fecha": "2026-10-24",
+"caja": "18°C",
+"gano": 0,
+"0.02": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.03": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.05": {
+"acciones": 0,
+"resultado": 0.0
+}
+},
+"0x38ff31c06d7affa0c6843d89ef3dcb88878b8419bcb01da172b6c210506392b2": {
+"serie": "lowest|busan",
+"fecha": "2026-10-24",
+"caja": "19°C",
+"gano": 0,
+"0.02": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.03": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.05": {
+"acciones": 0,
+"resultado": 0.0
+}
+},
+"0xc5c024ade68c251b30777321b493978bddcf620658ccad3053a7442d36d82fad": {
+"serie": "lowest|busan",
+"fecha": "2026-10-24",
+"caja": "20°C",
+"gano": 0,
+"0.02": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.03": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.05": {
+"acciones": 0,
+"resultado": 0.0
+}
+},
+"0x0785e305626ff96afb232171164513881eadd8643a9c531f527981ad37c935cb": {
+"serie": "lowest|busan",
+"fecha": "2026-10-24",
+"caja": "21°C or higher",
+"gano": 0,
+"0.02": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.03": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.05": {
+"acciones": 0,
+"resultado": 0.0
+}
+},
+"0x959f18c3cdc5791de800471782215c07d0602df2436a27c590ac26bef6bd70c3": {
+"serie": "highest|busan",
+"fecha": "2026-10-24",
+"caja": "13°C or below",
+"gano": 0,
+"0.02": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.03": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.05": {
+"acciones": 0,
+"resultado": 0.0
+}
+},
+"0x726ce61c2c3b081c6ea1c9073774d389c540c31ae757fa224c4791eaafc13abe": {
+"serie": "highest|busan",
+"fecha": "2026-10-24",
+"caja": "14°C",
+"gano": 0,
+"0.02": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.03": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.05": {
+"acciones": 0,
+"resultado": 0.0
+}
+},
+"0x34f23ee89539614f5439b4335025ce9ba5c83873a290b0cc9ea210c4f054b28c": {
+"serie": "highest|singapore",
+"fecha": "2026-10-24",
+"caja": "26°C or below",
+"gano": 0,
+"0.02": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.03": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.05": {
+"acciones": 0,
+"resultado": 0.0
+}
+},
+"0xa0146d6bec99a3b41616e0e53bc638969c5311af43b9bbdb63935600fc91e74b": {
+"serie": "highest|singapore",
+"fecha": "2026-10-24",
+"caja": "27°C",
+"gano": 0,
+"0.02": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.03": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.05": {
+"acciones": 0,
+"resultado": 0.0
+}
+},
+"0xe2a53ceef3b845efe55388c2c80dc58f402b8e891b327601f553c8dec2dc0cb2": {
+"serie": "highest|singapore",
+"fecha": "2026-10-24",
+"caja": "28°C",
+"gano": 0,
+"0.02": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.03": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.05": {
+"acciones": 0,
+"resultado": 0.0
+}
+},
+"0x789642fc3807563aeeffad48f2f52d7a72d478f08440021f367f8004b3fc70c6": {
+"serie": "lowest|shanghai",
+"fecha": "2026-10-24",
+"caja": "21°C",
+"gano": 0,
+"0.02": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.03": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.05": {
+"acciones": 0,
+"resultado": 0.0
+}
+},
+"0x59ce8953566c7d3df92d730dec3ce7da5f6bb2cc65fe71cc000b9615b35625a0": {
+"serie": "lowest|shanghai",
+"fecha": "2026-10-24",
+"caja": "22°C",
+"gano": 0,
+"0.02": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.03": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.05": {
+"acciones": 0,
+"resultado": 0.0
+}
+},
+"0x5e9c0872feee4bc4495270af06e31f0894ac3f9fdb2cfe993f4d26f56c41cc53": {
+"serie": "lowest|shanghai",
+"fecha": "2026-10-24",
+"caja": "23°C",
+"gano": 0,
+"0.02": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.03": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.05": {
+"acciones": 0,
+"resultado": 0.0
+}
+},
+"0x8d0015a6ba89e544bc26fcdf495dce3fbc634a32b6e3891d8c3a83fb41a5b323": {
+"serie": "lowest|shanghai",
+"fecha": "2026-10-24",
+"caja": "24°C",
+"gano": 0,
+"0.02": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.03": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.05": {
+"acciones": 0,
+"resultado": 0.0
+}
+},
+"0x4f722103e9a838b9f8826b8182de7018e9e8a06b0c23a6d764ebec5615f1db80": {
+"serie": "lowest|shanghai",
+"fecha": "2026-10-24",
+"caja": "25°C",
+"gano": 0,
+"0.02": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.03": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.05": {
+"acciones": 0,
+"resultado": 0.0
+}
+},
+"0xab8bf1131a9036c3d802459cc4b693fe23b53cceec165b6757846472c67cd9c1": {
+"serie": "lowest|shanghai",
+"fecha": "2026-10-24",
+"caja": "26°C or higher",
+"gano": 0,
+"0.02": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.03": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.05": {
+"acciones": 0,
+"resultado": 0.0
+}
+},
+"0xe36006d7ccd82cad7f78e9c35e5c21c1dfcdde618770542ab028480ca444f705": {
+"serie": "lowest|beijing",
+"fecha": "2026-10-24",
+"caja": "13°C or higher",
+"gano": 0,
+"0.02": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.03": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.05": {
+"acciones": 0,
+"resultado": 0.0
+}
+},
+"0x8191902662038b6948c7d771ab528e6c12ad43db5f47e4285b26f15055a6a309": {
+"serie": "lowest|tokyo",
+"fecha": "2026-10-24",
+"caja": "20°C",
+"gano": 0,
+"0.02": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.03": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.05": {
+"acciones": 0,
+"resultado": 0.0
+}
+},
+"0x95aa42342c3e6baf3a703b9aee05789979c3c22dc88e05e04baaa30ea670cea6": {
+"serie": "highest|kuala-lumpur",
+"fecha": "2026-10-24",
+"caja": "24°C or below",
+"gano": 0,
+"0.02": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.03": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.05": {
+"acciones": 0,
+"resultado": 0.0
+}
+},
+"0x3db9442341245e549f5baa51c65f6e981d3240b33e064cf0f8240d4c5174d9c5": {
+"serie": "highest|kuala-lumpur",
+"fecha": "2026-10-24",
+"caja": "25°C",
+"gano": 0,
+"0.02": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.03": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.05": {
+"acciones": 0,
+"resultado": 0.0
+}
+},
+"0xcf9a9f600af14996d8692d69e05883c16e568e29c7b714bdccb84d67f30fe045": {
+"serie": "lowest|seoul",
+"fecha": "2026-10-24",
+"caja": "17°C",
+"gano": 0,
+"0.02": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.03": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.05": {
+"acciones": 0,
+"resultado": 0.0
+}
+},
+"0xd62d0f21247a1a8152a36c2fefeb51fbace61e7a67ee5aa6368e50e553e8e000": {
+"serie": "lowest|guangzhou",
+"fecha": "2026-10-24",
+"caja": "26°C or higher",
+"gano": 0,
+"0.02": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.03": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.05": {
+"acciones": 0,
+"resultado": 0.0
+}
+},
+"0xe4a8e4dd6d37d1be9793cfe0a30bf50ffbe970663fafa19ff6fcc5a95abffd9b": {
+"serie": "lowest|chongqing",
+"fecha": "2026-10-24",
+"caja": "19°C",
+"gano": 0,
+"0.02": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.03": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.05": {
+"acciones": 0,
+"resultado": 0.0
+}
+},
+"0x28ce2b5ee6b40f71dfde20d25729f41c8d59bc31c8a49f724559bf2863c0ed6f": {
+"serie": "lowest|chongqing",
+"fecha": "2026-10-24",
+"caja": "20°C",
+"gano": 0,
+"0.02": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.03": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.05": {
+"acciones": 0,
+"resultado": 0.0
+}
+},
+"0x5fd9c030e46b399d63d90bfcbaa59fcc7fa1d075e8c721718497172cce81cdd4": {
+"serie": "lowest|chongqing",
+"fecha": "2026-10-24",
+"caja": "21°C",
+"gano": 0,
+"0.02": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.03": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.05": {
+"acciones": 0,
+"resultado": 0.0
+}
+},
+"0xfdfa738489c0eaef292de8505c625d2b32357bc277ac0a13685e24c4328472cb": {
+"serie": "lowest|chongqing",
+"fecha": "2026-10-24",
+"caja": "22°C",
+"gano": 0,
+"0.02": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.03": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.05": {
+"acciones": 0,
+"resultado": 0.0
+}
+},
+"0x606907fa0b31981c7e3f68f299b22dce74b8642a1cccfad7ca269eebcb7a56a1": {
+"serie": "lowest|chongqing",
+"fecha": "2026-10-24",
+"caja": "23°C or higher",
+"gano": 0,
+"0.02": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.03": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.05": {
+"acciones": 0,
+"resultado": 0.0
+}
+},
+"0xc7d5a3d5b2d3c9c9173bced72fb063babfa4675398c32fc77598a3f02c5bb5c7": {
+"serie": "lowest|wuhan",
+"fecha": "2026-10-24",
+"caja": "17°C",
+"gano": 0,
+"0.02": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.03": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.05": {
+"acciones": 0,
+"resultado": 0.0
+}
+},
+"0xf01a0efdb16466b24e08a25b568a97e48811779e8f6fbb391d369146ea349a53": {
+"serie": "lowest|wuhan",
+"fecha": "2026-10-24",
+"caja": "18°C or higher",
+"gano": 0,
+"0.02": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.03": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.05": {
+"acciones": 0,
+"resultado": 0.0
+}
+},
+"0x2f3cd0bb177205acea24bcdbba47a3851c884e676b1e9c218b8db2c89bce0dbb": {
+"serie": "lowest|chengdu",
+"fecha": "2026-10-24",
+"caja": "19°C",
+"gano": 0,
+"0.02": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.03": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.05": {
+"acciones": 0,
+"resultado": 0.0
+}
+},
+"0x17eb6af3770be93fd2ee94cfe56ff0aa599b74ea7242ce7c20fd0a83e78e8047": {
+"serie": "lowest|chengdu",
+"fecha": "2026-10-24",
+"caja": "20°C",
+"gano": 0,
+"0.02": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.03": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.05": {
+"acciones": 0,
+"resultado": 0.0
+}
+},
+"0xba1ca4c9318e5409c2b3784ab078b7902b6e66a34b08b94159837e7aed0be5aa": {
+"serie": "lowest|chengdu",
+"fecha": "2026-10-24",
+"caja": "21°C",
+"gano": 0,
+"0.02": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.03": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.05": {
+"acciones": 0,
+"resultado": 0.0
+}
+},
+"0x85fd805b9276822e63ef76ecb7cc77c9c9188e43b5f41280c69cdd54565f0009": {
+"serie": "lowest|chengdu",
+"fecha": "2026-10-24",
+"caja": "22°C or higher",
+"gano": 0,
+"0.02": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.03": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.05": {
+"acciones": 0,
+"resultado": 0.0
+}
+},
+"0x5045c8d2d57bc514788c1ee4bcb3cbc94bd3058f218da7a2dc0391cc830d2108": {
+"serie": "lowest|qingdao",
+"fecha": "2026-10-24",
+"caja": "13°C",
+"gano": 0,
+"0.02": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.03": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.05": {
+"acciones": 0,
+"resultado": 0.0
+}
+},
+"0x0e5ce895659475b25a4800935ba63ac16d343e322bc2b00b4c9c7b0ca914384f": {
+"serie": "lowest|qingdao",
+"fecha": "2026-10-24",
+"caja": "14°C",
+"gano": 0,
+"0.02": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.03": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.05": {
+"acciones": 0,
+"resultado": 0.0
+}
+},
+"0x19ac800fe789e3b7b3f563fde088ad3c404327cd8aef1ec92dd646688a0c9555": {
+"serie": "lowest|qingdao",
+"fecha": "2026-10-24",
+"caja": "15°C",
+"gano": 0,
+"0.02": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.03": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.05": {
+"acciones": 0,
+"resultado": 0.0
+}
+},
+"0x2450f515c9603cb9f231ddad078a160440eeea9a3523e87554a0a41aa61a1b48": {
+"serie": "lowest|qingdao",
+"fecha": "2026-10-24",
+"caja": "16°C",
+"gano": 0,
+"0.02": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.03": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.05": {
+"acciones": 0,
+"resultado": 0.0
+}
+},
+"0x98f213d840164381af71139d8b7ce3e8a0ca97afb151a89c6b6aedaa51b03560": {
+"serie": "lowest|qingdao",
+"fecha": "2026-10-24",
+"caja": "17°C",
+"gano": 0,
+"0.02": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.03": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.05": {
+"acciones": 0,
+"resultado": 0.0
+}
+},
+"0x8ae419a3b5ca1eede32e1964f7c1a19fc2218a74e4a5b533afa51ebfacde8e40": {
+"serie": "lowest|qingdao",
+"fecha": "2026-10-24",
+"caja": "18°C",
+"gano": 0,
+"0.02": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.03": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.05": {
+"acciones": 0,
+"resultado": 0.0
+}
+},
+"0xd2c1bc7e8443278ed72fce9eed63c192dc5d2d27d2715d1ef65b45b946d17485": {
+"serie": "lowest|qingdao",
+"fecha": "2026-10-24",
+"caja": "19°C or higher",
+"gano": 0,
+"0.02": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.03": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.05": {
+"acciones": 0,
+"resultado": 0.0
+}
+},
+"0xca616aa07ca7c523c291e2df810577eb7c9341a7a435a528067b75b53a1898b6": {
+"serie": "lowest|taipei",
+"fecha": "2026-10-24",
+"caja": "29°C",
+"gano": 0,
+"0.02": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.03": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.05": {
+"acciones": 0,
+"resultado": 0.0
+}
+},
+"0x69316eae526efb933495c46129cc4096097b301eace6d4477c7f220162d68018": {
+"serie": "lowest|taipei",
+"fecha": "2026-10-24",
+"caja": "30°C or higher",
+"gano": 0,
+"0.02": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.03": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.05": {
+"acciones": 0,
+"resultado": 0.0
+}
+},
+"0xa60329c02cfa7a0fbb90cdd176bd6f0c20284266b7313103620da92213fde14f": {
+"serie": "highest|taipei",
+"fecha": "2026-10-24",
+"caja": "22°C or below",
+"gano": 0,
+"0.02": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.03": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.05": {
+"acciones": 0,
+"resultado": 0.0
+}
+},
+"0xfa2f68e5fb6fd6b12e2b806c7eb4bc8ce1aabc2f4abcc9fd31cdcb3c7cea5620": {
+"serie": "highest|taipei",
+"fecha": "2026-10-24",
+"caja": "23°C",
+"gano": 0,
+"0.02": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.03": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.05": {
+"acciones": 0,
+"resultado": 0.0
+}
+},
+"0xd6168fea567ebed984258347f8cfb16c811076548b60409799ca35537509238a": {
+"serie": "highest|taipei",
+"fecha": "2026-10-24",
+"caja": "24°C",
+"gano": 0,
+"0.02": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.03": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.05": {
+"acciones": 0,
+"resultado": 0.0
+}
+},
+"0xac68ac3cd5c1a1b8463aeee07e4daee2724e5ca2f31c42c38aacb4b80d84d622": {
+"serie": "lowest|shanghai",
+"fecha": "2026-10-24",
+"caja": "20°C",
+"gano": 0,
+"0.02": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.03": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.05": {
+"acciones": 0,
+"resultado": 0.0
+}
+},
+"0x52e078b07d7c35c4cd75ab1505b4145810a02ca20712c2dcdd80e2f1053c6353": {
+"serie": "lowest|shenzhen",
+"fecha": "2026-10-24",
+"caja": "28°C or higher",
+"gano": 0,
+"0.02": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.03": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.05": {
+"acciones": 0,
+"resultado": 0.0
+}
+},
+"0x4267a62dc44b1dcfa19f4b0924c2ac9800ccdfadcb3bf392c8fcb56e7f1389b4": {
+"serie": "lowest|qingdao",
+"fecha": "2026-10-24",
+"caja": "12°C",
+"gano": 0,
+"0.02": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.03": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.05": {
+"acciones": 0,
+"resultado": 0.0
+}
+},
+"0xb49c8cdcb4b67da34a9dad64243ed01994819264bb91a0213dab77b29719f138": {
+"serie": "highest|taipei",
+"fecha": "2026-10-24",
+"caja": "25°C",
+"gano": 0,
+"0.02": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.03": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.05": {
+"acciones": 0,
+"resultado": 0.0
+}
+},
+"0x64354059931c90b9a86a390f48ddbb53e43949be7ac62b2916006be3bf2237f7": {
+"serie": "lowest|guangzhou",
+"fecha": "2026-10-24",
+"caja": "25°C",
+"gano": 0,
+"0.02": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.03": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.05": {
+"acciones": 0,
+"resultado": 0.0
+}
+},
+"0x132945a72afb9d6ec91a8f0e433224a121931296848596b438758616e6a68451": {
+"serie": "lowest|shenzhen",
+"fecha": "2026-10-24",
+"caja": "27°C",
+"gano": 0,
+"0.02": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.03": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.05": {
+"acciones": 0,
+"resultado": 0.0
+}
+},
+"0x6339fb64c8e3238d8246591fbacf889dc8718d39f0cf2529382516bcdaa879b0": {
+"serie": "lowest|taipei",
+"fecha": "2026-10-24",
+"caja": "28°C",
+"gano": 0,
+"0.02": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.03": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.05": {
+"acciones": 0,
+"resultado": 0.0
+}
+},
+"0x426ea39f1eef7d27a2659a8d22f8ba22c9397cf72ecfcc72006bea91fa66fb80": {
+"serie": "lowest|karachi",
+"fecha": "2026-10-24",
+"caja": "29°C",
+"gano": 0,
+"0.02": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.03": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.05": {
+"acciones": 0,
+"resultado": 0.0
+}
+},
+"0x84408ffe179b3937e41bdb4365062c33c98a290e0e7e150ef7665b42a5e04cd4": {
+"serie": "lowest|karachi",
+"fecha": "2026-10-24",
+"caja": "30°C",
+"gano": 0,
+"0.02": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.03": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.05": {
+"acciones": 0,
+"resultado": 0.0
+}
+},
+"0xb546922a4c49b0ee5079c7db96b1fcd22d641b972347490a2b559209468d235f": {
+"serie": "lowest|karachi",
+"fecha": "2026-10-24",
+"caja": "31°C or higher",
+"gano": 0,
+"0.02": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.03": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.05": {
+"acciones": 0,
+"resultado": 0.0
+}
+},
+"0x163c368d3b24abc1f9ecf998dc331ab8607abb98606caaa9311e3e58296ac4cc": {
+"serie": "lowest|wuhan",
+"fecha": "2026-10-24",
+"caja": "16°C",
+"gano": 0,
+"0.02": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.03": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.05": {
+"acciones": 0,
+"resultado": 0.0
+}
+},
+"0xff3865cad94c898602125dff6b7b726b3613649d4f2b50c4c5dd7f876ae44e99": {
+"serie": "lowest|guangzhou",
+"fecha": "2026-10-24",
+"caja": "24°C",
+"gano": 0,
+"0.02": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.03": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.05": {
+"acciones": 0,
+"resultado": 0.0
+}
+},
+"0xa2dc7201d81630b5581be2042efad3f37bf6f373d8e99411939f7a1570c71de9": {
+"serie": "lowest|taipei",
+"fecha": "2026-10-24",
+"caja": "27°C",
+"gano": 0,
+"0.02": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.03": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.05": {
+"acciones": 0,
+"resultado": 0.0
+}
+},
+"0x05627cbd88c6b03edcca07dcc261d22c51840f0fdc0dbc324491877926e4049d": {
+"serie": "highest|shanghai",
+"fecha": "2026-10-24",
+"caja": "18°C or below",
+"gano": 0,
+"0.02": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.03": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.05": {
+"acciones": 0,
+"resultado": 0.0
+}
+},
+"0xe95b4f88309459b05a05337845fb376143d5ba32daebbc23bbd624444bd69eb1": {
+"serie": "highest|moscow",
+"fecha": "2026-10-24",
+"caja": "4°C or below",
+"gano": 0,
+"0.02": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.03": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.05": {
+"acciones": 0,
+"resultado": 0.0
+}
+},
+"0x847e0ce73d585682aa6fc0a12a4a87c40b1a8de55daf5d43f617e9c50875187e": {
+"serie": "highest|moscow",
+"fecha": "2026-10-24",
+"caja": "5°C",
+"gano": 0,
+"0.02": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.03": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.05": {
+"acciones": 0,
+"resultado": 0.0
+}
+},
+"0x21fdb812584ec9c5ef95878624d775e1cafa7232854121c771c0828491504571": {
+"serie": "highest|moscow",
+"fecha": "2026-10-24",
+"caja": "6°C",
+"gano": 0,
+"0.02": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.03": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.05": {
+"acciones": 0,
+"resultado": 0.0
+}
+},
+"0x614cc4419f835eadedf8b5efb040e5c4413c2aeeb7601cd938da779fc5628403": {
+"serie": "lowest|tel-aviv",
+"fecha": "2026-10-24",
+"caja": "26°C",
+"gano": 0,
+"0.02": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.03": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.05": {
+"acciones": 0,
+"resultado": 0.0
+}
+},
+"0x506a2532f606e61382fbf53036a67ff32bb4733093af3b20357ace57c3480b32": {
+"serie": "lowest|tel-aviv",
+"fecha": "2026-10-24",
+"caja": "27°C or higher",
+"gano": 0,
+"0.02": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.03": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.05": {
+"acciones": 0,
+"resultado": 0.0
+}
+},
+"0x7594bf6aa1551a095b057175fbdaa18c17c202b68be0d93b9b25cce99c9bf68d": {
+"serie": "lowest|helsinki",
+"fecha": "2026-10-24",
+"caja": "13°C or higher",
+"gano": 0,
+"0.02": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.03": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.05": {
+"acciones": 0,
+"resultado": 0.0
+}
+},
+"0x905928c951e754721e717f5ca26137db607c16a6a8fb60f19644f19e9401c0bb": {
+"serie": "highest|helsinki",
+"fecha": "2026-10-24",
+"caja": "6°C or below",
+"gano": 0,
+"0.02": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.03": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.05": {
+"acciones": 0,
+"resultado": 0.0
+}
+},
+"0x9a1d7ba3b24222c2dbe1abfb73c116250b7260779fc6f21afa69b1c1ded88f83": {
+"serie": "highest|helsinki",
+"fecha": "2026-10-24",
+"caja": "7°C",
+"gano": 0,
+"0.02": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.03": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.05": {
+"acciones": 0,
+"resultado": 0.0
+}
+},
+"0x6d5c240dd38c40c1eff274f072b76ff9cad13cd237bae9d0cf2cb41e1be191ab": {
+"serie": "highest|helsinki",
+"fecha": "2026-10-24",
+"caja": "8°C",
+"gano": 0,
+"0.02": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.03": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.05": {
+"acciones": 0,
+"resultado": 0.0
+}
+},
+"0x97b3f20c511977ea2485b1ef833cd21459ecd6deae3ba8af193edf7c656b1297": {
+"serie": "highest|helsinki",
+"fecha": "2026-10-24",
+"caja": "9°C",
+"gano": 0,
+"0.02": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.03": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.05": {
+"acciones": 0,
+"resultado": 0.0
+}
+},
+"0x13e587a4c01498b8334945295708a3f87428c3943fe2664040becb202e9c88a9": {
+"serie": "lowest|ankara",
+"fecha": "2026-10-24",
+"caja": "12°C or higher",
+"gano": 0,
+"0.02": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.03": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.05": {
+"acciones": 0,
+"resultado": 0.0
+}
+},
+"0x8619cbec7a2fecb5c2e543fae1816419e9164ebfaddcef02ff97448950b5238f": {
+"serie": "lowest|istanbul",
+"fecha": "2026-10-24",
+"caja": "17°C",
+"gano": 0,
+"0.02": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.03": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.05": {
+"acciones": 0,
+"resultado": 0.0
+}
+},
+"0xb5b6377f9d66bee92b3315eb20a93c87ab0247198258eb889a01fcc190b100e3": {
+"serie": "lowest|istanbul",
+"fecha": "2026-10-24",
+"caja": "18°C or higher",
+"gano": 0,
+"0.02": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.03": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.05": {
+"acciones": 0,
+"resultado": 0.0
+}
+},
+"0x6c0ee6e1d1e201e8f8a3c31af943159714b8bc7b3bdd26383d9f75c1c76305c5": {
+"serie": "highest|istanbul",
+"fecha": "2026-10-24",
+"caja": "12°C or below",
+"gano": 0,
+"0.02": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.03": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.05": {
+"acciones": 0,
+"resultado": 0.0
+}
+},
+"0xf8779d151c785646e296965fab832345776678bd50e2d481fc043a4644db4768": {
+"serie": "highest|istanbul",
+"fecha": "2026-10-24",
+"caja": "13°C",
+"gano": 0,
+"0.02": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.03": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.05": {
+"acciones": 0,
+"resultado": 0.0
+}
+},
+"0x8fc1b887e46c9cf171bd46339e71cc50a3a96ea02063c3d63a387f78918d50b7": {
+"serie": "lowest|jeddah",
+"fecha": "2026-10-24",
+"caja": "32°C or higher",
+"gano": 0,
+"0.02": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.03": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.05": {
+"acciones": 0,
+"resultado": 0.0
+}
+},
+"0xd5ba0addcbf842fa30eea32eaa3fbfcd73165e3f520a2667b7a319c9e4278582": {
+"serie": "lowest|tokyo",
+"fecha": "2026-10-24",
+"caja": "19°C",
+"gano": 0,
+"0.02": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.03": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.05": {
+"acciones": 0,
+"resultado": 0.0
+}
+},
+"0xdee587a313e8a9a885f8c8b8e6b9efddc960a1c375747fba31bf052dc95f274e": {
+"serie": "lowest|warsaw",
+"fecha": "2026-10-24",
+"caja": "11°C or higher",
+"gano": 0,
+"0.02": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.03": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.05": {
+"acciones": 0,
+"resultado": 0.0
+}
+},
+"0x7058a9dbbe1a029f9e38da0d63ec138d90a4caa7502b675e91fc7af04f2e9d28": {
+"serie": "lowest|karachi",
+"fecha": "2026-10-24",
+"caja": "28°C",
+"gano": 0,
+"0.02": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.03": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.05": {
+"acciones": 0,
+"resultado": 0.0
+}
+},
+"0xa5dc6b90d21a8675f0543058aae37af520157bb92dac6a8da210fa861985459f": {
+"serie": "highest|warsaw",
+"fecha": "2026-10-24",
+"caja": "7°C or below",
+"gano": 0,
+"0.02": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.03": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.05": {
+"acciones": 0,
+"resultado": 0.0
+}
+},
+"0xf0803615a84c2f9e9a7eccbd51b0e46ea1f47eb90ef580dc0cebd9d5f0a08e6b": {
+"serie": "lowest|madrid",
+"fecha": "2026-10-24",
+"caja": "13°C or higher",
+"gano": 0,
+"0.02": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.03": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.05": {
+"acciones": 0,
+"resultado": 0.0
+}
+},
+"0xb02be60c692f3fc3c0e02e364e3e67e4eee8a93055726a39efb6370c388490e2": {
+"serie": "highest|moscow",
+"fecha": "2026-10-24",
+"caja": "7°C",
+"gano": 0,
+"0.02": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.03": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.05": {
+"acciones": 0,
+"resultado": 0.0
+}
+},
+"0xdbbafdf957368ccd0a7bfd73c49a008a4557dc2a38e590b4c2c6c90681c4b8fe": {
+"serie": "highest|munich",
+"fecha": "2026-10-24",
+"caja": "6°C or below",
+"gano": 0,
+"0.02": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.03": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.05": {
+"acciones": 0,
+"resultado": 0.0
+}
+},
+"0x4fb334291bba93c66dc741f43a42c0ef3e63164b108efe5328bf2c714ce38b96": {
+"serie": "highest|munich",
+"fecha": "2026-10-24",
+"caja": "7°C",
+"gano": 0,
+"0.02": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.03": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.05": {
+"acciones": 0,
+"resultado": 0.0
+}
+},
+"0x943924bd81abd95058d94480c37f0f8ceb785ceca6b72f9ddb6910279fcc34a8": {
+"serie": "highest|munich",
+"fecha": "2026-10-24",
+"caja": "8°C",
+"gano": 0,
+"0.02": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.03": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.05": {
+"acciones": 0,
+"resultado": 0.0
+}
+},
+"0xf35caf95edd4071328d2618a566886b796d8937c213cefff708bbb4a1a9fb5cc": {
+"serie": "lowest|ankara",
+"fecha": "2026-10-24",
+"caja": "11°C",
+"gano": 0,
+"0.02": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.03": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.05": {
+"acciones": 0,
+"resultado": 0.0
+}
+},
+"0x9070b4ee695d0ab3a9f34ccc95131a3cfbb2d92c41f5495d5c2e14b8d97497d3": {
+"serie": "lowest|jeddah",
+"fecha": "2026-10-24",
+"caja": "31°C",
+"gano": 0,
+"0.02": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.03": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.05": {
+"acciones": 0,
+"resultado": 0.0
+}
+},
+"0x715d3b19e86c87884a2609763846094665651a32dc35080354fcf3bba8fc0441": {
+"serie": "highest|shanghai",
+"fecha": "2026-10-24",
+"caja": "19°C",
+"gano": 0,
+"0.02": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.03": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.05": {
+"acciones": 0,
+"resultado": 0.0
+}
+},
+"0x7f124d739c43c6729e124ed984f6e9823cb3bc71f656d8792816c440565ebcec": {
+"serie": "lowest|shenzhen",
+"fecha": "2026-10-24",
+"caja": "26°C",
+"gano": 0,
+"0.02": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.03": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.05": {
+"acciones": 0,
+"resultado": 0.0
+}
+},
+"0x377fc5e0af11ec0cef14b5518d057abe6bdc483441867b744b933daf8675ca40": {
+"serie": "lowest|cape-town",
+"fecha": "2026-10-24",
+"caja": "19°C or higher",
+"gano": 0,
+"0.02": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.03": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.05": {
+"acciones": 0,
+"resultado": 0.0
+}
+},
+"0xd2aca0b21465997e2c2c663472b1e6bb814932ce3a099b82a5d1fc362ddca063": {
+"serie": "lowest|taipei",
+"fecha": "2026-10-24",
+"caja": "26°C",
+"gano": 0,
+"0.02": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.03": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.05": {
+"acciones": 0,
+"resultado": 0.0
+}
+},
+"0xee1c616af394d3696278fdc70d78318dcf07d0d591b7e9c1c54e776e62f10b2c": {
+"serie": "lowest|warsaw",
+"fecha": "2026-10-24",
+"caja": "10°C",
+"gano": 0,
+"0.02": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.03": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.05": {
+"acciones": 0,
+"resultado": 0.0
+}
+},
+"0x5eb4eb84b69e5a012224b9419bf6a42b465b56d87d861dc445a83139d8b05e1d": {
+"serie": "lowest|madrid",
+"fecha": "2026-10-24",
+"caja": "12°C",
+"gano": 0,
+"0.02": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.03": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.05": {
+"acciones": 0,
+"resultado": 0.0
+}
+},
+"0x330f650b6b1541ed930be523964afb26e747a2c012dc7de650f91d33b5a586c5": {
+"serie": "lowest|cape-town",
+"fecha": "2026-10-24",
+"caja": "18°C",
+"gano": 0,
+"0.02": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.03": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.05": {
+"acciones": 0,
+"resultado": 0.0
+}
+},
+"0xd337f28ef4af5409d9caed508338b87a0286bf9071aa04cb9d785296b58e6a6f": {
+"serie": "lowest|ankara",
+"fecha": "2026-10-24",
+"caja": "10°C",
+"gano": 0,
+"0.02": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.03": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.05": {
+"acciones": 0,
+"resultado": 0.0
+}
+},
+"0xe8c79713eb92f5c16a8aba63484b0529049b94dbab86d20a0efc36555b47124d": {
+"serie": "lowest|istanbul",
+"fecha": "2026-10-24",
+"caja": "16°C",
+"gano": 0,
+"0.02": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.03": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.05": {
+"acciones": 0,
+"resultado": 0.0
+}
+},
+"0xc13a4ed1eb410bbf5c647d7ba797124d3e321380574a525179f3e91a38e5e583": {
+"serie": "lowest|madrid",
+"fecha": "2026-10-24",
+"caja": "11°C",
+"gano": 0,
+"0.02": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.03": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.05": {
+"acciones": 0,
+"resultado": 0.0
+}
+},
+"0xf2020d8a27b8719659080b0a0c937bd2e56af172ce34f517a2125d6aa9ad0fd6": {
+"serie": "lowest|tel-aviv",
+"fecha": "2026-10-24",
+"caja": "25°C",
+"gano": 0,
+"0.02": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.03": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.05": {
+"acciones": 0,
+"resultado": 0.0
+}
+},
+"0xa2a97bdec01d173220ebecaef73eea67acb26a8d7687531389e9569a99b13364": {
+"serie": "lowest|ankara",
+"fecha": "2026-10-24",
+"caja": "9°C",
+"gano": 0,
+"0.02": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.03": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.05": {
+"acciones": 0,
+"resultado": 0.0
+}
+},
+"0xe16d2e4d09fe80ce9e97acd65f14d4e78a3d8ae32af947085d20298bf7131bdf": {
+"serie": "lowest|warsaw",
+"fecha": "2026-10-24",
+"caja": "9°C",
+"gano": 0,
+"0.02": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.03": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.05": {
+"acciones": 0,
+"resultado": 0.0
+}
+},
+"0x85ef69c275527b6d9033a90b46c7e4aec77071c15639efd58bdf4e06c5b057ca": {
+"serie": "lowest|madrid",
+"fecha": "2026-10-24",
+"caja": "10°C",
+"gano": 0,
+"0.02": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.03": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.05": {
+"acciones": 0,
+"resultado": 0.0
+}
+},
+"0x5154c8a5792e9bfec9a3568f7fde75979ed9770a4d3f3a72cf8609da2c91bca9": {
+"serie": "highest|manila",
+"fecha": "2026-10-24",
+"caja": "27°C or below",
+"gano": 0,
+"0.02": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.03": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.05": {
+"acciones": 0,
+"resultado": 0.0
+}
+},
+"0xe7c98e22552962ca286832ad6fdc962cffa7d01b5226647d50c67fa02136056e": {
+"serie": "highest|manila",
+"fecha": "2026-10-24",
+"caja": "28°C",
+"gano": 0,
+"0.02": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.03": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.05": {
+"acciones": 0,
+"resultado": 0.0
+}
+},
+"0x3a21c85c9604795648b6313f9546884eefb5b0e2a55c6a6bb712f0dea00834da": {
+"serie": "lowest|tel-aviv",
+"fecha": "2026-10-24",
+"caja": "24°C",
+"gano": 0,
+"0.02": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.03": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.05": {
+"acciones": 0,
+"resultado": 0.0
+}
+},
+"0x7115609cdc3cf01dbaf762b6975e7a63302f6afdd2b73f5221605eeaedbf657f": {
+"serie": "highest|singapore",
+"fecha": "2026-10-24",
+"caja": "29°C",
+"gano": 0,
+"0.02": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.03": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.05": {
+"acciones": 0,
+"resultado": 0.0
+}
+},
+"0x37e6b912c5f22cde92058097b56fb884ec1d81484fa753fadef06d67bf434354": {
+"serie": "lowest|madrid",
+"fecha": "2026-10-24",
+"caja": "9°C",
+"gano": 0,
+"0.02": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.03": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.05": {
+"acciones": 0,
+"resultado": 0.0
+}
+},
+"0xe15b86ddb8706bcffba9f142e873be7e16b104c3b1882bfcdd5513920c6f10ed": {
+"serie": "highest|busan",
+"fecha": "2026-10-24",
+"caja": "15°C",
+"gano": 0,
+"0.02": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.03": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.05": {
+"acciones": 0,
+"resultado": 0.0
+}
+},
+"0xfdf4ec99e483578dfb4b6b65bbe6efbb195bf1d5bea10aea69c4c08a42ef9df5": {
+"serie": "highest|shenzhen",
+"fecha": "2026-10-24",
+"caja": "25°C or below",
+"gano": 0,
+"0.02": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.03": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.05": {
+"acciones": 0,
+"resultado": 0.0
+}
+},
+"0x4f723d5ffbb3f9992e3b9203d98436a783c01f3c8cf7b5d6e38f04beb01d2caf": {
+"serie": "lowest|warsaw",
+"fecha": "2026-10-24",
+"caja": "8°C",
+"gano": 0,
+"0.02": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.03": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.05": {
+"acciones": 0,
+"resultado": 0.0
+}
+},
+"0xd7cfa9265b84e296b609e833cbd0b18c49e4bfc18326faeb62c720c1f2a65027": {
+"serie": "lowest|madrid",
+"fecha": "2026-10-24",
+"caja": "8°C",
+"gano": 0,
+"0.02": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.03": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.05": {
+"acciones": 0,
+"resultado": 0.0
+}
+},
+"0xf05429e2b81955815aff8cf584ba0b3359f917b1333f92795a604b9092aa2457": {
+"serie": "highest|seoul",
+"fecha": "2026-10-24",
+"caja": "15°C or below",
+"gano": 0,
+"0.02": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.03": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.05": {
+"acciones": 0,
+"resultado": 0.0
+}
+},
+"0xd69641c9883035bb2d470b17c0e4bf5c3e3a1f0d5c68214b372559f0dd1f6c15": {
+"serie": "lowest|taipei",
+"fecha": "2026-10-24",
+"caja": "25°C",
+"gano": 0,
+"0.02": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.03": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.05": {
+"acciones": 0,
+"resultado": 0.0
+}
+},
+"0xe9d8806ecb29f21efd6d450f1eceb8142f31145c8c04df57f456a31527569ba2": {
+"serie": "highest|kuala-lumpur",
+"fecha": "2026-10-24",
+"caja": "26°C",
+"gano": 0,
+"0.02": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.03": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.05": {
+"acciones": 0,
+"resultado": 0.0
+}
+},
+"0x7716357677414145da14f4937da82abef221fefcfb9977f24be8b0d197ced4f4": {
+"serie": "lowest|jeddah",
+"fecha": "2026-10-24",
+"caja": "30°C",
+"gano": 0,
+"0.02": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.03": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.05": {
+"acciones": 0,
+"resultado": 0.0
+}
+},
+"0x7b9750d2ef3922c4736562c08d28da71c193ea6521dc6dfb4402cf1bf1fe9d30": {
+"serie": "highest|singapore",
+"fecha": "2026-10-24",
+"caja": "30°C",
+"gano": 0,
+"0.02": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.03": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.05": {
+"acciones": 0,
+"resultado": 0.0
+}
+},
+"0x8f778076cea75b44ef7c90e98ea88f192b61e29dcdbdc132f4bec02a3e00b10b": {
+"serie": "lowest|cape-town",
+"fecha": "2026-10-24",
+"caja": "17°C",
+"gano": 0,
+"0.02": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.03": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.05": {
+"acciones": 0,
+"resultado": 0.0
+}
+},
+"0xb1dd94c7b4da5f4e77849b4839500283a8c1971c19a58d02122635537534a3e4": {
+"serie": "highest|chongqing",
+"fecha": "2026-10-24",
+"caja": "17°C or below",
+"gano": 0,
+"0.02": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.03": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.05": {
+"acciones": 0,
+"resultado": 0.0
+}
+},
+"0x07f46039c3e27ec5b37b90d1a416ec81fb1885407ab56ed228fb7412f1cc8ef7": {
+"serie": "highest|wuhan",
+"fecha": "2026-10-24",
+"caja": "17°C or below",
+"gano": 0,
+"0.02": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.03": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.05": {
+"acciones": 0,
+"resultado": 0.0
+}
+},
+"0x2083cef564cc9f6939a47dc8ac15b7e91b4170b3eba487966fed61c311f26542": {
+"serie": "highest|shenzhen",
+"fecha": "2026-10-24",
+"caja": "26°C",
+"gano": 0,
+"0.02": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.03": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.05": {
+"acciones": 0,
+"resultado": 0.0
+}
+},
+"0x779314d6caf5e8482a8fc22bff97bac8b16d1ed31082d9981d00020f18dc5959": {
+"serie": "highest|qingdao",
+"fecha": "2026-10-24",
+"caja": "17°C or below",
+"gano": 0,
+"0.02": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.03": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.05": {
+"acciones": 0,
+"resultado": 0.0
+}
+},
+"0x3fb440a9a5e5017a407333eb3b6539e3c52ef48291e8426930fe559707f66d63": {
+"serie": "lowest|moscow",
+"fecha": "2026-10-24",
+"caja": "8°C or higher",
+"gano": 0,
+"0.02": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.03": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.05": {
+"acciones": 0,
+"resultado": 0.0
+}
+},
+"0xfdfe4943c7fb869c42574d620b00b51a83fea4cea2e50ebc0472614857f82f6b": {
+"serie": "highest|beijing",
+"fecha": "2026-10-24",
+"caja": "14°C or below",
+"gano": 0,
+"0.02": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.03": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.05": {
+"acciones": 0,
+"resultado": 0.0
+}
+},
+"0x62bad51cfd47af56d38f382b944f82a47e6d52bdeba9ee75c60e18210469f658": {
+"serie": "highest|guangzhou",
+"fecha": "2026-10-24",
+"caja": "25°C or below",
+"gano": 0,
+"0.02": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.03": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.05": {
+"acciones": 0,
+"resultado": 0.0
+}
+},
+"0x0c4b711124347fd49d8739542c79c123a75d0bd28ee142e4c9a4ebb3e148ffff": {
+"serie": "highest|guangzhou",
+"fecha": "2026-10-24",
+"caja": "26°C",
+"gano": 0,
+"0.02": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.03": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.05": {
+"acciones": 0,
+"resultado": 0.0
+}
+},
+"0xc04e2de8a35952d52739932384fdec6b3335e633d80de0c9c50a14d68e16f10a": {
+"serie": "highest|kuala-lumpur",
+"fecha": "2026-10-24",
+"caja": "27°C",
+"gano": 0,
+"0.02": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.03": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.05": {
+"acciones": 0,
+"resultado": 0.0
+}
+},
+"0xfe57ebe104b36dd04a7c389ea80cb45d4c34d3bd172bdd18605ae2a59fd347df": {
+"serie": "highest|kuala-lumpur",
+"fecha": "2026-10-24",
+"caja": "28°C",
+"gano": 0,
+"0.02": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.03": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.05": {
+"acciones": 0,
+"resultado": 0.0
+}
+},
+"0x5860222f9529b18a10451a9a1350079e5c38b81ec8b01f88e133f8adcb2c50c2": {
+"serie": "highest|singapore",
+"fecha": "2026-10-24",
+"caja": "31°C",
+"gano": 0,
+"0.02": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.03": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.05": {
+"acciones": 0,
+"resultado": 0.0
+}
+},
+"0x855867b8f10cf37dc4d11b830c3f82d94896569542201d149eb90db02ce85c8d": {
+"serie": "lowest|madrid",
+"fecha": "2026-10-24",
+"caja": "7°C",
+"gano": 0,
+"0.02": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.03": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.05": {
+"acciones": 0,
+"resultado": 0.0
+}
+},
+"0xf91b0993867fe5c9a23247b5bba6ece95fa9ce6b67ed905078ed92a9d381594c": {
+"serie": "highest|busan",
+"fecha": "2026-10-24",
+"caja": "16°C",
+"gano": 0,
+"0.02": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.03": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.05": {
+"acciones": 0,
+"resultado": 0.0
+}
+},
+"0xfbe4bd035af6fcbeeb7e25c6c72a3545faff9fee02228c0c2e90cd28b5fc302d": {
+"serie": "highest|chongqing",
+"fecha": "2026-10-24",
+"caja": "18°C",
+"gano": 0,
+"0.02": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.03": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.05": {
+"acciones": 0,
+"resultado": 0.0
+}
+},
+"0xdc9bd624a23ea4c6d06c6b2c3843150a6d09ef1ba3302a83bc14d2014222d09b": {
+"serie": "highest|chengdu",
+"fecha": "2026-10-24",
+"caja": "16°C or below",
+"gano": 0,
+"0.02": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.03": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.05": {
+"acciones": 0,
+"resultado": 0.0
+}
+},
+"0xc4c18efe0c4840baeeac845e8e132813b1df2d3c6dcd53fe8830736d98d17b60": {
+"serie": "highest|shenzhen",
+"fecha": "2026-10-24",
+"caja": "27°C",
+"gano": 0,
+"0.02": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.03": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.05": {
+"acciones": 0,
+"resultado": 0.0
+}
+},
+"0x9a10bb55916445365878a3991050403c20ec4b27c675a1e7e5c77141802619e5": {
+"serie": "highest|qingdao",
+"fecha": "2026-10-24",
+"caja": "18°C",
+"gano": 0,
+"0.02": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.03": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.05": {
+"acciones": 0,
+"resultado": 0.0
+}
+},
+"0x275dddb22ea4f4021cfa8ae8d050ee58865fe55e00bbf50234ae0b1568ef2539": {
+"serie": "highest|manila",
+"fecha": "2026-10-24",
+"caja": "29°C",
+"gano": 0,
+"0.02": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.03": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.05": {
+"acciones": 0,
+"resultado": 0.0
+}
+},
+"0xb7d595a2bf3c10b5c30f6e0714893bc664438cd7ebd23be3d55280053e4cfd3b": {
+"serie": "lowest|munich",
+"fecha": "2026-10-24",
+"caja": "9°C or higher",
+"gano": 0,
+"0.02": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.03": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.05": {
+"acciones": 0,
+"resultado": 0.0
+}
+},
+"0x3b3595cd08a0040eebad84c8d5a4723fb130d3211734d0429b767b52f12aef7b": {
+"serie": "highest|guangzhou",
+"fecha": "2026-10-24",
+"caja": "27°C",
+"gano": 0,
+"0.02": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.03": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.05": {
+"acciones": 0,
+"resultado": 0.0
+}
+},
+"0x10922f2f755be8c9ea46d97c38bfd0ab1c0f80ee8f6eb2428584c56a3ee69a75": {
+"serie": "highest|kuala-lumpur",
+"fecha": "2026-10-24",
+"caja": "29°C",
+"gano": 0,
+"0.02": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.03": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.05": {
+"acciones": 0,
+"resultado": 0.0
+}
+},
+"0x25d5f3e58aed7846288045bbe2305b179416ba14813a51c52bafa62b8b80595f": {
+"serie": "lowest|ankara",
+"fecha": "2026-10-24",
+"caja": "8°C",
+"gano": 0,
+"0.02": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.03": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.05": {
+"acciones": 0,
+"resultado": 0.0
+}
+},
+"0xc79c0a8d7b616fbb13b9666e5cad78a42d2a05348a99f69b1082189645796502": {
+"serie": "highest|jeddah",
+"fecha": "2026-10-24",
+"caja": "28°C or below",
+"gano": 0,
+"0.02": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.03": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.05": {
+"acciones": 0,
+"resultado": 0.0
+}
+},
+"0xbaa9733b365772af1f924f2eb05df47f3d4b2337d811d15197235f87c67e9a3c": {
+"serie": "highest|shanghai",
+"fecha": "2026-10-24",
+"caja": "20°C",
+"gano": 0,
+"0.02": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.03": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.05": {
+"acciones": 0,
+"resultado": 0.0
+}
+},
+"0x151f299b0af8529c1c77aa943b630dea87d1b82cdd1ad8c051b119a25585efab": {
+"serie": "highest|chengdu",
+"fecha": "2026-10-24",
+"caja": "17°C",
+"gano": 0,
+"0.02": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.03": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.05": {
+"acciones": 0,
+"resultado": 0.0
+}
+},
+"0xe2129fc88e4629286e377acceea253d6852c642c09f649e97d36f73141cb3f31": {
+"serie": "highest|qingdao",
+"fecha": "2026-10-24",
+"caja": "19°C",
+"gano": 0,
+"0.02": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.03": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.05": {
+"acciones": 0,
+"resultado": 0.0
+}
+},
+"0x540c8f31a3c42f836c89767ad0c7adeeaff1993fecba1dbd3b8c7fc40f231955": {
+"serie": "highest|chongqing",
+"fecha": "2026-10-24",
+"caja": "19°C",
+"gano": 0,
+"0.02": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.03": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.05": {
+"acciones": 0,
+"resultado": 0.0
+}
+},
+"0xd6efd28ece37ae451cf9ba275feb34b84afa275d2f200dde2b33a3941f1c201b": {
+"serie": "highest|wuhan",
+"fecha": "2026-10-24",
+"caja": "18°C",
+"gano": 0,
+"0.02": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.03": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.05": {
+"acciones": 0,
+"resultado": 0.0
+}
+},
+"0xb209ee3239b4a64c11ca8df5abaf608e3a15f757a2a5877eb050dfdc6635d3f9": {
+"serie": "highest|seoul",
+"fecha": "2026-10-24",
+"caja": "16°C",
+"gano": 0,
+"0.02": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.03": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.05": {
+"acciones": 0,
+"resultado": 0.0
+}
+},
+"0x92dbca316346c2c0d98b1506bb8b40b5bd17dc8d176366367eaae2ec54b3caa3": {
+"serie": "highest|guangzhou",
+"fecha": "2026-10-24",
+"caja": "28°C",
+"gano": 0,
+"0.02": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.03": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.05": {
+"acciones": 0,
+"resultado": 0.0
+}
+},
+"0x211512d2311fabe1be01ad670888d6fdaba3bf97f559c3560b352e4e6cc29de9": {
+"serie": "lowest|taipei",
+"fecha": "2026-10-24",
+"caja": "24°C",
+"gano": 0,
+"0.02": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.03": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.05": {
+"acciones": 0,
+"resultado": 0.0
+}
+},
+"0xd662a1c47eb94af9dc9025401a946d9c0be0c929e9dc996b276eb05f063c6d96": {
+"serie": "lowest|helsinki",
+"fecha": "2026-10-24",
+"caja": "12°C",
+"gano": 0,
+"0.02": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.03": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.05": {
+"acciones": 0,
+"resultado": 0.0
+}
+},
+"0x4707aaa0f590911381de7df8e2843714122a017be76ee133035b63fb93bd96fd": {
+"serie": "highest|karachi",
+"fecha": "2026-10-24",
+"caja": "31°C or below",
+"gano": 0,
+"0.02": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.03": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.05": {
+"acciones": 0,
+"resultado": 0.0
+}
+},
+"0x56e81848c3b3172644b1a7689f6b33a007165e2a8da84637f38f45fd34887931": {
+"serie": "lowest|madrid",
+"fecha": "2026-10-24",
+"caja": "6°C",
+"gano": 0,
+"0.02": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.03": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.05": {
+"acciones": 0,
+"resultado": 0.0
+}
+},
+"0x0846d2a97c1d898206417f0998513543cdceab1e47f91043c0407e2945e6920b": {
+"serie": "highest|shenzhen",
+"fecha": "2026-10-24",
+"caja": "28°C",
+"gano": 0,
+"0.02": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.03": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.05": {
+"acciones": 0,
+"resultado": 0.0
+}
+},
+"0xb07510ad3d8921cd940abf43a1f395279e4eea1085763c00cec5ec21aad8d629": {
+"serie": "highest|karachi",
+"fecha": "2026-10-24",
+"caja": "32°C",
+"gano": 0,
+"0.02": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.03": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.05": {
+"acciones": 0,
+"resultado": 0.0
+}
+},
+"0xf7b756413602680da5e6c0c37afaae26b17b333c8804b77a38c903d933a7430c": {
+"serie": "highest|guangzhou",
+"fecha": "2026-10-24",
+"caja": "29°C",
+"gano": 0,
+"0.02": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.03": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.05": {
+"acciones": 0,
+"resultado": 0.0
+}
+},
+"0x1510dce43d01a3454f813225f365a97f24b5b6e3ddb2bbd3d4d4535fec97890e": {
+"serie": "lowest|helsinki",
+"fecha": "2026-10-24",
+"caja": "11°C",
+"gano": 0,
+"0.02": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.03": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.05": {
+"acciones": 0,
+"resultado": 0.0
+}
+},
+"0x3042d337ffe5224e07690c073b39df8f9aedff9ce992d0a65efd778e4e8906c6": {
+"serie": "highest|jeddah",
+"fecha": "2026-10-24",
+"caja": "29°C",
+"gano": 0,
+"0.02": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.03": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.05": {
+"acciones": 0,
+"resultado": 0.0
+}
+},
+"0x9408a5a8be03d264ebed643f91af8f0521d540884613dc337b00f90681c13790": {
+"serie": "highest|jeddah",
+"fecha": "2026-10-24",
+"caja": "30°C",
+"gano": 0,
+"0.02": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.03": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.05": {
+"acciones": 0,
+"resultado": 0.0
+}
+},
+"0x28aca7956ccbb45d482bbca436c6543534934a2e568b04a9445f52a7783c6ebc": {
+"serie": "highest|jeddah",
+"fecha": "2026-10-24",
+"caja": "31°C",
+"gano": 0,
+"0.02": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.03": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.05": {
+"acciones": 0,
+"resultado": 0.0
+}
+},
+"0x7c6836dd4037a5315461460f6f03779813bd66af086b4f3d8a9259a4ebcafa2e": {
+"serie": "highest|karachi",
+"fecha": "2026-10-24",
+"caja": "33°C",
+"gano": 0,
+"0.02": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.03": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.05": {
+"acciones": 0,
+"resultado": 0.0
+}
+},
+"0x3292b4e933e86da7f538e3c5a6b550be1879d1a8b5dc387fd728b0d656c4ed43": {
+"serie": "highest|wuhan",
+"fecha": "2026-10-24",
+"caja": "19°C",
+"gano": 0,
+"0.02": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.03": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.05": {
+"acciones": 0,
+"resultado": 0.0
+}
+},
+"0x9dac2d1ff2df07a18f3ff4b49342c43d9e0a03c2722064ec9c0d105c731c3b02": {
+"serie": "highest|qingdao",
+"fecha": "2026-10-24",
+"caja": "20°C",
+"gano": 0,
+"0.02": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.03": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.05": {
+"acciones": 0,
+"resultado": 0.0
+}
+},
+"0x52ce201930adb7d3f07a1e517a6cb1ea67da3fed170b88ea8afce54b077835dc": {
+"serie": "highest|jeddah",
+"fecha": "2026-10-24",
+"caja": "32°C",
+"gano": 0,
+"0.02": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.03": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.05": {
+"acciones": 0,
+"resultado": 0.0
+}
+},
+"0xce6c6c5d9a4ed66bb230ec02527c3d37716ae98cf697268d83a59b62822d005b": {
+"serie": "highest|jeddah",
+"fecha": "2026-10-24",
+"caja": "33°C",
+"gano": 0,
+"0.02": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.03": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.05": {
+"acciones": 0,
+"resultado": 0.0
+}
+},
+"0xd399617ad3c9895bbdf1ef540e1fe2e5178a13dc91366ab052edaa818e171102": {
+"serie": "highest|karachi",
+"fecha": "2026-10-24",
+"caja": "34°C",
+"gano": 0,
+"0.02": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.03": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.05": {
+"acciones": 0,
+"resultado": 0.0
+}
+},
+"0x3e9c4d44c97100c86cbd8f844ca5d64182801f8de70d20319191e7814ed00dc6": {
+"serie": "highest|ankara",
+"fecha": "2026-10-24",
+"caja": "14°C or below",
+"gano": 0,
+"0.02": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.03": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.05": {
+"acciones": 0,
+"resultado": 0.0
+}
+},
+"0x05e10f574b155f71c52af4a9d600847835c9965ae5d06c255247e10e1aa30f62": {
+"serie": "highest|istanbul",
+"fecha": "2026-10-24",
+"caja": "14°C",
+"gano": 0,
+"0.02": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.03": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.05": {
+"acciones": 0,
+"resultado": 0.0
+}
+},
+"0xf33bb2fc6d33d32ea4cce0d88558fab1a85ae3e8058fa44e1af70c8cc6e72ec2": {
+"serie": "highest|karachi",
+"fecha": "2026-10-24",
+"caja": "35°C",
+"gano": 0,
+"0.02": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.03": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.05": {
+"acciones": 0,
+"resultado": 0.0
+}
+},
+"0x9bf8446798170127618d1a8a78587909ede264a88da14b2bff052c46cea3c6e3": {
+"serie": "highest|moscow",
+"fecha": "2026-10-24",
+"caja": "8°C",
+"gano": 0,
+"0.02": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.03": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.05": {
+"acciones": 0,
+"resultado": 0.0
+}
+},
+"0x7b4ddd7183860c154e23496c129a13c4d679f9e740f57d8bd648cc1be5727b34": {
+"serie": "highest|ankara",
+"fecha": "2026-10-24",
+"caja": "15°C",
+"gano": 0,
+"0.02": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.03": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.05": {
+"acciones": 0,
+"resultado": 0.0
+}
+},
+"0x2f5df43de8c8a146d2509067d4677bbadf285acb6d81e27bb371b5fdbc834ce7": {
+"serie": "highest|ankara",
+"fecha": "2026-10-24",
+"caja": "16°C",
+"gano": 0,
+"0.02": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.03": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.05": {
+"acciones": 0,
+"resultado": 0.0
+}
+},
+"0xd5852ed26fe2d6fef684b127945e630e3feed781b313d948fd28beeda8014ec6": {
+"serie": "highest|chengdu",
+"fecha": "2026-10-24",
+"caja": "18°C",
+"gano": 0,
+"0.02": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.03": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.05": {
+"acciones": 0,
+"resultado": 0.0
+}
+},
+"0x3f150034a70a1401eee8b16e5b249c9422b1a83483c4f82fb47a964f25614dc2": {
+"serie": "highest|shenzhen",
+"fecha": "2026-10-24",
+"caja": "29°C",
+"gano": 0,
+"0.02": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.03": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.05": {
+"acciones": 0,
+"resultado": 0.0
+}
+},
+"0x41a7dbe57f04c111bc7f568ae01dafa26c7e1c1141266ea55a5e6e1392ea0d58": {
+"serie": "highest|tel-aviv",
+"fecha": "2026-10-24",
+"caja": "27°C or below",
+"gano": 0,
+"0.02": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.03": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.05": {
+"acciones": 0,
+"resultado": 0.0
+}
+},
+"0x62f237acf200e6b2b2ea7599b7f848f763d38ff6c79f0500ff2b4fb4d23d647a": {
+"serie": "highest|warsaw",
+"fecha": "2026-10-24",
+"caja": "8°C",
+"gano": 0,
+"0.02": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.03": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.05": {
+"acciones": 0,
+"resultado": 0.0
+}
+},
+"0x00024cf08d34cb31e89a4eaac8781e49836cd23c18be119e2825727f16728573": {
+"serie": "highest|karachi",
+"fecha": "2026-10-24",
+"caja": "36°C",
+"gano": 0,
+"0.02": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.03": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.05": {
+"acciones": 0,
+"resultado": 0.0
+}
+},
+"0x2ffbb7d7080aeaaa5a0c60236d566c39804c64fff8f8fa53bdf6ca94528656a4": {
+"serie": "highest|moscow",
+"fecha": "2026-10-24",
+"caja": "9°C",
+"gano": 0,
+"0.02": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.03": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.05": {
+"acciones": 0,
+"resultado": 0.0
+}
+},
+"0xb328f7e64f9ef0f01fda503736471f14e2a0b13b71d3060770b50e99cf8dadc0": {
+"serie": "highest|tel-aviv",
+"fecha": "2026-10-24",
+"caja": "28°C",
+"gano": 0,
+"0.02": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.03": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.05": {
+"acciones": 0,
+"resultado": 0.0
+}
+},
+"0xdd68ea4628049b6ac1d609a472ec3d8aaac96d7d7eb61ab3a90e2e2229bd622c": {
+"serie": "highest|warsaw",
+"fecha": "2026-10-24",
+"caja": "9°C",
+"gano": 0,
+"0.02": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.03": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.05": {
+"acciones": 0,
+"resultado": 0.0
+}
+},
+"0xaef22b78d7a6486975fca4a43e94e15b1a2ff2bb3b9311bb6e70fa6aa3e57ea1": {
+"serie": "highest|moscow",
+"fecha": "2026-10-24",
+"caja": "10°C",
+"gano": 0,
+"0.02": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.03": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.05": {
+"acciones": 0,
+"resultado": 0.0
+}
+},
+"0xcf08019e31f439c866f4a1dde9fc4cab9a2631a0c3c44b47d6e0bf77d506bf43": {
+"serie": "highest|ankara",
+"fecha": "2026-10-24",
+"caja": "17°C",
+"gano": 0,
+"0.02": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.03": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.05": {
+"acciones": 0,
+"resultado": 0.0
+}
+},
+"0x1b87b3404b25326aa2aaff07a9fe32d325469224f767d7bed49aea3fd3909ec6": {
+"serie": "highest|moscow",
+"fecha": "2026-10-24",
+"caja": "11°C",
+"gano": 0,
+"0.02": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.03": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.05": {
+"acciones": 0,
+"resultado": 0.0
+}
+},
+"0x7ef8cd9de45cf7571dc0fa167b36d73ea4a4bc97ac551c0358523728ccb34752": {
+"serie": "highest|cape-town",
+"fecha": "2026-10-24",
+"caja": "18°C or below",
+"gano": 0,
+"0.02": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.03": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.05": {
+"acciones": 0,
+"resultado": 0.0
+}
+},
+"0x4964c1ff822a5d9f7ae620990a5feb9191e1bc3bfa01517c232b42a9354fc897": {
+"serie": "highest|ankara",
+"fecha": "2026-10-24",
+"caja": "18°C",
+"gano": 0,
+"0.02": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.03": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.05": {
+"acciones": 0,
+"resultado": 0.0
+}
+},
+"0x13b7c35caf21205fe2e1ca2d73ae5ca0d89141e82af6e07525116067860b5e61": {
+"serie": "highest|munich",
+"fecha": "2026-10-24",
+"caja": "9°C",
+"gano": 0,
+"0.02": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.03": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.05": {
+"acciones": 0,
+"resultado": 0.0
+}
+},
+"0x932c97e146ef52863e50ef7da81af8e700906af595d31ef39586049267ab1086": {
+"serie": "highest|madrid",
+"fecha": "2026-10-24",
+"caja": "14°C or below",
+"gano": 0,
+"0.02": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.03": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.05": {
+"acciones": 0,
+"resultado": 0.0
+}
+},
+"0x536e4fb172a77f889e9e898e4f86a502c1a4a1c6caee636876e11a3ecde82697": {
+"serie": "highest|madrid",
+"fecha": "2026-10-24",
+"caja": "15°C",
+"gano": 0,
+"0.02": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.03": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.05": {
+"acciones": 0,
+"resultado": 0.0
+}
+},
+"0x24964e7439f085fc8799e4d332e31f02daa6bbe029bff6149d809e733691fa38": {
+"serie": "highest|madrid",
+"fecha": "2026-10-24",
+"caja": "16°C",
+"gano": 0,
+"0.02": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.03": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.05": {
+"acciones": 0,
+"resultado": 0.0
+}
+},
+"0xaa108e9c473c1fc86ca4cee7e6f1225ef6f6a983b3f2e301ecf9ea6e1816e867": {
+"serie": "highest|madrid",
+"fecha": "2026-10-24",
+"caja": "17°C",
+"gano": 0,
+"0.02": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.03": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.05": {
+"acciones": 0,
+"resultado": 0.0
+}
+},
+"0xdce9d5c667e6ae32c79ad74843b16a675421b10fe3c4dd61a3b0497136c464fb": {
+"serie": "lowest|munich",
+"fecha": "2026-10-24",
+"caja": "8°C",
+"gano": 0,
+"0.02": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.03": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.05": {
+"acciones": 0,
+"resultado": 0.0
+}
+},
+"0xb1a03c5967896b619c454a02f62b2e7170bba7abfd9268a0ad1078829a07209f": {
+"serie": "lowest|munich",
+"fecha": "2026-10-24",
+"caja": "7°C",
+"gano": 0,
+"0.02": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.03": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.05": {
+"acciones": 0,
+"resultado": 0.0
+}
 }
 },
 "sp14": {
