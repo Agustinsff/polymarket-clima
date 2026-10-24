@@ -1,13 +1,13 @@
 # Resumen polymarket-clima
 
-_Actualizado: 2026-10-24 16:57 (Montevideo). Todo es **en papel**: no se usa plata real._
+_Actualizado: 2026-10-24 17:12 (Montevideo). Todo es **en papel**: no se usa plata real._
 
 ## Estado de las tareas
 
 🔔 Polymarket cambió algo en **temperatura máxima** (reglamento, aparece el 2026-10-23 23:58 UTC): `The qualifying value is converted using °F = °C × #/# + # and rounded to the nearest whole degree, with a value ending in exactly half rounded up to t` y 4 más. Ver [reglas_informe.md](reglas_informe.md).
 🔔 Polymarket cambió algo en **temperatura mínima** (reglamento, aparece el 2026-10-23 19:31 UTC): `#°C is exactly #°F and counts as #°F.` y 4 más. Ver [reglas_informe.md](reglas_informe.md).
 
-- Última foto de liquidez: 2026-10-24T16:57:23
+- Última foto de liquidez: 2026-10-24T17:12:30
 - Monitor: mañana 2026-10-24, noche 2026-10-23
 - Prueba São Paulo: último día registrado 2026-10-24
 - Cosechador: último ciclo 2026-10-24 18:21 UTC, 88 mercados, 46 estaciones
@@ -77,10 +77,10 @@ Puntaje Brier (más bajo = mejor) en 1008 cajas liquidadas: **modelo 0.0626** vs
 
 | Modo | Serie calibrada | Liquidadas | Ganadas | Neto (10 acc. c/u) | Pendientes |
 |---|---|---|---|---|---|
-| taker | no | 232 | 58 | US$-135.26 | 147 |
-| maker | no | 759 | 72 | US$-161.41 | 424 |
+| taker | no | 232 | 58 | US$-135.26 | 149 |
+| maker | no | 759 | 72 | US$-161.41 | 430 |
 | cola_taker | no | 88 | 3 | US$-2.68 | 65 |
-| cola_maker | no | 213 | 3 | US$-34.97 | 150 |
+| cola_maker | no | 213 | 3 | US$-34.97 | 153 |
 | no80_90 | no | 88 | 68 | US$-77.79 | 50 |
 
 Taker en total: US$-215.73. _Con la comisión vieja (0,05 para todo) sería US$-215.73._
@@ -113,6 +113,6 @@ Prueba SP: 4 operaciones; como maker se habrían llenado 2, neto **US$-7.76** (s
 
 ## Recompensas de liquidez (estimación, últimas 24 h)
 
-- Buenos Aires: ~US$46/día con 100 acciones a 1 ¢ en todas las cajas del mercado de mañana (sin contar pérdidas por quedar 'tomado').
+- Buenos Aires: ~US$47/día con 100 acciones a 1 ¢ en todas las cajas del mercado de mañana (sin contar pérdidas por quedar 'tomado').
 - Sao Paulo: ~US$58/día con 100 acciones a 1 ¢ en todas las cajas del mercado de mañana (sin contar pérdidas por quedar 'tomado').
 
