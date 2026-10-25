@@ -57,4 +57,5 @@ fracción de la ganancia total dura más de 15 min (capturable con el cron actua
 
 ## Cambios
 
-(ninguno)
+- 25-oct 22:40 UTC: las corridas de día del 25-oct no salieron (los cron solo corren desde la rama principal). Se lanza una
+  segunda corrida de noche (25→26). La regla no cambia.
