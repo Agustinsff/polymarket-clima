@@ -1,9 +1,1 @@
-{
- "hoy.py": {
-  "desde": "2026-10-25T17:00:30",
-  "ultima": "2026-10-25T17:15:59",
-  "veces": 2,
-  "codigo": 1,
-  "detalle": "requests.exceptions.JSONDecodeError: Expecting value: line 1 column 1 (char 0)"
- }
-}
+{}
