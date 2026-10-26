@@ -1,12 +1,12 @@
 # Resumen polymarket-clima
 
-_Actualizado: 2026-10-26 02:52 (Montevideo). Todo es **en papel**: no se usa plata real._
+_Actualizado: 2026-10-26 03:07 (Montevideo). Todo es **en papel**: no se usa plata real._
 
 ## Estado de las tareas
 
 ✅ Todo corriendo normalmente.
 
-- Última foto de liquidez: 2026-10-26T02:52:22
+- Última foto de liquidez: 2026-10-26T03:07:27
 - Monitor: mañana 2026-10-25, noche 2026-10-25
 - Prueba São Paulo: último día registrado 2026-10-25
 - Cosechador: último ciclo 2026-10-26 04:28 UTC, 88 mercados, 46 estaciones
@@ -79,10 +79,10 @@ Puntaje Brier (más bajo = mejor) en 1163 cajas liquidadas: **modelo 0.0656** vs
 | Modo | Serie calibrada | Liquidadas | Ganadas | Neto (10 acc. c/u) | Pendientes |
 |---|---|---|---|---|---|
 | taker | no | 288 | 71 | US$-173.86 | 202 |
-| maker | no | 897 | 87 | US$-204.04 | 670 |
+| maker | no | 897 | 87 | US$-204.04 | 690 |
 | cola_taker | no | 109 | 3 | US$-12.12 | 104 |
-| cola_maker | no | 260 | 4 | US$-39.97 | 238 |
-| no80_90 | no | 106 | 81 | US$-102.93 | 88 |
+| cola_maker | no | 260 | 4 | US$-39.97 | 243 |
+| no80_90 | no | 106 | 81 | US$-102.93 | 89 |
 
 Taker en total: US$-288.91. _Con la comisión vieja (0,05 para todo) sería US$-293.48._
 
