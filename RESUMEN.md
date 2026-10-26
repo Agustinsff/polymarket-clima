@@ -6,7 +6,7 @@ _Actualizado: 2026-10-26 10:31 (Montevideo). Todo es **en papel**: no se usa pla
 
 ✅ Todo corriendo normalmente.
 
-- Última foto de liquidez: 2026-10-26T10:12:39
+- Última foto de liquidez: 2026-10-26T10:31:35
 - Monitor: mañana 2026-10-26, noche 2026-10-25
 - Prueba São Paulo: último día registrado 2026-10-25
 - Cosechador: último ciclo 2026-10-26 10:08 UTC, 88 mercados, 46 estaciones
