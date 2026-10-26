@@ -1,0 +1,22 @@
+name: aviso_prueba
+# Manda un aviso de prueba al celular (ntfy) con el secreto BOT_NTFY_TEMA. Solo a mano.
+on:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  avisar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    env:
+      BOT_NTFY_TEMA: ${{ secrets.BOT_NTFY_TEMA }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -r requirements.txt
+      - name: Aviso
+        run: |
+          if [ -z "$BOT_NTFY_TEMA" ]; then echo "Falta el secreto BOT_NTFY_TEMA"; exit 1; fi
+          python bot/polybot.py probar-aviso
