@@ -141,5 +141,17 @@ class PruebasBot(unittest.TestCase):
         self.assertIsNone(mercado.costo_compra(asks, 20))
 
 
+class PruebasSombra(unittest.TestCase):
+    def test_llenado_prudente(self):
+        import sombra_maker as sm
+        trs = [(1, "Up", "SELL", 0.79, 3),      # igual a L: no cuenta
+               (2, "Up", "SELL", 0.78, 2),      # menor a L: llena 2
+               (3, "Down", "BUY", 0.23, 10),    # compra del otro lado a 0,23 = venta de Up a 0,77: llena el resto
+               (4, "Up", "BUY", 0.70, 50)]      # compras de nuestro lado no llenan
+        self.assertEqual(sm.llenado(trs, "Up", 0.79, 5), 5)
+        self.assertEqual(sm.llenado(trs[:2], "Up", 0.79, 5), 2)
+        self.assertEqual(sm.llenado([trs[3]], "Up", 0.79, 5), 0)
+
+
 if __name__ == "__main__":
     unittest.main(verbosity=2)
