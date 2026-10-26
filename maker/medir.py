@@ -196,6 +196,8 @@ def foto(est):
             continue
         bids, asks = lib
         medio = (bids[0][0] + asks[0][0]) / 2
+        if not 0.03 <= medio <= 0.97:      # el precio de gamma puede estar viejo: filtrar con el libro real
+            continue
         v, minimo = c["spread_max"], c["tam_min"]
         if v > 0:
             q1 = sum(puntaje(v, medio - p) * t for p, t in bids if t >= minimo)
@@ -276,8 +278,8 @@ def resolver():
     with open(F_LLEN, encoding="utf-8", newline="") as f:
         filas = list(csv.DictReader(f, delimiter=";"))
     ahora = datetime.now(timezone.utc)
-    pend = sorted({r["cid"] for r in filas if r["gano"] == "" and r["fin"]
-                   and datetime.fromisoformat(r["fin"].replace("Z", "+00:00")) < ahora})
+    pend = sorted({r["cid"] for r in filas if r["gano"] == "" and r["fin_evento"]
+                   and datetime.fromisoformat(r["fin_evento"].replace("Z", "+00:00")) < ahora})
     if not pend:
         return
     res = {}

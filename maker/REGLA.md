@@ -76,3 +76,7 @@ es razonable (< US$ 2.000). Si el neto es negativo o la recompensa depende de es
   así que **no se guarda el relevamiento de todos los pozos de Polymarket**. El pozo de cada caja sale de gamma
   (`clobRewards`), como en `liquidez.py`. Dato visto en esa foto: los mercados de temperatura hoy tienen
   comisión 0 (`feesEnabled` falso), así que el reembolso en clima es 0 mientras siga así; cripto cobra 0,07.
+- 26-oct-2026 21:00Z (vistas 70 fotos, sin analizar llenados): el filtro de "precio medio entre 3 y 97 ¢" se
+  aplica con el medio del libro real y no con el precio de gamma, que estaba viejo y dejaba pasar cajas muertas
+  a 0,5–2 ¢ (las primeras 70 fotos las incluyen; se descartan en el análisis con la misma regla). Corregido
+  también `resolver()`, que fallaba por el nombre de una columna y no había anotado ningún resultado todavía.
