@@ -13,6 +13,7 @@ Tareas (hora de Montevideo):
   multi       10:20 y 20:20 (pronostico.py en todas las ciudades + sombra_maker.py + cripto liquidar)
   cripto      cada 15 min junto con liquidez (mercados 'Bitcoin/Ethereum above')
   libros      cada hora (profundidad del libro de clima y cripto, hasta el 2-nov)
+  regla_metar cada 30 min (investigacion regla_metar/REGLA.md: fotos del libro, resultados y METAR, hasta el 10-nov)
 """
 
 import json
@@ -119,6 +120,15 @@ def main(minutos):
             guardar(est)
             correr([["libros.py"], ["libros.py", "resumen"]], ["libros.csv", "libros_informe.md"],
                    "profundidad del libro")
+        # investigacion regla_metar cada 30 min (solo mide; el script se apaga solo despues del 10-nov)
+        ult = est.get("regla_metar")
+        if not ult or (ahora - datetime.fromisoformat(ult)) >= timedelta(minutes=30):
+            log("regla_metar")
+            est["regla_metar"] = ahora.isoformat(timespec="seconds")
+            guardar(est)
+            correr([["regla_metar/recolector.py"]],
+                   ["regla_metar/datos/fotos.csv", "regla_metar/datos/resultados.csv", "regla_metar/datos/metar.csv.gz",
+                    "regla_metar/datos/estado.json"], "regla_metar")
         # diario 10:05 y 20:05
         for etiqueta, desde in (("diario_am", 10 * 60 + 5), ("diario_pm", 20 * 60 + 5)):
             if hm >= desde and est.get(etiqueta) != hoy:
