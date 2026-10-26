@@ -57,20 +57,21 @@ def get(url, params=None):
 def tags():
     out, off = [], 0
     while off < 20000:
-        r = get(GAMMA + "/tags", {"limit": 500, "offset": off})
+        r = get(GAMMA + "/tags", {"limit": 100, "offset": off})
         if not r:
             break
         out += r
-        if len(r) < 500:
+        if len(r) < 100:
             break
-        off += 500
+        off += 100
     log(f"{len(out)} etiquetas en gamma")
     return [t for t in out if CLIMA.search((t.get("slug") or "") + " " + (t.get("label") or ""))]
 
 
 def eventos(slug, cerrado):
+    """offset llega hasta 2100; despues sigue con /events/keyset"""
     out, off = [], 0
-    while off < 5000:
+    while off < 2100:
         r = get(GAMMA + "/events", {"tag_slug": slug, "closed": cerrado, "limit": 100, "offset": off,
                                     "order": "endDate", "ascending": "false"})
         if not r:
@@ -79,6 +80,24 @@ def eventos(slug, cerrado):
         if len(r) < 100:
             break
         off += 100
+    else:
+        cursor, vistos = None, {e["id"] for e in out}
+        for _ in range(200):
+            p = {"tag_slug": slug, "closed": cerrado, "limit": 100}
+            if cursor:
+                p["next_cursor"] = cursor
+            r = get(GAMMA + "/events/keyset", p)
+            if not r:
+                break
+            lote = r.get("events") or r.get("data") or [] if isinstance(r, dict) else r
+            if _ == 0:
+                log(f"keyset claves: {list(r)[:10] if isinstance(r, dict) else 'lista'}")
+            nuevos = [e for e in lote if e["id"] not in vistos]
+            vistos |= {e["id"] for e in nuevos}
+            out += nuevos
+            cursor = r.get("next_cursor") if isinstance(r, dict) else None
+            if not lote or not cursor:
+                break
     return out
 
 
