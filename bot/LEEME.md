@@ -16,40 +16,46 @@ pasa, con 5 acciones durante 2 semanas y ~US$ 60 en la cuenta.
 |---|---|
 | `config.json` | modo (`papel`/`real`), estrategia, parámetros, límites de riesgo, fecha de apagado |
 | `estrategias.py` | decide qué comprar. Hoy: `favorito` (igual a `favorito/REGLA.md`) |
-| `ejecutor.py` | `Papel`: simula una orden "todo o nada" releyendo el libro. `Real`: orden FOK con el SDK oficial |
+| `ejecutor.py` | `Papel`: simula una orden "todo o nada" releyendo el libro. `Real`: orden FOK con el SDK oficial y cobro de ganadoras |
 | `mercado.py` | lectura pública (gamma, libro, resultado, control de país) |
 | `polybot.py` | el bot: frenos, registro, liquidación, resumen; modos `una`, `bucle`, `resumen` |
-| `test_bot.py` | 12 pruebas sin red (`python bot/test_bot.py`) |
+| `test_bot.py` | 19 pruebas sin red (`python bot/test_bot.py`), incluido el modo real contra un SDK falso |
+| `sombra_maker.py`, `fotos_minuto.py` | mediciones para el 17-nov (orden 1 ¢ abajo, minuto de entrada); reglas en `SOMBRA_REGLA.md` |
+| `iniciar_bot.cmd`, `parar_bot.cmd`, `secreto_ejemplo.cmd` | para correrlo en Windows |
 
 ## Frenos (cualquiera detiene el bot)
-- Archivo `bot/PARAR` (crearlo a mano = botón de apagado; el bot lo crea solo si se activa un freno grave).
+- Archivo `bot/PARAR` (botón de apagado manual, frena cualquier modo) o `bot/PARAR_<modo>` (lo crea solo un freno grave).
 - Fecha `apagar_despues_de`.
-- Pérdida total ≥ `max_perdida_total` (US$ 25) → crea PARAR.
-- `max_errores_seguidos` (5) fallas seguidas de red/API → crea PARAR.
+- Pérdida total ≥ `max_perdida_total` (US$ 25) → crea PARAR_<modo>.
+- `max_errores_seguidos` (5) fallas seguidas de red/API → crea PARAR_<modo>.
 - Por operación: costo ≤ `max_usd_por_op` (US$ 5), ≤ `max_ops_por_dia` (30), pérdida del día < `max_perdida_dia`
   (US$ 10), plata en mercados sin resolver ≤ `max_exposicion_abierta` (US$ 20), una sola op por mercado.
 - Órdenes FOK (todo o nada al precio tope o nada): nunca queda una orden colgada si el bot se cae.
 - En real, además: no arranca sin `BOT_REAL_CONFIRMO=si` y si `polymarket.com/api/geoblock` dice que el servidor
   está bloqueado.
 
-## Cómo pasar a real (cuando la prueba en papel lo justifique)
-1. **Cuenta y billetera**: crear cuenta en polymarket.com (billetera "Deposit Wallet", la de hoy; no paga gas).
-   Cargar ~US$ 60 en pUSD (la moneda de Polymarket, respaldada 1:1 por USDC; depositar USDC la convierte sola).
-2. **Clave**: exportar la clave privada del firmante o, mejor, crear una **session key** (la doc oficial permite una
-   clave aparte que pone y cancela órdenes sin usar la clave dueña; confirmar en la doc qué más puede hacer).
-   Esa va al servidor, nunca al repo.
-3. **Servidor fuera de EE.UU.**: un VPS chico (US$ 5/mes) en **Irlanda (AWS eu-west-1)**: es la región sin bloqueo más
-   cercana a los servidores de Polymarket (Londres). Ojo: Reino Unido, Alemania, Francia, Italia, Polonia, Bélgica,
-   EE.UU., Brasil, Australia y otros están bloqueados para operar; Irlanda y Países Bajos solo en la web.
-   Argentina y Uruguay no están en la lista.
-4. En el servidor: `git clone`, `pip install requests polymarket-client`, y variables
-   `POLYMARKET_PRIVATE_KEY=...`, `BOT_REAL_CONFIRMO=si`.
-5. Primero **papel desde el servidor** (`modo: papel`, `python bot/polybot.py bucle`) unos días: mide si desde ahí
-   el libro se llena igual que en la prueba de Actions.
-6. **Primera orden real**: `modo: real`, `acciones: 5`, mirar a mano el resultado en la web. El ejecutor real está
-   escrito según la doc oficial pero sin probar: hay que confirmar (a) si estos mercados piden `position_id` en vez de
-   `token_id`, (b) qué devuelve el SDK como precio de llenado (hoy se anota el tope, lo peor posible).
-7. Las ganadoras se cobran ("redeem") desde la web al principio; automatizarlo después.
+## Cómo pasar a real en la PC de Agus (plan: 16/17-nov, si la prueba pasa)
+1. **Cuenta**: polymarket.com, billetera "Deposit Wallet" (la de hoy; no paga gas). Cargar ~US$ 60 en USDC
+   (se convierten solos a pUSD, la moneda de Polymarket).
+2. **Python en la PC**: instalar Python 3.12+ y, en la carpeta del repo, `pip install -r bot/requirements_real.txt`.
+3. **Secretos**: copiar `bot/secreto_ejemplo.cmd` como `bot/secreto.cmd` y completarlo (clave, billetera, tema de
+   avisos). `bot/secreto.cmd` está en `.gitignore`: nunca se sube. Mejor una **clave de sesión** que la clave dueña
+   (la doc oficial las permite para que otro programa ponga y cancele órdenes).
+4. **Avisos al celular**: instalar la app **ntfy** (gratis, sin cuenta), suscribirse al tema inventado en
+   `secreto.cmd` y probar con `python bot\polybot.py probar-aviso`. Avisa: arranque/apagado, cada compra real,
+   tope de pérdida del día, cualquier freno, y un resumen diario a las 00 de Uruguay (`resumen_diario_utc`).
+5. **Arranque**: doble clic en `bot\iniciar_bot.cmd` (se vuelve a levantar solo si se cae). Para que arranque al
+   prender la PC: Programador de tareas → Crear tarea básica → "Al iniciar sesión" → Iniciar un programa →
+   `bot\iniciar_bot.cmd`. En Energía, poner "Suspender: Nunca" mientras esté enchufada: si la PC duerme, se
+   pierden esas horas (no rompe nada).
+6. **Apagar**: doble clic en `bot\parar_bot.cmd` (crea `bot\PARAR`). Si un freno automático lo paró, existe
+   `bot\PARAR_real` con el motivo; borrarlo para volver a arrancar.
+7. **Primera orden real**: `"modo": "real"` en `config.json` y `BOT_REAL_CONFIRMO=si` en `secreto.cmd`, y mirar en
+   la web la primera compra. Lo verificado contra el SDK (`polymarket-client` 0.14.0, sin plata): `token_id` es el
+   mismo id de gamma, la respuesta trae pUSD pagados y acciones recibidas (el bot anota precio y acciones reales),
+   FOK no llenada vuelve como rechazo `fok_not_filled`, y las ganadoras se cobran solas con `redeem_positions`.
+   Falta ver con la primera orden si la comisión sale de lo pagado o de las acciones.
+8. Si va bien, se pasa a un servidor fuera de EE.UU. (Irlanda u otro país no bloqueado; Brasil sí está bloqueado).
 
 ## Para sumar otra estrategia
 Una función nueva en `estrategias.py` que devuelva señales con el mismo formato. Una estrategia **maker** (órdenes que

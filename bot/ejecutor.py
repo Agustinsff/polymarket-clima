@@ -3,10 +3,9 @@ Ejecutores: reciben una senal y devuelven {"lleno": bool, "precio": float|None, 
 
 - Papel: vuelve a leer el libro en el momento de "mandar" la orden y simula una orden FOK (todo o nada) con precio
   tope `precio_max`: se llena solo si las `acciones` alcanzan sin pasar el tope. No usa plata.
-- Real: manda una orden de mercado FOK con el SDK oficial (`pip install polymarket-client`, clase SecureClient).
+- Real: manda una orden de mercado FOK con el SDK oficial (`pip install -r bot/requirements_real.txt`).
   FOK = nunca queda una orden colgada en el libro, asi que no hay nada que cancelar si el bot se cae.
-  ESCRITO SEGUN LA DOC OFICIAL, SIN PROBAR (no tenemos billetera todavia). Antes del primer uso real:
-  ver LEEME.md, paso "Primera orden real".
+  Nombres y respuestas verificados contra el codigo del SDK; nunca se mando una orden de verdad (ver LEEME.md).
 """
 import os
 
@@ -16,6 +15,9 @@ class Papel:
 
     def __init__(self, m):
         self.m = m
+
+    def cobrar(self, condition_id):
+        pass
 
     def comprar(self, s):
         _, asks = self.m.libro(s["token"])
@@ -27,6 +29,14 @@ class Papel:
 
 
 class Real:
+    """Verificado el 26-oct-2026 contra polymarket-client 0.14.0 (codigo del SDK, sin plata):
+    - SecureClient.create(private_key=..., wallet=...): wallet por defecto = la Deposit Wallet del firmante.
+    - place_market_order(token_id=..., side="BUY", amount=<pUSD a gastar>, max_price=..., order_type="FOK"):
+      token_id es el mismo id de clobTokenIds de gamma. Devuelve AcceptedOrder (ok=True, making_amount = pUSD
+      pagados, taking_amount = acciones recibidas) o RejectedOrder (ok=False, code p.ej. "fok_not_filled").
+      Puede tirar InsufficientLiquidityError si el libro no alcanza bajo el tope.
+    - redeem_positions(condition_id=...).wait(): cobra un mercado resuelto (sin gas en la Deposit Wallet).
+    Falta confirmar con la primera orden real: si la comision sale de making_amount o de las acciones."""
     nombre = "real"
 
     def __init__(self, m):
@@ -37,20 +47,32 @@ class Real:
             raise SystemExit("modo real: falta POLYMARKET_PRIVATE_KEY en el entorno")
         geo = m.geobloqueo()
         if geo.get("blocked") is not False:
-            raise SystemExit(f"modo real: Polymarket bloquea operar desde este servidor ({geo.get('country')}, {geo.get('region')})")
+            raise SystemExit(f"modo real: Polymarket bloquea operar desde aca ({geo.get('country')}, {geo.get('region')})")
         from polymarket import SecureClient          # se importa solo en modo real
-        self.client = SecureClient.create(private_key=os.environ["POLYMARKET_PRIVATE_KEY"])
+        from polymarket import errors
+        self.errores = errors
+        self.client = SecureClient.create(private_key=os.environ["POLYMARKET_PRIVATE_KEY"],
+                                          wallet=os.environ.get("POLYMARKET_WALLET") or None)
 
     def comprar(self, s):
-        # Monto en pUSD = acciones * tope. Con FOK, o se llena todo a <= tope, o no se hace nada.
-        # OJO mercados "v2": la doc pide position_id en vez de token_id (verificar en la primera orden).
+        # FOK: o se llena todo sin pasar el tope, o no se hace nada. Se gasta como mucho acciones * tope;
+        # si el libro esta mas barato, entran algunas acciones mas por la misma plata.
         monto = round(s["acciones"] * s["precio_max"], 2)
-        r = self.client.place_market_order(asset_id=s["token"], side="BUY", amount=str(monto),
-                                           max_price=str(s["precio_max"]), order_type="FOK")
-        if not getattr(r, "ok", False):
-            return {"lleno": False, "precio": None, "detalle": f"rechazada: {r}"}
-        # Precio exacto de llenado: hasta verificar la respuesta del SDK se anota el tope (lo peor posible).
-        return {"lleno": True, "precio": s["precio_max"], "detalle": f"orden real ok: {r}"}
+        try:
+            r = self.client.place_market_order(token_id=s["token"], side="BUY", amount=str(monto),
+                                               max_price=str(s["precio_max"]), order_type="FOK")
+        except self.errores.InsufficientLiquidityError as ex:
+            return {"lleno": False, "precio": None, "detalle": f"no alcanza bajo el tope: {ex}"}
+        if not r.ok:
+            return {"lleno": False, "precio": None, "detalle": f"rechazada ({r.code}): {r.message}"}
+        pagado, acciones = float(r.making_amount), float(r.taking_amount)
+        if acciones <= 0:
+            return {"lleno": False, "precio": None, "detalle": f"aceptada sin llenar ({r.status}), orden {r.order_id}"}
+        return {"lleno": True, "precio": round(pagado / acciones, 4), "acciones": acciones,
+                "detalle": f"orden real {r.order_id} ({r.status}): {acciones} acc por {pagado} pUSD"}
+
+    def cobrar(self, condition_id):
+        self.client.redeem_positions(condition_id=condition_id).wait()
 
 
 def crear(modo, m):

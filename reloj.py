@@ -143,9 +143,10 @@ def main(minutos):
             log("bot")
             est["bot"] = ahora.strftime("%Y-%m-%d %H")
             guardar(est)
-            correr([["bot/polybot.py", "una"], ["bot/sombra_maker.py"]],
-                   ["bot/ops_papel.csv", "bot/estado_papel.json", "bot/resumen_papel.md", "bot/PARAR",
-                    "bot/sombra_maker.csv", "bot/sombra_maker.md"], "bot en papel y sombra maker")
+            correr([["bot/polybot.py", "una"], ["bot/fotos_minuto.py"], ["bot/sombra_maker.py"]],
+                   ["bot/ops_papel.csv", "bot/estado_papel.json", "bot/resumen_papel.md", "bot/PARAR_papel",
+                    "bot/fotos_minuto.csv", "bot/sombra_maker.csv", "bot/sombra_maker.md"],
+                   "bot en papel, fotos por minuto y sombra maker")
         # diario 10:05 y 20:05
         for etiqueta, desde in (("diario_am", 10 * 60 + 5), ("diario_pm", 20 * 60 + 5)):
             if hm >= desde and est.get(etiqueta) != hoy:

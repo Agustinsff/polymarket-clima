@@ -2,6 +2,7 @@
   "modo": "papel",
   "estrategia": "favorito",
   "apagar_despues_de": "2026-12-31 23:59",
+  "resumen_diario_utc": 3,
 
   "favorito": {
     "series": {"btc-up-or-down-hourly": "BTC", "eth-up-or-down-hourly": "ETH"},
