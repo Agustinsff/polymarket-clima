@@ -14,6 +14,7 @@ Tareas (hora de Montevideo):
   cripto      cada 15 min junto con liquidez (mercados 'Bitcoin/Ethereum above')
   libros      cada hora (profundidad del libro de clima y cripto, hasta el 2-nov)
   regla_metar cada 30 min (investigacion regla_metar/REGLA.md: fotos del libro, resultados y METAR, hasta el 10-nov)
+  favorito    minuto 53-58 de cada hora (papel favorito/REGLA.md: Up/Down de 1 h a 70-90 c, ops hasta el 16-nov)
 """
 
 import json
@@ -129,6 +130,13 @@ def main(minutos):
             correr([["regla_metar/recolector.py"]],
                    ["regla_metar/datos/fotos.csv", "regla_metar/datos/resultados.csv", "regla_metar/datos/metar.csv.gz",
                     "regla_metar/datos/estado.json"], "regla_metar")
+        # favorito tardio (papel): una vez por hora, entre el minuto 53 y 58 (la ventana la controla el script)
+        if 53 <= ahora.minute <= 58 and est.get("favorito") != ahora.strftime("%Y-%m-%d %H"):
+            log("favorito")
+            est["favorito"] = ahora.strftime("%Y-%m-%d %H")
+            guardar(est)
+            correr([["favorito/tardio.py"]], ["favorito/fotos.csv", "favorito/ops.csv", "favorito/estado.json",
+                                               "favorito/resultados.md"], "favorito tardio")
         # diario 10:05 y 20:05
         for etiqueta, desde in (("diario_am", 10 * 60 + 5), ("diario_pm", 20 * 60 + 5)):
             if hm >= desde and est.get(etiqueta) != hoy:
