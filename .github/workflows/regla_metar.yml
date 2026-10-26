@@ -1,9 +1,7 @@
 name: regla_metar
 # Investigacion (no opera): fotos del libro, resultados y METAR para regla_metar/REGLA.md.
-# Cada hora hasta el 10-nov; despues el script no hace nada y se puede desactivar.
+# Lo corre el reloj cada 30 min (el cron de GitHub no disparaba); esto queda para correrlo a mano.
 on:
-  schedule:
-    - cron: "17 * * * *"
   push:
     branches: [regla-metar]
     paths: [regla_metar/*.py, .github/workflows/regla_metar.yml]
