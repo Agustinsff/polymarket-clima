@@ -1,6 +1,6 @@
 # Resumen polymarket-clima
 
-_Actualizado: 2026-10-26 20:14 (Montevideo). Todo es **en papel**: no se usa plata real._
+_Actualizado: 2026-10-26 20:23 (Montevideo). Todo es **en papel**: no se usa plata real._
 
 ## Estado de las tareas
 
@@ -64,10 +64,10 @@ Puntaje Brier (más bajo = mejor) en 1387 cajas liquidadas: **modelo 0.0882** vs
 
 | Modo | Serie calibrada | Liquidadas | Ganadas | Neto (10 acc. c/u) | Pendientes |
 |---|---|---|---|---|---|
-| taker | no | 539 | 226 | US$-146.88 | 582 |
-| maker | no | 2132 | 231 | US$-552.54 | 2289 |
-| cola_taker | no | 354 | 12 | US$+1.69 | 368 |
-| cola_maker | no | 384 | 9 | US$-26.64 | 389 |
+| taker | no | 539 | 226 | US$-146.88 | 662 |
+| maker | no | 2135 | 231 | US$-552.54 | 2727 |
+| cola_taker | no | 354 | 12 | US$+1.69 | 416 |
+| cola_maker | no | 384 | 9 | US$-26.64 | 451 |
 
 Taker en total: US$-145.18. _Con la comisión vieja (0,05 para todo) sería US$-149.17._
 
@@ -92,27 +92,27 @@ _Taker = compra al instante pagando comisión. Maker = orden en el libro, solo c
 
 ## Cripto en papel (Bitcoin / Ethereum: above, rango y toca; modelo de opciones)
 
-Operaciones: 123 (114 liquidadas, 38 ganadas). **Neto US$+101.28** sobre US$269.08 invertidos (ROI +37.6 %). _Con la comisión vieja (0,05 para todo) sería US$+103.11._
-Brier en 364 strikes: modelo 0.1679 vs mercado 0.1736.
+Operaciones: 123 (116 liquidadas, 39 ganadas). **Neto US$+98.86** sobre US$281.18 invertidos (ROI +35.2 %). _Con la comisión vieja (0,05 para todo) sería US$+100.78._
+Brier en 428 strikes: modelo 0.1595 vs mercado 0.1635.
 
 | Activo | Tipo | Liquidadas | Neto |
 |---|---|---|---|
 | BTC | above | 13 | US$+26.60 |
-| BTC | rango | 26 | US$+76.84 |
+| BTC | rango | 27 | US$+71.67 |
 | BTC | toca | 32 | US$-2.65 |
 | ETH | above | 8 | US$-8.46 |
-| ETH | rango | 18 | US$+9.83 |
+| ETH | rango | 19 | US$+12.58 |
 | ETH | toca | 17 | US$-0.88 |
 
 _Regla fija: comprar el lado que el modelo ve ≥5 puntos más barato, a 48/24/12/6/3/1 h del cierre (18/12/6/3/1 h en 'toca'), 10 acciones al precio real del libro, con comisión. Backtest may-oct: +6,7 % con 1 ¢ de deslizamiento (Ethereum +17 %, Bitcoin ~0 %)._
 
 ## Sombra maker (¿y si dejábamos la orden en vez de comprar al toque?)
 
-Cosechador: 2190 cajas muertas ya liquidadas.
+Cosechador: 2383 cajas muertas ya liquidadas.
 - Vender el Yes a 2 ¢: 1964 acciones llenadas, neto **US$+39.29** (0 cajas 'muertas' que terminaron ganando)
 - Vender el Yes a 3 ¢: 1290 acciones llenadas, neto **US$+38.72** (0 cajas 'muertas' que terminaron ganando)
 - Vender el Yes a 5 ¢: 805 acciones llenadas, neto **US$+40.26** (0 cajas 'muertas' que terminaron ganando)
-Prueba SP: 6 operaciones; como maker se habrían llenado 4, neto **US$-10.19** (sin comisión).
+Prueba SP: 8 operaciones; como maker se habrían llenado 6, neto **US$-10.59** (sin comisión).
 
 ## Recompensas de liquidez (estimación, últimas 24 h)
 
