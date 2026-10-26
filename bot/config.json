@@ -1,0 +1,24 @@
+{
+  "modo": "papel",
+  "estrategia": "favorito",
+  "apagar_despues_de": "2026-12-31 23:59",
+
+  "favorito": {
+    "series": {"btc-up-or-down-hourly": "BTC", "eth-up-or-down-hourly": "ETH"},
+    "minuto_objetivo": 54,
+    "minuto_ultimo": 58,
+    "precio_min": 0.70,
+    "precio_max": 0.90,
+    "acciones": 10,
+    "tolerancia": 0.01
+  },
+
+  "riesgo": {
+    "max_usd_por_op": 9.5,
+    "max_ops_por_dia": 30,
+    "max_perdida_dia": 20,
+    "max_perdida_total": 50,
+    "max_exposicion_abierta": 40,
+    "max_errores_seguidos": 5
+  }
+}
