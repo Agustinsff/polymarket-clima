@@ -68,7 +68,7 @@ def inicio_dia(r):
 
 cj["ini"] = [inicio_dia(r) for r in cj.itertuples()]
 cj["gano_si"] = cj.precio_final_si == "1"
-cj["dia_fecha"] = (pd.to_datetime(cj.fecha).astype("int64") // 86_400_000_000_000).astype(int)
+cj["dia_fecha"] = ((pd.to_datetime(cj.fecha) - pd.Timestamp(0)).dt.total_seconds() // 86400).astype(int)
 CJ = cj.set_index("condition_id")
 
 op = leer("trades", dtype={"condition_id": str, "wallet": str, "name": str, "pseudonym": str, "tx": str, "asset": str})

@@ -43,4 +43,8 @@ en punto (:00–:01, :02–:04, :05–:09, :10–:29, :30–:59), para ver si qu
 (nuestra mejor fuente gratis, `carrera.py`: mediana 250 s).
 
 ## Cambios
-(ninguno)
+
+- 26-oct-2026: corregido un error (no un cambio de regla): con pandas 3 `astype("int64")` de las fechas daba
+  microsegundos y `dia_fecha` salía ~20, así que la selección usaba también eventos todavía sin resolver. Corregido,
+  la regla principal (L = 15) pasa de −0,6 % a −1,4 % y la selección a su propio precio de +8,0 % a +7,4 %.
+  Mismo veredicto: NO PASA.
