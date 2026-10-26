@@ -1,16 +1,20 @@
 name: maker
-# Investigacion maker/: sonda de endpoints de recompensas y reembolsos. No opera.
+# Investigacion maker/: mide si dejar ordenes como maker paga (ver maker/REGLA.md). No opera.
 on:
   push:
     branches: [medidor-maker]
-    paths: [maker/sonda.py, .github/workflows/maker.yml]
+    paths: [maker/medir.py, maker/minutos.txt, .github/workflows/maker.yml]
   workflow_dispatch:
 permissions:
   contents: write
+  actions: write
+concurrency:
+  group: maker
+  cancel-in-progress: false
 jobs:
-  sonda:
+  medir:
     runs-on: ubuntu-latest
-    timeout-minutes: 30
+    timeout-minutes: 360
     steps:
       - uses: actions/checkout@v4
         with:
@@ -19,9 +23,20 @@ jobs:
         with:
           python-version: "3.12"
       - run: pip install -r requirements.txt
-      - run: python maker/sonda.py 2>&1 | tee maker/sonda_registro.txt || true
+      - run: mkdir -p maker/datos && python maker/medir.py "$(cat maker/minutos.txt)" 2>&1 | tee -a maker/datos/registro.txt || true
       - run: |
           git config user.name "polymarket-clima-bot"
           git config user.email "actions@users.noreply.github.com"
-          git add maker/ && git commit -m "maker: sonda" || exit 0
-          git pull --rebase origin medidor-maker && git push origin HEAD:medidor-maker
+          git add maker/datos/ && git commit -m "maker: fotos $(date -u +%Y-%m-%dT%H:%MZ)" || exit 0
+          for i in 1 2 3 4 5 6 7 8; do
+            git pull --rebase origin medidor-maker && git push origin HEAD:medidor-maker && exit 0
+            sleep $((RANDOM % 20 + 5))
+          done
+          exit 1
+      - name: Encadenar la proxima corrida (hasta el 9-nov)
+        if: always()
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          [ "$(date -u +%Y%m%d)" -le 20261109 ] || exit 0
+          gh workflow run maker.yml --ref medidor-maker -R ${{ github.repository }}
