@@ -1,0 +1,139 @@
+<title>Arbitraje en Polymarket</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600&family=IBM+Plex+Sans:wght@400;600&family=IBM+Plex+Mono:wght@400;600&display=swap">
+<style>
+/* Layout: una columna de lectura, veredicto arriba, tablas de libro con números alineados */
+:root {
+  --bg: #f6f7f4; --panel: #ffffff; --fg: #1d2420; --muted: #5d6a63; --line: #d9dfd9;
+  --accent: #2f6b55; --no: #a3402c; --chip: #e7efe9;
+  --f-disp: "Fraunces", Georgia, serif; --f-body: "IBM Plex Sans", system-ui, sans-serif; --f-mono: "IBM Plex Mono", ui-monospace, monospace;
+}
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) {
+  --bg: #141917; --panel: #1c2320; --fg: #e4ebe6; --muted: #9aa8a0; --line: #2e3833;
+  --accent: #6cbf9c; --no: #e48a73; --chip: #24302b; color-scheme: dark } }
+:root[data-theme="dark"] {
+  --bg: #141917; --panel: #1c2320; --fg: #e4ebe6; --muted: #9aa8a0; --line: #2e3833;
+  --accent: #6cbf9c; --no: #e48a73; --chip: #24302b; color-scheme: dark }
+body { background: var(--bg); color: var(--fg); font: 16px/1.6 var(--f-body);
+  padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); padding-block: 32px 64px; }
+main { max-width: 760px; margin: 0 auto; display: grid; gap: 28px; }
+h1, h2 { font-family: var(--f-disp); font-weight: 600; text-wrap: balance; line-height: 1.2; margin: 0; }
+h1 { font-size: 2.1rem; } h2 { font-size: 1.35rem; }
+p { margin: 0; max-width: 66ch; }
+section { display: grid; gap: 12px; }
+.eyebrow { font: 600 .75rem var(--f-mono); letter-spacing: .08em; text-transform: uppercase; color: var(--muted); }
+.veredicto { background: var(--panel); border: 1px solid var(--line); border-left: 5px solid var(--no); border-radius: 6px; padding: 18px 20px; display: grid; gap: 8px; }
+.veredicto strong { color: var(--no); }
+.nums { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 12px; }
+.num { background: var(--panel); border: 1px solid var(--line); border-radius: 6px; padding: 12px 14px; }
+.num b { display: block; font: 600 1.5rem var(--f-mono); font-variant-numeric: tabular-nums; }
+.num span { color: var(--muted); font-size: .88rem; }
+.tabla { overflow-x: auto; background: var(--panel); border: 1px solid var(--line); border-radius: 6px; }
+table { border-collapse: collapse; width: 100%; font-size: .92rem; }
+th, td { padding: 8px 12px; text-align: left; border-bottom: 1px solid var(--line); vertical-align: top; }
+th { font: 600 .75rem var(--f-mono); letter-spacing: .05em; text-transform: uppercase; color: var(--muted); }
+td.n { font-family: var(--f-mono); font-variant-numeric: tabular-nums; text-align: right; white-space: nowrap; }
+tr:last-child td { border-bottom: 0; }
+.chip { display: inline-block; font: 600 .72rem var(--f-mono); padding: 2px 8px; border-radius: 99px; background: var(--chip); color: var(--accent); white-space: nowrap; }
+.chip.mal { color: var(--no); }
+ul { margin: 0; padding-left: 1.2em; display: grid; gap: 6px; max-width: 66ch; }
+code { font-family: var(--f-mono); font-size: .88em; }
+.pie { color: var(--muted); font-size: .88rem; }
+a { color: var(--accent); }
+</style>
+
+<main>
+  <header style="display:grid;gap:8px">
+    <div class="eyebrow">Investigación · dos noches, 24–26 oct 2026</div>
+    <h1>¿Hay arbitraje cuando los precios no suman 1?</h1>
+    <p class="pie">Comprar todos los resultados de un mismo evento cuando el juego completo cuesta menos de lo que paga. Medido con el libro real, recorriendo escalones y con la comisión de cada mercado.</p>
+  </header>
+
+  <div class="veredicto">
+    <div class="eyebrow">Recomendación</div>
+    <p><strong>No vale la pena.</strong> En dos noches (12 horas) de fotos cada 10 segundos sobre ~340 eventos, en temperatura apareció 7 veces y sumó US$ 11, casi todo en una sola caja que duró menos de 10 segundos. La segunda noche dio 10 centavos en total. Lo que aparece depende <em>solo de velocidad</em>: la mitad dura 10–20 segundos y nada llega a 15 minutos. Con el cron de 15 minutos la ganancia esperada es de unos 2 centavos por hora. Ni con un servidor en Irlanda alcanza: todo lo que hay, sumando todos los mercados, son unos US$ 5 por hora antes de ganarle la carrera a los bots que ya lo levantan.</p>
+  </div>
+
+  <div class="nums">
+    <div class="num"><b>4.220</b><span>fotos del libro, cada 10 s (12 h)</span></div>
+    <div class="num"><b>US$ 10,9</b><span>temperatura, total en 12 h</span></div>
+    <div class="num"><b>20 s</b><span>duración mediana en temperatura</span></div>
+    <div class="num"><b>0 %</b><span>de la ganancia dura más de 15 min</span></div>
+  </div>
+
+  <section>
+    <h2>Qué se midió</h2>
+    <p>En un evento con N resultados sale exactamente uno. Si comprás una acción de Sí en cada resultado cobrás US$ 1 seguro; si comprás una de No en cada uno cobrás N−1. Hay arbitraje cuando el juego completo cuesta menos, contando la comisión. La regla quedó fija antes de ver datos (<code>arbitraje/REGLA.md</code>):</p>
+    <ul>
+      <li>Precio: los asks reales de cada token, escalón por escalón, comprando la misma cantidad en todas las patas mientras el juego siguiente siga dando ganancia.</li>
+      <li>Comisión de taker <code>tasa·p·(1−p)</code> de cada mercado. Temperatura no cobra; los partidos de fútbol cobran 5 %.</li>
+      <li>Cuenta como oportunidad si gana al menos US$ 0,01 comprando el mínimo de orden (5 acciones) en cada pata.</li>
+      <li>Mercados: los 244 eventos de temperatura abiertos, los 40 multi-resultado con más volumen y 20 binarios Sí+No de control.</li>
+      <li>Desde GitHub Actions, dos noches: 24-oct 22:34 a 25-oct 04:32 UTC y 25-oct 22:36 a 26-oct 04:27 UTC.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Resultados por grupo</h2>
+    <div class="tabla"><table>
+      <thead><tr><th>Grupo</th><th>Eventos</th><th>Veces</th><th>US$ total</th><th>Duración</th><th>Lectura</th></tr></thead>
+      <tbody>
+        <tr><td>Temperatura</td><td class="n">244</td><td class="n">5</td><td class="n">10,84</td><td class="n">mediana 20 s</td><td><span class="chip mal">solo velocidad</span> US$ 10 de una sola caja de Varsovia que duró menos de 10 s; el resto son centavos.</td></tr>
+        <tr><td>Multi-resultado (fútbol, elecciones)</td><td class="n">31</td><td class="n">6</td><td class="n">20,2</td><td class="n">10–20 s</td><td><span class="chip mal">solo velocidad</span> partidos en vivo con 5 % de comisión y la elección de Brasil a 0,1 ¢ por juego.</td></tr>
+        <tr><td>Binarios Sí + No</td><td class="n">28</td><td class="n">0</td><td class="n">0</td><td class="n">—</td><td><span class="chip">imposible</span> el mejor caso fue −0,1 ¢: Sí + No nunca bajó de 1.</td></tr>
+        <tr><td>Multi-resultado con "otro" abierto</td><td class="n">29</td><td class="n">19</td><td class="n">(4.290)</td><td class="n">horas</td><td><span class="chip mal">falso</span> no es arbitraje, ver abajo.</td></tr>
+      </tbody>
+    </table></div>
+    <p class="pie">Tabla de la primera noche. La segunda sumó 2 veces y US$ 0,10 en temperatura, y 14 veces y US$ 13 en el resto de los multi-resultado, todas de segundos. "US$ total" es lo que se ganaba comprando todo lo rentable en la primera foto de cada oportunidad, o sea reaccionando en menos de 10 segundos.</p>
+  </section>
+
+  <section>
+    <h2>Todas las oportunidades en temperatura</h2>
+    <div class="tabla"><table>
+      <thead><tr><th>Hora UTC</th><th>Evento</th><th>¢ por juego</th><th>Juegos</th><th>US$</th><th>Duró</th></tr></thead>
+      <tbody>
+        <tr><td class="n">23:31</td><td>Mínima en Varsovia, 25-oct</td><td class="n">50,2</td><td class="n">20</td><td class="n">10,00</td><td class="n">&lt; 10 s</td></tr>
+        <tr><td class="n">02:00</td><td>Máxima en Los Ángeles, 25-oct</td><td class="n">1,7</td><td class="n">11</td><td class="n">0,14</td><td class="n">~40 s</td></tr>
+        <tr><td class="n">04:00</td><td>Máxima en Toronto, 26-oct</td><td class="n">4,2</td><td class="n">32</td><td class="n">0,58</td><td class="n">~60 s</td></tr>
+        <tr><td class="n">04:00</td><td>Máxima en Kuala Lumpur, 26-oct</td><td class="n">0,6–1,7</td><td class="n">5–17</td><td class="n">0,03–0,30</td><td class="n">~4 min</td></tr>
+      </tbody>
+    </table></div>
+    <p>Aparecen en dos momentos: cuando alguien vende de golpe una caja muy por debajo de su valor (Varsovia: 20 acciones, levantadas en menos de 10 segundos) y cuando abren los mercados del día siguiente, con el libro todavía flaco (Toronto y Kuala Lumpur a las 04:00 UTC). La de Kuala Lumpur, la única que duró minutos, valía entre 3 y 30 centavos.</p>
+  </section>
+
+  <section>
+    <h2>Por qué Sí + No nunca suma menos de 1</h2>
+    <p>En el 98–99 % de los mercados el libro del No es el espejo exacto del Sí: el precio de venta del No es 1 menos el precio de compra del Sí. Así que Sí + No siempre da 1 más el spread, por construcción. Por lo mismo, "comprar todos los No" es lo mismo que vender todos los Sí, y tampoco apareció en temperatura.</p>
+  </section>
+
+  <section>
+    <h2>La noche de la elección en Brasil</h2>
+    <p>Lo más grande que apareció fue el balotaje de Brasil del 25-oct, mientras se contaban los votos (22:36 a 23:58 UTC). Comprar el No de los dos candidatos cobra US$ 1 seguro, y por momentos costaba entre 0,5 y 2,7 ¢ menos: hasta US$ 190 por vez, con 50 episodios y unos US$ 1.000 en total. Pero cada uno duró 10 a 60 segundos, hacía falta poner entre US$ 4.000 y US$ 30.000 por vez, y pasa una vez cada varios años. Es una carrera de bots en una noche puntual, no algo que se pueda repetir con estadística.</p>
+  </section>
+
+  <section>
+    <h2>El falso arbitraje de las elecciones 2028</h2>
+    <p>En "nominado republicano 2028" los Sí de todos los candidatos listados suman 83 ¢, así que el juego "rinde" 17 ¢ y la profundidad daba US$ 4.150. No es arbitraje: Polymarket deja agregar candidatos después (evento con "otro" abierto), y si gana alguien que no está en la lista, todos los Sí pierden. Además la plata quedaría quieta hasta 2028. Estos eventos se midieron aparte y no cuentan.</p>
+  </section>
+
+  <section>
+    <h2>¿Se puede capturar con lo que tenemos?</h2>
+    <div class="tabla"><table>
+      <thead><tr><th>Cómo</th><th>Qué agarraría</th></tr></thead>
+      <tbody>
+        <tr><td>GitHub Actions, cron de 15 min</td><td>Mirando en un momento cualquiera hay US$ 0,006 sobre la mesa en temperatura: unos 2 ¢ por hora. Además Actions corre en EE.UU. y Polymarket no deja operar desde ahí.</td></tr>
+        <tr><td>Servidor en Irlanda, chequeo cada pocos segundos</td><td>En el mejor caso los ~US$ 5 por hora de todos los grupos juntos, pero compitiendo contra bots que hoy ya los levantan en 10–20 segundos. Es el mismo problema del bot rápido con METAR: llegar primero, no saber más.</td></tr>
+      </tbody>
+    </table></div>
+  </section>
+
+  <section>
+    <h2>Límites</h2>
+    <ul>
+      <li>Dos noches de 6 horas (horario de Asia y Europa, y la tarde de EE.UU.). Las corridas de día que estaban planeadas no salieron: GitHub solo corre los horarios programados desde la rama principal.</li>
+      <li>Una foto cada 10 s: lo que dura menos que eso no se ve, así que la cantidad real de oportunidades relámpago puede ser mayor. Eso refuerza que es cosa de velocidad.</li>
+      <li>No se cuenta gas ni que la plata queda inmovilizada hasta que se resuelve el evento (1–2 días en temperatura).</li>
+    </ul>
+    <p class="pie">Código y datos: rama <code>arbitraje</code> de <code>Agustinsff/polymarket-clima</code> (<code>arbitraje/medir.py</code>, <code>analizar.py</code>, <code>informe_datos.md</code>).</p>
+  </section>
+</main>
