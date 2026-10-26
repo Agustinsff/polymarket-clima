@@ -2,7 +2,7 @@ name: otros_clima
 on:
   push:
     branches: [otros-clima]
-    paths: [otros_clima/bajar.py, .github/workflows/otros_clima.yml]
+    paths: [otros_clima/bajar.py, otros_clima/fuentes.py, .github/workflows/otros_clima.yml]
   workflow_dispatch:
 permissions:
   contents: write
@@ -16,6 +16,7 @@ jobs:
         with:
           python-version: "3.12"
       - run: pip install -r requirements.txt
+      - run: mkdir -p otros_clima/datos && (python otros_clima/fuentes.py 2>&1 | tee otros_clima/datos/log_fuentes.md) || true
       - run: mkdir -p otros_clima/datos && (timeout 100m python otros_clima/bajar.py 2>&1 | tee otros_clima/datos/log.md) || true
       - run: |
           git config user.name "polymarket-clima-bot"
