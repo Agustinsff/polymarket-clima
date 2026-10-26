@@ -213,8 +213,8 @@ def foto(est):
             nb = redondear(medio - d, c["tick"], True)
             na = redondear(medio + d, c["tick"], False)
             if v > 0 and c["pozo"] > 0:
-                nuestro = (puntaje(v, medio - nb) + puntaje(v, na - medio)) * tam
-                nuestro = max(nuestro / 2 * 1, 0)   # dos lados: el minimo de los dos lados es lo que vale
+                # Q_min de la formula oficial: el menor de los dos lados (los dos de 'tam' acciones)
+                nuestro = min(puntaje(v, medio - nb), puntaje(v, na - medio)) * tam
                 rec = round(c["pozo"] * nuestro / (nuestro + comp), 3) if nuestro > 0 else 0
             else:
                 rec = 0
