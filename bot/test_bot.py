@@ -106,7 +106,7 @@ class PruebasBot(unittest.TestCase):
         b.pasada(AHORA)
         m.gana = "Down"                       # se pierden ~8,1
         b.pasada(AHORA + timedelta(hours=1))
-        self.assertTrue(os.path.exists(os.path.join(self.dir, "PARAR")))
+        self.assertTrue(os.path.exists(os.path.join(self.dir, "PARAR_papel")))
         self.assertEqual(b.pasada(AHORA + timedelta(hours=2)), [])
 
     def test_archivo_parar(self):
@@ -126,7 +126,7 @@ class PruebasBot(unittest.TestCase):
         m.eventos_abiertos = roto
         b = self.bot(m)
         b.pasada(AHORA); b.pasada(AHORA); b.pasada(AHORA)
-        self.assertTrue(os.path.exists(os.path.join(self.dir, "PARAR")))
+        self.assertTrue(os.path.exists(os.path.join(self.dir, "PARAR_papel")))
 
     def test_real_no_arranca_sin_confirmar(self):
         self.cfg["modo"] = "real"
@@ -139,6 +139,99 @@ class PruebasBot(unittest.TestCase):
         self.assertAlmostEqual(mercado.costo_compra(asks, 10), (4 * 0.80 + 6 * 0.82) / 10)
         self.assertIsNone(mercado.costo_compra(asks, 10, tope=0.81))
         self.assertIsNone(mercado.costo_compra(asks, 20))
+
+
+class SDKFalso:
+    """Imita polymarket-client 0.14.0 (AcceptedOrder / RejectedOrder / InsufficientLiquidityError)."""
+    def __init__(self, modo):
+        import types
+        self.modo, self.llamadas, self.cobros = modo, [], []
+        errs = types.SimpleNamespace(InsufficientLiquidityError=type("InsufficientLiquidityError", (Exception,), {}))
+        sdk = self
+
+        class SecureClient:
+            @classmethod
+            def create(cls, private_key, wallet=None):
+                return cls()
+
+            def place_market_order(self, **kw):
+                sdk.llamadas.append(kw)
+                if sdk.modo == "sin_liquidez":
+                    raise errs.InsufficientLiquidityError("no alcanza")
+                if sdk.modo == "rechazada":
+                    return types.SimpleNamespace(ok=False, code="fok_not_filled", message="no se lleno")
+                return types.SimpleNamespace(ok=True, order_id="0xabc", status="matched",
+                                             making_amount="3.96", taking_amount="5")
+
+            def redeem_positions(self, condition_id):
+                sdk.cobros.append(condition_id)
+                return types.SimpleNamespace(wait=lambda: None)
+
+        self.modulo = types.SimpleNamespace(SecureClient=SecureClient, errors=errs)
+
+
+class PruebasReal(unittest.TestCase):
+    def setUp(self):
+        self.dir = tempfile.mkdtemp()
+        self.cfg = cargar_cfg()
+        self.cfg["modo"] = "real"
+        os.environ.update(BOT_REAL_CONFIRMO="si", POLYMARKET_PRIVATE_KEY="0x" + "1" * 64)
+        os.environ.pop("BOT_NTFY_TEMA", None)
+
+    def tearDown(self):
+        shutil.rmtree(self.dir)
+        sys.modules.pop("polymarket", None)
+        for k in ("BOT_REAL_CONFIRMO", "POLYMARKET_PRIVATE_KEY"):
+            os.environ.pop(k, None)
+
+    def correr(self, modo, geo=False, gana=None):
+        sdk = SDKFalso(modo)
+        sys.modules["polymarket"] = sdk.modulo
+        m = MercadoFalso(gana=gana)
+        m.geobloqueo = lambda: {"blocked": geo, "country": "UY"}
+        b = Bot(self.cfg, m=m, carpeta=self.dir)
+        return b, b.pasada(AHORA), sdk
+
+    def test_compra_real_anota_precio_y_acciones_del_sdk(self):
+        b, h, sdk = self.correr("ok")
+        self.assertEqual(h[0]["lleno"], 1)
+        self.assertEqual((h[0]["acciones"], h[0]["precio"]), (5.0, 0.792))
+        kw = sdk.llamadas[0]
+        self.assertEqual((kw["token_id"], kw["side"], kw["order_type"], kw["max_price"], kw["amount"]),
+                         ("tUP", "BUY", "FOK", "0.81", "4.05"))
+
+    def test_rechazo_fok_no_llena(self):
+        _, h, _ = self.correr("rechazada")
+        self.assertEqual(h[0]["lleno"], 0)
+        self.assertIn("fok_not_filled", h[0]["detalle"])
+
+    def test_sin_liquidez_no_llena(self):
+        _, h, _ = self.correr("sin_liquidez")
+        self.assertEqual(h[0]["lleno"], 0)
+
+    def test_pais_bloqueado_no_arranca(self):
+        with self.assertRaises(SystemExit):
+            self.correr("ok", geo=True)
+
+    def test_cobra_ganadoras(self):
+        b, _, sdk = self.correr("ok")
+        b.m.gana = "Up"
+        b.liquidar()
+        b.liquidar()
+        self.assertEqual(sdk.cobros, ["0xc1"])
+
+
+class PruebasResumenDiario(unittest.TestCase):
+    def test_una_vez_por_dia(self):
+        from polybot import resumen_diario
+        d = tempfile.mkdtemp()
+        cfg = cargar_cfg(); cfg["modo"] = "papel"
+        b = Bot(cfg, m=MercadoFalso(), carpeta=d)
+        t = datetime(2026, 10, 28, 4, 0, tzinfo=timezone.utc)
+        self.assertIsNone(resumen_diario(b, t.replace(hour=1)))
+        self.assertIn("2026-10-27", resumen_diario(b, t))
+        self.assertIsNone(resumen_diario(b, t.replace(hour=5)))
+        shutil.rmtree(d)
 
 
 class PruebasSombra(unittest.TestCase):

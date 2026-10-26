@@ -6,8 +6,10 @@ Uso:
   python bot/polybot.py una        una pasada: busca senales, opera si toca, liquida lo resuelto
   python bot/polybot.py bucle      se queda corriendo: una pasada por hora en el minuto objetivo (servidor)
   python bot/polybot.py resumen    ganancia, ops y limites (tambien se escribe en bot/resumen_<modo>.md)
+  python bot/polybot.py probar-aviso   manda un aviso de prueba al celular (BOT_NTFY_TEMA)
 
-Frenos (cualquiera para todo): archivo bot/PARAR, fecha `apagar_despues_de`, perdida total, errores seguidos.
+Frenos (cualquiera para todo): archivo bot/PARAR (manual, cualquier modo), bot/PARAR_<modo> (lo crea un freno
+automatico), fecha `apagar_despues_de`, perdida total, errores seguidos.
 Archivos: bot/ops_<modo>.csv (cada intento, se llene o no), bot/estado_<modo>.json, bot/resumen_<modo>.md
 """
 import csv
@@ -32,6 +34,17 @@ def log(t):
     print(f"{datetime.now(timezone.utc):%Y-%m-%d %H:%M:%S}Z {t}", flush=True)
 
 
+def avisar(texto):
+    """Aviso al celular por ntfy.sh (app gratis, sin cuenta). Solo si BOT_NTFY_TEMA esta definido; nunca frena el bot."""
+    tema = os.environ.get("BOT_NTFY_TEMA")
+    if not tema:
+        return
+    try:
+        mercado.S.post(f"https://ntfy.sh/{tema}", data=texto.encode("utf-8"), timeout=10)
+    except Exception as ex:
+        log(f"no se pudo avisar: {ex!r}")
+
+
 def cargar_cfg(ruta=None):
     with open(ruta or os.path.join(CARPETA, "config.json"), encoding="utf-8") as f:
         return json.load(f)
@@ -44,7 +57,8 @@ class Bot:
         self.f_ops = os.path.join(carpeta, f"ops_{self.modo}.csv")
         self.f_est = os.path.join(carpeta, f"estado_{self.modo}.json")
         self.f_res = os.path.join(carpeta, f"resumen_{self.modo}.md")
-        self.f_parar = os.path.join(carpeta, "PARAR")
+        self.f_parar = os.path.join(carpeta, "PARAR")                     # el boton manual (frena cualquier modo)
+        self.f_parar_auto = os.path.join(carpeta, f"PARAR_{self.modo}")   # el que crea un freno automatico
         self.est = self._cargar()
         self.ej = None                      # se crea en la primera senal (en real conecta y chequea el pais)
 
@@ -101,15 +115,24 @@ class Bot:
 
     # ---------- frenos ----------
     def parar(self, motivo):
-        with open(self.f_parar, "w", encoding="utf-8") as f:
+        with open(self.f_parar_auto, "w", encoding="utf-8") as f:
             f.write(f"{datetime.now(timezone.utc):%Y-%m-%d %H:%M}Z {motivo}\n")
-        log(f"FRENO: {motivo} (para volver a arrancar, borrar bot/PARAR)")
+        log(f"FRENO: {motivo} (para volver a arrancar, borrar bot/PARAR_{self.modo})")
+        avisar(f"Bot ({self.modo}) FRENADO: {motivo}. Para volver a arrancar, borrar bot/PARAR_{self.modo}.")
+
+    def frenado(self):
+        """Texto del freno activo (manual o automatico) o None."""
+        for f in (self.f_parar, self.f_parar_auto):
+            if os.path.exists(f):
+                with open(f, encoding="utf-8", errors="replace") as x:
+                    return f"{os.path.basename(f)}: {x.read().strip()}"
+        return None
 
     def freno_general(self, ahora):
         """Motivo para no operar nada (o None)."""
         r = self.cfg["riesgo"]
-        if os.path.exists(self.f_parar):
-            return "existe bot/PARAR"
+        if self.frenado():
+            return f"freno activo ({self.frenado()})"
         if ahora.strftime("%Y-%m-%d %H:%M") > self.cfg["apagar_despues_de"]:
             return f"fecha de apagado {self.cfg['apagar_despues_de']}"
         if self.pnl() <= -r["max_perdida_total"]:
@@ -132,6 +155,9 @@ class Bot:
         if sum(o["momento_utc"][:10] == dia for o in llenas) >= r["max_ops_por_dia"]:
             return "tope de ops del dia"
         if self.pnl(dia) <= -r["max_perdida_dia"]:
+            if self.est.get("aviso_dia") != dia:
+                self.est["aviso_dia"] = dia
+                avisar(f"Bot ({self.modo}): perdió {self.pnl(dia):.2f} hoy, no opera más hasta mañana (UTC).")
             return f"perdida del dia {self.pnl(dia):.2f} en el tope"
         if self.exposicion() + costo > r["max_exposicion_abierta"]:
             return f"exposicion abierta {self.exposicion():.2f} + {costo:.2f} > {r['max_exposicion_abierta']}"
@@ -171,7 +197,9 @@ class Bot:
                     self.est["errores_seguidos"] = self.est.get("errores_seguidos", 0) + 1
                     r = {"lleno": False, "precio": None, "detalle": f"error: {ex!r}"}
                 fila.update(lleno=int(r["lleno"]), precio=r["precio"] or "", detalle=r["detalle"],
-                            ms=int(1000 * (time.time() - t0)))
+                            acciones=r.get("acciones", s["acciones"]), ms=int(1000 * (time.time() - t0)))
+                if r["lleno"] and self.modo == "real":
+                    avisar(f"Compra real: {fila['activo']} {fila['lado']} {fila['acciones']} acc a {fila['precio']}")
             self._anotar(fila)
             log(f"{fila['activo']} {fila['lado']} visto {s['precio_visto']} -> {fila['detalle']}")
             hechas.append(fila)
@@ -187,6 +215,19 @@ class Bot:
                 continue
             if g is not None:
                 gan[cid] = g
+        # en real, cobrar las ganadoras (en papel no hace nada)
+        cobradas = self.est.setdefault("cobradas", [])
+        for o in self.llenas():
+            cid = o["condition_id"]
+            if gan.get(cid) == o["lado"] and cid not in cobradas and self.modo == "real":
+                try:
+                    self.ej = self.ej or ejecutor.crear(self.modo, self.m)
+                    self.ej.cobrar(cid)
+                    cobradas.append(cid)
+                except SystemExit:
+                    raise
+                except Exception as ex:
+                    log(f"no se pudo cobrar {cid}: {ex!r} (se reintenta en la proxima pasada)")
         self._guardar()
 
     def resumen(self):
@@ -201,19 +242,37 @@ class Bot:
                f"(ROI {100 * neto / puesto if puesto else 0:+.1f} %). Abierto ahora: US$ {self.exposicion():.2f}.",
                f"- Frenadas por riesgo: {sum(o['detalle'].startswith('frenada') for o in ops)}; "
                f"sin llenar (el libro se movió): {sum(o['lleno'] == '0' and not o['detalle'].startswith('frenada') for o in ops)}.",
-               f"- Freno general: {'ACTIVO — ' + open(self.f_parar, encoding='utf-8').read().strip() if os.path.exists(self.f_parar) else 'no'}."]
+               f"- Freno general: {'ACTIVO — ' + self.frenado() if self.frenado() else 'no'}."]
         with open(self.f_res, "w", encoding="utf-8") as f:
             f.write("\n".join(lin) + "\n")
         print("\n".join(lin))
 
 
 def esperar_hasta(minuto):
-    """Duerme hasta el proximo minuto `minuto`:05 de alguna hora."""
+    """Duerme hasta el proximo minuto `minuto`:05 de alguna hora. En tramos de 30 s, para no pasarse si la PC
+    se suspende y vuelve."""
     ahora = datetime.now(timezone.utc)
     obj = ahora.replace(minute=minuto, second=5, microsecond=0)
     if obj <= ahora:
         obj += timedelta(hours=1)
-    time.sleep((obj - ahora).total_seconds())
+    while (falta := (obj - datetime.now(timezone.utc)).total_seconds()) > 0:
+        time.sleep(min(falta, 30))
+
+
+def resumen_diario(bot, ahora=None):
+    """Una vez por dia (a la hora UTC `resumen_diario_utc`) manda al celular como fue el dia anterior y el total."""
+    ahora = ahora or datetime.now(timezone.utc)
+    hora = bot.cfg.get("resumen_diario_utc", 3)
+    if ahora.hour < hora or bot.est.get("resumen_enviado") == ahora.strftime("%Y-%m-%d"):
+        return None
+    ayer = (ahora - timedelta(days=1)).strftime("%Y-%m-%d")
+    ops = [o for o in bot.llenas() if o["momento_utc"][:10] == ayer]
+    txt = (f"Bot ({bot.modo}) {ayer}: {len(ops)} ops, neto US$ {bot.pnl(ayer):+.2f}. "
+           f"Total US$ {bot.pnl():+.2f}, abierto US$ {bot.exposicion():.2f}.")
+    bot.est["resumen_enviado"] = ahora.strftime("%Y-%m-%d")
+    bot._guardar()
+    avisar(txt)
+    return txt
 
 
 def main():
@@ -226,15 +285,27 @@ def main():
     elif cmd == "una":
         bot.pasada()
         bot.resumen()
+    elif cmd == "probar-aviso":
+        avisar(f"Prueba del bot ({cfg['modo']}): si ves esto, los avisos andan.")
     elif cmd == "bucle":
         minuto = cfg[cfg["estrategia"]]["minuto_objetivo"]
+        avisar(f"Bot ({cfg['modo']}) arrancó.")
         while True:
             esperar_hasta(minuto)
-            bot.est = bot._cargar()
-            bot.pasada()
-            bot.resumen()
-            if os.path.exists(bot.f_parar) or datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M") > cfg["apagar_despues_de"]:
+            try:
+                bot.est = bot._cargar()
+                bot.pasada()
+                bot.resumen()
+                resumen_diario(bot)
+            except SystemExit:
+                raise
+            except Exception as ex:                  # nunca se cae el bucle; los frenos cuentan los errores
+                log(f"error inesperado: {ex!r}")
+                bot.est["errores_seguidos"] = bot.est.get("errores_seguidos", 0) + 1
+                bot._guardar()
+            if bot.frenado() or datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M") > cfg["apagar_despues_de"]:
                 log("bot apagado")
+                avisar(f"Bot ({cfg['modo']}) apagado.")
                 break
     else:
         raise SystemExit(__doc__)

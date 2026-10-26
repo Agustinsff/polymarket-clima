@@ -22,3 +22,10 @@ No pone órdenes ni toca la prueba `favorito/` ni la regla del bot. Solo mira lo
   no llenadas, la orden se llena justo cuando el favorito se da vuelta.
 - Se decide junto con la prueba el 16/17-nov: si maker gana más que taker con P(≤ taker) < 10 % por bloques de
   día, el bot real pasa a usar orden límite 1 ¢ abajo.
+
+## Minuto de entrada (agregado 26-oct-2026 ~18:40 UTC, antes de ver datos)
+- `bot/fotos_minuto.py` saca una foto del libro de los dos lados en cada minuto del 54 al 58 de cada hora
+  (`bot/fotos_minuto.csv`). No se mira el resultado por minuto hasta el 17-nov.
+- El 17-nov, `python bot/fotos_minuto.py analizar` da el ROI del favorito (5 acciones, 70–90 ¢, comisión + 1 ¢)
+  según el minuto. Se cambia el minuto del bot solo si otro minuto le gana al 54 con P(≤0) < 5 % **y** el mismo
+  minuto también es el mejor (o empatado) en el histórico de 61 días (`updown/`), para no elegir por ruido.
