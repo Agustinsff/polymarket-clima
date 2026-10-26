@@ -6,7 +6,8 @@ cuenta**. Hoy corre solo en **papel** (libro real, sin plata). Pasa a real cuand
 **Desde el 26-oct corre en papel desde el reloj** (minuto 54–58 de cada hora, `python bot/polybot.py una`), con
 5 acciones y frenos a la mitad: sirve para probar el bot entero (frenos, órdenes que no llenan, registro) con el
 libro real mientras dura la prueba. La prueba oficial del favorito tardío sigue siendo `favorito/` (no se toca) y
-es la que decide el 16-nov. Resultados del bot en `bot/resumen_papel.md`. Plan: pasar a real el 16-nov si la prueba
+es la que decide el 16-nov. Resultados del bot en `bot/resumen_papel.md`. Junto al bot corre `sombra_maker.py` (regla en `SOMBRA_REGLA.md`):
+mide si comprar con una orden 1 ¢ abajo, sin comisión, habría rendido más; resultados en `bot/sombra_maker.md`. Plan: pasar a real el 16-nov si la prueba
 pasa, con 5 acciones durante 2 semanas y ~US$ 60 en la cuenta.
 
 ## Piezas
