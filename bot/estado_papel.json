@@ -1,4 +1,8 @@
 {
-"ganadoras": {},
-"errores_seguidos": 0
+"ganadoras": {
+"0x3e9694574893cdbf734d1b051bbc0a9efa42af246d094d6de8cd4a28d4fd3233": "Up"
+},
+"errores_seguidos": 0,
+"cobradas": [],
+"resumen_enviado": "2026-10-26"
 }
