@@ -15,6 +15,7 @@ Tareas (hora de Montevideo):
   libros      cada hora (profundidad del libro de clima y cripto, hasta el 2-nov)
   regla_metar cada 30 min (investigacion regla_metar/REGLA.md: fotos del libro, resultados y METAR, hasta el 10-nov)
   favorito    minuto 53-58 de cada hora (papel favorito/REGLA.md: Up/Down de 1 h a 70-90 c, ops hasta el 16-nov)
+  bot         minuto 54-58 de cada hora (bot/ en modo papel: mismo favorito con 5 acciones y frenos; ver bot/LEEME.md)
 """
 
 import json
@@ -137,6 +138,13 @@ def main(minutos):
             guardar(est)
             correr([["favorito/tardio.py"]], ["favorito/fotos.csv", "favorito/ops.csv", "favorito/estado.json",
                                                "favorito/resultados.md"], "favorito tardio")
+        # bot/ en papel (misma regla que favorito, 5 acciones, frenos chicos): minuto 54-58 de cada hora
+        if 54 <= ahora.minute <= 58 and est.get("bot") != ahora.strftime("%Y-%m-%d %H"):
+            log("bot")
+            est["bot"] = ahora.strftime("%Y-%m-%d %H")
+            guardar(est)
+            correr([["bot/polybot.py", "una"]], ["bot/ops_papel.csv", "bot/estado_papel.json", "bot/resumen_papel.md",
+                                                 "bot/PARAR"], "bot en papel")
         # diario 10:05 y 20:05
         for etiqueta, desde in (("diario_am", 10 * 60 + 5), ("diario_pm", 20 * 60 + 5)):
             if hm >= desde and est.get(etiqueta) != hoy:

@@ -47,6 +47,8 @@ class PruebasBot(unittest.TestCase):
         self.dir = tempfile.mkdtemp()
         self.cfg = cargar_cfg()
         self.cfg["modo"] = "papel"
+        self.cfg["favorito"]["acciones"] = 10        # las cuentas de abajo usan 10 acciones y frenos holgados
+        self.cfg["riesgo"].update(max_usd_por_op=9.5, max_perdida_dia=20, max_perdida_total=50, max_exposicion_abierta=40)
 
     def tearDown(self):
         shutil.rmtree(self.dir)
