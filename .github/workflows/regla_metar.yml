@@ -1,0 +1,38 @@
+name: regla_metar
+# Investigacion (no opera): fotos del libro, resultados y METAR para regla_metar/REGLA.md.
+# Cada hora hasta el 10-nov; despues el script no hace nada y se puede desactivar.
+on:
+  schedule:
+    - cron: "17 * * * *"
+  push:
+    branches: [regla-metar]
+    paths: [regla_metar/*.py, .github/workflows/regla_metar.yml]
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: regla_metar
+  cancel-in-progress: false
+jobs:
+  recolectar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -r requirements.txt
+      - run: python regla_metar/recolector.py
+      - name: Guardar en el repositorio
+        run: |
+          git config user.name "polymarket-clima-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add regla_metar/datos
+          git diff --cached --quiet && exit 0
+          git commit -m "datos: regla_metar $(date -u +%Y-%m-%dT%H:%MZ)"
+          for i in 1 2 3 4 5; do
+            git pull --rebase --autostash && git push && exit 0
+            sleep $((RANDOM % 20 + 5))
+          done
+          exit 1
