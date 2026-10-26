@@ -1,0 +1,28 @@
+name: otros_clima
+on:
+  push:
+    branches: [otros-clima]
+    paths: [otros_clima/bajar.py, .github/workflows/otros_clima.yml]
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  bajar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -r requirements.txt
+      - run: mkdir -p otros_clima/datos && (timeout 100m python otros_clima/bajar.py 2>&1 | tee otros_clima/datos/log.md) || true
+      - run: |
+          git config user.name "polymarket-clima-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add otros_clima/datos/ && git commit -m "otros_clima: datos"
+          for i in 1 2 3 4 5 6 7 8; do
+            git pull --rebase && git push && exit 0
+            sleep $((RANDOM % 20 + 5))
+          done
+          exit 1
