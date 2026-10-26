@@ -1,10 +1,10 @@
 # Resumen polymarket-clima
 
-_Actualizado: 2026-10-26 17:50 (Montevideo). Todo es **en papel**: no se usa plata real._
+_Actualizado: 2026-10-26 17:53 (Montevideo). Todo es **en papel**: no se usa plata real._
 
 ## Estado de las tareas
 
-✅ Todo corriendo normalmente.
+🔔 Polymarket cambió algo en **clima (otros)** (mercado de clima nuevo, aparece el 2026-10-26 20:44 UTC): `what-intensity-will-arnab-reach` y 1 más. Ver [reglas_informe.md](reglas_informe.md).
 
 - Última foto de liquidez: 2026-10-26T17:38:41
 - Monitor: mañana 2026-10-26, noche 2026-10-25
