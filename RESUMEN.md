@@ -1,12 +1,12 @@
 # Resumen polymarket-clima
 
-_Actualizado: 2026-10-25 21:19 (Montevideo). Todo es **en papel**: no se usa plata real._
+_Actualizado: 2026-10-25 21:34 (Montevideo). Todo es **en papel**: no se usa plata real._
 
 ## Estado de las tareas
 
 ✅ Todo corriendo normalmente.
 
-- Última foto de liquidez: 2026-10-25T21:18:58
+- Última foto de liquidez: 2026-10-25T21:34:04
 - Monitor: mañana 2026-10-25, noche 2026-10-25
 - Prueba São Paulo: último día registrado 2026-10-25
 - Cosechador: último ciclo 2026-10-25 22:47 UTC, 88 mercados, 46 estaciones
@@ -90,7 +90,7 @@ _Taker = compra al instante pagando comisión. Maker = orden en el libro, solo c
 
 ## Cripto en papel (Bitcoin / Ethereum: above, rango y toca; modelo de opciones)
 
-Operaciones: 114 (106 liquidadas, 35 ganadas). **Neto US$+97.44** sobre US$244.00 invertidos (ROI +39.9 %). _Con la comisión vieja (0,05 para todo) sería US$+98.98._
+Operaciones: 115 (106 liquidadas, 35 ganadas). **Neto US$+97.44** sobre US$244.00 invertidos (ROI +39.9 %). _Con la comisión vieja (0,05 para todo) sería US$+98.98._
 Brier en 316 strikes: modelo 0.1649 vs mercado 0.1704.
 
 | Activo | Tipo | Liquidadas | Neto |
@@ -115,5 +115,5 @@ Prueba SP: 6 operaciones; como maker se habrían llenado 4, neto **US$-10.19** (
 ## Recompensas de liquidez (estimación, últimas 24 h)
 
 - Buenos Aires: ~US$48/día con 100 acciones a 1 ¢ en todas las cajas del mercado de mañana (sin contar pérdidas por quedar 'tomado').
-- Sao Paulo: ~US$53/día con 100 acciones a 1 ¢ en todas las cajas del mercado de mañana (sin contar pérdidas por quedar 'tomado').
+- Sao Paulo: ~US$52/día con 100 acciones a 1 ¢ en todas las cajas del mercado de mañana (sin contar pérdidas por quedar 'tomado').
 
