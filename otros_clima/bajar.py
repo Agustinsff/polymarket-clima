@@ -30,6 +30,10 @@ GAMMA = "https://gamma-api.polymarket.com"
 CLOB = "https://clob.polymarket.com"
 CLIMA = re.compile(r"weather|climate|hurricane|temperat|rain|snow|storm|tornado|heat|precip|nino|nina|arctic|"
                    r"sea-ice|cyclone|typhoon|flood|drought|wildfire|noaa|nasa-giss|global-temp", re.I)
+DATA = "https://data-api.polymarket.com/trades"
+# familias donde bajamos todas las operaciones de los cerrados (lo demas es contexto)
+FAMILIAS = re.compile(r"temperature increase|hottest|precipitation|inches of snow|tornado|named storms|hurricanes will form|"
+                      r"sea ice|earthquakes|rain in|rainfall|el ni", re.I)
 DIARIA = re.compile(r"^(highest|lowest)-temperature-in-")
 
 
@@ -153,7 +157,7 @@ def main():
                 toks, precios, nombres = [], [], []
             filas.append({
                 "evento_id": e.get("id"), "evento_slug": e.get("slug"), "evento": e.get("title"),
-                "tags": "|".join(sorted(e["_tags"])), "mercado_id": mk.get("id"), "slug": mk.get("slug"),
+                "tags": "|".join(sorted(e["_tags"])), "mercado_id": mk.get("id"), "condition_id": mk.get("conditionId") or "", "neg_risk": mk.get("negRisk"), "slug": mk.get("slug"),
                 "pregunta": mk.get("question"), "caja": mk.get("groupItemTitle") or "",
                 "resultados": "|".join(nombres), "token_si": toks[0] if toks else "",
                 "token_no": toks[1] if len(toks) > 1 else "", "precio_final_si": precios[0] if precios else "",
@@ -197,14 +201,28 @@ def main():
                 log(f"libros {i}/{len(abiertos)}")
 
     # --- historia de precio por hora de los cerrados ------------------------------------
+    # interval=max viene vacio en los mercados viejos: se pide por tramos de 14 dias entre inicio y fin+30 dias
     cerrados = [x for x in filas if x["cerrado"] in (True, "True", "true") and x["token_si"]]
+    ahora = int(time.time())
     n, vacios = 0, 0
     with gzip.open(os.path.join(DATOS, "precios.csv.gz"), "wt", newline="") as f:
         w = csv.writer(f)
         w.writerow(["mercado_id", "t", "p"])
         for i, x in enumerate(cerrados):
-            r = get(CLOB + "/prices-history", {"market": x["token_si"], "interval": "max", "fidelity": 60})
-            h = (r or {}).get("history") or []
+            h = []
+            try:
+                t0 = int(datetime.fromisoformat(x["inicio"].replace("Z", "+00:00")).timestamp())
+                t1 = min(int(datetime.fromisoformat(x["fin"].replace("Z", "+00:00")).timestamp()) + 30 * 86400, ahora)
+            except Exception:
+                t0 = t1 = None
+            if t0 and t1 and t1 > t0 and FAMILIAS.search(x["evento"] or ""):
+                for a in range(max(t0, t1 - 400 * 86400), t1, 14 * 86400):
+                    r = get(CLOB + "/prices-history", {"market": x["token_si"], "startTs": a,
+                                                       "endTs": min(a + 14 * 86400, t1), "fidelity": 60})
+                    h += (r or {}).get("history") or []
+            else:
+                r = get(CLOB + "/prices-history", {"market": x["token_si"], "interval": "max", "fidelity": 60})
+                h = (r or {}).get("history") or []
             if not h:
                 vacios += 1
             for y in h:
@@ -214,6 +232,30 @@ def main():
                 log(f"precios {i}/{len(cerrados)}: {n} puntos, {vacios} vacios")
     log(f"precios: {n} puntos, {vacios} mercados sin historia")
 
+    # --- operaciones (lado taker) de los cerrados de las familias que interesan ----------
+    sel = [x for x in cerrados if x["condition_id"] and FAMILIAS.search(x["evento"] or "")]
+    n = 0
+    with gzip.open(os.path.join(DATOS, "trades.csv.gz"), "wt", newline="") as f:
+        w = csv.writer(f)
+        w.writerow(["mercado_id", "outcome_index", "side", "price", "size", "timestamp", "wallet"])
+        for i, x in enumerate(sel):
+            off = 0
+            while True:
+                r = get(DATA, {"market": x["condition_id"], "limit": 1000, "offset": off, "takerOnly": "true"})
+                if not r:
+                    break
+                for t in r:
+                    w.writerow([x["mercado_id"], t.get("outcomeIndex"), t.get("side"), t.get("price"), t.get("size"),
+                                t.get("timestamp"), t.get("proxyWallet")])
+                n += len(r)
+                if len(r) < 1000 or off >= 3000:
+                    if off >= 3000 and len(r) == 1000:
+                        log(f"tope de 4000 operaciones en {x['slug']}")
+                    break
+                off += 1000
+            if i % 100 == 0:
+                log(f"operaciones {i}/{len(sel)}: {n}")
+    log(f"{n} operaciones en {len(sel)} mercados")
 
 if __name__ == "__main__":
     main()
