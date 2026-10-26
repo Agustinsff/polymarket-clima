@@ -9,16 +9,16 @@
     "minuto_ultimo": 58,
     "precio_min": 0.70,
     "precio_max": 0.90,
-    "acciones": 10,
+    "acciones": 5,
     "tolerancia": 0.01
   },
 
   "riesgo": {
-    "max_usd_por_op": 9.5,
+    "max_usd_por_op": 5,
     "max_ops_por_dia": 30,
-    "max_perdida_dia": 20,
-    "max_perdida_total": 50,
-    "max_exposicion_abierta": 40,
+    "max_perdida_dia": 10,
+    "max_perdida_total": 25,
+    "max_exposicion_abierta": 20,
     "max_errores_seguidos": 5
   }
 }

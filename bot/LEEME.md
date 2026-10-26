@@ -3,8 +3,11 @@
 Junta todo lo aprendido en el proyecto en un solo programa que **decide, controla el riesgo, opera y lleva la
 cuenta**. Hoy corre solo en **papel** (libro real, sin plata). Pasa a real cuando haya billetera y servidor.
 
-**Nada de esto corre solo todavía**: no hay workflow ni tarea en el reloj. La prueba en papel oficial del favorito
-tardío sigue siendo `favorito/` (no se toca). Este bot usa la misma regla.
+**Desde el 26-oct corre en papel desde el reloj** (minuto 54–58 de cada hora, `python bot/polybot.py una`), con
+5 acciones y frenos a la mitad: sirve para probar el bot entero (frenos, órdenes que no llenan, registro) con el
+libro real mientras dura la prueba. La prueba oficial del favorito tardío sigue siendo `favorito/` (no se toca) y
+es la que decide el 16-nov. Resultados del bot en `bot/resumen_papel.md`. Plan: pasar a real el 16-nov si la prueba
+pasa, con 5 acciones durante 2 semanas y ~US$ 60 en la cuenta.
 
 ## Piezas
 
@@ -20,10 +23,10 @@ tardío sigue siendo `favorito/` (no se toca). Este bot usa la misma regla.
 ## Frenos (cualquiera detiene el bot)
 - Archivo `bot/PARAR` (crearlo a mano = botón de apagado; el bot lo crea solo si se activa un freno grave).
 - Fecha `apagar_despues_de`.
-- Pérdida total ≥ `max_perdida_total` (US$ 50) → crea PARAR.
+- Pérdida total ≥ `max_perdida_total` (US$ 25) → crea PARAR.
 - `max_errores_seguidos` (5) fallas seguidas de red/API → crea PARAR.
-- Por operación: costo ≤ `max_usd_por_op` (US$ 9,5), ≤ `max_ops_por_dia` (30), pérdida del día < `max_perdida_dia`
-  (US$ 20), plata en mercados sin resolver ≤ `max_exposicion_abierta` (US$ 40), una sola op por mercado.
+- Por operación: costo ≤ `max_usd_por_op` (US$ 5), ≤ `max_ops_por_dia` (30), pérdida del día < `max_perdida_dia`
+  (US$ 10), plata en mercados sin resolver ≤ `max_exposicion_abierta` (US$ 20), una sola op por mercado.
 - Órdenes FOK (todo o nada al precio tope o nada): nunca queda una orden colgada si el bot se cae.
 - En real, además: no arranca sin `BOT_REAL_CONFIRMO=si` y si `polymarket.com/api/geoblock` dice que el servidor
   está bloqueado.
