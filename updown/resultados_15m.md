@@ -1,0 +1,39 @@
+# Favorito tardío en 15 min (regla en REGLA_15M.md) — 2026-10-26 16:00Z 
+Mercados 15 min con ganador: BTC 2100, ETH 2100; días 2026-10-04 a 2026-10-26. 
+## Control (1 h, 6 min antes, 1 ¢): debe dar ~545 ops y +4,8 %
+- 545 ops, ganó 87.3 % (precio medio 81.4 ¢), neto US$ +214.7, ROI +4.78 %, P(≤0) 0.005 
+## Regla principal: 15 min, 90 s antes, 70–90 ¢, comisión + 1 ¢
+- Todo: 692 ops, ganó 81.5 % (precio medio 81.3 ¢), neto US$ -127.1, ROI -2.23 %, P(≤0) 0.915
+- Primera mitad: 336 ops, ganó 83.3 % (precio medio 81.8 ¢), neto US$ -14.0, ROI -0.50 %, P(≤0) 0.598
+- Segunda mitad: 356 ops, ganó 79.8 % (precio medio 80.9 ¢), neto US$ -113.1, ROI -3.88 %, P(≤0) 0.932
+- BTC: 368 ops, ganó 83.2 % (precio medio 81.3 ¢), neto US$ -6.9, ROI -0.23 %, P(≤0) 0.536
+- ETH: 324 ops, ganó 79.6 % (precio medio 81.3 ¢), neto US$ -120.2, ROI -4.51 %, P(≤0) 0.969
+ **Veredicto con la regla fija: NO PASA.** 
+## Se informa además (no decide)
+| momento | costo extra | resultado | |---|---|---|
+| 6 min | 0 ¢ | 1642 ops, ganó 81.5 % (precio medio 80.3 ¢), neto US$ +30.3, ROI +0.23 %, P(≤0) 0.393 |
+| 6 min | 1 ¢ | 1642 ops, ganó 81.5 % (precio medio 80.3 ¢), neto US$ -126.9, ROI -0.95 %, P(≤0) 0.821 |
+| 6 min | 2 ¢ | 1642 ops, ganó 81.5 % (precio medio 80.3 ¢), neto US$ -283.8, ROI -2.10 %, P(≤0) 0.992 |
+| 4 min | 0 ¢ | 1402 ops, ganó 81.2 % (precio medio 80.7 ¢), neto US$ -87.7, ROI -0.78 %, P(≤0) 0.720 |
+| 4 min | 1 ¢ | 1402 ops, ganó 81.2 % (precio medio 80.7 ¢), neto US$ -221.8, ROI -1.94 %, P(≤0) 0.928 |
+| 4 min | 2 ¢ | 1402 ops, ganó 81.2 % (precio medio 80.7 ¢), neto US$ -355.7, ROI -3.07 %, P(≤0) 0.995 |
+| 3 min | 0 ¢ | 1157 ops, ganó 80.6 % (precio medio 80.9 ¢), neto US$ -158.6, ROI -1.70 %, P(≤0) 0.908 |
+| 3 min | 1 ¢ | 1157 ops, ganó 80.6 % (precio medio 80.9 ¢), neto US$ -269.2, ROI -2.84 %, P(≤0) 0.989 |
+| 3 min | 2 ¢ | 1157 ops, ganó 80.6 % (precio medio 80.9 ¢), neto US$ -379.7, ROI -3.96 %, P(≤0) 1.000 |
+| 90 s | 0 ¢ | 692 ops, ganó 81.5 % (precio medio 81.3 ¢), neto US$ -61.0, ROI -1.08 %, P(≤0) 0.740 |
+| 90 s | 1 ¢ | 692 ops, ganó 81.5 % (precio medio 81.3 ¢), neto US$ -127.1, ROI -2.23 %, P(≤0) 0.915 |
+| 90 s | 2 ¢ | 692 ops, ganó 81.5 % (precio medio 81.3 ¢), neto US$ -193.2, ROI -3.35 %, P(≤0) 0.980 |
+ Calibración del lado favorito (sin costos): cuánto gana de verdad vs el precio. 
+| momento | tramo | ops | precio medio | ganó | |---|---|---|---|---|
+| 6 min | 60–70 ¢ | 676 | 65.1 ¢ | 65.7 % |
+| 6 min | 70–80 ¢ | 788 | 75.0 ¢ | 74.4 % |
+| 6 min | 80–90 ¢ | 854 | 85.2 ¢ | 88.2 % |
+| 6 min | 90–100 ¢ | 1131 | 94.9 ¢ | 96.1 % |
+| 3 min | 60–70 ¢ | 451 | 65.4 ¢ | 62.3 % |
+| 3 min | 70–80 ¢ | 520 | 75.2 ¢ | 74.8 % |
+| 3 min | 80–90 ¢ | 637 | 85.5 ¢ | 85.2 % |
+| 3 min | 90–100 ¢ | 2090 | 96.8 ¢ | 97.9 % |
+| 90 s | 60–70 ¢ | 258 | 65.0 ¢ | 65.5 % |
+| 90 s | 70–80 ¢ | 274 | 74.9 ¢ | 74.1 % |
+| 90 s | 80–90 ¢ | 418 | 85.6 ¢ | 86.4 % |
+| 90 s | 90–100 ¢ | 2922 | 98.2 ¢ | 98.5 % |
