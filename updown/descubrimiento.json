@@ -1,0 +1,2423 @@
+{
+ "series": [
+  {
+   "id": "40",
+   "slug": "eth-up-or-down-daily",
+   "title": "ETH Up or Down Daily",
+   "seriesType": "single",
+   "recurrence": "daily",
+   "active": true,
+   "closed": false,
+   "volume": 24316.212835,
+   "liquidity": 31860.8048,
+   "startDate": null,
+   "createdAt": "2023-03-14T16:36:57.439Z"
+  },
+  {
+   "id": "41",
+   "slug": "btc-up-or-down-daily",
+   "title": "BTC Up or Down Daily",
+   "seriesType": "single",
+   "recurrence": "daily",
+   "active": true,
+   "closed": false,
+   "volume": 64715.439154,
+   "liquidity": 39650.3672,
+   "startDate": null,
+   "createdAt": "2023-03-14T16:37:21.67Z"
+  },
+  {
+   "id": "10005",
+   "slug": "nyc-daily-weather",
+   "title": "NYC Daily Weather",
+   "seriesType": "single",
+   "recurrence": "daily",
+   "active": true,
+   "closed": false,
+   "volume": 36466.521842,
+   "liquidity": 71072.02343,
+   "startDate": null,
+   "createdAt": "2025-01-21T17:04:00.621433Z"
+  },
+  {
+   "id": "10006",
+   "slug": "london-daily-weather",
+   "title": "London Daily Weather",
+   "seriesType": "single",
+   "recurrence": "daily",
+   "active": true,
+   "closed": false,
+   "volume": 43800.074023,
+   "liquidity": 85232.90667,
+   "startDate": null,
+   "createdAt": "2025-01-21T17:04:06.122552Z"
+  },
+  {
+   "id": "10023",
+   "slug": "doge-weeklies",
+   "title": "DOGE weeklies",
+   "seriesType": "single",
+   "recurrence": "weekly",
+   "active": true,
+   "closed": false,
+   "volume": null,
+   "liquidity": null,
+   "startDate": null,
+   "createdAt": "2025-02-01T00:12:59.285389Z"
+  }
+ ],
+ "busqueda": {
+  "bitcoin up or down": {
+   "events": [
+    {
+     "slug": "btc-updown-5m-1775181000",
+     "title": "Bitcoin Up or Down - April 2, 9:50PM-9:55PM ET",
+     "seriesSlug": "btc-up-or-down-5m",
+     "startDate": "2026-04-02T02:03:13.802366Z",
+     "endDate": "2026-04-03T01:55:00Z",
+     "closed": true
+    },
+    {
+     "slug": "btc-updown-15m-1792962900",
+     "title": "Bitcoin Up or Down - October 25, 5:15PM-5:30PM ET",
+     "seriesSlug": "btc-up-or-down-15m",
+     "startDate": "2026-10-24T21:25:09.332363Z",
+     "endDate": "2026-10-25T21:30:00Z",
+     "closed": true
+    },
+    {
+     "slug": "btc-updown-5m-1773976200",
+     "title": "Bitcoin Up or Down - March 19, 11:10PM-11:15PM ET",
+     "seriesSlug": "btc-up-or-down-5m",
+     "startDate": "2026-03-19T03:20:37.889002Z",
+     "endDate": "2026-03-20T03:15:00Z",
+     "closed": true
+    },
+    {
+     "slug": "btc-updown-15m-1792960200",
+     "title": "Bitcoin Up or Down - October 25, 4:30PM-4:45PM ET",
+     "seriesSlug": "btc-up-or-down-15m",
+     "startDate": "2026-10-24T20:38:56.622133Z",
+     "endDate": "2026-10-25T20:45:00Z",
+     "closed": true
+    },
+    {
+     "slug": "btc-updown-5m-1771863900",
+     "title": "Bitcoin Up or Down - February 23, 11:25AM-11:30AM ET",
+     "seriesSlug": "btc-up-or-down-5m",
+     "startDate": "2026-02-22T16:33:37.346526Z",
+     "endDate": "2026-02-23T16:30:00Z",
+     "closed": true
+    },
+    {
+     "slug": "btc-updown-15m-1792963800",
+     "title": "Bitcoin Up or Down - October 25, 5:30PM-5:45PM ET",
+     "seriesSlug": "btc-up-or-down-15m",
+     "startDate": "2026-10-24T21:38:50.173522Z",
+     "endDate": "2026-10-25T21:45:00Z",
+     "closed": true
+    },
+    {
+     "slug": "btc-updown-15m-1792950300",
+     "title": "Bitcoin Up or Down - October 25, 1:45PM-2:00PM ET",
+     "seriesSlug": "btc-up-or-down-15m",
+     "startDate": "2026-10-24T17:54:17.240843Z",
+     "endDate": "2026-10-25T18:00:00Z",
+     "closed": true
+    },
+    {
+     "slug": "btc-updown-15m-1792962000",
+     "title": "Bitcoin Up or Down - October 25, 5:00PM-5:15PM ET",
+     "seriesSlug": "btc-up-or-down-15m",
+     "startDate": "2026-10-24T21:09:05.853888Z",
+     "endDate": "2026-10-25T21:15:00Z",
+     "closed": true
+    },
+    {
+     "slug": "btc-updown-5m-1793019000",
+     "title": "Bitcoin Up or Down - October 26, 8:50AM-8:55AM ET",
+     "seriesSlug": "btc-up-or-down-5m",
+     "startDate": "2026-10-25T12:58:54.200661Z",
+     "endDate": "2026-10-26T12:55:00Z",
+     "closed": true
+    },
+    {
+     "slug": "btc-updown-15m-1792959300",
+     "title": "Bitcoin Up or Down - October 25, 4:15PM-4:30PM ET",
+     "seriesSlug": "btc-up-or-down-15m",
+     "startDate": "2026-10-24T20:24:04.487629Z",
+     "endDate": "2026-10-25T20:30:00Z",
+     "closed": true
+    },
+    {
+     "slug": "btc-updown-15m-1792953900",
+     "title": "Bitcoin Up or Down - October 25, 2:45PM-3:00PM ET",
+     "seriesSlug": "btc-up-or-down-15m",
+     "startDate": "2026-10-24T18:54:19.975158Z",
+     "endDate": "2026-10-25T19:00:00Z",
+     "closed": true
+    },
+    {
+     "slug": "btc-updown-15m-1792953000",
+     "title": "Bitcoin Up or Down - October 25, 2:30PM-2:45PM ET",
+     "seriesSlug": "btc-up-or-down-15m",
+     "startDate": "2026-10-24T18:38:51.026766Z",
+     "endDate": "2026-10-25T18:45:00Z",
+     "closed": true
+    },
+    {
+     "slug": "btc-updown-15m-1771868700",
+     "title": "Bitcoin Up or Down - February 23, 12:45PM-1:00PM ET",
+     "seriesSlug": "btc-up-or-down-15m",
+     "startDate": "2026-02-22T17:53:39.478261Z",
+     "endDate": "2026-02-23T18:00:00Z",
+     "closed": true
+    },
+    {
+     "slug": "btc-updown-15m-1771867800",
+     "title": "Bitcoin Up or Down - February 23, 12:30PM-12:45PM ET",
+     "seriesSlug": "btc-up-or-down-15m",
+     "startDate": "2026-02-22T17:39:31.088965Z",
+     "endDate": "2026-02-23T17:45:00Z",
+     "closed": true
+    },
+    {
+     "slug": "btc-updown-15m-1792958400",
+     "title": "Bitcoin Up or Down - October 25, 4:00PM-4:15PM ET",
+     "seriesSlug": "btc-up-or-down-15m",
+     "startDate": "2026-10-24T20:09:04.728792Z",
+     "endDate": "2026-10-25T20:15:00Z",
+     "closed": true
+    },
+    {
+     "slug": "btc-updown-15m-1771889400",
+     "title": "Bitcoin Up or Down - February 23, 6:30PM-6:45PM ET",
+     "seriesSlug": "btc-up-or-down-15m",
+     "startDate": "2026-02-22T23:39:17.844963Z",
+     "endDate": "2026-02-23T23:45:00Z",
+     "closed": true
+    },
+    {
+     "slug": "btc-updown-5m-1781999400",
+     "title": "Bitcoin Up or Down - June 20, 7:50PM-7:55PM ET",
+     "seriesSlug": "btc-up-or-down-5m",
+     "startDate": "2026-06-20T00:03:52.0181Z",
+     "endDate": "2026-06-20T23:55:00Z",
+     "closed": true
+    },
+    {
+     "slug": "btc-updown-5m-1772731800",
+     "title": "Bitcoin Up or Down - March 5, 12:30PM-12:35PM ET",
+     "seriesSlug": "btc-up-or-down-5m",
+     "startDate": "2026-03-04T17:39:34.405141Z",
+     "endDate": "2026-03-05T17:35:00Z",
+     "closed": true
+    },
+    {
+     "slug": "bitcoin-up-or-down-february-23-12pm-et",
+     "title": "Bitcoin Up or Down - February 23, 12PM ET",
+     "seriesSlug": "btc-up-or-down-hourly",
+     "startDate": "2026-02-21T17:04:28.142884Z",
+     "endDate": "2026-02-23T18:00:00Z",
+     "closed": true
+    },
+    {
+     "slug": "btc-updown-15m-1771875000",
+     "title": "Bitcoin Up or Down - February 23, 2:30PM-2:45PM ET",
+     "seriesSlug": "btc-up-or-down-15m",
+     "startDate": "2026-02-22T19:39:27.370924Z",
+     "endDate": "2026-02-23T19:45:00Z",
+     "closed": true
+    }
+   ],
+   "tags": null
+  },
+  "ethereum up or down": {
+   "events": [
+    {
+     "slug": "eth-updown-5m-1773699000",
+     "title": "Ethereum Up or Down - March 16, 6:10PM-6:15PM ET",
+     "seriesSlug": "eth-up-or-down-5m",
+     "startDate": "2026-03-15T22:19:31.419418Z",
+     "endDate": "2026-03-16T22:15:00Z",
+     "closed": true
+    },
+    {
+     "slug": "ethereum-up-or-down-october-5-11pm-et",
+     "title": "Ethereum Up or Down - October 5, 11PM ET",
+     "seriesSlug": "eth-up-or-down-hourly",
+     "startDate": "2025-10-04T03:04:00.417728Z",
+     "endDate": "2025-10-06T04:00:00Z",
+     "closed": true
+    },
+    {
+     "slug": "ethereum-up-or-down-february-23-3pm-et",
+     "title": "Ethereum Up or Down - February 23, 3PM ET",
+     "seriesSlug": "eth-up-or-down-hourly",
+     "startDate": "2026-02-21T20:07:12.660131Z",
+     "endDate": "2026-02-23T21:00:00Z",
+     "closed": true
+    },
+    {
+     "slug": "eth-updown-15m-1771866900",
+     "title": "Ethereum Up or Down - February 23, 12:15PM-12:30PM ET",
+     "seriesSlug": "eth-up-or-down-15m",
+     "startDate": "2026-02-22T17:23:40.869097Z",
+     "endDate": "2026-02-23T17:30:00Z",
+     "closed": true
+    },
+    {
+     "slug": "ethereum-up-or-down-february-23-2pm-et",
+     "title": "Ethereum Up or Down - February 23, 2PM ET",
+     "seriesSlug": "eth-up-or-down-hourly",
+     "startDate": "2026-02-21T19:04:36.372392Z",
+     "endDate": "2026-02-23T20:00:00Z",
+     "closed": true
+    },
+    {
+     "slug": "eth-updown-15m-1773927000",
+     "title": "Ethereum Up or Down - March 19, 9:30AM-9:45AM ET",
+     "seriesSlug": "eth-up-or-down-15m",
+     "startDate": "2026-03-18T13:39:58.014377Z",
+     "endDate": "2026-03-19T13:45:00Z",
+     "closed": true
+    },
+    {
+     "slug": "ethereum-up-or-down-february-23-12pm-et",
+     "title": "Ethereum Up or Down - February 23, 12PM ET",
+     "seriesSlug": "eth-up-or-down-hourly",
+     "startDate": "2026-02-21T17:04:28.494341Z",
+     "endDate": "2026-02-23T18:00:00Z",
+     "closed": true
+    },
+    {
+     "slug": "ethereum-up-or-down-february-23-1pm-et",
+     "title": "Ethereum Up or Down - February 23, 1PM ET",
+     "seriesSlug": "eth-up-or-down-hourly",
+     "startDate": "2026-02-21T18:03:31.863866Z",
+     "endDate": "2026-02-23T19:00:00Z",
+     "closed": true
+    },
+    {
+     "slug": "eth-updown-5m-1772732400",
+     "title": "Ethereum Up or Down - March 5, 12:40PM-12:45PM ET",
+     "seriesSlug": "eth-up-or-down-5m",
+     "startDate": "2026-03-04T17:50:22.860048Z",
+     "endDate": "2026-03-05T17:45:00Z",
+     "closed": true
+    },
+    {
+     "slug": "eth-updown-15m-1771866000",
+     "title": "Ethereum Up or Down - February 23, 12:00PM-12:15PM ET",
+     "seriesSlug": "eth-up-or-down-15m",
+     "startDate": "2026-02-22T17:09:41.882277Z",
+     "endDate": "2026-02-23T17:15:00Z",
+     "closed": true
+    },
+    {
+     "slug": "ethereum-up-or-down-february-23-4pm-et",
+     "title": "Ethereum Up or Down - February 23, 4PM ET",
+     "seriesSlug": "eth-up-or-down-hourly",
+     "startDate": "2026-02-21T21:05:34.478202Z",
+     "endDate": "2026-02-23T22:00:00Z",
+     "closed": true
+    },
+    {
+     "slug": "eth-updown-5m-1771890900",
+     "title": "Ethereum Up or Down - February 23, 6:55PM-7:00PM ET",
+     "seriesSlug": "eth-up-or-down-5m",
+     "startDate": "2026-02-23T00:04:14.149507Z",
+     "endDate": "2026-02-24T00:00:00Z",
+     "closed": true
+    },
+    {
+     "slug": "ethereum-up-or-down-october-5-8pm-et",
+     "title": "Ethereum Up or Down - October 5, 8PM ET",
+     "seriesSlug": "eth-up-or-down-hourly",
+     "startDate": "2025-10-04T00:07:34.801262Z",
+     "endDate": "2025-10-06T01:00:00Z",
+     "closed": true
+    },
+    {
+     "slug": "eth-updown-15m-1771885800",
+     "title": "Ethereum Up or Down - February 23, 5:30PM-5:45PM ET",
+     "seriesSlug": "eth-up-or-down-15m",
+     "startDate": "2026-02-22T22:40:04.499401Z",
+     "endDate": "2026-02-23T22:45:00Z",
+     "closed": true
+    },
+    {
+     "slug": "ethereum-up-or-down-february-23-11am-et",
+     "title": "Ethereum Up or Down - February 23, 11AM ET",
+     "seriesSlug": "eth-up-or-down-hourly",
+     "startDate": "2026-02-21T16:03:09.872045Z",
+     "endDate": "2026-02-23T17:00:00Z",
+     "closed": true
+    },
+    {
+     "slug": "eth-updown-15m-1771887600",
+     "title": "Ethereum Up or Down - February 23, 6:00PM-6:15PM ET",
+     "seriesSlug": "eth-up-or-down-15m",
+     "startDate": "2026-02-22T23:09:56.373842Z",
+     "endDate": "2026-02-23T23:15:00Z",
+     "closed": true
+    },
+    {
+     "slug": "eth-updown-5m-1771865400",
+     "title": "Ethereum Up or Down - February 23, 11:50AM-11:55AM ET",
+     "seriesSlug": "eth-up-or-down-5m",
+     "startDate": "2026-02-22T16:59:23.886867Z",
+     "endDate": "2026-02-23T16:55:00Z",
+     "closed": true
+    },
+    {
+     "slug": "eth-updown-5m-1771866900",
+     "title": "Ethereum Up or Down - February 23, 12:15PM-12:20PM ET",
+     "seriesSlug": "eth-up-or-down-5m",
+     "startDate": "2026-02-22T17:23:40.886036Z",
+     "endDate": "2026-02-23T17:20:00Z",
+     "closed": true
+    },
+    {
+     "slug": "eth-updown-15m-1771875900",
+     "title": "Ethereum Up or Down - February 23, 2:45PM-3:00PM ET",
+     "seriesSlug": "eth-up-or-down-15m",
+     "startDate": "2026-02-22T19:53:27.792055Z",
+     "endDate": "2026-02-23T20:00:00Z",
+     "closed": true
+    },
+    {
+     "slug": "ethereum-up-or-down-october-5-10pm-et",
+     "title": "Ethereum Up or Down - October 5, 10PM ET",
+     "seriesSlug": "eth-up-or-down-hourly",
+     "startDate": "2025-10-04T02:05:19.906964Z",
+     "endDate": "2025-10-06T03:00:00Z",
+     "closed": true
+    }
+   ],
+   "tags": null
+  },
+  "solana up or down": {
+   "events": [
+    {
+     "slug": "solana-up-or-down-october-5-8pm-et",
+     "title": "Solana Up or Down - October 5, 8PM ET",
+     "seriesSlug": "solana-up-or-down-hourly",
+     "startDate": "2025-10-04T00:07:34.982702Z",
+     "endDate": "2025-10-06T01:00:00Z",
+     "closed": true
+    },
+    {
+     "slug": "sol-updown-5m-1772908500",
+     "title": "Solana Up or Down - March 7, 1:35PM-1:40PM ET",
+     "seriesSlug": "sol-up-or-down-5m",
+     "startDate": "2026-03-06T18:43:19.166717Z",
+     "endDate": "2026-03-07T18:40:00Z",
+     "closed": true
+    },
+    {
+     "slug": "sol-updown-5m-1774635300",
+     "title": "Solana Up or Down - March 27, 2:15PM-2:20PM ET",
+     "seriesSlug": "sol-up-or-down-5m",
+     "startDate": "2026-03-26T18:26:24.315049Z",
+     "endDate": "2026-03-27T18:20:00Z",
+     "closed": true
+    },
+    {
+     "slug": "solana-up-or-down-february-23-3pm-et",
+     "title": "Solana Up or Down - February 23, 3PM ET",
+     "seriesSlug": "solana-up-or-down-hourly",
+     "startDate": "2026-02-21T20:03:21.642023Z",
+     "endDate": "2026-02-23T21:00:00Z",
+     "closed": true
+    },
+    {
+     "slug": "solana-up-or-down-october-5-11pm-et",
+     "title": "Solana Up or Down - October 5, 11PM ET",
+     "seriesSlug": "solana-up-or-down-hourly",
+     "startDate": "2025-10-04T03:03:59.932384Z",
+     "endDate": "2025-10-06T04:00:00Z",
+     "closed": true
+    },
+    {
+     "slug": "solana-up-or-down-february-23-1pm-et",
+     "title": "Solana Up or Down - February 23, 1PM ET",
+     "seriesSlug": "solana-up-or-down-hourly",
+     "startDate": "2026-02-21T18:08:01.769626Z",
+     "endDate": "2026-02-23T19:00:00Z",
+     "closed": true
+    },
+    {
+     "slug": "solana-up-or-down-february-23-2pm-et",
+     "title": "Solana Up or Down - February 23, 2PM ET",
+     "seriesSlug": "solana-up-or-down-hourly",
+     "startDate": "2026-02-21T19:04:36.783428Z",
+     "endDate": "2026-02-23T20:00:00Z",
+     "closed": true
+    },
+    {
+     "slug": "solana-up-or-down-october-5-10pm-et",
+     "title": "Solana Up or Down - October 5, 10PM ET",
+     "seriesSlug": "solana-up-or-down-hourly",
+     "startDate": "2025-10-04T02:05:19.905718Z",
+     "endDate": "2025-10-06T03:00:00Z",
+     "closed": true
+    },
+    {
+     "slug": "sol-updown-15m-1771868700",
+     "title": "Solana Up or Down - February 23, 12:45PM-1:00PM ET",
+     "seriesSlug": "sol-up-or-down-15m",
+     "startDate": "2026-02-22T17:53:39.495081Z",
+     "endDate": "2026-02-23T18:00:00Z",
+     "closed": true
+    },
+    {
+     "slug": "sol-updown-15m-1771866900",
+     "title": "Solana Up or Down - February 23, 12:15PM-12:30PM ET",
+     "seriesSlug": "sol-up-or-down-15m",
+     "startDate": "2026-02-22T17:23:40.870012Z",
+     "endDate": "2026-02-23T17:30:00Z",
+     "closed": true
+    },
+    {
+     "slug": "sol-updown-15m-1773271800",
+     "title": "Solana Up or Down - March 11, 7:30PM-7:45PM ET",
+     "seriesSlug": "sol-up-or-down-15m",
+     "startDate": "2026-03-10T23:39:55.302524Z",
+     "endDate": "2026-03-11T23:45:00Z",
+     "closed": true
+    },
+    {
+     "slug": "solana-up-or-down-february-23-11am-et",
+     "title": "Solana Up or Down - February 23, 11AM ET",
+     "seriesSlug": "solana-up-or-down-hourly",
+     "startDate": "2026-02-21T16:02:53.77262Z",
+     "endDate": "2026-02-23T17:00:00Z",
+     "closed": true
+    },
+    {
+     "slug": "solana-up-or-down-february-23-4pm-et",
+     "title": "Solana Up or Down - February 23, 4PM ET",
+     "seriesSlug": "solana-up-or-down-hourly",
+     "startDate": "2026-02-21T21:05:34.485862Z",
+     "endDate": "2026-02-23T22:00:00Z",
+     "closed": true
+    },
+    {
+     "slug": "sol-updown-15m-1771873200",
+     "title": "Solana Up or Down - February 23, 2:00PM-2:15PM ET",
+     "seriesSlug": "sol-up-or-down-15m",
+     "startDate": "2026-02-22T19:09:33.865735Z",
+     "endDate": "2026-02-23T19:15:00Z",
+     "closed": true
+    },
+    {
+     "slug": "solana-up-or-down-february-23-12pm-et",
+     "title": "Solana Up or Down - February 23, 12PM ET",
+     "seriesSlug": "solana-up-or-down-hourly",
+     "startDate": "2026-02-21T17:04:28.445898Z",
+     "endDate": "2026-02-23T18:00:00Z",
+     "closed": true
+    },
+    {
+     "slug": "sol-updown-5m-1771871100",
+     "title": "Solana Up or Down - February 23, 1:25PM-1:30PM ET",
+     "seriesSlug": "sol-up-or-down-5m",
+     "startDate": "2026-02-22T18:33:55.233638Z",
+     "endDate": "2026-02-23T18:30:00Z",
+     "closed": true
+    },
+    {
+     "slug": "sol-updown-15m-1774013400",
+     "title": "Solana Up or Down - March 20, 9:30AM-9:45AM ET",
+     "seriesSlug": "sol-up-or-down-15m",
+     "startDate": "2026-03-19T13:40:21.921054Z",
+     "endDate": "2026-03-20T13:45:00Z",
+     "closed": true
+    },
+    {
+     "slug": "sol-updown-15m-1771880400",
+     "title": "Solana Up or Down - February 23, 4:00PM-4:15PM ET",
+     "seriesSlug": "sol-up-or-down-15m",
+     "startDate": "2026-02-22T21:09:31.289094Z",
+     "endDate": "2026-02-23T21:15:00Z",
+     "closed": true
+    },
+    {
+     "slug": "sol-updown-15m-1771866000",
+     "title": "Solana Up or Down - February 23, 12:00PM-12:15PM ET",
+     "seriesSlug": "sol-up-or-down-15m",
+     "startDate": "2026-02-22T17:09:42.223537Z",
+     "endDate": "2026-02-23T17:15:00Z",
+     "closed": true
+    },
+    {
+     "slug": "solana-up-or-down-october-6-12am-et",
+     "title": "Solana Up or Down - October 6, 12AM ET",
+     "seriesSlug": "solana-up-or-down-hourly",
+     "startDate": "2025-10-04T04:05:28.455519Z",
+     "endDate": "2025-10-06T05:00:00Z",
+     "closed": true
+    }
+   ],
+   "tags": null
+  },
+  "btc updown": {
+   "events": [
+    {
+     "slug": "will-btc-hit-50000-by-jan-31",
+     "title": "Will BTC hit $50,000 by Jan 31?",
+     "seriesSlug": null,
+     "startDate": "2023-12-26T19:05:56.173Z",
+     "endDate": "2024-01-31T00:00:00Z",
+     "closed": true
+    },
+    {
+     "slug": "will-btc-hit-55000-in-february",
+     "title": "Will BTC hit $55,000 in February?",
+     "seriesSlug": null,
+     "startDate": "2024-02-12T17:49:32.382Z",
+     "endDate": "2024-02-29T00:00:00Z",
+     "closed": true
+    },
+    {
+     "slug": "will-btc-or-eth-reach-all-time-high-first",
+     "title": "Will BTC or ETH reach all-time high first?",
+     "seriesSlug": null,
+     "startDate": "2024-01-11T20:24:20.331Z",
+     "endDate": "2024-12-31T00:00:00Z",
+     "closed": true
+    },
+    {
+     "slug": "will-btc-hit-60000-in-february",
+     "title": "Will BTC hit $60,000 in February?",
+     "seriesSlug": null,
+     "startDate": "2024-02-26T22:13:23.151Z",
+     "endDate": "2024-02-29T00:00:00Z",
+     "closed": true
+    },
+    {
+     "slug": "will-btc-hit-44000-in-2023",
+     "title": "Will BTC hit $44,000 in 2023?",
+     "seriesSlug": null,
+     "startDate": "2023-12-04T17:26:12.919Z",
+     "endDate": "2023-12-31T00:00:00Z",
+     "closed": true
+    },
+    {
+     "slug": "what-price-will-btc-dip-below-before-august",
+     "title": "What price will $BTC dip below before August?",
+     "seriesSlug": null,
+     "startDate": "2024-06-10T21:06:15.960569Z",
+     "endDate": "2024-07-31T12:00:00Z",
+     "closed": true
+    },
+    {
+     "slug": "what-price-will-btc-reach-in-march",
+     "title": "What price will BTC reach in March?",
+     "seriesSlug": null,
+     "startDate": "2024-02-28T15:39:42.944Z",
+     "endDate": "2024-03-31T00:00:00Z",
+     "closed": true
+    },
+    {
+     "slug": "bitcoin-etfs-first-week-combined-aum",
+     "title": "Bitcoin ETFs first week combined AUM",
+     "seriesSlug": null,
+     "startDate": "2024-01-11T01:14:25.448Z",
+     "endDate": "2024-01-19T00:00:00Z",
+     "closed": true
+    },
+    {
+     "slug": "bitcoin-all-time-high-wen",
+     "title": "Bitcoin all time high wen?",
+     "seriesSlug": null,
+     "startDate": "2024-02-27T18:28:00Z",
+     "endDate": "2024-02-27T00:00:00Z",
+     "closed": true
+    },
+    {
+     "slug": "what-price-will-btc-reach-in-june",
+     "title": "What price will $BTC reach in June?",
+     "seriesSlug": null,
+     "startDate": "2024-05-31T20:21:13.53419Z",
+     "endDate": "2024-06-30T12:00:00Z",
+     "closed": true
+    },
+    {
+     "slug": "who-will-hbo-doc-identify-as-satoshi",
+     "title": "Who will HBO doc identify as Satoshi?",
+     "seriesSlug": null,
+     "startDate": "2024-10-03T22:40:43.503241Z",
+     "endDate": "2024-10-08T12:00:00Z",
+     "closed": true
+    },
+    {
+     "slug": "bitcoin-above-100000-on-december-13",
+     "title": "Bitcoin above $100,000 on December 13?",
+     "seriesSlug": null,
+     "startDate": "2024-12-06T18:49:26.264598Z",
+     "endDate": "2024-12-13T12:00:00Z",
+     "closed": true
+    },
+    {
+     "slug": "bitcoin-above-95000-on-january-17",
+     "title": "Bitcoin above $95,000 on January 17?",
+     "seriesSlug": "btc-weeklies",
+     "startDate": "2025-01-10T20:44:59.312104Z",
+     "endDate": "2025-01-17T12:00:00Z",
+     "closed": true
+    },
+    {
+     "slug": "microstrategy-purchases-more-bitcoin-before-inauguration-jan-20",
+     "title": "MicroStrategy purchases more Bitcoin before inauguration?",
+     "seriesSlug": null,
+     "startDate": "2025-01-06T22:25:29.630652Z",
+     "endDate": "2025-01-20T12:00:00Z",
+     "closed": true
+    },
+    {
+     "slug": "bitcoin-above-69000-on-october-25",
+     "title": "Bitcoin above $69,000 on October 25?",
+     "seriesSlug": null,
+     "startDate": "2024-10-18T17:08:45.280243Z",
+     "endDate": "2024-10-25T12:00:00Z",
+     "closed": true
+    },
+    {
+     "slug": "will-bitcoin-hit-100k-by-tuesday",
+     "title": "Will Bitcoin hit $100k by Tuesday?",
+     "seriesSlug": null,
+     "startDate": "2024-11-25T18:30:37.806956Z",
+     "endDate": "2024-11-26T12:00:00Z",
+     "closed": true
+    },
+    {
+     "slug": "bitcoin-hits-80k-before-election",
+     "title": "Bitcoin hits $80k before election?",
+     "seriesSlug": null,
+     "startDate": "2024-10-29T22:01:24.717533Z",
+     "endDate": "2024-11-04T12:00:00Z",
+     "closed": true
+    },
+    {
+     "slug": "will-microstrategy-purchase-more-bitcoin-in-2024",
+     "title": "Will MicroStrategy purchase more Bitcoin in 2024?",
+     "seriesSlug": null,
+     "startDate": "2024-11-19T21:25:12.631366Z",
+     "endDate": "2024-12-31T12:00:00Z",
+     "closed": true
+    },
+    {
+     "slug": "bitcoin-up-in-q1-2025",
+     "title": "Bitcoin up in Q1 2025?",
+     "seriesSlug": null,
+     "startDate": "2025-01-07T17:01:25.917163Z",
+     "endDate": "2025-03-31T12:00:00Z",
+     "closed": true
+    },
+    {
+     "slug": "bitcoin-new-all-time-high-before-election",
+     "title": "Bitcoin new all time high before election?",
+     "seriesSlug": null,
+     "startDate": "2024-10-29T22:01:19.393697Z",
+     "endDate": "2024-11-04T12:00:00Z",
+     "closed": true
+    }
+   ],
+   "tags": null
+  }
+ },
+ "tags": [
+  {
+   "id": "102165",
+   "slug": "crypto-new-hide",
+   "label": "CryptoNewHide"
+  },
+  {
+   "id": "102321",
+   "slug": "bitcoin-prices",
+   "label": "Bitcoin Prices"
+  },
+  {
+   "id": "744",
+   "slug": "cryptocurrency",
+   "label": "cryptocurrency"
+  },
+  {
+   "id": "1256",
+   "slug": "crypto-the-game",
+   "label": "crypto: the game"
+  },
+  {
+   "id": "102115",
+   "slug": "bitcoin-dominance",
+   "label": "Bitcoin Dominance"
+  },
+  {
+   "id": "101798",
+   "slug": "crypto-policy",
+   "label": "Crypto Policy"
+  },
+  {
+   "id": "581",
+   "slug": "bitboy-crypto",
+   "label": "bitboy crypto"
+  },
+  {
+   "id": "100311",
+   "slug": "bitcoin-conference",
+   "label": "Bitcoin Conference"
+  },
+  {
+   "id": "102892",
+   "slug": "5M",
+   "label": "5M"
+  },
+  {
+   "id": "1209",
+   "slug": "cryptothegame",
+   "label": "cryptothegame"
+  }
+ ],
+ "eventos_muestra": {
+  "eth-up-or-down-daily|false": [
+   {
+    "slug": "ethereum-up-or-down-on-october-27-2026",
+    "title": "Ethereum Up or Down on October 27?",
+    "startDate": "2026-10-25T16:07:10Z",
+    "endDate": "2026-10-27T16:00:00Z",
+    "tags": [
+     "ethereum",
+     "up-or-down",
+     "today",
+     "daily",
+     "crypto",
+     "crypto-prices",
+     "recurring",
+     "hide-from-new",
+     "daily-close"
+    ],
+    "markets": [
+     {
+      "question": "Ethereum Up or Down on October 27?",
+      "conditionId": "0xbeb8523cff4196050e8503e3b9724fdeb99bdca5c58428421b1c2d6228d5eb1b",
+      "outcomes": "[\"Up\", \"Down\"]",
+      "outcomePrices": "[\"0.5\", \"0.5\"]",
+      "clobTokenIds": "[\"104791911226761056585675443924062558749470395351129390955253479386813287088132\", \"40393660869735094387233088579097615327960010049837717832810536367329080891858\"]",
+      "feesEnabled": true,
+      "feeSchedule": {
+       "exponent": 1,
+       "rate": 0.07,
+       "takerOnly": true,
+       "rebateRate": 0.2
+      },
+      "resolutionSource": "https://www.binance.com/en/trade/ETH_USDT",
+      "description": "This market will resolve to \"Up\" if the \"Close\" price for the Binance 1 minute candle for ETH/USDT Oct 26 '26 12:00 in the ET timezone (noon) is lower than the final \"Close\" price for the Oct 27 '26 12:00 ET candle.\n\nThis market will resolve to \"Down\" if the \"Close\" price for the Binance 1 minute candle for ETH/USDT Oct 26 '26 12:00 in the ET timezone (noon) is higher than the final \"Close\" price for the Oct 27 '26 12:00 ET candle.\n\nIf the final \"Close\" price for both of these candles is exactly equal on Binance, this market will resolve 50-50.\n\nThe resolution source for this market is Binance, specifically the ETH/USDT \"Close\" prices currently available at https://www.binance.com/en/trade/ETH_USDT with \"1m\" and \"Candles\" selected on the top bar.\n\nPlease note that this market is about the price according to Binance ETH/USDT, not according to other exchanges or trading pairs.",
+      "closed": false,
+      "startDate": "2026-10-25T16:07:10Z",
+      "endDate": "2026-10-27T16:00:00Z",
+      "volumeNum": 11.762353000000001
+     }
+    ]
+   },
+   {
+    "slug": "ethereum-up-or-down-on-october-26-2026",
+    "title": "Ethereum Up or Down on October 26?",
+    "startDate": "2026-10-24T16:07:12Z",
+    "endDate": "2026-10-26T16:00:00Z",
+    "tags": [
+     "ethereum",
+     "up-or-down",
+     "today",
+     "daily",
+     "crypto",
+     "crypto-prices",
+     "recurring",
+     "hide-from-new",
+     "daily-close"
+    ],
+    "markets": [
+     {
+      "question": "Ethereum Up or Down on October 26?",
+      "conditionId": "0x4b8565d98ce0836aa198d8d9907c9266878ab67df32f87faac66dc99c9c7b934",
+      "outcomes": "[\"Up\", \"Down\"]",
+      "outcomePrices": "[\"0.07\", \"0.93\"]",
+      "clobTokenIds": "[\"25701336342306227747767817619615041202022703850932355337885235235033589850285\", \"100011875904322435008784806366340844200118255177254457079842249519862738892680\"]",
+      "feesEnabled": true,
+      "feeSchedule": {
+       "exponent": 1,
+       "rate": 0.07,
+       "takerOnly": true,
+       "rebateRate": 0.2
+      },
+      "resolutionSource": "https://www.binance.com/en/trade/ETH_USDT",
+      "description": "This market will resolve to \"Up\" if the \"Close\" price for the Binance 1 minute candle for ETH/USDT Oct 25 '26 12:00 in the ET timezone (noon) is lower than the final \"Close\" price for the Oct 26 '26 12:00 ET candle.\n\nThis market will resolve to \"Down\" if the \"Close\" price for the Binance 1 minute candle for ETH/USDT Oct 25 '26 12:00 in the ET timezone (noon) is higher than the final \"Close\" price for the Oct 26 '26 12:00 ET candle.\n\nIf the final \"Close\" price for both of these candles is exactly equal on Binance, this market will resolve 50-50.\n\nThe resolution source for this market is Binance, specifically the ETH/USDT \"Close\" prices currently available at https://www.binance.com/en/trade/ETH_USDT with \"1m\" and \"Candles\" selected on the top bar.\n\nPlease note that this market is about the price according to Binance ETH/USDT, not according to other exchanges or trading pairs.",
+      "closed": false,
+      "startDate": "2026-10-24T16:07:12Z",
+      "endDate": "2026-10-26T16:00:00Z",
+      "volumeNum": 24304.450482
+     }
+    ]
+   }
+  ],
+  "eth-up-or-down-daily|true": [
+   {
+    "slug": "ethereum-up-or-down-on-october-25-2026",
+    "title": "Ethereum Up or Down on October 25?",
+    "startDate": "2026-10-23T16:07:08Z",
+    "endDate": "2026-10-25T16:00:00Z",
+    "tags": [
+     "ethereum",
+     "up-or-down",
+     "today",
+     "daily",
+     "crypto",
+     "crypto-prices",
+     "recurring",
+     "hide-from-new",
+     "daily-close"
+    ],
+    "markets": [
+     {
+      "question": "Ethereum Up or Down on October 25?",
+      "conditionId": "0x3819c39c548483c0621c7583ed12482078008a03fa265d41aa40455d799fdc76",
+      "outcomes": "[\"Up\", \"Down\"]",
+      "outcomePrices": "[\"1\", \"0\"]",
+      "clobTokenIds": "[\"59958198144134725658821801025903922149945783443639781904730052152875532126439\", \"7356783966249539920806159119023303213321785597532151926922243581314853709987\"]",
+      "feesEnabled": true,
+      "feeSchedule": {
+       "exponent": 1,
+       "rate": 0.07,
+       "takerOnly": true,
+       "rebateRate": 0.2
+      },
+      "resolutionSource": "https://www.binance.com/en/trade/ETH_USDT",
+      "description": "This market will resolve to \"Up\" if the \"Close\" price for the Binance 1 minute candle for ETH/USDT Oct 24 '26 12:00 in the ET timezone (noon) is lower than the final \"Close\" price for the Oct 25 '26 12:00 ET candle.\n\nThis market will resolve to \"Down\" if the \"Close\" price for the Binance 1 minute candle for ETH/USDT Oct 24 '26 12:00 in the ET timezone (noon) is higher than the final \"Close\" price for the Oct 25 '26 12:00 ET candle.\n\nIf the final \"Close\" price for both of these candles is exactly equal on Binance, this market will resolve 50-50.\n\nThe resolution source for this market is Binance, specifically the ETH/USDT \"Close\" prices currently available at https://www.binance.com/en/trade/ETH_USDT with \"1m\" and \"Candles\" selected on the top bar.\n\nPlease note that this market is about the price according to Binance ETH/USDT, not according to other exchanges or trading pairs.",
+      "closed": true,
+      "startDate": "2026-10-23T16:07:08Z",
+      "endDate": "2026-10-25T16:00:00Z",
+      "volumeNum": 46622.824759
+     }
+    ]
+   },
+   {
+    "slug": "ethereum-up-or-down-on-october-24-2026",
+    "title": "Ethereum Up or Down on October 24?",
+    "startDate": "2026-10-22T16:07:10Z",
+    "endDate": "2026-10-24T16:00:00Z",
+    "tags": [
+     "ethereum",
+     "up-or-down",
+     "today",
+     "daily",
+     "crypto",
+     "crypto-prices",
+     "recurring",
+     "hide-from-new",
+     "daily-close"
+    ],
+    "markets": [
+     {
+      "question": "Ethereum Up or Down on October 24?",
+      "conditionId": "0xc540e453701a7469fa8eb508ad3c0ea4da19d047e6dc144046df6ba39ec167a6",
+      "outcomes": "[\"Up\", \"Down\"]",
+      "outcomePrices": "[\"0\", \"1\"]",
+      "clobTokenIds": "[\"84257425762003718253919725249362262090579073774436089570799403498659839775140\", \"34220768143374888460270972551198798949525904454908707799358651609380263367855\"]",
+      "feesEnabled": true,
+      "feeSchedule": {
+       "exponent": 1,
+       "rate": 0.07,
+       "takerOnly": true,
+       "rebateRate": 0.2
+      },
+      "resolutionSource": "https://www.binance.com/en/trade/ETH_USDT",
+      "description": "This market will resolve to \"Up\" if the \"Close\" price for the Binance 1 minute candle for ETH/USDT Oct 23 '26 12:00 in the ET timezone (noon) is lower than the final \"Close\" price for the Oct 24 '26 12:00 ET candle.\n\nThis market will resolve to \"Down\" if the \"Close\" price for the Binance 1 minute candle for ETH/USDT Oct 23 '26 12:00 in the ET timezone (noon) is higher than the final \"Close\" price for the Oct 24 '26 12:00 ET candle.\n\nIf the final \"Close\" price for both of these candles is exactly equal on Binance, this market will resolve 50-50.\n\nThe resolution source for this market is Binance, specifically the ETH/USDT \"Close\" prices currently available at https://www.binance.com/en/trade/ETH_USDT with \"1m\" and \"Candles\" selected on the top bar.\n\nPlease note that this market is about the price according to Binance ETH/USDT, not according to other exchanges or trading pairs.",
+      "closed": true,
+      "startDate": "2026-10-22T16:07:10Z",
+      "endDate": "2026-10-24T16:00:00Z",
+      "volumeNum": 53215.885261
+     }
+    ]
+   },
+   {
+    "slug": "ethereum-up-or-down-on-october-23-2026",
+    "title": "Ethereum Up or Down on October 23?",
+    "startDate": "2026-10-21T16:07:10Z",
+    "endDate": "2026-10-23T16:00:00Z",
+    "tags": [
+     "ethereum",
+     "up-or-down",
+     "today",
+     "daily",
+     "crypto",
+     "crypto-prices",
+     "recurring",
+     "hide-from-new",
+     "daily-close"
+    ],
+    "markets": [
+     {
+      "question": "Ethereum Up or Down on October 23?",
+      "conditionId": "0x19e06ce05b2321350cc6687d2f9d50c313513a1ec44892885e443dd323a87d4a",
+      "outcomes": "[\"Up\", \"Down\"]",
+      "outcomePrices": "[\"1\", \"0\"]",
+      "clobTokenIds": "[\"81700500766295608884694870553159232360964672840864098966423371011392785254179\", \"24401562739142100764147093582649879395374720641058042221079193586406691455053\"]",
+      "feesEnabled": true,
+      "feeSchedule": {
+       "exponent": 1,
+       "rate": 0.07,
+       "takerOnly": true,
+       "rebateRate": 0.2
+      },
+      "resolutionSource": "https://www.binance.com/en/trade/ETH_USDT",
+      "description": "This market will resolve to \"Up\" if the \"Close\" price for the Binance 1 minute candle for ETH/USDT Oct 22 '26 12:00 in the ET timezone (noon) is lower than the final \"Close\" price for the Oct 23 '26 12:00 ET candle.\n\nThis market will resolve to \"Down\" if the \"Close\" price for the Binance 1 minute candle for ETH/USDT Oct 22 '26 12:00 in the ET timezone (noon) is higher than the final \"Close\" price for the Oct 23 '26 12:00 ET candle.\n\nIf the final \"Close\" price for both of these candles is exactly equal on Binance, this market will resolve 50-50.\n\nThe resolution source for this market is Binance, specifically the ETH/USDT \"Close\" prices currently available at https://www.binance.com/en/trade/ETH_USDT with \"1m\" and \"Candles\" selected on the top bar.\n\nPlease note that this market is about the price according to Binance ETH/USDT, not according to other exchanges or trading pairs.",
+      "closed": true,
+      "startDate": "2026-10-21T16:07:10Z",
+      "endDate": "2026-10-23T16:00:00Z",
+      "volumeNum": 44439.154001
+     }
+    ]
+   }
+  ],
+  "btc-up-or-down-daily|false": [
+   {
+    "slug": "bitcoin-up-or-down-on-october-27-2026",
+    "title": "Bitcoin Up or Down on October 27?",
+    "startDate": "2026-10-25T16:07:08Z",
+    "endDate": "2026-10-27T16:00:00Z",
+    "tags": [
+     "crypto",
+     "crypto-prices",
+     "recurring",
+     "hide-from-new",
+     "bitcoin",
+     "up-or-down",
+     "today",
+     "daily",
+     "daily-close"
+    ],
+    "markets": [
+     {
+      "question": "Bitcoin Up or Down on October 27?",
+      "conditionId": "0x3bd585632f3f374d1f130f11557641f3c8262b26e1bf6a07667424738d93f2a6",
+      "outcomes": "[\"Up\", \"Down\"]",
+      "outcomePrices": "[\"0.495\", \"0.505\"]",
+      "clobTokenIds": "[\"69759245450035138849041668792581592568872869124142903573923907352072961291895\", \"43123892604172058768941102188916465825717656026121678143234587701287944117907\"]",
+      "feesEnabled": true,
+      "feeSchedule": {
+       "exponent": 1,
+       "rate": 0.07,
+       "takerOnly": true,
+       "rebateRate": 0.2
+      },
+      "resolutionSource": "https://www.binance.com/en/trade/BTC_USDT",
+      "description": "This market will resolve to \"Up\" if the \"Close\" price for the Binance 1 minute candle for BTC/USDT Oct 26 '26 12:00 in the ET timezone (noon) is lower than the final \"Close\" price for the Oct 27 '26 12:00 ET candle.\n\nThis market will resolve to \"Down\" if the \"Close\" price for the Binance 1 minute candle for BTC/USDT Oct 26 '26 12:00 in the ET timezone (noon) is higher than the final \"Close\" price for the Oct 27 '26 12:00 ET candle.\n\nIf the final \"Close\" price for both of these candles is exactly equal on Binance, this market will resolve 50-50.\n\nThe resolution source for this market is Binance, specifically the BTC/USDT \"Close\" prices currently available at https://www.binance.com/en/trade/BTC_USDT with \"1m\" and \"Candles\" selected on the top bar.\n\nPlease note that this market is about the price according to Binance BTC/USDT, not according to other exchanges or trading pairs.",
+      "closed": false,
+      "startDate": "2026-10-25T16:07:08Z",
+      "endDate": "2026-10-27T16:00:00Z",
+      "volumeNum": 78.42568700000001
+     }
+    ]
+   },
+   {
+    "slug": "bitcoin-up-or-down-on-october-26-2026",
+    "title": "Bitcoin Up or Down on October 26?",
+    "startDate": "2026-10-24T16:07:09Z",
+    "endDate": "2026-10-26T16:00:00Z",
+    "tags": [
+     "crypto",
+     "crypto-prices",
+     "recurring",
+     "hide-from-new",
+     "bitcoin",
+     "up-or-down",
+     "today",
+     "daily",
+     "daily-close"
+    ],
+    "markets": [
+     {
+      "question": "Bitcoin Up or Down on October 26?",
+      "conditionId": "0xaa7bc756de95995b1575a2946b6744f6d3f37b4aa6fe6225649e35a7056009fd",
+      "outcomes": "[\"Up\", \"Down\"]",
+      "outcomePrices": "[\"0.075\", \"0.925\"]",
+      "clobTokenIds": "[\"58339073159816399911855356555181238970282635745085698595339086833676366325080\", \"42855353933163147287136378112994678535189442084437213211173638582502025600650\"]",
+      "feesEnabled": true,
+      "feeSchedule": {
+       "exponent": 1,
+       "rate": 0.07,
+       "takerOnly": true,
+       "rebateRate": 0.2
+      },
+      "resolutionSource": "https://www.binance.com/en/trade/BTC_USDT",
+      "description": "This market will resolve to \"Up\" if the \"Close\" price for the Binance 1 minute candle for BTC/USDT Oct 25 '26 12:00 in the ET timezone (noon) is lower than the final \"Close\" price for the Oct 26 '26 12:00 ET candle.\n\nThis market will resolve to \"Down\" if the \"Close\" price for the Binance 1 minute candle for BTC/USDT Oct 25 '26 12:00 in the ET timezone (noon) is higher than the final \"Close\" price for the Oct 26 '26 12:00 ET candle.\n\nIf the final \"Close\" price for both of these candles is exactly equal on Binance, this market will resolve 50-50.\n\nThe resolution source for this market is Binance, specifically the BTC/USDT \"Close\" prices currently available at https://www.binance.com/en/trade/BTC_USDT with \"1m\" and \"Candles\" selected on the top bar.\n\nPlease note that this market is about the price according to Binance BTC/USDT, not according to other exchanges or trading pairs.",
+      "closed": false,
+      "startDate": "2026-10-24T16:07:09Z",
+      "endDate": "2026-10-26T16:00:00Z",
+      "volumeNum": 64637.013467
+     }
+    ]
+   }
+  ],
+  "btc-up-or-down-daily|true": [
+   {
+    "slug": "bitcoin-up-or-down-on-october-25-2026",
+    "title": "Bitcoin Up or Down on October 25?",
+    "startDate": "2026-10-23T16:07:06Z",
+    "endDate": "2026-10-25T16:00:00Z",
+    "tags": [
+     "crypto",
+     "crypto-prices",
+     "recurring",
+     "hide-from-new",
+     "bitcoin",
+     "up-or-down",
+     "today",
+     "daily",
+     "daily-close"
+    ],
+    "markets": [
+     {
+      "question": "Bitcoin Up or Down on October 25?",
+      "conditionId": "0x45129cadf584e1069d5f76620227c89efc5ece8bf18696dd753d0ab9b65bc780",
+      "outcomes": "[\"Up\", \"Down\"]",
+      "outcomePrices": "[\"1\", \"0\"]",
+      "clobTokenIds": "[\"48191372915249657133751110668077019051813056504483947908908840568521742782814\", \"34051942675712985421251724731651306446759221618563051389482200364172212391950\"]",
+      "feesEnabled": true,
+      "feeSchedule": {
+       "exponent": 1,
+       "rate": 0.07,
+       "takerOnly": true,
+       "rebateRate": 0.2
+      },
+      "resolutionSource": "https://www.binance.com/en/trade/BTC_USDT",
+      "description": "This market will resolve to \"Up\" if the \"Close\" price for the Binance 1 minute candle for BTC/USDT Oct 24 '26 12:00 in the ET timezone (noon) is lower than the final \"Close\" price for the Oct 25 '26 12:00 ET candle.\n\nThis market will resolve to \"Down\" if the \"Close\" price for the Binance 1 minute candle for BTC/USDT Oct 24 '26 12:00 in the ET timezone (noon) is higher than the final \"Close\" price for the Oct 25 '26 12:00 ET candle.\n\nIf the final \"Close\" price for both of these candles is exactly equal on Binance, this market will resolve 50-50.\n\nThe resolution source for this market is Binance, specifically the BTC/USDT \"Close\" prices currently available at https://www.binance.com/en/trade/BTC_USDT with \"1m\" and \"Candles\" selected on the top bar.\n\nPlease note that this market is about the price according to Binance BTC/USDT, not according to other exchanges or trading pairs.",
+      "closed": true,
+      "startDate": "2026-10-23T16:07:06Z",
+      "endDate": "2026-10-25T16:00:00Z",
+      "volumeNum": 129054.733747
+     }
+    ]
+   },
+   {
+    "slug": "bitcoin-up-or-down-on-october-24-2026",
+    "title": "Bitcoin Up or Down on October 24?",
+    "startDate": "2026-10-22T16:07:06Z",
+    "endDate": "2026-10-24T16:00:00Z",
+    "tags": [
+     "crypto",
+     "crypto-prices",
+     "recurring",
+     "hide-from-new",
+     "bitcoin",
+     "up-or-down",
+     "today",
+     "daily",
+     "daily-close"
+    ],
+    "markets": [
+     {
+      "question": "Bitcoin Up or Down on October 24?",
+      "conditionId": "0x09a2f79e2b590392b0addcd0bd8484ffa3c943e71d36432b768195952951922b",
+      "outcomes": "[\"Up\", \"Down\"]",
+      "outcomePrices": "[\"0\", \"1\"]",
+      "clobTokenIds": "[\"33138422789442128684465875687586885252919525113698460561768852258878223545637\", \"53426152660216277018107140219349743363283562793549805108066439959450392968960\"]",
+      "feesEnabled": true,
+      "feeSchedule": {
+       "exponent": 1,
+       "rate": 0.07,
+       "takerOnly": true,
+       "rebateRate": 0.2
+      },
+      "resolutionSource": "https://www.binance.com/en/trade/BTC_USDT",
+      "description": "This market will resolve to \"Up\" if the \"Close\" price for the Binance 1 minute candle for BTC/USDT Oct 23 '26 12:00 in the ET timezone (noon) is lower than the final \"Close\" price for the Oct 24 '26 12:00 ET candle.\n\nThis market will resolve to \"Down\" if the \"Close\" price for the Binance 1 minute candle for BTC/USDT Oct 23 '26 12:00 in the ET timezone (noon) is higher than the final \"Close\" price for the Oct 24 '26 12:00 ET candle.\n\nIf the final \"Close\" price for both of these candles is exactly equal on Binance, this market will resolve 50-50.\n\nThe resolution source for this market is Binance, specifically the BTC/USDT \"Close\" prices currently available at https://www.binance.com/en/trade/BTC_USDT with \"1m\" and \"Candles\" selected on the top bar.\n\nPlease note that this market is about the price according to Binance BTC/USDT, not according to other exchanges or trading pairs.",
+      "closed": true,
+      "startDate": "2026-10-22T16:07:06Z",
+      "endDate": "2026-10-24T16:00:00Z",
+      "volumeNum": 144221.497621
+     }
+    ]
+   },
+   {
+    "slug": "bitcoin-up-or-down-on-october-23-2026",
+    "title": "Bitcoin Up or Down on October 23?",
+    "startDate": "2026-10-21T16:07:08Z",
+    "endDate": "2026-10-23T16:00:00Z",
+    "tags": [
+     "crypto",
+     "crypto-prices",
+     "recurring",
+     "hide-from-new",
+     "bitcoin",
+     "up-or-down",
+     "today",
+     "daily",
+     "daily-close"
+    ],
+    "markets": [
+     {
+      "question": "Bitcoin Up or Down on October 23?",
+      "conditionId": "0x1d00d870cca7f15601b8606f910d87f253f6019a9e003b97f1e03919079f5126",
+      "outcomes": "[\"Up\", \"Down\"]",
+      "outcomePrices": "[\"0\", \"1\"]",
+      "clobTokenIds": "[\"61632094472192094075091731650018779519071117376275118134346066699773275459053\", \"75605661702828713985886557486499414035937026675548020248179162532436405451213\"]",
+      "feesEnabled": true,
+      "feeSchedule": {
+       "exponent": 1,
+       "rate": 0.07,
+       "takerOnly": true,
+       "rebateRate": 0.2
+      },
+      "resolutionSource": "https://www.binance.com/en/trade/BTC_USDT",
+      "description": "This market will resolve to \"Up\" if the \"Close\" price for the Binance 1 minute candle for BTC/USDT Oct 22 '26 12:00 in the ET timezone (noon) is lower than the final \"Close\" price for the Oct 23 '26 12:00 ET candle.\n\nThis market will resolve to \"Down\" if the \"Close\" price for the Binance 1 minute candle for BTC/USDT Oct 22 '26 12:00 in the ET timezone (noon) is higher than the final \"Close\" price for the Oct 23 '26 12:00 ET candle.\n\nIf the final \"Close\" price for both of these candles is exactly equal on Binance, this market will resolve 50-50.\n\nThe resolution source for this market is Binance, specifically the BTC/USDT \"Close\" prices currently available at https://www.binance.com/en/trade/BTC_USDT with \"1m\" and \"Candles\" selected on the top bar.\n\nPlease note that this market is about the price according to Binance BTC/USDT, not according to other exchanges or trading pairs.",
+      "closed": true,
+      "startDate": "2026-10-21T16:07:08Z",
+      "endDate": "2026-10-23T16:00:00Z",
+      "volumeNum": 116274.00964700001
+     }
+    ]
+   }
+  ],
+  "nyc-daily-weather|false": [
+   {
+    "slug": "highest-temperature-in-nyc-on-october-28-2026",
+    "title": "Highest temperature in NYC on October 28?",
+    "startDate": "2026-10-26T07:56:10Z",
+    "endDate": "2026-10-28T12:00:00Z",
+    "tags": [
+     "weather",
+     "recurring",
+     "hide-from-new",
+     "new-york-city",
+     "daily-temperature",
+     "highest-temperature"
+    ],
+    "markets": [
+     {
+      "question": "Will the highest temperature in New York City be 53°F or below on October 28?",
+      "conditionId": "0x14346d3d21a1d644f016ce97a429331f01b2ff0227b115c36d7c20af9f58d375",
+      "outcomes": "[\"Yes\", \"No\"]",
+      "outcomePrices": "[\"0.0095\", \"0.9905\"]",
+      "clobTokenIds": "[\"36218298920047590722529144399154870376798769633326445632640473242054977290375\", \"14202586925144822003758322834633520104664191253585453206049297637870112678318\"]",
+      "feesEnabled": true,
+      "feeSchedule": {
+       "exponent": 1,
+       "rate": 0,
+       "takerOnly": true,
+       "rebateRate": 0
+      },
+      "resolutionSource": "https://aviationweather.gov/api/data/metar?ids=KLGA&format=raw&date=2026-10-29T07:00:00Z&hours=30",
+      "description": "This market will resolve to the temperature range that contains the highest temperature reported at LaGuardia Airport (KLGA) on 28 Oct '26.\n\nThe qualifying value is the highest temperature reported in the hourly temperature remark of any routine (METAR) observation for LaGuardia Airport (KLGA) on that date, in tenths of a degree Celsius as reported. A report whose line begins with SPECI is a special observation and does not count. Every other report is routine, including one issued off the nominal hour and one that carries no METAR or SPECI label.\n\nFor How to Read the METAR Report, see: https://polymarket-upload.s3.us-east-2.amazonaws.com/market_products/Weather/How+to+Read+the+METAR+Report.pdf\n\nThe hourly temperature remark is the group beginning with the letter T followed by exactly eight digits. After the T, one digit for sign (0 positive, 1 negative) and three for tenths of a degree Celsius give the temperature; the following four are the dew point and are not used. T01390133 is 13.9°C; T10171022 is −1.7°C.\n\nIf a routine observation does not carry the hourly temperature remark, the temperature group in the body of that observation governs for that observation, in whole degrees Celsius as reported. It appears as temperature and dew point separated by a slash, with M marking a negative value: 18/12 is 18°C; M11/M17 is −11°C. An observation that reports no temperature in either place is disregarded.\n\nEach market in this event states its range in whole degrees Fahrenheit. The qualifying value is converted using °F = °C × 9/5 + 32 and rounded to the nearest whole degree, with a value ending in exactly half rounded up to the next higher whole degree, and that whole Fahrenheit value determines which range contains it. For example, 18.3°C is 64.94°F and counts as 65°F; 17.8°C is 64.04°F and counts as 64°F; 19°C is 66.2°F and counts as 66°F; −22.5°C is exactly −8.5°F and counts as −8°F.\n\nAn observation counts if its time stamp, converted to the station's local time (including any daylight-saving shift in effect), falls on the observation date.\n\nThis market will resolve at the issuance of the first METAR observation for the station on the day following the observation date or by 11:59 PM ET on the day following the observation date, whichever comes first. Resolution is determined from the observations the resolution source shows for the observation date.\n\nIn the event that the Aviation Weather Center has published no routine observation reporting a temperature for the observation date by 11:59 PM ET on the day following the observation date, the Weather Underground Daily Observations table will be used as the resolution source. In the event that neither source has published data sufficient to determine a temperature for the observation date by 11:59 PM ET on the day following the observation date, this market will resolve to the lowest bracket.\n\nThe report the resolution source shows for a given observation time is the one that counts, whether or not it is marked as a correction (COR). Changes to observations within this market's timeframe will be considered until the first datapoint for the following date has been published, after which any alterations will not be considered. Where the first routine observation for the following date is published before that deadline, resolution is determined from a read taken after it. Where it is not, resolution is determined from a read taken at that deadline.\n\nIn the case that the Resolution Source publishes data, sufficient to settle a Market, that is clearly erroneous and the result of technical or operational error, or of unauthorized interference with the Resolution Source or its data, the Market may remain open for a period of up to seven (7) calendar days (ET) from the time of the original release, in anticipation of a correction by the Resolution Source. If the Resolution Source publishes a corrected value within that period, that value will be eligible for resolution. If no corrected value is published within that period, Polymarket will issue a Clarification to determine whether the originally published value may be eligible for resolution, or whether other action is required to preserve the orderly functioning of the Market.\n\nThe resolution source for this market will be the routine observations for LaGuardia Airport (KLGA) published here:\nhttps://aviationweather.gov/api/data/metar?ids=KLGA&format=raw&date=2026-10-29T07:00:00Z&hours=30",
+      "closed": false,
+      "startDate": "2026-10-26T07:56:10Z",
+      "endDate": "2026-10-28T12:00:00Z",
+      "volumeNum": 168.9253
+     }
+    ]
+   },
+   {
+    "slug": "highest-temperature-in-nyc-on-october-27-2026",
+    "title": "Highest temperature in NYC on October 27?",
+    "startDate": "2026-10-25T07:56:12Z",
+    "endDate": "2026-10-27T12:00:00Z",
+    "tags": [
+     "weather",
+     "recurring",
+     "hide-from-new",
+     "new-york-city",
+     "daily-temperature",
+     "highest-temperature"
+    ],
+    "markets": [
+     {
+      "question": "Will the highest temperature in New York City be 51°F or below on October 27?",
+      "conditionId": "0xed16a6de38df205deff47213b2214a71308c107fdab2c2762c5fdf750df77e40",
+      "outcomes": "[\"Yes\", \"No\"]",
+      "outcomePrices": "[\"0.0005\", \"0.9995\"]",
+      "clobTokenIds": "[\"109391781212839692902098094847534836747491896164723429351238115052020048669197\", \"112869375936518745328981417106529712632041383558209317632870866521528160521249\"]",
+      "feesEnabled": true,
+      "feeSchedule": {
+       "exponent": 1,
+       "rate": 0,
+       "takerOnly": true,
+       "rebateRate": 0
+      },
+      "resolutionSource": "https://aviationweather.gov/api/data/metar?ids=KLGA&format=raw&date=2026-10-28T07:00:00Z&hours=30",
+      "description": "This market will resolve to the temperature range that contains the highest temperature reported at LaGuardia Airport (KLGA) on 27 Oct '26.\n\nThe qualifying value is the highest temperature reported in the hourly temperature remark of any routine (METAR) observation for LaGuardia Airport (KLGA) on that date, in tenths of a degree Celsius as reported. A report whose line begins with SPECI is a special observation and does not count. Every other report is routine, including one issued off the nominal hour and one that carries no METAR or SPECI label.\n\nFor How to Read the METAR Report, see: https://polymarket-upload.s3.us-east-2.amazonaws.com/market_products/Weather/How+to+Read+the+METAR+Report.pdf\n\nThe hourly temperature remark is the group beginning with the letter T followed by exactly eight digits. After the T, one digit for sign (0 positive, 1 negative) and three for tenths of a degree Celsius give the temperature; the following four are the dew point and are not used. T01390133 is 13.9°C; T10171022 is −1.7°C.\n\nIf a routine observation does not carry the hourly temperature remark, the temperature group in the body of that observation governs for that observation, in whole degrees Celsius as reported. It appears as temperature and dew point separated by a slash, with M marking a negative value: 18/12 is 18°C; M11/M17 is −11°C. An observation that reports no temperature in either place is disregarded.\n\nEach market in this event states its range in whole degrees Fahrenheit. The qualifying value is converted using °F = °C × 9/5 + 32 and rounded to the nearest whole degree, with a value ending in exactly half rounded up to the next higher whole degree, and that whole Fahrenheit value determines which range contains it. For example, 18.3°C is 64.94°F and counts as 65°F; 17.8°C is 64.04°F and counts as 64°F; 19°C is 66.2°F and counts as 66°F; −22.5°C is exactly −8.5°F and counts as −8°F.\n\nAn observation counts if its time stamp, converted to the station's local time (including any daylight-saving shift in effect), falls on the observation date.\n\nThis market will resolve at the issuance of the first METAR observation for the station on the day following the observation date or by 11:59 PM ET on the day following the observation date, whichever comes first. Resolution is determined from the observations the resolution source shows for the observation date.\n\nIn the event that the Aviation Weather Center has published no routine observation reporting a temperature for the observation date by 11:59 PM ET on the day following the observation date, the Weather Underground Daily Observations table will be used as the resolution source. In the event that neither source has published data sufficient to determine a temperature for the observation date by 11:59 PM ET on the day following the observation date, this market will resolve to the lowest bracket.\n\nThe report the resolution source shows for a given observation time is the one that counts, whether or not it is marked as a correction (COR). Changes to observations within this market's timeframe will be considered until the first datapoint for the following date has been published, after which any alterations will not be considered. Where the first routine observation for the following date is published before that deadline, resolution is determined from a read taken after it. Where it is not, resolution is determined from a read taken at that deadline.\n\nIn the case that the Resolution Source publishes data, sufficient to settle a Market, that is clearly erroneous and the result of technical or operational error, or of unauthorized interference with the Resolution Source or its data, the Market may remain open for a period of up to seven (7) calendar days (ET) from the time of the original release, in anticipation of a correction by the Resolution Source. If the Resolution Source publishes a corrected value within that period, that value will be eligible for resolution. If no corrected value is published within that period, Polymarket will issue a Clarification to determine whether the originally published value may be eligible for resolution, or whether other action is required to preserve the orderly functioning of the Market.\n\nThe resolution source for this market will be the routine observations for LaGuardia Airport (KLGA) published here:\nhttps://aviationweather.gov/api/data/metar?ids=KLGA&format=raw&date=2026-10-28T07:00:00Z&hours=30",
+      "closed": false,
+      "startDate": "2026-10-25T07:56:12Z",
+      "endDate": "2026-10-27T12:00:00Z",
+      "volumeNum": 25
+     }
+    ]
+   },
+   {
+    "slug": "highest-temperature-in-nyc-on-october-26-2026",
+    "title": "Highest temperature in NYC on October 26?",
+    "startDate": "2026-10-24T06:56:17Z",
+    "endDate": "2026-10-26T12:00:00Z",
+    "tags": [
+     "weather",
+     "recurring",
+     "hide-from-new",
+     "new-york-city",
+     "daily-temperature",
+     "highest-temperature"
+    ],
+    "markets": [
+     {
+      "question": "Will the highest temperature in New York City be 59°F or below on October 26?",
+      "conditionId": "0x71443670da3b3be984a35e60b236c5d0854020f7db98966a3abab1fe1cb1de95",
+      "outcomes": "[\"Yes\", \"No\"]",
+      "outcomePrices": "[\"0.0005\", \"0.9995\"]",
+      "clobTokenIds": "[\"14511476824506499333312835356560111920575977379439280194429772841589076962178\", \"61058643916926768339213349452918345765927623601895338432350541275109645759871\"]",
+      "feesEnabled": true,
+      "feeSchedule": {
+       "exponent": 1,
+       "rate": 0,
+       "takerOnly": true,
+       "rebateRate": 0
+      },
+      "resolutionSource": "https://aviationweather.gov/api/data/metar?ids=KLGA&format=raw&date=2026-10-27T07:00:00Z&hours=30",
+      "description": "This market will resolve to the temperature range that contains the highest temperature reported at LaGuardia Airport (KLGA) on 26 Oct '26.\n\nThe qualifying value is the highest temperature reported in the hourly temperature remark of any routine (METAR) observation for LaGuardia Airport (KLGA) on that date, in tenths of a degree Celsius as reported. A report whose line begins with SPECI is a special observation and does not count. Every other report is routine, including one issued off the nominal hour and one that carries no METAR or SPECI label.\n\nFor How to Read the METAR Report, see: https://polymarket-upload.s3.us-east-2.amazonaws.com/market_products/Weather/How+to+Read+the+METAR+Report.pdf\n\nThe hourly temperature remark is the group beginning with the letter T followed by exactly eight digits. After the T, one digit for sign (0 positive, 1 negative) and three for tenths of a degree Celsius give the temperature; the following four are the dew point and are not used. T01390133 is 13.9°C; T10171022 is −1.7°C.\n\nIf a routine observation does not carry the hourly temperature remark, the temperature group in the body of that observation governs for that observation, in whole degrees Celsius as reported. It appears as temperature and dew point separated by a slash, with M marking a negative value: 18/12 is 18°C; M11/M17 is −11°C. An observation that reports no temperature in either place is disregarded.\n\nEach market in this event states its range in whole degrees Fahrenheit. The qualifying value is converted using °F = °C × 9/5 + 32 and rounded to the nearest whole degree, with a value ending in exactly half rounded up to the next higher whole degree, and that whole Fahrenheit value determines which range contains it. For example, 18.3°C is 64.94°F and counts as 65°F; 17.8°C is 64.04°F and counts as 64°F; 19°C is 66.2°F and counts as 66°F; −22.5°C is exactly −8.5°F and counts as −8°F.\n\nAn observation counts if its time stamp, converted to the station's local time (including any daylight-saving shift in effect), falls on the observation date.\n\nThis market will resolve at the issuance of the first METAR observation for the station on the day following the observation date or by 11:59 PM ET on the day following the observation date, whichever comes first. Resolution is determined from the observations the resolution source shows for the observation date.\n\nIn the event that the Aviation Weather Center has published no routine observation reporting a temperature for the observation date by 11:59 PM ET on the day following the observation date, the Weather Underground Daily Observations table will be used as the resolution source. In the event that neither source has published data sufficient to determine a temperature for the observation date by 11:59 PM ET on the day following the observation date, this market will resolve to the lowest bracket.\n\nThe report the resolution source shows for a given observation time is the one that counts, whether or not it is marked as a correction (COR). Changes to observations within this market's timeframe will be considered until the first datapoint for the following date has been published, after which any alterations will not be considered. Where the first routine observation for the following date is published before that deadline, resolution is determined from a read taken after it. Where it is not, resolution is determined from a read taken at that deadline.\n\nIn the case that the Resolution Source publishes data, sufficient to settle a Market, that is clearly erroneous and the result of technical or operational error, or of unauthorized interference with the Resolution Source or its data, the Market may remain open for a period of up to seven (7) calendar days (ET) from the time of the original release, in anticipation of a correction by the Resolution Source. If the Resolution Source publishes a corrected value within that period, that value will be eligible for resolution. If no corrected value is published within that period, Polymarket will issue a Clarification to determine whether the originally published value may be eligible for resolution, or whether other action is required to preserve the orderly functioning of the Market.\n\nThe resolution source for this market will be the routine observations for LaGuardia Airport (KLGA) published here:\nhttps://aviationweather.gov/api/data/metar?ids=KLGA&format=raw&date=2026-10-27T07:00:00Z&hours=30",
+      "closed": false,
+      "startDate": "2026-10-24T06:56:17Z",
+      "endDate": "2026-10-26T12:00:00Z",
+      "volumeNum": 165.109
+     }
+    ]
+   }
+  ],
+  "nyc-daily-weather|true": [
+   {
+    "slug": "highest-temperature-in-nyc-on-october-25-2026",
+    "title": "Highest temperature in NYC on October 25?",
+    "startDate": "2026-10-23T07:56:09Z",
+    "endDate": "2026-10-25T12:00:00Z",
+    "tags": [
+     "weather",
+     "recurring",
+     "hide-from-new",
+     "new-york-city",
+     "daily-temperature",
+     "highest-temperature"
+    ],
+    "markets": [
+     {
+      "question": "Will the highest temperature in New York City be 55°F or below on October 25?",
+      "conditionId": "0x1e484730c96e85c9d5eee1931867e316a7e2b1790a45483e60130002c2d8db8f",
+      "outcomes": "[\"Yes\", \"No\"]",
+      "outcomePrices": "[\"0\", \"1\"]",
+      "clobTokenIds": "[\"299784109108957801724578565790215937811930088427289200444553657661838349061\", \"45288625569708795895491285428860746772757540956436959008344770736907520799755\"]",
+      "feesEnabled": true,
+      "feeSchedule": {
+       "exponent": 1,
+       "rate": 0,
+       "takerOnly": true,
+       "rebateRate": 0
+      },
+      "resolutionSource": "https://aviationweather.gov/api/data/metar?ids=KLGA&format=raw&date=2026-10-26T07:00:00Z&hours=30",
+      "description": "This market will resolve to the temperature range that contains the highest temperature reported at LaGuardia Airport (KLGA) on 25 Oct '26.\n\nThe qualifying value is the highest temperature reported in the hourly temperature remark of any routine (METAR) observation for LaGuardia Airport (KLGA) on that date, in tenths of a degree Celsius as reported. A report whose line begins with SPECI is a special observation and does not count. Every other report is routine, including one issued off the nominal hour and one that carries no METAR or SPECI label.\n\nFor How to Read the METAR Report, see: https://polymarket-upload.s3.us-east-2.amazonaws.com/market_products/Weather/How+to+Read+the+METAR+Report.pdf\n\nThe hourly temperature remark is the group beginning with the letter T followed by exactly eight digits. After the T, one digit for sign (0 positive, 1 negative) and three for tenths of a degree Celsius give the temperature; the following four are the dew point and are not used. T01390133 is 13.9°C; T10171022 is −1.7°C.\n\nIf a routine observation does not carry the hourly temperature remark, the temperature group in the body of that observation governs for that observation, in whole degrees Celsius as reported. It appears as temperature and dew point separated by a slash, with M marking a negative value: 18/12 is 18°C; M11/M17 is −11°C. An observation that reports no temperature in either place is disregarded.\n\nEach market in this event states its range in whole degrees Fahrenheit. The qualifying value is converted using °F = °C × 9/5 + 32 and rounded to the nearest whole degree, with a value ending in exactly half rounded up to the next higher whole degree, and that whole Fahrenheit value determines which range contains it. For example, 18.3°C is 64.94°F and counts as 65°F; 17.8°C is 64.04°F and counts as 64°F; 19°C is 66.2°F and counts as 66°F; −22.5°C is exactly −8.5°F and counts as −8°F.\n\nAn observation counts if its time stamp, converted to the station's local time (including any daylight-saving shift in effect), falls on the observation date.\n\nThis market will resolve at the issuance of the first METAR observation for the station on the day following the observation date or by 11:59 PM ET on the day following the observation date, whichever comes first. Resolution is determined from the observations the resolution source shows for the observation date.\n\nIn the event that the Aviation Weather Center has published no routine observation reporting a temperature for the observation date by 11:59 PM ET on the day following the observation date, the Weather Underground Daily Observations table will be used as the resolution source. In the event that neither source has published data sufficient to determine a temperature for the observation date by 11:59 PM ET on the day following the observation date, this market will resolve to the lowest bracket.\n\nThe report the resolution source shows for a given observation time is the one that counts, whether or not it is marked as a correction (COR). Changes to observations within this market's timeframe will be considered until the first datapoint for the following date has been published, after which any alterations will not be considered. Where the first routine observation for the following date is published before that deadline, resolution is determined from a read taken after it. Where it is not, resolution is determined from a read taken at that deadline.\n\nIn the case that the Resolution Source publishes data, sufficient to settle a Market, that is clearly erroneous and the result of technical or operational error, or of unauthorized interference with the Resolution Source or its data, the Market may remain open for a period of up to seven (7) calendar days (ET) from the time of the original release, in anticipation of a correction by the Resolution Source. If the Resolution Source publishes a corrected value within that period, that value will be eligible for resolution. If no corrected value is published within that period, Polymarket will issue a Clarification to determine whether the originally published value may be eligible for resolution, or whether other action is required to preserve the orderly functioning of the Market.\n\nThe resolution source for this market will be the routine observations for LaGuardia Airport (KLGA) published here:\nhttps://aviationweather.gov/api/data/metar?ids=KLGA&format=raw&date=2026-10-26T07:00:00Z&hours=30",
+      "closed": true,
+      "startDate": "2026-10-23T07:56:09Z",
+      "endDate": "2026-10-25T12:00:00Z",
+      "volumeNum": 114.89699999999999
+     }
+    ]
+   },
+   {
+    "slug": "highest-temperature-in-nyc-on-october-24-2026",
+    "title": "Highest temperature in NYC on October 24?",
+    "startDate": "2026-10-22T06:56:13Z",
+    "endDate": "2026-10-24T12:00:00Z",
+    "tags": [
+     "weather",
+     "recurring",
+     "hide-from-new",
+     "new-york-city",
+     "daily-temperature",
+     "highest-temperature"
+    ],
+    "markets": [
+     {
+      "question": "Will the highest temperature in New York City be 51°F or below on October 24?",
+      "conditionId": "0x55169b28e2d51834b4e1e04afb907925d6e08b04249b5fcba3a27a3f7a94e8e2",
+      "outcomes": "[\"Yes\", \"No\"]",
+      "outcomePrices": "[\"0\", \"1\"]",
+      "clobTokenIds": "[\"67653613110386781571733147401565982684633174746231716661600713548271608489127\", \"61614611663474390464224713317604826626720315348425458282185226262549411250725\"]",
+      "feesEnabled": true,
+      "feeSchedule": {
+       "exponent": 1,
+       "rate": 0,
+       "takerOnly": true,
+       "rebateRate": 0
+      },
+      "resolutionSource": "https://aviationweather.gov/api/data/metar?ids=KLGA&format=raw&date=2026-10-25T07:00:00Z&hours=30",
+      "description": "This market will resolve to the temperature range that contains the highest temperature reported at LaGuardia Airport (KLGA) on 24 Oct '26.\n\nThe qualifying value is the highest temperature reported in the hourly temperature remark of any routine (METAR) observation for LaGuardia Airport (KLGA) on that date, in tenths of a degree Celsius as reported. A report whose line begins with SPECI is a special observation and does not count. Every other report is routine, including one issued off the nominal hour and one that carries no METAR or SPECI label.\n\nFor How to Read the METAR Report, see: https://polymarket-upload.s3.us-east-2.amazonaws.com/market_products/Weather/How+to+Read+the+METAR+Report.pdf\n\nThe hourly temperature remark is the group beginning with the letter T followed by exactly eight digits. After the T, one digit for sign (0 positive, 1 negative) and three for tenths of a degree Celsius give the temperature; the following four are the dew point and are not used. T01390133 is 13.9°C; T10171022 is −1.7°C.\n\nIf a routine observation does not carry the hourly temperature remark, the temperature group in the body of that observation governs for that observation, in whole degrees Celsius as reported. It appears as temperature and dew point separated by a slash, with M marking a negative value: 18/12 is 18°C; M11/M17 is −11°C. An observation that reports no temperature in either place is disregarded.\n\nEach market in this event states its range in whole degrees Fahrenheit. The qualifying value is converted using °F = °C × 9/5 + 32 and rounded to the nearest whole degree, with a value ending in exactly half rounded up to the next higher whole degree, and that whole Fahrenheit value determines which range contains it. For example, 18.3°C is 64.94°F and counts as 65°F; 17.8°C is 64.04°F and counts as 64°F; 19°C is 66.2°F and counts as 66°F; −22.5°C is exactly −8.5°F and counts as −8°F.\n\nAn observation counts if its time stamp, converted to the station's local time (including any daylight-saving shift in effect), falls on the observation date.\n\nThis market will resolve at the issuance of the first METAR observation for the station on the day following the observation date or by 11:59 PM ET on the day following the observation date, whichever comes first. Resolution is determined from the observations the resolution source shows for the observation date.\n\nIn the event that the Aviation Weather Center has published no routine observation reporting a temperature for the observation date by 11:59 PM ET on the day following the observation date, the Weather Underground Daily Observations table will be used as the resolution source. In the event that neither source has published data sufficient to determine a temperature for the observation date by 11:59 PM ET on the day following the observation date, this market will resolve to the lowest bracket.\n\nThe report the resolution source shows for a given observation time is the one that counts, whether or not it is marked as a correction (COR). Changes to observations within this market's timeframe will be considered until the first datapoint for the following date has been published, after which any alterations will not be considered. Where the first routine observation for the following date is published before that deadline, resolution is determined from a read taken after it. Where it is not, resolution is determined from a read taken at that deadline.\n\nIn the case that the Resolution Source publishes data, sufficient to settle a Market, that is clearly erroneous and the result of technical or operational error, or of unauthorized interference with the Resolution Source or its data, the Market may remain open for a period of up to seven (7) calendar days (ET) from the time of the original release, in anticipation of a correction by the Resolution Source. If the Resolution Source publishes a corrected value within that period, that value will be eligible for resolution. If no corrected value is published within that period, Polymarket will issue a Clarification to determine whether the originally published value may be eligible for resolution, or whether other action is required to preserve the orderly functioning of the Market.\n\nThe resolution source for this market will be the routine observations for LaGuardia Airport (KLGA) published here:\nhttps://aviationweather.gov/api/data/metar?ids=KLGA&format=raw&date=2026-10-25T07:00:00Z&hours=30",
+      "closed": true,
+      "startDate": "2026-10-22T06:56:13Z",
+      "endDate": "2026-10-24T12:00:00Z",
+      "volumeNum": 125
+     }
+    ]
+   },
+   {
+    "slug": "highest-temperature-in-nyc-on-october-23-2026",
+    "title": "Highest temperature in NYC on October 23?",
+    "startDate": "2026-10-21T07:56:12Z",
+    "endDate": "2026-10-23T12:00:00Z",
+    "tags": [
+     "weather",
+     "recurring",
+     "hide-from-new",
+     "new-york-city",
+     "daily-temperature",
+     "highest-temperature"
+    ],
+    "markets": [
+     {
+      "question": "Will the highest temperature in New York City be 47°F or below on October 23?",
+      "conditionId": "0xd200ca0923add776acbd2433f92c030516866fb2940d88fcc267428d981c84d7",
+      "outcomes": "[\"Yes\", \"No\"]",
+      "outcomePrices": "[\"0\", \"1\"]",
+      "clobTokenIds": "[\"75007504151798194207601030587117263599523211891938953322433374362132845596054\", \"75969653579948498902949030601984216191821327204731579400428947037805914558178\"]",
+      "feesEnabled": true,
+      "feeSchedule": {
+       "exponent": 1,
+       "rate": 0,
+       "takerOnly": true,
+       "rebateRate": 0
+      },
+      "resolutionSource": "https://aviationweather.gov/api/data/metar?ids=KLGA&format=raw&date=2026-10-24T04:00:00Z&hours=27",
+      "description": "This market will resolve to the temperature range that contains the highest temperature reported at LaGuardia Airport (KLGA) on 23 Oct '26.\n\nThe qualifying value is the highest temperature reported in the hourly temperature remark of any routine (METAR) observation for LaGuardia Airport (KLGA) on that date, in tenths of a degree Celsius as reported. A report whose line begins with SPECI is a special observation and does not count. Every other report is routine, including one issued off the nominal hour and one that carries no METAR or SPECI label.\n\nFor How to Read the METAR Report, see: https://polymarket-upload.s3.us-east-2.amazonaws.com/market_products/Weather/How+to+Read+the+METAR+Report.pdf\n\nThe hourly temperature remark is the group beginning with the letter T followed by exactly eight digits. After the T, one digit for sign (0 positive, 1 negative) and three for tenths of a degree Celsius give the temperature; the following four are the dew point and are not used. T01390133 is 13.9°C; T10171022 is −1.7°C.\n\nIf a routine observation does not carry the hourly temperature remark, the temperature group in the body of that observation governs for that observation, in whole degrees Celsius as reported. It appears as temperature and dew point separated by a slash, with M marking a negative value: 18/12 is 18°C; M11/M17 is −11°C. An observation that reports no temperature in either place is disregarded.\n\nEach market in this event states its range in whole degrees Fahrenheit. The qualifying value is converted using °F = °C × 9/5 + 32 and rounded to the nearest whole degree, with a value ending in exactly half rounded up to the next higher whole degree, and that whole Fahrenheit value determines which range contains it. For example, 18.3°C is 64.94°F and counts as 65°F; 17.8°C is 64.04°F and counts as 64°F; 19°C is 66.2°F and counts as 66°F; −22.5°C is exactly −8.5°F and counts as −8°F.\n\nAn observation counts if its time stamp, converted to the station's local time (including any daylight-saving shift in effect), falls on the observation date.\n\nThis market will resolve at the issuance of the first METAR observation for the station on the day following the observation date or by 11:59 PM ET on the day following the observation date, whichever comes first. Resolution is determined from the observations the resolution source shows for the observation date.\n\nIn the event that the Aviation Weather Center has published no routine observation reporting a temperature for the observation date by 11:59 PM ET on the day following the observation date, the Weather Underground Daily Observations table will be used as the resolution source. In the event that neither source has published data sufficient to determine a temperature for the observation date by 11:59 PM ET on the day following the observation date, this market will resolve to the lowest bracket.\n\nThe report the resolution source shows for a given observation time is the one that counts, whether or not it is marked as a correction (COR). Changes to observations within this market's timeframe will be considered until the first datapoint for the following date has been published, after which any alterations will not be considered. Where the first routine observation for the following date is published before that deadline, resolution is determined from a read taken after it. Where it is not, resolution is determined from a read taken at that deadline.\n\nIn the case that the Resolution Source publishes data, sufficient to settle a Market, that is clearly erroneous and the result of technical or operational error, or of unauthorized interference with the Resolution Source or its data, the Market may remain open for a period of up to seven (7) calendar days (ET) from the time of the original release, in anticipation of a correction by the Resolution Source. If the Resolution Source publishes a corrected value within that period, that value will be eligible for resolution. If no corrected value is published within that period, Polymarket will issue a Clarification to determine whether the originally published value may be eligible for resolution, or whether other action is required to preserve the orderly functioning of the Market.\n\nThe resolution source for this market will be the routine observations for LaGuardia Airport (KLGA) published here:\nhttps://aviationweather.gov/api/data/metar?ids=KLGA&format=raw&date=2026-10-24T04:00:00Z&hours=27",
+      "closed": true,
+      "startDate": "2026-10-21T07:56:12Z",
+      "endDate": "2026-10-23T12:00:00Z",
+      "volumeNum": 90
+     }
+    ]
+   }
+  ],
+  "london-daily-weather|false": [
+   {
+    "slug": "highest-temperature-in-london-on-october-28-2026",
+    "title": "Highest temperature in London on October 28?",
+    "startDate": "2026-10-26T06:55:56Z",
+    "endDate": "2026-10-28T12:00:00Z",
+    "tags": [
+     "weather",
+     "recurring",
+     "hide-from-new",
+     "london",
+     "daily-temperature",
+     "highest-temperature"
+    ],
+    "markets": [
+     {
+      "question": "Will the highest temperature in London be 10°C or below on October 28?",
+      "conditionId": "0x33abc1ddf81ad0b8ae0e7289e561c5b27423f959377cbfb9d60bcb9fd103a0c6",
+      "outcomes": "[\"Yes\", \"No\"]",
+      "outcomePrices": "[\"0.0005\", \"0.9995\"]",
+      "clobTokenIds": "[\"69192709815576529422258231739529232261267673572850359631271322812601804311146\", \"94310388338978022087285011839808159755509917984364375366484470815549279448850\"]",
+      "feesEnabled": true,
+      "feeSchedule": {
+       "exponent": 1,
+       "rate": 0,
+       "takerOnly": true,
+       "rebateRate": 0
+      },
+      "resolutionSource": "https://aviationweather.gov/api/data/metar?ids=EGLC&format=raw&date=2026-10-29T03:00:00Z&hours=30",
+      "description": "This market will resolve to the temperature range that contains the highest temperature reported at London City Airport (EGLC) on 28 Oct '26.\n\nThe qualifying value is the highest temperature reported in the hourly temperature remark of any routine (METAR) observation for London City Airport (EGLC) on that date, in tenths of a degree Celsius as reported. A report whose line begins with SPECI is a special observation and does not count. Every other report is routine, including one issued off the nominal hour and one that carries no METAR or SPECI label.\n\nFor How to Read the METAR Report, see: https://polymarket-upload.s3.us-east-2.amazonaws.com/market_products/Weather/How+to+Read+the+METAR+Report.pdf\n\nThe hourly temperature remark is the group beginning with the letter T followed by exactly eight digits. After the T, one digit for sign (0 positive, 1 negative) and three for tenths of a degree Celsius give the temperature; the following four are the dew point and are not used. T01390133 is 13.9°C; T10171022 is −1.7°C.\n\nIf a routine observation does not carry the hourly temperature remark, the temperature group in the body of that observation governs for that observation, in whole degrees Celsius as reported. It appears as temperature and dew point separated by a slash, with M marking a negative value: 18/12 is 18°C; M11/M17 is −11°C. An observation that reports no temperature in either place is disregarded.\n\nEach market in this event states its range in whole degrees Celsius. The qualifying value is rounded to the nearest whole degree, with a value ending in exactly half rounded up to the next higher whole degree, and that whole Celsius value determines which range contains it. For example, 13.9°C counts as 14°C; 17.4°C counts as 17°C; 16.5°C counts as 17°C; −1.7°C counts as −2°C; −8.5°C counts as −8°C.\n\nAn observation counts if its time stamp, converted to the station's local time (including any daylight-saving shift in effect), falls on the observation date.\n\nThis market will resolve at the issuance of the first METAR observation for the station on the day following the observation date or by 11:59 PM ET on the day following the observation date, whichever comes first. Resolution is determined from the observations the resolution source shows for the observation date.\n\nIn the event that the Aviation Weather Center has published no routine observation reporting a temperature for the observation date by 11:59 PM ET on the day following the observation date, the Weather Underground Daily Observations table will be used as the resolution source. In the event that neither source has published data sufficient to determine a temperature for the observation date by 11:59 PM ET on the day following the observation date, this market will resolve to the lowest bracket.\n\nThe report the resolution source shows for a given observation time is the one that counts, whether or not it is marked as a correction (COR). Changes to observations within this market's timeframe will be considered until the first datapoint for the following date has been published, after which any alterations will not be considered. Where the first routine observation for the following date is published before that deadline, resolution is determined from a read taken after it. Where it is not, resolution is determined from a read taken at that deadline.\n\nIn the case that the Resolution Source publishes data, sufficient to settle a Market, that is clearly erroneous and the result of technical or operational error, or of unauthorized interference with the Resolution Source or its data, the Market may remain open for a period of up to seven (7) calendar days (ET) from the time of the original release, in anticipation of a correction by the Resolution Source. If the Resolution Source publishes a corrected value within that period, that value will be eligible for resolution. If no corrected value is published within that period, Polymarket will issue a Clarification to determine whether the originally published value may be eligible for resolution, or whether other action is required to preserve the orderly functioning of the Market.\n\nThe resolution source for this market will be the routine observations for London City Airport (EGLC) published here:\nhttps://aviationweather.gov/api/data/metar?ids=EGLC&format=raw&date=2026-10-29T03:00:00Z&hours=30",
+      "closed": false,
+      "startDate": "2026-10-26T06:55:56Z",
+      "endDate": "2026-10-28T12:00:00Z",
+      "volumeNum": 260.992
+     }
+    ]
+   },
+   {
+    "slug": "highest-temperature-in-london-on-october-27-2026",
+    "title": "Highest temperature in London on October 27?",
+    "startDate": "2026-10-25T06:56:02Z",
+    "endDate": "2026-10-27T12:00:00Z",
+    "tags": [
+     "weather",
+     "recurring",
+     "hide-from-new",
+     "london",
+     "daily-temperature",
+     "highest-temperature"
+    ],
+    "markets": [
+     {
+      "question": "Will the highest temperature in London be 11°C or below on October 27?",
+      "conditionId": "0x02eaaaacbf3262b3cc9588c49ae992b307232850664d1af11be95adee178aa3c",
+      "outcomes": "[\"Yes\", \"No\"]",
+      "outcomePrices": "[\"0.0005\", \"0.9995\"]",
+      "clobTokenIds": "[\"99698188666905504021626829002140356514598791204654978213352321702730306112285\", \"110280356919518178622600281480095244641739937407820622940211767148446810564093\"]",
+      "feesEnabled": true,
+      "feeSchedule": {
+       "exponent": 1,
+       "rate": 0,
+       "takerOnly": true,
+       "rebateRate": 0
+      },
+      "resolutionSource": "https://aviationweather.gov/api/data/metar?ids=EGLC&format=raw&date=2026-10-28T03:00:00Z&hours=30",
+      "description": "This market will resolve to the temperature range that contains the highest temperature reported at London City Airport (EGLC) on 27 Oct '26.\n\nThe qualifying value is the highest temperature reported in the hourly temperature remark of any routine (METAR) observation for London City Airport (EGLC) on that date, in tenths of a degree Celsius as reported. A report whose line begins with SPECI is a special observation and does not count. Every other report is routine, including one issued off the nominal hour and one that carries no METAR or SPECI label.\n\nFor How to Read the METAR Report, see: https://polymarket-upload.s3.us-east-2.amazonaws.com/market_products/Weather/How+to+Read+the+METAR+Report.pdf\n\nThe hourly temperature remark is the group beginning with the letter T followed by exactly eight digits. After the T, one digit for sign (0 positive, 1 negative) and three for tenths of a degree Celsius give the temperature; the following four are the dew point and are not used. T01390133 is 13.9°C; T10171022 is −1.7°C.\n\nIf a routine observation does not carry the hourly temperature remark, the temperature group in the body of that observation governs for that observation, in whole degrees Celsius as reported. It appears as temperature and dew point separated by a slash, with M marking a negative value: 18/12 is 18°C; M11/M17 is −11°C. An observation that reports no temperature in either place is disregarded.\n\nEach market in this event states its range in whole degrees Celsius. The qualifying value is rounded to the nearest whole degree, with a value ending in exactly half rounded up to the next higher whole degree, and that whole Celsius value determines which range contains it. For example, 13.9°C counts as 14°C; 17.4°C counts as 17°C; 16.5°C counts as 17°C; −1.7°C counts as −2°C; −8.5°C counts as −8°C.\n\nAn observation counts if its time stamp, converted to the station's local time (including any daylight-saving shift in effect), falls on the observation date.\n\nThis market will resolve at the issuance of the first METAR observation for the station on the day following the observation date or by 11:59 PM ET on the day following the observation date, whichever comes first. Resolution is determined from the observations the resolution source shows for the observation date.\n\nIn the event that the Aviation Weather Center has published no routine observation reporting a temperature for the observation date by 11:59 PM ET on the day following the observation date, the Weather Underground Daily Observations table will be used as the resolution source. In the event that neither source has published data sufficient to determine a temperature for the observation date by 11:59 PM ET on the day following the observation date, this market will resolve to the lowest bracket.\n\nThe report the resolution source shows for a given observation time is the one that counts, whether or not it is marked as a correction (COR). Changes to observations within this market's timeframe will be considered until the first datapoint for the following date has been published, after which any alterations will not be considered. Where the first routine observation for the following date is published before that deadline, resolution is determined from a read taken after it. Where it is not, resolution is determined from a read taken at that deadline.\n\nIn the case that the Resolution Source publishes data, sufficient to settle a Market, that is clearly erroneous and the result of technical or operational error, or of unauthorized interference with the Resolution Source or its data, the Market may remain open for a period of up to seven (7) calendar days (ET) from the time of the original release, in anticipation of a correction by the Resolution Source. If the Resolution Source publishes a corrected value within that period, that value will be eligible for resolution. If no corrected value is published within that period, Polymarket will issue a Clarification to determine whether the originally published value may be eligible for resolution, or whether other action is required to preserve the orderly functioning of the Market.\n\nThe resolution source for this market will be the routine observations for London City Airport (EGLC) published here:\nhttps://aviationweather.gov/api/data/metar?ids=EGLC&format=raw&date=2026-10-28T03:00:00Z&hours=30",
+      "closed": false,
+      "startDate": "2026-10-25T06:56:02Z",
+      "endDate": "2026-10-27T12:00:00Z",
+      "volumeNum": 24.991999999999997
+     }
+    ]
+   },
+   {
+    "slug": "highest-temperature-in-london-on-october-26-2026",
+    "title": "Highest temperature in London on October 26?",
+    "startDate": "2026-10-24T06:56:00Z",
+    "endDate": "2026-10-26T12:00:00Z",
+    "tags": [
+     "weather",
+     "recurring",
+     "hide-from-new",
+     "london",
+     "daily-temperature",
+     "highest-temperature"
+    ],
+    "markets": [
+     {
+      "question": "Will the highest temperature in London be 11°C or below on October 26?",
+      "conditionId": "0x8afada5127c8b0de63024b9dbf552195fef262a2f8286522799c8d4de3d060c4",
+      "outcomes": "[\"Yes\", \"No\"]",
+      "outcomePrices": "[\"0.0005\", \"0.9995\"]",
+      "clobTokenIds": "[\"61526352601508844474431245920696371271599322356942490998644214446411869819660\", \"25149239264482764142208313397086845414607925940298537753007136151615513404115\"]",
+      "feesEnabled": true,
+      "feeSchedule": {
+       "exponent": 1,
+       "rate": 0,
+       "takerOnly": true,
+       "rebateRate": 0
+      },
+      "resolutionSource": "https://aviationweather.gov/api/data/metar?ids=EGLC&format=raw&date=2026-10-27T03:00:00Z&hours=30",
+      "description": "This market will resolve to the temperature range that contains the highest temperature reported at London City Airport (EGLC) on 26 Oct '26.\n\nThe qualifying value is the highest temperature reported in the hourly temperature remark of any routine (METAR) observation for London City Airport (EGLC) on that date, in tenths of a degree Celsius as reported. A report whose line begins with SPECI is a special observation and does not count. Every other report is routine, including one issued off the nominal hour and one that carries no METAR or SPECI label.\n\nFor How to Read the METAR Report, see: https://polymarket-upload.s3.us-east-2.amazonaws.com/market_products/Weather/How+to+Read+the+METAR+Report.pdf\n\nThe hourly temperature remark is the group beginning with the letter T followed by exactly eight digits. After the T, one digit for sign (0 positive, 1 negative) and three for tenths of a degree Celsius give the temperature; the following four are the dew point and are not used. T01390133 is 13.9°C; T10171022 is −1.7°C.\n\nIf a routine observation does not carry the hourly temperature remark, the temperature group in the body of that observation governs for that observation, in whole degrees Celsius as reported. It appears as temperature and dew point separated by a slash, with M marking a negative value: 18/12 is 18°C; M11/M17 is −11°C. An observation that reports no temperature in either place is disregarded.\n\nEach market in this event states its range in whole degrees Celsius. The qualifying value is rounded to the nearest whole degree, with a value ending in exactly half rounded up to the next higher whole degree, and that whole Celsius value determines which range contains it. For example, 13.9°C counts as 14°C; 17.4°C counts as 17°C; 16.5°C counts as 17°C; −1.7°C counts as −2°C; −8.5°C counts as −8°C.\n\nAn observation counts if its time stamp, converted to the station's local time (including any daylight-saving shift in effect), falls on the observation date.\n\nThis market will resolve at the issuance of the first METAR observation for the station on the day following the observation date or by 11:59 PM ET on the day following the observation date, whichever comes first. Resolution is determined from the observations the resolution source shows for the observation date.\n\nIn the event that the Aviation Weather Center has published no routine observation reporting a temperature for the observation date by 11:59 PM ET on the day following the observation date, the Weather Underground Daily Observations table will be used as the resolution source. In the event that neither source has published data sufficient to determine a temperature for the observation date by 11:59 PM ET on the day following the observation date, this market will resolve to the lowest bracket.\n\nThe report the resolution source shows for a given observation time is the one that counts, whether or not it is marked as a correction (COR). Changes to observations within this market's timeframe will be considered until the first datapoint for the following date has been published, after which any alterations will not be considered. Where the first routine observation for the following date is published before that deadline, resolution is determined from a read taken after it. Where it is not, resolution is determined from a read taken at that deadline.\n\nIn the case that the Resolution Source publishes data, sufficient to settle a Market, that is clearly erroneous and the result of technical or operational error, or of unauthorized interference with the Resolution Source or its data, the Market may remain open for a period of up to seven (7) calendar days (ET) from the time of the original release, in anticipation of a correction by the Resolution Source. If the Resolution Source publishes a corrected value within that period, that value will be eligible for resolution. If no corrected value is published within that period, Polymarket will issue a Clarification to determine whether the originally published value may be eligible for resolution, or whether other action is required to preserve the orderly functioning of the Market.\n\nThe resolution source for this market will be the routine observations for London City Airport (EGLC) published here:\nhttps://aviationweather.gov/api/data/metar?ids=EGLC&format=raw&date=2026-10-27T03:00:00Z&hours=30",
+      "closed": false,
+      "startDate": "2026-10-24T06:56:00Z",
+      "endDate": "2026-10-26T12:00:00Z",
+      "volumeNum": 115
+     }
+    ]
+   }
+  ],
+  "london-daily-weather|true": [
+   {
+    "slug": "highest-temperature-in-london-on-october-25-2026",
+    "title": "Highest temperature in London on October 25?",
+    "startDate": "2026-10-23T06:56:00Z",
+    "endDate": "2026-10-25T12:00:00Z",
+    "tags": [
+     "weather",
+     "recurring",
+     "hide-from-new",
+     "london",
+     "daily-temperature",
+     "highest-temperature"
+    ],
+    "markets": [
+     {
+      "question": "Will the highest temperature in London be 9°C or below on October 25?",
+      "conditionId": "0x6531f090d891d0d9d798a0ae8677b675c6d21c6c7fb66df8a8eb804dd97052c7",
+      "outcomes": "[\"Yes\", \"No\"]",
+      "outcomePrices": "[\"0\", \"1\"]",
+      "clobTokenIds": "[\"93025005214949234810085995201074835656607206889550038115265637566654361754567\", \"9558652058901030371544934990695676204884585939588995564737398313391745679194\"]",
+      "feesEnabled": true,
+      "feeSchedule": {
+       "exponent": 1,
+       "rate": 0,
+       "takerOnly": true,
+       "rebateRate": 0
+      },
+      "resolutionSource": "https://aviationweather.gov/api/data/metar?ids=EGLC&format=raw&date=2026-10-26T03:00:00Z&hours=30",
+      "description": "This market will resolve to the temperature range that contains the highest temperature reported at London City Airport (EGLC) on 25 Oct '26.\n\nThe qualifying value is the highest temperature reported in the hourly temperature remark of any routine (METAR) observation for London City Airport (EGLC) on that date, in tenths of a degree Celsius as reported. A report whose line begins with SPECI is a special observation and does not count. Every other report is routine, including one issued off the nominal hour and one that carries no METAR or SPECI label.\n\nFor How to Read the METAR Report, see: https://polymarket-upload.s3.us-east-2.amazonaws.com/market_products/Weather/How+to+Read+the+METAR+Report.pdf\n\nThe hourly temperature remark is the group beginning with the letter T followed by exactly eight digits. After the T, one digit for sign (0 positive, 1 negative) and three for tenths of a degree Celsius give the temperature; the following four are the dew point and are not used. T01390133 is 13.9°C; T10171022 is −1.7°C.\n\nIf a routine observation does not carry the hourly temperature remark, the temperature group in the body of that observation governs for that observation, in whole degrees Celsius as reported. It appears as temperature and dew point separated by a slash, with M marking a negative value: 18/12 is 18°C; M11/M17 is −11°C. An observation that reports no temperature in either place is disregarded.\n\nEach market in this event states its range in whole degrees Celsius. The qualifying value is rounded to the nearest whole degree, with a value ending in exactly half rounded up to the next higher whole degree, and that whole Celsius value determines which range contains it. For example, 13.9°C counts as 14°C; 17.4°C counts as 17°C; 16.5°C counts as 17°C; −1.7°C counts as −2°C; −8.5°C counts as −8°C.\n\nAn observation counts if its time stamp, converted to the station's local time (including any daylight-saving shift in effect), falls on the observation date.\n\nThis market will resolve at the issuance of the first METAR observation for the station on the day following the observation date or by 11:59 PM ET on the day following the observation date, whichever comes first. Resolution is determined from the observations the resolution source shows for the observation date.\n\nIn the event that the Aviation Weather Center has published no routine observation reporting a temperature for the observation date by 11:59 PM ET on the day following the observation date, the Weather Underground Daily Observations table will be used as the resolution source. In the event that neither source has published data sufficient to determine a temperature for the observation date by 11:59 PM ET on the day following the observation date, this market will resolve to the lowest bracket.\n\nThe report the resolution source shows for a given observation time is the one that counts, whether or not it is marked as a correction (COR). Changes to observations within this market's timeframe will be considered until the first datapoint for the following date has been published, after which any alterations will not be considered. Where the first routine observation for the following date is published before that deadline, resolution is determined from a read taken after it. Where it is not, resolution is determined from a read taken at that deadline.\n\nIn the case that the Resolution Source publishes data, sufficient to settle a Market, that is clearly erroneous and the result of technical or operational error, or of unauthorized interference with the Resolution Source or its data, the Market may remain open for a period of up to seven (7) calendar days (ET) from the time of the original release, in anticipation of a correction by the Resolution Source. If the Resolution Source publishes a corrected value within that period, that value will be eligible for resolution. If no corrected value is published within that period, Polymarket will issue a Clarification to determine whether the originally published value may be eligible for resolution, or whether other action is required to preserve the orderly functioning of the Market.\n\nThe resolution source for this market will be the routine observations for London City Airport (EGLC) published here:\nhttps://aviationweather.gov/api/data/metar?ids=EGLC&format=raw&date=2026-10-26T03:00:00Z&hours=30",
+      "closed": true,
+      "startDate": "2026-10-23T06:56:00Z",
+      "endDate": "2026-10-25T12:00:00Z",
+      "volumeNum": 115
+     }
+    ]
+   },
+   {
+    "slug": "highest-temperature-in-london-on-october-24-2026",
+    "title": "Highest temperature in London on October 24?",
+    "startDate": "2026-10-22T04:56:03Z",
+    "endDate": "2026-10-24T12:00:00Z",
+    "tags": [
+     "weather",
+     "recurring",
+     "hide-from-new",
+     "london",
+     "daily-temperature",
+     "highest-temperature"
+    ],
+    "markets": [
+     {
+      "question": "Will the highest temperature in London be 11°C or below on October 24?",
+      "conditionId": "0x1f07095d52edd900b5319e0eb71aa194d51c9edce17c00e3889c52bfba4d96d5",
+      "outcomes": "[\"Yes\", \"No\"]",
+      "outcomePrices": "[\"0\", \"1\"]",
+      "clobTokenIds": "[\"35282041330403876888498978526340825006902711495717674990047567256316264939371\", \"99786548347752375586492359292671759134179639322971226175641492492851888507215\"]",
+      "feesEnabled": true,
+      "feeSchedule": {
+       "exponent": 1,
+       "rate": 0,
+       "takerOnly": true,
+       "rebateRate": 0
+      },
+      "resolutionSource": "https://aviationweather.gov/api/data/metar?ids=EGLC&format=raw&date=2026-10-25T02:00:00Z&hours=30",
+      "description": "This market will resolve to the temperature range that contains the highest temperature reported at London City Airport (EGLC) on 24 Oct '26.\n\nThe qualifying value is the highest temperature reported in the hourly temperature remark of any routine (METAR) observation for London City Airport (EGLC) on that date, in tenths of a degree Celsius as reported. A report whose line begins with SPECI is a special observation and does not count. Every other report is routine, including one issued off the nominal hour and one that carries no METAR or SPECI label.\n\nFor How to Read the METAR Report, see: https://polymarket-upload.s3.us-east-2.amazonaws.com/market_products/Weather/How+to+Read+the+METAR+Report.pdf\n\nThe hourly temperature remark is the group beginning with the letter T followed by exactly eight digits. After the T, one digit for sign (0 positive, 1 negative) and three for tenths of a degree Celsius give the temperature; the following four are the dew point and are not used. T01390133 is 13.9°C; T10171022 is −1.7°C.\n\nIf a routine observation does not carry the hourly temperature remark, the temperature group in the body of that observation governs for that observation, in whole degrees Celsius as reported. It appears as temperature and dew point separated by a slash, with M marking a negative value: 18/12 is 18°C; M11/M17 is −11°C. An observation that reports no temperature in either place is disregarded.\n\nEach market in this event states its range in whole degrees Celsius. The qualifying value is rounded to the nearest whole degree, with a value ending in exactly half rounded up to the next higher whole degree, and that whole Celsius value determines which range contains it. For example, 13.9°C counts as 14°C; 17.4°C counts as 17°C; 16.5°C counts as 17°C; −1.7°C counts as −2°C; −8.5°C counts as −8°C.\n\nAn observation counts if its time stamp, converted to the station's local time (including any daylight-saving shift in effect), falls on the observation date.\n\nThis market will resolve at the issuance of the first METAR observation for the station on the day following the observation date or by 11:59 PM ET on the day following the observation date, whichever comes first. Resolution is determined from the observations the resolution source shows for the observation date.\n\nIn the event that the Aviation Weather Center has published no routine observation reporting a temperature for the observation date by 11:59 PM ET on the day following the observation date, the Weather Underground Daily Observations table will be used as the resolution source. In the event that neither source has published data sufficient to determine a temperature for the observation date by 11:59 PM ET on the day following the observation date, this market will resolve to the lowest bracket.\n\nThe report the resolution source shows for a given observation time is the one that counts, whether or not it is marked as a correction (COR). Changes to observations within this market's timeframe will be considered until the first datapoint for the following date has been published, after which any alterations will not be considered. Where the first routine observation for the following date is published before that deadline, resolution is determined from a read taken after it. Where it is not, resolution is determined from a read taken at that deadline.\n\nIn the case that the Resolution Source publishes data, sufficient to settle a Market, that is clearly erroneous and the result of technical or operational error, or of unauthorized interference with the Resolution Source or its data, the Market may remain open for a period of up to seven (7) calendar days (ET) from the time of the original release, in anticipation of a correction by the Resolution Source. If the Resolution Source publishes a corrected value within that period, that value will be eligible for resolution. If no corrected value is published within that period, Polymarket will issue a Clarification to determine whether the originally published value may be eligible for resolution, or whether other action is required to preserve the orderly functioning of the Market.\n\nThe resolution source for this market will be the routine observations for London City Airport (EGLC) published here:\nhttps://aviationweather.gov/api/data/metar?ids=EGLC&format=raw&date=2026-10-25T02:00:00Z&hours=30",
+      "closed": true,
+      "startDate": "2026-10-22T04:56:03Z",
+      "endDate": "2026-10-24T12:00:00Z",
+      "volumeNum": 3783.679151
+     }
+    ]
+   },
+   {
+    "slug": "highest-temperature-in-london-on-october-23-2026",
+    "title": "Highest temperature in London on October 23?",
+    "startDate": "2026-10-21T04:55:58Z",
+    "endDate": "2026-10-23T12:00:00Z",
+    "tags": [
+     "weather",
+     "recurring",
+     "hide-from-new",
+     "london",
+     "daily-temperature",
+     "highest-temperature"
+    ],
+    "markets": [
+     {
+      "question": "Will the highest temperature in London be 9°C or below on October 23?",
+      "conditionId": "0x3cbd304ea335606ba7894f27129913199ab01f2661aec7d5e068ef957d860586",
+      "outcomes": "[\"Yes\", \"No\"]",
+      "outcomePrices": "[\"0\", \"1\"]",
+      "clobTokenIds": "[\"67888332847173507921921481549115216255398291691604701224623431650506521164415\", \"15335306715684392807248854200947142345392431783373375541257349968647733356331\"]",
+      "feesEnabled": true,
+      "feeSchedule": {
+       "exponent": 1,
+       "rate": 0,
+       "takerOnly": true,
+       "rebateRate": 0
+      },
+      "resolutionSource": "https://aviationweather.gov/api/data/metar?ids=EGLC&format=raw&date=2026-10-23T23:00:00Z&hours=27",
+      "description": "This market will resolve to the temperature range that contains the highest temperature reported at London City Airport (EGLC) on 23 Oct '26.\n\nThe qualifying value is the highest temperature reported in the hourly temperature remark of any routine (METAR) observation for London City Airport (EGLC) on that date, in tenths of a degree Celsius as reported. A report whose line begins with SPECI is a special observation and does not count. Every other report is routine, including one issued off the nominal hour and one that carries no METAR or SPECI label.\n\nFor How to Read the METAR Report, see: https://polymarket-upload.s3.us-east-2.amazonaws.com/market_products/Weather/How+to+Read+the+METAR+Report.pdf\n\nThe hourly temperature remark is the group beginning with the letter T followed by exactly eight digits. After the T, one digit for sign (0 positive, 1 negative) and three for tenths of a degree Celsius give the temperature; the following four are the dew point and are not used. T01390133 is 13.9°C; T10171022 is −1.7°C.\n\nIf a routine observation does not carry the hourly temperature remark, the temperature group in the body of that observation governs for that observation, in whole degrees Celsius as reported. It appears as temperature and dew point separated by a slash, with M marking a negative value: 18/12 is 18°C; M11/M17 is −11°C. An observation that reports no temperature in either place is disregarded.\n\nEach market in this event states its range in whole degrees Celsius. The qualifying value is rounded to the nearest whole degree, with a value ending in exactly half rounded up to the next higher whole degree, and that whole Celsius value determines which range contains it. For example, 13.9°C counts as 14°C; 17.4°C counts as 17°C; 16.5°C counts as 17°C; −1.7°C counts as −2°C; −8.5°C counts as −8°C.\n\nAn observation counts if its time stamp, converted to the station's local time (including any daylight-saving shift in effect), falls on the observation date.\n\nThis market will resolve at the issuance of the first METAR observation for the station on the day following the observation date or by 11:59 PM ET on the day following the observation date, whichever comes first. Resolution is determined from the observations the resolution source shows for the observation date.\n\nIn the event that the Aviation Weather Center has published no routine observation reporting a temperature for the observation date by 11:59 PM ET on the day following the observation date, the Weather Underground Daily Observations table will be used as the resolution source. In the event that neither source has published data sufficient to determine a temperature for the observation date by 11:59 PM ET on the day following the observation date, this market will resolve to the lowest bracket.\n\nThe report the resolution source shows for a given observation time is the one that counts, whether or not it is marked as a correction (COR). Changes to observations within this market's timeframe will be considered until the first datapoint for the following date has been published, after which any alterations will not be considered. Where the first routine observation for the following date is published before that deadline, resolution is determined from a read taken after it. Where it is not, resolution is determined from a read taken at that deadline.\n\nIn the case that the Resolution Source publishes data, sufficient to settle a Market, that is clearly erroneous and the result of technical or operational error, or of unauthorized interference with the Resolution Source or its data, the Market may remain open for a period of up to seven (7) calendar days (ET) from the time of the original release, in anticipation of a correction by the Resolution Source. If the Resolution Source publishes a corrected value within that period, that value will be eligible for resolution. If no corrected value is published within that period, Polymarket will issue a Clarification to determine whether the originally published value may be eligible for resolution, or whether other action is required to preserve the orderly functioning of the Market.\n\nThe resolution source for this market will be the routine observations for London City Airport (EGLC) published here:\nhttps://aviationweather.gov/api/data/metar?ids=EGLC&format=raw&date=2026-10-23T23:00:00Z&hours=27",
+      "closed": true,
+      "startDate": "2026-10-21T04:55:58Z",
+      "endDate": "2026-10-23T12:00:00Z",
+      "volumeNum": 1164.726266
+     }
+    ]
+   }
+  ],
+  "doge-weeklies|true": [
+   {
+    "slug": "dogecoin-above-on-august-15",
+    "title": "Dogecoin above ___ on August 15?",
+    "startDate": "2025-08-08T15:33:45.642949Z",
+    "endDate": "2025-08-15T16:00:00Z",
+    "tags": [
+     "crypto-prices",
+     "crypto",
+     "dogecoin",
+     "weekly",
+     "hide-from-new",
+     "recurring"
+    ],
+    "markets": [
+     {
+      "question": "Dogecoin above $0.22 on August 15?",
+      "conditionId": "0x9e9777c44683e18b0ce27ef6ddd6dc4656ea199c76a4af7753156056dcc078c5",
+      "outcomes": "[\"Yes\", \"No\"]",
+      "outcomePrices": "[\"1\", \"0\"]",
+      "clobTokenIds": "[\"55211539770690031265396572353136168267920463564767077612816783874284962234422\", \"107155777385592499962627325253021008923530218622489147505590654061204370745784\"]",
+      "feesEnabled": false,
+      "feeSchedule": null,
+      "resolutionSource": "",
+      "description": "This market will resolve to \"Yes\" if the Binance 1 minute candle for DOGE/USDT 12:00 in the ET timezone (noon) on the date specified in the title has a final “Close” price higher than the price specified in the title. Otherwise, this market will resolve to \"No\".\n\nThe resolution source for this market is Binance, specifically the DOGE/USDT \"Close\" prices currently available at https://www.binance.com/en/trade/DOGE_USDT with “1m” and “Candles” selected on the top bar.\n\nPlease note that this market is about the price according to Binance DOGE/USDT, not according to other sources or spot markets.\n\nPrice precision is determined by the number of decimal places in the source",
+      "closed": true,
+      "startDate": "2025-08-08T15:20:33.068Z",
+      "endDate": "2025-08-15T16:00:00Z",
+      "volumeNum": 8816.537663
+     }
+    ]
+   },
+   {
+    "slug": "dogecoin-above-0pt20-on-august-8",
+    "title": "Dogecoin above $0.20 on August 8?",
+    "startDate": "2025-08-01T11:06:51.089889Z",
+    "endDate": "2025-08-08T16:00:00Z",
+    "tags": [
+     "crypto-prices",
+     "crypto",
+     "recurring",
+     "dogecoin",
+     "hide-from-new",
+     "weekly"
+    ],
+    "markets": [
+     {
+      "question": "Dogecoin above $0.20 on August 8?",
+      "conditionId": "0xd151246e9e879a9095c44663ebd27e81a3569e00d7c52616c510c15a37cab408",
+      "outcomes": "[\"Yes\", \"No\"]",
+      "outcomePrices": "[\"1\", \"0\"]",
+      "clobTokenIds": "[\"40185669409766195138358159251065663586391258493028409261275762369778076351774\", \"99313628357413954683795997002491053310228896895577246212499667708574791875515\"]",
+      "feesEnabled": false,
+      "feeSchedule": null,
+      "resolutionSource": "",
+      "description": "This market will resolve to \"Yes\" if the Binance 1 minute candle for DOGE/USDT 12:00 in the ET timezone (noon) on the date specified in the title has a final “Close” price higher than the price specified in the title. Otherwise, this market will resolve to \"No\".\n\nThe resolution source for this market is Binance, specifically the DOGE/USDT \"Close\" prices currently available at https://www.binance.com/en/trade/DOGE_USDT with “1m” and “Candles” selected on the top bar.\n\nPlease note that this market is about the price according to Binance DOGE/USDT, not according to other sources or spot markets.\n\nPrice precision is determined by the number of decimal places in the source",
+      "closed": true,
+      "startDate": "2025-08-01T11:01:55.56948Z",
+      "endDate": "2025-08-08T16:00:00Z",
+      "volumeNum": 11458.985029
+     }
+    ]
+   },
+   {
+    "slug": "dogecoin-above-0pt22-on-august-1",
+    "title": "Dogecoin above $0.22 on August 1?",
+    "startDate": "2025-07-25T15:12:56.669856Z",
+    "endDate": "2025-08-01T16:00:00Z",
+    "tags": [
+     "crypto-prices",
+     "crypto",
+     "weekly",
+     "dogecoin",
+     "recurring",
+     "hide-from-new"
+    ],
+    "markets": [
+     {
+      "question": "Dogecoin above $0.22 on August 1?",
+      "conditionId": "0x13547f095ec6f824be20adb1ba35ecb1bc6435fdf16585ae925a77a45c63775e",
+      "outcomes": "[\"Yes\", \"No\"]",
+      "outcomePrices": "[\"0\", \"1\"]",
+      "clobTokenIds": "[\"30974786180909609678742822029470897562970125025890153715827516767482231898096\", \"24108117867797799261188324215225101778459979176193406077908577992206342271247\"]",
+      "feesEnabled": false,
+      "feeSchedule": null,
+      "resolutionSource": "",
+      "description": "This market will resolve to \"Yes\" if the Binance 1 minute candle for DOGE/USDT 12:00 in the ET timezone (noon) on the date specified in the title has a final “Close” price higher than the price specified in the title. Otherwise, this market will resolve to \"No\".\n\nThe resolution source for this market is Binance, specifically the DOGE/USDT \"Close\" prices currently available at https://www.binance.com/en/trade/DOGE_USDT with “1m” and “Candles” selected on the top bar.\n\nPlease note that this market is about the price according to Binance DOGE/USDT, not according to other sources or spot markets.\n\nPrice precision is determined by the number of decimal places in the source",
+      "closed": true,
+      "startDate": "2025-07-25T15:00:41.285883Z",
+      "endDate": "2025-08-01T16:00:00Z",
+      "volumeNum": 813.039407
+     }
+    ]
+   }
+  ],
+  "adivinado|btc-updown-5m-1793021400": [
+   {
+    "id": "1252622",
+    "ticker": "btc-updown-5m-1793021400",
+    "slug": "btc-updown-5m-1793021400",
+    "title": "Bitcoin Up or Down - October 26, 9:30AM-9:35AM ET",
+    "description": "This market will resolve to \"Up\" if the time-weighted average price (TWAP) of Bitcoin, generated by Chainlink, of the time range specified in the title is greater than or equal to the price at the beginning of that range. Otherwise, it will resolve to \"Down\".\nThe resolution source for this market is information from Chainlink, specifically the BTC/USD TWAP data stream available at https://data.chain.link/streams/btc-usd-twap-60s-streams.\nPlease note that this market is about the price according to the TWAP Chainlink data stream for the asset pair BTC/USD, not according to any other sources or spot markets.",
+    "resolutionSource": "https://data.chain.link/streams/btc-usd-twap-60s-streams",
+    "startDate": "2026-10-25T13:39:23.090543Z",
+    "creationDate": "2026-10-25T13:40:51.363864Z",
+    "endDate": "2026-10-26T13:35:00Z",
+    "image": "https://polymarket-upload.s3.us-east-2.amazonaws.com/BTC+fullsize.png",
+    "icon": "https://polymarket-upload.s3.us-east-2.amazonaws.com/BTC+fullsize.png",
+    "active": true,
+    "closed": true,
+    "archived": false,
+    "new": false,
+    "featured": false,
+    "restricted": true,
+    "volume": 75858.752121,
+    "openInterest": 81779.800159,
+    "createdAt": "2026-10-25T13:37:33.306057Z",
+    "updatedAt": "2026-10-26T14:24:59.775799Z",
+    "volume24hr": 75856.79133599997,
+    "volume1wk": 75858.75212099997,
+    "volume1mo": 75858.75212099997,
+    "volume1yr": 75858.75212099997,
+    "enableOrderBook": true,
+    "negRisk": false,
+    "commentCount": 0,
+    "markets": [
+     {
+      "id": "6196044",
+      "question": "Bitcoin Up or Down - October 26, 9:30AM-9:35AM ET",
+      "conditionId": "0xe4bdb1f3ea8c58e80c8db24311c35a1ab90371ba7b1030eecd10d16cecf9eec0",
+      "slug": "btc-updown-5m-1793021400",
+      "resolutionSource": "https://data.chain.link/streams/btc-usd-twap-60s-streams",
+      "endDate": "2026-10-26T13:35:00Z",
+      "startDate": "2026-10-25T13:39:23.090543Z",
+      "image": "https://polymarket-upload.s3.us-east-2.amazonaws.com/BTC+fullsize.png",
+      "icon": "https://polymarket-upload.s3.us-east-2.amazonaws.com/BTC+fullsize.png",
+      "description": "This market will resolve to \"Up\" if the time-weighted average price (TWAP) of Bitcoin, generated by Chainlink, of the time range specified in the title is greater than or equal to the price at the beginning of that range. Otherwise, it will resolve to \"Down\".\nThe resolution source for this market is information from Chainlink, specifically the BTC/USD TWAP data stream available at https://data.chain.link/streams/btc-usd-twap-60s-streams.\nPlease note that this market is about the price according to the TWAP Chainlink data stream for the asset pair BTC/USD, not according to any other sources or spot markets.",
+      "outcomes": "[\"Up\", \"Down\"]",
+      "outcomePrices": "[\"0\", \"1\"]",
+      "volume": "75858.752121",
+      "active": true,
+      "closed": true,
+      "marketMakerAddress": "",
+      "createdAt": "2026-10-25T13:37:33.456355Z",
+      "updatedAt": "2026-10-26T14:22:49.542007Z",
+      "closedTime": "2026-10-26 13:36:20+00",
+      "new": false,
+      "featured": false,
+      "archived": false,
+      "restricted": true,
+      "groupItemThreshold": "0",
+      "questionID": "0x45ba81b45c8954ccbf403fc9fc17faf6d0e0aebf592f6cce38a7e30c7caa28bc",
+      "umaEndDate": "2026-10-26 13:36:20+00:00:00",
+      "enableOrderBook": true,
+      "orderPriceMinTickSize": 0.001,
+      "orderMinSize": 5,
+      "umaResolutionStatus": "resolved",
+      "volumeNum": 75858.752121,
+      "endDateIso": "2026-10-26",
+      "startDateIso": "2026-10-25",
+      "hasReviewedDates": true,
+      "volume24hr": 75856.79133599997,
+      "volume1wk": 75858.75212099997,
+      "volume1mo": 75858.75212099997,
+      "volume1yr": 75858.75212099997,
+      "clobTokenIds": "[\"113279102569110141403285771328606507966034230177397763087770466829082935407539\", \"49053674769149993944664728670069459639545803202284071664987928079397625184879\"]",
+      "comboStatus": "disabled",
+      "volume24hrClob": 75856.79133599997,
+      "volume1wkClob": 75858.75212099997,
+      "volume1moClob": 75858.75212099997,
+      "volume1yrClob": 75858.75212099997,
+      "volumeClob": 75858.752121,
+      "makerBaseFee": 1000,
+      "takerBaseFee": 1000,
+      "acceptingOrders": false,
+      "negRisk": false,
+      "ready": false,
+      "funded": false,
+      "acceptingOrdersTimestamp": "2026-10-25T13:37:53Z",
+      "cyom": false,
+      "approved": true,
+      "rewardsMinSize": 50,
+      "rewardsMaxSpread": 4.5,
+      "spread": 0.001,
+      "automaticallyResolved": true,
+      "oneDayPriceChange": -0.5045,
+      "oneHourPriceChange": -0.5045,
+      "lastTradePrice": 0.01,
+      "bestAsk": 0.001,
+      "automaticallyActive": true,
+      "clearBookOnStart": false,
+      "showGmpSeries": false,
+      "showGmpOutcome": false,
+      "manualActivation": false,
+      "negRiskOther": false,
+      "umaResolutionStatuses": "[]",
+      "pendingDeployment": false,
+      "deploying": false,
+      "rfqEnabled": false,
+      "eventStartTime": "2026-10-26T13:30:00Z",
+      "holdingRewardsEnabled": false,
+      "feesEnabled": true,
+      "makerRebatesFeeShareBps": 10000,
+      "feeType": "crypto_fees_v2",
+      "feeSchedule": {
+       "exponent": 1,
+       "rate": 0.07,
+       "takerOnly": true,
+       "rebateRate": 0.2
+      },
+      "cryptoMarketConfigId": "btc-5m-twap-60",
+      "cryptoMarketConfig": {
+       "id": "btc-5m-twap-60",
+       "asset": "btc",
+       "duration": "5m",
+       "twapEnabled": true,
+       "twapLookbackSeconds": 60
+      },
+      "fallbackResolutionType": "none",
+      "version": "v1"
+     }
+    ],
+    "series": [
+     {
+      "id": "10684",
+      "ticker": "btc-up-or-down-5m",
+      "slug": "btc-up-or-down-5m",
+      "title": "BTC Up or Down 5m",
+      "seriesType": "single",
+      "recurrence": "5m",
+      "image": "",
+      "icon": "",
+      "active": true,
+      "closed": false,
+      "archived": false,
+      "featured": false,
+      "restricted": true,
+      "createdAt": "2025-11-21T21:46:22.201627Z",
+      "updatedAt": "2026-10-26T14:31:07.471517Z",
+      "volume24hr": 12308576.873743001,
+      "volume": 64875.769117,
+      "liquidity": 1431985.6596,
+      "commentCount": 97167
+     }
+    ],
+    "tags": [
+     {
+      "id": "102127",
+      "label": "Up or Down",
+      "slug": "up-or-down",
+      "forceShow": true,
+      "createdAt": "2025-05-09T20:56:58.880785Z",
+      "updatedAt": "2026-03-09T22:33:38.505979Z",
+      "isCarousel": false
+     },
+     {
+      "id": "1312",
+      "label": "Crypto Prices",
+      "slug": "crypto-prices",
+      "forceShow": true,
+      "publishedAt": "2024-02-12 22:36:40.783+00",
+      "createdBy": 15,
+      "updatedBy": 15,
+      "createdAt": "2024-02-12T22:34:50.962Z",
+      "updatedAt": "2026-04-17T20:52:10.030771Z"
+     },
+     {
+      "id": "102169",
+      "label": "Hide From New",
+      "slug": "hide-from-new",
+      "forceShow": false,
+      "createdAt": "2025-05-23T18:47:07.430147Z",
+      "updatedAt": "2026-04-17T20:28:28.912197Z",
+      "isCarousel": false
+     },
+     {
+      "id": "101757",
+      "label": "Recurring",
+      "slug": "recurring",
+      "forceShow": false,
+      "createdAt": "2025-02-01T00:45:26.493838Z",
+      "updatedAt": "2026-04-17T17:25:43.117249Z"
+     },
+     {
+      "id": "21",
+      "label": "Crypto",
+      "slug": "crypto",
+      "forceShow": false,
+      "publishedAt": "2023-11-02 21:03:54.55+00",
+      "updatedBy": 15,
+      "createdAt": "2023-11-02T21:03:54.564Z",
+      "updatedAt": "2026-03-09T22:28:03.349847Z"
+     },
+     {
+      "id": "235",
+      "label": "Bitcoin",
+      "slug": "bitcoin",
+      "forceShow": true,
+      "publishedAt": "2023-11-02 21:40:32.968+00",
+      "updatedBy": 15,
+      "createdAt": "2023-11-02T21:40:32.974Z",
+      "updatedAt": "2026-04-17T20:39:34.210222Z"
+     },
+     {
+      "id": "102892",
+      "label": "5M",
+      "slug": "5M",
+      "forceShow": false,
+      "createdAt": "2025-11-21T22:00:21.004867Z",
+      "updatedAt": "2026-04-17T20:48:44.301846Z",
+      "isCarousel": false
+     }
+    ],
+    "cyom": false,
+    "closedTime": "2026-10-26T13:36:20Z",
+    "showAllOutcomes": true,
+    "showMarketImages": true,
+    "automaticallyResolved": true,
+    "enableNegRisk": false,
+    "automaticallyActive": true,
+    "startTime": "2026-10-26T13:30:00Z",
+    "seriesSlug": "btc-up-or-down-5m",
+    "negRiskAugmented": false,
+    "pendingDeployment": false,
+    "deploying": false,
+    "eventMetadata": {
+     "finalPrice": 79592.86261915434,
+     "priceToBeat": 79807.5611523704
+    },
+    "version": "v1"
+   }
+  ],
+  "adivinado|btc-updown-15m-1793021400": [
+   {
+    "id": "1252621",
+    "ticker": "btc-updown-15m-1793021400",
+    "slug": "btc-updown-15m-1793021400",
+    "title": "Bitcoin Up or Down - October 26, 9:30AM-9:45AM ET",
+    "description": "This market will resolve to \"Up\" if the time-weighted average price (TWAP) of Bitcoin, generated by Chainlink, of the time range specified in the title is greater than or equal to the price at the beginning of that range. Otherwise, it will resolve to \"Down\".\nThe resolution source for this market is information from Chainlink, specifically the BTC/USD TWAP data stream available at https://data.chain.link/streams/btc-usd-twap-60s-streams.\nPlease note that this market is about the price according to the TWAP Chainlink data stream for the asset pair BTC/USD, not according to any other sources or spot markets.",
+    "resolutionSource": "https://data.chain.link/streams/btc-usd-twap-60s-streams",
+    "startDate": "2026-10-25T13:39:01.142625Z",
+    "creationDate": "2026-10-25T13:40:51.363757Z",
+    "endDate": "2026-10-26T13:45:00Z",
+    "image": "https://polymarket-upload.s3.us-east-2.amazonaws.com/BTC+fullsize.png",
+    "icon": "https://polymarket-upload.s3.us-east-2.amazonaws.com/BTC+fullsize.png",
+    "active": true,
+    "closed": true,
+    "archived": false,
+    "new": false,
+    "featured": false,
+    "restricted": true,
+    "volume": 41341.144245,
+    "openInterest": 21833.038776,
+    "createdAt": "2026-10-25T13:37:32.971235Z",
+    "updatedAt": "2026-10-26T14:24:59.775799Z",
+    "volume24hr": 41341.144245,
+    "volume1wk": 41341.144245,
+    "volume1mo": 41341.144245,
+    "volume1yr": 41341.144245,
+    "enableOrderBook": true,
+    "negRisk": false,
+    "commentCount": 0,
+    "markets": [
+     {
+      "id": "6196043",
+      "question": "Bitcoin Up or Down - October 26, 9:30AM-9:45AM ET",
+      "conditionId": "0x7b572b981f37e79d2871679977a62959fd6c2f26980579a307f9b837d0abe0b8",
+      "slug": "btc-updown-15m-1793021400",
+      "resolutionSource": "https://data.chain.link/streams/btc-usd-twap-60s-streams",
+      "endDate": "2026-10-26T13:45:00Z",
+      "startDate": "2026-10-25T13:39:01.142625Z",
+      "image": "https://polymarket-upload.s3.us-east-2.amazonaws.com/BTC+fullsize.png",
+      "icon": "https://polymarket-upload.s3.us-east-2.amazonaws.com/BTC+fullsize.png",
+      "description": "This market will resolve to \"Up\" if the time-weighted average price (TWAP) of Bitcoin, generated by Chainlink, of the time range specified in the title is greater than or equal to the price at the beginning of that range. Otherwise, it will resolve to \"Down\".\nThe resolution source for this market is information from Chainlink, specifically the BTC/USD TWAP data stream available at https://data.chain.link/streams/btc-usd-twap-60s-streams.\nPlease note that this market is about the price according to the TWAP Chainlink data stream for the asset pair BTC/USD, not according to any other sources or spot markets.",
+      "outcomes": "[\"Up\", \"Down\"]",
+      "outcomePrices": "[\"0\", \"1\"]",
+      "volume": "41341.144245",
+      "active": true,
+      "closed": true,
+      "marketMakerAddress": "",
+      "createdAt": "2026-10-25T13:37:33.267367Z",
+      "updatedAt": "2026-10-26T14:22:49.542007Z",
+      "closedTime": "2026-10-26 13:46:20+00",
+      "new": false,
+      "featured": false,
+      "archived": false,
+      "restricted": true,
+      "groupItemThreshold": "0",
+      "questionID": "0x2bfd9d55c5d6628c23da950f175eda520be035d0dcb20534679281be423c2b1d",
+      "umaEndDate": "2026-10-26 13:46:20+00:00:00",
+      "enableOrderBook": true,
+      "orderPriceMinTickSize": 0.001,
+      "orderMinSize": 5,
+      "umaResolutionStatus": "resolved",
+      "volumeNum": 41341.144245,
+      "endDateIso": "2026-10-26",
+      "startDateIso": "2026-10-25",
+      "hasReviewedDates": true,
+      "volume24hr": 41341.144245,
+      "volume1wk": 41341.144245,
+      "volume1mo": 41341.144245,
+      "volume1yr": 41341.144245,
+      "clobTokenIds": "[\"6230372428697099706415626775238109949732489532185035192898825715302614901230\", \"56719818802028668733965628645527589827279645790749883434351096840927819045956\"]",
+      "comboStatus": "disabled",
+      "volume24hrClob": 41341.144245,
+      "volume1wkClob": 41341.144245,
+      "volume1moClob": 41341.144245,
+      "volume1yrClob": 41341.144245,
+      "volumeClob": 41341.144245,
+      "makerBaseFee": 1000,
+      "takerBaseFee": 1000,
+      "acceptingOrders": false,
+      "negRisk": false,
+      "ready": false,
+      "funded": false,
+      "acceptingOrdersTimestamp": "2026-10-25T13:37:51Z",
+      "cyom": false,
+      "approved": true,
+      "rewardsMinSize": 50,
+      "rewardsMaxSpread": 4.5,
+      "spread": 0.001,
+      "automaticallyResolved": true,
+      "oneDayPriceChange": -0.5045,
+      "oneHourPriceChange": -0.5045,
+      "lastTradePrice": 0.01,
+      "bestAsk": 0.001,
+      "automaticallyActive": true,
+      "clearBookOnStart": false,
+      "showGmpSeries": false,
+      "showGmpOutcome": false,
+      "manualActivation": false,
+      "negRiskOther": false,
+      "umaResolutionStatuses": "[]",
+      "pendingDeployment": false,
+      "deploying": false,
+      "rfqEnabled": false,
+      "eventStartTime": "2026-10-26T13:30:00Z",
+      "holdingRewardsEnabled": false,
+      "feesEnabled": true,
+      "makerRebatesFeeShareBps": 10000,
+      "feeType": "crypto_fees_v2",
+      "feeSchedule": {
+       "exponent": 1,
+       "rate": 0.07,
+       "takerOnly": true,
+       "rebateRate": 0.2
+      },
+      "cryptoMarketConfigId": "btc-15m-twap-60",
+      "cryptoMarketConfig": {
+       "id": "btc-15m-twap-60",
+       "asset": "btc",
+       "duration": "15m",
+       "twapEnabled": true,
+       "twapLookbackSeconds": 60
+      },
+      "fallbackResolutionType": "none",
+      "version": "v1"
+     }
+    ],
+    "series": [
+     {
+      "id": "10192",
+      "ticker": "btc-up-or-down-15m",
+      "slug": "btc-up-or-down-15m",
+      "title": "BTC Up or Down 15m",
+      "seriesType": "single",
+      "recurrence": "15m",
+      "active": true,
+      "closed": false,
+      "archived": false,
+      "createdAt": "2025-08-09T22:36:44.765536Z",
+      "updatedAt": "2026-10-26T14:31:07.471517Z",
+      "volume24hr": 5850623.45050001,
+      "volume": 159.49,
+      "liquidity": 730885.57,
+      "commentCount": 25586
+     }
+    ],
+    "tags": [
+     {
+      "id": "102127",
+      "label": "Up or Down",
+      "slug": "up-or-down",
+      "forceShow": true,
+      "createdAt": "2025-05-09T20:56:58.880785Z",
+      "updatedAt": "2026-03-09T22:33:38.505979Z",
+      "isCarousel": false
+     },
+     {
+      "id": "1312",
+      "label": "Crypto Prices",
+      "slug": "crypto-prices",
+      "forceShow": true,
+      "publishedAt": "2024-02-12 22:36:40.783+00",
+      "createdBy": 15,
+      "updatedBy": 15,
+      "createdAt": "2024-02-12T22:34:50.962Z",
+      "updatedAt": "2026-04-17T20:52:10.030771Z"
+     },
+     {
+      "id": "102169",
+      "label": "Hide From New",
+      "slug": "hide-from-new",
+      "forceShow": false,
+      "createdAt": "2025-05-23T18:47:07.430147Z",
+      "updatedAt": "2026-04-17T20:28:28.912197Z",
+      "isCarousel": false
+     },
+     {
+      "id": "101757",
+      "label": "Recurring",
+      "slug": "recurring",
+      "forceShow": false,
+      "createdAt": "2025-02-01T00:45:26.493838Z",
+      "updatedAt": "2026-04-17T17:25:43.117249Z"
+     },
+     {
+      "id": "21",
+      "label": "Crypto",
+      "slug": "crypto",
+      "forceShow": false,
+      "publishedAt": "2023-11-02 21:03:54.55+00",
+      "updatedBy": 15,
+      "createdAt": "2023-11-02T21:03:54.564Z",
+      "updatedAt": "2026-03-09T22:28:03.349847Z"
+     },
+     {
+      "id": "235",
+      "label": "Bitcoin",
+      "slug": "bitcoin",
+      "forceShow": true,
+      "publishedAt": "2023-11-02 21:40:32.968+00",
+      "updatedBy": 15,
+      "createdAt": "2023-11-02T21:40:32.974Z",
+      "updatedAt": "2026-04-17T20:39:34.210222Z"
+     },
+     {
+      "id": "102467",
+      "label": "15M",
+      "slug": "15M",
+      "createdAt": "2025-08-06T16:02:23.483913Z",
+      "updatedAt": "2026-04-15T21:09:13.736904Z"
+     }
+    ],
+    "cyom": false,
+    "closedTime": "2026-10-26T13:46:20Z",
+    "showAllOutcomes": true,
+    "showMarketImages": true,
+    "automaticallyResolved": true,
+    "enableNegRisk": false,
+    "automaticallyActive": true,
+    "startTime": "2026-10-26T13:30:00Z",
+    "seriesSlug": "btc-up-or-down-15m",
+    "negRiskAugmented": false,
+    "pendingDeployment": false,
+    "deploying": false,
+    "eventMetadata": {
+     "finalPrice": 79597.19019270866,
+     "priceToBeat": 79807.5611523704
+    },
+    "version": "v1"
+   }
+  ],
+  "adivinado|eth-updown-5m-1793021400": [
+   {
+    "id": "1252620",
+    "ticker": "eth-updown-5m-1793021400",
+    "slug": "eth-updown-5m-1793021400",
+    "title": "Ethereum Up or Down - October 26, 9:30AM-9:35AM ET",
+    "description": "This market will resolve to \"Up\" if the time-weighted average price (TWAP) of Ethereum, generated by Chainlink, of the time range specified in the title is greater than or equal to the price at the beginning of that range. Otherwise, it will resolve to \"Down\".\nThe resolution source for this market is information from Chainlink, specifically the ETH/USD TWAP data stream available at https://data.chain.link/streams/eth-usd-twap-60s-streams.\nPlease note that this market is about the price according to the TWAP Chainlink data stream for the asset pair ETH/USD, not according to any other sources or spot markets.",
+    "resolutionSource": "https://data.chain.link/streams/eth-usd-twap-60s-streams",
+    "startDate": "2026-10-25T13:38:59.038227Z",
+    "creationDate": "2026-10-25T13:40:51.363781Z",
+    "endDate": "2026-10-26T13:35:00Z",
+    "image": "https://polymarket-upload.s3.us-east-2.amazonaws.com/ETH+fullsize.jpg",
+    "icon": "https://polymarket-upload.s3.us-east-2.amazonaws.com/ETH+fullsize.jpg",
+    "active": true,
+    "closed": true,
+    "archived": false,
+    "new": false,
+    "featured": false,
+    "restricted": true,
+    "liquidity": 0,
+    "openInterest": 9311.479285,
+    "createdAt": "2026-10-25T13:37:32.931086Z",
+    "updatedAt": "2026-10-26T13:40:01.034202Z",
+    "competitive": 0,
+    "enableOrderBook": true,
+    "liquidityAmm": 0,
+    "liquidityClob": 0,
+    "negRisk": false,
+    "commentCount": 0,
+    "markets": [
+     {
+      "id": "6196042",
+      "question": "Ethereum Up or Down - October 26, 9:30AM-9:35AM ET",
+      "conditionId": "0x7ca51c57927a63b942965a7138d1d17824fa0cebf61bf206612b6a2cf2b266b6",
+      "slug": "eth-updown-5m-1793021400",
+      "resolutionSource": "https://data.chain.link/streams/eth-usd-twap-60s-streams",
+      "endDate": "2026-10-26T13:35:00Z",
+      "startDate": "2026-10-25T13:38:59.038227Z",
+      "image": "https://polymarket-upload.s3.us-east-2.amazonaws.com/ETH+fullsize.jpg",
+      "icon": "https://polymarket-upload.s3.us-east-2.amazonaws.com/ETH+fullsize.jpg",
+      "description": "This market will resolve to \"Up\" if the time-weighted average price (TWAP) of Ethereum, generated by Chainlink, of the time range specified in the title is greater than or equal to the price at the beginning of that range. Otherwise, it will resolve to \"Down\".\nThe resolution source for this market is information from Chainlink, specifically the ETH/USD TWAP data stream available at https://data.chain.link/streams/eth-usd-twap-60s-streams.\nPlease note that this market is about the price according to the TWAP Chainlink data stream for the asset pair ETH/USD, not according to any other sources or spot markets.",
+      "outcomes": "[\"Up\", \"Down\"]",
+      "outcomePrices": "[\"0\", \"1\"]",
+      "volume": "8715.202049",
+      "active": true,
+      "closed": true,
+      "marketMakerAddress": "",
+      "createdAt": "2026-10-25T13:37:33.185172Z",
+      "updatedAt": "2026-10-26T14:22:49.542007Z",
+      "closedTime": "2026-10-26 13:36:20+00",
+      "new": false,
+      "featured": false,
+      "archived": false,
+      "restricted": true,
+      "groupItemThreshold": "0",
+      "questionID": "0xc8bb5827febba96b9fa03a011b98ce67348273eccabbf8aaa1856390f75b076e",
+      "umaEndDate": "2026-10-26 13:36:20+00:00:00",
+      "enableOrderBook": true,
+      "orderPriceMinTickSize": 0.001,
+      "orderMinSize": 5,
+      "umaResolutionStatus": "resolved",
+      "volumeNum": 8715.202049,
+      "endDateIso": "2026-10-26",
+      "startDateIso": "2026-10-25",
+      "hasReviewedDates": true,
+      "volume24hr": 8715.202048999996,
+      "volume1wk": 8715.202048999996,
+      "volume1mo": 8715.202048999996,
+      "volume1yr": 8715.202048999996,
+      "clobTokenIds": "[\"6856098086920407438514970359845441665966203660884781052430359238121614285937\", \"79305758006735945052461609318173229627740549400722092380936701963319258570554\"]",
+      "comboStatus": "disabled",
+      "volume24hrClob": 8715.202048999996,
+      "volume1wkClob": 8715.202048999996,
+      "volume1moClob": 8715.202048999996,
+      "volume1yrClob": 8715.202048999996,
+      "volumeClob": 8715.202049,
+      "makerBaseFee": 1000,
+      "takerBaseFee": 1000,
+      "acceptingOrders": false,
+      "negRisk": false,
+      "ready": false,
+      "funded": false,
+      "acceptingOrdersTimestamp": "2026-10-25T13:37:50Z",
+      "cyom": false,
+      "approved": true,
+      "rewardsMinSize": 50,
+      "rewardsMaxSpread": 4.5,
+      "spread": 0.001,
+      "automaticallyResolved": true,
+      "oneDayPriceChange": -0.5045,
+      "oneHourPriceChange": -0.5045,
+      "lastTradePrice": 0.01,
+      "bestAsk": 0.001,
+      "automaticallyActive": true,
+      "clearBookOnStart": false,
+      "showGmpSeries": false,
+      "showGmpOutcome": false,
+      "manualActivation": false,
+      "negRiskOther": false,
+      "umaResolutionStatuses": "[]",
+      "pendingDeployment": false,
+      "deploying": false,
+      "rfqEnabled": false,
+      "eventStartTime": "2026-10-26T13:30:00Z",
+      "holdingRewardsEnabled": false,
+      "feesEnabled": true,
+      "makerRebatesFeeShareBps": 10000,
+      "feeType": "crypto_fees_v2",
+      "feeSchedule": {
+       "exponent": 1,
+       "rate": 0.07,
+       "takerOnly": true,
+       "rebateRate": 0.2
+      },
+      "cryptoMarketConfigId": "eth-5m-twap-60",
+      "cryptoMarketConfig": {
+       "id": "eth-5m-twap-60",
+       "asset": "eth",
+       "duration": "5m",
+       "twapEnabled": true,
+       "twapLookbackSeconds": 60
+      },
+      "fallbackResolutionType": "none",
+      "version": "v1"
+     }
+    ],
+    "series": [
+     {
+      "id": "10683",
+      "ticker": "eth-up-or-down-5m",
+      "slug": "eth-up-or-down-5m",
+      "title": "ETH Up or Down 5m",
+      "seriesType": "single",
+      "recurrence": "5m",
+      "image": "",
+      "icon": "",
+      "active": true,
+      "closed": false,
+      "archived": false,
+      "featured": false,
+      "restricted": true,
+      "createdAt": "2025-11-21T21:45:32.854328Z",
+      "updatedAt": "2026-10-26T14:33:05.887714Z",
+      "volume24hr": 309968.35594599997,
+      "volume": 4132.492663999999,
+      "liquidity": 1048581.0699,
+      "commentCount": 1050
+     }
+    ],
+    "tags": [
+     {
+      "id": "102127",
+      "label": "Up or Down",
+      "slug": "up-or-down",
+      "forceShow": true,
+      "createdAt": "2025-05-09T20:56:58.880785Z",
+      "updatedAt": "2026-03-09T22:33:38.505979Z",
+      "isCarousel": false
+     },
+     {
+      "id": "1312",
+      "label": "Crypto Prices",
+      "slug": "crypto-prices",
+      "forceShow": true,
+      "publishedAt": "2024-02-12 22:36:40.783+00",
+      "createdBy": 15,
+      "updatedBy": 15,
+      "createdAt": "2024-02-12T22:34:50.962Z",
+      "updatedAt": "2026-04-17T20:52:10.030771Z"
+     },
+     {
+      "id": "102169",
+      "label": "Hide From New",
+      "slug": "hide-from-new",
+      "forceShow": false,
+      "createdAt": "2025-05-23T18:47:07.430147Z",
+      "updatedAt": "2026-04-17T20:28:28.912197Z",
+      "isCarousel": false
+     },
+     {
+      "id": "101757",
+      "label": "Recurring",
+      "slug": "recurring",
+      "forceShow": false,
+      "createdAt": "2025-02-01T00:45:26.493838Z",
+      "updatedAt": "2026-04-17T17:25:43.117249Z"
+     },
+     {
+      "id": "21",
+      "label": "Crypto",
+      "slug": "crypto",
+      "forceShow": false,
+      "publishedAt": "2023-11-02 21:03:54.55+00",
+      "updatedBy": 15,
+      "createdAt": "2023-11-02T21:03:54.564Z",
+      "updatedAt": "2026-03-09T22:28:03.349847Z"
+     },
+     {
+      "id": "39",
+      "label": "Ethereum",
+      "slug": "ethereum",
+      "forceShow": false,
+      "publishedAt": "2023-11-02 21:08:15.934+00",
+      "updatedBy": 15,
+      "createdAt": "2023-11-02T21:08:15.95Z",
+      "updatedAt": "2026-04-17T20:49:04.26767Z",
+      "forceHide": false
+     },
+     {
+      "id": "102892",
+      "label": "5M",
+      "slug": "5M",
+      "forceShow": false,
+      "createdAt": "2025-11-21T22:00:21.004867Z",
+      "updatedAt": "2026-04-17T20:48:44.301846Z",
+      "isCarousel": false
+     }
+    ],
+    "cyom": false,
+    "closedTime": "2026-10-26T13:36:20Z",
+    "showAllOutcomes": true,
+    "showMarketImages": true,
+    "automaticallyResolved": true,
+    "enableNegRisk": false,
+    "automaticallyActive": true,
+    "startTime": "2026-10-26T13:30:00Z",
+    "seriesSlug": "eth-up-or-down-5m",
+    "negRiskAugmented": false,
+    "pendingDeployment": false,
+    "deploying": false,
+    "eventMetadata": {
+     "finalPrice": 2303.7420851400484,
+     "priceToBeat": 2309.928276821574
+    },
+    "version": "v1"
+   }
+  ]
+ }
+}
