@@ -1,0 +1,29 @@
+series 5, tags 10, muestras 12
+14:35:40Z btc-up-or-down-hourly: 1439 eventos cerrados, 0 ya bajados
+14:36:14Z btc-up-or-down-hourly: 1439 nuevos, total 1439
+14:36:17Z eth-up-or-down-hourly: 1439 eventos cerrados, 0 ya bajados
+14:36:51Z eth-up-or-down-hourly: 1439 nuevos, total 1439
+14:36:51Z btc-up-or-down-4h: 360 eventos cerrados, 0 ya bajados
+14:37:00Z btc-up-or-down-4h: 360 nuevos, total 360
+14:37:01Z eth-up-or-down-4h: 360 eventos cerrados, 0 ya bajados
+14:37:10Z eth-up-or-down-4h: 360 nuevos, total 360
+14:37:10Z btc-up-or-down-daily: 60 eventos cerrados, 0 ya bajados
+14:37:12Z btc-up-or-down-daily: 60 nuevos, total 60
+14:37:12Z eth-up-or-down-daily: 60 eventos cerrados, 0 ya bajados
+14:37:14Z eth-up-or-down-daily: 60 nuevos, total 60
+14:37:14Z btc-up-or-down-15m: 288 eventos cerrados, 0 ya bajados
+14:37:21Z btc-up-or-down-15m: 288 nuevos, total 288
+14:44:53Z btc-up-or-down-hourly: 1439 eventos cerrados, 1439 ya bajados
+14:44:53Z btc-up-or-down-hourly: 0 nuevos, total 1439
+14:44:57Z eth-up-or-down-hourly: 1439 eventos cerrados, 1439 ya bajados
+14:44:58Z eth-up-or-down-hourly: 0 nuevos, total 1439
+14:44:59Z btc-up-or-down-4h: 360 eventos cerrados, 360 ya bajados
+14:44:59Z btc-up-or-down-4h: 0 nuevos, total 360
+14:45:01Z eth-up-or-down-4h: 360 eventos cerrados, 360 ya bajados
+14:45:01Z eth-up-or-down-4h: 0 nuevos, total 360
+14:45:01Z btc-up-or-down-daily: 60 eventos cerrados, 60 ya bajados
+14:45:01Z btc-up-or-down-daily: 0 nuevos, total 60
+14:45:02Z eth-up-or-down-daily: 60 eventos cerrados, 60 ya bajados
+14:45:02Z eth-up-or-down-daily: 0 nuevos, total 60
+14:45:03Z btc-up-or-down-15m: 287 eventos cerrados, 288 ya bajados
+14:45:03Z btc-up-or-down-15m: 0 nuevos, total 288
