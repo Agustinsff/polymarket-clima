@@ -1,0 +1,7 @@
+paginas 60 mercados distintos con recompensa: 6000
+pozo diario US$ por grupo: {'otros': 0, 'cripto': 0} mercados: {'otros': 5863, 'cripto': 137}
+0x2e3ece REWARD 2 total US$ 3.79 dias 2
+0x2e3ece MAKER_REBATE 12 total US$ 35.37 dias 12
+0x65f722 REWARD 17 total US$ 166.16 dias 17
+0x65f722 MAKER_REBATE 10 total US$ 23.39 dias 10
+listo

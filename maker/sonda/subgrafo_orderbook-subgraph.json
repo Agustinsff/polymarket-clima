@@ -1,0 +1,4 @@
+{
+ "st": 429,
+ "d": "{\"errors\":[{\"message\":\"This Polymarket subgraph endpoint is paused and deprecated following Polymarket’s migration to V2 — the data is stale and incorrect. Stop using it. For activity, positions, and balances use the Goldsky Edge Data API: https://edge.goldsky.com/data/docs/ . Other datasets: Goldsky Turbo. Questions? support@goldsky.com\",\"extensions\":{\"code\":\"ENDPOINT_DEPRECATED\",\"migrateTo\":\"https://edge.goldsky.com/data/docs/\"}}]}"
+}
