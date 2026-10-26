@@ -6,7 +6,6 @@ de cripto que sigue cripto.py, y simula una orden nuestra de TAM acciones por la
 precio medio:
   maker/datos/fotos_AAAA-MM-DD.csv.gz    una fila por caja y foto: pozo, competencia, estimacion de recompensa
   maker/datos/llenados.csv               cada vez que un taker opero a un precio peor que nuestra orden
-  maker/datos/pozos_AAAA-MM-DD.json      una vez por dia: todos los mercados de Polymarket con pozo
   maker/datos/estado.json
 
 Uso: python maker/medir.py MINUTOS   (lo encadena el workflow maker.yml en la rama medidor-maker)
@@ -45,7 +44,6 @@ F_EST = os.path.join(CARPETA, "estado.json")
 S = pronostico.S
 BOOKS = "https://clob.polymarket.com/books"
 TRADES = "https://data-api.polymarket.com/trades"
-REWARDS = "https://clob.polymarket.com/rewards/markets/multi"
 
 COLS = ["ts", "grupo", "serie", "evento", "caja", "cid", "hora_local", "horas_hasta_fin", "tasa", "pozo",
         "spread_max", "tam_min", "medio", "bid", "ask", "bid_tam", "ask_tam", "comp"]
@@ -232,14 +230,15 @@ def foto(est):
         w.writerows(filas)
     log(f"{len(filas)} cajas guardadas")
     # llenados: comparar las ordenes de la foto ANTERIOR con lo que se opero desde entonces
-    previas = est.get("ordenes") or {}
+    CL = ["cid", "token", "grupo", "serie", "evento", "caja", "nb", "na", "tam", "medio", "tasa", "dist", "fin"]
+    previas = [dict(zip(CL, o)) for o in (est.get("ordenes") or [])]
     desde = est.get("ts_foto") or 0
     llen = []
     if previas and desde:
-        cids = sorted({o["cid"] for o in previas.values()})
+        cids = sorted({o["cid"] for o in previas})
         with ThreadPoolExecutor(8) as ex:
             ops = dict(zip(cids, ex.map(lambda cid: trades_desde(cid, desde), cids)))
-        for clave, o in previas.items():
+        for o in previas:
             tr = ops.get(o["cid"])
             if not tr:
                 continue
@@ -264,45 +263,9 @@ def foto(est):
                     w.writerow(COLS_LLEN)
                 w.writerows(llen)
         log(f"{len(llen)} llenados simulados ({sum(1 for t in ops.values() if t is None)} cajas sin trades)")
-    est["ordenes"] = {f"{tok}|{d}": {"cid": c["cid"], "token": tok, "grupo": c["grupo"], "serie": c["serie"],
-                                     "evento": c["evento"], "caja": c["caja"], "nb": nb, "na": na, "tam": tam,
-                                     "medio": round(medio, 4), "tasa": c["tasa"], "dist": int(d * 100), "fin": c["fin"]}
-                      for (tok, d), (c, nb, na, tam, medio) in ordenes.items()}
+    est["ordenes"] = [[c["cid"], tok, c["grupo"], c["serie"], c["evento"], c["caja"], nb, na, tam, round(medio, 4),
+                       c["tasa"], int(d * 100), c["fin"]] for (tok, d), (c, nb, na, tam, medio) in ordenes.items()]
     est["ts_foto"] = ts
-    guardar_json(F_EST, est)
-
-
-def pozos(est):
-    """Una vez por dia: todos los mercados con pozo de recompensa en Polymarket (para saber donde esta la plata)."""
-    hoy = date.today().isoformat()
-    if est.get("pozos") == hoy:
-        return
-    vistos, cur = {}, ""
-    for _ in range(400):
-        try:
-            r = S.get(REWARDS, params={"next_cursor": cur} if cur else {}, timeout=40).json()
-        except Exception as ex:
-            log(f"rewards fallo: {ex}")
-            break
-        nuevos = 0
-        for m in r.get("data") or []:
-            if m["condition_id"] not in vistos:
-                vistos[m["condition_id"]] = m
-                nuevos += 1
-        cur = r.get("next_cursor")
-        if not cur or cur == "LTE=" or nuevos == 0:
-            break
-    con_pozo = []
-    for m in vistos.values():
-        pozo = sum((x.get("rewards_daily_rate") or 0) for x in (m.get("rewards_config") or []))
-        if pozo > 0:
-            con_pozo.append({"slug": m.get("market_slug"), "evento": m.get("event_slug"), "pozo": pozo,
-                             "spread_max": m.get("rewards_max_spread"), "tam_min": m.get("rewards_min_size"),
-                             "comp": m.get("market_competitiveness"), "spread": m.get("spread"),
-                             "vol24": m.get("volume_24hr"), "fin": m.get("end_date")})
-    guardar_json(os.path.join(CARPETA, f"pozos_{hoy}.json"), {"mercados_vistos": len(vistos), "con_pozo": con_pozo})
-    log(f"pozos: {len(vistos)} mercados vistos, {len(con_pozo)} con pozo (US$ {sum(x['pozo'] for x in con_pozo):.0f}/dia)")
-    est["pozos"] = hoy
     guardar_json(F_EST, est)
 
 
@@ -354,10 +317,6 @@ def main(minutos):
             foto(est)
         except Exception as ex:
             log(f"foto fallo: {ex}")
-        try:
-            pozos(est)
-        except Exception as ex:
-            log(f"pozos fallo: {ex}")
         espera = INTERVALO - (time.time() - t0)
         if time.time() + max(espera, 0) >= fin:
             break

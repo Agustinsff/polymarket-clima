@@ -70,3 +70,9 @@ es razonable (< US$ 2.000). Si el neto es negativo o la recompensa depende de es
 ## Cambios después de fijada la regla
 
 (ninguno)
+
+- 26-oct-2026 14:50Z (antes de mirar llenados; solo se vio la primera foto): el endpoint
+  `clob/rewards/markets/multi` devuelve `rewards_config` vacío en los 40.000 mercados que lista y tarda 10 min,
+  así que **no se guarda el relevamiento de todos los pozos de Polymarket**. El pozo de cada caja sale de gamma
+  (`clobRewards`), como en `liquidez.py`. Dato visto en esa foto: los mercados de temperatura hoy tienen
+  comisión 0 (`feesEnabled` falso), así que el reembolso en clima es 0 mientras siga así; cripto cobra 0,07.
