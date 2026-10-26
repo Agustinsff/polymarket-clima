@@ -1,0 +1,27 @@
+name: maker
+# Investigacion maker/: sonda de endpoints de recompensas y reembolsos. No opera.
+on:
+  push:
+    branches: [medidor-maker]
+    paths: [maker/sonda.py, .github/workflows/maker.yml]
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  sonda:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: medidor-maker
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -r requirements.txt
+      - run: python maker/sonda.py 2>&1 | tee maker/sonda_registro.txt || true
+      - run: |
+          git config user.name "polymarket-clima-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add maker/ && git commit -m "maker: sonda" || exit 0
+          git pull --rebase origin medidor-maker && git push origin HEAD:medidor-maker
