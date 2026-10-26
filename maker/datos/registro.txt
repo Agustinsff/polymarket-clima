@@ -1,3 +1,7 @@
 14:30:54Z 1524 cajas de clima y 47 de cripto
 14:31:02Z 686 cajas guardadas
 14:40:51Z pozos: 40000 mercados vistos, 0 con pozo (US$ 0/dia)
+14:41:09Z 1522 cajas de clima y 48 de cripto
+14:41:19Z 685 cajas guardadas
+14:41:54Z 124 llenados simulados (8 cajas sin trades)
+14:41:54Z resolver fallo: 'fin'
