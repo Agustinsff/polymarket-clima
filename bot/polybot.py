@@ -198,8 +198,9 @@ class Bot:
                     r = {"lleno": False, "precio": None, "detalle": f"error: {ex!r}"}
                 fila.update(lleno=int(r["lleno"]), precio=r["precio"] or "", detalle=r["detalle"],
                             acciones=r.get("acciones", s["acciones"]), ms=int(1000 * (time.time() - t0)))
-                if r["lleno"] and self.modo == "real":
-                    avisar(f"Compra real: {fila['activo']} {fila['lado']} {fila['acciones']} acc a {fila['precio']}")
+                if r["lleno"] and (self.modo == "real" or self.cfg.get("avisar_compras_papel")):
+                    avisar(f"Compra {self.modo}: {fila['activo']} {fila['lado']} {fila['acciones']} acc a {fila['precio']} "
+                           f"({fila['min_al_cierre']} min al cierre)")
             self._anotar(fila)
             log(f"{fila['activo']} {fila['lado']} visto {s['precio_visto']} -> {fila['detalle']}")
             hechas.append(fila)
@@ -285,6 +286,7 @@ def main():
     elif cmd == "una":
         bot.pasada()
         bot.resumen()
+        resumen_diario(bot)
     elif cmd == "probar-aviso":
         avisar(f"Prueba del bot ({cfg['modo']}): si ves esto, los avisos andan.")
     elif cmd == "bucle":

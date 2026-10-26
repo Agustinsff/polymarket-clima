@@ -15,6 +15,7 @@ jobs:
     timeout-minutes: 355
     env:
       TZ: America/Montevideo
+      BOT_NTFY_TEMA: ${{ secrets.BOT_NTFY_TEMA }}   # avisos del bot al celular (ntfy.sh); vacio = sin avisos
     steps:
       - uses: actions/checkout@v4
         with:
