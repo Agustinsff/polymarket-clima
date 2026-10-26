@@ -8,5 +8,5 @@ Investigación del 24–25 oct 2026. Solo mide; no opera ni toca las pruebas en 
 - `informe.html`: informe (también en https://claude.ai/artifact/UFjrfgo6DRMUvNByvLE3ZV).
 - Los datos crudos (`datos/fotos_*.csv.gz`) quedan solo en la rama `arbitraje`.
 
-Conclusión: no vale la pena. En temperatura, 5 oportunidades en 6 h por US$ 11 en total, duración mediana 20 s, nada dura 15 min.
+Conclusión: no vale la pena. En temperatura, 7 oportunidades en 12 h (dos noches) por US$ 11 en total, duración mediana 20 s, nada dura 15 min.
 Depende solo de velocidad. Sí+No de un binario no puede sumar menos de 1 (el libro del No es espejo del Sí).

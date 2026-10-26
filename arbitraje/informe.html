@@ -44,19 +44,19 @@ a { color: var(--accent); }
 
 <main>
   <header style="display:grid;gap:8px">
-    <div class="eyebrow">Investigación · medido 24–25 oct 2026</div>
+    <div class="eyebrow">Investigación · dos noches, 24–26 oct 2026</div>
     <h1>¿Hay arbitraje cuando los precios no suman 1?</h1>
     <p class="pie">Comprar todos los resultados de un mismo evento cuando el juego completo cuesta menos de lo que paga. Medido con el libro real, recorriendo escalones y con la comisión de cada mercado.</p>
   </header>
 
   <div class="veredicto">
     <div class="eyebrow">Recomendación</div>
-    <p><strong>No vale la pena.</strong> En 6 horas de fotos cada 10 segundos sobre ~300 eventos, en temperatura apareció 5 veces y sumó US$ 11, casi todo en una sola caja que duró menos de 10 segundos. Lo que aparece depende <em>solo de velocidad</em>: la mitad dura 10–20 segundos y nada llega a 15 minutos. Con el cron de 15 minutos la ganancia esperada es de unos 2 centavos por hora. Ni con un servidor en Irlanda alcanza: todo lo que hay, sumando todos los mercados, son unos US$ 5 por hora antes de ganarle la carrera a los bots que ya lo levantan.</p>
+    <p><strong>No vale la pena.</strong> En dos noches (12 horas) de fotos cada 10 segundos sobre ~340 eventos, en temperatura apareció 7 veces y sumó US$ 11, casi todo en una sola caja que duró menos de 10 segundos. La segunda noche dio 10 centavos en total. Lo que aparece depende <em>solo de velocidad</em>: la mitad dura 10–20 segundos y nada llega a 15 minutos. Con el cron de 15 minutos la ganancia esperada es de unos 2 centavos por hora. Ni con un servidor en Irlanda alcanza: todo lo que hay, sumando todos los mercados, son unos US$ 5 por hora antes de ganarle la carrera a los bots que ya lo levantan.</p>
   </div>
 
   <div class="nums">
-    <div class="num"><b>2.098</b><span>fotos del libro, cada 10 s (6 h)</span></div>
-    <div class="num"><b>US$ 10,8</b><span>temperatura, total en 6 h</span></div>
+    <div class="num"><b>4.220</b><span>fotos del libro, cada 10 s (12 h)</span></div>
+    <div class="num"><b>US$ 10,9</b><span>temperatura, total en 12 h</span></div>
     <div class="num"><b>20 s</b><span>duración mediana en temperatura</span></div>
     <div class="num"><b>0 %</b><span>de la ganancia dura más de 15 min</span></div>
   </div>
@@ -69,7 +69,7 @@ a { color: var(--accent); }
       <li>Comisión de taker <code>tasa·p·(1−p)</code> de cada mercado. Temperatura no cobra; los partidos de fútbol cobran 5 %.</li>
       <li>Cuenta como oportunidad si gana al menos US$ 0,01 comprando el mínimo de orden (5 acciones) en cada pata.</li>
       <li>Mercados: los 244 eventos de temperatura abiertos, los 40 multi-resultado con más volumen y 20 binarios Sí+No de control.</li>
-      <li>Desde GitHub Actions, del 24-oct 22:34 al 25-oct 04:32 UTC.</li>
+      <li>Desde GitHub Actions, dos noches: 24-oct 22:34 a 25-oct 04:32 UTC y 25-oct 22:36 a 26-oct 04:27 UTC.</li>
     </ul>
   </section>
 
@@ -84,7 +84,7 @@ a { color: var(--accent); }
         <tr><td>Multi-resultado con "otro" abierto</td><td class="n">29</td><td class="n">19</td><td class="n">(4.290)</td><td class="n">horas</td><td><span class="chip mal">falso</span> no es arbitraje, ver abajo.</td></tr>
       </tbody>
     </table></div>
-    <p class="pie">"US$ total" es lo que se ganaba comprando todo lo rentable en la primera foto de cada oportunidad, o sea reaccionando en menos de 10 segundos.</p>
+    <p class="pie">Tabla de la primera noche. La segunda sumó 2 veces y US$ 0,10 en temperatura, y 14 veces y US$ 13 en el resto de los multi-resultado, todas de segundos. "US$ total" es lo que se ganaba comprando todo lo rentable en la primera foto de cada oportunidad, o sea reaccionando en menos de 10 segundos.</p>
   </section>
 
   <section>
@@ -107,6 +107,11 @@ a { color: var(--accent); }
   </section>
 
   <section>
+    <h2>La noche de la elección en Brasil</h2>
+    <p>Lo más grande que apareció fue el balotaje de Brasil del 25-oct, mientras se contaban los votos (22:36 a 23:58 UTC). Comprar el No de los dos candidatos cobra US$ 1 seguro, y por momentos costaba entre 0,5 y 2,7 ¢ menos: hasta US$ 190 por vez, con 50 episodios y unos US$ 1.000 en total. Pero cada uno duró 10 a 60 segundos, hacía falta poner entre US$ 4.000 y US$ 30.000 por vez, y pasa una vez cada varios años. Es una carrera de bots en una noche puntual, no algo que se pueda repetir con estadística.</p>
+  </section>
+
+  <section>
     <h2>El falso arbitraje de las elecciones 2028</h2>
     <p>En "nominado republicano 2028" los Sí de todos los candidatos listados suman 83 ¢, así que el juego "rinde" 17 ¢ y la profundidad daba US$ 4.150. No es arbitraje: Polymarket deja agregar candidatos después (evento con "otro" abierto), y si gana alguien que no está en la lista, todos los Sí pierden. Además la plata quedaría quieta hasta 2028. Estos eventos se midieron aparte y no cuentan.</p>
   </section>
@@ -125,7 +130,7 @@ a { color: var(--accent); }
   <section>
     <h2>Límites</h2>
     <ul>
-      <li>Una noche de 6 horas (horario de Asia y Europa). Hay una segunda tanda corriendo la noche del 25 al 26; si cambia algo, se actualiza esta página.</li>
+      <li>Dos noches de 6 horas (horario de Asia y Europa, y la tarde de EE.UU.). Las corridas de día que estaban planeadas no salieron: GitHub solo corre los horarios programados desde la rama principal.</li>
       <li>Una foto cada 10 s: lo que dura menos que eso no se ve, así que la cantidad real de oportunidades relámpago puede ser mayor. Eso refuerza que es cosa de velocidad.</li>
       <li>No se cuenta gas ni que la plata queda inmovilizada hasta que se resuelve el evento (1–2 días en temperatura).</li>
     </ul>
