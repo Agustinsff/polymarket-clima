@@ -28,8 +28,11 @@ S = requests.Session()
 S.headers["User-Agent"] = "polymarket-clima-otros/1.0 (investigacion personal)"
 GAMMA = "https://gamma-api.polymarket.com"
 CLOB = "https://clob.polymarket.com"
-CLIMA = re.compile(r"weather|climate|hurricane|temperat|rain|snow|storm|tornado|heat|precip|nino|nina|arctic|"
-                   r"sea-ice|cyclone|typhoon|flood|drought|wildfire|noaa|nasa-giss|global-temp", re.I)
+# etiquetas de gamma que si son de clima (una regex suelta trae "ukraine", "miami-heat", etc.)
+ETIQUETAS = ["climate", "climate-science", "climate-change", "climate-weather", "global-temp", "heat-increase",
+             "record-temperatures", "temperature", "weather", "weather-science", "hurricane", "hurricanes",
+             "hurricane-season", "cyclones", "typhoon", "precipitation", "rain", "snow", "snowfall", "snow-storm",
+             "first-snow", "tornado", "tornadoes", "tornado-risk", "drought", "flood", "wildfire"]
 DATA = "https://data-api.polymarket.com/trades"
 # familias donde bajamos todas las operaciones de los cerrados (lo demas es contexto)
 FAMILIAS = re.compile(r"temperature increase|hottest|precipitation|inches of snow|tornado|named storms|hurricanes will form|"
@@ -56,20 +59,6 @@ def get(url, params=None):
             log(f"error {url}: {ex}")
             time.sleep(3 * (i + 1))
     return None
-
-
-def tags():
-    out, off = [], 0
-    while off < 20000:
-        r = get(GAMMA + "/tags", {"limit": 100, "offset": off})
-        if not r:
-            break
-        out += r
-        if len(r) < 100:
-            break
-        off += 100
-    log(f"{len(out)} etiquetas en gamma")
-    return [t for t in out if CLIMA.search((t.get("slug") or "") + " " + (t.get("label") or ""))]
 
 
 def eventos(slug, cerrado):
@@ -119,18 +108,10 @@ def costo(niveles, n):
 
 def main():
     os.makedirs(DATOS, exist_ok=True)
-    ts = tags()
-    with open(os.path.join(DATOS, "tags.csv"), "w", newline="") as f:
-        w = csv.writer(f)
-        w.writerow(["id", "slug", "label"])
-        for t in ts:
-            w.writerow([t.get("id"), t.get("slug"), t.get("label")])
-    slugs = sorted({t["slug"] for t in ts if t.get("slug")} | {"weather", "climate", "hurricanes", "climate-science"})
-    log("etiquetas de clima: " + ", ".join(slugs))
-
+    slugs = ETIQUETAS
     evs = {}
     for s in slugs:
-        if s == "daily-temperature":
+        if s in ("daily-temperature", "highest-temperature", "lowest-temperature"):
             continue
         for cerrado in ("false", "true"):
             r = eventos(s, cerrado)
@@ -215,7 +196,9 @@ def main():
                 t1 = min(int(datetime.fromisoformat(x["fin"].replace("Z", "+00:00")).timestamp()) + 30 * 86400, ahora)
             except Exception:
                 t0 = t1 = None
-            if t0 and t1 and t1 > t0 and FAMILIAS.search(x["evento"] or ""):
+            if not FAMILIAS.search(x["evento"] or ""):
+                continue
+            if t0 and t1 and t1 > t0:
                 for a in range(max(t0, t1 - 400 * 86400), t1, 14 * 86400):
                     r = get(CLOB + "/prices-history", {"market": x["token_si"], "startTs": a,
                                                        "endTs": min(a + 14 * 86400, t1), "fidelity": 60})
