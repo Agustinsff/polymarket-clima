@@ -89,7 +89,7 @@ def eventos(slug, cerrado):
             r = get(GAMMA + "/events/keyset", p)
             if not r:
                 break
-            lote = r.get("events") or r.get("data") or [] if isinstance(r, dict) else r
+            lote = (r.get("events") or r.get("data") or []) if isinstance(r, dict) else r
             if _ == 0:
                 log(f"keyset claves: {list(r)[:10] if isinstance(r, dict) else 'lista'}")
             nuevos = [e for e in lote if e["id"] not in vistos]
