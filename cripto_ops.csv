@@ -114,3 +114,5 @@ momento_utc;activo;tipo;evento;horizonte;strike;condition_id;lado;precio;p_model
 2026-10-25 21:31:26;BTC;toca;what-price-will-bitcoin-hit-on-october-25-2026;6;↑ 81,000;0xe0f2cc22e97ba56631d258120d4d1882ba2395f0125ab53bbf1b96b77d0ad27f;Yes;0.449;0.5503;10;0.07
 2026-10-25 21:31:26;BTC;toca;what-price-will-bitcoin-hit-on-october-25-2026;6;↓ 80,000;0xd18dab9812b2eaaa87e6b711021820604ccf1b802514ae58a973dade52cb668a;Yes;0.46;0.551;10;0.07
 2026-10-26 00:34:06;BTC;toca;what-price-will-bitcoin-hit-on-october-25-2026;3;↑ 81,000;0xe0f2cc22e97ba56631d258120d4d1882ba2395f0125ab53bbf1b96b77d0ad27f;Yes;0.239;0.2975;10;0.07
+2026-10-26 09:39:32;BTC;toca;what-price-will-bitcoin-hit-on-october-26-2026;18;↑ 82,000;0x1aa8cc04a205400a583bb75e54fbb6b54fd22c7e4fccf54f0b2d20a4549c0980;Yes;0.23;0.2921;10;0.07
+2026-10-26 09:39:32;BTC;toca;what-price-will-bitcoin-hit-on-october-26-2026;18;↓ 79,000;0x40c6b6eeb780bf79f39a335aa62de4b27782f14c4c9d045ece174a932bc31f34;Yes;0.22;0.2775;10;0.07
