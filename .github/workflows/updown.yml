@@ -1,0 +1,35 @@
+name: updown
+# Investigacion: mercados "Up or Down" de cripto (ver updown/REGLA.md). Solo lee datos. No opera.
+on:
+  workflow_dispatch:
+    inputs:
+      paso:
+        description: "descubrir | bajar | analizar"
+        default: "descubrir"
+permissions:
+  contents: write
+concurrency:
+  group: updown
+  cancel-in-progress: false
+jobs:
+  correr:
+    runs-on: ubuntu-latest
+    timeout-minutes: 300
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: updown
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -r requirements.txt
+      - run: python updown/${{ inputs.paso }}.py 2>&1 | tee -a updown/registro.txt || true
+      - run: |
+          git config user.name "polymarket-clima-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add updown/ && git commit -m "updown: ${{ inputs.paso }} $(date -u +%Y-%m-%dT%H:%MZ)" || exit 0
+          for i in 1 2 3 4 5; do
+            git pull --rebase origin updown && git push origin HEAD:updown && exit 0
+            sleep $((RANDOM % 20 + 5))
+          done
+          exit 1
