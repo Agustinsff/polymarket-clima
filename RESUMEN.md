@@ -1,12 +1,12 @@
 # Resumen polymarket-clima
 
-_Actualizado: 2026-10-26 11:49 (Montevideo). Todo es **en papel**: no se usa plata real._
+_Actualizado: 2026-10-26 12:03 (Montevideo). Todo es **en papel**: no se usa plata real._
 
 ## Estado de las tareas
 
 ✅ Todo corriendo normalmente.
 
-- Última foto de liquidez: 2026-10-26T11:48:03
+- Última foto de liquidez: 2026-10-26T12:03:15
 - Monitor: mañana 2026-10-26, noche 2026-10-25
 - Prueba São Paulo: último día registrado 2026-10-25
 - Cosechador: último ciclo 2026-10-26 10:08 UTC, 88 mercados, 46 estaciones
@@ -79,11 +79,11 @@ Series donde el modelo le gana al mercado (≥5 días): máx san-francisco (5 d�
 
 | Modo | Serie calibrada | Liquidadas | Ganadas | Neto (10 acc. c/u) | Pendientes |
 |---|---|---|---|---|---|
-| taker | no | 385 | 94 | US$-218.99 | 139 |
-| maker | no | 1189 | 129 | US$-198.50 | 512 |
-| cola_taker | no | 154 | 4 | US$-20.10 | 81 |
-| cola_maker | no | 369 | 7 | US$-38.85 | 179 |
-| no80_90 | no | 138 | 105 | US$-136.96 | 71 |
+| taker | no | 385 | 94 | US$-218.99 | 143 |
+| maker | no | 1189 | 129 | US$-198.50 | 526 |
+| cola_taker | no | 154 | 4 | US$-20.10 | 83 |
+| cola_maker | no | 369 | 7 | US$-38.85 | 183 |
+| no80_90 | no | 138 | 105 | US$-136.96 | 73 |
 
 Taker en total: US$-376.06. _Con la comisión vieja (0,05 para todo) sería US$-390.77._
 
