@@ -1,9 +1,9 @@
 """Sonda (una sola vez): mira la forma de las respuestas de los endpoints de recompensas y reembolsos.
-No opera. Guarda muestras en maker/sonda/."""
+No opera. Guarda muestras chicas en maker/sonda/ (nada de archivos grandes)."""
 import json
 import os
 import time
-from collections import Counter
+from collections import Counter, defaultdict
 
 import requests
 
@@ -26,50 +26,75 @@ def get(url, **p):
         return -1, str(e)
 
 
-# 1. mercados con recompensa (todas las paginas)
-todos, cur = [], ""
-for _ in range(200):
-    st, d = get("https://clob.polymarket.com/rewards/markets/multi", page_size=500, **({"next_cursor": cur} if cur else {}))
+# 1. mercados con recompensa: paginar con dedupe (la corrida anterior dio 100000 = cursor sin avanzar)
+vistos, cursores, pags = {}, [], 0
+cur = ""
+for _ in range(60):
+    st, d = get("https://clob.polymarket.com/rewards/markets/multi", **({"next_cursor": cur} if cur else {}))
     if st != 200 or not isinstance(d, dict):
         guardar("rewards_error.json", {"st": st, "d": d})
         break
-    todos += d.get("data") or []
+    pags += 1
+    nuevos = 0
+    for m in d.get("data") or []:
+        if m["condition_id"] not in vistos:
+            vistos[m["condition_id"]] = m
+            nuevos += 1
+    cursores.append((d.get("next_cursor"), len(d.get("data") or []), nuevos, d.get("count"), d.get("limit")))
     cur = d.get("next_cursor")
-    if not cur or cur == "LTE=":
+    if not cur or cur == "LTE=" or nuevos == 0:
         break
-guardar("rewards_muestra.json", todos[:5])
-print("mercados con recompensa:", len(todos))
-claves = Counter(k for m in todos for k in m)
-print(claves.most_common(60))
-guardar("rewards_todos.json", todos)
+print("paginas", pags, "mercados distintos con recompensa:", len(vistos))
+guardar("rewards_paginas.json", cursores[:20])
+guardar("rewards_muestra.json", list(vistos.values())[:3])
+# resumen: pozo diario por mercado
+pozo = Counter()
+n = Counter()
+for m in vistos.values():
+    tasa = sum((x.get("rewards_daily_rate") or 0) for x in (m.get("rewards_config") or []))
+    slug = m.get("event_slug") or ""
+    grupo = ("temperatura" if "temperature" in slug else
+             "cripto" if any(k in slug for k in ("bitcoin", "ethereum", "btc", "eth", "solana", "xrp")) else "otros")
+    pozo[grupo] += tasa
+    n[grupo] += 1
+print("pozo diario US$ por grupo:", dict(pozo), "mercados:", dict(n))
+guardar("rewards_resumen.json", {"pozo": pozo, "n": n,
+                                  "temperatura": [{"slug": m["market_slug"], "pozo": m.get("rewards_config"),
+                                                   "spread_max": m.get("rewards_max_spread"), "min": m.get("rewards_min_size"),
+                                                   "comp": m.get("market_competitiveness"), "spread": m.get("spread")}
+                                                  for m in vistos.values() if "temperature" in (m.get("event_slug") or "")][:40]})
 
-# 2. el endpoint viejo /rewards/markets (por si da otra cosa)
-st, d = get("https://clob.polymarket.com/rewards/markets/current")
-guardar("rewards_current.json", {"st": st, "d": d if not isinstance(d, dict) else {k: (v[:5] if isinstance(v, list) else v) for k, v in d.items()}})
-
-# 3. trades de un mercado de temperatura con takerOnly=false
+# 2. trades con takerOnly=false
 evs = S.get("https://gamma-api.polymarket.com/events", params={"tag_slug": "daily-temperature", "closed": "false", "limit": 5}, timeout=30).json()
-guardar("evento_temp.json", evs[:1])
+guardar("evento_temp.json", {k: v for k, v in evs[0].items() if k != "markets"} | {"market0": evs[0]["markets"][0]})
 cid = evs[0]["markets"][0]["conditionId"]
 for t in ("true", "false"):
-    st, d = get("https://data-api.polymarket.com/trades", market=cid, limit=50, takerOnly=t)
+    st, d = get("https://data-api.polymarket.com/trades", market=cid, limit=20, takerOnly=t)
     guardar(f"trades_takerOnly_{t}.json", {"st": st, "d": d})
 
-# 4. actividad de billeteras conocidas (hello.67 y la segunda de rivales/) con tipo REWARD / MAKER_REBATE
+# 3. actividad REWARD / MAKER_REBATE de billeteras conocidas (lo que cobran de verdad)
 for w in ("0x2e3ecedec4b004c61670f0dcda382ec0da1f0f92", "0x65f7226a82e093e5115e47ec2f4f7e733cd28b98"):
-    for tipo in ("REWARD", "MAKER_REBATE", None):
-        p = {"user": w, "limit": 100}
-        if tipo:
-            p["type"] = tipo
-        st, d = get("https://data-api.polymarket.com/activity", **p)
-        guardar(f"activity_{w[:8]}_{tipo}.json", {"st": st, "d": d})
-        if isinstance(d, list):
-            print(w[:8], tipo, len(d), Counter(x.get("type") for x in d))
+    for tipo in ("REWARD", "MAKER_REBATE"):
+        todo, off = [], 0
+        while off < 3000:
+            st, d = get("https://data-api.polymarket.com/activity", user=w, limit=500, offset=off, type=tipo)
+            if st != 200 or not isinstance(d, list) or not d:
+                break
+            todo += d
+            off += 500
+            if len(d) < 500:
+                break
+        guardar(f"activity_{w[:8]}_{tipo}.json", todo[:30])
+        por_dia = defaultdict(float)
+        for x in todo:
+            por_dia[time.strftime("%Y-%m-%d", time.gmtime(x.get("timestamp") or 0))] += float(x.get("usdcSize") or 0)
+        print(w[:8], tipo, len(todo), "total US$", round(sum(por_dia.values()), 2), "dias", len(por_dia))
+        guardar(f"activity_{w[:8]}_{tipo}_por_dia.json", dict(sorted(por_dia.items())))
     st, d = get("https://clob.polymarket.com/rebates/current", date=time.strftime("%Y-%m-%d", time.gmtime(time.time() - 86400)), maker_address=w)
-    guardar(f"rebates_{w[:8]}.json", {"st": st, "d": d})
+    guardar(f"rebates_{w[:8]}.json", {"st": st, "d": d if not isinstance(d, list) else d[:20]})
 
-# 5. subgrafo de ordenes (para ver quien es el maker de cada llenado)
-q = '{ orderFilledEvents(first: 5, orderBy: timestamp, orderDirection: desc) { id timestamp maker taker makerAssetId takerAssetId makerAmountFilled takerAmountFilled fee } }'
+# 4. subgrafo de ordenes (quien es maker en cada llenado)
+q = '{ orderFilledEvents(first: 3, orderBy: timestamp, orderDirection: desc) { id timestamp maker taker makerAssetId takerAssetId makerAmountFilled takerAmountFilled fee } }'
 for url in ("https://api.goldsky.com/api/public/project_cl6mb8i9h0003e201j6li0diw/subgraphs/orderbook-subgraph/0.0.1/gn",
             "https://api.goldsky.com/api/public/project_cl6mb8i9h0003e201j6li0diw/subgraphs/polymarket-orderbook-resync/prod/gn"):
     try:
@@ -78,8 +103,8 @@ for url in ("https://api.goldsky.com/api/public/project_cl6mb8i9h0003e201j6li0di
     except Exception as e:
         guardar(f"subgrafo_{url.split('/')[-3]}.json", {"err": str(e)})
 
-# 6. POST /books en lote
-tok = [json.loads(m["clobTokenIds"])[0] for e in evs for m in e["markets"]][:30]
+# 5. POST /books en lote
+tok = [json.loads(m["clobTokenIds"])[0] for e in evs for m in e["markets"] if m.get("clobTokenIds")][:30]
 r = S.post("https://clob.polymarket.com/books", json=[{"token_id": t} for t in tok], timeout=40)
 guardar("books_lote.json", {"st": r.status_code, "n": len(r.json()) if r.status_code == 200 else None,
                              "muestra": (r.json()[:1] if r.status_code == 200 else r.text[:500])})
