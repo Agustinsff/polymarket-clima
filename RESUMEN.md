@@ -1,6 +1,6 @@
 # Resumen polymarket-clima
 
-_Actualizado: 2026-10-27 05:58 (Montevideo). Todo es **en papel**: no se usa plata real._
+_Actualizado: 2026-10-27 06:07 (Montevideo). Todo es **en papel**: no se usa plata real._
 
 ## Estado de las tareas
 
@@ -8,10 +8,10 @@ _Actualizado: 2026-10-27 05:58 (Montevideo). Todo es **en papel**: no se usa pla
 🔔 Polymarket cambió algo en **temperatura máxima** (reglamento, ya no aparece el 2026-10-27 00:47 UTC): `To toggle between Fahrenheit and Celsius, click the "Switch to Metric Units" button until the relevant table displays °C.` y 7 más. Ver [reglas_informe.md](reglas_informe.md).
 🔔 Polymarket cambió algo en **temperatura mínima** (reglamento, ya no aparece el 2026-10-27 00:47 UTC): `To toggle between Fahrenheit and Celsius, click the "Switch to Metric Units" button until the relevant table displays °C.` y 7 más. Ver [reglas_informe.md](reglas_informe.md).
 
-- Última foto de liquidez: 2026-10-27T05:51:46
+- Última foto de liquidez: 2026-10-27T06:07:07
 - Monitor: mañana 2026-10-26, noche 2026-10-26
 - Prueba São Paulo: último día registrado 2026-10-26
-- Cosechador: último ciclo 2026-10-27 03:12 UTC, 88 mercados, 46 estaciones
+- Cosechador: último ciclo 2026-10-27 08:53 UTC, 88 mercados, 46 estaciones
 
 ## Temperatura máxima: mercado vs. modelo (BA y SP)
 
@@ -82,11 +82,11 @@ Series donde el modelo le gana al mercado (≥5 días): máx san-francisco (5 d�
 
 | Modo | Serie calibrada | Liquidadas | Ganadas | Neto (10 acc. c/u) | Pendientes |
 |---|---|---|---|---|---|
-| taker | no | 385 | 94 | US$-218.99 | 213 |
-| maker | no | 1189 | 129 | US$-198.50 | 728 |
-| cola_taker | no | 154 | 4 | US$-20.10 | 112 |
-| cola_maker | no | 369 | 7 | US$-38.85 | 264 |
-| no80_90 | no | 138 | 105 | US$-136.96 | 97 |
+| taker | no | 385 | 94 | US$-218.99 | 218 |
+| maker | no | 1189 | 129 | US$-198.50 | 742 |
+| cola_taker | no | 154 | 4 | US$-20.10 | 114 |
+| cola_maker | no | 369 | 7 | US$-38.85 | 269 |
+| no80_90 | no | 138 | 105 | US$-136.96 | 99 |
 
 Taker en total: US$-376.06. _Con la comisión vieja (0,05 para todo) sería US$-390.77._
 
