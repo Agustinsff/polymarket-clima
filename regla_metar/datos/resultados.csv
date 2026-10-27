@@ -3706,3 +3706,47 @@ lowest|london;2026-10-26;EGLC;lowest-temperature-in-london-on-october-26-2026;av
 lowest|london;2026-10-26;EGLC;lowest-temperature-in-london-on-october-26-2026;aviationweather;12°C;0
 lowest|london;2026-10-26;EGLC;lowest-temperature-in-london-on-october-26-2026;aviationweather;13°C;0
 lowest|london;2026-10-26;EGLC;lowest-temperature-in-london-on-october-26-2026;aviationweather;14°C or higher;0
+highest|sao-paulo;2026-10-26;SBGR;highest-temperature-in-sao-paulo-on-october-26-2026;aviationweather;13°C or below;0
+highest|sao-paulo;2026-10-26;SBGR;highest-temperature-in-sao-paulo-on-october-26-2026;aviationweather;14°C;0
+highest|sao-paulo;2026-10-26;SBGR;highest-temperature-in-sao-paulo-on-october-26-2026;aviationweather;15°C;0
+highest|sao-paulo;2026-10-26;SBGR;highest-temperature-in-sao-paulo-on-october-26-2026;aviationweather;16°C;0
+highest|sao-paulo;2026-10-26;SBGR;highest-temperature-in-sao-paulo-on-october-26-2026;aviationweather;17°C;0
+highest|sao-paulo;2026-10-26;SBGR;highest-temperature-in-sao-paulo-on-october-26-2026;aviationweather;18°C;1
+highest|sao-paulo;2026-10-26;SBGR;highest-temperature-in-sao-paulo-on-october-26-2026;aviationweather;19°C;0
+highest|sao-paulo;2026-10-26;SBGR;highest-temperature-in-sao-paulo-on-october-26-2026;aviationweather;20°C;0
+highest|sao-paulo;2026-10-26;SBGR;highest-temperature-in-sao-paulo-on-october-26-2026;aviationweather;21°C;0
+highest|sao-paulo;2026-10-26;SBGR;highest-temperature-in-sao-paulo-on-october-26-2026;aviationweather;22°C;0
+highest|sao-paulo;2026-10-26;SBGR;highest-temperature-in-sao-paulo-on-october-26-2026;aviationweather;23°C or higher;0
+highest|buenos-aires;2026-10-26;SAEZ;highest-temperature-in-buenos-aires-on-october-26-2026;aviationweather;13°C or below;0
+highest|buenos-aires;2026-10-26;SAEZ;highest-temperature-in-buenos-aires-on-october-26-2026;aviationweather;14°C;0
+highest|buenos-aires;2026-10-26;SAEZ;highest-temperature-in-buenos-aires-on-october-26-2026;aviationweather;15°C;0
+highest|buenos-aires;2026-10-26;SAEZ;highest-temperature-in-buenos-aires-on-october-26-2026;aviationweather;16°C;0
+highest|buenos-aires;2026-10-26;SAEZ;highest-temperature-in-buenos-aires-on-october-26-2026;aviationweather;17°C;0
+highest|buenos-aires;2026-10-26;SAEZ;highest-temperature-in-buenos-aires-on-october-26-2026;aviationweather;18°C;1
+highest|buenos-aires;2026-10-26;SAEZ;highest-temperature-in-buenos-aires-on-october-26-2026;aviationweather;19°C;0
+highest|buenos-aires;2026-10-26;SAEZ;highest-temperature-in-buenos-aires-on-october-26-2026;aviationweather;20°C;0
+highest|buenos-aires;2026-10-26;SAEZ;highest-temperature-in-buenos-aires-on-october-26-2026;aviationweather;21°C;0
+highest|buenos-aires;2026-10-26;SAEZ;highest-temperature-in-buenos-aires-on-october-26-2026;aviationweather;22°C;0
+highest|buenos-aires;2026-10-26;SAEZ;highest-temperature-in-buenos-aires-on-october-26-2026;aviationweather;23°C or higher;0
+lowest|sao-paulo;2026-10-26;SBGR;lowest-temperature-in-sao-paulo-on-october-26-2026;aviationweather;9°C or below;0
+lowest|sao-paulo;2026-10-26;SBGR;lowest-temperature-in-sao-paulo-on-october-26-2026;aviationweather;10°C;0
+lowest|sao-paulo;2026-10-26;SBGR;lowest-temperature-in-sao-paulo-on-october-26-2026;aviationweather;11°C;0
+lowest|sao-paulo;2026-10-26;SBGR;lowest-temperature-in-sao-paulo-on-october-26-2026;aviationweather;12°C;0
+lowest|sao-paulo;2026-10-26;SBGR;lowest-temperature-in-sao-paulo-on-october-26-2026;aviationweather;13°C;1
+lowest|sao-paulo;2026-10-26;SBGR;lowest-temperature-in-sao-paulo-on-october-26-2026;aviationweather;14°C;0
+lowest|sao-paulo;2026-10-26;SBGR;lowest-temperature-in-sao-paulo-on-october-26-2026;aviationweather;15°C;0
+lowest|sao-paulo;2026-10-26;SBGR;lowest-temperature-in-sao-paulo-on-october-26-2026;aviationweather;16°C;0
+lowest|sao-paulo;2026-10-26;SBGR;lowest-temperature-in-sao-paulo-on-october-26-2026;aviationweather;17°C;0
+lowest|sao-paulo;2026-10-26;SBGR;lowest-temperature-in-sao-paulo-on-october-26-2026;aviationweather;18°C;0
+lowest|sao-paulo;2026-10-26;SBGR;lowest-temperature-in-sao-paulo-on-october-26-2026;aviationweather;19°C or higher;0
+lowest|buenos-aires;2026-10-26;SAEZ;lowest-temperature-in-buenos-aires-on-october-26-2026;aviationweather;4°C or below;0
+lowest|buenos-aires;2026-10-26;SAEZ;lowest-temperature-in-buenos-aires-on-october-26-2026;aviationweather;5°C;0
+lowest|buenos-aires;2026-10-26;SAEZ;lowest-temperature-in-buenos-aires-on-october-26-2026;aviationweather;6°C;0
+lowest|buenos-aires;2026-10-26;SAEZ;lowest-temperature-in-buenos-aires-on-october-26-2026;aviationweather;7°C;0
+lowest|buenos-aires;2026-10-26;SAEZ;lowest-temperature-in-buenos-aires-on-october-26-2026;aviationweather;8°C;1
+lowest|buenos-aires;2026-10-26;SAEZ;lowest-temperature-in-buenos-aires-on-october-26-2026;aviationweather;9°C;0
+lowest|buenos-aires;2026-10-26;SAEZ;lowest-temperature-in-buenos-aires-on-october-26-2026;aviationweather;10°C;0
+lowest|buenos-aires;2026-10-26;SAEZ;lowest-temperature-in-buenos-aires-on-october-26-2026;aviationweather;11°C;0
+lowest|buenos-aires;2026-10-26;SAEZ;lowest-temperature-in-buenos-aires-on-october-26-2026;aviationweather;12°C;0
+lowest|buenos-aires;2026-10-26;SAEZ;lowest-temperature-in-buenos-aires-on-october-26-2026;aviationweather;13°C;0
+lowest|buenos-aires;2026-10-26;SAEZ;lowest-temperature-in-buenos-aires-on-october-26-2026;aviationweather;14°C or higher;0
