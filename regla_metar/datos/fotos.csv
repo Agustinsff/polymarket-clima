@@ -4476,3 +4476,135 @@ momento_utc;momento;hora_local;serie;fecha;icao;slug;caja;bid;ask;medio;si_10;no
 2026-10-27 19:22;M2;12;highest|san-francisco;2026-10-27;KSFO;highest-temperature-in-san-francisco-on-october-27-2026;66-67°F;0.289;0.354;0.3215;0.354;0.711;0.0
 2026-10-27 19:22;M2;12;highest|san-francisco;2026-10-27;KSFO;highest-temperature-in-san-francisco-on-october-27-2026;68-69°F;0.014;0.02;0.017;0.02;0.9875;0.0
 2026-10-27 19:22;M2;12;highest|san-francisco;2026-10-27;KSFO;highest-temperature-in-san-francisco-on-october-27-2026;70°F or higher;0.002;0.004;0.003;0.004;0.998;0.0
+2026-10-27 21:23;M1;6;lowest|seoul;2026-10-28;RKSI;lowest-temperature-in-seoul-on-october-28-2026;0°C or below;;0.001;;0.001;;0.0
+2026-10-27 21:23;M1;6;lowest|seoul;2026-10-28;RKSI;lowest-temperature-in-seoul-on-october-28-2026;1°C;;0.001;;0.001;;0.0
+2026-10-27 21:23;M1;6;lowest|seoul;2026-10-28;RKSI;lowest-temperature-in-seoul-on-october-28-2026;2°C;0.001;0.003;0.002;0.003;0.999;0.0
+2026-10-27 21:23;M1;6;lowest|seoul;2026-10-28;RKSI;lowest-temperature-in-seoul-on-october-28-2026;3°C;0.01;0.029;0.0195;0.029;0.99;0.0
+2026-10-27 21:23;M1;6;lowest|seoul;2026-10-28;RKSI;lowest-temperature-in-seoul-on-october-28-2026;4°C;0.03;0.59;0.31;0.59;0.97;0.0
+2026-10-27 21:23;M1;6;lowest|seoul;2026-10-28;RKSI;lowest-temperature-in-seoul-on-october-28-2026;5°C;0.07;0.7;0.385;0.804;0.935;0.0
+2026-10-27 21:23;M1;6;lowest|seoul;2026-10-28;RKSI;lowest-temperature-in-seoul-on-october-28-2026;6°C;0.04;0.63;0.335;0.63;0.965;0.0
+2026-10-27 21:23;M1;6;lowest|seoul;2026-10-28;RKSI;lowest-temperature-in-seoul-on-october-28-2026;7°C;;0.001;;0.001;;0.0
+2026-10-27 21:23;M1;6;lowest|seoul;2026-10-28;RKSI;lowest-temperature-in-seoul-on-october-28-2026;8°C;;0.001;;0.001;;0.0
+2026-10-27 21:23;M1;6;lowest|seoul;2026-10-28;RKSI;lowest-temperature-in-seoul-on-october-28-2026;9°C;;0.001;;0.001;;0.0
+2026-10-27 21:23;M1;6;lowest|seoul;2026-10-28;RKSI;lowest-temperature-in-seoul-on-october-28-2026;10°C or higher;;0.001;;0.001;;0.0
+2026-10-27 21:23;M1;6;lowest|tokyo;2026-10-28;RJTT;lowest-temperature-in-tokyo-on-october-28-2026;10°C or below;;0.001;;0.001;;0.0
+2026-10-27 21:23;M1;6;lowest|tokyo;2026-10-28;RJTT;lowest-temperature-in-tokyo-on-october-28-2026;11°C;0.001;0.01;0.0055;0.01;0.999;0.0
+2026-10-27 21:23;M1;6;lowest|tokyo;2026-10-28;RJTT;lowest-temperature-in-tokyo-on-october-28-2026;12°C;0.02;0.31;0.165;0.315;0.98;0.0
+2026-10-27 21:23;M1;6;lowest|tokyo;2026-10-28;RJTT;lowest-temperature-in-tokyo-on-october-28-2026;13°C;0.24;0.38;0.31;0.38;0.76;0.0
+2026-10-27 21:23;M1;6;lowest|tokyo;2026-10-28;RJTT;lowest-temperature-in-tokyo-on-october-28-2026;14°C;0.35;0.65;0.5;0.65;0.655;0.0
+2026-10-27 21:23;M1;6;lowest|tokyo;2026-10-28;RJTT;lowest-temperature-in-tokyo-on-october-28-2026;15°C;0.02;0.32;0.17;0.42;0.98;0.0
+2026-10-27 21:23;M1;6;lowest|tokyo;2026-10-28;RJTT;lowest-temperature-in-tokyo-on-october-28-2026;16°C;0.006;0.03;0.018;0.0318;0.994;0.0
+2026-10-27 21:23;M1;6;lowest|tokyo;2026-10-28;RJTT;lowest-temperature-in-tokyo-on-october-28-2026;17°C;0.001;0.022;0.0115;0.022;0.999;0.0
+2026-10-27 21:23;M1;6;lowest|tokyo;2026-10-28;RJTT;lowest-temperature-in-tokyo-on-october-28-2026;18°C;;0.001;;0.001;;0.0
+2026-10-27 21:23;M1;6;lowest|tokyo;2026-10-28;RJTT;lowest-temperature-in-tokyo-on-october-28-2026;19°C;;0.001;;0.001;;0.0
+2026-10-27 21:23;M1;6;lowest|tokyo;2026-10-28;RJTT;lowest-temperature-in-tokyo-on-october-28-2026;20°C or higher;;0.001;;0.001;;0.0
+2026-10-27 21:23;M1;6;lowest|busan;2026-10-28;RKPK;lowest-temperature-in-busan-on-october-28-2026;-1°C or below;;0.009;;0.009;;0.0
+2026-10-27 21:23;M1;6;lowest|busan;2026-10-28;RKPK;lowest-temperature-in-busan-on-october-28-2026;0°C;;0.009;;0.009;;0.0
+2026-10-27 21:23;M1;6;lowest|busan;2026-10-28;RKPK;lowest-temperature-in-busan-on-october-28-2026;1°C;;0.5;;0.5;;0.0
+2026-10-27 21:23;M1;6;lowest|busan;2026-10-28;RKPK;lowest-temperature-in-busan-on-october-28-2026;2°C;;0.98;;0.98;;0.0
+2026-10-27 21:23;M1;6;lowest|busan;2026-10-28;RKPK;lowest-temperature-in-busan-on-october-28-2026;3°C;;0.99;;0.99;;0.0
+2026-10-27 21:23;M1;6;lowest|busan;2026-10-28;RKPK;lowest-temperature-in-busan-on-october-28-2026;4°C;;0.99;;0.99;;0.0
+2026-10-27 21:23;M1;6;lowest|busan;2026-10-28;RKPK;lowest-temperature-in-busan-on-october-28-2026;5°C;;0.99;;0.99;;0.0
+2026-10-27 21:23;M1;6;lowest|busan;2026-10-28;RKPK;lowest-temperature-in-busan-on-october-28-2026;6°C;;0.98;;0.98;;0.0
+2026-10-27 21:23;M1;6;lowest|busan;2026-10-28;RKPK;lowest-temperature-in-busan-on-october-28-2026;7°C;0.02;0.95;0.485;0.955;0.98;0.0
+2026-10-27 21:23;M1;6;lowest|busan;2026-10-28;RKPK;lowest-temperature-in-busan-on-october-28-2026;8°C;0.02;0.95;0.485;0.955;0.98;0.0
+2026-10-27 21:23;M1;6;lowest|busan;2026-10-28;RKPK;lowest-temperature-in-busan-on-october-28-2026;9°C or higher;;0.001;;0.001;;0.0
+2026-10-27 21:23;M1;6;highest|seoul;2026-10-28;RKSI;highest-temperature-in-seoul-on-october-28-2026;5°C or below;;0.001;;0.001;;0.0
+2026-10-27 21:23;M1;6;highest|seoul;2026-10-28;RKSI;highest-temperature-in-seoul-on-october-28-2026;6°C;;0.001;;0.001;;0.0
+2026-10-27 21:23;M1;6;highest|seoul;2026-10-28;RKSI;highest-temperature-in-seoul-on-october-28-2026;7°C;;0.001;;0.001;;0.0
+2026-10-27 21:23;M1;6;highest|seoul;2026-10-28;RKSI;highest-temperature-in-seoul-on-october-28-2026;8°C;;0.001;;0.001;;0.0
+2026-10-27 21:23;M1;6;highest|seoul;2026-10-28;RKSI;highest-temperature-in-seoul-on-october-28-2026;9°C;;0.001;;0.001;;0.0
+2026-10-27 21:23;M1;6;highest|seoul;2026-10-28;RKSI;highest-temperature-in-seoul-on-october-28-2026;10°C;0.003;0.011;0.007;0.011;0.997;0.0
+2026-10-27 21:23;M1;6;highest|seoul;2026-10-28;RKSI;highest-temperature-in-seoul-on-october-28-2026;11°C;0.1;0.14;0.12;0.14;0.9;0.0
+2026-10-27 21:23;M1;6;highest|seoul;2026-10-28;RKSI;highest-temperature-in-seoul-on-october-28-2026;12°C;0.57;0.6;0.585;0.6;0.43;0.0
+2026-10-27 21:23;M1;6;highest|seoul;2026-10-28;RKSI;highest-temperature-in-seoul-on-october-28-2026;13°C;0.28;0.32;0.3;0.32;0.72;0.0
+2026-10-27 21:23;M1;6;highest|seoul;2026-10-28;RKSI;highest-temperature-in-seoul-on-october-28-2026;14°C;0.004;0.012;0.008;0.012;0.996;0.0
+2026-10-27 21:23;M1;6;highest|seoul;2026-10-28;RKSI;highest-temperature-in-seoul-on-october-28-2026;15°C or higher;0.001;0.002;0.0015;0.002;0.999;0.0
+2026-10-27 21:23;M1;6;highest|tokyo;2026-10-28;RJTT;highest-temperature-in-tokyo-on-october-28-2026;14°C or below;;0.001;;0.001;;0.0
+2026-10-27 21:23;M1;6;highest|tokyo;2026-10-28;RJTT;highest-temperature-in-tokyo-on-october-28-2026;15°C;;0.001;;0.001;;0.0
+2026-10-27 21:23;M1;6;highest|tokyo;2026-10-28;RJTT;highest-temperature-in-tokyo-on-october-28-2026;16°C;;0.001;;0.001;;0.0
+2026-10-27 21:23;M1;6;highest|tokyo;2026-10-28;RJTT;highest-temperature-in-tokyo-on-october-28-2026;17°C;;0.001;;0.001;;0.0
+2026-10-27 21:23;M1;6;highest|tokyo;2026-10-28;RJTT;highest-temperature-in-tokyo-on-october-28-2026;18°C;;0.001;;0.001;;0.0
+2026-10-27 21:23;M1;6;highest|tokyo;2026-10-28;RJTT;highest-temperature-in-tokyo-on-october-28-2026;19°C;0.35;0.39;0.37;0.39;0.65;0.0
+2026-10-27 21:23;M1;6;highest|tokyo;2026-10-28;RJTT;highest-temperature-in-tokyo-on-october-28-2026;20°C;0.56;0.6;0.58;0.6;0.445;0.0
+2026-10-27 21:23;M1;6;highest|tokyo;2026-10-28;RJTT;highest-temperature-in-tokyo-on-october-28-2026;21°C;0.038;0.074;0.056;0.074;0.962;0.0
+2026-10-27 21:23;M1;6;highest|tokyo;2026-10-28;RJTT;highest-temperature-in-tokyo-on-october-28-2026;22°C;0.002;0.004;0.003;0.004;0.998;0.0
+2026-10-27 21:23;M1;6;highest|tokyo;2026-10-28;RJTT;highest-temperature-in-tokyo-on-october-28-2026;23°C;;0.001;;0.001;;0.0
+2026-10-27 21:23;M1;6;highest|tokyo;2026-10-28;RJTT;highest-temperature-in-tokyo-on-october-28-2026;24°C or higher;;0.001;;0.001;;0.0
+2026-10-27 21:23;M1;6;highest|busan;2026-10-28;RKPK;highest-temperature-in-busan-on-october-28-2026;9°C or below;;0.001;;0.001;;0.0
+2026-10-27 21:23;M1;6;highest|busan;2026-10-28;RKPK;highest-temperature-in-busan-on-october-28-2026;10°C;;0.001;;0.001;;0.0
+2026-10-27 21:23;M1;6;highest|busan;2026-10-28;RKPK;highest-temperature-in-busan-on-october-28-2026;11°C;;0.001;;0.001;;0.0
+2026-10-27 21:23;M1;6;highest|busan;2026-10-28;RKPK;highest-temperature-in-busan-on-october-28-2026;12°C;;0.001;;0.001;;0.0
+2026-10-27 21:23;M1;6;highest|busan;2026-10-28;RKPK;highest-temperature-in-busan-on-october-28-2026;13°C;0.001;0.003;0.002;0.003;0.999;0.0
+2026-10-27 21:23;M1;6;highest|busan;2026-10-28;RKPK;highest-temperature-in-busan-on-october-28-2026;14°C;0.003;0.005;0.004;0.005;0.997;0.0
+2026-10-27 21:23;M1;6;highest|busan;2026-10-28;RKPK;highest-temperature-in-busan-on-october-28-2026;15°C;0.03;0.06;0.045;0.06;0.97;0.0
+2026-10-27 21:23;M1;6;highest|busan;2026-10-28;RKPK;highest-temperature-in-busan-on-october-28-2026;16°C;0.35;0.37;0.36;0.38;0.65;0.0
+2026-10-27 21:23;M1;6;highest|busan;2026-10-28;RKPK;highest-temperature-in-busan-on-october-28-2026;17°C;0.56;0.58;0.57;0.58;0.4588;0.0
+2026-10-27 21:23;M1;6;highest|busan;2026-10-28;RKPK;highest-temperature-in-busan-on-october-28-2026;18°C;0.047;0.062;0.0545;0.062;0.953;0.0
+2026-10-27 21:23;M1;6;highest|busan;2026-10-28;RKPK;highest-temperature-in-busan-on-october-28-2026;19°C or higher;0.002;0.003;0.0025;0.003;0.998;0.0
+2026-10-27 21:23;M0;6;lowest|seoul;2026-10-29;RKSI;lowest-temperature-in-seoul-on-october-29-2026;5°C or below;0.004;0.09;0.047;0.0905;0.996;0.0
+2026-10-27 21:23;M0;6;lowest|seoul;2026-10-29;RKSI;lowest-temperature-in-seoul-on-october-29-2026;6°C;0.099;0.179;0.139;0.179;0.901;0.0
+2026-10-27 21:23;M0;6;lowest|seoul;2026-10-29;RKSI;lowest-temperature-in-seoul-on-october-29-2026;7°C;0.24;0.28;0.26;0.28;0.76;0.0
+2026-10-27 21:23;M0;6;lowest|seoul;2026-10-29;RKSI;lowest-temperature-in-seoul-on-october-29-2026;8°C;0.31;0.35;0.33;0.355;0.69;0.0
+2026-10-27 21:23;M0;6;lowest|seoul;2026-10-29;RKSI;lowest-temperature-in-seoul-on-october-29-2026;9°C;0.18;0.2;0.19;0.2;0.82;0.0
+2026-10-27 21:23;M0;6;lowest|seoul;2026-10-29;RKSI;lowest-temperature-in-seoul-on-october-29-2026;10°C;0.06;0.12;0.09;0.125;0.94;0.0
+2026-10-27 21:23;M0;6;lowest|seoul;2026-10-29;RKSI;lowest-temperature-in-seoul-on-october-29-2026;11°C;0.002;0.087;0.0445;0.0875;0.998;0.0
+2026-10-27 21:23;M0;6;lowest|seoul;2026-10-29;RKSI;lowest-temperature-in-seoul-on-october-29-2026;12°C;0.001;0.088;0.0445;0.0885;0.999;0.0
+2026-10-27 21:23;M0;6;lowest|seoul;2026-10-29;RKSI;lowest-temperature-in-seoul-on-october-29-2026;13°C;0.001;0.088;0.0445;0.0885;0.999;0.0
+2026-10-27 21:23;M0;6;lowest|seoul;2026-10-29;RKSI;lowest-temperature-in-seoul-on-october-29-2026;14°C;0.003;0.052;0.0275;0.0525;0.997;0.0
+2026-10-27 21:23;M0;6;lowest|seoul;2026-10-29;RKSI;lowest-temperature-in-seoul-on-october-29-2026;15°C or higher;0.002;0.061;0.0315;0.0615;0.998;0.0
+2026-10-27 21:23;M0;6;lowest|tokyo;2026-10-29;RJTT;lowest-temperature-in-tokyo-on-october-29-2026;7°C or below;0.001;0.03;0.0155;0.03;0.999;0.0
+2026-10-27 21:23;M0;6;lowest|tokyo;2026-10-29;RJTT;lowest-temperature-in-tokyo-on-october-29-2026;8°C;0.001;0.071;0.036;0.071;0.999;0.0
+2026-10-27 21:23;M0;6;lowest|tokyo;2026-10-29;RJTT;lowest-temperature-in-tokyo-on-october-29-2026;9°C;0.001;0.071;0.036;0.071;0.999;0.0
+2026-10-27 21:23;M0;6;lowest|tokyo;2026-10-29;RJTT;lowest-temperature-in-tokyo-on-october-29-2026;10°C;0.002;0.143;0.0725;0.1435;0.998;0.0
+2026-10-27 21:23;M0;6;lowest|tokyo;2026-10-29;RJTT;lowest-temperature-in-tokyo-on-october-29-2026;11°C;0.09;0.15;0.12;0.15;0.91;0.0
+2026-10-27 21:23;M0;6;lowest|tokyo;2026-10-29;RJTT;lowest-temperature-in-tokyo-on-october-29-2026;12°C;0.39;0.53;0.46;0.535;0.61;0.0
+2026-10-27 21:23;M0;6;lowest|tokyo;2026-10-29;RJTT;lowest-temperature-in-tokyo-on-october-29-2026;13°C;0.35;0.38;0.365;0.38;0.65;0.0
+2026-10-27 21:23;M0;6;lowest|tokyo;2026-10-29;RJTT;lowest-temperature-in-tokyo-on-october-29-2026;14°C;0.03;0.16;0.095;0.165;0.97;0.0
+2026-10-27 21:23;M0;6;lowest|tokyo;2026-10-29;RJTT;lowest-temperature-in-tokyo-on-october-29-2026;15°C;0.001;0.133;0.067;0.1335;0.999;0.0
+2026-10-27 21:23;M0;6;lowest|tokyo;2026-10-29;RJTT;lowest-temperature-in-tokyo-on-october-29-2026;16°C;0.001;0.03;0.0155;0.0678;0.999;0.0
+2026-10-27 21:23;M0;6;lowest|tokyo;2026-10-29;RJTT;lowest-temperature-in-tokyo-on-october-29-2026;17°C or higher;0.001;0.03;0.0155;0.03;0.999;0.0
+2026-10-27 21:23;M0;6;lowest|busan;2026-10-29;RKPK;lowest-temperature-in-busan-on-october-29-2026;-2°C or below;0.001;0.01;0.0055;0.01;0.999;0.0
+2026-10-27 21:23;M0;6;lowest|busan;2026-10-29;RKPK;lowest-temperature-in-busan-on-october-29-2026;-1°C;0.001;0.01;0.0055;0.01;0.999;0.0
+2026-10-27 21:23;M0;6;lowest|busan;2026-10-29;RKPK;lowest-temperature-in-busan-on-october-29-2026;0°C;0.001;0.01;0.0055;0.01;0.999;0.0
+2026-10-27 21:23;M0;6;lowest|busan;2026-10-29;RKPK;lowest-temperature-in-busan-on-october-29-2026;1°C;;0.68;;0.68;;0.0
+2026-10-27 21:23;M0;6;lowest|busan;2026-10-29;RKPK;lowest-temperature-in-busan-on-october-29-2026;2°C;;0.68;;0.68;;0.0
+2026-10-27 21:23;M0;6;lowest|busan;2026-10-29;RKPK;lowest-temperature-in-busan-on-october-29-2026;3°C;;0.69;;0.69;;0.0
+2026-10-27 21:23;M0;6;lowest|busan;2026-10-29;RKPK;lowest-temperature-in-busan-on-october-29-2026;4°C;;0.7;;0.7067;;0.0
+2026-10-27 21:23;M0;6;lowest|busan;2026-10-29;RKPK;lowest-temperature-in-busan-on-october-29-2026;5°C;;0.7;;0.7067;;0.0
+2026-10-27 21:23;M0;6;lowest|busan;2026-10-29;RKPK;lowest-temperature-in-busan-on-october-29-2026;6°C;;0.7;;0.7067;;0.0
+2026-10-27 21:23;M0;6;lowest|busan;2026-10-29;RKPK;lowest-temperature-in-busan-on-october-29-2026;7°C;;0.69;;0.69;;0.0
+2026-10-27 21:23;M0;6;lowest|busan;2026-10-29;RKPK;lowest-temperature-in-busan-on-october-29-2026;8°C or higher;;0.49;;0.49;;0.0
+2026-10-27 21:23;M0;6;highest|seoul;2026-10-29;RKSI;highest-temperature-in-seoul-on-october-29-2026;9°C or below;;0.001;;0.001;;0.0
+2026-10-27 21:23;M0;6;highest|seoul;2026-10-29;RKSI;highest-temperature-in-seoul-on-october-29-2026;10°C;0.001;0.002;0.0015;0.002;0.999;0.0
+2026-10-27 21:23;M0;6;highest|seoul;2026-10-29;RKSI;highest-temperature-in-seoul-on-october-29-2026;11°C;0.02;0.036;0.028;0.036;0.98;0.0
+2026-10-27 21:23;M0;6;highest|seoul;2026-10-29;RKSI;highest-temperature-in-seoul-on-october-29-2026;12°C;0.26;0.28;0.27;0.28;0.74;0.0
+2026-10-27 21:23;M0;6;highest|seoul;2026-10-29;RKSI;highest-temperature-in-seoul-on-october-29-2026;13°C;0.44;0.46;0.45;0.46;0.56;0.0
+2026-10-27 21:23;M0;6;highest|seoul;2026-10-29;RKSI;highest-temperature-in-seoul-on-october-29-2026;14°C;0.19;0.2;0.195;0.2;0.81;0.0
+2026-10-27 21:23;M0;6;highest|seoul;2026-10-29;RKSI;highest-temperature-in-seoul-on-october-29-2026;15°C;0.03;0.04;0.035;0.04;0.9714;0.0
+2026-10-27 21:23;M0;6;highest|seoul;2026-10-29;RKSI;highest-temperature-in-seoul-on-october-29-2026;16°C;0.026;0.038;0.032;0.038;0.9746;0.0
+2026-10-27 21:23;M0;6;highest|seoul;2026-10-29;RKSI;highest-temperature-in-seoul-on-october-29-2026;17°C;0.002;0.01;0.006;0.01;0.998;0.0
+2026-10-27 21:23;M0;6;highest|seoul;2026-10-29;RKSI;highest-temperature-in-seoul-on-october-29-2026;18°C;0.003;0.011;0.007;0.011;0.997;0.0
+2026-10-27 21:23;M0;6;highest|seoul;2026-10-29;RKSI;highest-temperature-in-seoul-on-october-29-2026;19°C or higher;;0.001;;0.001;;0.0
+2026-10-27 21:23;M0;6;highest|tokyo;2026-10-29;RJTT;highest-temperature-in-tokyo-on-october-29-2026;11°C or below;0.001;0.002;0.0015;0.002;0.999;0.0
+2026-10-27 21:23;M0;6;highest|tokyo;2026-10-29;RJTT;highest-temperature-in-tokyo-on-october-29-2026;12°C;0.001;0.004;0.0025;0.0045;0.999;0.0
+2026-10-27 21:23;M0;6;highest|tokyo;2026-10-29;RJTT;highest-temperature-in-tokyo-on-october-29-2026;13°C;0.001;0.008;0.0045;0.008;0.999;0.0
+2026-10-27 21:23;M0;6;highest|tokyo;2026-10-29;RJTT;highest-temperature-in-tokyo-on-october-29-2026;14°C;0.003;0.013;0.008;0.013;0.997;0.0
+2026-10-27 21:23;M0;6;highest|tokyo;2026-10-29;RJTT;highest-temperature-in-tokyo-on-october-29-2026;15°C;0.04;0.05;0.045;0.05;0.964;0.0
+2026-10-27 21:23;M0;6;highest|tokyo;2026-10-29;RJTT;highest-temperature-in-tokyo-on-october-29-2026;16°C;0.34;0.36;0.35;0.36;0.66;0.0
+2026-10-27 21:23;M0;6;highest|tokyo;2026-10-29;RJTT;highest-temperature-in-tokyo-on-october-29-2026;17°C;0.49;0.5;0.495;0.5;0.51;0.0
+2026-10-27 21:23;M0;6;highest|tokyo;2026-10-29;RJTT;highest-temperature-in-tokyo-on-october-29-2026;18°C;0.1;0.12;0.11;0.12;0.9;0.0
+2026-10-27 21:23;M0;6;highest|tokyo;2026-10-29;RJTT;highest-temperature-in-tokyo-on-october-29-2026;19°C;0.013;0.028;0.0205;0.028;0.987;0.0
+2026-10-27 21:23;M0;6;highest|tokyo;2026-10-29;RJTT;highest-temperature-in-tokyo-on-october-29-2026;20°C;0.003;0.014;0.0085;0.014;0.997;0.0
+2026-10-27 21:23;M0;6;highest|tokyo;2026-10-29;RJTT;highest-temperature-in-tokyo-on-october-29-2026;21°C or higher;;0.012;;0.012;;0.0
+2026-10-27 21:23;M0;6;highest|busan;2026-10-29;RKPK;highest-temperature-in-busan-on-october-29-2026;9°C or below;;0.001;;0.001;;0.0
+2026-10-27 21:23;M0;6;highest|busan;2026-10-29;RKPK;highest-temperature-in-busan-on-october-29-2026;10°C;;0.001;;0.001;;0.0
+2026-10-27 21:23;M0;6;highest|busan;2026-10-29;RKPK;highest-temperature-in-busan-on-october-29-2026;11°C;;0.001;;0.001;;0.0
+2026-10-27 21:23;M0;6;highest|busan;2026-10-29;RKPK;highest-temperature-in-busan-on-october-29-2026;12°C;0.001;0.004;0.0025;0.004;0.999;0.0
+2026-10-27 21:23;M0;6;highest|busan;2026-10-29;RKPK;highest-temperature-in-busan-on-october-29-2026;13°C;0.012;0.032;0.022;0.032;0.988;0.0
+2026-10-27 21:23;M0;6;highest|busan;2026-10-29;RKPK;highest-temperature-in-busan-on-october-29-2026;14°C;0.15;0.17;0.16;0.175;0.85;0.0
+2026-10-27 21:23;M0;6;highest|busan;2026-10-29;RKPK;highest-temperature-in-busan-on-october-29-2026;15°C;0.41;0.44;0.425;0.44;0.59;0.0
+2026-10-27 21:23;M0;6;highest|busan;2026-10-29;RKPK;highest-temperature-in-busan-on-october-29-2026;16°C;0.3;0.33;0.315;0.33;0.7;0.0
+2026-10-27 21:23;M0;6;highest|busan;2026-10-29;RKPK;highest-temperature-in-busan-on-october-29-2026;17°C;0.05;0.08;0.065;0.08;0.95;0.0
+2026-10-27 21:23;M0;6;highest|busan;2026-10-29;RKPK;highest-temperature-in-busan-on-october-29-2026;18°C;0.005;0.016;0.0105;0.016;0.995;0.0
+2026-10-27 21:23;M0;6;highest|busan;2026-10-29;RKPK;highest-temperature-in-busan-on-october-29-2026;19°C or higher;0.001;0.004;0.0025;0.004;0.999;0.0
