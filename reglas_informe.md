@@ -1,8 +1,10 @@
 # Reglas de los mercados de Polymarket
 
-Actualizado 2026-10-26 20:44 UTC por `reglas.py` (cada 3 h). Lo que Polymarket usa hoy en cada familia de mercados, y los cambios que se detectaron.
+Actualizado 2026-10-27 00:47 UTC por `reglas.py` (cada 3 h). Lo que Polymarket usa hoy en cada familia de mercados, y los cambios que se detectaron.
 
 🔔 Polymarket cambió algo en **clima (otros)** (mercado de clima nuevo, aparece el 2026-10-26 20:44 UTC): `what-intensity-will-arnab-reach` y 1 más. Ver [reglas_informe.md](reglas_informe.md).
+🔔 Polymarket cambió algo en **temperatura máxima** (reglamento, ya no aparece el 2026-10-27 00:47 UTC): `To toggle between Fahrenheit and Celsius, click the "Switch to Metric Units" button until the relevant table displays °C.` y 7 más. Ver [reglas_informe.md](reglas_informe.md).
+🔔 Polymarket cambió algo en **temperatura mínima** (reglamento, ya no aparece el 2026-10-27 00:47 UTC): `To toggle between Fahrenheit and Celsius, click the "Switch to Metric Units" button until the relevant table displays °C.` y 7 más. Ver [reglas_informe.md](reglas_informe.md).
 
 ## Comisiones
 
@@ -16,16 +18,15 @@ Comisión del taker = **tasa × p × (1 − p)** por acción. Desde el 23-oct ca
 | cripto ethereum-hit-price-daily | 1 | `feesEnabled=True feeType=crypto_fees_v2 feeSchedule={"exponent": 1, "rate": 0.07, "rebateRate": 0.2, "takerOnly": true} takerBaseFee=1000` (1) | 0.07 |
 | cripto ethereum-multi-strikes-weekly | 7 | `feesEnabled=True feeType=crypto_fees_v2 feeSchedule={"exponent": 1, "rate": 0.07, "rebateRate": 0.2, "takerOnly": true} takerBaseFee=1000` (7) | 0.07 |
 | cripto ethereum-neg-risk-weekly | 7 | `feesEnabled=True feeType=crypto_fees_v2 feeSchedule={"exponent": 1, "rate": 0.07, "rebateRate": 0.2, "takerOnly": true} takerBaseFee=1000` (7) | 0.07 |
-| temperatura máxima | 133 | `feesEnabled=True feeType=zero_fees feeSchedule={"exponent": 1, "rate": 0, "rebateRate": 0, "takerOnly": true} takerBaseFee=1000` (129) | 0 |
-| temperatura máxima | 133 | `feesEnabled=True feeType=weather_fees feeSchedule={"exponent": 1, "rate": 0.05, "rebateRate": 0.25, "takerOnly": true} takerBaseFee=1000` (4) | 0.05 |
-| temperatura mínima | 120 | `feesEnabled=True feeType=zero_fees feeSchedule={"exponent": 1, "rate": 0, "rebateRate": 0, "takerOnly": true} takerBaseFee=1000` (120) | 0 |
+| temperatura máxima | 119 | `feesEnabled=True feeType=zero_fees feeSchedule={"exponent": 1, "rate": 0, "rebateRate": 0, "takerOnly": true} takerBaseFee=1000` (115) | 0 |
+| temperatura máxima | 119 | `feesEnabled=True feeType=weather_fees feeSchedule={"exponent": 1, "rate": 0.05, "rebateRate": 0.25, "takerOnly": true} takerBaseFee=1000` (4) | 0.05 |
+| temperatura mínima | 106 | `feesEnabled=True feeType=zero_fees feeSchedule={"exponent": 1, "rate": 0, "rebateRate": 0, "takerOnly": true} takerBaseFee=1000` (106) | 0 |
 
 ## Fuente de resolución y parámetros
 
 | Familia | Qué | Variante (eventos o cajas) | Desde |
 |---|---|---|---|
 | cripto bitcoin-hit-price-daily | fuente de resolución | `binance.com/en/trade/BTC_USDT` (1) | 2026-10-23 13:08 |
-| cripto bitcoin-hit-price-daily | parámetros | `orden minima=5 tick=0.01` (1) | 2026-10-23 13:08 |
 | cripto bitcoin-hit-price-daily | parámetros | `orden minima=5 tick=0.001` (1) | 2026-10-23 13:08 |
 | cripto bitcoin-neg-risk-weekly | fuente de resolución | `binance.com/en/trade/BTC_USDT` (7) | 2026-10-23 13:08 |
 | cripto bitcoin-neg-risk-weekly | parámetros | `orden minima=5 tick=0.01` (7) | 2026-10-23 13:08 |
@@ -34,7 +35,6 @@ Comisión del taker = **tasa × p × (1 − p)** por acción. Desde el 23-oct ca
 | cripto btc-multi-strikes-weekly | parámetros | `orden minima=5 tick=0.01` (7) | 2026-10-23 13:08 |
 | cripto btc-multi-strikes-weekly | parámetros | `orden minima=5 tick=0.001` (7) | 2026-10-23 13:08 |
 | cripto ethereum-hit-price-daily | fuente de resolución | `binance.com/en/trade/ETH_USDT` (1) | 2026-10-23 13:08 |
-| cripto ethereum-hit-price-daily | parámetros | `orden minima=5 tick=0.01` (1) | 2026-10-23 13:08 |
 | cripto ethereum-hit-price-daily | parámetros | `orden minima=5 tick=0.001` (1) | 2026-10-23 13:08 |
 | cripto ethereum-multi-strikes-weekly | fuente de resolución | `binance.com/en/trade/ETH_USDT` (7) | 2026-10-23 13:08 |
 | cripto ethereum-multi-strikes-weekly | parámetros | `orden minima=5 tick=0.001` (7) | 2026-10-23 13:08 |
@@ -42,15 +42,15 @@ Comisión del taker = **tasa × p × (1 − p)** por acción. Desde el 23-oct ca
 | cripto ethereum-neg-risk-weekly | fuente de resolución | `binance.com/en/trade/ETH_USDT` (7) | 2026-10-23 13:08 |
 | cripto ethereum-neg-risk-weekly | parámetros | `orden minima=5 tick=0.001` (7) | 2026-10-23 13:08 |
 | cripto ethereum-neg-risk-weekly | parámetros | `orden minima=5 tick=0.01` (7) | 2026-10-23 13:08 |
-| temperatura máxima | fuente de resolución | `aviationweather.gov/api/data/metar` (126) | 2026-10-23 13:08 |
+| temperatura máxima | fuente de resolución | `aviationweather.gov/api/data/metar` (112) | 2026-10-23 13:08 |
 | temperatura máxima | fuente de resolución | `wunderground.com/history/daily` (4) | 2026-10-23 13:08 |
 | temperatura máxima | fuente de resolución | `(sin fuente)` (3) | 2026-10-23 13:08 |
-| temperatura máxima | parámetros | `orden minima=5 tick=0.001` (129) | 2026-10-23 13:08 |
-| temperatura máxima | parámetros | `orden minima=5 tick=0.01` (109) | 2026-10-23 13:08 |
-| temperatura mínima | fuente de resolución | `aviationweather.gov/api/data/metar` (117) | 2026-10-23 13:08 |
+| temperatura máxima | parámetros | `orden minima=5 tick=0.001` (115) | 2026-10-23 13:08 |
+| temperatura máxima | parámetros | `orden minima=5 tick=0.01` (99) | 2026-10-23 13:08 |
+| temperatura mínima | fuente de resolución | `aviationweather.gov/api/data/metar` (103) | 2026-10-23 13:08 |
 | temperatura mínima | fuente de resolución | `(sin fuente)` (3) | 2026-10-23 13:08 |
-| temperatura mínima | parámetros | `orden minima=5 tick=0.01` (114) | 2026-10-23 13:08 |
-| temperatura mínima | parámetros | `orden minima=5 tick=0.001` (74) | 2026-10-23 13:08 |
+| temperatura mínima | parámetros | `orden minima=5 tick=0.01` (100) | 2026-10-23 13:08 |
+| temperatura mínima | parámetros | `orden minima=5 tick=0.001` (66) | 2026-10-23 13:08 |
 
 ## Mercados de clima que no son de temperatura diaria
 
@@ -131,6 +131,22 @@ Comisión del taker = **tasa × p × (1 − p)** por acción. Desde el 23-oct ca
 
 | Cuándo (UTC) | Familia | Qué | Cambio | Detalle | Origen |
 |---|---|---|---|---|---|
+| 2026-10-27 00:47 | temperatura mínima | reglamento | ya no aparece | To toggle between Fahrenheit and Celsius, click the "Switch to Metric Units" button until the relevant table displays °C. | auto |
+| 2026-10-27 00:47 | temperatura mínima | reglamento | ya no aparece | The resolution source for this market measures temperatures to whole degrees Celsius (eg, #°C). | auto |
+| 2026-10-27 00:47 | temperatura mínima | reglamento | ya no aparece | This market will resolve once the first data point for the following date has been published on the resolution source, or by #:# PM ET on the day following the observation date, whichever comes first. | auto |
+| 2026-10-27 00:47 | temperatura mínima | reglamento | ya no aparece | Revisions to temperatures recorded within this market's timeframe will be considered until the first datapoint for the following date has been published, after which any alterations will not be considered. | auto |
+| 2026-10-27 00:47 | temperatura mínima | reglamento | ya no aparece | The resolution source for this market will be information from <estacion>, specifically the lowest reading under the "Temp" column for all times on this day, available here: | auto |
+| 2026-10-27 00:47 | temperatura mínima | reglamento | ya no aparece | Thus, this is the level of precision that will be used when resolving the market. | auto |
+| 2026-10-27 00:47 | temperatura mínima | reglamento | ya no aparece | If <estacion> data for the observation date is unavailable by #:# PM ET on the day following the observation date, the Weather Underground Daily Observations table will be used as the resolution source. | auto |
+| 2026-10-27 00:47 | temperatura mínima | reglamento | ya no aparece | In the event that there is no data for the observation date by #:# PM ET on the day following the observation date, this market will resolve to the lowest bracket. | auto |
+| 2026-10-27 00:47 | temperatura máxima | reglamento | ya no aparece | To toggle between Fahrenheit and Celsius, click the "Switch to Metric Units" button until the relevant table displays °C. | auto |
+| 2026-10-27 00:47 | temperatura máxima | reglamento | ya no aparece | The resolution source for this market will be information from <estacion>, specifically the highest reading under the "Temp" column for all times on this day, available here: | auto |
+| 2026-10-27 00:47 | temperatura máxima | reglamento | ya no aparece | This market will resolve once the first data point for the following date has been published on the resolution source, or by #:# PM ET on the day following the observation date, whichever comes first. | auto |
+| 2026-10-27 00:47 | temperatura máxima | reglamento | ya no aparece | Revisions to temperatures recorded within this market's timeframe will be considered until the first datapoint for the following date has been published, after which any alterations will not be considered. | auto |
+| 2026-10-27 00:47 | temperatura máxima | reglamento | ya no aparece | If <estacion> data for the observation date is unavailable by #:# PM ET on the day following the observation date, the Weather Underground Daily Observations table will be used as the resolution source. | auto |
+| 2026-10-27 00:47 | temperatura máxima | reglamento | ya no aparece | In the event that there is no data for the observation date by #:# PM ET on the day following the observation date, this market will resolve to the lowest bracket. | auto |
+| 2026-10-27 00:47 | temperatura máxima | reglamento | ya no aparece | The resolution source for this market measures temperatures to whole degrees Celsius (eg, #°C). | auto |
+| 2026-10-27 00:47 | temperatura máxima | reglamento | ya no aparece | Thus, this is the level of precision that will be used when resolving the market. | auto |
 | 2026-10-26 20:44 | clima (otros) | mercado de clima nuevo | aparece | what-intensity-will-arnab-reach | auto |
 | 2026-10-26 20:44 | clima (otros) | mercado de clima nuevo | aparece | what-intensity-will | auto |
 | 2026-10-23 23:58 | temperatura máxima | reglamento | aparece | The qualifying value is converted using °F = °C × #/# + # and rounded to the nearest whole degree, with a value ending in exactly half rounded up to the next higher whole degree, and that whole Fahrenheit value determines which range contains it. | auto |
@@ -145,7 +161,6 @@ Comisión del taker = **tasa × p × (1 − p)** por acción. Desde el 23-oct ca
 | 2026-10-23 19:31 | temperatura mínima | reglamento | aparece | For example, #°C is #°F and counts as #°F; | auto |
 | 2026-10-23 00:00 | temperatura mínima | comisión | observado | Londres y París (mínima, 23-oct): feeType=zero_fees, feeSchedule rate 0 (sin comisión), aunque la ayuda de Polymarket dice 0.05 para clima. Nuestros scripts cobran 0.05·p·(1−p). | manual |
 | 2026-10-23 00:00 | temperatura (máxima y mínima) | fuente de resolución | cambia | weather.gov/wrh/timeseries -> aviationweather.gov/api/data/metar: solo METAR de rutina (no SPECI), grupo T en décimas, .5 hacia arriba; respaldo Wunderground; sin datos resuelve a la caja más baja. Hong Kong sigue con el Observatorio (sin link). Los bots vieron 0 mercados desde el 22-oct ~22Z (PR #5 | manual |
-| 2026-10-21 00:00 | temperatura (máxima y mínima) | fuente de resolución | cambia | wunderground.com/history/daily -> weather.gov/wrh/timeseries (cuenta también los SPECI). Mercados del 21 y 22-oct. | manual |
 
 ## Reglamento actual (frases comunes)
 
