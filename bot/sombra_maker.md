@@ -1,4 +1,4 @@
-# Sombra maker del favorito tardío (regla en SOMBRA_REGLA.md) — 2026-10-27 14:58Z
+# Sombra maker del favorito tardío (regla en SOMBRA_REGLA.md) — 2026-10-27 15:58Z
 
 - Mercados: 4; con algo llenado: 3 (75 %), completos: 3.
 - Ganancia maker US$ +2.40 vs taker US$ +3.41 en los mismos mercados (diferencia -1.01; 2 días, P(maker ≤ taker) 0.76).
