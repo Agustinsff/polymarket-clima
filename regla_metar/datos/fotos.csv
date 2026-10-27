@@ -4410,3 +4410,69 @@ momento_utc;momento;hora_local;serie;fecha;icao;slug;caja;bid;ask;medio;si_10;no
 2026-10-27 18:21;M2;12;highest|mexico-city;2026-10-27;MMMX;highest-temperature-in-mexico-city-on-october-27-2026;22°C;0.008;0.018;0.013;0.018;0.992;0.0
 2026-10-27 18:21;M2;12;highest|mexico-city;2026-10-27;MMMX;highest-temperature-in-mexico-city-on-october-27-2026;23°C;0.14;0.25;0.195;0.25;0.86;0.0
 2026-10-27 18:21;M2;12;highest|mexico-city;2026-10-27;MMMX;highest-temperature-in-mexico-city-on-october-27-2026;24°C or higher;0.74;0.85;0.795;0.8512;0.26;0.0
+2026-10-27 19:22;M2;12;lowest|seattle;2026-10-27;KSEA;lowest-temperature-in-seattle-on-october-27-2026;39°F or below;;0.13;;0.13;;0.0
+2026-10-27 19:22;M2;12;lowest|seattle;2026-10-27;KSEA;lowest-temperature-in-seattle-on-october-27-2026;40-41°F;;0.9;;0.9;;0.0
+2026-10-27 19:22;M2;12;lowest|seattle;2026-10-27;KSEA;lowest-temperature-in-seattle-on-october-27-2026;42-43°F;;0.95;;0.95;;0.0
+2026-10-27 19:22;M2;12;lowest|seattle;2026-10-27;KSEA;lowest-temperature-in-seattle-on-october-27-2026;44-45°F;0.02;0.96;0.49;0.965;0.98;0.0
+2026-10-27 19:22;M2;12;lowest|seattle;2026-10-27;KSEA;lowest-temperature-in-seattle-on-october-27-2026;46-47°F;0.02;0.95;0.485;0.955;0.98;0.0
+2026-10-27 19:22;M2;12;lowest|seattle;2026-10-27;KSEA;lowest-temperature-in-seattle-on-october-27-2026;48-49°F;0.02;0.96;0.49;0.965;0.98;0.0
+2026-10-27 19:22;M2;12;lowest|seattle;2026-10-27;KSEA;lowest-temperature-in-seattle-on-october-27-2026;50-51°F;;0.002;;0.002;;0.0
+2026-10-27 19:22;M2;12;lowest|seattle;2026-10-27;KSEA;lowest-temperature-in-seattle-on-october-27-2026;52-53°F;;0.001;;0.001;;0.0
+2026-10-27 19:22;M2;12;lowest|seattle;2026-10-27;KSEA;lowest-temperature-in-seattle-on-october-27-2026;54-55°F;;0.001;;0.001;;0.0
+2026-10-27 19:22;M2;12;lowest|seattle;2026-10-27;KSEA;lowest-temperature-in-seattle-on-october-27-2026;56-57°F;;0.001;;0.001;;0.0
+2026-10-27 19:22;M2;12;lowest|seattle;2026-10-27;KSEA;lowest-temperature-in-seattle-on-october-27-2026;58°F or higher;;0.001;;0.001;;0.0
+2026-10-27 19:22;M2;12;lowest|los-angeles;2026-10-27;KLAX;lowest-temperature-in-los-angeles-on-october-27-2026;51°F or below;;0.009;;0.009;;0.0
+2026-10-27 19:22;M2;12;lowest|los-angeles;2026-10-27;KLAX;lowest-temperature-in-los-angeles-on-october-27-2026;52-53°F;;0.009;;0.009;;0.0
+2026-10-27 19:22;M2;12;lowest|los-angeles;2026-10-27;KLAX;lowest-temperature-in-los-angeles-on-october-27-2026;54-55°F;;0.068;;0.068;;0.0
+2026-10-27 19:22;M2;12;lowest|los-angeles;2026-10-27;KLAX;lowest-temperature-in-los-angeles-on-october-27-2026;56-57°F;;0.07;;0.07;;0.0
+2026-10-27 19:22;M2;12;lowest|los-angeles;2026-10-27;KLAX;lowest-temperature-in-los-angeles-on-october-27-2026;58-59°F;0.008;0.038;0.023;0.038;0.992;0.0
+2026-10-27 19:22;M2;12;lowest|los-angeles;2026-10-27;KLAX;lowest-temperature-in-los-angeles-on-october-27-2026;60-61°F;0.951;0.997;0.974;0.997;0.049;0.0
+2026-10-27 19:22;M2;12;lowest|los-angeles;2026-10-27;KLAX;lowest-temperature-in-los-angeles-on-october-27-2026;62-63°F;;0.001;;0.001;;0.0
+2026-10-27 19:22;M2;12;lowest|los-angeles;2026-10-27;KLAX;lowest-temperature-in-los-angeles-on-october-27-2026;64-65°F;;0.001;;0.001;;0.0
+2026-10-27 19:22;M2;12;lowest|los-angeles;2026-10-27;KLAX;lowest-temperature-in-los-angeles-on-october-27-2026;66-67°F;;0.001;;0.001;;0.0
+2026-10-27 19:22;M2;12;lowest|los-angeles;2026-10-27;KLAX;lowest-temperature-in-los-angeles-on-october-27-2026;68-69°F;;0.001;;0.001;;0.0
+2026-10-27 19:22;M2;12;lowest|los-angeles;2026-10-27;KLAX;lowest-temperature-in-los-angeles-on-october-27-2026;70°F or higher;;0.001;;0.001;;0.0
+2026-10-27 19:22;M2;12;lowest|san-francisco;2026-10-27;KSFO;lowest-temperature-in-san-francisco-on-october-27-2026;43°F or below;;0.48;;0.48;;0.0
+2026-10-27 19:22;M2;12;lowest|san-francisco;2026-10-27;KSFO;lowest-temperature-in-san-francisco-on-october-27-2026;44-45°F;;0.5;;0.5;;0.0
+2026-10-27 19:22;M2;12;lowest|san-francisco;2026-10-27;KSFO;lowest-temperature-in-san-francisco-on-october-27-2026;46-47°F;;0.9;;0.9;;0.0
+2026-10-27 19:22;M2;12;lowest|san-francisco;2026-10-27;KSFO;lowest-temperature-in-san-francisco-on-october-27-2026;48-49°F;;0.9;;0.9;;0.0
+2026-10-27 19:22;M2;12;lowest|san-francisco;2026-10-27;KSFO;lowest-temperature-in-san-francisco-on-october-27-2026;50-51°F;;;;;;0.0
+2026-10-27 19:22;M2;12;lowest|san-francisco;2026-10-27;KSFO;lowest-temperature-in-san-francisco-on-october-27-2026;52-53°F;;;;;;0.0
+2026-10-27 19:22;M2;12;lowest|san-francisco;2026-10-27;KSFO;lowest-temperature-in-san-francisco-on-october-27-2026;54-55°F;0.02;0.83;0.425;0.835;0.98;0.0
+2026-10-27 19:22;M2;12;lowest|san-francisco;2026-10-27;KSFO;lowest-temperature-in-san-francisco-on-october-27-2026;56-57°F;0.47;0.84;0.655;0.845;0.53;0.0
+2026-10-27 19:22;M2;12;lowest|san-francisco;2026-10-27;KSFO;lowest-temperature-in-san-francisco-on-october-27-2026;58-59°F;;0.001;;0.001;;0.0
+2026-10-27 19:22;M2;12;lowest|san-francisco;2026-10-27;KSFO;lowest-temperature-in-san-francisco-on-october-27-2026;60-61°F;;0.001;;0.001;;0.0
+2026-10-27 19:22;M2;12;lowest|san-francisco;2026-10-27;KSFO;lowest-temperature-in-san-francisco-on-october-27-2026;62°F or higher;;0.001;;0.001;;0.0
+2026-10-27 19:22;M2;12;highest|seattle;2026-10-27;KSEA;highest-temperature-in-seattle-on-october-27-2026;47°F or below;;0.001;;0.001;;0.0
+2026-10-27 19:22;M2;12;highest|seattle;2026-10-27;KSEA;highest-temperature-in-seattle-on-october-27-2026;48-49°F;;0.001;;0.001;;0.0
+2026-10-27 19:22;M2;12;highest|seattle;2026-10-27;KSEA;highest-temperature-in-seattle-on-october-27-2026;50-51°F;0.006;0.011;0.0085;0.011;0.994;0.0
+2026-10-27 19:22;M2;12;highest|seattle;2026-10-27;KSEA;highest-temperature-in-seattle-on-october-27-2026;52-53°F;0.15;0.19;0.17;0.195;0.85;0.0
+2026-10-27 19:22;M2;12;highest|seattle;2026-10-27;KSEA;highest-temperature-in-seattle-on-october-27-2026;54-55°F;0.58;0.69;0.635;0.695;0.42;0.0
+2026-10-27 19:22;M2;12;highest|seattle;2026-10-27;KSEA;highest-temperature-in-seattle-on-october-27-2026;56-57°F;0.15;0.25;0.2;0.25;0.85;0.0
+2026-10-27 19:22;M2;12;highest|seattle;2026-10-27;KSEA;highest-temperature-in-seattle-on-october-27-2026;58-59°F;0.002;0.013;0.0075;0.013;0.998;0.0
+2026-10-27 19:22;M2;12;highest|seattle;2026-10-27;KSEA;highest-temperature-in-seattle-on-october-27-2026;60-61°F;;0.001;;0.001;;0.0
+2026-10-27 19:22;M2;12;highest|seattle;2026-10-27;KSEA;highest-temperature-in-seattle-on-october-27-2026;62-63°F;;0.001;;0.001;;0.0
+2026-10-27 19:22;M2;12;highest|seattle;2026-10-27;KSEA;highest-temperature-in-seattle-on-october-27-2026;64-65°F;;0.001;;0.001;;0.0
+2026-10-27 19:22;M2;12;highest|seattle;2026-10-27;KSEA;highest-temperature-in-seattle-on-october-27-2026;66°F or higher;;0.001;;0.001;;0.0
+2026-10-27 19:22;M2;12;highest|los-angeles;2026-10-27;KLAX;highest-temperature-in-los-angeles-on-october-27-2026;65°F or below;;0.001;;0.001;;0.0
+2026-10-27 19:22;M2;12;highest|los-angeles;2026-10-27;KLAX;highest-temperature-in-los-angeles-on-october-27-2026;66-67°F;;0.001;;0.001;;0.0
+2026-10-27 19:22;M2;12;highest|los-angeles;2026-10-27;KLAX;highest-temperature-in-los-angeles-on-october-27-2026;68-69°F;;0.001;;0.001;;0.0
+2026-10-27 19:22;M2;12;highest|los-angeles;2026-10-27;KLAX;highest-temperature-in-los-angeles-on-october-27-2026;70-71°F;;0.001;;0.001;;0.0
+2026-10-27 19:22;M2;12;highest|los-angeles;2026-10-27;KLAX;highest-temperature-in-los-angeles-on-october-27-2026;72-73°F;;0.001;;0.001;;0.0
+2026-10-27 19:22;M2;12;highest|los-angeles;2026-10-27;KLAX;highest-temperature-in-los-angeles-on-october-27-2026;74-75°F;0.78;0.84;0.81;0.84;0.22;0.0
+2026-10-27 19:22;M2;12;highest|los-angeles;2026-10-27;KLAX;highest-temperature-in-los-angeles-on-october-27-2026;76-77°F;0.14;0.22;0.18;0.22;0.86;0.0
+2026-10-27 19:22;M2;12;highest|los-angeles;2026-10-27;KLAX;highest-temperature-in-los-angeles-on-october-27-2026;78-79°F;0.003;0.009;0.006;0.009;0.997;0.0
+2026-10-27 19:22;M2;12;highest|los-angeles;2026-10-27;KLAX;highest-temperature-in-los-angeles-on-october-27-2026;80-81°F;0.003;0.007;0.005;0.007;0.997;0.0
+2026-10-27 19:22;M2;12;highest|los-angeles;2026-10-27;KLAX;highest-temperature-in-los-angeles-on-october-27-2026;82-83°F;;0.001;;0.001;;0.0
+2026-10-27 19:22;M2;12;highest|los-angeles;2026-10-27;KLAX;highest-temperature-in-los-angeles-on-october-27-2026;84°F or higher;;0.001;;0.001;;0.0
+2026-10-27 19:22;M2;12;highest|san-francisco;2026-10-27;KSFO;highest-temperature-in-san-francisco-on-october-27-2026;51°F or below;;0.001;;0.001;;0.0
+2026-10-27 19:22;M2;12;highest|san-francisco;2026-10-27;KSFO;highest-temperature-in-san-francisco-on-october-27-2026;52-53°F;;0.001;;0.001;;0.0
+2026-10-27 19:22;M2;12;highest|san-francisco;2026-10-27;KSFO;highest-temperature-in-san-francisco-on-october-27-2026;54-55°F;;0.001;;0.001;;0.0
+2026-10-27 19:22;M2;12;highest|san-francisco;2026-10-27;KSFO;highest-temperature-in-san-francisco-on-october-27-2026;56-57°F;;0.001;;0.001;;0.0
+2026-10-27 19:22;M2;12;highest|san-francisco;2026-10-27;KSFO;highest-temperature-in-san-francisco-on-october-27-2026;58-59°F;;0.001;;0.001;;0.0
+2026-10-27 19:22;M2;12;highest|san-francisco;2026-10-27;KSFO;highest-temperature-in-san-francisco-on-october-27-2026;60-61°F;;0.001;;0.001;;0.0
+2026-10-27 19:22;M2;12;highest|san-francisco;2026-10-27;KSFO;highest-temperature-in-san-francisco-on-october-27-2026;62-63°F;0.02;0.033;0.0265;0.033;0.9845;0.0
+2026-10-27 19:22;M2;12;highest|san-francisco;2026-10-27;KSFO;highest-temperature-in-san-francisco-on-october-27-2026;64-65°F;0.6;0.65;0.625;0.65;0.4007;0.0
+2026-10-27 19:22;M2;12;highest|san-francisco;2026-10-27;KSFO;highest-temperature-in-san-francisco-on-october-27-2026;66-67°F;0.289;0.354;0.3215;0.354;0.711;0.0
+2026-10-27 19:22;M2;12;highest|san-francisco;2026-10-27;KSFO;highest-temperature-in-san-francisco-on-october-27-2026;68-69°F;0.014;0.02;0.017;0.02;0.9875;0.0
+2026-10-27 19:22;M2;12;highest|san-francisco;2026-10-27;KSFO;highest-temperature-in-san-francisco-on-october-27-2026;70°F or higher;0.002;0.004;0.003;0.004;0.998;0.0
