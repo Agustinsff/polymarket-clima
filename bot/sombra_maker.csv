@@ -1,3 +1,4 @@
 momento_utc;activo;evento;condition_id;lado;acciones;precio_visto;tasa;L;llenadas;gano;pnl_maker;pnl_taker
 2026-10-26 17:54:22;ETH;ethereum-up-or-down-october-26-2026-1pm-et;0x3e9694574893cdbf734d1b051bbc0a9efa42af246d094d6de8cd4a28d4fd3233;Up;5.0;0.73;0.07;0.72;0.0;1;0.0;1.281
 2026-10-26 22:54:02;ETH;ethereum-up-or-down-october-26-2026-6pm-et;0xd3a5ef1f816c46d3aa33a4c7f407da07c80a726a4ee3243a49d34aab3aa48ea4;Up;5.0;0.89;0.07;0.88;5.0;1;0.6;0.5157
+2026-10-27 10:54:41;ETH;ethereum-up-or-down-october-27-2026-6am-et;0xdd2fdb877883e0f4413a7dcc9310d0e413958d1432efc2d53b20a5854dd31438;Up;5.0;0.887;0.07;0.88;5.0;1;0.6;0.5299
