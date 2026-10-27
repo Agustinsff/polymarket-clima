@@ -1,6 +1,6 @@
 # Resumen polymarket-clima
 
-_Actualizado: 2026-10-27 10:58 (Montevideo). Todo es **en papel**: no se usa plata real._
+_Actualizado: 2026-10-27 11:00 (Montevideo). Todo es **en papel**: no se usa plata real._
 
 ## Estado de las tareas
 
@@ -8,7 +8,7 @@ _Actualizado: 2026-10-27 10:58 (Montevideo). Todo es **en papel**: no se usa pla
 🔔 Polymarket cambió algo en **temperatura máxima** (reglamento, ya no aparece el 2026-10-27 00:47 UTC): `To toggle between Fahrenheit and Celsius, click the "Switch to Metric Units" button until the relevant table displays °C.` y 7 más. Ver [reglas_informe.md](reglas_informe.md).
 🔔 Polymarket cambió algo en **temperatura mínima** (reglamento, ya no aparece el 2026-10-27 00:47 UTC): `To toggle between Fahrenheit and Celsius, click the "Switch to Metric Units" button until the relevant table displays °C.` y 7 más. Ver [reglas_informe.md](reglas_informe.md).
 
-- Última foto de liquidez: 2026-10-27T10:45:18
+- Última foto de liquidez: 2026-10-27T11:00:37
 - Monitor: mañana 2026-10-27, noche 2026-10-26
 - Prueba São Paulo: último día registrado 2026-10-26
 - Cosechador: último ciclo 2026-10-27 08:53 UTC, 88 mercados, 46 estaciones
@@ -82,10 +82,10 @@ Series donde el modelo le gana al mercado (≥5 días): máx buenos-aires (6 dí
 
 | Modo | Serie calibrada | Liquidadas | Ganadas | Neto (10 acc. c/u) | Pendientes |
 |---|---|---|---|---|---|
-| taker | no | 468 | 119 | US$-186.10 | 146 |
-| maker | no | 1485 | 171 | US$-155.34 | 480 |
-| cola_taker | no | 200 | 6 | US$-13.45 | 74 |
-| cola_maker | no | 462 | 11 | US$-20.03 | 186 |
+| taker | no | 468 | 119 | US$-186.10 | 152 |
+| maker | no | 1485 | 171 | US$-155.34 | 504 |
+| cola_taker | no | 200 | 6 | US$-13.45 | 78 |
+| cola_maker | no | 462 | 11 | US$-20.03 | 189 |
 | no80_90 | no | 184 | 138 | US$-203.54 | 55 |
 
 Taker en total: US$-403.09. _Con la comisión vieja (0,05 para todo) sería US$-427.37._
