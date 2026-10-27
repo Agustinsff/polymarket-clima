@@ -1,6 +1,6 @@
 # Resumen polymarket-clima
 
-_Actualizado: 2026-10-27 13:58 (Montevideo). Todo es **en papel**: no se usa plata real._
+_Actualizado: 2026-10-27 14:03 (Montevideo). Todo es **en papel**: no se usa plata real._
 
 ## Estado de las tareas
 
@@ -8,7 +8,7 @@ _Actualizado: 2026-10-27 13:58 (Montevideo). Todo es **en papel**: no se usa pla
 🔔 Polymarket cambió algo en **temperatura máxima** (reglamento, ya no aparece el 2026-10-27 00:47 UTC): `To toggle between Fahrenheit and Celsius, click the "Switch to Metric Units" button until the relevant table displays °C.` y 7 más. Ver [reglas_informe.md](reglas_informe.md).
 🔔 Polymarket cambió algo en **temperatura mínima** (reglamento, ya no aparece el 2026-10-27 00:47 UTC): `To toggle between Fahrenheit and Celsius, click the "Switch to Metric Units" button until the relevant table displays °C.` y 7 más. Ver [reglas_informe.md](reglas_informe.md).
 
-- Última foto de liquidez: 2026-10-27T13:48:00
+- Última foto de liquidez: 2026-10-27T14:03:07
 - Monitor: mañana 2026-10-27, noche 2026-10-26
 - Prueba São Paulo: último día registrado 2026-10-26
 - Cosechador: último ciclo 2026-10-27 14:34 UTC, 88 mercados, 46 estaciones
@@ -82,11 +82,11 @@ Series donde el modelo le gana al mercado (≥5 días): máx buenos-aires (6 dí
 
 | Modo | Serie calibrada | Liquidadas | Ganadas | Neto (10 acc. c/u) | Pendientes |
 |---|---|---|---|---|---|
-| taker | no | 468 | 119 | US$-186.10 | 160 |
-| maker | no | 1485 | 171 | US$-155.34 | 533 |
-| cola_taker | no | 200 | 6 | US$-13.45 | 83 |
-| cola_maker | no | 462 | 11 | US$-20.03 | 199 |
-| no80_90 | no | 184 | 138 | US$-203.54 | 58 |
+| taker | no | 468 | 119 | US$-186.10 | 168 |
+| maker | no | 1485 | 171 | US$-155.34 | 547 |
+| cola_taker | no | 200 | 6 | US$-13.45 | 86 |
+| cola_maker | no | 462 | 11 | US$-20.03 | 202 |
+| no80_90 | no | 184 | 138 | US$-203.54 | 62 |
 
 Taker en total: US$-403.09. _Con la comisión vieja (0,05 para todo) sería US$-427.37._
 
@@ -119,5 +119,5 @@ Prueba SP: 8 operaciones; como maker se habrían llenado 6, neto **US$-10.59** (
 ## Recompensas de liquidez (estimación, últimas 24 h)
 
 - Buenos Aires: ~US$39/día con 100 acciones a 1 ¢ en todas las cajas del mercado de mañana (sin contar pérdidas por quedar 'tomado').
-- Sao Paulo: ~US$45/día con 100 acciones a 1 ¢ en todas las cajas del mercado de mañana (sin contar pérdidas por quedar 'tomado').
+- Sao Paulo: ~US$44/día con 100 acciones a 1 ¢ en todas las cajas del mercado de mañana (sin contar pérdidas por quedar 'tomado').
 
