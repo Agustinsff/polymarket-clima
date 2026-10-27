@@ -1,6 +1,6 @@
 # Resumen polymarket-clima
 
-_Actualizado: 2026-10-27 00:14 (Montevideo). Todo es **en papel**: no se usa plata real._
+_Actualizado: 2026-10-27 00:17 (Montevideo). Todo es **en papel**: no se usa plata real._
 
 ## Estado de las tareas
 
@@ -8,10 +8,10 @@ _Actualizado: 2026-10-27 00:14 (Montevideo). Todo es **en papel**: no se usa pla
 🔔 Polymarket cambió algo en **temperatura máxima** (reglamento, ya no aparece el 2026-10-27 00:47 UTC): `To toggle between Fahrenheit and Celsius, click the "Switch to Metric Units" button until the relevant table displays °C.` y 7 más. Ver [reglas_informe.md](reglas_informe.md).
 🔔 Polymarket cambió algo en **temperatura mínima** (reglamento, ya no aparece el 2026-10-27 00:47 UTC): `To toggle between Fahrenheit and Celsius, click the "Switch to Metric Units" button until the relevant table displays °C.` y 7 más. Ver [reglas_informe.md](reglas_informe.md).
 
-- Última foto de liquidez: 2026-10-27T00:02:37
+- Última foto de liquidez: 2026-10-27T00:17:41
 - Monitor: mañana 2026-10-26, noche 2026-10-26
 - Prueba São Paulo: último día registrado 2026-10-26
-- Cosechador: último ciclo 2026-10-26 21:31 UTC, 88 mercados, 46 estaciones
+- Cosechador: último ciclo 2026-10-27 03:12 UTC, 88 mercados, 46 estaciones
 
 ## Temperatura máxima: mercado vs. modelo (BA y SP)
 
