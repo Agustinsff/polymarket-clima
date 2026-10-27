@@ -4135,3 +4135,91 @@ momento_utc;momento;hora_local;serie;fecha;icao;slug;caja;bid;ask;medio;si_10;no
 2026-10-27 15:20;M2;12;highest|buenos-aires;2026-10-27;SAEZ;highest-temperature-in-buenos-aires-on-october-27-2026;24°C;;0.003;;0.003;;0.0
 2026-10-27 15:20;M2;12;highest|buenos-aires;2026-10-27;SAEZ;highest-temperature-in-buenos-aires-on-october-27-2026;25°C;;0.001;;0.001;;0.0
 2026-10-27 15:20;M2;12;highest|buenos-aires;2026-10-27;SAEZ;highest-temperature-in-buenos-aires-on-october-27-2026;26°C or higher;;0.001;;0.001;;0.0
+2026-10-27 16:20;M2;12;lowest|nyc;2026-10-27;KLGA;lowest-temperature-in-nyc-on-october-27-2026;41°F or below;;0.008;;0.008;;0.0
+2026-10-27 16:20;M2;12;lowest|nyc;2026-10-27;KLGA;lowest-temperature-in-nyc-on-october-27-2026;42-43°F;;0.016;;0.016;;0.0
+2026-10-27 16:20;M2;12;lowest|nyc;2026-10-27;KLGA;lowest-temperature-in-nyc-on-october-27-2026;44-45°F;;0.015;;0.015;;0.0
+2026-10-27 16:20;M2;12;lowest|nyc;2026-10-27;KLGA;lowest-temperature-in-nyc-on-october-27-2026;46-47°F;;0.006;;0.006;;0.0
+2026-10-27 16:20;M2;12;lowest|nyc;2026-10-27;KLGA;lowest-temperature-in-nyc-on-october-27-2026;48-49°F;0.003;0.085;0.044;0.085;0.997;0.0
+2026-10-27 16:20;M2;12;lowest|nyc;2026-10-27;KLGA;lowest-temperature-in-nyc-on-october-27-2026;50-51°F;0.08;0.44;0.26;0.445;0.92;0.0
+2026-10-27 16:20;M2;12;lowest|nyc;2026-10-27;KLGA;lowest-temperature-in-nyc-on-october-27-2026;52-53°F;0.32;0.44;0.38;0.445;0.68;0.0
+2026-10-27 16:20;M2;12;lowest|nyc;2026-10-27;KLGA;lowest-temperature-in-nyc-on-october-27-2026;54-55°F;0.26;0.68;0.47;0.68;0.745;0.0
+2026-10-27 16:20;M2;12;lowest|nyc;2026-10-27;KLGA;lowest-temperature-in-nyc-on-october-27-2026;56-57°F;;0.001;;0.001;;0.0
+2026-10-27 16:20;M2;12;lowest|nyc;2026-10-27;KLGA;lowest-temperature-in-nyc-on-october-27-2026;58-59°F;;0.001;;0.001;;0.0
+2026-10-27 16:20;M2;12;lowest|nyc;2026-10-27;KLGA;lowest-temperature-in-nyc-on-october-27-2026;60°F or higher;;0.001;;0.001;;0.0
+2026-10-27 16:20;M2;12;lowest|atlanta;2026-10-27;KATL;lowest-temperature-in-atlanta-on-october-27-2026;39°F or below;;0.25;;0.25;;0.0
+2026-10-27 16:20;M2;12;lowest|atlanta;2026-10-27;KATL;lowest-temperature-in-atlanta-on-october-27-2026;40-41°F;;0.89;;0.89;;0.0
+2026-10-27 16:20;M2;12;lowest|atlanta;2026-10-27;KATL;lowest-temperature-in-atlanta-on-october-27-2026;42-43°F;;0.89;;0.89;;0.0
+2026-10-27 16:20;M2;12;lowest|atlanta;2026-10-27;KATL;lowest-temperature-in-atlanta-on-october-27-2026;44-45°F;;0.9;;0.9;;0.0
+2026-10-27 16:20;M2;12;lowest|atlanta;2026-10-27;KATL;lowest-temperature-in-atlanta-on-october-27-2026;46-47°F;;0.9;;0.9;;0.0
+2026-10-27 16:20;M2;12;lowest|atlanta;2026-10-27;KATL;lowest-temperature-in-atlanta-on-october-27-2026;48-49°F;;0.9;;0.9;;0.0
+2026-10-27 16:20;M2;12;lowest|atlanta;2026-10-27;KATL;lowest-temperature-in-atlanta-on-october-27-2026;50-51°F;0.94;0.999;0.9695;0.999;0.06;0.0
+2026-10-27 16:20;M2;12;lowest|atlanta;2026-10-27;KATL;lowest-temperature-in-atlanta-on-october-27-2026;52-53°F;;0.001;;0.001;;0.0
+2026-10-27 16:20;M2;12;lowest|atlanta;2026-10-27;KATL;lowest-temperature-in-atlanta-on-october-27-2026;54-55°F;;0.001;;0.001;;0.0
+2026-10-27 16:20;M2;12;lowest|atlanta;2026-10-27;KATL;lowest-temperature-in-atlanta-on-october-27-2026;56-57°F;;0.001;;0.001;;0.0
+2026-10-27 16:20;M2;12;lowest|atlanta;2026-10-27;KATL;lowest-temperature-in-atlanta-on-october-27-2026;58°F or higher;;0.001;;0.001;;0.0
+2026-10-27 16:20;M2;12;lowest|miami;2026-10-27;KMIA;lowest-temperature-in-miami-on-october-27-2026;67°F or below;;0.032;;0.032;;0.0
+2026-10-27 16:20;M2;12;lowest|miami;2026-10-27;KMIA;lowest-temperature-in-miami-on-october-27-2026;68-69°F;;0.044;;0.044;;0.0
+2026-10-27 16:20;M2;12;lowest|miami;2026-10-27;KMIA;lowest-temperature-in-miami-on-october-27-2026;70-71°F;;0.036;;0.036;;0.0
+2026-10-27 16:20;M2;12;lowest|miami;2026-10-27;KMIA;lowest-temperature-in-miami-on-october-27-2026;72-73°F;0.04;0.07;0.055;0.07;0.96;0.0
+2026-10-27 16:20;M2;12;lowest|miami;2026-10-27;KMIA;lowest-temperature-in-miami-on-october-27-2026;74-75°F;0.932;0.963;0.9475;0.963;0.068;0.0
+2026-10-27 16:20;M2;12;lowest|miami;2026-10-27;KMIA;lowest-temperature-in-miami-on-october-27-2026;76-77°F;;0.002;;0.002;;0.0
+2026-10-27 16:20;M2;12;lowest|miami;2026-10-27;KMIA;lowest-temperature-in-miami-on-october-27-2026;78-79°F;;0.001;;0.001;;0.0
+2026-10-27 16:20;M2;12;lowest|miami;2026-10-27;KMIA;lowest-temperature-in-miami-on-october-27-2026;80-81°F;;0.001;;0.001;;0.0
+2026-10-27 16:20;M2;12;lowest|miami;2026-10-27;KMIA;lowest-temperature-in-miami-on-october-27-2026;82-83°F;;0.001;;0.001;;0.0
+2026-10-27 16:20;M2;12;lowest|miami;2026-10-27;KMIA;lowest-temperature-in-miami-on-october-27-2026;84-85°F;;0.001;;0.001;;0.0
+2026-10-27 16:20;M2;12;lowest|miami;2026-10-27;KMIA;lowest-temperature-in-miami-on-october-27-2026;86°F or higher;;0.002;;0.002;;0.0
+2026-10-27 16:20;M2;12;highest|nyc;2026-10-27;KLGA;highest-temperature-in-nyc-on-october-27-2026;51°F or below;;0.001;;0.001;;0.0
+2026-10-27 16:20;M2;12;highest|nyc;2026-10-27;KLGA;highest-temperature-in-nyc-on-october-27-2026;52-53°F;;0.001;;0.001;;0.0
+2026-10-27 16:20;M2;12;highest|nyc;2026-10-27;KLGA;highest-temperature-in-nyc-on-october-27-2026;54-55°F;;0.001;;0.001;;0.0
+2026-10-27 16:20;M2;12;highest|nyc;2026-10-27;KLGA;highest-temperature-in-nyc-on-october-27-2026;56-57°F;;0.001;;0.001;;0.0
+2026-10-27 16:20;M2;12;highest|nyc;2026-10-27;KLGA;highest-temperature-in-nyc-on-october-27-2026;58-59°F;;0.001;;0.001;;0.0
+2026-10-27 16:20;M2;12;highest|nyc;2026-10-27;KLGA;highest-temperature-in-nyc-on-october-27-2026;60-61°F;0.001;0.005;0.003;0.005;0.999;0.0
+2026-10-27 16:20;M2;12;highest|nyc;2026-10-27;KLGA;highest-temperature-in-nyc-on-october-27-2026;62-63°F;0.9;0.95;0.925;0.95;0.1;0.0
+2026-10-27 16:20;M2;12;highest|nyc;2026-10-27;KLGA;highest-temperature-in-nyc-on-october-27-2026;64-65°F;0.032;0.098;0.065;0.098;0.968;0.0
+2026-10-27 16:20;M2;12;highest|nyc;2026-10-27;KLGA;highest-temperature-in-nyc-on-october-27-2026;66-67°F;0.001;0.003;0.002;0.003;0.999;0.0
+2026-10-27 16:20;M2;12;highest|nyc;2026-10-27;KLGA;highest-temperature-in-nyc-on-october-27-2026;68-69°F;;0.001;;0.001;;0.0
+2026-10-27 16:20;M2;12;highest|nyc;2026-10-27;KLGA;highest-temperature-in-nyc-on-october-27-2026;70°F or higher;;0.001;;0.001;;0.0
+2026-10-27 16:20;M2;12;highest|atlanta;2026-10-27;KATL;highest-temperature-in-atlanta-on-october-27-2026;65°F or below;;0.001;;0.001;;0.0
+2026-10-27 16:20;M2;12;highest|atlanta;2026-10-27;KATL;highest-temperature-in-atlanta-on-october-27-2026;66-67°F;;0.003;;0.003;;0.0
+2026-10-27 16:20;M2;12;highest|atlanta;2026-10-27;KATL;highest-temperature-in-atlanta-on-october-27-2026;68-69°F;;0.002;;0.002;;0.0
+2026-10-27 16:20;M2;12;highest|atlanta;2026-10-27;KATL;highest-temperature-in-atlanta-on-october-27-2026;70-71°F;0.061;0.105;0.083;0.105;0.939;0.0
+2026-10-27 16:20;M2;12;highest|atlanta;2026-10-27;KATL;highest-temperature-in-atlanta-on-october-27-2026;72-73°F;0.37;0.54;0.455;0.545;0.63;0.0
+2026-10-27 16:20;M2;12;highest|atlanta;2026-10-27;KATL;highest-temperature-in-atlanta-on-october-27-2026;74-75°F;0.36;0.48;0.42;0.48;0.645;0.0
+2026-10-27 16:20;M2;12;highest|atlanta;2026-10-27;KATL;highest-temperature-in-atlanta-on-october-27-2026;76-77°F;0.036;0.05;0.043;0.05;0.964;0.0
+2026-10-27 16:20;M2;12;highest|atlanta;2026-10-27;KATL;highest-temperature-in-atlanta-on-october-27-2026;78-79°F;0.001;0.004;0.0025;0.004;0.999;0.0
+2026-10-27 16:20;M2;12;highest|atlanta;2026-10-27;KATL;highest-temperature-in-atlanta-on-october-27-2026;80-81°F;;0.004;;0.004;;0.0
+2026-10-27 16:20;M2;12;highest|atlanta;2026-10-27;KATL;highest-temperature-in-atlanta-on-october-27-2026;82-83°F;;0.001;;0.001;;0.0
+2026-10-27 16:20;M2;12;highest|atlanta;2026-10-27;KATL;highest-temperature-in-atlanta-on-october-27-2026;84°F or higher;;0.001;;0.001;;0.0
+2026-10-27 16:20;M2;12;highest|miami;2026-10-27;KMIA;highest-temperature-in-miami-on-october-27-2026;71°F or below;;0.001;;0.001;;0.0
+2026-10-27 16:20;M2;12;highest|miami;2026-10-27;KMIA;highest-temperature-in-miami-on-october-27-2026;72-73°F;;0.001;;0.001;;0.0
+2026-10-27 16:20;M2;12;highest|miami;2026-10-27;KMIA;highest-temperature-in-miami-on-october-27-2026;74-75°F;;0.001;;0.001;;0.0
+2026-10-27 16:20;M2;12;highest|miami;2026-10-27;KMIA;highest-temperature-in-miami-on-october-27-2026;76-77°F;;0.001;;0.001;;0.0
+2026-10-27 16:20;M2;12;highest|miami;2026-10-27;KMIA;highest-temperature-in-miami-on-october-27-2026;78-79°F;;0.001;;0.001;;0.0
+2026-10-27 16:20;M2;12;highest|miami;2026-10-27;KMIA;highest-temperature-in-miami-on-october-27-2026;80-81°F;;0.001;;0.001;;0.0
+2026-10-27 16:20;M2;12;highest|miami;2026-10-27;KMIA;highest-temperature-in-miami-on-october-27-2026;82-83°F;0.74;0.82;0.78;0.82;0.26;0.0
+2026-10-27 16:20;M2;12;highest|miami;2026-10-27;KMIA;highest-temperature-in-miami-on-october-27-2026;84-85°F;0.17;0.23;0.2;0.2348;0.83;0.0
+2026-10-27 16:20;M2;12;highest|miami;2026-10-27;KMIA;highest-temperature-in-miami-on-october-27-2026;86-87°F;0.008;0.015;0.0115;0.015;0.992;0.0
+2026-10-27 16:20;M2;12;highest|miami;2026-10-27;KMIA;highest-temperature-in-miami-on-october-27-2026;88-89°F;0.003;0.008;0.0055;0.008;0.997;0.0
+2026-10-27 16:20;M2;12;highest|miami;2026-10-27;KMIA;highest-temperature-in-miami-on-october-27-2026;90°F or higher;;0.001;;0.001;;0.0
+2026-10-27 16:20;M2;12;lowest|toronto;2026-10-27;CYYZ;lowest-temperature-in-toronto-on-october-27-2026;-3°C or below;;0.31;;0.31;;0.0
+2026-10-27 16:20;M2;12;lowest|toronto;2026-10-27;CYYZ;lowest-temperature-in-toronto-on-october-27-2026;-2°C;;0.03;;0.03;;0.0
+2026-10-27 16:20;M2;12;lowest|toronto;2026-10-27;CYYZ;lowest-temperature-in-toronto-on-october-27-2026;-1°C;;0.93;;0.93;;0.0
+2026-10-27 16:20;M2;12;lowest|toronto;2026-10-27;CYYZ;lowest-temperature-in-toronto-on-october-27-2026;0°C;;0.93;;0.93;;0.0
+2026-10-27 16:20;M2;12;lowest|toronto;2026-10-27;CYYZ;lowest-temperature-in-toronto-on-october-27-2026;1°C;;0.17;;0.17;;0.0
+2026-10-27 16:20;M2;12;lowest|toronto;2026-10-27;CYYZ;lowest-temperature-in-toronto-on-october-27-2026;2°C;;0.9;;0.9;;0.0
+2026-10-27 16:20;M2;12;lowest|toronto;2026-10-27;CYYZ;lowest-temperature-in-toronto-on-october-27-2026;3°C;0.87;;;;0.13;0.0
+2026-10-27 16:20;M2;12;lowest|toronto;2026-10-27;CYYZ;lowest-temperature-in-toronto-on-october-27-2026;4°C;;0.001;;0.001;;0.0
+2026-10-27 16:20;M2;12;lowest|toronto;2026-10-27;CYYZ;lowest-temperature-in-toronto-on-october-27-2026;5°C;;0.001;;0.001;;0.0
+2026-10-27 16:20;M2;12;lowest|toronto;2026-10-27;CYYZ;lowest-temperature-in-toronto-on-october-27-2026;6°C;;0.001;;0.001;;0.0
+2026-10-27 16:20;M2;12;lowest|toronto;2026-10-27;CYYZ;lowest-temperature-in-toronto-on-october-27-2026;7°C or higher;;0.001;;0.001;;0.0
+2026-10-27 16:20;M2;12;highest|toronto;2026-10-27;CYYZ;highest-temperature-in-toronto-on-october-27-2026;4°C or below;;0.001;;0.001;;0.0
+2026-10-27 16:20;M2;12;highest|toronto;2026-10-27;CYYZ;highest-temperature-in-toronto-on-october-27-2026;5°C;;0.001;;0.001;;0.0
+2026-10-27 16:20;M2;12;highest|toronto;2026-10-27;CYYZ;highest-temperature-in-toronto-on-october-27-2026;6°C;;0.001;;0.001;;0.0
+2026-10-27 16:20;M2;12;highest|toronto;2026-10-27;CYYZ;highest-temperature-in-toronto-on-october-27-2026;7°C;;0.001;;0.001;;0.0
+2026-10-27 16:20;M2;12;highest|toronto;2026-10-27;CYYZ;highest-temperature-in-toronto-on-october-27-2026;8°C;;0.001;;0.001;;0.0
+2026-10-27 16:20;M2;12;highest|toronto;2026-10-27;CYYZ;highest-temperature-in-toronto-on-october-27-2026;9°C;0.08;0.12;0.1;0.12;0.92;0.0
+2026-10-27 16:20;M2;12;highest|toronto;2026-10-27;CYYZ;highest-temperature-in-toronto-on-october-27-2026;10°C;0.55;0.6;0.575;0.605;0.45;0.0
+2026-10-27 16:20;M2;12;highest|toronto;2026-10-27;CYYZ;highest-temperature-in-toronto-on-october-27-2026;11°C;0.303;0.353;0.328;0.353;0.697;0.0
+2026-10-27 16:20;M2;12;highest|toronto;2026-10-27;CYYZ;highest-temperature-in-toronto-on-october-27-2026;12°C;0.014;0.024;0.019;0.024;0.987;0.0
+2026-10-27 16:20;M2;12;highest|toronto;2026-10-27;CYYZ;highest-temperature-in-toronto-on-october-27-2026;13°C;0.002;0.008;0.005;0.008;0.998;0.0
+2026-10-27 16:20;M2;12;highest|toronto;2026-10-27;CYYZ;highest-temperature-in-toronto-on-october-27-2026;14°C or higher;;0.003;;0.003;;0.0
