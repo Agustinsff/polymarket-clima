@@ -112,6 +112,7 @@
   "highest-temperature-in-karachi-on-october-27-2026|M2",
   "highest-temperature-in-karachi-on-october-28-2026|M0",
   "highest-temperature-in-karachi-on-october-28-2026|M1",
+  "highest-temperature-in-karachi-on-october-28-2026|M2",
   "highest-temperature-in-karachi-on-october-29-2026|M0",
   "highest-temperature-in-kuala-lumpur-on-october-27-2026|M1",
   "highest-temperature-in-kuala-lumpur-on-october-27-2026|M2",
@@ -402,6 +403,7 @@
   "lowest-temperature-in-karachi-on-october-27-2026|M2",
   "lowest-temperature-in-karachi-on-october-28-2026|M0",
   "lowest-temperature-in-karachi-on-october-28-2026|M1",
+  "lowest-temperature-in-karachi-on-october-28-2026|M2",
   "lowest-temperature-in-karachi-on-october-29-2026|M0",
   "lowest-temperature-in-london-on-october-26-2026|M2",
   "lowest-temperature-in-london-on-october-27-2026|M1",
@@ -557,7 +559,7 @@
   "lowest-temperature-in-wuhan-on-october-28-2026|M2",
   "lowest-temperature-in-wuhan-on-october-29-2026|M0"
  ],
- "metar_ultimo": "2026-10-28T01:29:38+00:00",
+ "metar_ultimo": "2026-10-28T07:02:09+00:00",
  "resultados": [
   "highest-temperature-in-amsterdam-on-october-23-2026",
   "highest-temperature-in-amsterdam-on-october-24-2026",
