@@ -5785,3 +5785,267 @@ momento_utc;momento;hora_local;serie;fecha;icao;slug;caja;bid;ask;medio;si_10;no
 2026-10-28 04:00;M0;6;lowest|cape-town;2026-10-29;FACT;lowest-temperature-in-cape-town-on-october-29-2026;18°C;;0.66;;0.66;;0.0
 2026-10-28 04:00;M0;6;lowest|cape-town;2026-10-29;FACT;lowest-temperature-in-cape-town-on-october-29-2026;19°C;;0.08;;0.08;;0.0
 2026-10-28 04:00;M0;6;lowest|cape-town;2026-10-29;FACT;lowest-temperature-in-cape-town-on-october-29-2026;20°C or higher;;0.41;;0.41;;0.0
+2026-10-28 05:01;M1;6;lowest|paris;2026-10-28;LFPB;lowest-temperature-in-paris-on-october-28-2026;0°C or below;0.001;0.01;0.0055;0.01;0.999;0.0
+2026-10-28 05:01;M1;6;lowest|paris;2026-10-28;LFPB;lowest-temperature-in-paris-on-october-28-2026;1°C;;0.003;;0.003;;0.0
+2026-10-28 05:01;M1;6;lowest|paris;2026-10-28;LFPB;lowest-temperature-in-paris-on-october-28-2026;2°C;0.001;0.009;0.005;0.009;0.999;0.0
+2026-10-28 05:01;M1;6;lowest|paris;2026-10-28;LFPB;lowest-temperature-in-paris-on-october-28-2026;3°C;0.001;0.013;0.007;0.013;0.999;0.0
+2026-10-28 05:01;M1;6;lowest|paris;2026-10-28;LFPB;lowest-temperature-in-paris-on-october-28-2026;4°C;0.001;0.005;0.003;0.005;0.999;0.0
+2026-10-28 05:01;M1;6;lowest|paris;2026-10-28;LFPB;lowest-temperature-in-paris-on-october-28-2026;5°C;0.04;0.51;0.275;0.51;0.96;0.0
+2026-10-28 05:01;M1;6;lowest|paris;2026-10-28;LFPB;lowest-temperature-in-paris-on-october-28-2026;6°C;0.48;0.91;0.695;0.91;0.535;0.0
+2026-10-28 05:01;M1;6;lowest|paris;2026-10-28;LFPB;lowest-temperature-in-paris-on-october-28-2026;7°C;0.001;0.002;0.0015;0.002;0.999;0.0
+2026-10-28 05:01;M1;6;lowest|paris;2026-10-28;LFPB;lowest-temperature-in-paris-on-october-28-2026;8°C;;0.001;;0.001;;0.0
+2026-10-28 05:01;M1;6;lowest|paris;2026-10-28;LFPB;lowest-temperature-in-paris-on-october-28-2026;9°C;;0.001;;0.001;;0.0
+2026-10-28 05:01;M1;6;lowest|paris;2026-10-28;LFPB;lowest-temperature-in-paris-on-october-28-2026;10°C or higher;;0.001;;0.001;;0.0
+2026-10-28 05:01;M1;6;lowest|munich;2026-10-28;EDDM;lowest-temperature-in-munich-on-october-28-2026;-3°C or below;;0.18;;0.18;;0.0
+2026-10-28 05:01;M1;6;lowest|munich;2026-10-28;EDDM;lowest-temperature-in-munich-on-october-28-2026;-2°C;;0.17;;0.17;;0.0
+2026-10-28 05:01;M1;6;lowest|munich;2026-10-28;EDDM;lowest-temperature-in-munich-on-october-28-2026;-1°C;;0.23;;0.37;;0.0
+2026-10-28 05:01;M1;6;lowest|munich;2026-10-28;EDDM;lowest-temperature-in-munich-on-october-28-2026;0°C;;0.96;;0.96;;0.0
+2026-10-28 05:01;M1;6;lowest|munich;2026-10-28;EDDM;lowest-temperature-in-munich-on-october-28-2026;1°C;0.01;0.95;0.48;0.95;0.99;0.0
+2026-10-28 05:01;M1;6;lowest|munich;2026-10-28;EDDM;lowest-temperature-in-munich-on-october-28-2026;2°C;;0.001;;0.001;;0.0
+2026-10-28 05:01;M1;6;lowest|munich;2026-10-28;EDDM;lowest-temperature-in-munich-on-october-28-2026;3°C;;0.001;;0.0015;;0.0
+2026-10-28 05:01;M1;6;lowest|munich;2026-10-28;EDDM;lowest-temperature-in-munich-on-october-28-2026;4°C;;0.001;;0.001;;0.0
+2026-10-28 05:01;M1;6;lowest|munich;2026-10-28;EDDM;lowest-temperature-in-munich-on-october-28-2026;5°C;;0.001;;0.001;;0.0
+2026-10-28 05:01;M1;6;lowest|munich;2026-10-28;EDDM;lowest-temperature-in-munich-on-october-28-2026;6°C;;0.001;;0.001;;0.0
+2026-10-28 05:01;M1;6;lowest|munich;2026-10-28;EDDM;lowest-temperature-in-munich-on-october-28-2026;7°C or higher;;0.001;;0.001;;0.0
+2026-10-28 05:01;M1;6;lowest|milan;2026-10-28;LIMC;lowest-temperature-in-milan-on-october-28-2026;0°C or below;;0.16;;0.16;;0.0
+2026-10-28 05:01;M1;6;lowest|milan;2026-10-28;LIMC;lowest-temperature-in-milan-on-october-28-2026;1°C;;0.18;;0.18;;0.0
+2026-10-28 05:01;M1;6;lowest|milan;2026-10-28;LIMC;lowest-temperature-in-milan-on-october-28-2026;2°C;;0.16;;0.16;;0.0
+2026-10-28 05:01;M1;6;lowest|milan;2026-10-28;LIMC;lowest-temperature-in-milan-on-october-28-2026;3°C;;0.16;;0.16;;0.0
+2026-10-28 05:01;M1;6;lowest|milan;2026-10-28;LIMC;lowest-temperature-in-milan-on-october-28-2026;4°C;;0.43;;0.43;;0.0
+2026-10-28 05:01;M1;6;lowest|milan;2026-10-28;LIMC;lowest-temperature-in-milan-on-october-28-2026;5°C;;0.95;;0.95;;0.0
+2026-10-28 05:01;M1;6;lowest|milan;2026-10-28;LIMC;lowest-temperature-in-milan-on-october-28-2026;6°C;0.02;0.93;0.475;0.935;0.98;0.0
+2026-10-28 05:01;M1;6;lowest|milan;2026-10-28;LIMC;lowest-temperature-in-milan-on-october-28-2026;7°C;0.02;0.93;0.475;0.935;0.98;0.0
+2026-10-28 05:01;M1;6;lowest|milan;2026-10-28;LIMC;lowest-temperature-in-milan-on-october-28-2026;8°C;;0.001;;0.001;;0.0
+2026-10-28 05:01;M1;6;lowest|milan;2026-10-28;LIMC;lowest-temperature-in-milan-on-october-28-2026;9°C;;0.001;;0.001;;0.0
+2026-10-28 05:01;M1;6;lowest|milan;2026-10-28;LIMC;lowest-temperature-in-milan-on-october-28-2026;10°C or higher;;0.001;;0.001;;0.0
+2026-10-28 05:01;M1;6;lowest|madrid;2026-10-28;LEMD;lowest-temperature-in-madrid-on-october-28-2026;5°C or below;0.001;0.016;0.0085;0.016;0.999;0.0
+2026-10-28 05:01;M1;6;lowest|madrid;2026-10-28;LEMD;lowest-temperature-in-madrid-on-october-28-2026;6°C;0.032;0.15;0.091;0.15;0.9685;0.0
+2026-10-28 05:01;M1;6;lowest|madrid;2026-10-28;LEMD;lowest-temperature-in-madrid-on-october-28-2026;7°C;0.05;0.4;0.225;0.4;0.955;0.0
+2026-10-28 05:01;M1;6;lowest|madrid;2026-10-28;LEMD;lowest-temperature-in-madrid-on-october-28-2026;8°C;0.06;0.69;0.375;0.695;0.945;0.0
+2026-10-28 05:01;M1;6;lowest|madrid;2026-10-28;LEMD;lowest-temperature-in-madrid-on-october-28-2026;9°C;0.001;0.002;0.0015;0.002;0.999;0.0
+2026-10-28 05:01;M1;6;lowest|madrid;2026-10-28;LEMD;lowest-temperature-in-madrid-on-october-28-2026;10°C;;0.001;;0.001;;0.0
+2026-10-28 05:01;M1;6;lowest|madrid;2026-10-28;LEMD;lowest-temperature-in-madrid-on-october-28-2026;11°C;;0.001;;0.001;;0.0
+2026-10-28 05:01;M1;6;lowest|madrid;2026-10-28;LEMD;lowest-temperature-in-madrid-on-october-28-2026;12°C;;0.001;;0.001;;0.0
+2026-10-28 05:01;M1;6;lowest|madrid;2026-10-28;LEMD;lowest-temperature-in-madrid-on-october-28-2026;13°C;;0.001;;0.001;;0.0
+2026-10-28 05:01;M1;6;lowest|madrid;2026-10-28;LEMD;lowest-temperature-in-madrid-on-october-28-2026;14°C;;0.001;;0.001;;0.0
+2026-10-28 05:01;M1;6;lowest|madrid;2026-10-28;LEMD;lowest-temperature-in-madrid-on-october-28-2026;15°C or higher;;0.001;;0.001;;0.0
+2026-10-28 05:01;M1;6;lowest|warsaw;2026-10-28;EPWA;lowest-temperature-in-warsaw-on-october-28-2026;-2°C or below;0.001;0.02;0.0105;0.02;0.999;0.0
+2026-10-28 05:01;M1;6;lowest|warsaw;2026-10-28;EPWA;lowest-temperature-in-warsaw-on-october-28-2026;-1°C;0.001;0.008;0.0045;0.008;0.999;0.0
+2026-10-28 05:01;M1;6;lowest|warsaw;2026-10-28;EPWA;lowest-temperature-in-warsaw-on-october-28-2026;0°C;0.003;0.05;0.0265;0.05;0.997;0.0
+2026-10-28 05:01;M1;6;lowest|warsaw;2026-10-28;EPWA;lowest-temperature-in-warsaw-on-october-28-2026;1°C;0.001;0.048;0.0245;0.048;0.999;0.0
+2026-10-28 05:01;M1;6;lowest|warsaw;2026-10-28;EPWA;lowest-temperature-in-warsaw-on-october-28-2026;2°C;0.95;0.995;0.9725;0.995;0.05;0.0
+2026-10-28 05:01;M1;6;lowest|warsaw;2026-10-28;EPWA;lowest-temperature-in-warsaw-on-october-28-2026;3°C;0.001;0.002;0.0015;0.002;0.999;0.0
+2026-10-28 05:01;M1;6;lowest|warsaw;2026-10-28;EPWA;lowest-temperature-in-warsaw-on-october-28-2026;4°C;;0.001;;0.001;;0.0
+2026-10-28 05:01;M1;6;lowest|warsaw;2026-10-28;EPWA;lowest-temperature-in-warsaw-on-october-28-2026;5°C;;0.001;;0.001;;0.0
+2026-10-28 05:01;M1;6;lowest|warsaw;2026-10-28;EPWA;lowest-temperature-in-warsaw-on-october-28-2026;6°C;;0.001;;0.001;;0.0
+2026-10-28 05:01;M1;6;lowest|warsaw;2026-10-28;EPWA;lowest-temperature-in-warsaw-on-october-28-2026;7°C;;0.001;;0.001;;0.0
+2026-10-28 05:01;M1;6;lowest|warsaw;2026-10-28;EPWA;lowest-temperature-in-warsaw-on-october-28-2026;8°C or higher;;0.001;;0.001;;0.0
+2026-10-28 05:01;M1;6;lowest|amsterdam;2026-10-28;EHAM;lowest-temperature-in-amsterdam-on-october-28-2026;2°C or below;;0.41;;0.414;;0.0
+2026-10-28 05:01;M1;6;lowest|amsterdam;2026-10-28;EHAM;lowest-temperature-in-amsterdam-on-october-28-2026;3°C;;0.13;;0.13;;0.0
+2026-10-28 05:01;M1;6;lowest|amsterdam;2026-10-28;EHAM;lowest-temperature-in-amsterdam-on-october-28-2026;4°C;;0.16;;0.16;;0.0
+2026-10-28 05:01;M1;6;lowest|amsterdam;2026-10-28;EHAM;lowest-temperature-in-amsterdam-on-october-28-2026;5°C;;0.14;;0.14;;0.0
+2026-10-28 05:01;M1;6;lowest|amsterdam;2026-10-28;EHAM;lowest-temperature-in-amsterdam-on-october-28-2026;6°C;;0.8;;0.8;;0.0
+2026-10-28 05:01;M1;6;lowest|amsterdam;2026-10-28;EHAM;lowest-temperature-in-amsterdam-on-october-28-2026;7°C;0.62;0.92;0.77;0.92;0.5251;0.0
+2026-10-28 05:01;M1;6;lowest|amsterdam;2026-10-28;EHAM;lowest-temperature-in-amsterdam-on-october-28-2026;8°C;;0.001;;0.001;;0.0
+2026-10-28 05:01;M1;6;lowest|amsterdam;2026-10-28;EHAM;lowest-temperature-in-amsterdam-on-october-28-2026;9°C;;0.001;;0.001;;0.0
+2026-10-28 05:01;M1;6;lowest|amsterdam;2026-10-28;EHAM;lowest-temperature-in-amsterdam-on-october-28-2026;10°C;;0.001;;0.001;;0.0
+2026-10-28 05:01;M1;6;lowest|amsterdam;2026-10-28;EHAM;lowest-temperature-in-amsterdam-on-october-28-2026;11°C;;0.001;;0.001;;0.0
+2026-10-28 05:01;M1;6;lowest|amsterdam;2026-10-28;EHAM;lowest-temperature-in-amsterdam-on-october-28-2026;12°C or higher;;0.001;;0.001;;0.0
+2026-10-28 05:01;M1;6;highest|paris;2026-10-28;LFPB;highest-temperature-in-paris-on-october-28-2026;9°C or below;;0.001;;0.001;;0.0
+2026-10-28 05:01;M1;6;highest|paris;2026-10-28;LFPB;highest-temperature-in-paris-on-october-28-2026;10°C;;0.001;;0.001;;0.0
+2026-10-28 05:01;M1;6;highest|paris;2026-10-28;LFPB;highest-temperature-in-paris-on-october-28-2026;11°C;;0.001;;0.001;;0.0
+2026-10-28 05:01;M1;6;highest|paris;2026-10-28;LFPB;highest-temperature-in-paris-on-october-28-2026;12°C;0.001;0.003;0.002;0.003;0.999;0.0
+2026-10-28 05:01;M1;6;highest|paris;2026-10-28;LFPB;highest-temperature-in-paris-on-october-28-2026;13°C;0.004;0.011;0.0075;0.011;0.996;0.0
+2026-10-28 05:01;M1;6;highest|paris;2026-10-28;LFPB;highest-temperature-in-paris-on-october-28-2026;14°C;0.011;0.012;0.0115;0.012;0.989;0.0
+2026-10-28 05:01;M1;6;highest|paris;2026-10-28;LFPB;highest-temperature-in-paris-on-october-28-2026;15°C;0.38;0.42;0.4;0.42;0.62;0.0
+2026-10-28 05:01;M1;6;highest|paris;2026-10-28;LFPB;highest-temperature-in-paris-on-october-28-2026;16°C;0.56;0.59;0.575;0.59;0.44;0.0
+2026-10-28 05:01;M1;6;highest|paris;2026-10-28;LFPB;highest-temperature-in-paris-on-october-28-2026;17°C;0.02;0.021;0.0205;0.021;0.98;0.0
+2026-10-28 05:01;M1;6;highest|paris;2026-10-28;LFPB;highest-temperature-in-paris-on-october-28-2026;18°C;0.001;0.003;0.002;0.003;0.999;0.0
+2026-10-28 05:01;M1;6;highest|paris;2026-10-28;LFPB;highest-temperature-in-paris-on-october-28-2026;19°C or higher;;0.001;;0.001;;0.0
+2026-10-28 05:01;M1;6;highest|munich;2026-10-28;EDDM;highest-temperature-in-munich-on-october-28-2026;5°C or below;;0.002;;0.002;;0.0
+2026-10-28 05:01;M1;6;highest|munich;2026-10-28;EDDM;highest-temperature-in-munich-on-october-28-2026;6°C;;0.001;;0.001;;0.0
+2026-10-28 05:01;M1;6;highest|munich;2026-10-28;EDDM;highest-temperature-in-munich-on-october-28-2026;7°C;;0.002;;0.002;;0.0
+2026-10-28 05:01;M1;6;highest|munich;2026-10-28;EDDM;highest-temperature-in-munich-on-october-28-2026;8°C;0.001;0.003;0.002;0.003;0.999;0.0
+2026-10-28 05:01;M1;6;highest|munich;2026-10-28;EDDM;highest-temperature-in-munich-on-october-28-2026;9°C;0.005;0.011;0.008;0.011;0.995;0.0
+2026-10-28 05:01;M1;6;highest|munich;2026-10-28;EDDM;highest-temperature-in-munich-on-october-28-2026;10°C;0.028;0.052;0.04;0.052;0.972;0.0
+2026-10-28 05:01;M1;6;highest|munich;2026-10-28;EDDM;highest-temperature-in-munich-on-october-28-2026;11°C;0.311;0.364;0.3375;0.364;0.689;0.0
+2026-10-28 05:01;M1;6;highest|munich;2026-10-28;EDDM;highest-temperature-in-munich-on-october-28-2026;12°C;0.54;0.55;0.545;0.55;0.465;0.0
+2026-10-28 05:01;M1;6;highest|munich;2026-10-28;EDDM;highest-temperature-in-munich-on-october-28-2026;13°C;0.06;0.08;0.07;0.08;0.94;0.0
+2026-10-28 05:01;M1;6;highest|munich;2026-10-28;EDDM;highest-temperature-in-munich-on-october-28-2026;14°C;0.004;0.005;0.0045;0.0055;0.996;0.0
+2026-10-28 05:01;M1;6;highest|munich;2026-10-28;EDDM;highest-temperature-in-munich-on-october-28-2026;15°C or higher;;0.002;;0.002;;0.0
+2026-10-28 05:01;M1;6;highest|milan;2026-10-28;LIMC;highest-temperature-in-milan-on-october-28-2026;10°C or below;;0.001;;0.001;;0.0
+2026-10-28 05:01;M1;6;highest|milan;2026-10-28;LIMC;highest-temperature-in-milan-on-october-28-2026;11°C;;0.001;;0.001;;0.0
+2026-10-28 05:01;M1;6;highest|milan;2026-10-28;LIMC;highest-temperature-in-milan-on-october-28-2026;12°C;;0.002;;0.002;;0.0
+2026-10-28 05:01;M1;6;highest|milan;2026-10-28;LIMC;highest-temperature-in-milan-on-october-28-2026;13°C;;0.001;;0.001;;0.0
+2026-10-28 05:01;M1;6;highest|milan;2026-10-28;LIMC;highest-temperature-in-milan-on-october-28-2026;14°C;0.001;0.002;0.0015;0.002;0.999;0.0
+2026-10-28 05:01;M1;6;highest|milan;2026-10-28;LIMC;highest-temperature-in-milan-on-october-28-2026;15°C;0.001;0.002;0.0015;0.002;0.999;0.0
+2026-10-28 05:01;M1;6;highest|milan;2026-10-28;LIMC;highest-temperature-in-milan-on-october-28-2026;16°C;0.023;0.039;0.031;0.039;0.977;0.0
+2026-10-28 05:01;M1;6;highest|milan;2026-10-28;LIMC;highest-temperature-in-milan-on-october-28-2026;17°C;0.37;0.42;0.395;0.42;0.635;0.0
+2026-10-28 05:01;M1;6;highest|milan;2026-10-28;LIMC;highest-temperature-in-milan-on-october-28-2026;18°C;0.51;0.54;0.525;0.54;0.49;0.0
+2026-10-28 05:01;M1;6;highest|milan;2026-10-28;LIMC;highest-temperature-in-milan-on-october-28-2026;19°C;0.028;0.05;0.039;0.05;0.972;0.0
+2026-10-28 05:01;M1;6;highest|milan;2026-10-28;LIMC;highest-temperature-in-milan-on-october-28-2026;20°C or higher;0.002;0.006;0.004;0.006;0.998;0.0
+2026-10-28 05:01;M1;6;highest|madrid;2026-10-28;LEMD;highest-temperature-in-madrid-on-october-28-2026;16°C or below;;0.001;;0.001;;0.0
+2026-10-28 05:01;M1;6;highest|madrid;2026-10-28;LEMD;highest-temperature-in-madrid-on-october-28-2026;17°C;;0.001;;0.001;;0.0
+2026-10-28 05:01;M1;6;highest|madrid;2026-10-28;LEMD;highest-temperature-in-madrid-on-october-28-2026;18°C;;0.001;;0.001;;0.0
+2026-10-28 05:01;M1;6;highest|madrid;2026-10-28;LEMD;highest-temperature-in-madrid-on-october-28-2026;19°C;;0.002;;0.002;;0.0
+2026-10-28 05:01;M1;6;highest|madrid;2026-10-28;LEMD;highest-temperature-in-madrid-on-october-28-2026;20°C;;0.001;;0.001;;0.0
+2026-10-28 05:01;M1;6;highest|madrid;2026-10-28;LEMD;highest-temperature-in-madrid-on-october-28-2026;21°C;0.02;0.031;0.0255;0.031;0.98;0.0
+2026-10-28 05:01;M1;6;highest|madrid;2026-10-28;LEMD;highest-temperature-in-madrid-on-october-28-2026;22°C;0.32;0.33;0.325;0.33;0.68;0.0
+2026-10-28 05:01;M1;6;highest|madrid;2026-10-28;LEMD;highest-temperature-in-madrid-on-october-28-2026;23°C;0.62;0.64;0.63;0.64;0.38;0.0
+2026-10-28 05:01;M1;6;highest|madrid;2026-10-28;LEMD;highest-temperature-in-madrid-on-october-28-2026;24°C;0.031;0.043;0.037;0.043;0.969;0.0
+2026-10-28 05:01;M1;6;highest|madrid;2026-10-28;LEMD;highest-temperature-in-madrid-on-october-28-2026;25°C;;0.001;;0.001;;0.0
+2026-10-28 05:01;M1;6;highest|madrid;2026-10-28;LEMD;highest-temperature-in-madrid-on-october-28-2026;26°C or higher;;0.002;;0.002;;0.0
+2026-10-28 05:01;M1;6;highest|warsaw;2026-10-28;EPWA;highest-temperature-in-warsaw-on-october-28-2026;4°C or below;;0.001;;0.001;;0.0
+2026-10-28 05:01;M1;6;highest|warsaw;2026-10-28;EPWA;highest-temperature-in-warsaw-on-october-28-2026;5°C;;0.001;;0.001;;0.0
+2026-10-28 05:01;M1;6;highest|warsaw;2026-10-28;EPWA;highest-temperature-in-warsaw-on-october-28-2026;6°C;;0.001;;0.001;;0.0
+2026-10-28 05:01;M1;6;highest|warsaw;2026-10-28;EPWA;highest-temperature-in-warsaw-on-october-28-2026;7°C;0.001;0.002;0.0015;0.002;0.999;0.0
+2026-10-28 05:01;M1;6;highest|warsaw;2026-10-28;EPWA;highest-temperature-in-warsaw-on-october-28-2026;8°C;0.002;0.004;0.003;0.004;0.998;0.0
+2026-10-28 05:01;M1;6;highest|warsaw;2026-10-28;EPWA;highest-temperature-in-warsaw-on-october-28-2026;9°C;0.011;0.015;0.013;0.015;0.989;0.0
+2026-10-28 05:01;M1;6;highest|warsaw;2026-10-28;EPWA;highest-temperature-in-warsaw-on-october-28-2026;10°C;0.08;0.12;0.1;0.125;0.92;0.0
+2026-10-28 05:01;M1;6;highest|warsaw;2026-10-28;EPWA;highest-temperature-in-warsaw-on-october-28-2026;11°C;0.32;0.37;0.345;0.37;0.68;0.0
+2026-10-28 05:01;M1;6;highest|warsaw;2026-10-28;EPWA;highest-temperature-in-warsaw-on-october-28-2026;12°C;0.38;0.42;0.4;0.42;0.62;0.0
+2026-10-28 05:01;M1;6;highest|warsaw;2026-10-28;EPWA;highest-temperature-in-warsaw-on-october-28-2026;13°C;0.104;0.143;0.1235;0.143;0.896;0.0
+2026-10-28 05:01;M1;6;highest|warsaw;2026-10-28;EPWA;highest-temperature-in-warsaw-on-october-28-2026;14°C or higher;0.004;0.007;0.0055;0.007;0.996;0.0
+2026-10-28 05:01;M1;6;highest|amsterdam;2026-10-28;EHAM;highest-temperature-in-amsterdam-on-october-28-2026;9°C or below;;0.001;;0.001;;0.0
+2026-10-28 05:01;M1;6;highest|amsterdam;2026-10-28;EHAM;highest-temperature-in-amsterdam-on-october-28-2026;10°C;;0.001;;0.001;;0.0
+2026-10-28 05:01;M1;6;highest|amsterdam;2026-10-28;EHAM;highest-temperature-in-amsterdam-on-october-28-2026;11°C;;0.001;;0.001;;0.0
+2026-10-28 05:01;M1;6;highest|amsterdam;2026-10-28;EHAM;highest-temperature-in-amsterdam-on-october-28-2026;12°C;;0.001;;0.001;;0.0
+2026-10-28 05:01;M1;6;highest|amsterdam;2026-10-28;EHAM;highest-temperature-in-amsterdam-on-october-28-2026;13°C;0.021;0.024;0.0225;0.024;0.979;0.0
+2026-10-28 05:01;M1;6;highest|amsterdam;2026-10-28;EHAM;highest-temperature-in-amsterdam-on-october-28-2026;14°C;0.39;0.41;0.4;0.41;0.61;0.0
+2026-10-28 05:01;M1;6;highest|amsterdam;2026-10-28;EHAM;highest-temperature-in-amsterdam-on-october-28-2026;15°C;0.57;0.59;0.58;0.59;0.43;0.0
+2026-10-28 05:01;M1;6;highest|amsterdam;2026-10-28;EHAM;highest-temperature-in-amsterdam-on-october-28-2026;16°C;0.008;0.02;0.014;0.02;0.992;0.0
+2026-10-28 05:01;M1;6;highest|amsterdam;2026-10-28;EHAM;highest-temperature-in-amsterdam-on-october-28-2026;17°C;0.001;0.003;0.002;0.003;0.999;0.0
+2026-10-28 05:01;M1;6;highest|amsterdam;2026-10-28;EHAM;highest-temperature-in-amsterdam-on-october-28-2026;18°C;0.001;0.003;0.002;0.003;0.999;0.0
+2026-10-28 05:01;M1;6;highest|amsterdam;2026-10-28;EHAM;highest-temperature-in-amsterdam-on-october-28-2026;19°C or higher;;0.002;;0.002;;0.0
+2026-10-28 05:01;M0;6;lowest|paris;2026-10-29;LFPB;lowest-temperature-in-paris-on-october-29-2026;0°C or below;0.001;0.029;0.015;0.0295;0.999;0.0
+2026-10-28 05:01;M0;6;lowest|paris;2026-10-29;LFPB;lowest-temperature-in-paris-on-october-29-2026;1°C;0.001;0.089;0.045;0.089;0.999;0.0
+2026-10-28 05:01;M0;6;lowest|paris;2026-10-29;LFPB;lowest-temperature-in-paris-on-october-29-2026;2°C;0.001;0.091;0.046;0.091;0.999;0.0
+2026-10-28 05:01;M0;6;lowest|paris;2026-10-29;LFPB;lowest-temperature-in-paris-on-october-29-2026;3°C;0.027;0.109;0.068;0.109;0.973;0.0
+2026-10-28 05:01;M0;6;lowest|paris;2026-10-29;LFPB;lowest-temperature-in-paris-on-october-29-2026;4°C;0.16;0.2;0.18;0.205;0.84;0.0
+2026-10-28 05:01;M0;6;lowest|paris;2026-10-29;LFPB;lowest-temperature-in-paris-on-october-29-2026;5°C;0.36;0.39;0.375;0.39;0.64;0.0
+2026-10-28 05:01;M0;6;lowest|paris;2026-10-29;LFPB;lowest-temperature-in-paris-on-october-29-2026;6°C;0.27;0.31;0.29;0.31;0.73;0.0
+2026-10-28 05:01;M0;6;lowest|paris;2026-10-29;LFPB;lowest-temperature-in-paris-on-october-29-2026;7°C;0.09;0.14;0.115;0.145;0.91;0.0
+2026-10-28 05:01;M0;6;lowest|paris;2026-10-29;LFPB;lowest-temperature-in-paris-on-october-29-2026;8°C;0.004;0.087;0.0455;0.087;0.9965;0.0
+2026-10-28 05:01;M0;6;lowest|paris;2026-10-29;LFPB;lowest-temperature-in-paris-on-october-29-2026;9°C;0.002;0.079;0.0405;0.079;0.998;0.0
+2026-10-28 05:01;M0;6;lowest|paris;2026-10-29;LFPB;lowest-temperature-in-paris-on-october-29-2026;10°C or higher;0.001;0.083;0.042;0.0835;0.999;0.0
+2026-10-28 05:01;M0;6;lowest|munich;2026-10-29;EDDM;lowest-temperature-in-munich-on-october-29-2026;-1°C or below;;0.47;;0.475;;0.0
+2026-10-28 05:01;M0;6;lowest|munich;2026-10-29;EDDM;lowest-temperature-in-munich-on-october-29-2026;0°C;;0.66;;0.66;;0.0
+2026-10-28 05:01;M0;6;lowest|munich;2026-10-29;EDDM;lowest-temperature-in-munich-on-october-29-2026;1°C;;0.7;;0.7067;;0.0
+2026-10-28 05:01;M0;6;lowest|munich;2026-10-29;EDDM;lowest-temperature-in-munich-on-october-29-2026;2°C;;0.7;;0.7067;;0.0
+2026-10-28 05:01;M0;6;lowest|munich;2026-10-29;EDDM;lowest-temperature-in-munich-on-october-29-2026;3°C;;0.7;;0.7067;;0.0
+2026-10-28 05:01;M0;6;lowest|munich;2026-10-29;EDDM;lowest-temperature-in-munich-on-october-29-2026;4°C;;0.67;;0.67;;0.0
+2026-10-28 05:01;M0;6;lowest|munich;2026-10-29;EDDM;lowest-temperature-in-munich-on-october-29-2026;5°C;;0.67;;0.67;;0.0
+2026-10-28 05:01;M0;6;lowest|munich;2026-10-29;EDDM;lowest-temperature-in-munich-on-october-29-2026;6°C;;0.64;;0.64;;0.0
+2026-10-28 05:01;M0;6;lowest|munich;2026-10-29;EDDM;lowest-temperature-in-munich-on-october-29-2026;7°C;;0.67;;0.67;;0.0
+2026-10-28 05:01;M0;6;lowest|munich;2026-10-29;EDDM;lowest-temperature-in-munich-on-october-29-2026;8°C;;0.44;;0.445;;0.0
+2026-10-28 05:01;M0;6;lowest|munich;2026-10-29;EDDM;lowest-temperature-in-munich-on-october-29-2026;9°C or higher;;0.45;;0.455;;0.0
+2026-10-28 05:01;M0;6;lowest|milan;2026-10-29;LIMC;lowest-temperature-in-milan-on-october-29-2026;1°C or below;;0.41;;0.41;;0.0
+2026-10-28 05:01;M0;6;lowest|milan;2026-10-29;LIMC;lowest-temperature-in-milan-on-october-29-2026;2°C;;0.41;;0.41;;0.0
+2026-10-28 05:01;M0;6;lowest|milan;2026-10-29;LIMC;lowest-temperature-in-milan-on-october-29-2026;3°C;;0.42;;0.42;;0.0
+2026-10-28 05:01;M0;6;lowest|milan;2026-10-29;LIMC;lowest-temperature-in-milan-on-october-29-2026;4°C;;0.67;;0.67;;0.0
+2026-10-28 05:01;M0;6;lowest|milan;2026-10-29;LIMC;lowest-temperature-in-milan-on-october-29-2026;5°C;;0.7;;0.7067;;0.0
+2026-10-28 05:01;M0;6;lowest|milan;2026-10-29;LIMC;lowest-temperature-in-milan-on-october-29-2026;6°C;;0.7;;0.7067;;0.0
+2026-10-28 05:01;M0;6;lowest|milan;2026-10-29;LIMC;lowest-temperature-in-milan-on-october-29-2026;7°C;;0.7;;0.7067;;0.0
+2026-10-28 05:01;M0;6;lowest|milan;2026-10-29;LIMC;lowest-temperature-in-milan-on-october-29-2026;8°C;;0.67;;0.67;;0.0
+2026-10-28 05:01;M0;6;lowest|milan;2026-10-29;LIMC;lowest-temperature-in-milan-on-october-29-2026;9°C;;0.67;;0.67;;0.0
+2026-10-28 05:01;M0;6;lowest|milan;2026-10-29;LIMC;lowest-temperature-in-milan-on-october-29-2026;10°C;;0.67;;0.67;;0.0
+2026-10-28 05:01;M0;6;lowest|milan;2026-10-29;LIMC;lowest-temperature-in-milan-on-october-29-2026;11°C or higher;;0.41;;0.41;;0.0
+2026-10-28 05:01;M0;6;lowest|madrid;2026-10-29;LEMD;lowest-temperature-in-madrid-on-october-29-2026;4°C or below;0.001;0.119;0.06;0.119;0.999;0.0
+2026-10-28 05:01;M0;6;lowest|madrid;2026-10-29;LEMD;lowest-temperature-in-madrid-on-october-29-2026;5°C;0.08;0.11;0.095;0.115;0.92;0.0
+2026-10-28 05:01;M0;6;lowest|madrid;2026-10-29;LEMD;lowest-temperature-in-madrid-on-october-29-2026;6°C;0.29;0.34;0.315;0.34;0.715;0.0
+2026-10-28 05:01;M0;6;lowest|madrid;2026-10-29;LEMD;lowest-temperature-in-madrid-on-october-29-2026;7°C;0.44;0.48;0.46;0.48;0.56;0.0
+2026-10-28 05:01;M0;6;lowest|madrid;2026-10-29;LEMD;lowest-temperature-in-madrid-on-october-29-2026;8°C;0.06;0.13;0.095;0.13;0.945;0.0
+2026-10-28 05:01;M0;6;lowest|madrid;2026-10-29;LEMD;lowest-temperature-in-madrid-on-october-29-2026;9°C;0.001;0.138;0.0695;0.1385;0.999;0.0
+2026-10-28 05:01;M0;6;lowest|madrid;2026-10-29;LEMD;lowest-temperature-in-madrid-on-october-29-2026;10°C;0.001;0.006;0.0035;0.006;0.999;0.0
+2026-10-28 05:01;M0;6;lowest|madrid;2026-10-29;LEMD;lowest-temperature-in-madrid-on-october-29-2026;11°C;0.001;0.139;0.07;0.1395;0.999;0.0
+2026-10-28 05:01;M0;6;lowest|madrid;2026-10-29;LEMD;lowest-temperature-in-madrid-on-october-29-2026;12°C;0.001;0.097;0.049;0.097;0.999;0.0
+2026-10-28 05:01;M0;6;lowest|madrid;2026-10-29;LEMD;lowest-temperature-in-madrid-on-october-29-2026;13°C;;0.01;;0.01;;0.0
+2026-10-28 05:01;M0;6;lowest|madrid;2026-10-29;LEMD;lowest-temperature-in-madrid-on-october-29-2026;14°C or higher;;0.017;;0.017;;0.0
+2026-10-28 05:01;M0;6;lowest|warsaw;2026-10-29;EPWA;lowest-temperature-in-warsaw-on-october-29-2026;1°C or below;;0.018;;0.0185;;0.0
+2026-10-28 05:01;M0;6;lowest|warsaw;2026-10-29;EPWA;lowest-temperature-in-warsaw-on-october-29-2026;2°C;0.001;0.016;0.0085;0.016;0.999;0.0
+2026-10-28 05:01;M0;6;lowest|warsaw;2026-10-29;EPWA;lowest-temperature-in-warsaw-on-october-29-2026;3°C;0.002;0.02;0.011;0.02;0.998;0.0
+2026-10-28 05:01;M0;6;lowest|warsaw;2026-10-29;EPWA;lowest-temperature-in-warsaw-on-october-29-2026;4°C;0.001;0.063;0.032;0.0635;0.999;0.0
+2026-10-28 05:01;M0;6;lowest|warsaw;2026-10-29;EPWA;lowest-temperature-in-warsaw-on-october-29-2026;5°C;0.04;0.11;0.075;0.11;0.96;0.0
+2026-10-28 05:01;M0;6;lowest|warsaw;2026-10-29;EPWA;lowest-temperature-in-warsaw-on-october-29-2026;6°C;0.17;0.29;0.23;0.29;0.835;0.0
+2026-10-28 05:01;M0;6;lowest|warsaw;2026-10-29;EPWA;lowest-temperature-in-warsaw-on-october-29-2026;7°C;0.36;0.4;0.38;0.4;0.64;0.0
+2026-10-28 05:01;M0;6;lowest|warsaw;2026-10-29;EPWA;lowest-temperature-in-warsaw-on-october-29-2026;8°C;0.25;0.27;0.26;0.27;0.75;0.0
+2026-10-28 05:01;M0;6;lowest|warsaw;2026-10-29;EPWA;lowest-temperature-in-warsaw-on-october-29-2026;9°C;0.06;0.13;0.095;0.135;0.94;0.0
+2026-10-28 05:01;M0;6;lowest|warsaw;2026-10-29;EPWA;lowest-temperature-in-warsaw-on-october-29-2026;10°C;0.001;0.096;0.0485;0.096;0.999;0.0
+2026-10-28 05:01;M0;6;lowest|warsaw;2026-10-29;EPWA;lowest-temperature-in-warsaw-on-october-29-2026;11°C or higher;;0.029;;0.0295;;0.0
+2026-10-28 05:01;M0;6;lowest|amsterdam;2026-10-29;EHAM;lowest-temperature-in-amsterdam-on-october-29-2026;4°C or below;;0.41;;0.41;;0.0
+2026-10-28 05:01;M0;6;lowest|amsterdam;2026-10-29;EHAM;lowest-temperature-in-amsterdam-on-october-29-2026;5°C;;0.67;;0.67;;0.0
+2026-10-28 05:01;M0;6;lowest|amsterdam;2026-10-29;EHAM;lowest-temperature-in-amsterdam-on-october-29-2026;6°C;;0.64;;0.64;;0.0
+2026-10-28 05:01;M0;6;lowest|amsterdam;2026-10-29;EHAM;lowest-temperature-in-amsterdam-on-october-29-2026;7°C;;0.7;;0.7067;;0.0
+2026-10-28 05:01;M0;6;lowest|amsterdam;2026-10-29;EHAM;lowest-temperature-in-amsterdam-on-october-29-2026;8°C;;0.7;;0.7067;;0.0
+2026-10-28 05:01;M0;6;lowest|amsterdam;2026-10-29;EHAM;lowest-temperature-in-amsterdam-on-october-29-2026;9°C;;0.7;;0.7067;;0.0
+2026-10-28 05:01;M0;6;lowest|amsterdam;2026-10-29;EHAM;lowest-temperature-in-amsterdam-on-october-29-2026;10°C;;0.67;;0.67;;0.0
+2026-10-28 05:01;M0;6;lowest|amsterdam;2026-10-29;EHAM;lowest-temperature-in-amsterdam-on-october-29-2026;11°C;;0.67;;0.67;;0.0
+2026-10-28 05:01;M0;6;lowest|amsterdam;2026-10-29;EHAM;lowest-temperature-in-amsterdam-on-october-29-2026;12°C;;0.67;;0.67;;0.0
+2026-10-28 05:01;M0;6;lowest|amsterdam;2026-10-29;EHAM;lowest-temperature-in-amsterdam-on-october-29-2026;13°C;;0.67;;0.67;;0.0
+2026-10-28 05:01;M0;6;lowest|amsterdam;2026-10-29;EHAM;lowest-temperature-in-amsterdam-on-october-29-2026;14°C or higher;;0.42;;0.42;;0.0
+2026-10-28 05:01;M0;6;highest|paris;2026-10-29;LFPB;highest-temperature-in-paris-on-october-29-2026;9°C or below;;0.001;;0.001;;0.0
+2026-10-28 05:01;M0;6;highest|paris;2026-10-29;LFPB;highest-temperature-in-paris-on-october-29-2026;10°C;0.001;0.002;0.0015;0.002;0.999;0.0
+2026-10-28 05:01;M0;6;highest|paris;2026-10-29;LFPB;highest-temperature-in-paris-on-october-29-2026;11°C;0.001;0.004;0.0025;0.004;0.999;0.0
+2026-10-28 05:01;M0;6;highest|paris;2026-10-29;LFPB;highest-temperature-in-paris-on-october-29-2026;12°C;0.001;0.007;0.004;0.007;0.999;0.0
+2026-10-28 05:01;M0;6;highest|paris;2026-10-29;LFPB;highest-temperature-in-paris-on-october-29-2026;13°C;0.001;0.002;0.0015;0.002;0.999;0.0
+2026-10-28 05:01;M0;6;highest|paris;2026-10-29;LFPB;highest-temperature-in-paris-on-october-29-2026;14°C;0.043;0.06;0.0515;0.06;0.957;0.0
+2026-10-28 05:01;M0;6;highest|paris;2026-10-29;LFPB;highest-temperature-in-paris-on-october-29-2026;15°C;0.49;0.5;0.495;0.5078;0.51;0.0
+2026-10-28 05:01;M0;6;highest|paris;2026-10-29;LFPB;highest-temperature-in-paris-on-october-29-2026;16°C;0.39;0.41;0.4;0.41;0.61;0.0
+2026-10-28 05:01;M0;6;highest|paris;2026-10-29;LFPB;highest-temperature-in-paris-on-october-29-2026;17°C;0.05;0.06;0.055;0.06;0.95;0.0
+2026-10-28 05:01;M0;6;highest|paris;2026-10-29;LFPB;highest-temperature-in-paris-on-october-29-2026;18°C;0.002;0.006;0.004;0.006;0.998;0.0
+2026-10-28 05:01;M0;6;highest|paris;2026-10-29;LFPB;highest-temperature-in-paris-on-october-29-2026;19°C or higher;0.001;0.002;0.0015;0.002;0.999;0.0
+2026-10-28 05:01;M0;6;highest|munich;2026-10-29;EDDM;highest-temperature-in-munich-on-october-29-2026;3°C or below;;0.001;;0.001;;0.0
+2026-10-28 05:01;M0;6;highest|munich;2026-10-29;EDDM;highest-temperature-in-munich-on-october-29-2026;4°C;;0.001;;0.001;;0.0
+2026-10-28 05:01;M0;6;highest|munich;2026-10-29;EDDM;highest-temperature-in-munich-on-october-29-2026;5°C;0.001;0.003;0.002;0.003;0.999;0.0
+2026-10-28 05:01;M0;6;highest|munich;2026-10-29;EDDM;highest-temperature-in-munich-on-october-29-2026;6°C;0.002;0.003;0.0025;0.003;0.998;0.0
+2026-10-28 05:01;M0;6;highest|munich;2026-10-29;EDDM;highest-temperature-in-munich-on-october-29-2026;7°C;0.001;0.012;0.0065;0.012;0.999;0.0
+2026-10-28 05:01;M0;6;highest|munich;2026-10-29;EDDM;highest-temperature-in-munich-on-october-29-2026;8°C;0.003;0.009;0.006;0.009;0.997;0.0
+2026-10-28 05:01;M0;6;highest|munich;2026-10-29;EDDM;highest-temperature-in-munich-on-october-29-2026;9°C;0.007;0.008;0.0075;0.008;0.9935;0.0
+2026-10-28 05:01;M0;6;highest|munich;2026-10-29;EDDM;highest-temperature-in-munich-on-october-29-2026;10°C;0.055;0.062;0.0585;0.062;0.9607;0.0
+2026-10-28 05:01;M0;6;highest|munich;2026-10-29;EDDM;highest-temperature-in-munich-on-october-29-2026;11°C;0.35;0.39;0.37;0.39;0.65;0.0
+2026-10-28 05:01;M0;6;highest|munich;2026-10-29;EDDM;highest-temperature-in-munich-on-october-29-2026;12°C;0.45;0.49;0.47;0.49;0.55;0.0
+2026-10-28 05:01;M0;6;highest|munich;2026-10-29;EDDM;highest-temperature-in-munich-on-october-29-2026;13°C or higher;0.1;0.14;0.12;0.14;0.9;0.0
+2026-10-28 05:01;M0;6;highest|milan;2026-10-29;LIMC;highest-temperature-in-milan-on-october-29-2026;10°C or below;;0.001;;0.001;;0.0
+2026-10-28 05:01;M0;6;highest|milan;2026-10-29;LIMC;highest-temperature-in-milan-on-october-29-2026;11°C;;0.001;;0.001;;0.0
+2026-10-28 05:01;M0;6;highest|milan;2026-10-29;LIMC;highest-temperature-in-milan-on-october-29-2026;12°C;;0.001;;0.001;;0.0
+2026-10-28 05:01;M0;6;highest|milan;2026-10-29;LIMC;highest-temperature-in-milan-on-october-29-2026;13°C;0.001;0.003;0.002;0.003;0.999;0.0
+2026-10-28 05:01;M0;6;highest|milan;2026-10-29;LIMC;highest-temperature-in-milan-on-october-29-2026;14°C;0.001;0.004;0.0025;0.004;0.999;0.0
+2026-10-28 05:01;M0;6;highest|milan;2026-10-29;LIMC;highest-temperature-in-milan-on-october-29-2026;15°C;0.002;0.009;0.0055;0.009;0.998;0.0
+2026-10-28 05:01;M0;6;highest|milan;2026-10-29;LIMC;highest-temperature-in-milan-on-october-29-2026;16°C;0.002;0.004;0.003;0.004;0.998;0.0
+2026-10-28 05:01;M0;6;highest|milan;2026-10-29;LIMC;highest-temperature-in-milan-on-october-29-2026;17°C;0.024;0.033;0.0285;0.035;0.976;0.0
+2026-10-28 05:01;M0;6;highest|milan;2026-10-29;LIMC;highest-temperature-in-milan-on-october-29-2026;18°C;0.33;0.35;0.34;0.35;0.67;0.0
+2026-10-28 05:01;M0;6;highest|milan;2026-10-29;LIMC;highest-temperature-in-milan-on-october-29-2026;19°C;0.57;0.6;0.585;0.6;0.43;0.0
+2026-10-28 05:01;M0;6;highest|milan;2026-10-29;LIMC;highest-temperature-in-milan-on-october-29-2026;20°C or higher;0.035;0.06;0.0475;0.0624;0.965;0.0
+2026-10-28 05:01;M0;6;highest|madrid;2026-10-29;LEMD;highest-temperature-in-madrid-on-october-29-2026;15°C or below;;0.001;;0.001;;0.0
+2026-10-28 05:01;M0;6;highest|madrid;2026-10-29;LEMD;highest-temperature-in-madrid-on-october-29-2026;16°C;;0.001;;0.001;;0.0
+2026-10-28 05:01;M0;6;highest|madrid;2026-10-29;LEMD;highest-temperature-in-madrid-on-october-29-2026;17°C;;0.001;;0.001;;0.0
+2026-10-28 05:01;M0;6;highest|madrid;2026-10-29;LEMD;highest-temperature-in-madrid-on-october-29-2026;18°C;0.001;0.009;0.005;0.009;0.999;0.0
+2026-10-28 05:01;M0;6;highest|madrid;2026-10-29;LEMD;highest-temperature-in-madrid-on-october-29-2026;19°C;0.002;0.003;0.0025;0.003;0.998;0.0
+2026-10-28 05:01;M0;6;highest|madrid;2026-10-29;LEMD;highest-temperature-in-madrid-on-october-29-2026;20°C;0.01;0.027;0.0185;0.0275;0.991;0.0
+2026-10-28 05:01;M0;6;highest|madrid;2026-10-29;LEMD;highest-temperature-in-madrid-on-october-29-2026;21°C;0.09;0.11;0.1;0.115;0.91;0.0
+2026-10-28 05:01;M0;6;highest|madrid;2026-10-29;LEMD;highest-temperature-in-madrid-on-october-29-2026;22°C;0.51;0.54;0.525;0.54;0.49;0.0
+2026-10-28 05:01;M0;6;highest|madrid;2026-10-29;LEMD;highest-temperature-in-madrid-on-october-29-2026;23°C;0.33;0.37;0.35;0.37;0.67;0.0
+2026-10-28 05:01;M0;6;highest|madrid;2026-10-29;LEMD;highest-temperature-in-madrid-on-october-29-2026;24°C;0.018;0.02;0.019;0.02;0.982;0.0
+2026-10-28 05:01;M0;6;highest|madrid;2026-10-29;LEMD;highest-temperature-in-madrid-on-october-29-2026;25°C or higher;0.002;0.003;0.0025;0.003;0.998;0.0
+2026-10-28 05:01;M0;6;highest|warsaw;2026-10-29;EPWA;highest-temperature-in-warsaw-on-october-29-2026;3°C or below;;0.001;;0.001;;0.0
+2026-10-28 05:01;M0;6;highest|warsaw;2026-10-29;EPWA;highest-temperature-in-warsaw-on-october-29-2026;4°C;;0.001;;0.001;;0.0
+2026-10-28 05:01;M0;6;highest|warsaw;2026-10-29;EPWA;highest-temperature-in-warsaw-on-october-29-2026;5°C;;0.001;;0.001;;0.0
+2026-10-28 05:01;M0;6;highest|warsaw;2026-10-29;EPWA;highest-temperature-in-warsaw-on-october-29-2026;6°C;0.001;0.004;0.0025;0.004;0.999;0.0
+2026-10-28 05:01;M0;6;highest|warsaw;2026-10-29;EPWA;highest-temperature-in-warsaw-on-october-29-2026;7°C;0.001;0.004;0.0025;0.004;0.999;0.0
+2026-10-28 05:01;M0;6;highest|warsaw;2026-10-29;EPWA;highest-temperature-in-warsaw-on-october-29-2026;8°C;0.002;0.005;0.0035;0.005;0.998;0.0
+2026-10-28 05:01;M0;6;highest|warsaw;2026-10-29;EPWA;highest-temperature-in-warsaw-on-october-29-2026;9°C;0.02;0.031;0.0255;0.031;0.9832;0.0
+2026-10-28 05:01;M0;6;highest|warsaw;2026-10-29;EPWA;highest-temperature-in-warsaw-on-october-29-2026;10°C;0.15;0.19;0.17;0.19;0.85;0.0
+2026-10-28 05:01;M0;6;highest|warsaw;2026-10-29;EPWA;highest-temperature-in-warsaw-on-october-29-2026;11°C;0.47;0.49;0.48;0.49;0.53;0.0
+2026-10-28 05:01;M0;6;highest|warsaw;2026-10-29;EPWA;highest-temperature-in-warsaw-on-october-29-2026;12°C;0.24;0.27;0.255;0.27;0.76;0.0
+2026-10-28 05:01;M0;6;highest|warsaw;2026-10-29;EPWA;highest-temperature-in-warsaw-on-october-29-2026;13°C or higher;0.025;0.029;0.027;0.029;0.9755;0.0
+2026-10-28 05:01;M0;6;highest|amsterdam;2026-10-29;EHAM;highest-temperature-in-amsterdam-on-october-29-2026;9°C or below;;0.002;;0.002;;0.0
+2026-10-28 05:01;M0;6;highest|amsterdam;2026-10-29;EHAM;highest-temperature-in-amsterdam-on-october-29-2026;10°C;;0.002;;0.002;;0.0
+2026-10-28 05:01;M0;6;highest|amsterdam;2026-10-29;EHAM;highest-temperature-in-amsterdam-on-october-29-2026;11°C;;0.003;;0.003;;0.0
+2026-10-28 05:01;M0;6;highest|amsterdam;2026-10-29;EHAM;highest-temperature-in-amsterdam-on-october-29-2026;12°C;0.001;0.004;0.0025;0.004;0.999;0.0
+2026-10-28 05:01;M0;6;highest|amsterdam;2026-10-29;EHAM;highest-temperature-in-amsterdam-on-october-29-2026;13°C;0.002;0.004;0.003;0.004;0.9985;0.0
+2026-10-28 05:01;M0;6;highest|amsterdam;2026-10-29;EHAM;highest-temperature-in-amsterdam-on-october-29-2026;14°C;0.019;0.029;0.024;0.029;0.981;0.0
+2026-10-28 05:01;M0;6;highest|amsterdam;2026-10-29;EHAM;highest-temperature-in-amsterdam-on-october-29-2026;15°C;0.31;0.34;0.325;0.345;0.69;0.0
+2026-10-28 05:01;M0;6;highest|amsterdam;2026-10-29;EHAM;highest-temperature-in-amsterdam-on-october-29-2026;16°C;0.52;0.54;0.53;0.54;0.48;0.0
+2026-10-28 05:01;M0;6;highest|amsterdam;2026-10-29;EHAM;highest-temperature-in-amsterdam-on-october-29-2026;17°C;0.11;0.14;0.125;0.145;0.89;0.0
+2026-10-28 05:01;M0;6;highest|amsterdam;2026-10-29;EHAM;highest-temperature-in-amsterdam-on-october-29-2026;18°C;0.006;0.009;0.0075;0.009;0.994;0.0
+2026-10-28 05:01;M0;6;highest|amsterdam;2026-10-29;EHAM;highest-temperature-in-amsterdam-on-october-29-2026;19°C or higher;0.001;0.002;0.0015;0.002;0.999;0.0
