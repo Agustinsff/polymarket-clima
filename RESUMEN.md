@@ -1,6 +1,6 @@
 # Resumen polymarket-clima
 
-_Actualizado: 2026-10-29 20:15 (Montevideo). Todo es **en papel**: no se usa plata real._
+_Actualizado: 2026-10-29 20:24 (Montevideo). Todo es **en papel**: no se usa plata real._
 
 ## Estado de las tareas
 
@@ -68,10 +68,10 @@ Series donde el modelo le gana al mercado (≥5 días): mín hong-kong (6 días)
 
 | Modo | Serie calibrada | Liquidadas | Ganadas | Neto (10 acc. c/u) | Pendientes |
 |---|---|---|---|---|---|
-| taker | no | 1157 | 478 | US$-335.71 | 571 |
-| maker | no | 4579 | 537 | US$-944.46 | 2519 |
-| cola_taker | no | 744 | 24 | US$-4.51 | 391 |
-| cola_maker | no | 796 | 20 | US$-40.13 | 419 |
+| taker | no | 1157 | 478 | US$-335.71 | 641 |
+| maker | no | 4585 | 537 | US$-944.46 | 2939 |
+| cola_taker | no | 744 | 24 | US$-4.51 | 434 |
+| cola_maker | no | 798 | 20 | US$-40.50 | 491 |
 
 Taker en total: US$-340.22. _Con la comisión vieja (0,05 para todo) sería US$-406.20._
 
@@ -85,7 +85,7 @@ Series donde el modelo le gana al mercado (≥5 días): máx denver (5 días), m
 | Modo | Serie calibrada | Liquidadas | Ganadas | Neto (10 acc. c/u) | Pendientes |
 |---|---|---|---|---|---|
 | taker | no | 650 | 163 | US$-280.69 | 188 |
-| maker | no | 2059 | 240 | US$-190.30 | 530 |
+| maker | no | 2061 | 240 | US$-190.30 | 528 |
 | cola_taker | no | 296 | 6 | US$-46.80 | 84 |
 | cola_maker | no | 673 | 14 | US$-37.71 | 192 |
 | no80_90 | no | 252 | 188 | US$-283.19 | 68 |
@@ -96,27 +96,27 @@ _Taker = compra al instante pagando comisión. Maker = orden en el libro, solo c
 
 ## Cripto en papel (Bitcoin / Ethereum: above, rango y toca; modelo de opciones)
 
-Operaciones: 163 (143 liquidadas, 45 ganadas). **Neto US$+69.85** sobre US$367.41 invertidos (ROI +19.0 %). _Con la comisión vieja (0,05 para todo) sería US$+72.57._
-Brier en 627 strikes: modelo 0.1396 vs mercado 0.1402.
+Operaciones: 163 (151 liquidadas, 51 ganadas). **Neto US$+102.38** sobre US$393.81 invertidos (ROI +26.0 %). _Con la comisión vieja (0,05 para todo) sería US$+105.40._
+Brier en 691 strikes: modelo 0.1391 vs mercado 0.1396.
 
 | Activo | Tipo | Liquidadas | Neto |
 |---|---|---|---|
 | BTC | above | 14 | US$+27.92 |
 | BTC | rango | 30 | US$+63.20 |
-| BTC | toca | 47 | US$-14.09 |
+| BTC | toca | 49 | US$-1.71 |
 | ETH | above | 9 | US$-7.62 |
-| ETH | rango | 21 | US$+9.35 |
-| ETH | toca | 22 | US$-8.92 |
+| ETH | rango | 23 | US$+2.87 |
+| ETH | toca | 26 | US$+17.72 |
 
 _Regla fija: comprar el lado que el modelo ve ≥5 puntos más barato, a 48/24/12/6/3/1 h del cierre (18/12/6/3/1 h en 'toca'), 10 acciones al precio real del libro, con comisión. Backtest may-oct: +6,7 % con 1 ¢ de deslizamiento (Ethereum +17 %, Bitcoin ~0 %)._
 
 ## Sombra maker (¿y si dejábamos la orden en vez de comprar al toque?)
 
-Cosechador: 3372 cajas muertas ya liquidadas.
+Cosechador: 3581 cajas muertas ya liquidadas.
 - Vender el Yes a 2 ¢: 1964 acciones llenadas, neto **US$+39.29** (0 cajas 'muertas' que terminaron ganando)
 - Vender el Yes a 3 ¢: 1290 acciones llenadas, neto **US$+38.72** (0 cajas 'muertas' que terminaron ganando)
 - Vender el Yes a 5 ¢: 805 acciones llenadas, neto **US$+40.26** (0 cajas 'muertas' que terminaron ganando)
-Prueba SP: 11 operaciones; como maker se habrían llenado 9, neto **US$-11.35** (sin comisión).
+Prueba SP: 13 operaciones; como maker se habrían llenado 11, neto **US$-12.35** (sin comisión).
 
 ## Recompensas de liquidez (estimación, últimas 24 h)
 
