@@ -11142,3 +11142,25 @@ momento_utc;momento;hora_local;serie;fecha;icao;slug;caja;bid;ask;medio;si_10;no
 2026-10-29 22:24;M0;6;highest|manila;2026-10-31;RPLL;highest-temperature-in-manila-on-october-31-2026;35°C;0.011;0.017;0.014;0.017;0.989;0.0
 2026-10-29 22:24;M0;6;highest|manila;2026-10-31;RPLL;highest-temperature-in-manila-on-october-31-2026;36°C;0.003;0.014;0.0085;0.014;0.997;0.0
 2026-10-29 22:24;M0;6;highest|manila;2026-10-31;RPLL;highest-temperature-in-manila-on-october-31-2026;37°C or higher;0.001;0.004;0.0025;0.004;0.999;0.0
+2026-10-29 23:25;M2;12;lowest|wellington;2026-10-30;NZWN;lowest-temperature-in-wellington-on-october-30-2026;5°C or below;;0.02;;0.0255;;0.0
+2026-10-29 23:25;M2;12;lowest|wellington;2026-10-30;NZWN;lowest-temperature-in-wellington-on-october-30-2026;6°C;0.001;0.03;0.0155;0.0558;0.999;0.0
+2026-10-29 23:25;M2;12;lowest|wellington;2026-10-30;NZWN;lowest-temperature-in-wellington-on-october-30-2026;7°C;0.01;0.08;0.045;0.08;0.99;0.0
+2026-10-29 23:25;M2;12;lowest|wellington;2026-10-30;NZWN;lowest-temperature-in-wellington-on-october-30-2026;8°C;0.02;0.92;0.47;0.925;0.98;0.0
+2026-10-29 23:25;M2;12;lowest|wellington;2026-10-30;NZWN;lowest-temperature-in-wellington-on-october-30-2026;9°C;0.09;0.95;0.52;0.955;0.91;0.0
+2026-10-29 23:25;M2;12;lowest|wellington;2026-10-30;NZWN;lowest-temperature-in-wellington-on-october-30-2026;10°C;;0.001;;0.001;;0.0
+2026-10-29 23:25;M2;12;lowest|wellington;2026-10-30;NZWN;lowest-temperature-in-wellington-on-october-30-2026;11°C;;0.001;;0.001;;0.0
+2026-10-29 23:25;M2;12;lowest|wellington;2026-10-30;NZWN;lowest-temperature-in-wellington-on-october-30-2026;12°C;;0.001;;0.001;;0.0
+2026-10-29 23:25;M2;12;lowest|wellington;2026-10-30;NZWN;lowest-temperature-in-wellington-on-october-30-2026;13°C;;0.001;;0.001;;0.0
+2026-10-29 23:25;M2;12;lowest|wellington;2026-10-30;NZWN;lowest-temperature-in-wellington-on-october-30-2026;14°C;;0.001;;0.001;;0.0
+2026-10-29 23:25;M2;12;lowest|wellington;2026-10-30;NZWN;lowest-temperature-in-wellington-on-october-30-2026;15°C or higher;;0.001;;0.001;;0.0
+2026-10-29 23:25;M2;12;highest|wellington;2026-10-30;NZWN;highest-temperature-in-wellington-on-october-30-2026;13°C or below;0.001;0.007;0.004;0.007;0.999;0.0
+2026-10-29 23:25;M2;12;highest|wellington;2026-10-30;NZWN;highest-temperature-in-wellington-on-october-30-2026;14°C;0.026;0.068;0.047;0.068;0.9804;0.0
+2026-10-29 23:25;M2;12;highest|wellington;2026-10-30;NZWN;highest-temperature-in-wellington-on-october-30-2026;15°C;0.067;0.102;0.0845;0.102;0.933;0.0
+2026-10-29 23:25;M2;12;highest|wellington;2026-10-30;NZWN;highest-temperature-in-wellington-on-october-30-2026;16°C;0.26;0.32;0.29;0.32;0.745;0.0
+2026-10-29 23:25;M2;12;highest|wellington;2026-10-30;NZWN;highest-temperature-in-wellington-on-october-30-2026;17°C;0.3;0.4;0.35;0.4;0.7;0.0
+2026-10-29 23:25;M2;12;highest|wellington;2026-10-30;NZWN;highest-temperature-in-wellington-on-october-30-2026;18°C;0.21;0.29;0.25;0.29;0.79;0.0
+2026-10-29 23:25;M2;12;highest|wellington;2026-10-30;NZWN;highest-temperature-in-wellington-on-october-30-2026;19°C;0.06;0.07;0.065;0.07;0.94;0.0
+2026-10-29 23:25;M2;12;highest|wellington;2026-10-30;NZWN;highest-temperature-in-wellington-on-october-30-2026;20°C;0.001;0.002;0.0015;0.002;0.999;0.0
+2026-10-29 23:25;M2;12;highest|wellington;2026-10-30;NZWN;highest-temperature-in-wellington-on-october-30-2026;21°C;;0.001;;0.001;;0.0
+2026-10-29 23:25;M2;12;highest|wellington;2026-10-30;NZWN;highest-temperature-in-wellington-on-october-30-2026;22°C;;0.001;;0.001;;0.0
+2026-10-29 23:25;M2;12;highest|wellington;2026-10-30;NZWN;highest-temperature-in-wellington-on-october-30-2026;23°C or higher;;0.001;;0.001;;0.0
