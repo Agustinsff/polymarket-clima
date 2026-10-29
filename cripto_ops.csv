@@ -143,3 +143,11 @@ momento_utc;activo;tipo;evento;horizonte;strike;condition_id;lado;precio;p_model
 2026-10-28 21:44:09;BTC;toca;what-price-will-bitcoin-hit-on-october-28-2026;6;↑ 82,000;0x1e05ed80823aa439bb8b8340ca5fba7cae4fd192d741ac61e687627385195d3d;Yes;0.24;0.3432;10;0.07
 2026-10-28 21:44:09;ETH;toca;what-price-will-ethereum-hit-on-october-28-2026;6;↑ 2,400;0xc9ad08a0310f626bf5677c4eeaaf6a6d11a9a43faebb9ebb066765a86c23d46e;Yes;0.17;0.2399;10;0.07
 2026-10-29 00:31:33;BTC;toca;what-price-will-bitcoin-hit-on-october-28-2026;3;↑ 82,000;0x1e05ed80823aa439bb8b8340ca5fba7cae4fd192d741ac61e687627385195d3d;Yes;0.1;0.1864;10;0.07
+2026-10-29 09:38:55;ETH;rango;ethereum-price-on-october-29-2026;6;2,200-2,300;0x49cd4c96f9750334757be076adf6e7ae284e4e7b529e71b15952f67b751ddbc0;Yes;0.22;0.2768;10;0.07
+2026-10-29 09:38:55;BTC;toca;what-price-will-bitcoin-hit-on-october-29-2026;18;↑ 82,000;0xd7f4066a9abdcd55a4390adc3037de5b957104629e215337f5a6206bf30b4e64;Yes;0.09;0.1648;10;0.07
+2026-10-29 09:38:55;BTC;toca;what-price-will-bitcoin-hit-on-october-29-2026;18;↑ 81,000;0xa5c39d405f77ffcebcf74b9fef55152f87e4c6d538fe818507df9343daa4fe12;Yes;0.41;0.5179;10;0.07
+2026-10-29 09:38:55;BTC;toca;what-price-will-bitcoin-hit-on-october-29-2026;18;↓ 79,000;0x5105da65a6932a874dbfa28534ff85a6dfa82976802509e321972259611f65de;Yes;0.32;0.3865;10;0.07
+2026-10-29 09:38:55;ETH;toca;what-price-will-ethereum-hit-on-october-29-2026;18;↑ 2,400;0x83ee7d19a9500d364c23a29f656bd5f61b6c7fb0875b942a0b287a8422f5ee22;Yes;0.07;0.1422;10;0.07
+2026-10-29 09:38:55;ETH;toca;what-price-will-ethereum-hit-on-october-29-2026;18;↑ 2,350;0x14a41e2286a3a177e0de3c3a7ff42fc5196a62b88ac6bbecf7a96ddba5f67fcb;Yes;0.45;0.5705;10;0.07
+2026-10-29 09:38:55;ETH;toca;what-price-will-ethereum-hit-on-october-29-2026;18;↓ 2,300;0x484725d761b5a41daab1c46b32586d2c9a36d83e8984a14f2dea5db44dfa90ff;Yes;0.64;0.7246;10;0.07
+2026-10-29 09:38:55;ETH;toca;what-price-will-ethereum-hit-on-october-29-2026;18;↓ 2,250;0x26af7bef125b0664a423610fee0303707188bf048903e246cd37e8a42e8cd8d7;Yes;0.12;0.1963;10;0.07
