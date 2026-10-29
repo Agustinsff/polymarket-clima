@@ -2326,3 +2326,214 @@
 04:22:37Z 541 cajas guardadas
 04:22:58Z 15 llenados simulados (8 cajas sin trades)
 04:23:23Z resueltos 91 mercados
+04:23:46Z 1049 cajas de clima y 52 de cripto
+04:23:49Z 540 cajas guardadas
+04:24:16Z 33 llenados simulados (2 cajas sin trades)
+04:28:47Z 1044 cajas de clima y 52 de cripto
+04:28:50Z 541 cajas guardadas
+04:29:17Z 171 llenados simulados (16 cajas sin trades)
+04:33:46Z 1176 cajas de clima y 51 de cripto
+04:33:50Z 545 cajas guardadas
+04:34:18Z 59 llenados simulados (16 cajas sin trades)
+04:38:47Z 1347 cajas de clima y 50 de cripto
+04:38:50Z 577 cajas guardadas
+04:39:17Z 199 llenados simulados (8 cajas sin trades)
+04:43:46Z 1343 cajas de clima y 51 de cripto
+04:43:50Z 583 cajas guardadas
+04:44:21Z 75 llenados simulados (18 cajas sin trades)
+04:48:47Z 1340 cajas de clima y 50 de cripto
+04:48:50Z 581 cajas guardadas
+04:49:20Z 150 llenados simulados (16 cajas sin trades)
+04:53:47Z 1339 cajas de clima y 56 de cripto
+04:53:50Z 574 cajas guardadas
+04:54:20Z 58 llenados simulados (18 cajas sin trades)
+04:58:46Z 1333 cajas de clima y 50 de cripto
+04:58:50Z 571 cajas guardadas
+04:59:19Z 81 llenados simulados (16 cajas sin trades)
+05:03:46Z 1643 cajas de clima y 56 de cripto
+05:03:51Z 625 cajas guardadas
+05:04:19Z 103 llenados simulados (8 cajas sin trades)
+05:08:47Z 1619 cajas de clima y 54 de cripto
+05:08:51Z 646 cajas guardadas
+05:09:22Z 113 llenados simulados (16 cajas sin trades)
+05:13:47Z 1608 cajas de clima y 50 de cripto
+05:13:51Z 650 cajas guardadas
+05:14:23Z 228 llenados simulados (15 cajas sin trades)
+05:18:47Z 1616 cajas de clima y 53 de cripto
+05:18:51Z 655 cajas guardadas
+05:19:24Z 172 llenados simulados (8 cajas sin trades)
+05:23:46Z 1608 cajas de clima y 53 de cripto
+05:24:26Z books fallo: HTTPSConnectionPool(host='clob.polymarket.com', port=443): Read timed out. (read timeout=40)
+05:24:32Z 642 cajas guardadas
+05:25:08Z 119 llenados simulados (0 cajas sin trades)
+05:28:46Z 1597 cajas de clima y 52 de cripto
+05:28:51Z 644 cajas guardadas
+05:29:24Z 16 llenados simulados (17 cajas sin trades)
+05:33:47Z 1591 cajas de clima y 51 de cripto
+05:33:51Z 647 cajas guardadas
+05:34:25Z 11 llenados simulados (9 cajas sin trades)
+05:38:46Z 1596 cajas de clima y 65 de cripto
+05:38:53Z 663 cajas guardadas
+05:39:24Z 72 llenados simulados (8 cajas sin trades)
+05:43:47Z 1593 cajas de clima y 62 de cripto
+05:43:52Z 664 cajas guardadas
+05:44:24Z 72 llenados simulados (17 cajas sin trades)
+05:48:47Z 1590 cajas de clima y 53 de cripto
+05:48:52Z 654 cajas guardadas
+05:49:25Z 122 llenados simulados (8 cajas sin trades)
+05:53:46Z 1588 cajas de clima y 51 de cripto
+05:53:52Z 654 cajas guardadas
+05:54:23Z 12 llenados simulados (19 cajas sin trades)
+05:58:46Z 1584 cajas de clima y 49 de cripto
+05:58:52Z 649 cajas guardadas
+05:59:26Z 50 llenados simulados (8 cajas sin trades)
+06:03:46Z 1573 cajas de clima y 50 de cripto
+06:03:53Z 646 cajas guardadas
+06:04:24Z 134 llenados simulados (8 cajas sin trades)
+06:08:47Z 1566 cajas de clima y 50 de cripto
+06:08:52Z 649 cajas guardadas
+06:09:24Z 86 llenados simulados (19 cajas sin trades)
+06:13:47Z 1542 cajas de clima y 49 de cripto
+06:13:51Z 664 cajas guardadas
+06:14:24Z 108 llenados simulados (10 cajas sin trades)
+06:18:46Z 1559 cajas de clima y 49 de cripto
+06:19:26Z books fallo: HTTPSConnectionPool(host='clob.polymarket.com', port=443): Read timed out. (read timeout=40)
+06:19:30Z 643 cajas guardadas
+06:20:06Z 42 llenados simulados (6 cajas sin trades)
+06:23:47Z 1559 cajas de clima y 48 de cripto
+06:23:51Z 666 cajas guardadas
+06:24:22Z 3 llenados simulados (24 cajas sin trades)
+06:28:46Z 1555 cajas de clima y 48 de cripto
+06:28:51Z 663 cajas guardadas
+06:29:25Z 72 llenados simulados (16 cajas sin trades)
+06:33:47Z 1557 cajas de clima y 48 de cripto
+06:33:51Z 661 cajas guardadas
+06:34:26Z 63 llenados simulados (11 cajas sin trades)
+06:38:47Z 1555 cajas de clima y 48 de cripto
+06:38:51Z 663 cajas guardadas
+06:39:25Z 27 llenados simulados (20 cajas sin trades)
+06:43:46Z 1554 cajas de clima y 48 de cripto
+06:43:52Z 662 cajas guardadas
+06:44:25Z 58 llenados simulados (19 cajas sin trades)
+06:48:47Z 1559 cajas de clima y 48 de cripto
+06:48:52Z 667 cajas guardadas
+06:49:24Z 63 llenados simulados (16 cajas sin trades)
+06:53:46Z 1556 cajas de clima y 50 de cripto
+06:53:51Z 660 cajas guardadas
+06:54:26Z 48 llenados simulados (8 cajas sin trades)
+06:58:47Z 1555 cajas de clima y 50 de cripto
+06:59:27Z books fallo: HTTPSConnectionPool(host='clob.polymarket.com', port=443): Read timed out. (read timeout=40)
+06:59:32Z 633 cajas guardadas
+07:00:06Z 156 llenados simulados (8 cajas sin trades)
+07:03:47Z 1554 cajas de clima y 50 de cripto
+07:03:54Z 669 cajas guardadas
+07:04:17Z 14 llenados simulados (27 cajas sin trades)
+07:08:46Z 1547 cajas de clima y 50 de cripto
+07:08:53Z 678 cajas guardadas
+07:09:26Z 72 llenados simulados (9 cajas sin trades)
+07:13:47Z 1538 cajas de clima y 50 de cripto
+07:13:52Z 663 cajas guardadas
+07:14:24Z 58 llenados simulados (17 cajas sin trades)
+07:18:47Z 1538 cajas de clima y 49 de cripto
+07:18:53Z 669 cajas guardadas
+07:19:25Z 63 llenados simulados (8 cajas sin trades)
+07:23:46Z 1533 cajas de clima y 50 de cripto
+07:23:52Z 674 cajas guardadas
+07:24:27Z 38 llenados simulados (16 cajas sin trades)
+07:28:47Z 1534 cajas de clima y 50 de cripto
+07:28:53Z 675 cajas guardadas
+07:29:24Z 17 llenados simulados (9 cajas sin trades)
+07:33:46Z 1614 cajas de clima y 50 de cripto
+07:33:52Z 676 cajas guardadas
+07:34:24Z 18 llenados simulados (21 cajas sin trades)
+07:38:47Z 1607 cajas de clima y 50 de cripto
+07:38:53Z 670 cajas guardadas
+07:39:25Z 96 llenados simulados (8 cajas sin trades)
+07:43:47Z 1606 cajas de clima y 50 de cripto
+07:43:53Z 674 cajas guardadas
+07:44:22Z 9 llenados simulados (23 cajas sin trades)
+07:48:46Z 1608 cajas de clima y 49 de cripto
+07:48:53Z 678 cajas guardadas
+07:49:24Z 76 llenados simulados (9 cajas sin trades)
+07:53:47Z 1605 cajas de clima y 48 de cripto
+07:53:55Z 673 cajas guardadas
+07:54:26Z 87 llenados simulados (8 cajas sin trades)
+07:58:47Z 1622 cajas de clima y 48 de cripto
+07:58:53Z 672 cajas guardadas
+07:59:24Z 20 llenados simulados (16 cajas sin trades)
+08:03:46Z 1666 cajas de clima y 50 de cripto
+08:04:26Z books fallo: HTTPSConnectionPool(host='clob.polymarket.com', port=443): Read timed out. (read timeout=40)
+08:04:31Z 653 cajas guardadas
+08:05:10Z 120 llenados simulados (7 cajas sin trades)
+08:08:47Z 1657 cajas de clima y 48 de cripto
+08:08:51Z 688 cajas guardadas
+08:09:25Z 19 llenados simulados (22 cajas sin trades)
+08:13:46Z 1632 cajas de clima y 47 de cripto
+08:13:51Z 702 cajas guardadas
+08:14:25Z 164 llenados simulados (15 cajas sin trades)
+08:18:47Z 1643 cajas de clima y 44 de cripto
+08:18:51Z 705 cajas guardadas
+08:19:29Z 69 llenados simulados (9 cajas sin trades)
+08:23:47Z 1628 cajas de clima y 45 de cripto
+08:24:27Z books fallo: HTTPSConnectionPool(host='clob.polymarket.com', port=443): Read timed out. (read timeout=40)
+08:24:32Z 674 cajas guardadas
+08:25:08Z 98 llenados simulados (8 cajas sin trades)
+08:28:46Z 1633 cajas de clima y 44 de cripto
+08:28:51Z 712 cajas guardadas
+08:29:24Z 10 llenados simulados (23 cajas sin trades)
+08:33:47Z 1631 cajas de clima y 43 de cripto
+08:34:27Z books fallo: HTTPSConnectionPool(host='clob.polymarket.com', port=443): Read timed out. (read timeout=40)
+08:34:31Z 696 cajas guardadas
+08:35:07Z 69 llenados simulados (6 cajas sin trades)
+08:38:47Z 1634 cajas de clima y 43 de cripto
+08:38:52Z 728 cajas guardadas
+08:39:24Z 13 llenados simulados (31 cajas sin trades)
+08:43:46Z 1627 cajas de clima y 43 de cripto
+08:43:51Z 726 cajas guardadas
+08:44:29Z 48 llenados simulados (8 cajas sin trades)
+08:48:47Z 1627 cajas de clima y 43 de cripto
+08:48:52Z 725 cajas guardadas
+08:49:29Z 52 llenados simulados (10 cajas sin trades)
+08:53:46Z 1624 cajas de clima y 43 de cripto
+08:53:51Z 722 cajas guardadas
+08:54:30Z 34 llenados simulados (18 cajas sin trades)
+08:58:47Z 1617 cajas de clima y 42 de cripto
+08:58:51Z 715 cajas guardadas
+08:59:28Z 54 llenados simulados (10 cajas sin trades)
+09:03:47Z 1605 cajas de clima y 42 de cripto
+09:03:51Z 722 cajas guardadas
+09:04:26Z 35 llenados simulados (16 cajas sin trades)
+09:08:47Z 1591 cajas de clima y 43 de cripto
+09:08:51Z 722 cajas guardadas
+09:09:28Z 128 llenados simulados (8 cajas sin trades)
+09:13:48Z 1591 cajas de clima y 43 de cripto
+09:13:52Z 722 cajas guardadas
+09:14:29Z 128 llenados simulados (9 cajas sin trades)
+09:18:46Z 1588 cajas de clima y 43 de cripto
+09:18:51Z 725 cajas guardadas
+09:19:28Z 28 llenados simulados (17 cajas sin trades)
+09:23:47Z 1586 cajas de clima y 44 de cripto
+09:23:52Z 724 cajas guardadas
+09:24:29Z 49 llenados simulados (9 cajas sin trades)
+09:28:47Z 1581 cajas de clima y 43 de cripto
+09:28:51Z 726 cajas guardadas
+09:29:28Z 36 llenados simulados (18 cajas sin trades)
+09:33:46Z 1570 cajas de clima y 44 de cripto
+09:33:53Z 721 cajas guardadas
+09:34:28Z 53 llenados simulados (9 cajas sin trades)
+09:38:47Z 1564 cajas de clima y 43 de cripto
+09:38:52Z 722 cajas guardadas
+09:39:29Z 55 llenados simulados (17 cajas sin trades)
+09:43:46Z 1562 cajas de clima y 44 de cripto
+09:43:51Z 731 cajas guardadas
+09:44:27Z 24 llenados simulados (9 cajas sin trades)
+09:48:47Z 1560 cajas de clima y 43 de cripto
+09:48:52Z 728 cajas guardadas
+09:49:28Z 50 llenados simulados (9 cajas sin trades)
+09:53:46Z 1555 cajas de clima y 43 de cripto
+09:53:51Z 724 cajas guardadas
+09:54:27Z 22 llenados simulados (24 cajas sin trades)
+09:58:47Z 1546 cajas de clima y 43 de cripto
+09:58:51Z 723 cajas guardadas
+09:59:30Z 91 llenados simulados (8 cajas sin trades)
+09:59:43Z resueltos 125 mercados
