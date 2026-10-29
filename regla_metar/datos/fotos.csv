@@ -9591,3 +9591,333 @@ momento_utc;momento;hora_local;serie;fecha;icao;slug;caja;bid;ask;medio;si_10;no
 2026-10-29 10:17;M0;6;highest|toronto;2026-10-30;CYYZ;highest-temperature-in-toronto-on-october-30-2026;15°C;0.09;0.12;0.105;0.12;0.915;0.0
 2026-10-29 10:17;M0;6;highest|toronto;2026-10-30;CYYZ;highest-temperature-in-toronto-on-october-30-2026;16°C;0.009;0.022;0.0155;0.0256;0.991;0.0
 2026-10-29 10:17;M0;6;highest|toronto;2026-10-30;CYYZ;highest-temperature-in-toronto-on-october-30-2026;17°C or higher;0.001;0.005;0.003;0.005;0.999;0.0
+2026-10-29 11:17;M2;12;lowest|paris;2026-10-29;LFPB;lowest-temperature-in-paris-on-october-29-2026;0°C or below;;0.001;;0.001;;0.0
+2026-10-29 11:17;M2;12;lowest|paris;2026-10-29;LFPB;lowest-temperature-in-paris-on-october-29-2026;1°C;;0.009;;0.009;;0.0
+2026-10-29 11:17;M2;12;lowest|paris;2026-10-29;LFPB;lowest-temperature-in-paris-on-october-29-2026;2°C;;0.009;;0.009;;0.0
+2026-10-29 11:17;M2;12;lowest|paris;2026-10-29;LFPB;lowest-temperature-in-paris-on-october-29-2026;3°C;0.002;0.009;0.0055;0.009;0.998;0.0
+2026-10-29 11:17;M2;12;lowest|paris;2026-10-29;LFPB;lowest-temperature-in-paris-on-october-29-2026;4°C;0.99;0.999;0.9945;0.999;0.01;0.0
+2026-10-29 11:17;M2;12;lowest|paris;2026-10-29;LFPB;lowest-temperature-in-paris-on-october-29-2026;5°C;;0.001;;0.001;;0.0
+2026-10-29 11:17;M2;12;lowest|paris;2026-10-29;LFPB;lowest-temperature-in-paris-on-october-29-2026;6°C;;0.006;;0.006;;0.0
+2026-10-29 11:17;M2;12;lowest|paris;2026-10-29;LFPB;lowest-temperature-in-paris-on-october-29-2026;7°C;;0.001;;0.001;;0.0
+2026-10-29 11:17;M2;12;lowest|paris;2026-10-29;LFPB;lowest-temperature-in-paris-on-october-29-2026;8°C;;0.001;;0.001;;0.0
+2026-10-29 11:17;M2;12;lowest|paris;2026-10-29;LFPB;lowest-temperature-in-paris-on-october-29-2026;9°C;;0.001;;0.001;;0.0
+2026-10-29 11:17;M2;12;lowest|paris;2026-10-29;LFPB;lowest-temperature-in-paris-on-october-29-2026;10°C or higher;;0.001;;0.001;;0.0
+2026-10-29 11:17;M2;12;lowest|munich;2026-10-29;EDDM;lowest-temperature-in-munich-on-october-29-2026;-1°C or below;;0.01;;0.01;;0.0
+2026-10-29 11:17;M2;12;lowest|munich;2026-10-29;EDDM;lowest-temperature-in-munich-on-october-29-2026;0°C;;0.01;;0.01;;0.0
+2026-10-29 11:17;M2;12;lowest|munich;2026-10-29;EDDM;lowest-temperature-in-munich-on-october-29-2026;1°C;0.02;0.16;0.09;0.16;0.985;0.0
+2026-10-29 11:17;M2;12;lowest|munich;2026-10-29;EDDM;lowest-temperature-in-munich-on-october-29-2026;2°C;0.86;;;;0.1498;0.0
+2026-10-29 11:17;M2;12;lowest|munich;2026-10-29;EDDM;lowest-temperature-in-munich-on-october-29-2026;3°C;;0.001;;0.001;;0.0
+2026-10-29 11:17;M2;12;lowest|munich;2026-10-29;EDDM;lowest-temperature-in-munich-on-october-29-2026;4°C;;0.001;;0.001;;0.0
+2026-10-29 11:17;M2;12;lowest|munich;2026-10-29;EDDM;lowest-temperature-in-munich-on-october-29-2026;5°C;;0.001;;0.001;;0.0
+2026-10-29 11:17;M2;12;lowest|munich;2026-10-29;EDDM;lowest-temperature-in-munich-on-october-29-2026;6°C;;0.001;;0.001;;0.0
+2026-10-29 11:17;M2;12;lowest|munich;2026-10-29;EDDM;lowest-temperature-in-munich-on-october-29-2026;7°C;;0.001;;0.001;;0.0
+2026-10-29 11:17;M2;12;lowest|munich;2026-10-29;EDDM;lowest-temperature-in-munich-on-october-29-2026;8°C;;0.001;;0.001;;0.0
+2026-10-29 11:17;M2;12;lowest|munich;2026-10-29;EDDM;lowest-temperature-in-munich-on-october-29-2026;9°C or higher;;0.001;;0.001;;0.0
+2026-10-29 11:17;M2;12;lowest|milan;2026-10-29;LIMC;lowest-temperature-in-milan-on-october-29-2026;1°C or below;;0.01;;0.01;;0.0
+2026-10-29 11:17;M2;12;lowest|milan;2026-10-29;LIMC;lowest-temperature-in-milan-on-october-29-2026;2°C;;0.009;;0.009;;0.0
+2026-10-29 11:17;M2;12;lowest|milan;2026-10-29;LIMC;lowest-temperature-in-milan-on-october-29-2026;3°C;;0.029;;0.029;;0.0
+2026-10-29 11:17;M2;12;lowest|milan;2026-10-29;LIMC;lowest-temperature-in-milan-on-october-29-2026;4°C;;0.1;;0.12;;0.0
+2026-10-29 11:17;M2;12;lowest|milan;2026-10-29;LIMC;lowest-temperature-in-milan-on-october-29-2026;5°C;0.87;;;;0.13;0.0
+2026-10-29 11:17;M2;12;lowest|milan;2026-10-29;LIMC;lowest-temperature-in-milan-on-october-29-2026;6°C;;0.001;;0.001;;0.0
+2026-10-29 11:17;M2;12;lowest|milan;2026-10-29;LIMC;lowest-temperature-in-milan-on-october-29-2026;7°C;;0.001;;0.001;;0.0
+2026-10-29 11:17;M2;12;lowest|milan;2026-10-29;LIMC;lowest-temperature-in-milan-on-october-29-2026;8°C;;0.006;;0.006;;0.0
+2026-10-29 11:17;M2;12;lowest|milan;2026-10-29;LIMC;lowest-temperature-in-milan-on-october-29-2026;9°C;;0.006;;0.006;;0.0
+2026-10-29 11:17;M2;12;lowest|milan;2026-10-29;LIMC;lowest-temperature-in-milan-on-october-29-2026;10°C;;0.001;;0.001;;0.0
+2026-10-29 11:17;M2;12;lowest|milan;2026-10-29;LIMC;lowest-temperature-in-milan-on-october-29-2026;11°C or higher;;0.001;;0.001;;0.0
+2026-10-29 11:17;M2;12;lowest|madrid;2026-10-29;LEMD;lowest-temperature-in-madrid-on-october-29-2026;4°C or below;;0.097;;0.097;;0.0
+2026-10-29 11:17;M2;12;lowest|madrid;2026-10-29;LEMD;lowest-temperature-in-madrid-on-october-29-2026;5°C;0.001;0.082;0.0415;0.082;0.999;0.0
+2026-10-29 11:17;M2;12;lowest|madrid;2026-10-29;LEMD;lowest-temperature-in-madrid-on-october-29-2026;6°C;0.92;;;;0.08;0.0
+2026-10-29 11:17;M2;12;lowest|madrid;2026-10-29;LEMD;lowest-temperature-in-madrid-on-october-29-2026;7°C;0.001;0.007;0.004;0.007;0.999;0.0
+2026-10-29 11:17;M2;12;lowest|madrid;2026-10-29;LEMD;lowest-temperature-in-madrid-on-october-29-2026;8°C;;0.001;;0.001;;0.0
+2026-10-29 11:17;M2;12;lowest|madrid;2026-10-29;LEMD;lowest-temperature-in-madrid-on-october-29-2026;9°C;;0.001;;0.001;;0.0
+2026-10-29 11:17;M2;12;lowest|madrid;2026-10-29;LEMD;lowest-temperature-in-madrid-on-october-29-2026;10°C;;0.001;;0.001;;0.0
+2026-10-29 11:17;M2;12;lowest|madrid;2026-10-29;LEMD;lowest-temperature-in-madrid-on-october-29-2026;11°C;;0.001;;0.001;;0.0
+2026-10-29 11:17;M2;12;lowest|madrid;2026-10-29;LEMD;lowest-temperature-in-madrid-on-october-29-2026;12°C;;0.001;;0.001;;0.0
+2026-10-29 11:17;M2;12;lowest|madrid;2026-10-29;LEMD;lowest-temperature-in-madrid-on-october-29-2026;13°C;;0.001;;0.001;;0.0
+2026-10-29 11:17;M2;12;lowest|madrid;2026-10-29;LEMD;lowest-temperature-in-madrid-on-october-29-2026;14°C or higher;;0.001;;0.001;;0.0
+2026-10-29 11:17;M2;12;lowest|warsaw;2026-10-29;EPWA;lowest-temperature-in-warsaw-on-october-29-2026;1°C or below;;0.001;;0.001;;0.0
+2026-10-29 11:17;M2;12;lowest|warsaw;2026-10-29;EPWA;lowest-temperature-in-warsaw-on-october-29-2026;2°C;;0.009;;0.009;;0.0
+2026-10-29 11:17;M2;12;lowest|warsaw;2026-10-29;EPWA;lowest-temperature-in-warsaw-on-october-29-2026;3°C;;0.017;;0.017;;0.0
+2026-10-29 11:17;M2;12;lowest|warsaw;2026-10-29;EPWA;lowest-temperature-in-warsaw-on-october-29-2026;4°C;;0.05;;0.05;;0.0
+2026-10-29 11:17;M2;12;lowest|warsaw;2026-10-29;EPWA;lowest-temperature-in-warsaw-on-october-29-2026;5°C;0.03;0.09;0.06;0.09;0.97;0.0
+2026-10-29 11:17;M2;12;lowest|warsaw;2026-10-29;EPWA;lowest-temperature-in-warsaw-on-october-29-2026;6°C;0.04;0.38;0.21;0.385;0.96;0.0
+2026-10-29 11:17;M2;12;lowest|warsaw;2026-10-29;EPWA;lowest-temperature-in-warsaw-on-october-29-2026;7°C;0.9;0.95;0.925;0.95;0.1078;0.0
+2026-10-29 11:17;M2;12;lowest|warsaw;2026-10-29;EPWA;lowest-temperature-in-warsaw-on-october-29-2026;8°C;;0.006;;0.006;;0.0
+2026-10-29 11:17;M2;12;lowest|warsaw;2026-10-29;EPWA;lowest-temperature-in-warsaw-on-october-29-2026;9°C;;0.001;;0.001;;0.0
+2026-10-29 11:17;M2;12;lowest|warsaw;2026-10-29;EPWA;lowest-temperature-in-warsaw-on-october-29-2026;10°C;;0.001;;0.001;;0.0
+2026-10-29 11:17;M2;12;lowest|warsaw;2026-10-29;EPWA;lowest-temperature-in-warsaw-on-october-29-2026;11°C or higher;;0.001;;0.001;;0.0
+2026-10-29 11:17;M2;12;lowest|amsterdam;2026-10-29;EHAM;lowest-temperature-in-amsterdam-on-october-29-2026;4°C or below;;0.01;;0.01;;0.0
+2026-10-29 11:17;M2;12;lowest|amsterdam;2026-10-29;EHAM;lowest-temperature-in-amsterdam-on-october-29-2026;5°C;;0.01;;0.01;;0.0
+2026-10-29 11:17;M2;12;lowest|amsterdam;2026-10-29;EHAM;lowest-temperature-in-amsterdam-on-october-29-2026;6°C;;0.01;;0.0595;;0.0
+2026-10-29 11:17;M2;12;lowest|amsterdam;2026-10-29;EHAM;lowest-temperature-in-amsterdam-on-october-29-2026;7°C;;0.9;;0.9;;0.0
+2026-10-29 11:17;M2;12;lowest|amsterdam;2026-10-29;EHAM;lowest-temperature-in-amsterdam-on-october-29-2026;8°C;0.02;0.95;0.485;0.955;0.98;0.0
+2026-10-29 11:17;M2;12;lowest|amsterdam;2026-10-29;EHAM;lowest-temperature-in-amsterdam-on-october-29-2026;9°C;0.02;0.94;0.48;0.945;0.98;0.0
+2026-10-29 11:17;M2;12;lowest|amsterdam;2026-10-29;EHAM;lowest-temperature-in-amsterdam-on-october-29-2026;10°C;0.02;0.94;0.48;0.945;0.98;0.0
+2026-10-29 11:17;M2;12;lowest|amsterdam;2026-10-29;EHAM;lowest-temperature-in-amsterdam-on-october-29-2026;11°C;0.02;0.13;0.075;0.135;0.98;0.0
+2026-10-29 11:17;M2;12;lowest|amsterdam;2026-10-29;EHAM;lowest-temperature-in-amsterdam-on-october-29-2026;12°C;;0.001;;0.001;;0.0
+2026-10-29 11:17;M2;12;lowest|amsterdam;2026-10-29;EHAM;lowest-temperature-in-amsterdam-on-october-29-2026;13°C;;0.001;;0.001;;0.0
+2026-10-29 11:17;M2;12;lowest|amsterdam;2026-10-29;EHAM;lowest-temperature-in-amsterdam-on-october-29-2026;14°C or higher;;0.001;;0.001;;0.0
+2026-10-29 11:17;M2;12;highest|paris;2026-10-29;LFPB;highest-temperature-in-paris-on-october-29-2026;9°C or below;;0.001;;0.001;;0.0
+2026-10-29 11:17;M2;12;highest|paris;2026-10-29;LFPB;highest-temperature-in-paris-on-october-29-2026;10°C;;0.001;;0.001;;0.0
+2026-10-29 11:17;M2;12;highest|paris;2026-10-29;LFPB;highest-temperature-in-paris-on-october-29-2026;11°C;;0.001;;0.001;;0.0
+2026-10-29 11:17;M2;12;highest|paris;2026-10-29;LFPB;highest-temperature-in-paris-on-october-29-2026;12°C;;0.001;;0.001;;0.0
+2026-10-29 11:17;M2;12;highest|paris;2026-10-29;LFPB;highest-temperature-in-paris-on-october-29-2026;13°C;;0.004;;0.004;;0.0
+2026-10-29 11:17;M2;12;highest|paris;2026-10-29;LFPB;highest-temperature-in-paris-on-october-29-2026;14°C;0.031;0.062;0.0465;0.062;0.9705;0.0
+2026-10-29 11:17;M2;12;highest|paris;2026-10-29;LFPB;highest-temperature-in-paris-on-october-29-2026;15°C;0.53;0.58;0.555;0.58;0.475;0.0
+2026-10-29 11:17;M2;12;highest|paris;2026-10-29;LFPB;highest-temperature-in-paris-on-october-29-2026;16°C;0.37;0.42;0.395;0.42;0.63;0.0
+2026-10-29 11:17;M2;12;highest|paris;2026-10-29;LFPB;highest-temperature-in-paris-on-october-29-2026;17°C;0.012;0.016;0.014;0.0165;0.988;0.0
+2026-10-29 11:17;M2;12;highest|paris;2026-10-29;LFPB;highest-temperature-in-paris-on-october-29-2026;18°C;;0.002;;0.002;;0.0
+2026-10-29 11:17;M2;12;highest|paris;2026-10-29;LFPB;highest-temperature-in-paris-on-october-29-2026;19°C or higher;;0.001;;0.001;;0.0
+2026-10-29 11:17;M2;12;highest|munich;2026-10-29;EDDM;highest-temperature-in-munich-on-october-29-2026;3°C or below;;0.001;;0.001;;0.0
+2026-10-29 11:17;M2;12;highest|munich;2026-10-29;EDDM;highest-temperature-in-munich-on-october-29-2026;4°C;;0.001;;0.001;;0.0
+2026-10-29 11:17;M2;12;highest|munich;2026-10-29;EDDM;highest-temperature-in-munich-on-october-29-2026;5°C;;0.001;;0.001;;0.0
+2026-10-29 11:17;M2;12;highest|munich;2026-10-29;EDDM;highest-temperature-in-munich-on-october-29-2026;6°C;;0.001;;0.001;;0.0
+2026-10-29 11:17;M2;12;highest|munich;2026-10-29;EDDM;highest-temperature-in-munich-on-october-29-2026;7°C;;0.001;;0.001;;0.0
+2026-10-29 11:17;M2;12;highest|munich;2026-10-29;EDDM;highest-temperature-in-munich-on-october-29-2026;8°C;;0.001;;0.001;;0.0
+2026-10-29 11:17;M2;12;highest|munich;2026-10-29;EDDM;highest-temperature-in-munich-on-october-29-2026;9°C;0.02;0.04;0.03;0.04;0.98;0.0
+2026-10-29 11:17;M2;12;highest|munich;2026-10-29;EDDM;highest-temperature-in-munich-on-october-29-2026;10°C;0.165;0.266;0.2155;0.2665;0.835;0.0
+2026-10-29 11:17;M2;12;highest|munich;2026-10-29;EDDM;highest-temperature-in-munich-on-october-29-2026;11°C;0.47;0.56;0.515;0.565;0.53;0.0
+2026-10-29 11:17;M2;12;highest|munich;2026-10-29;EDDM;highest-temperature-in-munich-on-october-29-2026;12°C;0.24;0.27;0.255;0.27;0.76;0.0
+2026-10-29 11:17;M2;12;highest|munich;2026-10-29;EDDM;highest-temperature-in-munich-on-october-29-2026;13°C or higher;0.018;0.038;0.028;0.038;0.982;0.0
+2026-10-29 11:17;M2;12;highest|milan;2026-10-29;LIMC;highest-temperature-in-milan-on-october-29-2026;10°C or below;;0.001;;0.001;;0.0
+2026-10-29 11:17;M2;12;highest|milan;2026-10-29;LIMC;highest-temperature-in-milan-on-october-29-2026;11°C;;0.001;;0.001;;0.0
+2026-10-29 11:17;M2;12;highest|milan;2026-10-29;LIMC;highest-temperature-in-milan-on-october-29-2026;12°C;;0.001;;0.001;;0.0
+2026-10-29 11:17;M2;12;highest|milan;2026-10-29;LIMC;highest-temperature-in-milan-on-october-29-2026;13°C;;0.001;;0.001;;0.0
+2026-10-29 11:17;M2;12;highest|milan;2026-10-29;LIMC;highest-temperature-in-milan-on-october-29-2026;14°C;;0.001;;0.001;;0.0
+2026-10-29 11:17;M2;12;highest|milan;2026-10-29;LIMC;highest-temperature-in-milan-on-october-29-2026;15°C;;0.001;;0.001;;0.0
+2026-10-29 11:17;M2;12;highest|milan;2026-10-29;LIMC;highest-temperature-in-milan-on-october-29-2026;16°C;0.001;0.002;0.0015;0.002;0.999;0.0
+2026-10-29 11:17;M2;12;highest|milan;2026-10-29;LIMC;highest-temperature-in-milan-on-october-29-2026;17°C;0.056;0.117;0.0865;0.117;0.944;0.0
+2026-10-29 11:17;M2;12;highest|milan;2026-10-29;LIMC;highest-temperature-in-milan-on-october-29-2026;18°C;0.47;0.6;0.535;0.6;0.535;0.0
+2026-10-29 11:17;M2;12;highest|milan;2026-10-29;LIMC;highest-temperature-in-milan-on-october-29-2026;19°C;0.33;0.46;0.395;0.465;0.67;0.0
+2026-10-29 11:17;M2;12;highest|milan;2026-10-29;LIMC;highest-temperature-in-milan-on-october-29-2026;20°C or higher;0.007;0.015;0.011;0.015;0.993;0.0
+2026-10-29 11:17;M2;12;highest|madrid;2026-10-29;LEMD;highest-temperature-in-madrid-on-october-29-2026;15°C or below;;0.001;;0.001;;0.0
+2026-10-29 11:17;M2;12;highest|madrid;2026-10-29;LEMD;highest-temperature-in-madrid-on-october-29-2026;16°C;;0.001;;0.001;;0.0
+2026-10-29 11:17;M2;12;highest|madrid;2026-10-29;LEMD;highest-temperature-in-madrid-on-october-29-2026;17°C;;0.001;;0.001;;0.0
+2026-10-29 11:17;M2;12;highest|madrid;2026-10-29;LEMD;highest-temperature-in-madrid-on-october-29-2026;18°C;;0.001;;0.001;;0.0
+2026-10-29 11:17;M2;12;highest|madrid;2026-10-29;LEMD;highest-temperature-in-madrid-on-october-29-2026;19°C;;0.001;;0.001;;0.0
+2026-10-29 11:17;M2;12;highest|madrid;2026-10-29;LEMD;highest-temperature-in-madrid-on-october-29-2026;20°C;0.003;0.02;0.0115;0.02;0.997;0.0
+2026-10-29 11:17;M2;12;highest|madrid;2026-10-29;LEMD;highest-temperature-in-madrid-on-october-29-2026;21°C;0.032;0.062;0.047;0.063;0.968;0.0
+2026-10-29 11:17;M2;12;highest|madrid;2026-10-29;LEMD;highest-temperature-in-madrid-on-october-29-2026;22°C;0.57;0.61;0.59;0.61;0.435;0.0
+2026-10-29 11:17;M2;12;highest|madrid;2026-10-29;LEMD;highest-temperature-in-madrid-on-october-29-2026;23°C;0.34;0.37;0.355;0.37;0.66;0.0
+2026-10-29 11:17;M2;12;highest|madrid;2026-10-29;LEMD;highest-temperature-in-madrid-on-october-29-2026;24°C;0.01;0.015;0.0125;0.015;0.99;0.0
+2026-10-29 11:17;M2;12;highest|madrid;2026-10-29;LEMD;highest-temperature-in-madrid-on-october-29-2026;25°C or higher;;0.002;;0.002;;0.0
+2026-10-29 11:17;M2;12;highest|warsaw;2026-10-29;EPWA;highest-temperature-in-warsaw-on-october-29-2026;3°C or below;;0.001;;0.001;;0.0
+2026-10-29 11:17;M2;12;highest|warsaw;2026-10-29;EPWA;highest-temperature-in-warsaw-on-october-29-2026;4°C;;0.001;;0.001;;0.0
+2026-10-29 11:17;M2;12;highest|warsaw;2026-10-29;EPWA;highest-temperature-in-warsaw-on-october-29-2026;5°C;;0.001;;0.001;;0.0
+2026-10-29 11:17;M2;12;highest|warsaw;2026-10-29;EPWA;highest-temperature-in-warsaw-on-october-29-2026;6°C;;0.001;;0.001;;0.0
+2026-10-29 11:17;M2;12;highest|warsaw;2026-10-29;EPWA;highest-temperature-in-warsaw-on-october-29-2026;7°C;;0.001;;0.001;;0.0
+2026-10-29 11:17;M2;12;highest|warsaw;2026-10-29;EPWA;highest-temperature-in-warsaw-on-october-29-2026;8°C;;0.001;;0.001;;0.0
+2026-10-29 11:17;M2;12;highest|warsaw;2026-10-29;EPWA;highest-temperature-in-warsaw-on-october-29-2026;9°C;0.224;0.324;0.274;0.324;0.776;0.0
+2026-10-29 11:17;M2;12;highest|warsaw;2026-10-29;EPWA;highest-temperature-in-warsaw-on-october-29-2026;10°C;0.52;0.66;0.59;0.66;0.48;0.0
+2026-10-29 11:17;M2;12;highest|warsaw;2026-10-29;EPWA;highest-temperature-in-warsaw-on-october-29-2026;11°C;0.07;0.13;0.1;0.13;0.93;0.0
+2026-10-29 11:17;M2;12;highest|warsaw;2026-10-29;EPWA;highest-temperature-in-warsaw-on-october-29-2026;12°C;0.008;0.019;0.0135;0.019;0.992;0.0
+2026-10-29 11:17;M2;12;highest|warsaw;2026-10-29;EPWA;highest-temperature-in-warsaw-on-october-29-2026;13°C or higher;;0.001;;0.001;;0.0
+2026-10-29 11:17;M2;12;highest|amsterdam;2026-10-29;EHAM;highest-temperature-in-amsterdam-on-october-29-2026;9°C or below;;0.001;;0.001;;0.0
+2026-10-29 11:17;M2;12;highest|amsterdam;2026-10-29;EHAM;highest-temperature-in-amsterdam-on-october-29-2026;10°C;;0.001;;0.001;;0.0
+2026-10-29 11:17;M2;12;highest|amsterdam;2026-10-29;EHAM;highest-temperature-in-amsterdam-on-october-29-2026;11°C;;0.001;;0.001;;0.0
+2026-10-29 11:17;M2;12;highest|amsterdam;2026-10-29;EHAM;highest-temperature-in-amsterdam-on-october-29-2026;12°C;;0.001;;0.001;;0.0
+2026-10-29 11:17;M2;12;highest|amsterdam;2026-10-29;EHAM;highest-temperature-in-amsterdam-on-october-29-2026;13°C;;0.001;;0.001;;0.0
+2026-10-29 11:17;M2;12;highest|amsterdam;2026-10-29;EHAM;highest-temperature-in-amsterdam-on-october-29-2026;14°C;;0.001;;0.001;;0.0
+2026-10-29 11:17;M2;12;highest|amsterdam;2026-10-29;EHAM;highest-temperature-in-amsterdam-on-october-29-2026;15°C;0.05;0.13;0.09;0.135;0.95;0.0
+2026-10-29 11:17;M2;12;highest|amsterdam;2026-10-29;EHAM;highest-temperature-in-amsterdam-on-october-29-2026;16°C;0.68;0.81;0.745;0.815;0.32;0.0
+2026-10-29 11:17;M2;12;highest|amsterdam;2026-10-29;EHAM;highest-temperature-in-amsterdam-on-october-29-2026;17°C;0.1;0.2;0.15;0.2;0.9;0.0
+2026-10-29 11:17;M2;12;highest|amsterdam;2026-10-29;EHAM;highest-temperature-in-amsterdam-on-october-29-2026;18°C;0.004;0.016;0.01;0.016;0.996;0.0
+2026-10-29 11:17;M2;12;highest|amsterdam;2026-10-29;EHAM;highest-temperature-in-amsterdam-on-october-29-2026;19°C or higher;;0.001;;0.001;;0.0
+2026-10-29 11:17;M1;6;highest|austin;2026-10-29;KAUS;highest-temperature-in-austin-on-october-29-2026;71°F or below;0.025;0.037;0.031;0.037;0.975;0.0
+2026-10-29 11:17;M1;6;highest|austin;2026-10-29;KAUS;highest-temperature-in-austin-on-october-29-2026;72-73°F;0.084;0.1;0.092;0.1005;0.916;0.0
+2026-10-29 11:17;M1;6;highest|austin;2026-10-29;KAUS;highest-temperature-in-austin-on-october-29-2026;74-75°F;0.28;0.29;0.285;0.29;0.72;0.0
+2026-10-29 11:17;M1;6;highest|austin;2026-10-29;KAUS;highest-temperature-in-austin-on-october-29-2026;76-77°F;0.36;0.4;0.38;0.4;0.64;0.0
+2026-10-29 11:17;M1;6;highest|austin;2026-10-29;KAUS;highest-temperature-in-austin-on-october-29-2026;78-79°F;0.18;0.2;0.19;0.205;0.825;0.0
+2026-10-29 11:17;M1;6;highest|austin;2026-10-29;KAUS;highest-temperature-in-austin-on-october-29-2026;80-81°F;0.031;0.05;0.0405;0.05;0.969;0.0
+2026-10-29 11:17;M1;6;highest|austin;2026-10-29;KAUS;highest-temperature-in-austin-on-october-29-2026;82-83°F;0.004;0.025;0.0145;0.025;0.996;0.0
+2026-10-29 11:17;M1;6;highest|austin;2026-10-29;KAUS;highest-temperature-in-austin-on-october-29-2026;84-85°F;;0.001;;0.001;;0.0
+2026-10-29 11:17;M1;6;highest|austin;2026-10-29;KAUS;highest-temperature-in-austin-on-october-29-2026;86-87°F;;0.001;;0.001;;0.0
+2026-10-29 11:17;M1;6;highest|austin;2026-10-29;KAUS;highest-temperature-in-austin-on-october-29-2026;88-89°F;;0.001;;0.001;;0.0
+2026-10-29 11:17;M1;6;highest|austin;2026-10-29;KAUS;highest-temperature-in-austin-on-october-29-2026;90°F or higher;;0.001;;0.001;;0.0
+2026-10-29 11:17;M1;6;lowest|dallas;2026-10-29;KDAL;lowest-temperature-in-dallas-on-october-29-2026;59°F or below;;0.01;;0.01;;0.0
+2026-10-29 11:17;M1;6;lowest|dallas;2026-10-29;KDAL;lowest-temperature-in-dallas-on-october-29-2026;60-61°F;;0.7;;0.708;;0.0
+2026-10-29 11:17;M1;6;lowest|dallas;2026-10-29;KDAL;lowest-temperature-in-dallas-on-october-29-2026;62-63°F;;0.92;;0.92;;0.0
+2026-10-29 11:17;M1;6;lowest|dallas;2026-10-29;KDAL;lowest-temperature-in-dallas-on-october-29-2026;64-65°F;0.02;0.88;0.45;0.885;0.98;0.0
+2026-10-29 11:17;M1;6;lowest|dallas;2026-10-29;KDAL;lowest-temperature-in-dallas-on-october-29-2026;66-67°F;0.02;0.88;0.45;0.885;0.98;0.0
+2026-10-29 11:17;M1;6;lowest|dallas;2026-10-29;KDAL;lowest-temperature-in-dallas-on-october-29-2026;68-69°F;0.02;0.88;0.45;0.885;0.98;0.0
+2026-10-29 11:17;M1;6;lowest|dallas;2026-10-29;KDAL;lowest-temperature-in-dallas-on-october-29-2026;70-71°F;0.02;0.88;0.45;0.885;0.98;0.0
+2026-10-29 11:17;M1;6;lowest|dallas;2026-10-29;KDAL;lowest-temperature-in-dallas-on-october-29-2026;72-73°F;;0.001;;0.001;;0.0
+2026-10-29 11:17;M1;6;lowest|dallas;2026-10-29;KDAL;lowest-temperature-in-dallas-on-october-29-2026;74-75°F;;0.002;;0.002;;0.0
+2026-10-29 11:17;M1;6;lowest|dallas;2026-10-29;KDAL;lowest-temperature-in-dallas-on-october-29-2026;76-77°F;;0.002;;0.002;;0.0
+2026-10-29 11:17;M1;6;lowest|dallas;2026-10-29;KDAL;lowest-temperature-in-dallas-on-october-29-2026;78°F or higher;;0.001;;0.001;;0.0
+2026-10-29 11:17;M1;6;lowest|chicago;2026-10-29;KORD;lowest-temperature-in-chicago-on-october-29-2026;51°F or below;0.02;0.968;0.494;0.9685;0.98;0.0
+2026-10-29 11:17;M1;6;lowest|chicago;2026-10-29;KORD;lowest-temperature-in-chicago-on-october-29-2026;52-53°F;0.02;0.9;0.46;0.905;0.98;0.0
+2026-10-29 11:17;M1;6;lowest|chicago;2026-10-29;KORD;lowest-temperature-in-chicago-on-october-29-2026;54-55°F;;0.94;;0.94;;0.0
+2026-10-29 11:17;M1;6;lowest|chicago;2026-10-29;KORD;lowest-temperature-in-chicago-on-october-29-2026;56-57°F;;0.94;;0.94;;0.0
+2026-10-29 11:17;M1;6;lowest|chicago;2026-10-29;KORD;lowest-temperature-in-chicago-on-october-29-2026;58-59°F;;0.7;;0.712;;0.0
+2026-10-29 11:17;M1;6;lowest|chicago;2026-10-29;KORD;lowest-temperature-in-chicago-on-october-29-2026;60-61°F;;0.9;;0.9;;0.0
+2026-10-29 11:17;M1;6;lowest|chicago;2026-10-29;KORD;lowest-temperature-in-chicago-on-october-29-2026;62-63°F;0.001;0.898;0.4495;0.8985;0.999;0.0
+2026-10-29 11:17;M1;6;lowest|chicago;2026-10-29;KORD;lowest-temperature-in-chicago-on-october-29-2026;64-65°F;;0.001;;0.001;;0.0
+2026-10-29 11:17;M1;6;lowest|chicago;2026-10-29;KORD;lowest-temperature-in-chicago-on-october-29-2026;66-67°F;;0.001;;0.001;;0.0
+2026-10-29 11:17;M1;6;lowest|chicago;2026-10-29;KORD;lowest-temperature-in-chicago-on-october-29-2026;68-69°F;;0.01;;0.01;;0.0
+2026-10-29 11:17;M1;6;lowest|chicago;2026-10-29;KORD;lowest-temperature-in-chicago-on-october-29-2026;70°F or higher;;0.009;;0.009;;0.0
+2026-10-29 11:17;M1;6;lowest|austin;2026-10-29;KAUS;lowest-temperature-in-austin-on-october-29-2026;57°F or below;0.001;0.009;0.005;0.009;0.999;0.0
+2026-10-29 11:17;M1;6;lowest|austin;2026-10-29;KAUS;lowest-temperature-in-austin-on-october-29-2026;58-59°F;0.001;0.01;0.0055;0.01;0.999;0.0
+2026-10-29 11:17;M1;6;lowest|austin;2026-10-29;KAUS;lowest-temperature-in-austin-on-october-29-2026;60-61°F;0.001;0.01;0.0055;0.0595;0.999;0.0
+2026-10-29 11:17;M1;6;lowest|austin;2026-10-29;KAUS;lowest-temperature-in-austin-on-october-29-2026;62-63°F;;0.91;;0.91;;0.0
+2026-10-29 11:17;M1;6;lowest|austin;2026-10-29;KAUS;lowest-temperature-in-austin-on-october-29-2026;64-65°F;0.1;0.9;0.5;0.9;0.905;0.0
+2026-10-29 11:17;M1;6;lowest|austin;2026-10-29;KAUS;lowest-temperature-in-austin-on-october-29-2026;66-67°F;;0.001;;0.001;;0.0
+2026-10-29 11:17;M1;6;lowest|austin;2026-10-29;KAUS;lowest-temperature-in-austin-on-october-29-2026;68-69°F;;0.008;;0.008;;0.0
+2026-10-29 11:17;M1;6;lowest|austin;2026-10-29;KAUS;lowest-temperature-in-austin-on-october-29-2026;70-71°F;;0.008;;0.008;;0.0
+2026-10-29 11:17;M1;6;lowest|austin;2026-10-29;KAUS;lowest-temperature-in-austin-on-october-29-2026;72-73°F;;0.008;;0.008;;0.0
+2026-10-29 11:17;M1;6;lowest|austin;2026-10-29;KAUS;lowest-temperature-in-austin-on-october-29-2026;74-75°F;;0.01;;0.01;;0.0
+2026-10-29 11:17;M1;6;lowest|austin;2026-10-29;KAUS;lowest-temperature-in-austin-on-october-29-2026;76°F or higher;;0.01;;0.01;;0.0
+2026-10-29 11:17;M1;6;lowest|houston;2026-10-29;KHOU;lowest-temperature-in-houston-on-october-29-2026;59°F or below;0.001;0.01;0.0055;0.01;0.999;0.0
+2026-10-29 11:17;M1;6;lowest|houston;2026-10-29;KHOU;lowest-temperature-in-houston-on-october-29-2026;60-61°F;0.001;0.01;0.0055;0.0595;0.999;0.0
+2026-10-29 11:17;M1;6;lowest|houston;2026-10-29;KHOU;lowest-temperature-in-houston-on-october-29-2026;62-63°F;;0.9;;0.9;;0.0
+2026-10-29 11:17;M1;6;lowest|houston;2026-10-29;KHOU;lowest-temperature-in-houston-on-october-29-2026;64-65°F;0.02;0.89;0.455;0.895;0.98;0.0
+2026-10-29 11:17;M1;6;lowest|houston;2026-10-29;KHOU;lowest-temperature-in-houston-on-october-29-2026;66-67°F;0.1;0.93;0.515;0.93;0.905;0.0
+2026-10-29 11:17;M1;6;lowest|houston;2026-10-29;KHOU;lowest-temperature-in-houston-on-october-29-2026;68-69°F;;0.001;;0.001;;0.0
+2026-10-29 11:17;M1;6;lowest|houston;2026-10-29;KHOU;lowest-temperature-in-houston-on-october-29-2026;70-71°F;;0.006;;0.006;;0.0
+2026-10-29 11:17;M1;6;lowest|houston;2026-10-29;KHOU;lowest-temperature-in-houston-on-october-29-2026;72-73°F;0.001;0.002;0.0015;0.002;0.999;0.0
+2026-10-29 11:17;M1;6;lowest|houston;2026-10-29;KHOU;lowest-temperature-in-houston-on-october-29-2026;74-75°F;0.001;0.002;0.0015;0.002;0.999;0.0
+2026-10-29 11:17;M1;6;lowest|houston;2026-10-29;KHOU;lowest-temperature-in-houston-on-october-29-2026;76-77°F;;0.002;;0.002;;0.0
+2026-10-29 11:17;M1;6;lowest|houston;2026-10-29;KHOU;lowest-temperature-in-houston-on-october-29-2026;78°F or higher;;0.001;;0.001;;0.0
+2026-10-29 11:17;M1;6;highest|dallas;2026-10-29;KDAL;highest-temperature-in-dallas-on-october-29-2026;73°F or below;;0.003;;0.003;;0.0
+2026-10-29 11:17;M1;6;highest|dallas;2026-10-29;KDAL;highest-temperature-in-dallas-on-october-29-2026;74-75°F;0.002;0.006;0.004;0.006;0.998;0.0
+2026-10-29 11:17;M1;6;highest|dallas;2026-10-29;KDAL;highest-temperature-in-dallas-on-october-29-2026;76-77°F;0.117;0.151;0.134;0.151;0.8835;0.0
+2026-10-29 11:17;M1;6;highest|dallas;2026-10-29;KDAL;highest-temperature-in-dallas-on-october-29-2026;78-79°F;0.46;0.49;0.475;0.49;0.54;0.0
+2026-10-29 11:17;M1;6;highest|dallas;2026-10-29;KDAL;highest-temperature-in-dallas-on-october-29-2026;80-81°F;0.34;0.36;0.35;0.365;0.665;0.0
+2026-10-29 11:17;M1;6;highest|dallas;2026-10-29;KDAL;highest-temperature-in-dallas-on-october-29-2026;82-83°F;0.04;0.07;0.055;0.07;0.96;0.0
+2026-10-29 11:17;M1;6;highest|dallas;2026-10-29;KDAL;highest-temperature-in-dallas-on-october-29-2026;84-85°F;0.003;0.004;0.0035;0.004;0.997;0.0
+2026-10-29 11:17;M1;6;highest|dallas;2026-10-29;KDAL;highest-temperature-in-dallas-on-october-29-2026;86-87°F;;0.002;;0.002;;0.0
+2026-10-29 11:17;M1;6;highest|dallas;2026-10-29;KDAL;highest-temperature-in-dallas-on-october-29-2026;88-89°F;;0.001;;0.001;;0.0
+2026-10-29 11:17;M1;6;highest|dallas;2026-10-29;KDAL;highest-temperature-in-dallas-on-october-29-2026;90-91°F;;0.001;;0.001;;0.0
+2026-10-29 11:17;M1;6;highest|dallas;2026-10-29;KDAL;highest-temperature-in-dallas-on-october-29-2026;92°F or higher;;0.001;;0.001;;0.0
+2026-10-29 11:17;M1;6;highest|chicago;2026-10-29;KORD;highest-temperature-in-chicago-on-october-29-2026;63°F or below;;0.001;;0.001;;0.0
+2026-10-29 11:17;M1;6;highest|chicago;2026-10-29;KORD;highest-temperature-in-chicago-on-october-29-2026;64-65°F;;0.001;;0.001;;0.0
+2026-10-29 11:17;M1;6;highest|chicago;2026-10-29;KORD;highest-temperature-in-chicago-on-october-29-2026;66-67°F;0.001;0.002;0.0015;0.002;0.999;0.0
+2026-10-29 11:17;M1;6;highest|chicago;2026-10-29;KORD;highest-temperature-in-chicago-on-october-29-2026;68-69°F;0.41;0.45;0.43;0.45;0.59;0.0
+2026-10-29 11:17;M1;6;highest|chicago;2026-10-29;KORD;highest-temperature-in-chicago-on-october-29-2026;70-71°F;0.45;0.5;0.475;0.5;0.55;0.0
+2026-10-29 11:17;M1;6;highest|chicago;2026-10-29;KORD;highest-temperature-in-chicago-on-october-29-2026;72-73°F;0.07;0.09;0.08;0.09;0.93;0.0
+2026-10-29 11:17;M1;6;highest|chicago;2026-10-29;KORD;highest-temperature-in-chicago-on-october-29-2026;74-75°F;0.003;0.008;0.0055;0.008;0.997;0.0
+2026-10-29 11:17;M1;6;highest|chicago;2026-10-29;KORD;highest-temperature-in-chicago-on-october-29-2026;76-77°F;;0.001;;0.001;;0.0
+2026-10-29 11:17;M1;6;highest|chicago;2026-10-29;KORD;highest-temperature-in-chicago-on-october-29-2026;78-79°F;;0.001;;0.001;;0.0
+2026-10-29 11:17;M1;6;highest|chicago;2026-10-29;KORD;highest-temperature-in-chicago-on-october-29-2026;80-81°F;;0.001;;0.001;;0.0
+2026-10-29 11:17;M1;6;highest|chicago;2026-10-29;KORD;highest-temperature-in-chicago-on-october-29-2026;82°F or higher;;0.001;;0.001;;0.0
+2026-10-29 11:17;M1;6;highest|houston;2026-10-29;KHOU;highest-temperature-in-houston-on-october-29-2026;73°F or below;;0.001;;0.001;;0.0
+2026-10-29 11:17;M1;6;highest|houston;2026-10-29;KHOU;highest-temperature-in-houston-on-october-29-2026;74-75°F;;0.001;;0.001;;0.0
+2026-10-29 11:17;M1;6;highest|houston;2026-10-29;KHOU;highest-temperature-in-houston-on-october-29-2026;76-77°F;0.001;0.002;0.0015;0.002;;0.0
+2026-10-29 11:17;M1;6;highest|houston;2026-10-29;KHOU;highest-temperature-in-houston-on-october-29-2026;78-79°F;0.016;0.036;0.026;0.036;0.985;0.0
+2026-10-29 11:17;M1;6;highest|houston;2026-10-29;KHOU;highest-temperature-in-houston-on-october-29-2026;80-81°F;0.4;0.42;0.41;0.42;0.6;0.0
+2026-10-29 11:17;M1;6;highest|houston;2026-10-29;KHOU;highest-temperature-in-houston-on-october-29-2026;82-83°F;0.54;0.57;0.555;0.57;0.46;0.0
+2026-10-29 11:17;M1;6;highest|houston;2026-10-29;KHOU;highest-temperature-in-houston-on-october-29-2026;84-85°F;0.015;0.032;0.0235;0.032;0.985;0.0
+2026-10-29 11:17;M1;6;highest|houston;2026-10-29;KHOU;highest-temperature-in-houston-on-october-29-2026;86-87°F;;0.001;;0.001;;0.0
+2026-10-29 11:17;M1;6;highest|houston;2026-10-29;KHOU;highest-temperature-in-houston-on-october-29-2026;88-89°F;0.001;0.002;0.0015;0.002;0.999;0.0
+2026-10-29 11:17;M1;6;highest|houston;2026-10-29;KHOU;highest-temperature-in-houston-on-october-29-2026;90-91°F;;0.001;;0.001;;0.0
+2026-10-29 11:17;M1;6;highest|houston;2026-10-29;KHOU;highest-temperature-in-houston-on-october-29-2026;92°F or higher;;0.001;;0.001;;0.0
+2026-10-29 11:17;M1;6;highest|panama-city;2026-10-29;MPMG;highest-temperature-in-panama-city-on-october-29-2026;25°C or below;;0.001;;0.001;;0.0
+2026-10-29 11:17;M1;6;highest|panama-city;2026-10-29;MPMG;highest-temperature-in-panama-city-on-october-29-2026;26°C;;0.001;;0.001;;0.0
+2026-10-29 11:17;M1;6;highest|panama-city;2026-10-29;MPMG;highest-temperature-in-panama-city-on-october-29-2026;27°C;;0.001;;0.001;;0.0
+2026-10-29 11:17;M1;6;highest|panama-city;2026-10-29;MPMG;highest-temperature-in-panama-city-on-october-29-2026;28°C;;0.001;;0.001;;0.0
+2026-10-29 11:17;M1;6;highest|panama-city;2026-10-29;MPMG;highest-temperature-in-panama-city-on-october-29-2026;29°C;;0.001;;0.001;;0.0
+2026-10-29 11:17;M1;6;highest|panama-city;2026-10-29;MPMG;highest-temperature-in-panama-city-on-october-29-2026;30°C;0.01;0.02;0.015;0.02;0.99;0.0
+2026-10-29 11:17;M1;6;highest|panama-city;2026-10-29;MPMG;highest-temperature-in-panama-city-on-october-29-2026;31°C;0.031;0.053;0.042;0.0535;0.969;0.0
+2026-10-29 11:17;M1;6;highest|panama-city;2026-10-29;MPMG;highest-temperature-in-panama-city-on-october-29-2026;32°C;0.51;0.53;0.52;0.535;0.49;0.0
+2026-10-29 11:17;M1;6;highest|panama-city;2026-10-29;MPMG;highest-temperature-in-panama-city-on-october-29-2026;33°C;0.42;0.45;0.435;0.45;0.585;0.0
+2026-10-29 11:17;M1;6;highest|panama-city;2026-10-29;MPMG;highest-temperature-in-panama-city-on-october-29-2026;34°C;0.01;0.022;0.016;0.022;0.99;0.0
+2026-10-29 11:17;M1;6;highest|panama-city;2026-10-29;MPMG;highest-temperature-in-panama-city-on-october-29-2026;35°C or higher;0.001;0.004;0.0025;0.004;0.999;0.0
+2026-10-29 11:17;M0;6;highest|dallas;2026-10-30;KDAL;highest-temperature-in-dallas-on-october-30-2026;65°F or below;0.001;0.002;0.0015;0.002;0.999;0.0
+2026-10-29 11:17;M0;6;highest|dallas;2026-10-30;KDAL;highest-temperature-in-dallas-on-october-30-2026;66-67°F;0.001;0.003;0.002;0.003;0.999;0.0
+2026-10-29 11:17;M0;6;highest|dallas;2026-10-30;KDAL;highest-temperature-in-dallas-on-october-30-2026;68-69°F;0.008;0.034;0.021;0.034;0.992;0.0
+2026-10-29 11:17;M0;6;highest|dallas;2026-10-30;KDAL;highest-temperature-in-dallas-on-october-30-2026;70-71°F;0.19;0.22;0.205;0.22;0.8105;0.0
+2026-10-29 11:17;M0;6;highest|dallas;2026-10-30;KDAL;highest-temperature-in-dallas-on-october-30-2026;72-73°F;0.4;0.42;0.41;0.42;0.6;0.0
+2026-10-29 11:17;M0;6;highest|dallas;2026-10-30;KDAL;highest-temperature-in-dallas-on-october-30-2026;74-75°F;0.26;0.28;0.27;0.28;0.74;0.0
+2026-10-29 11:17;M0;6;highest|dallas;2026-10-30;KDAL;highest-temperature-in-dallas-on-october-30-2026;76-77°F;0.06;0.09;0.075;0.09;0.94;0.0
+2026-10-29 11:17;M0;6;highest|dallas;2026-10-30;KDAL;highest-temperature-in-dallas-on-october-30-2026;78-79°F;0.008;0.02;0.014;0.02;0.992;0.0
+2026-10-29 11:17;M0;6;highest|dallas;2026-10-30;KDAL;highest-temperature-in-dallas-on-october-30-2026;80-81°F;0.001;0.002;0.0015;0.002;0.999;0.0
+2026-10-29 11:17;M0;6;highest|dallas;2026-10-30;KDAL;highest-temperature-in-dallas-on-october-30-2026;82-83°F;0.001;0.002;0.0015;0.002;0.999;0.0
+2026-10-29 11:17;M0;6;highest|dallas;2026-10-30;KDAL;highest-temperature-in-dallas-on-october-30-2026;84°F or higher;;0.001;;0.001;;0.0
+2026-10-29 11:17;M0;6;lowest|dallas;2026-10-30;KDAL;lowest-temperature-in-dallas-on-october-30-2026;57°F or below;;0.42;;0.42;;0.0
+2026-10-29 11:17;M0;6;lowest|dallas;2026-10-30;KDAL;lowest-temperature-in-dallas-on-october-30-2026;58-59°F;;0.69;;0.69;;0.0
+2026-10-29 11:17;M0;6;lowest|dallas;2026-10-30;KDAL;lowest-temperature-in-dallas-on-october-30-2026;60-61°F;;0.69;;0.69;;0.0
+2026-10-29 11:17;M0;6;lowest|dallas;2026-10-30;KDAL;lowest-temperature-in-dallas-on-october-30-2026;62-63°F;;0.69;;0.69;;0.0
+2026-10-29 11:17;M0;6;lowest|dallas;2026-10-30;KDAL;lowest-temperature-in-dallas-on-october-30-2026;64-65°F;;0.7;;0.7067;;0.0
+2026-10-29 11:17;M0;6;lowest|dallas;2026-10-30;KDAL;lowest-temperature-in-dallas-on-october-30-2026;66-67°F;;0.7;;0.7067;;0.0
+2026-10-29 11:17;M0;6;lowest|dallas;2026-10-30;KDAL;lowest-temperature-in-dallas-on-october-30-2026;68-69°F;;0.7;;0.7067;;0.0
+2026-10-29 11:17;M0;6;lowest|dallas;2026-10-30;KDAL;lowest-temperature-in-dallas-on-october-30-2026;70-71°F;;0.69;;0.69;;0.0
+2026-10-29 11:17;M0;6;lowest|dallas;2026-10-30;KDAL;lowest-temperature-in-dallas-on-october-30-2026;72-73°F;;0.61;;0.61;;0.0
+2026-10-29 11:17;M0;6;lowest|dallas;2026-10-30;KDAL;lowest-temperature-in-dallas-on-october-30-2026;74-75°F;;0.68;;0.68;;0.0
+2026-10-29 11:17;M0;6;lowest|dallas;2026-10-30;KDAL;lowest-temperature-in-dallas-on-october-30-2026;76°F or higher;;0.45;;0.455;;0.0
+2026-10-29 11:17;M0;6;lowest|chicago;2026-10-30;KORD;lowest-temperature-in-chicago-on-october-30-2026;39°F or below;;0.42;;0.42;;0.0
+2026-10-29 11:17;M0;6;lowest|chicago;2026-10-30;KORD;lowest-temperature-in-chicago-on-october-30-2026;40-41°F;;0.69;;0.69;;0.0
+2026-10-29 11:17;M0;6;lowest|chicago;2026-10-30;KORD;lowest-temperature-in-chicago-on-october-30-2026;42-43°F;;0.69;;0.69;;0.0
+2026-10-29 11:17;M0;6;lowest|chicago;2026-10-30;KORD;lowest-temperature-in-chicago-on-october-30-2026;44-45°F;;0.7;;0.7067;;0.0
+2026-10-29 11:17;M0;6;lowest|chicago;2026-10-30;KORD;lowest-temperature-in-chicago-on-october-30-2026;46-47°F;;0.7;;0.7067;;0.0
+2026-10-29 11:17;M0;6;lowest|chicago;2026-10-30;KORD;lowest-temperature-in-chicago-on-october-30-2026;48-49°F;;0.7;;0.7067;;0.0
+2026-10-29 11:17;M0;6;lowest|chicago;2026-10-30;KORD;lowest-temperature-in-chicago-on-october-30-2026;50-51°F;;0.67;;0.67;;0.0
+2026-10-29 11:17;M0;6;lowest|chicago;2026-10-30;KORD;lowest-temperature-in-chicago-on-october-30-2026;52-53°F;;0.64;;0.64;;0.0
+2026-10-29 11:17;M0;6;lowest|chicago;2026-10-30;KORD;lowest-temperature-in-chicago-on-october-30-2026;54-55°F;;0.69;;0.69;;0.0
+2026-10-29 11:17;M0;6;lowest|chicago;2026-10-30;KORD;lowest-temperature-in-chicago-on-october-30-2026;56-57°F;;0.61;;0.61;;0.0
+2026-10-29 11:17;M0;6;lowest|chicago;2026-10-30;KORD;lowest-temperature-in-chicago-on-october-30-2026;58°F or higher;;0.43;;0.435;;0.0
+2026-10-29 11:17;M0;6;lowest|austin;2026-10-30;KAUS;lowest-temperature-in-austin-on-october-30-2026;55°F or below;;0.46;;0.465;;0.0
+2026-10-29 11:17;M0;6;lowest|austin;2026-10-30;KAUS;lowest-temperature-in-austin-on-october-30-2026;56-57°F;;0.46;;0.465;;0.0
+2026-10-29 11:17;M0;6;lowest|austin;2026-10-30;KAUS;lowest-temperature-in-austin-on-october-30-2026;58-59°F;;0.7;;0.7067;;0.0
+2026-10-29 11:17;M0;6;lowest|austin;2026-10-30;KAUS;lowest-temperature-in-austin-on-october-30-2026;60-61°F;;0.7;;0.7067;;0.0
+2026-10-29 11:17;M0;6;lowest|austin;2026-10-30;KAUS;lowest-temperature-in-austin-on-october-30-2026;62-63°F;;0.7;;0.7067;;0.0
+2026-10-29 11:17;M0;6;lowest|austin;2026-10-30;KAUS;lowest-temperature-in-austin-on-october-30-2026;64-65°F;;0.7;;0.7067;;0.0
+2026-10-29 11:17;M0;6;lowest|austin;2026-10-30;KAUS;lowest-temperature-in-austin-on-october-30-2026;66-67°F;;0.7;;0.7067;;0.0
+2026-10-29 11:17;M0;6;lowest|austin;2026-10-30;KAUS;lowest-temperature-in-austin-on-october-30-2026;68-69°F;;0.7;;0.7067;;0.0
+2026-10-29 11:17;M0;6;lowest|austin;2026-10-30;KAUS;lowest-temperature-in-austin-on-october-30-2026;70-71°F;;0.7;;0.7;;0.0
+2026-10-29 11:17;M0;6;lowest|austin;2026-10-30;KAUS;lowest-temperature-in-austin-on-october-30-2026;72-73°F;;0.7;;0.7;;0.0
+2026-10-29 11:17;M0;6;lowest|austin;2026-10-30;KAUS;lowest-temperature-in-austin-on-october-30-2026;74°F or higher;;0.45;;0.46;;0.0
+2026-10-29 11:17;M0;6;lowest|houston;2026-10-30;KHOU;lowest-temperature-in-houston-on-october-30-2026;59°F or below;;0.48;;0.73;;0.0
+2026-10-29 11:17;M0;6;lowest|houston;2026-10-30;KHOU;lowest-temperature-in-houston-on-october-30-2026;60-61°F;;0.69;;0.69;;0.0
+2026-10-29 11:17;M0;6;lowest|houston;2026-10-30;KHOU;lowest-temperature-in-houston-on-october-30-2026;62-63°F;;0.69;;0.69;;0.0
+2026-10-29 11:17;M0;6;lowest|houston;2026-10-30;KHOU;lowest-temperature-in-houston-on-october-30-2026;64-65°F;;0.7;;0.7067;;0.0
+2026-10-29 11:17;M0;6;lowest|houston;2026-10-30;KHOU;lowest-temperature-in-houston-on-october-30-2026;66-67°F;;0.7;;0.7067;;0.0
+2026-10-29 11:17;M0;6;lowest|houston;2026-10-30;KHOU;lowest-temperature-in-houston-on-october-30-2026;68-69°F;;0.7;;0.7067;;0.0
+2026-10-29 11:17;M0;6;lowest|houston;2026-10-30;KHOU;lowest-temperature-in-houston-on-october-30-2026;70-71°F;;0.69;;0.69;;0.0
+2026-10-29 11:17;M0;6;lowest|houston;2026-10-30;KHOU;lowest-temperature-in-houston-on-october-30-2026;72-73°F;;0.69;;0.69;;0.0
+2026-10-29 11:17;M0;6;lowest|houston;2026-10-30;KHOU;lowest-temperature-in-houston-on-october-30-2026;74-75°F;;0.69;;0.69;;0.0
+2026-10-29 11:17;M0;6;lowest|houston;2026-10-30;KHOU;lowest-temperature-in-houston-on-october-30-2026;76-77°F;;0.68;;0.68;;0.0
+2026-10-29 11:17;M0;6;lowest|houston;2026-10-30;KHOU;lowest-temperature-in-houston-on-october-30-2026;78°F or higher;;0.43;;0.435;;0.0
+2026-10-29 11:17;M0;6;highest|chicago;2026-10-30;KORD;highest-temperature-in-chicago-on-october-30-2026;55°F or below;0.034;0.059;0.0465;0.059;0.9668;0.0
+2026-10-29 11:17;M0;6;highest|chicago;2026-10-30;KORD;highest-temperature-in-chicago-on-october-30-2026;56-57°F;0.17;0.23;0.2;0.23;0.835;0.0
+2026-10-29 11:17;M0;6;highest|chicago;2026-10-30;KORD;highest-temperature-in-chicago-on-october-30-2026;58-59°F;0.41;0.43;0.42;0.43;0.59;0.0
+2026-10-29 11:17;M0;6;highest|chicago;2026-10-30;KORD;highest-temperature-in-chicago-on-october-30-2026;60-61°F;0.25;0.27;0.26;0.27;0.755;0.0
+2026-10-29 11:17;M0;6;highest|chicago;2026-10-30;KORD;highest-temperature-in-chicago-on-october-30-2026;62-63°F;0.05;0.08;0.065;0.085;0.95;0.0
+2026-10-29 11:17;M0;6;highest|chicago;2026-10-30;KORD;highest-temperature-in-chicago-on-october-30-2026;64-65°F;0.004;0.018;0.011;0.019;0.996;0.0
+2026-10-29 11:17;M0;6;highest|chicago;2026-10-30;KORD;highest-temperature-in-chicago-on-october-30-2026;66-67°F;0.001;0.011;0.006;0.011;0.999;0.0
+2026-10-29 11:17;M0;6;highest|chicago;2026-10-30;KORD;highest-temperature-in-chicago-on-october-30-2026;68-69°F;;0.001;;0.001;;0.0
+2026-10-29 11:17;M0;6;highest|chicago;2026-10-30;KORD;highest-temperature-in-chicago-on-october-30-2026;70-71°F;;0.001;;0.001;;0.0
+2026-10-29 11:17;M0;6;highest|chicago;2026-10-30;KORD;highest-temperature-in-chicago-on-october-30-2026;72-73°F;;0.001;;0.001;;0.0
+2026-10-29 11:17;M0;6;highest|chicago;2026-10-30;KORD;highest-temperature-in-chicago-on-october-30-2026;74°F or higher;;0.001;;0.001;;0.0
+2026-10-29 11:17;M0;6;highest|austin;2026-10-30;KAUS;highest-temperature-in-austin-on-october-30-2026;67°F or below;;0.001;;0.001;;0.0
+2026-10-29 11:17;M0;6;highest|austin;2026-10-30;KAUS;highest-temperature-in-austin-on-october-30-2026;68-69°F;0.08;0.12;0.1;0.12;0.925;0.0
+2026-10-29 11:17;M0;6;highest|austin;2026-10-30;KAUS;highest-temperature-in-austin-on-october-30-2026;70-71°F;0.32;0.36;0.34;0.36;0.68;0.0
+2026-10-29 11:17;M0;6;highest|austin;2026-10-30;KAUS;highest-temperature-in-austin-on-october-30-2026;72-73°F;0.36;0.38;0.37;0.38;0.6495;0.0
+2026-10-29 11:17;M0;6;highest|austin;2026-10-30;KAUS;highest-temperature-in-austin-on-october-30-2026;74-75°F;0.13;0.17;0.15;0.17;0.87;0.0
+2026-10-29 11:17;M0;6;highest|austin;2026-10-30;KAUS;highest-temperature-in-austin-on-october-30-2026;76-77°F;0.022;0.077;0.0495;0.077;0.9785;0.0
+2026-10-29 11:17;M0;6;highest|austin;2026-10-30;KAUS;highest-temperature-in-austin-on-october-30-2026;78-79°F;0.005;0.02;0.0125;0.02;0.995;0.0
+2026-10-29 11:17;M0;6;highest|austin;2026-10-30;KAUS;highest-temperature-in-austin-on-october-30-2026;80-81°F;0.003;0.019;0.011;0.019;0.997;0.0
+2026-10-29 11:17;M0;6;highest|austin;2026-10-30;KAUS;highest-temperature-in-austin-on-october-30-2026;82-83°F;0.001;0.007;0.004;0.007;0.999;0.0
+2026-10-29 11:17;M0;6;highest|austin;2026-10-30;KAUS;highest-temperature-in-austin-on-october-30-2026;84-85°F;;0.001;;0.001;;0.0
+2026-10-29 11:17;M0;6;highest|austin;2026-10-30;KAUS;highest-temperature-in-austin-on-october-30-2026;86°F or higher;;0.001;;0.001;;0.0
+2026-10-29 11:17;M0;6;highest|houston;2026-10-30;KHOU;highest-temperature-in-houston-on-october-30-2026;69°F or below;;0.001;;0.001;;0.0
+2026-10-29 11:17;M0;6;highest|houston;2026-10-30;KHOU;highest-temperature-in-houston-on-october-30-2026;70-71°F;;0.002;;0.002;;0.0
+2026-10-29 11:17;M0;6;highest|houston;2026-10-30;KHOU;highest-temperature-in-houston-on-october-30-2026;72-73°F;0.001;0.008;0.0045;0.008;0.999;0.0
+2026-10-29 11:17;M0;6;highest|houston;2026-10-30;KHOU;highest-temperature-in-houston-on-october-30-2026;74-75°F;0.05;0.09;0.07;0.095;0.95;0.0
+2026-10-29 11:17;M0;6;highest|houston;2026-10-30;KHOU;highest-temperature-in-houston-on-october-30-2026;76-77°F;0.3;0.32;0.31;0.322;0.705;0.0
+2026-10-29 11:17;M0;6;highest|houston;2026-10-30;KHOU;highest-temperature-in-houston-on-october-30-2026;78-79°F;0.39;0.47;0.43;0.47;0.62;0.0
+2026-10-29 11:17;M0;6;highest|houston;2026-10-30;KHOU;highest-temperature-in-houston-on-october-30-2026;80-81°F;0.15;0.16;0.155;0.16;0.85;0.0
+2026-10-29 11:17;M0;6;highest|houston;2026-10-30;KHOU;highest-temperature-in-houston-on-october-30-2026;82-83°F;0.012;0.03;0.021;0.03;0.988;0.0
+2026-10-29 11:17;M0;6;highest|houston;2026-10-30;KHOU;highest-temperature-in-houston-on-october-30-2026;84-85°F;0.001;0.003;0.002;0.003;0.999;0.0
+2026-10-29 11:17;M0;6;highest|houston;2026-10-30;KHOU;highest-temperature-in-houston-on-october-30-2026;86-87°F;;0.002;;0.002;;0.0
+2026-10-29 11:17;M0;6;highest|houston;2026-10-30;KHOU;highest-temperature-in-houston-on-october-30-2026;88°F or higher;;0.001;;0.001;;0.0
+2026-10-29 11:17;M0;6;highest|panama-city;2026-10-30;MPMG;highest-temperature-in-panama-city-on-october-30-2026;24°C or below;;0.001;;0.001;;0.0
+2026-10-29 11:17;M0;6;highest|panama-city;2026-10-30;MPMG;highest-temperature-in-panama-city-on-october-30-2026;25°C;;0.001;;0.001;;0.0
+2026-10-29 11:17;M0;6;highest|panama-city;2026-10-30;MPMG;highest-temperature-in-panama-city-on-october-30-2026;26°C;;0.001;;0.001;;0.0
+2026-10-29 11:17;M0;6;highest|panama-city;2026-10-30;MPMG;highest-temperature-in-panama-city-on-october-30-2026;27°C;0.001;0.011;0.006;0.011;0.999;0.0
+2026-10-29 11:17;M0;6;highest|panama-city;2026-10-30;MPMG;highest-temperature-in-panama-city-on-october-30-2026;28°C;0.024;0.05;0.037;0.05;0.9765;0.0
+2026-10-29 11:17;M0;6;highest|panama-city;2026-10-30;MPMG;highest-temperature-in-panama-city-on-october-30-2026;29°C;0.12;0.19;0.155;0.19;0.88;0.0
+2026-10-29 11:17;M0;6;highest|panama-city;2026-10-30;MPMG;highest-temperature-in-panama-city-on-october-30-2026;30°C;0.32;0.36;0.34;0.36;0.68;0.0
+2026-10-29 11:17;M0;6;highest|panama-city;2026-10-30;MPMG;highest-temperature-in-panama-city-on-october-30-2026;31°C;0.3;0.34;0.32;0.34;0.7;0.0
+2026-10-29 11:17;M0;6;highest|panama-city;2026-10-30;MPMG;highest-temperature-in-panama-city-on-october-30-2026;32°C;0.11;0.17;0.14;0.17;0.89;0.0
+2026-10-29 11:17;M0;6;highest|panama-city;2026-10-30;MPMG;highest-temperature-in-panama-city-on-october-30-2026;33°C;0.013;0.03;0.0215;0.0336;0.987;0.0
+2026-10-29 11:17;M0;6;highest|panama-city;2026-10-30;MPMG;highest-temperature-in-panama-city-on-october-30-2026;34°C or higher;0.003;0.013;0.008;0.013;0.997;0.0
