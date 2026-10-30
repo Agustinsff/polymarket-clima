@@ -12121,3 +12121,47 @@ momento_utc;momento;hora_local;serie;fecha;icao;slug;caja;bid;ask;medio;si_10;no
 2026-10-30 05:01;M0;6;highest|amsterdam;2026-10-31;EHAM;highest-temperature-in-amsterdam-on-october-31-2026;12°C;0.33;0.37;0.35;0.37;0.67;0.0
 2026-10-30 05:01;M0;6;highest|amsterdam;2026-10-31;EHAM;highest-temperature-in-amsterdam-on-october-31-2026;13°C;0.14;0.15;0.145;0.155;0.86;0.0
 2026-10-30 05:01;M0;6;highest|amsterdam;2026-10-31;EHAM;highest-temperature-in-amsterdam-on-october-31-2026;14°C or higher;0.02;0.046;0.033;0.046;0.98;0.0
+2026-10-30 06:01;M1;6;lowest|london;2026-10-30;EGLC;lowest-temperature-in-london-on-october-30-2026;5°C or below;;0.002;;0.002;;0.0
+2026-10-30 06:01;M1;6;lowest|london;2026-10-30;EGLC;lowest-temperature-in-london-on-october-30-2026;6°C;0.002;0.017;0.0095;0.017;0.998;0.0
+2026-10-30 06:01;M1;6;lowest|london;2026-10-30;EGLC;lowest-temperature-in-london-on-october-30-2026;7°C;0.002;0.02;0.011;0.02;0.998;0.0
+2026-10-30 06:01;M1;6;lowest|london;2026-10-30;EGLC;lowest-temperature-in-london-on-october-30-2026;8°C;0.16;0.61;0.385;0.615;0.845;0.0
+2026-10-30 06:01;M1;6;lowest|london;2026-10-30;EGLC;lowest-temperature-in-london-on-october-30-2026;9°C;0.28;0.85;0.565;0.85;0.725;0.0
+2026-10-30 06:01;M1;6;lowest|london;2026-10-30;EGLC;lowest-temperature-in-london-on-october-30-2026;10°C;;0.001;;0.001;;0.0
+2026-10-30 06:01;M1;6;lowest|london;2026-10-30;EGLC;lowest-temperature-in-london-on-october-30-2026;11°C;;0.001;;0.001;;0.0
+2026-10-30 06:01;M1;6;lowest|london;2026-10-30;EGLC;lowest-temperature-in-london-on-october-30-2026;12°C;;0.001;;0.001;;0.0
+2026-10-30 06:01;M1;6;lowest|london;2026-10-30;EGLC;lowest-temperature-in-london-on-october-30-2026;13°C;;0.001;;0.001;;0.0
+2026-10-30 06:01;M1;6;lowest|london;2026-10-30;EGLC;lowest-temperature-in-london-on-october-30-2026;14°C;;0.001;;0.001;;0.0
+2026-10-30 06:01;M1;6;lowest|london;2026-10-30;EGLC;lowest-temperature-in-london-on-october-30-2026;15°C or higher;;0.001;;0.001;;0.0
+2026-10-30 06:01;M1;6;highest|london;2026-10-30;EGLC;highest-temperature-in-london-on-october-30-2026;10°C or below;;0.001;;0.001;;0.0
+2026-10-30 06:01;M1;6;highest|london;2026-10-30;EGLC;highest-temperature-in-london-on-october-30-2026;11°C;;0.001;;0.001;;0.0
+2026-10-30 06:01;M1;6;highest|london;2026-10-30;EGLC;highest-temperature-in-london-on-october-30-2026;12°C;;0.001;;0.001;;0.0
+2026-10-30 06:01;M1;6;highest|london;2026-10-30;EGLC;highest-temperature-in-london-on-october-30-2026;13°C;;0.001;;0.001;;0.0
+2026-10-30 06:01;M1;6;highest|london;2026-10-30;EGLC;highest-temperature-in-london-on-october-30-2026;14°C;0.016;0.021;0.0185;0.021;0.984;0.0
+2026-10-30 06:01;M1;6;highest|london;2026-10-30;EGLC;highest-temperature-in-london-on-october-30-2026;15°C;0.39;0.4;0.395;0.4;0.61;0.0
+2026-10-30 06:01;M1;6;highest|london;2026-10-30;EGLC;highest-temperature-in-london-on-october-30-2026;16°C;0.5;0.52;0.51;0.52;0.5;0.0
+2026-10-30 06:01;M1;6;highest|london;2026-10-30;EGLC;highest-temperature-in-london-on-october-30-2026;17°C;0.07;0.08;0.075;0.08;0.93;0.0
+2026-10-30 06:01;M1;6;highest|london;2026-10-30;EGLC;highest-temperature-in-london-on-october-30-2026;18°C;0.001;0.003;0.002;0.003;0.999;0.0
+2026-10-30 06:01;M1;6;highest|london;2026-10-30;EGLC;highest-temperature-in-london-on-october-30-2026;19°C;;0.001;;0.001;;0.0
+2026-10-30 06:01;M1;6;highest|london;2026-10-30;EGLC;highest-temperature-in-london-on-october-30-2026;20°C or higher;;0.001;;0.001;;0.0
+2026-10-30 06:01;M0;6;lowest|london;2026-10-31;EGLC;lowest-temperature-in-london-on-october-31-2026;5°C or below;;0.47;;0.47;;0.0
+2026-10-30 06:01;M0;6;lowest|london;2026-10-31;EGLC;lowest-temperature-in-london-on-october-31-2026;6°C;;0.19;;0.222;;0.0
+2026-10-30 06:01;M0;6;lowest|london;2026-10-31;EGLC;lowest-temperature-in-london-on-october-31-2026;7°C;0.02;0.19;0.105;0.195;0.98;0.0
+2026-10-30 06:01;M0;6;lowest|london;2026-10-31;EGLC;lowest-temperature-in-london-on-october-31-2026;8°C;0.35;0.51;0.43;0.515;0.65;0.0
+2026-10-30 06:01;M0;6;lowest|london;2026-10-31;EGLC;lowest-temperature-in-london-on-october-31-2026;9°C;0.28;0.42;0.35;0.42;0.72;0.0
+2026-10-30 06:01;M0;6;lowest|london;2026-10-31;EGLC;lowest-temperature-in-london-on-october-31-2026;10°C;0.03;0.11;0.07;0.11;0.97;0.0
+2026-10-30 06:01;M0;6;lowest|london;2026-10-31;EGLC;lowest-temperature-in-london-on-october-31-2026;11°C;0.01;0.11;0.06;0.11;0.99;0.0
+2026-10-30 06:01;M0;6;lowest|london;2026-10-31;EGLC;lowest-temperature-in-london-on-october-31-2026;12°C;0.004;0.015;0.0095;0.015;0.996;0.0
+2026-10-30 06:01;M0;6;lowest|london;2026-10-31;EGLC;lowest-temperature-in-london-on-october-31-2026;13°C;0.002;0.015;0.0085;0.015;0.998;0.0
+2026-10-30 06:01;M0;6;lowest|london;2026-10-31;EGLC;lowest-temperature-in-london-on-october-31-2026;14°C;0.004;0.015;0.0095;0.015;0.996;0.0
+2026-10-30 06:01;M0;6;lowest|london;2026-10-31;EGLC;lowest-temperature-in-london-on-october-31-2026;15°C or higher;;0.31;;0.31;;0.0
+2026-10-30 06:01;M0;6;highest|london;2026-10-31;EGLC;highest-temperature-in-london-on-october-31-2026;10°C or below;;0.001;;0.001;;0.0
+2026-10-30 06:01;M0;6;highest|london;2026-10-31;EGLC;highest-temperature-in-london-on-october-31-2026;11°C;0.001;0.01;0.0055;0.01;0.999;0.0
+2026-10-30 06:01;M0;6;highest|london;2026-10-31;EGLC;highest-temperature-in-london-on-october-31-2026;12°C;0.003;0.004;0.0035;0.004;0.997;0.0
+2026-10-30 06:01;M0;6;highest|london;2026-10-31;EGLC;highest-temperature-in-london-on-october-31-2026;13°C;0.05;0.07;0.06;0.07;0.955;0.0
+2026-10-30 06:01;M0;6;highest|london;2026-10-31;EGLC;highest-temperature-in-london-on-october-31-2026;14°C;0.3;0.32;0.31;0.3236;0.705;0.0
+2026-10-30 06:01;M0;6;highest|london;2026-10-31;EGLC;highest-temperature-in-london-on-october-31-2026;15°C;0.4;0.43;0.415;0.435;0.6;0.0
+2026-10-30 06:01;M0;6;highest|london;2026-10-31;EGLC;highest-temperature-in-london-on-october-31-2026;16°C;0.18;0.19;0.185;0.2;0.82;0.0
+2026-10-30 06:01;M0;6;highest|london;2026-10-31;EGLC;highest-temperature-in-london-on-october-31-2026;17°C;0.026;0.027;0.0265;0.03;0.974;0.0
+2026-10-30 06:01;M0;6;highest|london;2026-10-31;EGLC;highest-temperature-in-london-on-october-31-2026;18°C;0.002;0.009;0.0055;0.009;0.998;0.0
+2026-10-30 06:01;M0;6;highest|london;2026-10-31;EGLC;highest-temperature-in-london-on-october-31-2026;19°C;;0.001;;0.001;;0.0
+2026-10-30 06:01;M0;6;highest|london;2026-10-31;EGLC;highest-temperature-in-london-on-october-31-2026;20°C or higher;;0.001;;0.001;;0.0
