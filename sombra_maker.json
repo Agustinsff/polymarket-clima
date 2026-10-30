@@ -64457,6 +64457,3570 @@
 "acciones": 0,
 "resultado": 0.0
 }
+},
+"0x88f5844681438735ec69bd6533841d8c1aef0d39463830eab13febe84e95d6f7": {
+"serie": "lowest|madrid",
+"fecha": "2026-10-29",
+"caja": "12°C",
+"gano": 0,
+"0.02": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.03": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.05": {
+"acciones": 0,
+"resultado": 0.0
+}
+},
+"0x631df986627606f4c638d47f001cb42e77a43840d7ffb8a052e6f8c319bfaabf": {
+"serie": "lowest|madrid",
+"fecha": "2026-10-29",
+"caja": "14°C or higher",
+"gano": 0,
+"0.02": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.03": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.05": {
+"acciones": 0,
+"resultado": 0.0
+}
+},
+"0xd398a94b6820c49fc7f1aedba2df74fea4a0d0fff55de70153eccb5c46623ea0": {
+"serie": "lowest|munich",
+"fecha": "2026-10-29",
+"caja": "7°C",
+"gano": 0,
+"0.02": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.03": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.05": {
+"acciones": 0,
+"resultado": 0.0
+}
+},
+"0xa687071a64250a6ced150b11a0e233c02cc774dc9a01a65a7bcd8d2eeaf20b5d": {
+"serie": "lowest|munich",
+"fecha": "2026-10-29",
+"caja": "8°C",
+"gano": 0,
+"0.02": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.03": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.05": {
+"acciones": 0,
+"resultado": 0.0
+}
+},
+"0xcf5a49482f5a5bab51adcc7352820972ba4603eb07352f5463308210b75ae92b": {
+"serie": "lowest|munich",
+"fecha": "2026-10-29",
+"caja": "9°C or higher",
+"gano": 0,
+"0.02": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.03": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.05": {
+"acciones": 0,
+"resultado": 0.0
+}
+},
+"0xa7d2d1df19bbf7c25e071c5f7d5b56b41262c537f490f41d35bfca4db97740c4": {
+"serie": "lowest|milan",
+"fecha": "2026-10-29",
+"caja": "9°C",
+"gano": 0,
+"0.02": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.03": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.05": {
+"acciones": 0,
+"resultado": 0.0
+}
+},
+"0x26300c2fa0d042814b7f2873515e83dec9837d0ef729a244364f30430dcb2364": {
+"serie": "lowest|milan",
+"fecha": "2026-10-29",
+"caja": "10°C",
+"gano": 0,
+"0.02": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.03": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.05": {
+"acciones": 0,
+"resultado": 0.0
+}
+},
+"0x6e5655b16dec3b84430d796269b9f130a5c7d254a5b3c40e50f2a650eebb137e": {
+"serie": "lowest|milan",
+"fecha": "2026-10-29",
+"caja": "11°C or higher",
+"gano": 0,
+"0.02": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.03": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.05": {
+"acciones": 0,
+"resultado": 0.0
+}
+},
+"0x3b761bbd93ca89d50961437c215e2018357b9038cac159266dd0a3a638b34b96": {
+"serie": "lowest|amsterdam",
+"fecha": "2026-10-29",
+"caja": "14°C or higher",
+"gano": 0,
+"0.02": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.03": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.05": {
+"acciones": 0,
+"resultado": 0.0
+}
+},
+"0x10fc644ad03f3ddb48ccb2c85ba8b314d5c5b016fd8b884094216c41e64ad737": {
+"serie": "highest|amsterdam",
+"fecha": "2026-10-29",
+"caja": "9°C or below",
+"gano": 0,
+"0.02": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.03": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.05": {
+"acciones": 0,
+"resultado": 0.0
+}
+},
+"0xa5f3634df87cd4000dc974f61309f0b0ae61bbcc477ae6a9a6f11ab6e0a7fb42": {
+"serie": "highest|amsterdam",
+"fecha": "2026-10-29",
+"caja": "10°C",
+"gano": 0,
+"0.02": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.03": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.05": {
+"acciones": 0,
+"resultado": 0.0
+}
+},
+"0xccb7540b2d14228c89d1bb6121e6d0a93d3aa24a98c70ead0ab954cb26f24922": {
+"serie": "lowest|munich",
+"fecha": "2026-10-29",
+"caja": "6°C",
+"gano": 0,
+"0.02": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.03": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.05": {
+"acciones": 0,
+"resultado": 0.0
+}
+},
+"0xe4c1b6ab78406ff0e628c2b06b71da06d6ff654b499c6f9e846f76e94f9d3a63": {
+"serie": "lowest|milan",
+"fecha": "2026-10-29",
+"caja": "8°C",
+"gano": 0,
+"0.02": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.03": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.05": {
+"acciones": 0,
+"resultado": 0.0
+}
+},
+"0xa1abfb346fbde6babfdb0aae9e8dcca894d426160ca9231cf1a8f4ea22f766a9": {
+"serie": "lowest|munich",
+"fecha": "2026-10-29",
+"caja": "5°C",
+"gano": 0,
+"0.02": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.03": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.05": {
+"acciones": 0,
+"resultado": 0.0
+}
+},
+"0x1e4d03a0e3092679fff9ea954f24dc4e6145206f65e790d5b0c256445307df1d": {
+"serie": "lowest|london",
+"fecha": "2026-10-29",
+"caja": "15°C or higher",
+"gano": 0,
+"0.02": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.03": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.05": {
+"acciones": 0,
+"resultado": 0.0
+}
+},
+"0x777f83688e09f5b2ee4a2479027cb88ea35e41a105a090156cb7323ab981bc93": {
+"serie": "highest|london",
+"fecha": "2026-10-29",
+"caja": "10°C or below",
+"gano": 0,
+"0.02": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.03": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.05": {
+"acciones": 0,
+"resultado": 0.0
+}
+},
+"0x53ce97c437ec2100543c00b7bb97c1748682b72948b977ba9b4556aea2d9c9de": {
+"serie": "highest|london",
+"fecha": "2026-10-29",
+"caja": "11°C",
+"gano": 0,
+"0.02": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.03": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.05": {
+"acciones": 0,
+"resultado": 0.0
+}
+},
+"0x64e88eb706aa298d6c4b39a37a200d587dd10f2b45c11ec174bf919786883acc": {
+"serie": "lowest|madrid",
+"fecha": "2026-10-29",
+"caja": "11°C",
+"gano": 0,
+"0.02": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.03": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.05": {
+"acciones": 0,
+"resultado": 0.0
+}
+},
+"0x887122ddd55599ebf235821fac5298bd2192d4e8d66479ab5a6db36e41d33a78": {
+"serie": "lowest|amsterdam",
+"fecha": "2026-10-29",
+"caja": "13°C",
+"gano": 0,
+"0.02": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.03": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.05": {
+"acciones": 0,
+"resultado": 0.0
+}
+},
+"0x1edbd85669aef5a7f3456f9c3638bf142cdbec3c0ee965d80e23cb84bea60677": {
+"serie": "lowest|munich",
+"fecha": "2026-10-29",
+"caja": "4°C",
+"gano": 0,
+"0.02": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.03": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.05": {
+"acciones": 0,
+"resultado": 0.0
+}
+},
+"0x2f66ca6b1c05d1b1c7d1135b694c79e58f57582f517447bc26fc749f8c86db66": {
+"serie": "lowest|milan",
+"fecha": "2026-10-29",
+"caja": "7°C",
+"gano": 0,
+"0.02": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.03": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.05": {
+"acciones": 0,
+"resultado": 0.0
+}
+},
+"0xcecb58b75c781d25a0c9a67c887679e44fbcb9e1f26a7f8e17bafb1b7f8f9327": {
+"serie": "lowest|sao-paulo",
+"fecha": "2026-10-29",
+"caja": "19°C",
+"gano": 0,
+"0.02": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.03": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.05": {
+"acciones": 0,
+"resultado": 0.0
+}
+},
+"0xc1984396fdd47af0e6e45ab09e7e6abcc02ee48e71b8a604d130def24788fbee": {
+"serie": "lowest|sao-paulo",
+"fecha": "2026-10-29",
+"caja": "20°C",
+"gano": 0,
+"0.02": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.03": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.05": {
+"acciones": 0,
+"resultado": 0.0
+}
+},
+"0xa0552632dbd880534ddeffe3543ade70cd712b29aca566a6514607a90be0fe80": {
+"serie": "lowest|sao-paulo",
+"fecha": "2026-10-29",
+"caja": "21°C",
+"gano": 0,
+"0.02": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.03": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.05": {
+"acciones": 0,
+"resultado": 0.0
+}
+},
+"0x40db8780d6464c66e21cd8aea2a0f456c99f77e72fcd15526d74928d06df04f0": {
+"serie": "lowest|sao-paulo",
+"fecha": "2026-10-29",
+"caja": "22°C or higher",
+"gano": 0,
+"0.02": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.03": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.05": {
+"acciones": 0,
+"resultado": 0.0
+}
+},
+"0x6ce0eff5f99b7586283eeb00edb26812b4feaa564b00af453489f91713f54130": {
+"serie": "lowest|buenos-aires",
+"fecha": "2026-10-29",
+"caja": "16°C",
+"gano": 0,
+"0.02": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.03": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.05": {
+"acciones": 0,
+"resultado": 0.0
+}
+},
+"0x44e7f4f2265c1053bb3f3850d8c1c392336a3acbb2470367dc62b0383090c5a1": {
+"serie": "lowest|buenos-aires",
+"fecha": "2026-10-29",
+"caja": "17°C",
+"gano": 0,
+"0.02": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.03": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.05": {
+"acciones": 0,
+"resultado": 0.0
+}
+},
+"0x8712b986b02e33dc62fa31c6a14ea24d341b4b947190a1b3993e911ae4cb720c": {
+"serie": "lowest|buenos-aires",
+"fecha": "2026-10-29",
+"caja": "18°C",
+"gano": 0,
+"0.02": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.03": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.05": {
+"acciones": 0,
+"resultado": 0.0
+}
+},
+"0x34598ea5c920873d98d1b69f30a193160236c821a5dc3474a5fa19547ca166ee": {
+"serie": "lowest|buenos-aires",
+"fecha": "2026-10-29",
+"caja": "19°C",
+"gano": 0,
+"0.02": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.03": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.05": {
+"acciones": 0,
+"resultado": 0.0
+}
+},
+"0xc708f8e4ca53302a058b186b503d8258c3ae890ec6917e66da8fb9b8c31f44dd": {
+"serie": "lowest|buenos-aires",
+"fecha": "2026-10-29",
+"caja": "20°C or higher",
+"gano": 0,
+"0.02": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.03": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.05": {
+"acciones": 0,
+"resultado": 0.0
+}
+},
+"0xfa54f9fb5960438c7b473ed0eccce30771783c98a6974e14eb7d7739653dfadd": {
+"serie": "lowest|buenos-aires",
+"fecha": "2026-10-29",
+"caja": "15°C",
+"gano": 0,
+"0.02": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.03": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.05": {
+"acciones": 0,
+"resultado": 0.0
+}
+},
+"0xb6d88e3f7b2aa32cfadeca6dc66c752338b3a49a75e3185bd2dd67f56a891e26": {
+"serie": "lowest|toronto",
+"fecha": "2026-10-29",
+"caja": "12°C",
+"gano": 0,
+"0.02": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.03": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.05": {
+"acciones": 0,
+"resultado": 0.0
+}
+},
+"0x9aff02653ba4f7d0115bd1c0f5ba205336a51603f53eff655b7b6ab39fc19f4c": {
+"serie": "lowest|toronto",
+"fecha": "2026-10-29",
+"caja": "13°C",
+"gano": 0,
+"0.02": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.03": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.05": {
+"acciones": 0,
+"resultado": 0.0
+}
+},
+"0xafa13c18e625f18d28312f695723941c6dcc11776d02bd1ef5f1ae7787ebd853": {
+"serie": "lowest|toronto",
+"fecha": "2026-10-29",
+"caja": "14°C or higher",
+"gano": 0,
+"0.02": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.03": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.05": {
+"acciones": 0,
+"resultado": 0.0
+}
+},
+"0xdbfa8e4b4de8fd6e565a3493d83dbefdc522815f9e7e61f55538b6d3620d395f": {
+"serie": "lowest|madrid",
+"fecha": "2026-10-29",
+"caja": "8°C",
+"gano": 0,
+"0.02": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.03": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.05": {
+"acciones": 0,
+"resultado": 0.0
+}
+},
+"0x1063580faa6a3681e2c2ff68b0aa9cd6a3bc04b3496098eb249ac601f789d742": {
+"serie": "lowest|nyc",
+"fecha": "2026-10-29",
+"caja": "58-59°F",
+"gano": 0,
+"0.02": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.03": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.05": {
+"acciones": 0,
+"resultado": 0.0
+}
+},
+"0xd78d315f3174da25e541ad67fb2b957384eb5f957fc6cac851312bbe35d12e4a": {
+"serie": "lowest|nyc",
+"fecha": "2026-10-29",
+"caja": "60-61°F",
+"gano": 0,
+"0.02": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.03": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.05": {
+"acciones": 0,
+"resultado": 0.0
+}
+},
+"0x47f4c593abc5a183b4b1045fef61f1b001b85f830aed4d5701d8dd7e694bd00f": {
+"serie": "lowest|nyc",
+"fecha": "2026-10-29",
+"caja": "62°F or higher",
+"gano": 0,
+"0.02": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.03": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.05": {
+"acciones": 0,
+"resultado": 0.0
+}
+},
+"0xf9333183882b064980d3114e9a1ebd178b76f3e23ebbbe2f2dc47de816eac990": {
+"serie": "lowest|atlanta",
+"fecha": "2026-10-29",
+"caja": "64-65°F",
+"gano": 0,
+"0.02": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.03": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.05": {
+"acciones": 0,
+"resultado": 0.0
+}
+},
+"0xd31d6a7151ba6563f9ff6e03e76f31dea9e771210a3e0e9fc09db78d4e792531": {
+"serie": "lowest|atlanta",
+"fecha": "2026-10-29",
+"caja": "66°F or higher",
+"gano": 0,
+"0.02": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.03": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.05": {
+"acciones": 0,
+"resultado": 0.0
+}
+},
+"0x63435ea9865cfed9b59f300279aeb5486b43bad62ca74ef4d9aae6f4f87a3024": {
+"serie": "lowest|miami",
+"fecha": "2026-10-29",
+"caja": "80-81°F",
+"gano": 0,
+"0.02": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.03": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.05": {
+"acciones": 0,
+"resultado": 0.0
+}
+},
+"0xfe9cb378386652bf1bc7163b6323a96fff7b8558975437891f800f2a82a3c928": {
+"serie": "lowest|miami",
+"fecha": "2026-10-29",
+"caja": "82-83°F",
+"gano": 0,
+"0.02": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.03": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.05": {
+"acciones": 0,
+"resultado": 0.0
+}
+},
+"0xbc85fb3f7df2f8dcc50335e44ad9701d7c70b9d1ee926b6ef58898be5f63f7dc": {
+"serie": "lowest|miami",
+"fecha": "2026-10-29",
+"caja": "84-85°F",
+"gano": 0,
+"0.02": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.03": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.05": {
+"acciones": 0,
+"resultado": 0.0
+}
+},
+"0x4d5f087daa80bd34e03fe986a8d3ec6dc04ca9918bf00e31219e59d12a99264c": {
+"serie": "lowest|miami",
+"fecha": "2026-10-29",
+"caja": "86°F or higher",
+"gano": 0,
+"0.02": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.03": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.05": {
+"acciones": 0,
+"resultado": 0.0
+}
+},
+"0xc9ec3e9b563dfb8ba0a4bf69754c503397953a704f1a5173faff047da972852d": {
+"serie": "lowest|toronto",
+"fecha": "2026-10-29",
+"caja": "11°C",
+"gano": 0,
+"0.02": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.03": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.05": {
+"acciones": 0,
+"resultado": 0.0
+}
+},
+"0x3121d304c9f359876243587c61d8979a66fa222b335f2d7f17862a4967ace438": {
+"serie": "lowest|chicago",
+"fecha": "2026-10-29",
+"caja": "70°F or higher",
+"gano": 0,
+"0.02": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.03": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.05": {
+"acciones": 0,
+"resultado": 0.0
+}
+},
+"0xd47414ceb11430f84b9f9eb3e2a7a204160e232a43220be5794d0f8224e015e2": {
+"serie": "highest|chicago",
+"fecha": "2026-10-29",
+"caja": "63°F or below",
+"gano": 0,
+"0.02": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.03": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.05": {
+"acciones": 0,
+"resultado": 0.0
+}
+},
+"0xf90c346f0761075ba44c701c89cc8a940330d13b3f6680c1b0930230e1c2e90c": {
+"serie": "highest|chicago",
+"fecha": "2026-10-29",
+"caja": "64-65°F",
+"gano": 0,
+"0.02": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.03": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.05": {
+"acciones": 0,
+"resultado": 0.0
+}
+},
+"0x66d7874744dc81176b0a415c799c674e36df23ded02b2cd3cd8fab597341355d": {
+"serie": "lowest|dallas",
+"fecha": "2026-10-29",
+"caja": "76-77°F",
+"gano": 0,
+"0.02": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.03": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.05": {
+"acciones": 0,
+"resultado": 0.0
+}
+},
+"0x26c0b7fcafbd71a24b6b232785b05dfa23a6cfd028575d9801e63a4bfd8619a9": {
+"serie": "lowest|dallas",
+"fecha": "2026-10-29",
+"caja": "78°F or higher",
+"gano": 0,
+"0.02": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.03": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.05": {
+"acciones": 0,
+"resultado": 0.0
+}
+},
+"0xb81797b1eba392785bf9d79606694adadb72800899b75cfa6af63ed6e4270fe9": {
+"serie": "lowest|atlanta",
+"fecha": "2026-10-29",
+"caja": "62-63°F",
+"gano": 0,
+"0.02": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.03": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.05": {
+"acciones": 0,
+"resultado": 0.0
+}
+},
+"0xef9a175a263aed02dd5e29125977f1717f49fc62da5ba0c2d4b902c6113eef56": {
+"serie": "lowest|houston",
+"fecha": "2026-10-29",
+"caja": "72-73°F",
+"gano": 0,
+"0.02": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.03": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.05": {
+"acciones": 0,
+"resultado": 0.0
+}
+},
+"0x350d6e34939281bd5b042e9c534b67f58eb2850b524bc6d4e720f0c5753edb64": {
+"serie": "lowest|houston",
+"fecha": "2026-10-29",
+"caja": "74-75°F",
+"gano": 0,
+"0.02": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.03": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.05": {
+"acciones": 0,
+"resultado": 0.0
+}
+},
+"0x7f3fcf495a69df3b78e16b2737cb5481e250e6d807bb51c331d9b26e72285199": {
+"serie": "lowest|houston",
+"fecha": "2026-10-29",
+"caja": "76-77°F",
+"gano": 0,
+"0.02": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.03": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.05": {
+"acciones": 0,
+"resultado": 0.0
+}
+},
+"0x37e7b4a16514e3fccf2c9a080d7037aaf3015d1cb6d165060b8f8180ceb42603": {
+"serie": "lowest|houston",
+"fecha": "2026-10-29",
+"caja": "78°F or higher",
+"gano": 0,
+"0.02": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.03": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.05": {
+"acciones": 0,
+"resultado": 0.0
+}
+},
+"0xc989e82d72ac121553de4a08486fc108aeda3392d27f622188d525a12e6b463b": {
+"serie": "lowest|austin",
+"fecha": "2026-10-29",
+"caja": "70-71°F",
+"gano": 0,
+"0.02": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.03": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.05": {
+"acciones": 0,
+"resultado": 0.0
+}
+},
+"0x946b6095131657a73f0ca9c58b6364ada5b961bb561a9de4296643a48f83cfb1": {
+"serie": "lowest|austin",
+"fecha": "2026-10-29",
+"caja": "72-73°F",
+"gano": 0,
+"0.02": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.03": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.05": {
+"acciones": 0,
+"resultado": 0.0
+}
+},
+"0xc1263cc565381f40072d739aa8b80976069a4975843c1cbe21a5de21fae7d585": {
+"serie": "lowest|austin",
+"fecha": "2026-10-29",
+"caja": "74-75°F",
+"gano": 0,
+"0.02": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.03": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.05": {
+"acciones": 0,
+"resultado": 0.0
+}
+},
+"0x39123cc89380b5711ebf19e8b59e5ca75351d835d2c68d168022eed69b644cd9": {
+"serie": "lowest|austin",
+"fecha": "2026-10-29",
+"caja": "76°F or higher",
+"gano": 0,
+"0.02": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.03": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.05": {
+"acciones": 0,
+"resultado": 0.0
+}
+},
+"0x536d60b0ea6613d2fe9b45ba34ac09c0c19cbe0aa10830442e0363ade3df8919": {
+"serie": "lowest|toronto",
+"fecha": "2026-10-29",
+"caja": "10°C",
+"gano": 0,
+"0.02": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.03": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.05": {
+"acciones": 0,
+"resultado": 0.0
+}
+},
+"0x36f14e816a59dc2644d862fc3cd7386253c9308db4b23a3c4056dc9f846500a7": {
+"serie": "highest|munich",
+"fecha": "2026-10-29",
+"caja": "3°C or below",
+"gano": 0,
+"0.02": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.03": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.05": {
+"acciones": 0,
+"resultado": 0.0
+}
+},
+"0x1b503f486da3f800b0230e940759f01033ac60bb0b28510903868508e0bade36": {
+"serie": "lowest|dallas",
+"fecha": "2026-10-29",
+"caja": "74-75°F",
+"gano": 0,
+"0.02": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.03": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.05": {
+"acciones": 0,
+"resultado": 0.0
+}
+},
+"0xa8dc5d7ec111f69e1bd22dcdcbebd71df668e6da50add7131ae27c163d30461a": {
+"serie": "lowest|austin",
+"fecha": "2026-10-29",
+"caja": "68-69°F",
+"gano": 0,
+"0.02": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.03": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.05": {
+"acciones": 0,
+"resultado": 0.0
+}
+},
+"0xbcf60add1bd14337b9a146320fc1b8e1792caa9eebdaf7b9bc9a2148f4717d02": {
+"serie": "lowest|denver",
+"fecha": "2026-10-29",
+"caja": "48-49°F",
+"gano": 0,
+"0.02": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.03": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.05": {
+"acciones": 0,
+"resultado": 0.0
+}
+},
+"0x3bc3817549047557a653f2ceccf2008360bcf2a9eed6c9d8e652af84ed8ab211": {
+"serie": "lowest|denver",
+"fecha": "2026-10-29",
+"caja": "50-51°F",
+"gano": 0,
+"0.02": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.03": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.05": {
+"acciones": 0,
+"resultado": 0.0
+}
+},
+"0x206ebbd8276cbe369772ff7490fee8ac7fd627d99bf1fb9552bd973c0605363f": {
+"serie": "lowest|denver",
+"fecha": "2026-10-29",
+"caja": "52°F or higher",
+"gano": 0,
+"0.02": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.03": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.05": {
+"acciones": 0,
+"resultado": 0.0
+}
+},
+"0x79fa69f3f2389d94d9ca40873d8c31462b09f566a8d212d52233c6d6829ac047": {
+"serie": "lowest|houston",
+"fecha": "2026-10-29",
+"caja": "70-71°F",
+"gano": 0,
+"0.02": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.03": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.05": {
+"acciones": 0,
+"resultado": 0.0
+}
+},
+"0xff1d0117c17785c5ef0eb8c9f521f341180449a8db449cece9ddf0a8e8a0188b": {
+"serie": "highest|milan",
+"fecha": "2026-10-29",
+"caja": "10°C or below",
+"gano": 0,
+"0.02": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.03": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.05": {
+"acciones": 0,
+"resultado": 0.0
+}
+},
+"0x0f0243cfe463235aee70156a82a4363d1052e424ced3a08cfc8ba77bcfe14fad": {
+"serie": "lowest|denver",
+"fecha": "2026-10-29",
+"caja": "44-45°F",
+"gano": 0,
+"0.02": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.03": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.05": {
+"acciones": 0,
+"resultado": 0.0
+}
+},
+"0xb3b22f75c758d8aaa6f5cce07cba71a9bb8555c682de2f7f265caeb563af69ff": {
+"serie": "lowest|denver",
+"fecha": "2026-10-29",
+"caja": "46-47°F",
+"gano": 0,
+"0.02": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.03": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.05": {
+"acciones": 0,
+"resultado": 0.0
+}
+},
+"0x1b90c8a1d4bb212d1f5d30173f26d3284418514a3909af9eaa27ad6357a2df1d": {
+"serie": "lowest|seattle",
+"fecha": "2026-10-29",
+"caja": "46-47°F",
+"gano": 0,
+"0.02": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.03": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.05": {
+"acciones": 0,
+"resultado": 0.0
+}
+},
+"0x9a7d12e0e7401386f046471e946b1c6826015afd3d4b986e4e9a30cbe294e8c3": {
+"serie": "lowest|seattle",
+"fecha": "2026-10-29",
+"caja": "48-49°F",
+"gano": 0,
+"0.02": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.03": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.05": {
+"acciones": 0,
+"resultado": 0.0
+}
+},
+"0x1c6d0dceadad81c8ccd3c1a41ba6633186c8dd2bec23267301ef46fc414f148e": {
+"serie": "lowest|seattle",
+"fecha": "2026-10-29",
+"caja": "50-51°F",
+"gano": 0,
+"0.02": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.03": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.05": {
+"acciones": 0,
+"resultado": 0.0
+}
+},
+"0xbcca0f3b524d5d8207233fdf9ff05ef64a9c43fe970ec0a6ffed8a2a6439e011": {
+"serie": "lowest|seattle",
+"fecha": "2026-10-29",
+"caja": "52°F or higher",
+"gano": 0,
+"0.02": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.03": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.05": {
+"acciones": 0,
+"resultado": 0.0
+}
+},
+"0xe91a2aaf54dabbeb66a2ba8aabc6039fd86a89093fbacb7112efe7d538f42e15": {
+"serie": "lowest|los-angeles",
+"fecha": "2026-10-29",
+"caja": "70°F or higher",
+"gano": 0,
+"0.02": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.03": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.05": {
+"acciones": 0,
+"resultado": 0.0
+}
+},
+"0xa08b724e69bb69f5e54d24af2ab77a2c027f57cde818bd5c761efbcf754114e9": {
+"serie": "highest|los-angeles",
+"fecha": "2026-10-29",
+"caja": "61°F or below",
+"gano": 0,
+"0.02": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.03": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.05": {
+"acciones": 0,
+"resultado": 0.0
+}
+},
+"0xe53bebb01d9dda0693f1b399b9408e9dcb5d4fdb5b7f452025a5fb2b3748e931": {
+"serie": "highest|los-angeles",
+"fecha": "2026-10-29",
+"caja": "62-63°F",
+"gano": 0,
+"0.02": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.03": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.05": {
+"acciones": 0,
+"resultado": 0.0
+}
+},
+"0x0662eefe077a4829642d307fd935280ec39e9c683911fdbf30ff04ea9a92d9d5": {
+"serie": "lowest|san-francisco",
+"fecha": "2026-10-29",
+"caja": "58-59°F",
+"gano": 0,
+"0.02": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.03": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.05": {
+"acciones": 0,
+"resultado": 0.0
+}
+},
+"0x78213b34411f3a871cbe278927feb7f071f1308257d153ccccf97c092e41fa7a": {
+"serie": "lowest|san-francisco",
+"fecha": "2026-10-29",
+"caja": "60-61°F",
+"gano": 0,
+"0.02": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.03": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.05": {
+"acciones": 0,
+"resultado": 0.0
+}
+},
+"0x2d0e7f7df5ad96ae731cd4310046d0f9e5ecc1a0312d6ae87724800e55adce7b": {
+"serie": "lowest|san-francisco",
+"fecha": "2026-10-29",
+"caja": "62°F or higher",
+"gano": 0,
+"0.02": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.03": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.05": {
+"acciones": 0,
+"resultado": 0.0
+}
+},
+"0x7188302c5579768c2f63fb6c043bfd630ba84dbccd8de14db6502eedfce41e67": {
+"serie": "highest|milan",
+"fecha": "2026-10-29",
+"caja": "11°C",
+"gano": 0,
+"0.02": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.03": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.05": {
+"acciones": 0,
+"resultado": 0.0
+}
+},
+"0x7e6fffc7c5d9eb8b0b2a362fde9a47117b4a705d1dc1b2c319207643e2e8801c": {
+"serie": "highest|munich",
+"fecha": "2026-10-29",
+"caja": "4°C",
+"gano": 0,
+"0.02": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.03": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.05": {
+"acciones": 0,
+"resultado": 0.0
+}
+},
+"0x2a04ffc7a2b53f5d29bd4ed9ea10f138c2e4221bec076c1c1081894ea3239949": {
+"serie": "lowest|chicago",
+"fecha": "2026-10-29",
+"caja": "68-69°F",
+"gano": 0,
+"0.02": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.03": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.05": {
+"acciones": 0,
+"resultado": 0.0
+}
+},
+"0x0f40b1bf9d25522d1f41db8b31afa389b1f49c9d53672203e56a7f0f95e892a4": {
+"serie": "highest|london",
+"fecha": "2026-10-29",
+"caja": "12°C",
+"gano": 0,
+"0.02": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.03": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.05": {
+"acciones": 0,
+"resultado": 0.0
+}
+},
+"0x0e46a0cb1ddb5655444cec9c5e53eb0ca7e38ba79219e238aa621d51297b62aa": {
+"serie": "lowest|nyc",
+"fecha": "2026-10-29",
+"caja": "56-57°F",
+"gano": 0,
+"0.02": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.03": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.05": {
+"acciones": 0,
+"resultado": 0.0
+}
+},
+"0x9689978c6eca2d743ca100a15d596d1b22962bb2cb2b76c253a070239b526256": {
+"serie": "lowest|atlanta",
+"fecha": "2026-10-29",
+"caja": "60-61°F",
+"gano": 0,
+"0.02": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.03": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.05": {
+"acciones": 0,
+"resultado": 0.0
+}
+},
+"0x2b44a77005143c6c2ccd32dccf0cd2d72401534a90e236c2fabaab9c9a2df5e0": {
+"serie": "highest|milan",
+"fecha": "2026-10-29",
+"caja": "12°C",
+"gano": 0,
+"0.02": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.03": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.05": {
+"acciones": 0,
+"resultado": 0.0
+}
+},
+"0x69f07e6ba04b82772e1c732441e409521a9513a1faee158d85675d2e290fe28d": {
+"serie": "lowest|houston",
+"fecha": "2026-10-29",
+"caja": "68-69°F",
+"gano": 0,
+"0.02": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.03": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.05": {
+"acciones": 0,
+"resultado": 0.0
+}
+},
+"0x89e4bcdb73ba33855c8766ef69a33c17d7770a202dc2ce1ff4a4b658f95c6ccb": {
+"serie": "lowest|los-angeles",
+"fecha": "2026-10-29",
+"caja": "68-69°F",
+"gano": 0,
+"0.02": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.03": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.05": {
+"acciones": 0,
+"resultado": 0.0
+}
+},
+"0x7100190fb5c8731e552f8b6ea665b65f7947f5c71d01b8829ebb26e11730d0da": {
+"serie": "highest|amsterdam",
+"fecha": "2026-10-29",
+"caja": "11°C",
+"gano": 0,
+"0.02": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.03": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.05": {
+"acciones": 0,
+"resultado": 0.0
+}
+},
+"0x2699598d8f75482446ff4ac2213a2daa4a5c30930308ced1699ac39dacd1319f": {
+"serie": "lowest|san-francisco",
+"fecha": "2026-10-29",
+"caja": "56-57°F",
+"gano": 0,
+"0.02": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.03": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.05": {
+"acciones": 0,
+"resultado": 0.0
+}
+},
+"0x24cfcf32adf821dfa313a20c73a74653a036b4720007f60df9a34453aad0bd82": {
+"serie": "lowest|toronto",
+"fecha": "2026-10-29",
+"caja": "9°C",
+"gano": 0,
+"0.02": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.03": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.05": {
+"acciones": 0,
+"resultado": 0.0
+}
+},
+"0x04cdda0afec88f3e33659a2a2c5165435827f2f7222ff3e871029e22e1a67019": {
+"serie": "highest|munich",
+"fecha": "2026-10-29",
+"caja": "5°C",
+"gano": 0,
+"0.02": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.03": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.05": {
+"acciones": 0,
+"resultado": 0.0
+}
+},
+"0xb923346d16dc68d2c125c7c09b30d8b12bf3fe76f56f8825f6cd1b3377af189b": {
+"serie": "highest|milan",
+"fecha": "2026-10-29",
+"caja": "13°C",
+"gano": 0,
+"0.02": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.03": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.05": {
+"acciones": 0,
+"resultado": 0.0
+}
+},
+"0x265f9f399b1239902ed333f47a6f92fff768f0087c9cc3c7ad3ca2c45974bb5a": {
+"serie": "highest|amsterdam",
+"fecha": "2026-10-29",
+"caja": "12°C",
+"gano": 0,
+"0.02": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.03": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.05": {
+"acciones": 0,
+"resultado": 0.0
+}
+},
+"0x4b62954c0423ee45143a1e35ed714723ce99966eabbcd1f566ea5d2e3afda95c": {
+"serie": "highest|munich",
+"fecha": "2026-10-29",
+"caja": "6°C",
+"gano": 0,
+"0.02": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.03": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.05": {
+"acciones": 0,
+"resultado": 0.0
+}
+},
+"0xc734ffeb02c34a35ddea866e251e88edfbebe8e0f4002def0e7d74899cf4c318": {
+"serie": "lowest|chicago",
+"fecha": "2026-10-29",
+"caja": "66-67°F",
+"gano": 0,
+"0.02": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.03": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.05": {
+"acciones": 0,
+"resultado": 0.0
+}
+},
+"0xff28af0458e38ef423f2139b0b605e74d97b911ff198a9f7012f484d74015f31": {
+"serie": "highest|milan",
+"fecha": "2026-10-29",
+"caja": "14°C",
+"gano": 0,
+"0.02": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.03": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.05": {
+"acciones": 0,
+"resultado": 0.0
+}
+},
+"0xcf5a12db33858e028ae4ef19fc5538b88bb7d61529eb6bb8edfef650bfd14add": {
+"serie": "lowest|dallas",
+"fecha": "2026-10-29",
+"caja": "72-73°F",
+"gano": 0,
+"0.02": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.03": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.05": {
+"acciones": 0,
+"resultado": 0.0
+}
+},
+"0x592f366bc547cd54429ceac5a0e41023dad5fd4a829612e7309817bca6b76fe3": {
+"serie": "lowest|denver",
+"fecha": "2026-10-29",
+"caja": "42-43°F",
+"gano": 0,
+"0.02": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.03": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.05": {
+"acciones": 0,
+"resultado": 0.0
+}
+},
+"0x811f27c676d76f86b8eb28fb2e785eb5509e6b236b8142215e202abfb5c2f2a6": {
+"serie": "lowest|mexico-city",
+"fecha": "2026-10-29",
+"caja": "16°C or higher",
+"gano": 0,
+"0.02": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.03": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.05": {
+"acciones": 0,
+"resultado": 0.0
+}
+},
+"0xd49aaa681e7ca21d1d84381e49920a693b9f6ee0ecdb32b63ae56c57ad66c6bf": {
+"serie": "highest|munich",
+"fecha": "2026-10-29",
+"caja": "7°C",
+"gano": 0,
+"0.02": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.03": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.05": {
+"acciones": 0,
+"resultado": 0.0
+}
+},
+"0xa76eb2398979f9be6f7808b53dca291fe1deb312ab62cce193bd80da080cd130": {
+"serie": "highest|london",
+"fecha": "2026-10-29",
+"caja": "13°C",
+"gano": 0,
+"0.02": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.03": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.05": {
+"acciones": 0,
+"resultado": 0.0
+}
+},
+"0xf157717f8f8216f526ea6547d83270724d9b67307d70cc64a3643c852857ffd8": {
+"serie": "highest|amsterdam",
+"fecha": "2026-10-29",
+"caja": "13°C",
+"gano": 0,
+"0.02": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.03": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.05": {
+"acciones": 0,
+"resultado": 0.0
+}
+},
+"0x166cb6cf2856a0b224f34016f14cab7fcd21e255425bb52d06e9d0c7428ba4b2": {
+"serie": "lowest|wellington",
+"fecha": "2026-10-30",
+"caja": "15°C or higher",
+"gano": 0,
+"0.02": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.03": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.05": {
+"acciones": 0,
+"resultado": 0.0
+}
+},
+"0x50c12f1bcef56c5d50793fe7bc41998bc110dae683b0ccb49589b0e0574983f4": {
+"serie": "highest|london",
+"fecha": "2026-10-29",
+"caja": "14°C",
+"gano": 0,
+"0.02": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.03": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.05": {
+"acciones": 0,
+"resultado": 0.0
+}
+},
+"0x005475e24c94cf462dfc6747e9f961b6877a5e3ba663c17005e289eaf4202bc2": {
+"serie": "highest|milan",
+"fecha": "2026-10-29",
+"caja": "15°C",
+"gano": 0,
+"0.02": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.03": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.05": {
+"acciones": 0,
+"resultado": 0.0
+}
+},
+"0xb6a6d89eaf025b0c0ad6fc43768d675671f12beae78aa7f618a29afe866e09ca": {
+"serie": "lowest|mexico-city",
+"fecha": "2026-10-29",
+"caja": "15°C",
+"gano": 0,
+"0.02": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.03": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.05": {
+"acciones": 0,
+"resultado": 0.0
+}
+},
+"0x9313d774dd48bb8e5b6b3a3bae71764ca61a47151588d8cff6b2ecdef6068dfc": {
+"serie": "highest|sao-paulo",
+"fecha": "2026-10-29",
+"caja": "16°C or below",
+"gano": 0,
+"0.02": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.03": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.05": {
+"acciones": 0,
+"resultado": 0.0
+}
+},
+"0x0fcf3605646b6913847a3a86412056421809d724488429c7f5ef79ec0afb2656": {
+"serie": "highest|munich",
+"fecha": "2026-10-29",
+"caja": "8°C",
+"gano": 0,
+"0.02": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.03": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.05": {
+"acciones": 0,
+"resultado": 0.0
+}
+},
+"0xf5c2f9dc10702fd3f078bd25d2f393f9fb8d9e556b01cc88208667ddf53b170b": {
+"serie": "highest|amsterdam",
+"fecha": "2026-10-29",
+"caja": "14°C",
+"gano": 0,
+"0.02": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.03": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.05": {
+"acciones": 0,
+"resultado": 0.0
+}
+},
+"0x926dbe5f8c3d19c734aff327aed69ccedba1146a06aaeeb61ced21a0be98b448": {
+"serie": "lowest|wellington",
+"fecha": "2026-10-30",
+"caja": "14°C",
+"gano": 0,
+"0.02": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.03": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.05": {
+"acciones": 0,
+"resultado": 0.0
+}
+},
+"0x1b467273e6e19a0185bdc6aaa8d107af03e5d76851b137e239c26d87b80f5914": {
+"serie": "lowest|chicago",
+"fecha": "2026-10-29",
+"caja": "64-65°F",
+"gano": 0,
+"0.02": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.03": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.05": {
+"acciones": 0,
+"resultado": 0.0
+}
+},
+"0xf4fb7afea842bc2171352ce94583dd4b8b637723a746ae1f5e5c0bde22665dd7": {
+"serie": "highest|milan",
+"fecha": "2026-10-29",
+"caja": "16°C",
+"gano": 0,
+"0.02": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.03": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.05": {
+"acciones": 0,
+"resultado": 0.0
+}
+},
+"0xa18aef0b8f6abb56c82941d926aa8c76fee74dec68cdd9b01544b6ce79da7e5d": {
+"serie": "lowest|los-angeles",
+"fecha": "2026-10-29",
+"caja": "66-67°F",
+"gano": 0,
+"0.02": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.03": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.05": {
+"acciones": 0,
+"resultado": 0.0
+}
+},
+"0x8f12d9c810003ce89e94375c26ff27bc577d8e7a35cb78c67cd7f923adcc8cb8": {
+"serie": "highest|miami",
+"fecha": "2026-10-29",
+"caja": "77°F or below",
+"gano": 0,
+"0.02": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.03": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.05": {
+"acciones": 0,
+"resultado": 0.0
+}
+},
+"0xb2063d2b0eda98acdc63f9b8c65757d3d6b8877b9148ddcba5b100b4adf602e9": {
+"serie": "highest|sao-paulo",
+"fecha": "2026-10-29",
+"caja": "17°C",
+"gano": 0,
+"0.02": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.03": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.05": {
+"acciones": 0,
+"resultado": 0.0
+}
+},
+"0xdb282972de8078bf26f2eaeedcc424f9411992e598613e955bb31d529739d97f": {
+"serie": "highest|buenos-aires",
+"fecha": "2026-10-29",
+"caja": "18°C or below",
+"gano": 0,
+"0.02": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.03": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.05": {
+"acciones": 0,
+"resultado": 0.0
+}
+},
+"0x0a15dada3949c8ef506680df0a370dc5142c754ab5eb03419764c658cf08febd": {
+"serie": "highest|panama-city",
+"fecha": "2026-10-29",
+"caja": "25°C or below",
+"gano": 0,
+"0.02": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.03": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.05": {
+"acciones": 0,
+"resultado": 0.0
+}
+},
+"0x98ebb15e86ac15e54d76d15005bc644965bbac628c83f060beb7e575f57ec984": {
+"serie": "highest|nyc",
+"fecha": "2026-10-29",
+"caja": "59°F or below",
+"gano": 0,
+"0.02": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.03": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.05": {
+"acciones": 0,
+"resultado": 0.0
+}
+},
+"0xb8005477704e8731f02545aec971dca8edb4e213f979739da71f59863f21db45": {
+"serie": "highest|miami",
+"fecha": "2026-10-29",
+"caja": "78-79°F",
+"gano": 0,
+"0.02": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.03": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.05": {
+"acciones": 0,
+"resultado": 0.0
+}
+},
+"0x5b8e685a1be97fb40e01077e118e9828ef05bb087db41ee6d821a112011b82db": {
+"serie": "highest|sao-paulo",
+"fecha": "2026-10-29",
+"caja": "18°C",
+"gano": 0,
+"0.02": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.03": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.05": {
+"acciones": 0,
+"resultado": 0.0
+}
+},
+"0x1da3bc7af835b7e7a5de11c577a2923115946eccbc54ec6d6aa35fe61ca9f313": {
+"serie": "highest|panama-city",
+"fecha": "2026-10-29",
+"caja": "26°C",
+"gano": 0,
+"0.02": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.03": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.05": {
+"acciones": 0,
+"resultado": 0.0
+}
+},
+"0x89320bb89e82d22224e851a4a2752a22a236957255befa68e5225596c1626fb8": {
+"serie": "highest|panama-city",
+"fecha": "2026-10-29",
+"caja": "27°C",
+"gano": 0,
+"0.02": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.03": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.05": {
+"acciones": 0,
+"resultado": 0.0
+}
+},
+"0x5516800a9ed8c077a71c08ec3135a2977d63f2ca57b7f55b02338d7b6ab19310": {
+"serie": "highest|buenos-aires",
+"fecha": "2026-10-29",
+"caja": "19°C",
+"gano": 0,
+"0.02": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.03": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.05": {
+"acciones": 0,
+"resultado": 0.0
+}
+},
+"0x53cfce305fd9617b089ba34a29d66b219fae67e774e9a7e1b5569e9d8c3fcbb3": {
+"serie": "highest|buenos-aires",
+"fecha": "2026-10-29",
+"caja": "20°C",
+"gano": 0,
+"0.02": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.03": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.05": {
+"acciones": 0,
+"resultado": 0.0
+}
+},
+"0xe06430d6249c3ae68b45fd92a2250c5eaff0466562414b6a46cfb4c971e42e23": {
+"serie": "highest|nyc",
+"fecha": "2026-10-29",
+"caja": "60-61°F",
+"gano": 0,
+"0.02": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.03": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.05": {
+"acciones": 0,
+"resultado": 0.0
+}
+},
+"0x5de2ffbb260933812443c05aa4b84bf706f562d33ed2db64eaa4494ef7ceb1c9": {
+"serie": "highest|miami",
+"fecha": "2026-10-29",
+"caja": "80-81°F",
+"gano": 0,
+"0.02": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.03": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.05": {
+"acciones": 0,
+"resultado": 0.0
+}
+},
+"0xceb595509d0e525e4e5593ee304734b61ad42908f2b2db099dc261b461f88e27": {
+"serie": "highest|san-francisco",
+"fecha": "2026-10-29",
+"caja": "53°F or below",
+"gano": 0,
+"0.02": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.03": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.05": {
+"acciones": 0,
+"resultado": 0.0
+}
+},
+"0x5749a2053dbad7282274c9fe65923175373cd1ce868fa09e4c5e0b9e6199c72a": {
+"serie": "highest|buenos-aires",
+"fecha": "2026-10-29",
+"caja": "21°C",
+"gano": 0,
+"0.02": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.03": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.05": {
+"acciones": 0,
+"resultado": 0.0
+}
+},
+"0xd8a785d4b6152c3ad4ae2e394d37896db716a093a0ad4479e5eb66308f9b1ab8": {
+"serie": "highest|toronto",
+"fecha": "2026-10-29",
+"caja": "16°C or below",
+"gano": 0,
+"0.02": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.03": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.05": {
+"acciones": 0,
+"resultado": 0.0
+}
+},
+"0x41fa43d58a1ae80232ff45fc37bef68bbe8bb02d92ed6a45235bdd8e628a0413": {
+"serie": "highest|panama-city",
+"fecha": "2026-10-29",
+"caja": "28°C",
+"gano": 0,
+"0.02": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.03": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.05": {
+"acciones": 0,
+"resultado": 0.0
+}
+},
+"0x74556962154fd8581f92bb0c4109bb1db9ce5008244eaa4b645d478e4d360c7c": {
+"serie": "lowest|wellington",
+"fecha": "2026-10-30",
+"caja": "13°C",
+"gano": 0,
+"0.02": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.03": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.05": {
+"acciones": 0,
+"resultado": 0.0
+}
+},
+"0xe33230e1ea2d6eb1c3cfb70cd8ff4533ef1aa870897b68b69d2522e813b4c723": {
+"serie": "highest|atlanta",
+"fecha": "2026-10-29",
+"caja": "65°F or below",
+"gano": 0,
+"0.02": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.03": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.05": {
+"acciones": 0,
+"resultado": 0.0
+}
+},
+"0xc28531aeed6d2a345655ad2fb630098746ff4db4f2fb239e819ee14a36ffa874": {
+"serie": "highest|miami",
+"fecha": "2026-10-29",
+"caja": "82-83°F",
+"gano": 0,
+"0.02": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.03": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.05": {
+"acciones": 0,
+"resultado": 0.0
+}
+},
+"0xbacbb5a4bc74a35c4cb533e55d5c832fa2b016a6ffc96328e04e680fbe695f64": {
+"serie": "highest|houston",
+"fecha": "2026-10-29",
+"caja": "73°F or below",
+"gano": 0,
+"0.02": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.03": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.05": {
+"acciones": 0,
+"resultado": 0.0
+}
+},
+"0xe4a835c63b5bd945f9e217bd13a057a7840731571e080988dab0d83323680346": {
+"serie": "highest|houston",
+"fecha": "2026-10-29",
+"caja": "74-75°F",
+"gano": 0,
+"0.02": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.03": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.05": {
+"acciones": 0,
+"resultado": 0.0
+}
+},
+"0xfb0d69cecb6b35d868811e512e6a9d94a33f28157ac08a00fe8a7833e38701fa": {
+"serie": "highest|los-angeles",
+"fecha": "2026-10-29",
+"caja": "64-65°F",
+"gano": 0,
+"0.02": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.03": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.05": {
+"acciones": 0,
+"resultado": 0.0
+}
+},
+"0x39cb0a71d375cb609bec1d4da455faee0ee18f0342116d77bcac8f7ab101059f": {
+"serie": "lowest|wellington",
+"fecha": "2026-10-30",
+"caja": "12°C",
+"gano": 0,
+"0.02": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.03": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.05": {
+"acciones": 0,
+"resultado": 0.0
+}
+},
+"0x9b5ba0c93d854e3df71685bcd7348725e9df7cc24d1abc907f4f75a915676054": {
+"serie": "highest|toronto",
+"fecha": "2026-10-29",
+"caja": "17°C",
+"gano": 0,
+"0.02": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.03": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.05": {
+"acciones": 0,
+"resultado": 0.0
+}
+},
+"0xfebd313275b89e866edc4b17129924767936c81a30feda856570ed094e13733a": {
+"serie": "highest|toronto",
+"fecha": "2026-10-29",
+"caja": "18°C",
+"gano": 0,
+"0.02": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.03": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.05": {
+"acciones": 0,
+"resultado": 0.0
+}
+},
+"0x3aa7a625f750fb2cd8feefada8f78e308bc59e95da20564c0982a6650f164cd7": {
+"serie": "highest|panama-city",
+"fecha": "2026-10-29",
+"caja": "29°C",
+"gano": 0,
+"0.02": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.03": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.05": {
+"acciones": 0,
+"resultado": 0.0
+}
+},
+"0xee1d294937828eaa3b5db93487d69c0eeedd0e5d6f91d85f38905ad966996950": {
+"serie": "lowest|wellington",
+"fecha": "2026-10-30",
+"caja": "11°C",
+"gano": 0,
+"0.02": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.03": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.05": {
+"acciones": 0,
+"resultado": 0.0
+}
+},
+"0x2d5fd9002fba393c1b9057e2c89571a5b117840f4922511ae262f8a0910840f6": {
+"serie": "highest|atlanta",
+"fecha": "2026-10-29",
+"caja": "66-67°F",
+"gano": 0,
+"0.02": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.03": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.05": {
+"acciones": 0,
+"resultado": 0.0
+}
+},
+"0x36fda5f047064ff51113de2398ed5c98e76f15e0c53fe00db906aabe16422185": {
+"serie": "highest|dallas",
+"fecha": "2026-10-29",
+"caja": "73°F or below",
+"gano": 0,
+"0.02": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.03": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.05": {
+"acciones": 0,
+"resultado": 0.0
+}
+},
+"0xd87213fde623dd3193b1d161a10f135b176033bb518412874129b61567d561ec": {
+"serie": "highest|houston",
+"fecha": "2026-10-29",
+"caja": "76-77°F",
+"gano": 0,
+"0.02": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.03": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.05": {
+"acciones": 0,
+"resultado": 0.0
+}
+},
+"0xdcb7beadb69820dafd96b4c5d4744c96733961415af4d2970809efe48c53cd98": {
+"serie": "highest|houston",
+"fecha": "2026-10-29",
+"caja": "78-79°F",
+"gano": 0,
+"0.02": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.03": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.05": {
+"acciones": 0,
+"resultado": 0.0
+}
+},
+"0x47d7ef0aa724528ce63648d79b034b949f7cf0df4c7c7ed53f154e385039dbe1": {
+"serie": "highest|los-angeles",
+"fecha": "2026-10-29",
+"caja": "66-67°F",
+"gano": 0,
+"0.02": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.03": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.05": {
+"acciones": 0,
+"resultado": 0.0
+}
+},
+"0xa4b5dac8a4f677d15bc49dda935b16575419125c2b37134087eb9d236bd96253": {
+"serie": "highest|san-francisco",
+"fecha": "2026-10-29",
+"caja": "54-55°F",
+"gano": 0,
+"0.02": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.03": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.05": {
+"acciones": 0,
+"resultado": 0.0
+}
+},
+"0xcb776264bd58554a78b561f0faac76d57e9617950271485e8e7f5a62e627fcbf": {
+"serie": "highest|san-francisco",
+"fecha": "2026-10-29",
+"caja": "56-57°F",
+"gano": 0,
+"0.02": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.03": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.05": {
+"acciones": 0,
+"resultado": 0.0
+}
+},
+"0x677bc1f114219ad250318983b41409e01ab298af34a6c21daecd541ad11ea0aa": {
+"serie": "highest|mexico-city",
+"fecha": "2026-10-29",
+"caja": "16°C or below",
+"gano": 0,
+"0.02": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.03": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.05": {
+"acciones": 0,
+"resultado": 0.0
+}
+},
+"0xfffec6dace172255c7e1be0f73a0afa833c2506fdeaa7cc5cac242d98af98923": {
+"serie": "highest|mexico-city",
+"fecha": "2026-10-29",
+"caja": "17°C",
+"gano": 0,
+"0.02": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.03": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.05": {
+"acciones": 0,
+"resultado": 0.0
+}
+},
+"0x29b0d98f522db2577be4436c4328ab3e9b8297856f8ad5ce6d46b0ba5c610032": {
+"serie": "highest|toronto",
+"fecha": "2026-10-29",
+"caja": "19°C",
+"gano": 0,
+"0.02": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.03": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.05": {
+"acciones": 0,
+"resultado": 0.0
+}
+},
+"0x51ac89ddb4a64160e6deaa7386bc4e458a35f07b1bd36c54f1496b655a5eabfd": {
+"serie": "highest|toronto",
+"fecha": "2026-10-29",
+"caja": "20°C",
+"gano": 0,
+"0.02": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.03": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.05": {
+"acciones": 0,
+"resultado": 0.0
+}
+},
+"0xce1f41edab7b13a7333416c9cedd7728ab946b6e7dd120d7731832e26583d23f": {
+"serie": "lowest|helsinki",
+"fecha": "2026-10-29",
+"caja": "9°C",
+"gano": 0,
+"0.02": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.03": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.05": {
+"acciones": 0,
+"resultado": 0.0
+}
+},
+"0x821e454a1696ed1c481b1d6e3448949dcdb9d1abedb743ae82b7a528c859afb4": {
+"serie": "lowest|helsinki",
+"fecha": "2026-10-29",
+"caja": "8°C",
+"gano": 0,
+"0.02": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.03": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.05": {
+"acciones": 0,
+"resultado": 0.0
+}
+},
+"0xc93a78d0d90c67b5078c25c15ee9c12c45183a0e90591d1f3405024287e36e90": {
+"serie": "highest|nyc",
+"fecha": "2026-10-29",
+"caja": "62-63°F",
+"gano": 0,
+"0.02": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.03": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.05": {
+"acciones": 0,
+"resultado": 0.0
+}
+},
+"0x4cd75c9e3829b536bc10de932269ff0df2f13c51b1a6a67cd9b8acb31839ca64": {
+"serie": "highest|nyc",
+"fecha": "2026-10-29",
+"caja": "64-65°F",
+"gano": 0,
+"0.02": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.03": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.05": {
+"acciones": 0,
+"resultado": 0.0
+}
+},
+"0x7aae69eb16903c4082f3b6e836e7a0a7fc11f05fe0eccab9761a08c26aa9de26": {
+"serie": "highest|atlanta",
+"fecha": "2026-10-29",
+"caja": "68-69°F",
+"gano": 0,
+"0.02": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.03": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.05": {
+"acciones": 0,
+"resultado": 0.0
+}
+},
+"0x82519127f7b28ce64850bc8b3040b179121cd56d904ca7ced9a2cc4e6e13a08a": {
+"serie": "highest|atlanta",
+"fecha": "2026-10-29",
+"caja": "70-71°F",
+"gano": 0,
+"0.02": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.03": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.05": {
+"acciones": 0,
+"resultado": 0.0
+}
+},
+"0x674c5e21a14ff9c3b89b530e51c5ff46bf0897a3c5ebde9cc0e0dac79dd3678d": {
+"serie": "highest|dallas",
+"fecha": "2026-10-29",
+"caja": "74-75°F",
+"gano": 0,
+"0.02": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.03": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.05": {
+"acciones": 0,
+"resultado": 0.0
+}
+},
+"0x48657c64765598a39cb59924a178a65a5224510b8167fc9060efda57e5fd505c": {
+"serie": "highest|denver",
+"fecha": "2026-10-29",
+"caja": "55°F or below",
+"gano": 0,
+"0.02": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.03": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.05": {
+"acciones": 0,
+"resultado": 0.0
+}
+},
+"0xa38961d2a18dab893f6b092e1bb2b046c5d54608024c9001000103728a19dd9d": {
+"serie": "highest|seattle",
+"fecha": "2026-10-29",
+"caja": "43°F or below",
+"gano": 0,
+"0.02": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.03": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.05": {
+"acciones": 0,
+"resultado": 0.0
+}
+},
+"0x8e5e59b077fddae76b1feb444cfefd180fab67a047e28ad519d82f0c39932a87": {
+"serie": "highest|los-angeles",
+"fecha": "2026-10-29",
+"caja": "68-69°F",
+"gano": 0,
+"0.02": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.03": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.05": {
+"acciones": 0,
+"resultado": 0.0
+}
+},
+"0x60808778fb7ae2697062a8954a9ccbbbbd508ae56462af9112bd4d0e0559b578": {
+"serie": "highest|mexico-city",
+"fecha": "2026-10-29",
+"caja": "18°C",
+"gano": 0,
+"0.02": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.03": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.05": {
+"acciones": 0,
+"resultado": 0.0
+}
+},
+"0x75db6c3b6aa00209cc62912902901be1d845ac11d10bbf655a278a6a5a4e04b9": {
+"serie": "highest|panama-city",
+"fecha": "2026-10-29",
+"caja": "30°C",
+"gano": 0,
+"0.02": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.03": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.05": {
+"acciones": 0,
+"resultado": 0.0
+}
+},
+"0x0860718e6f45a6b3f60fb34abbee6ac06136ea849e02470c7e1f0ca478188153": {
+"serie": "highest|buenos-aires",
+"fecha": "2026-10-29",
+"caja": "22°C",
+"gano": 0,
+"0.02": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.03": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.05": {
+"acciones": 0,
+"resultado": 0.0
+}
+},
+"0xb9a6f1fade6a21e611415d9106643d4b4c3926f566616a9e91ece06c779e0d4f": {
+"serie": "highest|toronto",
+"fecha": "2026-10-29",
+"caja": "21°C",
+"gano": 0,
+"0.02": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.03": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.05": {
+"acciones": 0,
+"resultado": 0.0
+}
+},
+"0xbab552647cbaa2312aaf6e968f673d9637112794c3eca308cf5ec9dcd0c790b2": {
+"serie": "highest|austin",
+"fecha": "2026-10-29",
+"caja": "71°F or below",
+"gano": 0,
+"0.02": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.03": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.05": {
+"acciones": 0,
+"resultado": 0.0
+}
+},
+"0xb95b2b772db5ef7ecbfc38db93167dff808bec428ee7357e4c160b115e323fae": {
+"serie": "highest|denver",
+"fecha": "2026-10-29",
+"caja": "56-57°F",
+"gano": 0,
+"0.02": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.03": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.05": {
+"acciones": 0,
+"resultado": 0.0
+}
+},
+"0x170c783e75e94a48d4c0432c29dc14c4b037ff8f63488ae0a3063f119e2aff10": {
+"serie": "highest|denver",
+"fecha": "2026-10-29",
+"caja": "58-59°F",
+"gano": 0,
+"0.02": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.03": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.05": {
+"acciones": 0,
+"resultado": 0.0
+}
+},
+"0x730b2813d8580bbabfe02683292bf50b4fe25630595327299c392c0b2c721e2b": {
+"serie": "highest|seattle",
+"fecha": "2026-10-29",
+"caja": "44-45°F",
+"gano": 0,
+"0.02": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.03": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.05": {
+"acciones": 0,
+"resultado": 0.0
+}
+},
+"0xe76912c4507661c4388fb1a41ce9c3f8fb6e1c6a2ebe897a93ae7476e516932f": {
+"serie": "highest|san-francisco",
+"fecha": "2026-10-29",
+"caja": "58-59°F",
+"gano": 0,
+"0.02": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.03": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.05": {
+"acciones": 0,
+"resultado": 0.0
+}
+},
+"0xbcd746637c388ef7e28db36a99844e3cd06dfcacbc5122b2d87f4349a8c780ea": {
+"serie": "highest|mexico-city",
+"fecha": "2026-10-29",
+"caja": "19°C",
+"gano": 0,
+"0.02": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.03": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.05": {
+"acciones": 0,
+"resultado": 0.0
+}
+},
+"0xb6116c2243d1d2538d323b17ceca5d51ddffbd97af5f1302f7a1c1e5828e53c0": {
+"serie": "highest|mexico-city",
+"fecha": "2026-10-29",
+"caja": "20°C",
+"gano": 0,
+"0.02": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.03": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.05": {
+"acciones": 0,
+"resultado": 0.0
+}
+},
+"0x82420de5daee21d4b8ff0820e4428f7f79e2b8445aaa6906a194ba9c1c3c8c17": {
+"serie": "lowest|london",
+"fecha": "2026-10-29",
+"caja": "14°C",
+"gano": 0,
+"0.02": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.03": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.05": {
+"acciones": 0,
+"resultado": 0.0
+}
+},
+"0xa6cc7f90304dee05d9a5dc50b83facc97e556a9fe42c622b78a49017983d290e": {
+"serie": "lowest|amsterdam",
+"fecha": "2026-10-29",
+"caja": "12°C",
+"gano": 0,
+"0.02": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.03": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.05": {
+"acciones": 0,
+"resultado": 0.0
+}
+},
+"0xaa8ed2ecf443044a2121cc8e300677125c5612d8839d62282f6af5ae6b855088": {
+"serie": "highest|atlanta",
+"fecha": "2026-10-29",
+"caja": "72-73°F",
+"gano": 0,
+"0.02": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.03": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.05": {
+"acciones": 0,
+"resultado": 0.0
+}
+},
+"0xa037763cd67f7a6cbd4385ae02c5858a9ae927dbd3d7e5b81d8ea802529cd9fb": {
+"serie": "highest|denver",
+"fecha": "2026-10-29",
+"caja": "60-61°F",
+"gano": 0,
+"0.02": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.03": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.05": {
+"acciones": 0,
+"resultado": 0.0
+}
+},
+"0xa7066e99c5e29be612fa68d6ee946655c7ead9a30adc1260ef345e715d52233f": {
+"serie": "highest|seattle",
+"fecha": "2026-10-29",
+"caja": "46-47°F",
+"gano": 0,
+"0.02": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.03": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.05": {
+"acciones": 0,
+"resultado": 0.0
+}
+},
+"0xf2e52d1ce1a430d1cb91afcb4d49feba1e632f34c08192c204bf120eb9ab6bc5": {
+"serie": "highest|seattle",
+"fecha": "2026-10-29",
+"caja": "48-49°F",
+"gano": 0,
+"0.02": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.03": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.05": {
+"acciones": 0,
+"resultado": 0.0
+}
+},
+"0xc82254d5d89780028cb67a07ec80da8aa3a6a8be6a958efcf54a040182663a53": {
+"serie": "highest|mexico-city",
+"fecha": "2026-10-29",
+"caja": "21°C",
+"gano": 0,
+"0.02": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.03": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.05": {
+"acciones": 0,
+"resultado": 0.0
+}
+},
+"0xd0f05afeb6cae82a99f99080fd6a3237667e6a0fea06ed55a48cd6069f050ed4": {
+"serie": "lowest|amsterdam",
+"fecha": "2026-10-29",
+"caja": "11°C",
+"gano": 0,
+"0.02": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.03": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.05": {
+"acciones": 0,
+"resultado": 0.0
+}
+},
+"0x11a92649038ab0f7acab51ebba5e09e2e02331ede8186da24d32c96e5c4bea99": {
+"serie": "lowest|london",
+"fecha": "2026-10-29",
+"caja": "13°C",
+"gano": 0,
+"0.02": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.03": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.05": {
+"acciones": 0,
+"resultado": 0.0
+}
+},
+"0x4044b5786f0b4a55d559390a3c937ee93a1a1bf18f28270f30925ec4af5cae91": {
+"serie": "highest|denver",
+"fecha": "2026-10-29",
+"caja": "62-63°F",
+"gano": 0,
+"0.02": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.03": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.05": {
+"acciones": 0,
+"resultado": 0.0
+}
+},
+"0x891d1657394c7b7539e9711f3ed7b5ed23aa806a11cf9f47b34dbf0848680e02": {
+"serie": "highest|seattle",
+"fecha": "2026-10-29",
+"caja": "50-51°F",
+"gano": 0,
+"0.02": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.03": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.05": {
+"acciones": 0,
+"resultado": 0.0
+}
+},
+"0xeb228b89a1a5b40e6aa5ee8e832c48e9deb8afa3daed3e3124e54da0fca39402": {
+"serie": "highest|san-francisco",
+"fecha": "2026-10-29",
+"caja": "60-61°F",
+"gano": 0,
+"0.02": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.03": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.05": {
+"acciones": 0,
+"resultado": 0.0
+}
+},
+"0xe0bba4918c669eab62cad56fead07ec4b56f62542cec7e7537bdde08d6ae46c2": {
+"serie": "highest|mexico-city",
+"fecha": "2026-10-29",
+"caja": "22°C",
+"gano": 0,
+"0.02": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.03": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.05": {
+"acciones": 0,
+"resultado": 0.0
+}
+},
+"0xf5b6f3ef54ff2b2abd263437bd19441ebafd2b5872c7e6f4f7e4060bbc7469cb": {
+"serie": "lowest|warsaw",
+"fecha": "2026-10-29",
+"caja": "8°C",
+"gano": 0,
+"0.02": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.03": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.05": {
+"acciones": 0,
+"resultado": 0.0
+}
+},
+"0x0eae19a6f52d59822f1eada4d729a882b034ed9c246b2d035f9bc5cfc26efd57": {
+"serie": "lowest|amsterdam",
+"fecha": "2026-10-29",
+"caja": "10°C",
+"gano": 0,
+"0.02": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.03": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.05": {
+"acciones": 0,
+"resultado": 0.0
+}
+},
+"0x1b8fe1d238d54d908670572b285ef8ccb72e7d43de1315e4461dc6f1b7002e61": {
+"serie": "highest|mexico-city",
+"fecha": "2026-10-29",
+"caja": "23°C",
+"gano": 0,
+"0.02": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.03": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.05": {
+"acciones": 0,
+"resultado": 0.0
+}
+},
+"0xb186c35f7ca6f1d9c859ba54155b3c1f32bd52e55efa24b3bbb3310b1858f157": {
+"serie": "highest|wellington",
+"fecha": "2026-10-30",
+"caja": "13°C or below",
+"gano": 0,
+"0.02": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.03": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.05": {
+"acciones": 0,
+"resultado": 0.0
+}
+},
+"0x08bb6a6f4c6112ad9740865c0d02ab8ad40f63b5b7e7bee087dd6649e620f8f2": {
+"serie": "highest|wellington",
+"fecha": "2026-10-30",
+"caja": "14°C",
+"gano": 0,
+"0.02": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.03": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.05": {
+"acciones": 0,
+"resultado": 0.0
+}
+},
+"0xbbaf7576e4fbf42fae2932ae5057fa43478cb9718ce1e166964828b8c4b863ce": {
+"serie": "lowest|chicago",
+"fecha": "2026-10-29",
+"caja": "62-63°F",
+"gano": 0,
+"0.02": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.03": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.05": {
+"acciones": 0,
+"resultado": 0.0
+}
+},
+"0x04afb19ae816e7046c1360ecab8e3f78b13fc384cc5ae1a929e19dd60e22641c": {
+"serie": "highest|wellington",
+"fecha": "2026-10-30",
+"caja": "15°C",
+"gano": 0,
+"0.02": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.03": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.05": {
+"acciones": 0,
+"resultado": 0.0
+}
+},
+"0xa95824f4e2ee15260462d7914546b894fd5cf17a35f9c36a370cb7ee2538cea9": {
+"serie": "highest|wellington",
+"fecha": "2026-10-30",
+"caja": "16°C",
+"gano": 0,
+"0.02": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.03": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.05": {
+"acciones": 0,
+"resultado": 0.0
+}
+},
+"0x03a1eef02847abaa4c15dad2de4ed9030e9f7069776e436c84f477f297e76d36": {
+"serie": "lowest|chicago",
+"fecha": "2026-10-29",
+"caja": "60-61°F",
+"gano": 0,
+"0.02": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.03": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.05": {
+"acciones": 0,
+"resultado": 0.0
+}
+},
+"0x5d90ee2ce929f5221df5edc3794536f1c514df460383b1d4bdc2601956d635b5": {
+"serie": "lowest|chicago",
+"fecha": "2026-10-29",
+"caja": "58-59°F",
+"gano": 0,
+"0.02": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.03": {
+"acciones": 0,
+"resultado": 0.0
+},
+"0.05": {
+"acciones": 0,
+"resultado": 0.0
+}
 }
 },
 "sp14": {
