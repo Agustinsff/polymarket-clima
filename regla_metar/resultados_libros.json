@@ -1,18 +1,18 @@
 {
  "fuente_precios": "libros.csv (primer corte, solo cajas 3-97 c)",
- "eventos_con_ganadora": 243,
+ "eventos_con_ganadora": 644,
  "fechas": [
   "2026-10-23",
-  "2026-10-25"
+  "2026-10-29"
  ],
  "sesgo": {
   "highest M0": {
    "nuevo": {
-    "n": 32,
-    "fechas": 2,
-    "media": -0.1295,
-    "ee": 0.0017,
-    "t": -75.91
+    "n": 233,
+    "fechas": 6,
+    "media": 0.0407,
+    "ee": 0.0711,
+    "t": 0.57
    },
    "control": {
     "n": 2572,
@@ -22,18 +22,18 @@
     "t": 1.31
    },
    "dif": {
-    "dif": -0.1576,
-    "ee": 0.0215,
-    "t": -7.34
+    "dif": 0.0126,
+    "ee": 0.0743,
+    "t": 0.17
    }
   },
   "highest M1": {
    "nuevo": {
-    "n": 78,
-    "fechas": 3,
-    "media": -0.0834,
-    "ee": 0.0945,
-    "t": -0.88
+    "n": 278,
+    "fechas": 7,
+    "media": 0.0044,
+    "ee": 0.055,
+    "t": 0.08
    },
    "control": {
     "n": 2606,
@@ -43,29 +43,29 @@
     "t": 2.31
    },
    "dif": {
-    "dif": -0.1206,
-    "ee": 0.0958,
-    "t": -1.26
+    "dif": -0.0328,
+    "ee": 0.0573,
+    "t": -0.57
    }
   },
   "highest M2": {
    "nuevo": {
-    "n": 89,
-    "fechas": 3,
-    "media": -0.0603,
-    "ee": 0.0624,
-    "t": -0.97
+    "n": 280,
+    "fechas": 7,
+    "media": -0.0202,
+    "ee": 0.0393,
+    "t": -0.51
    },
    "control": null,
    "dif": null
   },
   "lowest M0": {
    "nuevo": {
-    "n": 13,
-    "fechas": 2,
-    "media": 0.7687,
-    "ee": 0.0683,
-    "t": 11.25
+    "n": 88,
+    "fechas": 6,
+    "media": 0.3685,
+    "ee": 0.1681,
+    "t": 2.19
    },
    "control": {
     "n": 147,
@@ -75,18 +75,18 @@
     "t": 1.19
    },
    "dif": {
-    "dif": 0.6961,
-    "ee": 0.0917,
-    "t": 7.59
+    "dif": 0.2959,
+    "ee": 0.1789,
+    "t": 1.65
    }
   },
   "lowest M1": {
    "nuevo": {
-    "n": 62,
-    "fechas": 3,
-    "media": -0.3395,
-    "ee": 0.0176,
-    "t": -19.34
+    "n": 225,
+    "fechas": 7,
+    "media": -0.3657,
+    "ee": 0.0379,
+    "t": -9.65
    },
    "control": {
     "n": 351,
@@ -96,18 +96,18 @@
     "t": -7.96
    },
    "dif": {
-    "dif": -0.1067,
-    "ee": 0.0342,
-    "t": -3.12
+    "dif": -0.1329,
+    "ee": 0.0479,
+    "t": -2.77
    }
   },
   "lowest M2": {
    "nuevo": {
-    "n": 55,
-    "fechas": 3,
-    "media": -0.2484,
-    "ee": 0.1523,
-    "t": -1.63
+    "n": 190,
+    "fechas": 7,
+    "media": -0.3291,
+    "ee": 0.0605,
+    "t": -5.44
    },
    "control": null,
    "dif": null
@@ -115,171 +115,170 @@
  },
  "plata": {
   "highest M0 vecina_arriba": {
-   "n": 32,
-   "fechas": 2,
-   "media": -0.0599,
-   "ee": 0.0272,
-   "t": -2.2,
+   "n": 227,
+   "fechas": 6,
+   "media": 0.0097,
+   "ee": 0.0599,
+   "t": 0.16,
    "mitades": [
-    -0.2048,
-    -0.0449
+    0.0648,
+    -0.0292
    ],
-   "costo_medio": 0.7465,
-   "acierto": 0.7188
+   "costo_medio": 0.7842,
+   "acierto": 0.7885
   },
   "highest M0 vecina_abajo": {
-   "n": 30,
-   "fechas": 2,
-   "media": -0.0738,
-   "ee": 0.0175,
-   "t": -4.23,
+   "n": 226,
+   "fechas": 6,
+   "media": -0.0213,
+   "ee": 0.0363,
+   "t": -0.59,
    "mitades": [
-    -0.1611,
-    -0.0641
+    -0.0645,
+    0.0072
    ],
-   "costo_medio": 0.8162,
-   "acierto": 0.7667
+   "costo_medio": 0.7863,
+   "acierto": 0.7699
   },
   "highest M1 vecina_arriba": {
-   "n": 75,
-   "fechas": 3,
-   "media": -0.1238,
-   "ee": 0.0303,
-   "t": -4.08,
+   "n": 258,
+   "fechas": 7,
+   "media": -0.012,
+   "ee": 0.046,
+   "t": -0.26,
    "mitades": [
-    -0.5614,
-    -0.1056
+    -0.0639,
+    0.0164
    ],
-   "costo_medio": 0.7855,
-   "acierto": 0.6933
+   "costo_medio": 0.7979,
+   "acierto": 0.7907
   },
   "highest M1 vecina_abajo": {
-   "n": 69,
-   "fechas": 3,
-   "media": -0.033,
-   "ee": 0.0342,
-   "t": -0.97,
+   "n": 253,
+   "fechas": 7,
+   "media": 0.0111,
+   "ee": 0.0388,
+   "t": 0.29,
    "mitades": [
-    0.0759,
-    -0.0379
+    -0.0243,
+    0.0293
    ],
-   "costo_medio": 0.8043,
-   "acierto": 0.7826
+   "costo_medio": 0.7879,
+   "acierto": 0.7984
   },
   "highest M2 vecina_arriba": {
-   "n": 75,
-   "fechas": 3,
-   "media": -0.1421,
-   "ee": 0.0512,
-   "t": -2.78,
+   "n": 248,
+   "fechas": 7,
+   "media": -0.0617,
+   "ee": 0.05,
+   "t": -1.23,
    "mitades": [
-    -0.2103,
-    -0.1278
+    -0.1001,
+    -0.0398
    ],
-   "costo_medio": 0.827,
-   "acierto": 0.72
+   "costo_medio": 0.8316,
+   "acierto": 0.7863
   },
   "highest M2 vecina_abajo": {
-   "n": 58,
-   "fechas": 3,
-   "media": -0.1143,
-   "ee": 0.0323,
-   "t": -3.53,
+   "n": 180,
+   "fechas": 7,
+   "media": -0.0684,
+   "ee": 0.0276,
+   "t": -2.48,
    "mitades": [
-    -0.1533,
-    -0.103
+    -0.1275,
+    -0.0308
    ],
-   "costo_medio": 0.7912,
-   "acierto": 0.7069
+   "costo_medio": 0.8095,
+   "acierto": 0.7556
   },
   "lowest M0 vecina_arriba": {
-   "n": 7,
-   "fechas": 2,
-   "media": 0.2029,
-   "ee": 0.0765,
-   "t": 2.65,
+   "n": 49,
+   "fechas": 6,
+   "media": -0.0659,
+   "ee": 0.078,
+   "t": -0.85,
    "mitades": [
-    0.4706,
-    0.1583
+    -0.1736,
+    0.0083
    ],
-   "costo_medio": 0.8428,
-   "acierto": 1.0
+   "costo_medio": 0.8253,
+   "acierto": 0.7755
   },
   "lowest M0 vecina_abajo": {
-   "n": 7,
-   "fechas": 2,
-   "media": -0.3119,
-   "ee": 0.1244,
-   "t": -2.51,
+   "n": 50,
+   "fechas": 6,
+   "media": -0.1199,
+   "ee": 0.0864,
+   "t": -1.39,
    "mitades": [
-    0.1236,
-    -0.3845
+    -0.0664,
+    -0.1587
    ],
-   "costo_medio": 0.8014,
-   "acierto": 0.5714
+   "costo_medio": 0.8096,
+   "acierto": 0.72
   },
   "lowest M1 vecina_arriba": {
-   "n": 2,
-   "fechas": 2,
-   "media": 0.2031,
-   "ee": 0.1668,
-   "t": 1.22,
+   "n": 18,
+   "fechas": 6,
+   "media": -0.3513,
+   "ee": 0.0902,
+   "t": -3.89,
    "mitades": [
-    0.0363,
-    0.3699
+    -0.4916,
+    -0.2109
    ],
-   "costo_medio": 0.8475,
-   "acierto": 1.0
+   "costo_medio": 0.8581,
+   "acierto": 0.5556
   },
   "lowest M1 vecina_abajo": {
-   "n": 9,
-   "fechas": 3,
-   "media": -0.2417,
-   "ee": 0.0778,
-   "t": -3.11,
+   "n": 39,
+   "fechas": 7,
+   "media": -0.1098,
+   "ee": 0.0729,
+   "t": -1.51,
    "mitades": [
-    0.0363,
-    -0.2765
+    -0.1688,
+    -0.0835
    ],
-   "costo_medio": 0.8367,
-   "acierto": 0.6667
+   "costo_medio": 0.9109,
+   "acierto": 0.8205
   },
   "lowest M2 vecina_arriba": {
-   "n": 0,
-   "media": null,
-   "ee": null,
-   "t": null
+   "n": 8,
+   "fechas": 4,
+   "media": -0.4331,
+   "ee": 0.2615,
+   "t": -1.66,
+   "mitades": [
+    -0.2764,
+    -0.5271
+   ],
+   "costo_medio": 0.85,
+   "acierto": 0.5
   },
   "lowest M2 vecina_abajo": {
-   "n": 4,
-   "fechas": 3,
-   "media": -0.4429,
-   "ee": 0.2433,
-   "t": -1.82,
+   "n": 21,
+   "fechas": 7,
+   "media": -0.2039,
+   "ee": 0.0718,
+   "t": -2.84,
    "mitades": [
-    0.1236,
-    -0.6317
+    -0.3301,
+    -0.1644
    ],
-   "costo_medio": 0.9198,
-   "acierto": 0.5
+   "costo_medio": 0.915,
+   "acierto": 0.7143
   }
  },
  "brecha": {
   "nuevo": {
-   "n": 243,
-   "difiere": 1,
-   "todos_mas_extremo": 1,
-   "con_ganadora": 243,
-   "rutina_=_ganadora": 243,
-   "todos_=_ganadora": 242
-  },
-  "control_iem": {
-   "n": 2837,
-   "difiere": 39,
-   "todos_mas_extremo": 39,
-   "con_ganadora": 2837,
-   "rutina_=_ganadora": 2777,
-   "todos_=_ganadora": 2814
+   "n": 644,
+   "difiere": 3,
+   "todos_mas_extremo": 3,
+   "con_ganadora": 644,
+   "rutina_=_ganadora": 644,
+   "todos_=_ganadora": 641
   }
  },
  "criterio": {
