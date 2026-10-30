@@ -1,0 +1,296 @@
+{
+ "fuente_precios": "fotos.csv",
+ "eventos_con_ganadora": 644,
+ "fechas": [
+  "2026-10-23",
+  "2026-10-29"
+ ],
+ "sesgo": {
+  "highest M0": {
+   "nuevo": {
+    "n": 113,
+    "fechas": 3,
+    "media": -0.051,
+    "ee": 0.1195,
+    "t": -0.43
+   },
+   "control": {
+    "n": 2572,
+    "fechas": 58,
+    "media": 0.0281,
+    "ee": 0.0214,
+    "t": 1.31
+   },
+   "dif": {
+    "dif": -0.0791,
+    "ee": 0.1214,
+    "t": -0.65
+   }
+  },
+  "highest M1": {
+   "nuevo": {
+    "n": 161,
+    "fechas": 4,
+    "media": -0.0046,
+    "ee": 0.0691,
+    "t": -0.07
+   },
+   "control": {
+    "n": 2606,
+    "fechas": 58,
+    "media": 0.0372,
+    "ee": 0.016,
+    "t": 2.31
+   },
+   "dif": {
+    "dif": -0.0418,
+    "ee": 0.0709,
+    "t": -0.59
+   }
+  },
+  "highest M2": {
+   "nuevo": {
+    "n": 175,
+    "fechas": 4,
+    "media": -0.0258,
+    "ee": 0.0635,
+    "t": -0.41
+   },
+   "control": null,
+   "dif": null
+  },
+  "lowest M0": {
+   "nuevo": {
+    "n": 45,
+    "fechas": 3,
+    "media": 0.2328,
+    "ee": 0.4138,
+    "t": 0.56
+   },
+   "control": {
+    "n": 147,
+    "fechas": 41,
+    "media": 0.0726,
+    "ee": 0.0612,
+    "t": 1.19
+   },
+   "dif": {
+    "dif": 0.1602,
+    "ee": 0.4183,
+    "t": 0.38
+   }
+  },
+  "lowest M1": {
+   "nuevo": {
+    "n": 141,
+    "fechas": 4,
+    "media": -0.429,
+    "ee": 0.0791,
+    "t": -5.42
+   },
+   "control": {
+    "n": 351,
+    "fechas": 58,
+    "media": -0.2328,
+    "ee": 0.0293,
+    "t": -7.96
+   },
+   "dif": {
+    "dif": -0.1962,
+    "ee": 0.0844,
+    "t": -2.33
+   }
+  },
+  "lowest M2": {
+   "nuevo": {
+    "n": 132,
+    "fechas": 4,
+    "media": -0.3624,
+    "ee": 0.0401,
+    "t": -9.03
+   },
+   "control": null,
+   "dif": null
+  }
+ },
+ "plata": {
+  "highest M0 vecina_arriba": {
+   "n": 110,
+   "fechas": 3,
+   "media": -0.077,
+   "ee": 0.1226,
+   "t": -0.63,
+   "mitades": [
+    -0.0557,
+    -0.0806
+   ],
+   "costo_medio": 0.7936,
+   "acierto": 0.7364
+  },
+  "highest M0 vecina_abajo": {
+   "n": 111,
+   "fechas": 3,
+   "media": 0.0346,
+   "ee": 0.068,
+   "t": 0.51,
+   "mitades": [
+    0.1332,
+    0.018
+   ],
+   "costo_medio": 0.7791,
+   "acierto": 0.8018
+  },
+  "highest M1 vecina_arriba": {
+   "n": 143,
+   "fechas": 4,
+   "media": -0.009,
+   "ee": 0.0678,
+   "t": -0.13,
+   "mitades": [
+    0.0584,
+    -0.0551
+   ],
+   "costo_medio": 0.8088,
+   "acierto": 0.8042
+  },
+  "highest M1 vecina_abajo": {
+   "n": 149,
+   "fechas": 4,
+   "media": 0.0576,
+   "ee": 0.0653,
+   "t": 0.88,
+   "mitades": [
+    0.0705,
+    0.0499
+   ],
+   "costo_medio": 0.7705,
+   "acierto": 0.8121
+  },
+  "highest M2 vecina_arriba": {
+   "n": 152,
+   "fechas": 4,
+   "media": -0.0624,
+   "ee": 0.0929,
+   "t": -0.67,
+   "mitades": [
+    0.0179,
+    -0.1224
+   ],
+   "costo_medio": 0.8005,
+   "acierto": 0.7566
+  },
+  "highest M2 vecina_abajo": {
+   "n": 104,
+   "fechas": 4,
+   "media": -0.0031,
+   "ee": 0.0297,
+   "t": -0.11,
+   "mitades": [
+    -0.0621,
+    0.0419
+   ],
+   "costo_medio": 0.8247,
+   "acierto": 0.8173
+  },
+  "lowest M0 vecina_arriba": {
+   "n": 24,
+   "fechas": 3,
+   "media": 0.0101,
+   "ee": 0.103,
+   "t": 0.1,
+   "mitades": [
+    -0.1185,
+    0.0358
+   ],
+   "costo_medio": 0.8244,
+   "acierto": 0.8333
+  },
+  "lowest M0 vecina_abajo": {
+   "n": 25,
+   "fechas": 3,
+   "media": -0.2037,
+   "ee": 0.1019,
+   "t": -2.0,
+   "mitades": [
+    0.3222,
+    -0.2754
+   ],
+   "costo_medio": 0.783,
+   "acierto": 0.64
+  },
+  "lowest M1 vecina_arriba": {
+   "n": 14,
+   "fechas": 4,
+   "media": -0.1821,
+   "ee": 0.0881,
+   "t": -2.07,
+   "mitades": [
+    -0.2228,
+    -0.1089
+   ],
+   "costo_medio": 0.8809,
+   "acierto": 0.7143
+  },
+  "lowest M1 vecina_abajo": {
+   "n": 34,
+   "fechas": 4,
+   "media": -0.1052,
+   "ee": 0.0502,
+   "t": -2.1,
+   "mitades": [
+    0.0064,
+    -0.1585
+   ],
+   "costo_medio": 0.9261,
+   "acierto": 0.8235
+  },
+  "lowest M2 vecina_arriba": {
+   "n": 6,
+   "fechas": 3,
+   "media": -0.044,
+   "ee": 0.1146,
+   "t": -0.38,
+   "mitades": [
+    0.0604,
+    -0.0649
+   ],
+   "costo_medio": 0.8903,
+   "acierto": 0.8333
+  },
+  "lowest M2 vecina_abajo": {
+   "n": 16,
+   "fechas": 4,
+   "media": -0.0159,
+   "ee": 0.152,
+   "t": -0.1,
+   "mitades": [
+    0.1663,
+    -0.1982
+   ],
+   "costo_medio": 0.9056,
+   "acierto": 0.875
+  }
+ },
+ "brecha": {
+  "nuevo": {
+   "n": 644,
+   "difiere": 3,
+   "todos_mas_extremo": 3,
+   "con_ganadora": 644,
+   "rutina_=_ganadora": 644,
+   "todos_=_ganadora": 641
+  },
+  "control_iem": {
+   "n": 2837,
+   "difiere": 39,
+   "todos_mas_extremo": 39,
+   "con_ganadora": 2837,
+   "rutina_=_ganadora": 2777,
+   "todos_=_ganadora": 2814
+  }
+ },
+ "criterio": {
+  "1_sesgo": false,
+  "2_plata": false
+ }
+}
