@@ -13199,3 +13199,47 @@ momento_utc;momento;hora_local;serie;fecha;icao;slug;caja;bid;ask;medio;si_10;no
 2026-10-30 13:05;M0;6;highest|san-francisco;2026-10-31;KSFO;highest-temperature-in-san-francisco-on-october-31-2026;66-67°F;0.16;0.21;0.185;0.21;0.84;0.0
 2026-10-30 13:05;M0;6;highest|san-francisco;2026-10-31;KSFO;highest-temperature-in-san-francisco-on-october-31-2026;68-69°F;0.021;0.03;0.0255;0.03;0.979;0.0
 2026-10-30 13:05;M0;6;highest|san-francisco;2026-10-31;KSFO;highest-temperature-in-san-francisco-on-october-31-2026;70°F or higher;0.001;0.003;0.002;0.003;0.999;0.0
+2026-10-30 15:05;M2;12;lowest|sao-paulo;2026-10-30;SBGR;lowest-temperature-in-sao-paulo-on-october-30-2026;13°C or below;0.001;0.01;0.0055;0.01;0.999;0.0
+2026-10-30 15:05;M2;12;lowest|sao-paulo;2026-10-30;SBGR;lowest-temperature-in-sao-paulo-on-october-30-2026;14°C;0.001;0.05;0.0255;0.05;0.999;0.0
+2026-10-30 15:05;M2;12;lowest|sao-paulo;2026-10-30;SBGR;lowest-temperature-in-sao-paulo-on-october-30-2026;15°C;;0.09;;0.09;;0.0
+2026-10-30 15:05;M2;12;lowest|sao-paulo;2026-10-30;SBGR;lowest-temperature-in-sao-paulo-on-october-30-2026;16°C;;0.99;;0.99;;0.0
+2026-10-30 15:05;M2;12;lowest|sao-paulo;2026-10-30;SBGR;lowest-temperature-in-sao-paulo-on-october-30-2026;17°C;0.02;;;;0.985;0.0
+2026-10-30 15:05;M2;12;lowest|sao-paulo;2026-10-30;SBGR;lowest-temperature-in-sao-paulo-on-october-30-2026;18°C;0.03;;;;0.975;0.0
+2026-10-30 15:05;M2;12;lowest|sao-paulo;2026-10-30;SBGR;lowest-temperature-in-sao-paulo-on-october-30-2026;19°C;;0.001;;0.001;;0.0
+2026-10-30 15:05;M2;12;lowest|sao-paulo;2026-10-30;SBGR;lowest-temperature-in-sao-paulo-on-october-30-2026;20°C;;0.001;;0.0015;;0.0
+2026-10-30 15:05;M2;12;lowest|sao-paulo;2026-10-30;SBGR;lowest-temperature-in-sao-paulo-on-october-30-2026;21°C;;0.001;;0.0015;;0.0
+2026-10-30 15:05;M2;12;lowest|sao-paulo;2026-10-30;SBGR;lowest-temperature-in-sao-paulo-on-october-30-2026;22°C;;0.001;;0.001;;0.0
+2026-10-30 15:05;M2;12;lowest|sao-paulo;2026-10-30;SBGR;lowest-temperature-in-sao-paulo-on-october-30-2026;23°C or higher;;0.001;;0.0015;;0.0
+2026-10-30 15:05;M2;12;lowest|buenos-aires;2026-10-30;SAEZ;lowest-temperature-in-buenos-aires-on-october-30-2026;10°C or below;;0.31;;0.31;;0.0
+2026-10-30 15:05;M2;12;lowest|buenos-aires;2026-10-30;SAEZ;lowest-temperature-in-buenos-aires-on-october-30-2026;11°C;;0.89;;0.895;;0.0
+2026-10-30 15:05;M2;12;lowest|buenos-aires;2026-10-30;SAEZ;lowest-temperature-in-buenos-aires-on-october-30-2026;12°C;0.02;;;;0.985;0.0
+2026-10-30 15:05;M2;12;lowest|buenos-aires;2026-10-30;SAEZ;lowest-temperature-in-buenos-aires-on-october-30-2026;13°C;0.07;0.99;0.53;0.99;0.935;0.0
+2026-10-30 15:05;M2;12;lowest|buenos-aires;2026-10-30;SAEZ;lowest-temperature-in-buenos-aires-on-october-30-2026;14°C;;0.001;;0.001;;0.0
+2026-10-30 15:05;M2;12;lowest|buenos-aires;2026-10-30;SAEZ;lowest-temperature-in-buenos-aires-on-october-30-2026;15°C;;0.001;;0.001;;0.0
+2026-10-30 15:05;M2;12;lowest|buenos-aires;2026-10-30;SAEZ;lowest-temperature-in-buenos-aires-on-october-30-2026;16°C;;0.001;;0.001;;0.0
+2026-10-30 15:05;M2;12;lowest|buenos-aires;2026-10-30;SAEZ;lowest-temperature-in-buenos-aires-on-october-30-2026;17°C;;0.001;;0.001;;0.0
+2026-10-30 15:05;M2;12;lowest|buenos-aires;2026-10-30;SAEZ;lowest-temperature-in-buenos-aires-on-october-30-2026;18°C;;0.001;;0.001;;0.0
+2026-10-30 15:05;M2;12;lowest|buenos-aires;2026-10-30;SAEZ;lowest-temperature-in-buenos-aires-on-october-30-2026;19°C;;0.001;;0.001;;0.0
+2026-10-30 15:05;M2;12;lowest|buenos-aires;2026-10-30;SAEZ;lowest-temperature-in-buenos-aires-on-october-30-2026;20°C or higher;;0.001;;0.001;;0.0
+2026-10-30 15:05;M2;12;highest|sao-paulo;2026-10-30;SBGR;highest-temperature-in-sao-paulo-on-october-30-2026;19°C or below;;0.001;;0.001;;0.0
+2026-10-30 15:05;M2;12;highest|sao-paulo;2026-10-30;SBGR;highest-temperature-in-sao-paulo-on-october-30-2026;20°C;;0.001;;0.001;;0.0
+2026-10-30 15:05;M2;12;highest|sao-paulo;2026-10-30;SBGR;highest-temperature-in-sao-paulo-on-october-30-2026;21°C;0.009;0.026;0.0175;0.026;0.991;0.0
+2026-10-30 15:05;M2;12;highest|sao-paulo;2026-10-30;SBGR;highest-temperature-in-sao-paulo-on-october-30-2026;22°C;0.033;0.058;0.0455;0.059;0.967;0.0
+2026-10-30 15:05;M2;12;highest|sao-paulo;2026-10-30;SBGR;highest-temperature-in-sao-paulo-on-october-30-2026;23°C;0.144;0.242;0.193;0.251;0.856;0.0
+2026-10-30 15:05;M2;12;highest|sao-paulo;2026-10-30;SBGR;highest-temperature-in-sao-paulo-on-october-30-2026;24°C;0.43;0.49;0.46;0.49;0.59;0.0
+2026-10-30 15:05;M2;12;highest|sao-paulo;2026-10-30;SBGR;highest-temperature-in-sao-paulo-on-october-30-2026;25°C;0.21;0.27;0.24;0.275;0.79;0.0
+2026-10-30 15:05;M2;12;highest|sao-paulo;2026-10-30;SBGR;highest-temperature-in-sao-paulo-on-october-30-2026;26°C;0.05;0.07;0.06;0.07;0.955;0.0
+2026-10-30 15:05;M2;12;highest|sao-paulo;2026-10-30;SBGR;highest-temperature-in-sao-paulo-on-october-30-2026;27°C;0.01;0.016;0.013;0.016;0.99;0.0
+2026-10-30 15:05;M2;12;highest|sao-paulo;2026-10-30;SBGR;highest-temperature-in-sao-paulo-on-october-30-2026;28°C;0.002;0.006;0.004;0.006;0.998;0.0
+2026-10-30 15:05;M2;12;highest|sao-paulo;2026-10-30;SBGR;highest-temperature-in-sao-paulo-on-october-30-2026;29°C or higher;0.001;0.002;0.0015;0.002;0.999;0.0
+2026-10-30 15:05;M2;12;highest|buenos-aires;2026-10-30;SAEZ;highest-temperature-in-buenos-aires-on-october-30-2026;19°C or below;;0.001;;0.001;;0.0
+2026-10-30 15:05;M2;12;highest|buenos-aires;2026-10-30;SAEZ;highest-temperature-in-buenos-aires-on-october-30-2026;20°C;;0.001;;0.001;;0.0
+2026-10-30 15:05;M2;12;highest|buenos-aires;2026-10-30;SAEZ;highest-temperature-in-buenos-aires-on-october-30-2026;21°C;0.11;0.12;0.115;0.12;0.89;0.0
+2026-10-30 15:05;M2;12;highest|buenos-aires;2026-10-30;SAEZ;highest-temperature-in-buenos-aires-on-october-30-2026;22°C;0.26;0.34;0.3;0.34;0.74;0.0
+2026-10-30 15:05;M2;12;highest|buenos-aires;2026-10-30;SAEZ;highest-temperature-in-buenos-aires-on-october-30-2026;23°C;0.36;0.45;0.405;0.45;0.665;0.0
+2026-10-30 15:05;M2;12;highest|buenos-aires;2026-10-30;SAEZ;highest-temperature-in-buenos-aires-on-october-30-2026;24°C;0.14;0.17;0.155;0.17;0.86;0.0
+2026-10-30 15:05;M2;12;highest|buenos-aires;2026-10-30;SAEZ;highest-temperature-in-buenos-aires-on-october-30-2026;25°C;0.026;0.036;0.031;0.0364;0.974;0.0
+2026-10-30 15:05;M2;12;highest|buenos-aires;2026-10-30;SAEZ;highest-temperature-in-buenos-aires-on-october-30-2026;26°C;0.009;0.015;0.012;0.015;0.9911;0.0
+2026-10-30 15:05;M2;12;highest|buenos-aires;2026-10-30;SAEZ;highest-temperature-in-buenos-aires-on-october-30-2026;27°C;0.001;0.003;0.002;0.003;0.999;0.0
+2026-10-30 15:05;M2;12;highest|buenos-aires;2026-10-30;SAEZ;highest-temperature-in-buenos-aires-on-october-30-2026;28°C;;0.001;;0.001;;0.0
+2026-10-30 15:05;M2;12;highest|buenos-aires;2026-10-30;SAEZ;highest-temperature-in-buenos-aires-on-october-30-2026;29°C or higher;;0.001;;0.001;;0.0
