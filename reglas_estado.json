@@ -1,11 +1,11 @@
 {
  "familias": {
   "temperatura máxima": {
-   "_eventos": 151,
+   "_eventos": 134,
    "fuentes": {
     "wunderground.com/history/daily": {
      "desde": "2026-10-23 13:08",
-     "ultima": "2026-10-31 13:02",
+     "ultima": "2026-10-31 19:31",
      "eventos": 4,
      "ejemplo": "highest-temperature-in-jinan-on-may-20-2026"
     },
@@ -18,14 +18,14 @@
     },
     "(sin fuente)": {
      "desde": "2026-10-23 13:08",
-     "ultima": "2026-10-31 13:02",
+     "ultima": "2026-10-31 19:31",
      "eventos": 4,
      "ejemplo": "highest-temperature-in-hong-kong-on-october-30-2026"
     },
     "aviationweather.gov/api/data/metar": {
      "desde": "2026-10-23 13:08",
-     "ultima": "2026-10-31 13:02",
-     "eventos": 143,
+     "ultima": "2026-10-31 19:31",
+     "eventos": 126,
      "ejemplo": "highest-temperature-in-paris-on-october-31-2026"
     }
    },
@@ -46,8 +46,8 @@
     },
     "If no corrected value is published within that period, Polymarket will issue a Clarification to determine whether the originally published value may be eligible for resolution, or whether other action is required to preserve the orderly functioning of the Market.": {
      "desde": "2026-10-23 13:08",
-     "ultima": "2026-10-31 13:02",
-     "eventos": 147,
+     "ultima": "2026-10-31 19:31",
+     "eventos": 130,
      "ejemplo": "highest-temperature-in-hong-kong-on-october-30-2026"
     },
     "In the event that there is no data for the observation date by #:# PM ET on the day following the observation date, this market will resolve to the lowest bracket.": {
@@ -73,8 +73,8 @@
     },
     "If the Resolution Source publishes a corrected value within that period, that value will be eligible for resolution.": {
      "desde": "2026-10-23 13:08",
-     "ultima": "2026-10-31 13:02",
-     "eventos": 147,
+     "ultima": "2026-10-31 19:31",
+     "eventos": 130,
      "ejemplo": "highest-temperature-in-hong-kong-on-october-30-2026"
     },
     "This market will resolve once the first data point for the following date has been published on the resolution source, or by #:# PM ET on the day following the observation date, whichever comes first.": {
@@ -86,8 +86,8 @@
     },
     "In the case that the Resolution Source publishes data, sufficient to settle a Market, that is clearly erroneous and the result of technical or operational error, or of unauthorized interference with the Resolution Source or its data, the Market may remain open for a period of up to seven (#) calendar days (ET) from the time of the original release, in anticipation of a correction by the Resolution": {
      "desde": "2026-10-23 13:08",
-     "ultima": "2026-10-31 13:02",
-     "eventos": 147,
+     "ultima": "2026-10-31 19:31",
+     "eventos": 130,
      "ejemplo": "highest-temperature-in-hong-kong-on-october-30-2026"
     },
     "The resolution source for this market will be information from <estacion>, specifically the highest reading under the \"Temp\" column for all times on this day, available here:": {
@@ -106,175 +106,175 @@
     },
     "A report whose line begins with SPECI is a special observation and does not count.": {
      "desde": "2026-10-23 13:08",
-     "ultima": "2026-10-31 13:02",
-     "eventos": 143,
+     "ultima": "2026-10-31 19:31",
+     "eventos": 126,
      "ejemplo": "highest-temperature-in-paris-on-october-31-2026"
     },
     "The qualifying value is rounded to the nearest whole degree, with a value ending in exactly half rounded up to the next higher whole degree, and that whole Celsius value determines which range contains it.": {
      "desde": "2026-10-23 13:08",
-     "ultima": "2026-10-31 13:02",
-     "eventos": 110,
+     "ultima": "2026-10-31 19:31",
+     "eventos": 93,
      "ejemplo": "highest-temperature-in-paris-on-october-31-2026"
     },
     "the following four are the dew point and are not used.": {
      "desde": "2026-10-23 13:08",
-     "ultima": "2026-10-31 13:02",
-     "eventos": 143,
+     "ultima": "2026-10-31 19:31",
+     "eventos": 126,
      "ejemplo": "highest-temperature-in-paris-on-october-31-2026"
     },
     "An observation that reports no temperature in either place is disregarded.": {
      "desde": "2026-10-23 13:08",
-     "ultima": "2026-10-31 13:02",
-     "eventos": 143,
+     "ultima": "2026-10-31 19:31",
+     "eventos": 126,
      "ejemplo": "highest-temperature-in-paris-on-october-31-2026"
     },
     "An observation counts if its time stamp, converted to the station's local time (including any daylight-saving shift in effect), falls on the observation date.": {
      "desde": "2026-10-23 13:08",
-     "ultima": "2026-10-31 13:02",
-     "eventos": 143,
+     "ultima": "2026-10-31 19:31",
+     "eventos": 126,
      "ejemplo": "highest-temperature-in-paris-on-october-31-2026"
     },
     "The report the resolution source shows for a given observation time is the one that counts, whether or not it is marked as a correction (COR).": {
      "desde": "2026-10-23 13:08",
-     "ultima": "2026-10-31 13:02",
-     "eventos": 143,
+     "ultima": "2026-10-31 19:31",
+     "eventos": 126,
      "ejemplo": "highest-temperature-in-paris-on-october-31-2026"
     },
     "Changes to observations within this market's timeframe will be considered until the first datapoint for the following date has been published, after which any alterations will not be considered.": {
      "desde": "2026-10-23 13:08",
-     "ultima": "2026-10-31 13:02",
-     "eventos": 143,
+     "ultima": "2026-10-31 19:31",
+     "eventos": 126,
      "ejemplo": "highest-temperature-in-paris-on-october-31-2026"
     },
     "This market will resolve to the temperature range that contains the highest temperature reported at <estacion> on # <mes> #.": {
      "desde": "2026-10-23 13:08",
-     "ultima": "2026-10-31 13:02",
-     "eventos": 143,
+     "ultima": "2026-10-31 19:31",
+     "eventos": 126,
      "ejemplo": "highest-temperature-in-paris-on-october-31-2026"
     },
     "In the event that the Aviation Weather Center has published no routine observation reporting a temperature for the observation date by #:# PM ET on the day following the observation date, the Weather Underground Daily Observations table will be used as the resolution source.": {
      "desde": "2026-10-23 13:08",
-     "ultima": "2026-10-31 13:02",
-     "eventos": 143,
+     "ultima": "2026-10-31 19:31",
+     "eventos": 126,
      "ejemplo": "highest-temperature-in-paris-on-october-31-2026"
     },
     "It appears as temperature and dew point separated by a slash, with M marking a negative value:": {
      "desde": "2026-10-23 13:08",
-     "ultima": "2026-10-31 13:02",
-     "eventos": 143,
+     "ultima": "2026-10-31 19:31",
+     "eventos": 126,
      "ejemplo": "highest-temperature-in-paris-on-october-31-2026"
     },
     "After the T, one digit for sign (# positive, # negative) and three for tenths of a degree Celsius give the temperature;": {
      "desde": "2026-10-23 13:08",
-     "ultima": "2026-10-31 13:02",
-     "eventos": 143,
+     "ultima": "2026-10-31 19:31",
+     "eventos": 126,
      "ejemplo": "highest-temperature-in-paris-on-october-31-2026"
     },
     "This market will resolve at the issuance of the first METAR observation for the station on the day following the observation date or by #:# PM ET on the day following the observation date, whichever comes first.": {
      "desde": "2026-10-23 13:08",
-     "ultima": "2026-10-31 13:02",
-     "eventos": 143,
+     "ultima": "2026-10-31 19:31",
+     "eventos": 126,
      "ejemplo": "highest-temperature-in-paris-on-october-31-2026"
     },
     "Each market in this event states its range in whole degrees Celsius.": {
      "desde": "2026-10-23 13:08",
-     "ultima": "2026-10-31 13:02",
-     "eventos": 110,
+     "ultima": "2026-10-31 19:31",
+     "eventos": 93,
      "ejemplo": "highest-temperature-in-paris-on-october-31-2026"
     },
     "Every other report is routine, including one issued off the nominal hour and one that carries no METAR or SPECI label.": {
      "desde": "2026-10-23 13:08",
-     "ultima": "2026-10-31 13:02",
-     "eventos": 143,
+     "ultima": "2026-10-31 19:31",
+     "eventos": 126,
      "ejemplo": "highest-temperature-in-paris-on-october-31-2026"
     },
     "The hourly temperature remark is the group beginning with the letter T followed by exactly eight digits.": {
      "desde": "2026-10-23 13:08",
-     "ultima": "2026-10-31 13:02",
-     "eventos": 143,
+     "ultima": "2026-10-31 19:31",
+     "eventos": 126,
      "ejemplo": "highest-temperature-in-paris-on-october-31-2026"
     },
     "In the event that neither source has published data sufficient to determine a temperature for the observation date by #:# PM ET on the day following the observation date, this market will resolve to the lowest bracket.": {
      "desde": "2026-10-23 13:08",
-     "ultima": "2026-10-31 13:02",
-     "eventos": 143,
+     "ultima": "2026-10-31 19:31",
+     "eventos": 126,
      "ejemplo": "highest-temperature-in-paris-on-october-31-2026"
     },
     "For How to Read the METAR Report, see:": {
      "desde": "2026-10-23 13:08",
-     "ultima": "2026-10-31 13:02",
-     "eventos": 143,
+     "ultima": "2026-10-31 19:31",
+     "eventos": 126,
      "ejemplo": "highest-temperature-in-paris-on-october-31-2026"
     },
     "The qualifying value is the highest temperature reported in the hourly temperature remark of any routine (METAR) observation for <estacion> on that date, in tenths of a degree Celsius as reported.": {
      "desde": "2026-10-23 13:08",
-     "ultima": "2026-10-31 13:02",
-     "eventos": 143,
+     "ultima": "2026-10-31 19:31",
+     "eventos": 126,
      "ejemplo": "highest-temperature-in-paris-on-october-31-2026"
     },
     "If a routine observation does not carry the hourly temperature remark, the temperature group in the body of that observation governs for that observation, in whole degrees Celsius as reported.": {
      "desde": "2026-10-23 13:08",
-     "ultima": "2026-10-31 13:02",
-     "eventos": 143,
+     "ultima": "2026-10-31 19:31",
+     "eventos": 126,
      "ejemplo": "highest-temperature-in-paris-on-october-31-2026"
     },
     "Where the first routine observation for the following date is published before that deadline, resolution is determined from a read taken after it.": {
      "desde": "2026-10-23 13:08",
-     "ultima": "2026-10-31 13:02",
-     "eventos": 143,
+     "ultima": "2026-10-31 19:31",
+     "eventos": 126,
      "ejemplo": "highest-temperature-in-paris-on-october-31-2026"
     },
     "Where it is not, resolution is determined from a read taken at that deadline.": {
      "desde": "2026-10-23 13:08",
-     "ultima": "2026-10-31 13:02",
-     "eventos": 143,
+     "ultima": "2026-10-31 19:31",
+     "eventos": 126,
      "ejemplo": "highest-temperature-in-paris-on-october-31-2026"
     },
     "Resolution is determined from the observations the resolution source shows for the observation date.": {
      "desde": "2026-10-23 13:08",
-     "ultima": "2026-10-31 13:02",
-     "eventos": 143,
+     "ultima": "2026-10-31 19:31",
+     "eventos": 126,
      "ejemplo": "highest-temperature-in-paris-on-october-31-2026"
     },
     "The resolution source for this market will be the routine observations for <estacion> published here:": {
      "desde": "2026-10-23 13:08",
-     "ultima": "2026-10-31 13:02",
-     "eventos": 143,
+     "ultima": "2026-10-31 19:31",
+     "eventos": 126,
      "ejemplo": "highest-temperature-in-paris-on-october-31-2026"
     },
     "For example, #°C counts as #°C;": {
      "desde": "2026-10-23 13:08",
-     "ultima": "2026-10-31 13:02",
-     "eventos": 110,
+     "ultima": "2026-10-31 19:31",
+     "eventos": 93,
      "ejemplo": "highest-temperature-in-paris-on-october-31-2026"
     },
     "#°C is #°F and counts as #°F;": {
      "desde": "2026-10-23 23:58",
-     "ultima": "2026-10-31 13:02",
+     "ultima": "2026-10-31 19:31",
      "eventos": 33,
      "ejemplo": "highest-temperature-in-nyc-on-october-31-2026"
     },
     "#°C is exactly #°F and counts as #°F.": {
      "desde": "2026-10-23 23:58",
-     "ultima": "2026-10-31 13:02",
+     "ultima": "2026-10-31 19:31",
      "eventos": 33,
      "ejemplo": "highest-temperature-in-nyc-on-october-31-2026"
     },
     "For example, #°C is #°F and counts as #°F;": {
      "desde": "2026-10-23 23:58",
-     "ultima": "2026-10-31 13:02",
+     "ultima": "2026-10-31 19:31",
      "eventos": 33,
      "ejemplo": "highest-temperature-in-nyc-on-october-31-2026"
     },
     "Each market in this event states its range in whole degrees Fahrenheit.": {
      "desde": "2026-10-23 23:58",
-     "ultima": "2026-10-31 13:02",
+     "ultima": "2026-10-31 19:31",
      "eventos": 33,
      "ejemplo": "highest-temperature-in-nyc-on-october-31-2026"
     },
     "The qualifying value is converted using °F = °C × #/# + # and rounded to the nearest whole degree, with a value ending in exactly half rounded up to the next higher whole degree, and that whole Fahrenheit value determines which range contains it.": {
      "desde": "2026-10-23 23:58",
-     "ultima": "2026-10-31 13:02",
+     "ultima": "2026-10-31 19:31",
      "eventos": 33,
      "ejemplo": "highest-temperature-in-nyc-on-october-31-2026"
     }
@@ -282,342 +282,342 @@
    "comisiones": {
     "feesEnabled=True feeType=weather_fees feeSchedule={\"exponent\": 1, \"rate\": 0.05, \"rebateRate\": 0.25, \"takerOnly\": true} takerBaseFee=1000": {
      "desde": "2026-10-23 13:08",
-     "ultima": "2026-10-31 13:02",
+     "ultima": "2026-10-31 19:31",
      "eventos": 4,
      "ejemplo": "highest-temperature-in-jinan-on-may-20-2026"
     },
     "feesEnabled=True feeType=zero_fees feeSchedule={\"exponent\": 1, \"rate\": 0, \"rebateRate\": 0, \"takerOnly\": true} takerBaseFee=1000": {
      "desde": "2026-10-23 13:08",
-     "ultima": "2026-10-31 13:02",
-     "eventos": 147,
+     "ultima": "2026-10-31 19:31",
+     "eventos": 130,
      "ejemplo": "highest-temperature-in-hong-kong-on-october-30-2026"
     }
    },
    "parametros": {
     "orden minima=5 tick=0.01": {
      "desde": "2026-10-23 13:08",
-     "ultima": "2026-10-31 13:02",
-     "eventos": 125,
+     "ultima": "2026-10-31 19:31",
+     "eventos": 111,
      "ejemplo": "highest-temperature-in-jinan-on-may-20-2026"
     },
     "orden minima=5 tick=0.001": {
      "desde": "2026-10-23 13:08",
-     "ultima": "2026-10-31 13:02",
-     "eventos": 142,
+     "ultima": "2026-10-31 19:31",
+     "eventos": 130,
      "ejemplo": "highest-temperature-in-hong-kong-on-october-30-2026"
     }
    },
    "ciudades": {
     "jinan": {
      "desde": "2026-10-23 13:08",
-     "ultima": "2026-10-31 13:02",
+     "ultima": "2026-10-31 19:31",
      "eventos": 2,
      "ejemplo": "highest-temperature-in-jinan-on-may-20-2026"
     },
     "zhengzhou": {
      "desde": "2026-10-23 13:08",
-     "ultima": "2026-10-31 13:02",
+     "ultima": "2026-10-31 19:31",
      "eventos": 2,
      "ejemplo": "highest-temperature-in-zhengzhou-on-may-20-2026"
     },
     "cape-town": {
      "desde": "2026-10-23 13:08",
-     "ultima": "2026-10-31 13:02",
+     "ultima": "2026-10-31 19:31",
      "eventos": 3,
      "ejemplo": "highest-temperature-in-cape-town-on-october-31-2026"
     },
     "sao-paulo": {
      "desde": "2026-10-23 13:08",
-     "ultima": "2026-10-31 13:02",
+     "ultima": "2026-10-31 19:31",
      "eventos": 3,
      "ejemplo": "highest-temperature-in-sao-paulo-on-october-31-2026"
     },
     "london": {
      "desde": "2026-10-23 13:08",
-     "ultima": "2026-10-31 13:02",
+     "ultima": "2026-10-31 19:31",
      "eventos": 3,
      "ejemplo": "highest-temperature-in-london-on-october-31-2026"
     },
     "paris": {
      "desde": "2026-10-23 13:08",
-     "ultima": "2026-10-31 13:02",
+     "ultima": "2026-10-31 19:31",
      "eventos": 3,
      "ejemplo": "highest-temperature-in-paris-on-october-31-2026"
     },
     "seoul": {
      "desde": "2026-10-23 13:08",
-     "ultima": "2026-10-31 13:02",
-     "eventos": 3,
-     "ejemplo": "highest-temperature-in-seoul-on-october-31-2026"
+     "ultima": "2026-10-31 19:31",
+     "eventos": 2,
+     "ejemplo": "highest-temperature-in-seoul-on-november-1-2026"
     },
     "ankara": {
      "desde": "2026-10-23 13:08",
-     "ultima": "2026-10-31 13:02",
+     "ultima": "2026-10-31 19:31",
      "eventos": 3,
      "ejemplo": "highest-temperature-in-ankara-on-october-31-2026"
     },
     "wellington": {
      "desde": "2026-10-23 13:08",
-     "ultima": "2026-10-31 13:02",
+     "ultima": "2026-10-31 19:31",
      "eventos": 2,
      "ejemplo": "highest-temperature-in-wellington-on-november-1-2026"
     },
     "lucknow": {
      "desde": "2026-10-23 13:08",
-     "ultima": "2026-10-31 13:02",
-     "eventos": 3,
-     "ejemplo": "highest-temperature-in-lucknow-on-october-31-2026"
+     "ultima": "2026-10-31 19:31",
+     "eventos": 2,
+     "ejemplo": "highest-temperature-in-lucknow-on-november-1-2026"
     },
     "munich": {
      "desde": "2026-10-23 13:08",
-     "ultima": "2026-10-31 13:02",
+     "ultima": "2026-10-31 19:31",
      "eventos": 3,
      "ejemplo": "highest-temperature-in-munich-on-october-31-2026"
     },
     "tel-aviv": {
      "desde": "2026-10-23 13:08",
-     "ultima": "2026-10-31 13:02",
+     "ultima": "2026-10-31 19:31",
      "eventos": 3,
      "ejemplo": "highest-temperature-in-tel-aviv-on-october-31-2026"
     },
     "tokyo": {
      "desde": "2026-10-23 13:08",
-     "ultima": "2026-10-31 13:02",
-     "eventos": 3,
-     "ejemplo": "highest-temperature-in-tokyo-on-october-31-2026"
+     "ultima": "2026-10-31 19:31",
+     "eventos": 2,
+     "ejemplo": "highest-temperature-in-tokyo-on-november-1-2026"
     },
     "shanghai": {
      "desde": "2026-10-23 13:08",
-     "ultima": "2026-10-31 13:02",
-     "eventos": 3,
-     "ejemplo": "highest-temperature-in-shanghai-on-october-31-2026"
+     "ultima": "2026-10-31 19:31",
+     "eventos": 2,
+     "ejemplo": "highest-temperature-in-shanghai-on-november-1-2026"
     },
     "singapore": {
      "desde": "2026-10-23 13:08",
-     "ultima": "2026-10-31 13:02",
-     "eventos": 3,
-     "ejemplo": "highest-temperature-in-singapore-on-october-31-2026"
+     "ultima": "2026-10-31 19:31",
+     "eventos": 2,
+     "ejemplo": "highest-temperature-in-singapore-on-november-1-2026"
     },
     "milan": {
      "desde": "2026-10-23 13:08",
-     "ultima": "2026-10-31 13:02",
+     "ultima": "2026-10-31 19:31",
      "eventos": 3,
      "ejemplo": "highest-temperature-in-milan-on-october-31-2026"
     },
     "madrid": {
      "desde": "2026-10-23 13:08",
-     "ultima": "2026-10-31 13:02",
+     "ultima": "2026-10-31 19:31",
      "eventos": 3,
      "ejemplo": "highest-temperature-in-madrid-on-october-31-2026"
     },
     "warsaw": {
      "desde": "2026-10-23 13:08",
-     "ultima": "2026-10-31 13:02",
+     "ultima": "2026-10-31 19:31",
      "eventos": 3,
      "ejemplo": "highest-temperature-in-warsaw-on-october-31-2026"
     },
     "chongqing": {
      "desde": "2026-10-23 13:08",
-     "ultima": "2026-10-31 13:02",
-     "eventos": 3,
-     "ejemplo": "highest-temperature-in-chongqing-on-october-31-2026"
+     "ultima": "2026-10-31 19:31",
+     "eventos": 2,
+     "ejemplo": "highest-temperature-in-chongqing-on-november-1-2026"
     },
     "beijing": {
      "desde": "2026-10-23 13:08",
-     "ultima": "2026-10-31 13:02",
-     "eventos": 3,
-     "ejemplo": "highest-temperature-in-beijing-on-october-31-2026"
+     "ultima": "2026-10-31 19:31",
+     "eventos": 2,
+     "ejemplo": "highest-temperature-in-beijing-on-november-1-2026"
     },
     "wuhan": {
      "desde": "2026-10-23 13:08",
-     "ultima": "2026-10-31 13:02",
-     "eventos": 3,
-     "ejemplo": "highest-temperature-in-wuhan-on-october-31-2026"
+     "ultima": "2026-10-31 19:31",
+     "eventos": 2,
+     "ejemplo": "highest-temperature-in-wuhan-on-november-1-2026"
     },
     "chengdu": {
      "desde": "2026-10-23 13:08",
-     "ultima": "2026-10-31 13:02",
-     "eventos": 3,
-     "ejemplo": "highest-temperature-in-chengdu-on-october-31-2026"
+     "ultima": "2026-10-31 19:31",
+     "eventos": 2,
+     "ejemplo": "highest-temperature-in-chengdu-on-november-1-2026"
     },
     "shenzhen": {
      "desde": "2026-10-23 13:08",
-     "ultima": "2026-10-31 13:02",
-     "eventos": 3,
-     "ejemplo": "highest-temperature-in-shenzhen-on-october-31-2026"
+     "ultima": "2026-10-31 19:31",
+     "eventos": 2,
+     "ejemplo": "highest-temperature-in-shenzhen-on-november-1-2026"
     },
     "moscow": {
      "desde": "2026-10-23 13:08",
-     "ultima": "2026-10-31 13:02",
+     "ultima": "2026-10-31 19:31",
      "eventos": 3,
      "ejemplo": "highest-temperature-in-moscow-on-october-31-2026"
     },
     "istanbul": {
      "desde": "2026-10-23 13:08",
-     "ultima": "2026-10-31 13:02",
+     "ultima": "2026-10-31 19:31",
      "eventos": 3,
      "ejemplo": "highest-temperature-in-istanbul-on-october-31-2026"
     },
     "busan": {
      "desde": "2026-10-23 13:08",
-     "ultima": "2026-10-31 13:02",
-     "eventos": 3,
-     "ejemplo": "highest-temperature-in-busan-on-october-31-2026"
+     "ultima": "2026-10-31 19:31",
+     "eventos": 2,
+     "ejemplo": "highest-temperature-in-busan-on-november-1-2026"
     },
     "amsterdam": {
      "desde": "2026-10-23 13:08",
-     "ultima": "2026-10-31 13:02",
+     "ultima": "2026-10-31 19:31",
      "eventos": 3,
      "ejemplo": "highest-temperature-in-amsterdam-on-october-31-2026"
     },
     "helsinki": {
      "desde": "2026-10-23 13:08",
-     "ultima": "2026-10-31 13:02",
+     "ultima": "2026-10-31 19:31",
      "eventos": 3,
      "ejemplo": "highest-temperature-in-helsinki-on-october-31-2026"
     },
     "kuala-lumpur": {
      "desde": "2026-10-23 13:08",
-     "ultima": "2026-10-31 13:02",
-     "eventos": 3,
-     "ejemplo": "highest-temperature-in-kuala-lumpur-on-october-31-2026"
+     "ultima": "2026-10-31 19:31",
+     "eventos": 2,
+     "ejemplo": "highest-temperature-in-kuala-lumpur-on-november-1-2026"
     },
     "jeddah": {
      "desde": "2026-10-23 13:08",
-     "ultima": "2026-10-31 13:02",
+     "ultima": "2026-10-31 19:31",
      "eventos": 3,
      "ejemplo": "highest-temperature-in-jeddah-on-october-31-2026"
     },
     "guangzhou": {
      "desde": "2026-10-23 13:08",
-     "ultima": "2026-10-31 13:02",
-     "eventos": 3,
-     "ejemplo": "highest-temperature-in-guangzhou-on-october-31-2026"
+     "ultima": "2026-10-31 19:31",
+     "eventos": 2,
+     "ejemplo": "highest-temperature-in-guangzhou-on-november-1-2026"
     },
     "qingdao": {
      "desde": "2026-10-23 13:08",
-     "ultima": "2026-10-31 13:02",
-     "eventos": 3,
-     "ejemplo": "highest-temperature-in-qingdao-on-october-31-2026"
+     "ultima": "2026-10-31 19:31",
+     "eventos": 2,
+     "ejemplo": "highest-temperature-in-qingdao-on-november-1-2026"
     },
     "karachi": {
      "desde": "2026-10-23 13:08",
-     "ultima": "2026-10-31 13:02",
-     "eventos": 3,
-     "ejemplo": "highest-temperature-in-karachi-on-october-31-2026"
+     "ultima": "2026-10-31 19:31",
+     "eventos": 2,
+     "ejemplo": "highest-temperature-in-karachi-on-november-1-2026"
     },
     "manila": {
      "desde": "2026-10-23 13:08",
-     "ultima": "2026-10-31 13:02",
-     "eventos": 3,
-     "ejemplo": "highest-temperature-in-manila-on-october-31-2026"
+     "ultima": "2026-10-31 19:31",
+     "eventos": 2,
+     "ejemplo": "highest-temperature-in-manila-on-november-1-2026"
     },
     "buenos-aires": {
      "desde": "2026-10-23 13:08",
-     "ultima": "2026-10-31 13:02",
+     "ultima": "2026-10-31 19:31",
      "eventos": 3,
      "ejemplo": "highest-temperature-in-buenos-aires-on-october-31-2026"
     },
     "toronto": {
      "desde": "2026-10-23 13:08",
-     "ultima": "2026-10-31 13:02",
+     "ultima": "2026-10-31 19:31",
      "eventos": 3,
      "ejemplo": "highest-temperature-in-toronto-on-october-31-2026"
     },
     "mexico-city": {
      "desde": "2026-10-23 13:08",
-     "ultima": "2026-10-31 13:02",
+     "ultima": "2026-10-31 19:31",
      "eventos": 3,
      "ejemplo": "highest-temperature-in-mexico-city-on-october-31-2026"
     },
     "panama-city": {
      "desde": "2026-10-23 13:08",
-     "ultima": "2026-10-31 13:02",
+     "ultima": "2026-10-31 19:31",
      "eventos": 3,
      "ejemplo": "highest-temperature-in-panama-city-on-october-31-2026"
     },
     "hong-kong": {
      "desde": "2026-10-23 13:08",
-     "ultima": "2026-10-31 13:02",
+     "ultima": "2026-10-31 19:31",
      "eventos": 4,
      "ejemplo": "highest-temperature-in-hong-kong-on-october-30-2026"
     },
     "taipei": {
      "desde": "2026-10-23 13:08",
-     "ultima": "2026-10-31 13:02",
-     "eventos": 3,
-     "ejemplo": "highest-temperature-in-taipei-on-october-31-2026"
+     "ultima": "2026-10-31 19:31",
+     "eventos": 2,
+     "ejemplo": "highest-temperature-in-taipei-on-november-1-2026"
     },
     "nyc": {
      "desde": "2026-10-23 13:08",
-     "ultima": "2026-10-31 13:02",
+     "ultima": "2026-10-31 19:31",
      "eventos": 3,
      "ejemplo": "highest-temperature-in-nyc-on-october-31-2026"
     },
     "dallas": {
      "desde": "2026-10-23 13:08",
-     "ultima": "2026-10-31 13:02",
+     "ultima": "2026-10-31 19:31",
      "eventos": 3,
      "ejemplo": "highest-temperature-in-dallas-on-october-31-2026"
     },
     "atlanta": {
      "desde": "2026-10-23 13:08",
-     "ultima": "2026-10-31 13:02",
+     "ultima": "2026-10-31 19:31",
      "eventos": 3,
      "ejemplo": "highest-temperature-in-atlanta-on-october-31-2026"
     },
     "miami": {
      "desde": "2026-10-23 13:08",
-     "ultima": "2026-10-31 13:02",
+     "ultima": "2026-10-31 19:31",
      "eventos": 3,
      "ejemplo": "highest-temperature-in-miami-on-october-31-2026"
     },
     "chicago": {
      "desde": "2026-10-23 13:08",
-     "ultima": "2026-10-31 13:02",
+     "ultima": "2026-10-31 19:31",
      "eventos": 3,
      "ejemplo": "highest-temperature-in-chicago-on-october-31-2026"
     },
     "austin": {
      "desde": "2026-10-23 13:08",
-     "ultima": "2026-10-31 13:02",
+     "ultima": "2026-10-31 19:31",
      "eventos": 3,
      "ejemplo": "highest-temperature-in-austin-on-october-31-2026"
     },
     "denver": {
      "desde": "2026-10-23 13:08",
-     "ultima": "2026-10-31 13:02",
+     "ultima": "2026-10-31 19:31",
      "eventos": 3,
      "ejemplo": "highest-temperature-in-denver-on-october-31-2026"
     },
     "houston": {
      "desde": "2026-10-23 13:08",
-     "ultima": "2026-10-31 13:02",
+     "ultima": "2026-10-31 19:31",
      "eventos": 3,
      "ejemplo": "highest-temperature-in-houston-on-october-31-2026"
     },
     "seattle": {
      "desde": "2026-10-23 13:08",
-     "ultima": "2026-10-31 13:02",
+     "ultima": "2026-10-31 19:31",
      "eventos": 3,
      "ejemplo": "highest-temperature-in-seattle-on-october-31-2026"
     },
     "los-angeles": {
      "desde": "2026-10-23 13:08",
-     "ultima": "2026-10-31 13:02",
+     "ultima": "2026-10-31 19:31",
      "eventos": 3,
      "ejemplo": "highest-temperature-in-los-angeles-on-october-31-2026"
     },
     "san-francisco": {
      "desde": "2026-10-23 13:08",
-     "ultima": "2026-10-31 13:02",
+     "ultima": "2026-10-31 19:31",
      "eventos": 3,
      "ejemplo": "highest-temperature-in-san-francisco-on-october-31-2026"
     }
    }
   },
   "temperatura mínima": {
-   "_eventos": 135,
+   "_eventos": 122,
    "fuentes": {
     "weather.gov/wrh/timeseries": {
      "desde": "2026-10-23 13:08",
@@ -628,22 +628,22 @@
     },
     "(sin fuente)": {
      "desde": "2026-10-23 13:08",
-     "ultima": "2026-10-31 13:02",
+     "ultima": "2026-10-31 19:31",
      "eventos": 4,
      "ejemplo": "lowest-temperature-in-hong-kong-on-october-30-2026"
     },
     "aviationweather.gov/api/data/metar": {
      "desde": "2026-10-23 13:08",
-     "ultima": "2026-10-31 13:02",
-     "eventos": 131,
+     "ultima": "2026-10-31 19:31",
+     "eventos": 118,
      "ejemplo": "lowest-temperature-in-paris-on-october-31-2026"
     }
    },
    "reglamento": {
     "If no corrected value is published within that period, Polymarket will issue a Clarification to determine whether the originally published value may be eligible for resolution, or whether other action is required to preserve the orderly functioning of the Market.": {
      "desde": "2026-10-23 13:08",
-     "ultima": "2026-10-31 13:02",
-     "eventos": 135,
+     "ultima": "2026-10-31 19:31",
+     "eventos": 122,
      "ejemplo": "lowest-temperature-in-hong-kong-on-october-30-2026"
     },
     "In the event that there is no data for the observation date by #:# PM ET on the day following the observation date, this market will resolve to the lowest bracket.": {
@@ -683,8 +683,8 @@
     },
     "If the Resolution Source publishes a corrected value within that period, that value will be eligible for resolution.": {
      "desde": "2026-10-23 13:08",
-     "ultima": "2026-10-31 13:02",
-     "eventos": 135,
+     "ultima": "2026-10-31 19:31",
+     "eventos": 122,
      "ejemplo": "lowest-temperature-in-hong-kong-on-october-30-2026"
     },
     "This market will resolve once the first data point for the following date has been published on the resolution source, or by #:# PM ET on the day following the observation date, whichever comes first.": {
@@ -696,8 +696,8 @@
     },
     "In the case that the Resolution Source publishes data, sufficient to settle a Market, that is clearly erroneous and the result of technical or operational error, or of unauthorized interference with the Resolution Source or its data, the Market may remain open for a period of up to seven (#) calendar days (ET) from the time of the original release, in anticipation of a correction by the Resolution": {
      "desde": "2026-10-23 13:08",
-     "ultima": "2026-10-31 13:02",
-     "eventos": 135,
+     "ultima": "2026-10-31 19:31",
+     "eventos": 122,
      "ejemplo": "lowest-temperature-in-hong-kong-on-october-30-2026"
     },
     "The resolution source for this market measures temperatures to whole degrees Celsius (eg, #°C).": {
@@ -716,175 +716,175 @@
     },
     "A report whose line begins with SPECI is a special observation and does not count.": {
      "desde": "2026-10-23 13:08",
-     "ultima": "2026-10-31 13:02",
-     "eventos": 131,
+     "ultima": "2026-10-31 19:31",
+     "eventos": 118,
      "ejemplo": "lowest-temperature-in-paris-on-october-31-2026"
     },
     "The qualifying value is rounded to the nearest whole degree, with a value ending in exactly half rounded up to the next higher whole degree, and that whole Celsius value determines which range contains it.": {
      "desde": "2026-10-23 13:08",
-     "ultima": "2026-10-31 13:02",
-     "eventos": 98,
+     "ultima": "2026-10-31 19:31",
+     "eventos": 85,
      "ejemplo": "lowest-temperature-in-paris-on-october-31-2026"
     },
     "the following four are the dew point and are not used.": {
      "desde": "2026-10-23 13:08",
-     "ultima": "2026-10-31 13:02",
-     "eventos": 131,
+     "ultima": "2026-10-31 19:31",
+     "eventos": 118,
      "ejemplo": "lowest-temperature-in-paris-on-october-31-2026"
     },
     "An observation that reports no temperature in either place is disregarded.": {
      "desde": "2026-10-23 13:08",
-     "ultima": "2026-10-31 13:02",
-     "eventos": 131,
+     "ultima": "2026-10-31 19:31",
+     "eventos": 118,
      "ejemplo": "lowest-temperature-in-paris-on-october-31-2026"
     },
     "An observation counts if its time stamp, converted to the station's local time (including any daylight-saving shift in effect), falls on the observation date.": {
      "desde": "2026-10-23 13:08",
-     "ultima": "2026-10-31 13:02",
-     "eventos": 131,
+     "ultima": "2026-10-31 19:31",
+     "eventos": 118,
      "ejemplo": "lowest-temperature-in-paris-on-october-31-2026"
     },
     "The report the resolution source shows for a given observation time is the one that counts, whether or not it is marked as a correction (COR).": {
      "desde": "2026-10-23 13:08",
-     "ultima": "2026-10-31 13:02",
-     "eventos": 131,
+     "ultima": "2026-10-31 19:31",
+     "eventos": 118,
      "ejemplo": "lowest-temperature-in-paris-on-october-31-2026"
     },
     "Changes to observations within this market's timeframe will be considered until the first datapoint for the following date has been published, after which any alterations will not be considered.": {
      "desde": "2026-10-23 13:08",
-     "ultima": "2026-10-31 13:02",
-     "eventos": 131,
+     "ultima": "2026-10-31 19:31",
+     "eventos": 118,
      "ejemplo": "lowest-temperature-in-paris-on-october-31-2026"
     },
     "In the event that the Aviation Weather Center has published no routine observation reporting a temperature for the observation date by #:# PM ET on the day following the observation date, the Weather Underground Daily Observations table will be used as the resolution source.": {
      "desde": "2026-10-23 13:08",
-     "ultima": "2026-10-31 13:02",
-     "eventos": 131,
+     "ultima": "2026-10-31 19:31",
+     "eventos": 118,
      "ejemplo": "lowest-temperature-in-paris-on-october-31-2026"
     },
     "It appears as temperature and dew point separated by a slash, with M marking a negative value:": {
      "desde": "2026-10-23 13:08",
-     "ultima": "2026-10-31 13:02",
-     "eventos": 131,
+     "ultima": "2026-10-31 19:31",
+     "eventos": 118,
      "ejemplo": "lowest-temperature-in-paris-on-october-31-2026"
     },
     "This market will resolve to the temperature range that contains the lowest temperature reported at <estacion> on # <mes> #.": {
      "desde": "2026-10-23 13:08",
-     "ultima": "2026-10-31 13:02",
-     "eventos": 131,
+     "ultima": "2026-10-31 19:31",
+     "eventos": 118,
      "ejemplo": "lowest-temperature-in-paris-on-october-31-2026"
     },
     "After the T, one digit for sign (# positive, # negative) and three for tenths of a degree Celsius give the temperature;": {
      "desde": "2026-10-23 13:08",
-     "ultima": "2026-10-31 13:02",
-     "eventos": 131,
+     "ultima": "2026-10-31 19:31",
+     "eventos": 118,
      "ejemplo": "lowest-temperature-in-paris-on-october-31-2026"
     },
     "This market will resolve at the issuance of the first METAR observation for the station on the day following the observation date or by #:# PM ET on the day following the observation date, whichever comes first.": {
      "desde": "2026-10-23 13:08",
-     "ultima": "2026-10-31 13:02",
-     "eventos": 131,
+     "ultima": "2026-10-31 19:31",
+     "eventos": 118,
      "ejemplo": "lowest-temperature-in-paris-on-october-31-2026"
     },
     "The qualifying value is the lowest temperature reported in the hourly temperature remark of any routine (METAR) observation for <estacion> on that date, in tenths of a degree Celsius as reported.": {
      "desde": "2026-10-23 13:08",
-     "ultima": "2026-10-31 13:02",
-     "eventos": 131,
+     "ultima": "2026-10-31 19:31",
+     "eventos": 118,
      "ejemplo": "lowest-temperature-in-paris-on-october-31-2026"
     },
     "Each market in this event states its range in whole degrees Celsius.": {
      "desde": "2026-10-23 13:08",
-     "ultima": "2026-10-31 13:02",
-     "eventos": 98,
+     "ultima": "2026-10-31 19:31",
+     "eventos": 85,
      "ejemplo": "lowest-temperature-in-paris-on-october-31-2026"
     },
     "Every other report is routine, including one issued off the nominal hour and one that carries no METAR or SPECI label.": {
      "desde": "2026-10-23 13:08",
-     "ultima": "2026-10-31 13:02",
-     "eventos": 131,
+     "ultima": "2026-10-31 19:31",
+     "eventos": 118,
      "ejemplo": "lowest-temperature-in-paris-on-october-31-2026"
     },
     "The hourly temperature remark is the group beginning with the letter T followed by exactly eight digits.": {
      "desde": "2026-10-23 13:08",
-     "ultima": "2026-10-31 13:02",
-     "eventos": 131,
+     "ultima": "2026-10-31 19:31",
+     "eventos": 118,
      "ejemplo": "lowest-temperature-in-paris-on-october-31-2026"
     },
     "In the event that neither source has published data sufficient to determine a temperature for the observation date by #:# PM ET on the day following the observation date, this market will resolve to the lowest bracket.": {
      "desde": "2026-10-23 13:08",
-     "ultima": "2026-10-31 13:02",
-     "eventos": 131,
+     "ultima": "2026-10-31 19:31",
+     "eventos": 118,
      "ejemplo": "lowest-temperature-in-paris-on-october-31-2026"
     },
     "For How to Read the METAR Report, see:": {
      "desde": "2026-10-23 13:08",
-     "ultima": "2026-10-31 13:02",
-     "eventos": 131,
+     "ultima": "2026-10-31 19:31",
+     "eventos": 118,
      "ejemplo": "lowest-temperature-in-paris-on-october-31-2026"
     },
     "If a routine observation does not carry the hourly temperature remark, the temperature group in the body of that observation governs for that observation, in whole degrees Celsius as reported.": {
      "desde": "2026-10-23 13:08",
-     "ultima": "2026-10-31 13:02",
-     "eventos": 131,
+     "ultima": "2026-10-31 19:31",
+     "eventos": 118,
      "ejemplo": "lowest-temperature-in-paris-on-october-31-2026"
     },
     "Where the first routine observation for the following date is published before that deadline, resolution is determined from a read taken after it.": {
      "desde": "2026-10-23 13:08",
-     "ultima": "2026-10-31 13:02",
-     "eventos": 131,
+     "ultima": "2026-10-31 19:31",
+     "eventos": 118,
      "ejemplo": "lowest-temperature-in-paris-on-october-31-2026"
     },
     "Where it is not, resolution is determined from a read taken at that deadline.": {
      "desde": "2026-10-23 13:08",
-     "ultima": "2026-10-31 13:02",
-     "eventos": 131,
+     "ultima": "2026-10-31 19:31",
+     "eventos": 118,
      "ejemplo": "lowest-temperature-in-paris-on-october-31-2026"
     },
     "Resolution is determined from the observations the resolution source shows for the observation date.": {
      "desde": "2026-10-23 13:08",
-     "ultima": "2026-10-31 13:02",
-     "eventos": 131,
+     "ultima": "2026-10-31 19:31",
+     "eventos": 118,
      "ejemplo": "lowest-temperature-in-paris-on-october-31-2026"
     },
     "The resolution source for this market will be the routine observations for <estacion> published here:": {
      "desde": "2026-10-23 13:08",
-     "ultima": "2026-10-31 13:02",
-     "eventos": 131,
+     "ultima": "2026-10-31 19:31",
+     "eventos": 118,
      "ejemplo": "lowest-temperature-in-paris-on-october-31-2026"
     },
     "For example, #°C counts as #°C;": {
      "desde": "2026-10-23 13:08",
-     "ultima": "2026-10-31 13:02",
-     "eventos": 98,
+     "ultima": "2026-10-31 19:31",
+     "eventos": 85,
      "ejemplo": "lowest-temperature-in-paris-on-october-31-2026"
     },
     "For example, #°C is #°F and counts as #°F;": {
      "desde": "2026-10-23 19:31",
-     "ultima": "2026-10-31 13:02",
+     "ultima": "2026-10-31 19:31",
      "eventos": 33,
      "ejemplo": "lowest-temperature-in-nyc-on-october-31-2026"
     },
     "#°C is #°F and counts as #°F;": {
      "desde": "2026-10-23 19:31",
-     "ultima": "2026-10-31 13:02",
+     "ultima": "2026-10-31 19:31",
      "eventos": 33,
      "ejemplo": "lowest-temperature-in-nyc-on-october-31-2026"
     },
     "Each market in this event states its range in whole degrees Fahrenheit.": {
      "desde": "2026-10-23 19:31",
-     "ultima": "2026-10-31 13:02",
+     "ultima": "2026-10-31 19:31",
      "eventos": 33,
      "ejemplo": "lowest-temperature-in-nyc-on-october-31-2026"
     },
     "The qualifying value is converted using °F = °C × #/# + # and rounded to the nearest whole degree, with a value ending in exactly half rounded up to the next higher whole degree, and that whole Fahrenheit value determines which range contains it.": {
      "desde": "2026-10-23 19:31",
-     "ultima": "2026-10-31 13:02",
+     "ultima": "2026-10-31 19:31",
      "eventos": 33,
      "ejemplo": "lowest-temperature-in-nyc-on-october-31-2026"
     },
     "#°C is exactly #°F and counts as #°F.": {
      "desde": "2026-10-23 19:31",
-     "ultima": "2026-10-31 13:02",
+     "ultima": "2026-10-31 19:31",
      "eventos": 33,
      "ejemplo": "lowest-temperature-in-nyc-on-october-31-2026"
     }
@@ -892,293 +892,293 @@
    "comisiones": {
     "feesEnabled=True feeType=zero_fees feeSchedule={\"exponent\": 1, \"rate\": 0, \"rebateRate\": 0, \"takerOnly\": true} takerBaseFee=1000": {
      "desde": "2026-10-23 13:08",
-     "ultima": "2026-10-31 13:02",
-     "eventos": 135,
+     "ultima": "2026-10-31 19:31",
+     "eventos": 122,
      "ejemplo": "lowest-temperature-in-hong-kong-on-october-30-2026"
     }
    },
    "parametros": {
     "orden minima=5 tick=0.001": {
      "desde": "2026-10-23 13:08",
-     "ultima": "2026-10-31 13:02",
+     "ultima": "2026-10-31 19:31",
      "eventos": 84,
      "ejemplo": "lowest-temperature-in-hong-kong-on-october-30-2026"
     },
     "orden minima=5 tick=0.01": {
      "desde": "2026-10-23 13:08",
-     "ultima": "2026-10-31 13:02",
-     "eventos": 128,
-     "ejemplo": "lowest-temperature-in-seoul-on-october-31-2026"
+     "ultima": "2026-10-31 19:31",
+     "eventos": 116,
+     "ejemplo": "lowest-temperature-in-ankara-on-october-31-2026"
     }
    },
    "ciudades": {
     "sao-paulo": {
      "desde": "2026-10-23 13:08",
-     "ultima": "2026-10-31 13:02",
+     "ultima": "2026-10-31 19:31",
      "eventos": 3,
      "ejemplo": "lowest-temperature-in-sao-paulo-on-october-31-2026"
     },
     "shenzhen": {
      "desde": "2026-10-23 13:08",
-     "ultima": "2026-10-31 13:02",
-     "eventos": 3,
-     "ejemplo": "lowest-temperature-in-shenzhen-on-october-31-2026"
+     "ultima": "2026-10-31 19:31",
+     "eventos": 2,
+     "ejemplo": "lowest-temperature-in-shenzhen-on-november-1-2026"
     },
     "london": {
      "desde": "2026-10-23 13:08",
-     "ultima": "2026-10-31 13:02",
+     "ultima": "2026-10-31 19:31",
      "eventos": 3,
      "ejemplo": "lowest-temperature-in-london-on-october-31-2026"
     },
     "paris": {
      "desde": "2026-10-23 13:08",
-     "ultima": "2026-10-31 13:02",
+     "ultima": "2026-10-31 19:31",
      "eventos": 3,
      "ejemplo": "lowest-temperature-in-paris-on-october-31-2026"
     },
     "seoul": {
      "desde": "2026-10-23 13:08",
-     "ultima": "2026-10-31 13:02",
-     "eventos": 3,
-     "ejemplo": "lowest-temperature-in-seoul-on-october-31-2026"
+     "ultima": "2026-10-31 19:31",
+     "eventos": 2,
+     "ejemplo": "lowest-temperature-in-seoul-on-november-1-2026"
     },
     "ankara": {
      "desde": "2026-10-23 13:08",
-     "ultima": "2026-10-31 13:02",
+     "ultima": "2026-10-31 19:31",
      "eventos": 3,
      "ejemplo": "lowest-temperature-in-ankara-on-october-31-2026"
     },
     "wellington": {
      "desde": "2026-10-23 13:08",
-     "ultima": "2026-10-31 13:02",
+     "ultima": "2026-10-31 19:31",
      "eventos": 2,
      "ejemplo": "lowest-temperature-in-wellington-on-november-1-2026"
     },
     "lucknow": {
      "desde": "2026-10-23 13:08",
-     "ultima": "2026-10-31 13:02",
-     "eventos": 3,
-     "ejemplo": "lowest-temperature-in-lucknow-on-october-31-2026"
+     "ultima": "2026-10-31 19:31",
+     "eventos": 2,
+     "ejemplo": "lowest-temperature-in-lucknow-on-november-1-2026"
     },
     "munich": {
      "desde": "2026-10-23 13:08",
-     "ultima": "2026-10-31 13:02",
+     "ultima": "2026-10-31 19:31",
      "eventos": 3,
      "ejemplo": "lowest-temperature-in-munich-on-october-31-2026"
     },
     "tel-aviv": {
      "desde": "2026-10-23 13:08",
-     "ultima": "2026-10-31 13:02",
+     "ultima": "2026-10-31 19:31",
      "eventos": 3,
      "ejemplo": "lowest-temperature-in-tel-aviv-on-october-31-2026"
     },
     "tokyo": {
      "desde": "2026-10-23 13:08",
-     "ultima": "2026-10-31 13:02",
-     "eventos": 3,
-     "ejemplo": "lowest-temperature-in-tokyo-on-october-31-2026"
+     "ultima": "2026-10-31 19:31",
+     "eventos": 2,
+     "ejemplo": "lowest-temperature-in-tokyo-on-november-1-2026"
     },
     "shanghai": {
      "desde": "2026-10-23 13:08",
-     "ultima": "2026-10-31 13:02",
-     "eventos": 3,
-     "ejemplo": "lowest-temperature-in-shanghai-on-october-31-2026"
+     "ultima": "2026-10-31 19:31",
+     "eventos": 2,
+     "ejemplo": "lowest-temperature-in-shanghai-on-november-1-2026"
     },
     "milan": {
      "desde": "2026-10-23 13:08",
-     "ultima": "2026-10-31 13:02",
+     "ultima": "2026-10-31 19:31",
      "eventos": 3,
      "ejemplo": "lowest-temperature-in-milan-on-october-31-2026"
     },
     "madrid": {
      "desde": "2026-10-23 13:08",
-     "ultima": "2026-10-31 13:02",
+     "ultima": "2026-10-31 19:31",
      "eventos": 3,
      "ejemplo": "lowest-temperature-in-madrid-on-october-31-2026"
     },
     "warsaw": {
      "desde": "2026-10-23 13:08",
-     "ultima": "2026-10-31 13:02",
+     "ultima": "2026-10-31 19:31",
      "eventos": 3,
      "ejemplo": "lowest-temperature-in-warsaw-on-october-31-2026"
     },
     "chongqing": {
      "desde": "2026-10-23 13:08",
-     "ultima": "2026-10-31 13:02",
-     "eventos": 3,
-     "ejemplo": "lowest-temperature-in-chongqing-on-october-31-2026"
+     "ultima": "2026-10-31 19:31",
+     "eventos": 2,
+     "ejemplo": "lowest-temperature-in-chongqing-on-november-1-2026"
     },
     "beijing": {
      "desde": "2026-10-23 13:08",
-     "ultima": "2026-10-31 13:02",
-     "eventos": 3,
-     "ejemplo": "lowest-temperature-in-beijing-on-october-31-2026"
+     "ultima": "2026-10-31 19:31",
+     "eventos": 2,
+     "ejemplo": "lowest-temperature-in-beijing-on-november-1-2026"
     },
     "wuhan": {
      "desde": "2026-10-23 13:08",
-     "ultima": "2026-10-31 13:02",
-     "eventos": 3,
-     "ejemplo": "lowest-temperature-in-wuhan-on-october-31-2026"
+     "ultima": "2026-10-31 19:31",
+     "eventos": 2,
+     "ejemplo": "lowest-temperature-in-wuhan-on-november-1-2026"
     },
     "chengdu": {
      "desde": "2026-10-23 13:08",
-     "ultima": "2026-10-31 13:02",
-     "eventos": 3,
-     "ejemplo": "lowest-temperature-in-chengdu-on-october-31-2026"
+     "ultima": "2026-10-31 19:31",
+     "eventos": 2,
+     "ejemplo": "lowest-temperature-in-chengdu-on-november-1-2026"
     },
     "moscow": {
      "desde": "2026-10-23 13:08",
-     "ultima": "2026-10-31 13:02",
+     "ultima": "2026-10-31 19:31",
      "eventos": 3,
      "ejemplo": "lowest-temperature-in-moscow-on-october-31-2026"
     },
     "istanbul": {
      "desde": "2026-10-23 13:08",
-     "ultima": "2026-10-31 13:02",
+     "ultima": "2026-10-31 19:31",
      "eventos": 3,
      "ejemplo": "lowest-temperature-in-istanbul-on-october-31-2026"
     },
     "busan": {
      "desde": "2026-10-23 13:08",
-     "ultima": "2026-10-31 13:02",
-     "eventos": 3,
-     "ejemplo": "lowest-temperature-in-busan-on-october-31-2026"
+     "ultima": "2026-10-31 19:31",
+     "eventos": 2,
+     "ejemplo": "lowest-temperature-in-busan-on-november-1-2026"
     },
     "amsterdam": {
      "desde": "2026-10-23 13:08",
-     "ultima": "2026-10-31 13:02",
+     "ultima": "2026-10-31 19:31",
      "eventos": 3,
      "ejemplo": "lowest-temperature-in-amsterdam-on-october-31-2026"
     },
     "helsinki": {
      "desde": "2026-10-23 13:08",
-     "ultima": "2026-10-31 13:02",
+     "ultima": "2026-10-31 19:31",
      "eventos": 3,
      "ejemplo": "lowest-temperature-in-helsinki-on-october-31-2026"
     },
     "jeddah": {
      "desde": "2026-10-23 13:08",
-     "ultima": "2026-10-31 13:02",
+     "ultima": "2026-10-31 19:31",
      "eventos": 3,
      "ejemplo": "lowest-temperature-in-jeddah-on-october-31-2026"
     },
     "cape-town": {
      "desde": "2026-10-23 13:08",
-     "ultima": "2026-10-31 13:02",
+     "ultima": "2026-10-31 19:31",
      "eventos": 3,
      "ejemplo": "lowest-temperature-in-cape-town-on-october-31-2026"
     },
     "guangzhou": {
      "desde": "2026-10-23 13:08",
-     "ultima": "2026-10-31 13:02",
-     "eventos": 3,
-     "ejemplo": "lowest-temperature-in-guangzhou-on-october-31-2026"
+     "ultima": "2026-10-31 19:31",
+     "eventos": 2,
+     "ejemplo": "lowest-temperature-in-guangzhou-on-november-1-2026"
     },
     "qingdao": {
      "desde": "2026-10-23 13:08",
-     "ultima": "2026-10-31 13:02",
-     "eventos": 3,
-     "ejemplo": "lowest-temperature-in-qingdao-on-october-31-2026"
+     "ultima": "2026-10-31 19:31",
+     "eventos": 2,
+     "ejemplo": "lowest-temperature-in-qingdao-on-november-1-2026"
     },
     "karachi": {
      "desde": "2026-10-23 13:08",
-     "ultima": "2026-10-31 13:02",
+     "ultima": "2026-10-31 19:31",
      "eventos": 3,
      "ejemplo": "lowest-temperature-in-karachi-on-october-31-2026"
     },
     "buenos-aires": {
      "desde": "2026-10-23 13:08",
-     "ultima": "2026-10-31 13:02",
+     "ultima": "2026-10-31 19:31",
      "eventos": 3,
      "ejemplo": "lowest-temperature-in-buenos-aires-on-october-31-2026"
     },
     "toronto": {
      "desde": "2026-10-23 13:08",
-     "ultima": "2026-10-31 13:02",
+     "ultima": "2026-10-31 19:31",
      "eventos": 3,
      "ejemplo": "lowest-temperature-in-toronto-on-october-31-2026"
     },
     "mexico-city": {
      "desde": "2026-10-23 13:08",
-     "ultima": "2026-10-31 13:02",
+     "ultima": "2026-10-31 19:31",
      "eventos": 3,
      "ejemplo": "lowest-temperature-in-mexico-city-on-october-31-2026"
     },
     "hong-kong": {
      "desde": "2026-10-23 13:08",
-     "ultima": "2026-10-31 13:02",
+     "ultima": "2026-10-31 19:31",
      "eventos": 4,
      "ejemplo": "lowest-temperature-in-hong-kong-on-october-30-2026"
     },
     "taipei": {
      "desde": "2026-10-23 13:08",
-     "ultima": "2026-10-31 13:02",
-     "eventos": 3,
-     "ejemplo": "lowest-temperature-in-taipei-on-october-31-2026"
+     "ultima": "2026-10-31 19:31",
+     "eventos": 2,
+     "ejemplo": "lowest-temperature-in-taipei-on-november-1-2026"
     },
     "nyc": {
      "desde": "2026-10-23 13:08",
-     "ultima": "2026-10-31 13:02",
+     "ultima": "2026-10-31 19:31",
      "eventos": 3,
      "ejemplo": "lowest-temperature-in-nyc-on-october-31-2026"
     },
     "dallas": {
      "desde": "2026-10-23 13:08",
-     "ultima": "2026-10-31 13:02",
+     "ultima": "2026-10-31 19:31",
      "eventos": 3,
      "ejemplo": "lowest-temperature-in-dallas-on-october-31-2026"
     },
     "atlanta": {
      "desde": "2026-10-23 13:08",
-     "ultima": "2026-10-31 13:02",
+     "ultima": "2026-10-31 19:31",
      "eventos": 3,
      "ejemplo": "lowest-temperature-in-atlanta-on-october-31-2026"
     },
     "miami": {
      "desde": "2026-10-23 13:08",
-     "ultima": "2026-10-31 13:02",
+     "ultima": "2026-10-31 19:31",
      "eventos": 3,
      "ejemplo": "lowest-temperature-in-miami-on-october-31-2026"
     },
     "chicago": {
      "desde": "2026-10-23 13:08",
-     "ultima": "2026-10-31 13:02",
+     "ultima": "2026-10-31 19:31",
      "eventos": 3,
      "ejemplo": "lowest-temperature-in-chicago-on-october-31-2026"
     },
     "austin": {
      "desde": "2026-10-23 13:08",
-     "ultima": "2026-10-31 13:02",
+     "ultima": "2026-10-31 19:31",
      "eventos": 3,
      "ejemplo": "lowest-temperature-in-austin-on-october-31-2026"
     },
     "denver": {
      "desde": "2026-10-23 13:08",
-     "ultima": "2026-10-31 13:02",
+     "ultima": "2026-10-31 19:31",
      "eventos": 3,
      "ejemplo": "lowest-temperature-in-denver-on-october-31-2026"
     },
     "houston": {
      "desde": "2026-10-23 13:08",
-     "ultima": "2026-10-31 13:02",
+     "ultima": "2026-10-31 19:31",
      "eventos": 3,
      "ejemplo": "lowest-temperature-in-houston-on-october-31-2026"
     },
     "seattle": {
      "desde": "2026-10-23 13:08",
-     "ultima": "2026-10-31 13:02",
+     "ultima": "2026-10-31 19:31",
      "eventos": 3,
      "ejemplo": "lowest-temperature-in-seattle-on-october-31-2026"
     },
     "los-angeles": {
      "desde": "2026-10-23 13:08",
-     "ultima": "2026-10-31 13:02",
+     "ultima": "2026-10-31 19:31",
      "eventos": 3,
      "ejemplo": "lowest-temperature-in-los-angeles-on-october-31-2026"
     },
     "san-francisco": {
      "desde": "2026-10-23 13:08",
-     "ultima": "2026-10-31 13:02",
+     "ultima": "2026-10-31 19:31",
      "eventos": 3,
      "ejemplo": "lowest-temperature-in-san-francisco-on-october-31-2026"
     }
@@ -1189,63 +1189,63 @@
    "fuentes": {
     "binance.com/en/trade/BTC_USDT": {
      "desde": "2026-10-23 13:08",
-     "ultima": "2026-10-31 13:02",
+     "ultima": "2026-10-31 19:31",
      "eventos": 7,
-     "ejemplo": "bitcoin-above-on-october-31-2026"
+     "ejemplo": "bitcoin-above-on-november-1-2026"
     }
    },
    "reglamento": {
     "This market will resolve to \"Yes\" if the Binance # minute candle for BTC/<estacion> closing at #:# in the ET timezone (noon) on the date specified in the title has a final \"Close\" price higher than the price specified in the title.": {
      "desde": "2026-10-23 13:08",
-     "ultima": "2026-10-31 13:02",
+     "ultima": "2026-10-31 19:31",
      "eventos": 7,
-     "ejemplo": "bitcoin-above-on-october-31-2026"
+     "ejemplo": "bitcoin-above-on-november-1-2026"
     },
     "Price precision is determined by the number of decimal places in the source.": {
      "desde": "2026-10-23 13:08",
-     "ultima": "2026-10-31 13:02",
+     "ultima": "2026-10-31 19:31",
      "eventos": 7,
-     "ejemplo": "bitcoin-above-on-october-31-2026"
+     "ejemplo": "bitcoin-above-on-november-1-2026"
     },
     "The resolution source for this market is Binance, specifically the BTC/<estacion> \"Close\" prices currently available at <link> with \"#m\" and \"Candles\" selected on the top bar.": {
      "desde": "2026-10-23 13:08",
-     "ultima": "2026-10-31 13:02",
+     "ultima": "2026-10-31 19:31",
      "eventos": 7,
-     "ejemplo": "bitcoin-above-on-october-31-2026"
+     "ejemplo": "bitcoin-above-on-november-1-2026"
     },
     "Please note that this market is about the price according to Binance BTC/<estacion>, not according to other exchanges or trading pairs.": {
      "desde": "2026-10-23 13:08",
-     "ultima": "2026-10-31 13:02",
+     "ultima": "2026-10-31 19:31",
      "eventos": 7,
-     "ejemplo": "bitcoin-above-on-october-31-2026"
+     "ejemplo": "bitcoin-above-on-november-1-2026"
     },
     "Otherwise, this market will resolve to \"No\".": {
      "desde": "2026-10-23 13:08",
-     "ultima": "2026-10-31 13:02",
+     "ultima": "2026-10-31 19:31",
      "eventos": 7,
-     "ejemplo": "bitcoin-above-on-october-31-2026"
+     "ejemplo": "bitcoin-above-on-november-1-2026"
     }
    },
    "comisiones": {
     "feesEnabled=True feeType=crypto_fees_v2 feeSchedule={\"exponent\": 1, \"rate\": 0.07, \"rebateRate\": 0.2, \"takerOnly\": true} takerBaseFee=1000": {
      "desde": "2026-10-23 13:08",
-     "ultima": "2026-10-31 13:02",
+     "ultima": "2026-10-31 19:31",
      "eventos": 7,
-     "ejemplo": "bitcoin-above-on-october-31-2026"
+     "ejemplo": "bitcoin-above-on-november-1-2026"
     }
    },
    "parametros": {
     "orden minima=5 tick=0.01": {
      "desde": "2026-10-23 13:08",
-     "ultima": "2026-10-31 13:02",
-     "eventos": 5,
+     "ultima": "2026-10-31 19:31",
+     "eventos": 6,
      "ejemplo": "bitcoin-above-on-november-2-2026"
     },
     "orden minima=5 tick=0.001": {
      "desde": "2026-10-23 13:08",
-     "ultima": "2026-10-31 13:02",
+     "ultima": "2026-10-31 19:31",
      "eventos": 7,
-     "ejemplo": "bitcoin-above-on-october-31-2026"
+     "ejemplo": "bitcoin-above-on-november-1-2026"
     }
    }
   },
@@ -1254,62 +1254,62 @@
    "fuentes": {
     "binance.com/en/trade/ETH_USDT": {
      "desde": "2026-10-23 13:08",
-     "ultima": "2026-10-31 13:02",
+     "ultima": "2026-10-31 19:31",
      "eventos": 7,
-     "ejemplo": "ethereum-above-on-october-31-2026"
+     "ejemplo": "ethereum-above-on-november-1-2026"
     }
    },
    "reglamento": {
     "The resolution source for this market is Binance, specifically the ETH/<estacion> \"Close\" prices currently available at <link> with \"#m\" and \"Candles\" selected on the top bar.": {
      "desde": "2026-10-23 13:08",
-     "ultima": "2026-10-31 13:02",
+     "ultima": "2026-10-31 19:31",
      "eventos": 7,
-     "ejemplo": "ethereum-above-on-october-31-2026"
+     "ejemplo": "ethereum-above-on-november-1-2026"
     },
     "Please note that this market is about the price according to Binance ETH/<estacion>, not according to other exchanges or trading pairs.": {
      "desde": "2026-10-23 13:08",
-     "ultima": "2026-10-31 13:02",
+     "ultima": "2026-10-31 19:31",
      "eventos": 7,
-     "ejemplo": "ethereum-above-on-october-31-2026"
+     "ejemplo": "ethereum-above-on-november-1-2026"
     },
     "Price precision is determined by the number of decimal places in the source.": {
      "desde": "2026-10-23 13:08",
-     "ultima": "2026-10-31 13:02",
+     "ultima": "2026-10-31 19:31",
      "eventos": 7,
-     "ejemplo": "ethereum-above-on-october-31-2026"
+     "ejemplo": "ethereum-above-on-november-1-2026"
     },
     "This market will resolve to \"Yes\" if the Binance # minute candle for ETH/<estacion> closing at #:# in the ET timezone (noon) on the date specified in the title has a final \"Close\" price higher than the price specified in the title.": {
      "desde": "2026-10-23 13:08",
-     "ultima": "2026-10-31 13:02",
+     "ultima": "2026-10-31 19:31",
      "eventos": 7,
-     "ejemplo": "ethereum-above-on-october-31-2026"
+     "ejemplo": "ethereum-above-on-november-1-2026"
     },
     "Otherwise, this market will resolve to \"No\".": {
      "desde": "2026-10-23 13:08",
-     "ultima": "2026-10-31 13:02",
+     "ultima": "2026-10-31 19:31",
      "eventos": 7,
-     "ejemplo": "ethereum-above-on-october-31-2026"
+     "ejemplo": "ethereum-above-on-november-1-2026"
     }
    },
    "comisiones": {
     "feesEnabled=True feeType=crypto_fees_v2 feeSchedule={\"exponent\": 1, \"rate\": 0.07, \"rebateRate\": 0.2, \"takerOnly\": true} takerBaseFee=1000": {
      "desde": "2026-10-23 13:08",
-     "ultima": "2026-10-31 13:02",
+     "ultima": "2026-10-31 19:31",
      "eventos": 7,
-     "ejemplo": "ethereum-above-on-october-31-2026"
+     "ejemplo": "ethereum-above-on-november-1-2026"
     }
    },
    "parametros": {
     "orden minima=5 tick=0.001": {
      "desde": "2026-10-23 13:08",
-     "ultima": "2026-10-31 13:02",
+     "ultima": "2026-10-31 19:31",
      "eventos": 7,
-     "ejemplo": "ethereum-above-on-october-31-2026"
+     "ejemplo": "ethereum-above-on-november-1-2026"
     },
     "orden minima=5 tick=0.01": {
      "desde": "2026-10-23 13:08",
-     "ultima": "2026-10-31 13:02",
-     "eventos": 6,
+     "ultima": "2026-10-31 19:31",
+     "eventos": 7,
      "ejemplo": "ethereum-above-on-november-1-2026"
     }
    }
@@ -1319,63 +1319,63 @@
    "fuentes": {
     "binance.com/en/trade/BTC_USDT": {
      "desde": "2026-10-23 13:08",
-     "ultima": "2026-10-31 13:02",
+     "ultima": "2026-10-31 19:31",
      "eventos": 7,
-     "ejemplo": "bitcoin-price-on-october-31-2026"
+     "ejemplo": "bitcoin-price-on-november-1-2026"
     }
    },
    "reglamento": {
     "If the reported value falls exactly between two brackets, then this market will resolve to the higher range bracket.": {
      "desde": "2026-10-23 13:08",
-     "ultima": "2026-10-31 13:02",
+     "ultima": "2026-10-31 19:31",
      "eventos": 7,
-     "ejemplo": "bitcoin-price-on-october-31-2026"
+     "ejemplo": "bitcoin-price-on-november-1-2026"
     },
     "The resolution source for this market is Binance, specifically the BTC/<estacion> \"Close\" prices currently available at <link> with \"#m\" and \"Candles\" selected on the top bar.": {
      "desde": "2026-10-23 13:08",
-     "ultima": "2026-10-31 13:02",
+     "ultima": "2026-10-31 19:31",
      "eventos": 7,
-     "ejemplo": "bitcoin-price-on-october-31-2026"
+     "ejemplo": "bitcoin-price-on-november-1-2026"
     },
     "This market will resolve according to the final \"Close\" price of the Binance # minute candle for BTC/<estacion> closing at #:# in the ET timezone (noon) on the date specified in the title.": {
      "desde": "2026-10-23 13:08",
-     "ultima": "2026-10-31 13:02",
+     "ultima": "2026-10-31 19:31",
      "eventos": 7,
-     "ejemplo": "bitcoin-price-on-october-31-2026"
+     "ejemplo": "bitcoin-price-on-november-1-2026"
     },
     "Please note that this market is about the price according to Binance BTC/<estacion>, not according to other exchanges or trading pairs.": {
      "desde": "2026-10-23 13:08",
-     "ultima": "2026-10-31 13:02",
+     "ultima": "2026-10-31 19:31",
      "eventos": 7,
-     "ejemplo": "bitcoin-price-on-october-31-2026"
+     "ejemplo": "bitcoin-price-on-november-1-2026"
     },
     "Otherwise, this market will resolve to \"No\".": {
      "desde": "2026-10-23 13:08",
-     "ultima": "2026-10-31 13:02",
+     "ultima": "2026-10-31 19:31",
      "eventos": 7,
-     "ejemplo": "bitcoin-price-on-october-31-2026"
+     "ejemplo": "bitcoin-price-on-november-1-2026"
     }
    },
    "comisiones": {
     "feesEnabled=True feeType=crypto_fees_v2 feeSchedule={\"exponent\": 1, \"rate\": 0.07, \"rebateRate\": 0.2, \"takerOnly\": true} takerBaseFee=1000": {
      "desde": "2026-10-23 13:08",
-     "ultima": "2026-10-31 13:02",
+     "ultima": "2026-10-31 19:31",
      "eventos": 7,
-     "ejemplo": "bitcoin-price-on-october-31-2026"
+     "ejemplo": "bitcoin-price-on-november-1-2026"
     }
    },
    "parametros": {
     "orden minima=5 tick=0.01": {
      "desde": "2026-10-23 13:08",
-     "ultima": "2026-10-31 13:02",
+     "ultima": "2026-10-31 19:31",
      "eventos": 7,
-     "ejemplo": "bitcoin-price-on-october-31-2026"
+     "ejemplo": "bitcoin-price-on-november-1-2026"
     },
     "orden minima=5 tick=0.001": {
      "desde": "2026-10-23 13:08",
-     "ultima": "2026-10-31 13:02",
+     "ultima": "2026-10-31 19:31",
      "eventos": 7,
-     "ejemplo": "bitcoin-price-on-october-31-2026"
+     "ejemplo": "bitcoin-price-on-november-1-2026"
     }
    }
   },
@@ -1384,62 +1384,62 @@
    "fuentes": {
     "binance.com/en/trade/ETH_USDT": {
      "desde": "2026-10-23 13:08",
-     "ultima": "2026-10-31 13:02",
+     "ultima": "2026-10-31 19:31",
      "eventos": 7,
-     "ejemplo": "ethereum-price-on-october-31-2026"
+     "ejemplo": "ethereum-price-on-november-1-2026"
     }
    },
    "reglamento": {
     "The resolution source for this market is Binance, specifically the ETH/<estacion> \"Close\" prices currently available at <link> with \"#m\" and \"Candles\" selected on the top bar.": {
      "desde": "2026-10-23 13:08",
-     "ultima": "2026-10-31 13:02",
+     "ultima": "2026-10-31 19:31",
      "eventos": 7,
-     "ejemplo": "ethereum-price-on-october-31-2026"
+     "ejemplo": "ethereum-price-on-november-1-2026"
     },
     "If the reported value falls exactly between two brackets, then this market will resolve to the higher range bracket.": {
      "desde": "2026-10-23 13:08",
-     "ultima": "2026-10-31 13:02",
+     "ultima": "2026-10-31 19:31",
      "eventos": 7,
-     "ejemplo": "ethereum-price-on-october-31-2026"
+     "ejemplo": "ethereum-price-on-november-1-2026"
     },
     "This market will resolve according to the final \"Close\" price of the Binance # minute candle for ETH/<estacion> closing at #:# in the ET timezone (noon) on the date specified in the title.": {
      "desde": "2026-10-23 13:08",
-     "ultima": "2026-10-31 13:02",
+     "ultima": "2026-10-31 19:31",
      "eventos": 7,
-     "ejemplo": "ethereum-price-on-october-31-2026"
+     "ejemplo": "ethereum-price-on-november-1-2026"
     },
     "Please note that this market is about the price according to Binance ETH/<estacion>, not according to other exchanges or trading pairs.": {
      "desde": "2026-10-23 13:08",
-     "ultima": "2026-10-31 13:02",
+     "ultima": "2026-10-31 19:31",
      "eventos": 7,
-     "ejemplo": "ethereum-price-on-october-31-2026"
+     "ejemplo": "ethereum-price-on-november-1-2026"
     },
     "Otherwise, this market will resolve to \"No\".": {
      "desde": "2026-10-23 13:08",
-     "ultima": "2026-10-31 13:02",
+     "ultima": "2026-10-31 19:31",
      "eventos": 7,
-     "ejemplo": "ethereum-price-on-october-31-2026"
+     "ejemplo": "ethereum-price-on-november-1-2026"
     }
    },
    "comisiones": {
     "feesEnabled=True feeType=crypto_fees_v2 feeSchedule={\"exponent\": 1, \"rate\": 0.07, \"rebateRate\": 0.2, \"takerOnly\": true} takerBaseFee=1000": {
      "desde": "2026-10-23 13:08",
-     "ultima": "2026-10-31 13:02",
+     "ultima": "2026-10-31 19:31",
      "eventos": 7,
-     "ejemplo": "ethereum-price-on-october-31-2026"
+     "ejemplo": "ethereum-price-on-november-1-2026"
     }
    },
    "parametros": {
     "orden minima=5 tick=0.001": {
      "desde": "2026-10-23 13:08",
-     "ultima": "2026-10-31 13:02",
+     "ultima": "2026-10-31 19:31",
      "eventos": 7,
-     "ejemplo": "ethereum-price-on-october-31-2026"
+     "ejemplo": "ethereum-price-on-november-1-2026"
     },
     "orden minima=5 tick=0.01": {
      "desde": "2026-10-23 13:08",
-     "ultima": "2026-10-31 13:02",
-     "eventos": 6,
+     "ultima": "2026-10-31 19:31",
+     "eventos": 7,
      "ejemplo": "ethereum-price-on-november-1-2026"
     }
    }
@@ -1449,7 +1449,7 @@
    "fuentes": {
     "binance.com/en/trade/BTC_USDT": {
      "desde": "2026-10-23 13:08",
-     "ultima": "2026-10-31 13:02",
+     "ultima": "2026-10-31 19:31",
      "eventos": 1,
      "ejemplo": "what-price-will-bitcoin-hit-on-october-31-2026"
     }
@@ -1457,7 +1457,7 @@
    "reglamento": {
     "What price will Bitcoin hit on <mes> #?": {
      "desde": "2026-10-23 13:08",
-     "ultima": "2026-10-31 13:02",
+     "ultima": "2026-10-31 19:31",
      "eventos": 1,
      "ejemplo": "what-price-will-bitcoin-hit-on-october-31-2026"
     }
@@ -1465,7 +1465,7 @@
    "comisiones": {
     "feesEnabled=True feeType=crypto_fees_v2 feeSchedule={\"exponent\": 1, \"rate\": 0.07, \"rebateRate\": 0.2, \"takerOnly\": true} takerBaseFee=1000": {
      "desde": "2026-10-23 13:08",
-     "ultima": "2026-10-31 13:02",
+     "ultima": "2026-10-31 19:31",
      "eventos": 1,
      "ejemplo": "what-price-will-bitcoin-hit-on-october-31-2026"
     }
@@ -1473,13 +1473,13 @@
    "parametros": {
     "orden minima=5 tick=0.01": {
      "desde": "2026-10-23 13:08",
-     "ultima": "2026-10-31 13:02",
+     "ultima": "2026-10-31 19:31",
      "eventos": 1,
      "ejemplo": "what-price-will-bitcoin-hit-on-october-31-2026"
     },
     "orden minima=5 tick=0.001": {
      "desde": "2026-10-23 13:08",
-     "ultima": "2026-10-31 13:02",
+     "ultima": "2026-10-31 19:31",
      "eventos": 1,
      "ejemplo": "what-price-will-bitcoin-hit-on-october-31-2026"
     }
@@ -1490,7 +1490,7 @@
    "fuentes": {
     "binance.com/en/trade/ETH_USDT": {
      "desde": "2026-10-23 13:08",
-     "ultima": "2026-10-31 13:02",
+     "ultima": "2026-10-31 19:31",
      "eventos": 1,
      "ejemplo": "what-price-will-ethereum-hit-on-october-31-2026"
     }
@@ -1498,7 +1498,7 @@
    "reglamento": {
     "What price will Ethereum hit on <mes> #?": {
      "desde": "2026-10-23 13:08",
-     "ultima": "2026-10-31 13:02",
+     "ultima": "2026-10-31 19:31",
      "eventos": 1,
      "ejemplo": "what-price-will-ethereum-hit-on-october-31-2026"
     }
@@ -1506,7 +1506,7 @@
    "comisiones": {
     "feesEnabled=True feeType=crypto_fees_v2 feeSchedule={\"exponent\": 1, \"rate\": 0.07, \"rebateRate\": 0.2, \"takerOnly\": true} takerBaseFee=1000": {
      "desde": "2026-10-23 13:08",
-     "ultima": "2026-10-31 13:02",
+     "ultima": "2026-10-31 19:31",
      "eventos": 1,
      "ejemplo": "what-price-will-ethereum-hit-on-october-31-2026"
     }
@@ -1514,13 +1514,13 @@
    "parametros": {
     "orden minima=5 tick=0.01": {
      "desde": "2026-10-23 13:08",
-     "ultima": "2026-10-31 13:02",
+     "ultima": "2026-10-31 19:31",
      "eventos": 1,
      "ejemplo": "what-price-will-ethereum-hit-on-october-31-2026"
     },
     "orden minima=5 tick=0.001": {
      "desde": "2026-10-23 13:08",
-     "ultima": "2026-10-31 13:02",
+     "ultima": "2026-10-31 19:31",
      "eventos": 1,
      "ejemplo": "what-price-will-ethereum-hit-on-october-31-2026"
     }
@@ -1531,349 +1531,349 @@
    "clima_otros": {
     "where-will": {
      "desde": "2026-10-23 13:08",
-     "ultima": "2026-10-31 13:02",
+     "ultima": "2026-10-31 19:31",
      "eventos": 1,
      "ejemplo": "where-will-2026-rank-among-the-hottest-years-on-record"
     },
     "measles-cases": {
      "desde": "2026-10-23 13:08",
-     "ultima": "2026-10-31 13:02",
+     "ultima": "2026-10-31 19:31",
      "eventos": 3,
      "ejemplo": "measles-cases-in-us-in-2026"
     },
     "9pt0-or-above-earthquake-before": {
      "desde": "2026-10-23 13:08",
-     "ultima": "2026-10-31 13:02",
+     "ultima": "2026-10-31 19:31",
      "eventos": 1,
      "ejemplo": "9pt0-or-above-earthquake-before-2027"
     },
     "10pt0-or-above-earthquake-before": {
      "desde": "2026-10-23 13:08",
-     "ultima": "2026-10-31 13:02",
+     "ultima": "2026-10-31 19:31",
      "eventos": 1,
      "ejemplo": "10pt0-or-above-earthquake-before-2027"
     },
     "major-volcano-eruption-vei": {
      "desde": "2026-10-23 13:08",
-     "ultima": "2026-10-31 13:02",
+     "ultima": "2026-10-31 19:31",
      "eventos": 1,
      "ejemplo": "major-volcano-eruption-vei-6-in-2026"
     },
     "will-any-category": {
      "desde": "2026-10-23 13:08",
-     "ultima": "2026-10-31 13:02",
+     "ultima": "2026-10-31 19:31",
      "eventos": 2,
      "ejemplo": "will-any-category-4-hurricane-make-landfall-in-the-us-in-before-2027"
     },
     "natural-disaster": {
      "desde": "2026-10-23 13:08",
-     "ultima": "2026-10-31 13:02",
+     "ultima": "2026-10-31 19:31",
      "eventos": 1,
      "ejemplo": "natural-disaster-in-2026"
     },
     "major-meteor-strike": {
      "desde": "2026-10-23 13:08",
-     "ultima": "2026-10-31 13:02",
+     "ultima": "2026-10-31 19:31",
      "eventos": 1,
      "ejemplo": "major-meteor-strike-10kt-in-2026"
     },
     "5kt-meteor-strike": {
      "desde": "2026-10-23 13:08",
-     "ultima": "2026-10-31 13:02",
+     "ultima": "2026-10-31 19:31",
      "eventos": 1,
      "ejemplo": "5kt-meteor-strike-in-2026"
     },
     "how-many": {
      "desde": "2026-10-23 13:08",
-     "ultima": "2026-10-31 13:02",
+     "ultima": "2026-10-31 19:31",
      "eventos": 3,
      "ejemplo": "how-many-7pt0-or-above-earthquakes-in-2026"
     },
     "how-many-large-volcano-eruption-vei": {
      "desde": "2026-10-23 13:08",
-     "ultima": "2026-10-31 13:02",
+     "ultima": "2026-10-31 19:31",
      "eventos": 1,
      "ejemplo": "how-many-large-volcano-eruption-vei-4-in-2026-657"
     },
     "1-megaton-meteor-strike": {
      "desde": "2026-10-23 13:08",
-     "ultima": "2026-10-31 13:02",
+     "ultima": "2026-10-31 19:31",
      "eventos": 1,
      "ejemplo": "1-megaton-meteor-strike-in-2026"
     },
     "how-many-tornadoes": {
      "desde": "2026-10-23 13:08",
-     "ultima": "2026-10-31 13:02",
+     "ultima": "2026-10-31 19:31",
      "eventos": 1,
      "ejemplo": "how-many-tornadoes-in-the-us-in-2026"
     },
     "magnitude": {
      "desde": "2026-10-23 13:08",
-     "ultima": "2026-10-31 13:02",
+     "ultima": "2026-10-31 19:31",
      "eventos": 1,
      "ejemplo": "magnitude-6pt5-earthquake-in-la-before-2027"
     },
     "vesuvius-eruption-with": {
      "desde": "2026-10-23 13:08",
-     "ultima": "2026-10-31 13:02",
+     "ultima": "2026-10-31 19:31",
      "eventos": 1,
      "ejemplo": "vesuvius-eruption-with-1-vei-in-2026"
     },
     "etna-eruption-with-vei": {
      "desde": "2026-10-23 13:08",
-     "ultima": "2026-10-31 13:02",
+     "ultima": "2026-10-31 19:31",
      "eventos": 1,
      "ejemplo": "etna-eruption-with-vei-2-in-2026"
     },
     "hantavirus-pandemic": {
      "desde": "2026-10-23 13:08",
-     "ultima": "2026-10-31 13:02",
+     "ultima": "2026-10-31 19:31",
      "eventos": 1,
      "ejemplo": "hantavirus-pandemic-in-2026"
     },
     "hantavirus-vaccine": {
      "desde": "2026-10-23 13:08",
-     "ultima": "2026-10-31 13:02",
+     "ultima": "2026-10-31 19:31",
      "eventos": 1,
      "ejemplo": "hantavirus-vaccine-in-2026"
     },
     "ai-data-center": {
      "desde": "2026-10-23 13:08",
-     "ultima": "2026-10-31 13:02",
+     "ultima": "2026-10-31 19:31",
      "eventos": 1,
      "ejemplo": "ai-data-center-in-space-by"
     },
     "ebola-pandemic": {
      "desde": "2026-10-23 13:08",
-     "ultima": "2026-10-31 13:02",
+     "ultima": "2026-10-31 19:31",
      "eventos": 1,
      "ejemplo": "ebola-pandemic-in-2026"
     },
     "which-countries-will-have-an-ebola-case": {
      "desde": "2026-10-23 13:08",
-     "ultima": "2026-10-31 13:02",
+     "ultima": "2026-10-31 19:31",
      "eventos": 1,
      "ejemplo": "which-countries-will-have-an-ebola-case-in-2026"
     },
     "blue-origin-new-glenn-launch": {
      "desde": "2026-10-23 13:08",
-     "ultima": "2026-10-31 13:02",
+     "ultima": "2026-10-31 19:31",
      "eventos": 1,
      "ejemplo": "blue-origin-new-glenn-launch-in-2026"
     },
     "will-a-hurricane-make-landfall": {
      "desde": "2026-10-23 13:08",
-     "ultima": "2026-10-31 13:02",
+     "ultima": "2026-10-31 19:31",
      "eventos": 1,
      "ejemplo": "will-a-hurricane-make-landfall-in-hawaii-before-2027-20260721182828397"
     },
     "will": {
      "desde": "2026-10-23 13:08",
-     "ultima": "2026-10-31 13:02",
+     "ultima": "2026-10-31 19:31",
      "eventos": 1,
      "ejemplo": "will-2-or-more-hurricanes-make-landfall-in-the-us-in-2026-20260721164140039"
     },
     "will-there-be-a-super-el-nino-this-winter": {
      "desde": "2026-10-23 13:08",
-     "ultima": "2026-10-31 13:02",
+     "ultima": "2026-10-31 19:31",
      "eventos": 1,
      "ejemplo": "will-there-be-a-super-el-nino-this-winter-202627-20260721221614682"
     },
     "will-california-experience-a": {
      "desde": "2026-10-23 13:08",
-     "ultima": "2026-10-31 13:02",
+     "ultima": "2026-10-31 19:31",
      "eventos": 1,
      "ejemplo": "will-california-experience-a-7pt0-or-above-magnitude-earthquake-in-2026-20260723232901145"
     },
     "how-many-hurricanes-will-form-during-the-atlantic-hurricane-season": {
      "desde": "2026-10-23 13:08",
-     "ultima": "2026-10-31 13:02",
+     "ultima": "2026-10-31 19:31",
      "eventos": 1,
      "ejemplo": "how-many-hurricanes-will-form-during-the-atlantic-hurricane-season-in-2026-20260728201848339"
     },
     "how-many-tropical-cyclones-will-make-landfall": {
      "desde": "2026-10-23 13:08",
-     "ultima": "2026-10-31 13:02",
+     "ultima": "2026-10-31 19:31",
      "eventos": 1,
      "ejemplo": "how-many-tropical-cyclones-will-make-landfall-in-china-during-2026-20260805184236864"
     },
     "will-hawaii-reach-coral-bleaching-alert-level": {
      "desde": "2026-10-23 13:08",
-     "ultima": "2026-10-31 13:02",
+     "ultima": "2026-10-31 19:31",
      "eventos": 1,
      "ejemplo": "will-hawaii-reach-coral-bleaching-alert-level-1-by-december-31-2026-20260807170348514"
     },
     "when-will-the-danube-river-return-to-normal-levels": {
      "desde": "2026-10-23 13:08",
-     "ultima": "2026-10-31 13:02",
+     "ultima": "2026-10-31 19:31",
      "eventos": 1,
      "ejemplo": "when-will-the-danube-river-return-to-normal-levels-20260807212534133"
     },
     "what-will-the-peak-roni-be": {
      "desde": "2026-10-23 13:08",
-     "ultima": "2026-10-31 13:02",
+     "ultima": "2026-10-31 19:31",
      "eventos": 1,
      "ejemplo": "what-will-the-peak-roni-be-for-the-2026-27-el-nino-1786975502957"
     },
     "how-low-will-lake-mead-drop": {
      "desde": "2026-10-23 13:08",
-     "ultima": "2026-10-31 13:02",
+     "ultima": "2026-10-31 19:31",
      "eventos": 1,
      "ejemplo": "how-low-will-lake-mead-drop-1786981653904"
     },
     "how-low-will-lake-powell-drop": {
      "desde": "2026-10-23 13:08",
-     "ultima": "2026-10-31 13:02",
+     "ultima": "2026-10-31 19:31",
      "eventos": 1,
      "ejemplo": "how-low-will-lake-powell-drop-1786980780361"
     },
     "highest-earthquake-magnitude": {
      "desde": "2026-10-23 13:08",
-     "ultima": "2026-10-31 13:02",
+     "ultima": "2026-10-31 19:31",
      "eventos": 1,
      "ejemplo": "highest-earthquake-magnitude-in-2026"
     },
     "where-will-a-hurricane-make-landfall": {
      "desde": "2026-10-23 13:08",
-     "ultima": "2026-10-31 13:02",
+     "ultima": "2026-10-31 19:31",
      "eventos": 1,
      "ejemplo": "where-will-a-hurricane-make-landfall-in-the-us-during-the-2026-hurricane-season"
     },
     "will-the-us-break-its-record": {
      "desde": "2026-10-23 13:08",
-     "ultima": "2026-10-31 13:02",
+     "ultima": "2026-10-31 19:31",
      "eventos": 1,
      "ejemplo": "will-the-us-break-its-record-for-billion-dollar-weather-and-climate-disasters-in-2026-1787153419673"
     },
     "will-the-climate-clocks": {
      "desde": "2026-10-23 13:08",
-     "ultima": "2026-10-31 13:02",
+     "ultima": "2026-10-31 19:31",
      "eventos": 1,
      "ejemplo": "will-the-climate-clocks-1pt5c-deadline-change-byptptpt"
     },
     "west-nile-neuroinvasive-cases-nyc": {
      "desde": "2026-10-23 13:08",
-     "ultima": "2026-10-31 13:02",
+     "ultima": "2026-10-31 19:31",
      "eventos": 1,
      "ejemplo": "west-nile-neuroinvasive-cases-nyc-2026-20260820104404"
     },
     "us-tornadoes": {
      "desde": "2026-10-23 13:08",
-     "ultima": "2026-10-31 13:02",
+     "ultima": "2026-10-31 19:31",
      "eventos": 3,
      "ejemplo": "us-tornadoes-september-2026"
     },
     "first-snow": {
      "desde": "2026-10-23 13:08",
-     "ultima": "2026-10-31 13:02",
+     "ultima": "2026-10-31 19:31",
      "eventos": 1,
      "ejemplo": "first-snow-2026"
     },
     "when-will-the-rhine-river-return-to-normal-levels": {
      "desde": "2026-10-23 13:08",
-     "ultima": "2026-10-31 13:02",
+     "ultima": "2026-10-31 19:31",
      "eventos": 2,
      "ejemplo": "when-will-the-rhine-river-return-to-normal-levels-20260906"
     },
     "peak-severe-drought": {
      "desde": "2026-10-23 13:08",
-     "ultima": "2026-10-31 13:02",
+     "ultima": "2026-10-31 19:31",
      "eventos": 1,
      "ejemplo": "peak-severe-drought-in-minas-gerais-during-the-coffee-growing-season"
     },
     "will-the-tfff-reach": {
      "desde": "2026-10-23 13:08",
-     "ultima": "2026-10-31 13:02",
+     "ultima": "2026-10-31 19:31",
      "eventos": 1,
      "ejemplo": "will-the-tfff-reach-10-billion-in-2026"
     },
     "will-the": {
      "desde": "2026-10-23 13:08",
-     "ultima": "2026-10-31 13:02",
+     "ultima": "2026-10-31 19:31",
      "eventos": 1,
      "ejemplo": "will-the-2026-27-el-nino-be-the-strongest-on-record"
     },
     "how-many-chinook-will-pass-bonneville-dam-by": {
      "desde": "2026-10-23 13:08",
-     "ultima": "2026-10-31 13:02",
+     "ultima": "2026-10-31 19:31",
      "eventos": 1,
      "ejemplo": "how-many-chinook-will-pass-bonneville-dam-by-october-31-2026"
     },
     "lowest-mississippi-level-at-st-louis-by": {
      "desde": "2026-10-23 13:08",
-     "ultima": "2026-10-31 13:02",
+     "ultima": "2026-10-31 19:31",
      "eventos": 1,
      "ejemplo": "lowest-mississippi-level-at-st-louis-by-november-30"
     },
     "lowest-great-salt-lake-elevation": {
      "desde": "2026-10-23 13:08",
-     "ultima": "2026-10-31 13:02",
+     "ultima": "2026-10-31 19:31",
      "eventos": 1,
      "ejemplo": "lowest-great-salt-lake-elevation-in-2026"
     },
     "lowest-mississippi-level-at-baton-rouge-by": {
      "desde": "2026-10-23 13:08",
-     "ultima": "2026-10-31 13:02",
+     "ultima": "2026-10-31 19:31",
      "eventos": 1,
      "ejemplo": "lowest-mississippi-level-at-baton-rouge-by-november-30"
     },
     "all-time-pacific-category": {
      "desde": "2026-10-23 13:08",
-     "ultima": "2026-10-31 13:02",
+     "ultima": "2026-10-31 19:31",
      "eventos": 1,
      "ejemplo": "all-time-pacific-category-5-hurricane-record-broken-in-2026"
     },
     "precipitation": {
      "desde": "2026-10-23 13:08",
-     "ultima": "2026-10-31 13:02",
+     "ultima": "2026-10-31 19:31",
      "eventos": 10,
      "ejemplo": "precipitation-in-london-in-october-20260925t160000000z"
     },
     "peak-wind-gust": {
      "desde": "2026-10-23 13:08",
-     "ultima": "2026-10-31 13:02",
+     "ultima": "2026-10-31 19:31",
      "eventos": 2,
      "ejemplo": "peak-wind-gust-in-the-worlds-windiest-city-in-october-20260928t160000000z"
     },
     "highest-mtpt-washington-wind-speed": {
      "desde": "2026-10-23 13:08",
-     "ultima": "2026-10-31 13:02",
+     "ultima": "2026-10-31 19:31",
      "eventos": 2,
      "ejemplo": "highest-mtpt-washington-wind-speed-in-october-20260928t160000000z"
     },
     "october": {
      "desde": "2026-10-23 13:08",
-     "ultima": "2026-10-31 13:02",
+     "ultima": "2026-10-31 19:31",
      "eventos": 2,
      "ejemplo": "october-2026-temperature-increase-c-20260928t160000000z"
     },
     "how-strong-of-an-earthquake-will-occur-worldwide-by": {
      "desde": "2026-10-23 13:08",
-     "ultima": "2026-10-31 13:02",
+     "ultima": "2026-10-31 19:31",
      "eventos": 2,
      "ejemplo": "how-strong-of-an-earthquake-will-occur-worldwide-by-october-31-20260928t160000000z"
     },
     "where-will-a": {
      "desde": "2026-10-23 13:08",
-     "ultima": "2026-10-31 13:02",
+     "ultima": "2026-10-31 19:31",
      "eventos": 2,
      "ejemplo": "where-will-a-6pt0-magnitude-earthquake-occur-by-end-of-october-20260928t160000000z"
     },
     "highest-sea-level": {
      "desde": "2026-10-23 13:08",
-     "ultima": "2026-10-31 13:02",
+     "ultima": "2026-10-31 19:31",
      "eventos": 1,
      "ejemplo": "highest-sea-level-in-san-diego-this-winter"
     },
     "melbournes-wettest-month-of": {
      "desde": "2026-10-23 13:08",
-     "ultima": "2026-10-31 13:02",
+     "ultima": "2026-10-31 19:31",
      "eventos": 1,
      "ejemplo": "melbournes-wettest-month-of-2026"
     },
     "california-winter": {
      "desde": "2026-10-23 13:08",
-     "ultima": "2026-10-31 13:02",
+     "ultima": "2026-10-31 19:31",
      "eventos": 1,
      "ejemplo": "california-winter-2026-27-wetter-or-drier"
     },
@@ -1886,13 +1886,13 @@
     },
     "biggest-earthquake": {
      "desde": "2026-10-23 13:08",
-     "ultima": "2026-10-31 13:02",
+     "ultima": "2026-10-31 19:31",
      "eventos": 4,
      "ejemplo": "biggest-earthquake-2026-10-30"
     },
     "where-will-it-rain": {
      "desde": "2026-10-23 13:08",
-     "ultima": "2026-10-31 13:02",
+     "ultima": "2026-10-31 19:31",
      "eventos": 3,
      "ejemplo": "where-will-it-rain-on-october-30-2026"
     },
@@ -1904,13 +1904,13 @@
     },
     "state-d4-drought": {
      "desde": "2026-10-23 13:08",
-     "ultima": "2026-10-31 13:02",
+     "ultima": "2026-10-31 19:31",
      "eventos": 1,
      "ejemplo": "state-d4-drought-2026-11-03"
     },
     "what-category-will-vance-reach": {
      "desde": "2026-10-23 13:08",
-     "ultima": "2026-10-31 13:02",
+     "ultima": "2026-10-31 19:31",
      "eventos": 1,
      "ejemplo": "what-category-will-vance-reach"
     },
@@ -1922,13 +1922,13 @@
     },
     "which-cities-face-tornado-risk": {
      "desde": "2026-10-23 13:08",
-     "ultima": "2026-10-31 13:02",
+     "ultima": "2026-10-31 19:31",
      "eventos": 1,
      "ejemplo": "which-cities-face-tornado-risk-on-october-31-2026"
     },
     "what-intensity-will": {
      "desde": "2026-10-26 20:44",
-     "ultima": "2026-10-31 13:02",
+     "ultima": "2026-10-31 19:31",
      "eventos": 1,
      "ejemplo": "what-intensity-will-in-fa-reach"
     },
@@ -1940,12 +1940,12 @@
     },
     "november": {
      "desde": "2026-10-30 18:11",
-     "ultima": "2026-10-31 13:02",
+     "ultima": "2026-10-31 19:31",
      "eventos": 2,
      "ejemplo": "november-2026-1st-2nd-or-3rd-hottest-on-record"
     }
    }
   }
  },
- "actualizado": "2026-10-31 13:02"
+ "actualizado": "2026-10-31 19:31"
 }
