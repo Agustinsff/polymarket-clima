@@ -3768,3 +3768,208 @@
 19:39:04Z 708 cajas guardadas
 19:39:39Z 36 llenados simulados (1 cajas sin trades)
 19:40:21Z resueltos 118 mercados
+19:40:44Z 1371 cajas de clima y 48 de cripto
+19:40:52Z 707 cajas guardadas
+19:41:27Z 1 llenados simulados (8 cajas sin trades)
+19:45:45Z 1372 cajas de clima y 48 de cripto
+19:45:51Z 710 cajas guardadas
+19:46:29Z 43 llenados simulados (8 cajas sin trades)
+19:50:45Z 1373 cajas de clima y 48 de cripto
+19:50:52Z 706 cajas guardadas
+19:51:27Z 36 llenados simulados (8 cajas sin trades)
+19:55:44Z 1369 cajas de clima y 49 de cripto
+19:55:51Z 695 cajas guardadas
+19:56:27Z 37 llenados simulados (19 cajas sin trades)
+20:00:45Z 1364 cajas de clima y 45 de cripto
+20:00:52Z 697 cajas guardadas
+20:01:29Z 126 llenados simulados (5 cajas sin trades)
+20:05:45Z 1360 cajas de clima y 46 de cripto
+20:05:53Z 689 cajas guardadas
+20:06:28Z 71 llenados simulados (1 cajas sin trades)
+20:10:43Z 1357 cajas de clima y 46 de cripto
+20:10:50Z 686 cajas guardadas
+20:11:28Z 29 llenados simulados (16 cajas sin trades)
+20:15:44Z 1353 cajas de clima y 45 de cripto
+20:15:50Z 690 cajas guardadas
+20:16:26Z 61 llenados simulados (10 cajas sin trades)
+20:20:45Z 1352 cajas de clima y 44 de cripto
+20:20:52Z 685 cajas guardadas
+20:21:27Z 55 llenados simulados (2 cajas sin trades)
+20:25:44Z 1350 cajas de clima y 43 de cripto
+20:25:52Z 683 cajas guardadas
+20:26:25Z 4 llenados simulados (25 cajas sin trades)
+20:30:45Z 1350 cajas de clima y 44 de cripto
+20:30:52Z 683 cajas guardadas
+20:31:25Z 22 llenados simulados (11 cajas sin trades)
+20:35:43Z 1349 cajas de clima y 44 de cripto
+20:35:51Z 679 cajas guardadas
+20:36:27Z 24 llenados simulados (16 cajas sin trades)
+20:40:44Z 1346 cajas de clima y 44 de cripto
+20:40:52Z 681 cajas guardadas
+20:41:28Z 34 llenados simulados (8 cajas sin trades)
+20:45:44Z 1341 cajas de clima y 45 de cripto
+20:45:51Z 683 cajas guardadas
+20:46:23Z 2 llenados simulados (24 cajas sin trades)
+20:50:44Z 1340 cajas de clima y 44 de cripto
+20:50:52Z 673 cajas guardadas
+20:51:26Z 25 llenados simulados (7 cajas sin trades)
+20:55:45Z 1342 cajas de clima y 43 de cripto
+20:55:52Z 668 cajas guardadas
+20:56:18Z 11 llenados simulados (29 cajas sin trades)
+21:00:43Z 1336 cajas de clima y 43 de cripto
+21:00:51Z 666 cajas guardadas
+21:01:24Z 42 llenados simulados (7 cajas sin trades)
+21:05:45Z 1329 cajas de clima y 43 de cripto
+21:05:52Z 669 cajas guardadas
+21:06:26Z 78 llenados simulados (1 cajas sin trades)
+21:10:43Z 1321 cajas de clima y 43 de cripto
+21:10:50Z 678 cajas guardadas
+21:11:17Z 9 llenados simulados (30 cajas sin trades)
+21:15:44Z 1320 cajas de clima y 46 de cripto
+21:15:52Z 678 cajas guardadas
+21:16:25Z 171 llenados simulados (7 cajas sin trades)
+21:20:44Z 1317 cajas de clima y 46 de cripto
+21:20:51Z 686 cajas guardadas
+21:21:21Z 8 llenados simulados (27 cajas sin trades)
+21:25:44Z 1311 cajas de clima y 46 de cripto
+21:25:51Z 684 cajas guardadas
+21:26:26Z 23 llenados simulados (7 cajas sin trades)
+21:30:45Z 1304 cajas de clima y 46 de cripto
+21:30:52Z 684 cajas guardadas
+21:31:25Z 10 llenados simulados (18 cajas sin trades)
+21:35:44Z 1307 cajas de clima y 45 de cripto
+21:35:51Z 681 cajas guardadas
+21:36:22Z 11 llenados simulados (16 cajas sin trades)
+21:40:46Z 1309 cajas de clima y 44 de cripto
+21:40:53Z 689 cajas guardadas
+21:41:25Z 50 llenados simulados (8 cajas sin trades)
+21:45:44Z 1296 cajas de clima y 44 de cripto
+21:45:50Z 681 cajas guardadas
+21:46:22Z 8 llenados simulados (29 cajas sin trades)
+21:50:45Z 1309 cajas de clima y 44 de cripto
+21:50:50Z 691 cajas guardadas
+21:51:24Z 64 llenados simulados (7 cajas sin trades)
+21:55:45Z 1300 cajas de clima y 45 de cripto
+21:55:51Z 687 cajas guardadas
+21:56:25Z 39 llenados simulados (13 cajas sin trades)
+22:00:44Z 1297 cajas de clima y 45 de cripto
+22:00:52Z 685 cajas guardadas
+22:01:26Z 51 llenados simulados (9 cajas sin trades)
+22:05:44Z 1289 cajas de clima y 44 de cripto
+22:05:51Z 678 cajas guardadas
+22:06:22Z 12 llenados simulados (26 cajas sin trades)
+22:10:45Z 1290 cajas de clima y 43 de cripto
+22:10:52Z 686 cajas guardadas
+22:11:25Z 146 llenados simulados (6 cajas sin trades)
+22:15:43Z 1288 cajas de clima y 43 de cripto
+22:15:49Z 681 cajas guardadas
+22:16:21Z 10 llenados simulados (29 cajas sin trades)
+22:20:45Z 1281 cajas de clima y 42 de cripto
+22:20:51Z 686 cajas guardadas
+22:21:25Z 44 llenados simulados (6 cajas sin trades)
+22:25:43Z 1277 cajas de clima y 42 de cripto
+22:25:50Z 680 cajas guardadas
+22:26:23Z 14 llenados simulados (24 cajas sin trades)
+22:30:44Z 1267 cajas de clima y 42 de cripto
+22:30:50Z 676 cajas guardadas
+22:31:26Z 43 llenados simulados (8 cajas sin trades)
+22:35:43Z 1267 cajas de clima y 42 de cripto
+22:35:50Z 668 cajas guardadas
+22:36:25Z 35 llenados simulados (16 cajas sin trades)
+22:40:44Z 1259 cajas de clima y 41 de cripto
+22:40:50Z 668 cajas guardadas
+22:41:23Z 25 llenados simulados (18 cajas sin trades)
+22:45:44Z 1255 cajas de clima y 42 de cripto
+22:45:49Z 667 cajas guardadas
+22:46:24Z 10 llenados simulados (11 cajas sin trades)
+22:50:44Z 1252 cajas de clima y 41 de cripto
+22:50:51Z 662 cajas guardadas
+22:51:25Z 51 llenados simulados (8 cajas sin trades)
+22:55:44Z 1252 cajas de clima y 41 de cripto
+22:55:49Z 661 cajas guardadas
+22:56:20Z 3 llenados simulados (14 cajas sin trades)
+23:00:44Z 1247 cajas de clima y 41 de cripto
+23:00:52Z 659 cajas guardadas
+23:01:24Z 26 llenados simulados (8 cajas sin trades)
+23:05:43Z 1245 cajas de clima y 41 de cripto
+23:05:50Z 655 cajas guardadas
+23:06:24Z 21 llenados simulados (23 cajas sin trades)
+23:10:44Z 1243 cajas de clima y 41 de cripto
+23:10:50Z 655 cajas guardadas
+23:11:25Z 68 llenados simulados (9 cajas sin trades)
+23:15:44Z 1238 cajas de clima y 42 de cripto
+23:15:52Z 665 cajas guardadas
+23:16:24Z 79 llenados simulados (0 cajas sin trades)
+23:20:43Z 1232 cajas de clima y 42 de cripto
+23:20:50Z 656 cajas guardadas
+23:21:26Z 14 llenados simulados (17 cajas sin trades)
+23:25:45Z 1224 cajas de clima y 41 de cripto
+23:25:51Z 659 cajas guardadas
+23:26:25Z 48 llenados simulados (8 cajas sin trades)
+23:30:43Z 1225 cajas de clima y 41 de cripto
+23:30:50Z 664 cajas guardadas
+23:31:23Z 9 llenados simulados (16 cajas sin trades)
+23:35:45Z 1221 cajas de clima y 41 de cripto
+23:35:51Z 664 cajas guardadas
+23:36:26Z 44 llenados simulados (8 cajas sin trades)
+23:40:45Z 1215 cajas de clima y 41 de cripto
+23:40:52Z 665 cajas guardadas
+23:41:25Z 11 llenados simulados (16 cajas sin trades)
+23:45:45Z 1215 cajas de clima y 41 de cripto
+23:45:52Z 668 cajas guardadas
+23:46:25Z 40 llenados simulados (8 cajas sin trades)
+23:50:46Z 1210 cajas de clima y 42 de cripto
+23:50:53Z 661 cajas guardadas
+23:51:26Z 21 llenados simulados (0 cajas sin trades)
+23:55:46Z 1209 cajas de clima y 42 de cripto
+23:55:52Z 660 cajas guardadas
+23:56:24Z 6 llenados simulados (16 cajas sin trades)
+00:00:46Z 1206 cajas de clima y 40 de cripto
+00:00:52Z 654 cajas guardadas
+00:01:26Z 44 llenados simulados (6 cajas sin trades)
+00:05:44Z 1204 cajas de clima y 40 de cripto
+00:05:50Z 649 cajas guardadas
+00:06:24Z 40 llenados simulados (18 cajas sin trades)
+00:10:45Z 1204 cajas de clima y 40 de cripto
+00:10:50Z 655 cajas guardadas
+00:11:25Z 43 llenados simulados (8 cajas sin trades)
+00:15:44Z 1201 cajas de clima y 40 de cripto
+00:15:49Z 653 cajas guardadas
+00:16:21Z 12 llenados simulados (13 cajas sin trades)
+00:20:45Z 1200 cajas de clima y 40 de cripto
+00:20:51Z 654 cajas guardadas
+00:21:23Z 53 llenados simulados (8 cajas sin trades)
+00:25:43Z 1202 cajas de clima y 40 de cripto
+00:25:50Z 655 cajas guardadas
+00:26:25Z 39 llenados simulados (18 cajas sin trades)
+00:30:44Z 1204 cajas de clima y 39 de cripto
+00:30:50Z 657 cajas guardadas
+00:31:23Z 28 llenados simulados (8 cajas sin trades)
+00:35:44Z 1202 cajas de clima y 39 de cripto
+00:35:50Z 652 cajas guardadas
+00:36:25Z 16 llenados simulados (17 cajas sin trades)
+00:40:44Z 1196 cajas de clima y 40 de cripto
+00:40:49Z 651 cajas guardadas
+00:41:24Z 32 llenados simulados (12 cajas sin trades)
+00:45:43Z 1196 cajas de clima y 40 de cripto
+00:45:49Z 654 cajas guardadas
+00:46:20Z 11 llenados simulados (1 cajas sin trades)
+00:50:45Z 1199 cajas de clima y 40 de cripto
+00:50:50Z 654 cajas guardadas
+00:51:23Z 27 llenados simulados (8 cajas sin trades)
+00:55:44Z 1197 cajas de clima y 40 de cripto
+00:55:50Z 654 cajas guardadas
+00:56:24Z 17 llenados simulados (17 cajas sin trades)
+01:00:44Z 1199 cajas de clima y 40 de cripto
+01:00:51Z 651 cajas guardadas
+01:01:25Z 57 llenados simulados (8 cajas sin trades)
+01:05:44Z 1197 cajas de clima y 40 de cripto
+01:05:50Z 653 cajas guardadas
+01:06:30Z 31 llenados simulados (17 cajas sin trades)
+01:10:44Z 1197 cajas de clima y 37 de cripto
+01:10:50Z 652 cajas guardadas
+01:11:26Z 88 llenados simulados (9 cajas sin trades)
+01:15:44Z 1193 cajas de clima y 37 de cripto
+01:15:49Z 649 cajas guardadas
+01:16:24Z 26 llenados simulados (21 cajas sin trades)
+01:17:16Z resueltos 154 mercados
