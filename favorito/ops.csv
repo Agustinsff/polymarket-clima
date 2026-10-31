@@ -34,3 +34,4 @@ momento_utc;activo;evento;condition_id;min_al_cierre;lado;precio;acciones;tasa_c
 2026-10-31 16:53:12;BTC;bitcoin-up-or-down-october-31-2026-12pm-et;0xe73e09bd509393731e164e20340399237f9e7f0314610599b769c9c2d18cccf6;6.8;Down;0.71;10;0.07
 2026-10-31 19:53:38;BTC;bitcoin-up-or-down-october-31-2026-3pm-et;0x75c4df4ba74a97f6a94e25cc56c12f814f1372d3c060a75bb15cae136523bac7;6.4;Down;0.88;10;0.07
 2026-10-31 20:53:31;BTC;bitcoin-up-or-down-october-31-2026-4pm-et;0x592b701c7c3c966f70685bfcb20f6e3207b06696bdc0079b26dad2fcd298938e;6.5;Down;0.84;10;0.07
+2026-10-31 21:53:03;BTC;bitcoin-up-or-down-october-31-2026-5pm-et;0x3d8d92b13df17eb5de8222a342e11e2574411ce5952d5b20c5a53db0bc173416;6.9;Up;0.77;10;0.07
