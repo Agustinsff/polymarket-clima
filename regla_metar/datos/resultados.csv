@@ -7842,3 +7842,58 @@ highest|atlanta;2026-10-30;KATL;highest-temperature-in-atlanta-on-october-30-202
 highest|atlanta;2026-10-30;KATL;highest-temperature-in-atlanta-on-october-30-2026;aviationweather;84-85°F;0
 highest|atlanta;2026-10-30;KATL;highest-temperature-in-atlanta-on-october-30-2026;aviationweather;86-87°F;0
 highest|atlanta;2026-10-30;KATL;highest-temperature-in-atlanta-on-october-30-2026;aviationweather;88°F or higher;0
+highest|miami;2026-10-30;KMIA;highest-temperature-in-miami-on-october-30-2026;aviationweather;75°F or below;0
+highest|miami;2026-10-30;KMIA;highest-temperature-in-miami-on-october-30-2026;aviationweather;76-77°F;0
+highest|miami;2026-10-30;KMIA;highest-temperature-in-miami-on-october-30-2026;aviationweather;78-79°F;0
+highest|miami;2026-10-30;KMIA;highest-temperature-in-miami-on-october-30-2026;aviationweather;80-81°F;0
+highest|miami;2026-10-30;KMIA;highest-temperature-in-miami-on-october-30-2026;aviationweather;82-83°F;0
+highest|miami;2026-10-30;KMIA;highest-temperature-in-miami-on-october-30-2026;aviationweather;84-85°F;0
+highest|miami;2026-10-30;KMIA;highest-temperature-in-miami-on-october-30-2026;aviationweather;86-87°F;1
+highest|miami;2026-10-30;KMIA;highest-temperature-in-miami-on-october-30-2026;aviationweather;88-89°F;0
+highest|miami;2026-10-30;KMIA;highest-temperature-in-miami-on-october-30-2026;aviationweather;90-91°F;0
+highest|miami;2026-10-30;KMIA;highest-temperature-in-miami-on-october-30-2026;aviationweather;92-93°F;0
+highest|miami;2026-10-30;KMIA;highest-temperature-in-miami-on-october-30-2026;aviationweather;94°F or higher;0
+highest|panama-city;2026-10-30;MPMG;highest-temperature-in-panama-city-on-october-30-2026;aviationweather;24°C or below;0
+highest|panama-city;2026-10-30;MPMG;highest-temperature-in-panama-city-on-october-30-2026;aviationweather;25°C;0
+highest|panama-city;2026-10-30;MPMG;highest-temperature-in-panama-city-on-october-30-2026;aviationweather;26°C;0
+highest|panama-city;2026-10-30;MPMG;highest-temperature-in-panama-city-on-october-30-2026;aviationweather;27°C;0
+highest|panama-city;2026-10-30;MPMG;highest-temperature-in-panama-city-on-october-30-2026;aviationweather;28°C;0
+highest|panama-city;2026-10-30;MPMG;highest-temperature-in-panama-city-on-october-30-2026;aviationweather;29°C;0
+highest|panama-city;2026-10-30;MPMG;highest-temperature-in-panama-city-on-october-30-2026;aviationweather;30°C;1
+highest|panama-city;2026-10-30;MPMG;highest-temperature-in-panama-city-on-october-30-2026;aviationweather;31°C;0
+highest|panama-city;2026-10-30;MPMG;highest-temperature-in-panama-city-on-october-30-2026;aviationweather;32°C;0
+highest|panama-city;2026-10-30;MPMG;highest-temperature-in-panama-city-on-october-30-2026;aviationweather;33°C;0
+highest|panama-city;2026-10-30;MPMG;highest-temperature-in-panama-city-on-october-30-2026;aviationweather;34°C or higher;0
+lowest|nyc;2026-10-30;KLGA;lowest-temperature-in-nyc-on-october-30-2026;aviationweather;47°F or below;0
+lowest|nyc;2026-10-30;KLGA;lowest-temperature-in-nyc-on-october-30-2026;aviationweather;48-49°F;0
+lowest|nyc;2026-10-30;KLGA;lowest-temperature-in-nyc-on-october-30-2026;aviationweather;50-51°F;0
+lowest|nyc;2026-10-30;KLGA;lowest-temperature-in-nyc-on-october-30-2026;aviationweather;52-53°F;0
+lowest|nyc;2026-10-30;KLGA;lowest-temperature-in-nyc-on-october-30-2026;aviationweather;54-55°F;1
+lowest|nyc;2026-10-30;KLGA;lowest-temperature-in-nyc-on-october-30-2026;aviationweather;56-57°F;0
+lowest|nyc;2026-10-30;KLGA;lowest-temperature-in-nyc-on-october-30-2026;aviationweather;58-59°F;0
+lowest|nyc;2026-10-30;KLGA;lowest-temperature-in-nyc-on-october-30-2026;aviationweather;60-61°F;0
+lowest|nyc;2026-10-30;KLGA;lowest-temperature-in-nyc-on-october-30-2026;aviationweather;62-63°F;0
+lowest|nyc;2026-10-30;KLGA;lowest-temperature-in-nyc-on-october-30-2026;aviationweather;64-65°F;0
+lowest|nyc;2026-10-30;KLGA;lowest-temperature-in-nyc-on-october-30-2026;aviationweather;66°F or higher;0
+lowest|atlanta;2026-10-30;KATL;lowest-temperature-in-atlanta-on-october-30-2026;aviationweather;47°F or below;0
+lowest|atlanta;2026-10-30;KATL;lowest-temperature-in-atlanta-on-october-30-2026;aviationweather;48-49°F;0
+lowest|atlanta;2026-10-30;KATL;lowest-temperature-in-atlanta-on-october-30-2026;aviationweather;50-51°F;0
+lowest|atlanta;2026-10-30;KATL;lowest-temperature-in-atlanta-on-october-30-2026;aviationweather;52-53°F;0
+lowest|atlanta;2026-10-30;KATL;lowest-temperature-in-atlanta-on-october-30-2026;aviationweather;54-55°F;0
+lowest|atlanta;2026-10-30;KATL;lowest-temperature-in-atlanta-on-october-30-2026;aviationweather;56-57°F;1
+lowest|atlanta;2026-10-30;KATL;lowest-temperature-in-atlanta-on-october-30-2026;aviationweather;58-59°F;0
+lowest|atlanta;2026-10-30;KATL;lowest-temperature-in-atlanta-on-october-30-2026;aviationweather;60-61°F;0
+lowest|atlanta;2026-10-30;KATL;lowest-temperature-in-atlanta-on-october-30-2026;aviationweather;62-63°F;0
+lowest|atlanta;2026-10-30;KATL;lowest-temperature-in-atlanta-on-october-30-2026;aviationweather;64-65°F;0
+lowest|atlanta;2026-10-30;KATL;lowest-temperature-in-atlanta-on-october-30-2026;aviationweather;66°F or higher;0
+lowest|miami;2026-10-30;KMIA;lowest-temperature-in-miami-on-october-30-2026;aviationweather;67°F or below;0
+lowest|miami;2026-10-30;KMIA;lowest-temperature-in-miami-on-october-30-2026;aviationweather;68-69°F;0
+lowest|miami;2026-10-30;KMIA;lowest-temperature-in-miami-on-october-30-2026;aviationweather;70-71°F;0
+lowest|miami;2026-10-30;KMIA;lowest-temperature-in-miami-on-october-30-2026;aviationweather;72-73°F;0
+lowest|miami;2026-10-30;KMIA;lowest-temperature-in-miami-on-october-30-2026;aviationweather;74-75°F;0
+lowest|miami;2026-10-30;KMIA;lowest-temperature-in-miami-on-october-30-2026;aviationweather;76-77°F;1
+lowest|miami;2026-10-30;KMIA;lowest-temperature-in-miami-on-october-30-2026;aviationweather;78-79°F;0
+lowest|miami;2026-10-30;KMIA;lowest-temperature-in-miami-on-october-30-2026;aviationweather;80-81°F;0
+lowest|miami;2026-10-30;KMIA;lowest-temperature-in-miami-on-october-30-2026;aviationweather;82-83°F;0
+lowest|miami;2026-10-30;KMIA;lowest-temperature-in-miami-on-october-30-2026;aviationweather;84-85°F;0
+lowest|miami;2026-10-30;KMIA;lowest-temperature-in-miami-on-october-30-2026;aviationweather;86°F or higher;0
