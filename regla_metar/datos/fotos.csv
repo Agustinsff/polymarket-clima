@@ -14244,3 +14244,47 @@ momento_utc;momento;hora_local;serie;fecha;icao;slug;caja;bid;ask;medio;si_10;no
 2026-10-31 00:41;M0;6;highest|lucknow;2026-11-01;VILK;highest-temperature-in-lucknow-on-november-1-2026;29°C;0.09;0.12;0.105;0.125;0.91;0.0
 2026-10-31 00:41;M0;6;highest|lucknow;2026-11-01;VILK;highest-temperature-in-lucknow-on-november-1-2026;30°C;0.005;0.01;0.0075;0.0125;0.995;0.0
 2026-10-31 00:41;M0;6;highest|lucknow;2026-11-01;VILK;highest-temperature-in-lucknow-on-november-1-2026;31°C or higher;0.001;0.01;0.0055;0.01;0.999;0.0
+2026-10-31 01:12;M1;6;lowest|karachi;2026-10-31;OPKC;lowest-temperature-in-karachi-on-october-31-2026;21°C or below;;0.9;;0.9;;0.0
+2026-10-31 01:12;M1;6;lowest|karachi;2026-10-31;OPKC;lowest-temperature-in-karachi-on-october-31-2026;22°C;;0.9;;0.905;;0.0
+2026-10-31 01:12;M1;6;lowest|karachi;2026-10-31;OPKC;lowest-temperature-in-karachi-on-october-31-2026;23°C;;0.96;;0.965;;0.0
+2026-10-31 01:12;M1;6;lowest|karachi;2026-10-31;OPKC;lowest-temperature-in-karachi-on-october-31-2026;24°C;0.12;0.97;0.545;0.9791;0.885;0.0
+2026-10-31 01:12;M1;6;lowest|karachi;2026-10-31;OPKC;lowest-temperature-in-karachi-on-october-31-2026;25°C;;0.001;;0.001;;0.0
+2026-10-31 01:12;M1;6;lowest|karachi;2026-10-31;OPKC;lowest-temperature-in-karachi-on-october-31-2026;26°C;;0.001;;0.001;;0.0
+2026-10-31 01:12;M1;6;lowest|karachi;2026-10-31;OPKC;lowest-temperature-in-karachi-on-october-31-2026;27°C;;0.001;;0.001;;0.0
+2026-10-31 01:12;M1;6;lowest|karachi;2026-10-31;OPKC;lowest-temperature-in-karachi-on-october-31-2026;28°C;;0.001;;0.001;;0.0
+2026-10-31 01:12;M1;6;lowest|karachi;2026-10-31;OPKC;lowest-temperature-in-karachi-on-october-31-2026;29°C;;0.001;;0.001;;0.0
+2026-10-31 01:12;M1;6;lowest|karachi;2026-10-31;OPKC;lowest-temperature-in-karachi-on-october-31-2026;30°C;;0.001;;0.001;;0.0
+2026-10-31 01:12;M1;6;lowest|karachi;2026-10-31;OPKC;lowest-temperature-in-karachi-on-october-31-2026;31°C or higher;;0.001;;0.001;;0.0
+2026-10-31 01:12;M1;6;highest|karachi;2026-10-31;OPKC;highest-temperature-in-karachi-on-october-31-2026;30°C or below;;0.001;;0.001;;0.0
+2026-10-31 01:12;M1;6;highest|karachi;2026-10-31;OPKC;highest-temperature-in-karachi-on-october-31-2026;31°C;;0.001;;0.001;;0.0
+2026-10-31 01:12;M1;6;highest|karachi;2026-10-31;OPKC;highest-temperature-in-karachi-on-october-31-2026;32°C;0.001;0.009;0.005;0.009;;0.0
+2026-10-31 01:12;M1;6;highest|karachi;2026-10-31;OPKC;highest-temperature-in-karachi-on-october-31-2026;33°C;0.003;0.004;0.0035;0.004;0.997;0.0
+2026-10-31 01:12;M1;6;highest|karachi;2026-10-31;OPKC;highest-temperature-in-karachi-on-october-31-2026;34°C;0.021;0.05;0.0355;0.05;0.982;0.0
+2026-10-31 01:12;M1;6;highest|karachi;2026-10-31;OPKC;highest-temperature-in-karachi-on-october-31-2026;35°C;0.35;0.38;0.365;0.38;0.65;0.0
+2026-10-31 01:12;M1;6;highest|karachi;2026-10-31;OPKC;highest-temperature-in-karachi-on-october-31-2026;36°C;0.51;0.59;0.55;0.59;0.49;0.0
+2026-10-31 01:12;M1;6;highest|karachi;2026-10-31;OPKC;highest-temperature-in-karachi-on-october-31-2026;37°C;0.05;0.07;0.06;0.07;0.955;0.0
+2026-10-31 01:12;M1;6;highest|karachi;2026-10-31;OPKC;highest-temperature-in-karachi-on-october-31-2026;38°C;0.003;0.005;0.004;0.005;0.997;0.0
+2026-10-31 01:12;M1;6;highest|karachi;2026-10-31;OPKC;highest-temperature-in-karachi-on-october-31-2026;39°C;0.002;0.012;0.007;0.012;0.998;0.0
+2026-10-31 01:12;M1;6;highest|karachi;2026-10-31;OPKC;highest-temperature-in-karachi-on-october-31-2026;40°C or higher;;0.001;;0.001;;0.0
+2026-10-31 01:12;M0;6;lowest|karachi;2026-11-01;OPKC;lowest-temperature-in-karachi-on-november-1-2026;19°C or below;;0.23;;0.23;;0.0
+2026-10-31 01:12;M0;6;lowest|karachi;2026-11-01;OPKC;lowest-temperature-in-karachi-on-november-1-2026;20°C;;0.66;;0.66;;0.0
+2026-10-31 01:12;M0;6;lowest|karachi;2026-11-01;OPKC;lowest-temperature-in-karachi-on-november-1-2026;21°C;0.07;0.63;0.35;0.635;0.93;0.0
+2026-10-31 01:12;M0;6;lowest|karachi;2026-11-01;OPKC;lowest-temperature-in-karachi-on-november-1-2026;22°C;;0.7;;0.7067;;0.0
+2026-10-31 01:12;M0;6;lowest|karachi;2026-11-01;OPKC;lowest-temperature-in-karachi-on-november-1-2026;23°C;0.03;0.63;0.33;0.635;0.97;0.0
+2026-10-31 01:12;M0;6;lowest|karachi;2026-11-01;OPKC;lowest-temperature-in-karachi-on-november-1-2026;24°C;0.02;0.2;0.11;0.205;0.98;0.0
+2026-10-31 01:12;M0;6;lowest|karachi;2026-11-01;OPKC;lowest-temperature-in-karachi-on-november-1-2026;25°C;;0.66;;0.66;;0.0
+2026-10-31 01:12;M0;6;lowest|karachi;2026-11-01;OPKC;lowest-temperature-in-karachi-on-november-1-2026;26°C;;0.66;;0.66;;0.0
+2026-10-31 01:12;M0;6;lowest|karachi;2026-11-01;OPKC;lowest-temperature-in-karachi-on-november-1-2026;27°C;;0.66;;0.66;;0.0
+2026-10-31 01:12;M0;6;lowest|karachi;2026-11-01;OPKC;lowest-temperature-in-karachi-on-november-1-2026;28°C;;0.17;;0.17;;0.0
+2026-10-31 01:12;M0;6;lowest|karachi;2026-11-01;OPKC;lowest-temperature-in-karachi-on-november-1-2026;29°C or higher;;0.18;;0.18;;0.0
+2026-10-31 01:12;M0;6;highest|karachi;2026-11-01;OPKC;highest-temperature-in-karachi-on-november-1-2026;30°C or below;;0.001;;0.001;;0.0
+2026-10-31 01:12;M0;6;highest|karachi;2026-11-01;OPKC;highest-temperature-in-karachi-on-november-1-2026;31°C;;0.001;;0.001;;0.0
+2026-10-31 01:12;M0;6;highest|karachi;2026-11-01;OPKC;highest-temperature-in-karachi-on-november-1-2026;32°C;0.001;0.002;0.0015;0.002;0.999;0.0
+2026-10-31 01:12;M0;6;highest|karachi;2026-11-01;OPKC;highest-temperature-in-karachi-on-november-1-2026;33°C;0.001;0.005;0.003;0.005;0.999;0.0
+2026-10-31 01:12;M0;6;highest|karachi;2026-11-01;OPKC;highest-temperature-in-karachi-on-november-1-2026;34°C;0.02;0.03;0.025;0.03;0.98;0.0
+2026-10-31 01:12;M0;6;highest|karachi;2026-11-01;OPKC;highest-temperature-in-karachi-on-november-1-2026;35°C;0.41;0.45;0.43;0.45;0.59;0.0
+2026-10-31 01:12;M0;6;highest|karachi;2026-11-01;OPKC;highest-temperature-in-karachi-on-november-1-2026;36°C;0.48;0.5;0.49;0.51;0.52;0.0
+2026-10-31 01:12;M0;6;highest|karachi;2026-11-01;OPKC;highest-temperature-in-karachi-on-november-1-2026;37°C;0.03;0.06;0.045;0.06;0.97;0.0
+2026-10-31 01:12;M0;6;highest|karachi;2026-11-01;OPKC;highest-temperature-in-karachi-on-november-1-2026;38°C;0.004;0.015;0.0095;0.015;0.996;0.0
+2026-10-31 01:12;M0;6;highest|karachi;2026-11-01;OPKC;highest-temperature-in-karachi-on-november-1-2026;39°C;0.001;0.002;0.0015;0.002;0.999;0.0
+2026-10-31 01:12;M0;6;highest|karachi;2026-11-01;OPKC;highest-temperature-in-karachi-on-november-1-2026;40°C or higher;0.001;0.002;0.0015;0.002;0.999;0.0
