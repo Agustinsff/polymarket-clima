@@ -16510,3 +16510,47 @@ momento_utc;momento;hora_local;serie;fecha;icao;slug;caja;bid;ask;medio;si_10;no
 2026-10-31 17:21;M0;6;highest|wellington;2026-11-02;NZWN;highest-temperature-in-wellington-on-november-2-2026;20°C;0.007;0.013;0.01;0.013;0.993;0.0
 2026-10-31 17:21;M0;6;highest|wellington;2026-11-02;NZWN;highest-temperature-in-wellington-on-november-2-2026;21°C;;0.002;;0.002;;0.0
 2026-10-31 17:21;M0;6;highest|wellington;2026-11-02;NZWN;highest-temperature-in-wellington-on-november-2-2026;22°C or higher;;0.001;;0.001;;0.0
+2026-10-31 18:22;M2;12;lowest|denver;2026-10-31;KDEN;lowest-temperature-in-denver-on-october-31-2026;35°F or below;;0.9;;0.9;;0.0
+2026-10-31 18:22;M2;12;lowest|denver;2026-10-31;KDEN;lowest-temperature-in-denver-on-october-31-2026;36-37°F;;0.9;;0.9;;0.0
+2026-10-31 18:22;M2;12;lowest|denver;2026-10-31;KDEN;lowest-temperature-in-denver-on-october-31-2026;38-39°F;;0.9;;0.9;;0.0
+2026-10-31 18:22;M2;12;lowest|denver;2026-10-31;KDEN;lowest-temperature-in-denver-on-october-31-2026;40-41°F;;0.9;;0.9;;0.0
+2026-10-31 18:22;M2;12;lowest|denver;2026-10-31;KDEN;lowest-temperature-in-denver-on-october-31-2026;42-43°F;0.02;;;;0.985;0.0
+2026-10-31 18:22;M2;12;lowest|denver;2026-10-31;KDEN;lowest-temperature-in-denver-on-october-31-2026;44-45°F;0.09;0.99;0.54;0.99;0.91;0.0
+2026-10-31 18:22;M2;12;lowest|denver;2026-10-31;KDEN;lowest-temperature-in-denver-on-october-31-2026;46-47°F;;0.002;;0.002;;0.0
+2026-10-31 18:22;M2;12;lowest|denver;2026-10-31;KDEN;lowest-temperature-in-denver-on-october-31-2026;48-49°F;;0.002;;0.002;;0.0
+2026-10-31 18:22;M2;12;lowest|denver;2026-10-31;KDEN;lowest-temperature-in-denver-on-october-31-2026;50-51°F;;0.002;;0.002;;0.0
+2026-10-31 18:22;M2;12;lowest|denver;2026-10-31;KDEN;lowest-temperature-in-denver-on-october-31-2026;52-53°F;;0.002;;0.002;;0.0
+2026-10-31 18:22;M2;12;lowest|denver;2026-10-31;KDEN;lowest-temperature-in-denver-on-october-31-2026;54°F or higher;;0.002;;0.002;;0.0
+2026-10-31 18:22;M2;12;highest|denver;2026-10-31;KDEN;highest-temperature-in-denver-on-october-31-2026;51°F or below;;0.002;;0.002;;0.0
+2026-10-31 18:22;M2;12;highest|denver;2026-10-31;KDEN;highest-temperature-in-denver-on-october-31-2026;52-53°F;0.002;0.008;0.005;0.008;0.998;0.0
+2026-10-31 18:22;M2;12;highest|denver;2026-10-31;KDEN;highest-temperature-in-denver-on-october-31-2026;54-55°F;0.001;0.007;0.004;0.007;0.999;0.0
+2026-10-31 18:22;M2;12;highest|denver;2026-10-31;KDEN;highest-temperature-in-denver-on-october-31-2026;56-57°F;0.052;0.1;0.076;0.1;0.948;0.0
+2026-10-31 18:22;M2;12;highest|denver;2026-10-31;KDEN;highest-temperature-in-denver-on-october-31-2026;58-59°F;0.35;0.43;0.39;0.43;0.655;0.0
+2026-10-31 18:22;M2;12;highest|denver;2026-10-31;KDEN;highest-temperature-in-denver-on-october-31-2026;60-61°F;0.28;0.35;0.315;0.355;0.72;0.0
+2026-10-31 18:22;M2;12;highest|denver;2026-10-31;KDEN;highest-temperature-in-denver-on-october-31-2026;62-63°F;0.11;0.14;0.125;0.145;0.89;0.0
+2026-10-31 18:22;M2;12;highest|denver;2026-10-31;KDEN;highest-temperature-in-denver-on-october-31-2026;64-65°F;0.024;0.068;0.046;0.068;0.976;0.0
+2026-10-31 18:22;M2;12;highest|denver;2026-10-31;KDEN;highest-temperature-in-denver-on-october-31-2026;66-67°F;0.001;0.002;0.0015;0.002;0.999;0.0
+2026-10-31 18:22;M2;12;highest|denver;2026-10-31;KDEN;highest-temperature-in-denver-on-october-31-2026;68-69°F;0.001;0.002;0.0015;0.002;0.999;0.0
+2026-10-31 18:22;M2;12;highest|denver;2026-10-31;KDEN;highest-temperature-in-denver-on-october-31-2026;70°F or higher;;0.001;;0.001;;0.0
+2026-10-31 18:22;M2;12;lowest|mexico-city;2026-10-31;MMMX;lowest-temperature-in-mexico-city-on-october-31-2026;6°C or below;;0.04;;0.0497;;0.0
+2026-10-31 18:22;M2;12;lowest|mexico-city;2026-10-31;MMMX;lowest-temperature-in-mexico-city-on-october-31-2026;7°C;;0.079;;0.079;;0.0
+2026-10-31 18:22;M2;12;lowest|mexico-city;2026-10-31;MMMX;lowest-temperature-in-mexico-city-on-october-31-2026;8°C;;0.018;;0.0219;;0.0
+2026-10-31 18:22;M2;12;lowest|mexico-city;2026-10-31;MMMX;lowest-temperature-in-mexico-city-on-october-31-2026;9°C;;0.05;;0.05;;0.0
+2026-10-31 18:22;M2;12;lowest|mexico-city;2026-10-31;MMMX;lowest-temperature-in-mexico-city-on-october-31-2026;10°C;;0.8;;0.8;;0.0
+2026-10-31 18:22;M2;12;lowest|mexico-city;2026-10-31;MMMX;lowest-temperature-in-mexico-city-on-october-31-2026;11°C;0.87;;;;0.13;0.0
+2026-10-31 18:22;M2;12;lowest|mexico-city;2026-10-31;MMMX;lowest-temperature-in-mexico-city-on-october-31-2026;12°C;;0.006;;0.006;;0.0
+2026-10-31 18:22;M2;12;lowest|mexico-city;2026-10-31;MMMX;lowest-temperature-in-mexico-city-on-october-31-2026;13°C;;0.001;;0.006;;0.0
+2026-10-31 18:22;M2;12;lowest|mexico-city;2026-10-31;MMMX;lowest-temperature-in-mexico-city-on-october-31-2026;14°C;;0.006;;0.006;;0.0
+2026-10-31 18:22;M2;12;lowest|mexico-city;2026-10-31;MMMX;lowest-temperature-in-mexico-city-on-october-31-2026;15°C;;0.001;;0.0035;;0.0
+2026-10-31 18:22;M2;12;lowest|mexico-city;2026-10-31;MMMX;lowest-temperature-in-mexico-city-on-october-31-2026;16°C or higher;;0.001;;0.001;;0.0
+2026-10-31 18:22;M2;12;highest|mexico-city;2026-10-31;MMMX;highest-temperature-in-mexico-city-on-october-31-2026;18°C or below;;0.001;;0.001;;0.0
+2026-10-31 18:22;M2;12;highest|mexico-city;2026-10-31;MMMX;highest-temperature-in-mexico-city-on-october-31-2026;19°C;;0.001;;0.001;;0.0
+2026-10-31 18:22;M2;12;highest|mexico-city;2026-10-31;MMMX;highest-temperature-in-mexico-city-on-october-31-2026;20°C;;0.001;;0.001;;0.0
+2026-10-31 18:22;M2;12;highest|mexico-city;2026-10-31;MMMX;highest-temperature-in-mexico-city-on-october-31-2026;21°C;;0.001;;0.001;;0.0
+2026-10-31 18:22;M2;12;highest|mexico-city;2026-10-31;MMMX;highest-temperature-in-mexico-city-on-october-31-2026;22°C;;0.001;;0.001;;0.0
+2026-10-31 18:22;M2;12;highest|mexico-city;2026-10-31;MMMX;highest-temperature-in-mexico-city-on-october-31-2026;23°C;;0.001;;0.001;;0.0
+2026-10-31 18:22;M2;12;highest|mexico-city;2026-10-31;MMMX;highest-temperature-in-mexico-city-on-october-31-2026;24°C;0.001;0.004;0.0025;0.004;0.999;0.0
+2026-10-31 18:22;M2;12;highest|mexico-city;2026-10-31;MMMX;highest-temperature-in-mexico-city-on-october-31-2026;25°C;0.116;0.231;0.1735;0.231;0.884;0.0
+2026-10-31 18:22;M2;12;highest|mexico-city;2026-10-31;MMMX;highest-temperature-in-mexico-city-on-october-31-2026;26°C;0.46;0.56;0.51;0.56;0.565;0.0
+2026-10-31 18:22;M2;12;highest|mexico-city;2026-10-31;MMMX;highest-temperature-in-mexico-city-on-october-31-2026;27°C;0.27;0.34;0.305;0.34;0.735;0.0
+2026-10-31 18:22;M2;12;highest|mexico-city;2026-10-31;MMMX;highest-temperature-in-mexico-city-on-october-31-2026;28°C or higher;0.02;0.04;0.03;0.0456;0.98;0.0
