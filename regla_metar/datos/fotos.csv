@@ -19656,3 +19656,135 @@ momento_utc;momento;hora_local;serie;fecha;icao;slug;caja;bid;ask;medio;si_10;no
 2026-11-01 20:09;M2;12;highest|san-francisco;2026-11-01;KSFO;highest-temperature-in-san-francisco-on-november-1-2026;66-67°F;0.05;0.084;0.067;0.0845;0.95;0.05
 2026-11-01 20:09;M2;12;highest|san-francisco;2026-11-01;KSFO;highest-temperature-in-san-francisco-on-november-1-2026;68-69°F;0.006;0.019;0.0125;0.019;0.9945;0.05
 2026-11-01 20:09;M2;12;highest|san-francisco;2026-11-01;KSFO;highest-temperature-in-san-francisco-on-november-1-2026;70°F or higher;;0.002;;0.002;;0.05
+2026-11-01 21:10;M1;6;lowest|seoul;2026-11-02;RKSI;lowest-temperature-in-seoul-on-november-2-2026;4°C or below;0.001;0.005;0.003;0.005;0.999;0.05
+2026-11-01 21:10;M1;6;lowest|seoul;2026-11-02;RKSI;lowest-temperature-in-seoul-on-november-2-2026;5°C;0.001;0.01;0.0055;0.01;0.999;0.05
+2026-11-01 21:10;M1;6;lowest|seoul;2026-11-02;RKSI;lowest-temperature-in-seoul-on-november-2-2026;6°C;0.004;0.396;0.2;0.3965;0.996;0.05
+2026-11-01 21:10;M1;6;lowest|seoul;2026-11-02;RKSI;lowest-temperature-in-seoul-on-november-2-2026;7°C;0.03;0.1;0.065;0.199;0.97;0.05
+2026-11-01 21:10;M1;6;lowest|seoul;2026-11-02;RKSI;lowest-temperature-in-seoul-on-november-2-2026;8°C;0.04;0.68;0.36;0.685;0.96;0.05
+2026-11-01 21:10;M1;6;lowest|seoul;2026-11-02;RKSI;lowest-temperature-in-seoul-on-november-2-2026;9°C;0.13;0.69;0.41;0.695;0.875;0.05
+2026-11-01 21:10;M1;6;lowest|seoul;2026-11-02;RKSI;lowest-temperature-in-seoul-on-november-2-2026;10°C;;0.001;;0.001;;0.05
+2026-11-01 21:10;M1;6;lowest|seoul;2026-11-02;RKSI;lowest-temperature-in-seoul-on-november-2-2026;11°C;;0.001;;0.001;;0.05
+2026-11-01 21:10;M1;6;lowest|seoul;2026-11-02;RKSI;lowest-temperature-in-seoul-on-november-2-2026;12°C;;0.001;;0.001;;0.05
+2026-11-01 21:10;M1;6;lowest|seoul;2026-11-02;RKSI;lowest-temperature-in-seoul-on-november-2-2026;13°C;;0.001;;0.001;;0.05
+2026-11-01 21:10;M1;6;lowest|seoul;2026-11-02;RKSI;lowest-temperature-in-seoul-on-november-2-2026;14°C or higher;;0.001;;0.001;;0.05
+2026-11-01 21:10;M1;6;lowest|tokyo;2026-11-02;RJTT;lowest-temperature-in-tokyo-on-november-2-2026;10°C or below;0.001;0.002;0.0015;0.002;0.999;0.05
+2026-11-01 21:10;M1;6;lowest|tokyo;2026-11-02;RJTT;lowest-temperature-in-tokyo-on-november-2-2026;11°C;0.001;0.002;0.0015;0.002;0.999;0.05
+2026-11-01 21:10;M1;6;lowest|tokyo;2026-11-02;RJTT;lowest-temperature-in-tokyo-on-november-2-2026;12°C;0.001;0.039;0.02;0.039;0.999;0.05
+2026-11-01 21:10;M1;6;lowest|tokyo;2026-11-02;RJTT;lowest-temperature-in-tokyo-on-november-2-2026;13°C;0.02;0.67;0.345;0.675;0.98;0.05
+2026-11-01 21:10;M1;6;lowest|tokyo;2026-11-02;RJTT;lowest-temperature-in-tokyo-on-november-2-2026;14°C;0.04;0.68;0.36;0.685;0.96;0.05
+2026-11-01 21:10;M1;6;lowest|tokyo;2026-11-02;RJTT;lowest-temperature-in-tokyo-on-november-2-2026;15°C;0.19;0.7;0.445;0.9147;0.815;0.05
+2026-11-01 21:10;M1;6;lowest|tokyo;2026-11-02;RJTT;lowest-temperature-in-tokyo-on-november-2-2026;16°C;;0.001;;0.001;;0.05
+2026-11-01 21:10;M1;6;lowest|tokyo;2026-11-02;RJTT;lowest-temperature-in-tokyo-on-november-2-2026;17°C;;0.001;;0.001;;0.05
+2026-11-01 21:10;M1;6;lowest|tokyo;2026-11-02;RJTT;lowest-temperature-in-tokyo-on-november-2-2026;18°C;;0.001;;0.001;;0.05
+2026-11-01 21:10;M1;6;lowest|tokyo;2026-11-02;RJTT;lowest-temperature-in-tokyo-on-november-2-2026;19°C;;0.001;;0.001;;0.05
+2026-11-01 21:10;M1;6;lowest|tokyo;2026-11-02;RJTT;lowest-temperature-in-tokyo-on-november-2-2026;20°C or higher;;0.001;;0.0015;;0.05
+2026-11-01 21:10;M1;6;lowest|busan;2026-11-02;RKPK;lowest-temperature-in-busan-on-november-2-2026;4°C or below;;0.94;;0.94;;0.05
+2026-11-01 21:10;M1;6;lowest|busan;2026-11-02;RKPK;lowest-temperature-in-busan-on-november-2-2026;5°C;0.001;0.05;0.0255;0.05;0.999;0.05
+2026-11-01 21:10;M1;6;lowest|busan;2026-11-02;RKPK;lowest-temperature-in-busan-on-november-2-2026;6°C;0.001;0.05;0.0255;0.1944;0.999;0.05
+2026-11-01 21:10;M1;6;lowest|busan;2026-11-02;RKPK;lowest-temperature-in-busan-on-november-2-2026;7°C;;0.97;;0.97;;0.05
+2026-11-01 21:10;M1;6;lowest|busan;2026-11-02;RKPK;lowest-temperature-in-busan-on-november-2-2026;8°C;;0.97;;0.97;;0.05
+2026-11-01 21:10;M1;6;lowest|busan;2026-11-02;RKPK;lowest-temperature-in-busan-on-november-2-2026;9°C;;0.97;;0.97;;0.05
+2026-11-01 21:10;M1;6;lowest|busan;2026-11-02;RKPK;lowest-temperature-in-busan-on-november-2-2026;10°C;;0.97;;0.97;;0.05
+2026-11-01 21:10;M1;6;lowest|busan;2026-11-02;RKPK;lowest-temperature-in-busan-on-november-2-2026;11°C;0.02;0.96;0.49;0.96;0.98;0.05
+2026-11-01 21:10;M1;6;lowest|busan;2026-11-02;RKPK;lowest-temperature-in-busan-on-november-2-2026;12°C;;0.001;;0.001;;0.05
+2026-11-01 21:10;M1;6;lowest|busan;2026-11-02;RKPK;lowest-temperature-in-busan-on-november-2-2026;13°C;;0.001;;0.0015;;0.05
+2026-11-01 21:10;M1;6;lowest|busan;2026-11-02;RKPK;lowest-temperature-in-busan-on-november-2-2026;14°C or higher;;0.001;;0.0015;;0.05
+2026-11-01 21:10;M1;6;highest|seoul;2026-11-02;RKSI;highest-temperature-in-seoul-on-november-2-2026;9°C or below;;0.001;;0.001;;0.05
+2026-11-01 21:10;M1;6;highest|seoul;2026-11-02;RKSI;highest-temperature-in-seoul-on-november-2-2026;10°C;;0.001;;0.001;;0.05
+2026-11-01 21:10;M1;6;highest|seoul;2026-11-02;RKSI;highest-temperature-in-seoul-on-november-2-2026;11°C;;0.002;;0.002;;0.05
+2026-11-01 21:10;M1;6;highest|seoul;2026-11-02;RKSI;highest-temperature-in-seoul-on-november-2-2026;12°C;0.003;0.012;0.0075;0.012;0.997;0.05
+2026-11-01 21:10;M1;6;highest|seoul;2026-11-02;RKSI;highest-temperature-in-seoul-on-november-2-2026;13°C;0.019;0.028;0.0235;0.028;0.981;0.05
+2026-11-01 21:10;M1;6;highest|seoul;2026-11-02;RKSI;highest-temperature-in-seoul-on-november-2-2026;14°C;0.19;0.24;0.215;0.24;0.81;0.05
+2026-11-01 21:10;M1;6;highest|seoul;2026-11-02;RKSI;highest-temperature-in-seoul-on-november-2-2026;15°C;0.65;0.71;0.68;0.71;0.35;0.05
+2026-11-01 21:10;M1;6;highest|seoul;2026-11-02;RKSI;highest-temperature-in-seoul-on-november-2-2026;16°C;0.08;0.13;0.105;0.13;0.92;0.05
+2026-11-01 21:10;M1;6;highest|seoul;2026-11-02;RKSI;highest-temperature-in-seoul-on-november-2-2026;17°C;0.01;0.011;0.0105;0.011;0.99;0.05
+2026-11-01 21:10;M1;6;highest|seoul;2026-11-02;RKSI;highest-temperature-in-seoul-on-november-2-2026;18°C;;0.001;;0.001;;0.05
+2026-11-01 21:10;M1;6;highest|seoul;2026-11-02;RKSI;highest-temperature-in-seoul-on-november-2-2026;19°C or higher;;0.001;;0.001;;0.05
+2026-11-01 21:10;M1;6;highest|tokyo;2026-11-02;RJTT;highest-temperature-in-tokyo-on-november-2-2026;15°C or below;;0.001;;0.001;;0.05
+2026-11-01 21:10;M1;6;highest|tokyo;2026-11-02;RJTT;highest-temperature-in-tokyo-on-november-2-2026;16°C;;0.001;;0.001;;0.05
+2026-11-01 21:10;M1;6;highest|tokyo;2026-11-02;RJTT;highest-temperature-in-tokyo-on-november-2-2026;17°C;;0.001;;0.001;;0.05
+2026-11-01 21:10;M1;6;highest|tokyo;2026-11-02;RJTT;highest-temperature-in-tokyo-on-november-2-2026;18°C;0.001;0.002;0.0015;0.0025;0.999;0.05
+2026-11-01 21:10;M1;6;highest|tokyo;2026-11-02;RJTT;highest-temperature-in-tokyo-on-november-2-2026;19°C;0.52;0.55;0.535;0.555;0.48;0.05
+2026-11-01 21:10;M1;6;highest|tokyo;2026-11-02;RJTT;highest-temperature-in-tokyo-on-november-2-2026;20°C;0.33;0.37;0.35;0.37;0.67;0.05
+2026-11-01 21:10;M1;6;highest|tokyo;2026-11-02;RJTT;highest-temperature-in-tokyo-on-november-2-2026;21°C;0.094;0.132;0.113;0.1325;0.9065;0.05
+2026-11-01 21:10;M1;6;highest|tokyo;2026-11-02;RJTT;highest-temperature-in-tokyo-on-november-2-2026;22°C;0.012;0.032;0.022;0.032;0.988;0.05
+2026-11-01 21:10;M1;6;highest|tokyo;2026-11-02;RJTT;highest-temperature-in-tokyo-on-november-2-2026;23°C;0.002;0.007;0.0045;0.007;0.998;0.05
+2026-11-01 21:10;M1;6;highest|tokyo;2026-11-02;RJTT;highest-temperature-in-tokyo-on-november-2-2026;24°C;0.001;0.002;0.0015;0.002;0.999;0.05
+2026-11-01 21:10;M1;6;highest|tokyo;2026-11-02;RJTT;highest-temperature-in-tokyo-on-november-2-2026;25°C or higher;;0.002;;0.002;;0.05
+2026-11-01 21:10;M1;6;highest|busan;2026-11-02;RKPK;highest-temperature-in-busan-on-november-2-2026;13°C or below;0.001;0.004;0.0025;0.004;0.999;0.05
+2026-11-01 21:10;M1;6;highest|busan;2026-11-02;RKPK;highest-temperature-in-busan-on-november-2-2026;14°C;;0.002;;0.002;;0.05
+2026-11-01 21:10;M1;6;highest|busan;2026-11-02;RKPK;highest-temperature-in-busan-on-november-2-2026;15°C;0.001;0.005;0.003;0.005;0.999;0.05
+2026-11-01 21:10;M1;6;highest|busan;2026-11-02;RKPK;highest-temperature-in-busan-on-november-2-2026;16°C;0.002;0.009;0.0055;0.009;0.998;0.05
+2026-11-01 21:10;M1;6;highest|busan;2026-11-02;RKPK;highest-temperature-in-busan-on-november-2-2026;17°C;0.021;0.044;0.0325;0.044;0.979;0.05
+2026-11-01 21:10;M1;6;highest|busan;2026-11-02;RKPK;highest-temperature-in-busan-on-november-2-2026;18°C;0.4;0.45;0.425;0.455;0.6;0.05
+2026-11-01 21:10;M1;6;highest|busan;2026-11-02;RKPK;highest-temperature-in-busan-on-november-2-2026;19°C;0.46;0.48;0.47;0.48;0.54;0.05
+2026-11-01 21:10;M1;6;highest|busan;2026-11-02;RKPK;highest-temperature-in-busan-on-november-2-2026;20°C;0.07;0.09;0.08;0.095;0.93;0.05
+2026-11-01 21:10;M1;6;highest|busan;2026-11-02;RKPK;highest-temperature-in-busan-on-november-2-2026;21°C;0.007;0.014;0.0105;0.014;0.993;0.05
+2026-11-01 21:10;M1;6;highest|busan;2026-11-02;RKPK;highest-temperature-in-busan-on-november-2-2026;22°C;;0.001;;0.001;;0.05
+2026-11-01 21:10;M1;6;highest|busan;2026-11-02;RKPK;highest-temperature-in-busan-on-november-2-2026;23°C or higher;;0.001;;0.001;;0.05
+2026-11-01 21:10;M0;6;lowest|seoul;2026-11-03;RKSI;lowest-temperature-in-seoul-on-november-3-2026;0°C or below;;0.17;;0.175;;0.05
+2026-11-01 21:10;M0;6;lowest|seoul;2026-11-03;RKSI;lowest-temperature-in-seoul-on-november-3-2026;1°C;0.001;0.08;0.0405;0.08;0.999;0.05
+2026-11-01 21:10;M0;6;lowest|seoul;2026-11-03;RKSI;lowest-temperature-in-seoul-on-november-3-2026;2°C;0.001;0.093;0.047;0.093;0.999;0.05
+2026-11-01 21:10;M0;6;lowest|seoul;2026-11-03;RKSI;lowest-temperature-in-seoul-on-november-3-2026;3°C;;0.15;;0.15;;0.05
+2026-11-01 21:10;M0;6;lowest|seoul;2026-11-03;RKSI;lowest-temperature-in-seoul-on-november-3-2026;4°C;0.011;0.05;0.0305;0.05;0.989;0.05
+2026-11-01 21:10;M0;6;lowest|seoul;2026-11-03;RKSI;lowest-temperature-in-seoul-on-november-3-2026;5°C;0.04;0.15;0.095;0.15;0.965;0.05
+2026-11-01 21:10;M0;6;lowest|seoul;2026-11-03;RKSI;lowest-temperature-in-seoul-on-november-3-2026;6°C;0.24;0.3;0.27;0.305;0.765;0.05
+2026-11-01 21:10;M0;6;lowest|seoul;2026-11-03;RKSI;lowest-temperature-in-seoul-on-november-3-2026;7°C;0.38;0.41;0.395;0.415;0.62;0.05
+2026-11-01 21:10;M0;6;lowest|seoul;2026-11-03;RKSI;lowest-temperature-in-seoul-on-november-3-2026;8°C;0.2;0.28;0.24;0.28;0.8;0.05
+2026-11-01 21:10;M0;6;lowest|seoul;2026-11-03;RKSI;lowest-temperature-in-seoul-on-november-3-2026;9°C;;0.16;;0.165;;0.05
+2026-11-01 21:10;M0;6;lowest|seoul;2026-11-03;RKSI;lowest-temperature-in-seoul-on-november-3-2026;10°C or higher;;0.49;;0.49;;0.05
+2026-11-01 21:10;M0;6;lowest|tokyo;2026-11-03;RJTT;lowest-temperature-in-tokyo-on-november-3-2026;8°C or below;;0.19;;0.194;;0.05
+2026-11-01 21:10;M0;6;lowest|tokyo;2026-11-03;RJTT;lowest-temperature-in-tokyo-on-november-3-2026;9°C;;0.11;;0.115;;0.05
+2026-11-01 21:10;M0;6;lowest|tokyo;2026-11-03;RJTT;lowest-temperature-in-tokyo-on-november-3-2026;10°C;;0.11;;0.11;;0.05
+2026-11-01 21:10;M0;6;lowest|tokyo;2026-11-03;RJTT;lowest-temperature-in-tokyo-on-november-3-2026;11°C;0.01;0.14;0.075;0.145;0.99;0.05
+2026-11-01 21:10;M0;6;lowest|tokyo;2026-11-03;RJTT;lowest-temperature-in-tokyo-on-november-3-2026;12°C;0.01;0.14;0.075;0.145;0.99;0.05
+2026-11-01 21:10;M0;6;lowest|tokyo;2026-11-03;RJTT;lowest-temperature-in-tokyo-on-november-3-2026;13°C;0.16;0.33;0.245;0.335;0.84;0.05
+2026-11-01 21:10;M0;6;lowest|tokyo;2026-11-03;RJTT;lowest-temperature-in-tokyo-on-november-3-2026;14°C;0.38;0.4;0.39;0.405;0.62;0.05
+2026-11-01 21:10;M0;6;lowest|tokyo;2026-11-03;RJTT;lowest-temperature-in-tokyo-on-november-3-2026;15°C;0.25;0.44;0.345;0.445;0.75;0.05
+2026-11-01 21:10;M0;6;lowest|tokyo;2026-11-03;RJTT;lowest-temperature-in-tokyo-on-november-3-2026;16°C;0.02;0.18;0.1;0.185;0.98;0.05
+2026-11-01 21:10;M0;6;lowest|tokyo;2026-11-03;RJTT;lowest-temperature-in-tokyo-on-november-3-2026;17°C;;0.17;;0.175;;0.05
+2026-11-01 21:10;M0;6;lowest|tokyo;2026-11-03;RJTT;lowest-temperature-in-tokyo-on-november-3-2026;18°C or higher;;0.15;;0.17;;0.05
+2026-11-01 21:10;M0;6;lowest|busan;2026-11-03;RKPK;lowest-temperature-in-busan-on-november-3-2026;2°C or below;;0.7;;0.7;;0.05
+2026-11-01 21:10;M0;6;lowest|busan;2026-11-03;RKPK;lowest-temperature-in-busan-on-november-3-2026;3°C;;0.27;;0.48;;0.05
+2026-11-01 21:10;M0;6;lowest|busan;2026-11-03;RKPK;lowest-temperature-in-busan-on-november-3-2026;4°C;;0.27;;0.485;;0.05
+2026-11-01 21:10;M0;6;lowest|busan;2026-11-03;RKPK;lowest-temperature-in-busan-on-november-3-2026;5°C;;0.27;;0.485;;0.05
+2026-11-01 21:10;M0;6;lowest|busan;2026-11-03;RKPK;lowest-temperature-in-busan-on-november-3-2026;6°C;;0.27;;0.485;;0.05
+2026-11-01 21:10;M0;6;lowest|busan;2026-11-03;RKPK;lowest-temperature-in-busan-on-november-3-2026;7°C;;0.7;;0.7067;;0.05
+2026-11-01 21:10;M0;6;lowest|busan;2026-11-03;RKPK;lowest-temperature-in-busan-on-november-3-2026;8°C;0.04;0.25;0.145;0.25;0.96;0.05
+2026-11-01 21:10;M0;6;lowest|busan;2026-11-03;RKPK;lowest-temperature-in-busan-on-november-3-2026;9°C;;0.66;;0.66;;0.05
+2026-11-01 21:10;M0;6;lowest|busan;2026-11-03;RKPK;lowest-temperature-in-busan-on-november-3-2026;10°C;;0.66;;0.66;;0.05
+2026-11-01 21:10;M0;6;lowest|busan;2026-11-03;RKPK;lowest-temperature-in-busan-on-november-3-2026;11°C;;0.27;;0.485;;0.05
+2026-11-01 21:10;M0;6;lowest|busan;2026-11-03;RKPK;lowest-temperature-in-busan-on-november-3-2026;12°C or higher;;0.96;;0.96;;0.05
+2026-11-01 21:10;M0;6;highest|seoul;2026-11-03;RKSI;highest-temperature-in-seoul-on-november-3-2026;10°C or below;0.001;0.002;0.0015;0.002;0.999;0.05
+2026-11-01 21:10;M0;6;highest|seoul;2026-11-03;RKSI;highest-temperature-in-seoul-on-november-3-2026;11°C;;0.001;;0.001;;0.05
+2026-11-01 21:10;M0;6;highest|seoul;2026-11-03;RKSI;highest-temperature-in-seoul-on-november-3-2026;12°C;;0.002;;0.002;;0.05
+2026-11-01 21:10;M0;6;highest|seoul;2026-11-03;RKSI;highest-temperature-in-seoul-on-november-3-2026;13°C;0.001;0.017;0.009;0.017;0.999;0.05
+2026-11-01 21:10;M0;6;highest|seoul;2026-11-03;RKSI;highest-temperature-in-seoul-on-november-3-2026;14°C;0.01;0.018;0.014;0.019;0.99;0.05
+2026-11-01 21:10;M0;6;highest|seoul;2026-11-03;RKSI;highest-temperature-in-seoul-on-november-3-2026;15°C;0.03;0.038;0.034;0.0415;0.97;0.05
+2026-11-01 21:10;M0;6;highest|seoul;2026-11-03;RKSI;highest-temperature-in-seoul-on-november-3-2026;16°C;0.21;0.22;0.215;0.22;0.79;0.05
+2026-11-01 21:10;M0;6;highest|seoul;2026-11-03;RKSI;highest-temperature-in-seoul-on-november-3-2026;17°C;0.47;0.5;0.485;0.5;0.53;0.05
+2026-11-01 21:10;M0;6;highest|seoul;2026-11-03;RKSI;highest-temperature-in-seoul-on-november-3-2026;18°C;0.25;0.27;0.26;0.275;0.75;0.05
+2026-11-01 21:10;M0;6;highest|seoul;2026-11-03;RKSI;highest-temperature-in-seoul-on-november-3-2026;19°C;0.016;0.019;0.0175;0.023;0.9845;0.05
+2026-11-01 21:10;M0;6;highest|seoul;2026-11-03;RKSI;highest-temperature-in-seoul-on-november-3-2026;20°C or higher;0.002;0.003;0.0025;0.003;0.998;0.05
+2026-11-01 21:10;M0;6;highest|tokyo;2026-11-03;RJTT;highest-temperature-in-tokyo-on-november-3-2026;14°C or below;0.001;0.002;0.0015;0.002;0.999;0.05
+2026-11-01 21:10;M0;6;highest|tokyo;2026-11-03;RJTT;highest-temperature-in-tokyo-on-november-3-2026;15°C;;0.014;;0.014;;0.05
+2026-11-01 21:10;M0;6;highest|tokyo;2026-11-03;RJTT;highest-temperature-in-tokyo-on-november-3-2026;16°C;0.001;0.007;0.004;0.007;0.999;0.05
+2026-11-01 21:10;M0;6;highest|tokyo;2026-11-03;RJTT;highest-temperature-in-tokyo-on-november-3-2026;17°C;0.005;0.006;0.0055;0.006;0.995;0.05
+2026-11-01 21:10;M0;6;highest|tokyo;2026-11-03;RJTT;highest-temperature-in-tokyo-on-november-3-2026;18°C;0.07;0.12;0.095;0.125;0.93;0.05
+2026-11-01 21:10;M0;6;highest|tokyo;2026-11-03;RJTT;highest-temperature-in-tokyo-on-november-3-2026;19°C;0.53;0.56;0.545;0.56;0.47;0.05
+2026-11-01 21:10;M0;6;highest|tokyo;2026-11-03;RJTT;highest-temperature-in-tokyo-on-november-3-2026;20°C;0.34;0.37;0.355;0.37;0.66;0.05
+2026-11-01 21:10;M0;6;highest|tokyo;2026-11-03;RJTT;highest-temperature-in-tokyo-on-november-3-2026;21°C;0.019;0.038;0.0285;0.038;0.981;0.05
+2026-11-01 21:10;M0;6;highest|tokyo;2026-11-03;RJTT;highest-temperature-in-tokyo-on-november-3-2026;22°C;0.003;0.006;0.0045;0.006;0.997;0.05
+2026-11-01 21:10;M0;6;highest|tokyo;2026-11-03;RJTT;highest-temperature-in-tokyo-on-november-3-2026;23°C;0.001;0.005;0.003;0.005;0.999;0.05
+2026-11-01 21:10;M0;6;highest|tokyo;2026-11-03;RJTT;highest-temperature-in-tokyo-on-november-3-2026;24°C or higher;0.001;0.004;0.0025;0.004;0.999;0.05
+2026-11-01 21:10;M0;6;highest|busan;2026-11-03;RKPK;highest-temperature-in-busan-on-november-3-2026;13°C or below;;0.001;;0.001;;0.05
+2026-11-01 21:10;M0;6;highest|busan;2026-11-03;RKPK;highest-temperature-in-busan-on-november-3-2026;14°C;0.001;0.002;0.0015;0.002;0.999;0.05
+2026-11-01 21:10;M0;6;highest|busan;2026-11-03;RKPK;highest-temperature-in-busan-on-november-3-2026;15°C;0.001;0.002;0.0015;0.002;0.999;0.05
+2026-11-01 21:10;M0;6;highest|busan;2026-11-03;RKPK;highest-temperature-in-busan-on-november-3-2026;16°C;0.01;0.018;0.014;0.018;0.99;0.05
+2026-11-01 21:10;M0;6;highest|busan;2026-11-03;RKPK;highest-temperature-in-busan-on-november-3-2026;17°C;0.024;0.049;0.0365;0.049;0.976;0.05
+2026-11-01 21:10;M0;6;highest|busan;2026-11-03;RKPK;highest-temperature-in-busan-on-november-3-2026;18°C;0.42;0.45;0.435;0.45;0.58;0.05
+2026-11-01 21:10;M0;6;highest|busan;2026-11-03;RKPK;highest-temperature-in-busan-on-november-3-2026;19°C;0.46;0.49;0.475;0.49;0.54;0.05
+2026-11-01 21:10;M0;6;highest|busan;2026-11-03;RKPK;highest-temperature-in-busan-on-november-3-2026;20°C;0.04;0.07;0.055;0.07;0.96;0.05
+2026-11-01 21:10;M0;6;highest|busan;2026-11-03;RKPK;highest-temperature-in-busan-on-november-3-2026;21°C;0.01;0.013;0.0115;0.013;0.991;0.05
+2026-11-01 21:10;M0;6;highest|busan;2026-11-03;RKPK;highest-temperature-in-busan-on-november-3-2026;22°C;0.001;0.002;0.0015;0.002;0.999;0.05
+2026-11-01 21:10;M0;6;highest|busan;2026-11-03;RKPK;highest-temperature-in-busan-on-november-3-2026;23°C or higher;;0.001;;0.001;;0.05
