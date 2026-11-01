@@ -1,6 +1,6 @@
 # Reglas de los mercados de Polymarket
 
-Actualizado 2026-11-01 06:49 UTC por `reglas.py` (cada 3 h). Lo que Polymarket usa hoy en cada familia de mercados, y los cambios que se detectaron.
+Actualizado 2026-11-01 16:20 UTC por `reglas.py` (cada 3 h). Lo que Polymarket usa hoy en cada familia de mercados, y los cambios que se detectaron.
 
 🔔 Polymarket cambió algo en **clima (otros)** (mercado de clima nuevo, aparece el 2026-10-30 18:11 UTC): `november`. Ver [reglas_informe.md](reglas_informe.md).
 🔔 Polymarket cambió algo en **clima (otros)** (mercado de clima nuevo, ya no aparece el 2026-11-01 06:49 UTC): `tornado`. Ver [reglas_informe.md](reglas_informe.md).
@@ -18,8 +18,8 @@ Comisión del taker = **tasa × p × (1 − p)** por acción. Desde el 23-oct ca
 | cripto ethereum-hit-price-daily | 1 | `feesEnabled=True feeType=crypto_fees_v2 feeSchedule={"exponent": 1, "rate": 0.07, "rebateRate": 0.2, "takerOnly": true} takerBaseFee=1000` (1) | 0.07 |
 | cripto ethereum-multi-strikes-weekly | 7 | `feesEnabled=True feeType=crypto_fees_v2 feeSchedule={"exponent": 1, "rate": 0.07, "rebateRate": 0.2, "takerOnly": true} takerBaseFee=1000` (7) | 0.07 |
 | cripto ethereum-neg-risk-weekly | 7 | `feesEnabled=True feeType=crypto_fees_v2 feeSchedule={"exponent": 1, "rate": 0.07, "rebateRate": 0.2, "takerOnly": true} takerBaseFee=1000` (7) | 0.07 |
-| temperatura máxima | 141 | `feesEnabled=True feeType=weather_fees feeSchedule={"exponent": 1, "rate": 0.05, "rebateRate": 0.25, "takerOnly": true} takerBaseFee=1000` (141) | 0.05 |
-| temperatura mínima | 126 | `feesEnabled=True feeType=weather_fees feeSchedule={"exponent": 1, "rate": 0.05, "rebateRate": 0.25, "takerOnly": true} takerBaseFee=1000` (126) | 0.05 |
+| temperatura máxima | 149 | `feesEnabled=True feeType=weather_fees feeSchedule={"exponent": 1, "rate": 0.05, "rebateRate": 0.25, "takerOnly": true} takerBaseFee=1000` (149) | 0.05 |
+| temperatura mínima | 133 | `feesEnabled=True feeType=weather_fees feeSchedule={"exponent": 1, "rate": 0.05, "rebateRate": 0.25, "takerOnly": true} takerBaseFee=1000` (133) | 0.05 |
 
 ## Fuente de resolución y parámetros
 
@@ -42,16 +42,16 @@ Comisión del taker = **tasa × p × (1 − p)** por acción. Desde el 23-oct ca
 | cripto ethereum-multi-strikes-weekly | parámetros | `orden minima=5 tick=0.01` (6) | 2026-10-23 13:08 |
 | cripto ethereum-neg-risk-weekly | fuente de resolución | `binance.com/en/trade/ETH_USDT` (7) | 2026-10-23 13:08 |
 | cripto ethereum-neg-risk-weekly | parámetros | `orden minima=5 tick=0.001` (7) | 2026-10-23 13:08 |
-| cripto ethereum-neg-risk-weekly | parámetros | `orden minima=5 tick=0.01` (7) | 2026-10-23 13:08 |
-| temperatura máxima | fuente de resolución | `aviationweather.gov/api/data/metar` (132) | 2026-10-23 13:08 |
+| cripto ethereum-neg-risk-weekly | parámetros | `orden minima=5 tick=0.01` (6) | 2026-10-23 13:08 |
+| temperatura máxima | fuente de resolución | `aviationweather.gov/api/data/metar` (140) | 2026-10-23 13:08 |
 | temperatura máxima | fuente de resolución | `(sin fuente)` (5) | 2026-10-23 13:08 |
 | temperatura máxima | fuente de resolución | `wunderground.com/history/daily` (4) | 2026-10-23 13:08 |
-| temperatura máxima | parámetros | `orden minima=5 tick=0.001` (131) | 2026-10-23 13:08 |
-| temperatura máxima | parámetros | `orden minima=5 tick=0.01` (125) | 2026-10-23 13:08 |
-| temperatura mínima | fuente de resolución | `aviationweather.gov/api/data/metar` (121) | 2026-10-23 13:08 |
+| temperatura máxima | parámetros | `orden minima=5 tick=0.001` (143) | 2026-10-23 13:08 |
+| temperatura máxima | parámetros | `orden minima=5 tick=0.01` (116) | 2026-10-23 13:08 |
+| temperatura mínima | fuente de resolución | `aviationweather.gov/api/data/metar` (128) | 2026-10-23 13:08 |
 | temperatura mínima | fuente de resolución | `(sin fuente)` (5) | 2026-10-23 13:08 |
-| temperatura mínima | parámetros | `orden minima=5 tick=0.01` (121) | 2026-10-23 13:08 |
-| temperatura mínima | parámetros | `orden minima=5 tick=0.001` (77) | 2026-10-23 13:08 |
+| temperatura mínima | parámetros | `orden minima=5 tick=0.01` (123) | 2026-10-23 13:08 |
+| temperatura mínima | parámetros | `orden minima=5 tick=0.001` (82) | 2026-10-23 13:08 |
 
 ## Mercados de clima que no son de temperatura diaria
 
@@ -99,14 +99,14 @@ Comisión del taker = **tasa × p × (1 − p)** por acción. Desde el 23-oct ca
 - `us-tornadoes`: 3 abiertos (ej. `us-tornadoes-september-2026`), visto desde 2026-10-23 13:08
 - `vesuvius-eruption-with`: 1 abiertos (ej. `vesuvius-eruption-with-1-vei-in-2026`), visto desde 2026-10-23 13:08
 - `west-nile-neuroinvasive-cases-nyc`: 1 abiertos (ej. `west-nile-neuroinvasive-cases-nyc-2026-20260820104404`), visto desde 2026-10-23 13:08
-- `what-category-will-vance-reach`: 1 abiertos (ej. `what-category-will-vance-reach`), visto desde 2026-10-23 13:08
 - `what-intensity-will`: 1 abiertos (ej. `what-intensity-will-in-fa-reach`), visto desde 2026-10-26 20:44
 - `what-will-the-peak-roni-be`: 1 abiertos (ej. `what-will-the-peak-roni-be-for-the-2026-27-el-nino-1786975502957`), visto desde 2026-10-23 13:08
 - `when-will-the-rhine-river-return-to-normal-levels`: 1 abiertos (ej. `when-will-the-rhine-river-return-to-normal-levels`), visto desde 2026-10-23 13:08
 - `where-will`: 1 abiertos (ej. `where-will-2026-rank-among-the-hottest-years-on-record`), visto desde 2026-10-23 13:08
 - `where-will-a`: 2 abiertos (ej. `where-will-a-6pt0-magnitude-earthquake-occur-by-end-of-october-20260928t160000000z`), visto desde 2026-10-23 13:08
 - `where-will-a-hurricane-make-landfall`: 1 abiertos (ej. `where-will-a-hurricane-make-landfall-in-the-us-during-the-2026-hurricane-season`), visto desde 2026-10-23 13:08
-- `where-will-it-rain`: 2 abiertos (ej. `where-will-it-rain-on-october-31-2026`), visto desde 2026-10-23 13:08
+- `where-will-it-rain`: 3 abiertos (ej. `where-will-it-rain-on-october-31-2026`), visto desde 2026-10-23 13:08
+- `which-cities-face-tornado-risk`: 1 abiertos (ej. `which-cities-face-tornado-risk-on-november-1-2026`), visto desde 2026-10-23 13:08
 - `which-countries-will-have-an-ebola-case`: 1 abiertos (ej. `which-countries-will-have-an-ebola-case-in-2026`), visto desde 2026-10-23 13:08
 - `will`: 1 abiertos (ej. `will-2-or-more-hurricanes-make-landfall-in-the-us-in-2026-20260721164140039`), visto desde 2026-10-23 13:08
 - `will-a-hurricane-make-landfall`: 1 abiertos (ej. `will-a-hurricane-make-landfall-in-hawaii-before-2027-20260721182828397`), visto desde 2026-10-23 13:08
@@ -213,17 +213,21 @@ Comisión del taker = **tasa × p × (1 − p)** por acción. Desde el 23-oct ca
 
 </details>
 
-<details><summary>temperatura máxima (27 frases)</summary>
+<details><summary>temperatura máxima (32 frases)</summary>
 
+- #°C is #°F and counts as #°F;
+- #°C is exactly #°F and counts as #°F.
 - A report whose line begins with SPECI is a special observation and does not count.
 - After the T, one digit for sign (# positive, # negative) and three for tenths of a degree Celsius give the temperature;
 - An observation counts if its time stamp, converted to the station's local time (including any daylight-saving shift in effect), falls on the observation date.
 - An observation that reports no temperature in either place is disregarded.
 - Changes to observations within this market's timeframe will be considered until the first datapoint for the following date has been published, after which any alterations will not be considered.
 - Each market in this event states its range in whole degrees Celsius.
+- Each market in this event states its range in whole degrees Fahrenheit.
 - Every other report is routine, including one issued off the nominal hour and one that carries no METAR or SPECI label.
 - For How to Read the METAR Report, see:
 - For example, #°C counts as #°C;
+- For example, #°C is #°F and counts as #°F;
 - If a routine observation does not carry the hourly temperature remark, the temperature group in the body of that observation governs for that observation, in whole degrees Celsius as reported.
 - If no corrected value is published within that period, Polymarket will issue a Clarification to determine whether the originally published value may be eligible for resolution, or whether other action is required to preserve the orderly functioning of the Market.
 - If the Resolution Source publishes a corrected value within that period, that value will be eligible for resolution.
@@ -233,6 +237,7 @@ Comisión del taker = **tasa × p × (1 − p)** por acción. Desde el 23-oct ca
 - It appears as temperature and dew point separated by a slash, with M marking a negative value:
 - Resolution is determined from the observations the resolution source shows for the observation date.
 - The hourly temperature remark is the group beginning with the letter T followed by exactly eight digits.
+- The qualifying value is converted using °F = °C × #/# + # and rounded to the nearest whole degree, with a value ending in exactly half rounded up to the next higher whole degree, and that whole Fahrenheit value determines which range contains it.
 - The qualifying value is rounded to the nearest whole degree, with a value ending in exactly half rounded up to the next higher whole degree, and that whole Celsius value determines which range contains it.
 - The qualifying value is the highest temperature reported in the hourly temperature remark of any routine (METAR) observation for <estacion> on that date, in tenths of a degree Celsius as reported.
 - The report the resolution source shows for a given observation time is the one that counts, whether or not it is marked as a correction (COR).
