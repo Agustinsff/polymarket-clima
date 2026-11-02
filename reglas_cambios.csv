@@ -36,3 +36,4 @@ momento_utc,familia,que,cambio,detalle,ejemplo,origen
 2026-10-30 18:11,clima (otros),clima_otros,aparece,november,november-2026-1st-2nd-or-3rd-hottest-on-record,auto
 2026-11-01 06:49,temperatura mínima,comisiones,aparece,"feesEnabled=True feeType=weather_fees feeSchedule={""exponent"": 1, ""rate"": 0.05, ""rebateRate"": 0.25, ""takerOnly"": true} takerBaseFee=1000",lowest-temperature-in-hong-kong-on-october-30-2026,auto
 2026-11-01 06:49,clima (otros),clima_otros,ya no aparece,tornado,tornado-in-california-by-october-25,auto
+2026-11-02 06:47,clima (otros),clima_otros,ya no aparece,what-intensity-will-arnab-reach,what-intensity-will-arnab-reach,auto
