@@ -1,13 +1,13 @@
 # Resumen polymarket-clima
 
-_Actualizado: 2026-11-01 22:58 (Montevideo). Todo es **en papel**: no se usa plata real._
+_Actualizado: 2026-11-01 23:03 (Montevideo). Todo es **en papel**: no se usa plata real._
 
 ## Estado de las tareas
 
 🔔 Polymarket cambió algo en **clima (otros)** (mercado de clima nuevo, ya no aparece el 2026-11-01 06:49 UTC): `tornado`. Ver [reglas_informe.md](reglas_informe.md).
 🔔 Polymarket cambió algo en **temperatura mínima** (comisión, aparece el 2026-11-01 06:49 UTC): `feesEnabled=True feeType=weather_fees feeSchedule={"exponent": 1, "rate": 0.05, "rebateRate": 0.25, "takerOnly": true} takerBaseFee=1000`. Ver [reglas_informe.md](reglas_informe.md).
 
-- Última foto de liquidez: 2026-11-01T22:48:32
+- Última foto de liquidez: 2026-11-01T23:03:38
 - Monitor: mañana 2026-11-01, noche 2026-11-01
 - Prueba São Paulo: último día registrado 2026-11-01
 - Cosechador: último ciclo 2026-11-02 01:27 UTC, 88 mercados, 46 estaciones
@@ -90,7 +90,7 @@ Series donde el modelo le gana al mercado (≥5 días): mín denver (5 días), m
 | taker | no | 933 | 221 | US$-485.74 | 198 |
 | maker | no | 2877 | 349 | US$-306.06 | 645 |
 | cola_taker | no | 427 | 9 | US$-67.45 | 105 |
-| cola_maker | no | 975 | 21 | US$-52.08 | 224 |
+| cola_maker | no | 975 | 21 | US$-52.08 | 225 |
 | no80_90 | no | 353 | 266 | US$-374.45 | 82 |
 
 Taker en total: US$-927.63. _Con la comisión vieja (0,05 para todo) sería US$-1002.71._
@@ -123,6 +123,6 @@ Prueba SP: 13 operaciones; como maker se habrían llenado 11, neto **US$-12.35**
 
 ## Recompensas de liquidez (estimación, últimas 24 h)
 
-- Buenos Aires: ~US$38/día con 100 acciones a 1 ¢ en todas las cajas del mercado de mañana (sin contar pérdidas por quedar 'tomado').
-- Sao Paulo: ~US$61/día con 100 acciones a 1 ¢ en todas las cajas del mercado de mañana (sin contar pérdidas por quedar 'tomado').
+- Buenos Aires: ~US$39/día con 100 acciones a 1 ¢ en todas las cajas del mercado de mañana (sin contar pérdidas por quedar 'tomado').
+- Sao Paulo: ~US$62/día con 100 acciones a 1 ¢ en todas las cajas del mercado de mañana (sin contar pérdidas por quedar 'tomado').
 
