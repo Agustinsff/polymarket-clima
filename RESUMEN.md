@@ -1,6 +1,6 @@
 # Resumen polymarket-clima
 
-_Actualizado: 2026-11-02 14:09 (Montevideo). Todo es **en papel**: no se usa plata real._
+_Actualizado: 2026-11-02 14:12 (Montevideo). Todo es **en papel**: no se usa plata real._
 
 ## Estado de las tareas
 
@@ -31,13 +31,11 @@ Acumulado: la caja favorita del **mercado** acertó 16/38, la del **modelo** 10/
 
 ## Prueba en papel São Paulo 14 hs (regla fija)
 
-Días registrados: 19 (desde 2026-10-14).
-Operaciones: 13 (2 ganadas, 11 perdidas, 0 pendientes). **Neto con comisiones: US$-10.92** (bruto -10.47, comisiones −0.45). _Con la comisión vieja (0,05 para todo) sería US$-11.29._
+Días registrados: 20 (desde 2026-10-14).
+Operaciones: 15 (2 ganadas, 11 perdidas, 2 pendientes). **Neto con comisiones: US$-10.92** (bruto -10.47, comisiones −0.45). _Con la comisión vieja (0,05 para todo) sería US$-11.29._
 
 | Día | Caja | Lado | Precio | Modelo | Resultado |
 |---|---|---|---|---|---|
-| 2026-10-17 | 22°C | No | 0.720 | 3% | -7.30 |
-| 2026-10-24 | 26°C | No | 0.229 | 58% | -2.29 |
 | 2026-10-24 | 27°C | Yes | 0.178 | 37% | -1.78 |
 | 2026-10-25 | 21°C | No | 0.060 | 57% | -0.60 |
 | 2026-10-25 | 22°C | Yes | 0.057 | 37% | -0.57 |
@@ -46,6 +44,8 @@ Operaciones: 13 (2 ganadas, 11 perdidas, 0 pendientes). **Neto con comisiones: U
 | 2026-10-27 | 22°C | Yes | 0.039 | 16% | -0.39 |
 | 2026-10-28 | 21°C | No | 0.110 | 58% | -1.10 |
 | 2026-10-28 | 22°C | Yes | 0.100 | 37% | -1.00 |
+| 2026-11-02 | 24°C | No | 0.165 | 59% | pendiente |
+| 2026-11-02 | 25°C | Yes | 0.160 | 38% | pendiente |
 
 ## Cosechador en papel (cajas imposibles, todas las ciudades)
 
