@@ -22824,3 +22824,465 @@ momento_utc;momento;hora_local;serie;fecha;icao;slug;caja;bid;ask;medio;si_10;no
 2026-11-02 21:21;M0;6;highest|busan;2026-11-04;RKPK;highest-temperature-in-busan-on-november-4-2026;20°C;0.05;0.13;0.09;0.13;0.955;0.05
 2026-11-02 21:21;M0;6;highest|busan;2026-11-04;RKPK;highest-temperature-in-busan-on-november-4-2026;21°C;0.005;0.014;0.0095;0.0255;0.995;0.05
 2026-11-02 21:21;M0;6;highest|busan;2026-11-04;RKPK;highest-temperature-in-busan-on-november-4-2026;22°C or higher;0.001;0.005;0.003;0.005;0.999;0.05
+2026-11-02 22:22;M1;6;lowest|shanghai;2026-11-03;ZSPD;lowest-temperature-in-shanghai-on-november-3-2026;10°C or below;0.001;0.011;0.006;0.011;0.999;0.05
+2026-11-02 22:22;M1;6;lowest|shanghai;2026-11-03;ZSPD;lowest-temperature-in-shanghai-on-november-3-2026;11°C;0.002;0.047;0.0245;0.047;0.998;0.05
+2026-11-02 22:22;M1;6;lowest|shanghai;2026-11-03;ZSPD;lowest-temperature-in-shanghai-on-november-3-2026;12°C;;0.31;;0.31;;0.05
+2026-11-02 22:22;M1;6;lowest|shanghai;2026-11-03;ZSPD;lowest-temperature-in-shanghai-on-november-3-2026;13°C;0.92;0.99;0.955;0.99;0.08;0.05
+2026-11-02 22:22;M1;6;lowest|shanghai;2026-11-03;ZSPD;lowest-temperature-in-shanghai-on-november-3-2026;14°C;;0.001;;0.001;;0.05
+2026-11-02 22:22;M1;6;lowest|shanghai;2026-11-03;ZSPD;lowest-temperature-in-shanghai-on-november-3-2026;15°C;;0.001;;0.001;;0.05
+2026-11-02 22:22;M1;6;lowest|shanghai;2026-11-03;ZSPD;lowest-temperature-in-shanghai-on-november-3-2026;16°C;;0.001;;0.001;;0.05
+2026-11-02 22:22;M1;6;lowest|shanghai;2026-11-03;ZSPD;lowest-temperature-in-shanghai-on-november-3-2026;17°C;;0.001;;0.001;;0.05
+2026-11-02 22:22;M1;6;lowest|shanghai;2026-11-03;ZSPD;lowest-temperature-in-shanghai-on-november-3-2026;18°C;;0.001;;0.001;;0.05
+2026-11-02 22:22;M1;6;lowest|shanghai;2026-11-03;ZSPD;lowest-temperature-in-shanghai-on-november-3-2026;19°C;;0.001;;0.001;;0.05
+2026-11-02 22:22;M1;6;lowest|shanghai;2026-11-03;ZSPD;lowest-temperature-in-shanghai-on-november-3-2026;20°C or higher;;0.001;;0.001;;0.05
+2026-11-02 22:22;M1;6;lowest|taipei;2026-11-03;RCSS;lowest-temperature-in-taipei-on-november-3-2026;17°C or below;0.001;0.065;0.033;0.065;0.999;0.05
+2026-11-02 22:22;M1;6;lowest|taipei;2026-11-03;RCSS;lowest-temperature-in-taipei-on-november-3-2026;18°C;0.001;0.067;0.034;0.0672;0.999;0.05
+2026-11-02 22:22;M1;6;lowest|taipei;2026-11-03;RCSS;lowest-temperature-in-taipei-on-november-3-2026;19°C;;0.83;;0.83;;0.05
+2026-11-02 22:22;M1;6;lowest|taipei;2026-11-03;RCSS;lowest-temperature-in-taipei-on-november-3-2026;20°C;;0.96;;0.96;;0.05
+2026-11-02 22:22;M1;6;lowest|taipei;2026-11-03;RCSS;lowest-temperature-in-taipei-on-november-3-2026;21°C;;0.96;;0.96;;0.05
+2026-11-02 22:22;M1;6;lowest|taipei;2026-11-03;RCSS;lowest-temperature-in-taipei-on-november-3-2026;22°C;0.03;0.86;0.445;0.915;0.97;0.05
+2026-11-02 22:22;M1;6;lowest|taipei;2026-11-03;RCSS;lowest-temperature-in-taipei-on-november-3-2026;23°C;0.03;0.94;0.485;0.955;0.97;0.05
+2026-11-02 22:22;M1;6;lowest|taipei;2026-11-03;RCSS;lowest-temperature-in-taipei-on-november-3-2026;24°C;;0.001;;0.001;;0.05
+2026-11-02 22:22;M1;6;lowest|taipei;2026-11-03;RCSS;lowest-temperature-in-taipei-on-november-3-2026;25°C;;0.001;;0.001;;0.05
+2026-11-02 22:22;M1;6;lowest|taipei;2026-11-03;RCSS;lowest-temperature-in-taipei-on-november-3-2026;26°C;;0.001;;0.001;;0.05
+2026-11-02 22:22;M1;6;lowest|taipei;2026-11-03;RCSS;lowest-temperature-in-taipei-on-november-3-2026;27°C or higher;;0.001;;0.001;;0.05
+2026-11-02 22:22;M1;6;lowest|chongqing;2026-11-03;ZUCK;lowest-temperature-in-chongqing-on-november-3-2026;9°C or below;0.001;0.077;0.039;0.077;0.999;0.05
+2026-11-02 22:22;M1;6;lowest|chongqing;2026-11-03;ZUCK;lowest-temperature-in-chongqing-on-november-3-2026;10°C;0.001;0.015;0.008;0.015;0.999;0.05
+2026-11-02 22:22;M1;6;lowest|chongqing;2026-11-03;ZUCK;lowest-temperature-in-chongqing-on-november-3-2026;11°C;0.001;0.015;0.008;0.015;0.999;0.05
+2026-11-02 22:22;M1;6;lowest|chongqing;2026-11-03;ZUCK;lowest-temperature-in-chongqing-on-november-3-2026;12°C;0.001;0.131;0.066;0.1313;0.999;0.05
+2026-11-02 22:22;M1;6;lowest|chongqing;2026-11-03;ZUCK;lowest-temperature-in-chongqing-on-november-3-2026;13°C;0.02;0.9;0.46;0.9;0.985;0.05
+2026-11-02 22:22;M1;6;lowest|chongqing;2026-11-03;ZUCK;lowest-temperature-in-chongqing-on-november-3-2026;14°C;0.02;0.88;0.45;0.88;0.985;0.05
+2026-11-02 22:22;M1;6;lowest|chongqing;2026-11-03;ZUCK;lowest-temperature-in-chongqing-on-november-3-2026;15°C;0.03;0.95;0.49;0.955;0.97;0.05
+2026-11-02 22:22;M1;6;lowest|chongqing;2026-11-03;ZUCK;lowest-temperature-in-chongqing-on-november-3-2026;16°C;;0.001;;0.001;;0.05
+2026-11-02 22:22;M1;6;lowest|chongqing;2026-11-03;ZUCK;lowest-temperature-in-chongqing-on-november-3-2026;17°C;;0.001;;0.001;;0.05
+2026-11-02 22:22;M1;6;lowest|chongqing;2026-11-03;ZUCK;lowest-temperature-in-chongqing-on-november-3-2026;18°C;;0.001;;0.001;;0.05
+2026-11-02 22:22;M1;6;lowest|chongqing;2026-11-03;ZUCK;lowest-temperature-in-chongqing-on-november-3-2026;19°C or higher;;0.001;;0.001;;0.05
+2026-11-02 22:22;M1;6;lowest|beijing;2026-11-03;ZBAA;lowest-temperature-in-beijing-on-november-3-2026;-2°C or below;;0.49;;0.49;;0.05
+2026-11-02 22:22;M1;6;lowest|beijing;2026-11-03;ZBAA;lowest-temperature-in-beijing-on-november-3-2026;-1°C;0.001;0.148;0.0745;0.1485;0.999;0.05
+2026-11-02 22:22;M1;6;lowest|beijing;2026-11-03;ZBAA;lowest-temperature-in-beijing-on-november-3-2026;0°C;0.02;0.84;0.43;0.865;0.98;0.05
+2026-11-02 22:22;M1;6;lowest|beijing;2026-11-03;ZBAA;lowest-temperature-in-beijing-on-november-3-2026;1°C;0.03;0.92;0.475;0.92;0.97;0.05
+2026-11-02 22:22;M1;6;lowest|beijing;2026-11-03;ZBAA;lowest-temperature-in-beijing-on-november-3-2026;2°C;0.11;0.92;0.515;0.925;0.89;0.05
+2026-11-02 22:22;M1;6;lowest|beijing;2026-11-03;ZBAA;lowest-temperature-in-beijing-on-november-3-2026;3°C;;0.001;;0.001;;0.05
+2026-11-02 22:22;M1;6;lowest|beijing;2026-11-03;ZBAA;lowest-temperature-in-beijing-on-november-3-2026;4°C;;0.001;;0.001;;0.05
+2026-11-02 22:22;M1;6;lowest|beijing;2026-11-03;ZBAA;lowest-temperature-in-beijing-on-november-3-2026;5°C;;0.001;;0.001;;0.05
+2026-11-02 22:22;M1;6;lowest|beijing;2026-11-03;ZBAA;lowest-temperature-in-beijing-on-november-3-2026;6°C;;0.001;;0.001;;0.05
+2026-11-02 22:22;M1;6;lowest|beijing;2026-11-03;ZBAA;lowest-temperature-in-beijing-on-november-3-2026;7°C;;0.001;;0.001;;0.05
+2026-11-02 22:22;M1;6;lowest|beijing;2026-11-03;ZBAA;lowest-temperature-in-beijing-on-november-3-2026;8°C or higher;;0.001;;0.001;;0.05
+2026-11-02 22:22;M1;6;lowest|wuhan;2026-11-03;ZHHH;lowest-temperature-in-wuhan-on-november-3-2026;9°C or below;;0.08;;0.0825;;0.05
+2026-11-02 22:22;M1;6;lowest|wuhan;2026-11-03;ZHHH;lowest-temperature-in-wuhan-on-november-3-2026;10°C;;0.97;;0.97;;0.05
+2026-11-02 22:22;M1;6;lowest|wuhan;2026-11-03;ZHHH;lowest-temperature-in-wuhan-on-november-3-2026;11°C;;0.97;;0.97;;0.05
+2026-11-02 22:22;M1;6;lowest|wuhan;2026-11-03;ZHHH;lowest-temperature-in-wuhan-on-november-3-2026;12°C;0.02;0.92;0.47;0.92;0.985;0.05
+2026-11-02 22:22;M1;6;lowest|wuhan;2026-11-03;ZHHH;lowest-temperature-in-wuhan-on-november-3-2026;13°C;0.03;0.96;0.495;0.965;0.97;0.05
+2026-11-02 22:22;M1;6;lowest|wuhan;2026-11-03;ZHHH;lowest-temperature-in-wuhan-on-november-3-2026;14°C;;0.001;;0.001;;0.05
+2026-11-02 22:22;M1;6;lowest|wuhan;2026-11-03;ZHHH;lowest-temperature-in-wuhan-on-november-3-2026;15°C;;0.001;;0.001;;0.05
+2026-11-02 22:22;M1;6;lowest|wuhan;2026-11-03;ZHHH;lowest-temperature-in-wuhan-on-november-3-2026;16°C;;0.001;;0.001;;0.05
+2026-11-02 22:22;M1;6;lowest|wuhan;2026-11-03;ZHHH;lowest-temperature-in-wuhan-on-november-3-2026;17°C;;0.001;;0.001;;0.05
+2026-11-02 22:22;M1;6;lowest|wuhan;2026-11-03;ZHHH;lowest-temperature-in-wuhan-on-november-3-2026;18°C;;0.001;;0.001;;0.05
+2026-11-02 22:22;M1;6;lowest|wuhan;2026-11-03;ZHHH;lowest-temperature-in-wuhan-on-november-3-2026;19°C or higher;;0.001;;0.001;;0.05
+2026-11-02 22:22;M1;6;lowest|chengdu;2026-11-03;ZUUU;lowest-temperature-in-chengdu-on-november-3-2026;10°C or below;;0.92;;0.92;;0.05
+2026-11-02 22:22;M1;6;lowest|chengdu;2026-11-03;ZUUU;lowest-temperature-in-chengdu-on-november-3-2026;11°C;;0.08;;0.08;;0.05
+2026-11-02 22:22;M1;6;lowest|chengdu;2026-11-03;ZUUU;lowest-temperature-in-chengdu-on-november-3-2026;12°C;;0.94;;0.94;;0.05
+2026-11-02 22:22;M1;6;lowest|chengdu;2026-11-03;ZUUU;lowest-temperature-in-chengdu-on-november-3-2026;13°C;0.02;0.88;0.45;0.88;0.985;0.05
+2026-11-02 22:22;M1;6;lowest|chengdu;2026-11-03;ZUUU;lowest-temperature-in-chengdu-on-november-3-2026;14°C;0.03;0.9;0.465;0.925;0.97;0.05
+2026-11-02 22:22;M1;6;lowest|chengdu;2026-11-03;ZUUU;lowest-temperature-in-chengdu-on-november-3-2026;15°C;0.03;0.91;0.47;0.93;0.97;0.05
+2026-11-02 22:22;M1;6;lowest|chengdu;2026-11-03;ZUUU;lowest-temperature-in-chengdu-on-november-3-2026;16°C;;0.001;;0.001;;0.05
+2026-11-02 22:22;M1;6;lowest|chengdu;2026-11-03;ZUUU;lowest-temperature-in-chengdu-on-november-3-2026;17°C;;0.001;;0.001;;0.05
+2026-11-02 22:22;M1;6;lowest|chengdu;2026-11-03;ZUUU;lowest-temperature-in-chengdu-on-november-3-2026;18°C;;0.001;;0.001;;0.05
+2026-11-02 22:22;M1;6;lowest|chengdu;2026-11-03;ZUUU;lowest-temperature-in-chengdu-on-november-3-2026;19°C;;0.001;;0.001;;0.05
+2026-11-02 22:22;M1;6;lowest|chengdu;2026-11-03;ZUUU;lowest-temperature-in-chengdu-on-november-3-2026;20°C or higher;;0.001;;0.001;;0.05
+2026-11-02 22:22;M1;6;lowest|shenzhen;2026-11-03;ZGSZ;lowest-temperature-in-shenzhen-on-november-3-2026;20°C or below;;0.46;;0.46;;0.05
+2026-11-02 22:22;M1;6;lowest|shenzhen;2026-11-03;ZGSZ;lowest-temperature-in-shenzhen-on-november-3-2026;21°C;;0.079;;0.0795;;0.05
+2026-11-02 22:22;M1;6;lowest|shenzhen;2026-11-03;ZGSZ;lowest-temperature-in-shenzhen-on-november-3-2026;22°C;0.001;0.085;0.043;0.085;0.999;0.05
+2026-11-02 22:22;M1;6;lowest|shenzhen;2026-11-03;ZGSZ;lowest-temperature-in-shenzhen-on-november-3-2026;23°C;;0.19;;0.545;;0.05
+2026-11-02 22:22;M1;6;lowest|shenzhen;2026-11-03;ZGSZ;lowest-temperature-in-shenzhen-on-november-3-2026;24°C;0.02;0.92;0.47;0.92;0.985;0.05
+2026-11-02 22:22;M1;6;lowest|shenzhen;2026-11-03;ZGSZ;lowest-temperature-in-shenzhen-on-november-3-2026;25°C;0.02;0.91;0.465;0.91;0.985;0.05
+2026-11-02 22:22;M1;6;lowest|shenzhen;2026-11-03;ZGSZ;lowest-temperature-in-shenzhen-on-november-3-2026;26°C;0.08;0.95;0.515;0.95;0.92;0.05
+2026-11-02 22:22;M1;6;lowest|shenzhen;2026-11-03;ZGSZ;lowest-temperature-in-shenzhen-on-november-3-2026;27°C;0.05;0.46;0.255;0.465;0.955;0.05
+2026-11-02 22:22;M1;6;lowest|shenzhen;2026-11-03;ZGSZ;lowest-temperature-in-shenzhen-on-november-3-2026;28°C;;0.001;;0.001;;0.05
+2026-11-02 22:22;M1;6;lowest|shenzhen;2026-11-03;ZGSZ;lowest-temperature-in-shenzhen-on-november-3-2026;29°C;;0.001;;0.001;;0.05
+2026-11-02 22:22;M1;6;lowest|shenzhen;2026-11-03;ZGSZ;lowest-temperature-in-shenzhen-on-november-3-2026;30°C or higher;;0.001;;0.001;;0.05
+2026-11-02 22:22;M1;6;lowest|guangzhou;2026-11-03;ZGGG;lowest-temperature-in-guangzhou-on-november-3-2026;17°C or below;;0.47;;0.474;;0.05
+2026-11-02 22:22;M1;6;lowest|guangzhou;2026-11-03;ZGGG;lowest-temperature-in-guangzhou-on-november-3-2026;18°C;0.001;0.03;0.0155;0.03;0.999;0.05
+2026-11-02 22:22;M1;6;lowest|guangzhou;2026-11-03;ZGGG;lowest-temperature-in-guangzhou-on-november-3-2026;19°C;;0.08;;0.093;;0.05
+2026-11-02 22:22;M1;6;lowest|guangzhou;2026-11-03;ZGGG;lowest-temperature-in-guangzhou-on-november-3-2026;20°C;;0.08;;0.08;;0.05
+2026-11-02 22:22;M1;6;lowest|guangzhou;2026-11-03;ZGGG;lowest-temperature-in-guangzhou-on-november-3-2026;21°C;0.02;0.93;0.475;0.93;0.985;0.05
+2026-11-02 22:22;M1;6;lowest|guangzhou;2026-11-03;ZGGG;lowest-temperature-in-guangzhou-on-november-3-2026;22°C;0.03;0.95;0.49;0.95;0.97;0.05
+2026-11-02 22:22;M1;6;lowest|guangzhou;2026-11-03;ZGGG;lowest-temperature-in-guangzhou-on-november-3-2026;23°C;0.03;0.94;0.485;0.955;0.97;0.05
+2026-11-02 22:22;M1;6;lowest|guangzhou;2026-11-03;ZGGG;lowest-temperature-in-guangzhou-on-november-3-2026;24°C;;0.001;;0.001;;0.05
+2026-11-02 22:22;M1;6;lowest|guangzhou;2026-11-03;ZGGG;lowest-temperature-in-guangzhou-on-november-3-2026;25°C;;0.001;;0.001;;0.05
+2026-11-02 22:22;M1;6;lowest|guangzhou;2026-11-03;ZGGG;lowest-temperature-in-guangzhou-on-november-3-2026;26°C;;0.001;;0.001;;0.05
+2026-11-02 22:22;M1;6;lowest|guangzhou;2026-11-03;ZGGG;lowest-temperature-in-guangzhou-on-november-3-2026;27°C or higher;;0.001;;0.001;;0.05
+2026-11-02 22:22;M1;6;lowest|qingdao;2026-11-03;ZSQD;lowest-temperature-in-qingdao-on-november-3-2026;2°C or below;;0.85;;0.85;;0.05
+2026-11-02 22:22;M1;6;lowest|qingdao;2026-11-03;ZSQD;lowest-temperature-in-qingdao-on-november-3-2026;3°C;;0.7;;0.712;;0.05
+2026-11-02 22:22;M1;6;lowest|qingdao;2026-11-03;ZSQD;lowest-temperature-in-qingdao-on-november-3-2026;4°C;;0.98;;0.98;;0.05
+2026-11-02 22:22;M1;6;lowest|qingdao;2026-11-03;ZSQD;lowest-temperature-in-qingdao-on-november-3-2026;5°C;;0.98;;0.98;;0.05
+2026-11-02 22:22;M1;6;lowest|qingdao;2026-11-03;ZSQD;lowest-temperature-in-qingdao-on-november-3-2026;6°C;0.02;0.85;0.435;0.85;0.98;0.05
+2026-11-02 22:22;M1;6;lowest|qingdao;2026-11-03;ZSQD;lowest-temperature-in-qingdao-on-november-3-2026;7°C;0.01;0.98;0.495;0.985;0.99;0.05
+2026-11-02 22:22;M1;6;lowest|qingdao;2026-11-03;ZSQD;lowest-temperature-in-qingdao-on-november-3-2026;8°C;;0.001;;0.001;;0.05
+2026-11-02 22:22;M1;6;lowest|qingdao;2026-11-03;ZSQD;lowest-temperature-in-qingdao-on-november-3-2026;9°C;;0.001;;0.001;;0.05
+2026-11-02 22:22;M1;6;lowest|qingdao;2026-11-03;ZSQD;lowest-temperature-in-qingdao-on-november-3-2026;10°C;;0.001;;0.001;;0.05
+2026-11-02 22:22;M1;6;lowest|qingdao;2026-11-03;ZSQD;lowest-temperature-in-qingdao-on-november-3-2026;11°C;;0.001;;0.001;;0.05
+2026-11-02 22:22;M1;6;lowest|qingdao;2026-11-03;ZSQD;lowest-temperature-in-qingdao-on-november-3-2026;12°C or higher;;0.001;;0.001;;0.05
+2026-11-02 22:22;M1;6;highest|shanghai;2026-11-03;ZSPD;highest-temperature-in-shanghai-on-november-3-2026;15°C or below;;0.001;;0.001;;0.05
+2026-11-02 22:22;M1;6;highest|shanghai;2026-11-03;ZSPD;highest-temperature-in-shanghai-on-november-3-2026;16°C;;0.001;;0.001;;0.05
+2026-11-02 22:22;M1;6;highest|shanghai;2026-11-03;ZSPD;highest-temperature-in-shanghai-on-november-3-2026;17°C;;0.001;;0.001;;0.05
+2026-11-02 22:22;M1;6;highest|shanghai;2026-11-03;ZSPD;highest-temperature-in-shanghai-on-november-3-2026;18°C;0.002;0.009;0.0055;0.009;0.998;0.05
+2026-11-02 22:22;M1;6;highest|shanghai;2026-11-03;ZSPD;highest-temperature-in-shanghai-on-november-3-2026;19°C;0.033;0.056;0.0445;0.056;0.967;0.05
+2026-11-02 22:22;M1;6;highest|shanghai;2026-11-03;ZSPD;highest-temperature-in-shanghai-on-november-3-2026;20°C;0.29;0.32;0.305;0.323;0.71;0.05
+2026-11-02 22:22;M1;6;highest|shanghai;2026-11-03;ZSPD;highest-temperature-in-shanghai-on-november-3-2026;21°C;0.59;0.61;0.6;0.61;0.41;0.05
+2026-11-02 22:22;M1;6;highest|shanghai;2026-11-03;ZSPD;highest-temperature-in-shanghai-on-november-3-2026;22°C;0.04;0.06;0.05;0.06;0.96;0.05
+2026-11-02 22:22;M1;6;highest|shanghai;2026-11-03;ZSPD;highest-temperature-in-shanghai-on-november-3-2026;23°C;0.004;0.007;0.0055;0.007;0.996;0.05
+2026-11-02 22:22;M1;6;highest|shanghai;2026-11-03;ZSPD;highest-temperature-in-shanghai-on-november-3-2026;24°C;;0.001;;0.001;;0.05
+2026-11-02 22:22;M1;6;highest|shanghai;2026-11-03;ZSPD;highest-temperature-in-shanghai-on-november-3-2026;25°C or higher;;0.002;;0.002;;0.05
+2026-11-02 22:22;M1;6;highest|singapore;2026-11-03;WSSS;highest-temperature-in-singapore-on-november-3-2026;25°C or below;;0.001;;0.001;;0.05
+2026-11-02 22:22;M1;6;highest|singapore;2026-11-03;WSSS;highest-temperature-in-singapore-on-november-3-2026;26°C;;0.001;;0.001;;0.05
+2026-11-02 22:22;M1;6;highest|singapore;2026-11-03;WSSS;highest-temperature-in-singapore-on-november-3-2026;27°C;;0.001;;0.001;;0.05
+2026-11-02 22:22;M1;6;highest|singapore;2026-11-03;WSSS;highest-temperature-in-singapore-on-november-3-2026;28°C;;0.001;;0.001;;0.05
+2026-11-02 22:22;M1;6;highest|singapore;2026-11-03;WSSS;highest-temperature-in-singapore-on-november-3-2026;29°C;;0.001;;0.001;;0.05
+2026-11-02 22:22;M1;6;highest|singapore;2026-11-03;WSSS;highest-temperature-in-singapore-on-november-3-2026;30°C;;0.001;;0.001;;0.05
+2026-11-02 22:22;M1;6;highest|singapore;2026-11-03;WSSS;highest-temperature-in-singapore-on-november-3-2026;31°C;0.021;0.043;0.032;0.043;0.979;0.05
+2026-11-02 22:22;M1;6;highest|singapore;2026-11-03;WSSS;highest-temperature-in-singapore-on-november-3-2026;32°C;0.45;0.48;0.465;0.48;0.55;0.05
+2026-11-02 22:22;M1;6;highest|singapore;2026-11-03;WSSS;highest-temperature-in-singapore-on-november-3-2026;33°C;0.46;0.51;0.485;0.51;0.54;0.05
+2026-11-02 22:22;M1;6;highest|singapore;2026-11-03;WSSS;highest-temperature-in-singapore-on-november-3-2026;34°C;0.03;0.06;0.045;0.06;0.97;0.05
+2026-11-02 22:22;M1;6;highest|singapore;2026-11-03;WSSS;highest-temperature-in-singapore-on-november-3-2026;35°C or higher;0.002;0.003;0.0025;0.003;0.998;0.05
+2026-11-02 22:22;M1;6;highest|taipei;2026-11-03;RCSS;highest-temperature-in-taipei-on-november-3-2026;22°C or below;;0.001;;0.001;;0.05
+2026-11-02 22:22;M1;6;highest|taipei;2026-11-03;RCSS;highest-temperature-in-taipei-on-november-3-2026;23°C;0.001;0.009;0.005;0.009;0.999;0.05
+2026-11-02 22:22;M1;6;highest|taipei;2026-11-03;RCSS;highest-temperature-in-taipei-on-november-3-2026;24°C;0.005;0.01;0.0075;0.01;0.995;0.05
+2026-11-02 22:22;M1;6;highest|taipei;2026-11-03;RCSS;highest-temperature-in-taipei-on-november-3-2026;25°C;0.04;0.08;0.06;0.08;0.96;0.05
+2026-11-02 22:22;M1;6;highest|taipei;2026-11-03;RCSS;highest-temperature-in-taipei-on-november-3-2026;26°C;0.27;0.3;0.285;0.3;0.73;0.05
+2026-11-02 22:22;M1;6;highest|taipei;2026-11-03;RCSS;highest-temperature-in-taipei-on-november-3-2026;27°C;0.36;0.41;0.385;0.41;0.64;0.05
+2026-11-02 22:22;M1;6;highest|taipei;2026-11-03;RCSS;highest-temperature-in-taipei-on-november-3-2026;28°C;0.18;0.21;0.195;0.21;0.82;0.05
+2026-11-02 22:22;M1;6;highest|taipei;2026-11-03;RCSS;highest-temperature-in-taipei-on-november-3-2026;29°C;0.036;0.068;0.052;0.068;0.964;0.05
+2026-11-02 22:22;M1;6;highest|taipei;2026-11-03;RCSS;highest-temperature-in-taipei-on-november-3-2026;30°C;0.004;0.005;0.0045;0.005;0.996;0.05
+2026-11-02 22:22;M1;6;highest|taipei;2026-11-03;RCSS;highest-temperature-in-taipei-on-november-3-2026;31°C;0.001;0.003;0.002;0.003;0.999;0.05
+2026-11-02 22:22;M1;6;highest|taipei;2026-11-03;RCSS;highest-temperature-in-taipei-on-november-3-2026;32°C or higher;;0.002;;0.002;;0.05
+2026-11-02 22:22;M1;6;highest|chongqing;2026-11-03;ZUCK;highest-temperature-in-chongqing-on-november-3-2026;11°C or below;;0.001;;0.001;;0.05
+2026-11-02 22:22;M1;6;highest|chongqing;2026-11-03;ZUCK;highest-temperature-in-chongqing-on-november-3-2026;12°C;;0.001;;0.001;;0.05
+2026-11-02 22:22;M1;6;highest|chongqing;2026-11-03;ZUCK;highest-temperature-in-chongqing-on-november-3-2026;13°C;;0.001;;0.001;;0.05
+2026-11-02 22:22;M1;6;highest|chongqing;2026-11-03;ZUCK;highest-temperature-in-chongqing-on-november-3-2026;14°C;;0.001;;0.001;;0.05
+2026-11-02 22:22;M1;6;highest|chongqing;2026-11-03;ZUCK;highest-temperature-in-chongqing-on-november-3-2026;15°C;0.04;0.08;0.06;0.08;0.9612;0.05
+2026-11-02 22:22;M1;6;highest|chongqing;2026-11-03;ZUCK;highest-temperature-in-chongqing-on-november-3-2026;16°C;0.55;0.64;0.595;0.645;0.455;0.05
+2026-11-02 22:22;M1;6;highest|chongqing;2026-11-03;ZUCK;highest-temperature-in-chongqing-on-november-3-2026;17°C;0.3;0.33;0.315;0.3365;0.7;0.05
+2026-11-02 22:22;M1;6;highest|chongqing;2026-11-03;ZUCK;highest-temperature-in-chongqing-on-november-3-2026;18°C;0.012;0.029;0.0205;0.029;0.988;0.05
+2026-11-02 22:22;M1;6;highest|chongqing;2026-11-03;ZUCK;highest-temperature-in-chongqing-on-november-3-2026;19°C;0.001;0.004;0.0025;0.004;0.999;0.05
+2026-11-02 22:22;M1;6;highest|chongqing;2026-11-03;ZUCK;highest-temperature-in-chongqing-on-november-3-2026;20°C;;0.013;;0.013;;0.05
+2026-11-02 22:22;M1;6;highest|chongqing;2026-11-03;ZUCK;highest-temperature-in-chongqing-on-november-3-2026;21°C or higher;;0.001;;0.001;;0.05
+2026-11-02 22:22;M1;6;highest|beijing;2026-11-03;ZBAA;highest-temperature-in-beijing-on-november-3-2026;12°C or below;;0.001;;0.001;;0.05
+2026-11-02 22:22;M1;6;highest|beijing;2026-11-03;ZBAA;highest-temperature-in-beijing-on-november-3-2026;13°C;;0.001;;0.001;;0.05
+2026-11-02 22:22;M1;6;highest|beijing;2026-11-03;ZBAA;highest-temperature-in-beijing-on-november-3-2026;14°C;;0.001;;0.001;;0.05
+2026-11-02 22:22;M1;6;highest|beijing;2026-11-03;ZBAA;highest-temperature-in-beijing-on-november-3-2026;15°C;0.003;0.004;0.0035;0.004;0.997;0.05
+2026-11-02 22:22;M1;6;highest|beijing;2026-11-03;ZBAA;highest-temperature-in-beijing-on-november-3-2026;16°C;0.018;0.019;0.0185;0.019;0.9852;0.05
+2026-11-02 22:22;M1;6;highest|beijing;2026-11-03;ZBAA;highest-temperature-in-beijing-on-november-3-2026;17°C;0.1;0.13;0.115;0.135;0.9;0.05
+2026-11-02 22:22;M1;6;highest|beijing;2026-11-03;ZBAA;highest-temperature-in-beijing-on-november-3-2026;18°C;0.44;0.47;0.455;0.47;0.56;0.05
+2026-11-02 22:22;M1;6;highest|beijing;2026-11-03;ZBAA;highest-temperature-in-beijing-on-november-3-2026;19°C;0.36;0.38;0.37;0.385;0.6417;0.05
+2026-11-02 22:22;M1;6;highest|beijing;2026-11-03;ZBAA;highest-temperature-in-beijing-on-november-3-2026;20°C;0.08;0.1;0.09;0.1;0.92;0.05
+2026-11-02 22:22;M1;6;highest|beijing;2026-11-03;ZBAA;highest-temperature-in-beijing-on-november-3-2026;21°C;0.003;0.006;0.0045;0.006;0.997;0.05
+2026-11-02 22:22;M1;6;highest|beijing;2026-11-03;ZBAA;highest-temperature-in-beijing-on-november-3-2026;22°C or higher;;0.003;;0.003;;0.05
+2026-11-02 22:22;M1;6;highest|wuhan;2026-11-03;ZHHH;highest-temperature-in-wuhan-on-november-3-2026;11°C or below;;0.001;;0.001;;0.05
+2026-11-02 22:22;M1;6;highest|wuhan;2026-11-03;ZHHH;highest-temperature-in-wuhan-on-november-3-2026;12°C;;0.001;;0.001;;0.05
+2026-11-02 22:22;M1;6;highest|wuhan;2026-11-03;ZHHH;highest-temperature-in-wuhan-on-november-3-2026;13°C;;0.001;;0.001;;0.05
+2026-11-02 22:22;M1;6;highest|wuhan;2026-11-03;ZHHH;highest-temperature-in-wuhan-on-november-3-2026;14°C;;0.001;;0.001;;0.05
+2026-11-02 22:22;M1;6;highest|wuhan;2026-11-03;ZHHH;highest-temperature-in-wuhan-on-november-3-2026;15°C;0.5;0.56;0.53;0.5794;0.5;0.05
+2026-11-02 22:22;M1;6;highest|wuhan;2026-11-03;ZHHH;highest-temperature-in-wuhan-on-november-3-2026;16°C;0.18;0.28;0.23;0.285;0.82;0.05
+2026-11-02 22:22;M1;6;highest|wuhan;2026-11-03;ZHHH;highest-temperature-in-wuhan-on-november-3-2026;17°C;0.14;0.18;0.16;0.18;0.86;0.05
+2026-11-02 22:22;M1;6;highest|wuhan;2026-11-03;ZHHH;highest-temperature-in-wuhan-on-november-3-2026;18°C;0.045;0.08;0.0625;0.08;0.9555;0.05
+2026-11-02 22:22;M1;6;highest|wuhan;2026-11-03;ZHHH;highest-temperature-in-wuhan-on-november-3-2026;19°C;0.01;0.014;0.012;0.014;0.9905;0.05
+2026-11-02 22:22;M1;6;highest|wuhan;2026-11-03;ZHHH;highest-temperature-in-wuhan-on-november-3-2026;20°C;0.001;0.003;0.002;0.003;0.999;0.05
+2026-11-02 22:22;M1;6;highest|wuhan;2026-11-03;ZHHH;highest-temperature-in-wuhan-on-november-3-2026;21°C or higher;0.001;0.004;0.0025;0.004;0.999;0.05
+2026-11-02 22:22;M1;6;highest|chengdu;2026-11-03;ZUUU;highest-temperature-in-chengdu-on-november-3-2026;15°C or below;;0.001;;0.001;;0.05
+2026-11-02 22:22;M1;6;highest|chengdu;2026-11-03;ZUUU;highest-temperature-in-chengdu-on-november-3-2026;16°C;0.074;0.12;0.097;0.127;0.926;0.05
+2026-11-02 22:22;M1;6;highest|chengdu;2026-11-03;ZUUU;highest-temperature-in-chengdu-on-november-3-2026;17°C;0.316;0.346;0.331;0.3465;0.684;0.05
+2026-11-02 22:22;M1;6;highest|chengdu;2026-11-03;ZUUU;highest-temperature-in-chengdu-on-november-3-2026;18°C;0.35;0.38;0.365;0.38;0.65;0.05
+2026-11-02 22:22;M1;6;highest|chengdu;2026-11-03;ZUUU;highest-temperature-in-chengdu-on-november-3-2026;19°C;0.12;0.16;0.14;0.16;0.88;0.05
+2026-11-02 22:22;M1;6;highest|chengdu;2026-11-03;ZUUU;highest-temperature-in-chengdu-on-november-3-2026;20°C;0.05;0.07;0.06;0.075;0.95;0.05
+2026-11-02 22:22;M1;6;highest|chengdu;2026-11-03;ZUUU;highest-temperature-in-chengdu-on-november-3-2026;21°C;0.013;0.015;0.014;0.015;0.987;0.05
+2026-11-02 22:22;M1;6;highest|chengdu;2026-11-03;ZUUU;highest-temperature-in-chengdu-on-november-3-2026;22°C;0.001;0.004;0.0025;0.004;0.999;0.05
+2026-11-02 22:22;M1;6;highest|chengdu;2026-11-03;ZUUU;highest-temperature-in-chengdu-on-november-3-2026;23°C;;0.002;;0.002;;0.05
+2026-11-02 22:22;M1;6;highest|chengdu;2026-11-03;ZUUU;highest-temperature-in-chengdu-on-november-3-2026;24°C;;0.001;;0.001;;0.05
+2026-11-02 22:22;M1;6;highest|chengdu;2026-11-03;ZUUU;highest-temperature-in-chengdu-on-november-3-2026;25°C or higher;;0.001;;0.001;;0.05
+2026-11-02 22:22;M1;6;highest|shenzhen;2026-11-03;ZGSZ;highest-temperature-in-shenzhen-on-november-3-2026;25°C or below;;0.001;;0.001;;0.05
+2026-11-02 22:22;M1;6;highest|shenzhen;2026-11-03;ZGSZ;highest-temperature-in-shenzhen-on-november-3-2026;26°C;;0.001;;0.001;;0.05
+2026-11-02 22:22;M1;6;highest|shenzhen;2026-11-03;ZGSZ;highest-temperature-in-shenzhen-on-november-3-2026;27°C;;0.001;;0.001;;0.05
+2026-11-02 22:22;M1;6;highest|shenzhen;2026-11-03;ZGSZ;highest-temperature-in-shenzhen-on-november-3-2026;28°C;0.02;0.056;0.038;0.056;0.98;0.05
+2026-11-02 22:22;M1;6;highest|shenzhen;2026-11-03;ZGSZ;highest-temperature-in-shenzhen-on-november-3-2026;29°C;0.31;0.34;0.325;0.34;0.69;0.05
+2026-11-02 22:22;M1;6;highest|shenzhen;2026-11-03;ZGSZ;highest-temperature-in-shenzhen-on-november-3-2026;30°C;0.52;0.55;0.535;0.55;0.48;0.05
+2026-11-02 22:22;M1;6;highest|shenzhen;2026-11-03;ZGSZ;highest-temperature-in-shenzhen-on-november-3-2026;31°C;0.11;0.13;0.12;0.13;0.89;0.05
+2026-11-02 22:22;M1;6;highest|shenzhen;2026-11-03;ZGSZ;highest-temperature-in-shenzhen-on-november-3-2026;32°C;0.006;0.021;0.0135;0.021;0.994;0.05
+2026-11-02 22:22;M1;6;highest|shenzhen;2026-11-03;ZGSZ;highest-temperature-in-shenzhen-on-november-3-2026;33°C;0.001;0.004;0.0025;0.004;0.999;0.05
+2026-11-02 22:22;M1;6;highest|shenzhen;2026-11-03;ZGSZ;highest-temperature-in-shenzhen-on-november-3-2026;34°C;;0.001;;0.001;;0.05
+2026-11-02 22:22;M1;6;highest|shenzhen;2026-11-03;ZGSZ;highest-temperature-in-shenzhen-on-november-3-2026;35°C or higher;;0.001;;0.001;;0.05
+2026-11-02 22:22;M1;6;highest|kuala-lumpur;2026-11-03;WMKK;highest-temperature-in-kuala-lumpur-on-november-3-2026;28°C or below;;0.001;;0.001;;0.05
+2026-11-02 22:22;M1;6;highest|kuala-lumpur;2026-11-03;WMKK;highest-temperature-in-kuala-lumpur-on-november-3-2026;29°C;;0.002;;0.002;;0.05
+2026-11-02 22:22;M1;6;highest|kuala-lumpur;2026-11-03;WMKK;highest-temperature-in-kuala-lumpur-on-november-3-2026;30°C;0.001;0.003;0.002;0.003;0.999;0.05
+2026-11-02 22:22;M1;6;highest|kuala-lumpur;2026-11-03;WMKK;highest-temperature-in-kuala-lumpur-on-november-3-2026;31°C;0.003;0.018;0.0105;0.018;0.997;0.05
+2026-11-02 22:22;M1;6;highest|kuala-lumpur;2026-11-03;WMKK;highest-temperature-in-kuala-lumpur-on-november-3-2026;32°C;0.09;0.13;0.11;0.13;0.91;0.05
+2026-11-02 22:22;M1;6;highest|kuala-lumpur;2026-11-03;WMKK;highest-temperature-in-kuala-lumpur-on-november-3-2026;33°C;0.42;0.44;0.43;0.445;0.58;0.05
+2026-11-02 22:22;M1;6;highest|kuala-lumpur;2026-11-03;WMKK;highest-temperature-in-kuala-lumpur-on-november-3-2026;34°C;0.42;0.46;0.44;0.46;0.58;0.05
+2026-11-02 22:22;M1;6;highest|kuala-lumpur;2026-11-03;WMKK;highest-temperature-in-kuala-lumpur-on-november-3-2026;35°C;0.032;0.06;0.046;0.06;0.9685;0.05
+2026-11-02 22:22;M1;6;highest|kuala-lumpur;2026-11-03;WMKK;highest-temperature-in-kuala-lumpur-on-november-3-2026;36°C;0.002;0.004;0.003;0.004;0.998;0.05
+2026-11-02 22:22;M1;6;highest|kuala-lumpur;2026-11-03;WMKK;highest-temperature-in-kuala-lumpur-on-november-3-2026;37°C;;0.001;;0.001;;0.05
+2026-11-02 22:22;M1;6;highest|kuala-lumpur;2026-11-03;WMKK;highest-temperature-in-kuala-lumpur-on-november-3-2026;38°C or higher;;0.001;;0.001;;0.05
+2026-11-02 22:22;M1;6;highest|guangzhou;2026-11-03;ZGGG;highest-temperature-in-guangzhou-on-november-3-2026;26°C or below;;0.002;;0.002;;0.05
+2026-11-02 22:22;M1;6;highest|guangzhou;2026-11-03;ZGGG;highest-temperature-in-guangzhou-on-november-3-2026;27°C;0.003;0.006;0.0045;0.006;0.997;0.05
+2026-11-02 22:22;M1;6;highest|guangzhou;2026-11-03;ZGGG;highest-temperature-in-guangzhou-on-november-3-2026;28°C;0.022;0.051;0.0365;0.051;0.978;0.05
+2026-11-02 22:22;M1;6;highest|guangzhou;2026-11-03;ZGGG;highest-temperature-in-guangzhou-on-november-3-2026;29°C;0.36;0.38;0.37;0.38;0.645;0.05
+2026-11-02 22:22;M1;6;highest|guangzhou;2026-11-03;ZGGG;highest-temperature-in-guangzhou-on-november-3-2026;30°C;0.41;0.45;0.43;0.45;0.595;0.05
+2026-11-02 22:22;M1;6;highest|guangzhou;2026-11-03;ZGGG;highest-temperature-in-guangzhou-on-november-3-2026;31°C;0.09;0.13;0.11;0.135;0.91;0.05
+2026-11-02 22:22;M1;6;highest|guangzhou;2026-11-03;ZGGG;highest-temperature-in-guangzhou-on-november-3-2026;32°C;0.013;0.026;0.0195;0.0267;0.987;0.05
+2026-11-02 22:22;M1;6;highest|guangzhou;2026-11-03;ZGGG;highest-temperature-in-guangzhou-on-november-3-2026;33°C;0.003;0.007;0.005;0.007;0.997;0.05
+2026-11-02 22:22;M1;6;highest|guangzhou;2026-11-03;ZGGG;highest-temperature-in-guangzhou-on-november-3-2026;34°C;0.001;0.002;0.0015;0.002;0.999;0.05
+2026-11-02 22:22;M1;6;highest|guangzhou;2026-11-03;ZGGG;highest-temperature-in-guangzhou-on-november-3-2026;35°C;;0.001;;0.001;;0.05
+2026-11-02 22:22;M1;6;highest|guangzhou;2026-11-03;ZGGG;highest-temperature-in-guangzhou-on-november-3-2026;36°C or higher;;0.001;;0.001;;0.05
+2026-11-02 22:22;M1;6;highest|qingdao;2026-11-03;ZSQD;highest-temperature-in-qingdao-on-november-3-2026;16°C or below;;0.001;;0.001;;0.05
+2026-11-02 22:22;M1;6;highest|qingdao;2026-11-03;ZSQD;highest-temperature-in-qingdao-on-november-3-2026;17°C;0.002;0.016;0.009;0.016;0.998;0.05
+2026-11-02 22:22;M1;6;highest|qingdao;2026-11-03;ZSQD;highest-temperature-in-qingdao-on-november-3-2026;18°C;0.005;0.015;0.01;0.015;0.995;0.05
+2026-11-02 22:22;M1;6;highest|qingdao;2026-11-03;ZSQD;highest-temperature-in-qingdao-on-november-3-2026;19°C;0.06;0.08;0.07;0.08;0.94;0.05
+2026-11-02 22:22;M1;6;highest|qingdao;2026-11-03;ZSQD;highest-temperature-in-qingdao-on-november-3-2026;20°C;0.42;0.51;0.465;0.515;0.7271;0.05
+2026-11-02 22:22;M1;6;highest|qingdao;2026-11-03;ZSQD;highest-temperature-in-qingdao-on-november-3-2026;21°C;0.36;0.49;0.425;0.495;0.645;0.05
+2026-11-02 22:22;M1;6;highest|qingdao;2026-11-03;ZSQD;highest-temperature-in-qingdao-on-november-3-2026;22°C;0.05;0.06;0.055;0.06;0.955;0.05
+2026-11-02 22:22;M1;6;highest|qingdao;2026-11-03;ZSQD;highest-temperature-in-qingdao-on-november-3-2026;23°C;0.004;0.019;0.0115;0.019;0.996;0.05
+2026-11-02 22:22;M1;6;highest|qingdao;2026-11-03;ZSQD;highest-temperature-in-qingdao-on-november-3-2026;24°C;;0.007;;0.007;;0.05
+2026-11-02 22:22;M1;6;highest|qingdao;2026-11-03;ZSQD;highest-temperature-in-qingdao-on-november-3-2026;25°C;;0.001;;0.001;;0.05
+2026-11-02 22:22;M1;6;highest|qingdao;2026-11-03;ZSQD;highest-temperature-in-qingdao-on-november-3-2026;26°C or higher;;0.001;;0.001;;0.05
+2026-11-02 22:22;M1;6;highest|manila;2026-11-03;RPLL;highest-temperature-in-manila-on-november-3-2026;29°C or below;;0.001;;0.001;;0.05
+2026-11-02 22:22;M1;6;highest|manila;2026-11-03;RPLL;highest-temperature-in-manila-on-november-3-2026;30°C;;0.001;;0.001;;0.05
+2026-11-02 22:22;M1;6;highest|manila;2026-11-03;RPLL;highest-temperature-in-manila-on-november-3-2026;31°C;0.001;0.004;0.0025;0.004;0.999;0.05
+2026-11-02 22:22;M1;6;highest|manila;2026-11-03;RPLL;highest-temperature-in-manila-on-november-3-2026;32°C;0.021;0.057;0.039;0.057;0.979;0.05
+2026-11-02 22:22;M1;6;highest|manila;2026-11-03;RPLL;highest-temperature-in-manila-on-november-3-2026;33°C;0.34;0.36;0.35;0.365;0.66;0.05
+2026-11-02 22:22;M1;6;highest|manila;2026-11-03;RPLL;highest-temperature-in-manila-on-november-3-2026;34°C;0.44;0.49;0.465;0.49;0.56;0.05
+2026-11-02 22:22;M1;6;highest|manila;2026-11-03;RPLL;highest-temperature-in-manila-on-november-3-2026;35°C;0.13;0.16;0.145;0.165;0.87;0.05
+2026-11-02 22:22;M1;6;highest|manila;2026-11-03;RPLL;highest-temperature-in-manila-on-november-3-2026;36°C;0.004;0.006;0.005;0.006;0.996;0.05
+2026-11-02 22:22;M1;6;highest|manila;2026-11-03;RPLL;highest-temperature-in-manila-on-november-3-2026;37°C;;0.001;;0.001;;0.05
+2026-11-02 22:22;M1;6;highest|manila;2026-11-03;RPLL;highest-temperature-in-manila-on-november-3-2026;38°C;;0.001;;0.001;;0.05
+2026-11-02 22:22;M1;6;highest|manila;2026-11-03;RPLL;highest-temperature-in-manila-on-november-3-2026;39°C or higher;;0.001;;0.001;;0.05
+2026-11-02 22:22;M0;6;lowest|shanghai;2026-11-04;ZSPD;lowest-temperature-in-shanghai-on-november-4-2026;13°C or below;;0.11;;0.11;;0.05
+2026-11-02 22:22;M0;6;lowest|shanghai;2026-11-04;ZSPD;lowest-temperature-in-shanghai-on-november-4-2026;14°C;0.01;0.1;0.055;0.1;0.99;0.05
+2026-11-02 22:22;M0;6;lowest|shanghai;2026-11-04;ZSPD;lowest-temperature-in-shanghai-on-november-4-2026;15°C;0.02;0.13;0.075;0.135;;0.05
+2026-11-02 22:22;M0;6;lowest|shanghai;2026-11-04;ZSPD;lowest-temperature-in-shanghai-on-november-4-2026;16°C;0.08;0.33;0.205;0.335;0.925;0.05
+2026-11-02 22:22;M0;6;lowest|shanghai;2026-11-04;ZSPD;lowest-temperature-in-shanghai-on-november-4-2026;17°C;0.42;0.66;0.54;0.665;0.58;0.05
+2026-11-02 22:22;M0;6;lowest|shanghai;2026-11-04;ZSPD;lowest-temperature-in-shanghai-on-november-4-2026;18°C;0.25;0.28;0.265;0.28;0.75;0.05
+2026-11-02 22:22;M0;6;lowest|shanghai;2026-11-04;ZSPD;lowest-temperature-in-shanghai-on-november-4-2026;19°C;0.01;0.14;0.075;0.145;0.99;0.05
+2026-11-02 22:22;M0;6;lowest|shanghai;2026-11-04;ZSPD;lowest-temperature-in-shanghai-on-november-4-2026;20°C;;0.1;;0.1;;0.05
+2026-11-02 22:22;M0;6;lowest|shanghai;2026-11-04;ZSPD;lowest-temperature-in-shanghai-on-november-4-2026;21°C;0.001;0.07;0.0355;0.07;0.999;0.05
+2026-11-02 22:22;M0;6;lowest|shanghai;2026-11-04;ZSPD;lowest-temperature-in-shanghai-on-november-4-2026;22°C;0.001;0.034;0.0175;0.035;0.999;0.05
+2026-11-02 22:22;M0;6;lowest|shanghai;2026-11-04;ZSPD;lowest-temperature-in-shanghai-on-november-4-2026;23°C or higher;0.001;0.06;0.0305;0.06;0.999;0.05
+2026-11-02 22:22;M0;6;lowest|taipei;2026-11-04;RCSS;lowest-temperature-in-taipei-on-november-4-2026;17°C or below;;0.49;;0.495;;0.05
+2026-11-02 22:22;M0;6;lowest|taipei;2026-11-04;RCSS;lowest-temperature-in-taipei-on-november-4-2026;18°C;;0.66;;0.66;;0.05
+2026-11-02 22:22;M0;6;lowest|taipei;2026-11-04;RCSS;lowest-temperature-in-taipei-on-november-4-2026;19°C;;0.67;;0.67;;0.05
+2026-11-02 22:22;M0;6;lowest|taipei;2026-11-04;RCSS;lowest-temperature-in-taipei-on-november-4-2026;20°C;;0.67;;0.67;;0.05
+2026-11-02 22:22;M0;6;lowest|taipei;2026-11-04;RCSS;lowest-temperature-in-taipei-on-november-4-2026;21°C;;0.68;;0.6875;;0.05
+2026-11-02 22:22;M0;6;lowest|taipei;2026-11-04;RCSS;lowest-temperature-in-taipei-on-november-4-2026;22°C;0.14;0.67;0.405;0.67;0.86;0.05
+2026-11-02 22:22;M0;6;lowest|taipei;2026-11-04;RCSS;lowest-temperature-in-taipei-on-november-4-2026;23°C;;0.68;;0.6875;;0.05
+2026-11-02 22:22;M0;6;lowest|taipei;2026-11-04;RCSS;lowest-temperature-in-taipei-on-november-4-2026;24°C;;0.67;;0.67;;0.05
+2026-11-02 22:22;M0;6;lowest|taipei;2026-11-04;RCSS;lowest-temperature-in-taipei-on-november-4-2026;25°C;;0.67;;0.67;;0.05
+2026-11-02 22:22;M0;6;lowest|taipei;2026-11-04;RCSS;lowest-temperature-in-taipei-on-november-4-2026;26°C;;0.66;;0.66;;0.05
+2026-11-02 22:22;M0;6;lowest|taipei;2026-11-04;RCSS;lowest-temperature-in-taipei-on-november-4-2026;27°C or higher;;0.49;;0.495;;0.05
+2026-11-02 22:22;M0;6;lowest|chongqing;2026-11-04;ZUCK;lowest-temperature-in-chongqing-on-november-4-2026;9°C or below;;0.45;;0.47;;0.05
+2026-11-02 22:22;M0;6;lowest|chongqing;2026-11-04;ZUCK;lowest-temperature-in-chongqing-on-november-4-2026;10°C;;0.18;;0.18;;0.05
+2026-11-02 22:22;M0;6;lowest|chongqing;2026-11-04;ZUCK;lowest-temperature-in-chongqing-on-november-4-2026;11°C;;0.18;;0.18;;0.05
+2026-11-02 22:22;M0;6;lowest|chongqing;2026-11-04;ZUCK;lowest-temperature-in-chongqing-on-november-4-2026;12°C;;0.27;;0.475;;0.05
+2026-11-02 22:22;M0;6;lowest|chongqing;2026-11-04;ZUCK;lowest-temperature-in-chongqing-on-november-4-2026;13°C;0.01;0.14;0.075;0.145;0.99;0.05
+2026-11-02 22:22;M0;6;lowest|chongqing;2026-11-04;ZUCK;lowest-temperature-in-chongqing-on-november-4-2026;14°C;0.01;0.24;0.125;0.24;0.99;0.05
+2026-11-02 22:22;M0;6;lowest|chongqing;2026-11-04;ZUCK;lowest-temperature-in-chongqing-on-november-4-2026;15°C;0.06;0.67;0.365;0.675;0.94;0.05
+2026-11-02 22:22;M0;6;lowest|chongqing;2026-11-04;ZUCK;lowest-temperature-in-chongqing-on-november-4-2026;16°C;0.05;0.61;0.33;0.615;0.96;0.05
+2026-11-02 22:22;M0;6;lowest|chongqing;2026-11-04;ZUCK;lowest-temperature-in-chongqing-on-november-4-2026;17°C;;0.67;;0.67;;0.05
+2026-11-02 22:22;M0;6;lowest|chongqing;2026-11-04;ZUCK;lowest-temperature-in-chongqing-on-november-4-2026;18°C;;0.26;;0.265;;0.05
+2026-11-02 22:22;M0;6;lowest|chongqing;2026-11-04;ZUCK;lowest-temperature-in-chongqing-on-november-4-2026;19°C or higher;;0.5;;0.5;;0.05
+2026-11-02 22:22;M0;6;lowest|beijing;2026-11-04;ZBAA;lowest-temperature-in-beijing-on-november-4-2026;-1°C or below;;0.46;;0.4621;;0.05
+2026-11-02 22:22;M0;6;lowest|beijing;2026-11-04;ZBAA;lowest-temperature-in-beijing-on-november-4-2026;0°C;0.03;0.21;0.12;0.21;0.975;0.05
+2026-11-02 22:22;M0;6;lowest|beijing;2026-11-04;ZBAA;lowest-temperature-in-beijing-on-november-4-2026;1°C;0.03;0.66;0.345;0.665;0.97;0.05
+2026-11-02 22:22;M0;6;lowest|beijing;2026-11-04;ZBAA;lowest-temperature-in-beijing-on-november-4-2026;2°C;;0.68;;0.6875;;0.05
+2026-11-02 22:22;M0;6;lowest|beijing;2026-11-04;ZBAA;lowest-temperature-in-beijing-on-november-4-2026;3°C;0.11;0.66;0.385;0.665;0.89;0.05
+2026-11-02 22:22;M0;6;lowest|beijing;2026-11-04;ZBAA;lowest-temperature-in-beijing-on-november-4-2026;4°C;0.03;0.66;0.345;0.665;0.975;0.05
+2026-11-02 22:22;M0;6;lowest|beijing;2026-11-04;ZBAA;lowest-temperature-in-beijing-on-november-4-2026;5°C;;0.67;;0.67;;0.05
+2026-11-02 22:22;M0;6;lowest|beijing;2026-11-04;ZBAA;lowest-temperature-in-beijing-on-november-4-2026;6°C;0.002;0.02;0.011;0.02;0.998;0.05
+2026-11-02 22:22;M0;6;lowest|beijing;2026-11-04;ZBAA;lowest-temperature-in-beijing-on-november-4-2026;7°C;;0.08;;0.0921;;0.05
+2026-11-02 22:22;M0;6;lowest|beijing;2026-11-04;ZBAA;lowest-temperature-in-beijing-on-november-4-2026;8°C;;0.08;;0.0921;;0.05
+2026-11-02 22:22;M0;6;lowest|beijing;2026-11-04;ZBAA;lowest-temperature-in-beijing-on-november-4-2026;9°C or higher;;0.47;;0.4724;;0.05
+2026-11-02 22:22;M0;6;lowest|wuhan;2026-11-04;ZHHH;lowest-temperature-in-wuhan-on-november-4-2026;9°C or below;;0.49;;0.495;;0.05
+2026-11-02 22:22;M0;6;lowest|wuhan;2026-11-04;ZHHH;lowest-temperature-in-wuhan-on-november-4-2026;10°C;0.02;0.64;0.33;0.645;;0.05
+2026-11-02 22:22;M0;6;lowest|wuhan;2026-11-04;ZHHH;lowest-temperature-in-wuhan-on-november-4-2026;11°C;0.02;0.66;0.34;0.665;;0.05
+2026-11-02 22:22;M0;6;lowest|wuhan;2026-11-04;ZHHH;lowest-temperature-in-wuhan-on-november-4-2026;12°C;0.01;0.66;0.335;0.665;0.99;0.05
+2026-11-02 22:22;M0;6;lowest|wuhan;2026-11-04;ZHHH;lowest-temperature-in-wuhan-on-november-4-2026;13°C;0.02;0.67;0.345;0.675;0.98;0.05
+2026-11-02 22:22;M0;6;lowest|wuhan;2026-11-04;ZHHH;lowest-temperature-in-wuhan-on-november-4-2026;14°C;0.04;0.66;0.35;0.665;0.96;0.05
+2026-11-02 22:22;M0;6;lowest|wuhan;2026-11-04;ZHHH;lowest-temperature-in-wuhan-on-november-4-2026;15°C;;0.67;;0.67;;0.05
+2026-11-02 22:22;M0;6;lowest|wuhan;2026-11-04;ZHHH;lowest-temperature-in-wuhan-on-november-4-2026;16°C;;0.27;;0.475;;0.05
+2026-11-02 22:22;M0;6;lowest|wuhan;2026-11-04;ZHHH;lowest-temperature-in-wuhan-on-november-4-2026;17°C;;0.26;;0.265;;0.05
+2026-11-02 22:22;M0;6;lowest|wuhan;2026-11-04;ZHHH;lowest-temperature-in-wuhan-on-november-4-2026;18°C;;0.26;;0.265;;0.05
+2026-11-02 22:22;M0;6;lowest|wuhan;2026-11-04;ZHHH;lowest-temperature-in-wuhan-on-november-4-2026;19°C or higher;;0.49;;0.495;;0.05
+2026-11-02 22:22;M0;6;lowest|chengdu;2026-11-04;ZUUU;lowest-temperature-in-chengdu-on-november-4-2026;9°C or below;;0.44;;0.4425;;0.05
+2026-11-02 22:22;M0;6;lowest|chengdu;2026-11-04;ZUUU;lowest-temperature-in-chengdu-on-november-4-2026;10°C;0.001;0.039;0.02;0.039;0.999;0.05
+2026-11-02 22:22;M0;6;lowest|chengdu;2026-11-04;ZUUU;lowest-temperature-in-chengdu-on-november-4-2026;11°C;;0.08;;0.093;;0.05
+2026-11-02 22:22;M0;6;lowest|chengdu;2026-11-04;ZUUU;lowest-temperature-in-chengdu-on-november-4-2026;12°C;;0.17;;0.175;;0.05
+2026-11-02 22:22;M0;6;lowest|chengdu;2026-11-04;ZUUU;lowest-temperature-in-chengdu-on-november-4-2026;13°C;;0.68;;0.6875;;0.05
+2026-11-02 22:22;M0;6;lowest|chengdu;2026-11-04;ZUUU;lowest-temperature-in-chengdu-on-november-4-2026;14°C;;0.68;;0.6875;;0.05
+2026-11-02 22:22;M0;6;lowest|chengdu;2026-11-04;ZUUU;lowest-temperature-in-chengdu-on-november-4-2026;15°C;0.04;0.66;0.35;0.66;0.965;0.05
+2026-11-02 22:22;M0;6;lowest|chengdu;2026-11-04;ZUUU;lowest-temperature-in-chengdu-on-november-4-2026;16°C;;0.66;;0.66;;0.05
+2026-11-02 22:22;M0;6;lowest|chengdu;2026-11-04;ZUUU;lowest-temperature-in-chengdu-on-november-4-2026;17°C;;0.27;;0.475;;0.05
+2026-11-02 22:22;M0;6;lowest|chengdu;2026-11-04;ZUUU;lowest-temperature-in-chengdu-on-november-4-2026;18°C;;0.12;;0.1346;;0.05
+2026-11-02 22:22;M0;6;lowest|chengdu;2026-11-04;ZUUU;lowest-temperature-in-chengdu-on-november-4-2026;19°C or higher;;0.44;;0.44;;0.05
+2026-11-02 22:22;M0;6;lowest|shenzhen;2026-11-04;ZGSZ;lowest-temperature-in-shenzhen-on-november-4-2026;20°C or below;;0.48;;0.4825;;0.05
+2026-11-02 22:22;M0;6;lowest|shenzhen;2026-11-04;ZGSZ;lowest-temperature-in-shenzhen-on-november-4-2026;21°C;0.001;0.032;0.0165;0.032;0.999;0.05
+2026-11-02 22:22;M0;6;lowest|shenzhen;2026-11-04;ZGSZ;lowest-temperature-in-shenzhen-on-november-4-2026;22°C;0.001;0.049;0.025;0.049;0.999;0.05
+2026-11-02 22:22;M0;6;lowest|shenzhen;2026-11-04;ZGSZ;lowest-temperature-in-shenzhen-on-november-4-2026;23°C;;0.16;;0.16;;0.05
+2026-11-02 22:22;M0;6;lowest|shenzhen;2026-11-04;ZGSZ;lowest-temperature-in-shenzhen-on-november-4-2026;24°C;0.02;0.22;0.12;0.22;;0.05
+2026-11-02 22:22;M0;6;lowest|shenzhen;2026-11-04;ZGSZ;lowest-temperature-in-shenzhen-on-november-4-2026;25°C;;0.68;;0.6875;;0.05
+2026-11-02 22:22;M0;6;lowest|shenzhen;2026-11-04;ZGSZ;lowest-temperature-in-shenzhen-on-november-4-2026;26°C;0.22;0.67;0.445;0.67;0.78;0.05
+2026-11-02 22:22;M0;6;lowest|shenzhen;2026-11-04;ZGSZ;lowest-temperature-in-shenzhen-on-november-4-2026;27°C;;0.67;;0.67;;0.05
+2026-11-02 22:22;M0;6;lowest|shenzhen;2026-11-04;ZGSZ;lowest-temperature-in-shenzhen-on-november-4-2026;28°C;;0.66;;0.67;;0.05
+2026-11-02 22:22;M0;6;lowest|shenzhen;2026-11-04;ZGSZ;lowest-temperature-in-shenzhen-on-november-4-2026;29°C;0.001;0.019;0.01;0.019;0.999;0.05
+2026-11-02 22:22;M0;6;lowest|shenzhen;2026-11-04;ZGSZ;lowest-temperature-in-shenzhen-on-november-4-2026;30°C or higher;;0.41;;0.4125;;0.05
+2026-11-02 22:22;M0;6;lowest|guangzhou;2026-11-04;ZGGG;lowest-temperature-in-guangzhou-on-november-4-2026;18°C or below;;0.48;;0.485;;0.05
+2026-11-02 22:22;M0;6;lowest|guangzhou;2026-11-04;ZGGG;lowest-temperature-in-guangzhou-on-november-4-2026;19°C;;0.16;;0.165;;0.05
+2026-11-02 22:22;M0;6;lowest|guangzhou;2026-11-04;ZGGG;lowest-temperature-in-guangzhou-on-november-4-2026;20°C;;0.17;;0.175;;0.05
+2026-11-02 22:22;M0;6;lowest|guangzhou;2026-11-04;ZGGG;lowest-temperature-in-guangzhou-on-november-4-2026;21°C;;0.17;;0.175;;0.05
+2026-11-02 22:22;M0;6;lowest|guangzhou;2026-11-04;ZGGG;lowest-temperature-in-guangzhou-on-november-4-2026;22°C;0.01;0.14;0.075;0.145;0.99;0.05
+2026-11-02 22:22;M0;6;lowest|guangzhou;2026-11-04;ZGGG;lowest-temperature-in-guangzhou-on-november-4-2026;23°C;0.05;0.66;0.355;0.665;0.95;0.05
+2026-11-02 22:22;M0;6;lowest|guangzhou;2026-11-04;ZGGG;lowest-temperature-in-guangzhou-on-november-4-2026;24°C;0.11;0.66;0.385;0.665;0.89;0.05
+2026-11-02 22:22;M0;6;lowest|guangzhou;2026-11-04;ZGGG;lowest-temperature-in-guangzhou-on-november-4-2026;25°C;0.04;0.66;0.35;0.665;0.965;0.05
+2026-11-02 22:22;M0;6;lowest|guangzhou;2026-11-04;ZGGG;lowest-temperature-in-guangzhou-on-november-4-2026;26°C;;0.66;;0.66;;0.05
+2026-11-02 22:22;M0;6;lowest|guangzhou;2026-11-04;ZGGG;lowest-temperature-in-guangzhou-on-november-4-2026;27°C;;0.26;;0.265;;0.05
+2026-11-02 22:22;M0;6;lowest|guangzhou;2026-11-04;ZGGG;lowest-temperature-in-guangzhou-on-november-4-2026;28°C or higher;;0.49;;0.495;;0.05
+2026-11-02 22:22;M0;6;lowest|qingdao;2026-11-04;ZSQD;lowest-temperature-in-qingdao-on-november-4-2026;7°C or below;;0.47;;0.474;;0.05
+2026-11-02 22:22;M0;6;lowest|qingdao;2026-11-04;ZSQD;lowest-temperature-in-qingdao-on-november-4-2026;8°C;;0.66;;0.66;;0.05
+2026-11-02 22:22;M0;6;lowest|qingdao;2026-11-04;ZSQD;lowest-temperature-in-qingdao-on-november-4-2026;9°C;;0.67;;0.67;;0.05
+2026-11-02 22:22;M0;6;lowest|qingdao;2026-11-04;ZSQD;lowest-temperature-in-qingdao-on-november-4-2026;10°C;;0.67;;0.67;;0.05
+2026-11-02 22:22;M0;6;lowest|qingdao;2026-11-04;ZSQD;lowest-temperature-in-qingdao-on-november-4-2026;11°C;0.14;0.44;0.29;0.445;0.86;0.05
+2026-11-02 22:22;M0;6;lowest|qingdao;2026-11-04;ZSQD;lowest-temperature-in-qingdao-on-november-4-2026;12°C;0.16;0.66;0.41;0.665;0.84;0.05
+2026-11-02 22:22;M0;6;lowest|qingdao;2026-11-04;ZSQD;lowest-temperature-in-qingdao-on-november-4-2026;13°C;0.1;0.66;0.38;0.665;0.9;0.05
+2026-11-02 22:22;M0;6;lowest|qingdao;2026-11-04;ZSQD;lowest-temperature-in-qingdao-on-november-4-2026;14°C;;0.65;;0.65;;0.05
+2026-11-02 22:22;M0;6;lowest|qingdao;2026-11-04;ZSQD;lowest-temperature-in-qingdao-on-november-4-2026;15°C;;0.65;;0.65;;0.05
+2026-11-02 22:22;M0;6;lowest|qingdao;2026-11-04;ZSQD;lowest-temperature-in-qingdao-on-november-4-2026;16°C;;0.66;;0.66;;0.05
+2026-11-02 22:22;M0;6;lowest|qingdao;2026-11-04;ZSQD;lowest-temperature-in-qingdao-on-november-4-2026;17°C or higher;;0.49;;0.493;;0.05
+2026-11-02 22:22;M0;6;highest|shanghai;2026-11-04;ZSPD;highest-temperature-in-shanghai-on-november-4-2026;15°C or below;;0.001;;0.001;;0.05
+2026-11-02 22:22;M0;6;highest|shanghai;2026-11-04;ZSPD;highest-temperature-in-shanghai-on-november-4-2026;16°C;0.001;0.002;0.0015;0.002;0.999;0.05
+2026-11-02 22:22;M0;6;highest|shanghai;2026-11-04;ZSPD;highest-temperature-in-shanghai-on-november-4-2026;17°C;0.001;0.009;0.005;0.009;0.999;0.05
+2026-11-02 22:22;M0;6;highest|shanghai;2026-11-04;ZSPD;highest-temperature-in-shanghai-on-november-4-2026;18°C;0.018;0.028;0.023;0.028;0.982;0.05
+2026-11-02 22:22;M0;6;highest|shanghai;2026-11-04;ZSPD;highest-temperature-in-shanghai-on-november-4-2026;19°C;0.25;0.26;0.255;0.26;0.75;0.05
+2026-11-02 22:22;M0;6;highest|shanghai;2026-11-04;ZSPD;highest-temperature-in-shanghai-on-november-4-2026;20°C;0.56;0.57;0.565;0.57;0.44;0.05
+2026-11-02 22:22;M0;6;highest|shanghai;2026-11-04;ZSPD;highest-temperature-in-shanghai-on-november-4-2026;21°C;0.13;0.15;0.14;0.15;0.87;0.05
+2026-11-02 22:22;M0;6;highest|shanghai;2026-11-04;ZSPD;highest-temperature-in-shanghai-on-november-4-2026;22°C;0.007;0.019;0.013;0.0195;0.993;0.05
+2026-11-02 22:22;M0;6;highest|shanghai;2026-11-04;ZSPD;highest-temperature-in-shanghai-on-november-4-2026;23°C;0.002;0.009;0.0055;0.009;0.998;0.05
+2026-11-02 22:22;M0;6;highest|shanghai;2026-11-04;ZSPD;highest-temperature-in-shanghai-on-november-4-2026;24°C;0.001;0.015;0.008;0.015;0.999;0.05
+2026-11-02 22:22;M0;6;highest|shanghai;2026-11-04;ZSPD;highest-temperature-in-shanghai-on-november-4-2026;25°C or higher;;0.001;;0.001;;0.05
+2026-11-02 22:22;M0;6;highest|singapore;2026-11-04;WSSS;highest-temperature-in-singapore-on-november-4-2026;25°C or below;0.001;0.002;0.0015;0.002;0.999;0.05
+2026-11-02 22:22;M0;6;highest|singapore;2026-11-04;WSSS;highest-temperature-in-singapore-on-november-4-2026;26°C;0.001;0.004;0.0025;0.004;0.999;0.05
+2026-11-02 22:22;M0;6;highest|singapore;2026-11-04;WSSS;highest-temperature-in-singapore-on-november-4-2026;27°C;0.001;0.002;0.0015;0.002;0.999;0.05
+2026-11-02 22:22;M0;6;highest|singapore;2026-11-04;WSSS;highest-temperature-in-singapore-on-november-4-2026;28°C;0.001;0.002;0.0015;0.002;0.999;0.05
+2026-11-02 22:22;M0;6;highest|singapore;2026-11-04;WSSS;highest-temperature-in-singapore-on-november-4-2026;29°C;0.001;0.017;0.009;0.017;0.999;0.05
+2026-11-02 22:22;M0;6;highest|singapore;2026-11-04;WSSS;highest-temperature-in-singapore-on-november-4-2026;30°C;0.005;0.017;0.011;0.017;0.995;0.05
+2026-11-02 22:22;M0;6;highest|singapore;2026-11-04;WSSS;highest-temperature-in-singapore-on-november-4-2026;31°C;0.06;0.07;0.065;0.0894;0.94;0.05
+2026-11-02 22:22;M0;6;highest|singapore;2026-11-04;WSSS;highest-temperature-in-singapore-on-november-4-2026;32°C;0.49;0.5;0.495;0.5;0.51;0.05
+2026-11-02 22:22;M0;6;highest|singapore;2026-11-04;WSSS;highest-temperature-in-singapore-on-november-4-2026;33°C;0.34;0.37;0.355;0.37;0.665;0.05
+2026-11-02 22:22;M0;6;highest|singapore;2026-11-04;WSSS;highest-temperature-in-singapore-on-november-4-2026;34°C;0.021;0.04;0.0305;0.0432;0.9795;0.05
+2026-11-02 22:22;M0;6;highest|singapore;2026-11-04;WSSS;highest-temperature-in-singapore-on-november-4-2026;35°C or higher;0.003;0.004;0.0035;0.004;0.997;0.05
+2026-11-02 22:22;M0;6;highest|taipei;2026-11-04;RCSS;highest-temperature-in-taipei-on-november-4-2026;25°C or below;0.001;0.002;0.0015;0.002;0.999;0.05
+2026-11-02 22:22;M0;6;highest|taipei;2026-11-04;RCSS;highest-temperature-in-taipei-on-november-4-2026;26°C;0.002;0.009;0.0055;0.009;0.9985;0.05
+2026-11-02 22:22;M0;6;highest|taipei;2026-11-04;RCSS;highest-temperature-in-taipei-on-november-4-2026;27°C;0.002;0.009;0.0055;0.009;0.9985;0.05
+2026-11-02 22:22;M0;6;highest|taipei;2026-11-04;RCSS;highest-temperature-in-taipei-on-november-4-2026;28°C;0.003;0.017;0.01;0.017;0.997;0.05
+2026-11-02 22:22;M0;6;highest|taipei;2026-11-04;RCSS;highest-temperature-in-taipei-on-november-4-2026;29°C;0.011;0.02;0.0155;0.02;0.989;0.05
+2026-11-02 22:22;M0;6;highest|taipei;2026-11-04;RCSS;highest-temperature-in-taipei-on-november-4-2026;30°C;0.11;0.13;0.12;0.13;0.89;0.05
+2026-11-02 22:22;M0;6;highest|taipei;2026-11-04;RCSS;highest-temperature-in-taipei-on-november-4-2026;31°C;0.36;0.39;0.375;0.39;0.64;0.05
+2026-11-02 22:22;M0;6;highest|taipei;2026-11-04;RCSS;highest-temperature-in-taipei-on-november-4-2026;32°C;0.28;0.38;0.33;0.385;0.725;0.05
+2026-11-02 22:22;M0;6;highest|taipei;2026-11-04;RCSS;highest-temperature-in-taipei-on-november-4-2026;33°C;0.042;0.074;0.058;0.074;0.958;0.05
+2026-11-02 22:22;M0;6;highest|taipei;2026-11-04;RCSS;highest-temperature-in-taipei-on-november-4-2026;34°C;0.01;0.03;0.02;0.03;0.99;0.05
+2026-11-02 22:22;M0;6;highest|taipei;2026-11-04;RCSS;highest-temperature-in-taipei-on-november-4-2026;35°C or higher;0.002;0.004;0.003;0.004;0.998;0.05
+2026-11-02 22:22;M0;6;highest|chongqing;2026-11-04;ZUCK;highest-temperature-in-chongqing-on-november-4-2026;13°C or below;;0.001;;0.0014;;0.05
+2026-11-02 22:22;M0;6;highest|chongqing;2026-11-04;ZUCK;highest-temperature-in-chongqing-on-november-4-2026;14°C;0.001;0.01;0.0055;0.0145;0.999;0.05
+2026-11-02 22:22;M0;6;highest|chongqing;2026-11-04;ZUCK;highest-temperature-in-chongqing-on-november-4-2026;15°C;0.004;0.01;0.007;0.0145;0.996;0.05
+2026-11-02 22:22;M0;6;highest|chongqing;2026-11-04;ZUCK;highest-temperature-in-chongqing-on-november-4-2026;16°C;0.025;0.111;0.068;0.1115;0.9755;0.05
+2026-11-02 22:22;M0;6;highest|chongqing;2026-11-04;ZUCK;highest-temperature-in-chongqing-on-november-4-2026;17°C;0.17;0.19;0.18;0.19;0.83;0.05
+2026-11-02 22:22;M0;6;highest|chongqing;2026-11-04;ZUCK;highest-temperature-in-chongqing-on-november-4-2026;18°C;0.36;0.39;0.375;0.395;0.64;0.05
+2026-11-02 22:22;M0;6;highest|chongqing;2026-11-04;ZUCK;highest-temperature-in-chongqing-on-november-4-2026;19°C;0.26;0.28;0.27;0.28;0.74;0.05
+2026-11-02 22:22;M0;6;highest|chongqing;2026-11-04;ZUCK;highest-temperature-in-chongqing-on-november-4-2026;20°C;0.11;0.12;0.115;0.125;0.89;0.05
+2026-11-02 22:22;M0;6;highest|chongqing;2026-11-04;ZUCK;highest-temperature-in-chongqing-on-november-4-2026;21°C;0.018;0.101;0.0595;0.1015;0.9825;0.05
+2026-11-02 22:22;M0;6;highest|chongqing;2026-11-04;ZUCK;highest-temperature-in-chongqing-on-november-4-2026;22°C;;0.07;;0.075;;0.05
+2026-11-02 22:22;M0;6;highest|chongqing;2026-11-04;ZUCK;highest-temperature-in-chongqing-on-november-4-2026;23°C or higher;0.001;0.01;0.0055;0.01;0.999;0.05
+2026-11-02 22:22;M0;6;highest|beijing;2026-11-04;ZBAA;highest-temperature-in-beijing-on-november-4-2026;9°C or below;0.001;0.002;0.0015;0.002;0.999;0.05
+2026-11-02 22:22;M0;6;highest|beijing;2026-11-04;ZBAA;highest-temperature-in-beijing-on-november-4-2026;10°C;0.003;0.021;0.012;0.021;0.997;0.05
+2026-11-02 22:22;M0;6;highest|beijing;2026-11-04;ZBAA;highest-temperature-in-beijing-on-november-4-2026;11°C;0.014;0.049;0.0315;0.0495;0.986;0.05
+2026-11-02 22:22;M0;6;highest|beijing;2026-11-04;ZBAA;highest-temperature-in-beijing-on-november-4-2026;12°C;0.11;0.13;0.12;0.13;0.895;0.05
+2026-11-02 22:22;M0;6;highest|beijing;2026-11-04;ZBAA;highest-temperature-in-beijing-on-november-4-2026;13°C;0.26;0.3;0.28;0.3;0.74;0.05
+2026-11-02 22:22;M0;6;highest|beijing;2026-11-04;ZBAA;highest-temperature-in-beijing-on-november-4-2026;14°C;0.3;0.34;0.32;0.345;0.7;0.05
+2026-11-02 22:22;M0;6;highest|beijing;2026-11-04;ZBAA;highest-temperature-in-beijing-on-november-4-2026;15°C;0.19;0.2;0.195;0.2002;0.81;0.05
+2026-11-02 22:22;M0;6;highest|beijing;2026-11-04;ZBAA;highest-temperature-in-beijing-on-november-4-2026;16°C;0.05;0.06;0.055;0.06;0.95;0.05
+2026-11-02 22:22;M0;6;highest|beijing;2026-11-04;ZBAA;highest-temperature-in-beijing-on-november-4-2026;17°C;0.004;0.02;0.012;0.02;0.996;0.05
+2026-11-02 22:22;M0;6;highest|beijing;2026-11-04;ZBAA;highest-temperature-in-beijing-on-november-4-2026;18°C;0.002;0.019;0.0105;0.019;0.998;0.05
+2026-11-02 22:22;M0;6;highest|beijing;2026-11-04;ZBAA;highest-temperature-in-beijing-on-november-4-2026;19°C or higher;0.001;0.018;0.0095;0.018;0.999;0.05
+2026-11-02 22:22;M0;6;highest|wuhan;2026-11-04;ZHHH;highest-temperature-in-wuhan-on-november-4-2026;11°C or below;;0.002;;0.002;;0.05
+2026-11-02 22:22;M0;6;highest|wuhan;2026-11-04;ZHHH;highest-temperature-in-wuhan-on-november-4-2026;12°C;0.001;0.002;0.0015;0.002;0.999;0.05
+2026-11-02 22:22;M0;6;highest|wuhan;2026-11-04;ZHHH;highest-temperature-in-wuhan-on-november-4-2026;13°C;0.001;0.005;0.003;0.005;0.999;0.05
+2026-11-02 22:22;M0;6;highest|wuhan;2026-11-04;ZHHH;highest-temperature-in-wuhan-on-november-4-2026;14°C;0.008;0.019;0.0135;0.019;0.992;0.05
+2026-11-02 22:22;M0;6;highest|wuhan;2026-11-04;ZHHH;highest-temperature-in-wuhan-on-november-4-2026;15°C;0.16;0.17;0.165;0.17;0.84;0.05
+2026-11-02 22:22;M0;6;highest|wuhan;2026-11-04;ZHHH;highest-temperature-in-wuhan-on-november-4-2026;16°C;0.4;0.44;0.42;0.44;0.6;0.05
+2026-11-02 22:22;M0;6;highest|wuhan;2026-11-04;ZHHH;highest-temperature-in-wuhan-on-november-4-2026;17°C;0.32;0.33;0.325;0.33;0.68;0.05
+2026-11-02 22:22;M0;6;highest|wuhan;2026-11-04;ZHHH;highest-temperature-in-wuhan-on-november-4-2026;18°C;0.06;0.08;0.07;0.08;0.94;0.05
+2026-11-02 22:22;M0;6;highest|wuhan;2026-11-04;ZHHH;highest-temperature-in-wuhan-on-november-4-2026;19°C;0.007;0.02;0.0135;0.034;0.993;0.05
+2026-11-02 22:22;M0;6;highest|wuhan;2026-11-04;ZHHH;highest-temperature-in-wuhan-on-november-4-2026;20°C;0.002;0.019;0.0105;0.019;0.998;0.05
+2026-11-02 22:22;M0;6;highest|wuhan;2026-11-04;ZHHH;highest-temperature-in-wuhan-on-november-4-2026;21°C or higher;0.001;0.002;0.0015;0.002;0.999;0.05
+2026-11-02 22:22;M0;6;highest|chengdu;2026-11-04;ZUUU;highest-temperature-in-chengdu-on-november-4-2026;17°C or below;0.001;0.018;0.0095;0.019;0.999;0.05
+2026-11-02 22:22;M0;6;highest|chengdu;2026-11-04;ZUUU;highest-temperature-in-chengdu-on-november-4-2026;18°C;0.001;0.016;0.0085;0.016;0.999;0.05
+2026-11-02 22:22;M0;6;highest|chengdu;2026-11-04;ZUUU;highest-temperature-in-chengdu-on-november-4-2026;19°C;0.002;0.02;0.011;0.02;0.998;0.05
+2026-11-02 22:22;M0;6;highest|chengdu;2026-11-04;ZUUU;highest-temperature-in-chengdu-on-november-4-2026;20°C;0.032;0.066;0.049;0.066;0.968;0.05
+2026-11-02 22:22;M0;6;highest|chengdu;2026-11-04;ZUUU;highest-temperature-in-chengdu-on-november-4-2026;21°C;0.22;0.23;0.225;0.23;0.78;0.05
+2026-11-02 22:22;M0;6;highest|chengdu;2026-11-04;ZUUU;highest-temperature-in-chengdu-on-november-4-2026;22°C;0.4;0.42;0.41;0.42;0.6;0.05
+2026-11-02 22:22;M0;6;highest|chengdu;2026-11-04;ZUUU;highest-temperature-in-chengdu-on-november-4-2026;23°C;0.24;0.27;0.255;0.27;0.76;0.05
+2026-11-02 22:22;M0;6;highest|chengdu;2026-11-04;ZUUU;highest-temperature-in-chengdu-on-november-4-2026;24°C;0.04;0.08;0.06;0.08;0.965;0.05
+2026-11-02 22:22;M0;6;highest|chengdu;2026-11-04;ZUUU;highest-temperature-in-chengdu-on-november-4-2026;25°C;0.004;0.015;0.0095;0.015;0.996;0.05
+2026-11-02 22:22;M0;6;highest|chengdu;2026-11-04;ZUUU;highest-temperature-in-chengdu-on-november-4-2026;26°C;0.001;0.014;0.0075;0.014;0.999;0.05
+2026-11-02 22:22;M0;6;highest|chengdu;2026-11-04;ZUUU;highest-temperature-in-chengdu-on-november-4-2026;27°C or higher;;0.002;;0.002;;0.05
+2026-11-02 22:22;M0;6;highest|shenzhen;2026-11-04;ZGSZ;highest-temperature-in-shenzhen-on-november-4-2026;24°C or below;0.001;0.003;0.002;0.0035;0.999;0.05
+2026-11-02 22:22;M0;6;highest|shenzhen;2026-11-04;ZGSZ;highest-temperature-in-shenzhen-on-november-4-2026;25°C;0.002;0.013;0.0075;0.013;0.998;0.05
+2026-11-02 22:22;M0;6;highest|shenzhen;2026-11-04;ZGSZ;highest-temperature-in-shenzhen-on-november-4-2026;26°C;0.002;0.018;0.01;0.018;0.998;0.05
+2026-11-02 22:22;M0;6;highest|shenzhen;2026-11-04;ZGSZ;highest-temperature-in-shenzhen-on-november-4-2026;27°C;0.008;0.019;0.0135;0.019;0.992;0.05
+2026-11-02 22:22;M0;6;highest|shenzhen;2026-11-04;ZGSZ;highest-temperature-in-shenzhen-on-november-4-2026;28°C;0.09;0.11;0.1;0.11;0.915;0.05
+2026-11-02 22:22;M0;6;highest|shenzhen;2026-11-04;ZGSZ;highest-temperature-in-shenzhen-on-november-4-2026;29°C;0.42;0.46;0.44;0.465;0.58;0.05
+2026-11-02 22:22;M0;6;highest|shenzhen;2026-11-04;ZGSZ;highest-temperature-in-shenzhen-on-november-4-2026;30°C;0.4;0.42;0.41;0.42;0.6;0.05
+2026-11-02 22:22;M0;6;highest|shenzhen;2026-11-04;ZGSZ;highest-temperature-in-shenzhen-on-november-4-2026;31°C;0.05;0.09;0.07;0.09;0.95;0.05
+2026-11-02 22:22;M0;6;highest|shenzhen;2026-11-04;ZGSZ;highest-temperature-in-shenzhen-on-november-4-2026;32°C;0.003;0.015;0.009;0.015;0.997;0.05
+2026-11-02 22:22;M0;6;highest|shenzhen;2026-11-04;ZGSZ;highest-temperature-in-shenzhen-on-november-4-2026;33°C;0.001;0.01;0.0055;0.01;0.999;0.05
+2026-11-02 22:22;M0;6;highest|shenzhen;2026-11-04;ZGSZ;highest-temperature-in-shenzhen-on-november-4-2026;34°C or higher;;0.002;;0.002;;0.05
+2026-11-02 22:22;M0;6;highest|kuala-lumpur;2026-11-04;WMKK;highest-temperature-in-kuala-lumpur-on-november-4-2026;28°C or below;0.001;0.004;0.0025;0.004;0.999;0.05
+2026-11-02 22:22;M0;6;highest|kuala-lumpur;2026-11-04;WMKK;highest-temperature-in-kuala-lumpur-on-november-4-2026;29°C;0.001;0.019;0.01;0.019;0.999;0.05
+2026-11-02 22:22;M0;6;highest|kuala-lumpur;2026-11-04;WMKK;highest-temperature-in-kuala-lumpur-on-november-4-2026;30°C;0.003;0.02;0.0115;0.02;0.997;0.05
+2026-11-02 22:22;M0;6;highest|kuala-lumpur;2026-11-04;WMKK;highest-temperature-in-kuala-lumpur-on-november-4-2026;31°C;0.015;0.04;0.0275;0.04;0.9855;0.05
+2026-11-02 22:22;M0;6;highest|kuala-lumpur;2026-11-04;WMKK;highest-temperature-in-kuala-lumpur-on-november-4-2026;32°C;0.18;0.2;0.19;0.205;0.825;0.05
+2026-11-02 22:22;M0;6;highest|kuala-lumpur;2026-11-04;WMKK;highest-temperature-in-kuala-lumpur-on-november-4-2026;33°C;0.42;0.44;0.43;0.44;0.58;0.05
+2026-11-02 22:22;M0;6;highest|kuala-lumpur;2026-11-04;WMKK;highest-temperature-in-kuala-lumpur-on-november-4-2026;34°C;0.28;0.3;0.29;0.3;0.72;0.05
+2026-11-02 22:22;M0;6;highest|kuala-lumpur;2026-11-04;WMKK;highest-temperature-in-kuala-lumpur-on-november-4-2026;35°C;0.023;0.05;0.0365;0.0579;0.977;0.05
+2026-11-02 22:22;M0;6;highest|kuala-lumpur;2026-11-04;WMKK;highest-temperature-in-kuala-lumpur-on-november-4-2026;36°C;0.004;0.012;0.008;0.012;0.996;0.05
+2026-11-02 22:22;M0;6;highest|kuala-lumpur;2026-11-04;WMKK;highest-temperature-in-kuala-lumpur-on-november-4-2026;37°C;0.001;0.004;0.0025;0.004;0.999;0.05
+2026-11-02 22:22;M0;6;highest|kuala-lumpur;2026-11-04;WMKK;highest-temperature-in-kuala-lumpur-on-november-4-2026;38°C or higher;;0.002;;0.002;;0.05
+2026-11-02 22:22;M0;6;highest|guangzhou;2026-11-04;ZGGG;highest-temperature-in-guangzhou-on-november-4-2026;23°C or below;;0.002;;0.002;;0.05
+2026-11-02 22:22;M0;6;highest|guangzhou;2026-11-04;ZGGG;highest-temperature-in-guangzhou-on-november-4-2026;24°C;;0.001;;0.001;;0.05
+2026-11-02 22:22;M0;6;highest|guangzhou;2026-11-04;ZGGG;highest-temperature-in-guangzhou-on-november-4-2026;25°C;0.001;0.009;0.005;0.009;0.999;0.05
+2026-11-02 22:22;M0;6;highest|guangzhou;2026-11-04;ZGGG;highest-temperature-in-guangzhou-on-november-4-2026;26°C;;0.14;;0.14;;0.05
+2026-11-02 22:22;M0;6;highest|guangzhou;2026-11-04;ZGGG;highest-temperature-in-guangzhou-on-november-4-2026;27°C;;0.14;;0.14;;0.05
+2026-11-02 22:22;M0;6;highest|guangzhou;2026-11-04;ZGGG;highest-temperature-in-guangzhou-on-november-4-2026;28°C;0.022;0.08;0.051;0.0845;0.978;0.05
+2026-11-02 22:22;M0;6;highest|guangzhou;2026-11-04;ZGGG;highest-temperature-in-guangzhou-on-november-4-2026;29°C;0.13;0.18;0.155;0.18;0.87;0.05
+2026-11-02 22:22;M0;6;highest|guangzhou;2026-11-04;ZGGG;highest-temperature-in-guangzhou-on-november-4-2026;30°C;0.28;0.32;0.3;0.32;0.72;0.05
+2026-11-02 22:22;M0;6;highest|guangzhou;2026-11-04;ZGGG;highest-temperature-in-guangzhou-on-november-4-2026;31°C;0.38;0.4;0.39;0.4;0.62;0.05
+2026-11-02 22:22;M0;6;highest|guangzhou;2026-11-04;ZGGG;highest-temperature-in-guangzhou-on-november-4-2026;32°C;0.08;0.1;0.09;0.1;0.9234;0.05
+2026-11-02 22:22;M0;6;highest|guangzhou;2026-11-04;ZGGG;highest-temperature-in-guangzhou-on-november-4-2026;33°C or higher;0.009;0.02;0.0145;0.02;0.991;0.05
+2026-11-02 22:22;M0;6;highest|qingdao;2026-11-04;ZSQD;highest-temperature-in-qingdao-on-november-4-2026;15°C or below;0.001;0.018;0.0095;0.018;0.999;0.05
+2026-11-02 22:22;M0;6;highest|qingdao;2026-11-04;ZSQD;highest-temperature-in-qingdao-on-november-4-2026;16°C;0.001;0.018;0.0095;0.018;0.999;0.05
+2026-11-02 22:22;M0;6;highest|qingdao;2026-11-04;ZSQD;highest-temperature-in-qingdao-on-november-4-2026;17°C;0.017;0.024;0.0205;0.024;0.9849;0.05
+2026-11-02 22:22;M0;6;highest|qingdao;2026-11-04;ZSQD;highest-temperature-in-qingdao-on-november-4-2026;18°C;0.04;0.07;0.055;0.07;0.965;0.05
+2026-11-02 22:22;M0;6;highest|qingdao;2026-11-04;ZSQD;highest-temperature-in-qingdao-on-november-4-2026;19°C;0.24;0.25;0.245;0.25;0.76;0.05
+2026-11-02 22:22;M0;6;highest|qingdao;2026-11-04;ZSQD;highest-temperature-in-qingdao-on-november-4-2026;20°C;0.42;0.46;0.44;0.46;0.58;0.05
+2026-11-02 22:22;M0;6;highest|qingdao;2026-11-04;ZSQD;highest-temperature-in-qingdao-on-november-4-2026;21°C;0.19;0.22;0.205;0.225;0.81;0.05
+2026-11-02 22:22;M0;6;highest|qingdao;2026-11-04;ZSQD;highest-temperature-in-qingdao-on-november-4-2026;22°C;0.025;0.029;0.027;0.029;0.975;0.05
+2026-11-02 22:22;M0;6;highest|qingdao;2026-11-04;ZSQD;highest-temperature-in-qingdao-on-november-4-2026;23°C;0.003;0.009;0.006;0.009;0.997;0.05
+2026-11-02 22:22;M0;6;highest|qingdao;2026-11-04;ZSQD;highest-temperature-in-qingdao-on-november-4-2026;24°C;0.001;0.005;0.003;0.0055;0.999;0.05
+2026-11-02 22:22;M0;6;highest|qingdao;2026-11-04;ZSQD;highest-temperature-in-qingdao-on-november-4-2026;25°C or higher;;0.002;;0.002;;0.05
+2026-11-02 22:22;M0;6;highest|manila;2026-11-04;RPLL;highest-temperature-in-manila-on-november-4-2026;27°C or below;;0.002;;0.002;;0.05
+2026-11-02 22:22;M0;6;highest|manila;2026-11-04;RPLL;highest-temperature-in-manila-on-november-4-2026;28°C;;0.002;;0.002;;0.05
+2026-11-02 22:22;M0;6;highest|manila;2026-11-04;RPLL;highest-temperature-in-manila-on-november-4-2026;29°C;0.001;0.01;0.0055;0.01;0.999;0.05
+2026-11-02 22:22;M0;6;highest|manila;2026-11-04;RPLL;highest-temperature-in-manila-on-november-4-2026;30°C;0.003;0.047;0.025;0.0475;0.997;0.05
+2026-11-02 22:22;M0;6;highest|manila;2026-11-04;RPLL;highest-temperature-in-manila-on-november-4-2026;31°C;0.011;0.03;0.0205;0.03;0.989;0.05
+2026-11-02 22:22;M0;6;highest|manila;2026-11-04;RPLL;highest-temperature-in-manila-on-november-4-2026;32°C;0.13;0.17;0.15;0.17;0.87;0.05
+2026-11-02 22:22;M0;6;highest|manila;2026-11-04;RPLL;highest-temperature-in-manila-on-november-4-2026;33°C;0.5;0.55;0.525;0.55;0.5;0.05
+2026-11-02 22:22;M0;6;highest|manila;2026-11-04;RPLL;highest-temperature-in-manila-on-november-4-2026;34°C;0.25;0.3;0.275;0.3;0.75;0.05
+2026-11-02 22:22;M0;6;highest|manila;2026-11-04;RPLL;highest-temperature-in-manila-on-november-4-2026;35°C;0.03;0.039;0.0345;0.039;0.97;0.05
+2026-11-02 22:22;M0;6;highest|manila;2026-11-04;RPLL;highest-temperature-in-manila-on-november-4-2026;36°C;0.002;0.003;0.0025;0.003;0.998;0.05
+2026-11-02 22:22;M0;6;highest|manila;2026-11-04;RPLL;highest-temperature-in-manila-on-november-4-2026;37°C or higher;0.001;0.002;0.0015;0.002;0.999;0.05
