@@ -32,7 +32,9 @@ import math
 import os
 import re
 import sys
+import threading
 import time
+from concurrent.futures import ThreadPoolExecutor
 from collections import defaultdict
 from datetime import date, datetime, timedelta, timezone
 from zoneinfo import ZoneInfo
@@ -43,6 +45,9 @@ AQUI = os.path.dirname(os.path.abspath(__file__))
 EST = json.load(open(os.path.join(AQUI, "estaciones.json"), encoding="utf-8"))
 
 DESDE = date(2023, 1, 1)
+# Pronosticos: antes de mediados de 2024 Open-Meteo solo guarda la corrida del mismo dia (sin los
+# horizontes 1-3 dias) para casi todos los modelos (probado el 2-nov-2026), asi que no vale la pena.
+DESDE_PRON = date(2024, 6, 1)
 HORIZONTES = [0, 1, 2, 3]          # 0 = corrida del mismo dia
 # Modelos de Open-Meteo. Los 11 de modelos/ (con historia comprobada) primero; despues regionales
 # y otros que se prueban (si no tienen historia o no cubren la estacion, se saltan solos).
@@ -55,7 +60,7 @@ MODELOS = [
     "knmi_seamless", "metno_seamless", "meteoswiss_icon_seamless", "icon_d2", "icon_eu",
     "ukmo_uk_deterministic_2km", "jma_msm", "bom_access_global", "meteofrance_arome_france",
 ]
-MOS_MODELOS = ["NBS", "NBE", "GFS", "NAM", "GFSX"]
+MOS_MODELOS = ["NBS", "NBE", "GFS", "NAM", "MEX"]   # MEX = GFS extendido; IEM acepta AVN|ETA|GFS|LAV|MEX|NAM|NBE|NBS
 PREV = "https://previous-runs-api.open-meteo.com/v1/forecast"
 IEM_ASOS = "https://mesonet.agron.iastate.edu/cgi-bin/request/asos.py"
 IEM_MOS = "https://mesonet.agron.iastate.edu/cgi-bin/request/mos.py"
@@ -65,6 +70,7 @@ CAMBIO_REGLA = "2026-10-23"        # desde aca Polymarket cuenta solo METAR de r
 S = requests.Session()
 S.headers["User-Agent"] = "polymarket-clima-propio/1.0 (investigacion personal)"
 T0 = time.time()
+CANDADO = threading.RLock()
 
 
 class SinCupo(Exception):
@@ -136,12 +142,14 @@ class Estado:
         return clave in self.d["hecho"]
 
     def marcar(self, clave, n):
-        self.d["hecho"][clave] = n
+        with CANDADO:
+            self.d["hecho"][clave] = n
 
     def guardar(self):
-        tmp = self.ruta + ".tmp"
-        json.dump(self.d, open(tmp, "w"), indent=0, sort_keys=True)
-        os.replace(tmp, self.ruta)
+        with CANDADO:
+            tmp = self.ruta + ".tmp"
+            json.dump(self.d, open(tmp, "w"), indent=0, sort_keys=True)
+            os.replace(tmp, self.ruta)
 
 
 def mes_cerrado(fin_mes, hoy, margen=4):
@@ -297,7 +305,10 @@ def pedir_om(info, modelo, ini, fin, est):
         return None, "sin respuesta"
     if r.status_code != 200:
         return None, f"{r.status_code} {r.text[:150]}"
-    return r.json().get("hourly", {}), None
+    try:
+        return r.json().get("hourly", {}), None
+    except ValueError:
+        return None, f"respuesta no JSON: {r.text[:100]!r}"
 
 
 def por_dia(h):
@@ -341,7 +352,7 @@ def pron(salida, est, hoy, apurar, presupuesto):
     cols = ["fecha", "modelo", "h", "max", "min", "horas"]
     # Orden: primero los meses recientes (mas utiles), despues para atras; dentro, todos los modelos
     # y estaciones. Asi, si el cupo se corta, lo que hay ya sirve.
-    lista = list(meses(DESDE, hasta))[::-1]
+    lista = list(meses(DESDE_PRON, hasta))[::-1]
     datos = {}
     try:
         for ini, fin in lista:
@@ -364,7 +375,7 @@ def pron(salida, est, hoy, apurar, presupuesto):
                             est.d["hecho"][f"vacio|{icao}|{modelo}"] = fin.isoformat()
                         continue
                     dias = por_dia(h)
-                    if not dias:
+                    if not any(hz > 0 for (_, hz) in dias):   # solo la corrida del mismo dia: no sirve
                         # sin datos: con 2 meses seguidos vacios se asume que no hay historia mas atras
                         seguidos = est.d["hecho"].get(f"vacios|{icao}|{modelo}", 0) + 1
                         est.d["hecho"][f"vacios|{icao}|{modelo}"] = seguidos
@@ -398,9 +409,19 @@ def pron(salida, est, hoy, apurar, presupuesto):
 # ---------------------------------------------------------------------------
 # MOS / NBM de EE.UU. (IEM)
 
+MOS_COLS = ["modelo", "runtime", "ftime", "n_x", "tmp"]
+
+
 def mos(salida, est, hoy, apurar):
-    cols = ["modelo", "runtime", "ftime", "n_x", "tmp"]
-    for icao in [k for k in EST if k.startswith("K")]:
+    """IEM tarda ~10 s por pedido: se bajan 4 estaciones a la vez."""
+    with ThreadPoolExecutor(4) as ex:
+        list(ex.map(lambda icao: mos_estacion(icao, salida, est, hoy, apurar),
+                    [k for k in EST if k.startswith("K")]))
+
+
+def mos_estacion(icao, salida, est, hoy, apurar):
+    cols = MOS_COLS
+    if True:
         ruta = os.path.join(salida, "mos", f"{icao}.csv.gz")
         filas = None
         for modelo in MOS_MODELOS:

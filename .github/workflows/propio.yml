@@ -36,9 +36,6 @@ jobs:
           else
             mkdir datos && cd datos && git init -b propio-datos && git remote add origin "https://x-access-token:${{ github.token }}@github.com/${{ github.repository }}"
           fi
-      - name: sonda (primera vez)
-        run: |
-          if [ ! -f datos/sonda.json ]; then python propio/datos.py sonda --salida datos 2>> datos/log.txt || true; fi
       - name: bajar
         run: |
           QUE="${{ github.event.inputs.que || 'todo' }}"
