@@ -280,3 +280,5 @@ momento_utc;activo;tipo;evento;horizonte;strike;condition_id;lado;precio;p_model
 2026-11-01 22:30:13;ETH;toca;what-price-will-ethereum-hit-on-november-1-2026;6;↑ 2,300;0x527159ec411a81d6d0709aa213eb6ef7f6300c079d71456c27b3f2de7ed5e1ce;Yes;0.11;0.1913;10;0.07
 2026-11-02 01:33:36;BTC;toca;what-price-will-bitcoin-hit-on-november-1-2026;3;↑ 79,000;0x3906b162ddfb6bc5ab3ed28288631df2647cec9495db93c3fc02ed298f42578c;Yes;0.385;0.5028;10;0.07
 2026-11-02 03:35:21;BTC;toca;what-price-will-bitcoin-hit-on-november-1-2026;1;↑ 79,000;0x3906b162ddfb6bc5ab3ed28288631df2647cec9495db93c3fc02ed298f42578c;Yes;0.23;0.3837;10;0.07
+2026-11-02 10:30:09;BTC;toca;what-price-will-bitcoin-hit-on-november-2-2026;18;↓ 77,000;0xb2105498451fd6cee796d0429022e4c483adcc0a927fcfc729504c258474ba49;Yes;0.42;0.4741;10;0.07
+2026-11-02 10:30:09;ETH;toca;what-price-will-ethereum-hit-on-november-2-2026;18;↑ 2,350;0x979a29797241b0babf63d9ce5ff3499e9a80ddad2e7eb86835ee7fec582a4f3b;Yes;0.21;0.26;10;0.07
