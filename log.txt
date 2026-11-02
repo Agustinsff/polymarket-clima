@@ -755,3 +755,120 @@ requests.exceptions.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
 09:08:35Z mos KSFO GFS listo
 09:08:35Z mos: se acabo el tiempo
 09:08:35Z mos KSFO NAM listo
+09:32:53Z obs CYYZ 2026: 572 reportes
+09:32:55Z obs EDDM 2026: 1027 reportes
+09:32:58Z obs EFHK 2026: 1027 reportes
+09:33:00Z obs EGLC 2026: 1027 reportes
+09:33:03Z obs EHAM 2026: 1020 reportes
+09:33:05Z obs EPWA 2026: 1027 reportes
+09:33:08Z obs FACT 2026: 590 reportes
+09:33:10Z obs KATL 2026: 534 reportes
+09:33:13Z obs KAUS 2026: 554 reportes
+09:33:15Z obs KDAL 2026: 541 reportes
+09:33:18Z obs KDEN 2026: 624 reportes
+09:33:20Z obs KHOU 2026: 537 reportes
+09:33:23Z obs KLAX 2026: 551 reportes
+09:33:25Z obs KLGA 2026: 527 reportes
+09:33:27Z obs KMIA 2026: 566 reportes
+09:33:30Z obs KORD 2026: 576 reportes
+09:33:32Z obs KSEA 2026: 591 reportes
+09:33:35Z obs KSFO 2026: 553 reportes
+09:33:37Z obs LEMD 2026: 1030 reportes
+09:33:40Z obs LIMC 2026: 1004 reportes
+09:33:42Z obs LLBG 2026: 1023 reportes
+09:33:45Z obs LTAC 2026: 1070 reportes
+09:33:47Z obs LTFM 2026: 1027 reportes
+09:33:50Z obs MMMX 2026: 659 reportes
+09:33:52Z obs MPMG 2026: 545 reportes
+09:33:55Z obs NZWN 2026: 1027 reportes
+09:33:57Z obs OEJN 2026: 518 reportes
+09:33:59Z obs OPKC 2026: 1027 reportes
+09:34:02Z obs RCSS 2026: 1002 reportes
+09:34:04Z obs RJTT 2026: 1027 reportes
+09:34:07Z obs RKPK 2026: 578 reportes
+09:34:09Z obs RKSI 2026: 1027 reportes
+09:34:12Z obs RPLL 2026: 518 reportes
+09:34:14Z obs SAEZ 2026: 597 reportes
+09:34:17Z obs SBGR 2026: 540 reportes
+09:34:19Z obs UUWW 2026: 1148 reportes
+09:34:22Z obs WMKK 2026: 1057 reportes
+09:34:24Z obs WSSS 2026: 1049 reportes
+09:34:27Z obs ZBAA 2026: 1040 reportes
+09:34:29Z obs ZGGG 2026: 1028 reportes
+09:34:32Z obs ZGSZ 2026: 514 reportes
+09:34:34Z obs ZHHH 2026: 514 reportes
+09:34:37Z obs ZSPD 2026: 1038 reportes
+09:34:39Z obs ZSQD 2026: 514 reportes
+09:34:42Z obs ZUCK 2026: 514 reportes
+09:34:44Z obs ZUUU 2026: 514 reportes
+09:35:06Z obs_diaria: 65689 dias-estacion
+09:35:06Z pron: se corta (presupuesto/tiempo (gastado hoy 7999)); sigue en la proxima corrida
+09:35:06Z mos KATL NBS listo
+09:35:06Z mos KAUS NBS listo
+09:35:06Z mos KDAL NBS listo
+09:35:06Z mos KDEN NBS listo
+09:35:06Z mos KATL NBE listo
+09:35:06Z mos KAUS NBE listo
+09:35:06Z mos KDAL NBE listo
+09:35:06Z mos KDEN NBE listo
+09:35:06Z mos KATL GFS listo
+09:35:06Z mos KAUS GFS listo
+09:35:06Z mos KDAL GFS listo
+09:35:06Z mos KDEN GFS listo
+09:35:06Z mos KATL NAM listo
+09:35:06Z mos KAUS NAM listo
+09:35:06Z mos KDAL NAM listo
+09:35:06Z mos KDEN NAM listo
+09:38:30Z mos KATL MEX 2026-09: sin respuesta
+09:43:56Z https://mesonet.agron.iastate.edu/cgi-bin/request/mos.py fallo (('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))), reintento
+09:47:33Z mos KDEN MEX 2025-04: sin respuesta
+09:49:27Z mos KDAL MEX listo
+09:49:27Z mos KHOU NBS listo
+09:49:27Z mos KHOU NBE listo
+09:49:27Z mos KHOU GFS listo
+09:49:27Z mos KHOU NAM listo
+09:51:15Z mos KAUS MEX listo
+09:51:15Z mos KLAX NBS listo
+09:55:16Z https://mesonet.agron.iastate.edu/cgi-bin/request/mos.py fallo (('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))), reintento
+09:56:05Z mos KATL MEX 2023-01: sin respuesta
+09:56:06Z mos KATL MEX listo
+09:57:52Z mos KDEN MEX listo
+10:04:03Z mos KLAX NBE listo
+10:08:06Z mos KHOU MEX listo
+10:09:32Z mos KLGA NBS listo
+10:11:57Z mos KMIA NBS listo
+10:19:14Z mos KORD NBS 2024-01: sin respuesta
+10:21:03Z mos KLGA NBE listo
+10:21:12Z mos KORD NBS listo
+10:22:29Z mos KLAX GFS listo
+10:23:25Z mos KMIA NBE listo
+10:27:15Z mos KLGA GFS 2026-03: sin respuesta
+10:30:22Z mos KORD NBE 2025-03: sin respuesta
+10:36:01Z mos KORD NBE listo
+10:39:10Z mos KMIA GFS listo
+10:39:48Z mos KLAX NAM listo
+10:41:48Z mos KLGA GFS listo
+10:50:29Z mos KORD GFS listo
+10:51:03Z mos KLAX MEX 2024-09: sin respuesta
+10:54:56Z mos KORD NAM 2026-07: sin respuesta
+10:56:09Z mos KMIA NAM listo
+10:56:51Z mos KLAX MEX listo
+11:00:47Z mos KLGA NAM listo
+11:04:02Z https://mesonet.agron.iastate.edu/cgi-bin/request/mos.py fallo (('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))), reintento
+11:09:54Z mos KORD NAM listo
+11:10:06Z mos KSEA NBS listo
+11:15:45Z mos KLGA MEX listo
+11:17:12Z mos KMIA MEX listo
+11:22:02Z https://mesonet.agron.iastate.edu/cgi-bin/request/mos.py fallo (('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))), reintento
+11:23:42Z mos KSEA NBE listo
+11:23:56Z mos KORD MEX listo
+11:27:53Z mos KSFO NBS listo
+11:29:41Z https://mesonet.agron.iastate.edu/cgi-bin/request/mos.py fallo (('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))), reintento
+11:36:07Z https://mesonet.agron.iastate.edu/cgi-bin/request/mos.py fallo (('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))), reintento
+11:37:50Z mos KSEA GFS listo
+11:40:43Z mos KSFO NBE listo
+11:53:54Z mos KSEA NAM listo
+11:57:48Z mos KSFO GFS listo
+12:12:19Z mos KSEA MEX listo
+12:14:30Z mos KSFO NAM listo
+12:28:34Z mos KSFO MEX listo
