@@ -22131,3 +22131,47 @@ momento_utc;momento;hora_local;serie;fecha;icao;slug;caja;bid;ask;medio;si_10;no
 2026-11-02 12:18;M0;6;highest|mexico-city;2026-11-03;MMMX;highest-temperature-in-mexico-city-on-november-3-2026;27°C;0.55;0.59;0.57;0.595;0.45;0.05
 2026-11-02 12:18;M0;6;highest|mexico-city;2026-11-03;MMMX;highest-temperature-in-mexico-city-on-november-3-2026;28°C;0.29;0.32;0.305;0.32;0.71;0.05
 2026-11-02 12:18;M0;6;highest|mexico-city;2026-11-03;MMMX;highest-temperature-in-mexico-city-on-november-3-2026;29°C or higher;0.017;0.024;0.0205;0.024;0.983;0.05
+2026-11-02 13:18;M1;6;lowest|denver;2026-11-02;KDEN;lowest-temperature-in-denver-on-november-2-2026;37°F or below;0.01;0.88;0.445;0.885;0.99;0.05
+2026-11-02 13:18;M1;6;lowest|denver;2026-11-02;KDEN;lowest-temperature-in-denver-on-november-2-2026;38-39°F;0.01;0.97;0.49;0.975;0.99;0.05
+2026-11-02 13:18;M1;6;lowest|denver;2026-11-02;KDEN;lowest-temperature-in-denver-on-november-2-2026;40-41°F;0.02;0.97;0.495;0.975;0.98;0.05
+2026-11-02 13:18;M1;6;lowest|denver;2026-11-02;KDEN;lowest-temperature-in-denver-on-november-2-2026;42-43°F;0.02;0.96;0.49;0.97;0.98;0.05
+2026-11-02 13:18;M1;6;lowest|denver;2026-11-02;KDEN;lowest-temperature-in-denver-on-november-2-2026;44-45°F;0.001;0.006;0.0035;0.006;0.999;0.05
+2026-11-02 13:18;M1;6;lowest|denver;2026-11-02;KDEN;lowest-temperature-in-denver-on-november-2-2026;46-47°F;;0.008;;0.008;;0.05
+2026-11-02 13:18;M1;6;lowest|denver;2026-11-02;KDEN;lowest-temperature-in-denver-on-november-2-2026;48-49°F;;0.001;;0.001;;0.05
+2026-11-02 13:18;M1;6;lowest|denver;2026-11-02;KDEN;lowest-temperature-in-denver-on-november-2-2026;50-51°F;;0.001;;0.001;;0.05
+2026-11-02 13:18;M1;6;lowest|denver;2026-11-02;KDEN;lowest-temperature-in-denver-on-november-2-2026;52-53°F;;0.001;;0.001;;0.05
+2026-11-02 13:18;M1;6;lowest|denver;2026-11-02;KDEN;lowest-temperature-in-denver-on-november-2-2026;54-55°F;;0.001;;0.001;;0.05
+2026-11-02 13:18;M1;6;lowest|denver;2026-11-02;KDEN;lowest-temperature-in-denver-on-november-2-2026;56°F or higher;;0.001;;0.001;;0.05
+2026-11-02 13:18;M1;6;highest|denver;2026-11-02;KDEN;highest-temperature-in-denver-on-november-2-2026;45°F or below;;0.001;;0.001;;0.05
+2026-11-02 13:18;M1;6;highest|denver;2026-11-02;KDEN;highest-temperature-in-denver-on-november-2-2026;46-47°F;0.149;0.186;0.1675;0.186;0.851;0.05
+2026-11-02 13:18;M1;6;highest|denver;2026-11-02;KDEN;highest-temperature-in-denver-on-november-2-2026;48-49°F;0.33;0.37;0.35;0.3719;0.67;0.05
+2026-11-02 13:18;M1;6;highest|denver;2026-11-02;KDEN;highest-temperature-in-denver-on-november-2-2026;50-51°F;0.33;0.37;0.35;0.37;0.67;0.05
+2026-11-02 13:18;M1;6;highest|denver;2026-11-02;KDEN;highest-temperature-in-denver-on-november-2-2026;52-53°F;0.11;0.14;0.125;0.14;0.89;0.05
+2026-11-02 13:18;M1;6;highest|denver;2026-11-02;KDEN;highest-temperature-in-denver-on-november-2-2026;54-55°F;0.02;0.037;0.0285;0.037;0.98;0.05
+2026-11-02 13:18;M1;6;highest|denver;2026-11-02;KDEN;highest-temperature-in-denver-on-november-2-2026;56-57°F;0.004;0.02;0.012;0.02;0.996;0.05
+2026-11-02 13:18;M1;6;highest|denver;2026-11-02;KDEN;highest-temperature-in-denver-on-november-2-2026;58-59°F;;0.001;;0.001;;0.05
+2026-11-02 13:18;M1;6;highest|denver;2026-11-02;KDEN;highest-temperature-in-denver-on-november-2-2026;60-61°F;;0.001;;0.001;;0.05
+2026-11-02 13:18;M1;6;highest|denver;2026-11-02;KDEN;highest-temperature-in-denver-on-november-2-2026;62-63°F;;0.001;;0.001;;0.05
+2026-11-02 13:18;M1;6;highest|denver;2026-11-02;KDEN;highest-temperature-in-denver-on-november-2-2026;64°F or higher;;0.001;;0.001;;0.05
+2026-11-02 13:18;M0;6;lowest|denver;2026-11-03;KDEN;lowest-temperature-in-denver-on-november-3-2026;31°F or below;;0.98;;0.98;;0.05
+2026-11-02 13:18;M0;6;lowest|denver;2026-11-03;KDEN;lowest-temperature-in-denver-on-november-3-2026;32-33°F;;0.27;;0.485;;0.05
+2026-11-02 13:18;M0;6;lowest|denver;2026-11-03;KDEN;lowest-temperature-in-denver-on-november-3-2026;34-35°F;;0.7;;0.7067;;0.05
+2026-11-02 13:18;M0;6;lowest|denver;2026-11-03;KDEN;lowest-temperature-in-denver-on-november-3-2026;36-37°F;;0.7;;0.7067;;0.05
+2026-11-02 13:18;M0;6;lowest|denver;2026-11-03;KDEN;lowest-temperature-in-denver-on-november-3-2026;38-39°F;0.03;0.7;0.365;0.7033;0.97;0.05
+2026-11-02 13:18;M0;6;lowest|denver;2026-11-03;KDEN;lowest-temperature-in-denver-on-november-3-2026;40-41°F;;0.7;;0.7067;;0.05
+2026-11-02 13:18;M0;6;lowest|denver;2026-11-03;KDEN;lowest-temperature-in-denver-on-november-3-2026;42-43°F;;0.27;;0.485;;0.05
+2026-11-02 13:18;M0;6;lowest|denver;2026-11-03;KDEN;lowest-temperature-in-denver-on-november-3-2026;44-45°F;;0.12;;0.1346;;0.05
+2026-11-02 13:18;M0;6;lowest|denver;2026-11-03;KDEN;lowest-temperature-in-denver-on-november-3-2026;46-47°F;;0.12;;0.12;;0.05
+2026-11-02 13:18;M0;6;lowest|denver;2026-11-03;KDEN;lowest-temperature-in-denver-on-november-3-2026;48-49°F;;0.11;;0.11;;0.05
+2026-11-02 13:18;M0;6;lowest|denver;2026-11-03;KDEN;lowest-temperature-in-denver-on-november-3-2026;50°F or higher;;0.5;;0.5;;0.05
+2026-11-02 13:18;M0;6;highest|denver;2026-11-03;KDEN;highest-temperature-in-denver-on-november-3-2026;47°F or below;0.001;0.012;0.0065;0.012;0.999;0.05
+2026-11-02 13:18;M0;6;highest|denver;2026-11-03;KDEN;highest-temperature-in-denver-on-november-3-2026;48-49°F;0.002;0.009;0.0055;0.009;0.998;0.05
+2026-11-02 13:18;M0;6;highest|denver;2026-11-03;KDEN;highest-temperature-in-denver-on-november-3-2026;50-51°F;0.018;0.037;0.0275;0.037;0.982;0.05
+2026-11-02 13:18;M0;6;highest|denver;2026-11-03;KDEN;highest-temperature-in-denver-on-november-3-2026;52-53°F;0.156;0.173;0.1645;0.1735;0.8441;0.05
+2026-11-02 13:18;M0;6;highest|denver;2026-11-03;KDEN;highest-temperature-in-denver-on-november-3-2026;54-55°F;0.48;0.51;0.495;0.51;0.52;0.05
+2026-11-02 13:18;M0;6;highest|denver;2026-11-03;KDEN;highest-temperature-in-denver-on-november-3-2026;56-57°F;0.29;0.3;0.295;0.3;0.71;0.05
+2026-11-02 13:18;M0;6;highest|denver;2026-11-03;KDEN;highest-temperature-in-denver-on-november-3-2026;58-59°F;0.04;0.06;0.05;0.06;0.96;0.05
+2026-11-02 13:18;M0;6;highest|denver;2026-11-03;KDEN;highest-temperature-in-denver-on-november-3-2026;60-61°F;0.01;0.02;0.015;0.02;0.99;0.05
+2026-11-02 13:18;M0;6;highest|denver;2026-11-03;KDEN;highest-temperature-in-denver-on-november-3-2026;62-63°F;0.001;0.003;0.002;0.003;0.999;0.05
+2026-11-02 13:18;M0;6;highest|denver;2026-11-03;KDEN;highest-temperature-in-denver-on-november-3-2026;64-65°F;0.001;0.004;0.0025;0.004;0.999;0.05
+2026-11-02 13:18;M0;6;highest|denver;2026-11-03;KDEN;highest-temperature-in-denver-on-november-3-2026;66°F or higher;0.001;0.002;0.0015;0.002;0.999;0.05
