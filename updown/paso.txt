@@ -1,1 +1,1 @@
-comparar_libro
+minuto_entrada
