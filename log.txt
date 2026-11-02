@@ -1,0 +1,757 @@
+04:07:31Z sonda KLGA ecmwf_ifs025: {'2022-06-01': '-', '2023-01-10': '-', '2024-01-10': '-', '2024-07-10': '0,1,2,3', '2025-01-10': '0,1,2,3', '2025-07-10': '0,1,2,3', '2026-03-10': '0,1,2,3'}
+04:07:34Z sonda KLGA ecmwf_aifs025_single: {'2022-06-01': '-', '2023-01-10': '-', '2024-01-10': '-', '2024-07-10': '-', '2025-01-10': '-', '2025-07-10': '0,1,2,3', '2026-03-10': '0,1,2,3'}
+04:07:36Z sonda KLGA icon_seamless: {'2022-06-01': '-', '2023-01-10': '0', '2024-01-10': '0', '2024-07-10': '0,1,2,3', '2025-01-10': '0,1,2,3', '2025-07-10': '0,1,2,3', '2026-03-10': '0,1,2,3'}
+04:07:39Z sonda KLGA gfs_seamless: {'2022-06-01': '0,1,2,3', '2023-01-10': '0,1,2,3', '2024-01-10': '0', '2024-07-10': '0,1,2,3', '2025-01-10': '0,1,2,3', '2025-07-10': '0,1,2,3', '2026-03-10': '0,1,2,3'}
+04:07:41Z sonda KLGA ecmwf_ifs: {'2022-06-01': '0', '2023-01-10': '0', '2024-01-10': '0', '2024-07-10': '0', '2025-01-10': '0', '2025-07-10': '0', '2026-03-10': '0,1,2,3'}
+04:07:43Z sonda KLGA ukmo_seamless: {'2022-06-01': '0', '2023-01-10': '0', '2024-01-10': '0', '2024-07-10': '0', '2025-01-10': '0,1,2', '2025-07-10': '0,1,2,3', '2026-03-10': '0,1,2,3'}
+Traceback (most recent call last):
+  File "/opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/site-packages/requests/models.py", line 1116, in json
+    return complexjson.loads(self.text, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/json/__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/json/decoder.py", line 338, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/json/decoder.py", line 356, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/runner/work/polymarket-clima/polymarket-clima/propio/datos.py", line 505, in <module>
+    main()
+  File "/home/runner/work/polymarket-clima/polymarket-clima/propio/datos.py", line 493, in main
+    sonda(a.salida, est)
+  File "/home/runner/work/polymarket-clima/polymarket-clima/propio/datos.py", line 465, in sonda
+    h, err = pedir_om(info, modelo, f, f + timedelta(days=2), est)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/polymarket-clima/polymarket-clima/propio/datos.py", line 300, in pedir_om
+    return r.json().get("hourly", {}), None
+           ^^^^^^^^
+  File "/opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/site-packages/requests/models.py", line 1120, in json
+    raise RequestsJSONDecodeError(e.msg, e.doc, e.pos)
+requests.exceptions.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+04:08:19Z obs CYYZ 2023: 10311 reportes
+04:08:22Z obs CYYZ 2024: 10640 reportes
+04:08:25Z obs CYYZ 2025: 10548 reportes
+04:08:27Z obs CYYZ 2026: 9015 reportes
+04:08:31Z obs EDDM 2023: 17566 reportes
+04:08:34Z obs EDDM 2024: 17615 reportes
+04:08:37Z obs EDDM 2025: 17561 reportes
+04:08:40Z obs EDDM 2026: 14695 reportes
+04:08:43Z obs EFHK 2023: 17566 reportes
+04:08:46Z obs EFHK 2024: 17612 reportes
+04:08:49Z obs EFHK 2025: 17560 reportes
+04:08:52Z obs EFHK 2026: 14691 reportes
+04:08:55Z obs EGLC 2023: 17530 reportes
+04:08:58Z obs EGLC 2024: 17607 reportes
+04:09:01Z obs EGLC 2025: 17561 reportes
+04:09:04Z obs EGLC 2026: 14689 reportes
+04:09:08Z obs EHAM 2023: 17523 reportes
+04:09:11Z obs EHAM 2024: 17580 reportes
+04:09:14Z obs EHAM 2025: 17519 reportes
+04:09:17Z obs EHAM 2026: 14647 reportes
+04:09:21Z obs EPWA 2023: 17560 reportes
+04:09:24Z obs EPWA 2024: 17607 reportes
+04:09:27Z obs EPWA 2025: 17559 reportes
+04:09:30Z obs EPWA 2026: 14688 reportes
+04:09:33Z obs FACT 2023: 13250 reportes
+04:09:36Z obs FACT 2024: 23507 reportes
+04:09:39Z obs FACT 2025: 8836 reportes
+04:09:41Z obs FACT 2026: 8863 reportes
+04:09:44Z obs KATL 2023: 10347 reportes
+04:09:47Z obs KATL 2024: 10180 reportes
+04:09:49Z obs KATL 2025: 10256 reportes
+04:09:52Z obs KATL 2026: 8543 reportes
+04:09:55Z obs KAUS 2023: 10046 reportes
+04:09:57Z obs KAUS 2024: 10142 reportes
+04:10:00Z obs KAUS 2025: 10102 reportes
+04:10:02Z obs KAUS 2026: 8426 reportes
+04:10:05Z obs KDAL 2023: 10158 reportes
+04:10:08Z obs KDAL 2024: 10438 reportes
+04:10:11Z obs KDAL 2025: 10070 reportes
+04:10:13Z obs KDAL 2026: 8234 reportes
+04:10:16Z obs KDEN 2023: 10678 reportes
+04:10:19Z obs KDEN 2024: 10160 reportes
+04:10:22Z obs KDEN 2025: 10334 reportes
+04:10:24Z obs KDEN 2026: 8255 reportes
+04:10:27Z obs KHOU 2023: 10573 reportes
+04:10:30Z obs KHOU 2024: 11088 reportes
+04:10:33Z obs KHOU 2025: 10188 reportes
+04:10:35Z obs KHOU 2026: 8390 reportes
+04:10:39Z obs KLAX 2023: 10446 reportes
+04:10:41Z obs KLAX 2024: 10611 reportes
+04:10:44Z obs KLAX 2025: 10717 reportes
+04:10:46Z obs KLAX 2026: 8363 reportes
+04:10:49Z obs KLGA 2023: 10268 reportes
+04:10:52Z obs KLGA 2024: 10187 reportes
+04:10:55Z obs KLGA 2025: 10057 reportes
+04:10:57Z obs KLGA 2026: 8290 reportes
+04:11:00Z obs KMIA 2023: 9969 reportes
+04:11:03Z obs KMIA 2024: 9922 reportes
+04:11:05Z obs KMIA 2025: 9824 reportes
+04:11:08Z obs KMIA 2026: 8319 reportes
+04:11:11Z obs KORD 2023: 10947 reportes
+04:11:13Z obs KORD 2024: 10710 reportes
+04:11:16Z obs KORD 2025: 10617 reportes
+04:11:18Z obs KORD 2026: 9164 reportes
+04:11:21Z obs KSEA 2023: 10955 reportes
+04:11:24Z obs KSEA 2024: 10854 reportes
+04:11:26Z obs KSEA 2025: 10661 reportes
+04:11:29Z obs KSEA 2026: 8761 reportes
+04:11:32Z obs KSFO 2023: 9758 reportes
+04:11:35Z obs KSFO 2024: 9799 reportes
+04:11:37Z obs KSFO 2025: 10175 reportes
+04:11:40Z obs KSFO 2026: 8202 reportes
+04:11:43Z obs LEMD 2023: 17845 reportes
+04:11:46Z obs LEMD 2024: 17856 reportes
+04:11:49Z obs LEMD 2025: 17815 reportes
+04:11:51Z obs LEMD 2026: 14891 reportes
+04:11:56Z obs LIMC 2023: 17501 reportes
+04:11:59Z obs LIMC 2024: 17539 reportes
+04:12:01Z obs LIMC 2025: 17470 reportes
+04:12:04Z obs LIMC 2026: 14568 reportes
+04:12:08Z obs LLBG 2023: 17511 reportes
+04:12:11Z obs LLBG 2024: 17544 reportes
+04:12:14Z obs LLBG 2025: 17493 reportes
+04:12:16Z obs LLBG 2026: 14619 reportes
+04:12:20Z obs LTAC 2023: 17885 reportes
+04:12:24Z obs LTAC 2024: 17903 reportes
+04:12:27Z obs LTAC 2025: 17866 reportes
+04:12:30Z obs LTAC 2026: 14963 reportes
+04:12:34Z obs LTFM 2023: 17562 reportes
+04:12:38Z obs LTFM 2024: 17586 reportes
+04:12:41Z obs LTFM 2025: 17562 reportes
+04:12:44Z obs LTFM 2026: 14686 reportes
+04:12:47Z obs MMMX 2023: 11403 reportes
+04:12:50Z obs MMMX 2024: 11588 reportes
+04:12:53Z obs MMMX 2025: 11506 reportes
+04:12:55Z obs MMMX 2026: 10147 reportes
+04:12:58Z obs MPMG 2023: 8812 reportes
+04:13:01Z obs MPMG 2024: 8865 reportes
+04:13:03Z obs MPMG 2025: 9064 reportes
+04:13:06Z obs MPMG 2026: 7421 reportes
+04:13:09Z obs NZWN 2023: 17563 reportes
+04:13:12Z obs NZWN 2024: 17614 reportes
+04:13:15Z obs NZWN 2025: 17563 reportes
+04:13:18Z obs NZWN 2026: 14685 reportes
+04:13:21Z obs OEJN 2023: 8838 reportes
+04:13:23Z obs OEJN 2024: 8864 reportes
+04:13:26Z obs OEJN 2025: 8846 reportes
+04:13:29Z obs OEJN 2026: 7388 reportes
+04:13:32Z obs OPKC 2023: 17480 reportes
+04:13:35Z obs OPKC 2024: 17512 reportes
+04:13:38Z obs OPKC 2025: 17402 reportes
+04:13:41Z obs OPKC 2026: 14652 reportes
+04:13:45Z obs RCSS 2023: 17764 reportes
+04:13:48Z obs RCSS 2024: 17812 reportes
+04:13:50Z obs RCSS 2025: 12773 reportes
+04:13:53Z obs RCSS 2026: 12597 reportes
+04:13:56Z obs RJTT 2023: 18407 reportes
+04:13:59Z obs RJTT 2024: 18658 reportes
+04:14:03Z obs RJTT 2025: 18507 reportes
+04:14:06Z obs RJTT 2026: 14760 reportes
+04:14:08Z obs RKPK 2023: 9882 reportes
+04:14:11Z obs RKPK 2024: 9671 reportes
+04:14:14Z obs RKPK 2025: 9900 reportes
+04:14:16Z obs RKPK 2026: 8125 reportes
+04:14:19Z obs RKSI 2023: 17560 reportes
+04:14:22Z obs RKSI 2024: 17610 reportes
+04:14:26Z obs RKSI 2025: 17559 reportes
+04:14:28Z obs RKSI 2026: 14697 reportes
+04:14:32Z obs RPLL 2023: 8934 reportes
+04:14:34Z obs RPLL 2024: 8941 reportes
+04:14:37Z obs RPLL 2025: 8934 reportes
+04:14:40Z obs RPLL 2026: 7495 reportes
+04:14:43Z obs SAEZ 2023: 9465 reportes
+04:14:45Z obs SAEZ 2024: 9667 reportes
+04:14:48Z obs SAEZ 2025: 9599 reportes
+04:14:51Z obs SAEZ 2026: 8189 reportes
+04:14:54Z obs SBGR 2023: 9339 reportes
+04:14:56Z obs SBGR 2024: 9266 reportes
+04:14:59Z obs SBGR 2025: 9384 reportes
+04:15:02Z obs SBGR 2026: 7869 reportes
+04:15:05Z obs UUWW 2023: 17566 reportes
+04:15:08Z obs UUWW 2024: 19819 reportes
+04:15:12Z obs UUWW 2025: 21618 reportes
+04:15:15Z obs UUWW 2026: 17652 reportes
+04:15:18Z obs WMKK 2023: 18049 reportes
+04:15:21Z obs WMKK 2024: 18017 reportes
+04:15:24Z obs WMKK 2025: 17922 reportes
+04:15:27Z obs WMKK 2026: 14922 reportes
+04:15:30Z obs WSSS 2023: 17747 reportes
+04:15:33Z obs WSSS 2024: 18107 reportes
+04:15:36Z obs WSSS 2025: 17985 reportes
+04:15:39Z obs WSSS 2026: 14973 reportes
+04:15:42Z obs ZBAA 2023: 17564 reportes
+04:15:44Z obs ZBAA 2024: 17852 reportes
+04:15:47Z obs ZBAA 2025: 17798 reportes
+04:15:50Z obs ZBAA 2026: 14919 reportes
+04:15:53Z obs ZGGG 2023: 17565 reportes
+04:15:56Z obs ZGGG 2024: 18273 reportes
+04:15:59Z obs ZGGG 2025: 18146 reportes
+04:16:02Z obs ZGGG 2026: 15271 reportes
+04:16:05Z obs ZGSZ 2023: 8782 reportes
+04:16:08Z obs ZGSZ 2024: 8808 reportes
+04:16:10Z obs ZGSZ 2025: 8782 reportes
+04:16:13Z obs ZGSZ 2026: 7349 reportes
+04:16:16Z obs ZHHH 2023: 8784 reportes
+04:16:19Z obs ZHHH 2024: 8808 reportes
+04:16:22Z obs ZHHH 2025: 8783 reportes
+04:16:24Z obs ZHHH 2026: 7349 reportes
+04:16:27Z obs ZSPD 2023: 17564 reportes
+04:16:30Z obs ZSPD 2024: 17915 reportes
+04:16:33Z obs ZSPD 2025: 18000 reportes
+04:16:36Z obs ZSPD 2026: 14925 reportes
+04:16:39Z obs ZSQD 2023: 8781 reportes
+04:16:41Z obs ZSQD 2024: 8808 reportes
+04:16:43Z obs ZSQD 2025: 8782 reportes
+04:16:46Z obs ZSQD 2026: 7349 reportes
+04:16:49Z obs ZUCK 2023: 8784 reportes
+04:16:51Z obs ZUCK 2024: 8808 reportes
+04:16:54Z obs ZUCK 2025: 8783 reportes
+04:16:56Z obs ZUCK 2026: 7349 reportes
+04:16:59Z obs ZUUU 2023: 8782 reportes
+04:17:01Z obs ZUUU 2024: 8809 reportes
+04:17:04Z obs ZUUU 2025: 8783 reportes
+04:17:06Z obs ZUUU 2026: 7349 reportes
+04:17:30Z obs_diaria: 65681 dias-estacion
+04:22:38Z pron EDDM ncep_hrrr_conus: no cubre (400 {"reason":"No data is available for this location","error":true})
+04:22:38Z pron EFHK ncep_hrrr_conus: no cubre (400 {"error":true,"reason":"No data is available for this location"})
+04:22:39Z pron EGLC ncep_hrrr_conus: no cubre (400 {"reason":"No data is available for this location","error":true})
+04:22:39Z pron EHAM ncep_hrrr_conus: no cubre (400 {"reason":"No data is available for this location","error":true})
+04:22:39Z pron EPWA ncep_hrrr_conus: no cubre (400 {"reason":"No data is available for this location","error":true})
+04:22:39Z pron FACT ncep_hrrr_conus: no cubre (400 {"reason":"No data is available for this location","error":true})
+04:22:39Z pron HKO ncep_hrrr_conus: no cubre (400 {"reason":"No data is available for this location","error":true})
+04:22:46Z pron LEMD ncep_hrrr_conus: no cubre (400 {"reason":"No data is available for this location","error":true})
+04:22:46Z pron LIMC ncep_hrrr_conus: no cubre (400 {"error":true,"reason":"No data is available for this location"})
+04:22:46Z pron LLBG ncep_hrrr_conus: no cubre (400 {"error":true,"reason":"No data is available for this location"})
+04:22:46Z pron LTAC ncep_hrrr_conus: no cubre (400 {"error":true,"reason":"No data is available for this location"})
+04:22:46Z pron LTFM ncep_hrrr_conus: no cubre (400 {"reason":"No data is available for this location","error":true})
+04:22:47Z pron MMMX ncep_hrrr_conus: no cubre (400 {"reason":"No data is available for this location","error":true})
+04:22:47Z pron MPMG ncep_hrrr_conus: no cubre (400 {"reason":"No data is available for this location","error":true})
+04:22:47Z pron NZWN ncep_hrrr_conus: no cubre (400 {"reason":"No data is available for this location","error":true})
+04:22:47Z pron OEJN ncep_hrrr_conus: no cubre (400 {"error":true,"reason":"No data is available for this location"})
+04:22:47Z pron OPKC ncep_hrrr_conus: no cubre (400 {"error":true,"reason":"No data is available for this location"})
+04:22:47Z pron RCSS ncep_hrrr_conus: no cubre (400 {"error":true,"reason":"No data is available for this location"})
+04:22:48Z pron RJTT ncep_hrrr_conus: no cubre (400 {"error":true,"reason":"No data is available for this location"})
+04:22:48Z pron RKPK ncep_hrrr_conus: no cubre (400 {"error":true,"reason":"No data is available for this location"})
+04:22:48Z pron RKSI ncep_hrrr_conus: no cubre (400 {"error":true,"reason":"No data is available for this location"})
+04:22:48Z pron RPLL ncep_hrrr_conus: no cubre (400 {"error":true,"reason":"No data is available for this location"})
+04:22:48Z pron SAEZ ncep_hrrr_conus: no cubre (400 {"reason":"No data is available for this location","error":true})
+04:22:48Z pron SBGR ncep_hrrr_conus: no cubre (400 {"error":true,"reason":"No data is available for this location"})
+04:22:48Z pron UUWW ncep_hrrr_conus: no cubre (400 {"reason":"No data is available for this location","error":true})
+04:22:49Z pron WMKK ncep_hrrr_conus: no cubre (400 {"reason":"No data is available for this location","error":true})
+04:22:49Z pron WSSS ncep_hrrr_conus: no cubre (400 {"reason":"No data is available for this location","error":true})
+04:22:49Z pron ZBAA ncep_hrrr_conus: no cubre (400 {"reason":"No data is available for this location","error":true})
+04:22:49Z pron ZGGG ncep_hrrr_conus: no cubre (400 {"error":true,"reason":"No data is available for this location"})
+04:22:49Z pron ZGSZ ncep_hrrr_conus: no cubre (400 {"error":true,"reason":"No data is available for this location"})
+04:22:49Z pron ZHHH ncep_hrrr_conus: no cubre (400 {"error":true,"reason":"No data is available for this location"})
+04:22:49Z pron ZSPD ncep_hrrr_conus: no cubre (400 {"reason":"No data is available for this location","error":true})
+04:22:50Z pron ZSQD ncep_hrrr_conus: no cubre (400 {"error":true,"reason":"No data is available for this location"})
+04:22:50Z pron ZUCK ncep_hrrr_conus: no cubre (400 {"reason":"No data is available for this location","error":true})
+04:22:50Z pron ZUUU ncep_hrrr_conus: no cubre (400 {"reason":"No data is available for this location","error":true})
+04:22:51Z pron EDDM ncep_nbm_conus: no cubre (400 {"error":true,"reason":"No data is available for this location"})
+04:22:51Z pron EFHK ncep_nbm_conus: no cubre (400 {"error":true,"reason":"No data is available for this location"})
+04:22:51Z pron EGLC ncep_nbm_conus: no cubre (400 {"error":true,"reason":"No data is available for this location"})
+04:22:51Z pron EHAM ncep_nbm_conus: no cubre (400 {"reason":"No data is available for this location","error":true})
+04:22:51Z pron EPWA ncep_nbm_conus: no cubre (400 {"error":true,"reason":"No data is available for this location"})
+04:22:51Z pron FACT ncep_nbm_conus: no cubre (400 {"error":true,"reason":"No data is available for this location"})
+04:22:52Z pron HKO ncep_nbm_conus: no cubre (400 {"reason":"No data is available for this location","error":true})
+04:22:58Z pron LEMD ncep_nbm_conus: no cubre (400 {"reason":"No data is available for this location","error":true})
+04:22:58Z pron LIMC ncep_nbm_conus: no cubre (400 {"reason":"No data is available for this location","error":true})
+04:22:59Z pron LLBG ncep_nbm_conus: no cubre (400 {"error":true,"reason":"No data is available for this location"})
+04:22:59Z pron LTAC ncep_nbm_conus: no cubre (400 {"reason":"No data is available for this location","error":true})
+04:22:59Z pron LTFM ncep_nbm_conus: no cubre (400 {"error":true,"reason":"No data is available for this location"})
+04:22:59Z pron MMMX ncep_nbm_conus: no cubre (400 {"error":true,"reason":"No data is available for this location"})
+04:22:59Z pron MPMG ncep_nbm_conus: no cubre (400 {"error":true,"reason":"No data is available for this location"})
+04:22:59Z pron NZWN ncep_nbm_conus: no cubre (400 {"reason":"No data is available for this location","error":true})
+04:22:59Z pron OEJN ncep_nbm_conus: no cubre (400 {"error":true,"reason":"No data is available for this location"})
+04:23:00Z pron OPKC ncep_nbm_conus: no cubre (400 {"reason":"No data is available for this location","error":true})
+04:23:00Z pron RCSS ncep_nbm_conus: no cubre (400 {"reason":"No data is available for this location","error":true})
+04:23:00Z pron RJTT ncep_nbm_conus: no cubre (400 {"error":true,"reason":"No data is available for this location"})
+04:23:00Z pron RKPK ncep_nbm_conus: no cubre (400 {"error":true,"reason":"No data is available for this location"})
+04:23:00Z pron RKSI ncep_nbm_conus: no cubre (400 {"error":true,"reason":"No data is available for this location"})
+04:23:00Z pron RPLL ncep_nbm_conus: no cubre (400 {"reason":"No data is available for this location","error":true})
+04:23:00Z pron SAEZ ncep_nbm_conus: no cubre (400 {"reason":"No data is available for this location","error":true})
+04:23:01Z pron SBGR ncep_nbm_conus: no cubre (400 {"error":true,"reason":"No data is available for this location"})
+04:23:01Z pron UUWW ncep_nbm_conus: no cubre (400 {"reason":"No data is available for this location","error":true})
+04:23:01Z pron WMKK ncep_nbm_conus: no cubre (400 {"error":true,"reason":"No data is available for this location"})
+04:23:01Z pron WSSS ncep_nbm_conus: no cubre (400 {"error":true,"reason":"No data is available for this location"})
+04:23:01Z pron ZBAA ncep_nbm_conus: no cubre (400 {"error":true,"reason":"No data is available for this location"})
+04:23:01Z pron ZGGG ncep_nbm_conus: no cubre (400 {"error":true,"reason":"No data is available for this location"})
+04:23:01Z pron ZGSZ ncep_nbm_conus: no cubre (400 {"reason":"No data is available for this location","error":true})
+04:23:02Z pron ZHHH ncep_nbm_conus: no cubre (400 {"reason":"No data is available for this location","error":true})
+04:23:02Z pron ZSPD ncep_nbm_conus: no cubre (400 {"reason":"No data is available for this location","error":true})
+04:23:02Z pron ZSQD ncep_nbm_conus: no cubre (400 {"reason":"No data is available for this location","error":true})
+04:23:02Z pron ZUCK ncep_nbm_conus: no cubre (400 {"reason":"No data is available for this location","error":true})
+04:23:02Z pron ZUUU ncep_nbm_conus: no cubre (400 {"reason":"No data is available for this location","error":true})
+04:23:02Z pron CYYZ gfs_graphcast025: no cubre (sin datos en la ultima semana)
+04:23:03Z pron EDDM gfs_graphcast025: no cubre (sin datos en la ultima semana)
+04:23:03Z pron EFHK gfs_graphcast025: no cubre (sin datos en la ultima semana)
+04:23:03Z pron EGLC gfs_graphcast025: no cubre (sin datos en la ultima semana)
+04:23:03Z pron EHAM gfs_graphcast025: no cubre (sin datos en la ultima semana)
+04:23:03Z pron EPWA gfs_graphcast025: no cubre (sin datos en la ultima semana)
+04:23:03Z pron FACT gfs_graphcast025: no cubre (sin datos en la ultima semana)
+04:23:03Z pron HKO gfs_graphcast025: no cubre (sin datos en la ultima semana)
+04:23:04Z pron KATL gfs_graphcast025: no cubre (sin datos en la ultima semana)
+04:23:04Z pron KAUS gfs_graphcast025: no cubre (sin datos en la ultima semana)
+04:23:04Z pron KDAL gfs_graphcast025: no cubre (sin datos en la ultima semana)
+04:23:04Z pron KDEN gfs_graphcast025: no cubre (sin datos en la ultima semana)
+04:23:04Z pron KHOU gfs_graphcast025: no cubre (sin datos en la ultima semana)
+04:23:04Z pron KLAX gfs_graphcast025: no cubre (sin datos en la ultima semana)
+04:23:05Z pron KLGA gfs_graphcast025: no cubre (sin datos en la ultima semana)
+04:23:05Z pron KMIA gfs_graphcast025: no cubre (sin datos en la ultima semana)
+04:23:05Z pron KORD gfs_graphcast025: no cubre (sin datos en la ultima semana)
+04:23:05Z pron KSEA gfs_graphcast025: no cubre (sin datos en la ultima semana)
+04:23:05Z pron KSFO gfs_graphcast025: no cubre (sin datos en la ultima semana)
+04:23:05Z pron LEMD gfs_graphcast025: no cubre (sin datos en la ultima semana)
+04:23:05Z pron LIMC gfs_graphcast025: no cubre (sin datos en la ultima semana)
+04:23:06Z pron LLBG gfs_graphcast025: no cubre (sin datos en la ultima semana)
+04:23:06Z pron LTAC gfs_graphcast025: no cubre (sin datos en la ultima semana)
+04:23:06Z pron LTFM gfs_graphcast025: no cubre (sin datos en la ultima semana)
+04:23:06Z pron MMMX gfs_graphcast025: no cubre (sin datos en la ultima semana)
+04:23:06Z pron MPMG gfs_graphcast025: no cubre (sin datos en la ultima semana)
+04:23:06Z pron NZWN gfs_graphcast025: no cubre (sin datos en la ultima semana)
+04:23:06Z pron OEJN gfs_graphcast025: no cubre (sin datos en la ultima semana)
+04:23:07Z pron OPKC gfs_graphcast025: no cubre (sin datos en la ultima semana)
+04:23:07Z pron RCSS gfs_graphcast025: no cubre (sin datos en la ultima semana)
+04:23:07Z pron RJTT gfs_graphcast025: no cubre (sin datos en la ultima semana)
+04:23:07Z pron RKPK gfs_graphcast025: no cubre (sin datos en la ultima semana)
+04:23:07Z pron RKSI gfs_graphcast025: no cubre (sin datos en la ultima semana)
+04:23:07Z pron RPLL gfs_graphcast025: no cubre (sin datos en la ultima semana)
+04:23:07Z pron SAEZ gfs_graphcast025: no cubre (sin datos en la ultima semana)
+04:23:08Z pron SBGR gfs_graphcast025: no cubre (sin datos en la ultima semana)
+04:23:08Z pron UUWW gfs_graphcast025: no cubre (sin datos en la ultima semana)
+04:23:08Z pron WMKK gfs_graphcast025: no cubre (sin datos en la ultima semana)
+04:23:08Z pron WSSS gfs_graphcast025: no cubre (sin datos en la ultima semana)
+04:23:08Z pron ZBAA gfs_graphcast025: no cubre (sin datos en la ultima semana)
+04:23:08Z pron ZGGG gfs_graphcast025: no cubre (sin datos en la ultima semana)
+04:23:09Z pron ZGSZ gfs_graphcast025: no cubre (sin datos en la ultima semana)
+04:23:09Z pron ZHHH gfs_graphcast025: no cubre (sin datos en la ultima semana)
+04:23:09Z pron ZSPD gfs_graphcast025: no cubre (sin datos en la ultima semana)
+04:23:09Z pron ZSQD gfs_graphcast025: no cubre (sin datos en la ultima semana)
+04:23:09Z pron ZUCK gfs_graphcast025: no cubre (sin datos en la ultima semana)
+04:23:09Z pron ZUUU gfs_graphcast025: no cubre (sin datos en la ultima semana)
+04:23:09Z pron CYYZ kma_seamless: no cubre (sin datos en la ultima semana)
+04:23:10Z pron EDDM kma_seamless: no cubre (sin datos en la ultima semana)
+04:23:10Z pron EFHK kma_seamless: no cubre (sin datos en la ultima semana)
+04:23:10Z pron EGLC kma_seamless: no cubre (sin datos en la ultima semana)
+04:23:10Z pron EHAM kma_seamless: no cubre (sin datos en la ultima semana)
+04:23:10Z pron EPWA kma_seamless: no cubre (sin datos en la ultima semana)
+04:23:10Z pron FACT kma_seamless: no cubre (sin datos en la ultima semana)
+04:23:10Z pron HKO kma_seamless: no cubre (sin datos en la ultima semana)
+04:23:11Z pron KATL kma_seamless: no cubre (sin datos en la ultima semana)
+04:23:11Z pron KAUS kma_seamless: no cubre (sin datos en la ultima semana)
+04:23:11Z pron KDAL kma_seamless: no cubre (sin datos en la ultima semana)
+04:23:11Z pron KDEN kma_seamless: no cubre (sin datos en la ultima semana)
+04:23:11Z pron KHOU kma_seamless: no cubre (sin datos en la ultima semana)
+04:23:11Z pron KLAX kma_seamless: no cubre (sin datos en la ultima semana)
+04:23:12Z pron KLGA kma_seamless: no cubre (sin datos en la ultima semana)
+04:23:12Z pron KMIA kma_seamless: no cubre (sin datos en la ultima semana)
+04:23:12Z pron KORD kma_seamless: no cubre (sin datos en la ultima semana)
+04:23:12Z pron KSEA kma_seamless: no cubre (sin datos en la ultima semana)
+04:23:12Z pron KSFO kma_seamless: no cubre (sin datos en la ultima semana)
+04:23:12Z pron LEMD kma_seamless: no cubre (sin datos en la ultima semana)
+04:23:12Z pron LIMC kma_seamless: no cubre (sin datos en la ultima semana)
+04:23:13Z pron LLBG kma_seamless: no cubre (sin datos en la ultima semana)
+04:23:13Z pron LTAC kma_seamless: no cubre (sin datos en la ultima semana)
+04:23:13Z pron LTFM kma_seamless: no cubre (sin datos en la ultima semana)
+04:23:13Z pron MMMX kma_seamless: no cubre (sin datos en la ultima semana)
+04:23:13Z pron MPMG kma_seamless: no cubre (sin datos en la ultima semana)
+04:23:13Z pron NZWN kma_seamless: no cubre (sin datos en la ultima semana)
+04:23:13Z pron OEJN kma_seamless: no cubre (sin datos en la ultima semana)
+04:23:14Z pron OPKC kma_seamless: no cubre (sin datos en la ultima semana)
+04:23:14Z pron RCSS kma_seamless: no cubre (sin datos en la ultima semana)
+04:23:14Z pron RJTT kma_seamless: no cubre (sin datos en la ultima semana)
+04:23:14Z pron RKPK kma_seamless: no cubre (sin datos en la ultima semana)
+04:23:14Z pron RKSI kma_seamless: no cubre (sin datos en la ultima semana)
+04:23:14Z pron RPLL kma_seamless: no cubre (sin datos en la ultima semana)
+04:23:14Z pron SAEZ kma_seamless: no cubre (sin datos en la ultima semana)
+04:23:15Z pron SBGR kma_seamless: no cubre (sin datos en la ultima semana)
+04:23:15Z pron UUWW kma_seamless: no cubre (sin datos en la ultima semana)
+04:23:15Z pron WMKK kma_seamless: no cubre (sin datos en la ultima semana)
+04:23:15Z pron WSSS kma_seamless: no cubre (sin datos en la ultima semana)
+04:23:15Z pron ZBAA kma_seamless: no cubre (sin datos en la ultima semana)
+04:23:15Z pron ZGGG kma_seamless: no cubre (sin datos en la ultima semana)
+04:23:16Z pron ZGSZ kma_seamless: no cubre (sin datos en la ultima semana)
+04:23:16Z pron ZHHH kma_seamless: no cubre (sin datos en la ultima semana)
+04:23:16Z pron ZSPD kma_seamless: no cubre (sin datos en la ultima semana)
+04:23:16Z pron ZSQD kma_seamless: no cubre (sin datos en la ultima semana)
+04:23:16Z pron ZUCK kma_seamless: no cubre (sin datos en la ultima semana)
+04:23:16Z pron ZUUU kma_seamless: no cubre (sin datos en la ultima semana)
+04:24:40Z pron CYYZ meteoswiss_icon_seamless: no cubre (400 {"error":true,"reason":"No data is available for this location"})
+04:24:42Z pron EFHK meteoswiss_icon_seamless: no cubre (400 {"error":true,"reason":"No data is available for this location"})
+04:24:42Z pron EGLC meteoswiss_icon_seamless: no cubre (400 {"error":true,"reason":"No data is available for this location"})
+04:24:42Z pron EHAM meteoswiss_icon_seamless: no cubre (400 {"error":true,"reason":"No data is available for this location"})
+04:24:42Z pron EPWA meteoswiss_icon_seamless: no cubre (400 {"error":true,"reason":"No data is available for this location"})
+04:24:42Z pron FACT meteoswiss_icon_seamless: no cubre (400 {"reason":"No data is available for this location","error":true})
+04:24:43Z pron HKO meteoswiss_icon_seamless: no cubre (400 {"reason":"No data is available for this location","error":true})
+04:24:43Z pron KATL meteoswiss_icon_seamless: no cubre (400 {"error":true,"reason":"No data is available for this location"})
+04:24:43Z pron KAUS meteoswiss_icon_seamless: no cubre (400 {"reason":"No data is available for this location","error":true})
+04:24:43Z pron KDAL meteoswiss_icon_seamless: no cubre (400 {"reason":"No data is available for this location","error":true})
+04:24:43Z pron KDEN meteoswiss_icon_seamless: no cubre (400 {"reason":"No data is available for this location","error":true})
+04:24:43Z pron KHOU meteoswiss_icon_seamless: no cubre (400 {"error":true,"reason":"No data is available for this location"})
+04:24:43Z pron KLAX meteoswiss_icon_seamless: no cubre (400 {"error":true,"reason":"No data is available for this location"})
+04:24:44Z pron KLGA meteoswiss_icon_seamless: no cubre (400 {"reason":"No data is available for this location","error":true})
+04:24:44Z pron KMIA meteoswiss_icon_seamless: no cubre (400 {"reason":"No data is available for this location","error":true})
+04:24:44Z pron KORD meteoswiss_icon_seamless: no cubre (400 {"error":true,"reason":"No data is available for this location"})
+04:24:44Z pron KSEA meteoswiss_icon_seamless: no cubre (400 {"error":true,"reason":"No data is available for this location"})
+04:24:44Z pron KSFO meteoswiss_icon_seamless: no cubre (400 {"error":true,"reason":"No data is available for this location"})
+04:24:44Z pron LEMD meteoswiss_icon_seamless: no cubre (400 {"error":true,"reason":"No data is available for this location"})
+04:24:49Z pron LLBG meteoswiss_icon_seamless: no cubre (400 {"error":true,"reason":"No data is available for this location"})
+04:24:49Z pron LTAC meteoswiss_icon_seamless: no cubre (400 {"reason":"No data is available for this location","error":true})
+04:24:49Z pron LTFM meteoswiss_icon_seamless: no cubre (400 {"error":true,"reason":"No data is available for this location"})
+04:24:49Z pron MMMX meteoswiss_icon_seamless: no cubre (400 {"error":true,"reason":"No data is available for this location"})
+04:24:49Z pron MPMG meteoswiss_icon_seamless: no cubre (400 {"error":true,"reason":"No data is available for this location"})
+04:24:49Z pron NZWN meteoswiss_icon_seamless: no cubre (400 {"reason":"No data is available for this location","error":true})
+04:24:49Z pron OEJN meteoswiss_icon_seamless: no cubre (400 {"error":true,"reason":"No data is available for this location"})
+04:24:50Z pron OPKC meteoswiss_icon_seamless: no cubre (400 {"error":true,"reason":"No data is available for this location"})
+04:24:50Z pron RCSS meteoswiss_icon_seamless: no cubre (400 {"reason":"No data is available for this location","error":true})
+04:24:50Z pron RJTT meteoswiss_icon_seamless: no cubre (400 {"error":true,"reason":"No data is available for this location"})
+04:24:50Z pron RKPK meteoswiss_icon_seamless: no cubre (400 {"error":true,"reason":"No data is available for this location"})
+04:24:50Z pron RKSI meteoswiss_icon_seamless: no cubre (400 {"error":true,"reason":"No data is available for this location"})
+04:24:50Z pron RPLL meteoswiss_icon_seamless: no cubre (400 {"reason":"No data is available for this location","error":true})
+04:24:50Z pron SAEZ meteoswiss_icon_seamless: no cubre (400 {"reason":"No data is available for this location","error":true})
+04:24:51Z pron SBGR meteoswiss_icon_seamless: no cubre (400 {"reason":"No data is available for this location","error":true})
+04:24:51Z pron UUWW meteoswiss_icon_seamless: no cubre (400 {"error":true,"reason":"No data is available for this location"})
+04:24:51Z pron WMKK meteoswiss_icon_seamless: no cubre (400 {"error":true,"reason":"No data is available for this location"})
+04:24:51Z pron WSSS meteoswiss_icon_seamless: no cubre (400 {"error":true,"reason":"No data is available for this location"})
+04:24:51Z pron ZBAA meteoswiss_icon_seamless: no cubre (400 {"error":true,"reason":"No data is available for this location"})
+04:24:51Z pron ZGGG meteoswiss_icon_seamless: no cubre (400 {"error":true,"reason":"No data is available for this location"})
+04:24:52Z pron ZGSZ meteoswiss_icon_seamless: no cubre (400 {"error":true,"reason":"No data is available for this location"})
+04:24:52Z pron ZHHH meteoswiss_icon_seamless: no cubre (400 {"reason":"No data is available for this location","error":true})
+04:24:52Z pron ZSPD meteoswiss_icon_seamless: no cubre (400 {"error":true,"reason":"No data is available for this location"})
+04:24:52Z pron ZSQD meteoswiss_icon_seamless: no cubre (400 {"reason":"No data is available for this location","error":true})
+04:24:52Z pron ZUCK meteoswiss_icon_seamless: no cubre (400 {"error":true,"reason":"No data is available for this location"})
+04:24:52Z pron ZUUU meteoswiss_icon_seamless: no cubre (400 {"error":true,"reason":"No data is available for this location"})
+04:24:52Z pron CYYZ icon_d2: no cubre (400 {"error":true,"reason":"No data is available for this location"})
+04:24:53Z pron EFHK icon_d2: no cubre (400 {"error":true,"reason":"No data is available for this location"})
+04:24:54Z pron EPWA icon_d2: no cubre (400 {"reason":"No data is available for this location","error":true})
+04:24:55Z pron FACT icon_d2: no cubre (400 {"reason":"No data is available for this location","error":true})
+04:24:55Z pron HKO icon_d2: no cubre (400 {"error":true,"reason":"No data is available for this location"})
+04:24:55Z pron KATL icon_d2: no cubre (400 {"error":true,"reason":"No data is available for this location"})
+04:24:55Z pron KAUS icon_d2: no cubre (400 {"error":true,"reason":"No data is available for this location"})
+04:24:55Z pron KDAL icon_d2: no cubre (400 {"reason":"No data is available for this location","error":true})
+04:24:55Z pron KDEN icon_d2: no cubre (400 {"reason":"No data is available for this location","error":true})
+04:24:56Z pron KHOU icon_d2: no cubre (400 {"error":true,"reason":"No data is available for this location"})
+04:24:56Z pron KLAX icon_d2: no cubre (400 {"error":true,"reason":"No data is available for this location"})
+04:24:56Z pron KLGA icon_d2: no cubre (400 {"error":true,"reason":"No data is available for this location"})
+04:24:56Z pron KMIA icon_d2: no cubre (400 {"error":true,"reason":"No data is available for this location"})
+04:24:56Z pron KORD icon_d2: no cubre (400 {"error":true,"reason":"No data is available for this location"})
+04:24:56Z pron KSEA icon_d2: no cubre (400 {"error":true,"reason":"No data is available for this location"})
+04:24:56Z pron KSFO icon_d2: no cubre (400 {"reason":"No data is available for this location","error":true})
+04:24:57Z pron LEMD icon_d2: no cubre (400 {"error":true,"reason":"No data is available for this location"})
+04:24:57Z pron LLBG icon_d2: no cubre (400 {"error":true,"reason":"No data is available for this location"})
+04:24:57Z pron LTAC icon_d2: no cubre (400 {"error":true,"reason":"No data is available for this location"})
+04:24:58Z pron LTFM icon_d2: no cubre (400 {"error":true,"reason":"No data is available for this location"})
+04:24:58Z pron MMMX icon_d2: no cubre (400 {"reason":"No data is available for this location","error":true})
+04:24:58Z pron MPMG icon_d2: no cubre (400 {"reason":"No data is available for this location","error":true})
+04:24:58Z pron NZWN icon_d2: no cubre (400 {"error":true,"reason":"No data is available for this location"})
+04:24:58Z pron OEJN icon_d2: no cubre (400 {"error":true,"reason":"No data is available for this location"})
+04:24:58Z pron OPKC icon_d2: no cubre (400 {"reason":"No data is available for this location","error":true})
+04:24:58Z pron RCSS icon_d2: no cubre (400 {"error":true,"reason":"No data is available for this location"})
+04:24:59Z pron RJTT icon_d2: no cubre (400 {"error":true,"reason":"No data is available for this location"})
+04:24:59Z pron RKPK icon_d2: no cubre (400 {"reason":"No data is available for this location","error":true})
+04:24:59Z pron RKSI icon_d2: no cubre (400 {"error":true,"reason":"No data is available for this location"})
+04:24:59Z pron RPLL icon_d2: no cubre (400 {"error":true,"reason":"No data is available for this location"})
+04:24:59Z pron SAEZ icon_d2: no cubre (400 {"reason":"No data is available for this location","error":true})
+04:24:59Z pron SBGR icon_d2: no cubre (400 {"error":true,"reason":"No data is available for this location"})
+04:24:59Z pron UUWW icon_d2: no cubre (400 {"reason":"No data is available for this location","error":true})
+04:25:00Z pron WMKK icon_d2: no cubre (400 {"error":true,"reason":"No data is available for this location"})
+04:25:00Z pron WSSS icon_d2: no cubre (400 {"reason":"No data is available for this location","error":true})
+04:25:00Z pron ZBAA icon_d2: no cubre (400 {"error":true,"reason":"No data is available for this location"})
+04:25:00Z pron ZGGG icon_d2: no cubre (400 {"error":true,"reason":"No data is available for this location"})
+04:25:00Z pron ZGSZ icon_d2: no cubre (400 {"error":true,"reason":"No data is available for this location"})
+04:25:00Z pron ZHHH icon_d2: no cubre (400 {"reason":"No data is available for this location","error":true})
+04:25:00Z pron ZSPD icon_d2: no cubre (400 {"error":true,"reason":"No data is available for this location"})
+04:25:01Z pron ZSQD icon_d2: no cubre (400 {"error":true,"reason":"No data is available for this location"})
+04:25:01Z pron ZUCK icon_d2: no cubre (400 {"reason":"No data is available for this location","error":true})
+04:25:01Z pron ZUUU icon_d2: no cubre (400 {"reason":"No data is available for this location","error":true})
+04:25:01Z pron CYYZ icon_eu: no cubre (400 {"error":true,"reason":"No data is available for this location"})
+04:25:04Z pron FACT icon_eu: no cubre (400 {"error":true,"reason":"No data is available for this location"})
+04:25:04Z pron HKO icon_eu: no cubre (400 {"error":true,"reason":"No data is available for this location"})
+04:25:05Z pron KATL icon_eu: no cubre (400 {"reason":"No data is available for this location","error":true})
+04:25:05Z pron KAUS icon_eu: no cubre (400 {"error":true,"reason":"No data is available for this location"})
+04:25:05Z pron KDAL icon_eu: no cubre (400 {"reason":"No data is available for this location","error":true})
+04:25:05Z pron KDEN icon_eu: no cubre (400 {"error":true,"reason":"No data is available for this location"})
+04:25:05Z pron KHOU icon_eu: no cubre (400 {"error":true,"reason":"No data is available for this location"})
+04:25:05Z pron KLAX icon_eu: no cubre (400 {"error":true,"reason":"No data is available for this location"})
+04:25:05Z pron KLGA icon_eu: no cubre (400 {"reason":"No data is available for this location","error":true})
+04:25:06Z pron KMIA icon_eu: no cubre (400 {"error":true,"reason":"No data is available for this location"})
+04:25:06Z pron KORD icon_eu: no cubre (400 {"reason":"No data is available for this location","error":true})
+04:25:06Z pron KSEA icon_eu: no cubre (400 {"error":true,"reason":"No data is available for this location"})
+04:25:06Z pron KSFO icon_eu: no cubre (400 {"error":true,"reason":"No data is available for this location"})
+04:25:09Z pron MMMX icon_eu: no cubre (400 {"error":true,"reason":"No data is available for this location"})
+04:25:09Z pron MPMG icon_eu: no cubre (400 {"error":true,"reason":"No data is available for this location"})
+04:25:09Z pron NZWN icon_eu: no cubre (400 {"error":true,"reason":"No data is available for this location"})
+04:25:10Z pron OEJN icon_eu: no cubre (400 {"reason":"No data is available for this location","error":true})
+04:25:10Z pron OPKC icon_eu: no cubre (400 {"error":true,"reason":"No data is available for this location"})
+04:25:10Z pron RCSS icon_eu: no cubre (400 {"reason":"No data is available for this location","error":true})
+04:25:10Z pron RJTT icon_eu: no cubre (400 {"error":true,"reason":"No data is available for this location"})
+04:25:10Z pron RKPK icon_eu: no cubre (400 {"error":true,"reason":"No data is available for this location"})
+04:25:10Z pron RKSI icon_eu: no cubre (400 {"reason":"No data is available for this location","error":true})
+04:25:10Z pron RPLL icon_eu: no cubre (400 {"error":true,"reason":"No data is available for this location"})
+04:25:11Z pron SAEZ icon_eu: no cubre (400 {"error":true,"reason":"No data is available for this location"})
+04:25:11Z pron SBGR icon_eu: no cubre (400 {"reason":"No data is available for this location","error":true})
+04:25:11Z pron WMKK icon_eu: no cubre (400 {"error":true,"reason":"No data is available for this location"})
+04:25:12Z pron WSSS icon_eu: no cubre (400 {"reason":"No data is available for this location","error":true})
+04:25:12Z pron ZBAA icon_eu: no cubre (400 {"error":true,"reason":"No data is available for this location"})
+04:25:12Z pron ZGGG icon_eu: no cubre (400 {"reason":"No data is available for this location","error":true})
+04:25:12Z pron ZGSZ icon_eu: no cubre (400 {"error":true,"reason":"No data is available for this location"})
+04:25:12Z pron ZHHH icon_eu: no cubre (400 {"reason":"No data is available for this location","error":true})
+04:25:12Z pron ZSPD icon_eu: no cubre (400 {"reason":"No data is available for this location","error":true})
+04:25:12Z pron ZSQD icon_eu: no cubre (400 {"reason":"No data is available for this location","error":true})
+04:25:13Z pron ZUCK icon_eu: no cubre (400 {"reason":"No data is available for this location","error":true})
+04:25:13Z pron ZUUU icon_eu: no cubre (400 {"reason":"No data is available for this location","error":true})
+04:25:13Z pron CYYZ ukmo_uk_deterministic_2km: no cubre (400 {"reason":"No data is available for this location","error":true})
+04:25:13Z pron EDDM ukmo_uk_deterministic_2km: no cubre (400 {"error":true,"reason":"No data is available for this location"})
+04:25:13Z pron EFHK ukmo_uk_deterministic_2km: no cubre (400 {"error":true,"reason":"No data is available for this location"})
+04:25:15Z pron EPWA ukmo_uk_deterministic_2km: no cubre (400 {"reason":"No data is available for this location","error":true})
+04:25:15Z pron FACT ukmo_uk_deterministic_2km: no cubre (400 {"error":true,"reason":"No data is available for this location"})
+04:25:15Z pron HKO ukmo_uk_deterministic_2km: no cubre (400 {"error":true,"reason":"No data is available for this location"})
+04:25:15Z pron KATL ukmo_uk_deterministic_2km: no cubre (400 {"reason":"No data is available for this location","error":true})
+04:25:15Z pron KAUS ukmo_uk_deterministic_2km: no cubre (400 {"error":true,"reason":"No data is available for this location"})
+04:25:15Z pron KDAL ukmo_uk_deterministic_2km: no cubre (400 {"reason":"No data is available for this location","error":true})
+04:25:15Z pron KDEN ukmo_uk_deterministic_2km: no cubre (400 {"reason":"No data is available for this location","error":true})
+04:25:16Z pron KHOU ukmo_uk_deterministic_2km: no cubre (400 {"reason":"No data is available for this location","error":true})
+04:25:16Z pron KLAX ukmo_uk_deterministic_2km: no cubre (400 {"reason":"No data is available for this location","error":true})
+04:25:16Z pron KLGA ukmo_uk_deterministic_2km: no cubre (400 {"error":true,"reason":"No data is available for this location"})
+04:25:16Z pron KMIA ukmo_uk_deterministic_2km: no cubre (400 {"reason":"No data is available for this location","error":true})
+04:25:16Z pron KORD ukmo_uk_deterministic_2km: no cubre (400 {"error":true,"reason":"No data is available for this location"})
+04:25:16Z pron KSEA ukmo_uk_deterministic_2km: no cubre (400 {"error":true,"reason":"No data is available for this location"})
+04:25:16Z pron KSFO ukmo_uk_deterministic_2km: no cubre (400 {"reason":"No data is available for this location","error":true})
+04:25:17Z pron LEMD ukmo_uk_deterministic_2km: no cubre (400 {"error":true,"reason":"No data is available for this location"})
+04:25:17Z pron LLBG ukmo_uk_deterministic_2km: no cubre (400 {"error":true,"reason":"No data is available for this location"})
+04:25:17Z pron LTAC ukmo_uk_deterministic_2km: no cubre (400 {"reason":"No data is available for this location","error":true})
+04:25:18Z pron LTFM ukmo_uk_deterministic_2km: no cubre (400 {"error":true,"reason":"No data is available for this location"})
+04:25:18Z pron MMMX ukmo_uk_deterministic_2km: no cubre (400 {"error":true,"reason":"No data is available for this location"})
+04:25:18Z pron MPMG ukmo_uk_deterministic_2km: no cubre (400 {"reason":"No data is available for this location","error":true})
+04:25:18Z pron NZWN ukmo_uk_deterministic_2km: no cubre (400 {"error":true,"reason":"No data is available for this location"})
+04:25:18Z pron OEJN ukmo_uk_deterministic_2km: no cubre (400 {"reason":"No data is available for this location","error":true})
+04:25:18Z pron OPKC ukmo_uk_deterministic_2km: no cubre (400 {"reason":"No data is available for this location","error":true})
+04:25:19Z pron RCSS ukmo_uk_deterministic_2km: no cubre (400 {"error":true,"reason":"No data is available for this location"})
+04:25:19Z pron RJTT ukmo_uk_deterministic_2km: no cubre (400 {"error":true,"reason":"No data is available for this location"})
+04:25:19Z pron RKPK ukmo_uk_deterministic_2km: no cubre (400 {"error":true,"reason":"No data is available for this location"})
+04:25:19Z pron RKSI ukmo_uk_deterministic_2km: no cubre (400 {"reason":"No data is available for this location","error":true})
+04:25:19Z pron RPLL ukmo_uk_deterministic_2km: no cubre (400 {"error":true,"reason":"No data is available for this location"})
+04:25:19Z pron SAEZ ukmo_uk_deterministic_2km: no cubre (400 {"error":true,"reason":"No data is available for this location"})
+04:25:19Z pron SBGR ukmo_uk_deterministic_2km: no cubre (400 {"reason":"No data is available for this location","error":true})
+04:25:20Z pron UUWW ukmo_uk_deterministic_2km: no cubre (400 {"error":true,"reason":"No data is available for this location"})
+04:25:20Z pron WMKK ukmo_uk_deterministic_2km: no cubre (400 {"reason":"No data is available for this location","error":true})
+04:25:20Z pron WSSS ukmo_uk_deterministic_2km: no cubre (400 {"error":true,"reason":"No data is available for this location"})
+04:25:20Z pron ZBAA ukmo_uk_deterministic_2km: no cubre (400 {"reason":"No data is available for this location","error":true})
+04:25:20Z pron ZGGG ukmo_uk_deterministic_2km: no cubre (400 {"reason":"No data is available for this location","error":true})
+04:25:20Z pron ZGSZ ukmo_uk_deterministic_2km: no cubre (400 {"reason":"No data is available for this location","error":true})
+04:25:20Z pron ZHHH ukmo_uk_deterministic_2km: no cubre (400 {"reason":"No data is available for this location","error":true})
+04:25:21Z pron ZSPD ukmo_uk_deterministic_2km: no cubre (400 {"error":true,"reason":"No data is available for this location"})
+04:25:21Z pron ZSQD ukmo_uk_deterministic_2km: no cubre (400 {"reason":"No data is available for this location","error":true})
+04:25:21Z pron ZUCK ukmo_uk_deterministic_2km: no cubre (400 {"reason":"No data is available for this location","error":true})
+04:25:21Z pron ZUUU ukmo_uk_deterministic_2km: no cubre (400 {"error":true,"reason":"No data is available for this location"})
+04:25:21Z pron CYYZ jma_msm: no cubre (400 {"error":true,"reason":"No data is available for this location"})
+04:25:21Z pron EDDM jma_msm: no cubre (400 {"error":true,"reason":"No data is available for this location"})
+04:25:21Z pron EFHK jma_msm: no cubre (400 {"error":true,"reason":"No data is available for this location"})
+04:25:22Z pron EGLC jma_msm: no cubre (400 {"reason":"No data is available for this location","error":true})
+04:25:22Z pron EHAM jma_msm: no cubre (400 {"error":true,"reason":"No data is available for this location"})
+04:25:22Z pron EPWA jma_msm: no cubre (400 {"error":true,"reason":"No data is available for this location"})
+04:25:22Z pron FACT jma_msm: no cubre (400 {"reason":"No data is available for this location","error":true})
+04:25:22Z pron HKO jma_msm: no cubre (400 {"reason":"No data is available for this location","error":true})
+04:25:22Z pron KATL jma_msm: no cubre (400 {"error":true,"reason":"No data is available for this location"})
+04:25:22Z pron KAUS jma_msm: no cubre (400 {"reason":"No data is available for this location","error":true})
+04:25:23Z pron KDAL jma_msm: no cubre (400 {"reason":"No data is available for this location","error":true})
+04:25:23Z pron KDEN jma_msm: no cubre (400 {"error":true,"reason":"No data is available for this location"})
+04:25:23Z pron KHOU jma_msm: no cubre (400 {"error":true,"reason":"No data is available for this location"})
+04:25:23Z pron KLAX jma_msm: no cubre (400 {"error":true,"reason":"No data is available for this location"})
+04:25:23Z pron KLGA jma_msm: no cubre (400 {"reason":"No data is available for this location","error":true})
+04:25:23Z pron KMIA jma_msm: no cubre (400 {"reason":"No data is available for this location","error":true})
+04:25:24Z pron KORD jma_msm: no cubre (400 {"error":true,"reason":"No data is available for this location"})
+04:25:24Z pron KSEA jma_msm: no cubre (400 {"reason":"No data is available for this location","error":true})
+04:25:24Z pron KSFO jma_msm: no cubre (400 {"reason":"No data is available for this location","error":true})
+04:25:24Z pron LEMD jma_msm: no cubre (400 {"error":true,"reason":"No data is available for this location"})
+04:25:24Z pron LIMC jma_msm: no cubre (400 {"reason":"No data is available for this location","error":true})
+04:25:24Z pron LLBG jma_msm: no cubre (400 {"error":true,"reason":"No data is available for this location"})
+04:25:24Z pron LTAC jma_msm: no cubre (400 {"error":true,"reason":"No data is available for this location"})
+04:25:25Z pron LTFM jma_msm: no cubre (400 {"error":true,"reason":"No data is available for this location"})
+04:25:25Z pron MMMX jma_msm: no cubre (400 {"error":true,"reason":"No data is available for this location"})
+04:25:25Z pron MPMG jma_msm: no cubre (400 {"error":true,"reason":"No data is available for this location"})
+04:25:25Z pron NZWN jma_msm: no cubre (400 {"error":true,"reason":"No data is available for this location"})
+04:25:25Z pron OEJN jma_msm: no cubre (400 {"reason":"No data is available for this location","error":true})
+04:25:25Z pron OPKC jma_msm: no cubre (400 {"reason":"No data is available for this location","error":true})
+04:25:28Z pron RPLL jma_msm: no cubre (400 {"error":true,"reason":"No data is available for this location"})
+04:25:28Z pron SAEZ jma_msm: no cubre (400 {"reason":"No data is available for this location","error":true})
+04:25:28Z pron SBGR jma_msm: no cubre (400 {"reason":"No data is available for this location","error":true})
+04:25:28Z pron UUWW jma_msm: no cubre (400 {"error":true,"reason":"No data is available for this location"})
+04:25:28Z pron WMKK jma_msm: no cubre (400 {"error":true,"reason":"No data is available for this location"})
+04:25:29Z pron WSSS jma_msm: no cubre (400 {"error":true,"reason":"No data is available for this location"})
+04:25:29Z pron ZBAA jma_msm: no cubre (400 {"error":true,"reason":"No data is available for this location"})
+04:25:29Z pron ZGGG jma_msm: no cubre (400 {"reason":"No data is available for this location","error":true})
+04:25:29Z pron ZGSZ jma_msm: no cubre (400 {"reason":"No data is available for this location","error":true})
+04:25:29Z pron ZHHH jma_msm: no cubre (400 {"error":true,"reason":"No data is available for this location"})
+04:25:30Z pron ZUCK jma_msm: no cubre (400 {"reason":"No data is available for this location","error":true})
+04:25:31Z pron ZUUU jma_msm: no cubre (400 {"error":true,"reason":"No data is available for this location"})
+04:25:31Z pron CYYZ bom_access_global: no cubre (sin datos en la ultima semana)
+04:25:31Z pron EDDM bom_access_global: no cubre (sin datos en la ultima semana)
+04:25:31Z pron EFHK bom_access_global: no cubre (sin datos en la ultima semana)
+04:25:31Z pron EGLC bom_access_global: no cubre (sin datos en la ultima semana)
+04:25:31Z pron EHAM bom_access_global: no cubre (sin datos en la ultima semana)
+04:25:31Z pron EPWA bom_access_global: no cubre (sin datos en la ultima semana)
+04:25:32Z pron FACT bom_access_global: no cubre (sin datos en la ultima semana)
+04:25:32Z pron HKO bom_access_global: no cubre (sin datos en la ultima semana)
+04:25:32Z pron KATL bom_access_global: no cubre (sin datos en la ultima semana)
+04:25:32Z pron KAUS bom_access_global: no cubre (sin datos en la ultima semana)
+04:25:32Z pron KDAL bom_access_global: no cubre (sin datos en la ultima semana)
+04:25:32Z pron KDEN bom_access_global: no cubre (sin datos en la ultima semana)
+04:25:33Z pron KHOU bom_access_global: no cubre (sin datos en la ultima semana)
+04:25:33Z pron KLAX bom_access_global: no cubre (sin datos en la ultima semana)
+04:25:33Z pron KLGA bom_access_global: no cubre (sin datos en la ultima semana)
+04:25:33Z pron KMIA bom_access_global: no cubre (sin datos en la ultima semana)
+04:25:33Z pron KORD bom_access_global: no cubre (sin datos en la ultima semana)
+04:25:33Z pron KSEA bom_access_global: no cubre (sin datos en la ultima semana)
+04:25:33Z pron KSFO bom_access_global: no cubre (sin datos en la ultima semana)
+04:25:34Z pron LEMD bom_access_global: no cubre (sin datos en la ultima semana)
+04:25:34Z pron LIMC bom_access_global: no cubre (sin datos en la ultima semana)
+04:25:34Z pron LLBG bom_access_global: no cubre (sin datos en la ultima semana)
+04:25:34Z pron LTAC bom_access_global: no cubre (sin datos en la ultima semana)
+04:25:34Z pron LTFM bom_access_global: no cubre (sin datos en la ultima semana)
+04:25:34Z pron MMMX bom_access_global: no cubre (sin datos en la ultima semana)
+04:25:34Z pron MPMG bom_access_global: no cubre (sin datos en la ultima semana)
+04:25:35Z pron NZWN bom_access_global: no cubre (sin datos en la ultima semana)
+04:25:35Z pron OEJN bom_access_global: no cubre (sin datos en la ultima semana)
+04:25:35Z pron OPKC bom_access_global: no cubre (sin datos en la ultima semana)
+04:25:35Z pron RCSS bom_access_global: no cubre (sin datos en la ultima semana)
+04:25:35Z pron RJTT bom_access_global: no cubre (sin datos en la ultima semana)
+04:25:35Z pron RKPK bom_access_global: no cubre (sin datos en la ultima semana)
+04:25:35Z pron RKSI bom_access_global: no cubre (sin datos en la ultima semana)
+04:25:36Z pron RPLL bom_access_global: no cubre (sin datos en la ultima semana)
+04:25:36Z pron SAEZ bom_access_global: no cubre (sin datos en la ultima semana)
+04:25:36Z pron SBGR bom_access_global: no cubre (sin datos en la ultima semana)
+04:25:36Z pron UUWW bom_access_global: no cubre (sin datos en la ultima semana)
+04:25:36Z pron WMKK bom_access_global: no cubre (sin datos en la ultima semana)
+04:25:36Z pron WSSS bom_access_global: no cubre (sin datos en la ultima semana)
+04:25:36Z pron ZBAA bom_access_global: no cubre (sin datos en la ultima semana)
+04:25:37Z pron ZGGG bom_access_global: no cubre (sin datos en la ultima semana)
+04:25:37Z pron ZGSZ bom_access_global: no cubre (sin datos en la ultima semana)
+04:25:37Z pron ZHHH bom_access_global: no cubre (sin datos en la ultima semana)
+04:25:37Z pron ZSPD bom_access_global: no cubre (sin datos en la ultima semana)
+04:25:37Z pron ZSQD bom_access_global: no cubre (sin datos en la ultima semana)
+04:25:37Z pron ZUCK bom_access_global: no cubre (sin datos en la ultima semana)
+04:25:37Z pron ZUUU bom_access_global: no cubre (sin datos en la ultima semana)
+04:25:38Z pron CYYZ meteofrance_arome_france: no cubre (400 {"reason":"No data is available for this location","error":true})
+04:25:38Z pron EFHK meteofrance_arome_france: no cubre (400 {"reason":"No data is available for this location","error":true})
+04:25:40Z pron EPWA meteofrance_arome_france: no cubre (400 {"reason":"No data is available for this location","error":true})
+04:25:40Z pron FACT meteofrance_arome_france: no cubre (400 {"error":true,"reason":"No data is available for this location"})
+04:25:40Z pron HKO meteofrance_arome_france: no cubre (400 {"error":true,"reason":"No data is available for this location"})
+04:25:40Z pron KATL meteofrance_arome_france: no cubre (400 {"error":true,"reason":"No data is available for this location"})
+04:25:40Z pron KAUS meteofrance_arome_france: no cubre (400 {"error":true,"reason":"No data is available for this location"})
+04:25:40Z pron KDAL meteofrance_arome_france: no cubre (400 {"reason":"No data is available for this location","error":true})
+04:25:41Z pron KDEN meteofrance_arome_france: no cubre (400 {"error":true,"reason":"No data is available for this location"})
+04:25:41Z pron KHOU meteofrance_arome_france: no cubre (400 {"error":true,"reason":"No data is available for this location"})
+04:25:41Z pron KLAX meteofrance_arome_france: no cubre (400 {"error":true,"reason":"No data is available for this location"})
+04:25:41Z pron KLGA meteofrance_arome_france: no cubre (400 {"reason":"No data is available for this location","error":true})
+04:25:41Z pron KMIA meteofrance_arome_france: no cubre (400 {"error":true,"reason":"No data is available for this location"})
+04:25:41Z pron KORD meteofrance_arome_france: no cubre (400 {"error":true,"reason":"No data is available for this location"})
+04:25:41Z pron KSEA meteofrance_arome_france: no cubre (400 {"reason":"No data is available for this location","error":true})
+04:25:42Z pron KSFO meteofrance_arome_france: no cubre (400 {"error":true,"reason":"No data is available for this location"})
+04:25:43Z pron LLBG meteofrance_arome_france: no cubre (400 {"reason":"No data is available for this location","error":true})
+04:25:43Z pron LTAC meteofrance_arome_france: no cubre (400 {"reason":"No data is available for this location","error":true})
+04:25:43Z pron LTFM meteofrance_arome_france: no cubre (400 {"reason":"No data is available for this location","error":true})
+04:25:43Z pron MMMX meteofrance_arome_france: no cubre (400 {"reason":"No data is available for this location","error":true})
+04:25:44Z pron MPMG meteofrance_arome_france: no cubre (400 {"reason":"No data is available for this location","error":true})
+04:25:44Z pron NZWN meteofrance_arome_france: no cubre (400 {"reason":"No data is available for this location","error":true})
+04:25:44Z pron OEJN meteofrance_arome_france: no cubre (400 {"error":true,"reason":"No data is available for this location"})
+04:25:44Z pron OPKC meteofrance_arome_france: no cubre (400 {"reason":"No data is available for this location","error":true})
+04:25:44Z pron RCSS meteofrance_arome_france: no cubre (400 {"error":true,"reason":"No data is available for this location"})
+04:25:44Z pron RJTT meteofrance_arome_france: no cubre (400 {"reason":"No data is available for this location","error":true})
+04:25:44Z pron RKPK meteofrance_arome_france: no cubre (400 {"error":true,"reason":"No data is available for this location"})
+04:25:45Z pron RKSI meteofrance_arome_france: no cubre (400 {"error":true,"reason":"No data is available for this location"})
+04:25:45Z pron RPLL meteofrance_arome_france: no cubre (400 {"error":true,"reason":"No data is available for this location"})
+04:25:45Z pron SAEZ meteofrance_arome_france: no cubre (400 {"reason":"No data is available for this location","error":true})
+04:25:45Z pron SBGR meteofrance_arome_france: no cubre (400 {"reason":"No data is available for this location","error":true})
+04:25:45Z pron UUWW meteofrance_arome_france: no cubre (400 {"error":true,"reason":"No data is available for this location"})
+04:25:45Z pron WMKK meteofrance_arome_france: no cubre (400 {"reason":"No data is available for this location","error":true})
+04:25:45Z pron WSSS meteofrance_arome_france: no cubre (400 {"error":true,"reason":"No data is available for this location"})
+04:25:46Z pron ZBAA meteofrance_arome_france: no cubre (400 {"error":true,"reason":"No data is available for this location"})
+04:25:46Z pron ZGGG meteofrance_arome_france: no cubre (400 {"error":true,"reason":"No data is available for this location"})
+04:25:46Z pron ZGSZ meteofrance_arome_france: no cubre (400 {"error":true,"reason":"No data is available for this location"})
+04:25:46Z pron ZHHH meteofrance_arome_france: no cubre (400 {"error":true,"reason":"No data is available for this location"})
+04:25:46Z pron ZSPD meteofrance_arome_france: no cubre (400 {"error":true,"reason":"No data is available for this location"})
+04:25:46Z pron ZSQD meteofrance_arome_france: no cubre (400 {"reason":"No data is available for this location","error":true})
+04:25:46Z pron ZUCK meteofrance_arome_france: no cubre (400 {"error":true,"reason":"No data is available for this location"})
+04:25:47Z pron ZUUU meteofrance_arome_france: no cubre (400 {"reason":"No data is available for this location","error":true})
+04:25:47Z pron 2026-11 listo (gastado hoy 1888)
+04:32:02Z pron 2026-10 listo (gastado hoy 3467)
+04:38:22Z pron 2026-09 listo (gastado hoy 4995)
+04:44:45Z pron 2026-08 listo (gastado hoy 6573)
+04:50:45Z pron: se corta (presupuesto/tiempo (gastado hoy 7999)); sigue en la proxima corrida
+05:02:33Z mos KATL NBS listo
+05:14:42Z mos KATL NBE listo
+05:27:07Z mos KATL GFS listo
+05:40:50Z mos KATL NAM listo
+05:40:51Z mos KATL GFSX 2026-11: 422 [{'type': 'string_pattern_mismatch', 'loc': ('query', 'model'), 'msg': "String should match pattern '^(AVN|ETA|GFS|LAV|MEX|NAM|NBE|NBS)$'", 'input': '
+05:40:52Z mos KATL GFSX listo
+05:52:59Z mos KAUS NBS listo
+06:03:28Z mos KAUS NBE listo
+06:15:54Z mos KAUS GFS listo
+06:28:56Z mos KAUS NAM listo
+06:40:44Z mos KDAL NBS listo
+06:51:53Z mos KDAL NBE listo
+07:02:58Z mos KDAL GFS listo
+07:16:41Z mos KDAL NAM listo
+07:27:48Z mos KDEN NBS listo
+07:39:57Z mos KDEN NBE listo
+07:51:23Z mos KDEN GFS listo
+08:03:46Z mos KDEN NAM listo
+08:16:55Z mos KHOU NBS listo
+08:27:45Z mos KHOU NBE listo
+08:40:32Z mos KHOU GFS listo
+08:53:55Z mos KHOU NAM listo
+09:05:42Z mos KLAX NBS listo
+09:08:34Z mos: se acabo el tiempo
+09:08:34Z mos KLAX NBE listo
+09:08:34Z mos: se acabo el tiempo
+09:08:35Z mos KLAX GFS listo
+09:08:35Z mos: se acabo el tiempo
+09:08:35Z mos KLAX NAM listo
+09:08:35Z mos: se acabo el tiempo
+09:08:35Z mos KLGA NBS listo
+09:08:35Z mos: se acabo el tiempo
+09:08:35Z mos KLGA NBE listo
+09:08:35Z mos: se acabo el tiempo
+09:08:35Z mos KLGA GFS listo
+09:08:35Z mos: se acabo el tiempo
+09:08:35Z mos KLGA NAM listo
+09:08:35Z mos: se acabo el tiempo
+09:08:35Z mos KMIA NBS listo
+09:08:35Z mos: se acabo el tiempo
+09:08:35Z mos KMIA NBE listo
+09:08:35Z mos: se acabo el tiempo
+09:08:35Z mos KMIA GFS listo
+09:08:35Z mos: se acabo el tiempo
+09:08:35Z mos KMIA NAM listo
+09:08:35Z mos: se acabo el tiempo
+09:08:35Z mos KORD NBS listo
+09:08:35Z mos: se acabo el tiempo
+09:08:35Z mos KORD NBE listo
+09:08:35Z mos: se acabo el tiempo
+09:08:35Z mos KORD GFS listo
+09:08:35Z mos: se acabo el tiempo
+09:08:35Z mos KORD NAM listo
+09:08:35Z mos: se acabo el tiempo
+09:08:35Z mos KSEA NBS listo
+09:08:35Z mos: se acabo el tiempo
+09:08:35Z mos KSEA NBE listo
+09:08:35Z mos: se acabo el tiempo
+09:08:35Z mos KSEA GFS listo
+09:08:35Z mos: se acabo el tiempo
+09:08:35Z mos KSEA NAM listo
+09:08:35Z mos: se acabo el tiempo
+09:08:35Z mos KSFO NBS listo
+09:08:35Z mos: se acabo el tiempo
+09:08:35Z mos KSFO NBE listo
+09:08:35Z mos: se acabo el tiempo
+09:08:35Z mos KSFO GFS listo
+09:08:35Z mos: se acabo el tiempo
+09:08:35Z mos KSFO NAM listo
