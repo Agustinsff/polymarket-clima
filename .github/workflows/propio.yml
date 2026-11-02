@@ -1,0 +1,49 @@
+name: propio
+# Pronostico propio, paso 1: junta observaciones y pronosticos historicos (propio/datos.py).
+# Los datos van a la rama propio-datos (no a main) para no inflar main con commits diarios.
+on:
+  schedule:
+    - cron: "40 5 * * *"        # todos los dias: sigue la descarga donde quedo y pone al dia
+  push:
+    branches: [propio]           # para probar mientras se arma (en main corre por horario o a mano)
+    paths: [propio/*.py, .github/workflows/propio.yml]
+  workflow_dispatch:
+    inputs:
+      que:
+        description: "sonda | obs | pron | mos | todo"
+        default: todo
+concurrency:
+  group: propio
+  cancel-in-progress: false
+permissions:
+  contents: write
+jobs:
+  datos:
+    runs-on: ubuntu-latest
+    timeout-minutes: 340
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install requests
+      - name: traer la rama de datos (o crearla vacia)
+        run: |
+          git config --global user.name "polymarket-clima-bot"
+          git config --global user.email "actions@users.noreply.github.com"
+          if git ls-remote --exit-code --heads origin propio-datos; then
+            git clone --depth 1 --branch propio-datos "https://x-access-token:${{ github.token }}@github.com/${{ github.repository }}" datos
+          else
+            mkdir datos && cd datos && git init -b propio-datos && git remote add origin "https://x-access-token:${{ github.token }}@github.com/${{ github.repository }}"
+          fi
+      - name: bajar
+        run: |
+          QUE="${{ github.event.inputs.que || 'todo' }}"
+          python propio/datos.py "$QUE" --salida datos --presupuesto 8000 --minutos 300 2> >(tee -a datos/log.txt >&2) || true
+          tail -c 300000 datos/log.txt > datos/log.tmp && mv datos/log.tmp datos/log.txt
+      - name: guardar
+        run: |
+          cd datos
+          git add -A
+          git commit -m "propio: datos $(date -u +%Y-%m-%dT%H:%MZ)" || exit 0
+          for i in 1 2 3 4; do git push -u origin propio-datos && break; sleep $((2**i)); done

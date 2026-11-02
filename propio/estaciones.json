@@ -1,0 +1,562 @@
+{
+ "CYYZ": {
+  "ciudad": "toronto",
+  "tz": "America/Toronto",
+  "en_f": false,
+  "series": [
+   "max",
+   "min"
+  ],
+  "lat": 43.679,
+  "lon": -79.629,
+  "elev": 171
+ },
+ "EDDM": {
+  "ciudad": "munich",
+  "tz": "Europe/Berlin",
+  "en_f": false,
+  "series": [
+   "max",
+   "min"
+  ],
+  "lat": 48.348,
+  "lon": 11.813,
+  "elev": 445
+ },
+ "EFHK": {
+  "ciudad": "helsinki",
+  "tz": "Europe/Helsinki",
+  "en_f": false,
+  "series": [
+   "max",
+   "min"
+  ],
+  "lat": 60.327,
+  "lon": 24.957,
+  "elev": 56
+ },
+ "EGLC": {
+  "ciudad": "london",
+  "tz": "Europe/London",
+  "en_f": false,
+  "series": [
+   "max",
+   "min"
+  ],
+  "lat": 51.505,
+  "lon": 0.055,
+  "elev": 10
+ },
+ "EHAM": {
+  "ciudad": "amsterdam",
+  "tz": "Europe/Amsterdam",
+  "en_f": false,
+  "series": [
+   "max",
+   "min"
+  ],
+  "lat": 52.315,
+  "lon": 4.79,
+  "elev": -2
+ },
+ "EPWA": {
+  "ciudad": "warsaw",
+  "tz": "Europe/Warsaw",
+  "en_f": false,
+  "series": [
+   "max",
+   "min"
+  ],
+  "lat": 52.163,
+  "lon": 20.961,
+  "elev": 107
+ },
+ "FACT": {
+  "ciudad": "cape-town",
+  "tz": "Africa/Johannesburg",
+  "en_f": false,
+  "series": [
+   "max",
+   "min"
+  ],
+  "lat": -33.965,
+  "lon": 18.602,
+  "elev": 48
+ },
+ "HKO": {
+  "ciudad": "hong-kong",
+  "tz": "Asia/Hong_Kong",
+  "en_f": false,
+  "series": [
+   "max",
+   "min"
+  ],
+  "lat": 22.302,
+  "lon": 114.174,
+  "elev": 32
+ },
+ "KATL": {
+  "ciudad": "atlanta",
+  "tz": "America/New_York",
+  "en_f": true,
+  "series": [
+   "max",
+   "min"
+  ],
+  "lat": 33.62972,
+  "lon": -84.44223,
+  "elev": 309
+ },
+ "KAUS": {
+  "ciudad": "austin",
+  "tz": "America/Chicago",
+  "en_f": true,
+  "series": [
+   "max",
+   "min"
+  ],
+  "lat": 30.1831,
+  "lon": -97.68063,
+  "elev": 148
+ },
+ "KDAL": {
+  "ciudad": "dallas",
+  "tz": "America/Chicago",
+  "en_f": true,
+  "series": [
+   "max",
+   "min"
+  ],
+  "lat": 32.83836,
+  "lon": -96.83584,
+  "elev": 148
+ },
+ "KDEN": {
+  "ciudad": "denver",
+  "tz": "America/Denver",
+  "en_f": true,
+  "series": [
+   "max",
+   "min"
+  ],
+  "lat": 39.84657,
+  "lon": -104.65623,
+  "elev": 1656
+ },
+ "KHOU": {
+  "ciudad": "houston",
+  "tz": "America/Chicago",
+  "en_f": true,
+  "series": [
+   "max",
+   "min"
+  ],
+  "lat": 29.64582,
+  "lon": -95.28214,
+  "elev": 13
+ },
+ "KLAX": {
+  "ciudad": "los-angeles",
+  "tz": "America/Los_Angeles",
+  "en_f": true,
+  "series": [
+   "max",
+   "min"
+  ],
+  "lat": 33.93817,
+  "lon": -118.3866,
+  "elev": 30
+ },
+ "KLGA": {
+  "ciudad": "nyc",
+  "tz": "America/New_York",
+  "en_f": true,
+  "series": [
+   "max",
+   "min"
+  ],
+  "lat": 40.77945,
+  "lon": -73.88027,
+  "elev": 9
+ },
+ "KMIA": {
+  "ciudad": "miami",
+  "tz": "America/New_York",
+  "en_f": true,
+  "series": [
+   "max",
+   "min"
+  ],
+  "lat": 25.78806,
+  "lon": -80.31692,
+  "elev": 1
+ },
+ "KORD": {
+  "ciudad": "chicago",
+  "tz": "America/Chicago",
+  "en_f": true,
+  "series": [
+   "max",
+   "min"
+  ],
+  "lat": 41.96017,
+  "lon": -87.93161,
+  "elev": 202
+ },
+ "KSEA": {
+  "ciudad": "seattle",
+  "tz": "America/Los_Angeles",
+  "en_f": true,
+  "series": [
+   "max",
+   "min"
+  ],
+  "lat": 47.44467,
+  "lon": -122.31442,
+  "elev": 115
+ },
+ "KSFO": {
+  "ciudad": "san-francisco",
+  "tz": "America/Los_Angeles",
+  "en_f": true,
+  "series": [
+   "max",
+   "min"
+  ],
+  "lat": 37.61961,
+  "lon": -122.36561,
+  "elev": 2
+ },
+ "LEMD": {
+  "ciudad": "madrid",
+  "tz": "Europe/Madrid",
+  "en_f": false,
+  "series": [
+   "max",
+   "min"
+  ],
+  "lat": 40.466,
+  "lon": -3.555,
+  "elev": 589
+ },
+ "LIMC": {
+  "ciudad": "milan",
+  "tz": "Europe/Rome",
+  "en_f": false,
+  "series": [
+   "max",
+   "min"
+  ],
+  "lat": 45.631,
+  "lon": 8.728,
+  "elev": 221
+ },
+ "LLBG": {
+  "ciudad": "tel-aviv",
+  "tz": "Asia/Jerusalem",
+  "en_f": false,
+  "series": [
+   "max",
+   "min"
+  ],
+  "lat": 32.011,
+  "lon": 34.887,
+  "elev": 35
+ },
+ "LTAC": {
+  "ciudad": "ankara",
+  "tz": "Europe/Istanbul",
+  "en_f": false,
+  "series": [
+   "max",
+   "min"
+  ],
+  "lat": 40.128,
+  "lon": 32.995,
+  "elev": 952
+ },
+ "LTFM": {
+  "ciudad": "istanbul",
+  "tz": "Europe/Istanbul",
+  "en_f": false,
+  "series": [
+   "max",
+   "min"
+  ],
+  "lat": 41.262,
+  "lon": 28.74,
+  "elev": 99
+ },
+ "MMMX": {
+  "ciudad": "mexico-city",
+  "tz": "America/Mexico_City",
+  "en_f": false,
+  "series": [
+   "max",
+   "min"
+  ],
+  "lat": 19.436,
+  "lon": -99.072,
+  "elev": 2224
+ },
+ "MPMG": {
+  "ciudad": "panama-city",
+  "tz": "America/Panama",
+  "en_f": false,
+  "series": [
+   "max"
+  ],
+  "lat": 8.967,
+  "lon": -79.555,
+  "elev": 6
+ },
+ "NZWN": {
+  "ciudad": "wellington",
+  "tz": "Pacific/Auckland",
+  "en_f": false,
+  "series": [
+   "max",
+   "min"
+  ],
+  "lat": -41.331,
+  "lon": 174.806,
+  "elev": 12
+ },
+ "OEJN": {
+  "ciudad": "jeddah",
+  "tz": "Asia/Riyadh",
+  "en_f": false,
+  "series": [
+   "max",
+   "min"
+  ],
+  "lat": 21.685,
+  "lon": 39.166,
+  "elev": 8
+ },
+ "OPKC": {
+  "ciudad": "karachi",
+  "tz": "Asia/Karachi",
+  "en_f": false,
+  "series": [
+   "max",
+   "min"
+  ],
+  "lat": 24.902,
+  "lon": 67.139,
+  "elev": 20
+ },
+ "RCSS": {
+  "ciudad": "taipei",
+  "tz": "Asia/Taipei",
+  "en_f": false,
+  "series": [
+   "max",
+   "min"
+  ],
+  "lat": 25.069,
+  "lon": 121.552,
+  "elev": 8
+ },
+ "RJTT": {
+  "ciudad": "tokyo",
+  "tz": "Asia/Tokyo",
+  "en_f": false,
+  "series": [
+   "max",
+   "min"
+  ],
+  "lat": 35.553,
+  "lon": 139.781,
+  "elev": 5
+ },
+ "RKPK": {
+  "ciudad": "busan",
+  "tz": "Asia/Seoul",
+  "en_f": false,
+  "series": [
+   "max",
+   "min"
+  ],
+  "lat": 35.179,
+  "lon": 128.938,
+  "elev": 3
+ },
+ "RKSI": {
+  "ciudad": "seoul",
+  "tz": "Asia/Seoul",
+  "en_f": false,
+  "series": [
+   "max",
+   "min"
+  ],
+  "lat": 37.469,
+  "lon": 126.451,
+  "elev": 7
+ },
+ "RPLL": {
+  "ciudad": "manila",
+  "tz": "Asia/Manila",
+  "en_f": false,
+  "series": [
+   "max"
+  ],
+  "lat": 14.507,
+  "lon": 121.004,
+  "elev": 15
+ },
+ "SAEZ": {
+  "ciudad": "buenos-aires",
+  "tz": "America/Argentina/Buenos_Aires",
+  "en_f": false,
+  "series": [
+   "max",
+   "min"
+  ],
+  "lat": -34.822,
+  "lon": -58.536,
+  "elev": 16
+ },
+ "SBGR": {
+  "ciudad": "sao-paulo",
+  "tz": "America/Sao_Paulo",
+  "en_f": false,
+  "series": [
+   "max",
+   "min"
+  ],
+  "lat": -23.432,
+  "lon": -46.469,
+  "elev": 745
+ },
+ "UUWW": {
+  "ciudad": "moscow",
+  "tz": "Europe/Moscow",
+  "en_f": false,
+  "series": [
+   "max",
+   "min"
+  ],
+  "lat": 55.592,
+  "lon": 37.261,
+  "elev": 195
+ },
+ "WMKK": {
+  "ciudad": "kuala-lumpur",
+  "tz": "Asia/Kuala_Lumpur",
+  "en_f": false,
+  "series": [
+   "max"
+  ],
+  "lat": 2.747,
+  "lon": 101.714,
+  "elev": 21
+ },
+ "WSSS": {
+  "ciudad": "singapore",
+  "tz": "Asia/Singapore",
+  "en_f": false,
+  "series": [
+   "max"
+  ],
+  "lat": 1.368,
+  "lon": 103.982,
+  "elev": 17
+ },
+ "ZBAA": {
+  "ciudad": "beijing",
+  "tz": "Asia/Shanghai",
+  "en_f": false,
+  "series": [
+   "max",
+   "min"
+  ],
+  "lat": 40.082,
+  "lon": 116.603,
+  "elev": 31
+ },
+ "ZGGG": {
+  "ciudad": "guangzhou",
+  "tz": "Asia/Shanghai",
+  "en_f": false,
+  "series": [
+   "max",
+   "min"
+  ],
+  "lat": 23.392,
+  "lon": 113.307,
+  "elev": 11
+ },
+ "ZGSZ": {
+  "ciudad": "shenzhen",
+  "tz": "Asia/Shanghai",
+  "en_f": false,
+  "series": [
+   "max",
+   "min"
+  ],
+  "lat": 22.639,
+  "lon": 113.803,
+  "elev": 18
+ },
+ "ZHHH": {
+  "ciudad": "wuhan",
+  "tz": "Asia/Shanghai",
+  "en_f": false,
+  "series": [
+   "max",
+   "min"
+  ],
+  "lat": 30.783,
+  "lon": 114.205,
+  "elev": 33
+ },
+ "ZSPD": {
+  "ciudad": "shanghai",
+  "tz": "Asia/Shanghai",
+  "en_f": false,
+  "series": [
+   "max",
+   "min"
+  ],
+  "lat": 31.146,
+  "lon": 121.8,
+  "elev": 4
+ },
+ "ZSQD": {
+  "ciudad": "qingdao",
+  "tz": "Asia/Shanghai",
+  "en_f": false,
+  "series": [
+   "max",
+   "min"
+  ],
+  "lat": 36.362,
+  "lon": 120.087,
+  "elev": 2
+ },
+ "ZUCK": {
+  "ciudad": "chongqing",
+  "tz": "Asia/Shanghai",
+  "en_f": false,
+  "series": [
+   "max",
+   "min"
+  ],
+  "lat": 29.718,
+  "lon": 106.639,
+  "elev": 416
+ },
+ "ZUUU": {
+  "ciudad": "chengdu",
+  "tz": "Asia/Shanghai",
+  "en_f": false,
+  "series": [
+   "max",
+   "min"
+  ],
+  "lat": 30.576,
+  "lon": 103.95,
+  "elev": 494
+ }
+}
