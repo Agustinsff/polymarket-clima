@@ -148,7 +148,9 @@ class Papel:
             if o["cid"] not in por_cid:
                 try:
                     r = self.m.S.get(f"{DATA}/trades", params={"market": o["cid"], "limit": 100, "takerOnly": "true"},
-                                     timeout=30).json() or []
+                                     timeout=30).json()
+                    if not isinstance(r, list):      # a veces devuelve un dict de error
+                        r = None
                 except Exception:
                     r = None
                 por_cid[o["cid"]] = r
