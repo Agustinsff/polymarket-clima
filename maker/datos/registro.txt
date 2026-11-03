@@ -6993,3 +6993,191 @@
 13:46:46Z 770 cajas guardadas
 13:53:17Z 0 llenados simulados (774 cajas sin trades)
 13:53:58Z resueltos 35 mercados
+13:54:41Z 1686 cajas de clima y 57 de cripto
+13:54:46Z 757 cajas guardadas
+14:01:16Z 0 llenados simulados (770 cajas sin trades)
+14:01:22Z 1676 cajas de clima y 55 de cripto
+14:02:02Z books fallo: HTTPSConnectionPool(host='clob.polymarket.com', port=443): Read timed out. (read timeout=40)
+14:02:07Z 746 cajas guardadas
+14:08:41Z 0 llenados simulados (757 cajas sin trades)
+14:08:47Z 1669 cajas de clima y 57 de cripto
+14:09:27Z books fallo: HTTPSConnectionPool(host='clob.polymarket.com', port=443): Read timed out. (read timeout=40)
+14:09:32Z 764 cajas guardadas
+14:16:07Z 0 llenados simulados (746 cajas sin trades)
+14:16:13Z 1662 cajas de clima y 56 de cripto
+14:16:53Z books fallo: HTTPSConnectionPool(host='clob.polymarket.com', port=443): Read timed out. (read timeout=40)
+14:16:58Z 763 cajas guardadas
+14:23:36Z 0 llenados simulados (764 cajas sin trades)
+14:23:42Z 1661 cajas de clima y 56 de cripto
+14:24:22Z books fallo: HTTPSConnectionPool(host='clob.polymarket.com', port=443): Read timed out. (read timeout=40)
+14:24:26Z 760 cajas guardadas
+14:31:06Z 0 llenados simulados (763 cajas sin trades)
+14:31:12Z 1656 cajas de clima y 55 de cripto
+14:31:52Z books fallo: HTTPSConnectionPool(host='clob.polymarket.com', port=443): Read timed out. (read timeout=40)
+14:31:57Z 755 cajas guardadas
+14:38:39Z 0 llenados simulados (760 cajas sin trades)
+14:38:45Z 1651 cajas de clima y 53 de cripto
+14:39:25Z books fallo: HTTPSConnectionPool(host='clob.polymarket.com', port=443): Read timed out. (read timeout=40)
+14:39:30Z 753 cajas guardadas
+14:46:09Z 0 llenados simulados (755 cajas sin trades)
+14:46:16Z 1643 cajas de clima y 54 de cripto
+14:46:56Z books fallo: HTTPSConnectionPool(host='clob.polymarket.com', port=443): Read timed out. (read timeout=40)
+14:46:59Z 742 cajas guardadas
+14:53:32Z 0 llenados simulados (753 cajas sin trades)
+14:53:38Z 1642 cajas de clima y 53 de cripto
+14:54:18Z books fallo: HTTPSConnectionPool(host='clob.polymarket.com', port=443): Read timed out. (read timeout=40)
+14:54:22Z 736 cajas guardadas
+15:00:48Z 0 llenados simulados (742 cajas sin trades)
+15:00:54Z 1641 cajas de clima y 54 de cripto
+15:01:34Z books fallo: HTTPSConnectionPool(host='clob.polymarket.com', port=443): Read timed out. (read timeout=40)
+15:01:39Z 749 cajas guardadas
+15:08:01Z 0 llenados simulados (736 cajas sin trades)
+15:08:07Z 1635 cajas de clima y 53 de cripto
+15:08:47Z books fallo: HTTPSConnectionPool(host='clob.polymarket.com', port=443): Read timed out. (read timeout=40)
+15:08:51Z 753 cajas guardadas
+15:15:26Z 0 llenados simulados (749 cajas sin trades)
+15:15:31Z 1626 cajas de clima y 53 de cripto
+15:16:12Z books fallo: HTTPSConnectionPool(host='clob.polymarket.com', port=443): Read timed out. (read timeout=40)
+15:16:16Z 747 cajas guardadas
+15:22:55Z 0 llenados simulados (753 cajas sin trades)
+15:23:01Z 1625 cajas de clima y 52 de cripto
+15:23:41Z books fallo: HTTPSConnectionPool(host='clob.polymarket.com', port=443): Read timed out. (read timeout=40)
+15:23:46Z 745 cajas guardadas
+15:30:13Z 0 llenados simulados (747 cajas sin trades)
+15:30:19Z 1626 cajas de clima y 53 de cripto
+15:30:59Z books fallo: HTTPSConnectionPool(host='clob.polymarket.com', port=443): Read timed out. (read timeout=40)
+15:31:05Z 745 cajas guardadas
+15:37:33Z 0 llenados simulados (745 cajas sin trades)
+15:37:39Z 1619 cajas de clima y 52 de cripto
+15:38:19Z books fallo: HTTPSConnectionPool(host='clob.polymarket.com', port=443): Read timed out. (read timeout=40)
+15:38:24Z 746 cajas guardadas
+15:44:55Z 0 llenados simulados (745 cajas sin trades)
+15:45:01Z 1617 cajas de clima y 52 de cripto
+15:45:41Z books fallo: HTTPSConnectionPool(host='clob.polymarket.com', port=443): Read timed out. (read timeout=40)
+15:45:47Z 751 cajas guardadas
+15:52:19Z 0 llenados simulados (746 cajas sin trades)
+15:52:25Z 1614 cajas de clima y 51 de cripto
+15:53:05Z books fallo: HTTPSConnectionPool(host='clob.polymarket.com', port=443): Read timed out. (read timeout=40)
+15:53:10Z 742 cajas guardadas
+15:59:44Z 0 llenados simulados (751 cajas sin trades)
+15:59:50Z 1610 cajas de clima y 53 de cripto
+16:00:30Z books fallo: HTTPSConnectionPool(host='clob.polymarket.com', port=443): Read timed out. (read timeout=40)
+16:00:36Z 749 cajas guardadas
+16:07:06Z 0 llenados simulados (742 cajas sin trades)
+16:07:12Z 1574 cajas de clima y 51 de cripto
+16:07:52Z books fallo: HTTPSConnectionPool(host='clob.polymarket.com', port=443): Read timed out. (read timeout=40)
+16:07:56Z 755 cajas guardadas
+16:14:30Z 0 llenados simulados (749 cajas sin trades)
+16:14:36Z 1554 cajas de clima y 50 de cripto
+16:15:16Z books fallo: HTTPSConnectionPool(host='clob.polymarket.com', port=443): Read timed out. (read timeout=40)
+16:15:21Z 756 cajas guardadas
+16:21:57Z 0 llenados simulados (755 cajas sin trades)
+16:22:03Z 1544 cajas de clima y 49 de cripto
+16:22:43Z books fallo: HTTPSConnectionPool(host='clob.polymarket.com', port=443): Read timed out. (read timeout=40)
+16:22:48Z 750 cajas guardadas
+16:29:24Z 0 llenados simulados (756 cajas sin trades)
+16:29:30Z 1526 cajas de clima y 50 de cripto
+16:30:10Z books fallo: HTTPSConnectionPool(host='clob.polymarket.com', port=443): Read timed out. (read timeout=40)
+16:30:15Z 742 cajas guardadas
+16:36:49Z 0 llenados simulados (750 cajas sin trades)
+16:36:55Z 1523 cajas de clima y 49 de cripto
+16:37:35Z books fallo: HTTPSConnectionPool(host='clob.polymarket.com', port=443): Read timed out. (read timeout=40)
+16:37:40Z 735 cajas guardadas
+16:44:09Z 0 llenados simulados (742 cajas sin trades)
+16:44:15Z 1522 cajas de clima y 48 de cripto
+16:44:55Z books fallo: HTTPSConnectionPool(host='clob.polymarket.com', port=443): Read timed out. (read timeout=40)
+16:44:59Z 741 cajas guardadas
+16:51:29Z 0 llenados simulados (735 cajas sin trades)
+16:51:35Z 1521 cajas de clima y 46 de cripto
+16:52:15Z books fallo: HTTPSConnectionPool(host='clob.polymarket.com', port=443): Read timed out. (read timeout=40)
+16:52:20Z 734 cajas guardadas
+16:58:50Z 0 llenados simulados (741 cajas sin trades)
+16:58:56Z 1519 cajas de clima y 45 de cripto
+16:59:36Z books fallo: HTTPSConnectionPool(host='clob.polymarket.com', port=443): Read timed out. (read timeout=40)
+16:59:41Z 733 cajas guardadas
+17:06:07Z 0 llenados simulados (734 cajas sin trades)
+17:06:13Z 1517 cajas de clima y 67 de cripto
+17:06:53Z books fallo: HTTPSConnectionPool(host='clob.polymarket.com', port=443): Read timed out. (read timeout=40)
+17:06:57Z 758 cajas guardadas
+17:13:23Z 0 llenados simulados (733 cajas sin trades)
+17:13:29Z 1515 cajas de clima y 66 de cripto
+17:14:09Z books fallo: HTTPSConnectionPool(host='clob.polymarket.com', port=443): Read timed out. (read timeout=40)
+17:14:13Z 747 cajas guardadas
+17:20:55Z 0 llenados simulados (758 cajas sin trades)
+17:21:01Z 1509 cajas de clima y 66 de cripto
+17:21:41Z books fallo: HTTPSConnectionPool(host='clob.polymarket.com', port=443): Read timed out. (read timeout=40)
+17:21:46Z 748 cajas guardadas
+17:28:22Z 0 llenados simulados (747 cajas sin trades)
+17:28:28Z 1509 cajas de clima y 65 de cripto
+17:29:08Z books fallo: HTTPSConnectionPool(host='clob.polymarket.com', port=443): Read timed out. (read timeout=40)
+17:29:12Z 746 cajas guardadas
+17:35:44Z 0 llenados simulados (748 cajas sin trades)
+17:35:50Z 1506 cajas de clima y 65 de cripto
+17:36:30Z books fallo: HTTPSConnectionPool(host='clob.polymarket.com', port=443): Read timed out. (read timeout=40)
+17:36:34Z 743 cajas guardadas
+17:43:10Z 0 llenados simulados (746 cajas sin trades)
+17:43:16Z 1501 cajas de clima y 66 de cripto
+17:43:56Z books fallo: HTTPSConnectionPool(host='clob.polymarket.com', port=443): Read timed out. (read timeout=40)
+17:44:00Z 745 cajas guardadas
+17:50:31Z 0 llenados simulados (743 cajas sin trades)
+17:50:36Z 1487 cajas de clima y 65 de cripto
+17:51:17Z books fallo: HTTPSConnectionPool(host='clob.polymarket.com', port=443): Read timed out. (read timeout=40)
+17:51:21Z 743 cajas guardadas
+17:57:56Z 0 llenados simulados (745 cajas sin trades)
+17:58:02Z 1490 cajas de clima y 65 de cripto
+17:58:42Z books fallo: HTTPSConnectionPool(host='clob.polymarket.com', port=443): Read timed out. (read timeout=40)
+17:58:47Z 738 cajas guardadas
+18:05:17Z 0 llenados simulados (743 cajas sin trades)
+18:05:23Z 1480 cajas de clima y 65 de cripto
+18:06:03Z books fallo: HTTPSConnectionPool(host='clob.polymarket.com', port=443): Read timed out. (read timeout=40)
+18:06:08Z 743 cajas guardadas
+18:12:40Z 0 llenados simulados (738 cajas sin trades)
+18:12:46Z 1470 cajas de clima y 65 de cripto
+18:13:26Z books fallo: HTTPSConnectionPool(host='clob.polymarket.com', port=443): Read timed out. (read timeout=40)
+18:13:30Z 741 cajas guardadas
+18:20:00Z 0 llenados simulados (743 cajas sin trades)
+18:20:06Z 1467 cajas de clima y 65 de cripto
+18:20:46Z books fallo: HTTPSConnectionPool(host='clob.polymarket.com', port=443): Read timed out. (read timeout=40)
+18:20:52Z 734 cajas guardadas
+18:27:22Z 0 llenados simulados (741 cajas sin trades)
+18:27:28Z 1468 cajas de clima y 65 de cripto
+18:28:08Z books fallo: HTTPSConnectionPool(host='clob.polymarket.com', port=443): Read timed out. (read timeout=40)
+18:28:11Z 740 cajas guardadas
+18:34:37Z 0 llenados simulados (734 cajas sin trades)
+18:34:43Z 1469 cajas de clima y 65 de cripto
+18:35:23Z books fallo: HTTPSConnectionPool(host='clob.polymarket.com', port=443): Read timed out. (read timeout=40)
+18:35:27Z 740 cajas guardadas
+18:41:55Z 0 llenados simulados (740 cajas sin trades)
+18:42:01Z 1463 cajas de clima y 65 de cripto
+18:42:41Z books fallo: HTTPSConnectionPool(host='clob.polymarket.com', port=443): Read timed out. (read timeout=40)
+18:42:45Z 737 cajas guardadas
+18:49:21Z 0 llenados simulados (740 cajas sin trades)
+18:49:27Z 1465 cajas de clima y 65 de cripto
+18:50:07Z books fallo: HTTPSConnectionPool(host='clob.polymarket.com', port=443): Read timed out. (read timeout=40)
+18:50:11Z 733 cajas guardadas
+18:56:39Z 0 llenados simulados (737 cajas sin trades)
+18:56:45Z 1448 cajas de clima y 65 de cripto
+18:57:25Z books fallo: HTTPSConnectionPool(host='clob.polymarket.com', port=443): Read timed out. (read timeout=40)
+18:57:29Z 736 cajas guardadas
+19:03:55Z 0 llenados simulados (733 cajas sin trades)
+19:04:01Z 1439 cajas de clima y 65 de cripto
+19:04:41Z books fallo: HTTPSConnectionPool(host='clob.polymarket.com', port=443): Read timed out. (read timeout=40)
+19:04:45Z 734 cajas guardadas
+19:11:11Z 0 llenados simulados (736 cajas sin trades)
+19:11:17Z 1432 cajas de clima y 64 de cripto
+19:11:57Z books fallo: HTTPSConnectionPool(host='clob.polymarket.com', port=443): Read timed out. (read timeout=40)
+19:12:01Z 736 cajas guardadas
+19:18:31Z 0 llenados simulados (734 cajas sin trades)
+19:18:37Z 1427 cajas de clima y 63 de cripto
+19:19:17Z books fallo: HTTPSConnectionPool(host='clob.polymarket.com', port=443): Read timed out. (read timeout=40)
+19:19:22Z 726 cajas guardadas
+19:25:48Z 0 llenados simulados (736 cajas sin trades)
+19:25:54Z 1425 cajas de clima y 64 de cripto
+19:26:34Z books fallo: HTTPSConnectionPool(host='clob.polymarket.com', port=443): Read timed out. (read timeout=40)
+19:26:38Z 729 cajas guardadas
+19:33:04Z 0 llenados simulados (726 cajas sin trades)
+19:33:10Z 1428 cajas de clima y 64 de cripto
+19:33:50Z books fallo: HTTPSConnectionPool(host='clob.polymarket.com', port=443): Read timed out. (read timeout=40)
+19:33:54Z 731 cajas guardadas
+19:40:17Z 0 llenados simulados (729 cajas sin trades)
+19:41:10Z resueltos 117 mercados
