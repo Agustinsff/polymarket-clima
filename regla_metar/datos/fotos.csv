@@ -24925,3 +24925,245 @@ momento_utc;momento;hora_local;serie;fecha;icao;slug;caja;bid;ask;medio;si_10;no
 2026-11-03 11:03;M0;6;highest|panama-city;2026-11-04;MPMG;highest-temperature-in-panama-city-on-november-4-2026;30°C;0.36;0.39;0.375;0.39;0.64;0.05
 2026-11-03 11:03;M0;6;highest|panama-city;2026-11-04;MPMG;highest-temperature-in-panama-city-on-november-4-2026;31°C;0.32;0.34;0.33;0.34;0.68;0.05
 2026-11-03 11:03;M0;6;highest|panama-city;2026-11-04;MPMG;highest-temperature-in-panama-city-on-november-4-2026;32°C or higher;0.083;0.114;0.0985;0.1145;0.917;0.05
+2026-11-03 12:03;M2;12;lowest|london;2026-11-03;EGLC;lowest-temperature-in-london-on-november-3-2026;4°C or below;;0.015;;0.015;;0.05
+2026-11-03 12:03;M2;12;lowest|london;2026-11-03;EGLC;lowest-temperature-in-london-on-november-3-2026;5°C;;0.015;;0.015;;0.05
+2026-11-03 12:03;M2;12;lowest|london;2026-11-03;EGLC;lowest-temperature-in-london-on-november-3-2026;6°C;;0.18;;0.18;;0.05
+2026-11-03 12:03;M2;12;lowest|london;2026-11-03;EGLC;lowest-temperature-in-london-on-november-3-2026;7°C;0.009;0.052;0.0305;0.0544;0.991;0.05
+2026-11-03 12:03;M2;12;lowest|london;2026-11-03;EGLC;lowest-temperature-in-london-on-november-3-2026;8°C;0.071;0.996;0.5335;0.9965;0.9295;0.05
+2026-11-03 12:03;M2;12;lowest|london;2026-11-03;EGLC;lowest-temperature-in-london-on-november-3-2026;9°C;;0.001;;0.001;;0.05
+2026-11-03 12:03;M2;12;lowest|london;2026-11-03;EGLC;lowest-temperature-in-london-on-november-3-2026;10°C;;0.001;;0.001;;0.05
+2026-11-03 12:03;M2;12;lowest|london;2026-11-03;EGLC;lowest-temperature-in-london-on-november-3-2026;11°C;;0.001;;0.001;;0.05
+2026-11-03 12:03;M2;12;lowest|london;2026-11-03;EGLC;lowest-temperature-in-london-on-november-3-2026;12°C;;0.001;;0.001;;0.05
+2026-11-03 12:03;M2;12;lowest|london;2026-11-03;EGLC;lowest-temperature-in-london-on-november-3-2026;13°C;;0.001;;0.001;;0.05
+2026-11-03 12:03;M2;12;lowest|london;2026-11-03;EGLC;lowest-temperature-in-london-on-november-3-2026;14°C or higher;;0.001;;0.001;;0.05
+2026-11-03 12:03;M1;6;lowest|dallas;2026-11-03;KDAL;lowest-temperature-in-dallas-on-november-3-2026;55°F or below;;0.99;;0.99;;0.05
+2026-11-03 12:03;M1;6;lowest|dallas;2026-11-03;KDAL;lowest-temperature-in-dallas-on-november-3-2026;56-57°F;;0.95;;0.95;;0.05
+2026-11-03 12:03;M1;6;lowest|dallas;2026-11-03;KDAL;lowest-temperature-in-dallas-on-november-3-2026;58-59°F;0.01;0.95;0.48;0.955;0.99;0.05
+2026-11-03 12:03;M1;6;lowest|dallas;2026-11-03;KDAL;lowest-temperature-in-dallas-on-november-3-2026;60-61°F;0.01;0.95;0.48;0.955;0.99;0.05
+2026-11-03 12:03;M1;6;lowest|dallas;2026-11-03;KDAL;lowest-temperature-in-dallas-on-november-3-2026;62-63°F;0.01;0.95;0.48;0.955;0.99;0.05
+2026-11-03 12:03;M1;6;lowest|dallas;2026-11-03;KDAL;lowest-temperature-in-dallas-on-november-3-2026;64-65°F;;0.95;;0.95;;0.05
+2026-11-03 12:03;M1;6;lowest|dallas;2026-11-03;KDAL;lowest-temperature-in-dallas-on-november-3-2026;66-67°F;;0.001;;0.001;;0.05
+2026-11-03 12:03;M1;6;lowest|dallas;2026-11-03;KDAL;lowest-temperature-in-dallas-on-november-3-2026;68-69°F;;0.001;;0.001;;0.05
+2026-11-03 12:03;M1;6;lowest|dallas;2026-11-03;KDAL;lowest-temperature-in-dallas-on-november-3-2026;70-71°F;;0.001;;0.001;;0.05
+2026-11-03 12:03;M1;6;lowest|dallas;2026-11-03;KDAL;lowest-temperature-in-dallas-on-november-3-2026;72-73°F;;0.001;;0.001;;0.05
+2026-11-03 12:03;M1;6;lowest|dallas;2026-11-03;KDAL;lowest-temperature-in-dallas-on-november-3-2026;74°F or higher;;0.001;;0.001;;0.05
+2026-11-03 12:03;M1;6;lowest|chicago;2026-11-03;KORD;lowest-temperature-in-chicago-on-november-3-2026;55°F or below;;0.86;;0.86;;0.05
+2026-11-03 12:03;M1;6;lowest|chicago;2026-11-03;KORD;lowest-temperature-in-chicago-on-november-3-2026;56-57°F;0.001;0.025;0.013;0.1825;0.999;0.05
+2026-11-03 12:03;M1;6;lowest|chicago;2026-11-03;KORD;lowest-temperature-in-chicago-on-november-3-2026;58-59°F;;0.33;;0.33;;0.05
+2026-11-03 12:03;M1;6;lowest|chicago;2026-11-03;KORD;lowest-temperature-in-chicago-on-november-3-2026;60-61°F;0.75;0.98;0.865;0.98;0.25;0.05
+2026-11-03 12:03;M1;6;lowest|chicago;2026-11-03;KORD;lowest-temperature-in-chicago-on-november-3-2026;62-63°F;;0.002;;0.002;;0.05
+2026-11-03 12:03;M1;6;lowest|chicago;2026-11-03;KORD;lowest-temperature-in-chicago-on-november-3-2026;64-65°F;;0.001;;0.001;;0.05
+2026-11-03 12:03;M1;6;lowest|chicago;2026-11-03;KORD;lowest-temperature-in-chicago-on-november-3-2026;66-67°F;;0.001;;0.001;;0.05
+2026-11-03 12:03;M1;6;lowest|chicago;2026-11-03;KORD;lowest-temperature-in-chicago-on-november-3-2026;68-69°F;;0.001;;0.001;;0.05
+2026-11-03 12:03;M1;6;lowest|chicago;2026-11-03;KORD;lowest-temperature-in-chicago-on-november-3-2026;70-71°F;;0.001;;0.001;;0.05
+2026-11-03 12:03;M1;6;lowest|chicago;2026-11-03;KORD;lowest-temperature-in-chicago-on-november-3-2026;72-73°F;;0.001;;0.001;;0.05
+2026-11-03 12:03;M1;6;lowest|chicago;2026-11-03;KORD;lowest-temperature-in-chicago-on-november-3-2026;74°F or higher;;0.001;;0.001;;0.05
+2026-11-03 12:03;M1;6;lowest|austin;2026-11-03;KAUS;lowest-temperature-in-austin-on-november-3-2026;55°F or below;;0.9;;0.9;;0.05
+2026-11-03 12:03;M1;6;lowest|austin;2026-11-03;KAUS;lowest-temperature-in-austin-on-november-3-2026;56-57°F;0.01;0.95;0.48;0.955;0.99;0.05
+2026-11-03 12:03;M1;6;lowest|austin;2026-11-03;KAUS;lowest-temperature-in-austin-on-november-3-2026;58-59°F;0.01;0.95;0.48;0.955;0.99;0.05
+2026-11-03 12:03;M1;6;lowest|austin;2026-11-03;KAUS;lowest-temperature-in-austin-on-november-3-2026;60-61°F;0.01;0.95;0.48;0.955;0.99;0.05
+2026-11-03 12:03;M1;6;lowest|austin;2026-11-03;KAUS;lowest-temperature-in-austin-on-november-3-2026;62-63°F;0.01;0.95;0.48;0.955;0.99;0.05
+2026-11-03 12:03;M1;6;lowest|austin;2026-11-03;KAUS;lowest-temperature-in-austin-on-november-3-2026;64-65°F;;0.95;;0.95;;0.05
+2026-11-03 12:03;M1;6;lowest|austin;2026-11-03;KAUS;lowest-temperature-in-austin-on-november-3-2026;66-67°F;;0.95;;0.95;;0.05
+2026-11-03 12:03;M1;6;lowest|austin;2026-11-03;KAUS;lowest-temperature-in-austin-on-november-3-2026;68-69°F;;0.001;;0.001;;0.05
+2026-11-03 12:03;M1;6;lowest|austin;2026-11-03;KAUS;lowest-temperature-in-austin-on-november-3-2026;70-71°F;;0.001;;0.001;;0.05
+2026-11-03 12:03;M1;6;lowest|austin;2026-11-03;KAUS;lowest-temperature-in-austin-on-november-3-2026;72-73°F;;0.001;;0.001;;0.05
+2026-11-03 12:03;M1;6;lowest|austin;2026-11-03;KAUS;lowest-temperature-in-austin-on-november-3-2026;74°F or higher;;0.001;;0.001;;0.05
+2026-11-03 12:03;M1;6;lowest|houston;2026-11-03;KHOU;lowest-temperature-in-houston-on-november-3-2026;61°F or below;;0.99;;0.99;;0.05
+2026-11-03 12:03;M1;6;lowest|houston;2026-11-03;KHOU;lowest-temperature-in-houston-on-november-3-2026;62-63°F;0.01;0.96;0.485;0.96;0.99;0.05
+2026-11-03 12:03;M1;6;lowest|houston;2026-11-03;KHOU;lowest-temperature-in-houston-on-november-3-2026;64-65°F;0.01;0.95;0.48;0.95;0.99;0.05
+2026-11-03 12:03;M1;6;lowest|houston;2026-11-03;KHOU;lowest-temperature-in-houston-on-november-3-2026;66-67°F;0.01;0.96;0.485;0.965;0.99;0.05
+2026-11-03 12:03;M1;6;lowest|houston;2026-11-03;KHOU;lowest-temperature-in-houston-on-november-3-2026;68-69°F;0.01;0.95;0.48;0.95;0.99;0.05
+2026-11-03 12:03;M1;6;lowest|houston;2026-11-03;KHOU;lowest-temperature-in-houston-on-november-3-2026;70-71°F;0.01;0.93;0.47;0.95;0.99;0.05
+2026-11-03 12:03;M1;6;lowest|houston;2026-11-03;KHOU;lowest-temperature-in-houston-on-november-3-2026;72-73°F;;0.001;;0.001;;0.05
+2026-11-03 12:03;M1;6;lowest|houston;2026-11-03;KHOU;lowest-temperature-in-houston-on-november-3-2026;74-75°F;;0.001;;0.001;;0.05
+2026-11-03 12:03;M1;6;lowest|houston;2026-11-03;KHOU;lowest-temperature-in-houston-on-november-3-2026;76-77°F;;0.001;;0.001;;0.05
+2026-11-03 12:03;M1;6;lowest|houston;2026-11-03;KHOU;lowest-temperature-in-houston-on-november-3-2026;78-79°F;;0.001;;0.001;;0.05
+2026-11-03 12:03;M1;6;lowest|houston;2026-11-03;KHOU;lowest-temperature-in-houston-on-november-3-2026;80°F or higher;;0.001;;0.001;;0.05
+2026-11-03 12:03;M2;12;highest|london;2026-11-03;EGLC;highest-temperature-in-london-on-november-3-2026;7°C or below;;0.001;;0.001;;0.05
+2026-11-03 12:03;M2;12;highest|london;2026-11-03;EGLC;highest-temperature-in-london-on-november-3-2026;8°C;;0.001;;0.001;;0.05
+2026-11-03 12:03;M2;12;highest|london;2026-11-03;EGLC;highest-temperature-in-london-on-november-3-2026;9°C;;0.001;;0.001;;0.05
+2026-11-03 12:03;M2;12;highest|london;2026-11-03;EGLC;highest-temperature-in-london-on-november-3-2026;10°C;;0.001;;0.001;;0.05
+2026-11-03 12:03;M2;12;highest|london;2026-11-03;EGLC;highest-temperature-in-london-on-november-3-2026;11°C;;0.001;;0.001;;0.05
+2026-11-03 12:03;M2;12;highest|london;2026-11-03;EGLC;highest-temperature-in-london-on-november-3-2026;12°C;0.81;0.88;0.845;0.88;0.19;0.05
+2026-11-03 12:03;M2;12;highest|london;2026-11-03;EGLC;highest-temperature-in-london-on-november-3-2026;13°C;0.11;0.15;0.13;0.15;0.89;0.05
+2026-11-03 12:03;M2;12;highest|london;2026-11-03;EGLC;highest-temperature-in-london-on-november-3-2026;14°C;0.01;0.011;0.0105;0.011;0.99;0.05
+2026-11-03 12:03;M2;12;highest|london;2026-11-03;EGLC;highest-temperature-in-london-on-november-3-2026;15°C;0.001;0.005;0.003;0.005;0.999;0.05
+2026-11-03 12:03;M2;12;highest|london;2026-11-03;EGLC;highest-temperature-in-london-on-november-3-2026;16°C;;0.001;;0.001;;0.05
+2026-11-03 12:03;M2;12;highest|london;2026-11-03;EGLC;highest-temperature-in-london-on-november-3-2026;17°C or higher;;0.001;;0.001;;0.05
+2026-11-03 12:03;M1;6;highest|dallas;2026-11-03;KDAL;highest-temperature-in-dallas-on-november-3-2026;65°F or below;;0.001;;0.001;;0.05
+2026-11-03 12:03;M1;6;highest|dallas;2026-11-03;KDAL;highest-temperature-in-dallas-on-november-3-2026;66-67°F;;0.001;;0.001;;0.05
+2026-11-03 12:03;M1;6;highest|dallas;2026-11-03;KDAL;highest-temperature-in-dallas-on-november-3-2026;68-69°F;;0.001;;0.001;;0.05
+2026-11-03 12:03;M1;6;highest|dallas;2026-11-03;KDAL;highest-temperature-in-dallas-on-november-3-2026;70-71°F;;0.001;;0.001;;0.05
+2026-11-03 12:03;M1;6;highest|dallas;2026-11-03;KDAL;highest-temperature-in-dallas-on-november-3-2026;72-73°F;;0.001;;0.001;;0.05
+2026-11-03 12:03;M1;6;highest|dallas;2026-11-03;KDAL;highest-temperature-in-dallas-on-november-3-2026;74-75°F;0.001;0.002;0.0015;0.002;0.999;0.05
+2026-11-03 12:03;M1;6;highest|dallas;2026-11-03;KDAL;highest-temperature-in-dallas-on-november-3-2026;76-77°F;0.94;0.97;0.955;0.97;0.06;0.05
+2026-11-03 12:03;M1;6;highest|dallas;2026-11-03;KDAL;highest-temperature-in-dallas-on-november-3-2026;78-79°F;0.029;0.079;0.054;0.079;0.9735;0.05
+2026-11-03 12:03;M1;6;highest|dallas;2026-11-03;KDAL;highest-temperature-in-dallas-on-november-3-2026;80-81°F;;0.001;;0.001;;0.05
+2026-11-03 12:03;M1;6;highest|dallas;2026-11-03;KDAL;highest-temperature-in-dallas-on-november-3-2026;82-83°F;;0.001;;0.001;;0.05
+2026-11-03 12:03;M1;6;highest|dallas;2026-11-03;KDAL;highest-temperature-in-dallas-on-november-3-2026;84°F or higher;;0.001;;0.001;;0.05
+2026-11-03 12:03;M1;6;highest|chicago;2026-11-03;KORD;highest-temperature-in-chicago-on-november-3-2026;63°F or below;;0.001;;0.001;;0.05
+2026-11-03 12:03;M1;6;highest|chicago;2026-11-03;KORD;highest-temperature-in-chicago-on-november-3-2026;64-65°F;0.001;0.002;0.0015;0.002;0.999;0.05
+2026-11-03 12:03;M1;6;highest|chicago;2026-11-03;KORD;highest-temperature-in-chicago-on-november-3-2026;66-67°F;0.002;0.01;0.006;0.01;0.998;0.05
+2026-11-03 12:03;M1;6;highest|chicago;2026-11-03;KORD;highest-temperature-in-chicago-on-november-3-2026;68-69°F;0.06;0.08;0.07;0.0807;0.94;0.05
+2026-11-03 12:03;M1;6;highest|chicago;2026-11-03;KORD;highest-temperature-in-chicago-on-november-3-2026;70-71°F;0.36;0.4;0.38;0.405;0.64;0.05
+2026-11-03 12:03;M1;6;highest|chicago;2026-11-03;KORD;highest-temperature-in-chicago-on-november-3-2026;72-73°F;0.48;0.5;0.49;0.51;0.5221;0.05
+2026-11-03 12:03;M1;6;highest|chicago;2026-11-03;KORD;highest-temperature-in-chicago-on-november-3-2026;74-75°F;0.07;0.12;0.095;0.12;0.93;0.05
+2026-11-03 12:03;M1;6;highest|chicago;2026-11-03;KORD;highest-temperature-in-chicago-on-november-3-2026;76-77°F;0.005;0.019;0.012;0.019;0.995;0.05
+2026-11-03 12:03;M1;6;highest|chicago;2026-11-03;KORD;highest-temperature-in-chicago-on-november-3-2026;78-79°F;0.002;0.005;0.0035;0.005;0.998;0.05
+2026-11-03 12:03;M1;6;highest|chicago;2026-11-03;KORD;highest-temperature-in-chicago-on-november-3-2026;80-81°F;;0.001;;0.001;;0.05
+2026-11-03 12:03;M1;6;highest|chicago;2026-11-03;KORD;highest-temperature-in-chicago-on-november-3-2026;82°F or higher;;0.001;;0.001;;0.05
+2026-11-03 12:03;M1;6;highest|austin;2026-11-03;KAUS;highest-temperature-in-austin-on-november-3-2026;67°F or below;;0.001;;0.001;;0.05
+2026-11-03 12:03;M1;6;highest|austin;2026-11-03;KAUS;highest-temperature-in-austin-on-november-3-2026;68-69°F;;0.001;;0.001;;0.05
+2026-11-03 12:03;M1;6;highest|austin;2026-11-03;KAUS;highest-temperature-in-austin-on-november-3-2026;70-71°F;;0.001;;0.001;;0.05
+2026-11-03 12:03;M1;6;highest|austin;2026-11-03;KAUS;highest-temperature-in-austin-on-november-3-2026;72-73°F;;0.001;;0.001;;0.05
+2026-11-03 12:03;M1;6;highest|austin;2026-11-03;KAUS;highest-temperature-in-austin-on-november-3-2026;74-75°F;;0.001;;0.001;;0.05
+2026-11-03 12:03;M1;6;highest|austin;2026-11-03;KAUS;highest-temperature-in-austin-on-november-3-2026;76-77°F;0.16;0.18;0.17;0.18;0.845;0.05
+2026-11-03 12:03;M1;6;highest|austin;2026-11-03;KAUS;highest-temperature-in-austin-on-november-3-2026;78-79°F;0.4;0.46;0.43;0.46;0.605;0.05
+2026-11-03 12:03;M1;6;highest|austin;2026-11-03;KAUS;highest-temperature-in-austin-on-november-3-2026;80-81°F;0.35;0.39;0.37;0.39;0.655;0.05
+2026-11-03 12:03;M1;6;highest|austin;2026-11-03;KAUS;highest-temperature-in-austin-on-november-3-2026;82-83°F;0.081;0.115;0.098;0.115;0.919;0.05
+2026-11-03 12:03;M1;6;highest|austin;2026-11-03;KAUS;highest-temperature-in-austin-on-november-3-2026;84-85°F;0.003;0.004;0.0035;0.004;0.997;0.05
+2026-11-03 12:03;M1;6;highest|austin;2026-11-03;KAUS;highest-temperature-in-austin-on-november-3-2026;86°F or higher;;0.001;;0.001;;0.05
+2026-11-03 12:03;M1;6;highest|houston;2026-11-03;KHOU;highest-temperature-in-houston-on-november-3-2026;69°F or below;;0.001;;0.001;;0.05
+2026-11-03 12:03;M1;6;highest|houston;2026-11-03;KHOU;highest-temperature-in-houston-on-november-3-2026;70-71°F;;0.001;;0.001;;0.05
+2026-11-03 12:03;M1;6;highest|houston;2026-11-03;KHOU;highest-temperature-in-houston-on-november-3-2026;72-73°F;;0.001;;0.001;;0.05
+2026-11-03 12:03;M1;6;highest|houston;2026-11-03;KHOU;highest-temperature-in-houston-on-november-3-2026;74-75°F;;0.003;;0.003;;0.05
+2026-11-03 12:03;M1;6;highest|houston;2026-11-03;KHOU;highest-temperature-in-houston-on-november-3-2026;76-77°F;0.006;0.019;0.0125;0.019;0.994;0.05
+2026-11-03 12:03;M1;6;highest|houston;2026-11-03;KHOU;highest-temperature-in-houston-on-november-3-2026;78-79°F;0.007;0.028;0.0175;0.028;0.993;0.05
+2026-11-03 12:03;M1;6;highest|houston;2026-11-03;KHOU;highest-temperature-in-houston-on-november-3-2026;80-81°F;0.091;0.121;0.106;0.121;0.9098;0.05
+2026-11-03 12:03;M1;6;highest|houston;2026-11-03;KHOU;highest-temperature-in-houston-on-november-3-2026;82-83°F;0.36;0.39;0.375;0.395;0.645;0.05
+2026-11-03 12:03;M1;6;highest|houston;2026-11-03;KHOU;highest-temperature-in-houston-on-november-3-2026;84-85°F;0.39;0.43;0.41;0.435;0.61;0.05
+2026-11-03 12:03;M1;6;highest|houston;2026-11-03;KHOU;highest-temperature-in-houston-on-november-3-2026;86-87°F;0.09;0.12;0.105;0.12;0.91;0.05
+2026-11-03 12:03;M1;6;highest|houston;2026-11-03;KHOU;highest-temperature-in-houston-on-november-3-2026;88°F or higher;0.01;0.014;0.012;0.014;0.99;0.05
+2026-11-03 12:03;M1;6;lowest|mexico-city;2026-11-03;MMMX;lowest-temperature-in-mexico-city-on-november-3-2026;7°C or below;0.001;0.009;0.005;0.009;0.999;0.05
+2026-11-03 12:03;M1;6;lowest|mexico-city;2026-11-03;MMMX;lowest-temperature-in-mexico-city-on-november-3-2026;8°C;;0.96;;0.96;;0.05
+2026-11-03 12:03;M1;6;lowest|mexico-city;2026-11-03;MMMX;lowest-temperature-in-mexico-city-on-november-3-2026;9°C;0.01;0.79;0.4;0.79;0.99;0.05
+2026-11-03 12:03;M1;6;lowest|mexico-city;2026-11-03;MMMX;lowest-temperature-in-mexico-city-on-november-3-2026;10°C;0.01;0.92;0.465;0.92;0.99;0.05
+2026-11-03 12:03;M1;6;lowest|mexico-city;2026-11-03;MMMX;lowest-temperature-in-mexico-city-on-november-3-2026;11°C;0.01;0.93;0.47;0.93;0.99;0.05
+2026-11-03 12:03;M1;6;lowest|mexico-city;2026-11-03;MMMX;lowest-temperature-in-mexico-city-on-november-3-2026;12°C;;0.001;;0.001;;0.05
+2026-11-03 12:03;M1;6;lowest|mexico-city;2026-11-03;MMMX;lowest-temperature-in-mexico-city-on-november-3-2026;13°C;;0.001;;0.001;;0.05
+2026-11-03 12:03;M1;6;lowest|mexico-city;2026-11-03;MMMX;lowest-temperature-in-mexico-city-on-november-3-2026;14°C;;0.001;;0.001;;0.05
+2026-11-03 12:03;M1;6;lowest|mexico-city;2026-11-03;MMMX;lowest-temperature-in-mexico-city-on-november-3-2026;15°C;;0.001;;0.001;;0.05
+2026-11-03 12:03;M1;6;lowest|mexico-city;2026-11-03;MMMX;lowest-temperature-in-mexico-city-on-november-3-2026;16°C;;0.001;;0.001;;0.05
+2026-11-03 12:03;M1;6;lowest|mexico-city;2026-11-03;MMMX;lowest-temperature-in-mexico-city-on-november-3-2026;17°C or higher;;0.001;;0.001;;0.05
+2026-11-03 12:03;M1;6;highest|mexico-city;2026-11-03;MMMX;highest-temperature-in-mexico-city-on-november-3-2026;19°C or below;;0.001;;0.001;;0.05
+2026-11-03 12:03;M1;6;highest|mexico-city;2026-11-03;MMMX;highest-temperature-in-mexico-city-on-november-3-2026;20°C;;0.001;;0.001;;0.05
+2026-11-03 12:03;M1;6;highest|mexico-city;2026-11-03;MMMX;highest-temperature-in-mexico-city-on-november-3-2026;21°C;;0.001;;0.001;;0.05
+2026-11-03 12:03;M1;6;highest|mexico-city;2026-11-03;MMMX;highest-temperature-in-mexico-city-on-november-3-2026;22°C;;0.001;;0.001;;0.05
+2026-11-03 12:03;M1;6;highest|mexico-city;2026-11-03;MMMX;highest-temperature-in-mexico-city-on-november-3-2026;23°C;0.001;0.002;0.0015;0.002;0.999;0.05
+2026-11-03 12:03;M1;6;highest|mexico-city;2026-11-03;MMMX;highest-temperature-in-mexico-city-on-november-3-2026;24°C;0.003;0.014;0.0085;0.014;0.998;0.05
+2026-11-03 12:03;M1;6;highest|mexico-city;2026-11-03;MMMX;highest-temperature-in-mexico-city-on-november-3-2026;25°C;0.029;0.04;0.0345;0.0414;0.971;0.05
+2026-11-03 12:03;M1;6;highest|mexico-city;2026-11-03;MMMX;highest-temperature-in-mexico-city-on-november-3-2026;26°C;0.32;0.37;0.345;0.375;0.68;0.05
+2026-11-03 12:03;M1;6;highest|mexico-city;2026-11-03;MMMX;highest-temperature-in-mexico-city-on-november-3-2026;27°C;0.56;0.6;0.58;0.605;0.44;0.05
+2026-11-03 12:03;M1;6;highest|mexico-city;2026-11-03;MMMX;highest-temperature-in-mexico-city-on-november-3-2026;28°C;0.05;0.08;0.065;0.085;0.95;0.05
+2026-11-03 12:03;M1;6;highest|mexico-city;2026-11-03;MMMX;highest-temperature-in-mexico-city-on-november-3-2026;29°C or higher;0.004;0.014;0.009;0.014;0.996;0.05
+2026-11-03 12:03;M0;6;lowest|dallas;2026-11-04;KDAL;lowest-temperature-in-dallas-on-november-4-2026;47°F or below;;0.48;;0.48;;0.05
+2026-11-03 12:03;M0;6;lowest|dallas;2026-11-04;KDAL;lowest-temperature-in-dallas-on-november-4-2026;48-49°F;;0.25;;0.255;;0.05
+2026-11-03 12:03;M0;6;lowest|dallas;2026-11-04;KDAL;lowest-temperature-in-dallas-on-november-4-2026;50-51°F;;0.27;;0.285;;0.05
+2026-11-03 12:03;M0;6;lowest|dallas;2026-11-04;KDAL;lowest-temperature-in-dallas-on-november-4-2026;52-53°F;0.03;0.27;0.15;0.33;0.97;0.05
+2026-11-03 12:03;M0;6;lowest|dallas;2026-11-04;KDAL;lowest-temperature-in-dallas-on-november-4-2026;54-55°F;;0.68;;0.6875;;0.05
+2026-11-03 12:03;M0;6;lowest|dallas;2026-11-04;KDAL;lowest-temperature-in-dallas-on-november-4-2026;56-57°F;0.03;0.67;0.35;0.67;0.97;0.05
+2026-11-03 12:03;M0;6;lowest|dallas;2026-11-04;KDAL;lowest-temperature-in-dallas-on-november-4-2026;58-59°F;;0.68;;0.6875;;0.05
+2026-11-03 12:03;M0;6;lowest|dallas;2026-11-04;KDAL;lowest-temperature-in-dallas-on-november-4-2026;60-61°F;;0.68;;0.6875;;0.05
+2026-11-03 12:03;M0;6;lowest|dallas;2026-11-04;KDAL;lowest-temperature-in-dallas-on-november-4-2026;62-63°F;;0.24;;0.245;;0.05
+2026-11-03 12:03;M0;6;lowest|dallas;2026-11-04;KDAL;lowest-temperature-in-dallas-on-november-4-2026;64-65°F;;0.24;;0.245;;0.05
+2026-11-03 12:03;M0;6;lowest|dallas;2026-11-04;KDAL;lowest-temperature-in-dallas-on-november-4-2026;66°F or higher;;0.48;;0.48;;0.05
+2026-11-03 12:03;M0;6;lowest|chicago;2026-11-04;KORD;lowest-temperature-in-chicago-on-november-4-2026;47°F or below;;0.93;;0.93;;0.05
+2026-11-03 12:03;M0;6;lowest|chicago;2026-11-04;KORD;lowest-temperature-in-chicago-on-november-4-2026;48-49°F;;0.12;;0.12;;0.05
+2026-11-03 12:03;M0;6;lowest|chicago;2026-11-04;KORD;lowest-temperature-in-chicago-on-november-4-2026;50-51°F;;0.27;;0.475;;0.05
+2026-11-03 12:03;M0;6;lowest|chicago;2026-11-04;KORD;lowest-temperature-in-chicago-on-november-4-2026;52-53°F;0.17;0.66;0.415;0.665;0.83;0.05
+2026-11-03 12:03;M0;6;lowest|chicago;2026-11-04;KORD;lowest-temperature-in-chicago-on-november-4-2026;54-55°F;0.08;0.66;0.37;0.665;0.92;0.05
+2026-11-03 12:03;M0;6;lowest|chicago;2026-11-04;KORD;lowest-temperature-in-chicago-on-november-4-2026;56-57°F;;0.68;;0.6875;;0.05
+2026-11-03 12:03;M0;6;lowest|chicago;2026-11-04;KORD;lowest-temperature-in-chicago-on-november-4-2026;58-59°F;;0.68;;0.6875;;0.05
+2026-11-03 12:03;M0;6;lowest|chicago;2026-11-04;KORD;lowest-temperature-in-chicago-on-november-4-2026;60-61°F;;0.14;;0.14;;0.05
+2026-11-03 12:03;M0;6;lowest|chicago;2026-11-04;KORD;lowest-temperature-in-chicago-on-november-4-2026;62-63°F;;0.11;;0.11;;0.05
+2026-11-03 12:03;M0;6;lowest|chicago;2026-11-04;KORD;lowest-temperature-in-chicago-on-november-4-2026;64-65°F;0.002;0.064;0.033;0.064;0.998;0.05
+2026-11-03 12:03;M0;6;lowest|chicago;2026-11-04;KORD;lowest-temperature-in-chicago-on-november-4-2026;66°F or higher;;0.47;;0.47;;0.05
+2026-11-03 12:03;M0;6;lowest|austin;2026-11-04;KAUS;lowest-temperature-in-austin-on-november-4-2026;45°F or below;;0.58;;0.5825;;0.05
+2026-11-03 12:03;M0;6;lowest|austin;2026-11-04;KAUS;lowest-temperature-in-austin-on-november-4-2026;46-47°F;;0.15;;0.15;;0.05
+2026-11-03 12:03;M0;6;lowest|austin;2026-11-04;KAUS;lowest-temperature-in-austin-on-november-4-2026;48-49°F;;0.27;;0.475;;0.05
+2026-11-03 12:03;M0;6;lowest|austin;2026-11-04;KAUS;lowest-temperature-in-austin-on-november-4-2026;50-51°F;;0.27;;0.475;;0.05
+2026-11-03 12:03;M0;6;lowest|austin;2026-11-04;KAUS;lowest-temperature-in-austin-on-november-4-2026;52-53°F;;0.68;;0.6875;;0.05
+2026-11-03 12:03;M0;6;lowest|austin;2026-11-04;KAUS;lowest-temperature-in-austin-on-november-4-2026;54-55°F;;0.68;;0.6875;;0.05
+2026-11-03 12:03;M0;6;lowest|austin;2026-11-04;KAUS;lowest-temperature-in-austin-on-november-4-2026;56-57°F;0.02;0.67;0.345;0.67;;0.05
+2026-11-03 12:03;M0;6;lowest|austin;2026-11-04;KAUS;lowest-temperature-in-austin-on-november-4-2026;58-59°F;;0.68;;0.6875;;0.05
+2026-11-03 12:03;M0;6;lowest|austin;2026-11-04;KAUS;lowest-temperature-in-austin-on-november-4-2026;60-61°F;;0.27;;0.475;;0.05
+2026-11-03 12:03;M0;6;lowest|austin;2026-11-04;KAUS;lowest-temperature-in-austin-on-november-4-2026;62-63°F;;0.26;;0.26;;0.05
+2026-11-03 12:03;M0;6;lowest|austin;2026-11-04;KAUS;lowest-temperature-in-austin-on-november-4-2026;64°F or higher;;0.58;;0.5825;;0.05
+2026-11-03 12:03;M0;6;lowest|houston;2026-11-04;KHOU;lowest-temperature-in-houston-on-november-4-2026;53°F or below;;0.5;;0.5;;0.05
+2026-11-03 12:03;M0;6;lowest|houston;2026-11-04;KHOU;lowest-temperature-in-houston-on-november-4-2026;54-55°F;;0.17;;0.175;;0.05
+2026-11-03 12:03;M0;6;lowest|houston;2026-11-04;KHOU;lowest-temperature-in-houston-on-november-4-2026;56-57°F;;0.24;;0.24;;0.05
+2026-11-03 12:03;M0;6;lowest|houston;2026-11-04;KHOU;lowest-temperature-in-houston-on-november-4-2026;58-59°F;;0.68;;0.6875;;0.05
+2026-11-03 12:03;M0;6;lowest|houston;2026-11-04;KHOU;lowest-temperature-in-houston-on-november-4-2026;60-61°F;0.06;0.67;0.365;0.67;0.945;0.05
+2026-11-03 12:03;M0;6;lowest|houston;2026-11-04;KHOU;lowest-temperature-in-houston-on-november-4-2026;62-63°F;;0.68;;0.6875;;0.05
+2026-11-03 12:03;M0;6;lowest|houston;2026-11-04;KHOU;lowest-temperature-in-houston-on-november-4-2026;64-65°F;;0.68;;0.6875;;0.05
+2026-11-03 12:03;M0;6;lowest|houston;2026-11-04;KHOU;lowest-temperature-in-houston-on-november-4-2026;66-67°F;;0.16;;0.16;;0.05
+2026-11-03 12:03;M0;6;lowest|houston;2026-11-04;KHOU;lowest-temperature-in-houston-on-november-4-2026;68-69°F;;0.24;;0.24;;0.05
+2026-11-03 12:03;M0;6;lowest|houston;2026-11-04;KHOU;lowest-temperature-in-houston-on-november-4-2026;70-71°F;;0.26;;0.26;;0.05
+2026-11-03 12:03;M0;6;lowest|houston;2026-11-04;KHOU;lowest-temperature-in-houston-on-november-4-2026;72°F or higher;;0.49;;0.49;;0.05
+2026-11-03 12:03;M0;6;highest|dallas;2026-11-04;KDAL;highest-temperature-in-dallas-on-november-4-2026;65°F or below;0.001;0.017;0.009;0.017;0.999;0.05
+2026-11-03 12:03;M0;6;highest|dallas;2026-11-04;KDAL;highest-temperature-in-dallas-on-november-4-2026;66-67°F;0.005;0.011;0.008;0.011;0.995;0.05
+2026-11-03 12:03;M0;6;highest|dallas;2026-11-04;KDAL;highest-temperature-in-dallas-on-november-4-2026;68-69°F;0.018;0.066;0.042;0.0665;0.9825;0.05
+2026-11-03 12:03;M0;6;highest|dallas;2026-11-04;KDAL;highest-temperature-in-dallas-on-november-4-2026;70-71°F;0.08;0.11;0.095;0.11;0.925;0.05
+2026-11-03 12:03;M0;6;highest|dallas;2026-11-04;KDAL;highest-temperature-in-dallas-on-november-4-2026;72-73°F;0.42;0.46;0.44;0.46;0.58;0.05
+2026-11-03 12:03;M0;6;highest|dallas;2026-11-04;KDAL;highest-temperature-in-dallas-on-november-4-2026;74-75°F;0.37;0.42;0.395;0.425;0.63;0.05
+2026-11-03 12:03;M0;6;highest|dallas;2026-11-04;KDAL;highest-temperature-in-dallas-on-november-4-2026;76-77°F;0.05;0.08;0.065;0.08;0.955;0.05
+2026-11-03 12:03;M0;6;highest|dallas;2026-11-04;KDAL;highest-temperature-in-dallas-on-november-4-2026;78-79°F;0.005;0.017;0.011;0.017;0.995;0.05
+2026-11-03 12:03;M0;6;highest|dallas;2026-11-04;KDAL;highest-temperature-in-dallas-on-november-4-2026;80-81°F;0.001;0.009;0.005;0.009;0.999;0.05
+2026-11-03 12:03;M0;6;highest|dallas;2026-11-04;KDAL;highest-temperature-in-dallas-on-november-4-2026;82-83°F;;0.009;;0.009;;0.05
+2026-11-03 12:03;M0;6;highest|dallas;2026-11-04;KDAL;highest-temperature-in-dallas-on-november-4-2026;84°F or higher;0.001;0.002;0.0015;0.002;0.999;0.05
+2026-11-03 12:03;M0;6;highest|chicago;2026-11-04;KORD;highest-temperature-in-chicago-on-november-4-2026;57°F or below;;0.001;;0.001;;0.05
+2026-11-03 12:03;M0;6;highest|chicago;2026-11-04;KORD;highest-temperature-in-chicago-on-november-4-2026;58-59°F;;0.001;;0.001;;0.05
+2026-11-03 12:03;M0;6;highest|chicago;2026-11-04;KORD;highest-temperature-in-chicago-on-november-4-2026;60-61°F;0.002;0.004;0.003;0.004;0.998;0.05
+2026-11-03 12:03;M0;6;highest|chicago;2026-11-04;KORD;highest-temperature-in-chicago-on-november-4-2026;62-63°F;0.008;0.009;0.0085;0.009;0.992;0.05
+2026-11-03 12:03;M0;6;highest|chicago;2026-11-04;KORD;highest-temperature-in-chicago-on-november-4-2026;64-65°F;0.2;0.24;0.22;0.245;0.8;0.05
+2026-11-03 12:03;M0;6;highest|chicago;2026-11-04;KORD;highest-temperature-in-chicago-on-november-4-2026;66-67°F;0.52;0.56;0.54;0.565;0.48;0.05
+2026-11-03 12:03;M0;6;highest|chicago;2026-11-04;KORD;highest-temperature-in-chicago-on-november-4-2026;68-69°F;0.21;0.26;0.235;0.265;0.79;0.05
+2026-11-03 12:03;M0;6;highest|chicago;2026-11-04;KORD;highest-temperature-in-chicago-on-november-4-2026;70-71°F;0.02;0.033;0.0265;0.033;0.98;0.05
+2026-11-03 12:03;M0;6;highest|chicago;2026-11-04;KORD;highest-temperature-in-chicago-on-november-4-2026;72-73°F;0.003;0.004;0.0035;0.004;0.997;0.05
+2026-11-03 12:03;M0;6;highest|chicago;2026-11-04;KORD;highest-temperature-in-chicago-on-november-4-2026;74-75°F;;0.001;;0.001;;0.05
+2026-11-03 12:03;M0;6;highest|chicago;2026-11-04;KORD;highest-temperature-in-chicago-on-november-4-2026;76°F or higher;;0.001;;0.001;;0.05
+2026-11-03 12:03;M0;6;highest|austin;2026-11-04;KAUS;highest-temperature-in-austin-on-november-4-2026;65°F or below;;0.001;;0.001;;0.05
+2026-11-03 12:03;M0;6;highest|austin;2026-11-04;KAUS;highest-temperature-in-austin-on-november-4-2026;66-67°F;;0.001;;0.001;;0.05
+2026-11-03 12:03;M0;6;highest|austin;2026-11-04;KAUS;highest-temperature-in-austin-on-november-4-2026;68-69°F;0.002;0.01;0.006;0.01;0.998;0.05
+2026-11-03 12:03;M0;6;highest|austin;2026-11-04;KAUS;highest-temperature-in-austin-on-november-4-2026;70-71°F;0.005;0.019;0.012;0.019;0.995;0.05
+2026-11-03 12:03;M0;6;highest|austin;2026-11-04;KAUS;highest-temperature-in-austin-on-november-4-2026;72-73°F;0.016;0.037;0.0265;0.037;0.984;0.05
+2026-11-03 12:03;M0;6;highest|austin;2026-11-04;KAUS;highest-temperature-in-austin-on-november-4-2026;74-75°F;0.2;0.27;0.235;0.275;0.8;0.05
+2026-11-03 12:03;M0;6;highest|austin;2026-11-04;KAUS;highest-temperature-in-austin-on-november-4-2026;76-77°F;0.52;0.57;0.545;0.57;0.48;0.05
+2026-11-03 12:03;M0;6;highest|austin;2026-11-04;KAUS;highest-temperature-in-austin-on-november-4-2026;78-79°F;0.17;0.21;0.19;0.215;0.83;0.05
+2026-11-03 12:03;M0;6;highest|austin;2026-11-04;KAUS;highest-temperature-in-austin-on-november-4-2026;80-81°F;0.026;0.044;0.035;0.044;0.974;0.05
+2026-11-03 12:03;M0;6;highest|austin;2026-11-04;KAUS;highest-temperature-in-austin-on-november-4-2026;82-83°F;0.001;0.005;0.003;0.005;0.999;0.05
+2026-11-03 12:03;M0;6;highest|austin;2026-11-04;KAUS;highest-temperature-in-austin-on-november-4-2026;84°F or higher;0.001;0.002;0.0015;0.002;0.999;0.05
+2026-11-03 12:03;M0;6;highest|houston;2026-11-04;KHOU;highest-temperature-in-houston-on-november-4-2026;67°F or below;0.001;0.002;0.0015;0.002;0.999;0.05
+2026-11-03 12:03;M0;6;highest|houston;2026-11-04;KHOU;highest-temperature-in-houston-on-november-4-2026;68-69°F;0.002;0.009;0.0055;0.009;0.998;0.05
+2026-11-03 12:03;M0;6;highest|houston;2026-11-04;KHOU;highest-temperature-in-houston-on-november-4-2026;70-71°F;0.002;0.009;0.0055;0.009;0.998;0.05
+2026-11-03 12:03;M0;6;highest|houston;2026-11-04;KHOU;highest-temperature-in-houston-on-november-4-2026;72-73°F;0.011;0.044;0.0275;0.0445;0.989;0.05
+2026-11-03 12:03;M0;6;highest|houston;2026-11-04;KHOU;highest-temperature-in-houston-on-november-4-2026;74-75°F;0.07;0.11;0.09;0.11;0.93;0.05
+2026-11-03 12:03;M0;6;highest|houston;2026-11-04;KHOU;highest-temperature-in-houston-on-november-4-2026;76-77°F;0.48;0.52;0.5;0.52;0.52;0.05
+2026-11-03 12:03;M0;6;highest|houston;2026-11-04;KHOU;highest-temperature-in-houston-on-november-4-2026;78-79°F;0.35;0.37;0.36;0.371;0.65;0.05
+2026-11-03 12:03;M0;6;highest|houston;2026-11-04;KHOU;highest-temperature-in-houston-on-november-4-2026;80-81°F;0.037;0.065;0.051;0.065;0.963;0.05
+2026-11-03 12:03;M0;6;highest|houston;2026-11-04;KHOU;highest-temperature-in-houston-on-november-4-2026;82-83°F;0.004;0.019;0.0115;0.019;0.996;0.05
+2026-11-03 12:03;M0;6;highest|houston;2026-11-04;KHOU;highest-temperature-in-houston-on-november-4-2026;84-85°F;0.001;0.019;0.01;0.019;0.999;0.05
+2026-11-03 12:03;M0;6;highest|houston;2026-11-04;KHOU;highest-temperature-in-houston-on-november-4-2026;86°F or higher;0.001;0.009;0.005;0.009;0.999;0.05
+2026-11-03 12:03;M0;6;lowest|mexico-city;2026-11-04;MMMX;lowest-temperature-in-mexico-city-on-november-4-2026;5°C or below;;0.49;;0.49;;0.05
+2026-11-03 12:03;M0;6;lowest|mexico-city;2026-11-04;MMMX;lowest-temperature-in-mexico-city-on-november-4-2026;6°C;;0.1;;0.1;;0.05
+2026-11-03 12:03;M0;6;lowest|mexico-city;2026-11-04;MMMX;lowest-temperature-in-mexico-city-on-november-4-2026;7°C;;0.1;;0.1;;0.05
+2026-11-03 12:03;M0;6;lowest|mexico-city;2026-11-04;MMMX;lowest-temperature-in-mexico-city-on-november-4-2026;8°C;;0.15;;0.15;;0.05
+2026-11-03 12:03;M0;6;lowest|mexico-city;2026-11-04;MMMX;lowest-temperature-in-mexico-city-on-november-4-2026;9°C;0.02;0.62;0.32;0.625;0.98;0.05
+2026-11-03 12:03;M0;6;lowest|mexico-city;2026-11-04;MMMX;lowest-temperature-in-mexico-city-on-november-4-2026;10°C;0.15;0.43;0.29;0.43;0.855;0.05
+2026-11-03 12:03;M0;6;lowest|mexico-city;2026-11-04;MMMX;lowest-temperature-in-mexico-city-on-november-4-2026;11°C;0.11;0.66;0.385;0.665;0.89;0.05
+2026-11-03 12:03;M0;6;lowest|mexico-city;2026-11-04;MMMX;lowest-temperature-in-mexico-city-on-november-4-2026;12°C;;0.68;;0.6875;;0.05
+2026-11-03 12:03;M0;6;lowest|mexico-city;2026-11-04;MMMX;lowest-temperature-in-mexico-city-on-november-4-2026;13°C;0.03;0.66;0.345;0.665;0.97;0.05
+2026-11-03 12:03;M0;6;lowest|mexico-city;2026-11-04;MMMX;lowest-temperature-in-mexico-city-on-november-4-2026;14°C;;0.68;;0.6875;;0.05
+2026-11-03 12:03;M0;6;lowest|mexico-city;2026-11-04;MMMX;lowest-temperature-in-mexico-city-on-november-4-2026;15°C or higher;;0.47;;0.4717;;0.05
+2026-11-03 12:03;M0;6;highest|mexico-city;2026-11-04;MMMX;highest-temperature-in-mexico-city-on-november-4-2026;17°C or below;0.001;0.002;0.0015;0.002;;0.05
+2026-11-03 12:03;M0;6;highest|mexico-city;2026-11-04;MMMX;highest-temperature-in-mexico-city-on-november-4-2026;18°C;0.001;0.002;0.0015;0.002;;0.05
+2026-11-03 12:03;M0;6;highest|mexico-city;2026-11-04;MMMX;highest-temperature-in-mexico-city-on-november-4-2026;19°C;0.001;0.002;0.0015;0.002;;0.05
+2026-11-03 12:03;M0;6;highest|mexico-city;2026-11-04;MMMX;highest-temperature-in-mexico-city-on-november-4-2026;20°C;;0.001;;0.001;;0.05
+2026-11-03 12:03;M0;6;highest|mexico-city;2026-11-04;MMMX;highest-temperature-in-mexico-city-on-november-4-2026;21°C;0.001;0.002;0.0015;0.002;;0.05
+2026-11-03 12:03;M0;6;highest|mexico-city;2026-11-04;MMMX;highest-temperature-in-mexico-city-on-november-4-2026;22°C;0.001;0.002;0.0015;0.002;;0.05
+2026-11-03 12:03;M0;6;highest|mexico-city;2026-11-04;MMMX;highest-temperature-in-mexico-city-on-november-4-2026;23°C;0.004;0.017;0.0105;0.017;0.996;0.05
+2026-11-03 12:03;M0;6;highest|mexico-city;2026-11-04;MMMX;highest-temperature-in-mexico-city-on-november-4-2026;24°C;0.01;0.019;0.0145;0.019;0.99;0.05
+2026-11-03 12:03;M0;6;highest|mexico-city;2026-11-04;MMMX;highest-temperature-in-mexico-city-on-november-4-2026;25°C;0.18;0.24;0.21;0.24;0.82;0.05
+2026-11-03 12:03;M0;6;highest|mexico-city;2026-11-04;MMMX;highest-temperature-in-mexico-city-on-november-4-2026;26°C;0.59;0.61;0.6;0.61;0.41;0.05
+2026-11-03 12:03;M0;6;highest|mexico-city;2026-11-04;MMMX;highest-temperature-in-mexico-city-on-november-4-2026;27°C or higher;0.17;0.2;0.185;0.2;0.835;0.05
