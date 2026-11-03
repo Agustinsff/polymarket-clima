@@ -62,3 +62,47 @@ Una función nueva en `estrategias.py` que devuelva señales con el mismo format
 esperan en el libro para cobrar recompensas) necesita además: órdenes post-only/GTD, cancelar y reponer, seguir el
 libro por WebSocket y un `cancelar_todo` en el freno. Se arma solo si el corte del medidor de recompensas (2-nov)
 muestra que el pozo paga más que lo que se pierde por selección adversa (~1 ¢ por acción medido en temperatura).
+
+## Bot maker (prueba real chica, 3-nov-2026)
+
+`bot/maker.py` es la estrategia que salió del medidor de recompensas (`maker/REGLA.md` e `informe_datos.md` en la
+rama `medidor-maker`): dejar órdenes de compra de **Sí y de No a 2 ¢ del precio medio** en **pocas cajas de
+temperatura con libro apretado (spread ≤ 5 ¢)** para cobrar las recompensas de liquidez. En papel dio +1 a +1,5 US$
+por día por cada US$ 100 aun suponiendo que los rivales copian; la prueba real sirve para ver cuánto paga Polymarket
+de verdad (lo único que no se puede medir sin cobrar).
+
+Qué hace cada minuto: elige las `cajas` (3) con más recompensa esperada entre las que cumplen la regla, pone dos
+órdenes **post-only** (nunca toman precio, así que nunca pagan comisión) de `acciones_min` (25) acciones por lado,
+las renueva solo si el medio se movió, anota cada llenado, cobra las cajas resueltas, y a las 00:30 UTC anota la
+recompensa del día anterior que informa Polymarket. Si tiene acciones de un lado, vende esas en vez de comprar el
+otro, así el capital no crece. **Al apagarse por cualquier motivo cancela todas las órdenes.**
+
+Frenos: `bot/PARAR` (manual), `bot/PARAR_maker_<modo>` (automático), fecha `apagar_despues_de`, pérdida realizada
+del día ≥ US$ 10 (deja de cotizar hasta el día siguiente), pérdida total ≥ US$ 30, 10 errores seguidos. Capital:
+`capital_usd` (150) reparte entre las cajas; una caja con mínimo de recompensa mayor que capital/cajas no se usa.
+
+Archivos: `bot/maker_ops_<modo>.csv` (órdenes puestas, llenados y cobros), `bot/maker_estado_<modo>.json`,
+`bot/maker_resumen_<modo>.md`. Pruebas sin red: `python bot/test_maker.py` (8 pruebas, incluido el SDK falso).
+
+### Pasos para la prueba real (Agus)
+1. **Correrlo en papel primero** en la PC un día: `python bot\maker.py bucle` (o doble clic en `bot\iniciar_maker.cmd`
+   con `"modo": "papel"` en la sección `maker` de `config.json`). Mirar `bot/maker_resumen_papel.md`.
+2. **Billetera**: en polymarket.com, cargar **US$ 150–200 en USDC** (se convierte solo a pUSD). Es la misma
+   Deposit Wallet del bot favorito. Conviene una **clave de sesión** (la doc oficial las permite; el SDK la usa igual
+   que la clave dueña).
+3. **Secretos**: en `bot\secreto.cmd` (copiar de `secreto_ejemplo.cmd`): `POLYMARKET_PRIVATE_KEY`, `BOT_NTFY_TEMA`
+   (avisos al celular) y `BOT_REAL_CONFIRMO=si`. Instalar el SDK: `pip install -r bot\requirements_real.txt`.
+4. **Encender**: `"modo": "real"` en la sección `maker` de `config.json` y doble clic en `bot\iniciar_maker.cmd`.
+   La PC tiene que quedar prendida (Energía → Suspender: Nunca). Si se apaga, las órdenes quedan en el libro hasta
+   que vuelva a arrancar (las cancela al arrancar y las vuelve a poner); si no va a volver, cancelarlas a mano en
+   polymarket.com → Portfolio → Open orders.
+5. **Qué mirar**: cada mañana `bot/maker_resumen_real.md` (o el aviso de las 00:30 UTC): recompensa cobrada,
+   llenados y resultado. La comparación que importa es **recompensa real vs la estimada por fórmula** (misma línea del
+   resumen). Si en una semana la real es menos de la mitad de la estimada, la idea no paga; si es parecida, sube de
+   capital de a poco.
+6. **Apagar**: `bot\parar_bot.cmd`. Cancela todo solo.
+
+Lo que no está probado: ninguna orden real se mandó todavía. El SDK (`polymarket-client` 0.14.0) se leyó para los
+nombres (`place_limit_order(..., post_only=True)`, `cancel_orders`, `cancel_all`, `list_open_orders`,
+`list_positions`, `get_total_earnings_for_user_for_day`, `redeem_positions`), pero la primera hora real hay que
+mirarla en la web.

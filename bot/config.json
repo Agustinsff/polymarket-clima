@@ -4,17 +4,18 @@
   "apagar_despues_de": "2026-12-31 23:59",
   "resumen_diario_utc": 3,
   "avisar_compras_papel": true,
-
   "favorito": {
-    "series": {"btc-up-or-down-hourly": "BTC", "eth-up-or-down-hourly": "ETH"},
+    "series": {
+      "btc-up-or-down-hourly": "BTC",
+      "eth-up-or-down-hourly": "ETH"
+    },
     "minuto_objetivo": 54,
     "minuto_ultimo": 58,
-    "precio_min": 0.70,
-    "precio_max": 0.90,
+    "precio_min": 0.7,
+    "precio_max": 0.9,
     "acciones": 5,
     "tolerancia": 0.01
   },
-
   "riesgo": {
     "max_usd_por_op": 5,
     "max_ops_por_dia": 30,
@@ -22,5 +23,19 @@
     "max_perdida_total": 25,
     "max_exposicion_abierta": 20,
     "max_errores_seguidos": 5
+  },
+  "maker": {
+    "modo": "papel",
+    "capital_usd": 150,
+    "cajas": 3,
+    "acciones_min": 25,
+    "distancia": 0.02,
+    "spread_max": 0.05,
+    "horas_min_fin": 3,
+    "ciclo_seg": 60,
+    "apagar_despues_de": "2026-11-30 23:59",
+    "max_perdida_dia": 10,
+    "max_perdida_total": 30,
+    "max_errores_seguidos": 10
   }
 }
