@@ -1,13 +1,13 @@
 # Resumen polymarket-clima
 
-_Actualizado: 2026-11-03 19:49 (Montevideo). Todo es **en papel**: no se usa plata real._
+_Actualizado: 2026-11-03 19:52 (Montevideo). Todo es **en papel**: no se usa plata real._
 
 ## Estado de las tareas
 
 🔔 Polymarket cambió algo en **clima (otros)** (mercado de clima nuevo, aparece el 2026-11-03 19:47 UTC): `phivolcs-raises-mayon-to-alert-level` y 2 más. Ver [reglas_informe.md](reglas_informe.md).
 🔔 Polymarket cambió algo en **clima (otros)** (mercado de clima nuevo, ya no aparece el 2026-11-02 19:45 UTC): `will-it-rain-during-the-united-states-grand-prix` y 1 más. Ver [reglas_informe.md](reglas_informe.md).
 
-- Última foto de liquidez: 2026-11-03T19:37:29
+- Última foto de liquidez: 2026-11-03T19:52:31
 - Monitor: mañana 2026-11-03, noche 2026-11-02
 - Prueba São Paulo: último día registrado 2026-11-03
 - Cosechador: último ciclo 2026-11-03 17:19 UTC, 88 mercados, 46 estaciones
