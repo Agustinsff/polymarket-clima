@@ -1,0 +1,18 @@
+name: maker_papel
+# Prueba manual: una pasada del bot maker en papel con datos reales (no opera). Disparar a mano.
+on:
+  workflow_dispatch:
+jobs:
+  una:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.ref_name }}
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -r requirements.txt
+      - run: python bot/test_maker.py
+      - run: python bot/maker.py una && python bot/maker.py una && cat bot/maker_ops_papel.csv
