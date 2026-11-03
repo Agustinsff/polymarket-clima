@@ -1,6 +1,6 @@
 # Resumen polymarket-clima
 
-_Actualizado: 2026-11-03 10:14 (Montevideo). Todo es **en papel**: no se usa plata real._
+_Actualizado: 2026-11-03 10:25 (Montevideo). Todo es **en papel**: no se usa plata real._
 
 ## Estado de las tareas
 
@@ -62,54 +62,54 @@ Nota: las operaciones de Ciudad del Cabo del 18-oct se hicieron con la regla vie
 
 ## Pronóstico vs. mercado (todas las ciudades, día anterior)
 
-Puntaje Brier (más bajo = mejor) en 4698 cajas liquidadas: **modelo 0.0911** vs **mercado 0.0742**.
-Series donde el modelo le gana al mercado (≥5 días): mín hong-kong (10 días), máx atlanta (10 días), máx seattle (10 días), máx karachi (10 días), máx manila (10 días), mín shenzhen (6 días), mín shanghai (10 días).
+Puntaje Brier (más bajo = mejor) en 5218 cajas liquidadas: **modelo 0.0900** vs **mercado 0.0735**.
+Series donde el modelo le gana al mercado (≥5 días): mín hong-kong (11 días), máx seattle (11 días), máx atlanta (11 días), máx buenos-aires (11 días).
 
 | Modo | Serie calibrada | Liquidadas | Ganadas | Neto (10 acc. c/u) | Pendientes |
 |---|---|---|---|---|---|
-| taker | sí | 126 | 48 | US$-76.93 | 680 |
-| taker | no | 1809 | 725 | US$-565.11 | 21 |
-| maker | sí | 441 | 52 | US$-175.56 | 2975 |
+| taker | sí | 327 | 125 | US$-127.98 | 583 |
+| taker | no | 1826 | 735 | US$-546.88 | 4 |
+| maker | sí | 441 | 52 | US$-175.56 | 3428 |
 | maker | no | 7591 | 856 | US$-1577.04 | 110 |
-| cola_taker | sí | 77 | 2 | US$-6.19 | 370 |
-| cola_taker | no | 1184 | 36 | US$-30.52 | 11 |
-| cola_maker | sí | 83 | 2 | US$-8.88 | 633 |
+| cola_taker | sí | 190 | 4 | US$-27.26 | 313 |
+| cola_taker | no | 1191 | 37 | US$-23.24 | 4 |
+| cola_maker | sí | 83 | 2 | US$-8.88 | 735 |
 | cola_maker | no | 1299 | 32 | US$-78.78 | 19 |
 
-Taker en total: US$-678.75. _Con la comisión vieja (0,05 para todo) sería US$-823.83._
+Taker en total: US$-725.36. _Con la comisión vieja (0,05 para todo) sería US$-891.80._
 
 _Taker = compra al instante pagando comisión. Maker = orden en el libro, solo cuenta si alguien la habría tomado (sin comisión). Cola = cajas de ≤10 ¢ a las que el modelo les da ≥2,5 veces el precio. no80_90 = comprar el No de cajas todavía posibles que cotizan 10–20 ¢ (solo en el pronóstico del mismo día)._
 
 ## Pronóstico del mismo día (12 y 15 hs locales la máxima, 9 hs la mínima)
 
-Puntaje Brier (más bajo = mejor) en 3305 cajas liquidadas: **modelo 0.0904** vs **mercado 0.0719**.
-Series donde el modelo le gana al mercado (≥5 días): mín denver (5 días), máx denver (9 días), máx buenos-aires (12 días), mín sao-paulo (6 días), máx qingdao (10 días), mín shanghai (9 días), máx guangzhou (10 días), mín houston (5 días), mín atlanta (6 días), mín austin (9 días), mín moscow (5 días), mín seattle (6 días), mín mexico-city (7 días), mín shenzhen (5 días), mín wuhan (5 días), mín toronto (5 días), mín istanbul (6 días).
+Puntaje Brier (más bajo = mejor) en 3566 cajas liquidadas: **modelo 0.0905** vs **mercado 0.0716**.
+Series donde el modelo le gana al mercado (≥5 días): mín denver (6 días), máx buenos-aires (13 días), máx denver (10 días), máx qingdao (11 días), máx seattle (13 días), mín sao-paulo (7 días), mín houston (5 días), mín atlanta (6 días), mín austin (10 días), mín guangzhou (5 días), mín seattle (7 días), mín karachi (5 días), mín mexico-city (8 días), mín moscow (5 días), mín shenzhen (5 días), mín wuhan (5 días), mín san-francisco (5 días), mín toronto (5 días), mín istanbul (6 días).
 
 | Modo | Serie calibrada | Liquidadas | Ganadas | Neto (10 acc. c/u) | Pendientes |
 |---|---|---|---|---|---|
-| taker | no | 1040 | 242 | US$-568.93 | 233 |
+| taker | no | 1128 | 257 | US$-639.26 | 145 |
 | maker | no | 3169 | 382 | US$-397.61 | 774 |
-| cola_taker | no | 479 | 9 | US$-89.72 | 114 |
+| cola_taker | no | 531 | 10 | US$-100.62 | 62 |
 | cola_maker | no | 1074 | 21 | US$-76.63 | 269 |
-| no80_90 | no | 389 | 289 | US$-454.50 | 114 |
+| no80_90 | no | 428 | 314 | US$-544.04 | 75 |
 
-Taker en total: US$-1113.14. _Con la comisión vieja (0,05 para todo) sería US$-1199.10._
+Taker en total: US$-1283.91. _Con la comisión vieja (0,05 para todo) sería US$-1373.01._
 
 _Taker = compra al instante pagando comisión. Maker = orden en el libro, solo cuenta si alguien la habría tomado (sin comisión). Cola = cajas de ≤10 ¢ a las que el modelo les da ≥2,5 veces el precio. no80_90 = comprar el No de cajas todavía posibles que cotizan 10–20 ¢ (solo en el pronóstico del mismo día)._
 
 ## Cripto en papel (Bitcoin / Ethereum: above, rango y toca; modelo de opciones)
 
-Operaciones: 299 (285 liquidadas, 91 ganadas). **Neto US$+66.42** sobre US$817.14 invertidos (ROI +8.1 %). _Con la comisión vieja (0,05 para todo) sería US$+73.05._
-Brier en 1000 strikes: modelo 0.1359 vs mercado 0.1321.
+Operaciones: 299 (288 liquidadas, 91 ganadas). **Neto US$+60.81** sobre US$822.45 invertidos (ROI +7.4 %). _Con la comisión vieja (0,05 para todo) sería US$+67.53._
+Brier en 1020 strikes: modelo 0.1338 vs mercado 0.1298.
 
 | Activo | Tipo | Liquidadas | Neto |
 |---|---|---|---|
 | BTC | above | 33 | US$+35.39 |
 | BTC | rango | 57 | US$+71.33 |
-| BTC | toca | 81 | US$-55.09 |
+| BTC | toca | 83 | US$-58.48 |
 | ETH | above | 21 | US$-11.29 |
 | ETH | rango | 47 | US$-7.52 |
-| ETH | toca | 46 | US$+33.59 |
+| ETH | toca | 47 | US$+31.37 |
 
 _Regla fija: comprar el lado que el modelo ve ≥5 puntos más barato, a 48/24/12/6/3/1 h del cierre (18/12/6/3/1 h en 'toca'), 10 acciones al precio real del libro, con comisión. Backtest may-oct: +6,7 % con 1 ¢ de deslizamiento (Ethereum +17 %, Bitcoin ~0 %)._
 
@@ -124,5 +124,5 @@ Prueba SP: 13 operaciones; como maker se habrían llenado 11, neto **US$-12.35**
 ## Recompensas de liquidez (estimación, últimas 24 h)
 
 - Buenos Aires: ~US$44/día con 100 acciones a 1 ¢ en todas las cajas del mercado de mañana (sin contar pérdidas por quedar 'tomado').
-- Sao Paulo: ~US$43/día con 100 acciones a 1 ¢ en todas las cajas del mercado de mañana (sin contar pérdidas por quedar 'tomado').
+- Sao Paulo: ~US$44/día con 100 acciones a 1 ¢ en todas las cajas del mercado de mañana (sin contar pérdidas por quedar 'tomado').
 
