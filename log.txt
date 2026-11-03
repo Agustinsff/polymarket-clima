@@ -872,3 +872,123 @@ requests.exceptions.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
 12:12:19Z mos KSEA MEX listo
 12:14:30Z mos KSFO NAM listo
 12:28:34Z mos KSFO MEX listo
+11:31:50Z obs CYYZ 2026: 599 reportes
+11:31:52Z obs EDDM 2026: 1079 reportes
+11:31:55Z obs EFHK 2026: 1079 reportes
+11:31:57Z obs EGLC 2026: 1079 reportes
+11:32:00Z obs EHAM 2026: 1072 reportes
+11:32:04Z obs EPWA 2026: 1079 reportes
+11:32:07Z obs FACT 2026: 616 reportes
+11:32:10Z obs KATL 2026: 566 reportes
+11:32:12Z obs KAUS 2026: 596 reportes
+11:32:14Z obs KDAL 2026: 570 reportes
+11:32:17Z obs KDEN 2026: 656 reportes
+11:32:19Z obs KHOU 2026: 576 reportes
+11:32:22Z obs KLAX 2026: 577 reportes
+11:32:24Z obs KLGA 2026: 553 reportes
+11:32:27Z obs KMIA 2026: 603 reportes
+11:32:29Z obs KORD 2026: 609 reportes
+11:32:32Z obs KSEA 2026: 634 reportes
+11:32:34Z obs KSFO 2026: 579 reportes
+11:32:37Z obs LEMD 2026: 1082 reportes
+11:32:40Z obs LIMC 2026: 1056 reportes
+11:32:42Z obs LLBG 2026: 1075 reportes
+11:32:45Z obs LTAC 2026: 1123 reportes
+11:32:47Z obs LTFM 2026: 1079 reportes
+11:32:50Z obs MMMX 2026: 690 reportes
+11:32:53Z obs MPMG 2026: 570 reportes
+11:32:55Z obs NZWN 2026: 1079 reportes
+11:32:58Z obs OEJN 2026: 544 reportes
+11:33:00Z obs OPKC 2026: 1079 reportes
+11:33:03Z obs RCSS 2026: 1059 reportes
+11:33:05Z obs RJTT 2026: 1079 reportes
+11:33:08Z obs RKPK 2026: 604 reportes
+11:33:10Z obs RKSI 2026: 1079 reportes
+11:33:13Z obs RPLL 2026: 544 reportes
+11:33:15Z obs SAEZ 2026: 628 reportes
+11:33:18Z obs SBGR 2026: 566 reportes
+11:33:21Z obs UUWW 2026: 1218 reportes
+11:33:23Z obs WMKK 2026: 1109 reportes
+11:33:26Z obs WSSS 2026: 1102 reportes
+11:33:28Z obs ZBAA 2026: 1092 reportes
+11:33:31Z obs ZGGG 2026: 1080 reportes
+11:33:34Z obs ZGSZ 2026: 540 reportes
+11:33:36Z obs ZHHH 2026: 540 reportes
+11:33:39Z obs ZSPD 2026: 1090 reportes
+11:33:41Z obs ZSQD 2026: 540 reportes
+11:33:44Z obs ZUCK 2026: 540 reportes
+11:33:46Z obs ZUUU 2026: 540 reportes
+11:34:15Z obs_diaria: 65742 dias-estacion
+11:40:34Z pron 2026-11 listo (gastado hoy 713)
+11:47:15Z pron 2026-10 listo (gastado hoy 2292)
+11:48:01Z pron 2026-09 listo (gastado hoy 2292)
+11:48:47Z pron 2026-08 listo (gastado hoy 2292)
+11:50:46Z pron EHAM meteofrance_arome_france 2026-07: respuesta no JSON: 'Unexpected error while streaming data: timeoutReached'
+11:51:38Z pron 2026-07 listo (gastado hoy 2445)
+11:55:13Z pron RJTT meteofrance_seamless 2026-06: respuesta no JSON: 'Unexpected error while streaming data: timeoutReached'
+11:55:45Z pron RKSI meteofrance_seamless 2026-06: respuesta no JSON: 'Unexpected error while streaming data: timeoutReached'
+12:01:09Z pron 2026-06 listo (gastado hoy 3972)
+12:08:39Z pron CYYZ ncep_nbm_conus 2026-05: respuesta no JSON: 'Unexpected error while streaming data: timeoutReached'
+12:09:11Z pron KATL ncep_nbm_conus 2026-05: respuesta no JSON: 'Unexpected error while streaming data: timeoutReached'
+12:12:28Z pron 2026-05 listo (gastado hoy 5551)
+12:16:14Z https://previous-runs-api.open-meteo.com/v1/forecast fallo (HTTPSConnectionPool(host='previous-runs-api.open-meteo.com', port=443): Read timed out. (read timeout=120)), reintento
+12:18:19Z https://previous-runs-api.open-meteo.com/v1/forecast fallo (HTTPSConnectionPool(host='previous-runs-api.open-meteo.com', port=443): Read timed out. (read timeout=120)), reintento
+12:20:29Z https://previous-runs-api.open-meteo.com/v1/forecast fallo (HTTPSConnectionPool(host='previous-runs-api.open-meteo.com', port=443): Read timed out. (read timeout=120)), reintento
+12:30:11Z pron 2026-04 listo (gastado hoy 7079)
+12:35:45Z pron: se corta (presupuesto/tiempo (gastado hoy 7998)); sigue en la proxima corrida
+12:36:14Z mos KDAL NBS listo
+12:36:38Z mos KDAL NBE listo
+12:36:54Z mos KATL NBS listo
+12:37:02Z mos KDAL GFS listo
+12:37:14Z mos KAUS NBS listo
+12:37:26Z mos KDAL NAM listo
+12:37:39Z mos KAUS NBE listo
+12:37:51Z mos KDAL MEX listo
+12:37:54Z mos KDEN NBS listo
+12:38:03Z mos KAUS GFS listo
+12:38:07Z mos KAUS NAM listo
+12:38:15Z mos KHOU NBS listo
+12:38:31Z mos KAUS MEX listo
+12:38:36Z mos KLAX NBS listo
+12:38:58Z mos KATL NBE listo
+12:39:20Z mos KHOU NBE listo
+12:39:23Z mos KATL GFS listo
+12:39:40Z mos KLAX NBE listo
+12:39:47Z mos KATL NAM listo
+12:39:59Z mos KDEN NBE listo
+12:40:04Z mos KLAX GFS listo
+12:40:24Z mos KHOU GFS listo
+12:40:33Z mos KATL MEX listo
+12:40:38Z mos KLGA NBS listo
+12:40:49Z mos KHOU NAM listo
+12:41:02Z mos KLGA NBE listo
+12:41:03Z mos KDEN GFS listo
+12:41:08Z mos KLAX NAM listo
+12:41:13Z mos KHOU MEX listo
+12:41:17Z mos KMIA NBS listo
+12:41:21Z mos KMIA NBE listo
+12:41:45Z mos KMIA GFS listo
+12:41:47Z mos KDEN NAM listo
+12:41:53Z mos KLAX MEX listo
+12:42:19Z mos KORD NBS listo
+12:42:28Z mos KLGA GFS listo
+12:42:29Z mos KMIA NAM listo
+12:42:53Z mos KLGA NAM listo
+12:43:06Z mos KORD NBE listo
+12:43:13Z mos KDEN MEX listo
+12:43:17Z mos KSEA NBS listo
+12:43:30Z mos KORD GFS listo
+12:43:36Z mos KMIA MEX listo
+12:43:40Z mos KSFO NBS listo
+12:43:44Z mos KSFO NBE listo
+12:43:55Z mos KORD NAM listo
+12:44:00Z mos KORD MEX listo
+12:44:08Z mos KSFO GFS listo
+12:44:22Z mos KSEA NBE listo
+12:44:33Z mos KSFO NAM listo
+12:44:46Z mos KSEA GFS listo
+12:44:57Z mos KSFO MEX listo
+12:45:10Z mos KSEA NAM listo
+12:45:34Z mos KSEA MEX listo
+12:46:15Z mos KLGA MEX 2026-10: sin respuesta
+12:46:17Z mos KLGA MEX listo
