@@ -1,6 +1,8 @@
 name: maker_papel
 # Prueba manual: una pasada del bot maker en papel con datos reales (no opera). Disparar a mano.
 on:
+  push:
+    branches: [bot-maker]
   workflow_dispatch:
 jobs:
   una:
