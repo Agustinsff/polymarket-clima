@@ -24265,3 +24265,47 @@ momento_utc;momento;hora_local;serie;fecha;icao;slug;caja;bid;ask;medio;si_10;no
 2026-11-03 05:00;M0;6;highest|amsterdam;2026-11-04;EHAM;highest-temperature-in-amsterdam-on-november-4-2026;12°C;0.015;0.03;0.0225;0.03;0.9855;0.05
 2026-11-03 05:00;M0;6;highest|amsterdam;2026-11-04;EHAM;highest-temperature-in-amsterdam-on-november-4-2026;13°C;0.001;0.009;0.005;0.009;0.999;0.05
 2026-11-03 05:00;M0;6;highest|amsterdam;2026-11-04;EHAM;highest-temperature-in-amsterdam-on-november-4-2026;14°C or higher;0.001;0.006;0.0035;0.006;0.999;0.05
+2026-11-03 06:00;M1;6;lowest|london;2026-11-03;EGLC;lowest-temperature-in-london-on-november-3-2026;4°C or below;;0.016;;0.016;;0.05
+2026-11-03 06:00;M1;6;lowest|london;2026-11-03;EGLC;lowest-temperature-in-london-on-november-3-2026;5°C;;0.016;;0.016;;0.05
+2026-11-03 06:00;M1;6;lowest|london;2026-11-03;EGLC;lowest-temperature-in-london-on-november-3-2026;6°C;0.003;0.15;0.0765;0.15;0.9975;0.05
+2026-11-03 06:00;M1;6;lowest|london;2026-11-03;EGLC;lowest-temperature-in-london-on-november-3-2026;7°C;0.012;0.052;0.032;0.0544;0.992;0.05
+2026-11-03 06:00;M1;6;lowest|london;2026-11-03;EGLC;lowest-temperature-in-london-on-november-3-2026;8°C;0.31;0.92;0.615;0.93;0.69;0.05
+2026-11-03 06:00;M1;6;lowest|london;2026-11-03;EGLC;lowest-temperature-in-london-on-november-3-2026;9°C;;0.001;;0.001;;0.05
+2026-11-03 06:00;M1;6;lowest|london;2026-11-03;EGLC;lowest-temperature-in-london-on-november-3-2026;10°C;;0.001;;0.001;;0.05
+2026-11-03 06:00;M1;6;lowest|london;2026-11-03;EGLC;lowest-temperature-in-london-on-november-3-2026;11°C;;0.001;;0.001;;0.05
+2026-11-03 06:00;M1;6;lowest|london;2026-11-03;EGLC;lowest-temperature-in-london-on-november-3-2026;12°C;;0.001;;0.001;;0.05
+2026-11-03 06:00;M1;6;lowest|london;2026-11-03;EGLC;lowest-temperature-in-london-on-november-3-2026;13°C;;0.001;;0.001;;0.05
+2026-11-03 06:00;M1;6;lowest|london;2026-11-03;EGLC;lowest-temperature-in-london-on-november-3-2026;14°C or higher;;0.001;;0.001;;0.05
+2026-11-03 06:00;M1;6;highest|london;2026-11-03;EGLC;highest-temperature-in-london-on-november-3-2026;7°C or below;;0.001;;0.001;;0.05
+2026-11-03 06:00;M1;6;highest|london;2026-11-03;EGLC;highest-temperature-in-london-on-november-3-2026;8°C;;0.001;;0.001;;0.05
+2026-11-03 06:00;M1;6;highest|london;2026-11-03;EGLC;highest-temperature-in-london-on-november-3-2026;9°C;;0.001;;0.001;;0.05
+2026-11-03 06:00;M1;6;highest|london;2026-11-03;EGLC;highest-temperature-in-london-on-november-3-2026;10°C;0.001;0.004;0.0025;0.004;0.999;0.05
+2026-11-03 06:00;M1;6;highest|london;2026-11-03;EGLC;highest-temperature-in-london-on-november-3-2026;11°C;0.019;0.029;0.024;0.029;0.981;0.05
+2026-11-03 06:00;M1;6;highest|london;2026-11-03;EGLC;highest-temperature-in-london-on-november-3-2026;12°C;0.39;0.41;0.4;0.41;0.61;0.05
+2026-11-03 06:00;M1;6;highest|london;2026-11-03;EGLC;highest-temperature-in-london-on-november-3-2026;13°C;0.5;0.51;0.505;0.51;0.5;0.05
+2026-11-03 06:00;M1;6;highest|london;2026-11-03;EGLC;highest-temperature-in-london-on-november-3-2026;14°C;0.043;0.061;0.052;0.061;0.957;0.05
+2026-11-03 06:00;M1;6;highest|london;2026-11-03;EGLC;highest-temperature-in-london-on-november-3-2026;15°C;0.005;0.006;0.0055;0.006;0.995;0.05
+2026-11-03 06:00;M1;6;highest|london;2026-11-03;EGLC;highest-temperature-in-london-on-november-3-2026;16°C;0.001;0.002;0.0015;0.002;0.999;0.05
+2026-11-03 06:00;M1;6;highest|london;2026-11-03;EGLC;highest-temperature-in-london-on-november-3-2026;17°C or higher;;0.001;;0.001;;0.05
+2026-11-03 06:00;M0;6;lowest|london;2026-11-04;EGLC;lowest-temperature-in-london-on-november-4-2026;4°C or below;;0.19;;0.19;;0.05
+2026-11-03 06:00;M0;6;lowest|london;2026-11-04;EGLC;lowest-temperature-in-london-on-november-4-2026;5°C;;0.11;;0.11;;0.05
+2026-11-03 06:00;M0;6;lowest|london;2026-11-04;EGLC;lowest-temperature-in-london-on-november-4-2026;6°C;;0.11;;0.11;;0.05
+2026-11-03 06:00;M0;6;lowest|london;2026-11-04;EGLC;lowest-temperature-in-london-on-november-4-2026;7°C;0.06;0.12;0.09;0.12;0.94;0.05
+2026-11-03 06:00;M0;6;lowest|london;2026-11-04;EGLC;lowest-temperature-in-london-on-november-4-2026;8°C;0.44;0.47;0.455;0.47;0.56;0.05
+2026-11-03 06:00;M0;6;lowest|london;2026-11-04;EGLC;lowest-temperature-in-london-on-november-4-2026;9°C;0.42;0.44;0.43;0.44;0.5899;0.05
+2026-11-03 06:00;M0;6;lowest|london;2026-11-04;EGLC;lowest-temperature-in-london-on-november-4-2026;10°C;0.04;0.11;0.075;0.11;0.96;0.05
+2026-11-03 06:00;M0;6;lowest|london;2026-11-04;EGLC;lowest-temperature-in-london-on-november-4-2026;11°C;0.001;0.015;0.008;0.015;0.999;0.05
+2026-11-03 06:00;M0;6;lowest|london;2026-11-04;EGLC;lowest-temperature-in-london-on-november-4-2026;12°C;0.001;0.015;0.008;0.015;0.999;0.05
+2026-11-03 06:00;M0;6;lowest|london;2026-11-04;EGLC;lowest-temperature-in-london-on-november-4-2026;13°C;0.001;0.015;0.008;0.015;0.999;0.05
+2026-11-03 06:00;M0;6;lowest|london;2026-11-04;EGLC;lowest-temperature-in-london-on-november-4-2026;14°C or higher;;0.09;;0.09;;0.05
+2026-11-03 06:00;M0;6;highest|london;2026-11-04;EGLC;highest-temperature-in-london-on-november-4-2026;6°C or below;;0.002;;0.002;;0.05
+2026-11-03 06:00;M0;6;highest|london;2026-11-04;EGLC;highest-temperature-in-london-on-november-4-2026;7°C;;0.001;;0.001;;0.05
+2026-11-03 06:00;M0;6;highest|london;2026-11-04;EGLC;highest-temperature-in-london-on-november-4-2026;8°C;0.001;0.009;0.005;0.009;0.999;0.05
+2026-11-03 06:00;M0;6;highest|london;2026-11-04;EGLC;highest-temperature-in-london-on-november-4-2026;9°C;0.001;0.002;0.0015;0.002;0.999;0.05
+2026-11-03 06:00;M0;6;highest|london;2026-11-04;EGLC;highest-temperature-in-london-on-november-4-2026;10°C;0.016;0.023;0.0195;0.023;0.984;0.05
+2026-11-03 06:00;M0;6;highest|london;2026-11-04;EGLC;highest-temperature-in-london-on-november-4-2026;11°C;0.55;0.57;0.56;0.57;0.45;0.05
+2026-11-03 06:00;M0;6;highest|london;2026-11-04;EGLC;highest-temperature-in-london-on-november-4-2026;12°C;0.41;0.42;0.415;0.4246;0.59;0.05
+2026-11-03 06:00;M0;6;highest|london;2026-11-04;EGLC;highest-temperature-in-london-on-november-4-2026;13°C;0.012;0.019;0.0155;0.019;0.988;0.05
+2026-11-03 06:00;M0;6;highest|london;2026-11-04;EGLC;highest-temperature-in-london-on-november-4-2026;14°C;0.001;0.002;0.0015;0.002;0.999;0.05
+2026-11-03 06:00;M0;6;highest|london;2026-11-04;EGLC;highest-temperature-in-london-on-november-4-2026;15°C;;0.001;;0.001;;0.05
+2026-11-03 06:00;M0;6;highest|london;2026-11-04;EGLC;highest-temperature-in-london-on-november-4-2026;16°C or higher;;0.001;;0.001;;0.05
