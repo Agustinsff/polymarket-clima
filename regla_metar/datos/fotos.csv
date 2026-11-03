@@ -24001,3 +24001,267 @@ momento_utc;momento;hora_local;serie;fecha;icao;slug;caja;bid;ask;medio;si_10;no
 2026-11-03 04:29;M0;6;highest|cape-town;2026-11-04;FACT;highest-temperature-in-cape-town-on-november-4-2026;32°C;0.021;0.054;0.0375;0.054;0.9795;0.05
 2026-11-03 04:29;M0;6;highest|cape-town;2026-11-04;FACT;highest-temperature-in-cape-town-on-november-4-2026;33°C;0.005;0.022;0.0135;0.022;0.995;0.05
 2026-11-03 04:29;M0;6;highest|cape-town;2026-11-04;FACT;highest-temperature-in-cape-town-on-november-4-2026;34°C or higher;0.006;0.013;0.0095;0.013;0.994;0.05
+2026-11-03 05:00;M1;6;lowest|paris;2026-11-03;LFPB;lowest-temperature-in-paris-on-november-3-2026;1°C or below;0.002;0.017;0.0095;0.017;0.998;0.05
+2026-11-03 05:00;M1;6;lowest|paris;2026-11-03;LFPB;lowest-temperature-in-paris-on-november-3-2026;2°C;0.002;0.017;0.0095;0.017;0.998;0.05
+2026-11-03 05:00;M1;6;lowest|paris;2026-11-03;LFPB;lowest-temperature-in-paris-on-november-3-2026;3°C;0.001;0.005;0.003;0.005;0.999;0.05
+2026-11-03 05:00;M1;6;lowest|paris;2026-11-03;LFPB;lowest-temperature-in-paris-on-november-3-2026;4°C;0.03;0.14;0.085;0.145;0.975;0.05
+2026-11-03 05:00;M1;6;lowest|paris;2026-11-03;LFPB;lowest-temperature-in-paris-on-november-3-2026;5°C;0.04;0.49;0.265;0.5;0.965;0.05
+2026-11-03 05:00;M1;6;lowest|paris;2026-11-03;LFPB;lowest-temperature-in-paris-on-november-3-2026;6°C;0.45;0.69;0.57;0.695;0.5518;0.05
+2026-11-03 05:00;M1;6;lowest|paris;2026-11-03;LFPB;lowest-temperature-in-paris-on-november-3-2026;7°C;0.06;0.12;0.09;0.12;0.94;0.05
+2026-11-03 05:00;M1;6;lowest|paris;2026-11-03;LFPB;lowest-temperature-in-paris-on-november-3-2026;8°C;;0.001;;0.001;;0.05
+2026-11-03 05:00;M1;6;lowest|paris;2026-11-03;LFPB;lowest-temperature-in-paris-on-november-3-2026;9°C;;0.001;;0.001;;0.05
+2026-11-03 05:00;M1;6;lowest|paris;2026-11-03;LFPB;lowest-temperature-in-paris-on-november-3-2026;10°C;;0.001;;0.001;;0.05
+2026-11-03 05:00;M1;6;lowest|paris;2026-11-03;LFPB;lowest-temperature-in-paris-on-november-3-2026;11°C or higher;;0.001;;0.001;;0.05
+2026-11-03 05:00;M1;6;lowest|munich;2026-11-03;EDDM;lowest-temperature-in-munich-on-november-3-2026;-3°C or below;;0.35;;0.35;;0.05
+2026-11-03 05:00;M1;6;lowest|munich;2026-11-03;EDDM;lowest-temperature-in-munich-on-november-3-2026;-2°C;0.001;0.008;0.0045;0.008;0.999;0.05
+2026-11-03 05:00;M1;6;lowest|munich;2026-11-03;EDDM;lowest-temperature-in-munich-on-november-3-2026;-1°C;;0.08;;0.08;;0.05
+2026-11-03 05:00;M1;6;lowest|munich;2026-11-03;EDDM;lowest-temperature-in-munich-on-november-3-2026;0°C;;0.86;;0.86;;0.05
+2026-11-03 05:00;M1;6;lowest|munich;2026-11-03;EDDM;lowest-temperature-in-munich-on-november-3-2026;1°C;;0.89;;0.89;;0.05
+2026-11-03 05:00;M1;6;lowest|munich;2026-11-03;EDDM;lowest-temperature-in-munich-on-november-3-2026;2°C;0.13;0.9;0.515;0.91;0.875;0.05
+2026-11-03 05:00;M1;6;lowest|munich;2026-11-03;EDDM;lowest-temperature-in-munich-on-november-3-2026;3°C;0.04;0.86;0.45;0.865;0.96;0.05
+2026-11-03 05:00;M1;6;lowest|munich;2026-11-03;EDDM;lowest-temperature-in-munich-on-november-3-2026;4°C;0.09;0.85;0.47;0.855;0.915;0.05
+2026-11-03 05:00;M1;6;lowest|munich;2026-11-03;EDDM;lowest-temperature-in-munich-on-november-3-2026;5°C;;0.001;;0.001;;0.05
+2026-11-03 05:00;M1;6;lowest|munich;2026-11-03;EDDM;lowest-temperature-in-munich-on-november-3-2026;6°C;;0.001;;0.001;;0.05
+2026-11-03 05:00;M1;6;lowest|munich;2026-11-03;EDDM;lowest-temperature-in-munich-on-november-3-2026;7°C or higher;;0.001;;0.001;;0.05
+2026-11-03 05:00;M1;6;lowest|milan;2026-11-03;LIMC;lowest-temperature-in-milan-on-november-3-2026;-3°C or below;;0.77;;0.77;;0.05
+2026-11-03 05:00;M1;6;lowest|milan;2026-11-03;LIMC;lowest-temperature-in-milan-on-november-3-2026;-2°C;0.002;0.016;0.009;0.016;0.998;0.05
+2026-11-03 05:00;M1;6;lowest|milan;2026-11-03;LIMC;lowest-temperature-in-milan-on-november-3-2026;-1°C;0.002;0.016;0.009;0.016;0.998;0.05
+2026-11-03 05:00;M1;6;lowest|milan;2026-11-03;LIMC;lowest-temperature-in-milan-on-november-3-2026;0°C;0.003;0.021;0.012;0.021;0.997;0.05
+2026-11-03 05:00;M1;6;lowest|milan;2026-11-03;LIMC;lowest-temperature-in-milan-on-november-3-2026;1°C;0.05;0.91;0.48;0.915;0.955;0.05
+2026-11-03 05:00;M1;6;lowest|milan;2026-11-03;LIMC;lowest-temperature-in-milan-on-november-3-2026;2°C;0.01;0.93;0.47;0.935;0.99;0.05
+2026-11-03 05:00;M1;6;lowest|milan;2026-11-03;LIMC;lowest-temperature-in-milan-on-november-3-2026;3°C;;0.001;;0.001;;0.05
+2026-11-03 05:00;M1;6;lowest|milan;2026-11-03;LIMC;lowest-temperature-in-milan-on-november-3-2026;4°C;;0.001;;0.001;;0.05
+2026-11-03 05:00;M1;6;lowest|milan;2026-11-03;LIMC;lowest-temperature-in-milan-on-november-3-2026;5°C;;0.001;;0.001;;0.05
+2026-11-03 05:00;M1;6;lowest|milan;2026-11-03;LIMC;lowest-temperature-in-milan-on-november-3-2026;6°C;;0.001;;0.001;;0.05
+2026-11-03 05:00;M1;6;lowest|milan;2026-11-03;LIMC;lowest-temperature-in-milan-on-november-3-2026;7°C or higher;;0.001;;0.001;;0.05
+2026-11-03 05:00;M1;6;lowest|madrid;2026-11-03;LEMD;lowest-temperature-in-madrid-on-november-3-2026;4°C or below;0.07;0.89;0.48;0.895;0.935;0.05
+2026-11-03 05:00;M1;6;lowest|madrid;2026-11-03;LEMD;lowest-temperature-in-madrid-on-november-3-2026;5°C;0.1;0.45;0.275;0.455;0.905;0.05
+2026-11-03 05:00;M1;6;lowest|madrid;2026-11-03;LEMD;lowest-temperature-in-madrid-on-november-3-2026;6°C;;0.001;;0.001;;0.05
+2026-11-03 05:00;M1;6;lowest|madrid;2026-11-03;LEMD;lowest-temperature-in-madrid-on-november-3-2026;7°C;;0.001;;0.001;;0.05
+2026-11-03 05:00;M1;6;lowest|madrid;2026-11-03;LEMD;lowest-temperature-in-madrid-on-november-3-2026;8°C;;0.001;;0.001;;0.05
+2026-11-03 05:00;M1;6;lowest|madrid;2026-11-03;LEMD;lowest-temperature-in-madrid-on-november-3-2026;9°C;;0.001;;0.001;;0.05
+2026-11-03 05:00;M1;6;lowest|madrid;2026-11-03;LEMD;lowest-temperature-in-madrid-on-november-3-2026;10°C;;0.001;;0.001;;0.05
+2026-11-03 05:00;M1;6;lowest|madrid;2026-11-03;LEMD;lowest-temperature-in-madrid-on-november-3-2026;11°C;;0.001;;0.001;;0.05
+2026-11-03 05:00;M1;6;lowest|madrid;2026-11-03;LEMD;lowest-temperature-in-madrid-on-november-3-2026;12°C;;0.001;;0.001;;0.05
+2026-11-03 05:00;M1;6;lowest|madrid;2026-11-03;LEMD;lowest-temperature-in-madrid-on-november-3-2026;13°C;;0.001;;0.001;;0.05
+2026-11-03 05:00;M1;6;lowest|madrid;2026-11-03;LEMD;lowest-temperature-in-madrid-on-november-3-2026;14°C or higher;;0.001;;0.001;;0.05
+2026-11-03 05:00;M1;6;lowest|warsaw;2026-11-03;EPWA;lowest-temperature-in-warsaw-on-november-3-2026;-2°C or below;0.001;0.059;0.03;0.059;0.999;0.05
+2026-11-03 05:00;M1;6;lowest|warsaw;2026-11-03;EPWA;lowest-temperature-in-warsaw-on-november-3-2026;-1°C;0.002;0.018;0.01;0.018;0.998;0.05
+2026-11-03 05:00;M1;6;lowest|warsaw;2026-11-03;EPWA;lowest-temperature-in-warsaw-on-november-3-2026;0°C;;0.18;;0.182;;0.05
+2026-11-03 05:00;M1;6;lowest|warsaw;2026-11-03;EPWA;lowest-temperature-in-warsaw-on-november-3-2026;1°C;;0.69;;0.69;;0.05
+2026-11-03 05:00;M1;6;lowest|warsaw;2026-11-03;EPWA;lowest-temperature-in-warsaw-on-november-3-2026;2°C;0.03;0.36;0.195;0.365;0.98;0.05
+2026-11-03 05:00;M1;6;lowest|warsaw;2026-11-03;EPWA;lowest-temperature-in-warsaw-on-november-3-2026;3°C;0.56;0.93;0.745;0.93;0.445;0.05
+2026-11-03 05:00;M1;6;lowest|warsaw;2026-11-03;EPWA;lowest-temperature-in-warsaw-on-november-3-2026;4°C;;0.001;;0.001;;0.05
+2026-11-03 05:00;M1;6;lowest|warsaw;2026-11-03;EPWA;lowest-temperature-in-warsaw-on-november-3-2026;5°C;;0.001;;0.001;;0.05
+2026-11-03 05:00;M1;6;lowest|warsaw;2026-11-03;EPWA;lowest-temperature-in-warsaw-on-november-3-2026;6°C;;0.001;;0.001;;0.05
+2026-11-03 05:00;M1;6;lowest|warsaw;2026-11-03;EPWA;lowest-temperature-in-warsaw-on-november-3-2026;7°C;;0.001;;0.001;;0.05
+2026-11-03 05:00;M1;6;lowest|warsaw;2026-11-03;EPWA;lowest-temperature-in-warsaw-on-november-3-2026;8°C or higher;;0.001;;0.001;;0.05
+2026-11-03 05:00;M1;6;lowest|amsterdam;2026-11-03;EHAM;lowest-temperature-in-amsterdam-on-november-3-2026;2°C or below;;0.47;;0.474;;0.05
+2026-11-03 05:00;M1;6;lowest|amsterdam;2026-11-03;EHAM;lowest-temperature-in-amsterdam-on-november-3-2026;3°C;;0.17;;0.17;;0.05
+2026-11-03 05:00;M1;6;lowest|amsterdam;2026-11-03;EHAM;lowest-temperature-in-amsterdam-on-november-3-2026;4°C;;0.18;;0.18;;0.05
+2026-11-03 05:00;M1;6;lowest|amsterdam;2026-11-03;EHAM;lowest-temperature-in-amsterdam-on-november-3-2026;5°C;0.01;0.9;0.455;0.905;0.99;0.05
+2026-11-03 05:00;M1;6;lowest|amsterdam;2026-11-03;EHAM;lowest-temperature-in-amsterdam-on-november-3-2026;6°C;0.01;0.9;0.455;0.905;0.99;0.05
+2026-11-03 05:00;M1;6;lowest|amsterdam;2026-11-03;EHAM;lowest-temperature-in-amsterdam-on-november-3-2026;7°C;0.02;0.81;0.415;0.81;0.98;0.05
+2026-11-03 05:00;M1;6;lowest|amsterdam;2026-11-03;EHAM;lowest-temperature-in-amsterdam-on-november-3-2026;8°C;0.08;0.9;0.49;0.905;0.955;0.05
+2026-11-03 05:00;M1;6;lowest|amsterdam;2026-11-03;EHAM;lowest-temperature-in-amsterdam-on-november-3-2026;9°C;0.001;0.03;0.0155;0.1822;0.999;0.05
+2026-11-03 05:00;M1;6;lowest|amsterdam;2026-11-03;EHAM;lowest-temperature-in-amsterdam-on-november-3-2026;10°C;;0.001;;0.001;;0.05
+2026-11-03 05:00;M1;6;lowest|amsterdam;2026-11-03;EHAM;lowest-temperature-in-amsterdam-on-november-3-2026;11°C;;0.001;;0.001;;0.05
+2026-11-03 05:00;M1;6;lowest|amsterdam;2026-11-03;EHAM;lowest-temperature-in-amsterdam-on-november-3-2026;12°C or higher;;0.001;;0.001;;0.05
+2026-11-03 05:00;M1;6;highest|paris;2026-11-03;LFPB;highest-temperature-in-paris-on-november-3-2026;5°C or below;;0.001;;0.001;;0.05
+2026-11-03 05:00;M1;6;highest|paris;2026-11-03;LFPB;highest-temperature-in-paris-on-november-3-2026;6°C;;0.001;;0.001;;0.05
+2026-11-03 05:00;M1;6;highest|paris;2026-11-03;LFPB;highest-temperature-in-paris-on-november-3-2026;7°C;;0.001;;0.001;;0.05
+2026-11-03 05:00;M1;6;highest|paris;2026-11-03;LFPB;highest-temperature-in-paris-on-november-3-2026;8°C;;0.001;;0.001;;0.05
+2026-11-03 05:00;M1;6;highest|paris;2026-11-03;LFPB;highest-temperature-in-paris-on-november-3-2026;9°C;0.007;0.01;0.0085;0.01;0.993;0.05
+2026-11-03 05:00;M1;6;highest|paris;2026-11-03;LFPB;highest-temperature-in-paris-on-november-3-2026;10°C;0.11;0.15;0.13;0.15;0.89;0.05
+2026-11-03 05:00;M1;6;highest|paris;2026-11-03;LFPB;highest-temperature-in-paris-on-november-3-2026;11°C;0.68;0.71;0.695;0.7145;0.32;0.05
+2026-11-03 05:00;M1;6;highest|paris;2026-11-03;LFPB;highest-temperature-in-paris-on-november-3-2026;12°C;0.15;0.17;0.16;0.1708;0.85;0.05
+2026-11-03 05:00;M1;6;highest|paris;2026-11-03;LFPB;highest-temperature-in-paris-on-november-3-2026;13°C;0.012;0.022;0.017;0.022;0.9885;0.05
+2026-11-03 05:00;M1;6;highest|paris;2026-11-03;LFPB;highest-temperature-in-paris-on-november-3-2026;14°C;;0.001;;0.001;;0.05
+2026-11-03 05:00;M1;6;highest|paris;2026-11-03;LFPB;highest-temperature-in-paris-on-november-3-2026;15°C or higher;;0.001;;0.001;;0.05
+2026-11-03 05:00;M1;6;highest|munich;2026-11-03;EDDM;highest-temperature-in-munich-on-november-3-2026;2°C or below;;0.001;;0.001;;0.05
+2026-11-03 05:00;M1;6;highest|munich;2026-11-03;EDDM;highest-temperature-in-munich-on-november-3-2026;3°C;;0.001;;0.001;;0.05
+2026-11-03 05:00;M1;6;highest|munich;2026-11-03;EDDM;highest-temperature-in-munich-on-november-3-2026;4°C;0.001;0.002;0.0015;0.002;0.999;0.05
+2026-11-03 05:00;M1;6;highest|munich;2026-11-03;EDDM;highest-temperature-in-munich-on-november-3-2026;5°C;0.007;0.009;0.008;0.009;0.993;0.05
+2026-11-03 05:00;M1;6;highest|munich;2026-11-03;EDDM;highest-temperature-in-munich-on-november-3-2026;6°C;0.26;0.29;0.275;0.29;0.74;0.05
+2026-11-03 05:00;M1;6;highest|munich;2026-11-03;EDDM;highest-temperature-in-munich-on-november-3-2026;7°C;0.57;0.63;0.6;0.63;0.43;0.05
+2026-11-03 05:00;M1;6;highest|munich;2026-11-03;EDDM;highest-temperature-in-munich-on-november-3-2026;8°C;0.093;0.12;0.1065;0.12;0.907;0.05
+2026-11-03 05:00;M1;6;highest|munich;2026-11-03;EDDM;highest-temperature-in-munich-on-november-3-2026;9°C;0.004;0.006;0.005;0.006;0.996;0.05
+2026-11-03 05:00;M1;6;highest|munich;2026-11-03;EDDM;highest-temperature-in-munich-on-november-3-2026;10°C;;0.001;;0.001;;0.05
+2026-11-03 05:00;M1;6;highest|munich;2026-11-03;EDDM;highest-temperature-in-munich-on-november-3-2026;11°C;;0.001;;0.001;;0.05
+2026-11-03 05:00;M1;6;highest|munich;2026-11-03;EDDM;highest-temperature-in-munich-on-november-3-2026;12°C or higher;;0.001;;0.001;;0.05
+2026-11-03 05:00;M1;6;highest|milan;2026-11-03;LIMC;highest-temperature-in-milan-on-november-3-2026;6°C or below;;0.001;;0.001;;0.05
+2026-11-03 05:00;M1;6;highest|milan;2026-11-03;LIMC;highest-temperature-in-milan-on-november-3-2026;7°C;;0.001;;0.001;;0.05
+2026-11-03 05:00;M1;6;highest|milan;2026-11-03;LIMC;highest-temperature-in-milan-on-november-3-2026;8°C;;0.001;;0.001;;0.05
+2026-11-03 05:00;M1;6;highest|milan;2026-11-03;LIMC;highest-temperature-in-milan-on-november-3-2026;9°C;;0.001;;0.001;;0.05
+2026-11-03 05:00;M1;6;highest|milan;2026-11-03;LIMC;highest-temperature-in-milan-on-november-3-2026;10°C;;0.001;;0.001;;0.05
+2026-11-03 05:00;M1;6;highest|milan;2026-11-03;LIMC;highest-temperature-in-milan-on-november-3-2026;11°C;;0.001;;0.001;;0.05
+2026-11-03 05:00;M1;6;highest|milan;2026-11-03;LIMC;highest-temperature-in-milan-on-november-3-2026;12°C;;0.005;;0.005;;0.05
+2026-11-03 05:00;M1;6;highest|milan;2026-11-03;LIMC;highest-temperature-in-milan-on-november-3-2026;13°C;0.096;0.19;0.143;0.19;0.904;0.05
+2026-11-03 05:00;M1;6;highest|milan;2026-11-03;LIMC;highest-temperature-in-milan-on-november-3-2026;14°C;0.45;0.55;0.5;0.555;0.5547;0.05
+2026-11-03 05:00;M1;6;highest|milan;2026-11-03;LIMC;highest-temperature-in-milan-on-november-3-2026;15°C;0.36;0.4;0.38;0.4;0.645;0.05
+2026-11-03 05:00;M1;6;highest|milan;2026-11-03;LIMC;highest-temperature-in-milan-on-november-3-2026;16°C or higher;0.022;0.05;0.036;0.05;0.978;0.05
+2026-11-03 05:00;M1;6;highest|madrid;2026-11-03;LEMD;highest-temperature-in-madrid-on-november-3-2026;11°C or below;;0.001;;0.001;;0.05
+2026-11-03 05:00;M1;6;highest|madrid;2026-11-03;LEMD;highest-temperature-in-madrid-on-november-3-2026;12°C;;0.001;;0.001;;0.05
+2026-11-03 05:00;M1;6;highest|madrid;2026-11-03;LEMD;highest-temperature-in-madrid-on-november-3-2026;13°C;0.001;0.002;0.0015;0.002;0.999;0.05
+2026-11-03 05:00;M1;6;highest|madrid;2026-11-03;LEMD;highest-temperature-in-madrid-on-november-3-2026;14°C;0.168;0.204;0.186;0.204;0.832;0.05
+2026-11-03 05:00;M1;6;highest|madrid;2026-11-03;LEMD;highest-temperature-in-madrid-on-november-3-2026;15°C;0.64;0.68;0.66;0.68;0.36;0.05
+2026-11-03 05:00;M1;6;highest|madrid;2026-11-03;LEMD;highest-temperature-in-madrid-on-november-3-2026;16°C;0.16;0.2;0.18;0.2;0.84;0.05
+2026-11-03 05:00;M1;6;highest|madrid;2026-11-03;LEMD;highest-temperature-in-madrid-on-november-3-2026;17°C;0.013;0.033;0.023;0.033;0.9871;0.05
+2026-11-03 05:00;M1;6;highest|madrid;2026-11-03;LEMD;highest-temperature-in-madrid-on-november-3-2026;18°C;0.003;0.007;0.005;0.007;0.997;0.05
+2026-11-03 05:00;M1;6;highest|madrid;2026-11-03;LEMD;highest-temperature-in-madrid-on-november-3-2026;19°C;;0.001;;0.001;;0.05
+2026-11-03 05:00;M1;6;highest|madrid;2026-11-03;LEMD;highest-temperature-in-madrid-on-november-3-2026;20°C;;0.001;;0.001;;0.05
+2026-11-03 05:00;M1;6;highest|madrid;2026-11-03;LEMD;highest-temperature-in-madrid-on-november-3-2026;21°C or higher;;0.001;;0.001;;0.05
+2026-11-03 05:00;M1;6;highest|warsaw;2026-11-03;EPWA;highest-temperature-in-warsaw-on-november-3-2026;3°C or below;;0.001;;0.001;;0.05
+2026-11-03 05:00;M1;6;highest|warsaw;2026-11-03;EPWA;highest-temperature-in-warsaw-on-november-3-2026;4°C;;0.001;;0.001;;0.05
+2026-11-03 05:00;M1;6;highest|warsaw;2026-11-03;EPWA;highest-temperature-in-warsaw-on-november-3-2026;5°C;;0.001;;0.001;;0.05
+2026-11-03 05:00;M1;6;highest|warsaw;2026-11-03;EPWA;highest-temperature-in-warsaw-on-november-3-2026;6°C;;0.001;;0.001;;0.05
+2026-11-03 05:00;M1;6;highest|warsaw;2026-11-03;EPWA;highest-temperature-in-warsaw-on-november-3-2026;7°C;0.003;0.022;0.0125;0.022;0.997;0.05
+2026-11-03 05:00;M1;6;highest|warsaw;2026-11-03;EPWA;highest-temperature-in-warsaw-on-november-3-2026;8°C;0.17;0.2;0.185;0.2;0.835;0.05
+2026-11-03 05:00;M1;6;highest|warsaw;2026-11-03;EPWA;highest-temperature-in-warsaw-on-november-3-2026;9°C;0.61;0.64;0.625;0.64;0.39;0.05
+2026-11-03 05:00;M1;6;highest|warsaw;2026-11-03;EPWA;highest-temperature-in-warsaw-on-november-3-2026;10°C;0.15;0.22;0.185;0.22;0.85;0.05
+2026-11-03 05:00;M1;6;highest|warsaw;2026-11-03;EPWA;highest-temperature-in-warsaw-on-november-3-2026;11°C;0.008;0.022;0.015;0.022;0.992;0.05
+2026-11-03 05:00;M1;6;highest|warsaw;2026-11-03;EPWA;highest-temperature-in-warsaw-on-november-3-2026;12°C;0.001;0.003;0.002;0.003;0.999;0.05
+2026-11-03 05:00;M1;6;highest|warsaw;2026-11-03;EPWA;highest-temperature-in-warsaw-on-november-3-2026;13°C or higher;0.001;0.002;0.0015;0.002;0.999;0.05
+2026-11-03 05:00;M1;6;highest|amsterdam;2026-11-03;EHAM;highest-temperature-in-amsterdam-on-november-3-2026;5°C or below;;0.001;;0.001;;0.05
+2026-11-03 05:00;M1;6;highest|amsterdam;2026-11-03;EHAM;highest-temperature-in-amsterdam-on-november-3-2026;6°C;;0.001;;0.001;;0.05
+2026-11-03 05:00;M1;6;highest|amsterdam;2026-11-03;EHAM;highest-temperature-in-amsterdam-on-november-3-2026;7°C;;0.001;;0.001;;0.05
+2026-11-03 05:00;M1;6;highest|amsterdam;2026-11-03;EHAM;highest-temperature-in-amsterdam-on-november-3-2026;8°C;;0.001;;0.001;;0.05
+2026-11-03 05:00;M1;6;highest|amsterdam;2026-11-03;EHAM;highest-temperature-in-amsterdam-on-november-3-2026;9°C;;0.001;;0.001;;0.05
+2026-11-03 05:00;M1;6;highest|amsterdam;2026-11-03;EHAM;highest-temperature-in-amsterdam-on-november-3-2026;10°C;0.03;0.06;0.045;0.0605;0.97;0.05
+2026-11-03 05:00;M1;6;highest|amsterdam;2026-11-03;EHAM;highest-temperature-in-amsterdam-on-november-3-2026;11°C;0.57;0.62;0.595;0.62;0.43;0.05
+2026-11-03 05:00;M1;6;highest|amsterdam;2026-11-03;EHAM;highest-temperature-in-amsterdam-on-november-3-2026;12°C;0.36;0.39;0.375;0.39;0.64;0.05
+2026-11-03 05:00;M1;6;highest|amsterdam;2026-11-03;EHAM;highest-temperature-in-amsterdam-on-november-3-2026;13°C;0.009;0.011;0.01;0.011;0.991;0.05
+2026-11-03 05:00;M1;6;highest|amsterdam;2026-11-03;EHAM;highest-temperature-in-amsterdam-on-november-3-2026;14°C;;0.001;;0.001;;0.05
+2026-11-03 05:00;M1;6;highest|amsterdam;2026-11-03;EHAM;highest-temperature-in-amsterdam-on-november-3-2026;15°C or higher;;0.001;;0.001;;0.05
+2026-11-03 05:00;M0;6;lowest|paris;2026-11-04;LFPB;lowest-temperature-in-paris-on-november-4-2026;-2°C or below;;0.35;;0.35;;0.05
+2026-11-03 05:00;M0;6;lowest|paris;2026-11-04;LFPB;lowest-temperature-in-paris-on-november-4-2026;-1°C;0.001;0.014;0.0075;0.014;0.999;0.05
+2026-11-03 05:00;M0;6;lowest|paris;2026-11-04;LFPB;lowest-temperature-in-paris-on-november-4-2026;0°C;0.003;0.049;0.026;0.049;0.997;0.05
+2026-11-03 05:00;M0;6;lowest|paris;2026-11-04;LFPB;lowest-temperature-in-paris-on-november-4-2026;1°C;0.01;0.143;0.0765;0.1435;0.99;0.05
+2026-11-03 05:00;M0;6;lowest|paris;2026-11-04;LFPB;lowest-temperature-in-paris-on-november-4-2026;2°C;0.12;0.16;0.14;0.16;0.88;0.05
+2026-11-03 05:00;M0;6;lowest|paris;2026-11-04;LFPB;lowest-temperature-in-paris-on-november-4-2026;3°C;0.24;0.57;0.405;0.57;0.765;0.05
+2026-11-03 05:00;M0;6;lowest|paris;2026-11-04;LFPB;lowest-temperature-in-paris-on-november-4-2026;4°C;0.17;0.44;0.305;0.445;0.835;0.05
+2026-11-03 05:00;M0;6;lowest|paris;2026-11-04;LFPB;lowest-temperature-in-paris-on-november-4-2026;5°C;0.17;0.48;0.325;0.485;0.83;0.05
+2026-11-03 05:00;M0;6;lowest|paris;2026-11-04;LFPB;lowest-temperature-in-paris-on-november-4-2026;6°C;;0.15;;0.15;;0.05
+2026-11-03 05:00;M0;6;lowest|paris;2026-11-04;LFPB;lowest-temperature-in-paris-on-november-4-2026;7°C;0.002;0.03;0.016;0.03;0.998;0.05
+2026-11-03 05:00;M0;6;lowest|paris;2026-11-04;LFPB;lowest-temperature-in-paris-on-november-4-2026;8°C or higher;;0.35;;0.35;;0.05
+2026-11-03 05:00;M0;6;lowest|munich;2026-11-04;EDDM;lowest-temperature-in-munich-on-november-4-2026;-2°C or below;;0.47;;0.4725;;0.05
+2026-11-03 05:00;M0;6;lowest|munich;2026-11-04;EDDM;lowest-temperature-in-munich-on-november-4-2026;-1°C;;0.11;;0.11;;0.05
+2026-11-03 05:00;M0;6;lowest|munich;2026-11-04;EDDM;lowest-temperature-in-munich-on-november-4-2026;0°C;0.02;0.13;0.075;0.13;;0.05
+2026-11-03 05:00;M0;6;lowest|munich;2026-11-04;EDDM;lowest-temperature-in-munich-on-november-4-2026;1°C;;0.68;;0.6875;;0.05
+2026-11-03 05:00;M0;6;lowest|munich;2026-11-04;EDDM;lowest-temperature-in-munich-on-november-4-2026;2°C;0.15;0.66;0.405;0.665;0.865;0.05
+2026-11-03 05:00;M0;6;lowest|munich;2026-11-04;EDDM;lowest-temperature-in-munich-on-november-4-2026;3°C;0.18;0.66;0.42;0.665;0.82;0.05
+2026-11-03 05:00;M0;6;lowest|munich;2026-11-04;EDDM;lowest-temperature-in-munich-on-november-4-2026;4°C;0.01;0.15;0.08;0.155;0.99;0.05
+2026-11-03 05:00;M0;6;lowest|munich;2026-11-04;EDDM;lowest-temperature-in-munich-on-november-4-2026;5°C;;0.15;;0.17;;0.05
+2026-11-03 05:00;M0;6;lowest|munich;2026-11-04;EDDM;lowest-temperature-in-munich-on-november-4-2026;6°C;;0.13;;0.13;;0.05
+2026-11-03 05:00;M0;6;lowest|munich;2026-11-04;EDDM;lowest-temperature-in-munich-on-november-4-2026;7°C;;0.1;;0.1;;0.05
+2026-11-03 05:00;M0;6;lowest|munich;2026-11-04;EDDM;lowest-temperature-in-munich-on-november-4-2026;8°C or higher;;0.44;;0.44;;0.05
+2026-11-03 05:00;M0;6;lowest|milan;2026-11-04;LIMC;lowest-temperature-in-milan-on-november-4-2026;-2°C or below;;0.47;;0.475;;0.05
+2026-11-03 05:00;M0;6;lowest|milan;2026-11-04;LIMC;lowest-temperature-in-milan-on-november-4-2026;-1°C;;0.66;;0.66;;0.05
+2026-11-03 05:00;M0;6;lowest|milan;2026-11-04;LIMC;lowest-temperature-in-milan-on-november-4-2026;0°C;;0.66;;0.66;;0.05
+2026-11-03 05:00;M0;6;lowest|milan;2026-11-04;LIMC;lowest-temperature-in-milan-on-november-4-2026;1°C;;0.09;;0.09;;0.05
+2026-11-03 05:00;M0;6;lowest|milan;2026-11-04;LIMC;lowest-temperature-in-milan-on-november-4-2026;2°C;;0.1;;0.1;;0.05
+2026-11-03 05:00;M0;6;lowest|milan;2026-11-04;LIMC;lowest-temperature-in-milan-on-november-4-2026;3°C;;0.11;;0.11;;0.05
+2026-11-03 05:00;M0;6;lowest|milan;2026-11-04;LIMC;lowest-temperature-in-milan-on-november-4-2026;4°C;;0.13;;0.13;;0.05
+2026-11-03 05:00;M0;6;lowest|milan;2026-11-04;LIMC;lowest-temperature-in-milan-on-november-4-2026;5°C;;0.24;;0.24;;0.05
+2026-11-03 05:00;M0;6;lowest|milan;2026-11-04;LIMC;lowest-temperature-in-milan-on-november-4-2026;6°C;;0.68;;0.6875;;0.05
+2026-11-03 05:00;M0;6;lowest|milan;2026-11-04;LIMC;lowest-temperature-in-milan-on-november-4-2026;7°C;0.31;0.67;0.49;0.675;0.76;0.05
+2026-11-03 05:00;M0;6;lowest|milan;2026-11-04;LIMC;lowest-temperature-in-milan-on-november-4-2026;8°C or higher;0.11;0.54;0.325;0.545;0.895;0.05
+2026-11-03 05:00;M0;6;lowest|madrid;2026-11-04;LEMD;lowest-temperature-in-madrid-on-november-4-2026;-1°C or below;;0.2;;0.2;;0.05
+2026-11-03 05:00;M0;6;lowest|madrid;2026-11-04;LEMD;lowest-temperature-in-madrid-on-november-4-2026;0°C;0.05;0.07;0.06;0.07;0.95;0.05
+2026-11-03 05:00;M0;6;lowest|madrid;2026-11-04;LEMD;lowest-temperature-in-madrid-on-november-4-2026;1°C;0.31;0.32;0.315;0.32;0.69;0.05
+2026-11-03 05:00;M0;6;lowest|madrid;2026-11-04;LEMD;lowest-temperature-in-madrid-on-november-4-2026;2°C;0.33;0.37;0.35;0.37;0.67;0.05
+2026-11-03 05:00;M0;6;lowest|madrid;2026-11-04;LEMD;lowest-temperature-in-madrid-on-november-4-2026;3°C;0.15;0.2;0.175;0.2;0.85;0.05
+2026-11-03 05:00;M0;6;lowest|madrid;2026-11-04;LEMD;lowest-temperature-in-madrid-on-november-4-2026;4°C;;0.18;;0.18;;0.05
+2026-11-03 05:00;M0;6;lowest|madrid;2026-11-04;LEMD;lowest-temperature-in-madrid-on-november-4-2026;5°C;;0.14;;0.14;;0.05
+2026-11-03 05:00;M0;6;lowest|madrid;2026-11-04;LEMD;lowest-temperature-in-madrid-on-november-4-2026;6°C;;0.14;;0.14;;0.05
+2026-11-03 05:00;M0;6;lowest|madrid;2026-11-04;LEMD;lowest-temperature-in-madrid-on-november-4-2026;7°C;;0.11;;0.11;;0.05
+2026-11-03 05:00;M0;6;lowest|madrid;2026-11-04;LEMD;lowest-temperature-in-madrid-on-november-4-2026;8°C;0.001;0.02;0.0105;0.02;0.999;0.05
+2026-11-03 05:00;M0;6;lowest|madrid;2026-11-04;LEMD;lowest-temperature-in-madrid-on-november-4-2026;9°C or higher;0.001;0.02;0.0105;0.02;0.999;0.05
+2026-11-03 05:00;M0;6;lowest|warsaw;2026-11-04;EPWA;lowest-temperature-in-warsaw-on-november-4-2026;-4°C or below;;0.44;;0.4425;;0.05
+2026-11-03 05:00;M0;6;lowest|warsaw;2026-11-04;EPWA;lowest-temperature-in-warsaw-on-november-4-2026;-3°C;;0.64;;0.64;;0.05
+2026-11-03 05:00;M0;6;lowest|warsaw;2026-11-04;EPWA;lowest-temperature-in-warsaw-on-november-4-2026;-2°C;;0.2;;0.2;;0.05
+2026-11-03 05:00;M0;6;lowest|warsaw;2026-11-04;EPWA;lowest-temperature-in-warsaw-on-november-4-2026;-1°C;;0.27;;0.37;;0.05
+2026-11-03 05:00;M0;6;lowest|warsaw;2026-11-04;EPWA;lowest-temperature-in-warsaw-on-november-4-2026;0°C;;0.68;;0.6875;;0.05
+2026-11-03 05:00;M0;6;lowest|warsaw;2026-11-04;EPWA;lowest-temperature-in-warsaw-on-november-4-2026;1°C;0.03;0.65;0.34;0.65;0.975;0.05
+2026-11-03 05:00;M0;6;lowest|warsaw;2026-11-04;EPWA;lowest-temperature-in-warsaw-on-november-4-2026;2°C;;0.66;;0.66;;0.05
+2026-11-03 05:00;M0;6;lowest|warsaw;2026-11-04;EPWA;lowest-temperature-in-warsaw-on-november-4-2026;3°C;;0.34;;0.34;;0.05
+2026-11-03 05:00;M0;6;lowest|warsaw;2026-11-04;EPWA;lowest-temperature-in-warsaw-on-november-4-2026;4°C;;0.17;;0.175;;0.05
+2026-11-03 05:00;M0;6;lowest|warsaw;2026-11-04;EPWA;lowest-temperature-in-warsaw-on-november-4-2026;5°C;;0.27;;0.475;;0.05
+2026-11-03 05:00;M0;6;lowest|warsaw;2026-11-04;EPWA;lowest-temperature-in-warsaw-on-november-4-2026;6°C or higher;;0.49;;0.4925;;0.05
+2026-11-03 05:00;M0;6;lowest|amsterdam;2026-11-04;EHAM;lowest-temperature-in-amsterdam-on-november-4-2026;1°C or below;;0.49;;0.495;;0.05
+2026-11-03 05:00;M0;6;lowest|amsterdam;2026-11-04;EHAM;lowest-temperature-in-amsterdam-on-november-4-2026;2°C;;0.17;;0.175;;0.05
+2026-11-03 05:00;M0;6;lowest|amsterdam;2026-11-04;EHAM;lowest-temperature-in-amsterdam-on-november-4-2026;3°C;;0.17;;0.175;;0.05
+2026-11-03 05:00;M0;6;lowest|amsterdam;2026-11-04;EHAM;lowest-temperature-in-amsterdam-on-november-4-2026;4°C;;0.68;;0.6875;;0.05
+2026-11-03 05:00;M0;6;lowest|amsterdam;2026-11-04;EHAM;lowest-temperature-in-amsterdam-on-november-4-2026;5°C;0.08;0.67;0.375;0.67;0.925;0.05
+2026-11-03 05:00;M0;6;lowest|amsterdam;2026-11-04;EHAM;lowest-temperature-in-amsterdam-on-november-4-2026;6°C;;0.66;;0.66;;0.05
+2026-11-03 05:00;M0;6;lowest|amsterdam;2026-11-04;EHAM;lowest-temperature-in-amsterdam-on-november-4-2026;7°C;;0.66;;0.66;;0.05
+2026-11-03 05:00;M0;6;lowest|amsterdam;2026-11-04;EHAM;lowest-temperature-in-amsterdam-on-november-4-2026;8°C;;0.17;;0.175;;0.05
+2026-11-03 05:00;M0;6;lowest|amsterdam;2026-11-04;EHAM;lowest-temperature-in-amsterdam-on-november-4-2026;9°C;;0.27;;0.475;;0.05
+2026-11-03 05:00;M0;6;lowest|amsterdam;2026-11-04;EHAM;lowest-temperature-in-amsterdam-on-november-4-2026;10°C;;0.26;;0.265;;0.05
+2026-11-03 05:00;M0;6;lowest|amsterdam;2026-11-04;EHAM;lowest-temperature-in-amsterdam-on-november-4-2026;11°C or higher;;0.49;;0.495;;0.05
+2026-11-03 05:00;M0;6;highest|paris;2026-11-04;LFPB;highest-temperature-in-paris-on-november-4-2026;5°C or below;0.001;0.002;0.0015;0.002;0.999;0.05
+2026-11-03 05:00;M0;6;highest|paris;2026-11-04;LFPB;highest-temperature-in-paris-on-november-4-2026;6°C;0.001;0.002;0.0015;0.002;0.999;0.05
+2026-11-03 05:00;M0;6;highest|paris;2026-11-04;LFPB;highest-temperature-in-paris-on-november-4-2026;7°C;0.002;0.006;0.004;0.006;0.998;0.05
+2026-11-03 05:00;M0;6;highest|paris;2026-11-04;LFPB;highest-temperature-in-paris-on-november-4-2026;8°C;0.004;0.005;0.0045;0.005;0.996;0.05
+2026-11-03 05:00;M0;6;highest|paris;2026-11-04;LFPB;highest-temperature-in-paris-on-november-4-2026;9°C;0.08;0.1;0.09;0.1;0.922;0.05
+2026-11-03 05:00;M0;6;highest|paris;2026-11-04;LFPB;highest-temperature-in-paris-on-november-4-2026;10°C;0.53;0.55;0.54;0.555;0.47;0.05
+2026-11-03 05:00;M0;6;highest|paris;2026-11-04;LFPB;highest-temperature-in-paris-on-november-4-2026;11°C;0.36;0.37;0.365;0.37;0.64;0.05
+2026-11-03 05:00;M0;6;highest|paris;2026-11-04;LFPB;highest-temperature-in-paris-on-november-4-2026;12°C;0.018;0.04;0.029;0.0443;0.982;0.05
+2026-11-03 05:00;M0;6;highest|paris;2026-11-04;LFPB;highest-temperature-in-paris-on-november-4-2026;13°C;0.003;0.007;0.005;0.007;0.997;0.05
+2026-11-03 05:00;M0;6;highest|paris;2026-11-04;LFPB;highest-temperature-in-paris-on-november-4-2026;14°C;0.001;0.005;0.003;0.005;0.999;0.05
+2026-11-03 05:00;M0;6;highest|paris;2026-11-04;LFPB;highest-temperature-in-paris-on-november-4-2026;15°C or higher;0.001;0.002;0.0015;0.002;0.999;0.05
+2026-11-03 05:00;M0;6;highest|munich;2026-11-04;EDDM;highest-temperature-in-munich-on-november-4-2026;3°C or below;0.001;0.002;0.0015;0.002;0.999;0.05
+2026-11-03 05:00;M0;6;highest|munich;2026-11-04;EDDM;highest-temperature-in-munich-on-november-4-2026;4°C;;0.002;;0.002;;0.05
+2026-11-03 05:00;M0;6;highest|munich;2026-11-04;EDDM;highest-temperature-in-munich-on-november-4-2026;5°C;0.01;0.011;0.0105;0.011;0.99;0.05
+2026-11-03 05:00;M0;6;highest|munich;2026-11-04;EDDM;highest-temperature-in-munich-on-november-4-2026;6°C;0.02;0.04;0.03;0.04;0.98;0.05
+2026-11-03 05:00;M0;6;highest|munich;2026-11-04;EDDM;highest-temperature-in-munich-on-november-4-2026;7°C;0.49;0.52;0.505;0.525;0.51;0.05
+2026-11-03 05:00;M0;6;highest|munich;2026-11-04;EDDM;highest-temperature-in-munich-on-november-4-2026;8°C;0.41;0.46;0.435;0.46;0.59;0.05
+2026-11-03 05:00;M0;6;highest|munich;2026-11-04;EDDM;highest-temperature-in-munich-on-november-4-2026;9°C;0.019;0.031;0.025;0.031;0.981;0.05
+2026-11-03 05:00;M0;6;highest|munich;2026-11-04;EDDM;highest-temperature-in-munich-on-november-4-2026;10°C;0.003;0.009;0.006;0.009;0.997;0.05
+2026-11-03 05:00;M0;6;highest|munich;2026-11-04;EDDM;highest-temperature-in-munich-on-november-4-2026;11°C;0.001;0.002;0.0015;0.002;0.999;0.05
+2026-11-03 05:00;M0;6;highest|munich;2026-11-04;EDDM;highest-temperature-in-munich-on-november-4-2026;12°C;0.001;0.002;0.0015;0.002;0.999;0.05
+2026-11-03 05:00;M0;6;highest|munich;2026-11-04;EDDM;highest-temperature-in-munich-on-november-4-2026;13°C or higher;0.001;0.003;0.002;0.003;0.999;0.05
+2026-11-03 05:00;M0;6;highest|milan;2026-11-04;LIMC;highest-temperature-in-milan-on-november-4-2026;7°C or below;0.001;0.01;0.0055;0.01;0.999;0.05
+2026-11-03 05:00;M0;6;highest|milan;2026-11-04;LIMC;highest-temperature-in-milan-on-november-4-2026;8°C;0.001;0.009;0.005;0.009;0.999;0.05
+2026-11-03 05:00;M0;6;highest|milan;2026-11-04;LIMC;highest-temperature-in-milan-on-november-4-2026;9°C;0.001;0.019;0.01;0.019;0.999;0.05
+2026-11-03 05:00;M0;6;highest|milan;2026-11-04;LIMC;highest-temperature-in-milan-on-november-4-2026;10°C;0.01;0.017;0.0135;0.0178;0.99;0.05
+2026-11-03 05:00;M0;6;highest|milan;2026-11-04;LIMC;highest-temperature-in-milan-on-november-4-2026;11°C;0.089;0.143;0.116;0.1435;0.916;0.05
+2026-11-03 05:00;M0;6;highest|milan;2026-11-04;LIMC;highest-temperature-in-milan-on-november-4-2026;12°C;0.4;0.44;0.42;0.44;0.6;0.05
+2026-11-03 05:00;M0;6;highest|milan;2026-11-04;LIMC;highest-temperature-in-milan-on-november-4-2026;13°C;0.33;0.37;0.35;0.37;0.67;0.05
+2026-11-03 05:00;M0;6;highest|milan;2026-11-04;LIMC;highest-temperature-in-milan-on-november-4-2026;14°C;0.09;0.11;0.1;0.115;0.91;0.05
+2026-11-03 05:00;M0;6;highest|milan;2026-11-04;LIMC;highest-temperature-in-milan-on-november-4-2026;15°C;0.006;0.019;0.0125;0.019;0.994;0.05
+2026-11-03 05:00;M0;6;highest|milan;2026-11-04;LIMC;highest-temperature-in-milan-on-november-4-2026;16°C;0.002;0.008;0.005;0.008;0.998;0.05
+2026-11-03 05:00;M0;6;highest|milan;2026-11-04;LIMC;highest-temperature-in-milan-on-november-4-2026;17°C or higher;0.001;0.009;0.005;0.009;0.999;0.05
+2026-11-03 05:00;M0;6;highest|madrid;2026-11-04;LEMD;highest-temperature-in-madrid-on-november-4-2026;9°C or below;;0.002;;0.002;;0.05
+2026-11-03 05:00;M0;6;highest|madrid;2026-11-04;LEMD;highest-temperature-in-madrid-on-november-4-2026;10°C;;0.001;;0.001;;0.05
+2026-11-03 05:00;M0;6;highest|madrid;2026-11-04;LEMD;highest-temperature-in-madrid-on-november-4-2026;11°C;0.001;0.002;0.0015;0.002;0.999;0.05
+2026-11-03 05:00;M0;6;highest|madrid;2026-11-04;LEMD;highest-temperature-in-madrid-on-november-4-2026;12°C;0.002;0.009;0.0055;0.009;0.998;0.05
+2026-11-03 05:00;M0;6;highest|madrid;2026-11-04;LEMD;highest-temperature-in-madrid-on-november-4-2026;13°C;0.005;0.006;0.0055;0.006;0.995;0.05
+2026-11-03 05:00;M0;6;highest|madrid;2026-11-04;LEMD;highest-temperature-in-madrid-on-november-4-2026;14°C;0.21;0.23;0.22;0.23;0.79;0.05
+2026-11-03 05:00;M0;6;highest|madrid;2026-11-04;LEMD;highest-temperature-in-madrid-on-november-4-2026;15°C;0.53;0.58;0.555;0.58;0.47;0.05
+2026-11-03 05:00;M0;6;highest|madrid;2026-11-04;LEMD;highest-temperature-in-madrid-on-november-4-2026;16°C;0.21;0.23;0.22;0.23;0.79;0.05
+2026-11-03 05:00;M0;6;highest|madrid;2026-11-04;LEMD;highest-temperature-in-madrid-on-november-4-2026;17°C;0.016;0.025;0.0205;0.0255;0.9894;0.05
+2026-11-03 05:00;M0;6;highest|madrid;2026-11-04;LEMD;highest-temperature-in-madrid-on-november-4-2026;18°C;0.002;0.005;0.0035;0.005;0.998;0.05
+2026-11-03 05:00;M0;6;highest|madrid;2026-11-04;LEMD;highest-temperature-in-madrid-on-november-4-2026;19°C or higher;0.001;0.002;0.0015;0.002;0.999;0.05
+2026-11-03 05:00;M0;6;highest|warsaw;2026-11-04;EPWA;highest-temperature-in-warsaw-on-november-4-2026;2°C or below;;0.004;;0.004;;0.05
+2026-11-03 05:00;M0;6;highest|warsaw;2026-11-04;EPWA;highest-temperature-in-warsaw-on-november-4-2026;3°C;0.001;0.004;0.0025;0.004;0.999;0.05
+2026-11-03 05:00;M0;6;highest|warsaw;2026-11-04;EPWA;highest-temperature-in-warsaw-on-november-4-2026;4°C;0.001;0.012;0.0065;0.012;0.999;0.05
+2026-11-03 05:00;M0;6;highest|warsaw;2026-11-04;EPWA;highest-temperature-in-warsaw-on-november-4-2026;5°C;0.001;0.002;0.0015;0.002;0.999;0.05
+2026-11-03 05:00;M0;6;highest|warsaw;2026-11-04;EPWA;highest-temperature-in-warsaw-on-november-4-2026;6°C;0.003;0.016;0.0095;0.016;0.997;0.05
+2026-11-03 05:00;M0;6;highest|warsaw;2026-11-04;EPWA;highest-temperature-in-warsaw-on-november-4-2026;7°C;0.025;0.049;0.037;0.0495;0.9755;0.05
+2026-11-03 05:00;M0;6;highest|warsaw;2026-11-04;EPWA;highest-temperature-in-warsaw-on-november-4-2026;8°C;0.38;0.4;0.39;0.405;0.62;0.05
+2026-11-03 05:00;M0;6;highest|warsaw;2026-11-04;EPWA;highest-temperature-in-warsaw-on-november-4-2026;9°C;0.52;0.55;0.535;0.555;0.48;0.05
+2026-11-03 05:00;M0;6;highest|warsaw;2026-11-04;EPWA;highest-temperature-in-warsaw-on-november-4-2026;10°C;0.04;0.07;0.055;0.07;0.96;0.05
+2026-11-03 05:00;M0;6;highest|warsaw;2026-11-04;EPWA;highest-temperature-in-warsaw-on-november-4-2026;11°C;0.008;0.009;0.0085;0.009;0.992;0.05
+2026-11-03 05:00;M0;6;highest|warsaw;2026-11-04;EPWA;highest-temperature-in-warsaw-on-november-4-2026;12°C or higher;0.001;0.008;0.0045;0.008;0.999;0.05
+2026-11-03 05:00;M0;6;highest|amsterdam;2026-11-04;EHAM;highest-temperature-in-amsterdam-on-november-4-2026;4°C or below;;0.002;;0.002;;0.05
+2026-11-03 05:00;M0;6;highest|amsterdam;2026-11-04;EHAM;highest-temperature-in-amsterdam-on-november-4-2026;5°C;0.001;0.002;0.0015;0.002;0.999;0.05
+2026-11-03 05:00;M0;6;highest|amsterdam;2026-11-04;EHAM;highest-temperature-in-amsterdam-on-november-4-2026;6°C;0.002;0.01;0.006;0.01;0.998;0.05
+2026-11-03 05:00;M0;6;highest|amsterdam;2026-11-04;EHAM;highest-temperature-in-amsterdam-on-november-4-2026;7°C;0.002;0.01;0.006;0.01;0.998;0.05
+2026-11-03 05:00;M0;6;highest|amsterdam;2026-11-04;EHAM;highest-temperature-in-amsterdam-on-november-4-2026;8°C;0.01;0.021;0.0155;0.021;0.99;0.05
+2026-11-03 05:00;M0;6;highest|amsterdam;2026-11-04;EHAM;highest-temperature-in-amsterdam-on-november-4-2026;9°C;0.1;0.13;0.115;0.135;0.9;0.05
+2026-11-03 05:00;M0;6;highest|amsterdam;2026-11-04;EHAM;highest-temperature-in-amsterdam-on-november-4-2026;10°C;0.5;0.54;0.52;0.54;0.5;0.05
+2026-11-03 05:00;M0;6;highest|amsterdam;2026-11-04;EHAM;highest-temperature-in-amsterdam-on-november-4-2026;11°C;0.32;0.34;0.33;0.34;0.68;0.05
+2026-11-03 05:00;M0;6;highest|amsterdam;2026-11-04;EHAM;highest-temperature-in-amsterdam-on-november-4-2026;12°C;0.015;0.03;0.0225;0.03;0.9855;0.05
+2026-11-03 05:00;M0;6;highest|amsterdam;2026-11-04;EHAM;highest-temperature-in-amsterdam-on-november-4-2026;13°C;0.001;0.009;0.005;0.009;0.999;0.05
+2026-11-03 05:00;M0;6;highest|amsterdam;2026-11-04;EHAM;highest-temperature-in-amsterdam-on-november-4-2026;14°C or higher;0.001;0.006;0.0035;0.006;0.999;0.05
