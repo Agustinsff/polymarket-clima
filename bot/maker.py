@@ -283,6 +283,8 @@ class Maker:
         self.f_parar_auto = os.path.join(carpeta, f"PARAR_maker_{self.modo}")
         self.est = self._cargar()
         self.ej = ej or {"papel": Papel, "real": Real}[self.modo](m, self.est)
+        # avisos al celular: siempre en real; en papel solo si la config lo pide (si no, marea)
+        self.avisar = avisar if (self.modo == "real" or cfg["maker"].get("avisar_papel")) else (lambda t: None)
 
     # ---------- archivos ----------
     def _cargar(self):
@@ -337,7 +339,7 @@ class Maker:
         with open(self.f_parar_auto, "w", encoding="utf-8") as f:
             f.write(f"{datetime.now(timezone.utc):%Y-%m-%d %H:%M}Z {motivo}\n")
         log(f"FRENO: {motivo}")
-        avisar(f"Maker ({self.modo}) FRENADO: {motivo}. Ordenes canceladas. Para volver: borrar bot/PARAR_maker_{self.modo}.")
+        self.avisar(f"Maker ({self.modo}) FRENADO: {motivo}. Ordenes canceladas. Para volver: borrar bot/PARAR_maker_{self.modo}.")
 
     def frenado(self):
         for f in (self.f_parar, self.f_parar_auto):
@@ -466,7 +468,7 @@ class Maker:
                 costo["acciones"] = tot
             else:
                 costo["acciones"] = max(costo["acciones"] - q, 0)
-            avisar(f"Maker ({self.modo}): {o['lado']} {q:.0f} acc a {o['precio']} en {c.get('caja', '?')} ({c.get('evento', '')})")
+            self.avisar(f"Maker ({self.modo}): {o['lado']} {q:.0f} acc a {o['precio']} en {c.get('caja', '?')} ({c.get('evento', '')})")
             log(f"llenado: {o['lado']} {q:.1f} a {o['precio']} en {c.get('caja', '?')}")
 
     def liquidar(self):
@@ -547,7 +549,7 @@ class Maker:
                 return
             self.est["recompensas"][ayer] = real if real is not None else est.get(ayer, 0)
             self.resumen()
-            avisar(f"Maker ({self.modo}) {ayer}: recompensa {self.est['recompensas'][ayer]:.2f} US$, "
+            self.avisar(f"Maker ({self.modo}) {ayer}: recompensa {self.est['recompensas'][ayer]:.2f} US$, "
                    f"resultado de llenados {self.pnl(ayer):+.2f}, {len(self.est['cajas'])} cajas.")
 
     def resumen(self):
@@ -589,7 +591,7 @@ def main():
     if que == "bucle":
         log(f"maker ({bot.modo}) arranca: {cfg['maker']['cajas']} cajas, US$ {cfg['maker']['capital_usd']}, "
             f"orden a {cfg['maker']['distancia'] * 100:.0f} c del medio")
-        avisar(f"Maker ({bot.modo}) arrancó.")
+        bot.avisar(f"Maker ({bot.modo}) arrancó.")
         try:
             while True:
                 t0 = time.time()
@@ -606,10 +608,10 @@ def main():
                 log("ordenes canceladas")
             except Exception as ex:
                 log(f"NO SE PUDIERON CANCELAR LAS ORDENES: {ex!r} (cancelar a mano en polymarket.com)")
-                avisar(f"Maker ({bot.modo}): se apagó y NO pudo cancelar las órdenes. Cancelalas a mano en polymarket.com.")
+                bot.avisar(f"Maker ({bot.modo}): se apagó y NO pudo cancelar las órdenes. Cancelalas a mano en polymarket.com.")
             bot._guardar()
             bot.resumen()
-            avisar(f"Maker ({bot.modo}) apagado.")
+            bot.avisar(f"Maker ({bot.modo}) apagado.")
 
 
 if __name__ == "__main__":

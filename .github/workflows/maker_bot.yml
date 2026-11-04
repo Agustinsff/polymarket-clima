@@ -1,0 +1,50 @@
+name: maker_bot
+# Bot maker en PAPEL con datos reales (bot/maker.py, ver bot/LEEME.md). No opera. Encadenado: ~5 h por corrida,
+# sube los archivos cada ~55 min. Se apaga solo cuando config.json dice "apagar_despues_de" o si existe bot/PARAR.
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "41 */6 * * *"   # respaldo si la cadena se corta
+permissions:
+  contents: write
+  actions: write
+concurrency:
+  group: maker_bot
+  cancel-in-progress: false
+jobs:
+  papel:
+    runs-on: ubuntu-latest
+    timeout-minutes: 355
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -r requirements.txt
+      - name: Configurar git
+        run: |
+          git config user.name "polymarket-clima-bot"
+          git config user.email "actions@users.noreply.github.com"
+      - name: Bot maker en papel (6 tramos de 55 min, sube los archivos al final de cada uno)
+        env:
+          BOT_NTFY_TEMA: ${{ secrets.BOT_NTFY_TEMA }}
+        run: |
+          for i in 1 2 3 4 5 6; do
+            [ -f bot/PARAR ] && break
+            timeout -s INT 3300 python bot/maker.py bucle || true
+            git add bot/maker_ops_papel.csv bot/maker_estado_papel.json bot/maker_resumen_papel.md 2>/dev/null
+            git commit -qm "datos: bot maker en papel $(date -u +%Y-%m-%dT%H:%MZ)" || true
+            for j in 1 2 3 4 5; do
+              git pull -q --rebase --autostash origin main && git push -q origin HEAD:main && break
+              sleep $((RANDOM % 20 + 5))
+            done
+          done
+      - name: Encadenar la proxima corrida
+        if: always()
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          [ -f bot/PARAR ] && exit 0
+          gh workflow run maker_bot.yml --ref main -R ${{ github.repository }}
