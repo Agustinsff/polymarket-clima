@@ -6,16 +6,16 @@
 "cid": "0x56b759ca57163a379182eb125f94b6364638bf30bada55838b163b3f9e31f00e",
 "si": "21406616165018940424771227028318721298919890229477530770809439063301775257391",
 "no": "56842884281234453786667240161572914365959357103494073198475343820080850150539",
-"pozo": 44,
+"pozo": 43,
 "v": 0.045,
 "tam_min": 20,
 "tick": 0.01,
 "fin": "2026-11-06T12:00:00Z",
-"medio": 0.39,
+"medio": 0.38,
 "spread": 0.04,
 "tam": 25,
-"rec_pes": 0.141,
-"comp": 2396.1
+"rec_pes": 0.142,
+"comp": 2329.0
 },
 "0x4cae418fba1e2a106be1ef7f83abf67a7a68912349ef3c8e1461b97ebea12486": {
 "evento": "highest-temperature-in-shenzhen-on-november-5-2026",
@@ -23,16 +23,16 @@
 "cid": "0x4cae418fba1e2a106be1ef7f83abf67a7a68912349ef3c8e1461b97ebea12486",
 "si": "12076311092033839956256498898745730213156259263640413866915718963139011192071",
 "no": "36887982106311856685021312612348175937128156032255613812419364632709747446414",
-"pozo": 55,
+"pozo": 53,
 "v": 0.045,
 "tam_min": 20,
 "tick": 0.01,
 "fin": "2026-11-05T12:00:00Z",
-"medio": 0.6,
-"spread": 0.04,
+"medio": 0.605,
+"spread": 0.03,
 "tam": 25,
-"rec_pes": 1.464,
-"comp": 274.4
+"rec_pes": 4.581,
+"comp": 73.8
 },
 "0xb81c828bbc20ba9b6af9a8279d687485daf8389f45da5c7ebc490768b14b0b5e": {
 "evento": "highest-temperature-in-karachi-on-november-6-2026",
@@ -48,20 +48,20 @@
 "medio": 0.51,
 "spread": 0.04,
 "tam": 25,
-"rec_pes": 1.266,
-"comp": 313.6
+"rec_pes": 1.154,
+"comp": 345.7
 }
 },
 "resultados": {},
 "errores_seguidos": 0,
 "recompensas": {
 "estimada": {
-"2026-11-04": 4.82
+"2026-11-04": 5.053
 }
 },
 "costo": {},
 "ordenes": {},
 "inventario": {},
-"n_ordenes": 261,
-"ultimo_ciclo": "2026-11-04 21:33:43"
+"n_ordenes": 295,
+"ultimo_ciclo": "2026-11-04 22:28:46"
 }
