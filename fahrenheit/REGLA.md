@@ -41,3 +41,10 @@ cada caja de 12 al ask, con comisión 0,05·p(1−p) para todas las fotos. Se in
   evalúa con la aritmética: si la ventaja estimada (≈ 8 % del precio) no supera spread + comisión (≈ 2,5–3 ¢ a 30 ¢),
   no se propone.
 - A no pasa, o B "lo cobra": se cierra.
+
+## Cambios después de fijada la regla
+
+- 4-nov-2026 14:00Z, después de la primera corrida: la prueba C usaba el ask de la foto aunque el libro estuviera vacío
+  (ask de 0,5–0,97 sin bid), lo que daba −50 %. Se cambia a: solo libros con spread ≤ 5 ¢ y precio real de 10 acciones
+  (`si_10`). Es informativa, no cambia el veredicto. Se agrega al informe la explicación de por qué A no pasa (ASOS mide
+  en °F enteros).
