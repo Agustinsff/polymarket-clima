@@ -6,16 +6,16 @@
 "cid": "0xa6fbdd59aa5f241484bec1ce295ce614ac48e1e8d010d3f29a0d9ca21a6bde2d",
 "si": "37496092182886108083406066824335844845108444022885228541242291260556231593182",
 "no": "73867733762734007755596191259767285357240235334285687736453821978412162051407",
-"pozo": 56,
+"pozo": 58,
 "v": 0.045,
 "tam_min": 20,
 "tick": 0.01,
 "fin": "2026-11-05T12:00:00Z",
-"medio": 0.585,
+"medio": 0.615,
 "spread": 0.03,
 "tam": 25,
-"rec_pes": 4.697,
-"comp": 76.6
+"rec_pes": 3.864,
+"comp": 100.4
 },
 "0x21055cf99dda955709ee67d969273ed25e0a3a4babb095875f7d973d14ddeccb": {
 "evento": "highest-temperature-in-beijing-on-november-6-2026",
@@ -31,8 +31,8 @@
 "medio": 0.495,
 "spread": 0.05,
 "tam": 25,
-"rec_pes": 4.669,
-"comp": 73.8
+"rec_pes": 5.689,
+"comp": 57.8
 },
 "0x08f9885d161327ef7a3bc1bac545b0c3690bb4c33dbaebb35e515e70ae1dc1cd": {
 "evento": "highest-temperature-in-chongqing-on-november-5-2026",
@@ -45,23 +45,23 @@
 "tam_min": 20,
 "tick": 0.01,
 "fin": "2026-11-05T12:00:00Z",
-"medio": 0.385,
-"spread": 0.03,
+"medio": 0.39,
+"spread": 0.04,
 "tam": 25,
-"rec_pes": 2.362,
-"comp": 131.6
+"rec_pes": 5.298,
+"comp": 50.1
 }
 },
 "resultados": {},
 "errores_seguidos": 0,
 "recompensas": {
 "estimada": {
-"2026-11-04": 0.666
+"2026-11-04": 1.296
 }
 },
 "costo": {},
 "ordenes": {},
 "inventario": {},
-"n_ordenes": 25,
-"ultimo_ciclo": "2026-11-04 14:13:04"
+"n_ordenes": 51,
+"ultimo_ciclo": "2026-11-04 15:08:08"
 }
