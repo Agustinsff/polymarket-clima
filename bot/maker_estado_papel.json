@@ -1,38 +1,21 @@
 {
 "cajas": {
-"0xecece5a969b93f972794dc92292d3f5ddb110bcd0f3ac2b48de92497e17284f9": {
-"evento": "highest-temperature-in-buenos-aires-on-november-5-2026",
-"caja": "27\u00b0C",
-"cid": "0xecece5a969b93f972794dc92292d3f5ddb110bcd0f3ac2b48de92497e17284f9",
-"si": "95088365773152279641136860378039404155936143787721987138690017146198823749775",
-"no": "44145287065885198319724225060398507375201084273328265310615910628551876848975",
-"pozo": 55,
-"v": 0.045,
-"tam_min": 20,
-"tick": 0.01,
-"fin": "2026-11-05T12:00:00Z",
-"medio": 0.515,
-"spread": 0.05,
-"tam": 25,
-"rec_pes": 0.293,
-"comp": 1434.2
-},
 "0x56b759ca57163a379182eb125f94b6364638bf30bada55838b163b3f9e31f00e": {
 "evento": "highest-temperature-in-qingdao-on-november-6-2026",
 "caja": "14\u00b0C",
 "cid": "0x56b759ca57163a379182eb125f94b6364638bf30bada55838b163b3f9e31f00e",
 "si": "21406616165018940424771227028318721298919890229477530770809439063301775257391",
 "no": "56842884281234453786667240161572914365959357103494073198475343820080850150539",
-"pozo": 52,
+"pozo": 44,
 "v": 0.045,
 "tam_min": 20,
 "tick": 0.01,
 "fin": "2026-11-06T12:00:00Z",
-"medio": 0.38,
-"spread": 0.04,
+"medio": 0.395,
+"spread": 0.03,
 "tam": 25,
-"rec_pes": 15.148,
-"comp": 11.1
+"rec_pes": 0.33,
+"comp": 1012.3
 },
 "0x4cae418fba1e2a106be1ef7f83abf67a7a68912349ef3c8e1461b97ebea12486": {
 "evento": "highest-temperature-in-shenzhen-on-november-5-2026",
@@ -48,20 +31,37 @@
 "medio": 0.615,
 "spread": 0.05,
 "tam": 25,
-"rec_pes": 0.306,
-"comp": 1322.4
+"rec_pes": 0.382,
+"comp": 1054.3
+},
+"0x0da2d4826f098e1950750fdee66c0b0c0913098ce3056f005b398351a67070a2": {
+"evento": "highest-temperature-in-lucknow-on-november-5-2026",
+"caja": "30\u00b0C",
+"cid": "0x0da2d4826f098e1950750fdee66c0b0c0913098ce3056f005b398351a67070a2",
+"si": "54080402309569950315325767090303393780023542685762619623412627959692124481225",
+"no": "44382344958366163359407270974857784716374491229740958958724494510924394860148",
+"pozo": 51,
+"v": 0.045,
+"tam_min": 20,
+"tick": 0.01,
+"fin": "2026-11-05T12:00:00Z",
+"medio": 0.62,
+"spread": 0.04,
+"tam": 25,
+"rec_pes": 4.668,
+"comp": 68.9
 }
 },
 "resultados": {},
 "errores_seguidos": 0,
 "recompensas": {
 "estimada": {
-"2026-11-04": 3.991
+"2026-11-04": 4.431
 }
 },
 "costo": {},
 "ordenes": {},
 "inventario": {},
-"n_ordenes": 211,
-"ultimo_ciclo": "2026-11-04 19:43:38"
+"n_ordenes": 237,
+"ultimo_ciclo": "2026-11-04 20:38:40"
 }
