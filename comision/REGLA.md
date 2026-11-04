@@ -49,4 +49,9 @@ Intervalo: bootstrap 2.000 veces por fecha de evento.
 
 ## Cambios después de fijada la regla
 
-(ninguno)
+- 4-nov-2026 13:45Z, después de la primera corrida: el chequeo de coherencia mostró que la tasa **no** depende de la
+  fecha del evento sino de la hora: todas las cajas abiertas pasaron de 0 a 0,05 entre las fotos de 04:35Z y 04:40Z
+  del 1-nov-2026 (incluidas las del 31-oct, 1-nov y 2-nov que ya estaban abiertas). Se cambia la división: **sin** =
+  fotos antes del 1-nov 04:37Z, **con** = después; el bootstrap remuestrea pares (fecha de evento, sin/con). El control
+  cripto se parte a la misma hora. También se corrigió un error de cuenta: la recompensa por foto ya es US$/día (no se
+  multiplica por 288). Los criterios de decisión no cambian.
