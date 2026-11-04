@@ -3,7 +3,9 @@ name: propio
 # Los datos van a la rama propio-datos (no a main) para no inflar main con commits diarios.
 on:
   schedule:
-    - cron: "40 5 * * *"        # todos los dias: sigue la descarga donde quedo y pone al dia
+    # GitHub atrasa o saltea los horarios (el 3-nov corrio 7 h tarde, el 4-nov no corrio): se prueba
+    # cada 6 h; si el cupo del dia ya se gasto, la corrida termina en 3 minutos.
+    - cron: "40 5,11,17,23 * * *"
   push:
     branches: [propio]           # para probar mientras se arma (en main corre por horario o a mano)
     paths: [propio/*.py, .github/workflows/propio.yml]
