@@ -1,11 +1,11 @@
 # Resumen polymarket-clima
 
-_Actualizado: 2026-11-04 16:36 (Montevideo). Todo es **en papel**: no se usa plata real._
+_Actualizado: 2026-11-04 16:50 (Montevideo). Todo es **en papel**: no se usa plata real._
 
 ## Estado de las tareas
 
-🔔 Polymarket cambió algo en **clima (otros)** (mercado de clima nuevo, aparece el 2026-11-03 19:47 UTC): `phivolcs-raises-mayon-to-alert-level` y 2 más. Ver [reglas_informe.md](reglas_informe.md).
-🔔 Polymarket cambió algo en **clima (otros)** (mercado de clima nuevo, ya no aparece el 2026-11-04 11:32 UTC): `what-category-will-vance-reach` y 1 más. Ver [reglas_informe.md](reglas_informe.md).
+🔔 Polymarket cambió algo en **clima (otros)** (mercado de clima nuevo, aparece el 2026-11-03 19:47 UTC): `phivolcs-raises-mayon-to-alert-level` y 1 más. Ver [reglas_informe.md](reglas_informe.md).
+🔔 Polymarket cambió algo en **clima (otros)** (mercado de clima nuevo, ya no aparece el 2026-11-04 11:32 UTC): `what-category-will-vance-reach`. Ver [reglas_informe.md](reglas_informe.md).
 🔔 Polymarket cambió algo en **temperatura máxima** (comisión, ya no aparece el 2026-11-04 01:38 UTC): `feesEnabled=True feeType=zero_fees feeSchedule={"exponent": 1, "rate": 0, "rebateRate": 0, "takerOnly": true} takerBaseFee=1000`. Ver [reglas_informe.md](reglas_informe.md).
 🔔 Polymarket cambió algo en **temperatura mínima** (comisión, ya no aparece el 2026-11-04 01:38 UTC): `feesEnabled=True feeType=zero_fees feeSchedule={"exponent": 1, "rate": 0, "rebateRate": 0, "takerOnly": true} takerBaseFee=1000`. Ver [reglas_informe.md](reglas_informe.md).
 
