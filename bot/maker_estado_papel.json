@@ -1,0 +1,67 @@
+{
+"cajas": {
+"0xa6fbdd59aa5f241484bec1ce295ce614ac48e1e8d010d3f29a0d9ca21a6bde2d": {
+"evento": "highest-temperature-in-istanbul-on-november-5-2026",
+"caja": "12\u00b0C",
+"cid": "0xa6fbdd59aa5f241484bec1ce295ce614ac48e1e8d010d3f29a0d9ca21a6bde2d",
+"si": "37496092182886108083406066824335844845108444022885228541242291260556231593182",
+"no": "73867733762734007755596191259767285357240235334285687736453821978412162051407",
+"pozo": 56,
+"v": 0.045,
+"tam_min": 20,
+"tick": 0.01,
+"fin": "2026-11-05T12:00:00Z",
+"medio": 0.585,
+"spread": 0.03,
+"tam": 25,
+"rec_pes": 4.697,
+"comp": 76.6
+},
+"0x21055cf99dda955709ee67d969273ed25e0a3a4babb095875f7d973d14ddeccb": {
+"evento": "highest-temperature-in-beijing-on-november-6-2026",
+"caja": "14\u00b0C",
+"cid": "0x21055cf99dda955709ee67d969273ed25e0a3a4babb095875f7d973d14ddeccb",
+"si": "63174484288015069515656854220995102717164810178719629315937883987653697374088",
+"no": "59533028348297816955562238527155066210485552421162274875127246338921690043202",
+"pozo": 54,
+"v": 0.045,
+"tam_min": 20,
+"tick": 0.01,
+"fin": "2026-11-06T12:00:00Z",
+"medio": 0.495,
+"spread": 0.05,
+"tam": 25,
+"rec_pes": 4.669,
+"comp": 73.8
+},
+"0x08f9885d161327ef7a3bc1bac545b0c3690bb4c33dbaebb35e515e70ae1dc1cd": {
+"evento": "highest-temperature-in-chongqing-on-november-5-2026",
+"caja": "18\u00b0C",
+"cid": "0x08f9885d161327ef7a3bc1bac545b0c3690bb4c33dbaebb35e515e70ae1dc1cd",
+"si": "86990380743874252089371254122411962819457029384142036648644830433635386354941",
+"no": "11936057005307339991577696194362397317338101821332385558496446657211382999469",
+"pozo": 45,
+"v": 0.045,
+"tam_min": 20,
+"tick": 0.01,
+"fin": "2026-11-05T12:00:00Z",
+"medio": 0.385,
+"spread": 0.03,
+"tam": 25,
+"rec_pes": 2.362,
+"comp": 131.6
+}
+},
+"resultados": {},
+"errores_seguidos": 0,
+"recompensas": {
+"estimada": {
+"2026-11-04": 0.666
+}
+},
+"costo": {},
+"ordenes": {},
+"inventario": {},
+"n_ordenes": 25,
+"ultimo_ciclo": "2026-11-04 14:13:04"
+}
