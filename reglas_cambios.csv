@@ -41,3 +41,5 @@ momento_utc,familia,que,cambio,detalle,ejemplo,origen
 2026-11-02 19:45,clima (otros),clima_otros,ya no aparece,will-it-rain-during-the-united-states-grand-prix,will-it-rain-during-the-united-states-grand-prix,auto
 2026-11-03 03:03,clima (otros),clima_otros,aparece,will-it-rain-during-the-brazilian-grand-prix,will-it-rain-during-the-brazilian-grand-prix,auto
 2026-11-03 19:47,clima (otros),clima_otros,aparece,phivolcs-raises-mayon-to-alert-level,phivolcs-raises-mayon-to-alert-level-4-by,auto
+2026-11-04 01:38,temperatura máxima,comisiones,ya no aparece,"feesEnabled=True feeType=zero_fees feeSchedule={""exponent"": 1, ""rate"": 0, ""rebateRate"": 0, ""takerOnly"": true} takerBaseFee=1000",highest-temperature-in-hong-kong-on-october-30-2026,auto
+2026-11-04 01:38,temperatura mínima,comisiones,ya no aparece,"feesEnabled=True feeType=zero_fees feeSchedule={""exponent"": 1, ""rate"": 0, ""rebateRate"": 0, ""takerOnly"": true} takerBaseFee=1000",lowest-temperature-in-hong-kong-on-october-30-2026,auto
