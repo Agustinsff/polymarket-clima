@@ -12,7 +12,7 @@ _Actualizado: 2026-11-04 13:18 (Montevideo). Todo es **en papel**: no se usa pla
 - Última foto de liquidez: 2026-11-04T13:18:04
 - Monitor: mañana 2026-11-04, noche 2026-11-03
 - Prueba São Paulo: último día registrado 2026-11-03
-- Cosechador: último ciclo 2026-11-04 10:30 UTC, 88 mercados, 46 estaciones
+- Cosechador: último ciclo 2026-11-04 16:12 UTC, 88 mercados, 46 estaciones
 
 ## Temperatura máxima: mercado vs. modelo (BA y SP)
 
