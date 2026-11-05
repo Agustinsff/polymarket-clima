@@ -1,6 +1,6 @@
 # Resumen polymarket-clima
 
-_Actualizado: 2026-11-05 20:15 (Montevideo). Todo es **en papel**: no se usa plata real._
+_Actualizado: 2026-11-05 20:28 (Montevideo). Todo es **en papel**: no se usa plata real._
 
 ## Estado de las tareas
 
@@ -69,13 +69,13 @@ Series donde el modelo le gana al mercado (≥5 días): máx buenos-aires (13 d�
 
 | Modo | Serie calibrada | Liquidadas | Ganadas | Neto (10 acc. c/u) | Pendientes |
 |---|---|---|---|---|---|
-| taker | sí | 738 | 284 | US$-297.35 | 572 |
+| taker | sí | 738 | 284 | US$-297.35 | 655 |
 | taker | no | 1830 | 735 | US$-566.68 | 0 |
-| maker | sí | 441 | 52 | US$-175.56 | 5298 |
+| maker | sí | 441 | 52 | US$-175.56 | 5727 |
 | maker | no | 7591 | 856 | US$-1577.04 | 110 |
-| cola_taker | sí | 411 | 7 | US$-75.07 | 292 |
+| cola_taker | sí | 411 | 7 | US$-75.07 | 334 |
 | cola_taker | no | 1195 | 37 | US$-24.20 | 0 |
-| cola_maker | sí | 83 | 2 | US$-8.88 | 1104 |
+| cola_maker | sí | 83 | 2 | US$-8.88 | 1183 |
 | cola_maker | no | 1299 | 32 | US$-78.78 | 19 |
 
 Taker en total: US$-963.30. _Con la comisión vieja (0,05 para todo) sería US$-1135.84._
@@ -101,13 +101,13 @@ _Taker = compra al instante pagando comisión. Maker = orden en el libro, solo c
 
 ## Cripto en papel (Bitcoin / Ethereum: above, rango y toca; modelo de opciones)
 
-Operaciones: 329 (319 liquidadas, 116 ganadas). **Neto US$+85.84** sobre US$1043.83 invertidos (ROI +8.2 %). _Con la comisión vieja (0,05 para todo) sería US$+93.59._
-Brier en 1216 strikes: modelo 0.1368 vs mercado 0.1334.
+Operaciones: 329 (324 liquidadas, 120 ganadas). **Neto US$+84.76** sobre US$1084.39 invertidos (ROI +7.8 %). _Con la comisión vieja (0,05 para todo) sería US$+92.65._
+Brier en 1285 strikes: modelo 0.1418 vs mercado 0.1387.
 
 | Activo | Tipo | Liquidadas | Neto |
 |---|---|---|---|
-| BTC | above | 36 | US$+41.95 |
-| BTC | rango | 67 | US$+79.36 |
+| BTC | above | 38 | US$+44.20 |
+| BTC | rango | 70 | US$+76.03 |
 | BTC | toca | 93 | US$-69.17 |
 | ETH | above | 22 | US$-10.44 |
 | ETH | rango | 50 | US$+0.11 |
