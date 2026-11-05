@@ -1,6 +1,6 @@
 # Resumen polymarket-clima
 
-_Actualizado: 2026-11-05 10:04 (Montevideo). Todo es **en papel**: no se usa plata real._
+_Actualizado: 2026-11-05 10:05 (Montevideo). Todo es **en papel**: no se usa plata real._
 
 ## Estado de las tareas
 
@@ -11,16 +11,18 @@ _Actualizado: 2026-11-05 10:04 (Montevideo). Todo es **en papel**: no se usa pla
 🔔 Polymarket cambió algo en **temperatura mínima** (comisión, ya no aparece el 2026-11-04 01:38 UTC): `feesEnabled=True feeType=zero_fees feeSchedule={"exponent": 1, "rate": 0, "rebateRate": 0, "takerOnly": true} takerBaseFee=1000`. Ver [reglas_informe.md](reglas_informe.md).
 
 - Última foto de liquidez: 2026-11-05T10:01:11
-- Monitor: mañana 2026-11-04, noche 2026-11-04
+- Monitor: mañana 2026-11-05, noche 2026-11-04
 - Prueba São Paulo: último día registrado 2026-11-04
 - Cosechador: último ciclo 2026-11-04 16:12 UTC, 88 mercados, 46 estaciones
 
 ## Temperatura máxima: mercado vs. modelo (BA y SP)
 
-Acumulado: la caja favorita del **mercado** acertó 19/42, la del **modelo** 11/42.
+Acumulado: la caja favorita del **mercado** acertó 19/44, la del **modelo** 11/44.
 
 | Día | Ciudad | Ganó | Favorita del mercado | Favorita del modelo |
 |---|---|---|---|---|
+| 2026-11-04 | Sao Paulo | 33°C | 32°C (42%) ❌ | 32°C (22%) ❌ |
+| 2026-11-04 | Buenos Aires | 26°C | 25°C (46%) ❌ | 25°C (25%) ❌ |
 | 2026-11-03 | Sao Paulo | 31°C | 31°C (42%) ✅ | 31°C (21%) ✅ |
 | 2026-11-03 | Buenos Aires | 23°C | 23°C (44%) ✅ | 22°C (24%) ❌ |
 | 2026-11-02 | Sao Paulo | 24°C | 24°C (20%) ✅ | 27°C (18%) ❌ |
@@ -29,8 +31,6 @@ Acumulado: la caja favorita del **mercado** acertó 19/42, la del **modelo** 11/
 | 2026-11-01 | Buenos Aires | 22°C | 24°C (36%) ❌ | 25°C (20%) ❌ |
 | 2026-10-31 | Sao Paulo | 28°C | 26°C (34%) ❌ | 26°C (25%) ❌ |
 | 2026-10-31 | Buenos Aires | 26°C | 25°C (38%) ❌ | 25°C (25%) ❌ |
-| 2026-10-30 | Sao Paulo | 25°C | 25°C (32%) ✅ | 26°C (23%) ❌ |
-| 2026-10-30 | Buenos Aires | 24°C | 22°C (34%) ❌ | 23°C (22%) ❌ |
 
 ## Prueba en papel São Paulo 14 hs (regla fija)
 
