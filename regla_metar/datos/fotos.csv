@@ -29468,3 +29468,245 @@ momento_utc;momento;hora_local;serie;fecha;icao;slug;caja;bid;ask;medio;si_10;no
 2026-11-05 01:28;M0;6;highest|karachi;2026-11-06;OPKC;highest-temperature-in-karachi-on-november-6-2026;39°C;0.003;0.014;0.0085;0.014;0.997;0.05
 2026-11-05 01:28;M0;6;highest|karachi;2026-11-06;OPKC;highest-temperature-in-karachi-on-november-6-2026;40°C;0.001;0.002;0.0015;0.002;0.999;0.05
 2026-11-05 01:28;M0;6;highest|karachi;2026-11-06;OPKC;highest-temperature-in-karachi-on-november-6-2026;41°C or higher;;0.001;;0.001;;0.05
+2026-11-05 03:29;M2;12;lowest|seoul;2026-11-05;RKSI;lowest-temperature-in-seoul-on-november-5-2026;7°C or below;;0.028;;0.028;;0.05
+2026-11-05 03:29;M2;12;lowest|seoul;2026-11-05;RKSI;lowest-temperature-in-seoul-on-november-5-2026;8°C;;0.009;;0.009;;0.05
+2026-11-05 03:29;M2;12;lowest|seoul;2026-11-05;RKSI;lowest-temperature-in-seoul-on-november-5-2026;9°C;;0.008;;0.008;;0.05
+2026-11-05 03:29;M2;12;lowest|seoul;2026-11-05;RKSI;lowest-temperature-in-seoul-on-november-5-2026;10°C;;0.002;;0.002;;0.05
+2026-11-05 03:29;M2;12;lowest|seoul;2026-11-05;RKSI;lowest-temperature-in-seoul-on-november-5-2026;11°C;0.001;0.092;0.0465;0.092;0.999;0.05
+2026-11-05 03:29;M2;12;lowest|seoul;2026-11-05;RKSI;lowest-temperature-in-seoul-on-november-5-2026;12°C;0.903;0.998;0.9505;0.998;0.097;0.05
+2026-11-05 03:29;M2;12;lowest|seoul;2026-11-05;RKSI;lowest-temperature-in-seoul-on-november-5-2026;13°C;;0.001;;0.001;;0.05
+2026-11-05 03:29;M2;12;lowest|seoul;2026-11-05;RKSI;lowest-temperature-in-seoul-on-november-5-2026;14°C;;0.001;;0.001;;0.05
+2026-11-05 03:29;M2;12;lowest|seoul;2026-11-05;RKSI;lowest-temperature-in-seoul-on-november-5-2026;15°C;;0.001;;0.001;;0.05
+2026-11-05 03:29;M2;12;lowest|seoul;2026-11-05;RKSI;lowest-temperature-in-seoul-on-november-5-2026;16°C;;0.001;;0.001;;0.05
+2026-11-05 03:29;M2;12;lowest|seoul;2026-11-05;RKSI;lowest-temperature-in-seoul-on-november-5-2026;17°C or higher;;0.001;;0.001;;0.05
+2026-11-05 03:29;M1;6;lowest|ankara;2026-11-05;LTAC;lowest-temperature-in-ankara-on-november-5-2026;2°C or below;;0.09;;0.09;;0.05
+2026-11-05 03:29;M1;6;lowest|ankara;2026-11-05;LTAC;lowest-temperature-in-ankara-on-november-5-2026;3°C;;0.78;;0.78;;0.05
+2026-11-05 03:29;M1;6;lowest|ankara;2026-11-05;LTAC;lowest-temperature-in-ankara-on-november-5-2026;4°C;0.02;0.77;0.395;0.775;0.98;0.05
+2026-11-05 03:29;M1;6;lowest|ankara;2026-11-05;LTAC;lowest-temperature-in-ankara-on-november-5-2026;5°C;0.03;0.67;0.35;0.675;0.97;0.05
+2026-11-05 03:29;M1;6;lowest|ankara;2026-11-05;LTAC;lowest-temperature-in-ankara-on-november-5-2026;6°C;0.03;0.67;0.35;0.675;0.97;0.05
+2026-11-05 03:29;M1;6;lowest|ankara;2026-11-05;LTAC;lowest-temperature-in-ankara-on-november-5-2026;7°C;0.03;0.75;0.39;0.755;0.97;0.05
+2026-11-05 03:29;M1;6;lowest|ankara;2026-11-05;LTAC;lowest-temperature-in-ankara-on-november-5-2026;8°C;0.001;0.05;0.0255;0.1489;0.999;0.05
+2026-11-05 03:29;M1;6;lowest|ankara;2026-11-05;LTAC;lowest-temperature-in-ankara-on-november-5-2026;9°C;0.001;0.05;0.0255;0.1489;0.999;0.05
+2026-11-05 03:29;M1;6;lowest|ankara;2026-11-05;LTAC;lowest-temperature-in-ankara-on-november-5-2026;10°C;;0.001;;0.001;;0.05
+2026-11-05 03:29;M1;6;lowest|ankara;2026-11-05;LTAC;lowest-temperature-in-ankara-on-november-5-2026;11°C;;0.001;;0.001;;0.05
+2026-11-05 03:29;M1;6;lowest|ankara;2026-11-05;LTAC;lowest-temperature-in-ankara-on-november-5-2026;12°C or higher;;0.001;;0.001;;0.05
+2026-11-05 03:29;M2;12;lowest|tokyo;2026-11-05;RJTT;lowest-temperature-in-tokyo-on-november-5-2026;8°C or below;;0.007;;0.007;;0.05
+2026-11-05 03:29;M2;12;lowest|tokyo;2026-11-05;RJTT;lowest-temperature-in-tokyo-on-november-5-2026;9°C;;0.008;;0.008;;0.05
+2026-11-05 03:29;M2;12;lowest|tokyo;2026-11-05;RJTT;lowest-temperature-in-tokyo-on-november-5-2026;10°C;;0.003;;0.003;;0.05
+2026-11-05 03:29;M2;12;lowest|tokyo;2026-11-05;RJTT;lowest-temperature-in-tokyo-on-november-5-2026;11°C;;0.003;;0.003;;0.05
+2026-11-05 03:29;M2;12;lowest|tokyo;2026-11-05;RJTT;lowest-temperature-in-tokyo-on-november-5-2026;12°C;0.001;0.007;0.004;0.007;0.999;0.05
+2026-11-05 03:29;M2;12;lowest|tokyo;2026-11-05;RJTT;lowest-temperature-in-tokyo-on-november-5-2026;13°C;0.994;0.999;0.9965;0.999;0.0951;0.05
+2026-11-05 03:29;M2;12;lowest|tokyo;2026-11-05;RJTT;lowest-temperature-in-tokyo-on-november-5-2026;14°C;;0.001;;0.001;;0.05
+2026-11-05 03:29;M2;12;lowest|tokyo;2026-11-05;RJTT;lowest-temperature-in-tokyo-on-november-5-2026;15°C;;0.001;;0.001;;0.05
+2026-11-05 03:29;M2;12;lowest|tokyo;2026-11-05;RJTT;lowest-temperature-in-tokyo-on-november-5-2026;16°C;;0.001;;0.001;;0.05
+2026-11-05 03:29;M2;12;lowest|tokyo;2026-11-05;RJTT;lowest-temperature-in-tokyo-on-november-5-2026;17°C;;0.001;;0.001;;0.05
+2026-11-05 03:29;M2;12;lowest|tokyo;2026-11-05;RJTT;lowest-temperature-in-tokyo-on-november-5-2026;18°C or higher;;0.001;;0.001;;0.05
+2026-11-05 03:29;M1;6;lowest|moscow;2026-11-05;UUWW;lowest-temperature-in-moscow-on-november-5-2026;-6°C or below;;0.7;;0.7;;0.05
+2026-11-05 03:29;M1;6;lowest|moscow;2026-11-05;UUWW;lowest-temperature-in-moscow-on-november-5-2026;-5°C;;0.7;;0.7;;0.05
+2026-11-05 03:29;M1;6;lowest|moscow;2026-11-05;UUWW;lowest-temperature-in-moscow-on-november-5-2026;-4°C;;0.68;;0.68;;0.05
+2026-11-05 03:29;M1;6;lowest|moscow;2026-11-05;UUWW;lowest-temperature-in-moscow-on-november-5-2026;-3°C;;0.76;;0.76;;0.05
+2026-11-05 03:29;M1;6;lowest|moscow;2026-11-05;UUWW;lowest-temperature-in-moscow-on-november-5-2026;-2°C;0.02;0.65;0.335;0.655;0.98;0.05
+2026-11-05 03:29;M1;6;lowest|moscow;2026-11-05;UUWW;lowest-temperature-in-moscow-on-november-5-2026;-1°C;0.36;0.94;0.65;0.94;0.645;0.05
+2026-11-05 03:29;M1;6;lowest|moscow;2026-11-05;UUWW;lowest-temperature-in-moscow-on-november-5-2026;0°C;;0.001;;0.001;;0.05
+2026-11-05 03:29;M1;6;lowest|moscow;2026-11-05;UUWW;lowest-temperature-in-moscow-on-november-5-2026;1°C;;0.001;;0.001;;0.05
+2026-11-05 03:29;M1;6;lowest|moscow;2026-11-05;UUWW;lowest-temperature-in-moscow-on-november-5-2026;2°C;;0.001;;0.001;;0.05
+2026-11-05 03:29;M1;6;lowest|moscow;2026-11-05;UUWW;lowest-temperature-in-moscow-on-november-5-2026;3°C;;0.001;;0.001;;0.05
+2026-11-05 03:29;M1;6;lowest|moscow;2026-11-05;UUWW;lowest-temperature-in-moscow-on-november-5-2026;4°C or higher;;0.001;;0.001;;0.05
+2026-11-05 03:29;M1;6;lowest|istanbul;2026-11-05;LTFM;lowest-temperature-in-istanbul-on-november-5-2026;6°C or below;;0.01;;0.01;;0.05
+2026-11-05 03:29;M1;6;lowest|istanbul;2026-11-05;LTFM;lowest-temperature-in-istanbul-on-november-5-2026;7°C;0.001;0.03;0.0155;0.056;0.999;0.05
+2026-11-05 03:29;M1;6;lowest|istanbul;2026-11-05;LTFM;lowest-temperature-in-istanbul-on-november-5-2026;8°C;0.09;0.18;0.135;0.378;0.925;0.05
+2026-11-05 03:29;M1;6;lowest|istanbul;2026-11-05;LTFM;lowest-temperature-in-istanbul-on-november-5-2026;9°C;0.04;0.68;0.36;0.685;0.96;0.05
+2026-11-05 03:29;M1;6;lowest|istanbul;2026-11-05;LTFM;lowest-temperature-in-istanbul-on-november-5-2026;10°C;0.04;0.68;0.36;0.685;0.96;0.05
+2026-11-05 03:29;M1;6;lowest|istanbul;2026-11-05;LTFM;lowest-temperature-in-istanbul-on-november-5-2026;11°C;;0.001;;0.001;;0.05
+2026-11-05 03:29;M1;6;lowest|istanbul;2026-11-05;LTFM;lowest-temperature-in-istanbul-on-november-5-2026;12°C;;0.001;;0.001;;0.05
+2026-11-05 03:29;M1;6;lowest|istanbul;2026-11-05;LTFM;lowest-temperature-in-istanbul-on-november-5-2026;13°C;;0.001;;0.001;;0.05
+2026-11-05 03:29;M1;6;lowest|istanbul;2026-11-05;LTFM;lowest-temperature-in-istanbul-on-november-5-2026;14°C;;0.001;;0.001;;0.05
+2026-11-05 03:29;M1;6;lowest|istanbul;2026-11-05;LTFM;lowest-temperature-in-istanbul-on-november-5-2026;15°C;;0.001;;0.001;;0.05
+2026-11-05 03:29;M1;6;lowest|istanbul;2026-11-05;LTFM;lowest-temperature-in-istanbul-on-november-5-2026;16°C or higher;0.001;0.002;0.0015;0.002;0.999;0.05
+2026-11-05 03:29;M2;12;lowest|busan;2026-11-05;RKPK;lowest-temperature-in-busan-on-november-5-2026;7°C or below;;0.55;;0.55;;0.05
+2026-11-05 03:29;M2;12;lowest|busan;2026-11-05;RKPK;lowest-temperature-in-busan-on-november-5-2026;8°C;0.001;0.898;0.4495;0.8985;0.999;0.05
+2026-11-05 03:29;M2;12;lowest|busan;2026-11-05;RKPK;lowest-temperature-in-busan-on-november-5-2026;9°C;;0.5;;0.5;;0.05
+2026-11-05 03:29;M2;12;lowest|busan;2026-11-05;RKPK;lowest-temperature-in-busan-on-november-5-2026;10°C;;;;;;0.05
+2026-11-05 03:29;M2;12;lowest|busan;2026-11-05;RKPK;lowest-temperature-in-busan-on-november-5-2026;11°C;;0.91;;;;0.05
+2026-11-05 03:29;M2;12;lowest|busan;2026-11-05;RKPK;lowest-temperature-in-busan-on-november-5-2026;12°C;0.02;0.84;0.43;0.845;0.98;0.05
+2026-11-05 03:29;M2;12;lowest|busan;2026-11-05;RKPK;lowest-temperature-in-busan-on-november-5-2026;13°C;;0.001;;0.001;;0.05
+2026-11-05 03:29;M2;12;lowest|busan;2026-11-05;RKPK;lowest-temperature-in-busan-on-november-5-2026;14°C;;0.001;;0.001;;0.05
+2026-11-05 03:29;M2;12;lowest|busan;2026-11-05;RKPK;lowest-temperature-in-busan-on-november-5-2026;15°C;;0.001;;0.001;;0.05
+2026-11-05 03:29;M2;12;lowest|busan;2026-11-05;RKPK;lowest-temperature-in-busan-on-november-5-2026;16°C;;0.001;;0.001;;0.05
+2026-11-05 03:29;M2;12;lowest|busan;2026-11-05;RKPK;lowest-temperature-in-busan-on-november-5-2026;17°C or higher;;0.001;;0.001;;0.05
+2026-11-05 03:29;M1;6;lowest|jeddah;2026-11-05;OEJN;lowest-temperature-in-jeddah-on-november-5-2026;21°C or below;0.001;0.02;0.0105;0.02;0.999;0.05
+2026-11-05 03:29;M1;6;lowest|jeddah;2026-11-05;OEJN;lowest-temperature-in-jeddah-on-november-5-2026;22°C;0.001;0.025;0.013;0.025;0.999;0.05
+2026-11-05 03:29;M1;6;lowest|jeddah;2026-11-05;OEJN;lowest-temperature-in-jeddah-on-november-5-2026;23°C;;0.09;;0.1026;;0.05
+2026-11-05 03:29;M1;6;lowest|jeddah;2026-11-05;OEJN;lowest-temperature-in-jeddah-on-november-5-2026;24°C;;0.19;;0.283;;0.05
+2026-11-05 03:29;M1;6;lowest|jeddah;2026-11-05;OEJN;lowest-temperature-in-jeddah-on-november-5-2026;25°C;;0.43;;0.43;;0.05
+2026-11-05 03:29;M1;6;lowest|jeddah;2026-11-05;OEJN;lowest-temperature-in-jeddah-on-november-5-2026;26°C;0.01;0.31;0.16;0.315;0.99;0.05
+2026-11-05 03:29;M1;6;lowest|jeddah;2026-11-05;OEJN;lowest-temperature-in-jeddah-on-november-5-2026;27°C;0.71;0.99;0.85;0.99;0.295;0.05
+2026-11-05 03:29;M1;6;lowest|jeddah;2026-11-05;OEJN;lowest-temperature-in-jeddah-on-november-5-2026;28°C;;0.001;;0.001;;0.05
+2026-11-05 03:29;M1;6;lowest|jeddah;2026-11-05;OEJN;lowest-temperature-in-jeddah-on-november-5-2026;29°C;;0.001;;0.001;;0.05
+2026-11-05 03:29;M1;6;lowest|jeddah;2026-11-05;OEJN;lowest-temperature-in-jeddah-on-november-5-2026;30°C;;0.001;;0.001;;0.05
+2026-11-05 03:29;M1;6;lowest|jeddah;2026-11-05;OEJN;lowest-temperature-in-jeddah-on-november-5-2026;31°C or higher;;0.001;;0.001;;0.05
+2026-11-05 03:29;M2;12;highest|seoul;2026-11-05;RKSI;highest-temperature-in-seoul-on-november-5-2026;10°C or below;;0.001;;0.001;;0.05
+2026-11-05 03:29;M2;12;highest|seoul;2026-11-05;RKSI;highest-temperature-in-seoul-on-november-5-2026;11°C;;0.001;;0.001;;0.05
+2026-11-05 03:29;M2;12;highest|seoul;2026-11-05;RKSI;highest-temperature-in-seoul-on-november-5-2026;12°C;;0.001;;0.001;;0.05
+2026-11-05 03:29;M2;12;highest|seoul;2026-11-05;RKSI;highest-temperature-in-seoul-on-november-5-2026;13°C;;0.001;;0.001;;0.05
+2026-11-05 03:29;M2;12;highest|seoul;2026-11-05;RKSI;highest-temperature-in-seoul-on-november-5-2026;14°C;;0.001;;0.001;;0.05
+2026-11-05 03:29;M2;12;highest|seoul;2026-11-05;RKSI;highest-temperature-in-seoul-on-november-5-2026;15°C;;0.001;;0.001;;0.05
+2026-11-05 03:29;M2;12;highest|seoul;2026-11-05;RKSI;highest-temperature-in-seoul-on-november-5-2026;16°C;0.002;0.021;0.0115;0.021;0.998;0.05
+2026-11-05 03:29;M2;12;highest|seoul;2026-11-05;RKSI;highest-temperature-in-seoul-on-november-5-2026;17°C;0.53;0.63;0.58;0.635;0.47;0.05
+2026-11-05 03:29;M2;12;highest|seoul;2026-11-05;RKSI;highest-temperature-in-seoul-on-november-5-2026;18°C;0.37;0.45;0.41;0.45;0.63;0.05
+2026-11-05 03:29;M2;12;highest|seoul;2026-11-05;RKSI;highest-temperature-in-seoul-on-november-5-2026;19°C;0.006;0.008;0.007;0.008;0.994;0.05
+2026-11-05 03:29;M2;12;highest|seoul;2026-11-05;RKSI;highest-temperature-in-seoul-on-november-5-2026;20°C or higher;;0.003;;0.003;;0.05
+2026-11-05 03:29;M1;6;highest|ankara;2026-11-05;LTAC;highest-temperature-in-ankara-on-november-5-2026;8°C or below;;0.001;;0.001;;0.05
+2026-11-05 03:29;M1;6;highest|ankara;2026-11-05;LTAC;highest-temperature-in-ankara-on-november-5-2026;9°C;;0.001;;0.001;;0.05
+2026-11-05 03:29;M1;6;highest|ankara;2026-11-05;LTAC;highest-temperature-in-ankara-on-november-5-2026;10°C;0.009;0.018;0.0135;0.018;0.9912;0.05
+2026-11-05 03:29;M1;6;highest|ankara;2026-11-05;LTAC;highest-temperature-in-ankara-on-november-5-2026;11°C;0.07;0.1;0.085;0.105;0.93;0.05
+2026-11-05 03:29;M1;6;highest|ankara;2026-11-05;LTAC;highest-temperature-in-ankara-on-november-5-2026;12°C;0.52;0.54;0.53;0.545;0.48;0.05
+2026-11-05 03:29;M1;6;highest|ankara;2026-11-05;LTAC;highest-temperature-in-ankara-on-november-5-2026;13°C;0.37;0.38;0.375;0.38;0.6431;0.05
+2026-11-05 03:29;M1;6;highest|ankara;2026-11-05;LTAC;highest-temperature-in-ankara-on-november-5-2026;14°C;0.04;0.05;0.045;0.05;0.96;0.05
+2026-11-05 03:29;M1;6;highest|ankara;2026-11-05;LTAC;highest-temperature-in-ankara-on-november-5-2026;15°C;0.005;0.013;0.009;0.013;0.995;0.05
+2026-11-05 03:29;M1;6;highest|ankara;2026-11-05;LTAC;highest-temperature-in-ankara-on-november-5-2026;16°C;0.001;0.002;0.0015;0.002;0.999;0.05
+2026-11-05 03:29;M1;6;highest|ankara;2026-11-05;LTAC;highest-temperature-in-ankara-on-november-5-2026;17°C;;0.001;;0.001;;0.05
+2026-11-05 03:29;M1;6;highest|ankara;2026-11-05;LTAC;highest-temperature-in-ankara-on-november-5-2026;18°C or higher;;0.001;;0.001;;0.05
+2026-11-05 03:29;M2;12;highest|tokyo;2026-11-05;RJTT;highest-temperature-in-tokyo-on-november-5-2026;12°C or below;;0.001;;0.001;;0.05
+2026-11-05 03:29;M2;12;highest|tokyo;2026-11-05;RJTT;highest-temperature-in-tokyo-on-november-5-2026;13°C;;0.001;;0.001;;0.05
+2026-11-05 03:29;M2;12;highest|tokyo;2026-11-05;RJTT;highest-temperature-in-tokyo-on-november-5-2026;14°C;;0.001;;0.001;;0.05
+2026-11-05 03:29;M2;12;highest|tokyo;2026-11-05;RJTT;highest-temperature-in-tokyo-on-november-5-2026;15°C;;0.001;;0.001;;0.05
+2026-11-05 03:29;M2;12;highest|tokyo;2026-11-05;RJTT;highest-temperature-in-tokyo-on-november-5-2026;16°C;0.11;0.19;0.15;0.2;0.89;0.05
+2026-11-05 03:29;M2;12;highest|tokyo;2026-11-05;RJTT;highest-temperature-in-tokyo-on-november-5-2026;17°C;0.56;0.67;0.615;0.68;0.455;0.05
+2026-11-05 03:29;M2;12;highest|tokyo;2026-11-05;RJTT;highest-temperature-in-tokyo-on-november-5-2026;18°C;0.21;0.32;0.265;0.325;0.79;0.05
+2026-11-05 03:29;M2;12;highest|tokyo;2026-11-05;RJTT;highest-temperature-in-tokyo-on-november-5-2026;19°C;0.013;0.028;0.0205;0.028;0.987;0.05
+2026-11-05 03:29;M2;12;highest|tokyo;2026-11-05;RJTT;highest-temperature-in-tokyo-on-november-5-2026;20°C;0.002;0.004;0.003;0.004;0.998;0.05
+2026-11-05 03:29;M2;12;highest|tokyo;2026-11-05;RJTT;highest-temperature-in-tokyo-on-november-5-2026;21°C;;0.009;;0.009;;0.05
+2026-11-05 03:29;M2;12;highest|tokyo;2026-11-05;RJTT;highest-temperature-in-tokyo-on-november-5-2026;22°C or higher;;0.003;;0.003;;0.05
+2026-11-05 03:29;M1;6;highest|moscow;2026-11-05;UUWW;highest-temperature-in-moscow-on-november-5-2026;-3°C or below;;0.001;;0.001;;0.05
+2026-11-05 03:29;M1;6;highest|moscow;2026-11-05;UUWW;highest-temperature-in-moscow-on-november-5-2026;-2°C;;0.001;;0.001;;0.05
+2026-11-05 03:29;M1;6;highest|moscow;2026-11-05;UUWW;highest-temperature-in-moscow-on-november-5-2026;-1°C;;0.001;;0.001;;0.05
+2026-11-05 03:29;M1;6;highest|moscow;2026-11-05;UUWW;highest-temperature-in-moscow-on-november-5-2026;0°C;;0.001;;0.001;;0.05
+2026-11-05 03:29;M1;6;highest|moscow;2026-11-05;UUWW;highest-temperature-in-moscow-on-november-5-2026;1°C;0.002;0.008;0.005;0.008;0.998;0.05
+2026-11-05 03:29;M1;6;highest|moscow;2026-11-05;UUWW;highest-temperature-in-moscow-on-november-5-2026;2°C;0.01;0.025;0.0175;0.025;0.99;0.05
+2026-11-05 03:29;M1;6;highest|moscow;2026-11-05;UUWW;highest-temperature-in-moscow-on-november-5-2026;3°C;0.075;0.1;0.0875;0.1;0.925;0.05
+2026-11-05 03:29;M1;6;highest|moscow;2026-11-05;UUWW;highest-temperature-in-moscow-on-november-5-2026;4°C;0.41;0.44;0.425;0.44;0.59;0.05
+2026-11-05 03:29;M1;6;highest|moscow;2026-11-05;UUWW;highest-temperature-in-moscow-on-november-5-2026;5°C;0.46;0.47;0.465;0.4744;0.54;0.05
+2026-11-05 03:29;M1;6;highest|moscow;2026-11-05;UUWW;highest-temperature-in-moscow-on-november-5-2026;6°C;0.025;0.04;0.0325;0.0448;0.975;0.05
+2026-11-05 03:29;M1;6;highest|moscow;2026-11-05;UUWW;highest-temperature-in-moscow-on-november-5-2026;7°C or higher;0.004;0.01;0.007;0.01;0.996;0.05
+2026-11-05 03:29;M1;6;highest|istanbul;2026-11-05;LTFM;highest-temperature-in-istanbul-on-november-5-2026;8°C or below;;0.001;;0.001;;0.05
+2026-11-05 03:29;M1;6;highest|istanbul;2026-11-05;LTFM;highest-temperature-in-istanbul-on-november-5-2026;9°C;;0.001;;0.001;;0.05
+2026-11-05 03:29;M1;6;highest|istanbul;2026-11-05;LTFM;highest-temperature-in-istanbul-on-november-5-2026;10°C;;0.001;;0.001;;0.05
+2026-11-05 03:29;M1;6;highest|istanbul;2026-11-05;LTFM;highest-temperature-in-istanbul-on-november-5-2026;11°C;;0.001;;0.001;;0.05
+2026-11-05 03:29;M1;6;highest|istanbul;2026-11-05;LTFM;highest-temperature-in-istanbul-on-november-5-2026;12°C;0.965;0.987;0.976;0.987;0.035;0.05
+2026-11-05 03:29;M1;6;highest|istanbul;2026-11-05;LTFM;highest-temperature-in-istanbul-on-november-5-2026;13°C;0.011;0.027;0.019;0.027;0.989;0.05
+2026-11-05 03:29;M1;6;highest|istanbul;2026-11-05;LTFM;highest-temperature-in-istanbul-on-november-5-2026;14°C;0.002;0.009;0.0055;0.009;0.998;0.05
+2026-11-05 03:29;M1;6;highest|istanbul;2026-11-05;LTFM;highest-temperature-in-istanbul-on-november-5-2026;15°C;;0.005;;0.005;;0.05
+2026-11-05 03:29;M1;6;highest|istanbul;2026-11-05;LTFM;highest-temperature-in-istanbul-on-november-5-2026;16°C;;0.001;;0.001;;0.05
+2026-11-05 03:29;M1;6;highest|istanbul;2026-11-05;LTFM;highest-temperature-in-istanbul-on-november-5-2026;17°C;;0.001;;0.001;;0.05
+2026-11-05 03:29;M1;6;highest|istanbul;2026-11-05;LTFM;highest-temperature-in-istanbul-on-november-5-2026;18°C or higher;;0.002;;0.002;;0.05
+2026-11-05 03:29;M2;12;highest|busan;2026-11-05;RKPK;highest-temperature-in-busan-on-november-5-2026;13°C or below;;0.001;;0.001;;0.05
+2026-11-05 03:29;M2;12;highest|busan;2026-11-05;RKPK;highest-temperature-in-busan-on-november-5-2026;14°C;0.314;0.467;0.3905;0.4673;0.686;0.05
+2026-11-05 03:29;M2;12;highest|busan;2026-11-05;RKPK;highest-temperature-in-busan-on-november-5-2026;15°C;0.39;0.45;0.42;0.4987;0.6122;0.05
+2026-11-05 03:29;M2;12;highest|busan;2026-11-05;RKPK;highest-temperature-in-busan-on-november-5-2026;16°C;0.14;0.16;0.15;0.16;0.86;0.05
+2026-11-05 03:29;M2;12;highest|busan;2026-11-05;RKPK;highest-temperature-in-busan-on-november-5-2026;17°C;0.021;0.058;0.0395;0.0685;0.979;0.05
+2026-11-05 03:29;M2;12;highest|busan;2026-11-05;RKPK;highest-temperature-in-busan-on-november-5-2026;18°C;0.005;0.019;0.012;0.019;0.9952;0.05
+2026-11-05 03:29;M2;12;highest|busan;2026-11-05;RKPK;highest-temperature-in-busan-on-november-5-2026;19°C;0.003;0.01;0.0065;0.01;0.997;0.05
+2026-11-05 03:29;M2;12;highest|busan;2026-11-05;RKPK;highest-temperature-in-busan-on-november-5-2026;20°C;0.001;0.007;0.004;0.007;0.999;0.05
+2026-11-05 03:29;M2;12;highest|busan;2026-11-05;RKPK;highest-temperature-in-busan-on-november-5-2026;21°C;;0.002;;0.002;;0.05
+2026-11-05 03:29;M2;12;highest|busan;2026-11-05;RKPK;highest-temperature-in-busan-on-november-5-2026;22°C;;0.001;;0.001;;0.05
+2026-11-05 03:29;M2;12;highest|busan;2026-11-05;RKPK;highest-temperature-in-busan-on-november-5-2026;23°C or higher;;0.001;;0.001;;0.05
+2026-11-05 03:29;M1;6;highest|jeddah;2026-11-05;OEJN;highest-temperature-in-jeddah-on-november-5-2026;29°C or below;;0.001;;0.001;;0.05
+2026-11-05 03:29;M1;6;highest|jeddah;2026-11-05;OEJN;highest-temperature-in-jeddah-on-november-5-2026;30°C;;0.001;;0.001;;0.05
+2026-11-05 03:29;M1;6;highest|jeddah;2026-11-05;OEJN;highest-temperature-in-jeddah-on-november-5-2026;31°C;0.001;0.002;0.0015;0.002;0.999;0.05
+2026-11-05 03:29;M1;6;highest|jeddah;2026-11-05;OEJN;highest-temperature-in-jeddah-on-november-5-2026;32°C;0.004;0.015;0.0095;0.015;0.996;0.05
+2026-11-05 03:29;M1;6;highest|jeddah;2026-11-05;OEJN;highest-temperature-in-jeddah-on-november-5-2026;33°C;0.02;0.043;0.0315;0.043;0.98;0.05
+2026-11-05 03:29;M1;6;highest|jeddah;2026-11-05;OEJN;highest-temperature-in-jeddah-on-november-5-2026;34°C;0.34;0.35;0.345;0.35;0.66;0.05
+2026-11-05 03:29;M1;6;highest|jeddah;2026-11-05;OEJN;highest-temperature-in-jeddah-on-november-5-2026;35°C;0.46;0.49;0.475;0.495;0.5449;0.05
+2026-11-05 03:29;M1;6;highest|jeddah;2026-11-05;OEJN;highest-temperature-in-jeddah-on-november-5-2026;36°C;0.14;0.15;0.145;0.15;0.86;0.05
+2026-11-05 03:29;M1;6;highest|jeddah;2026-11-05;OEJN;highest-temperature-in-jeddah-on-november-5-2026;37°C;0.025;0.03;0.0275;0.03;0.975;0.05
+2026-11-05 03:29;M1;6;highest|jeddah;2026-11-05;OEJN;highest-temperature-in-jeddah-on-november-5-2026;38°C;0.002;0.004;0.003;0.004;0.998;0.05
+2026-11-05 03:29;M1;6;highest|jeddah;2026-11-05;OEJN;highest-temperature-in-jeddah-on-november-5-2026;39°C or higher;0.001;0.003;0.002;0.003;0.999;0.05
+2026-11-05 03:29;M0;6;lowest|ankara;2026-11-06;LTAC;lowest-temperature-in-ankara-on-november-6-2026;-1°C or below;;0.5;;0.55;;0.05
+2026-11-05 03:29;M0;6;lowest|ankara;2026-11-06;LTAC;lowest-temperature-in-ankara-on-november-6-2026;0°C;;0.84;;0.84;;0.05
+2026-11-05 03:29;M0;6;lowest|ankara;2026-11-06;LTAC;lowest-temperature-in-ankara-on-november-6-2026;1°C;;0.82;;0.8289;;0.05
+2026-11-05 03:29;M0;6;lowest|ankara;2026-11-06;LTAC;lowest-temperature-in-ankara-on-november-6-2026;2°C;;0.7;;0.7468;;0.05
+2026-11-05 03:29;M0;6;lowest|ankara;2026-11-06;LTAC;lowest-temperature-in-ankara-on-november-6-2026;3°C;0.09;0.63;0.36;0.635;0.91;0.05
+2026-11-05 03:29;M0;6;lowest|ankara;2026-11-06;LTAC;lowest-temperature-in-ankara-on-november-6-2026;4°C;0.06;0.9;0.48;0.905;0.945;0.05
+2026-11-05 03:29;M0;6;lowest|ankara;2026-11-06;LTAC;lowest-temperature-in-ankara-on-november-6-2026;5°C;;0.74;;0.7631;;0.05
+2026-11-05 03:29;M0;6;lowest|ankara;2026-11-06;LTAC;lowest-temperature-in-ankara-on-november-6-2026;6°C;;0.12;;0.1346;;0.05
+2026-11-05 03:29;M0;6;lowest|ankara;2026-11-06;LTAC;lowest-temperature-in-ankara-on-november-6-2026;7°C;0.001;0.021;0.011;0.0263;0.999;0.05
+2026-11-05 03:29;M0;6;lowest|ankara;2026-11-06;LTAC;lowest-temperature-in-ankara-on-november-6-2026;8°C;0.001;0.021;0.011;0.021;0.999;0.05
+2026-11-05 03:29;M0;6;lowest|ankara;2026-11-06;LTAC;lowest-temperature-in-ankara-on-november-6-2026;9°C or higher;;0.5;;0.5;;0.05
+2026-11-05 03:29;M0;6;lowest|moscow;2026-11-06;UUWW;lowest-temperature-in-moscow-on-november-6-2026;-5°C or below;;0.5;;0.55;;0.05
+2026-11-05 03:29;M0;6;lowest|moscow;2026-11-06;UUWW;lowest-temperature-in-moscow-on-november-6-2026;-4°C;;0.7;;0.7;;0.05
+2026-11-05 03:29;M0;6;lowest|moscow;2026-11-06;UUWW;lowest-temperature-in-moscow-on-november-6-2026;-3°C;;0.7;;0.7;;0.05
+2026-11-05 03:29;M0;6;lowest|moscow;2026-11-06;UUWW;lowest-temperature-in-moscow-on-november-6-2026;-2°C;;0.7;;0.7;;0.05
+2026-11-05 03:29;M0;6;lowest|moscow;2026-11-06;UUWW;lowest-temperature-in-moscow-on-november-6-2026;-1°C;0.15;0.92;0.535;0.92;0.8565;0.05
+2026-11-05 03:29;M0;6;lowest|moscow;2026-11-06;UUWW;lowest-temperature-in-moscow-on-november-6-2026;0°C;;0.7;;0.7;;0.05
+2026-11-05 03:29;M0;6;lowest|moscow;2026-11-06;UUWW;lowest-temperature-in-moscow-on-november-6-2026;1°C;;0.7;;0.7;;0.05
+2026-11-05 03:29;M0;6;lowest|moscow;2026-11-06;UUWW;lowest-temperature-in-moscow-on-november-6-2026;2°C;;0.7;;0.7;;0.05
+2026-11-05 03:29;M0;6;lowest|moscow;2026-11-06;UUWW;lowest-temperature-in-moscow-on-november-6-2026;3°C;;0.7;;0.7;;0.05
+2026-11-05 03:29;M0;6;lowest|moscow;2026-11-06;UUWW;lowest-temperature-in-moscow-on-november-6-2026;4°C;;0.6;;0.6;;0.05
+2026-11-05 03:29;M0;6;lowest|moscow;2026-11-06;UUWW;lowest-temperature-in-moscow-on-november-6-2026;5°C or higher;;0.6;;0.6;;0.05
+2026-11-05 03:29;M0;6;lowest|istanbul;2026-11-06;LTFM;lowest-temperature-in-istanbul-on-november-6-2026;4°C or below;;0.49;;0.493;;0.05
+2026-11-05 03:29;M0;6;lowest|istanbul;2026-11-06;LTFM;lowest-temperature-in-istanbul-on-november-6-2026;5°C;;0.08;;0.0921;;0.05
+2026-11-05 03:29;M0;6;lowest|istanbul;2026-11-06;LTFM;lowest-temperature-in-istanbul-on-november-6-2026;6°C;;0.27;;0.485;;0.05
+2026-11-05 03:29;M0;6;lowest|istanbul;2026-11-06;LTFM;lowest-temperature-in-istanbul-on-november-6-2026;7°C;;0.27;;0.485;;0.05
+2026-11-05 03:29;M0;6;lowest|istanbul;2026-11-06;LTFM;lowest-temperature-in-istanbul-on-november-6-2026;8°C;;0.7;;0.7;;0.05
+2026-11-05 03:29;M0;6;lowest|istanbul;2026-11-06;LTFM;lowest-temperature-in-istanbul-on-november-6-2026;9°C;0.03;0.97;0.5;0.97;0.97;0.05
+2026-11-05 03:29;M0;6;lowest|istanbul;2026-11-06;LTFM;lowest-temperature-in-istanbul-on-november-6-2026;10°C;;0.7;;0.7;;0.05
+2026-11-05 03:29;M0;6;lowest|istanbul;2026-11-06;LTFM;lowest-temperature-in-istanbul-on-november-6-2026;11°C;;0.54;;0.54;;0.05
+2026-11-05 03:29;M0;6;lowest|istanbul;2026-11-06;LTFM;lowest-temperature-in-istanbul-on-november-6-2026;12°C;;0.08;;0.0921;;0.05
+2026-11-05 03:29;M0;6;lowest|istanbul;2026-11-06;LTFM;lowest-temperature-in-istanbul-on-november-6-2026;13°C;0.001;0.021;0.011;0.0263;0.999;0.05
+2026-11-05 03:29;M0;6;lowest|istanbul;2026-11-06;LTFM;lowest-temperature-in-istanbul-on-november-6-2026;14°C or higher;;0.49;;0.49;;0.05
+2026-11-05 03:29;M0;6;lowest|jeddah;2026-11-06;OEJN;lowest-temperature-in-jeddah-on-november-6-2026;22°C or below;;0.78;;0.78;;0.05
+2026-11-05 03:29;M0;6;lowest|jeddah;2026-11-06;OEJN;lowest-temperature-in-jeddah-on-november-6-2026;23°C;;0.2;;0.2;;0.05
+2026-11-05 03:29;M0;6;lowest|jeddah;2026-11-06;OEJN;lowest-temperature-in-jeddah-on-november-6-2026;24°C;;0.24;;0.24;;0.05
+2026-11-05 03:29;M0;6;lowest|jeddah;2026-11-06;OEJN;lowest-temperature-in-jeddah-on-november-6-2026;25°C;;0.75;;0.75;;0.05
+2026-11-05 03:29;M0;6;lowest|jeddah;2026-11-06;OEJN;lowest-temperature-in-jeddah-on-november-6-2026;26°C;0.31;0.71;0.51;0.71;0.69;0.05
+2026-11-05 03:29;M0;6;lowest|jeddah;2026-11-06;OEJN;lowest-temperature-in-jeddah-on-november-6-2026;27°C;;0.68;;0.68;;0.05
+2026-11-05 03:29;M0;6;lowest|jeddah;2026-11-06;OEJN;lowest-temperature-in-jeddah-on-november-6-2026;28°C;;0.82;;0.82;;0.05
+2026-11-05 03:29;M0;6;lowest|jeddah;2026-11-06;OEJN;lowest-temperature-in-jeddah-on-november-6-2026;29°C;;0.14;;0.14;;0.05
+2026-11-05 03:29;M0;6;lowest|jeddah;2026-11-06;OEJN;lowest-temperature-in-jeddah-on-november-6-2026;30°C;;0.14;;0.14;;0.05
+2026-11-05 03:29;M0;6;lowest|jeddah;2026-11-06;OEJN;lowest-temperature-in-jeddah-on-november-6-2026;31°C;;0.1;;0.1;;0.05
+2026-11-05 03:29;M0;6;lowest|jeddah;2026-11-06;OEJN;lowest-temperature-in-jeddah-on-november-6-2026;32°C or higher;;0.44;;0.44;;0.05
+2026-11-05 03:29;M0;6;highest|ankara;2026-11-06;LTAC;highest-temperature-in-ankara-on-november-6-2026;5°C or below;;0.002;;0.002;;0.05
+2026-11-05 03:29;M0;6;highest|ankara;2026-11-06;LTAC;highest-temperature-in-ankara-on-november-6-2026;6°C;0.001;0.018;0.0095;0.018;0.999;0.05
+2026-11-05 03:29;M0;6;highest|ankara;2026-11-06;LTAC;highest-temperature-in-ankara-on-november-6-2026;7°C;0.003;0.02;0.0115;0.02;0.997;0.05
+2026-11-05 03:29;M0;6;highest|ankara;2026-11-06;LTAC;highest-temperature-in-ankara-on-november-6-2026;8°C;0.02;0.058;0.039;0.0585;0.98;0.05
+2026-11-05 03:29;M0;6;highest|ankara;2026-11-06;LTAC;highest-temperature-in-ankara-on-november-6-2026;9°C;0.15;0.16;0.155;0.165;0.85;0.05
+2026-11-05 03:29;M0;6;highest|ankara;2026-11-06;LTAC;highest-temperature-in-ankara-on-november-6-2026;10°C;0.45;0.48;0.465;0.48;0.55;0.05
+2026-11-05 03:29;M0;6;highest|ankara;2026-11-06;LTAC;highest-temperature-in-ankara-on-november-6-2026;11°C;0.32;0.34;0.33;0.345;0.68;0.05
+2026-11-05 03:29;M0;6;highest|ankara;2026-11-06;LTAC;highest-temperature-in-ankara-on-november-6-2026;12°C;0.045;0.08;0.0625;0.0805;0.955;0.05
+2026-11-05 03:29;M0;6;highest|ankara;2026-11-06;LTAC;highest-temperature-in-ankara-on-november-6-2026;13°C;0.004;0.02;0.012;0.02;0.996;0.05
+2026-11-05 03:29;M0;6;highest|ankara;2026-11-06;LTAC;highest-temperature-in-ankara-on-november-6-2026;14°C;0.001;0.009;0.005;0.009;0.999;0.05
+2026-11-05 03:29;M0;6;highest|ankara;2026-11-06;LTAC;highest-temperature-in-ankara-on-november-6-2026;15°C or higher;;0.001;;0.001;;0.05
+2026-11-05 03:29;M0;6;highest|moscow;2026-11-06;UUWW;highest-temperature-in-moscow-on-november-6-2026;-3°C or below;0.001;0.007;0.004;0.007;0.999;0.05
+2026-11-05 03:29;M0;6;highest|moscow;2026-11-06;UUWW;highest-temperature-in-moscow-on-november-6-2026;-2°C;0.001;0.008;0.0045;0.008;0.999;0.05
+2026-11-05 03:29;M0;6;highest|moscow;2026-11-06;UUWW;highest-temperature-in-moscow-on-november-6-2026;-1°C;0.002;0.017;0.0095;0.017;0.998;0.05
+2026-11-05 03:29;M0;6;highest|moscow;2026-11-06;UUWW;highest-temperature-in-moscow-on-november-6-2026;0°C;0.02;0.021;0.0205;0.073;0.98;0.05
+2026-11-05 03:29;M0;6;highest|moscow;2026-11-06;UUWW;highest-temperature-in-moscow-on-november-6-2026;1°C;0.05;0.14;0.095;0.14;0.95;0.05
+2026-11-05 03:29;M0;6;highest|moscow;2026-11-06;UUWW;highest-temperature-in-moscow-on-november-6-2026;2°C;0.16;0.19;0.175;0.19;0.84;0.05
+2026-11-05 03:29;M0;6;highest|moscow;2026-11-06;UUWW;highest-temperature-in-moscow-on-november-6-2026;3°C;0.26;0.35;0.305;0.35;0.745;0.05
+2026-11-05 03:29;M0;6;highest|moscow;2026-11-06;UUWW;highest-temperature-in-moscow-on-november-6-2026;4°C;0.27;0.3;0.285;0.305;0.732;0.05
+2026-11-05 03:29;M0;6;highest|moscow;2026-11-06;UUWW;highest-temperature-in-moscow-on-november-6-2026;5°C;0.072;0.133;0.1025;0.133;0.928;0.05
+2026-11-05 03:29;M0;6;highest|moscow;2026-11-06;UUWW;highest-temperature-in-moscow-on-november-6-2026;6°C;0.015;0.057;0.036;0.057;0.9885;0.05
+2026-11-05 03:29;M0;6;highest|moscow;2026-11-06;UUWW;highest-temperature-in-moscow-on-november-6-2026;7°C or higher;0.001;0.002;0.0015;0.002;0.999;0.05
+2026-11-05 03:29;M0;6;highest|istanbul;2026-11-06;LTFM;highest-temperature-in-istanbul-on-november-6-2026;6°C or below;0.001;0.002;0.0015;0.002;0.999;0.05
+2026-11-05 03:29;M0;6;highest|istanbul;2026-11-06;LTFM;highest-temperature-in-istanbul-on-november-6-2026;7°C;0.001;0.002;0.0015;0.002;0.999;0.05
+2026-11-05 03:29;M0;6;highest|istanbul;2026-11-06;LTFM;highest-temperature-in-istanbul-on-november-6-2026;8°C;0.002;0.003;0.0025;0.003;0.998;0.05
+2026-11-05 03:29;M0;6;highest|istanbul;2026-11-06;LTFM;highest-temperature-in-istanbul-on-november-6-2026;9°C;0.005;0.006;0.0055;0.006;0.995;0.05
+2026-11-05 03:29;M0;6;highest|istanbul;2026-11-06;LTFM;highest-temperature-in-istanbul-on-november-6-2026;10°C;0.06;0.08;0.07;0.08;0.94;0.05
+2026-11-05 03:29;M0;6;highest|istanbul;2026-11-06;LTFM;highest-temperature-in-istanbul-on-november-6-2026;11°C;0.5;0.54;0.52;0.54;0.5;0.05
+2026-11-05 03:29;M0;6;highest|istanbul;2026-11-06;LTFM;highest-temperature-in-istanbul-on-november-6-2026;12°C;0.34;0.38;0.36;0.38;0.66;0.05
+2026-11-05 03:29;M0;6;highest|istanbul;2026-11-06;LTFM;highest-temperature-in-istanbul-on-november-6-2026;13°C;0.04;0.08;0.06;0.08;0.96;0.05
+2026-11-05 03:29;M0;6;highest|istanbul;2026-11-06;LTFM;highest-temperature-in-istanbul-on-november-6-2026;14°C;0.003;0.004;0.0035;0.004;0.997;0.05
+2026-11-05 03:29;M0;6;highest|istanbul;2026-11-06;LTFM;highest-temperature-in-istanbul-on-november-6-2026;15°C;0.001;0.002;0.0015;0.002;0.999;0.05
+2026-11-05 03:29;M0;6;highest|istanbul;2026-11-06;LTFM;highest-temperature-in-istanbul-on-november-6-2026;16°C or higher;0.001;0.002;0.0015;0.002;0.999;0.05
+2026-11-05 03:29;M0;6;highest|jeddah;2026-11-06;OEJN;highest-temperature-in-jeddah-on-november-6-2026;30°C or below;;0.001;;0.001;;0.05
+2026-11-05 03:29;M0;6;highest|jeddah;2026-11-06;OEJN;highest-temperature-in-jeddah-on-november-6-2026;31°C;0.001;0.002;0.0015;0.002;0.999;0.05
+2026-11-05 03:29;M0;6;highest|jeddah;2026-11-06;OEJN;highest-temperature-in-jeddah-on-november-6-2026;32°C;0.003;0.019;0.011;0.019;0.997;0.05
+2026-11-05 03:29;M0;6;highest|jeddah;2026-11-06;OEJN;highest-temperature-in-jeddah-on-november-6-2026;33°C;0.011;0.024;0.0175;0.024;0.989;0.05
+2026-11-05 03:29;M0;6;highest|jeddah;2026-11-06;OEJN;highest-temperature-in-jeddah-on-november-6-2026;34°C;0.12;0.13;0.125;0.13;0.88;0.05
+2026-11-05 03:29;M0;6;highest|jeddah;2026-11-06;OEJN;highest-temperature-in-jeddah-on-november-6-2026;35°C;0.42;0.46;0.44;0.46;0.58;0.05
+2026-11-05 03:29;M0;6;highest|jeddah;2026-11-06;OEJN;highest-temperature-in-jeddah-on-november-6-2026;36°C;0.38;0.39;0.385;0.39;0.62;0.05
+2026-11-05 03:29;M0;6;highest|jeddah;2026-11-06;OEJN;highest-temperature-in-jeddah-on-november-6-2026;37°C;0.04;0.05;0.045;0.0544;0.96;0.05
+2026-11-05 03:29;M0;6;highest|jeddah;2026-11-06;OEJN;highest-temperature-in-jeddah-on-november-6-2026;38°C;0.005;0.02;0.0125;0.02;0.995;0.05
+2026-11-05 03:29;M0;6;highest|jeddah;2026-11-06;OEJN;highest-temperature-in-jeddah-on-november-6-2026;39°C;0.001;0.009;0.005;0.009;0.999;0.05
+2026-11-05 03:29;M0;6;highest|jeddah;2026-11-06;OEJN;highest-temperature-in-jeddah-on-november-6-2026;40°C or higher;;0.001;;0.001;;0.05
