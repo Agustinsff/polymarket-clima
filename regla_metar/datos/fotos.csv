@@ -30381,3 +30381,25 @@ momento_utc;momento;hora_local;serie;fecha;icao;slug;caja;bid;ask;medio;si_10;no
 2026-11-05 06:00;M0;6;highest|london;2026-11-06;EGLC;highest-temperature-in-london-on-november-6-2026;14°C;0.004;0.008;0.006;0.008;0.996;0.05
 2026-11-05 06:00;M0;6;highest|london;2026-11-06;EGLC;highest-temperature-in-london-on-november-6-2026;15°C;0.002;0.009;0.0055;0.009;0.998;0.05
 2026-11-05 06:00;M0;6;highest|london;2026-11-06;EGLC;highest-temperature-in-london-on-november-6-2026;16°C or higher;;0.002;;0.002;;0.05
+2026-11-05 06:30;M2;12;lowest|lucknow;2026-11-05;VILK;lowest-temperature-in-lucknow-on-november-5-2026;13°C or below;;0.014;;0.014;;0.05
+2026-11-05 06:30;M2;12;lowest|lucknow;2026-11-05;VILK;lowest-temperature-in-lucknow-on-november-5-2026;14°C;;0.016;;0.016;;0.05
+2026-11-05 06:30;M2;12;lowest|lucknow;2026-11-05;VILK;lowest-temperature-in-lucknow-on-november-5-2026;15°C;;0.18;;0.18;;0.05
+2026-11-05 06:30;M2;12;lowest|lucknow;2026-11-05;VILK;lowest-temperature-in-lucknow-on-november-5-2026;16°C;;0.57;;0.57;;0.05
+2026-11-05 06:30;M2;12;lowest|lucknow;2026-11-05;VILK;lowest-temperature-in-lucknow-on-november-5-2026;17°C;0.87;;;;0.13;0.05
+2026-11-05 06:30;M2;12;lowest|lucknow;2026-11-05;VILK;lowest-temperature-in-lucknow-on-november-5-2026;18°C;0.001;0.002;0.0015;0.002;0.999;0.05
+2026-11-05 06:30;M2;12;lowest|lucknow;2026-11-05;VILK;lowest-temperature-in-lucknow-on-november-5-2026;19°C;;0.001;;0.001;;0.05
+2026-11-05 06:30;M2;12;lowest|lucknow;2026-11-05;VILK;lowest-temperature-in-lucknow-on-november-5-2026;20°C;;0.002;;0.002;;0.05
+2026-11-05 06:30;M2;12;lowest|lucknow;2026-11-05;VILK;lowest-temperature-in-lucknow-on-november-5-2026;21°C;;0.002;;0.002;;0.05
+2026-11-05 06:30;M2;12;lowest|lucknow;2026-11-05;VILK;lowest-temperature-in-lucknow-on-november-5-2026;22°C;;0.002;;0.002;;0.05
+2026-11-05 06:30;M2;12;lowest|lucknow;2026-11-05;VILK;lowest-temperature-in-lucknow-on-november-5-2026;23°C or higher;;0.002;;0.002;;0.05
+2026-11-05 06:30;M2;12;highest|lucknow;2026-11-05;VILK;highest-temperature-in-lucknow-on-november-5-2026;24°C or below;;0.001;;0.001;;0.05
+2026-11-05 06:30;M2;12;highest|lucknow;2026-11-05;VILK;highest-temperature-in-lucknow-on-november-5-2026;25°C;;0.001;;0.001;;0.05
+2026-11-05 06:30;M2;12;highest|lucknow;2026-11-05;VILK;highest-temperature-in-lucknow-on-november-5-2026;26°C;;0.001;;0.001;;0.05
+2026-11-05 06:30;M2;12;highest|lucknow;2026-11-05;VILK;highest-temperature-in-lucknow-on-november-5-2026;27°C;;0.001;;0.001;;0.05
+2026-11-05 06:30;M2;12;highest|lucknow;2026-11-05;VILK;highest-temperature-in-lucknow-on-november-5-2026;28°C;0.002;0.009;0.0055;0.009;0.998;0.05
+2026-11-05 06:30;M2;12;highest|lucknow;2026-11-05;VILK;highest-temperature-in-lucknow-on-november-5-2026;29°C;0.275;0.337;0.306;0.3375;0.7255;0.05
+2026-11-05 06:30;M2;12;highest|lucknow;2026-11-05;VILK;highest-temperature-in-lucknow-on-november-5-2026;30°C;0.61;0.7;0.655;0.7;0.395;0.05
+2026-11-05 06:30;M2;12;highest|lucknow;2026-11-05;VILK;highest-temperature-in-lucknow-on-november-5-2026;31°C;0.04;0.08;0.06;0.084;0.96;0.05
+2026-11-05 06:30;M2;12;highest|lucknow;2026-11-05;VILK;highest-temperature-in-lucknow-on-november-5-2026;32°C;0.003;0.008;0.0055;0.008;0.997;0.05
+2026-11-05 06:30;M2;12;highest|lucknow;2026-11-05;VILK;highest-temperature-in-lucknow-on-november-5-2026;33°C;;0.001;;0.001;;0.05
+2026-11-05 06:30;M2;12;highest|lucknow;2026-11-05;VILK;highest-temperature-in-lucknow-on-november-5-2026;34°C or higher;;0.001;;0.001;;0.05
