@@ -33373,3 +33373,69 @@ momento_utc;momento;hora_local;serie;fecha;icao;slug;caja;bid;ask;medio;si_10;no
 2026-11-06 13:17;M1;6;highest|denver;2026-11-06;KDEN;highest-temperature-in-denver-on-november-6-2026;60-61°F;0.221;0.25;0.2355;0.25;0.779;0.05
 2026-11-06 13:17;M1;6;highest|denver;2026-11-06;KDEN;highest-temperature-in-denver-on-november-6-2026;62-63°F;0.01;0.024;0.017;0.024;0.99;0.05
 2026-11-06 13:17;M1;6;highest|denver;2026-11-06;KDEN;highest-temperature-in-denver-on-november-6-2026;64°F or higher;0.001;0.003;0.002;0.003;;0.05
+2026-11-06 14:17;M1;6;lowest|seattle;2026-11-06;KSEA;lowest-temperature-in-seattle-on-november-6-2026;39°F or below;0.001;0.002;0.0015;0.006;0.999;0.05
+2026-11-06 14:17;M1;6;lowest|seattle;2026-11-06;KSEA;lowest-temperature-in-seattle-on-november-6-2026;40-41°F;0.001;0.021;0.011;0.021;0.999;0.05
+2026-11-06 14:17;M1;6;lowest|seattle;2026-11-06;KSEA;lowest-temperature-in-seattle-on-november-6-2026;42-43°F;;0.08;;0.49;;0.05
+2026-11-06 14:17;M1;6;lowest|seattle;2026-11-06;KSEA;lowest-temperature-in-seattle-on-november-6-2026;44-45°F;0.001;0.071;0.036;0.3055;0.999;0.05
+2026-11-06 14:17;M1;6;lowest|seattle;2026-11-06;KSEA;lowest-temperature-in-seattle-on-november-6-2026;46-47°F;0.08;0.37;0.225;0.375;0.925;0.05
+2026-11-06 14:17;M1;6;lowest|seattle;2026-11-06;KSEA;lowest-temperature-in-seattle-on-november-6-2026;48-49°F;0.35;0.94;0.645;0.94;0.65;0.05
+2026-11-06 14:17;M1;6;lowest|seattle;2026-11-06;KSEA;lowest-temperature-in-seattle-on-november-6-2026;50-51°F;;0.001;;0.001;;0.05
+2026-11-06 14:17;M1;6;lowest|seattle;2026-11-06;KSEA;lowest-temperature-in-seattle-on-november-6-2026;52-53°F;;0.001;;0.001;;0.05
+2026-11-06 14:17;M1;6;lowest|seattle;2026-11-06;KSEA;lowest-temperature-in-seattle-on-november-6-2026;54-55°F;;0.001;;0.001;;0.05
+2026-11-06 14:17;M1;6;lowest|seattle;2026-11-06;KSEA;lowest-temperature-in-seattle-on-november-6-2026;56-57°F;;0.001;;0.001;;0.05
+2026-11-06 14:17;M1;6;lowest|seattle;2026-11-06;KSEA;lowest-temperature-in-seattle-on-november-6-2026;58°F or higher;;0.001;;0.001;;0.05
+2026-11-06 14:17;M1;6;lowest|los-angeles;2026-11-06;KLAX;lowest-temperature-in-los-angeles-on-november-6-2026;51°F or below;;0.51;;0.51;;0.05
+2026-11-06 14:17;M1;6;lowest|los-angeles;2026-11-06;KLAX;lowest-temperature-in-los-angeles-on-november-6-2026;52-53°F;0.001;0.075;0.038;0.1245;0.999;0.05
+2026-11-06 14:17;M1;6;lowest|los-angeles;2026-11-06;KLAX;lowest-temperature-in-los-angeles-on-november-6-2026;54-55°F;0.02;0.14;0.08;0.14;0.98;0.05
+2026-11-06 14:17;M1;6;lowest|los-angeles;2026-11-06;KLAX;lowest-temperature-in-los-angeles-on-november-6-2026;56-57°F;;0.14;;0.14;;0.05
+2026-11-06 14:17;M1;6;lowest|los-angeles;2026-11-06;KLAX;lowest-temperature-in-los-angeles-on-november-6-2026;58-59°F;0.78;0.98;0.88;0.98;0.22;0.05
+2026-11-06 14:17;M1;6;lowest|los-angeles;2026-11-06;KLAX;lowest-temperature-in-los-angeles-on-november-6-2026;60-61°F;;0.001;;0.001;;0.05
+2026-11-06 14:17;M1;6;lowest|los-angeles;2026-11-06;KLAX;lowest-temperature-in-los-angeles-on-november-6-2026;62-63°F;;0.001;;0.001;;0.05
+2026-11-06 14:17;M1;6;lowest|los-angeles;2026-11-06;KLAX;lowest-temperature-in-los-angeles-on-november-6-2026;64-65°F;;0.001;;0.001;;0.05
+2026-11-06 14:17;M1;6;lowest|los-angeles;2026-11-06;KLAX;lowest-temperature-in-los-angeles-on-november-6-2026;66-67°F;0.001;0.002;0.0015;0.002;0.999;0.05
+2026-11-06 14:17;M1;6;lowest|los-angeles;2026-11-06;KLAX;lowest-temperature-in-los-angeles-on-november-6-2026;68-69°F;;0.001;;0.001;;0.05
+2026-11-06 14:17;M1;6;lowest|los-angeles;2026-11-06;KLAX;lowest-temperature-in-los-angeles-on-november-6-2026;70°F or higher;;0.001;;0.001;;0.05
+2026-11-06 14:17;M1;6;lowest|san-francisco;2026-11-06;KSFO;lowest-temperature-in-san-francisco-on-november-6-2026;43°F or below;;0.47;;0.47;;0.05
+2026-11-06 14:17;M1;6;lowest|san-francisco;2026-11-06;KSFO;lowest-temperature-in-san-francisco-on-november-6-2026;44-45°F;0.001;0.016;0.0085;0.016;0.999;0.05
+2026-11-06 14:17;M1;6;lowest|san-francisco;2026-11-06;KSFO;lowest-temperature-in-san-francisco-on-november-6-2026;46-47°F;0.001;0.025;0.013;0.025;0.999;0.05
+2026-11-06 14:17;M1;6;lowest|san-francisco;2026-11-06;KSFO;lowest-temperature-in-san-francisco-on-november-6-2026;48-49°F;0.001;0.711;0.356;0.711;0.999;0.05
+2026-11-06 14:17;M1;6;lowest|san-francisco;2026-11-06;KSFO;lowest-temperature-in-san-francisco-on-november-6-2026;50-51°F;0.02;0.64;0.33;0.64;0.98;0.05
+2026-11-06 14:17;M1;6;lowest|san-francisco;2026-11-06;KSFO;lowest-temperature-in-san-francisco-on-november-6-2026;52-53°F;0.19;0.98;0.585;0.98;0.835;0.05
+2026-11-06 14:17;M1;6;lowest|san-francisco;2026-11-06;KSFO;lowest-temperature-in-san-francisco-on-november-6-2026;54-55°F;0.001;0.005;0.003;0.005;0.999;0.05
+2026-11-06 14:17;M1;6;lowest|san-francisco;2026-11-06;KSFO;lowest-temperature-in-san-francisco-on-november-6-2026;56-57°F;;0.001;;0.001;;0.05
+2026-11-06 14:17;M1;6;lowest|san-francisco;2026-11-06;KSFO;lowest-temperature-in-san-francisco-on-november-6-2026;58-59°F;0.001;0.002;0.0015;0.002;0.999;0.05
+2026-11-06 14:17;M1;6;lowest|san-francisco;2026-11-06;KSFO;lowest-temperature-in-san-francisco-on-november-6-2026;60-61°F;;0.001;;0.001;;0.05
+2026-11-06 14:17;M1;6;lowest|san-francisco;2026-11-06;KSFO;lowest-temperature-in-san-francisco-on-november-6-2026;62°F or higher;0.001;0.002;0.0015;0.002;0.999;0.05
+2026-11-06 14:17;M1;6;highest|seattle;2026-11-06;KSEA;highest-temperature-in-seattle-on-november-6-2026;45°F or below;;0.001;;0.001;;0.05
+2026-11-06 14:17;M1;6;highest|seattle;2026-11-06;KSEA;highest-temperature-in-seattle-on-november-6-2026;46-47°F;;0.001;;0.001;;0.05
+2026-11-06 14:17;M1;6;highest|seattle;2026-11-06;KSEA;highest-temperature-in-seattle-on-november-6-2026;48-49°F;;0.001;;0.001;;0.05
+2026-11-06 14:17;M1;6;highest|seattle;2026-11-06;KSEA;highest-temperature-in-seattle-on-november-6-2026;50-51°F;0.014;0.027;0.0205;0.027;0.986;0.05
+2026-11-06 14:17;M1;6;highest|seattle;2026-11-06;KSEA;highest-temperature-in-seattle-on-november-6-2026;52-53°F;0.025;0.048;0.0365;0.0485;0.975;0.05
+2026-11-06 14:17;M1;6;highest|seattle;2026-11-06;KSEA;highest-temperature-in-seattle-on-november-6-2026;54-55°F;0.2;0.23;0.215;0.23;0.8;0.05
+2026-11-06 14:17;M1;6;highest|seattle;2026-11-06;KSEA;highest-temperature-in-seattle-on-november-6-2026;56-57°F;0.54;0.56;0.55;0.56;0.46;0.05
+2026-11-06 14:17;M1;6;highest|seattle;2026-11-06;KSEA;highest-temperature-in-seattle-on-november-6-2026;58-59°F;0.188;0.189;0.1885;0.1925;0.812;0.05
+2026-11-06 14:17;M1;6;highest|seattle;2026-11-06;KSEA;highest-temperature-in-seattle-on-november-6-2026;60-61°F;0.01;0.028;0.019;0.028;0.99;0.05
+2026-11-06 14:17;M1;6;highest|seattle;2026-11-06;KSEA;highest-temperature-in-seattle-on-november-6-2026;62-63°F;;0.004;;0.004;;0.05
+2026-11-06 14:17;M1;6;highest|seattle;2026-11-06;KSEA;highest-temperature-in-seattle-on-november-6-2026;64°F or higher;;0.001;;0.001;;0.05
+2026-11-06 14:17;M1;6;highest|los-angeles;2026-11-06;KLAX;highest-temperature-in-los-angeles-on-november-6-2026;71°F or below;;0.001;;0.001;;0.05
+2026-11-06 14:17;M1;6;highest|los-angeles;2026-11-06;KLAX;highest-temperature-in-los-angeles-on-november-6-2026;72-73°F;;0.001;;0.001;;0.05
+2026-11-06 14:17;M1;6;highest|los-angeles;2026-11-06;KLAX;highest-temperature-in-los-angeles-on-november-6-2026;74-75°F;0.001;0.002;0.0015;0.002;0.999;0.05
+2026-11-06 14:17;M1;6;highest|los-angeles;2026-11-06;KLAX;highest-temperature-in-los-angeles-on-november-6-2026;76-77°F;0.004;0.01;0.007;0.01;0.996;0.05
+2026-11-06 14:17;M1;6;highest|los-angeles;2026-11-06;KLAX;highest-temperature-in-los-angeles-on-november-6-2026;78-79°F;0.047;0.09;0.0685;0.09;0.953;0.05
+2026-11-06 14:17;M1;6;highest|los-angeles;2026-11-06;KLAX;highest-temperature-in-los-angeles-on-november-6-2026;80-81°F;0.43;0.45;0.44;0.45;0.575;0.05
+2026-11-06 14:17;M1;6;highest|los-angeles;2026-11-06;KLAX;highest-temperature-in-los-angeles-on-november-6-2026;82-83°F;0.38;0.42;0.4;0.42;0.625;0.05
+2026-11-06 14:17;M1;6;highest|los-angeles;2026-11-06;KLAX;highest-temperature-in-los-angeles-on-november-6-2026;84-85°F;0.04;0.06;0.05;0.06;0.96;0.05
+2026-11-06 14:17;M1;6;highest|los-angeles;2026-11-06;KLAX;highest-temperature-in-los-angeles-on-november-6-2026;86-87°F;0.007;0.022;0.0145;0.022;0.9932;0.05
+2026-11-06 14:17;M1;6;highest|los-angeles;2026-11-06;KLAX;highest-temperature-in-los-angeles-on-november-6-2026;88-89°F;;0.002;;0.002;;0.05
+2026-11-06 14:17;M1;6;highest|los-angeles;2026-11-06;KLAX;highest-temperature-in-los-angeles-on-november-6-2026;90°F or higher;;0.001;;0.001;;0.05
+2026-11-06 14:17;M1;6;highest|san-francisco;2026-11-06;KSFO;highest-temperature-in-san-francisco-on-november-6-2026;59°F or below;0.001;0.003;0.002;0.003;0.999;0.05
+2026-11-06 14:17;M1;6;highest|san-francisco;2026-11-06;KSFO;highest-temperature-in-san-francisco-on-november-6-2026;60-61°F;;0.005;;0.005;;0.05
+2026-11-06 14:17;M1;6;highest|san-francisco;2026-11-06;KSFO;highest-temperature-in-san-francisco-on-november-6-2026;62-63°F;0.001;0.002;0.0015;0.002;0.999;0.05
+2026-11-06 14:17;M1;6;highest|san-francisco;2026-11-06;KSFO;highest-temperature-in-san-francisco-on-november-6-2026;64-65°F;0.002;0.019;0.0105;0.019;0.998;0.05
+2026-11-06 14:17;M1;6;highest|san-francisco;2026-11-06;KSFO;highest-temperature-in-san-francisco-on-november-6-2026;66-67°F;0.02;0.038;0.029;0.038;0.98;0.05
+2026-11-06 14:17;M1;6;highest|san-francisco;2026-11-06;KSFO;highest-temperature-in-san-francisco-on-november-6-2026;68-69°F;0.32;0.42;0.37;0.42;0.68;0.05
+2026-11-06 14:17;M1;6;highest|san-francisco;2026-11-06;KSFO;highest-temperature-in-san-francisco-on-november-6-2026;70-71°F;0.49;0.52;0.505;0.525;0.515;0.05
+2026-11-06 14:17;M1;6;highest|san-francisco;2026-11-06;KSFO;highest-temperature-in-san-francisco-on-november-6-2026;72-73°F;0.06;0.1;0.08;0.1;0.94;0.05
+2026-11-06 14:17;M1;6;highest|san-francisco;2026-11-06;KSFO;highest-temperature-in-san-francisco-on-november-6-2026;74-75°F;0.007;0.02;0.0135;0.036;0.993;0.05
+2026-11-06 14:17;M1;6;highest|san-francisco;2026-11-06;KSFO;highest-temperature-in-san-francisco-on-november-6-2026;76-77°F;;0.002;;0.002;;0.05
+2026-11-06 14:17;M1;6;highest|san-francisco;2026-11-06;KSFO;highest-temperature-in-san-francisco-on-november-6-2026;78°F or higher;0.001;0.002;0.0015;0.002;0.999;0.05
