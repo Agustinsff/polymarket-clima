@@ -1,13 +1,13 @@
 # Resumen polymarket-clima
 
-_Actualizado: 2026-11-06 07:58 (Montevideo). Todo es **en papel**: no se usa plata real._
+_Actualizado: 2026-11-06 08:00 (Montevideo). Todo es **en papel**: no se usa plata real._
 
 ## Estado de las tareas
 
 ⚠️ El cosechador no actualiza desde 2026-11-04 16:12 UTC.
 🔔 Polymarket cambió algo en **clima (otros)** (mercado de clima nuevo, ya no aparece el 2026-11-04 11:32 UTC): `what-category-will-vance-reach`. Ver [reglas_informe.md](reglas_informe.md).
 
-- Última foto de liquidez: 2026-11-06T07:45:37
+- Última foto de liquidez: 2026-11-06T08:00:42
 - Monitor: mañana 2026-11-05, noche 2026-11-05
 - Prueba São Paulo: último día registrado 2026-11-05
 - Cosechador: último ciclo 2026-11-04 16:12 UTC, 88 mercados, 46 estaciones
@@ -87,11 +87,11 @@ Series donde el modelo le gana al mercado (≥5 días): mín denver (6 días), m
 
 | Modo | Serie calibrada | Liquidadas | Ganadas | Neto (10 acc. c/u) | Pendientes |
 |---|---|---|---|---|---|
-| taker | no | 1302 | 304 | US$-699.73 | 207 |
-| maker | no | 3169 | 382 | US$-397.61 | 1605 |
-| cola_taker | no | 608 | 11 | US$-116.87 | 124 |
-| cola_maker | no | 1074 | 21 | US$-76.63 | 548 |
-| no80_90 | no | 516 | 364 | US$-810.95 | 94 |
+| taker | no | 1302 | 304 | US$-699.73 | 214 |
+| maker | no | 3169 | 382 | US$-397.61 | 1616 |
+| cola_taker | no | 608 | 11 | US$-116.87 | 129 |
+| cola_maker | no | 1074 | 21 | US$-76.63 | 551 |
+| no80_90 | no | 516 | 364 | US$-810.95 | 95 |
 
 Taker en total: US$-1627.54. _Con la comisión vieja (0,05 para todo) sería US$-1716.64._
 
@@ -123,6 +123,6 @@ Prueba SP: 13 operaciones; como maker se habrían llenado 11, neto **US$-12.35**
 
 ## Recompensas de liquidez (estimación, últimas 24 h)
 
-- Buenos Aires: ~US$42/día con 100 acciones a 1 ¢ en todas las cajas del mercado de mañana (sin contar pérdidas por quedar 'tomado').
+- Buenos Aires: ~US$43/día con 100 acciones a 1 ¢ en todas las cajas del mercado de mañana (sin contar pérdidas por quedar 'tomado').
 - Sao Paulo: ~US$65/día con 100 acciones a 1 ¢ en todas las cajas del mercado de mañana (sin contar pérdidas por quedar 'tomado').
 
