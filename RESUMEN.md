@@ -1,12 +1,12 @@
 # Resumen polymarket-clima
 
-_Actualizado: 2026-11-06 09:58 (Montevideo). Todo es **en papel**: no se usa plata real._
+_Actualizado: 2026-11-06 10:02 (Montevideo). Todo es **en papel**: no se usa plata real._
 
 ## Estado de las tareas
 
 ⚠️ El cosechador no actualiza desde 2026-11-04 16:12 UTC.
 
-- Última foto de liquidez: 2026-11-06T09:47:36
+- Última foto de liquidez: 2026-11-06T10:02:43
 - Monitor: mañana 2026-11-05, noche 2026-11-05
 - Prueba São Paulo: último día registrado 2026-11-05
 - Cosechador: último ciclo 2026-11-04 16:12 UTC, 88 mercados, 46 estaciones
@@ -88,7 +88,7 @@ Series donde el modelo le gana al mercado (≥5 días): mín denver (6 días), m
 |---|---|---|---|---|---|
 | taker | no | 1302 | 304 | US$-699.73 | 216 |
 | maker | no | 3169 | 382 | US$-397.61 | 1622 |
-| cola_taker | no | 608 | 11 | US$-116.87 | 130 |
+| cola_taker | no | 608 | 11 | US$-116.87 | 131 |
 | cola_maker | no | 1074 | 21 | US$-76.63 | 554 |
 | no80_90 | no | 516 | 364 | US$-810.95 | 97 |
 
@@ -122,6 +122,6 @@ Prueba SP: 13 operaciones; como maker se habrían llenado 11, neto **US$-12.35**
 
 ## Recompensas de liquidez (estimación, últimas 24 h)
 
-- Buenos Aires: ~US$43/día con 100 acciones a 1 ¢ en todas las cajas del mercado de mañana (sin contar pérdidas por quedar 'tomado').
+- Buenos Aires: ~US$42/día con 100 acciones a 1 ¢ en todas las cajas del mercado de mañana (sin contar pérdidas por quedar 'tomado').
 - Sao Paulo: ~US$64/día con 100 acciones a 1 ¢ en todas las cajas del mercado de mañana (sin contar pérdidas por quedar 'tomado').
 
