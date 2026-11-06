@@ -6,7 +6,7 @@ _Actualizado: 2026-11-06 15:53 (Montevideo). Todo es **en papel**: no se usa pla
 
 ⚠️ El cosechador no actualiza desde 2026-11-04 16:12 UTC.
 
-- Última foto de liquidez: 2026-11-06T15:38:47
+- Última foto de liquidez: 2026-11-06T15:53:48
 - Monitor: mañana 2026-11-06, noche 2026-11-05
 - Prueba São Paulo: último día registrado 2026-11-06
 - Cosechador: último ciclo 2026-11-04 16:12 UTC, 88 mercados, 46 estaciones
