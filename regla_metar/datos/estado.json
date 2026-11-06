@@ -413,6 +413,7 @@
   "highest-temperature-in-denver-on-november-5-2026|M1",
   "highest-temperature-in-denver-on-november-5-2026|M2",
   "highest-temperature-in-denver-on-november-6-2026|M0",
+  "highest-temperature-in-denver-on-november-6-2026|M1",
   "highest-temperature-in-denver-on-october-26-2026|M1",
   "highest-temperature-in-denver-on-october-26-2026|M2",
   "highest-temperature-in-denver-on-october-27-2026|M0",
@@ -1994,6 +1995,7 @@
   "lowest-temperature-in-denver-on-november-5-2026|M1",
   "lowest-temperature-in-denver-on-november-5-2026|M2",
   "lowest-temperature-in-denver-on-november-6-2026|M0",
+  "lowest-temperature-in-denver-on-november-6-2026|M1",
   "lowest-temperature-in-denver-on-october-26-2026|M1",
   "lowest-temperature-in-denver-on-october-26-2026|M2",
   "lowest-temperature-in-denver-on-october-27-2026|M0",
@@ -3033,7 +3035,7 @@
   "lowest-temperature-in-wuhan-on-october-31-2026|M1",
   "lowest-temperature-in-wuhan-on-october-31-2026|M2"
  ],
- "metar_ultimo": "2026-11-06T07:44:13+00:00",
+ "metar_ultimo": "2026-11-06T13:17:09+00:00",
  "resultados": [
   "highest-temperature-in-amsterdam-on-november-1-2026",
   "highest-temperature-in-amsterdam-on-november-2-2026",
