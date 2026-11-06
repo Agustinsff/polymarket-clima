@@ -30,21 +30,21 @@ Acumulado: la caja favorita del **mercado** acertó 20/46, la del **modelo** 11/
 
 ## Prueba en papel São Paulo 14 hs (regla fija)
 
-Días registrados: 23 (desde 2026-10-14).
-Operaciones: 17 (2 ganadas, 13 perdidas, 2 pendientes). **Neto con comisiones: US$-14.30** (bruto -13.72, comisiones −0.58). _Con la comisión vieja (0,05 para todo) sería US$-14.68._
+Días registrados: 24 (desde 2026-10-14).
+Operaciones: 19 (2 ganadas, 15 perdidas, 2 pendientes). **Neto con comisiones: US$-15.13** (bruto -14.51, comisiones −0.62). _Con la comisión vieja (0,05 para todo) sería US$-15.51._
 
 | Día | Caja | Lado | Precio | Modelo | Resultado |
 |---|---|---|---|---|---|
-| 2026-10-25 | 22°C | Yes | 0.057 | 37% | -0.57 |
-| 2026-10-26 | 19°C | Yes | 0.062 | 16% | -0.62 |
 | 2026-10-27 | 21°C | No | 0.040 | 82% | -0.40 |
 | 2026-10-27 | 22°C | Yes | 0.039 | 16% | -0.39 |
 | 2026-10-28 | 21°C | No | 0.110 | 58% | -1.10 |
 | 2026-10-28 | 22°C | Yes | 0.100 | 37% | -1.00 |
 | 2026-11-02 | 24°C | No | 0.165 | 59% | -1.72 |
 | 2026-11-02 | 25°C | Yes | 0.160 | 38% | -1.67 |
-| 2026-11-05 | 26°C | No | 0.039 | 52% | pendiente |
-| 2026-11-05 | 27°C | Yes | 0.040 | 41% | pendiente |
+| 2026-11-05 | 26°C | No | 0.039 | 52% | -0.41 |
+| 2026-11-05 | 27°C | Yes | 0.040 | 41% | -0.42 |
+| 2026-11-06 | 28°C | No | 0.040 | 69% | pendiente |
+| 2026-11-06 | 29°C or higher | Yes | 0.042 | 31% | pendiente |
 
 ## Cosechador en papel (cajas imposibles, todas las ciudades)
 
