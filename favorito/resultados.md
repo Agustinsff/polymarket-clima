@@ -1,6 +1,6 @@
-# Favorito tardío en papel (regla en REGLA.md) — 2026-11-06 05:53Z
+# Favorito tardío en papel (regla en REGLA.md) — 2026-11-06 06:53Z
 
-- **precio del libro**: 80 ops (79 liquidadas, 66 ganadas), neto US$ +16.67 sobre US$ 634.79 (ROI +2.6 %), 12 días, P(≤0) 0.30, BTC +4.20 / ETH +12.47
-- **con 1 ¢ extra**: 80 ops (79 liquidadas, 66 ganadas), neto US$ +9.11 sobre US$ 634.79 (ROI +1.4 %), 12 días, P(≤0) 0.38, BTC +0.37 / ETH +8.74
-- Horas registradas: 200 de 203 desde la primera; perdidas (el reloj no llegó al minuto 53–58): 3; libros mirados: 1004.
-- Spread mediano del libro a esa hora: 1.0 ¢ (834 libros).
+- **precio del libro**: 80 ops (80 liquidadas, 67 ganadas), neto US$ +18.56 sobre US$ 642.79 (ROI +2.9 %), 12 días, P(≤0) 0.29, BTC +6.09 / ETH +12.47
+- **con 1 ¢ extra**: 80 ops (80 liquidadas, 67 ganadas), neto US$ +10.91 sobre US$ 642.79 (ROI +1.7 %), 12 días, P(≤0) 0.36, BTC +2.16 / ETH +8.74
+- Horas registradas: 200 de 203 desde la primera; perdidas (el reloj no llegó al minuto 53–58): 3; libros mirados: 1008.
+- Spread mediano del libro a esa hora: 1.0 ¢ (838 libros).
