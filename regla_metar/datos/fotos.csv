@@ -33439,3 +33439,47 @@ momento_utc;momento;hora_local;serie;fecha;icao;slug;caja;bid;ask;medio;si_10;no
 2026-11-06 14:17;M1;6;highest|san-francisco;2026-11-06;KSFO;highest-temperature-in-san-francisco-on-november-6-2026;74-75°F;0.007;0.02;0.0135;0.036;0.993;0.05
 2026-11-06 14:17;M1;6;highest|san-francisco;2026-11-06;KSFO;highest-temperature-in-san-francisco-on-november-6-2026;76-77°F;;0.002;;0.002;;0.05
 2026-11-06 14:17;M1;6;highest|san-francisco;2026-11-06;KSFO;highest-temperature-in-san-francisco-on-november-6-2026;78°F or higher;0.001;0.002;0.0015;0.002;0.999;0.05
+2026-11-06 15:18;M2;12;lowest|sao-paulo;2026-11-06;SBGR;lowest-temperature-in-sao-paulo-on-november-6-2026;14°C or below;0.001;0.03;0.0155;0.03;0.999;0.05
+2026-11-06 15:18;M2;12;lowest|sao-paulo;2026-11-06;SBGR;lowest-temperature-in-sao-paulo-on-november-6-2026;15°C;0.001;0.03;0.0155;0.03;0.999;0.05
+2026-11-06 15:18;M2;12;lowest|sao-paulo;2026-11-06;SBGR;lowest-temperature-in-sao-paulo-on-november-6-2026;16°C;0.001;0.03;0.0155;0.03;0.999;0.05
+2026-11-06 15:18;M2;12;lowest|sao-paulo;2026-11-06;SBGR;lowest-temperature-in-sao-paulo-on-november-6-2026;17°C;;0.27;;0.27;;0.05
+2026-11-06 15:18;M2;12;lowest|sao-paulo;2026-11-06;SBGR;lowest-temperature-in-sao-paulo-on-november-6-2026;18°C;;0.21;;0.21;;0.05
+2026-11-06 15:18;M2;12;lowest|sao-paulo;2026-11-06;SBGR;lowest-temperature-in-sao-paulo-on-november-6-2026;19°C;0.03;0.66;0.345;0.66;0.97;0.05
+2026-11-06 15:18;M2;12;lowest|sao-paulo;2026-11-06;SBGR;lowest-temperature-in-sao-paulo-on-november-6-2026;20°C;0.09;0.96;0.525;0.96;0.91;0.05
+2026-11-06 15:18;M2;12;lowest|sao-paulo;2026-11-06;SBGR;lowest-temperature-in-sao-paulo-on-november-6-2026;21°C;;0.001;;0.001;;0.05
+2026-11-06 15:18;M2;12;lowest|sao-paulo;2026-11-06;SBGR;lowest-temperature-in-sao-paulo-on-november-6-2026;22°C;;0.001;;0.001;;0.05
+2026-11-06 15:18;M2;12;lowest|sao-paulo;2026-11-06;SBGR;lowest-temperature-in-sao-paulo-on-november-6-2026;23°C;;0.001;;0.001;;0.05
+2026-11-06 15:18;M2;12;lowest|sao-paulo;2026-11-06;SBGR;lowest-temperature-in-sao-paulo-on-november-6-2026;24°C or higher;;0.001;;0.001;;0.05
+2026-11-06 15:18;M2;12;lowest|buenos-aires;2026-11-06;SAEZ;lowest-temperature-in-buenos-aires-on-november-6-2026;12°C or below;0.983;;;;0.017;0.05
+2026-11-06 15:18;M2;12;lowest|buenos-aires;2026-11-06;SAEZ;lowest-temperature-in-buenos-aires-on-november-6-2026;13°C;;0.002;;0.0025;;0.05
+2026-11-06 15:18;M2;12;lowest|buenos-aires;2026-11-06;SAEZ;lowest-temperature-in-buenos-aires-on-november-6-2026;14°C;;0.001;;0.001;;0.05
+2026-11-06 15:18;M2;12;lowest|buenos-aires;2026-11-06;SAEZ;lowest-temperature-in-buenos-aires-on-november-6-2026;15°C;;0.003;;0.003;;0.05
+2026-11-06 15:18;M2;12;lowest|buenos-aires;2026-11-06;SAEZ;lowest-temperature-in-buenos-aires-on-november-6-2026;16°C;;0.001;;0.001;;0.05
+2026-11-06 15:18;M2;12;lowest|buenos-aires;2026-11-06;SAEZ;lowest-temperature-in-buenos-aires-on-november-6-2026;17°C;;0.001;;0.001;;0.05
+2026-11-06 15:18;M2;12;lowest|buenos-aires;2026-11-06;SAEZ;lowest-temperature-in-buenos-aires-on-november-6-2026;18°C;;0.001;;0.001;;0.05
+2026-11-06 15:18;M2;12;lowest|buenos-aires;2026-11-06;SAEZ;lowest-temperature-in-buenos-aires-on-november-6-2026;19°C;;0.001;;0.001;;0.05
+2026-11-06 15:18;M2;12;lowest|buenos-aires;2026-11-06;SAEZ;lowest-temperature-in-buenos-aires-on-november-6-2026;20°C;;0.001;;0.001;;0.05
+2026-11-06 15:18;M2;12;lowest|buenos-aires;2026-11-06;SAEZ;lowest-temperature-in-buenos-aires-on-november-6-2026;21°C;;0.001;;0.001;;0.05
+2026-11-06 15:18;M2;12;lowest|buenos-aires;2026-11-06;SAEZ;lowest-temperature-in-buenos-aires-on-november-6-2026;22°C or higher;;0.001;;0.001;;0.05
+2026-11-06 15:18;M2;12;highest|sao-paulo;2026-11-06;SBGR;highest-temperature-in-sao-paulo-on-november-6-2026;19°C or below;;0.001;;0.001;;0.05
+2026-11-06 15:18;M2;12;highest|sao-paulo;2026-11-06;SBGR;highest-temperature-in-sao-paulo-on-november-6-2026;20°C;;0.001;;0.001;;0.05
+2026-11-06 15:18;M2;12;highest|sao-paulo;2026-11-06;SBGR;highest-temperature-in-sao-paulo-on-november-6-2026;21°C;;0.001;;0.001;;0.05
+2026-11-06 15:18;M2;12;highest|sao-paulo;2026-11-06;SBGR;highest-temperature-in-sao-paulo-on-november-6-2026;22°C;;0.001;;0.001;;0.05
+2026-11-06 15:18;M2;12;highest|sao-paulo;2026-11-06;SBGR;highest-temperature-in-sao-paulo-on-november-6-2026;23°C;;0.001;;0.001;;0.05
+2026-11-06 15:18;M2;12;highest|sao-paulo;2026-11-06;SBGR;highest-temperature-in-sao-paulo-on-november-6-2026;24°C;;0.001;;0.001;;0.05
+2026-11-06 15:18;M2;12;highest|sao-paulo;2026-11-06;SBGR;highest-temperature-in-sao-paulo-on-november-6-2026;25°C;;0.001;;0.001;;0.05
+2026-11-06 15:18;M2;12;highest|sao-paulo;2026-11-06;SBGR;highest-temperature-in-sao-paulo-on-november-6-2026;26°C;;0.002;;0.002;;0.05
+2026-11-06 15:18;M2;12;highest|sao-paulo;2026-11-06;SBGR;highest-temperature-in-sao-paulo-on-november-6-2026;27°C;0.27;0.36;0.315;0.378;0.73;0.05
+2026-11-06 15:18;M2;12;highest|sao-paulo;2026-11-06;SBGR;highest-temperature-in-sao-paulo-on-november-6-2026;28°C;0.21;0.33;0.27;0.3327;0.795;0.05
+2026-11-06 15:18;M2;12;highest|sao-paulo;2026-11-06;SBGR;highest-temperature-in-sao-paulo-on-november-6-2026;29°C or higher;0.342;0.441;0.3915;0.4912;0.658;0.05
+2026-11-06 15:18;M2;12;highest|buenos-aires;2026-11-06;SAEZ;highest-temperature-in-buenos-aires-on-november-6-2026;20°C or below;;0.001;;0.001;;0.05
+2026-11-06 15:18;M2;12;highest|buenos-aires;2026-11-06;SAEZ;highest-temperature-in-buenos-aires-on-november-6-2026;21°C;;0.001;;0.001;;0.05
+2026-11-06 15:18;M2;12;highest|buenos-aires;2026-11-06;SAEZ;highest-temperature-in-buenos-aires-on-november-6-2026;22°C;;0.001;;0.001;;0.05
+2026-11-06 15:18;M2;12;highest|buenos-aires;2026-11-06;SAEZ;highest-temperature-in-buenos-aires-on-november-6-2026;23°C;;0.001;;0.001;;0.05
+2026-11-06 15:18;M2;12;highest|buenos-aires;2026-11-06;SAEZ;highest-temperature-in-buenos-aires-on-november-6-2026;24°C;;0.001;;0.001;;0.05
+2026-11-06 15:18;M2;12;highest|buenos-aires;2026-11-06;SAEZ;highest-temperature-in-buenos-aires-on-november-6-2026;25°C;0.22;0.33;0.275;0.335;0.8495;0.05
+2026-11-06 15:18;M2;12;highest|buenos-aires;2026-11-06;SAEZ;highest-temperature-in-buenos-aires-on-november-6-2026;26°C;0.37;0.51;0.44;0.515;0.635;0.05
+2026-11-06 15:18;M2;12;highest|buenos-aires;2026-11-06;SAEZ;highest-temperature-in-buenos-aires-on-november-6-2026;27°C;0.23;0.32;0.275;0.32;0.775;0.05
+2026-11-06 15:18;M2;12;highest|buenos-aires;2026-11-06;SAEZ;highest-temperature-in-buenos-aires-on-november-6-2026;28°C;0.074;0.111;0.0925;0.1115;0.926;0.05
+2026-11-06 15:18;M2;12;highest|buenos-aires;2026-11-06;SAEZ;highest-temperature-in-buenos-aires-on-november-6-2026;29°C;0.002;0.005;0.0035;0.005;0.998;0.05
+2026-11-06 15:18;M2;12;highest|buenos-aires;2026-11-06;SAEZ;highest-temperature-in-buenos-aires-on-november-6-2026;30°C or higher;;0.001;;0.001;;0.05
