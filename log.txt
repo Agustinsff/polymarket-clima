@@ -1639,3 +1639,128 @@ requests.exceptions.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
 23:14:27Z mos KORD MEX listo
 23:14:27Z mos KSEA MEX listo
 23:14:27Z mos KSFO MEX listo
+03:39:37Z obs CYYZ 2026: 595 reportes
+03:40:19Z obs EDDM 2026: 1063 reportes
+03:41:02Z obs EFHK 2026: 1063 reportes
+03:41:25Z obs EGLC 2026: 1063 reportes
+03:41:48Z obs EHAM 2026: 1056 reportes
+03:42:11Z obs EPWA 2026: 1064 reportes
+03:42:53Z obs FACT 2026: 597 reportes
+03:43:16Z obs KATL 2026: 602 reportes
+03:43:39Z obs KAUS 2026: 576 reportes
+03:44:21Z obs KDAL 2026: 549 reportes
+03:44:50Z https://mesonet.agron.iastate.edu/cgi-bin/request/asos.py fallo (('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))), reintento
+03:44:56Z obs KDEN 2026: 621 reportes
+03:45:39Z obs KHOU 2026: 575 reportes
+03:46:22Z obs KLAX 2026: 566 reportes
+03:46:44Z obs KLGA 2026: 552 reportes
+03:47:27Z obs KMIA 2026: 614 reportes
+03:48:09Z obs KORD 2026: 624 reportes
+03:48:32Z obs KSEA 2026: 628 reportes
+03:49:15Z obs KSFO 2026: 575 reportes
+03:49:58Z obs LEMD 2026: 1067 reportes
+03:50:21Z obs LIMC 2026: 1039 reportes
+03:50:43Z obs LLBG 2026: 1059 reportes
+03:51:26Z obs LTAC 2026: 1105 reportes
+03:51:49Z obs LTFM 2026: 1063 reportes
+03:52:12Z obs MMMX 2026: 670 reportes
+03:52:34Z obs MPMG 2026: 557 reportes
+03:53:17Z obs NZWN 2026: 1064 reportes
+03:53:40Z obs OEJN 2026: 534 reportes
+03:54:02Z obs OPKC 2026: 1064 reportes
+03:54:45Z obs RCSS 2026: 1036 reportes
+03:55:08Z obs RJTT 2026: 1064 reportes
+03:55:51Z obs RKPK 2026: 600 reportes
+03:56:33Z obs RKSI 2026: 1064 reportes
+03:56:56Z obs RPLL 2026: 534 reportes
+03:57:19Z obs SAEZ 2026: 610 reportes
+03:58:01Z obs SBGR 2026: 556 reportes
+03:58:24Z obs UUWW 2026: 1195 reportes
+03:58:47Z obs WMKK 2026: 1100 reportes
+03:59:30Z obs WSSS 2026: 1094 reportes
+04:00:13Z obs ZBAA 2026: 1072 reportes
+04:00:35Z obs ZGGG 2026: 1064 reportes
+04:00:58Z obs ZGSZ 2026: 532 reportes
+04:01:41Z obs ZHHH 2026: 532 reportes
+04:02:05Z obs ZSPD 2026: 1076 reportes
+04:02:27Z obs ZSQD 2026: 532 reportes
+04:03:10Z obs ZUCK 2026: 532 reportes
+04:03:53Z obs ZUUU 2026: 532 reportes
+04:04:22Z obs_diaria: 65865 dias-estacion
+04:12:14Z pron 2026-11 listo (gastado hoy 713)
+04:14:59Z pron 2026-10 listo (gastado hoy 713)
+04:17:45Z pron 2026-09 listo (gastado hoy 713)
+04:20:31Z pron 2026-08 listo (gastado hoy 713)
+04:23:16Z pron 2026-07 listo (gastado hoy 713)
+04:26:01Z pron 2026-06 listo (gastado hoy 713)
+04:28:46Z pron 2026-05 listo (gastado hoy 713)
+04:31:32Z pron 2026-04 listo (gastado hoy 713)
+04:34:17Z pron 2026-03 listo (gastado hoy 713)
+04:37:02Z pron 2026-02 listo (gastado hoy 713)
+04:39:48Z pron 2026-01 listo (gastado hoy 713)
+04:42:33Z pron 2025-12 listo (gastado hoy 713)
+04:45:19Z pron 2025-11 listo (gastado hoy 713)
+04:48:04Z pron 2025-10 listo (gastado hoy 713)
+04:50:50Z pron 2025-09 listo (gastado hoy 713)
+04:53:46Z pron 2025-08 listo (gastado hoy 766)
+05:01:31Z pron 2025-07 listo (gastado hoy 2241)
+05:09:26Z pron 2025-06 listo (gastado hoy 3668)
+05:17:34Z pron 2025-05 listo (gastado hoy 5143)
+05:25:56Z pron 2025-04 listo (gastado hoy 6566)
+05:33:36Z pron: se corta (presupuesto/tiempo (gastado hoy 7998)); sigue en la proxima corrida
+05:33:50Z mos KAUS NBS listo
+05:33:52Z mos KAUS NBE listo
+05:33:55Z mos KAUS GFS listo
+05:33:58Z mos KAUS NAM listo
+05:34:01Z mos KAUS MEX listo
+05:34:04Z mos KHOU NBS listo
+05:34:07Z mos KHOU NBE listo
+05:34:10Z mos KDEN NBS listo
+05:34:13Z mos KDEN NBE listo
+05:34:15Z mos KDEN GFS listo
+05:34:18Z mos KDEN NAM listo
+05:34:21Z mos KDEN MEX listo
+05:34:24Z mos KLAX NBS listo
+05:34:27Z mos KLAX NBE listo
+05:34:29Z mos KLAX GFS listo
+05:34:32Z mos KLAX NAM listo
+05:34:35Z mos KLAX MEX listo
+05:34:38Z mos KLGA NBS listo
+05:34:41Z mos KLGA NBE listo
+05:34:44Z mos KLGA GFS listo
+05:34:47Z mos KLGA NAM listo
+05:34:50Z mos KATL NBS listo
+05:34:52Z mos KATL NBE listo
+05:34:55Z mos KATL GFS listo
+05:34:58Z mos KATL NAM listo
+05:35:01Z mos KATL MEX listo
+05:35:04Z mos KMIA NBS listo
+05:35:06Z mos KMIA NBE listo
+05:35:09Z mos KMIA GFS listo
+05:35:12Z mos KMIA NAM listo
+05:35:14Z mos KMIA MEX listo
+05:35:18Z mos KORD NBS listo
+05:35:21Z mos KORD NBE listo
+05:35:23Z mos KORD GFS listo
+05:35:26Z mos KORD NAM listo
+05:35:29Z mos KORD MEX listo
+05:35:32Z mos KSEA NBS listo
+05:35:35Z mos KSEA NBE listo
+05:35:38Z mos KSEA GFS listo
+05:35:40Z mos KSEA NAM listo
+05:35:43Z mos KSEA MEX listo
+05:35:46Z mos KSFO NBS listo
+05:35:49Z mos KSFO NBE listo
+05:35:51Z mos KSFO GFS listo
+05:35:54Z mos KSFO NAM listo
+05:35:57Z mos KSFO MEX listo
+05:36:10Z mos KHOU GFS listo
+05:36:13Z mos KHOU NAM listo
+05:36:15Z mos KHOU MEX listo
+05:36:50Z mos KLGA MEX listo
+05:37:08Z mos KDAL NBS 2026-11: sin respuesta
+05:37:08Z mos KDAL NBS listo
+05:37:11Z mos KDAL NBE listo
+05:37:14Z mos KDAL GFS listo
+05:37:17Z mos KDAL NAM listo
+05:37:19Z mos KDAL MEX listo
