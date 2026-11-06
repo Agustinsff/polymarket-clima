@@ -33483,3 +33483,102 @@ momento_utc;momento;hora_local;serie;fecha;icao;slug;caja;bid;ask;medio;si_10;no
 2026-11-06 15:18;M2;12;highest|buenos-aires;2026-11-06;SAEZ;highest-temperature-in-buenos-aires-on-november-6-2026;28°C;0.074;0.111;0.0925;0.1115;0.926;0.05
 2026-11-06 15:18;M2;12;highest|buenos-aires;2026-11-06;SAEZ;highest-temperature-in-buenos-aires-on-november-6-2026;29°C;0.002;0.005;0.0035;0.005;0.998;0.05
 2026-11-06 15:18;M2;12;highest|buenos-aires;2026-11-06;SAEZ;highest-temperature-in-buenos-aires-on-november-6-2026;30°C or higher;;0.001;;0.001;;0.05
+2026-11-06 17:18;M2;12;lowest|nyc;2026-11-06;KLGA;lowest-temperature-in-nyc-on-november-6-2026;53°F or below;;0.026;;0.026;;0.05
+2026-11-06 17:18;M2;12;lowest|nyc;2026-11-06;KLGA;lowest-temperature-in-nyc-on-november-6-2026;54-55°F;0.002;0.025;0.0135;0.025;0.998;0.05
+2026-11-06 17:18;M2;12;lowest|nyc;2026-11-06;KLGA;lowest-temperature-in-nyc-on-november-6-2026;56-57°F;0.003;0.024;0.0135;0.024;0.997;0.05
+2026-11-06 17:18;M2;12;lowest|nyc;2026-11-06;KLGA;lowest-temperature-in-nyc-on-november-6-2026;58-59°F;0.16;0.39;0.275;0.39;0.84;0.05
+2026-11-06 17:18;M2;12;lowest|nyc;2026-11-06;KLGA;lowest-temperature-in-nyc-on-november-6-2026;60-61°F;0.5;0.68;0.59;0.685;0.5;0.05
+2026-11-06 17:18;M2;12;lowest|nyc;2026-11-06;KLGA;lowest-temperature-in-nyc-on-november-6-2026;62-63°F;0.14;0.34;0.24;0.34;0.865;0.05
+2026-11-06 17:18;M2;12;lowest|nyc;2026-11-06;KLGA;lowest-temperature-in-nyc-on-november-6-2026;64-65°F;0.014;0.08;0.047;0.08;0.986;0.05
+2026-11-06 17:18;M2;12;lowest|nyc;2026-11-06;KLGA;lowest-temperature-in-nyc-on-november-6-2026;66-67°F;0.003;0.02;0.0115;0.02;0.997;0.05
+2026-11-06 17:18;M2;12;lowest|nyc;2026-11-06;KLGA;lowest-temperature-in-nyc-on-november-6-2026;68-69°F;;0.001;;0.001;;0.05
+2026-11-06 17:18;M2;12;lowest|nyc;2026-11-06;KLGA;lowest-temperature-in-nyc-on-november-6-2026;70-71°F;;0.001;;0.001;;0.05
+2026-11-06 17:18;M2;12;lowest|nyc;2026-11-06;KLGA;lowest-temperature-in-nyc-on-november-6-2026;72°F or higher;;0.001;;0.001;;0.05
+2026-11-06 17:18;M2;12;lowest|atlanta;2026-11-06;KATL;lowest-temperature-in-atlanta-on-november-6-2026;51°F or below;;0.48;;0.48;;0.05
+2026-11-06 17:18;M2;12;lowest|atlanta;2026-11-06;KATL;lowest-temperature-in-atlanta-on-november-6-2026;52-53°F;0.001;0.449;0.225;0.4495;0.999;0.05
+2026-11-06 17:18;M2;12;lowest|atlanta;2026-11-06;KATL;lowest-temperature-in-atlanta-on-november-6-2026;54-55°F;0.04;0.7;0.37;0.705;0.96;0.05
+2026-11-06 17:18;M2;12;lowest|atlanta;2026-11-06;KATL;lowest-temperature-in-atlanta-on-november-6-2026;56-57°F;0.2;0.83;0.515;0.83;0.8;0.05
+2026-11-06 17:18;M2;12;lowest|atlanta;2026-11-06;KATL;lowest-temperature-in-atlanta-on-november-6-2026;58-59°F;0.18;0.78;0.48;0.78;0.825;0.05
+2026-11-06 17:18;M2;12;lowest|atlanta;2026-11-06;KATL;lowest-temperature-in-atlanta-on-november-6-2026;60-61°F;;0.001;;0.001;;0.05
+2026-11-06 17:18;M2;12;lowest|atlanta;2026-11-06;KATL;lowest-temperature-in-atlanta-on-november-6-2026;62-63°F;;0.001;;0.001;;0.05
+2026-11-06 17:18;M2;12;lowest|atlanta;2026-11-06;KATL;lowest-temperature-in-atlanta-on-november-6-2026;64-65°F;;0.001;;0.001;;0.05
+2026-11-06 17:18;M2;12;lowest|atlanta;2026-11-06;KATL;lowest-temperature-in-atlanta-on-november-6-2026;66-67°F;;0.001;;0.001;;0.05
+2026-11-06 17:18;M2;12;lowest|atlanta;2026-11-06;KATL;lowest-temperature-in-atlanta-on-november-6-2026;68-69°F;;0.001;;0.001;;0.05
+2026-11-06 17:18;M2;12;lowest|atlanta;2026-11-06;KATL;lowest-temperature-in-atlanta-on-november-6-2026;70°F or higher;;0.001;;0.001;;0.05
+2026-11-06 17:18;M2;12;lowest|miami;2026-11-06;KMIA;lowest-temperature-in-miami-on-november-6-2026;65°F or below;;0.021;;0.021;;0.05
+2026-11-06 17:18;M2;12;lowest|miami;2026-11-06;KMIA;lowest-temperature-in-miami-on-november-6-2026;66-67°F;;0.091;;0.091;;0.05
+2026-11-06 17:18;M2;12;lowest|miami;2026-11-06;KMIA;lowest-temperature-in-miami-on-november-6-2026;68-69°F;;0.096;;0.096;;0.05
+2026-11-06 17:18;M2;12;lowest|miami;2026-11-06;KMIA;lowest-temperature-in-miami-on-november-6-2026;70-71°F;;0.065;;0.065;;0.05
+2026-11-06 17:18;M2;12;lowest|miami;2026-11-06;KMIA;lowest-temperature-in-miami-on-november-6-2026;72-73°F;0.04;0.09;0.065;0.09;0.96;0.05
+2026-11-06 17:18;M2;12;lowest|miami;2026-11-06;KMIA;lowest-temperature-in-miami-on-november-6-2026;74-75°F;0.901;0.97;0.9355;0.97;0.099;0.05
+2026-11-06 17:18;M2;12;lowest|miami;2026-11-06;KMIA;lowest-temperature-in-miami-on-november-6-2026;76-77°F;;0.001;;0.001;;0.05
+2026-11-06 17:18;M2;12;lowest|miami;2026-11-06;KMIA;lowest-temperature-in-miami-on-november-6-2026;78-79°F;;0.001;;0.001;;0.05
+2026-11-06 17:18;M2;12;lowest|miami;2026-11-06;KMIA;lowest-temperature-in-miami-on-november-6-2026;80-81°F;;0.001;;0.001;;0.05
+2026-11-06 17:18;M2;12;lowest|miami;2026-11-06;KMIA;lowest-temperature-in-miami-on-november-6-2026;82-83°F;;0.001;;0.001;;0.05
+2026-11-06 17:18;M2;12;lowest|miami;2026-11-06;KMIA;lowest-temperature-in-miami-on-november-6-2026;84°F or higher;;0.001;;0.001;;0.05
+2026-11-06 17:18;M2;12;highest|nyc;2026-11-06;KLGA;highest-temperature-in-nyc-on-november-6-2026;59°F or below;;0.001;;0.001;;0.05
+2026-11-06 17:18;M2;12;highest|nyc;2026-11-06;KLGA;highest-temperature-in-nyc-on-november-6-2026;60-61°F;;0.001;;0.001;;0.05
+2026-11-06 17:18;M2;12;highest|nyc;2026-11-06;KLGA;highest-temperature-in-nyc-on-november-6-2026;62-63°F;;0.001;;0.001;;0.05
+2026-11-06 17:18;M2;12;highest|nyc;2026-11-06;KLGA;highest-temperature-in-nyc-on-november-6-2026;64-65°F;;0.001;;0.001;;0.05
+2026-11-06 17:18;M2;12;highest|nyc;2026-11-06;KLGA;highest-temperature-in-nyc-on-november-6-2026;66-67°F;;0.002;;0.002;;0.05
+2026-11-06 17:18;M2;12;highest|nyc;2026-11-06;KLGA;highest-temperature-in-nyc-on-november-6-2026;68-69°F;0.946;0.965;0.9555;0.9655;0.054;0.05
+2026-11-06 17:18;M2;12;highest|nyc;2026-11-06;KLGA;highest-temperature-in-nyc-on-november-6-2026;70-71°F;0.036;0.052;0.044;0.052;0.964;0.05
+2026-11-06 17:18;M2;12;highest|nyc;2026-11-06;KLGA;highest-temperature-in-nyc-on-november-6-2026;72-73°F;0.001;0.003;0.002;0.003;0.999;0.05
+2026-11-06 17:18;M2;12;highest|nyc;2026-11-06;KLGA;highest-temperature-in-nyc-on-november-6-2026;74-75°F;;0.001;;0.001;;0.05
+2026-11-06 17:18;M2;12;highest|nyc;2026-11-06;KLGA;highest-temperature-in-nyc-on-november-6-2026;76-77°F;;0.001;;0.001;;0.05
+2026-11-06 17:18;M2;12;highest|nyc;2026-11-06;KLGA;highest-temperature-in-nyc-on-november-6-2026;78°F or higher;;0.001;;0.001;;0.05
+2026-11-06 17:18;M2;12;highest|atlanta;2026-11-06;KATL;highest-temperature-in-atlanta-on-november-6-2026;61°F or below;;0.001;;0.001;;0.05
+2026-11-06 17:18;M2;12;highest|atlanta;2026-11-06;KATL;highest-temperature-in-atlanta-on-november-6-2026;62-63°F;;0.001;;0.001;;0.05
+2026-11-06 17:18;M2;12;highest|atlanta;2026-11-06;KATL;highest-temperature-in-atlanta-on-november-6-2026;64-65°F;;0.001;;0.001;;0.05
+2026-11-06 17:18;M2;12;highest|atlanta;2026-11-06;KATL;highest-temperature-in-atlanta-on-november-6-2026;66-67°F;;0.001;;0.001;;0.05
+2026-11-06 17:18;M2;12;highest|atlanta;2026-11-06;KATL;highest-temperature-in-atlanta-on-november-6-2026;68-69°F;;0.001;;0.001;;0.05
+2026-11-06 17:18;M2;12;highest|atlanta;2026-11-06;KATL;highest-temperature-in-atlanta-on-november-6-2026;70-71°F;;0.001;;0.001;;0.05
+2026-11-06 17:18;M2;12;highest|atlanta;2026-11-06;KATL;highest-temperature-in-atlanta-on-november-6-2026;72-73°F;0.011;0.036;0.0235;0.036;0.9895;0.05
+2026-11-06 17:18;M2;12;highest|atlanta;2026-11-06;KATL;highest-temperature-in-atlanta-on-november-6-2026;74-75°F;0.23;0.33;0.28;0.335;0.795;0.05
+2026-11-06 17:18;M2;12;highest|atlanta;2026-11-06;KATL;highest-temperature-in-atlanta-on-november-6-2026;76-77°F;0.63;0.74;0.685;0.745;0.37;0.05
+2026-11-06 17:18;M2;12;highest|atlanta;2026-11-06;KATL;highest-temperature-in-atlanta-on-november-6-2026;78-79°F;0.025;0.04;0.0325;0.04;0.975;0.05
+2026-11-06 17:18;M2;12;highest|atlanta;2026-11-06;KATL;highest-temperature-in-atlanta-on-november-6-2026;80°F or higher;;0.003;;0.003;;0.05
+2026-11-06 17:18;M2;12;highest|miami;2026-11-06;KMIA;highest-temperature-in-miami-on-november-6-2026;75°F or below;;0.001;;0.001;;0.05
+2026-11-06 17:18;M2;12;highest|miami;2026-11-06;KMIA;highest-temperature-in-miami-on-november-6-2026;76-77°F;;0.001;;0.001;;0.05
+2026-11-06 17:18;M2;12;highest|miami;2026-11-06;KMIA;highest-temperature-in-miami-on-november-6-2026;78-79°F;;0.001;;0.001;;0.05
+2026-11-06 17:18;M2;12;highest|miami;2026-11-06;KMIA;highest-temperature-in-miami-on-november-6-2026;80-81°F;;0.001;;0.001;;0.05
+2026-11-06 17:18;M2;12;highest|miami;2026-11-06;KMIA;highest-temperature-in-miami-on-november-6-2026;82-83°F;;0.001;;0.001;;0.05
+2026-11-06 17:18;M2;12;highest|miami;2026-11-06;KMIA;highest-temperature-in-miami-on-november-6-2026;84-85°F;0.25;0.37;0.31;0.375;0.75;0.05
+2026-11-06 17:18;M2;12;highest|miami;2026-11-06;KMIA;highest-temperature-in-miami-on-november-6-2026;86-87°F;0.6;0.7;0.65;0.7;0.405;0.05
+2026-11-06 17:18;M2;12;highest|miami;2026-11-06;KMIA;highest-temperature-in-miami-on-november-6-2026;88-89°F;0.019;0.034;0.0265;0.034;0.981;0.05
+2026-11-06 17:18;M2;12;highest|miami;2026-11-06;KMIA;highest-temperature-in-miami-on-november-6-2026;90-91°F;;0.004;;0.004;;0.05
+2026-11-06 17:18;M2;12;highest|miami;2026-11-06;KMIA;highest-temperature-in-miami-on-november-6-2026;92-93°F;;0.001;;0.001;;0.05
+2026-11-06 17:18;M2;12;highest|miami;2026-11-06;KMIA;highest-temperature-in-miami-on-november-6-2026;94°F or higher;;0.001;;0.001;;0.05
+2026-11-06 17:18;M2;12;lowest|toronto;2026-11-06;CYYZ;lowest-temperature-in-toronto-on-november-6-2026;3°C or below;;0.89;;0.89;;0.05
+2026-11-06 17:18;M2;12;lowest|toronto;2026-11-06;CYYZ;lowest-temperature-in-toronto-on-november-6-2026;4°C;;0.89;;0.89;;0.05
+2026-11-06 17:18;M2;12;lowest|toronto;2026-11-06;CYYZ;lowest-temperature-in-toronto-on-november-6-2026;5°C;0.03;0.71;0.37;0.715;0.97;0.05
+2026-11-06 17:18;M2;12;lowest|toronto;2026-11-06;CYYZ;lowest-temperature-in-toronto-on-november-6-2026;6°C;0.08;0.72;0.4;0.725;0.92;0.05
+2026-11-06 17:18;M2;12;lowest|toronto;2026-11-06;CYYZ;lowest-temperature-in-toronto-on-november-6-2026;7°C;0.03;0.61;0.32;0.615;0.97;0.05
+2026-11-06 17:18;M2;12;lowest|toronto;2026-11-06;CYYZ;lowest-temperature-in-toronto-on-november-6-2026;8°C;0.01;0.74;0.375;0.74;0.99;0.05
+2026-11-06 17:18;M2;12;lowest|toronto;2026-11-06;CYYZ;lowest-temperature-in-toronto-on-november-6-2026;9°C;;0.88;;0.88;;0.05
+2026-11-06 17:18;M2;12;lowest|toronto;2026-11-06;CYYZ;lowest-temperature-in-toronto-on-november-6-2026;10°C;0.001;0.04;0.0205;0.04;0.999;0.05
+2026-11-06 17:18;M2;12;lowest|toronto;2026-11-06;CYYZ;lowest-temperature-in-toronto-on-november-6-2026;11°C;;0.001;;0.001;;0.05
+2026-11-06 17:18;M2;12;lowest|toronto;2026-11-06;CYYZ;lowest-temperature-in-toronto-on-november-6-2026;12°C;;0.001;;0.001;;0.05
+2026-11-06 17:18;M2;12;lowest|toronto;2026-11-06;CYYZ;lowest-temperature-in-toronto-on-november-6-2026;13°C or higher;;0.001;;0.001;;0.05
+2026-11-06 17:18;M2;12;highest|toronto;2026-11-06;CYYZ;highest-temperature-in-toronto-on-november-6-2026;7°C or below;;0.001;;0.001;;0.05
+2026-11-06 17:18;M2;12;highest|toronto;2026-11-06;CYYZ;highest-temperature-in-toronto-on-november-6-2026;8°C;;0.001;;0.001;;0.05
+2026-11-06 17:18;M2;12;highest|toronto;2026-11-06;CYYZ;highest-temperature-in-toronto-on-november-6-2026;9°C;;0.001;;0.001;;0.05
+2026-11-06 17:18;M2;12;highest|toronto;2026-11-06;CYYZ;highest-temperature-in-toronto-on-november-6-2026;10°C;;0.001;;0.001;;0.05
+2026-11-06 17:18;M2;12;highest|toronto;2026-11-06;CYYZ;highest-temperature-in-toronto-on-november-6-2026;11°C;;0.001;;0.001;;0.05
+2026-11-06 17:18;M2;12;highest|toronto;2026-11-06;CYYZ;highest-temperature-in-toronto-on-november-6-2026;12°C;;0.001;;0.001;;0.05
+2026-11-06 17:18;M2;12;highest|toronto;2026-11-06;CYYZ;highest-temperature-in-toronto-on-november-6-2026;13°C;0.961;0.978;0.9695;0.978;0.039;0.05
+2026-11-06 17:18;M2;12;highest|toronto;2026-11-06;CYYZ;highest-temperature-in-toronto-on-november-6-2026;14°C;0.02;0.042;0.031;0.042;0.98;0.05
+2026-11-06 17:18;M2;12;highest|toronto;2026-11-06;CYYZ;highest-temperature-in-toronto-on-november-6-2026;15°C;0.002;0.008;0.005;0.008;0.998;0.05
+2026-11-06 17:18;M2;12;highest|toronto;2026-11-06;CYYZ;highest-temperature-in-toronto-on-november-6-2026;16°C;;0.018;;0.018;;0.05
+2026-11-06 17:18;M2;12;highest|toronto;2026-11-06;CYYZ;highest-temperature-in-toronto-on-november-6-2026;17°C or higher;;0.005;;0.005;;0.05
+2026-11-06 17:18;M2;12;highest|panama-city;2026-11-06;MPMG;highest-temperature-in-panama-city-on-november-6-2026;23°C or below;;0.001;;0.001;;0.05
+2026-11-06 17:18;M2;12;highest|panama-city;2026-11-06;MPMG;highest-temperature-in-panama-city-on-november-6-2026;24°C;;0.001;;0.001;;0.05
+2026-11-06 17:18;M2;12;highest|panama-city;2026-11-06;MPMG;highest-temperature-in-panama-city-on-november-6-2026;25°C;;0.001;;0.001;;0.05
+2026-11-06 17:18;M2;12;highest|panama-city;2026-11-06;MPMG;highest-temperature-in-panama-city-on-november-6-2026;26°C;;0.001;;0.001;;0.05
+2026-11-06 17:18;M2;12;highest|panama-city;2026-11-06;MPMG;highest-temperature-in-panama-city-on-november-6-2026;27°C;;0.001;;0.001;;0.05
+2026-11-06 17:18;M2;12;highest|panama-city;2026-11-06;MPMG;highest-temperature-in-panama-city-on-november-6-2026;28°C;;0.001;;0.001;;0.05
+2026-11-06 17:18;M2;12;highest|panama-city;2026-11-06;MPMG;highest-temperature-in-panama-city-on-november-6-2026;29°C;;0.001;;0.001;;0.05
+2026-11-06 17:18;M2;12;highest|panama-city;2026-11-06;MPMG;highest-temperature-in-panama-city-on-november-6-2026;30°C;0.22;0.38;0.3;0.385;0.785;0.05
+2026-11-06 17:18;M2;12;highest|panama-city;2026-11-06;MPMG;highest-temperature-in-panama-city-on-november-6-2026;31°C;0.55;0.64;0.595;0.67;0.45;0.05
+2026-11-06 17:18;M2;12;highest|panama-city;2026-11-06;MPMG;highest-temperature-in-panama-city-on-november-6-2026;32°C;0.034;0.093;0.0635;0.093;0.966;0.05
+2026-11-06 17:18;M2;12;highest|panama-city;2026-11-06;MPMG;highest-temperature-in-panama-city-on-november-6-2026;33°C or higher;0.006;0.03;0.018;0.03;0.9943;0.05
