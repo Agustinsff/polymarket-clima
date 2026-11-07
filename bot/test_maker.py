@@ -168,10 +168,11 @@ class SDKFalso:
         self.ordenes.clear()
 
     def list_open_orders(self):
-        return list(self.ordenes.values())
+        # como el SDK real: un paginador con iter_items(), no una lista
+        return self.types.SimpleNamespace(iter_items=lambda: iter(list(self.ordenes.values())))
 
     def list_positions(self):
-        return []
+        return self.types.SimpleNamespace(iter_items=lambda: iter([]))
 
     def redeem_positions(self, condition_id):
         self.redimidas.append(condition_id)

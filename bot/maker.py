@@ -241,10 +241,15 @@ class Real:
     def cancelar_todo(self):
         self.client.cancel_all()
 
+    @staticmethod
+    def _items(r):
+        """El SDK devuelve un Paginator (iter_items) en list_open_orders/list_positions; acepta tambien listas."""
+        return list(r.iter_items()) if hasattr(r, "iter_items") else list(r)
+
     def abiertas(self):
         return [{"id": o.id, "token": o.asset_id, "cid": o.condition_id, "lado": o.side, "precio": float(o.price),
                  "acciones": float(o.original_size) - float(o.size_matched), "llenado": float(o.size_matched)}
-                for o in self.client.list_open_orders()]
+                for o in self._items(self.client.list_open_orders())]
 
     def llenados(self):
         """Compara lo llenado de cada orden abierta con lo ya anotado. Las ordenes que se llenaron del todo
@@ -258,7 +263,7 @@ class Real:
         return out
 
     def inventario(self):
-        return {p.asset_id: float(p.current_size) for p in self.client.list_positions() if float(p.current_size) > 1e-6}
+        return {p.asset_id: float(p.current_size) for p in self._items(self.client.list_positions()) if float(p.current_size) > 1e-6}
 
     def cobrar(self, cid, tokens, ganador):
         inv = self.inventario()
