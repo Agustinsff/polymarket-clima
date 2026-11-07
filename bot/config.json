@@ -36,6 +36,7 @@
     "apagar_despues_de": "2026-11-30 23:59",
     "max_perdida_dia": 10,
     "max_perdida_total": 30,
-    "max_errores_seguidos": 10
+    "max_errores_seguidos": 10,
+    "avisar_errores": 3
   }
 }

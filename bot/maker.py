@@ -13,7 +13,10 @@ Que hace cada ciclo (60 s):
      (= vender Si a medio + d). Si ya tenemos acciones de un lado, vende esas en vez de comprar el otro lado,
      asi el capital no crece. Solo renueva si el medio se movio >= 1 tick (si no, deja la orden en la fila).
   5. anota los llenados, la recompensa cobrada (real: lo que informa Polymarket; papel: la formula) y el resumen
-  Al salir por cualquier motivo cancela TODAS las ordenes.
+  Al salir por cualquier motivo cancela TODAS las ordenes, salvo si se le pidio REINICIAR (bot/REINICIAR o
+  bot/actualizar.cmd): ahi sale con codigo 3 dejando las ordenes en el libro y, al volver a arrancar, adopta las que
+  siguen correspondiendo (mismo token, lado y precio), asi no pierde el lugar en la fila. Relee config.json en cada
+  ciclo (todo menos `modo`), asi cambiar capital, cajas, distancia o topes no necesita reinicio.
 
 Modos: papel (libro real, llenado prudente como el medidor: solo si alguien opero a peor precio) y real (SDK
 oficial, post-only GTC). Uso:
@@ -411,6 +414,8 @@ class Maker:
         self.f_res = os.path.join(carpeta, f"maker_resumen_{self.modo}.md")
         self.f_parar = os.path.join(carpeta, "PARAR")
         self.f_parar_auto = os.path.join(carpeta, f"PARAR_maker_{self.modo}")
+        self.f_reiniciar = os.path.join(carpeta, "REINICIAR")
+        self.f_cfg = None                                   # ruta de config.json para releer (None: no relee)
         self.est = self._cargar()
         self.ej = ej or (Real(m, self.est, ops=self.ops) if self.modo == "real" else Papel(m, self.est))
         # avisos al celular: siempre en real; en papel solo si la config lo pide (si no, marea)
@@ -445,29 +450,36 @@ class Maker:
 
     # ---------- cuentas ----------
     def pnl(self, dia=None, inventario=True):
-        """Resultado: cobros de cajas resueltas menos lo pagado por las acciones (ventas cuentan como cobro) MAS, si
+        """Resultado total: cobros de cajas resueltas menos lo pagado por las acciones (ventas cuentan como cobro) MAS, si
         inventario, las acciones que todavia se tienen valuadas al costo medio pagado. Sin eso una compra sin resolver
         contaba como perdida y el freno saltaba (7-nov en real: "perdida -40,74" que eran US$ 40 en acciones en cartera).
-        Con dia, las acciones en cartera cuentan solo hasta lo comprado ese dia."""
-        total, compradas = 0.0, {}
+        Con dia: resultado DEL DIA = ventas del dia al costo medio (q * (precio - costo)) + cajas resueltas ese dia
+        (cobrado - costo de lo que se tenia). Las compras del dia no cuentan (son acciones al costo), y una caja que
+        resuelve en contra cuenta ese dia aunque las acciones se hayan comprado antes."""
+        total = 0.0
+        if dia:
+            for o in self.ops():
+                if o["lado"] != "SELL" or o["momento_utc"][:10] != dia:
+                    continue
+                q, p = float(o["acciones"]), float(o["precio"])
+                c = self.est["costo"].get(o["token"])
+                total += q * (p - (c["precio"] if c else p))
+            for r in self.est["resultados"].values():
+                if r.get("dia") == dia:
+                    total += r.get("cobrado", 0) - r.get("costo", 0)
+            return round(total, 2)
         for o in self.ops():
-            if o["lado"] not in ("BUY", "SELL") or (dia and o["momento_utc"][:10] != dia):
+            if o["lado"] not in ("BUY", "SELL"):
                 continue
             q, p = float(o["acciones"]), float(o["precio"])
             total += -q * p if o["lado"] == "BUY" else q * p
-            if o["lado"] == "BUY":
-                compradas[o["token"]] = compradas.get(o["token"], 0) + q
-        for cid, r in self.est["resultados"].items():
-            if not dia or r.get("dia") == dia:
-                total += r.get("cobrado", 0)
+        for r in self.est["resultados"].values():
+            total += r.get("cobrado", 0)
         if inventario:
             for t, q in self.ej.inventario().items():
                 c = self.est["costo"].get(t)
-                if not c:
-                    continue
-                if dia:
-                    q = min(q, compradas.get(t, 0))
-                total += q * c["precio"]
+                if c:
+                    total += q * c["precio"]
         return round(total, 2)
 
     def capital_puesto(self):
@@ -646,13 +658,15 @@ class Maker:
                 continue
             si, no = c["si"], c["no"]
             gi = 0 if g == "Yes" else 1
+            costo = sum(inv.get(t, 0) * self.est["costo"].get(t, {}).get("precio", 0) for t in (si, no))
             try:
                 cobrado = self.ej.cobrar(cid, [si, no], gi)
             except Exception as ex:
                 log(f"no se pudo cobrar {c['caja']}: {ex!r}")
                 continue
             self.est["resultados"][cid] = {"dia": datetime.now(timezone.utc).strftime("%Y-%m-%d"), "gano": g,
-                                           "cobrado": round(cobrado, 2), "caja": c["caja"], "evento": c["evento"]}
+                                           "cobrado": round(cobrado, 2), "costo": round(costo, 2), "caja": c["caja"],
+                                           "evento": c["evento"]}
             for t in (si, no):
                 self.est["costo"].pop(t, None)
             self.est["meta"].pop(cid, None)
@@ -692,9 +706,48 @@ class Maker:
             pass
 
     # ---------- un ciclo ----------
+    def recargar_cfg(self):
+        """Relee config.json (si se pidio con f_cfg) y aplica los cambios de la seccion maker salvo `modo`."""
+        if not self.f_cfg:
+            return
+        try:
+            nueva = cargar_cfg(self.f_cfg)["maker"]
+        except (OSError, ValueError, KeyError) as ex:
+            log(f"config.json no se pudo leer, sigo con la anterior: {ex!r}")
+            return
+        vieja = self.cfg["maker"]
+        cambios = {k: v for k, v in nueva.items() if k != "modo" and vieja.get(k) != v}
+        if cambios:
+            log("config nueva: " + ", ".join(f"{k} {vieja.get(k)} -> {v}" for k, v in cambios.items()))
+            vieja.update(cambios)
+
+    def pedido_reinicio(self):
+        """True si alguien dejo bot/REINICIAR: el bot sale SIN cancelar las ordenes (las adopta al volver)."""
+        if not os.path.exists(self.f_reiniciar):
+            return False
+        try:
+            os.remove(self.f_reiniciar)
+        except OSError:
+            pass
+        return True
+
+    def sigo_vivo(self, ahora):
+        """Un aviso por dia a las 12 UTC (9 de la manana en Uruguay) con el estado, para notar si el bot esta caido."""
+        hoy = ahora.strftime("%Y-%m-%d")
+        if ahora.hour == 12 and self.est.get("ultimo_vivo") != hoy:
+            self.est["ultimo_vivo"] = hoy
+            try:
+                n = len(self.ej.abiertas())
+            except Exception:
+                n = "?"
+            self.avisar(f"Maker ({self.modo}) sigo vivo: {n} ordenes en {len(self.est['cajas'])} cajas, "
+                        f"resultado del dia {self.pnl(hoy):+.2f}, total al costo {self.pnl():+.2f}, "
+                        f"errores seguidos {self.est.get('errores_seguidos', 0)}.")
+
     def ciclo(self, ahora=None):
         ahora = ahora or datetime.now(timezone.utc)
         try:
+            self.recargar_cfg()
             self.revisar_llenados()
             self.liquidar()
             motivo = self.freno(ahora)
@@ -708,13 +761,25 @@ class Maker:
             self.est["errores_seguidos"] = self.est.get("errores_seguidos", 0) + errores if errores else 0
             self.est["ultimo_ciclo"] = ahora.strftime("%Y-%m-%d %H:%M:%S")
             self.recompensas(ahora)
+            self.sigo_vivo(ahora)
         except SystemExit:
             raise
         except Exception as ex:
             self.est["errores_seguidos"] = self.est.get("errores_seguidos", 0) + 1
             log(f"error en el ciclo: {ex!r}")
+        self.avisar_errores()
         self._guardar()
         return None
+
+    def avisar_errores(self):
+        """Un aviso al llegar a `avisar_errores` (3) errores seguidos, una vez por racha, antes del freno de 10."""
+        n, tope = self.est.get("errores_seguidos", 0), self.cfg["maker"].get("avisar_errores", 3)
+        if n >= tope and not self.est.get("errores_avisados"):
+            self.est["errores_avisados"] = True
+            self.avisar(f"Maker ({self.modo}): {n} errores seguidos (se frena a los {self.cfg['maker']['max_errores_seguidos']}). "
+                        f"Mirar la ventana del bot.")
+        elif n == 0:
+            self.est["errores_avisados"] = False
 
     def recompensas(self, ahora):
         """Una vez por dia (a las 00:30 UTC) anota la recompensa del dia anterior: real la informa Polymarket,
@@ -767,6 +832,7 @@ def main():
         avisar("Prueba de aviso del bot maker: si ves esto, los avisos funcionan.")
         return
     bot = Maker(cfg)
+    bot.f_cfg = os.path.join(CARPETA, "config.json")
     if que == "resumen":
         bot.resumen()
         return
@@ -779,10 +845,16 @@ def main():
     if que == "bucle":
         log(f"maker ({bot.modo}) arranca: {cfg['maker']['cajas']} cajas, US$ {cfg['maker']['capital_usd']}, "
             f"orden a {cfg['maker']['distancia'] * 100:.0f} c del medio")
+        bot.pedido_reinicio()                               # un REINICIAR viejo no vale
         bot.avisar(f"Maker ({bot.modo}) arrancó.")
+        reiniciar = False
         try:
             while True:
                 t0 = time.time()
+                if bot.pedido_reinicio():
+                    reiniciar = True
+                    log("reinicio pedido: salgo SIN cancelar las ordenes; al volver las adopto")
+                    break
                 motivo = bot.ciclo()
                 if motivo and "freno activo" in motivo or motivo == "perdida total" or motivo == "errores seguidos" \
                         or (motivo and motivo.startswith("fecha")):
@@ -794,6 +866,9 @@ def main():
             log("corte pedido (Ctrl+C o fin del tramo)")
         finally:
             bot.resumen()                   # con las ordenes todavia puestas, para que el capital se vea
+            if reiniciar:
+                bot._guardar()
+                sys.exit(3)                 # iniciar_maker.cmd lo vuelve a arrancar enseguida
             try:
                 bot.ej.cancelar_todo()
                 log("ordenes canceladas")
