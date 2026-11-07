@@ -444,17 +444,30 @@ class Maker:
             return list(csv.DictReader(f, delimiter=";"))
 
     # ---------- cuentas ----------
-    def pnl(self, dia=None):
-        """Ganancia realizada: cobros de cajas resueltas menos lo pagado por las acciones (ventas cuentan como cobro)."""
-        total = 0.0
+    def pnl(self, dia=None, inventario=True):
+        """Resultado: cobros de cajas resueltas menos lo pagado por las acciones (ventas cuentan como cobro) MAS, si
+        inventario, las acciones que todavia se tienen valuadas al costo medio pagado. Sin eso una compra sin resolver
+        contaba como perdida y el freno saltaba (7-nov en real: "perdida -40,74" que eran US$ 40 en acciones en cartera).
+        Con dia, las acciones en cartera cuentan solo hasta lo comprado ese dia."""
+        total, compradas = 0.0, {}
         for o in self.ops():
             if o["lado"] not in ("BUY", "SELL") or (dia and o["momento_utc"][:10] != dia):
                 continue
             q, p = float(o["acciones"]), float(o["precio"])
             total += -q * p if o["lado"] == "BUY" else q * p
+            if o["lado"] == "BUY":
+                compradas[o["token"]] = compradas.get(o["token"], 0) + q
         for cid, r in self.est["resultados"].items():
             if not dia or r.get("dia") == dia:
                 total += r.get("cobrado", 0)
+        if inventario:
+            for t, q in self.ej.inventario().items():
+                c = self.est["costo"].get(t)
+                if not c:
+                    continue
+                if dia:
+                    q = min(q, compradas.get(t, 0))
+                total += q * c["precio"]
         return round(total, 2)
 
     def capital_puesto(self):
@@ -737,7 +750,8 @@ class Maker:
                + (": " + ", ".join(f"{k} {v:.2f}" for k, v in sorted(cobradas.items())) if cobradas else "."),
                f"- Estimación por fórmula (pesimista): " + ", ".join(f"{k} {v:.2f}" for k, v in sorted(est.items())),
                f"- Llenados: {len(llen)} ({sum(float(o['acciones']) for o in llen):.0f} acciones); cajas resueltas: {len(self.est['resultados'])}.",
-               f"- Resultado realizado de los llenados (cobros − compras + ventas): US$ {self.pnl():+.2f}. "
+               f"- Resultado realizado de los llenados (cobros − compras + ventas): US$ {self.pnl(inventario=False):+.2f}; "
+               f"contando las acciones en cartera al costo: US$ {self.pnl():+.2f}. "
                f"Capital puesto ahora: US$ {self.capital_puesto():.2f}.",
                f"- Neto = recompensas + realizado: US$ {sum(cobradas.values()) + self.pnl():+.2f}.",
                f"- Freno: {'ACTIVO — ' + self.frenado() if self.frenado() else 'no'}."]
