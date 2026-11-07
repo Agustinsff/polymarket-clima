@@ -7,7 +7,7 @@ _Actualizado: 2026-11-07 15:58 (Montevideo). Todo es **en papel**: no se usa pla
 ⚠️ El cosechador no actualiza desde 2026-11-04 16:12 UTC.
 🔔 Polymarket cambió algo en **clima (otros)** (mercado de clima nuevo, ya no aparece el 2026-11-07 10:40 UTC): `how-many-chinook-will-pass-bonneville-dam-by`. Ver [reglas_informe.md](reglas_informe.md).
 
-- Última foto de liquidez: 2026-11-07T15:39:53
+- Última foto de liquidez: 2026-11-07T15:58:45
 - Monitor: mañana 2026-11-07, noche 2026-11-06
 - Prueba São Paulo: último día registrado 2026-11-07
 - Cosechador: último ciclo 2026-11-04 16:12 UTC, 88 mercados, 46 estaciones
