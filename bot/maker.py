@@ -245,11 +245,10 @@ class Real:
         if geo.get("blocked") is not False:
             raise SystemExit(f"modo real: Polymarket bloquea operar desde aca ({geo.get('country')}, {geo.get('region')})")
         from polymarket import SecureClient
+        relayer = self.clave_relayer()
         client = SecureClient.create(private_key=os.environ["POLYMARKET_PRIVATE_KEY"],
-                                     wallet=os.environ.get("POLYMARKET_WALLET") or None,
-                                     api_key=self.clave_relayer())
-        log("cobro automatico (relayer): " + ("si" if client.api_key is not None else "no, cobrar a mano en Portfolio -> Claim")
-            if hasattr(client, "api_key") else "")
+                                     wallet=os.environ.get("POLYMARKET_WALLET") or None, api_key=relayer)
+        log("cobro automatico (relayer): " + ("si" if relayer else "no, cobrar a mano en Portfolio -> Claim"))
         self._preparar(client, est, ops)
 
     @staticmethod
