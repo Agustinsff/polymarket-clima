@@ -8,3 +8,7 @@ rem Tema secreto de ntfy.sh para avisos al celular (inventar uno largo, p. ej. a
 set BOT_NTFY_TEMA=
 rem Solo para modo real (ademas de "modo": "real" en bot\config.json):
 set BOT_REAL_CONFIRMO=no
+rem Opcional, para que el bot maker cobre solo las cajas ganadas (billetera proxy): en polymarket.com -> Settings ->
+rem API Keys -> Relayer API Keys -> crear una y copiar "API Key" y "Signer Address":
+set BOT_RELAYER_API_KEY=
+set BOT_RELAYER_API_ADDRESS=
