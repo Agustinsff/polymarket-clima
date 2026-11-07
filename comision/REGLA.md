@@ -55,3 +55,7 @@ Intervalo: bootstrap 2.000 veces por fecha de evento.
   fotos antes del 1-nov 04:37Z, **con** = después; el bootstrap remuestrea pares (fecha de evento, sin/con). El control
   cripto se parte a la misma hora. También se corrigió un error de cuenta: la recompensa por foto ya es US$/día (no se
   multiplica por 288). Los criterios de decisión no cambian.
+- 7-nov-2026 22:00Z: el hilo maker avisó que Polymarket retiró data-api v1 (/trades) y el medidor no registró
+  llenados del 2-nov 22:25Z al 7-nov ~23:20Z (fotos bien). El corte del 4-nov contaba esas fotos como exposición sin
+  llenados, lo que inflaba la baja de llenados ("a la mitad") y el neto con comisión (+2,55). Se sacan las fotos del hueco
+  de la exposición en las secciones 3 y 4. Corregido: llenados −20 % (no −50 %) y neto +1,36 → +1,26 (sin cambio).

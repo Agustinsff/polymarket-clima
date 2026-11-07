@@ -45,6 +45,10 @@ cl["ciudad"] = cl.serie.str.split("|").str[1]
 cl = cl[cl.tramo.notna()]
 incoh = ((cl.tasa > 0) != cl.con).mean()
 cl["u"] = list(zip(cl.fecha, cl.con))
+# Hueco de llenados: Polymarket retiró data-api v1 (/trades) y el medidor no registró llenados del 2-nov 22:25Z al
+# 7-nov ~23:20Z (arreglado en medidor-maker 1c72d4b4). Esas fotos no cuentan como exposición en las secciones 3 y 4.
+HUECO = (pd.Timestamp("2026-11-02 22:30", tz="UTC").timestamp(), pd.Timestamp("2026-11-07 23:20", tz="UTC").timestamp())
+cl["hueco"] = (cl.ts >= HUECO[0]) & (cl.ts < HUECO[1])
 
 
 # puntaje pesimista a 2 ¢ (misma cuenta que maker/analizar.py, sección 6-7)
@@ -169,13 +173,19 @@ p()
 # 3. llenados
 p("## 3. Llenados de la orden simulada (máximas y mínimas, todos los tramos)")
 p()
+lc = ll[ll.con]
+p(f"Ojo: el medidor no registró llenados del 2-nov 22:25Z al 7-nov 23:20Z (Polymarket retiró la API vieja de operaciones). "
+  f"Esas fotos se sacan de la exposición. Llenados con comisión: del 1-nov 04:37Z en adelante fuera del hueco "
+  f"({pd.to_datetime(lc.ts_foto.min(), unit='s'):%d-%b %H:%M} a {pd.to_datetime(lc.ts_foto.max(), unit='s'):%d-%b %H:%M} UTC, "
+  f"{lc.acciones.sum():,.0f} acciones).")
+p()
 p("| orden | grupo | acciones llenadas por caja-día | resultado a la resolución ¢/acción | reembolso ¢/acción | neto ¢/acción | acciones resueltas |")
 p("|---|---|---|---|---|---|---|")
 for d in (1, 2):
     for con in (False, True):
         f = ll[(ll.dist_c == d) & (ll.con == con)]
         fr = f[f.pnl_res.notna()]
-        exp = cl[cl.con == con].shape[0] / FOTOS_DIA
+        exp = cl[(cl.con == con) & ~cl.hueco].shape[0] / FOTOS_DIA
         acc_dia = f.acciones.sum() / exp
         pr = fr.pnl_res.sum() / fr.acciones.sum() * 100 if fr.acciones.sum() else np.nan
         rb = f.reembolso.sum() / f.acciones.sum() * 100
@@ -190,7 +200,7 @@ p()
 
 
 # 4. neto maker en cajas apretadas
-ap = cl[cl.spread_c <= 5]
+ap = cl[(cl.spread_c <= 5) & ~cl.hueco]
 f2 = ll[(ll.dist_c == 2) & (ll.spread_c <= 5)]
 tf = pd.concat([ap.groupby("u").agg(fotos=("cid", "size"), pes=("pes_2c", "sum")),
                 f2.groupby("u").agg(acc=("acciones", "sum"), reemb=("reembolso", "sum")),
