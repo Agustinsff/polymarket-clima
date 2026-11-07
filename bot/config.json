@@ -26,7 +26,7 @@
   },
   "maker": {
     "modo": "papel",
-    "capital_usd": 150,
+    "capital_usd": 100,
     "cajas": 3,
     "acciones_min": 25,
     "distancia": 0.02,
