@@ -263,12 +263,30 @@ class Real:
         return out
 
     def inventario(self):
-        return {p.asset_id: float(p.current_size) for p in self._items(self.client.list_positions()) if float(p.current_size) > 1e-6}
+        """Posiciones de la cuenta (data-api). Se consulta una vez por ciclo como mucho (cache de 45 s): el bot la
+        pide 3-4 veces por ciclo y data-api limita las consultas (RateLimitError el 7-nov en real). Si Polymarket
+        frena la consulta y hay una copia reciente (< 10 min), se usa esa en vez de perder el ciclo."""
+        t = time.time()
+        if getattr(self, "_inv_cache", None) is None:
+            self._inv_cache, self._inv_ts = None, 0.0
+        if self._inv_cache is not None and t - self._inv_ts < 45:
+            return dict(self._inv_cache)
+        try:
+            inv = {p.asset_id: float(p.current_size) for p in self._items(self.client.list_positions())
+                   if float(p.current_size) > 1e-6}
+        except Exception as ex:
+            if "ratelimit" in type(ex).__name__.lower() and self._inv_cache is not None and t - self._inv_ts < 600:
+                log(f"posiciones: limite de consultas, uso la copia de hace {int(t - self._inv_ts)} s")
+                return dict(self._inv_cache)
+            raise
+        self._inv_cache, self._inv_ts = inv, t
+        return dict(inv)
 
     def cobrar(self, cid, tokens, ganador):
         inv = self.inventario()
         q = inv.get(tokens[ganador], 0)
         self.client.redeem_positions(condition_id=cid).wait()
+        self._inv_cache = None
         return q
 
     def recompensa_dia(self, fecha):

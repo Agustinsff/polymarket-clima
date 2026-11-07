@@ -208,3 +208,33 @@ class PruebasReal(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main(verbosity=1)
+
+
+class PruebasPosiciones(unittest.TestCase):
+    def test_cache_y_limite_de_consultas(self):
+        """inventario() consulta data-api una vez por ciclo y, si Polymarket frena la consulta, usa la copia reciente."""
+        import types
+
+        class RateLimitError(Exception):
+            pass
+
+        llamadas = []
+
+        class SDK(SDKFalso):
+            def list_positions(self):
+                llamadas.append(1)
+                if len(llamadas) >= 2:
+                    raise RateLimitError("rate limited")
+                return types.SimpleNamespace(iter_items=lambda: iter([types.SimpleNamespace(asset_id="T", current_size="9.9")]))
+
+        ej = maker.Real.__new__(maker.Real)
+        ej.client, ej.est = SDK(), {}
+        self.assertEqual(ej.inventario(), {"T": 9.9})
+        self.assertEqual(ej.inventario(), {"T": 9.9})      # dentro de los 45 s: no vuelve a consultar
+        self.assertEqual(len(llamadas), 1)
+        ej._inv_ts -= 60                                    # cache vencida: consulta, la frenan, usa la copia
+        self.assertEqual(ej.inventario(), {"T": 9.9})
+        self.assertEqual(len(llamadas), 2)
+        ej._inv_ts -= 700                                   # copia muy vieja: el error sube
+        with self.assertRaises(RateLimitError):
+            ej.inventario()
