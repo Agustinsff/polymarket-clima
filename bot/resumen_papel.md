@@ -1,6 +1,6 @@
-# Bot (papel, estrategia favorito) — 2026-11-07 02:54Z
+# Bot (papel, estrategia favorito) — 2026-11-07 03:54Z
 
-- Intentos: 79; llenadas: 75; resueltas: 74 (65 ganadas).
-- Neto con comisión: US$ +19.48 sobre US$ 305.52 puestos (ROI +6.4 %). Abierto ahora: US$ 4.29.
+- Intentos: 79; llenadas: 75; resueltas: 75 (65 ganadas).
+- Neto con comisión: US$ +15.19 sobre US$ 309.81 puestos (ROI +4.9 %). Abierto ahora: US$ 0.00.
 - Frenadas por riesgo: 0; sin llenar (el libro se movió): 4.
 - Freno general: no.
