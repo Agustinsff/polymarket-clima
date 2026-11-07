@@ -246,8 +246,21 @@ class Real:
             raise SystemExit(f"modo real: Polymarket bloquea operar desde aca ({geo.get('country')}, {geo.get('region')})")
         from polymarket import SecureClient
         client = SecureClient.create(private_key=os.environ["POLYMARKET_PRIVATE_KEY"],
-                                     wallet=os.environ.get("POLYMARKET_WALLET") or None)
+                                     wallet=os.environ.get("POLYMARKET_WALLET") or None,
+                                     api_key=self.clave_relayer())
+        log("cobro automatico (relayer): " + ("si" if client.api_key is not None else "no, cobrar a mano en Portfolio -> Claim")
+            if hasattr(client, "api_key") else "")
         self._preparar(client, est, ops)
+
+    @staticmethod
+    def clave_relayer():
+        """Clave de Relayer (polymarket.com -> Settings -> API Keys -> Relayer API Keys) para que el cobro (redeem)
+        funcione con la billetera proxy. Opcional: BOT_RELAYER_API_KEY y BOT_RELAYER_API_ADDRESS en secreto.cmd."""
+        clave, direccion = os.environ.get("BOT_RELAYER_API_KEY"), os.environ.get("BOT_RELAYER_API_ADDRESS")
+        if not clave or not direccion:
+            return None
+        from polymarket import RelayerApiKey
+        return RelayerApiKey(key=clave, address=direccion)
 
     def _preparar(self, client, est, ops=None):
         self.client, self.est, self.ops = client, est, ops or (lambda: [])
@@ -825,7 +838,28 @@ class Maker:
         print("\n".join(lin))
 
 
+def cargar_secretos(ruta=os.path.join(CARPETA, "secreto.cmd")):
+    """Lee las lineas `set NOMBRE=valor` de bot/secreto.cmd y completa el entorno con las que falten. Asi un reinicio
+    con REINICIAR (que no vuelve a pasar por iniciar_maker.cmd) toma secretos agregados despues de arrancar."""
+    try:
+        with open(ruta, encoding="utf-8", errors="replace") as f:
+            lineas = f.read().splitlines()
+    except OSError:
+        return 0
+    n = 0
+    for l in lineas:
+        l = l.strip()
+        if l.lower().startswith("set ") and "=" in l:
+            k, v = l[4:].split("=", 1)
+            k, v = k.strip(), v.strip().strip('"')
+            if k and v and not os.environ.get(k):
+                os.environ[k] = v
+                n += 1
+    return n
+
+
 def main():
+    cargar_secretos()
     cfg = cargar_cfg()
     que = sys.argv[1] if len(sys.argv) > 1 else "una"
     if que == "probar-aviso":

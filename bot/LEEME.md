@@ -85,7 +85,7 @@ resolvieron ese día contra lo que costaban las acciones, aunque se hayan compra
 `capital_usd` (150) reparte entre las cajas; una caja con mínimo de recompensa mayor que capital/cajas no se usa.
 
 Archivos: `bot/maker_ops_<modo>.csv` (órdenes puestas, llenados y cobros), `bot/maker_estado_<modo>.json`,
-`bot/maker_resumen_<modo>.md`. Pruebas sin red: `python bot/test_maker.py` (19 pruebas, incluido el SDK falso).
+`bot/maker_resumen_<modo>.md`. Pruebas sin red: `python bot/test_maker.py` (21 pruebas, incluido el SDK falso).
 
 **Operarlo sin pausas (8-nov-2026).**
 - **Actualizar sin cancelar las órdenes**: doble clic en `bot\actualizar.cmd`. Hace `git pull`, deja `bot\REINICIAR`
@@ -95,6 +95,11 @@ Archivos: `bot/maker_ops_<modo>.csv` (órdenes puestas, llenados y cobros), `bot
   Si el PR cambió `iniciar_maker.cmd`, cerrar esa ventana y abrirla de nuevo después.
 - **Cambiar la config sin reiniciar**: el bot relee `config.json` en cada ciclo y aplica los cambios de la sección
   `maker` (capital, cajas, distancia, topes…); lo único que no cambia en caliente es `modo`. Lo anota en el log.
+- **Cobro automático de cajas ganadas** (billetera proxy, la de login con Google): el `redeem` necesita una clave de
+  Relayer. Se crea en polymarket.com → Settings → API Keys → Relayer API Keys; copiar **API Key** y **Signer Address**
+  en `bot\secreto.cmd` como `BOT_RELAYER_API_KEY` y `BOT_RELAYER_API_ADDRESS`, y después `actualizar.cmd` (el bot
+  relee `secreto.cmd` al arrancar, también en un reinicio sin cancelar). El log dice al arrancar "cobro automatico
+  (relayer): si/no". Sin la clave, sigue avisando por ntfy para cobrar a mano en Portfolio → Claim.
 - **Avisos al celular (ntfy)**: además de los llenados, el freno y la recompensa de las 00:30 UTC, avisa al llegar a
   3 errores seguidos (`avisar_errores`, una vez por racha, antes del freno de 10) y manda un "sigo vivo" a las
   12:00 UTC (9 de la mañana en Uruguay) con órdenes, cajas y resultado: si no llega, el bot está caído.

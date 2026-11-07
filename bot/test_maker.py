@@ -452,6 +452,30 @@ class PruebasReinicioConfig(unittest.TestCase):
         self.assertEqual(bot.cfg["maker"]["cajas"], 5)
         shutil.rmtree(d)
 
+    def test_carga_secretos_sin_pisar(self):
+        d = tempfile.mkdtemp()
+        ruta = os.path.join(d, "secreto.cmd")
+        with open(ruta, "w", encoding="utf-8") as f:
+            f.write("@echo off\nrem comentario\nset PRUEBA_RELAYER_KEY=abc\nset PRUEBA_RELAYER_ADDR=\"0x1\"\n"
+                    "set PRUEBA_VACIO=\nSET PRUEBA_YA=nuevo\n")
+        os.environ["PRUEBA_YA"] = "viejo"
+        os.environ.pop("PRUEBA_RELAYER_KEY", None)
+        self.assertEqual(maker.cargar_secretos(ruta), 2)
+        self.assertEqual(os.environ["PRUEBA_RELAYER_KEY"], "abc")
+        self.assertEqual(os.environ["PRUEBA_RELAYER_ADDR"], "0x1")
+        self.assertEqual(os.environ["PRUEBA_YA"], "viejo")                   # no pisa lo que ya estaba
+        self.assertNotIn("PRUEBA_VACIO", os.environ)
+        self.assertEqual(maker.cargar_secretos(os.path.join(d, "no_existe.cmd")), 0)
+        shutil.rmtree(d)
+
+    def test_clave_relayer_opcional(self):
+        for k in ("BOT_RELAYER_API_KEY", "BOT_RELAYER_API_ADDRESS"):
+            os.environ.pop(k, None)
+        self.assertIsNone(maker.Real.clave_relayer())
+        os.environ["BOT_RELAYER_API_KEY"] = "k"
+        self.assertIsNone(maker.Real.clave_relayer())                        # falta la direccion
+        os.environ.pop("BOT_RELAYER_API_KEY")
+
     def test_aviso_a_tres_errores_una_vez(self):
         d = tempfile.mkdtemp()
         bot = self._bot(d)
