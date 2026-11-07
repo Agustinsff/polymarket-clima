@@ -388,6 +388,88 @@ class PruebasFreno(unittest.TestCase):
         self.assertFalse(bot.frenado())
         inv["T1"] = 0.0                                                       # T1 se resolvio en contra sin cobro
         self.assertAlmostEqual(bot.pnl(), -10.0, places=2)
+        shutil.rmtree(d)
+
+    def test_perdida_del_dia_ventas_y_resoluciones(self):
+        """El freno diario mira ventas al costo medio y cajas resueltas ese dia (cobrado - costo), no las compras."""
+        import types
+        d = tempfile.mkdtemp()
+        c = cfg(modo="real")
+        c["maker"]["max_perdida_dia"] = 10
+        inv = {"T1": 0.0}
+        ej = types.SimpleNamespace(inventario=lambda: dict(inv), abiertas=lambda: [], llenados=lambda: [],
+                                   cancelar_todo=lambda: None, nombre="real")
+        bot = maker.Maker(c, m=MercadoFalso(), carpeta=d, ej=ej)
+        hoy = AHORA.strftime("%Y-%m-%d")
+        bot.anotar(momento_utc="2026-11-01 10:00:00", modo="real", evento="e", caja="c", condition_id="A", token="T1",
+                   lado="BUY", precio=0.40, acciones=50, medio="", detalle="")
+        bot.est["costo"]["T1"] = {"precio": 0.40, "acciones": 25}
+        bot.anotar(momento_utc=f"{hoy} 09:00:00", modo="real", evento="e", caja="c", condition_id="A", token="T1",
+                   lado="SELL", precio=0.43, acciones=25, medio="", detalle="")
+        self.assertAlmostEqual(bot.pnl(hoy), 0.75, places=2)                  # 25 * (0.43 - 0.40)
+        self.assertIsNone(bot.freno(AHORA))
+        bot.est["resultados"]["A"] = {"dia": hoy, "gano": "No", "cobrado": 0, "costo": 10.0, "caja": "c", "evento": "e"}
+        self.assertAlmostEqual(bot.pnl(hoy), -9.25, places=2)
+        bot.est["resultados"]["A"]["costo"] = 12.0
+        self.assertAlmostEqual(bot.pnl(hoy), -11.25, places=2)
+        self.assertIn("perdida del dia", bot.freno(AHORA))
+        self.assertFalse(bot.frenado())                                       # el diario no deja archivo PARAR
+        shutil.rmtree(d)
+
+
+class PruebasReinicioConfig(unittest.TestCase):
+    def _bot(self, d):
+        import types
+        ej = types.SimpleNamespace(inventario=lambda: {}, abiertas=lambda: [], llenados=lambda: [],
+                                   cancelar_todo=lambda: None, nombre="real")
+        return maker.Maker(cfg(modo="real"), m=MercadoFalso(), carpeta=d, ej=ej)
+
+    def test_pedido_reinicio(self):
+        d = tempfile.mkdtemp()
+        bot = self._bot(d)
+        self.assertFalse(bot.pedido_reinicio())
+        open(os.path.join(d, "REINICIAR"), "w").close()
+        self.assertTrue(bot.pedido_reinicio())
+        self.assertFalse(os.path.exists(os.path.join(d, "REINICIAR")))        # lo borra para no repetirlo
+        self.assertFalse(bot.pedido_reinicio())
+        shutil.rmtree(d)
+
+    def test_relee_config_sin_cambiar_modo(self):
+        d = tempfile.mkdtemp()
+        bot = self._bot(d)
+        bot.f_cfg = os.path.join(d, "config.json")
+        c = cfg(modo="papel")
+        c["maker"]["cajas"], c["maker"]["distancia"] = 5, 0.03
+        with open(bot.f_cfg, "w", encoding="utf-8") as f:
+            json.dump(c, f)
+        bot.recargar_cfg()
+        self.assertEqual(bot.cfg["maker"]["cajas"], 5)
+        self.assertEqual(bot.cfg["maker"]["distancia"], 0.03)
+        self.assertEqual(bot.cfg["maker"]["modo"], "real")                   # el modo no se cambia en caliente
+        with open(bot.f_cfg, "w", encoding="utf-8") as f:
+            f.write("{roto")
+        bot.recargar_cfg()                                                    # config rota: sigue con la anterior
+        self.assertEqual(bot.cfg["maker"]["cajas"], 5)
+        shutil.rmtree(d)
+
+    def test_aviso_a_tres_errores_una_vez(self):
+        d = tempfile.mkdtemp()
+        bot = self._bot(d)
+        avisos = []
+        bot.avisar = avisos.append
+        bot.est["errores_seguidos"] = 2
+        bot.avisar_errores()
+        bot.est["errores_seguidos"] = 3
+        bot.avisar_errores()
+        bot.est["errores_seguidos"] = 4
+        bot.avisar_errores()
+        self.assertEqual(len(avisos), 1)
+        bot.est["errores_seguidos"] = 0
+        bot.avisar_errores()
+        bot.est["errores_seguidos"] = 3
+        bot.avisar_errores()
+        self.assertEqual(len(avisos), 2)                                      # nueva racha, nuevo aviso
+        shutil.rmtree(d)
 
 
 if __name__ == "__main__":

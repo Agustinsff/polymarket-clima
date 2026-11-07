@@ -75,14 +75,29 @@ Qué hace cada minuto: elige las `cajas` (3) con más recompensa esperada entre 
 órdenes **post-only** (nunca toman precio, así que nunca pagan comisión) de `acciones_min` (25) acciones por lado,
 las renueva solo si el medio se movió, anota cada llenado, cobra las cajas resueltas, y a las 00:30 UTC anota la
 recompensa del día anterior que informa Polymarket. Si tiene acciones de un lado, vende esas en vez de comprar el
-otro, así el capital no crece. **Al apagarse por cualquier motivo cancela todas las órdenes.**
+otro, así el capital no crece. **Al apagarse por cualquier motivo cancela todas las órdenes**, salvo que se le haya
+pedido reiniciar (abajo).
 
-Frenos: `bot/PARAR` (manual), `bot/PARAR_maker_<modo>` (automático), fecha `apagar_despues_de`, pérdida realizada
-del día ≥ US$ 10 (deja de cotizar hasta el día siguiente), pérdida total ≥ US$ 30, 10 errores seguidos. Capital:
+Frenos: `bot/PARAR` (manual), `bot/PARAR_maker_<modo>` (automático), fecha `apagar_despues_de`, pérdida del día
+≥ US$ 10 (deja de cotizar hasta el día siguiente; cuenta las ventas del día contra el costo medio y las cajas que
+resolvieron ese día contra lo que costaban las acciones, aunque se hayan comprado otro día), pérdida total ≥ US$ 30
+(cobros − compras + ventas + acciones en cartera al costo), 10 errores seguidos. Capital:
 `capital_usd` (150) reparte entre las cajas; una caja con mínimo de recompensa mayor que capital/cajas no se usa.
 
 Archivos: `bot/maker_ops_<modo>.csv` (órdenes puestas, llenados y cobros), `bot/maker_estado_<modo>.json`,
-`bot/maker_resumen_<modo>.md`. Pruebas sin red: `python bot/test_maker.py` (14 pruebas, incluido el SDK falso).
+`bot/maker_resumen_<modo>.md`. Pruebas sin red: `python bot/test_maker.py` (19 pruebas, incluido el SDK falso).
+
+**Operarlo sin pausas (8-nov-2026).**
+- **Actualizar sin cancelar las órdenes**: doble clic en `bot\actualizar.cmd`. Hace `git pull`, deja `bot\REINICIAR`
+  y el bot, en su próxima pasada, sale con código 3 **dejando las órdenes en el libro**; la ventana de
+  `iniciar_maker.cmd` lo vuelve a arrancar enseguida y, al arrancar, adopta las órdenes que siguen correspondiendo
+  (mismo token, lado y precio), así no pierde el lugar en la fila. `PARAR` y los frenos siguen cancelando todo.
+  Si el PR cambió `iniciar_maker.cmd`, cerrar esa ventana y abrirla de nuevo después.
+- **Cambiar la config sin reiniciar**: el bot relee `config.json` en cada ciclo y aplica los cambios de la sección
+  `maker` (capital, cajas, distancia, topes…); lo único que no cambia en caliente es `modo`. Lo anota en el log.
+- **Avisos al celular (ntfy)**: además de los llenados, el freno y la recompensa de las 00:30 UTC, avisa al llegar a
+  3 errores seguidos (`avisar_errores`, una vez por racha, antes del freno de 10) y manda un "sigo vivo" a las
+  12:00 UTC (9 de la mañana en Uruguay) con órdenes, cajas y resultado: si no llega, el bot está caído.
 
 **Inventario propio (8-nov-2026).** En real el bot ya no le pregunta a data-api qué acciones tiene (limitaba las
 consultas). Lleva la cuenta él mismo con sus llenados, que lee del CLOB ("mis operaciones"): solo cuenta órdenes que
