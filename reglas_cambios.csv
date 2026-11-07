@@ -44,3 +44,4 @@ momento_utc,familia,que,cambio,detalle,ejemplo,origen
 2026-11-04 01:38,temperatura máxima,comisiones,ya no aparece,"feesEnabled=True feeType=zero_fees feeSchedule={""exponent"": 1, ""rate"": 0, ""rebateRate"": 0, ""takerOnly"": true} takerBaseFee=1000",highest-temperature-in-hong-kong-on-october-30-2026,auto
 2026-11-04 01:38,temperatura mínima,comisiones,ya no aparece,"feesEnabled=True feeType=zero_fees feeSchedule={""exponent"": 1, ""rate"": 0, ""rebateRate"": 0, ""takerOnly"": true} takerBaseFee=1000",lowest-temperature-in-hong-kong-on-october-30-2026,auto
 2026-11-04 11:32,clima (otros),clima_otros,ya no aparece,what-category-will-vance-reach,what-category-will-vance-reach,auto
+2026-11-07 10:40,clima (otros),clima_otros,ya no aparece,how-many-chinook-will-pass-bonneville-dam-by,how-many-chinook-will-pass-bonneville-dam-by-october-31-2026,auto
