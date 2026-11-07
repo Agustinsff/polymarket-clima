@@ -1099,3 +1099,7 @@ momento_utc;activo;evento;condition_id;min_al_cierre;lado;bid;ask;p10;p50;ask_ta
 2026-11-07 05:53:31;BTC;bitcoin-up-or-down-november-7-2026-12am-et;0xd379725e529a24044a0b21fbbfbeeb5f670b616a2568bf6c6b26b659fced2d38;6.5;Down;0.004;0.005;0.005;0.005;164.9;30.0
 2026-11-07 05:53:31;ETH;ethereum-up-or-down-november-7-2026-12am-et;0xf274b8547db5c3426ed3eebeb454790d03722a2e8bf93629e33710b4f98e120e;6.5;Up;0.999;;;;;0.03
 2026-11-07 05:53:31;ETH;ethereum-up-or-down-november-7-2026-12am-et;0xf274b8547db5c3426ed3eebeb454790d03722a2e8bf93629e33710b4f98e120e;6.5;Down;;0.001;0.01;0.01;0.03;
+2026-11-07 06:53:05;BTC;bitcoin-up-or-down-november-7-2026-1am-et;0xa21141d4772ad14c870e9a8939ec368ac389925c3c21fc8e395180f93b552b73;6.9;Up;0.53;0.54;0.54;0.5402;48.77;52.4
+2026-11-07 06:53:05;BTC;bitcoin-up-or-down-november-7-2026-1am-et;0xa21141d4772ad14c870e9a8939ec368ac389925c3c21fc8e395180f93b552b73;6.9;Down;0.46;0.47;0.47;0.47;52.4;48.77
+2026-11-07 06:53:05;ETH;ethereum-up-or-down-november-7-2026-1am-et;0x08ffa27e6f0d4c1d76031ed2ed5b41f63d1c57a92bef9915d0e09aff0bb6bc59;6.9;Up;0.05;0.06;0.06;0.06;320.0;10.0
+2026-11-07 06:53:05;ETH;ethereum-up-or-down-november-7-2026-1am-et;0x08ffa27e6f0d4c1d76031ed2ed5b41f63d1c57a92bef9915d0e09aff0bb6bc59;6.9;Down;0.94;0.95;0.95;0.9626;10.0;320.0
