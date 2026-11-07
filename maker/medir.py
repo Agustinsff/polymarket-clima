@@ -43,7 +43,7 @@ F_LLEN = os.path.join(CARPETA, "llenados.csv")
 F_EST = os.path.join(CARPETA, "estado.json")
 S = pronostico.S
 BOOKS = "https://clob.polymarket.com/books"
-TRADES = "https://data-api.polymarket.com/trades"
+TRADES = "https://data-api.polymarket.com/v2/trades"   # v1 (/trades) retirada ~2-nov-2026: no devolvia operaciones
 
 COLS = ["ts", "grupo", "serie", "evento", "caja", "cid", "hora_local", "horas_hasta_fin", "tasa", "pozo",
         "spread_max", "tam_min", "medio", "bid", "ask", "bid_tam", "ask_tam", "comp"]
@@ -157,26 +157,37 @@ def libros(tokens):
     return out
 
 
-def trades_desde(cid, desde_ts):
+def trades_desde(cid, desde_ts, token_si=None):
     """Operaciones taker de la caja posteriores a desde_ts, en terminos del token Yes:
-    [(ts, lado_taker 'BUY'/'SELL' del Yes, precio Yes, acciones)]."""
+    [(ts, lado_taker 'BUY'/'SELL' del Yes, precio Yes, acciones)].
+    data-api v2 (desde 7-nov-2026; la v1 fue retirada ~2-nov y desde entonces no se registro ningun llenado):
+    /v2/trades?condition=CID&taker_only=true -> {"data": [{timestamp, price, size, side, token_id, ...}]}."""
     out = []
     for intento in range(2):
         try:
-            r = S.get(TRADES, params={"market": cid, "limit": 100, "takerOnly": "true"}, timeout=30)
+            r = S.get(TRADES, params={"condition": cid, "limit": 100, "taker_only": "true"}, timeout=30)
             r.raise_for_status()
             break
         except Exception:
             time.sleep(2)
     else:
         return None
-    for t in r.json() or []:
+    datos = r.json()
+    if isinstance(datos, dict):
+        datos = datos.get("data")
+    if not isinstance(datos, list):
+        return None
+    for t in datos:
         ts = int(t.get("timestamp") or 0)
         if ts <= desde_ts:
             continue
         p, q = float(t.get("price") or 0), float(t.get("size") or 0)
         lado = t.get("side")
-        if t.get("outcomeIndex") == 1:      # opero el token No: lo pasamos a Yes
+        if t.get("token_id") and token_si:
+            es_no = str(t["token_id"]) != str(token_si)
+        else:
+            es_no = t.get("outcomeIndex", t.get("outcome_index")) == 1
+        if es_no:                           # opero el token No: lo pasamos a Yes
             p, lado = 1 - p, ("SELL" if lado == "BUY" else "BUY")
         out.append((ts, lado, round(p, 4), q))
     return out
@@ -237,9 +248,10 @@ def foto(est):
     desde = est.get("ts_foto") or 0
     llen = []
     if previas and desde:
-        cids = sorted({o["cid"] for o in previas})
+        token_de = {o["cid"]: o["token"] for o in previas}
+        cids = sorted(token_de)
         with ThreadPoolExecutor(8) as ex:
-            ops = dict(zip(cids, ex.map(lambda cid: trades_desde(cid, desde), cids)))
+            ops = dict(zip(cids, ex.map(lambda cid: trades_desde(cid, desde, token_de[cid]), cids)))
         for o in previas:
             tr = ops.get(o["cid"])
             if not tr:

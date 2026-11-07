@@ -80,3 +80,8 @@ es razonable (< US$ 2.000). Si el neto es negativo o la recompensa depende de es
   aplica con el medio del libro real y no con el precio de gamma, que estaba viejo y dejaba pasar cajas muertas
   a 0,5–2 ¢ (las primeras 70 fotos las incluyen; se descartan en el análisis con la misma regla). Corregido
   también `resolver()`, que fallaba por el nombre de una columna y no había anotado ningún resultado todavía.
+- 7-nov-2026 21:30Z (hallazgo del bot en real): Polymarket retiró data-api v1 (`/trades`) alrededor del 2-nov-2026;
+  desde entonces `trades_desde()` recibía un error y el medidor NO registró ningún llenado (llenados.csv termina el
+  2-nov ~04:25Z; las fotos siguieron bien). Pasado a `/v2/trades?condition=…&taker_only=true` (token por `token_id`).
+  Para el corte del 9-nov: llenados válidos del 26-oct al 2-nov y desde el 7-nov 21:30Z; entre medio solo fotos.
+  El informe de la comisión (comision/, PR #40) usó llenados del 1–2 nov nada más: "llenados a la mitad" queda en duda.
