@@ -79,3 +79,5 @@ momento_utc;modo;estrategia;activo;evento;condition_id;lado;acciones;precio_vist
 2026-11-06 22:54:21;papel;favorito;BTC;bitcoin-up-or-down-november-6-2026-5pm-et;0xe1d29bee0e758af2151ed2f7314b535c47655f37961443ee6c04cefdb1b29d44;Up;5;0.77;0.78;0.78;0.07;5.6;1;162;simulado contra el libro real
 2026-11-07 02:54:05;papel;favorito;BTC;bitcoin-up-or-down-november-6-2026-9pm-et;0xc381935064f8f3877fb145ca4d9ad21945a1a55a0947089ce39bee485591ce89;Down;5;0.84;0.85;0.85;0.07;5.9;1;130;simulado contra el libro real
 2026-11-07 04:54:26;papel;favorito;ETH;ethereum-up-or-down-november-6-2026-11pm-et;0x80e657df5073fe5cf717f4cf1936add315667a8362560880f98931ab9c3e9430;Down;5;0.75;0.76;;0.07;5.6;0;123;no alcanza bajo el tope 0.76 (mejor ask 0.77)
+2026-11-07 14:54:16;papel;favorito;BTC;bitcoin-up-or-down-november-7-2026-9am-et;0x281e27536066ff260d9ea955d39f4690259387e1500dcc8e3113b62e69bd58f2;Up;5;0.86;0.87;0.86;0.07;5.7;1;122;simulado contra el libro real
+2026-11-07 14:54:16;papel;favorito;ETH;ethereum-up-or-down-november-7-2026-9am-et;0x79f18874c74f20172405f5636df5105db8f2df000ed8d4dbbd5dab5e6ccd904e;Up;5;0.78;0.79;0.77;0.07;5.7;1;121;simulado contra el libro real
