@@ -120,7 +120,8 @@ class Pruebas(unittest.TestCase):
         llen = [o for o in self.bot.ops() if o["lado"] in ("BUY", "SELL")]
         self.assertEqual(len(llen), 1)
         self.assertEqual(float(llen[0]["acciones"]), 10)
-        self.assertAlmostEqual(self.bot.pnl(), -2.9)
+        self.assertAlmostEqual(self.bot.pnl(inventario=False), -2.9)   # pagado
+        self.assertAlmostEqual(self.bot.pnl(), 0.0)                     # pero las acciones estan en cartera
         # resuelve a favor del Si: cobramos 10
         self.m.ganadores["A"] = "Yes"
         self.bot.ciclo(AHORA + timedelta(minutes=2))
@@ -265,7 +266,8 @@ class PruebasReal(unittest.TestCase):
         self.assertEqual(ej.inventario(), {"no-A": 25})
         llen = [o for o in bot.ops() if o["lado"] in ("BUY", "SELL")]
         self.assertEqual([(o["token"], float(o["acciones"]), float(o["precio"])) for o in llen], [("no-A", 25, 0.66)])
-        self.assertAlmostEqual(bot.pnl(), -16.5)
+        self.assertAlmostEqual(bot.pnl(inventario=False), -16.5)
+        self.assertAlmostEqual(bot.pnl(), 0.0)      # 25 No en cartera al costo
         # con 25 No en mano, el lado "comprar Si" pasa a ser vender No
         self.assertIn(("no-A", "SELL"), {(o.asset_id, o.side) for o in ej.client.ordenes.values()})
         # la parte ajena de la misma operacion (otra orden) no cuenta
@@ -363,3 +365,28 @@ class PruebasReal(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main(verbosity=1)
+
+
+class PruebasFreno(unittest.TestCase):
+    def test_compras_sin_resolver_no_frenan(self):
+        """Acciones compradas y todavia en cartera no son perdida: el freno por perdida total/diaria no salta (7-nov real)."""
+        import types
+        d = tempfile.mkdtemp()
+        c = cfg(modo="real")
+        c["maker"]["max_perdida_total"], c["maker"]["max_perdida_dia"] = 30, 10
+        inv = {"T1": 25.0, "T2": 27.12}
+        ej = types.SimpleNamespace(inventario=lambda: dict(inv), abiertas=lambda: [], llenados=lambda: [],
+                                   cancelar_todo=lambda: None, nombre="real")
+        bot = maker.Maker(c, m=MercadoFalso(), carpeta=d, ej=ej)
+        hoy = AHORA.strftime("%Y-%m-%d")
+        for t, q, p in (("T1", 25, 0.40), ("T2", 27.12, 0.51)):
+            bot.anotar(momento_utc=f"{hoy} 18:00:00", modo="real", evento="e", caja="c", condition_id="A", token=t,
+                       lado="BUY", precio=p, acciones=q, medio="", detalle="recuperado")
+            bot.est["costo"][t] = {"precio": p, "acciones": q}
+        self.assertAlmostEqual(bot.pnl(inventario=False), -23.83, places=2)   # lo pagado
+        self.assertAlmostEqual(bot.pnl(), 0.0, places=2)                      # pero las acciones estan en cartera
+        self.assertAlmostEqual(bot.pnl(hoy), 0.0, places=2)
+        self.assertIsNone(bot.freno(AHORA))
+        self.assertFalse(bot.frenado())
+        inv["T1"] = 0.0                                                       # T1 se resolvio en contra sin cobro
+        self.assertAlmostEqual(bot.pnl(), -10.0, places=2)
