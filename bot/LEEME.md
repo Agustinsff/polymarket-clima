@@ -82,7 +82,16 @@ del día ≥ US$ 10 (deja de cotizar hasta el día siguiente), pérdida total �
 `capital_usd` (150) reparte entre las cajas; una caja con mínimo de recompensa mayor que capital/cajas no se usa.
 
 Archivos: `bot/maker_ops_<modo>.csv` (órdenes puestas, llenados y cobros), `bot/maker_estado_<modo>.json`,
-`bot/maker_resumen_<modo>.md`. Pruebas sin red: `python bot/test_maker.py` (8 pruebas, incluido el SDK falso).
+`bot/maker_resumen_<modo>.md`. Pruebas sin red: `python bot/test_maker.py` (14 pruebas, incluido el SDK falso).
+
+**Inventario propio (8-nov-2026).** En real el bot ya no le pregunta a data-api qué acciones tiene (limitaba las
+consultas). Lleva la cuenta él mismo con sus llenados, que lee del CLOB ("mis operaciones"): solo cuenta órdenes que
+puso él, así que las acciones viejas de la cuenta no se mezclan. La primera vez que arranca con este código rearma todo
+desde el 7-nov y anota en `maker_ops_real.csv` los llenados que faltaban (las órdenes que se llenaban enteras no se
+anotaban). Las cajas que el bot soltó con acciones se siguen mirando y, al resolver, se cobran; si el cobro automático
+falla (billetera proxy), queda anotado y llega un aviso al celular para cobrar a mano en Portfolio → Claim.
+Control en solo lectura (no pone ni cancela órdenes, se puede correr con el bot andando):
+`python bot\maker.py inventario` compara lo que cree el bot con el saldo de cada token en la billetera.
 
 ### Pasos para la prueba real (Agus)
 1. **Correrlo en papel primero** en la PC un día: `python bot\maker.py bucle` (o doble clic en `bot\iniciar_maker.cmd`

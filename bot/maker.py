@@ -17,7 +17,8 @@ Que hace cada ciclo (60 s):
 
 Modos: papel (libro real, llenado prudente como el medidor: solo si alguien opero a peor precio) y real (SDK
 oficial, post-only GTC). Uso:
-  python bot/maker.py bucle | una | resumen | probar-aviso
+  python bot/maker.py bucle | una | resumen | probar-aviso | inventario (solo lectura: compara el inventario propio
+  con el saldo de la billetera)
 Archivos: bot/maker_ops_<modo>.csv, bot/maker_estado_<modo>.json, bot/maker_resumen_<modo>.md
 """
 import csv
@@ -147,9 +148,13 @@ class Papel:
         for oid, o in list(self.est["ordenes"].items()):
             if o["cid"] not in por_cid:
                 try:
-                    r = self.m.S.get(f"{DATA}/trades", params={"market": o["cid"], "limit": 100, "takerOnly": "true"},
+                    # data-api v1 (/trades) esta retirada: contesta {"error": "Data API v1 has been retired"} y el
+                    # papel no veia ningun llenado (0 en 4-7 nov). v2: /v2/trades?condition=..., respuesta {"data": [...]}
+                    r = self.m.S.get(f"{DATA}/v2/trades", params={"condition": o["cid"], "limit": 100, "taker_only": "true"},
                                      timeout=30).json()
-                    if not isinstance(r, list):      # a veces devuelve un dict de error
+                    if isinstance(r, dict):
+                        r = r.get("data")
+                    if not isinstance(r, list):      # dict de error
                         r = None
                 except Exception:
                     r = None
@@ -167,7 +172,10 @@ class Papel:
                     continue
                 ultimo = max(ultimo, ts)
                 p, q, lado = float(t["price"]), float(t["size"]), t["side"]
-                mismo_token = (t.get("outcomeIndex") == 0) == o["si"]
+                if t.get("token_id"):            # v2 dice el token; v1 solo el indice del resultado
+                    mismo_token = str(t["token_id"]) == str(o["token"])
+                else:
+                    mismo_token = (t.get("outcomeIndex", t.get("outcome_index")) == 0) == o["si"]
                 if not mismo_token:              # paso a nuestro token: comprar el otro a p = vender este a 1-p
                     p, lado = 1 - p, ("SELL" if lado == "BUY" else "BUY")
                 if o["lado"] == "BUY" and lado == "SELL" and p < o["precio"] - 1e-9:
@@ -210,11 +218,22 @@ class Real:
     """SDK oficial polymarket-client 0.14.0 (verificado contra el codigo del SDK, sin plata):
     place_limit_order(token_id, price, size, side, post_only=True) -> AcceptedOrder(order_id, status) | RejectedOrder;
     cancel_orders(order_ids) / cancel_all(); list_open_orders() -> OpenOrder(id, asset_id, side, price, original_size,
-    size_matched); list_positions() -> Position(asset_id, condition_id, current_size, redeemable);
-    get_total_earnings_for_user_for_day(date) -> earnings; redeem_positions(condition_id).wait()."""
-    nombre = "real"
+    size_matched); list_account_trades(after) -> ClobTrade(id, condition_id, trader_side, status, taker_order_id, asset_id,
+    side, price, size, maker_orders=[MakerOrder(order_id, asset_id, side, price, matched_amount)], matched_at);
+    get_balance_allowance(asset_type="CONDITIONAL", token_id) -> BalanceAllowance(balance en millonesimas);
+    get_total_earnings_for_user_for_day(date) -> earnings; redeem_positions(condition_id).wait().
 
-    def __init__(self, m, est):
+    INVENTARIO PROPIO (8-nov-2026): el bot ya no le pregunta las posiciones a data-api (limita las consultas: RateLimitError
+    el 7-nov). Lleva la cuenta el mismo con sus llenados, que lee del CLOB ("mis operaciones", limites altos): cada
+    operacion en la que una orden SUYA se lleno suma (compra) o resta (venta) acciones de ese token. Solo cuenta ordenes
+    que puso el bot (las acciones viejas de la cuenta no entran) y anota tambien las ordenes que se llenaron del todo
+    (antes se perdian porque desaparecen de la lista de abiertas). La primera vez reconstruye todo desde DESDE_INICIAL
+    y anota en maker_ops_real.csv los llenados que faltaban."""
+    nombre = "real"
+    DESDE_INICIAL = datetime(2026, 11, 7, tzinfo=timezone.utc).timestamp()   # antes del primer arranque en real
+    RELEER = 3600            # cada ciclo relee la ultima hora (por si una operacion cambia de estado, p. ej. FAILED)
+
+    def __init__(self, m, est, ops=None):
         if os.environ.get("BOT_REAL_CONFIRMO") != "si":
             raise SystemExit("modo real: falta BOT_REAL_CONFIRMO=si en el entorno")
         if not os.environ.get("POLYMARKET_PRIVATE_KEY"):
@@ -223,15 +242,24 @@ class Real:
         if geo.get("blocked") is not False:
             raise SystemExit(f"modo real: Polymarket bloquea operar desde aca ({geo.get('country')}, {geo.get('region')})")
         from polymarket import SecureClient
-        self.client = SecureClient.create(private_key=os.environ["POLYMARKET_PRIVATE_KEY"],
-                                          wallet=os.environ.get("POLYMARKET_WALLET") or None)
-        self.est = est
-        self.vistos = est.setdefault("llenado_visto", {})   # order_id -> size_matched ya anotado
+        client = SecureClient.create(private_key=os.environ["POLYMARKET_PRIVATE_KEY"],
+                                     wallet=os.environ.get("POLYMARKET_WALLET") or None)
+        self._preparar(client, est, ops)
+
+    def _preparar(self, client, est, ops=None):
+        self.client, self.est, self.ops = client, est, ops or (lambda: [])
+        est.pop("llenado_visto", None)                     # cuenta vieja (por orden abierta), ya no se usa
+        est.setdefault("inv", {})                           # token -> acciones (inventario propio)
+        est.setdefault("token_cid", {})                     # token -> condition_id
+        est.setdefault("vistos", {})                        # "operacion:orden" -> [momento, token, +-acciones]
+        est.setdefault("mis_ordenes", {})                   # order_id -> momento en que la puso el bot
 
     def colocar(self, token, cid, lado, precio, acciones, es_si):
         r = self.client.place_limit_order(token_id=token, price=str(precio), size=str(acciones), side=lado, post_only=True)
         if not r.ok:
             raise RuntimeError(f"orden rechazada ({r.code}): {r.message}")
+        self.est["mis_ordenes"][r.order_id] = int(time.time())
+        self.est["token_cid"][token] = cid
         return r.order_id
 
     def cancelar(self, ids):
@@ -243,7 +271,7 @@ class Real:
 
     @staticmethod
     def _items(r):
-        """El SDK devuelve un Paginator (iter_items) en list_open_orders/list_positions; acepta tambien listas."""
+        """El SDK devuelve un Paginator (iter_items) en list_open_orders/list_account_trades; acepta tambien listas."""
         return list(r.iter_items()) if hasattr(r, "iter_items") else list(r)
 
     def abiertas(self):
@@ -251,42 +279,121 @@ class Real:
                  "acciones": float(o.original_size) - float(o.size_matched), "llenado": float(o.size_matched)}
                 for o in self._items(self.client.list_open_orders())]
 
-    def llenados(self):
-        """Compara lo llenado de cada orden abierta con lo ya anotado. Las ordenes que se llenaron del todo
-        desaparecen de la lista: se detectan por el inventario (list_positions) en Maker.revisar_inventario."""
+    # ---------- inventario propio a partir de los llenados del CLOB ----------
+    def _mis_ordenes(self):
+        """Ordenes que puso el bot: las del estado mas las anotadas en maker_ops_real.csv (para la primera vez)."""
+        ids = set(self.est["mis_ordenes"])
+        for o in self.ops():
+            if o.get("lado", "").startswith("orden_") and o.get("detalle"):
+                ids.add(o["detalle"])
+        return ids
+
+    def _operaciones(self, desde):
+        """Partes de las operaciones de la cuenta (desde `desde`, unix) que llenaron ordenes del bot."""
+        mias = self._mis_ordenes()
         out = []
-        for o in self.abiertas():
-            nuevo = o["llenado"] - self.vistos.get(o["id"], 0)
-            if nuevo > 1e-6:
-                self.vistos[o["id"]] = o["llenado"]
-                out.append((o, nuevo, o["precio"]))
+        for t in self._items(self.client.list_account_trades(after=str(int(desde)))):
+            ts = t.matched_at.timestamp() if hasattr(t.matched_at, "timestamp") else float(t.matched_at)
+            partes = []
+            if t.trader_side == "MAKER":
+                partes = [(mo.order_id, mo.asset_id, mo.side, float(mo.price), float(mo.matched_amount))
+                          for mo in t.maker_orders if mo.order_id in mias]
+            elif t.taker_order_id in mias:                  # no deberia pasar (post-only), pero se cuenta igual
+                partes = [(t.taker_order_id, t.asset_id, t.side, float(t.price), float(t.size))]
+            for oid, token, lado, precio, q in partes:
+                if q > 1e-9:
+                    out.append({"clave": f"{t.id}:{oid}", "id": oid, "token": token, "cid": t.condition_id, "lado": lado,
+                                "precio": precio, "acciones": q, "estado": t.status, "ts": ts})
+        return out
+
+    def _sumar(self, token, q):
+        inv = self.est["inv"]
+        inv[token] = round(inv.get(token, 0) + q, 6)
+        if abs(inv[token]) < 1e-6:
+            inv.pop(token)
+
+    def llenados(self):
+        """Lee "mis operaciones" del CLOB y devuelve los llenados nuevos [(orden, acciones, detalle)]."""
+        primera = "inv_desde" not in self.est
+        desde = self.DESDE_INICIAL if primera else self.est["inv_desde"] - self.RELEER
+        ops = self._operaciones(desde)
+        vistos, out = self.est["vistos"], []
+        for x in sorted(ops, key=lambda x: x["ts"]):
+            self.est["token_cid"][x["token"]] = x["cid"]
+            if x["estado"] == "FAILED":
+                if x["clave"] in vistos:                    # se habia contado y fallo en la cadena: se deshace
+                    _, token, q = vistos.pop(x["clave"])
+                    self._sumar(token, -q)
+                    contra = dict(x, lado="SELL" if x["lado"] == "BUY" else "BUY")
+                    out.append((contra, x["acciones"], "operacion fallida en la cadena: se deshace"))
+                continue
+            if x["clave"] in vistos:
+                continue
+            q = x["acciones"] if x["lado"] == "BUY" else -x["acciones"]
+            vistos[x["clave"]] = [int(x["ts"]), x["token"], q]
+            self._sumar(x["token"], q)
+            if not primera:
+                out.append((x, x["acciones"], f"CLOB {x['estado']}"))
+        if primera:
+            out = self._recuperar(ops)
+            log(f"inventario propio armado desde el CLOB: {len(vistos)} llenados, "
+                f"{sum(1 for q in self.est['inv'].values() if q > 1e-6)} tokens con acciones")
+        ahora = time.time()
+        self.est["inv_desde"] = ahora
+        # limpieza: llenados y ordenes de hace mas de 2 dias ya no se releen
+        for k in [k for k, v in vistos.items() if v[0] < ahora - 2 * 86400]:
+            vistos.pop(k)
+        for k in [k for k, v in self.est["mis_ordenes"].items() if v < ahora - 2 * 86400]:
+            self.est["mis_ordenes"].pop(k)
+        return out
+
+    def _recuperar(self, ops):
+        """Primera vez: los llenados que el CSV no tiene (la cuenta vieja se perdia las ordenes llenadas del todo)."""
+        def clave(token, lado, precio):
+            return token, lado, round(float(precio), 4)
+        anotado = {}
+        for o in self.ops():
+            if o.get("lado") in ("BUY", "SELL"):
+                k = clave(o["token"], o["lado"], o["precio"])
+                anotado[k] = anotado.get(k, 0) + float(o["acciones"])
+        en_clob, ejemplo = {}, {}
+        for x in ops:
+            if x["estado"] != "FAILED":
+                k = clave(x["token"], x["lado"], x["precio"])
+                en_clob[k] = en_clob.get(k, 0) + x["acciones"]
+                ejemplo[k] = x
+        out = []
+        for k, q in en_clob.items():
+            falta = round(q - anotado.get(k, 0), 4)
+            if falta > 1e-6:
+                out.append((ejemplo[k], falta, "recuperado del CLOB (no estaba anotado)"))
         return out
 
     def inventario(self):
-        """Posiciones de la cuenta (data-api). Se consulta una vez por ciclo como mucho (cache de 45 s): el bot la
-        pide 3-4 veces por ciclo y data-api limita las consultas (RateLimitError el 7-nov en real). Si Polymarket
-        frena la consulta y hay una copia reciente (< 10 min), se usa esa en vez de perder el ciclo."""
-        t = time.time()
-        if getattr(self, "_inv_cache", None) is None:
-            self._inv_cache, self._inv_ts = None, 0.0
-        if self._inv_cache is not None and t - self._inv_ts < 45:
-            return dict(self._inv_cache)
-        try:
-            inv = {p.asset_id: float(p.current_size) for p in self._items(self.client.list_positions())
-                   if float(p.current_size) > 1e-6}
-        except Exception as ex:
-            if "ratelimit" in type(ex).__name__.lower() and self._inv_cache is not None and t - self._inv_ts < 600:
-                log(f"posiciones: limite de consultas, uso la copia de hace {int(t - self._inv_ts)} s")
-                return dict(self._inv_cache)
-            raise
-        self._inv_cache, self._inv_ts = inv, t
-        return dict(inv)
+        """Inventario propio (sin consultar nada): acciones que el bot compro y todavia tiene."""
+        return {t: q for t, q in self.est["inv"].items() if q > 1e-6}
+
+    def cid_de(self, token):
+        return self.est["token_cid"].get(token)
+
+    def saldo_token(self, token):
+        """Acciones del token en la billetera segun el CLOB (para comparar con el inventario propio)."""
+        b = self.client.get_balance_allowance(asset_type="CONDITIONAL", token_id=token)
+        return int(b.balance) / 1e6
 
     def cobrar(self, cid, tokens, ganador):
-        inv = self.inventario()
-        q = inv.get(tokens[ganador], 0)
-        self.client.redeem_positions(condition_id=cid).wait()
-        self._inv_cache = None
+        """Caja resuelta: lo que vale es lo que tenemos del lado ganador. Se intenta cobrar (redeem); con billetera
+        proxy puede fallar por falta de clave extra: entonces queda anotado igual y hay que cobrar a mano (Claim)."""
+        q = self.inventario().get(tokens[ganador], 0)
+        try:
+            self.client.redeem_positions(condition_id=cid).wait()
+        except Exception as ex:
+            log(f"no se pudo cobrar solo {cid[:10]}: {ex!r}; queda para cobrar a mano")
+            if q > 0:
+                avisar(f"Maker (real): una caja resolvio a favor (US$ {q:.2f}) y no se pudo cobrar sola. "
+                       f"Cobrala a mano en polymarket.com: Portfolio -> Claim.")
+        for t in tokens:
+            self.est["inv"].pop(t, None)
         return q
 
     def recompensa_dia(self, fecha):
@@ -305,7 +412,7 @@ class Maker:
         self.f_parar = os.path.join(carpeta, "PARAR")
         self.f_parar_auto = os.path.join(carpeta, f"PARAR_maker_{self.modo}")
         self.est = self._cargar()
-        self.ej = ej or {"papel": Papel, "real": Real}[self.modo](m, self.est)
+        self.ej = ej or (Real(m, self.est, ops=self.ops) if self.modo == "real" else Papel(m, self.est))
         # avisos al celular: siempre en real; en papel solo si la config lo pide (si no, marea)
         self.avisar = avisar if (self.modo == "real" or cfg["maker"].get("avisar_papel")) else (lambda t: None)
 
@@ -417,6 +524,9 @@ class Maker:
         self.est["cajas"] = {cid: {k2: c[k2] for k2 in ("evento", "caja", "cid", "si", "no", "pozo", "v", "tam_min", "tick",
                                                          "fin", "medio", "spread", "tam", "rec_pes", "comp")}
                              for cid, c in elegidas.items()}
+        meta = self.est.setdefault("meta", {})            # datos de cada caja usada, para cobrarla aunque ya se haya soltado
+        for cid, c in elegidas.items():
+            meta[cid] = {k2: c[k2] for k2 in ("evento", "caja", "si", "no", "fin")}
         return elegidas
 
     # ---------- ordenes ----------
@@ -479,11 +589,11 @@ class Maker:
 
     def revisar_llenados(self):
         for o, q, p_taker in self.ej.llenados():
-            c = self.est["cajas"].get(o["cid"], {})
+            c = self.est["cajas"].get(o["cid"]) or self.est.get("meta", {}).get(o["cid"]) or {}
             self.anotar(momento_utc=datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M:%S"), modo=self.modo,
                         evento=c.get("evento", ""), caja=c.get("caja", ""), condition_id=o["cid"], token=o["token"],
                         lado=o["lado"], precio=o["precio"], acciones=round(q, 2), medio=c.get("medio", ""),
-                        detalle=f"taker a {p_taker}")
+                        detalle=p_taker if isinstance(p_taker, str) else f"taker a {p_taker}")
             costo = self.est["costo"].setdefault(o["token"], {"precio": o["precio"], "acciones": 0})
             if o["lado"] == "BUY":
                 tot = costo["acciones"] + q
@@ -494,21 +604,34 @@ class Maker:
             self.avisar(f"Maker ({self.modo}): {o['lado']} {q:.0f} acc a {o['precio']} en {c.get('caja', '?')} ({c.get('evento', '')})")
             log(f"llenado: {o['lado']} {q:.1f} a {o['precio']} en {c.get('caja', '?')}")
 
+    def meta_caja(self, cid):
+        """Evento, caja y tokens de una caja (del estado; si no esta, del CLOB: cajas de antes del 8-nov)."""
+        meta = self.est.setdefault("meta", {})
+        if cid not in meta:
+            r = self.m.S.get(f"{mercado.CLOB}/markets/{cid}", timeout=20).json()
+            toks = [t["token_id"] for t in r["tokens"]]
+            meta[cid] = {"evento": r.get("market_slug", ""), "caja": r.get("question", cid[:10]), "si": toks[0], "no": toks[1],
+                         "fin": r.get("end_date_iso") or ""}
+        return meta[cid]
+
     def liquidar(self):
-        """Cajas con inventario cuyo evento ya resolvio: cobrar y anotar."""
+        """Cajas con inventario cuyo evento ya resolvio: cobrar y anotar. Mira todas las cajas donde tenemos acciones,
+        no solo las elegidas ahora (antes una caja soltada al terminar el evento nunca se cobraba en la cuenta)."""
         inv = self.ej.inventario()
-        tokens_cajas = {}
-        for cid, c in self.est["cajas"].items():
-            tokens_cajas[cid] = (c["si"], c["no"], c)
-        for cid, (si, no, c) in list(tokens_cajas.items()):
-            if cid in self.est["resultados"] or (inv.get(si, 0) <= 1e-6 and inv.get(no, 0) <= 1e-6):
+        cids = {cid for cid, c in self.est.get("meta", {}).items() if inv.get(c["si"], 0) > 1e-6 or inv.get(c["no"], 0) > 1e-6}
+        cid_de = getattr(self.ej, "cid_de", lambda t: None)
+        cids |= {cid_de(t) for t in inv} - {None}
+        for cid in cids:
+            if cid in self.est["resultados"]:
                 continue
             try:
                 g = self.m.ganador(cid)
+                if g is None:
+                    continue
+                c = self.meta_caja(cid)
             except Exception:
                 continue
-            if g is None:
-                continue
+            si, no = c["si"], c["no"]
             gi = 0 if g == "Yes" else 1
             try:
                 cobrado = self.ej.cobrar(cid, [si, no], gi)
@@ -519,6 +642,7 @@ class Maker:
                                            "cobrado": round(cobrado, 2), "caja": c["caja"], "evento": c["evento"]}
             for t in (si, no):
                 self.est["costo"].pop(t, None)
+            self.est["meta"].pop(cid, None)
             self.anotar(momento_utc=datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M:%S"), modo=self.modo,
                         evento=c["evento"], caja=c["caja"], condition_id=cid, lado="cobro", precio=1, acciones=round(cobrado, 2),
                         detalle=f"gano {g}")
@@ -528,6 +652,31 @@ class Maker:
         for cid, c in list(self.est["cajas"].items()):
             if datetime.fromisoformat(c["fin"].replace("Z", "+00:00")) < ahora:
                 self.est["cajas"].pop(cid)
+
+    def comparar_inventario(self):
+        """Solo lectura (no pone ni cancela nada): inventario propio armado con el CLOB vs saldo de cada token."""
+        self.revisar_llenados_sin_anotar()
+        inv = self.ej.inventario()
+        lin = [f"Inventario propio (llenados del bot leidos del CLOB): {len(inv)} tokens"]
+        dif = 0
+        for t, q in sorted(inv.items()):
+            cid = getattr(self.ej, "cid_de", lambda x: None)(t)
+            try:
+                c = self.meta_caja(cid) if cid else {}
+            except Exception:
+                c = {}
+            saldo = self.ej.saldo_token(t) if hasattr(self.ej, "saldo_token") else None
+            ok = saldo is not None and saldo + 1e-6 >= q
+            dif += 0 if ok else 1
+            lin.append(f"  {c.get('caja', '?'):>8} {c.get('evento', (cid or '')[:12])}: bot {q:.2f} acc., "
+                       f"billetera {saldo if saldo is not None else '?'} {'OK' if ok else 'NO COINCIDE'}")
+        lin.append("Todo coincide." if not dif else f"{dif} tokens no coinciden: no reiniciar todavia, avisar en el hilo.")
+        print("\n".join(lin))
+        return dif
+
+    def revisar_llenados_sin_anotar(self):
+        for _ in self.ej.llenados():
+            pass
 
     # ---------- un ciclo ----------
     def ciclo(self, ahora=None):
@@ -607,6 +756,8 @@ def main():
     if que == "resumen":
         bot.resumen()
         return
+    if que == "inventario":          # solo lectura: no guarda el estado ni toca ordenes
+        sys.exit(1 if bot.comparar_inventario() else 0)
     if que == "una":
         bot.ciclo()
         bot.resumen()
