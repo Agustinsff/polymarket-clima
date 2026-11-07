@@ -363,8 +363,6 @@ class PruebasReal(unittest.TestCase):
         shutil.rmtree(d)
 
 
-if __name__ == "__main__":
-    unittest.main(verbosity=1)
 
 
 class PruebasFreno(unittest.TestCase):
@@ -390,3 +388,7 @@ class PruebasFreno(unittest.TestCase):
         self.assertFalse(bot.frenado())
         inv["T1"] = 0.0                                                       # T1 se resolvio en contra sin cobro
         self.assertAlmostEqual(bot.pnl(), -10.0, places=2)
+
+
+if __name__ == "__main__":
+    unittest.main(verbosity=1)
