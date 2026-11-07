@@ -1,0 +1,24 @@
+# Bot maker como servicio de Linux (systemd). Lo instala bot/linux/instalar.sh.
+# - Arranca solo al prender el servidor y vuelve a arrancar a los 60 s si se cae con error.
+# - No arranca si existe bot/PARAR o bot/PARAR_maker_real (igual que iniciar_maker.cmd).
+# - Al pararlo (systemctl stop) le manda Ctrl+C (SIGINT): el bot cancela sus ordenes antes de salir.
+[Unit]
+Description=Bot maker de Polymarket (bot/maker.py)
+Wants=network-online.target
+After=network-online.target
+
+[Service]
+Type=simple
+User=bot
+WorkingDirectory=/home/bot/polymarket-clima
+EnvironmentFile=/etc/polymarket-maker/secreto.env
+Environment=PYTHONUTF8=1 PYTHONUNBUFFERED=1
+ExecCondition=/bin/sh -c 'test ! -e bot/PARAR && test ! -e bot/PARAR_maker_real'
+ExecStart=/home/bot/venv/bin/python bot/maker.py bucle
+Restart=on-failure
+RestartSec=60
+KillSignal=SIGINT
+TimeoutStopSec=90
+
+[Install]
+WantedBy=multi-user.target
