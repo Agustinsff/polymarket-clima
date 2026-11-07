@@ -602,7 +602,10 @@ def main():
                 if datetime.now(timezone.utc).minute % 30 == 0:
                     bot.resumen()
                 time.sleep(max(cfg["maker"]["ciclo_seg"] - (time.time() - t0), 5))
+        except KeyboardInterrupt:
+            log("corte pedido (Ctrl+C o fin del tramo)")
         finally:
+            bot.resumen()                   # con las ordenes todavia puestas, para que el capital se vea
             try:
                 bot.ej.cancelar_todo()
                 log("ordenes canceladas")
@@ -610,7 +613,6 @@ def main():
                 log(f"NO SE PUDIERON CANCELAR LAS ORDENES: {ex!r} (cancelar a mano en polymarket.com)")
                 bot.avisar(f"Maker ({bot.modo}): se apagó y NO pudo cancelar las órdenes. Cancelalas a mano en polymarket.com.")
             bot._guardar()
-            bot.resumen()
             bot.avisar(f"Maker ({bot.modo}) apagado.")
 
 
