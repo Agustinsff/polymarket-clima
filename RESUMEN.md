@@ -1,6 +1,6 @@
 # Resumen polymarket-clima
 
-_Actualizado: 2026-11-07 20:02 (Montevideo). Todo es **en papel**: no se usa plata real._
+_Actualizado: 2026-11-07 20:05 (Montevideo). Todo es **en papel**: no se usa plata real._
 
 ## Estado de las tareas
 
@@ -8,7 +8,7 @@ _Actualizado: 2026-11-07 20:02 (Montevideo). Todo es **en papel**: no se usa pla
 🔔 Polymarket cambió algo en **clima (otros)** (mercado de clima nuevo, ya no aparece el 2026-11-07 10:40 UTC): `how-many-chinook-will-pass-bonneville-dam-by`. Ver [reglas_informe.md](reglas_informe.md).
 
 - Última foto de liquidez: 2026-11-07T20:02:44
-- Monitor: mañana 2026-11-07, noche 2026-11-06
+- Monitor: mañana 2026-11-07, noche 2026-11-07
 - Prueba São Paulo: último día registrado 2026-11-07
 - Cosechador: último ciclo 2026-11-04 16:12 UTC, 88 mercados, 46 estaciones
 
