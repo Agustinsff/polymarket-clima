@@ -132,6 +132,12 @@ medio (los llenados parciales de la misma venta no repiten en 30 min). (3) pérd
 Con los llenados del 8-nov hubieran saltado: escalera en Chengdu 17 °C (05:43Z) y Moscú 4 °C (06:34Z), ventas bajo el
 costo en Moscú, Múnich y Tokio 14 °C, y la de pérdida del día a las 13:32Z (−7,5), antes del freno.
 
+**Cajas sin compras a mano: `bot/SIN_COMPRAS.txt` (8-nov-2026).** La palanca rápida ante una ALERTA de escalera: cada
+línea es un pedazo del evento, de la caja o del condition_id (sin importar mayúsculas; `#` comenta). Esas cajas dejan de
+poner compras y siguen vendiendo el inventario, igual que el filtro de movimiento. Se relee en cada ciclo (sin reiniciar),
+está fuera de git (no traba el pull) y se ve en el resumen como "a mano". Borrar la línea devuelve las compras. Ejemplo:
+`moscow-on-november-8` deja sin compras todas las cajas de ese evento; `moscow-on-november-8 4°C`, solo esa caja.
+
 **Valor a precio de mercado en el resumen (8-nov-2026).** El neto "al costo" del bot (−1,9) y la cartera de la web (−7) no
 coincidían: la web valúa las acciones al precio actual del libro. El resumen y el aviso "sigo vivo" muestran ahora también
 las acciones al medio actual (`valor_mercado`), los llenados y el neto a mercado y el valor total de la cuenta

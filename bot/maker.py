@@ -442,6 +442,7 @@ class Maker:
         self.f_parar = os.path.join(carpeta, "PARAR")
         self.f_parar_auto = os.path.join(carpeta, f"PARAR_maker_{self.modo}")
         self.f_reiniciar = os.path.join(carpeta, "REINICIAR")
+        self.f_sin_compras = os.path.join(carpeta, "SIN_COMPRAS.txt")   # cajas sin compras a mano (ver cajas_sin_compras)
         self.f_cfg = None                                   # ruta de config.json para releer (None: no relee)
         self.guardia = None                                 # guardia METAR (se crea al primer uso; ver decidida())
         self.est = self._cargar()
@@ -746,10 +747,29 @@ class Maker:
             return None
         return round(c["medio"] - viejo[1], 4)
 
+    def cajas_sin_compras(self):
+        """Lineas de bot/SIN_COMPRAS.txt (fuera de git, se relee cada ciclo): cada una es un pedazo de texto del evento,
+        la caja o el condition_id (sin importar mayusculas). Esas cajas siguen cotizando ventas pero no compran: es la
+        palanca rapida ante una ALERTA de escalera (8-nov). Lineas vacias o que empiezan con # no cuentan."""
+        try:
+            with open(self.f_sin_compras, encoding="utf-8", errors="replace") as f:
+                return [x.strip().lower() for x in f if x.strip() and not x.strip().startswith("#")]
+        except OSError:
+            return []
+
     def sin_compras(self, c, ahora):
         """True si la caja esta 'en movimiento' (8-nov, Moscu/Munich/Tokio 14 °C): el medio se movio filtro_movimiento_c
         (0,06) o mas en la ultima hora, en cualquier direccion. Ahi no se ponen compras (las ventas siguen): las compras
         hechas con el precio en movimiento perdieron 5 c/accion a la hora; con el precio quieto ganaron 1,4 c. 0 = apagado."""
+        texto = f"{c.get('evento', '')} {c.get('caja', '')} {c.get('cid', '')}".lower()
+        a_mano = [x for x in self.cajas_sin_compras() if x in texto]
+        if a_mano:
+            activos = self.est.setdefault("filtro", {})
+            if activos.get(c["cid"], {}).get("a_mano") != a_mano[0]:
+                activos[c["cid"]] = {"desde": ahora.strftime("%Y-%m-%d %H:%M:%S"), "evento": c["evento"], "caja": c["caja"],
+                                     "a_mano": a_mano[0], "medio": c["medio"]}
+                log(f"SIN_COMPRAS.txt: {c['evento']} {c['caja']} sin compras ('{a_mano[0]}')")
+            return True
         umbral = self.cfg["maker"].get("filtro_movimiento_c", 0.06)
         if not umbral:
             return False
@@ -1148,7 +1168,9 @@ class Maker:
                f"- A PRECIO DE MERCADO (lo que muestra la web): acciones US$ {valor:.2f} (al costo {costo_inv:.2f}); llenados "
                f"US$ {self.pnl(inventario=False) + valor:+.2f}; neto con recompensas US$ {sum(cobradas.values()) + self.pnl(inventario=False) + valor:+.2f}; "
                f"cuenta = efectivo + acciones = US$ {('?' if cuenta is None else f'{cuenta + valor:.2f}')}.",
-               f"- Filtro de movimiento (sin compras): " + (", ".join(f"{v['caja']} ({v['evento']}, {v['movimiento'] * 100:+.1f} c desde {v['desde'][11:16]}Z)"
+               f"- Filtro de movimiento (sin compras): " + (", ".join(f"{v['caja']} ({v['evento']}, "
+                                                                               + (f"a mano: '{v['a_mano']}'" if v.get("a_mano") else f"{v.get('movimiento', 0) * 100:+.1f} c")
+                                                                               + f" desde {v['desde'][11:16]}Z)"
                                                                      for v in self.est.get("filtro", {}).values()) or "ninguna caja") + ".",
                f"- Freno: {'ACTIVO — ' + self.frenado() if self.frenado() else 'no'}."]
         with open(self.f_res, "w", encoding="utf-8") as f:
