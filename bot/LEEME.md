@@ -91,8 +91,17 @@ nuevas que no pueda cotizar entera (≈ tamaño × (1 − 2·distancia)). Sin to
 reinvierte lo que gana (decisión de Agus); los que cuidan la plata son los frenos de pérdida. El resumen y el "sigo
 vivo" muestran efectivo, reservado y libre.
 
+**Guardia METAR fina y piso de compra (8-nov-2026, pedido de Agus tras Chengdu 17 °C).** `bot/guardia_metar.py`:
+el día del evento (hora local), el bot lee los METAR de la estación (aviationweather, cache 10 min; estaciones de
+`propio/estaciones.json`, regla de Polymarket: solo reportes de rutina, grupo T en décimas, .5 arriba, °F convertido)
+y, si la temperatura ya observada dejó la caja decidida (máxima observada > caja o ≥ "N or higher"; mínimas al revés),
+la suelta, lo anota en el estado (`guardia`) y avisa por ntfy una vez. Una caja donde la observada apenas llegó al
+valor NO está decidida (Chengdu 17 °C con 17 observados: puede subir). Config `guardia_metar` (true). Además
+`precio_min_compra` (0,10): no compra un lado que cotice por debajo (el otro ya está arriba de 0,90): a ese precio casi
+siempre es el lado que ya se sabe que pierde; las ventas del inventario siguen. Esto sí hubiera evitado Chengdu.
+
 Archivos: `bot/maker_ops_<modo>.csv` (órdenes puestas, llenados y cobros), `bot/maker_estado_<modo>.json`,
-`bot/maker_resumen_<modo>.md`. Pruebas sin red: `python bot/test_maker.py` (30 pruebas, incluido el SDK falso).
+`bot/maker_resumen_<modo>.md`. Pruebas sin red: `python bot/test_maker.py` (36 pruebas, incluido el SDK falso).
 
 **Operarlo sin pausas (8-nov-2026).**
 - **Actualizar sin cancelar las órdenes**: doble clic en `bot\actualizar.cmd`. Hace `git pull`, deja `bot\REINICIAR`

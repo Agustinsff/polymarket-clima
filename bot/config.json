@@ -37,6 +37,8 @@
     "max_perdida_dia": 10,
     "max_perdida_total": 30,
     "max_errores_seguidos": 10,
-    "avisar_errores": 3
+    "avisar_errores": 3,
+    "guardia_metar": true,
+    "precio_min_compra": 0.10
   }
 }
