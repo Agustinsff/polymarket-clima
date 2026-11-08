@@ -445,6 +445,22 @@ class PruebasFreno(unittest.TestCase):
         self.assertAlmostEqual(bot.pnl(hoy), -0.75 + 50 * (0.30 - 0.24), places=2)
         shutil.rmtree(d)
 
+    def test_valor_a_mercado(self):
+        """El resumen valua las acciones al medio actual del libro ademas del costo (8-nov: la web mostraba 5 menos)."""
+        import types
+        d = tempfile.mkdtemp()
+        inv = {"T1": 10.0, "T2": 20.0}
+        ej = types.SimpleNamespace(inventario=lambda: dict(inv), abiertas=lambda: [], llenados=lambda: [],
+                                   cancelar_todo=lambda: None, nombre="real")
+        m = MercadoFalso()
+        m.libro = lambda t: ([(0.40, 100)], [(0.42, 100)]) if t == "T1" else ([], [])
+        bot = maker.Maker(cfg(modo="real"), m=m, carpeta=d, ej=ej)
+        bot.est["costo"] = {"T1": {"precio": 0.50, "acciones": 10}, "T2": {"precio": 0.30, "acciones": 20}}
+        valor, costo = bot.valor_mercado()
+        self.assertAlmostEqual(costo, 11.0, places=2)                         # 10*0.50 + 20*0.30
+        self.assertAlmostEqual(valor, 4.1 + 6.0, places=2)                    # T1 al medio 0,41; T2 sin libro: al costo
+        shutil.rmtree(d)
+
     def test_dia_en_hora_de_uruguay(self):
         """El 'dia' del freno es el de Uruguay (UTC-3): una venta a las 02:30Z del 9-nov cuenta para el 8-nov local."""
         import types

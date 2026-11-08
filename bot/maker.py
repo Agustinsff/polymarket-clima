@@ -535,6 +535,21 @@ class Maker:
                     total += q * c["precio"]
         return round(total, 2)
 
+    def valor_mercado(self):
+        """Acciones en cartera valuadas al precio medio actual del libro (lo que muestra la web de Polymarket), con su
+        costo: (valor, costo). Si un libro no contesta, esa posicion se valua al costo."""
+        valor = costo = 0.0
+        for t, q in self.ej.inventario().items():
+            c = self.est["costo"].get(t, {}).get("precio", 0.5)
+            costo += q * c
+            try:
+                bids, asks = self.m.libro(t)
+                medio = (bids[0][0] + asks[0][0]) / 2 if bids and asks else (bids[0][0] if bids else c)
+            except Exception:                         # noqa: BLE001
+                medio = c
+            valor += q * medio
+        return round(valor, 2), round(costo, 2)
+
     def capital_puesto(self):
         """Plata en acciones sin resolver (al precio pagado) + plata reservada en ordenes abiertas."""
         inv = self.ej.inventario()
@@ -987,6 +1002,7 @@ class Maker:
             self.avisar(f"Maker ({self.modo}) sigo vivo: {n} ordenes en {len(self.est['cajas'])} cajas, "
                         f"efectivo {e.get('cuenta', '?')} (libre {e.get('libre', '?')}, en acciones {e.get('acciones_costo', '?')}), "
                         f"resultado del dia {self.pnl(hoy):+.2f}, total al costo {self.pnl():+.2f}, "
+                        f"a mercado {self.pnl(inventario=False) + self.valor_mercado()[0]:+.2f}, "
                         f"errores seguidos {self.est.get('errores_seguidos', 0)}.")
 
     def ciclo(self, ahora=None):
@@ -1055,6 +1071,7 @@ class Maker:
         ops = self.ops()
         llen = [o for o in ops if o["lado"] in ("BUY", "SELL")]
         libre, cuenta, reservado = self.efectivo_libre()
+        valor, costo_inv = self.valor_mercado()
         lin = [f"# Maker ({self.modo}) — {datetime.now(timezone.utc):%Y-%m-%d %H:%M}Z", "",
                f"- Cajas ahora: {len(self.est['cajas'])}: " + ", ".join(f"{c['caja']} ({c['evento']}, medio {c['medio']}, "
                                                                      f"rec. esp. {c['rec_pes']}/día)" for c in self.est["cajas"].values()),
@@ -1070,6 +1087,9 @@ class Maker:
                f"- Efectivo libre para comprar: {'?' if libre is None else f'US$ {libre:.2f}'} (en la cuenta "
                f"{'?' if cuenta is None else f'{cuenta:.2f}'}, reservado en compras {reservado:.2f}; sin tope: reinvierte lo que gana).",
                f"- Neto = recompensas + realizado: US$ {sum(cobradas.values()) + self.pnl():+.2f}.",
+               f"- A PRECIO DE MERCADO (lo que muestra la web): acciones US$ {valor:.2f} (al costo {costo_inv:.2f}); llenados "
+               f"US$ {self.pnl(inventario=False) + valor:+.2f}; neto con recompensas US$ {sum(cobradas.values()) + self.pnl(inventario=False) + valor:+.2f}; "
+               f"cuenta = efectivo + acciones = US$ {('?' if cuenta is None else f'{cuenta + valor:.2f}')}.",
                f"- Filtro de movimiento (sin compras): " + (", ".join(f"{v['caja']} ({v['evento']}, {v['movimiento'] * 100:+.1f} c desde {v['desde'][11:16]}Z)"
                                                                      for v in self.est.get("filtro", {}).values()) or "ninguna caja") + ".",
                f"- Freno: {'ACTIVO — ' + self.frenado() if self.frenado() else 'no'}."]
