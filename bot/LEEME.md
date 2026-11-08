@@ -123,6 +123,15 @@ repasa las operaciones en orden y mide cada venta contra el costo medio que ten�
 registros siguen en UTC; la recompensa diaria la informa Polymarket por día UTC (sin cambio). Cuando salta el freno diario
 manda un aviso por ntfy (una vez por día).
 
+**Alertas de casos raros (8-nov-2026, pedido de Agus).** Además del aviso de cada llenado, el bot manda por ntfy mensajes que
+empiezan con "ALERTA" (solo avisan, no cambian ninguna orden): (1) `alerta_escalera` (3) compras seguidas del mismo token,
+cada una más barata que la anterior (medio tick o más, dentro de 3 h; una venta o una compra más cara corta la escalera):
+precio en tendencia; avisa en cada escalón nuevo. (2) venta `alerta_venta_bajo_costo_c` (0,05) o más por debajo del costo
+medio (los llenados parciales de la misma venta no repiten en 30 min). (3) pérdida del día (hora de Uruguay) en
+`alerta_dia_frac` (0,7) del freno diario, una vez por día. `alertas: false` las apaga; cada umbral en 0 apaga el suyo.
+Con los llenados del 8-nov hubieran saltado: escalera en Chengdu 17 °C (05:43Z) y Moscú 4 °C (06:34Z), ventas bajo el
+costo en Moscú, Múnich y Tokio 14 °C, y la de pérdida del día a las 13:32Z (−7,5), antes del freno.
+
 **Valor a precio de mercado en el resumen (8-nov-2026).** El neto "al costo" del bot (−1,9) y la cartera de la web (−7) no
 coincidían: la web valúa las acciones al precio actual del libro. El resumen y el aviso "sigo vivo" muestran ahora también
 las acciones al medio actual (`valor_mercado`), los llenados y el neto a mercado y el valor total de la cuenta
@@ -130,7 +139,7 @@ las acciones al medio actual (`valor_mercado`), los llenados y el neto a mercado
 pérdida hasta que se vende o resuelve).
 
 Archivos: `bot/maker_ops_<modo>.csv` (órdenes puestas, llenados y cobros), `bot/maker_estado_<modo>.json`,
-`bot/maker_resumen_<modo>.md`. Pruebas sin red: `python bot/test_maker.py` (41 pruebas, incluido el SDK falso).
+`bot/maker_resumen_<modo>.md`. Pruebas sin red: `python bot/test_maker.py` (42 pruebas, incluido el SDK falso).
 
 **Operarlo sin pausas (8-nov-2026).**
 - **Actualizar sin cancelar las órdenes**: doble clic en `bot\actualizar.cmd`. Hace `git pull`, deja `bot\REINICIAR`
