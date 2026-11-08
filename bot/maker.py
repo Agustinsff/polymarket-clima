@@ -12,6 +12,8 @@ Que hace cada ciclo (60 s):
   4. en cada caja pone/renueva dos ordenes post-only: comprar Si a medio - d y comprar No a 1 - medio - d
      (= vender Si a medio + d). Si ya tenemos acciones de un lado, vende esas en vez de comprar el otro lado,
      asi el capital no crece. Solo renueva si el medio se movio >= 1 tick (si no, deja la orden en la fila).
+     En las cajas que ya solto pero donde le quedan acciones, deja una venta post-only (mismo precio) del tamano que
+     tenga, para no esperar a la resolucion; no cuentan como caja ni suman capital.
   5. anota los llenados, la recompensa cobrada (real: lo que informa Polymarket; papel: la formula) y el resumen
   Al salir por cualquier motivo cancela TODAS las ordenes, salvo si se le pidio REINICIAR (bot/REINICIAR o
   bot/actualizar.cmd): ahi sale con codigo 3 dejando las ordenes en el libro y, al volver a arrancar, adopta las que
@@ -563,8 +565,39 @@ class Maker:
                              for cid, c in elegidas.items()}
         meta = self.est.setdefault("meta", {})            # datos de cada caja usada, para cobrarla aunque ya se haya soltado
         for cid, c in elegidas.items():
-            meta[cid] = {k2: c[k2] for k2 in ("evento", "caja", "si", "no", "fin")}
+            meta[cid] = {k2: c[k2] for k2 in ("evento", "caja", "si", "no", "fin", "tick")}
         return elegidas
+
+    def ventas_soltadas(self, elegidas, inv):
+        """Ventas post-only en las cajas que el bot ya solto pero donde todavia tiene acciones (8-nov, pedido de Agus):
+        mismo precio que siempre (medio + distancia, con el libro actual), del tamano que tenga, sin contar como caja ni
+        sumar capital. Se cancelan solas (renovar) cuando la caja resuelve, el evento termino o el libro no se puede leer."""
+        d, minimo = self.cfg["maker"]["distancia"], self.cfg["maker"].get("acciones_min_venta", 5)
+        ahora = datetime.now(timezone.utc)
+        out = []
+        for cid, c in self.est.get("meta", {}).items():
+            if cid in elegidas or cid in self.est["resultados"]:
+                continue
+            tiene = [(t, inv.get(t, 0)) for t in (c["si"], c["no"]) if inv.get(t, 0) >= minimo]
+            if not tiene:
+                continue
+            try:
+                if c.get("fin") and datetime.fromisoformat(c["fin"].replace("Z", "+00:00")) < ahora:
+                    continue
+                bids, asks = self.m.libro(c["si"])
+                if not bids or not asks:
+                    continue
+                medio = (bids[0][0] + asks[0][0]) / 2
+            except Exception as ex:
+                log(f"no se pudo leer el libro de {c.get('caja', cid[:10])} para vender lo que queda: {ex!r}")
+                continue
+            tick = c.get("tick", 0.01)
+            for t, q in tiene:
+                es_si = t == c["si"]
+                p = redondear((medio if es_si else 1 - medio) + d, tick, False)
+                if 0.01 <= p <= 0.99:
+                    out.append((cid, c.get("evento", ""), c.get("caja", ""), round(medio, 4), t, "SELL", p, math.floor(q * 100) / 100, es_si))
+        return out
 
     # ---------- ordenes ----------
     def cotizar(self, c, inv):
@@ -595,6 +628,7 @@ class Maker:
         quiero = []
         for c in elegidas.values():
             quiero += [(c["cid"], c["evento"], c["caja"], c["medio"]) + o for o in self.cotizar(c, inv)]
+        quiero += self.ventas_soltadas(elegidas, inv)
         # cancelar lo que no corresponde (otra caja, otro precio, otro lado) o lo que ya quedo con poco
         cancelar = []
         quedan = []
@@ -648,7 +682,7 @@ class Maker:
             r = self.m.S.get(f"{mercado.CLOB}/markets/{cid}", timeout=20).json()
             toks = [t["token_id"] for t in r["tokens"]]
             meta[cid] = {"evento": r.get("market_slug", ""), "caja": r.get("question", cid[:10]), "si": toks[0], "no": toks[1],
-                         "fin": r.get("end_date_iso") or ""}
+                         "fin": r.get("end_date_iso") or "", "tick": float(r.get("minimum_tick_size") or 0.01)}
         return meta[cid]
 
     def liquidar(self):
