@@ -1,6 +1,6 @@
 # Resumen polymarket-clima
 
-_Actualizado: 2026-11-08 07:16 (Montevideo). Todo es **en papel**: no se usa plata real._
+_Actualizado: 2026-11-08 07:17 (Montevideo). Todo es **en papel**: no se usa plata real._
 
 ## Estado de las tareas
 
