@@ -34,3 +34,27 @@ Siguiente corte: ≈ 30-oct con las fotos propias (`datos/fotos.csv`). Final: �
   No se lee como señal.
 
 Va camino a "Ni 1": el mercado ya descuenta la regla (o el efecto es demasiado chico para verse).
+
+## Resultado final, 8-nov-2026 (eventos del 23-oct al 6-nov, 1.380 con ganadora)
+
+`python regla_metar/analizar.py --iem metar_iem.csv.gz` → `resultados.json` (fotos propias, 12 fechas del 26-oct al
+6-nov para M1; los días 23–25 no tienen foto propia). **Criterio de REGLA.md: 1 = no, 2 = no → "Ni 1": el mercado ya
+descuenta la regla (o el efecto es demasiado chico para verse). No se sigue.**
+
+- **Brecha de la regla**: rutina vs. todos los reportes difieren en **9 de 1.380 eventos (0,65 %)**, siempre con el
+  SPECI más extremo; rutina = ganadora en 1.380/1.380. Antes del 23-oct (IEM): 39/2.837 (1,4 %).
+- **Criterio 1 (sesgo, máximas M1)**: S = +0,012 cajas (545 eventos, t 0,48); control +0,037 (t 2,3); diferencia
+  −0,025 (t −0,84). No hay sobreprecio de las cajas altas; el período nuevo está, si algo, un poco más abajo.
+  M0: −0,030 (t −1,0); M2: +0,030 (t 1,0).
+- **Criterio 2 (plata, máximas M1)**: No de la vecina de arriba **−1,8 %** por operación (504 ops, t −0,87; mitades
+  −1,5 % y −2,1 %); vecina de abajo +0,9 % (496 ops). Falla en todo: signo, tamaño, t y contra el control.
+  M0 −4,0 % y M2 −3,7 % (secundarios).
+- **Comisión**: desde el 1-nov ~05 UTC los mercados de temperatura traen tasa 0,05 (antes 0). Está incluida en cada
+  operación según la tasa de su foto.
+- **Mínimas (secundario, no decide)**: S muy negativo en M1/M2 (−0,49/−0,50; control −0,23, diferencia −0,26, t −5,4):
+  el medio del libro pone más peso abajo de lo que sale, en la dirección que predecía la regla. Pero el libro de las
+  mínimas está casi vacío a esa hora y el medio no se puede operar: comprar el No de la vecina de abajo pierde
+  −10,8 % (103 ops) y el de la de arriba −27,6 %. Agregado después: no se le hizo ninguna prueba más.
+
+El recolector terminó (fotos hasta el 7-nov, las 1.380 ganadoras ya están). Se saca del reloj y se borra el workflow.
+Informe: https://claude.ai/artifact/UjdUxA65z61uQ2NpdqaimZ
