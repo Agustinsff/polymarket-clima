@@ -718,6 +718,33 @@ class PruebasGuardiaMetar(unittest.TestCase):
         self.assertEqual([(x[0], x[1]) for x in o], [("s", "SELL")])
         shutil.rmtree(d)
 
+    def test_filtro_movimiento(self):
+        """Tokio 14 °C (8-nov): si el medio se movio 6 c o mas en la ultima hora, la caja queda sin compras; se calma, vuelven."""
+        from datetime import datetime, timedelta, timezone
+        d = tempfile.mkdtemp()
+        bot = maker.Maker(cfg(), m=MercadoFalso(), carpeta=d)
+        c = {"cid": "x", "evento": "e", "caja": "14°C", "si": "s", "no": "n", "medio": 0.50, "tick": 0.01, "tam": 25}
+        t0 = datetime(2026, 11, 8, 12, 0, tzinfo=timezone.utc)
+        self.assertIsNone(bot.movimiento(c, t0))                                     # sin historia: no se filtra
+        self.assertFalse(bot.sin_compras(c, t0 + timedelta(minutes=5)))
+        c["medio"] = 0.45                                                            # 20 min despues, bajo 5 c: no llega
+        self.assertFalse(bot.sin_compras(c, t0 + timedelta(minutes=20)))
+        c["medio"] = 0.43                                                            # 30 min: 7 c en la hora -> sin compras
+        self.assertTrue(bot.sin_compras(c, t0 + timedelta(minutes=30)))
+        self.assertEqual(bot.movimiento(c, t0 + timedelta(minutes=30)), -0.07)
+        self.assertIn("x", bot.est["filtro"])
+        o = bot.cotizar(c, {"n": 30}, sin_compras=True)                              # solo la venta del No que tenemos
+        self.assertEqual([(x[0], x[1]) for x in o], [("n", "SELL")])
+        self.assertEqual(bot.cotizar(c, {}, sin_compras=True), [])
+        c["medio"] = 0.56                                                            # subida fuerte tambien filtra
+        self.assertTrue(bot.sin_compras(c, t0 + timedelta(minutes=40)))
+        c["medio"] = 0.55                                                            # 95 min: en la ventana solo queda el 0,56 de los 40 min
+        self.assertFalse(bot.sin_compras(c, t0 + timedelta(minutes=95)))             # se calmo: vuelven las compras
+        bot.cfg["maker"]["filtro_movimiento_c"] = 0                                  # 0 = apagado
+        c["medio"] = 0.80
+        self.assertFalse(bot.sin_compras(c, t0 + timedelta(minutes=100)))
+        shutil.rmtree(d)
+
 
 class PruebasReinicioConfig(unittest.TestCase):
     def _bot(self, d):

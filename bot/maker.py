@@ -683,8 +683,41 @@ class Maker:
         return out
 
     # ---------- ordenes ----------
-    def cotizar(self, c, inv):
-        """Las dos ordenes que queremos en la caja: [(token, lado, precio, acciones, es_si)]."""
+    def movimiento(self, c, ahora):
+        """Cuanto se movio el precio medio de la caja en la ultima ventana (filtro_movimiento_min, 60 min): medio de ahora
+        menos el medio mas viejo dentro de la ventana. None si todavia hay menos de 10 min de historia."""
+        k = self.cfg["maker"]
+        ventana = 60 * k.get("filtro_movimiento_min", 60)
+        hist = self.est.setdefault("medios", {}).setdefault(c["cid"], [])
+        t = int(ahora.timestamp())
+        if not hist or t - hist[-1][0] >= 30:
+            hist.append([t, c["medio"]])
+        hist[:] = [x for x in hist if t - x[0] <= ventana + 300]
+        viejo = next((x for x in hist if t - x[0] <= ventana), None)
+        if viejo is None or t - viejo[0] < 600:
+            return None
+        return round(c["medio"] - viejo[1], 4)
+
+    def sin_compras(self, c, ahora):
+        """True si la caja esta 'en movimiento' (8-nov, Moscu/Munich/Tokio 14 °C): el medio se movio filtro_movimiento_c
+        (0,06) o mas en la ultima hora, en cualquier direccion. Ahi no se ponen compras (las ventas siguen): las compras
+        hechas con el precio en movimiento perdieron 5 c/accion a la hora; con el precio quieto ganaron 1,4 c. 0 = apagado."""
+        umbral = self.cfg["maker"].get("filtro_movimiento_c", 0.06)
+        if not umbral:
+            return False
+        mov = self.movimiento(c, ahora)
+        if mov is None or abs(mov) < umbral - 1e-9:
+            return False
+        activos = self.est.setdefault("filtro", {})
+        if c["cid"] not in activos:
+            activos[c["cid"]] = {"desde": ahora.strftime("%Y-%m-%d %H:%M:%S"), "evento": c["evento"], "caja": c["caja"],
+                                 "movimiento": mov, "medio": c["medio"]}
+            log(f"filtro de movimiento: {c['evento']} {c['caja']} se movio {mov * 100:+.1f} c en la ultima hora, "
+                f"sin compras hasta que se calme")
+        return True
+
+    def cotizar(self, c, inv, sin_compras=False):
+        """Las dos ordenes que queremos en la caja: [(token, lado, precio, acciones, es_si)]. Con sin_compras solo ventas."""
         d, tick, tam = self.cfg["maker"]["distancia"], c["tick"], c["tam"]
         # piso para comprar (8-nov, Chengdu): un lado por debajo de `precio_min_compra` (0,10) es casi siempre el que ya
         # se sabe que pierde; no se compra. Las ventas del inventario siguen.
@@ -697,7 +730,7 @@ class Maker:
         si, no = inv.get(c["si"], 0), inv.get(c["no"], 0)
 
         def cabe(tengo):
-            return not tope or tengo + tam <= tope + 1e-9
+            return not sin_compras and (not tope or tengo + tam <= tope + 1e-9)
 
         ordenes = []
         # lado "comprar Si": si tenemos No, vendemos No (= comprar Si); si no, compramos Si
@@ -716,12 +749,18 @@ class Maker:
                 ordenes.append((c["no"], "BUY", p_no, tam, False))
         return ordenes
 
-    def renovar(self, elegidas):
+    def renovar(self, elegidas, ahora=None):
+        ahora = ahora or datetime.now(timezone.utc)
         abiertas = self.ej.abiertas()
         inv = self.ej.inventario()
         quiero = []
         for c in elegidas.values():
-            quiero += [(c["cid"], c["evento"], c["caja"], c["medio"]) + o for o in self.cotizar(c, inv)]
+            quieto = not self.sin_compras(c, ahora)
+            if quieto:
+                self.est.get("filtro", {}).pop(c["cid"], None)
+            quiero += [(c["cid"], c["evento"], c["caja"], c["medio"]) + o for o in self.cotizar(c, inv, not quieto)]
+        for cid in [cid for cid in self.est.get("filtro", {}) if cid not in elegidas]:
+            self.est["filtro"].pop(cid, None)
         quiero += self.ventas_soltadas(elegidas, inv)
         # cancelar lo que no corresponde (otra caja, otro precio, otro lado) o lo que ya quedo con poco
         cancelar = []
@@ -930,7 +969,7 @@ class Maker:
                 self._guardar()
                 return motivo
             elegidas = self.elegir(ahora)
-            errores = self.renovar(elegidas)
+            errores = self.renovar(elegidas, ahora)
             self.est["errores_seguidos"] = self.est.get("errores_seguidos", 0) + errores if errores else 0
             self.est["ultimo_ciclo"] = ahora.strftime("%Y-%m-%d %H:%M:%S")
             self.recompensas(ahora)
@@ -996,6 +1035,8 @@ class Maker:
                f"- Efectivo libre para comprar: {'?' if libre is None else f'US$ {libre:.2f}'} (en la cuenta "
                f"{'?' if cuenta is None else f'{cuenta:.2f}'}, reservado en compras {reservado:.2f}; sin tope: reinvierte lo que gana).",
                f"- Neto = recompensas + realizado: US$ {sum(cobradas.values()) + self.pnl():+.2f}.",
+               f"- Filtro de movimiento (sin compras): " + (", ".join(f"{v['caja']} ({v['evento']}, {v['movimiento'] * 100:+.1f} c desde {v['desde'][11:16]}Z)"
+                                                                     for v in self.est.get("filtro", {}).values()) or "ninguna caja") + ".",
                f"- Freno: {'ACTIVO — ' + self.frenado() if self.frenado() else 'no'}."]
         with open(self.f_res, "w", encoding="utf-8") as f:
             f.write("\n".join(lin) + "\n")
