@@ -94,8 +94,8 @@ Archivos: `bot/maker_ops_<modo>.csv` (órdenes puestas, llenados y cobros), `bot
   (mismo token, lado y precio), así no pierde el lugar en la fila. `PARAR` y los frenos siguen cancelando todo.
   Si el PR cambió `iniciar_maker.cmd`, cerrar esa ventana y abrirla de nuevo después.
 - **Vende lo que queda en cajas soltadas** (8-nov): si el bot dejó una caja (ya no está entre las 3) pero le quedan
-  acciones ahí (≥ `acciones_min_venta`, 5), deja una venta post-only al mismo precio de siempre (medio + 2 ¢) del
-  tamaño que tenga, para liberar ese capital sin esperar a la resolución. No cuenta como caja ni suma capital; se
+  acciones ahí (≥ `acciones_min_venta`, 5), deja una venta post-only al mayor entre el precio de siempre (medio + 2 ¢) y
+  el costo + 1 ¢ (nunca vende con pérdida), del tamaño que tenga, para liberar ese capital sin esperar a la resolución. No cuenta como caja ni suma capital; se
   cancela sola si la caja resuelve o el evento terminó.
 - **Cambiar la config sin reiniciar**: el bot relee `config.json` en cada ciclo y aplica los cambios de la sección
   `maker` (capital, cajas, distancia, topes…); lo único que no cambia en caliente es `modo`. Lo anota en el log.
