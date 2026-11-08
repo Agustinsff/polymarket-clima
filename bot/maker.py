@@ -570,8 +570,8 @@ class Maker:
 
     def ventas_soltadas(self, elegidas, inv):
         """Ventas post-only en las cajas que el bot ya solto pero donde todavia tiene acciones (8-nov, pedido de Agus):
-        mismo precio que siempre (medio + distancia, con el libro actual), del tamano que tenga, sin contar como caja ni
-        sumar capital. Se cancelan solas (renovar) cuando la caja resuelve, el evento termino o el libro no se puede leer."""
+        mismo precio que siempre (medio + distancia, con el libro actual) pero nunca por debajo del costo medio + 1 tick
+        (solo vende con ganancia), del tamano que tenga, sin contar como caja ni sumar capital. Se cancelan solas (renovar) cuando la caja resuelve, el evento termino o el libro no se puede leer."""
         d, minimo = self.cfg["maker"]["distancia"], self.cfg["maker"].get("acciones_min_venta", 5)
         ahora = datetime.now(timezone.utc)
         out = []
@@ -595,6 +595,9 @@ class Maker:
             for t, q in tiene:
                 es_si = t == c["si"]
                 p = redondear((medio if es_si else 1 - medio) + d, tick, False)
+                costo = self.est["costo"].get(t, {}).get("precio")
+                if costo:                                   # pedido de Agus 8-nov: solo si saca ganancia
+                    p = max(p, redondear(costo + tick, tick, False))
                 if 0.01 <= p <= 0.99:
                     out.append((cid, c.get("evento", ""), c.get("caja", ""), round(medio, 4), t, "SELL", p, math.floor(q * 100) / 100, es_si))
         return out

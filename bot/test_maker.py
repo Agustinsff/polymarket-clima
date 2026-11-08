@@ -442,6 +442,11 @@ class PruebasVentasSoltadas(unittest.TestCase):
         self.assertAlmostEqual(precio, 0.71)                                   # 1 - 0.315 + 0.02 = 0.705 -> 0.71 (arriba)
         bot.renovar({})
         self.assertEqual([p[:4] for p in self.puestas], [("no-A", "Z", "SELL", 0.71)])
+        bot.est["costo"]["no-A"] = {"precio": 0.75, "acciones": 27.12}      # compradas mas caras que el medio
+        v = bot.ventas_soltadas({}, bot.ej.inventario())
+        self.assertAlmostEqual(v[0][6], 0.76)                                 # costo + 1 tick: solo vende con ganancia
+        bot.est["costo"]["no-A"] = {"precio": 0.50, "acciones": 27.12}
+        self.assertAlmostEqual(bot.ventas_soltadas({}, bot.ej.inventario())[0][6], 0.71)
         shutil.rmtree(d)
 
     def test_no_vende_si_resolvio_termino_o_es_poco(self):
