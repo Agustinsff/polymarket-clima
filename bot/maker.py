@@ -14,6 +14,9 @@ Que hace cada ciclo (60 s):
      asi el capital no crece. Solo renueva si el medio se movio >= 1 tick (si no, deja la orden en la fila).
      En las cajas que ya solto pero donde le quedan acciones, deja una venta post-only (mismo precio) del tamano que
      tenga, para no esperar a la resolucion; no cuentan como caja ni suman capital.
+     Guardia METAR fina (bot/guardia_metar.py): el dia del evento, si la temperatura ya observada dejo la caja
+     decidida, la suelta y avisa. Y no compra un lado por debajo de `precio_min_compra` (0,10): a ese precio casi
+     siempre es el lado que ya se sabe que pierde (Chengdu 17 °C, 8-nov).
      Antes de cada compra mira el efectivo libre (plata real de la cuenta menos lo reservado en compras abiertas; sin
      tope: reinvierte lo que gana, decision de Agus 8-nov): las compras que no entran se saltean sin contarlas como
      error, las ventas van primero porque liberan plata, y no agrega cajas nuevas que no pueda cotizar entera.
@@ -41,6 +44,7 @@ CARPETA = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, CARPETA)
 import mercado  # noqa: E402
 from polybot import avisar, cargar_cfg, log  # noqa: E402
+import guardia_metar  # noqa: E402
 
 GAMMA = "https://gamma-api.polymarket.com/events"
 DATA = "https://data-api.polymarket.com"
@@ -438,6 +442,7 @@ class Maker:
         self.f_parar_auto = os.path.join(carpeta, f"PARAR_maker_{self.modo}")
         self.f_reiniciar = os.path.join(carpeta, "REINICIAR")
         self.f_cfg = None                                   # ruta de config.json para releer (None: no relee)
+        self.guardia = None                                 # guardia METAR (se crea al primer uso; ver decidida())
         self.est = self._cargar()
         self.ej = ej or (Real(m, self.est, ops=self.ops) if self.modo == "real" else Papel(m, self.est))
         # avisos al celular: siempre en real; en papel solo si la config lo pide (si no, marea)
@@ -566,6 +571,28 @@ class Maker:
         return None
 
     # ---------- eleccion de cajas ----------
+    def decidida(self, c, ahora):
+        """Guardia METAR fina (8-nov, pedido de Agus): motivo si la temperatura ya observada dejo la caja decidida.
+        Se anota una vez por caja y se avisa por ntfy; las cajas decididas no se cotizan (se sueltan)."""
+        if not self.cfg["maker"].get("guardia_metar", True):
+            return None
+        if self.guardia is None:
+            try:
+                self.guardia = guardia_metar.Guardia(log=log)
+            except Exception as ex:                       # noqa: BLE001
+                log(f"guardia METAR apagada: no se pudo cargar las estaciones: {ex!r}")
+                self.cfg["maker"]["guardia_metar"] = False
+                return None
+        motivo = self.guardia.motivo(c["evento"], c["caja"], ahora.timestamp())
+        if motivo:
+            vistas = self.est.setdefault("guardia", {})
+            if c["cid"] not in vistas:
+                vistas[c["cid"]] = {"momento": ahora.strftime("%Y-%m-%d %H:%M"), "evento": c["evento"], "caja": c["caja"],
+                                    "motivo": motivo, "medio": c.get("medio")}
+                log(f"guardia METAR: suelto {c['evento']} {c['caja']}: {motivo}")
+                self.avisar(f"Maker ({self.modo}) guardia METAR: dejo de cotizar {c['caja']} ({c['evento']}): {motivo}.")
+        return motivo
+
     def elegir(self, ahora):
         k = self.cfg["maker"]
         cand = {c["cid"]: c for c in candidatas(self.cfg, ahora, self.m)}
@@ -574,6 +601,8 @@ class Maker:
         elegidas = {}
         for cid, c in list(actuales.items()):
             cc = cand.get(cid)
+            if cc and self.decidida(cc, ahora):
+                continue
             if cc and medir_libro(cc, self.cfg, self.m) or (cc and cc.get("spread", 1) <= k["spread_max"] + 0.03
                                                               and 0.03 <= cc.get("medio", 0) <= 0.97):
                 elegidas[cid] = cc
@@ -590,6 +619,8 @@ class Maker:
                 if len(elegidas) >= k["cajas"]:
                     break
                 if c["tam"] > k["capital_usd"] / k["cajas"]:
+                    continue
+                if self.decidida(c, ahora):
                     continue
                 necesita = round(c["tam"] * (1 - 2 * k["distancia"]), 2)     # las dos compras (Si + No) de la caja
                 if libre is not None and necesita > libre:
@@ -655,6 +686,9 @@ class Maker:
     def cotizar(self, c, inv):
         """Las dos ordenes que queremos en la caja: [(token, lado, precio, acciones, es_si)]."""
         d, tick, tam = self.cfg["maker"]["distancia"], c["tick"], c["tam"]
+        # piso para comprar (8-nov, Chengdu): un lado por debajo de `precio_min_compra` (0,10) es casi siempre el que ya
+        # se sabe que pierde; no se compra. Las ventas del inventario siguen.
+        piso = self.cfg["maker"].get("precio_min_compra", 0.10)
         medio = c["medio"]
         si, no = inv.get(c["si"], 0), inv.get(c["no"], 0)
         ordenes = []
@@ -663,14 +697,14 @@ class Maker:
         if 0.01 <= p_si <= 0.99:
             if no >= tam:
                 ordenes.append((c["no"], "SELL", redondear(1 - p_si, tick, False), tam, False))
-            else:
+            elif p_si >= piso - 1e-9:
                 ordenes.append((c["si"], "BUY", p_si, tam, True))
         # lado "vender Si": si tenemos Si, lo vendemos; si no, compramos No
         p_no = redondear(1 - medio - d, tick, True)
         if 0.01 <= p_no <= 0.99:
             if si >= tam:
                 ordenes.append((c["si"], "SELL", redondear(1 - p_no, tick, False), tam, True))
-            else:
+            elif p_no >= piso - 1e-9:
                 ordenes.append((c["no"], "BUY", p_no, tam, False))
         return ordenes
 

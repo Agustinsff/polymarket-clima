@@ -35,13 +35,14 @@ class MercadoFalso:
                        "si-B": ([(0.20, 50)], [(0.40, 50)])}
         self.trades = {}
         self.ganadores = {}
+        self.slug = "highest-temperature-in-x"
         self.S = self
 
     def get(self, url, params=None, timeout=None):
         if "gamma" in url:
             if params.get("offset", 0) > 0:
                 return Resp([])
-            return Resp([{"slug": "highest-temperature-in-x", "endDate": FIN,
+            return Resp([{"slug": self.slug, "endDate": FIN,
                           "markets": [mercado_gamma("A", "20°C"), mercado_gamma("B", "21°C", pozo=90)]}])
         if "/v2/trades" in url:
             return Resp({"data": self.trades.get(params["condition"], [])})
@@ -62,7 +63,7 @@ class MercadoFalso:
 def cfg(**k):
     c = {"maker": {"modo": "papel", "capital_usd": 150, "cajas": 3, "acciones_min": 25, "distancia": 0.02, "spread_max": 0.05,
                    "horas_min_fin": 3, "ciclo_seg": 60, "apagar_despues_de": "2026-11-30 23:59", "max_perdida_dia": 10,
-                   "max_perdida_total": 30, "max_errores_seguidos": 10}}
+                   "max_perdida_total": 30, "max_errores_seguidos": 10, "guardia_metar": False}}
     c["maker"].update(k)
     return c
 
@@ -590,6 +591,113 @@ class PruebasEfectivo(unittest.TestCase):
         self.assertEqual(bot.elegir(AHORA), {})                               # la caja A necesita 25 x 0,96 = 24
         bot.ej.est["inventario"]["si-Z"] = 200.0                              # 100 en acciones -> 50 libres
         self.assertEqual(list(bot.elegir(AHORA)), ["A"])
+        shutil.rmtree(d)
+
+
+class PruebasGuardiaMetar(unittest.TestCase):
+    """Guardia METAR fina (8-nov-2026): soltar cajas ya decididas por la temperatura observada; piso de compra 0,10."""
+    EST = {"chengdu": {"icao": "ZUUU", "tz": "Asia/Shanghai", "en_f": False},
+           "nyc": {"icao": "KLGA", "tz": "America/New_York", "en_f": True}}
+
+    @staticmethod
+    def rep(hora_utc, temp=None, raw="", tipo="METAR", dia=8):
+        from datetime import datetime, timezone
+        t = int(datetime(2026, 11, dia, hora_utc, 0, tzinfo=timezone.utc).timestamp())
+        return {"obsTime": t, "metarType": tipo, "temp": temp, "rawOb": raw}
+
+    def test_parseo(self):
+        import guardia_metar as g
+        self.assertEqual(g.evento_de("highest-temperature-in-tel-aviv-on-november-8-2026")[0:2], ("max", "tel-aviv"))
+        self.assertEqual(g.evento_de("lowest-temperature-in-nyc-on-november-10-2026")[2].day, 10)
+        self.assertIsNone(g.evento_de("btc-up-or-down"))
+        self.assertEqual(g.caja_de("17°C"), ("exacta", 17, "C"))
+        self.assertEqual(g.caja_de("35°C or below"), ("hasta", 35, "C"))
+        self.assertEqual(g.caja_de("55°F or higher"), ("desde", 55, "F"))
+        self.assertEqual(g.caja_de("-3°C"), ("exacta", -3, "C"))
+        self.assertIsNone(g.caja_de("between 64-65°F"))
+        self.assertEqual(g.temp_reporte({"rawOb": "METAR KLGA 081251Z 15/09 A3012 RMK T01720094", "temp": 15}), 17.2)
+        self.assertEqual(g.temp_reporte({"rawOb": "METAR KLGA RMK T10280050", "temp": -3}), -2.8)
+        self.assertEqual(g.temp_reporte({"rawOb": "METAR ZUUU 080500Z 17/08 Q1035", "temp": 17}), 17.0)
+        self.assertEqual([g.redondear_pm(x) for x in (17.4, 17.5, -0.5, -0.6)], [17, 18, 0, -1])
+
+    def test_temps_del_dia_rutina_y_fahrenheit(self):
+        import guardia_metar as g
+        from datetime import date
+        reps = [self.rep(3, 15, "METAR ZUUU 080300Z 15/11"), self.rep(5, 17, "METAR ZUUU 080500Z 17/08"),
+                self.rep(6, 19, "SPECI ZUUU 080630Z 19/08", tipo="SPECI"),            # SPECI no cuenta
+                self.rep(15, 20, "METAR ZUUU 071500Z 20/10", dia=7)]                   # otro dia local (7-nov 23:00)
+        self.assertEqual(g.temps_del_dia(reps, date(2026, 11, 8), "Asia/Shanghai", False), [15, 17])
+        # °F: 17,2 °C -> 62,96 -> 63 °F; el dia local de NYC (UTC-5): 03Z y 05Z del 8 son 22 y 00 h -> 7 y 8 nov
+        reps = [self.rep(3, 15, "RMK T01720094"), self.rep(5, 15, "RMK T01500094")]
+        self.assertEqual(g.temps_del_dia(reps, date(2026, 11, 8), "America/New_York", True), [59])
+
+    def test_decidida(self):
+        import guardia_metar as g
+        self.assertIsNone(g.decidida("max", "17°C", [15, 17]))                      # llego justo: sigue abierta (Chengdu)
+        self.assertIn("ya no puede ganar", g.decidida("max", "17°C", [15, 18]))
+        self.assertIn("ya no puede ganar", g.decidida("max", "17°C or below", [18]))
+        self.assertIn("ya gano", g.decidida("max", "18°C or higher", [18]))
+        self.assertIsNone(g.decidida("max", "18°C or higher", [17]))
+        self.assertIsNone(g.decidida("min", "10°C", [12, 10]))
+        self.assertIn("ya no puede ganar", g.decidida("min", "10°C", [12, 9]))
+        self.assertIn("ya gano", g.decidida("min", "9°C or below", [9]))
+        self.assertIsNone(g.decidida("max", "17°C", []))
+
+    def test_guardia_consulta_y_cache(self):
+        import guardia_metar as g
+        from datetime import datetime, timezone
+        llamadas = []
+
+        def buscar(icao):
+            llamadas.append(icao)
+            return [self.rep(5, 18, "METAR ZUUU 080500Z 18/08")]
+        gu = g.Guardia(estaciones=self.EST, buscar=buscar, log=lambda t: None)
+        ahora = datetime(2026, 11, 8, 6, 0, tzinfo=timezone.utc).timestamp()
+        self.assertIn("18 > 17°C", gu.motivo("highest-temperature-in-chengdu-on-november-8-2026", "17°C", ahora))
+        self.assertIsNone(gu.motivo("highest-temperature-in-chengdu-on-november-8-2026", "18°C", ahora))
+        self.assertEqual(llamadas, ["ZUUU"])                                        # cache: una sola consulta
+        # antes del dia del evento (hora local) no consulta; ciudad sin estacion tampoco
+        self.assertIsNone(gu.motivo("highest-temperature-in-chengdu-on-november-9-2026", "17°C", ahora))
+        self.assertIsNone(gu.motivo("highest-temperature-in-paris-on-november-8-2026", "17°C", ahora))
+        self.assertEqual(llamadas, ["ZUUU"])
+        # si la consulta falla, sigue sin guardia
+
+        def roto(icao):
+            raise RuntimeError("awc caido")
+        gu2 = g.Guardia(estaciones=self.EST, buscar=roto, log=lambda t: None)
+        self.assertIsNone(gu2.motivo("highest-temperature-in-chengdu-on-november-8-2026", "17°C", ahora))
+
+    def test_bot_suelta_caja_decidida_y_avisa_una_vez(self):
+        import guardia_metar as g
+        d = tempfile.mkdtemp()
+        m = MercadoFalso()
+        bot = maker.Maker(cfg(guardia_metar=True), m=m, carpeta=d)
+        avisos = []
+        bot.avisar = avisos.append
+        bot.guardia = g.Guardia(estaciones={"x": {"icao": "XXXX", "tz": "UTC", "en_f": False}},
+                                buscar=lambda icao: [self.rep(5, 21, "METAR XXXX 030500Z 21/08", dia=3)], log=lambda t: None)
+        # el evento falso es "highest-temperature-in-x": no parsea -> sin guardia -> elige A como siempre
+        self.assertEqual(list(bot.elegir(AHORA)), ["A"])
+        # con un slug real del dia (AHORA es 3-nov en las pruebas): la caja 17°C ya decidida se suelta
+        m.slug = "highest-temperature-in-x-on-november-3-2026"
+        self.assertEqual(bot.elegir(AHORA), {})                                     # maxima 21 > "20°C": A se suelta; B es ancha
+        self.assertEqual(len(avisos), 1)
+        self.assertIn("guardia METAR", avisos[0])
+        bot.elegir(AHORA)
+        self.assertEqual(len(avisos), 1)                                            # una vez por caja
+        self.assertEqual(len(bot.est["guardia"]), 1)
+        shutil.rmtree(d)
+
+    def test_piso_de_compra(self):
+        d = tempfile.mkdtemp()
+        bot = maker.Maker(cfg(), m=MercadoFalso(), carpeta=d)
+        c = {"si": "s", "no": "n", "medio": 0.91, "tick": 0.01, "tam": 25}
+        o = bot.cotizar(c, {})
+        self.assertEqual(o, [("s", "BUY", 0.89, 25, True)])                         # el No a 0,07 no se compra
+        o = bot.cotizar(c, {"n": 30})                                               # pero el No que tenemos si se vende
+        self.assertEqual(o[0], ("n", "SELL", 0.11, 25, False))
+        bot.cfg["maker"]["precio_min_compra"] = 0.0
+        self.assertEqual(len(bot.cotizar(c, {})), 2)
         shutil.rmtree(d)
 
 
