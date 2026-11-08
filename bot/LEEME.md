@@ -105,8 +105,17 @@ siempre es el lado que ya se sabe que pierde; las ventas del inventario siguen. 
 comprando No. Config `max_inventario_lado` (50 = 2 lotes): no pone una compra si lo que ya tiene de ese token más la compra
 supera el tope; la venta del inventario sigue y el otro lado también. 0 = sin tope. Es un parámetro de riesgo: lo fija Agus.
 
+**Filtro de movimiento (8-nov-2026, Moscú/Múnich/Tokio 14 °C; Agus lo aprobó 14:42Z).** Con 138 llenados medidos: las compras
+hechas con el medio quieto (<4 ¢ de movimiento en la hora previa) rinden +1,4 ¢/acción a la hora; con el medio en movimiento,
+−5 ¢. En tendencia el bot compra a medio −2, el medio sigue y vende el inventario a medio +2 por debajo del costo. Regla: por
+caja, si el medio se movió `filtro_movimiento_c` (0,06) o más en los últimos `filtro_movimiento_min` (60) minutos, en
+cualquier dirección, no se ponen compras en esa caja (las ventas del inventario siguen) hasta que el movimiento de la
+ventana vuelva a ser menor. Historia de medios en el estado (`medios`), cajas filtradas en `filtro` y en el resumen.
+Costo medido: 22 % de los minutos cotizados sin compras, casi todo en las cajas que perdieron (Tokio 14 °C 81 %, Múnich
+76 %) y casi nada en las tranquilas (Tel Aviv 3–7 %). 0 = apagado. Se revisa con el markout el 14-nov.
+
 Archivos: `bot/maker_ops_<modo>.csv` (órdenes puestas, llenados y cobros), `bot/maker_estado_<modo>.json`,
-`bot/maker_resumen_<modo>.md`. Pruebas sin red: `python bot/test_maker.py` (37 pruebas, incluido el SDK falso).
+`bot/maker_resumen_<modo>.md`. Pruebas sin red: `python bot/test_maker.py` (38 pruebas, incluido el SDK falso).
 
 **Operarlo sin pausas (8-nov-2026).**
 - **Actualizar sin cancelar las órdenes**: doble clic en `bot\actualizar.cmd`. Hace `git pull`, deja `bot\REINICIAR`
