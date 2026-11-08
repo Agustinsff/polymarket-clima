@@ -421,6 +421,52 @@ class PruebasFreno(unittest.TestCase):
         self.assertFalse(bot.frenado())                                       # el diario no deja archivo PARAR
         shutil.rmtree(d)
 
+    def test_perdida_del_dia_usa_el_costo_de_ese_momento(self):
+        """Tokio 14 °C (8-nov): vendio a 0,12 lo comprado a 0,15 (−0,75) y despues recompro a 0,33. La perdida del dia
+        es −0,75, no 25 × (0,12 − 0,33) = −5,25 como daba midiendo contra el costo actual."""
+        import types
+        d = tempfile.mkdtemp()
+        inv = {"T1": 25.0}
+        ej = types.SimpleNamespace(inventario=lambda: dict(inv), abiertas=lambda: [], llenados=lambda: [],
+                                   cancelar_todo=lambda: None, nombre="real")
+        bot = maker.Maker(cfg(modo="real"), m=MercadoFalso(), carpeta=d, ej=ej)
+        hoy = AHORA.strftime("%Y-%m-%d")
+        for hora, lado, p in (("09:00", "BUY", 0.15), ("10:00", "SELL", 0.12), ("14:00", "BUY", 0.33)):
+            bot.anotar(momento_utc=f"{hoy} {hora}:00", modo="real", evento="e", caja="c", condition_id="A", token="T1",
+                       lado=lado, precio=p, acciones=25, medio="", detalle="")
+        bot.est["costo"]["T1"] = {"precio": 0.33, "acciones": 25}             # costo actual: el de la recompra
+        self.assertAlmostEqual(bot.pnl(hoy), -0.75, places=2)
+        self.assertAlmostEqual(bot.pnl(), -0.75, places=2)                    # total: -3.75 - 3 + 8.25 pagado/cobrado, +8.25 cartera
+        # una venta de ayer no cuenta hoy; la de hoy se mide contra el costo medio acumulado (0,15 y 0,33 -> 0,24)
+        bot.anotar(momento_utc=f"{hoy} 15:00:00", modo="real", evento="e", caja="c", condition_id="A", token="T1",
+                   lado="BUY", precio=0.15, acciones=25, medio="", detalle="")
+        bot.anotar(momento_utc=f"{hoy} 16:00:00", modo="real", evento="e", caja="c", condition_id="A", token="T1",
+                   lado="SELL", precio=0.30, acciones=50, medio="", detalle="")
+        self.assertAlmostEqual(bot.pnl(hoy), -0.75 + 50 * (0.30 - 0.24), places=2)
+        shutil.rmtree(d)
+
+    def test_dia_en_hora_de_uruguay(self):
+        """El 'dia' del freno es el de Uruguay (UTC-3): una venta a las 02:30Z del 9-nov cuenta para el 8-nov local."""
+        import types
+        from datetime import datetime, timezone
+        d = tempfile.mkdtemp()
+        ej = types.SimpleNamespace(inventario=lambda: {}, abiertas=lambda: [], llenados=lambda: [],
+                                   cancelar_todo=lambda: None, nombre="real")
+        bot = maker.Maker(cfg(modo="real", max_perdida_dia=10), m=MercadoFalso(), carpeta=d, ej=ej)
+        self.assertEqual(bot.dia_local("2026-11-09 02:30:00"), "2026-11-08")
+        self.assertEqual(bot.dia_local("2026-11-09 03:00:00"), "2026-11-09")
+        bot.anotar(momento_utc="2026-11-08 20:00:00", modo="real", evento="e", caja="c", condition_id="A", token="T1",
+                   lado="BUY", precio=0.50, acciones=50, medio="", detalle="")
+        bot.anotar(momento_utc="2026-11-09 02:30:00", modo="real", evento="e", caja="c", condition_id="A", token="T1",
+                   lado="SELL", precio=0.28, acciones=50, medio="", detalle="")
+        self.assertAlmostEqual(bot.pnl("2026-11-08"), -11.0, places=2)
+        self.assertAlmostEqual(bot.pnl("2026-11-09"), 0.0, places=2)
+        a = datetime(2026, 11, 9, 2, 45, tzinfo=timezone.utc)                  # 23:45 del 8-nov en Uruguay: frenado
+        self.assertIn("sigue a las 00:00 de Uruguay, 03:00Z", bot.freno(a))
+        a = datetime(2026, 11, 9, 3, 5, tzinfo=timezone.utc)                   # 00:05 del 9-nov: opera de nuevo
+        self.assertIsNone(bot.freno(a))
+        shutil.rmtree(d)
+
 
 class PruebasVentasSoltadas(unittest.TestCase):
     def _bot(self, d, inv):
