@@ -39,6 +39,7 @@
     "max_errores_seguidos": 10,
     "avisar_errores": 3,
     "guardia_metar": true,
-    "precio_min_compra": 0.10
+    "precio_min_compra": 0.10,
+    "max_inventario_lado": 50
   }
 }

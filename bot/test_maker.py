@@ -700,6 +700,24 @@ class PruebasGuardiaMetar(unittest.TestCase):
         self.assertEqual(len(bot.cotizar(c, {})), 2)
         shutil.rmtree(d)
 
+    def test_tope_inventario_por_lado(self):
+        """Moscu 4 °C (8-nov): con 86 No ya comprados no sigue comprando No; el No que tiene si lo vende."""
+        d = tempfile.mkdtemp()
+        bot = maker.Maker(cfg(), m=MercadoFalso(), carpeta=d)
+        c = {"si": "s", "no": "n", "medio": 0.62, "tick": 0.01, "tam": 25}
+        o = bot.cotizar(c, {"n": 86, "s": 0})
+        self.assertEqual(o, [("n", "SELL", 0.40, 25, False)])                        # vende No, no compra mas No
+        o = bot.cotizar(c, {"n": 25})                                                # 25 + 25 = 50: todavia cabe
+        self.assertEqual([(x[0], x[1]) for x in o], [("n", "SELL"), ("n", "BUY")])
+        o = bot.cotizar(c, {"n": 30})                                                # 30 + 25 > 50: ya no
+        self.assertEqual([(x[0], x[1]) for x in o], [("n", "SELL")])
+        bot.cfg["maker"]["max_inventario_lado"] = 0                                  # 0 = sin tope
+        self.assertEqual(len(bot.cotizar(c, {"n": 86})), 2)
+        bot.cfg["maker"]["max_inventario_lado"] = 50
+        o = bot.cotizar(c, {"s": 60})                                                # tambien del lado Si
+        self.assertEqual([(x[0], x[1]) for x in o], [("s", "SELL")])
+        shutil.rmtree(d)
+
 
 class PruebasReinicioConfig(unittest.TestCase):
     def _bot(self, d):

@@ -100,8 +100,13 @@ valor NO está decidida (Chengdu 17 °C con 17 observados: puede subir). Config 
 `precio_min_compra` (0,10): no compra un lado que cotice por debajo (el otro ya está arriba de 0,90): a ese precio casi
 siempre es el lado que ya se sabe que pierde; las ventas del inventario siguen. Esto sí hubiera evitado Chengdu.
 
+**Tope de inventario por lado (8-nov-2026, Moscú 4 °C).** El bot compró 110 No a 0,38 en una sola caja (≈US$ 42, más de
+4 veces el freno diario) porque cada lado se decide por separado: mientras tenga No vende No, pero como no tiene Sí sigue
+comprando No. Config `max_inventario_lado` (50 = 2 lotes): no pone una compra si lo que ya tiene de ese token más la compra
+supera el tope; la venta del inventario sigue y el otro lado también. 0 = sin tope. Es un parámetro de riesgo: lo fija Agus.
+
 Archivos: `bot/maker_ops_<modo>.csv` (órdenes puestas, llenados y cobros), `bot/maker_estado_<modo>.json`,
-`bot/maker_resumen_<modo>.md`. Pruebas sin red: `python bot/test_maker.py` (36 pruebas, incluido el SDK falso).
+`bot/maker_resumen_<modo>.md`. Pruebas sin red: `python bot/test_maker.py` (37 pruebas, incluido el SDK falso).
 
 **Operarlo sin pausas (8-nov-2026).**
 - **Actualizar sin cancelar las órdenes**: doble clic en `bot\actualizar.cmd`. Hace `git pull`, deja `bot\REINICIAR`
