@@ -689,22 +689,30 @@ class Maker:
         # piso para comprar (8-nov, Chengdu): un lado por debajo de `precio_min_compra` (0,10) es casi siempre el que ya
         # se sabe que pierde; no se compra. Las ventas del inventario siguen.
         piso = self.cfg["maker"].get("precio_min_compra", 0.10)
+        # tope de inventario por lado (8-nov, Moscu 4 °C: 110 No comprados a 0,38 en una caja, ≈US$ 42, mas de 4 veces el
+        # freno diario). No se compra mas de un token cuando lo que ya tenemos mas la compra supera el tope (2 lotes por
+        # defecto); la venta de ese inventario sigue. 0 = sin tope.
+        tope = self.cfg["maker"].get("max_inventario_lado", 2 * tam)
         medio = c["medio"]
         si, no = inv.get(c["si"], 0), inv.get(c["no"], 0)
+
+        def cabe(tengo):
+            return not tope or tengo + tam <= tope + 1e-9
+
         ordenes = []
         # lado "comprar Si": si tenemos No, vendemos No (= comprar Si); si no, compramos Si
         p_si = redondear(medio - d, tick, True)
         if 0.01 <= p_si <= 0.99:
             if no >= tam:
                 ordenes.append((c["no"], "SELL", redondear(1 - p_si, tick, False), tam, False))
-            elif p_si >= piso - 1e-9:
+            elif p_si >= piso - 1e-9 and cabe(si):
                 ordenes.append((c["si"], "BUY", p_si, tam, True))
         # lado "vender Si": si tenemos Si, lo vendemos; si no, compramos No
         p_no = redondear(1 - medio - d, tick, True)
         if 0.01 <= p_no <= 0.99:
             if si >= tam:
                 ordenes.append((c["si"], "SELL", redondear(1 - p_no, tick, False), tam, True))
-            elif p_no >= piso - 1e-9:
+            elif p_no >= piso - 1e-9 and cabe(no):
                 ordenes.append((c["no"], "BUY", p_no, tam, False))
         return ordenes
 
