@@ -1,13 +1,13 @@
 # Resumen polymarket-clima
 
-_Actualizado: 2026-11-08 19:45 (Montevideo). Todo es **en papel**: no se usa plata real._
+_Actualizado: 2026-11-08 20:00 (Montevideo). Todo es **en papel**: no se usa plata real._
 
 ## Estado de las tareas
 
 ⚠️ El cosechador no actualiza desde 2026-11-04 16:12 UTC.
 🔔 Polymarket cambió algo en **clima (otros)** (mercado de clima nuevo, ya no aparece el 2026-11-07 10:40 UTC): `how-many-chinook-will-pass-bonneville-dam-by`. Ver [reglas_informe.md](reglas_informe.md).
 
-- Última foto de liquidez: 2026-11-08T19:45:09
+- Última foto de liquidez: 2026-11-08T20:00:24
 - Monitor: mañana 2026-11-08, noche 2026-11-07
 - Prueba São Paulo: último día registrado 2026-11-08
 - Cosechador: último ciclo 2026-11-04 16:12 UTC, 88 mercados, 46 estaciones
@@ -88,10 +88,10 @@ Series donde el modelo le gana al mercado (≥5 días): mín denver (8 días), m
 | Modo | Serie calibrada | Liquidadas | Ganadas | Neto (10 acc. c/u) | Pendientes |
 |---|---|---|---|---|---|
 | taker | no | 1558 | 358 | US$-850.05 | 177 |
-| maker | no | 3169 | 382 | US$-397.61 | 2282 |
-| cola_taker | no | 766 | 16 | US$-121.23 | 87 |
+| maker | no | 3169 | 382 | US$-397.61 | 2285 |
+| cola_taker | no | 766 | 16 | US$-121.23 | 88 |
 | cola_maker | no | 1074 | 21 | US$-76.63 | 769 |
-| no80_90 | no | 622 | 433 | US$-1042.97 | 80 |
+| no80_90 | no | 622 | 433 | US$-1042.97 | 81 |
 
 Taker en total: US$-2014.25. _Con la comisión vieja (0,05 para todo) sería US$-2103.34._
 
