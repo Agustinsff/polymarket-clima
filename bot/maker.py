@@ -39,6 +39,7 @@ import os
 import sys
 import time
 from datetime import datetime, timedelta, timezone
+from zoneinfo import ZoneInfo
 
 CARPETA = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, CARPETA)
@@ -476,6 +477,20 @@ class Maker:
             return list(csv.DictReader(f, delimiter=";"))
 
     # ---------- cuentas ----------
+    def zona_dia(self):
+        """Zona horaria del 'dia' del bot (perdida del dia, freno diario, cajas resueltas): America/Montevideo (pedido de
+        Agus 8-nov). Los registros (CSV, estado) siguen en UTC; la recompensa diaria la informa Polymarket por dia UTC."""
+        try:
+            return ZoneInfo(self.cfg["maker"].get("zona_dia", "America/Montevideo"))
+        except Exception:                                 # noqa: BLE001  (sin tzdata: se cae a UTC)
+            return timezone.utc
+
+    def dia_local(self, cuando):
+        """Fecha (YYYY-MM-DD) en la zona del dia de un datetime UTC o de un texto 'YYYY-MM-DD HH:MM:SS' en UTC."""
+        if isinstance(cuando, str):
+            cuando = datetime.strptime(cuando[:19], "%Y-%m-%d %H:%M:%S").replace(tzinfo=timezone.utc)
+        return cuando.astimezone(self.zona_dia()).strftime("%Y-%m-%d")
+
     def pnl(self, dia=None, inventario=True):
         """Resultado total: cobros de cajas resueltas menos lo pagado por las acciones (ventas cuentan como cobro) MAS, si
         inventario, las acciones que todavia se tienen valuadas al costo medio pagado. Sin eso una compra sin resolver
@@ -485,12 +500,23 @@ class Maker:
         resuelve en contra cuenta ese dia aunque las acciones se hayan comprado antes."""
         total = 0.0
         if dia:
+            # cada venta se mide contra el costo medio QUE TENIA el token en ese momento, reconstruido repasando las
+            # operaciones en orden (8-nov: medirla contra el costo actual infló la pérdida del día de −5 a −16 cuando el
+            # bot recompró Tokio 14 °C más caro después de haber vendido; el freno diario saltó por un número falso).
+            costo = {}                                     # token -> [acciones, precio medio] en ese punto del tiempo
             for o in self.ops():
-                if o["lado"] != "SELL" or o["momento_utc"][:10] != dia:
+                if o["lado"] not in ("BUY", "SELL"):
                     continue
                 q, p = float(o["acciones"]), float(o["precio"])
-                c = self.est["costo"].get(o["token"])
-                total += q * (p - (c["precio"] if c else p))
+                c = costo.setdefault(o["token"], [0.0, p])
+                if o["lado"] == "BUY":
+                    tot = c[0] + q
+                    c[1] = (c[1] * c[0] + p * q) / tot if tot else p
+                    c[0] = tot
+                else:
+                    if self.dia_local(o["momento_utc"]) == dia:
+                        total += q * (p - c[1])
+                    c[0] = max(c[0] - q, 0.0)
             for r in self.est["resultados"].values():
                 if r.get("dia") == dia:
                     total += r.get("cobrado", 0) - r.get("costo", 0)
@@ -562,9 +588,16 @@ class Maker:
         if self.pnl() <= -r["max_perdida_total"]:
             self.parar(f"perdida total {self.pnl():.2f} llego al tope {r['max_perdida_total']}")
             return "perdida total"
-        dia = ahora.strftime("%Y-%m-%d")
+        dia = self.dia_local(ahora)
         if self.pnl(dia) <= -r["max_perdida_dia"]:
-            return f"perdida del dia {self.pnl(dia):.2f} en el tope (sigue manana)"
+            local = ahora.astimezone(self.zona_dia())
+            manana = (local + timedelta(days=1)).replace(hour=0, minute=0, second=0, microsecond=0)
+            motivo = (f"perdida del dia {self.pnl(dia):.2f} en el tope (sigue a las 00:00 de Uruguay, "
+                      f"{manana.astimezone(timezone.utc):%H:%M}Z)")
+            if self.est.get("aviso_freno_dia") != dia:                 # un aviso por dia al celular (8-nov: paso sin verse)
+                self.est["aviso_freno_dia"] = dia
+                self.avisar(f"Maker ({self.modo}) FRENO DIARIO: {motivo}. Total al costo {self.pnl():+.2f}.")
+            return motivo
         if self.est.get("errores_seguidos", 0) >= r["max_errores_seguidos"]:
             self.parar(f"{self.est['errores_seguidos']} errores seguidos (ultimo: {self.est.get('ultimo_error', '?')})")
             return "errores seguidos"
@@ -874,7 +907,7 @@ class Maker:
             except Exception as ex:
                 log(f"no se pudo cobrar {c['caja']}: {ex!r}")
                 continue
-            self.est["resultados"][cid] = {"dia": datetime.now(timezone.utc).strftime("%Y-%m-%d"), "gano": g,
+            self.est["resultados"][cid] = {"dia": self.dia_local(datetime.now(timezone.utc)), "gano": g,
                                            "cobrado": round(cobrado, 2), "costo": round(costo, 2), "caja": c["caja"],
                                            "evento": c["evento"]}
             for t in (si, no):
@@ -943,7 +976,7 @@ class Maker:
 
     def sigo_vivo(self, ahora):
         """Un aviso por dia a las 12 UTC (9 de la manana en Uruguay) con el estado, para notar si el bot esta caido."""
-        hoy = ahora.strftime("%Y-%m-%d")
+        hoy = self.dia_local(ahora)
         if ahora.hour == 12 and self.est.get("ultimo_vivo") != hoy:
             self.est["ultimo_vivo"] = hoy
             try:
@@ -1029,6 +1062,8 @@ class Maker:
                + (": " + ", ".join(f"{k} {v:.2f}" for k, v in sorted(cobradas.items())) if cobradas else "."),
                f"- Estimación por fórmula (pesimista): " + ", ".join(f"{k} {v:.2f}" for k, v in sorted(est.items())),
                f"- Llenados: {len(llen)} ({sum(float(o['acciones']) for o in llen):.0f} acciones); cajas resueltas: {len(self.est['resultados'])}.",
+               f"- Resultado del día (hora de Uruguay, ventas al costo de ese momento + cajas resueltas): US$ {self.pnl(self.dia_local(datetime.now(timezone.utc))):+.2f}; "
+               f"freno diario en −{self.cfg['maker']['max_perdida_dia']}. La recompensa diaria la informa Polymarket por día UTC.",
                f"- Resultado realizado de los llenados (cobros − compras + ventas): US$ {self.pnl(inventario=False):+.2f}; "
                f"contando las acciones en cartera al costo: US$ {self.pnl():+.2f}. "
                f"Capital puesto ahora: US$ {self.capital_puesto():.2f}.",

@@ -42,6 +42,7 @@
     "precio_min_compra": 0.10,
     "max_inventario_lado": 50,
     "filtro_movimiento_c": 0.06,
-    "filtro_movimiento_min": 60
+    "filtro_movimiento_min": 60,
+    "zona_dia": "America/Montevideo"
   }
 }

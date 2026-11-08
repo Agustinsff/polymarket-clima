@@ -114,8 +114,17 @@ ventana vuelva a ser menor. Historia de medios en el estado (`medios`), cajas fi
 Costo medido: 22 % de los minutos cotizados sin compras, casi todo en las cajas que perdieron (Tokio 14 °C 81 %, Múnich
 76 %) y casi nada en las tranquilas (Tel Aviv 3–7 %). 0 = apagado. Se revisa con el markout el 14-nov.
 
+**Pérdida del día: costo de ese momento y hora de Uruguay (8-nov-2026).** El freno diario saltó a las 17:00Z con "−16,05"
+cuando la pérdida real del día era ≈ −5: cada venta se medía contra el costo medio ACTUAL del token, y al recomprar Tokio
+14 °C a 0,33 después de haber vendido a 0,12–0,26, las ventas de la mañana pasaron a contar como pérdida. Ahora `pnl(dia)`
+repasa las operaciones en orden y mide cada venta contra el costo medio que tenía el token en ese momento (misma cuenta que
+`revisar_llenados`). Además el "día" (freno diario, cajas resueltas, aviso "sigo vivo", resumen) es el de Uruguay
+(`zona_dia`, America/Montevideo): el freno diario se libera a las 00:00 de Uruguay (03:00Z) y el mensaje lo dice. Los
+registros siguen en UTC; la recompensa diaria la informa Polymarket por día UTC (sin cambio). Cuando salta el freno diario
+manda un aviso por ntfy (una vez por día).
+
 Archivos: `bot/maker_ops_<modo>.csv` (órdenes puestas, llenados y cobros), `bot/maker_estado_<modo>.json`,
-`bot/maker_resumen_<modo>.md`. Pruebas sin red: `python bot/test_maker.py` (38 pruebas, incluido el SDK falso).
+`bot/maker_resumen_<modo>.md`. Pruebas sin red: `python bot/test_maker.py` (40 pruebas, incluido el SDK falso).
 
 **Operarlo sin pausas (8-nov-2026).**
 - **Actualizar sin cancelar las órdenes**: doble clic en `bot\actualizar.cmd`. Hace `git pull`, deja `bot\REINICIAR`
