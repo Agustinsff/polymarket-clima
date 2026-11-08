@@ -7,7 +7,8 @@ en la estacion dejo una caja DECIDIDA, el bot deja de cotizarla (la suelta). Sol
 Una caja donde la observada APENAS llego al valor de la caja (Chengdu 17 °C el 8-nov) NO esta decidida: puede subir.
 Regla de resolucion de Polymarket (regla_metar/REGLA.md): solo reportes de rutina (METAR, no SPECI), grupo T en
 decimas si esta, .5 hacia arriba, °F convertido. Estaciones: propio/estaciones.json (ciudad -> ICAO, zona horaria,
-°F). Ciudades sin estacion conocida: sin guardia (se avisa en el log una vez).
+°F). Ciudades sin estacion conocida (y Hong Kong, que resuelve con HKO): sin guardia (se avisa en el log una vez).
+Necesita el paquete tzdata en Windows (zoneinfo no trae las zonas horarias): esta en bot/requirements_real.txt.
 """
 import json
 import os
@@ -20,6 +21,7 @@ import requests
 
 AWC = "https://aviationweather.gov/api/data/metar"
 F_ESTACIONES = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "propio", "estaciones.json")
+SIN_METAR = {"hong-kong"}     # Polymarket resuelve Hong Kong con el Observatorio (HKO), no con METAR: sin guardia a proposito
 MESES = {m: i + 1 for i, m in enumerate(["january", "february", "march", "april", "may", "june", "july", "august",
                                          "september", "october", "november", "december"])}
 
@@ -139,7 +141,10 @@ class Guardia:
         if not e:
             if ciudad not in self.sin_estacion:
                 self.sin_estacion.add(ciudad)
-                self.log(f"guardia METAR: sin estacion para {ciudad}, esa ciudad va sin guardia")
+                if ciudad in SIN_METAR:
+                    self.log(f"guardia METAR: {ciudad} resuelve sin METAR (HKO), va sin guardia")
+                else:
+                    self.log(f"guardia METAR: sin estacion para {ciudad}, esa ciudad va sin guardia")
             return None
         ahora = ahora if ahora is not None else time.time()
         # solo tiene sentido el dia del evento (hora local) o despues
