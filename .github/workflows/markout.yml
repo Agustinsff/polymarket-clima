@@ -1,8 +1,7 @@
 name: markout
 # Medicion de llenados del bot maker en real (markout/REGLA.md): baja los llenados de la billetera (data-api) y la
 # historia de precios (CLOB), calcula a 5/30/60/180 min y a la resolucion, y guarda markout/datos/llenados.csv +
-# markout/informe.md en main. Billetera: variable MAKER_WALLET del repo (Settings -> Secrets and variables ->
-# Actions -> Variables). Sin la variable, solo rehace el informe con lo guardado.
+# markout/informe.md en main. Billetera: la del bot, escrita en markout/markout.py (MAKER_WALLET la pisa si existe).
 on:
   schedule:
     - cron: "30 2 * * *"

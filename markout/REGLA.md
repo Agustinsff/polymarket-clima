@@ -32,5 +32,5 @@ por horas que faltaban para el fin del evento (<6, 6–24, >24); con/sin corte d
 - Mínimo para concluir: 100 llenados en ≥ 5 días. Antes de eso, solo informativo.
 
 **Salida.** `markout/datos/llenados.csv` (una fila por llenado, se acumula sin repetir) y `markout/informe.md`
-(tablas). Corre `python markout/markout.py <billetera>` (Actions: `markout.yml`, diario 02:30Z, billetera en la
-variable `MAKER_WALLET` del repo).
+(tablas). Corre `python markout/markout.py <billetera>` (Actions: `markout.yml`, diario 02:30Z; la billetera está
+en markout.py, Agus autorizó ponerla en el repo).

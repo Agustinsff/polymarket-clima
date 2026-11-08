@@ -1,4 +1,4 @@
-# Llenados del bot maker en real: ¿el precio se va a favor o en contra? (2026-11-08 03:36Z)
+# Llenados del bot maker en real: ¿el precio se va a favor o en contra? (2026-11-08 03:38Z)
 
 Regla: markout/REGLA.md. Llenados: 35 (400 acciones) en 2 día(s); con 60 min de historia: 32. Positivo = a favor nuestro (ponderado por acciones; t = media simple / error típico).
 
