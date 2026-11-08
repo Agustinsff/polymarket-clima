@@ -123,8 +123,14 @@ repasa las operaciones en orden y mide cada venta contra el costo medio que ten�
 registros siguen en UTC; la recompensa diaria la informa Polymarket por día UTC (sin cambio). Cuando salta el freno diario
 manda un aviso por ntfy (una vez por día).
 
+**Valor a precio de mercado en el resumen (8-nov-2026).** El neto "al costo" del bot (−1,9) y la cartera de la web (−7) no
+coincidían: la web valúa las acciones al precio actual del libro. El resumen y el aviso "sigo vivo" muestran ahora también
+las acciones al medio actual (`valor_mercado`), los llenados y el neto a mercado y el valor total de la cuenta
+(efectivo + acciones), que es lo que muestra polymarket.com. Los frenos siguen midiendo al costo (una caja abierta no es
+pérdida hasta que se vende o resuelve).
+
 Archivos: `bot/maker_ops_<modo>.csv` (órdenes puestas, llenados y cobros), `bot/maker_estado_<modo>.json`,
-`bot/maker_resumen_<modo>.md`. Pruebas sin red: `python bot/test_maker.py` (40 pruebas, incluido el SDK falso).
+`bot/maker_resumen_<modo>.md`. Pruebas sin red: `python bot/test_maker.py` (41 pruebas, incluido el SDK falso).
 
 **Operarlo sin pausas (8-nov-2026).**
 - **Actualizar sin cancelar las órdenes**: doble clic en `bot\actualizar.cmd`. Hace `git pull`, deja `bot\REINICIAR`
