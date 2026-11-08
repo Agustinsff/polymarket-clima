@@ -16,6 +16,7 @@ from datetime import datetime, timezone
 
 import requests
 
+BILLETERA = "0x1dACF01B09Fb319A0BbD3939DbA57E4f7Cd63Ae0"   # billetera del bot (publica en Polymarket; Agus autorizo ponerla aca 8-nov)
 DATA = "https://data-api.polymarket.com"
 CLOB = "https://clob.polymarket.com"
 GAMMA = "https://gamma-api.polymarket.com"
@@ -231,7 +232,7 @@ def informe(filas, ruta, billetera_ok):
 
 def main():
     ap = argparse.ArgumentParser()
-    ap.add_argument("billetera", nargs="?", default=os.environ.get("MAKER_WALLET", ""))
+    ap.add_argument("billetera", nargs="?", default=os.environ.get("MAKER_WALLET") or BILLETERA)
     ap.add_argument("--salida", default=os.path.dirname(os.path.abspath(__file__)))
     ap.add_argument("--desde", default="2026-11-07T18:00Z")
     a = ap.parse_args()
