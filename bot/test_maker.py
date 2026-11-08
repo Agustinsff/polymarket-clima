@@ -449,6 +449,20 @@ class PruebasVentasSoltadas(unittest.TestCase):
         self.assertAlmostEqual(bot.ventas_soltadas({}, bot.ej.inventario())[0][6], 0.71)
         shutil.rmtree(d)
 
+    def test_caja_soltada_sin_meta_se_busca_por_token(self):
+        d = tempfile.mkdtemp()
+        bot = self._bot(d, {"no-A": 27.12})
+        bot.est["meta"].clear()
+        bot.ej.cid_de = lambda t: "Z" if t == "no-A" else None
+        fin = (datetime.now(timezone.utc) + timedelta(days=1)).strftime("%Y-%m-%dT%H:%M:%SZ")
+        bot.m.get = lambda url, params=None, timeout=None: Resp({"tokens": [{"token_id": "si-A"}, {"token_id": "no-A"}],
+                                                                "question": "34°C", "market_slug": "karachi",
+                                                                "end_date_iso": fin, "minimum_tick_size": "0.01"})
+        v = bot.ventas_soltadas({}, bot.ej.inventario())
+        self.assertEqual(len(v), 1)
+        self.assertEqual(bot.est["meta"]["Z"]["caja"], "34°C")
+        shutil.rmtree(d)
+
     def test_no_vende_si_resolvio_termino_o_es_poco(self):
         d = tempfile.mkdtemp()
         bot = self._bot(d, {"no-A": 27.12, "si-A": 3})
@@ -459,6 +473,37 @@ class PruebasVentasSoltadas(unittest.TestCase):
         del bot.est["resultados"]["Z"]
         bot.est["meta"]["Z"]["fin"] = "2026-01-01T00:00:00Z"
         self.assertEqual(bot.ventas_soltadas({}, bot.ej.inventario()), [])
+        shutil.rmtree(d)
+
+
+class PruebasSinSaldo(unittest.TestCase):
+    def test_falta_de_saldo_no_cuenta_como_error(self):
+        import types
+        d = tempfile.mkdtemp()
+        puestas, intentos = [], []
+
+        def colocar(token, cid, lado, precio, acciones, es_si):
+            intentos.append(lado)
+            if lado == "BUY":
+                raise RuntimeError("RequestRejectedError: not enough balance / allowance")
+            puestas.append((token, lado, precio))
+            return f"o{len(puestas)}"
+        ej = types.SimpleNamespace(inventario=lambda: {"no-A": 30.0}, abiertas=lambda: [], llenados=lambda: [],
+                                   cancelar_todo=lambda: None, cancelar=lambda ids: None, colocar=colocar, nombre="real")
+        bot = maker.Maker(cfg(modo="real"), m=MercadoFalso(), carpeta=d, ej=ej)
+        avisos = []
+        bot.avisar = avisos.append
+        c = {"cid": "A", "evento": "e", "si": "si-A", "no": "no-A", "medio": 0.615, "tick": 0.01, "tam": 25, "caja": "17°C"}
+        c2 = dict(c, cid="B", si="si-B", no="no-B", caja="18°C")
+        errores = bot.renovar({"A": c, "B": c2})
+        self.assertEqual(errores, 0)                                          # falta de saldo no es error
+        self.assertEqual(intentos.count("BUY"), 1)                            # tras la primera compra fallida no insiste
+        self.assertEqual(len(puestas), 1)                                     # la venta de No si se puso
+        self.assertEqual(len(avisos), 1)
+        bot.renovar({"A": c, "B": c2})
+        self.assertEqual(len(avisos), 1)                                      # una vez por racha
+        self.assertTrue(maker.Maker.es_falta_de_saldo(RuntimeError("InsufficientAllowanceError")))
+        self.assertFalse(maker.Maker.es_falta_de_saldo(RuntimeError("timeout")))
         shutil.rmtree(d)
 
 
