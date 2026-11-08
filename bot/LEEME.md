@@ -85,7 +85,7 @@ resolvieron ese día contra lo que costaban las acciones, aunque se hayan compra
 `capital_usd` (150) reparte entre las cajas; una caja con mínimo de recompensa mayor que capital/cajas no se usa.
 
 Archivos: `bot/maker_ops_<modo>.csv` (órdenes puestas, llenados y cobros), `bot/maker_estado_<modo>.json`,
-`bot/maker_resumen_<modo>.md`. Pruebas sin red: `python bot/test_maker.py` (23 pruebas, incluido el SDK falso).
+`bot/maker_resumen_<modo>.md`. Pruebas sin red: `python bot/test_maker.py` (25 pruebas, incluido el SDK falso).
 
 **Operarlo sin pausas (8-nov-2026).**
 - **Actualizar sin cancelar las órdenes**: doble clic en `bot\actualizar.cmd`. Hace `git pull`, deja `bot\REINICIAR`

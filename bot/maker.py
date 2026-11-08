@@ -530,7 +530,7 @@ class Maker:
         if self.pnl(dia) <= -r["max_perdida_dia"]:
             return f"perdida del dia {self.pnl(dia):.2f} en el tope (sigue manana)"
         if self.est.get("errores_seguidos", 0) >= r["max_errores_seguidos"]:
-            self.parar(f"{self.est['errores_seguidos']} errores seguidos")
+            self.parar(f"{self.est['errores_seguidos']} errores seguidos (ultimo: {self.est.get('ultimo_error', '?')})")
             return "errores seguidos"
         return None
 
@@ -575,7 +575,16 @@ class Maker:
         d, minimo = self.cfg["maker"]["distancia"], self.cfg["maker"].get("acciones_min_venta", 5)
         ahora = datetime.now(timezone.utc)
         out = []
-        for cid, c in self.est.get("meta", {}).items():
+        # cajas que el bot solto antes de guardar sus datos (p. ej. Karachi, de antes del PR #46): se buscan por token
+        cid_de = getattr(self.ej, "cid_de", lambda t: None)
+        for t, q in inv.items():
+            cid = cid_de(t)
+            if cid and q >= minimo and cid not in self.est.get("meta", {}) and cid not in self.est["resultados"]:
+                try:
+                    self.meta_caja(cid)
+                except Exception as ex:
+                    log(f"no se pudo leer la caja {cid[:10]} del CLOB: {ex!r}")
+        for cid, c in list(self.est.get("meta", {}).items()):
             if cid in elegidas or cid in self.est["resultados"]:
                 continue
             tiene = [(t, inv.get(t, 0)) for t in (c["si"], c["no"]) if inv.get(t, 0) >= minimo]
@@ -645,10 +654,14 @@ class Maker:
         if cancelar:
             self.ej.cancelar(cancelar)
         errores = 0
+        sin_saldo = []
         for q in quiero:
             if q in quedan:
                 continue
             cid, evento, caja, medio, token, lado, precio, tam, es_si = q
+            if sin_saldo and lado == "BUY":          # ya fallo una compra por falta de efectivo: no insistir este ciclo
+                sin_saldo.append(caja)
+                continue
             try:
                 oid = self.ej.colocar(token, cid, lado, precio, tam, es_si)
                 self.anotar(momento_utc=datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M:%S"), modo=self.modo,
@@ -657,9 +670,28 @@ class Maker:
             except SystemExit:
                 raise
             except Exception as ex:
+                if self.es_falta_de_saldo(ex) and lado == "BUY":
+                    sin_saldo.append(caja)
+                    continue
                 errores += 1
+                self.est["ultimo_error"] = f"{lado} {precio} en {caja}: {ex!r}"[:300]
                 log(f"no se pudo poner la orden {lado} {precio} en {caja}: {ex!r}")
+        if sin_saldo:
+            # no es un error del bot: el efectivo esta en acciones sin vender. Se avisa una vez por racha y se reintenta
+            # cada ciclo (en cuanto se vende algo o resuelve una caja, vuelve a comprar).
+            if not self.est.get("sin_saldo_avisado"):
+                self.est["sin_saldo_avisado"] = True
+                log(f"sin efectivo libre para {len(sin_saldo)} compra(s) ({', '.join(sin_saldo)}): la plata esta en acciones")
+                self.avisar(f"Maker ({self.modo}): sin efectivo libre para {len(sin_saldo)} compra(s); la plata esta en "
+                            f"acciones sin vender. Sigue con las demas ordenes.")
+        else:
+            self.est["sin_saldo_avisado"] = False
         return errores
+
+    @staticmethod
+    def es_falta_de_saldo(ex):
+        t = (type(ex).__name__ + " " + str(ex)).lower()
+        return "insufficient" in t or "balance" in t or "allowance" in t or "not enough" in t
 
     def revisar_llenados(self):
         for o, q, p_taker in self.ej.llenados():
@@ -815,6 +847,7 @@ class Maker:
             raise
         except Exception as ex:
             self.est["errores_seguidos"] = self.est.get("errores_seguidos", 0) + 1
+            self.est["ultimo_error"] = f"ciclo: {ex!r}"[:300]
             log(f"error en el ciclo: {ex!r}")
         self.avisar_errores()
         self._guardar()
@@ -826,7 +859,7 @@ class Maker:
         if n >= tope and not self.est.get("errores_avisados"):
             self.est["errores_avisados"] = True
             self.avisar(f"Maker ({self.modo}): {n} errores seguidos (se frena a los {self.cfg['maker']['max_errores_seguidos']}). "
-                        f"Mirar la ventana del bot.")
+                        f"Ultimo: {self.est.get('ultimo_error', '?')}")
         elif n == 0:
             self.est["errores_avisados"] = False
 
