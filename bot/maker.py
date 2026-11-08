@@ -870,10 +870,13 @@ class Maker:
         t = (type(ex).__name__ + " " + str(ex)).lower()
         return "insufficient" in t or "balance" in t or "allowance" in t or "not enough" in t
 
-    def revisar_llenados(self):
+    def revisar_llenados(self, ahora=None):
+        hubo = False
         for o, q, p_taker in self.ej.llenados():
+            hubo = True
             c = self.est["cajas"].get(o["cid"]) or self.est.get("meta", {}).get(o["cid"]) or {}
-            self.anotar(momento_utc=datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M:%S"), modo=self.modo,
+            costo_antes = float(self.est["costo"].get(o["token"], {}).get("precio", o["precio"]))
+            self.anotar(momento_utc=(ahora or datetime.now(timezone.utc)).strftime("%Y-%m-%d %H:%M:%S"), modo=self.modo,
                         evento=c.get("evento", ""), caja=c.get("caja", ""), condition_id=o["cid"], token=o["token"],
                         lado=o["lado"], precio=o["precio"], acciones=round(q, 2), medio=c.get("medio", ""),
                         detalle=p_taker if isinstance(p_taker, str) else f"taker a {p_taker}")
@@ -886,6 +889,61 @@ class Maker:
                 costo["acciones"] = max(costo["acciones"] - q, 0)
             self.avisar(f"Maker ({self.modo}): {o['lado']} {q:.0f} acc a {o['precio']} en {c.get('caja', '?')} ({c.get('evento', '')})")
             log(f"llenado: {o['lado']} {q:.1f} a {o['precio']} en {c.get('caja', '?')}")
+            self.alertas_llenado(o, q, c, costo_antes, ahora)
+        if hubo:
+            self.alerta_dia(ahora)
+
+    # ---------- alertas de casos raros (pedido de Agus 8-nov 19:51Z) ----------
+    # Solo AVISAN al celular (ntfy) con el prefijo "ALERTA"; no cambian ninguna regla de compra o venta.
+    # "alertas": false en config.json las apaga. Umbrales: alerta_escalera (compras seguidas bajando, 3),
+    # alerta_venta_bajo_costo_c (0,05 = 5 c por accion bajo el costo medio), alerta_dia_frac (0,7 = 70 % del freno diario).
+
+    def alertas_llenado(self, o, q, c, costo_antes, ahora=None):
+        r = self.cfg["maker"]
+        if not r.get("alertas", True):
+            return
+        ahora = ahora or datetime.now(timezone.utc)
+        caja = f"{c.get('caja', '?')} ({c.get('evento', '')})"
+        p = float(o["precio"])
+        esc = self.est.setdefault("escalera", {})
+        if o["lado"] == "BUY":
+            pasos = esc.get(o["token"], [])
+            if pasos and ahora.timestamp() - pasos[-1][0] > 3 * 3600:      # escalones de hace mas de 3 h no cuentan
+                pasos = []
+            nuevo = not pasos or p < pasos[-1][1] - 0.005                    # un escalon nuevo, mas abajo (medio tick)
+            if nuevo:
+                pasos.append([ahora.timestamp(), p])
+            elif p > pasos[-1][1] + 0.005:                                   # subio: la escalera se corta
+                pasos = [[ahora.timestamp(), p]]
+            esc[o["token"]] = pasos[-10:]
+            n = int(r.get("alerta_escalera", 3))
+            if n and nuevo and len(pasos) >= n:
+                precios = " > ".join(f"{x[1]:.2f}" for x in pasos[-n:])
+                self.avisar(f"ALERTA Maker ({self.modo}): {len(pasos)} compras seguidas bajando en {caja}: {precios}. "
+                            f"Precio en tendencia; costo medio {self.est['costo'][o['token']]['precio']:.3f}, "
+                            f"{self.est['costo'][o['token']]['acciones']:.0f} acc.")
+        else:
+            esc.pop(o["token"], None)
+            umbral = float(r.get("alerta_venta_bajo_costo_c", 0.05))
+            ult = self.est.setdefault("alerta_venta", {}).get(o["token"])
+            repetida = ult and ahora.timestamp() - ult[0] < 1800 and p >= ult[1] - 0.005   # parciales de la misma venta
+            if umbral and costo_antes - p >= umbral - 1e-9 and not repetida:
+                self.est["alerta_venta"][o["token"]] = [ahora.timestamp(), p]
+                self.avisar(f"ALERTA Maker ({self.modo}): vendio {q:.0f} acc a {p:.2f} en {caja}, costo {costo_antes:.3f} "
+                            f"({(p - costo_antes) * 100:+.1f} c/acc, US$ {q * (p - costo_antes):+.2f}).")
+
+    def alerta_dia(self, ahora=None):
+        r = self.cfg["maker"]
+        frac = float(r.get("alerta_dia_frac", 0.7))
+        if not r.get("alertas", True) or not frac:
+            return
+        ahora = ahora or datetime.now(timezone.utc)
+        dia = self.dia_local(ahora)
+        d = self.pnl(dia)
+        if d <= -frac * r["max_perdida_dia"] and self.est.get("alerta_dia") != dia:
+            self.est["alerta_dia"] = dia
+            self.avisar(f"ALERTA Maker ({self.modo}): perdida del dia {d:+.2f} (hora de Uruguay), cerca del freno de "
+                        f"-{r['max_perdida_dia']}. Total al costo {self.pnl():+.2f}.")
 
     def meta_caja(self, cid):
         """Evento, caja y tokens de una caja (del estado; si no esta, del CLOB: cajas de antes del 8-nov)."""
@@ -1009,7 +1067,7 @@ class Maker:
         ahora = ahora or datetime.now(timezone.utc)
         try:
             self.recargar_cfg()
-            self.revisar_llenados()
+            self.revisar_llenados(ahora)
             self.liquidar()
             motivo = self.freno(ahora)
             if motivo:

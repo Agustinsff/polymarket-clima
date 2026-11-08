@@ -445,6 +445,63 @@ class PruebasFreno(unittest.TestCase):
         self.assertAlmostEqual(bot.pnl(hoy), -0.75 + 50 * (0.30 - 0.24), places=2)
         shutil.rmtree(d)
 
+    def test_alertas_casos_raros(self):
+        """Pedido de Agus 8-nov: avisar al celular compras seguidas bajando, ventas bajo el costo y perdida del dia cerca
+        del freno. Solo avisan: no cambian ordenes."""
+        import types
+        d = tempfile.mkdtemp()
+        cola = []
+        ej = types.SimpleNamespace(inventario=lambda: {}, abiertas=lambda: [], cancelar_todo=lambda: None, nombre="real",
+                                   llenados=lambda: [cola.pop(0)] if cola else [])
+        bot = maker.Maker(cfg(modo="real"), m=MercadoFalso(), carpeta=d, ej=ej)
+        avisos = []
+        bot.avisar = avisos.append
+        bot.est["cajas"]["A"] = {"caja": "14C", "evento": "tokio"}
+        alertas = lambda: [a for a in avisos if a.startswith("ALERTA")]   # noqa: E731
+
+        def llena(lado, p, q=25, minutos=0):
+            cola.append(({"cid": "A", "token": "T1", "lado": lado, "precio": p}, q, "maker"))
+            bot.revisar_llenados(AHORA + timedelta(minutes=minutos))
+
+        llena("BUY", 0.40)
+        llena("BUY", 0.4000004, minutos=5)                                # ruido de redondeo: no es escalon
+        llena("BUY", 0.38, minutos=10)
+        self.assertEqual(alertas(), [])
+        llena("BUY", 0.36, minutos=20)                                     # tercer escalon bajando
+        self.assertEqual(len(alertas()), 1)
+        self.assertIn("3 compras seguidas bajando", alertas()[0])
+        self.assertIn("0.40 > 0.38 > 0.36", alertas()[0])
+        llena("BUY", 0.36, q=5, minutos=21)                                # mismo precio (llenado parcial): no repite
+        self.assertEqual(len(alertas()), 1)
+        llena("BUY", 0.34, minutos=30)                                     # otro escalon: avisa de nuevo
+        self.assertEqual(len(alertas()), 2)
+        # venta 1 c bajo el costo: nada; 7 c bajo el costo: alerta
+        costo = bot.est["costo"]["T1"]["precio"]
+        llena("SELL", round(costo - 0.01, 2), minutos=40)
+        self.assertEqual(len(alertas()), 2)
+        llena("SELL", 0.30, minutos=50)
+        self.assertEqual(len(alertas()), 3)
+        self.assertIn("vendio 25 acc a 0.30", alertas()[2])
+        llena("BUY", 0.33, q=10, minutos=51)
+        llena("SELL", 0.30, q=10, minutos=52)                              # parcial de la misma venta: no repite
+        self.assertEqual(len(alertas()), 3)
+        # despues de vender, la escalera arranca de cero
+        llena("BUY", 0.29, minutos=60)
+        self.assertEqual(len(alertas()), 3)
+        # perdida del dia: vender 25 a 0,05 con costo ~0,32 => -6,8 + lo anterior pasa el 70 % de 10
+        llena("SELL", 0.05, minutos=70)
+        dia = [a for a in alertas() if "perdida del dia" in a]
+        self.assertEqual(len(dia), 1)
+        llena("BUY", 0.05, minutos=80)
+        llena("SELL", 0.01, minutos=90)
+        self.assertEqual(len([a for a in alertas() if "perdida del dia" in a]), 1)   # una vez por dia
+        # apagadas
+        bot.cfg["maker"]["alertas"] = False
+        n = len(alertas())
+        llena("SELL", 0.01, minutos=100)
+        self.assertEqual(len(alertas()), n)
+        shutil.rmtree(d)
+
     def test_valor_a_mercado(self):
         """El resumen valua las acciones al medio actual del libro ademas del costo (8-nov: la web mostraba 5 menos)."""
         import types
