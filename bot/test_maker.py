@@ -862,6 +862,14 @@ class PruebasGuardiaMetar(unittest.TestCase):
         bot.cfg["maker"]["filtro_movimiento_c"] = 0                                  # 0 = apagado
         c["medio"] = 0.80
         self.assertFalse(bot.sin_compras(c, t0 + timedelta(minutes=100)))
+        # SIN_COMPRAS.txt: caja sin compras a mano (aunque el filtro este apagado), se saca la linea y vuelven
+        with open(os.path.join(d, "SIN_COMPRAS.txt"), "w", encoding="utf-8") as f:
+            f.write("# comentario\n\n14°c\n")
+        self.assertTrue(bot.sin_compras(c, t0 + timedelta(minutes=101)))
+        self.assertEqual(bot.est["filtro"]["x"]["a_mano"], "14°c")
+        with open(os.path.join(d, "SIN_COMPRAS.txt"), "w", encoding="utf-8") as f:
+            f.write("moscow\n")
+        self.assertFalse(bot.sin_compras(c, t0 + timedelta(minutes=102)))
         shutil.rmtree(d)
 
 
