@@ -2310,3 +2310,135 @@ requests.exceptions.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
 21:29:42Z mos KSFO NAM listo
 21:29:42Z mos KORD MEX listo
 21:29:42Z mos KSFO MEX listo
+02:42:12Z obs CYYZ 2026: 579 reportes
+02:42:56Z obs EDDM 2026: 1061 reportes
+02:43:18Z obs EFHK 2026: 1061 reportes
+02:43:41Z obs EGLC 2026: 1061 reportes
+02:44:04Z obs EHAM 2026: 1054 reportes
+02:44:47Z obs EPWA 2026: 1062 reportes
+02:45:30Z obs FACT 2026: 588 reportes
+02:45:52Z obs KATL 2026: 599 reportes
+02:46:15Z obs KAUS 2026: 577 reportes
+02:46:58Z obs KDAL 2026: 548 reportes
+02:47:41Z obs KDEN 2026: 608 reportes
+02:48:03Z obs KHOU 2026: 570 reportes
+02:48:26Z obs KLAX 2026: 565 reportes
+02:49:09Z obs KLGA 2026: 558 reportes
+02:49:32Z obs KMIA 2026: 611 reportes
+02:49:54Z obs KORD 2026: 602 reportes
+02:50:37Z obs KSEA 2026: 632 reportes
+02:51:20Z obs KSFO 2026: 575 reportes
+02:51:43Z obs LEMD 2026: 1065 reportes
+02:52:26Z obs LIMC 2026: 1056 reportes
+02:52:49Z obs LLBG 2026: 1057 reportes
+02:53:12Z obs LTAC 2026: 1092 reportes
+02:53:56Z obs LTFM 2026: 1061 reportes
+02:54:39Z obs MMMX 2026: 677 reportes
+02:55:21Z obs MPMG 2026: 561 reportes
+02:55:44Z obs NZWN 2026: 1062 reportes
+02:56:07Z obs OEJN 2026: 535 reportes
+02:56:50Z obs OPKC 2026: 1062 reportes
+02:57:12Z obs RCSS 2026: 1053 reportes
+02:57:35Z obs RJTT 2026: 1062 reportes
+02:57:58Z obs RKPK 2026: 597 reportes
+02:58:41Z obs RKSI 2026: 1062 reportes
+02:59:04Z obs RPLL 2026: 533 reportes
+02:59:26Z obs SAEZ 2026: 584 reportes
+02:59:49Z obs SBGR 2026: 562 reportes
+03:00:32Z obs UUWW 2026: 1189 reportes
+03:00:55Z obs WMKK 2026: 1102 reportes
+03:01:17Z obs WSSS 2026: 1092 reportes
+03:01:40Z obs ZBAA 2026: 1070 reportes
+03:02:23Z obs ZGGG 2026: 1062 reportes
+03:03:06Z obs ZGSZ 2026: 531 reportes
+03:03:28Z obs ZHHH 2026: 531 reportes
+03:03:51Z obs ZSPD 2026: 1074 reportes
+03:04:34Z obs ZSQD 2026: 531 reportes
+03:04:57Z obs ZUCK 2026: 531 reportes
+03:05:19Z obs ZUUU 2026: 531 reportes
+03:05:35Z obs_diaria: 65946 dias-estacion
+03:13:42Z pron 2026-11 listo (gastado hoy 713)
+03:16:19Z pron 2026-10 listo (gastado hoy 713)
+03:18:56Z pron 2026-09 listo (gastado hoy 713)
+03:21:39Z pron 2026-08 listo (gastado hoy 713)
+03:24:20Z pron 2026-07 listo (gastado hoy 713)
+03:26:58Z pron 2026-06 listo (gastado hoy 713)
+03:29:36Z pron 2026-05 listo (gastado hoy 713)
+03:32:14Z pron 2026-04 listo (gastado hoy 713)
+03:34:51Z pron 2026-03 listo (gastado hoy 713)
+03:37:29Z pron 2026-02 listo (gastado hoy 713)
+03:40:06Z pron 2026-01 listo (gastado hoy 713)
+03:42:45Z pron 2025-12 listo (gastado hoy 713)
+03:45:23Z pron 2025-11 listo (gastado hoy 713)
+03:48:02Z pron 2025-10 listo (gastado hoy 713)
+03:50:41Z pron 2025-09 listo (gastado hoy 713)
+03:53:19Z pron 2025-08 listo (gastado hoy 713)
+03:55:57Z pron 2025-07 listo (gastado hoy 713)
+03:58:37Z pron 2025-06 listo (gastado hoy 713)
+04:01:16Z pron 2025-05 listo (gastado hoy 713)
+04:03:54Z pron 2025-04 listo (gastado hoy 713)
+04:06:33Z pron 2025-03 listo (gastado hoy 713)
+04:09:12Z pron 2025-02 listo (gastado hoy 713)
+04:11:50Z pron 2025-01 listo (gastado hoy 713)
+04:14:29Z pron 2024-12 listo (gastado hoy 713)
+04:17:11Z pron 2024-11 listo (gastado hoy 713)
+04:19:55Z pron 2024-10 listo (gastado hoy 713)
+04:26:19Z pron 2024-09 listo (gastado hoy 1744)
+04:33:52Z pron 2024-08 listo (gastado hoy 3110)
+04:41:12Z pron 2024-07 listo (gastado hoy 4450)
+04:48:44Z pron 2024-06 listo (gastado hoy 5746)
+04:48:55Z mos KATL NBS listo
+04:48:57Z mos KATL NBE listo
+04:48:59Z mos KATL GFS listo
+04:49:01Z mos KATL NAM listo
+04:49:03Z mos KATL MEX listo
+04:49:06Z mos KHOU NBS listo
+04:49:08Z mos KHOU NBE listo
+04:49:10Z mos KHOU GFS listo
+04:49:13Z mos KHOU NAM listo
+04:49:15Z mos KDEN NBS listo
+04:49:17Z mos KDEN NBE listo
+04:49:19Z mos KDEN GFS listo
+04:49:21Z mos KDEN NAM listo
+04:49:23Z mos KDEN MEX listo
+04:49:26Z mos KLAX NBS listo
+04:49:28Z mos KLAX NBE listo
+04:49:30Z mos KLAX GFS listo
+04:49:32Z mos KLAX NAM listo
+04:49:34Z mos KLAX MEX listo
+04:49:37Z mos KLGA NBS listo
+04:49:39Z mos KLGA NBE listo
+04:49:41Z mos KLGA GFS listo
+04:49:43Z mos KLGA NAM listo
+04:49:46Z mos KLGA MEX listo
+04:49:48Z mos KMIA NBS listo
+04:49:50Z mos KMIA NBE listo
+04:49:52Z mos KMIA GFS listo
+04:49:55Z mos KDAL NBS listo
+04:49:57Z mos KDAL NBE listo
+04:49:59Z mos KDAL GFS listo
+04:50:01Z mos KDAL NAM listo
+04:50:04Z mos KDAL MEX listo
+04:50:06Z mos KORD NBS listo
+04:50:08Z mos KORD NBE listo
+04:50:11Z mos KORD GFS listo
+04:50:13Z mos KORD NAM listo
+04:50:15Z mos KMIA NAM listo
+04:50:17Z mos KMIA MEX listo
+04:50:19Z mos KSEA NBS listo
+04:50:21Z mos KSEA NBE listo
+04:50:24Z mos KSEA GFS listo
+04:50:26Z mos KSEA NAM listo
+04:50:28Z mos KSEA MEX listo
+04:50:30Z mos KSFO NBS listo
+04:50:32Z mos KSFO NBE listo
+04:50:34Z mos KSFO GFS listo
+04:50:36Z mos KSFO NAM listo
+04:50:38Z mos KSFO MEX listo
+04:50:55Z mos KAUS NBS listo
+04:50:57Z mos KAUS NBE listo
+04:50:59Z mos KAUS GFS listo
+04:51:02Z mos KAUS NAM listo
+04:51:04Z mos KAUS MEX listo
+04:51:15Z mos KHOU MEX listo
+04:52:15Z mos KORD MEX listo
