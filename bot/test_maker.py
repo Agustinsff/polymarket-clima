@@ -417,6 +417,46 @@ class PruebasFreno(unittest.TestCase):
         shutil.rmtree(d)
 
 
+class PruebasVentasSoltadas(unittest.TestCase):
+    def _bot(self, d, inv):
+        import types
+        self.puestas = []
+        ej = types.SimpleNamespace(inventario=lambda: dict(inv), abiertas=lambda: [], llenados=lambda: [],
+                                   cancelar_todo=lambda: None, cancelar=lambda ids: None, nombre="real",
+                                   colocar=lambda token, cid, lado, precio, acciones, es_si:
+                                   self.puestas.append((token, cid, lado, precio, acciones, es_si)) or f"o{len(self.puestas)}")
+        bot = maker.Maker(cfg(modo="real"), m=MercadoFalso(), carpeta=d, ej=ej)
+        # caja soltada: ya no esta en est["cajas"], pero queda en meta y con acciones
+        bot.est.setdefault("meta", {})["Z"] = {"evento": "e", "caja": "34°C", "si": "si-A", "no": "no-A", "tick": 0.01,
+                                                 "fin": (datetime.now(timezone.utc) + timedelta(days=1)).strftime("%Y-%m-%dT%H:%M:%SZ")}
+        return bot
+
+    def test_vende_lo_que_queda_en_caja_soltada(self):
+        d = tempfile.mkdtemp()
+        bot = self._bot(d, {"no-A": 27.12})
+        v = bot.ventas_soltadas({}, bot.ej.inventario())
+        self.assertEqual(len(v), 1)
+        cid, _, _, medio, token, lado, precio, q, es_si = v[0]
+        self.assertEqual((cid, token, lado, es_si, q), ("Z", "no-A", "SELL", False, 27.12))
+        self.assertAlmostEqual(medio, 0.315)                                   # libro si-A: 0.30 / 0.33
+        self.assertAlmostEqual(precio, 0.71)                                   # 1 - 0.315 + 0.02 = 0.705 -> 0.71 (arriba)
+        bot.renovar({})
+        self.assertEqual([p[:4] for p in self.puestas], [("no-A", "Z", "SELL", 0.71)])
+        shutil.rmtree(d)
+
+    def test_no_vende_si_resolvio_termino_o_es_poco(self):
+        d = tempfile.mkdtemp()
+        bot = self._bot(d, {"no-A": 27.12, "si-A": 3})
+        self.assertEqual(len(bot.ventas_soltadas({}, bot.ej.inventario())), 1)  # 3 acciones de Si no llegan al minimo
+        self.assertEqual(bot.ventas_soltadas({"Z": {}}, bot.ej.inventario()), [])  # sigue elegida: la cotiza cotizar()
+        bot.est["resultados"]["Z"] = {"dia": "2026-11-08", "cobrado": 0}
+        self.assertEqual(bot.ventas_soltadas({}, bot.ej.inventario()), [])
+        del bot.est["resultados"]["Z"]
+        bot.est["meta"]["Z"]["fin"] = "2026-01-01T00:00:00Z"
+        self.assertEqual(bot.ventas_soltadas({}, bot.ej.inventario()), [])
+        shutil.rmtree(d)
+
+
 class PruebasReinicioConfig(unittest.TestCase):
     def _bot(self, d):
         import types
