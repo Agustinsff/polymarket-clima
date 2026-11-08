@@ -82,10 +82,17 @@ Frenos: `bot/PARAR` (manual), `bot/PARAR_maker_<modo>` (automático), fecha `apa
 ≥ US$ 10 (deja de cotizar hasta el día siguiente; cuenta las ventas del día contra el costo medio y las cajas que
 resolvieron ese día contra lo que costaban las acciones, aunque se hayan comprado otro día), pérdida total ≥ US$ 30
 (cobros − compras + ventas + acciones en cartera al costo), 10 errores seguidos. Capital:
-`capital_usd` (150) reparte entre las cajas; una caja con mínimo de recompensa mayor que capital/cajas no se usa.
+`capital_usd` (150) solo fija el tamaño por caja (una caja con mínimo de recompensa mayor que capital/cajas no se
+usa). **Efectivo libre (8-nov-2026, pedido de Agus):** antes de cada compra el bot lee el efectivo real de la cuenta
+(real: USDC según el CLOB; papel: capital menos acciones al costo), le resta lo reservado en compras abiertas y solo
+pone las compras que entran; las ventas van primero (liberan plata) y las compras se reparten por recompensa esperada.
+Una compra que no entra se saltea y se avisa una vez por racha por ntfy (no cuenta como error). No agrega cajas
+nuevas que no pueda cotizar entera (≈ tamaño × (1 − 2·distancia)). Sin tope fijo: la billetera es solo del bot y
+reinvierte lo que gana (decisión de Agus); los que cuidan la plata son los frenos de pérdida. El resumen y el "sigo
+vivo" muestran efectivo, reservado y libre.
 
 Archivos: `bot/maker_ops_<modo>.csv` (órdenes puestas, llenados y cobros), `bot/maker_estado_<modo>.json`,
-`bot/maker_resumen_<modo>.md`. Pruebas sin red: `python bot/test_maker.py` (25 pruebas, incluido el SDK falso).
+`bot/maker_resumen_<modo>.md`. Pruebas sin red: `python bot/test_maker.py` (30 pruebas, incluido el SDK falso).
 
 **Operarlo sin pausas (8-nov-2026).**
 - **Actualizar sin cancelar las órdenes**: doble clic en `bot\actualizar.cmd`. Hace `git pull`, deja `bot\REINICIAR`

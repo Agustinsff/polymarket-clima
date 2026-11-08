@@ -14,6 +14,9 @@ Que hace cada ciclo (60 s):
      asi el capital no crece. Solo renueva si el medio se movio >= 1 tick (si no, deja la orden en la fila).
      En las cajas que ya solto pero donde le quedan acciones, deja una venta post-only (mismo precio) del tamano que
      tenga, para no esperar a la resolucion; no cuentan como caja ni suman capital.
+     Antes de cada compra mira el efectivo libre (plata real de la cuenta menos lo reservado en compras abiertas; sin
+     tope: reinvierte lo que gana, decision de Agus 8-nov): las compras que no entran se saltean sin contarlas como
+     error, las ventas van primero porque liberan plata, y no agrega cajas nuevas que no pueda cotizar entera.
   5. anota los llenados, la recompensa cobrada (real: lo que informa Polymarket; papel: la formula) y el resumen
   Al salir por cualquier motivo cancela TODAS las ordenes, salvo si se le pidio REINICIAR (bot/REINICIAR o
   bot/actualizar.cmd): ahi sale con codigo 3 dejando las ordenes en el libro y, al volver a arrancar, adopta las que
@@ -398,6 +401,11 @@ class Real:
         b = self.client.get_balance_allowance(asset_type="CONDITIONAL", token_id=token)
         return int(b.balance) / 1e6
 
+    def efectivo(self):
+        """USDC en la cuenta segun el CLOB (incluye lo reservado en ordenes de compra abiertas, que se resta aparte)."""
+        b = self.client.get_balance_allowance(asset_type="COLLATERAL")
+        return int(b.balance) / 1e6
+
     def cobrar(self, cid, tokens, ganador):
         """Caja resuelta: lo que vale es lo que tenemos del lado ganador. Se intenta cobrar (redeem); con billetera
         proxy puede fallar por falta de clave extra: entonces queda anotado igual y hay que cobrar a mano (Claim)."""
@@ -503,6 +511,29 @@ class Maker:
         reservado = sum(o["precio"] * o["acciones"] for o in self.ej.abiertas() if o["lado"] == "BUY")
         return round(costo + reservado, 2)
 
+    def efectivo_libre(self, abiertas=None, inv=None):
+        """Plata con la que puede comprar AHORA (8-nov-2026, pedido de Agus: el bot tiene que saber con cuanta plata
+        cuenta, no siempre son los 100 de la config, y reinvierte lo que gana): efectivo de la cuenta (real: USDC segun
+        el CLOB; papel: capital_usd menos acciones al costo) menos lo reservado en ordenes de compra abiertas. Sin tope
+        por capital_usd (decision de Agus 8-nov 03:07Z): los que cuidan la plata son los frenos de perdida.
+        Devuelve (libre, efectivo_cuenta, reservado); libre es None si el CLOB no contesta (no se limita)."""
+        abiertas = self.ej.abiertas() if abiertas is None else abiertas
+        inv = self.ej.inventario() if inv is None else inv
+        costo = sum(self.est["costo"].get(t, {}).get("precio", 0.5) * q for t, q in inv.items())
+        reservado = round(sum(o["precio"] * o["acciones"] for o in abiertas if o["lado"] == "BUY"), 2)
+        if hasattr(self.ej, "efectivo"):
+            try:
+                efectivo = self.ej.efectivo()
+            except Exception as ex:
+                log(f"no se pudo leer el efectivo de la cuenta: {ex!r}; compro sin ese limite")
+                efectivo = None
+        else:
+            efectivo = self.cfg["maker"]["capital_usd"] - costo
+        libre = None if efectivo is None else round(efectivo - reservado, 2)
+        self.est["efectivo"] = {"cuenta": None if efectivo is None else round(efectivo, 2), "reservado": reservado,
+                                "libre": libre, "acciones_costo": round(costo, 2)}
+        return libre, efectivo, reservado
+
     # ---------- frenos ----------
     def parar(self, motivo):
         with open(self.f_parar_auto, "w", encoding="utf-8") as f:
@@ -550,6 +581,9 @@ class Maker:
                 log(f"se deja la caja {c['evento']} {c['caja']}: ya no cumple la regla")
         # completar con las mejores del resto (medir solo las que no tenemos, ordenadas por pozo para no leer 1500 libros)
         if len(elegidas) < k["cajas"]:
+            # plata libre para cajas nuevas: efectivo real menos lo que ya esta en juego (las cajas que siguen no se
+            # sueltan por esto, para no perder el lugar en la fila; solo no se agregan cajas que no se pueden cotizar)
+            libre, _, _ = self.efectivo_libre()
             resto = sorted((c for cid, c in cand.items() if cid not in elegidas), key=lambda c: -c["pozo"])[:60]
             ok = [c for c in resto if medir_libro(c, self.cfg, self.m)]
             for c in sorted(ok, key=lambda c: -c["rec_pes"]):
@@ -557,6 +591,12 @@ class Maker:
                     break
                 if c["tam"] > k["capital_usd"] / k["cajas"]:
                     continue
+                necesita = round(c["tam"] * (1 - 2 * k["distancia"]), 2)     # las dos compras (Si + No) de la caja
+                if libre is not None and necesita > libre:
+                    log(f"no entra la caja {c['evento']} {c['caja']}: necesita US$ {necesita:.2f} y hay US$ {libre:.2f} libres")
+                    continue
+                if libre is not None:
+                    libre = round(libre - necesita, 2)
                 elegidas[c["cid"]] = c
                 log(f"caja nueva: {c['evento']} {c['caja']} (medio {c['medio']}, spread {c['spread'] * 100:.1f} c, "
                     f"pozo {c['pozo']}, rec. esperada {c['rec_pes']} US$/dia)")
@@ -655,13 +695,18 @@ class Maker:
             self.ej.cancelar(cancelar)
         errores = 0
         sin_saldo = []
-        for q in quiero:
+        libre, _, _ = self.efectivo_libre([o for o in abiertas if o["id"] not in cancelar], inv)
+        # ventas primero (no necesitan efectivo y lo liberan), compras despues y solo si entran en el efectivo libre
+        rec = {cid: c.get("rec_pes", 0) for cid, c in elegidas.items()}
+        for q in sorted(quiero, key=lambda q: (q[5] != "SELL", -rec.get(q[0], 0))):
             if q in quedan:
                 continue
             cid, evento, caja, medio, token, lado, precio, tam, es_si = q
-            if sin_saldo and lado == "BUY":          # ya fallo una compra por falta de efectivo: no insistir este ciclo
-                sin_saldo.append(caja)
-                continue
+            if lado == "BUY" and libre is not None:
+                if precio * tam > libre + 1e-9:        # no alcanza: se saltea sin intentar (no es un error)
+                    sin_saldo.append(caja)
+                    continue
+                libre = round(libre - precio * tam, 2)
             try:
                 oid = self.ej.colocar(token, cid, lado, precio, tam, es_si)
                 self.anotar(momento_utc=datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M:%S"), modo=self.modo,
@@ -670,8 +715,9 @@ class Maker:
             except SystemExit:
                 raise
             except Exception as ex:
-                if self.es_falta_de_saldo(ex) and lado == "BUY":
+                if self.es_falta_de_saldo(ex) and lado == "BUY":   # por si el saldo cambio entre la lectura y la orden
                     sin_saldo.append(caja)
+                    libre = 0
                     continue
                 errores += 1
                 self.est["ultimo_error"] = f"{lado} {precio} en {caja}: {ex!r}"[:300]
@@ -681,9 +727,11 @@ class Maker:
             # cada ciclo (en cuanto se vende algo o resuelve una caja, vuelve a comprar).
             if not self.est.get("sin_saldo_avisado"):
                 self.est["sin_saldo_avisado"] = True
-                log(f"sin efectivo libre para {len(sin_saldo)} compra(s) ({', '.join(sin_saldo)}): la plata esta en acciones")
-                self.avisar(f"Maker ({self.modo}): sin efectivo libre para {len(sin_saldo)} compra(s); la plata esta en "
-                            f"acciones sin vender. Sigue con las demas ordenes.")
+                e = self.est.get("efectivo", {})
+                log(f"sin efectivo libre para {len(sin_saldo)} compra(s) ({', '.join(sin_saldo)}): libre US$ {e.get('libre')}, "
+                    f"en acciones al costo {e.get('acciones_costo')}, reservado en compras {e.get('reservado')}")
+                self.avisar(f"Maker ({self.modo}): sin efectivo libre para {len(sin_saldo)} compra(s) (libre US$ {e.get('libre')}; "
+                            f"la plata esta en acciones sin vender). Sigue con las demas ordenes.")
         else:
             self.est["sin_saldo_avisado"] = False
         return errores
@@ -821,7 +869,9 @@ class Maker:
                 n = len(self.ej.abiertas())
             except Exception:
                 n = "?"
+            e = self.est.get("efectivo", {})
             self.avisar(f"Maker ({self.modo}) sigo vivo: {n} ordenes en {len(self.est['cajas'])} cajas, "
+                        f"efectivo {e.get('cuenta', '?')} (libre {e.get('libre', '?')}, en acciones {e.get('acciones_costo', '?')}), "
                         f"resultado del dia {self.pnl(hoy):+.2f}, total al costo {self.pnl():+.2f}, "
                         f"errores seguidos {self.est.get('errores_seguidos', 0)}.")
 
@@ -890,6 +940,7 @@ class Maker:
         est = rec.get("estimada", {})
         ops = self.ops()
         llen = [o for o in ops if o["lado"] in ("BUY", "SELL")]
+        libre, cuenta, reservado = self.efectivo_libre()
         lin = [f"# Maker ({self.modo}) — {datetime.now(timezone.utc):%Y-%m-%d %H:%M}Z", "",
                f"- Cajas ahora: {len(self.est['cajas'])}: " + ", ".join(f"{c['caja']} ({c['evento']}, medio {c['medio']}, "
                                                                      f"rec. esp. {c['rec_pes']}/día)" for c in self.est["cajas"].values()),
@@ -900,6 +951,8 @@ class Maker:
                f"- Resultado realizado de los llenados (cobros − compras + ventas): US$ {self.pnl(inventario=False):+.2f}; "
                f"contando las acciones en cartera al costo: US$ {self.pnl():+.2f}. "
                f"Capital puesto ahora: US$ {self.capital_puesto():.2f}.",
+               f"- Efectivo libre para comprar: {'?' if libre is None else f'US$ {libre:.2f}'} (en la cuenta "
+               f"{'?' if cuenta is None else f'{cuenta:.2f}'}, reservado en compras {reservado:.2f}; sin tope: reinvierte lo que gana).",
                f"- Neto = recompensas + realizado: US$ {sum(cobradas.values()) + self.pnl():+.2f}.",
                f"- Freno: {'ACTIVO — ' + self.frenado() if self.frenado() else 'no'}."]
         with open(self.f_res, "w", encoding="utf-8") as f:

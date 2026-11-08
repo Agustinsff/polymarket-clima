@@ -212,7 +212,11 @@ class SDKFalso:
         self.trades.append(t)
         return t
 
-    def get_balance_allowance(self, asset_type, token_id):
+    efectivo = 1000.0                                  # USDC en la cuenta (COLLATERAL)
+
+    def get_balance_allowance(self, asset_type, token_id=None):
+        if asset_type == "COLLATERAL":
+            return self.types.SimpleNamespace(balance=int(self.efectivo * 1e6))
         assert asset_type == "CONDITIONAL"
         return self.types.SimpleNamespace(balance=int(self.saldos.get(token_id, 0) * 1e6))
 
@@ -504,6 +508,88 @@ class PruebasSinSaldo(unittest.TestCase):
         self.assertEqual(len(avisos), 1)                                      # una vez por racha
         self.assertTrue(maker.Maker.es_falta_de_saldo(RuntimeError("InsufficientAllowanceError")))
         self.assertFalse(maker.Maker.es_falta_de_saldo(RuntimeError("timeout")))
+        shutil.rmtree(d)
+
+
+class PruebasEfectivo(unittest.TestCase):
+    """8-nov-2026 (pedido de Agus): el bot compra solo con la plata que tiene de verdad y nunca por encima de capital_usd."""
+    def _bot(self, efectivo, abiertas=(), inv=None, capital=100):
+        import types
+        d = tempfile.mkdtemp()
+        puestas = []
+
+        def colocar(token, cid, lado, precio, acciones, es_si):
+            puestas.append((cid, token, lado, precio, acciones))
+            return f"o{len(puestas)}"
+        ej = types.SimpleNamespace(inventario=lambda: dict(inv or {}), abiertas=lambda: list(abiertas), llenados=lambda: [],
+                                   cancelar_todo=lambda: None, cancelar=lambda ids: None, colocar=colocar, nombre="real",
+                                   efectivo=lambda: efectivo)
+        bot = maker.Maker(cfg(modo="real", capital_usd=capital), m=MercadoFalso(), carpeta=d, ej=ej)
+        bot.avisos = []
+        bot.avisar = bot.avisos.append
+        return bot, puestas, d
+
+    def _cajas(self):
+        a = {"cid": "A", "evento": "e", "si": "si-A", "no": "no-A", "medio": 0.43, "tick": 0.01, "tam": 25, "caja": "22°C",
+             "rec_pes": 2.0}
+        b = dict(a, cid="B", si="si-B", no="no-B", caja="23°C", rec_pes=5.0)
+        return {"A": a, "B": b}
+
+    def test_poco_efectivo_no_intenta_comprar(self):
+        # el caso real del 8-nov 02:04Z: 22,68 en la cuenta, 13,75 reservados, compras de 25 a 0,41 (10,25) no entran
+        # (la compra de Si-B ya esta puesta y se mantiene: queda reservada)
+        bot, puestas, d = self._bot(22.68, abiertas=[{"id": "x", "token": "si-B", "lado": "BUY", "precio": 0.41, "acciones": 25}],
+                                    inv={"no-A": 30.0})
+        errores = bot.renovar(self._cajas())
+        self.assertEqual(errores, 0)
+        self.assertEqual([p[2] for p in puestas], ["SELL"])                   # solo la venta de No-A (no necesita plata)
+        self.assertEqual(bot.est["efectivo"]["libre"], 12.43)                # 22,68 - 10,25 reservados; 13,75 no entra
+        self.assertEqual(bot.est["efectivo"]["reservado"], 10.25)
+        self.assertEqual(len(bot.avisos), 1)
+        self.assertIn("12.43", bot.avisos[0])
+        shutil.rmtree(d)
+
+    def test_presupuesto_va_a_la_caja_que_mas_paga(self):
+        # alcanza para dos compras (2 x 10,25 = 20,5): van a la caja B (rec_pes 5) antes que a la A (rec_pes 2)
+        bot, puestas, d = self._bot(24.0)
+        bot.renovar(self._cajas())
+        self.assertEqual([p[0] for p in puestas], ["B", "B"])
+        self.assertEqual(bot.est["efectivo"]["libre"], 24.0)                 # medido antes de poner las ordenes
+        # con 21: B Si (10,25), B No (13,75) no entra, A Si (10,25) si
+        bot2, puestas2, d2 = self._bot(21.0)
+        bot2.renovar(self._cajas())
+        self.assertEqual([(p[0], p[1]) for p in puestas2], [("B", "si-B"), ("A", "si-A")])
+        shutil.rmtree(d2)
+        shutil.rmtree(d)
+
+    def test_sin_tope_de_capital_reinvierte(self):
+        # 500 en la cuenta y 90 ya en acciones: compra igual (decision de Agus 8-nov: sin tope de 100, reinvierte)
+        bot, puestas, d = self._bot(500.0, inv={"si-Z": 150.0})
+        bot.est["costo"]["si-Z"] = {"precio": 0.6, "acciones": 150.0}
+        bot.renovar(self._cajas())
+        self.assertEqual(len([p for p in puestas if p[2] == "BUY"]), 4)
+        self.assertEqual(bot.est["efectivo"], {"cuenta": 500.0, "reservado": 0, "libre": 500.0, "acciones_costo": 90.0})
+        shutil.rmtree(d)
+
+    def test_sin_lectura_de_efectivo_no_limita(self):
+        bot, puestas, d = self._bot(None)
+        bot.ej.efectivo = lambda: (_ for _ in ()).throw(RuntimeError("clob caido"))
+        libre, cuenta, reservado = bot.efectivo_libre()
+        self.assertEqual((libre, cuenta, reservado), (None, None, 0))
+        bot.renovar(self._cajas())                                            # sin lectura: intenta igual (como antes)
+        self.assertEqual(len(puestas), 4)
+        self.assertEqual(bot.avisos, [])
+        shutil.rmtree(d)
+
+    def test_no_agrega_caja_que_no_puede_cotizar(self):
+        d = tempfile.mkdtemp()
+        m = MercadoFalso()
+        bot = maker.Maker(cfg(), m=m, carpeta=d)                               # papel: efectivo = capital - acciones
+        bot.est["costo"]["si-Z"] = {"precio": 0.5, "acciones": 280.0}
+        bot.ej.est["inventario"]["si-Z"] = 280.0                              # 140 de 150 en acciones -> 10 libres
+        self.assertEqual(bot.elegir(AHORA), {})                               # la caja A necesita 25 x 0,96 = 24
+        bot.ej.est["inventario"]["si-Z"] = 200.0                              # 100 en acciones -> 50 libres
+        self.assertEqual(list(bot.elegir(AHORA)), ["A"])
         shutil.rmtree(d)
 
 
