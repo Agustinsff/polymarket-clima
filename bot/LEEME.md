@@ -156,6 +156,14 @@ pares × (1 − costo Sí − costo No), lo mismo que daría esperar a la resolu
 se resigna: vender cada lado por separado a medio + 2 ¢ (≈ 4 ¢ por par). Avisa por ntfy cada canje; si falla avisa una vez
 y reintenta cada 30 min sin tocar más las ventas. No canjea cajas resueltas ni terminadas (esas se cobran). `0` lo apaga.
 
+**Rotación de cajas (9-nov-2026).** Las cajas que el bot ya tiene siguen mientras cumplan la regla, aunque se llenen de
+rivales: el 9-nov a las 08:00 de Uruguay cotizaba Beijing 16 °C, Ciudad del Cabo 27 °C y São Paulo 22 °C con recompensa
+esperada 0,15, 0,27 y 1,1 US$/día, mientras Estambul 13 °C esperaba 16 y Wellington 18 °C 15 (estimación del día: 2,8
+contra 9,95 del 8-nov). Ahora, cada `rotar_cada_min` (30) minutos, el bot mide las 60 cajas de más pozo; si la mejor nueva
+espera `rotar_factor` (3) veces y `rotar_dif` (2) US$/día más que la peor de las suyas, suelta la peor (sus acciones se
+venden como en cualquier caja soltada, sin bajar del costo + 1 ¢) y entra la mejor. Una por vez, con aviso por ntfy; la
+soltada no vuelve por 6 h. La primera revisión es 30 min después de arrancar. `rotar_cada_min: 0` la apaga.
+
 **Valor a precio de mercado en el resumen (8-nov-2026).** El neto "al costo" del bot (−1,9) y la cartera de la web (−7) no
 coincidían: la web valúa las acciones al precio actual del libro. El resumen y el aviso "sigo vivo" muestran ahora también
 las acciones al medio actual (`valor_mercado`), los llenados y el neto a mercado y el valor total de la cuenta
@@ -163,7 +171,7 @@ las acciones al medio actual (`valor_mercado`), los llenados y el neto a mercado
 pérdida hasta que se vende o resuelve).
 
 Archivos: `bot/maker_ops_<modo>.csv` (órdenes puestas, llenados y cobros), `bot/maker_estado_<modo>.json`,
-`bot/maker_resumen_<modo>.md`. Pruebas sin red: `python bot/test_maker.py` (44 pruebas, incluido el SDK falso).
+`bot/maker_resumen_<modo>.md`. Pruebas sin red: `python bot/test_maker.py` (45 pruebas, incluido el SDK falso).
 
 **Operarlo sin pausas (8-nov-2026).**
 - **Actualizar sin cancelar las órdenes**: doble clic en `bot\actualizar.cmd`. Hace `git pull`, deja `bot\REINICIAR`

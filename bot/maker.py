@@ -682,12 +682,40 @@ class Maker:
                 elegidas[cid] = cc
             else:
                 log(f"se deja la caja {c['evento']} {c['caja']}: ya no cumple la regla")
+        # rotacion (9-nov): las cajas que ya tenemos siguen aunque se llenen de rivales (Beijing 16 °C: rec. esperada 0,15
+        # US$/dia con Estambul 13 °C a 16). Cada `rotar_cada_min` (30) se mide el resto; si la mejor caja nueva espera
+        # `rotar_factor` (3) veces y `rotar_dif` (2) US$/dia mas que la peor que tenemos, se suelta la peor (sus acciones
+        # se venden como en cualquier caja soltada, sin bajar del costo + 1 c) y abajo entra la mejor. Una por vez.
+        rotadas = self.est.setdefault("rotadas", {})
+        for cid in [cid for cid, ts in rotadas.items() if (ahora - datetime.fromisoformat(ts)).total_seconds() > 6 * 3600]:
+            del rotadas[cid]
+        cada = k.get("rotar_cada_min", 30)
+        ultima = self.est.setdefault("rotacion_ts", ahora.isoformat())   # la primera, 30 min despues de arrancar
+        if (cada and len(elegidas) >= k["cajas"] and elegidas
+                and (ahora - datetime.fromisoformat(ultima)).total_seconds() >= cada * 60):
+            self.est["rotacion_ts"] = ahora.isoformat()
+            resto = sorted((c for cid, c in cand.items() if cid not in elegidas and cid not in rotadas),
+                           key=lambda c: -c["pozo"])[:60]
+            ok = [c for c in resto if medir_libro(c, self.cfg, self.m) and c["tam"] <= k["capital_usd"] / k["cajas"]
+                  and not self.decidida(c, ahora)]
+            if ok:
+                mejor = max(ok, key=lambda c: c["rec_pes"])
+                peor = min(elegidas.values(), key=lambda c: c.get("rec_pes", 0))
+                r_peor = peor.get("rec_pes", 0)
+                if mejor["rec_pes"] >= max(k.get("rotar_factor", 3) * r_peor, r_peor + k.get("rotar_dif", 2)):
+                    del elegidas[peor["cid"]]
+                    rotadas[peor["cid"]] = ahora.isoformat()
+                    txt = (f"rotacion: se suelta {peor['evento']} {peor['caja']} (rec. esperada {r_peor} US$/dia) por "
+                           f"{mejor['evento']} {mejor['caja']} ({mejor['rec_pes']})")
+                    log(txt)
+                    self.avisar(f"Maker ({self.modo}) {txt}.")
         # completar con las mejores del resto (medir solo las que no tenemos, ordenadas por pozo para no leer 1500 libros)
         if len(elegidas) < k["cajas"]:
             # plata libre para cajas nuevas: efectivo real menos lo que ya esta en juego (las cajas que siguen no se
             # sueltan por esto, para no perder el lugar en la fila; solo no se agregan cajas que no se pueden cotizar)
             libre, _, _ = self.efectivo_libre()
-            resto = sorted((c for cid, c in cand.items() if cid not in elegidas), key=lambda c: -c["pozo"])[:60]
+            resto = sorted((c for cid, c in cand.items() if cid not in elegidas and cid not in rotadas),
+                           key=lambda c: -c["pozo"])[:60]
             ok = [c for c in resto if medir_libro(c, self.cfg, self.m)]
             for c in sorted(ok, key=lambda c: -c["rec_pes"]):
                 if len(elegidas) >= k["cajas"]:

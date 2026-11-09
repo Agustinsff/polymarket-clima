@@ -86,6 +86,32 @@ class Pruebas(unittest.TestCase):
         self.assertEqual(c["tam"], 25)
         self.assertGreater(c["rec_pes"], 0)
 
+    def test_rota_si_otra_caja_paga_mucho_mas(self):
+        """9-nov: una caja que ya tenemos y se llena de rivales se cambia por otra que espera 3 veces mas (y +2 US$/dia),
+        midiendo cada 30 min y de a una; la soltada no vuelve por 6 h."""
+        self.bot.cfg["maker"]["cajas"] = 1
+        avisos = []
+        self.bot.avisar = avisos.append
+        self.assertEqual(list(self.bot.elegir(AHORA)), ["A"])
+        self.m.libros["si-B"] = ([(0.39, 30)], [(0.41, 30)])                       # B se aprieta y tiene 90 de pozo
+        self.m.libros["si-A"] = ([(0.31, 5000), (0.30, 100)], [(0.32, 5000)])      # A se llena de rivales
+        self.assertEqual(list(self.bot.elegir(AHORA + timedelta(minutes=1))), ["A"])   # sin rotacion hace < 30 min
+        self.assertEqual(list(self.bot.elegir(AHORA + timedelta(minutes=10))), ["A"])
+        el = self.bot.elegir(AHORA + timedelta(minutes=31))
+        self.assertEqual(list(el), ["B"])
+        self.assertIn("A", self.bot.est["rotadas"])
+        self.assertTrue(any("rotacion" in a for a in avisos))
+        # B tambien se llena: A no vuelve (rotada hace < 6 h) aunque espere mas
+        self.m.libros["si-B"] = ([(0.39, 5000)], [(0.41, 5000)])
+        self.m.libros["si-A"] = ([(0.30, 30)], [(0.33, 30)])
+        self.assertEqual(list(self.bot.elegir(AHORA + timedelta(minutes=70))), ["B"])
+        # con rotar_cada_min 0 no rota nunca
+        self.bot.est["rotadas"].clear()
+        self.bot.cfg["maker"]["rotar_cada_min"] = 0
+        self.assertEqual(list(self.bot.elegir(AHORA + timedelta(minutes=200))), ["B"])
+        self.bot.cfg["maker"]["rotar_cada_min"] = 30
+        self.assertEqual(list(self.bot.elegir(AHORA + timedelta(minutes=201))), ["A"])
+
     def test_cotiza_dos_compras(self):
         c = self.bot.elegir(AHORA)["A"]
         o = self.bot.cotizar(c, {})

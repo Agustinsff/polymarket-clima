@@ -44,6 +44,9 @@
     "filtro_movimiento_c": 0.06,
     "filtro_movimiento_min": 60,
     "zona_dia": "America/Montevideo",
-    "fusionar_pares_min": 5
+    "fusionar_pares_min": 5,
+    "rotar_cada_min": 30,
+    "rotar_factor": 3,
+    "rotar_dif": 2
   }
 }
