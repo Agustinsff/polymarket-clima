@@ -1,13 +1,13 @@
 # Resumen polymarket-clima
 
-_Actualizado: 2026-11-09 18:49 (Montevideo). Todo es **en papel**: no se usa plata real._
+_Actualizado: 2026-11-09 19:04 (Montevideo). Todo es **en papel**: no se usa plata real._
 
 ## Estado de las tareas
 
 ⚠️ El cosechador no actualiza desde 2026-11-04 16:12 UTC.
 🔔 Polymarket cambió algo en **clima (otros)** (mercado de clima nuevo, ya no aparece el 2026-11-09 12:05 UTC): `what-intensity-will` y 1 más. Ver [reglas_informe.md](reglas_informe.md).
 
-- Última foto de liquidez: 2026-11-09T18:49:24
+- Última foto de liquidez: 2026-11-09T19:04:32
 - Monitor: mañana 2026-11-09, noche 2026-11-08
 - Prueba São Paulo: último día registrado 2026-11-09
 - Cosechador: último ciclo 2026-11-04 16:12 UTC, 88 mercados, 46 estaciones
@@ -87,9 +87,9 @@ Series donde el modelo le gana al mercado (≥5 días): mín denver (9 días), m
 
 | Modo | Serie calibrada | Liquidadas | Ganadas | Neto (10 acc. c/u) | Pendientes |
 |---|---|---|---|---|---|
-| taker | no | 1657 | 380 | US$-900.73 | 160 |
+| taker | no | 1657 | 380 | US$-900.73 | 162 |
 | maker | no | 3169 | 382 | US$-397.61 | 2586 |
-| cola_taker | no | 816 | 19 | US$-111.91 | 86 |
+| cola_taker | no | 816 | 19 | US$-111.91 | 87 |
 | cola_maker | no | 1074 | 21 | US$-76.63 | 860 |
 | no80_90 | no | 654 | 459 | US$-1060.07 | 90 |
 
