@@ -214,6 +214,13 @@ class Papel:
     def inventario(self):
         return {t: q for t, q in self.est["inventario"].items() if q > 1e-6}
 
+    def fusionar(self, cid, tokens, q):
+        """Canje de q pares Si+No por US$ q (papel: solo ajusta el inventario)."""
+        inv = self.est["inventario"]
+        for t in tokens:
+            inv[t] = round(inv.get(t, 0) - q, 6)
+        return True
+
     def cobrar(self, cid, tokens, ganador):
         inv = self.est["inventario"]
         cobrado = 0.0
@@ -400,6 +407,24 @@ class Real:
 
     def cid_de(self, token):
         return self.est["token_cid"].get(token)
+
+    def fusionar(self, cid, tokens, q):
+        """Canje de q pares Si+No por US$ q (merge, sin comision, por el relayer como el cobro). True si salio."""
+        try:
+            self.client.merge_positions(condition_id=cid, amount=int(round(q * 1e6))).wait()
+        except Exception as ex:
+            # un TimeoutError del relayer no quiere decir que no salio: si la billetera ya no tiene esos pares, salio
+            try:
+                hecho = all(self.saldo_token(t) <= self.est["inv"].get(t, 0) - q + 0.01 for t in tokens)
+            except Exception:                         # noqa: BLE001
+                hecho = False
+            if not hecho:
+                log(f"no se pudo canjear {q:.2f} pares de {cid[:10]}: {ex!r}")
+                return False
+            log(f"canje de {cid[:10]}: {ex!r}, pero la billetera ya no tiene los pares: salio")
+        for t in tokens:
+            self._sumar(t, -q)
+        return True
 
     def saldo_token(self, token):
         """Acciones del token en la billetera segun el CLOB (para comparar con el inventario propio)."""
@@ -965,6 +990,57 @@ class Maker:
             self.avisar(f"ALERTA Maker ({self.modo}): perdida del dia {d:+.2f} (hora de Uruguay), cerca del freno de "
                         f"-{r['max_perdida_dia']}. Total al costo {self.pnl():+.2f}.")
 
+    def fusionar_pares(self, ahora=None):
+        """Canje de pares Si+No (9-nov, Agus: "aplica lo que veas necesario"). Si de una caja se tienen acciones de los
+        dos lados, cada par vale US$ 1 pase lo que pase pero deja la plata trabada hasta la resolucion (8-nov: "sin
+        efectivo libre" con 15 pares en Tel Aviv). Se canjean al instante por US$ 1 (merge, sin comision). Antes se
+        cancelan las ventas abiertas de esos tokens (renovar las vuelve a poner con lo que quede). Se anota como dos
+        ventas (Si al medio, No a 1 - medio) para que el costo, la perdida del dia y el freno sigan cuadrando: el
+        resultado es pares x (1 - costo Si - costo No). fusionar_pares_min (5): pares minimos; 0 = apagado."""
+        minimo = self.cfg["maker"].get("fusionar_pares_min", 5)
+        if not minimo or not hasattr(self.ej, "fusionar"):
+            return 0
+        ahora = ahora or datetime.now(timezone.utc)
+        inv = self.ej.inventario()
+        hechos = 0
+        cajas = dict(self.est.get("meta", {}))
+        cajas.update({cid: c for cid, c in self.est["cajas"].items()})
+        for cid, c in cajas.items():
+            if cid in self.est["resultados"]:
+                continue
+            if c.get("fin") and datetime.fromisoformat(c["fin"].replace("Z", "+00:00")) <= ahora:
+                continue                                   # ya termino: se cobra (redeem), no se canjea
+            q = math.floor(min(inv.get(c["si"], 0), inv.get(c["no"], 0)) * 100) / 100
+            if q < minimo:
+                continue
+            fallos = self.est.setdefault("canje_fallo", {})
+            if cid in fallos and (ahora - datetime.fromisoformat(fallos[cid])).total_seconds() < 1800:
+                continue                                   # fallo hace menos de 30 min: no cancelar ventas en cada ciclo
+            ventas = [o["id"] for o in self.ej.abiertas() if o["token"] in (c["si"], c["no"]) and o["lado"] == "SELL"]
+            if ventas:
+                self.ej.cancelar(ventas)
+            if not self.ej.fusionar(cid, (c["si"], c["no"]), q):
+                if cid not in fallos:
+                    self.avisar(f"Maker ({self.modo}): no se pudo canjear {q:.0f} pares Si+No en {c.get('caja', '?')} "
+                                f"({c.get('evento', '')}); reintenta cada 30 min, el bot sigue normal.")
+                fallos[cid] = ahora.isoformat()
+                continue
+            fallos.pop(cid, None)
+            medio = float(c.get("medio") or 0.5)
+            res = 0.0
+            for t, p in ((c["si"], round(medio, 4)), (c["no"], round(1 - medio, 4))):
+                costo = self.est["costo"].setdefault(t, {"precio": p, "acciones": q})
+                res += q * (p - costo["precio"])
+                costo["acciones"] = max(costo["acciones"] - q, 0)
+                self.anotar(momento_utc=ahora.strftime("%Y-%m-%d %H:%M:%S"), modo=self.modo, evento=c.get("evento", ""),
+                            caja=c.get("caja", ""), condition_id=cid, token=t, lado="SELL", precio=p, acciones=q,
+                            medio=c.get("medio", ""), detalle="canje Si+No")
+            hechos += 1
+            log(f"canje: {q:.2f} pares Si+No de {c.get('caja', '?')} ({c.get('evento', '')}) por US$ {q:.2f} ({res:+.2f} contra el costo)")
+            self.avisar(f"Maker ({self.modo}): canje de {q:.0f} pares Si+No en {c.get('caja', '?')} ({c.get('evento', '')}): "
+                        f"US$ {q:.2f} libres ({res:+.2f} contra el costo).")
+        return hechos
+
     def meta_caja(self, cid):
         """Evento, caja y tokens de una caja (del estado; si no esta, del CLOB: cajas de antes del 8-nov)."""
         meta = self.est.setdefault("meta", {})
@@ -1089,6 +1165,7 @@ class Maker:
             self.recargar_cfg()
             self.revisar_llenados(ahora)
             self.liquidar()
+            self.fusionar_pares(ahora)
             motivo = self.freno(ahora)
             if motivo:
                 log(f"no opera: {motivo}")

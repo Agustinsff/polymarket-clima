@@ -43,6 +43,7 @@
     "max_inventario_lado": 50,
     "filtro_movimiento_c": 0.06,
     "filtro_movimiento_min": 60,
-    "zona_dia": "America/Montevideo"
+    "zona_dia": "America/Montevideo",
+    "fusionar_pares_min": 5
   }
 }

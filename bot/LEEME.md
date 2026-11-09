@@ -146,6 +146,16 @@ poner compras y siguen vendiendo el inventario, igual que el filtro de movimient
 está fuera de git (no traba el pull) y se ve en el resumen como "a mano". Borrar la línea devuelve las compras. Ejemplo:
 `moscow-on-november-8` deja sin compras todas las cajas de ese evento; `moscow-on-november-8 4°C`, solo esa caja.
 
+**Canje automático de pares Sí+No (9-nov-2026, Agus: "aplicá lo que veas necesario").** Si de una caja abierta se tienen
+acciones de los dos lados, cada par Sí+No vale US$ 1 pase lo que pase, pero deja la plata trabada hasta que la caja
+resuelve (8-nov: compras frenadas "sin efectivo libre" con ~15 pares en Tel Aviv). En cada ciclo, si hay
+`fusionar_pares_min` (5) pares o más, el bot cancela las ventas abiertas de esa caja y canjea min(Sí, No) pares por US$ 1
+cada uno (merge de Polymarket, sin comisión, por el relayer igual que el cobro). Se anota como dos ventas (Sí al medio, No a
+1 − medio, detalle "canje Si+No") para que costo, pérdida del día y frenos sigan cuadrando: el resultado es
+pares × (1 − costo Sí − costo No), lo mismo que daría esperar a la resolución, pero con la plata libre al instante. Lo que
+se resigna: vender cada lado por separado a medio + 2 ¢ (≈ 4 ¢ por par). Avisa por ntfy cada canje; si falla avisa una vez
+y reintenta cada 30 min sin tocar más las ventas. No canjea cajas resueltas ni terminadas (esas se cobran). `0` lo apaga.
+
 **Valor a precio de mercado en el resumen (8-nov-2026).** El neto "al costo" del bot (−1,9) y la cartera de la web (−7) no
 coincidían: la web valúa las acciones al precio actual del libro. El resumen y el aviso "sigo vivo" muestran ahora también
 las acciones al medio actual (`valor_mercado`), los llenados y el neto a mercado y el valor total de la cuenta
@@ -153,7 +163,7 @@ las acciones al medio actual (`valor_mercado`), los llenados y el neto a mercado
 pérdida hasta que se vende o resuelve).
 
 Archivos: `bot/maker_ops_<modo>.csv` (órdenes puestas, llenados y cobros), `bot/maker_estado_<modo>.json`,
-`bot/maker_resumen_<modo>.md`. Pruebas sin red: `python bot/test_maker.py` (42 pruebas, incluido el SDK falso).
+`bot/maker_resumen_<modo>.md`. Pruebas sin red: `python bot/test_maker.py` (44 pruebas, incluido el SDK falso).
 
 **Operarlo sin pausas (8-nov-2026).**
 - **Actualizar sin cancelar las órdenes**: doble clic en `bot\actualizar.cmd`. Hace `git pull`, deja `bot\REINICIAR`
