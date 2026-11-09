@@ -1,4 +1,4 @@
-# Maker (papel) — 2026-11-09 21:53Z
+# Maker (papel) — 2026-11-09 22:48Z
 
 - Cajas ahora: 2: 15°C (highest-temperature-in-paris-on-november-11-2026, medio 0.41, rec. esp. 2.789/día), 9°C (highest-temperature-in-ankara-on-november-11-2026, medio 0.32, rec. esp. 9.141/día)
 - Recompensas cobradas (lo que dice Polymarket; en papel, estimadas): US$ 67.44 en 5 días: 2026-11-04 5.99, 2026-11-05 15.71, 2026-11-06 16.27, 2026-11-07 13.89, 2026-11-08 15.58
