@@ -349,6 +349,34 @@ class PruebasReal(unittest.TestCase):
         self.assertEqual(sum("Claim" in a for a in avisos), 1)
         shutil.rmtree(d)
 
+    def test_canje_real_por_el_sdk(self):
+        """Real.fusionar llama merge_positions(condition_id, amount en unidades de 6 decimales).wait(). Si el relayer
+        tarda (TimeoutError) pero la billetera ya no tiene los pares, cuenta como hecho; si los sigue teniendo, no."""
+        bot, ej, m, d = bot_real()
+        llamadas, modo = [], ["ok"]
+
+        def merge_positions(condition_id, amount):
+            llamadas.append((condition_id, amount))
+            if modo[0] == "ok":
+                return ej.client.types.SimpleNamespace(wait=lambda: None)
+            if modo[0] == "salio":
+                ej.client.saldos.update({"si-A": 0.0, "no-A": 5.0})
+            raise TimeoutError("relayer")
+        ej.client.merge_positions = merge_positions
+        ej.est["inv"] = {"si-A": 20.0, "no-A": 25.0}
+        self.assertTrue(ej.fusionar("A", ("si-A", "no-A"), 20.0))
+        self.assertEqual(llamadas, [("A", 20000000)])
+        self.assertEqual(ej.inventario(), {"no-A": 5.0})
+        ej.est["inv"] = {"si-A": 20.0, "no-A": 25.0}
+        ej.client.saldos.update({"si-A": 20.0, "no-A": 25.0})
+        modo[0] = "falla"
+        self.assertFalse(ej.fusionar("A", ("si-A", "no-A"), 20.0))
+        self.assertEqual(ej.inventario(), {"si-A": 20.0, "no-A": 25.0})
+        modo[0] = "salio"
+        self.assertTrue(ej.fusionar("A", ("si-A", "no-A"), 20.0))
+        self.assertEqual(ej.inventario(), {"no-A": 5.0})
+        shutil.rmtree(d)
+
     def test_caja_vieja_sin_datos_se_busca_en_el_clob(self):
         bot, ej, m, d = bot_real()
         ej.est["inv"]["si-Z"] = 5.0
@@ -501,6 +529,84 @@ class PruebasFreno(unittest.TestCase):
         llena("SELL", 0.01, minutos=100)
         self.assertEqual(len(alertas()), n)
         shutil.rmtree(d)
+
+    def test_canje_de_pares(self):
+        """9-nov: con acciones Si y No de la misma caja se canjean min(Si, No) pares por US$ 1 cada uno. Se anotan como
+        dos ventas para que el resultado sea pares x (1 - costo Si - costo No); se cancelan antes las ventas abiertas."""
+        import types
+        d = tempfile.mkdtemp()
+        inv = {"si-A": 40.0, "no-A": 15.3}
+        canjes, canceladas = [], []
+        sale = [True]
+
+        def fusionar(cid, tokens, q):
+            canjes.append((cid, tokens, q))
+            if sale[0]:
+                for t in tokens:
+                    inv[t] -= q
+            return sale[0]
+        ej = types.SimpleNamespace(inventario=lambda: dict(inv), llenados=lambda: [], cancelar_todo=lambda: None,
+                                   nombre="real", fusionar=fusionar, cancelar=canceladas.extend,
+                                   abiertas=lambda: [{"id": "v1", "token": "no-A", "lado": "SELL"},
+                                                     {"id": "c1", "token": "si-A", "lado": "BUY"},
+                                                     {"id": "v2", "token": "otro", "lado": "SELL"}])
+        bot = maker.Maker(cfg(modo="real"), m=MercadoFalso(), carpeta=d, ej=ej)
+        avisos = []
+        bot.avisar = avisos.append
+        fin = (AHORA + timedelta(days=1)).strftime("%Y-%m-%dT%H:%M:%SZ")
+        bot.est["cajas"]["A"] = {"caja": "22C", "evento": "tel-aviv", "si": "si-A", "no": "no-A", "fin": fin, "medio": 0.40}
+        bot.est["costo"] = {"si-A": {"precio": 0.35, "acciones": 40}, "no-A": {"precio": 0.55, "acciones": 15.3}}
+        antes_total = bot.pnl()
+        self.assertEqual(bot.fusionar_pares(AHORA), 1)
+        self.assertEqual(canjes, [("A", ("si-A", "no-A"), 15.3)])
+        self.assertEqual(canceladas, ["v1"])                                  # solo ventas de esa caja
+        self.assertEqual(inv, {"si-A": 24.7, "no-A": 0.0})
+        self.assertAlmostEqual(bot.est["costo"]["si-A"]["acciones"], 24.7)
+        hoy = bot.dia_local(AHORA)
+        ops = [o for o in bot.ops() if o["detalle"] == "canje Si+No"]
+        self.assertEqual([(o["token"], o["lado"], float(o["precio"])) for o in ops],
+                         [("si-A", "SELL", 0.40), ("no-A", "SELL", 0.60)])
+        # sin compras anotadas, el costo medio de la venta es su propio precio: lo que cuenta es el total y el costo
+        self.assertAlmostEqual(bot.pnl(), antes_total + 15.3 * (1 - 0.35 - 0.55), delta=0.011)  # pnl redondea
+        self.assertTrue(any("canje de 15 pares" in a for a in avisos))
+        self.assertEqual(bot.fusionar_pares(AHORA), 0)                        # ya no quedan pares
+        # con compras anotadas el dia da pares x (1 - costo Si - costo No)
+        d2 = tempfile.mkdtemp()
+        inv.update({"si-A": 25.0, "no-A": 25.0})
+        bot2 = maker.Maker(cfg(modo="real"), m=MercadoFalso(), carpeta=d2, ej=ej)
+        bot2.avisar = lambda t: None
+        bot2.est["cajas"]["A"] = dict(bot.est["cajas"]["A"])
+        bot2.est["costo"] = {"si-A": {"precio": 0.35, "acciones": 25}, "no-A": {"precio": 0.55, "acciones": 25}}
+        for t, p in (("si-A", 0.35), ("no-A", 0.55)):
+            bot2.anotar(momento_utc=AHORA.strftime("%Y-%m-%d %H:%M:%S"), modo="real", evento="e", caja="c",
+                        condition_id="A", token=t, lado="BUY", precio=p, acciones=25, medio="", detalle="")
+        bot2.fusionar_pares(AHORA)
+        self.assertAlmostEqual(bot2.pnl(hoy), 25 * (1 - 0.35 - 0.55), places=2)
+        # menos que el minimo, caja terminada o resuelta: no canjea
+        inv.update({"si-A": 4.0, "no-A": 4.0})
+        self.assertEqual(bot2.fusionar_pares(AHORA), 0)
+        inv.update({"si-A": 30.0, "no-A": 30.0})
+        self.assertEqual(bot2.fusionar_pares(AHORA + timedelta(days=2)), 0)
+        bot2.est["resultados"]["A"] = {"dia": hoy, "cobrado": 0}
+        self.assertEqual(bot2.fusionar_pares(AHORA), 0)
+        del bot2.est["resultados"]["A"]
+        # si el canje falla: un aviso, no anota nada y no reintenta (ni cancela ventas) por 30 min
+        sale[0] = False
+        n_ops, canceladas[:] = len(bot2.ops()), []
+        avisos2 = []
+        bot2.avisar = avisos2.append
+        self.assertEqual(bot2.fusionar_pares(AHORA), 0)
+        self.assertEqual((len(bot2.ops()), canceladas, len(avisos2)), (n_ops, ["v1"], 1))
+        self.assertEqual(bot2.fusionar_pares(AHORA + timedelta(minutes=10)), 0)
+        self.assertEqual((canceladas, len(avisos2)), (["v1"], 1))
+        sale[0] = True
+        self.assertEqual(bot2.fusionar_pares(AHORA + timedelta(minutes=31)), 1)
+        self.assertNotIn("A", bot2.est["canje_fallo"])
+        bot2.cfg["maker"]["fusionar_pares_min"] = 0                           # 0 apaga
+        inv.update({"si-A": 30.0, "no-A": 30.0})
+        self.assertEqual(bot2.fusionar_pares(AHORA), 0)
+        shutil.rmtree(d)
+        shutil.rmtree(d2)
 
     def test_valor_a_mercado(self):
         """El resumen valua las acciones al medio actual del libro ademas del costo (8-nov: la web mostraba 5 menos)."""
