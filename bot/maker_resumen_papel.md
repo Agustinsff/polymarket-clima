@@ -1,4 +1,4 @@
-# Maker (papel) — 2026-11-09 20:57Z
+# Maker (papel) — 2026-11-09 21:53Z
 
 - Cajas ahora: 2: 15°C (highest-temperature-in-paris-on-november-11-2026, medio 0.41, rec. esp. 2.789/día), 9°C (highest-temperature-in-ankara-on-november-11-2026, medio 0.32, rec. esp. 9.141/día)
 - Recompensas cobradas (lo que dice Polymarket; en papel, estimadas): US$ 67.44 en 5 días: 2026-11-04 5.99, 2026-11-05 15.71, 2026-11-06 16.27, 2026-11-07 13.89, 2026-11-08 15.58
@@ -8,6 +8,6 @@
 - Resultado realizado de los llenados (cobros − compras + ventas): US$ -33.90; contando las acciones en cartera al costo: US$ -17.53. Capital puesto ahora: US$ 16.37.
 - Efectivo libre para comprar: US$ 83.63 (en la cuenta 83.63, reservado en compras 0.00; sin tope: reinvierte lo que gana).
 - Neto = recompensas + realizado: US$ +49.91.
-- A PRECIO DE MERCADO (lo que muestra la web): acciones US$ 15.22 (al costo 16.37); llenados US$ -18.68; neto con recompensas US$ +48.76; cuenta = efectivo + acciones = US$ 98.85.
+- A PRECIO DE MERCADO (lo que muestra la web): acciones US$ 14.17 (al costo 16.37); llenados US$ -19.73; neto con recompensas US$ +47.71; cuenta = efectivo + acciones = US$ 97.80.
 - Filtro de movimiento (sin compras): ninguna caja.
 - Freno: no.
