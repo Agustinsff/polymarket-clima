@@ -35,6 +35,7 @@
     "ciclo_seg": 60,
     "apagar_despues_de": "2026-11-30 23:59",
     "max_perdida_dia": 10,
+    "freno_dia_cuenta_resueltas": false,
     "max_perdida_total": 30,
     "max_errores_seguidos": 10,
     "avisar_errores": 3,
@@ -47,6 +48,7 @@
     "fusionar_pares_min": 5,
     "rotar_cada_min": 30,
     "rotar_factor": 3,
-    "rotar_dif": 2
+    "rotar_dif": 2,
+    "soltada_piso_horas": 6
   }
 }
