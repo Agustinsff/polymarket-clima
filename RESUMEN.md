@@ -1,6 +1,6 @@
 # Resumen polymarket-clima
 
-_Actualizado: 2026-11-09 20:07 (Montevideo). Todo es **en papel**: no se usa plata real._
+_Actualizado: 2026-11-09 20:27 (Montevideo). Todo es **en papel**: no se usa plata real._
 
 ## Estado de las tareas
 
@@ -67,13 +67,13 @@ Series donde el modelo le gana al mercado (≥5 días): mín dallas (5 días), m
 
 | Modo | Serie calibrada | Liquidadas | Ganadas | Neto (10 acc. c/u) | Pendientes |
 |---|---|---|---|---|---|
-| taker | sí | 1555 | 592 | US$-738.86 | 514 |
+| taker | sí | 1555 | 592 | US$-738.86 | 583 |
 | taker | no | 1830 | 735 | US$-566.68 | 0 |
-| maker | sí | 441 | 52 | US$-175.56 | 9010 |
+| maker | sí | 441 | 52 | US$-175.56 | 9516 |
 | maker | no | 7591 | 856 | US$-1577.04 | 110 |
-| cola_taker | sí | 819 | 17 | US$-124.95 | 252 |
+| cola_taker | sí | 819 | 17 | US$-124.95 | 285 |
 | cola_taker | no | 1195 | 37 | US$-24.20 | 0 |
-| cola_maker | sí | 83 | 2 | US$-8.88 | 1814 |
+| cola_maker | sí | 83 | 2 | US$-8.88 | 1904 |
 | cola_maker | no | 1299 | 32 | US$-78.78 | 19 |
 
 Taker en total: US$-1454.69. _Con la comisión vieja (0,05 para todo) sería US$-1627.24._
@@ -99,16 +99,16 @@ _Taker = compra al instante pagando comisión. Maker = orden en el libro, solo c
 
 ## Cripto en papel (Bitcoin / Ethereum: above, rango y toca; modelo de opciones)
 
-Operaciones: 450 (430 liquidadas, 157 ganadas). **Neto US$+28.81** sobre US$1500.48 invertidos (ROI +1.9 %). _Con la comisión vieja (0,05 para todo) sería US$+39.52._
-Brier en 1538 strikes: modelo 0.1398 vs mercado 0.1354.
+Operaciones: 450 (443 liquidadas, 166 ganadas). **Neto US$+40.93** sobre US$1576.96 invertidos (ROI +2.6 %). _Con la comisión vieja (0,05 para todo) sería US$+52.04._
+Brier en 1600 strikes: modelo 0.1384 vs mercado 0.1345.
 
 | Activo | Tipo | Liquidadas | Neto |
 |---|---|---|---|
-| BTC | above | 52 | US$+34.11 |
-| BTC | rango | 88 | US$+27.52 |
+| BTC | above | 57 | US$+35.30 |
+| BTC | rango | 93 | US$+28.22 |
 | BTC | toca | 117 | US$-56.49 |
-| ETH | above | 35 | US$-14.56 |
-| ETH | rango | 65 | US$-10.70 |
+| ETH | above | 37 | US$-9.37 |
+| ETH | rango | 66 | US$-5.68 |
 | ETH | toca | 73 | US$+48.95 |
 
 _Regla fija: comprar el lado que el modelo ve ≥5 puntos más barato, a 48/24/12/6/3/1 h del cierre (18/12/6/3/1 h en 'toca'), 10 acciones al precio real del libro, con comisión. Backtest may-oct: +6,7 % con 1 ¢ de deslizamiento (Ethereum +17 %, Bitcoin ~0 %)._
