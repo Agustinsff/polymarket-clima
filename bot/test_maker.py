@@ -4,6 +4,7 @@ import os
 import shutil
 import sys
 import tempfile
+import time
 import unittest
 from datetime import datetime, timedelta, timezone
 
@@ -741,6 +742,33 @@ class PruebasVentasSoltadas(unittest.TestCase):
         self.assertAlmostEqual(bot.ventas_soltadas({}, bot.ej.inventario())[0][6], 0.71)
         shutil.rmtree(d)
 
+    def test_piso_de_costo_dura_unas_horas(self):
+        """Plata trabada (9-nov): con soltada_piso_horas 6 el piso de costo vale 6 h desde que la caja quedo soltada con
+        acciones; despues vende a medio + 1 tick aunque sea bajo el costo, y avisa una sola vez."""
+        d = tempfile.mkdtemp()
+        bot = self._bot(d, {"no-A": 25.0})
+        bot.cfg["maker"]["soltada_piso_horas"] = 6
+        avisos = []
+        bot.avisar = avisos.append
+        bot.est["costo"]["no-A"] = {"precio": 0.75, "acciones": 25.0}        # medio del No 0,685: 6,5 c bajo el costo
+        self.assertAlmostEqual(bot.ventas_soltadas({}, bot.ej.inventario())[0][6], 0.76)   # recien soltada: costo + 1 tick
+        self.assertIn("Z", bot.est["soltada_desde"])
+        bot.est["soltada_desde"]["Z"] = (datetime.now(timezone.utc) - timedelta(hours=5, minutes=50)).isoformat()
+        self.assertAlmostEqual(bot.ventas_soltadas({}, bot.ej.inventario())[0][6], 0.76)   # 5 h 50: todavia con piso
+        self.assertEqual(avisos, [])
+        bot.est["soltada_desde"]["Z"] = (datetime.now(timezone.utc) - timedelta(hours=6, minutes=1)).isoformat()
+        self.assertAlmostEqual(bot.ventas_soltadas({}, bot.ej.inventario())[0][6], 0.70)   # 0,685 + 0,01 -> 0,70 (arriba)
+        self.assertAlmostEqual(bot.ventas_soltadas({}, bot.ej.inventario())[0][6], 0.70)
+        self.assertEqual(len(avisos), 1)                                      # avisa una vez
+        self.assertIn("se saca el piso de costo", avisos[0])
+        self.assertEqual(bot.ventas_soltadas({"Z": {}}, bot.ej.inventario()), [])   # vuelve a elegirse: el reloj se borra
+        self.assertNotIn("Z", bot.est["soltada_desde"])
+        self.assertAlmostEqual(bot.ventas_soltadas({}, bot.ej.inventario())[0][6], 0.76)   # soltada de nuevo: piso otra vez
+        del bot.cfg["maker"]["soltada_piso_horas"]                             # sin la clave: piso siempre, como antes
+        bot.est["soltada_desde"]["Z"] = (datetime.now(timezone.utc) - timedelta(hours=30)).isoformat()
+        self.assertAlmostEqual(bot.ventas_soltadas({}, bot.ej.inventario())[0][6], 0.76)
+        shutil.rmtree(d)
+
     def test_caja_soltada_sin_meta_se_busca_por_token(self):
         d = tempfile.mkdtemp()
         bot = self._bot(d, {"no-A": 27.12})
@@ -794,6 +822,12 @@ class PruebasSinSaldo(unittest.TestCase):
         self.assertEqual(len(avisos), 1)
         bot.renovar({"A": c, "B": c2})
         self.assertEqual(len(avisos), 1)                                      # una vez por racha
+        bot.est["sin_saldo_avisado"] = False                                  # la racha se corto un ciclo (9-nov: 11 avisos)
+        bot.renovar({"A": c, "B": c2})
+        self.assertEqual(len(avisos), 1)                                      # no avisa de nuevo antes de 6 h
+        bot.est["sin_saldo_avisado"], bot.est["sin_saldo_ts"] = False, time.time() - 7 * 3600
+        bot.renovar({"A": c, "B": c2})
+        self.assertEqual(len(avisos), 2)                                      # pasadas 6 h si
         self.assertTrue(maker.Maker.es_falta_de_saldo(RuntimeError("InsufficientAllowanceError")))
         self.assertFalse(maker.Maker.es_falta_de_saldo(RuntimeError("timeout")))
         shutil.rmtree(d)

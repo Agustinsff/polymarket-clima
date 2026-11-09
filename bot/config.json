@@ -48,6 +48,7 @@
     "fusionar_pares_min": 5,
     "rotar_cada_min": 30,
     "rotar_factor": 3,
-    "rotar_dif": 2
+    "rotar_dif": 2,
+    "soltada_piso_horas": 6
   }
 }

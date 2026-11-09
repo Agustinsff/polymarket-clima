@@ -694,7 +694,8 @@ class Maker:
         # rotacion (9-nov): las cajas que ya tenemos siguen aunque se llenen de rivales (Beijing 16 °C: rec. esperada 0,15
         # US$/dia con Estambul 13 °C a 16). Cada `rotar_cada_min` (30) se mide el resto; si la mejor caja nueva espera
         # `rotar_factor` (3) veces y `rotar_dif` (2) US$/dia mas que la peor que tenemos, se suelta la peor (sus acciones
-        # se venden como en cualquier caja soltada, sin bajar del costo + 1 c) y abajo entra la mejor. Una por vez.
+        # se venden como en cualquier caja soltada, sin bajar del costo + 1 c las primeras `soltada_piso_horas`) y abajo
+        # entra la mejor. Una por vez.
         rotadas = self.est.setdefault("rotadas", {})
         for cid in [cid for cid, ts in rotadas.items() if (ahora - datetime.fromisoformat(ts)).total_seconds() > 6 * 3600]:
             del rotadas[cid]
@@ -764,9 +765,17 @@ class Maker:
     def ventas_soltadas(self, elegidas, inv):
         """Ventas post-only en las cajas que el bot ya solto pero donde todavia tiene acciones (8-nov, pedido de Agus):
         mismo precio que siempre (medio + distancia, con el libro actual) pero nunca por debajo del costo medio + 1 tick
-        (solo vende con ganancia), del tamano que tenga, sin contar como caja ni sumar capital. Se cancelan solas (renovar) cuando la caja resuelve, el evento termino o el libro no se puede leer."""
+        (solo vende con ganancia), del tamano que tenga, sin contar como caja ni sumar capital. Se cancelan solas (renovar) cuando la caja resuelve, el evento termino o el libro no se puede leer.
+        Plata trabada (9-nov, pedido de Agus): el piso de costo dura `soltada_piso_horas` (6) desde que la caja quedo
+        soltada con acciones; despues vende a medio + 1 tick, sin piso, para recuperar el efectivo y cotizar otra caja
+        (el 9-nov US$ 43 de 95 estaban en acciones y el bot cotizo 2 cajas en vez de 3). Sin la clave: piso siempre."""
         d, minimo = self.cfg["maker"]["distancia"], self.cfg["maker"].get("acciones_min_venta", 5)
+        horas_piso = self.cfg["maker"].get("soltada_piso_horas")
         ahora = datetime.now(timezone.utc)
+        desde = self.est.setdefault("soltada_desde", {})   # cid -> cuando quedo soltada con acciones
+        for viejo in [x for x in desde if x not in self.est.get("meta", {})]:   # cajas ya cobradas
+            desde.pop(viejo)
+            self.est.get("soltada_sin_piso", {}).pop(viejo, None)
         out = []
         # cajas que el bot solto antes de guardar sus datos (p. ej. Karachi, de antes del PR #46): se buscan por token
         cid_de = getattr(self.ej, "cid_de", lambda t: None)
@@ -778,11 +787,13 @@ class Maker:
                 except Exception as ex:
                     log(f"no se pudo leer la caja {cid[:10]} del CLOB: {ex!r}")
         for cid, c in list(self.est.get("meta", {}).items()):
-            if cid in elegidas or cid in self.est["resultados"]:
-                continue
             tiene = [(t, inv.get(t, 0)) for t in (c["si"], c["no"]) if inv.get(t, 0) >= minimo]
-            if not tiene:
+            if cid in elegidas or cid in self.est["resultados"] or not tiene:
+                desde.pop(cid, None)                        # volvio a elegirse, resolvio o ya no tiene acciones
+                self.est.get("soltada_sin_piso", {}).pop(cid, None)
                 continue
+            inicio = datetime.fromisoformat(desde.setdefault(cid, ahora.isoformat()))
+            sin_piso = horas_piso is not None and (ahora - inicio).total_seconds() >= 3600 * float(horas_piso)
             try:
                 if c.get("fin") and datetime.fromisoformat(c["fin"].replace("Z", "+00:00")) < ahora:
                     continue
@@ -796,9 +807,20 @@ class Maker:
             tick = c.get("tick", 0.01)
             for t, q in tiene:
                 es_si = t == c["si"]
-                p = redondear((medio if es_si else 1 - medio) + d, tick, False)
+                lado_medio = medio if es_si else 1 - medio
+                p = redondear(lado_medio + d, tick, False)
                 costo = self.est["costo"].get(t, {}).get("precio")
-                if costo:                                   # pedido de Agus 8-nov: solo si saca ganancia
+                if sin_piso:                                # paso el plazo: a 1 tick del medio, aunque sea bajo el costo
+                    p = redondear(lado_medio + tick, tick, False)
+                    avisadas = self.est.setdefault("soltada_sin_piso", {})
+                    if 0.01 <= p <= 0.99 and t not in avisadas.get(cid, []):
+                        avisadas.setdefault(cid, []).append(t)
+                        txt = (f"{c.get('evento', '')} {c.get('caja', '')}: {q:.0f} acc. sin vender hace {float(horas_piso):g} h "
+                               f"en caja soltada; se saca el piso de costo ({costo if costo else '?'}) y se venden a {p} "
+                               f"(medio {lado_medio:.3f}) para liberar la plata")
+                        log(txt)
+                        self.avisar(f"Maker ({self.modo}): {txt}.")
+                elif costo:                                 # pedido de Agus 8-nov: solo si saca ganancia
                     p = max(p, redondear(costo + tick, tick, False))
                 if 0.01 <= p <= 0.99:
                     out.append((cid, c.get("evento", ""), c.get("caja", ""), round(medio, 4), t, "SELL", p, math.floor(q * 100) / 100, es_si))
@@ -947,13 +969,17 @@ class Maker:
         if sin_saldo:
             # no es un error del bot: el efectivo esta en acciones sin vender. Se avisa una vez por racha y se reintenta
             # cada ciclo (en cuanto se vende algo o resuelve una caja, vuelve a comprar).
-            if not self.est.get("sin_saldo_avisado"):
-                self.est["sin_saldo_avisado"] = True
+            # (9-nov: la racha se cortaba en cada ciclo sin compras nuevas y el aviso salia de nuevo, 11 veces en 12 h:
+            # ademas de una vez por racha, no mas de una cada `sin_saldo_aviso_horas`, 6)
+            espera = 3600 * float(self.cfg["maker"].get("sin_saldo_aviso_horas", 6))
+            if not self.est.get("sin_saldo_avisado") and time.time() - self.est.get("sin_saldo_ts", 0) >= espera:
+                self.est["sin_saldo_ts"] = time.time()
                 e = self.est.get("efectivo", {})
                 log(f"sin efectivo libre para {len(sin_saldo)} compra(s) ({', '.join(sin_saldo)}): libre US$ {e.get('libre')}, "
                     f"en acciones al costo {e.get('acciones_costo')}, reservado en compras {e.get('reservado')}")
                 self.avisar(f"Maker ({self.modo}): sin efectivo libre para {len(sin_saldo)} compra(s) (libre US$ {e.get('libre')}; "
                             f"la plata esta en acciones sin vender). Sigue con las demas ordenes.")
+            self.est["sin_saldo_avisado"] = True
         else:
             self.est["sin_saldo_avisado"] = False
         return errores

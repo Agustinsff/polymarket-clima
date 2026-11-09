@@ -131,6 +131,20 @@ con lo que el bot quedaba sin órdenes todo el día. El "resultado del día" del
 todo, y el freno TOTAL (`max_perdida_total`, −30) sigue contando las resoluciones. Cuando una caja resuelve con −3 o
 peor (`avisar_resuelta_c`) avisa por ntfy con el total al costo. `true` (o borrar la línea) vuelve a la cuenta anterior.
 
+**Plata trabada: el piso de costo dura 6 horas (9-nov-2026, pedido de Agus).** En una caja soltada el bot vendía lo que
+le quedaba sin bajar del costo + 1 ¢, sin plazo. El 9-nov US$ 43 de los 95 quedaron así en acciones y el bot cotizó 2
+cajas en vez de 3 durante horas (recompensa estimada ≈ 6 contra 9,95 del día anterior). Medido con las 5 posiciones
+que había al aplicar la regla de 24 h: mantener con piso contra vender a mercado en ese momento dio Lucknow +10,2, Seúl
++5,6, Tel Aviv +0,6, Nueva York −9,7, Tokio −0,2; en precio es una moneda al aire, lo que cuesta es la plata quieta.
+Ahora `soltada_piso_horas` (6): el piso vale ese tiempo desde que la caja quedó soltada con acciones (`soltada_desde`
+en el estado); después vende a medio + 1 tick, sin piso, y avisa por ntfy una vez por caja y lado. Si la caja vuelve a
+elegirse el reloj se borra. Al arrancar con este cambio las cajas ya soltadas empiezan sus 6 horas de cero. Una venta
+así puede disparar la ALERTA de "venta bajo el costo": es esperado. Sin la clave en la config: piso siempre, como antes.
+
+**Aviso "sin efectivo libre" (9-nov-2026).** La racha se cortaba en cualquier ciclo sin compras nuevas y el aviso volvía
+a salir (11 veces en 12 horas). Ahora, además de una vez por racha, no sale más de una vez cada `sin_saldo_aviso_horas`
+(6).
+
 **Alertas de casos raros (8-nov-2026, pedido de Agus).** Además del aviso de cada llenado, el bot manda por ntfy mensajes que
 empiezan con "ALERTA" (solo avisan, no cambian ninguna orden): (1) `alerta_escalera` (3) compras seguidas del mismo token,
 cada una más barata que la anterior (medio tick o más, dentro de 3 h; una venta o una compra más cara corta la escalera):
