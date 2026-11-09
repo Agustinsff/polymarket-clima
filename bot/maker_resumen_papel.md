@@ -1,13 +1,13 @@
-# Maker (papel) — 2026-11-09 11:46Z
+# Maker (papel) — 2026-11-09 12:41Z
 
-- Cajas ahora: 3: 17°C (highest-temperature-in-chengdu-on-november-10-2026, medio 0.38, rec. esp. 1.101/día), 6°C (highest-temperature-in-helsinki-on-november-10-2026, medio 0.54, rec. esp. 20.447/día), 17°C (highest-temperature-in-busan-on-november-10-2026, medio 0.56, rec. esp. 1.455/día)
+- Cajas ahora: 2: 19°C (highest-temperature-in-wellington-on-november-11-2026, medio 0.405, rec. esp. 0.33/día), 84-85°F (highest-temperature-in-miami-on-november-11-2026, medio 0.55, rec. esp. 1.381/día)
 - Recompensas cobradas (lo que dice Polymarket; en papel, estimadas): US$ 67.44 en 5 días: 2026-11-04 5.99, 2026-11-05 15.71, 2026-11-06 16.27, 2026-11-07 13.89, 2026-11-08 15.58
-- Estimación por fórmula (pesimista): 2026-11-04 5.99, 2026-11-05 15.71, 2026-11-06 16.27, 2026-11-07 13.89, 2026-11-08 15.58, 2026-11-09 7.25
+- Estimación por fórmula (pesimista): 2026-11-04 5.99, 2026-11-05 15.71, 2026-11-06 16.27, 2026-11-07 13.89, 2026-11-08 15.58, 2026-11-09 7.46
 - Llenados: 32 (249 acciones); cajas resueltas: 4.
 - Resultado del día (hora de Uruguay, ventas al costo de ese momento + cajas resueltas): US$ +1.75; freno diario en −10. La recompensa diaria la informa Polymarket por día UTC.
-- Resultado realizado de los llenados (cobros − compras + ventas): US$ -30.79; contando las acciones en cartera al costo: US$ +0.68. Capital puesto ahora: US$ 65.97.
-- Efectivo libre para comprar: US$ 34.03 (en la cuenta 68.53, reservado en compras 34.50; sin tope: reinvierte lo que gana).
+- Resultado realizado de los llenados (cobros − compras + ventas): US$ -30.79; contando las acciones en cartera al costo: US$ +0.68. Capital puesto ahora: US$ 79.22.
+- Efectivo libre para comprar: US$ 20.78 (en la cuenta 68.53, reservado en compras 47.75; sin tope: reinvierte lo que gana).
 - Neto = recompensas + realizado: US$ +68.12.
-- A PRECIO DE MERCADO (lo que muestra la web): acciones US$ 29.22 (al costo 31.47); llenados US$ -1.57; neto con recompensas US$ +65.87; cuenta = efectivo + acciones = US$ 97.75.
-- Filtro de movimiento (sin compras): 6°C (highest-temperature-in-helsinki-on-november-10-2026, -7.5 c desde 11:43Z).
+- A PRECIO DE MERCADO (lo que muestra la web): acciones US$ 29.35 (al costo 31.47); llenados US$ -1.44; neto con recompensas US$ +66.00; cuenta = efectivo + acciones = US$ 97.88.
+- Filtro de movimiento (sin compras): ninguna caja.
 - Freno: no.
