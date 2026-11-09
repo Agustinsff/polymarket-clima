@@ -31,7 +31,7 @@
     "acciones_min": 25,
     "distancia": 0.02,
     "spread_max": 0.05,
-    "horas_min_fin": 3,
+    "horas_min_fin": 24,
     "ciclo_seg": 60,
     "apagar_despues_de": "2026-11-30 23:59",
     "max_perdida_dia": 10,

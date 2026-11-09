@@ -132,6 +132,14 @@ medio (los llenados parciales de la misma venta no repiten en 30 min). (3) pérd
 Con los llenados del 8-nov hubieran saltado: escalera en Chengdu 17 °C (05:43Z) y Moscú 4 °C (06:34Z), ventas bajo el
 costo en Moscú, Múnich y Tokio 14 °C, y la de pérdida del día a las 13:32Z (−7,5), antes del freno.
 
+**Solo cajas que cierran en 24 h o más (9-nov-2026, Agus eligió 01:47Z).** Midiendo cada llenado desde el 7-nov contra
+el precio final (o el actual si la caja no cerró) según las horas que faltaban para el cierre: menos de 12 h −32,3 US$
+(75 llenados), 12–24 h −20,8 (67), 24–36 h +22,8 (10), más de 36 h +2,7 (17). Todas las pérdidas grandes (Tokio 14 °C,
+Lucknow, Moscú, Seúl, Múnich) fueron cajas del mismo día: el precio salta con cada METAR y ganan los que lo leen en
+segundos. `horas_min_fin` pasa de 3 a 24: el bot solo elige cajas cuyo evento cierra en 24 h o más; las que ya tiene y
+entran en sus últimas 24 h se sueltan (sin compras, vende el inventario sin bajar del costo + 1 ¢). El pozo de recompensa
+no se achica: cajas a 24–48 h ≈ US$ 7.150/día contra ≈ 6.650 las del mismo día (9-nov).
+
 **Cajas sin compras a mano: `bot/SIN_COMPRAS.txt` (8-nov-2026).** La palanca rápida ante una ALERTA de escalera: cada
 línea es un pedazo del evento, de la caja o del condition_id (sin importar mayúsculas; `#` comenta). Esas cajas dejan de
 poner compras y siguen vendiendo el inventario, igual que el filtro de movimiento. Se relee en cada ciclo (sin reiniciar),
