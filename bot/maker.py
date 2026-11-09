@@ -698,9 +698,14 @@ class Maker:
                            key=lambda c: -c["pozo"])[:60]
             ok = [c for c in resto if medir_libro(c, self.cfg, self.m) and c["tam"] <= k["capital_usd"] / k["cajas"]
                   and not self.decidida(c, ahora)]
-            if ok:
+            # solo se rota una caja sin acciones en mano (9-nov: Shenzhen 25 °C quedo con 25 No al rotar, sin poder
+            # venderse bajo el costo, y el bot quedo con 2 cajas por falta de efectivo); con acciones sigue activa y vende
+            inv = self.ej.inventario()
+            minimo = k.get("acciones_min_venta", 5)
+            libres = [c for c in elegidas.values() if inv.get(c["si"], 0) < minimo and inv.get(c["no"], 0) < minimo]
+            if ok and libres:
                 mejor = max(ok, key=lambda c: c["rec_pes"])
-                peor = min(elegidas.values(), key=lambda c: c.get("rec_pes", 0))
+                peor = min(libres, key=lambda c: c.get("rec_pes", 0))
                 r_peor = peor.get("rec_pes", 0)
                 if mejor["rec_pes"] >= max(k.get("rotar_factor", 3) * r_peor, r_peor + k.get("rotar_dif", 2)):
                     del elegidas[peor["cid"]]
@@ -714,6 +719,12 @@ class Maker:
             # plata libre para cajas nuevas: efectivo real menos lo que ya esta en juego (las cajas que siguen no se
             # sueltan por esto, para no perder el lugar en la fila; solo no se agregan cajas que no se pueden cotizar)
             libre, _, _ = self.efectivo_libre()
+            # las compras abiertas de cajas que se sueltan en este ciclo se cancelan en renovar: su plata cuenta como
+            # libre (9-nov 12:00Z: vencieron juntas las 3 cajas del dia siguiente y el bot quedo un ciclo sin cajas)
+            if libre is not None:
+                tokens = {t for c in elegidas.values() for t in (c["si"], c["no"])}
+                libre = round(libre + sum(o["precio"] * o["acciones"] for o in self.ej.abiertas()
+                                          if o["lado"] == "BUY" and o["token"] not in tokens), 2)
             resto = sorted((c for cid, c in cand.items() if cid not in elegidas and cid not in rotadas),
                            key=lambda c: -c["pozo"])[:60]
             ok = [c for c in resto if medir_libro(c, self.cfg, self.m)]

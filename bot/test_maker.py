@@ -97,6 +97,11 @@ class Pruebas(unittest.TestCase):
         self.m.libros["si-A"] = ([(0.31, 5000), (0.30, 100)], [(0.32, 5000)])      # A se llena de rivales
         self.assertEqual(list(self.bot.elegir(AHORA + timedelta(minutes=1))), ["A"])   # sin rotacion hace < 30 min
         self.assertEqual(list(self.bot.elegir(AHORA + timedelta(minutes=10))), ["A"])
+        # con acciones en mano en A no rota (seguiria vendiendo como caja activa)
+        self.bot.ej.est["inventario"]["no-A"] = 25.0
+        self.assertEqual(list(self.bot.elegir(AHORA + timedelta(minutes=31))), ["A"])
+        self.bot.ej.est["inventario"]["no-A"] = 0.0
+        self.bot.est["rotacion_ts"] = AHORA.isoformat()
         el = self.bot.elegir(AHORA + timedelta(minutes=31))
         self.assertEqual(list(el), ["B"])
         self.assertIn("A", self.bot.est["rotadas"])
@@ -842,6 +847,15 @@ class PruebasEfectivo(unittest.TestCase):
         self.assertEqual(bot.elegir(AHORA), {})                               # la caja A necesita 25 x 0,96 = 24
         bot.ej.est["inventario"]["si-Z"] = 200.0                              # 100 en acciones -> 50 libres
         self.assertEqual(list(bot.elegir(AHORA)), ["A"])
+        shutil.rmtree(d)
+
+
+    def test_compras_de_cajas_soltadas_cuentan_como_libres(self):
+        """9-nov 12:00Z: al vencer las cajas del dia siguiente, sus compras abiertas (que renovar cancela en ese mismo
+        ciclo) no tienen que trabar la entrada de cajas nuevas."""
+        bot, puestas, d = self._bot(30.0, abiertas=[{"id": "x", "token": "si-Z", "lado": "BUY", "precio": 0.5, "acciones": 25}])
+        self.assertEqual(list(bot.elegir(AHORA)), ["A"])                     # 30 - 12,5 reservados = 17,5 no alcanza
+        self.assertEqual(bot.est["efectivo"]["libre"], 17.5)                  # pero Z no esta elegida: cuenta como libre
         shutil.rmtree(d)
 
 
