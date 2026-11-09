@@ -655,6 +655,37 @@ class PruebasFreno(unittest.TestCase):
         self.assertAlmostEqual(valor, 4.1 + 6.0, places=2)                    # T1 al medio 0,41; T2 sin libro: al costo
         shutil.rmtree(d)
 
+    def test_freno_diario_sin_cajas_resueltas(self):
+        """Con freno_dia_cuenta_resueltas en false una caja que resuelve en contra (Nueva York 9-nov, -11,97) no frena el
+        dia; las ventas del dia si, y el freno total sigue contando la resolucion."""
+        import types
+        d = tempfile.mkdtemp()
+        inv = {"T1": 0.0, "T2": 50.0}
+        ej = types.SimpleNamespace(inventario=lambda: dict(inv), abiertas=lambda: [], llenados=lambda: [],
+                                   cancelar_todo=lambda: None, nombre="real")
+        bot = maker.Maker(cfg(modo="real", max_perdida_dia=10, freno_dia_cuenta_resueltas=False), m=MercadoFalso(),
+                          carpeta=d, ej=ej)
+        hoy = AHORA.strftime("%Y-%m-%d")
+        bot.anotar(momento_utc="2026-11-01 10:00:00", modo="real", evento="e", caja="c", condition_id="A", token="T1",
+                   lado="BUY", precio=0.4058, acciones=29.5, medio="", detalle="")
+        bot.est["resultados"]["A"] = {"dia": hoy, "gano": "Yes", "cobrado": 0, "costo": 11.97, "caja": "c", "evento": "e"}
+        self.assertAlmostEqual(bot.pnl(hoy), -11.97, places=2)                # el resultado del dia la sigue mostrando
+        self.assertAlmostEqual(bot.perdida_dia_freno(hoy), 0.0, places=2)     # pero el freno diario no la cuenta
+        self.assertIsNone(bot.freno(AHORA))
+        self.assertAlmostEqual(bot.pnl(), -11.97, places=2)                   # y el total si
+        bot.anotar(momento_utc="2026-11-01 11:00:00", modo="real", evento="e", caja="c2", condition_id="B", token="T2",
+                   lado="BUY", precio=0.50, acciones=100, medio="", detalle="")
+        bot.est["costo"]["T2"] = {"precio": 0.50, "acciones": 50}
+        bot.anotar(momento_utc=f"{hoy} 09:00:00", modo="real", evento="e", caja="c2", condition_id="B", token="T2",
+                   lado="SELL", precio=0.29, acciones=50, medio="", detalle="")
+        self.assertAlmostEqual(bot.perdida_dia_freno(hoy), -10.5, places=2)   # ventas del dia: 50 * (0.29 - 0.50)
+        self.assertIn("perdida del dia -10.50", bot.freno(AHORA))
+        bot.cfg["maker"]["freno_dia_cuenta_resueltas"] = True                 # como antes: cuenta todo
+        self.assertAlmostEqual(bot.perdida_dia_freno(hoy), -22.47, places=2)
+        bot.cfg["maker"]["max_perdida_total"] = 20                            # el total frena con resolucion + ventas
+        self.assertEqual(bot.freno(AHORA), "perdida total")
+        shutil.rmtree(d)
+
     def test_dia_en_hora_de_uruguay(self):
         """El 'dia' del freno es el de Uruguay (UTC-3): una venta a las 02:30Z del 9-nov cuenta para el 8-nov local."""
         import types

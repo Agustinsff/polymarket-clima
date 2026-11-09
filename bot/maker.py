@@ -517,13 +517,14 @@ class Maker:
             cuando = datetime.strptime(cuando[:19], "%Y-%m-%d %H:%M:%S").replace(tzinfo=timezone.utc)
         return cuando.astimezone(self.zona_dia()).strftime("%Y-%m-%d")
 
-    def pnl(self, dia=None, inventario=True):
+    def pnl(self, dia=None, inventario=True, resueltas=True):
         """Resultado total: cobros de cajas resueltas menos lo pagado por las acciones (ventas cuentan como cobro) MAS, si
         inventario, las acciones que todavia se tienen valuadas al costo medio pagado. Sin eso una compra sin resolver
         contaba como perdida y el freno saltaba (7-nov en real: "perdida -40,74" que eran US$ 40 en acciones en cartera).
         Con dia: resultado DEL DIA = ventas del dia al costo medio (q * (precio - costo)) + cajas resueltas ese dia
         (cobrado - costo de lo que se tenia). Las compras del dia no cuentan (son acciones al costo), y una caja que
-        resuelve en contra cuenta ese dia aunque las acciones se hayan comprado antes."""
+        resuelve en contra cuenta ese dia aunque las acciones se hayan comprado antes. Con resueltas=False las cajas
+        resueltas ese dia no se suman: queda solo lo que el bot gano o perdio VENDIENDO (ver perdida_dia_freno)."""
         total = 0.0
         if dia:
             # cada venta se mide contra el costo medio QUE TENIA el token en ese momento, reconstruido repasando las
@@ -544,7 +545,7 @@ class Maker:
                         total += q * (p - c[1])
                     c[0] = max(c[0] - q, 0.0)
             for r in self.est["resultados"].values():
-                if r.get("dia") == dia:
+                if resueltas and r.get("dia") == dia:
                     total += r.get("cobrado", 0) - r.get("costo", 0)
             return round(total, 2)
         for o in self.ops():
@@ -613,6 +614,14 @@ class Maker:
         log(f"FRENO: {motivo}")
         self.avisar(f"Maker ({self.modo}) FRENADO: {motivo}. Ordenes canceladas. Para volver: borrar bot/PARAR_maker_{self.modo}.")
 
+    def perdida_dia_freno(self, dia):
+        """Resultado del dia que mira el freno diario (y su alerta). Con freno_dia_cuenta_resueltas en false (decision de
+        Agus 9-nov) solo cuentan las ventas del dia: una caja que resuelve en contra no frena el bot, porque esa caja ya
+        no puede perder mas y frenar solo deja sin cotizar (y sin recompensa) al resto. Caso: Nueva York 58-59 F del
+        9-nov, 29,5 No comprados el 8-nov a 0,41, resuelve el 10-nov 02:30 de Uruguay con -11,97: sola pasaba el freno
+        de -10 y dejaba al bot sin ordenes todo el dia. El freno TOTAL (max_perdida_total) sigue contando todo."""
+        return self.pnl(dia, resueltas=self.cfg["maker"].get("freno_dia_cuenta_resueltas", True))
+
     def frenado(self):
         for f in (self.f_parar, self.f_parar_auto):
             if os.path.exists(f):
@@ -630,10 +639,10 @@ class Maker:
             self.parar(f"perdida total {self.pnl():.2f} llego al tope {r['max_perdida_total']}")
             return "perdida total"
         dia = self.dia_local(ahora)
-        if self.pnl(dia) <= -r["max_perdida_dia"]:
+        if self.perdida_dia_freno(dia) <= -r["max_perdida_dia"]:
             local = ahora.astimezone(self.zona_dia())
             manana = (local + timedelta(days=1)).replace(hour=0, minute=0, second=0, microsecond=0)
-            motivo = (f"perdida del dia {self.pnl(dia):.2f} en el tope (sigue a las 00:00 de Uruguay, "
+            motivo = (f"perdida del dia {self.perdida_dia_freno(dia):.2f} en el tope (sigue a las 00:00 de Uruguay, "
                       f"{manana.astimezone(timezone.utc):%H:%M}Z)")
             if self.est.get("aviso_freno_dia") != dia:                 # un aviso por dia al celular (8-nov: paso sin verse)
                 self.est["aviso_freno_dia"] = dia
@@ -1023,7 +1032,7 @@ class Maker:
             return
         ahora = ahora or datetime.now(timezone.utc)
         dia = self.dia_local(ahora)
-        d = self.pnl(dia)
+        d = self.perdida_dia_freno(dia)
         if d <= -frac * r["max_perdida_dia"] and self.est.get("alerta_dia") != dia:
             self.est["alerta_dia"] = dia
             self.avisar(f"ALERTA Maker ({self.modo}): perdida del dia {d:+.2f} (hora de Uruguay), cerca del freno de "
@@ -1125,6 +1134,13 @@ class Maker:
                         evento=c["evento"], caja=c["caja"], condition_id=cid, lado="cobro", precio=1, acciones=round(cobrado, 2),
                         detalle=f"gano {g}")
             log(f"cobrado {cobrado:.2f} en {c['caja']} ({c['evento']}, gano {g})")
+            res = cobrado - costo
+            if res <= -float(self.cfg["maker"].get("avisar_resuelta_c", 3)) \
+                    and not self.cfg["maker"].get("freno_dia_cuenta_resueltas", True):
+                # la perdida ya no frena el dia: que al menos se vea en el celular, con lo que queda hasta el freno total
+                self.avisar(f"Maker ({self.modo}): {c['evento']} {c['caja']} resolvio en contra, {res:+.2f} (gano {g}). "
+                            f"No frena el dia. Total al costo {self.pnl():+.2f}, freno total en "
+                            f"-{self.cfg['maker']['max_perdida_total']}.")
         # las cajas cuyo evento ya termino se sueltan (sin ordenes), aunque no se haya resuelto todavia
         ahora = datetime.now(timezone.utc)
         for cid, c in list(self.est["cajas"].items()):

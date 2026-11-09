@@ -123,6 +123,14 @@ repasa las operaciones en orden y mide cada venta contra el costo medio que ten�
 registros siguen en UTC; la recompensa diaria la informa Polymarket por día UTC (sin cambio). Cuando salta el freno diario
 manda un aviso por ntfy (una vez por día).
 
+**El freno diario no cuenta cajas resueltas (9-nov-2026, decisión de Agus).** `freno_dia_cuenta_resueltas: false`: el
+freno diario (y su alerta al 70 %) mira solo lo que el bot perdió VENDIENDO ese día (`perdida_dia_freno`). Una caja que
+resuelve en contra ya no puede perder más, y frenar por ella solo deja sin cotizar al resto: Nueva York 58–59 °F del
+9-nov (29,5 No comprados el 8-nov a 0,41) resolvía el 10-nov 02:30 de Uruguay con −11,97 y sola pasaba el freno de −10,
+con lo que el bot quedaba sin órdenes todo el día. El "resultado del día" del resumen y del "sigo vivo" sigue mostrando
+todo, y el freno TOTAL (`max_perdida_total`, −30) sigue contando las resoluciones. Cuando una caja resuelve con −3 o
+peor (`avisar_resuelta_c`) avisa por ntfy con el total al costo. `true` (o borrar la línea) vuelve a la cuenta anterior.
+
 **Alertas de casos raros (8-nov-2026, pedido de Agus).** Además del aviso de cada llenado, el bot manda por ntfy mensajes que
 empiezan con "ALERTA" (solo avisan, no cambian ninguna orden): (1) `alerta_escalera` (3) compras seguidas del mismo token,
 cada una más barata que la anterior (medio tick o más, dentro de 3 h; una venta o una compra más cara corta la escalera):
