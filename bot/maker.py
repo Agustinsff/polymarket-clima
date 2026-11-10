@@ -622,6 +622,17 @@ class Maker:
         de -10 y dejaba al bot sin ordenes todo el dia. El freno TOTAL (max_perdida_total) sigue contando todo."""
         return self.pnl(dia, resueltas=self.cfg["maker"].get("freno_dia_cuenta_resueltas", True))
 
+    def perdida_total_freno(self):
+        """Resultado que mira el freno TOTAL. Con freno_total_con_recompensas en true (decision de Agus 10-nov) son los
+        llenados al costo MAS las recompensas diarias cobradas (las que informa Polymarket y anota `recompensas`): el
+        10-nov los llenados iban en -26,76, a 3 del freno de -30, con 17,22 cobrados en recompensas y la cuenta a 1,5
+        de lo depositado. El freno estaba por apagar un bot que casi no perdia. Los reembolsos de comision no entran
+        (el bot no los lee). Sin la clave o en false: solo llenados, como antes."""
+        total = self.pnl()
+        if self.cfg["maker"].get("freno_total_con_recompensas"):
+            total += sum(float(v) for k, v in self.est.get("recompensas", {}).items() if k != "estimada")
+        return round(total, 2)
+
     def frenado(self):
         for f in (self.f_parar, self.f_parar_auto):
             if os.path.exists(f):
@@ -635,8 +646,9 @@ class Maker:
             return f"freno activo ({self.frenado()})"
         if ahora.strftime("%Y-%m-%d %H:%M") > r["apagar_despues_de"]:
             return f"fecha de apagado {r['apagar_despues_de']}"
-        if self.pnl() <= -r["max_perdida_total"]:
-            self.parar(f"perdida total {self.pnl():.2f} llego al tope {r['max_perdida_total']}")
+        if self.perdida_total_freno() <= -r["max_perdida_total"]:
+            con = " (llenados + recompensas)" if r.get("freno_total_con_recompensas") else ""
+            self.parar(f"perdida total{con} {self.perdida_total_freno():.2f} llego al tope {r['max_perdida_total']}")
             return "perdida total"
         dia = self.dia_local(ahora)
         if self.perdida_dia_freno(dia) <= -r["max_perdida_dia"]:
@@ -1169,8 +1181,8 @@ class Maker:
                     and not self.cfg["maker"].get("freno_dia_cuenta_resueltas", True):
                 # la perdida ya no frena el dia: que al menos se vea en el celular, con lo que queda hasta el freno total
                 self.avisar(f"Maker ({self.modo}): {c['evento']} {c['caja']} resolvio en contra, {res:+.2f} (gano {g}). "
-                            f"No frena el dia. Total al costo {self.pnl():+.2f}, freno total en "
-                            f"-{self.cfg['maker']['max_perdida_total']}.")
+                            f"No frena el dia. Total al costo {self.pnl():+.2f}, para el freno total "
+                            f"{self.perdida_total_freno():+.2f} (tope -{self.cfg['maker']['max_perdida_total']}).")
         # las cajas cuyo evento ya termino se sueltan (sin ordenes), aunque no se haya resuelto todavia
         ahora = datetime.now(timezone.utc)
         for cid, c in list(self.est["cajas"].items()):
@@ -1326,7 +1338,9 @@ class Maker:
                f"Capital puesto ahora: US$ {self.capital_puesto():.2f}.",
                f"- Efectivo libre para comprar: {'?' if libre is None else f'US$ {libre:.2f}'} (en la cuenta "
                f"{'?' if cuenta is None else f'{cuenta:.2f}'}, reservado en compras {reservado:.2f}; sin tope: reinvierte lo que gana).",
-               f"- Neto = recompensas + realizado: US$ {sum(cobradas.values()) + self.pnl():+.2f}.",
+               f"- Neto = recompensas + realizado: US$ {sum(cobradas.values()) + self.pnl():+.2f}. "
+               f"Para el freno total: US$ {self.perdida_total_freno():+.2f} (tope −{self.cfg['maker']['max_perdida_total']}"
+               f"{', cuenta llenados + recompensas' if self.cfg['maker'].get('freno_total_con_recompensas') else ', solo llenados'}).",
                f"- A PRECIO DE MERCADO (lo que muestra la web): acciones US$ {valor:.2f} (al costo {costo_inv:.2f}); llenados "
                f"US$ {self.pnl(inventario=False) + valor:+.2f}; neto con recompensas US$ {sum(cobradas.values()) + self.pnl(inventario=False) + valor:+.2f}; "
                f"cuenta = efectivo + acciones = US$ {('?' if cuenta is None else f'{cuenta + valor:.2f}')}.",
