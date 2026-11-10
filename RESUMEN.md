@@ -1,6 +1,6 @@
 # Resumen polymarket-clima
 
-_Actualizado: 2026-11-10 10:10 (Montevideo). Todo es **en papel**: no se usa plata real._
+_Actualizado: 2026-11-10 10:27 (Montevideo). Todo es **en papel**: no se usa plata real._
 
 ## Estado de las tareas
 
@@ -62,54 +62,54 @@ Nota: las operaciones de Ciudad del Cabo del 18-oct se hicieron con la regla vie
 
 ## Pronóstico vs. mercado (todas las ciudades, día anterior)
 
-Puntaje Brier (más bajo = mejor) en 8248 cajas liquidadas: **modelo 0.0878** vs **mercado 0.0724**.
-Series donde el modelo le gana al mercado (≥5 días): mín dallas (5 días), mín karachi (13 días), mín chengdu (6 días), mín mexico-city (6 días), mín chicago (7 días), máx dallas (17 días), máx buenos-aires (17 días), máx atlanta (17 días).
+Puntaje Brier (más bajo = mejor) en 8763 cajas liquidadas: **modelo 0.0873** vs **mercado 0.0727**.
+Series donde el modelo le gana al mercado (≥5 días): mín karachi (14 días), mín dallas (6 días), mín chengdu (6 días), mín tel-aviv (7 días), mín mexico-city (7 días), mín chicago (8 días), máx dallas (18 días), mín hong-kong (18 días), máx buenos-aires (18 días), mín sao-paulo (12 días), mín milan (10 días).
 
 | Modo | Serie calibrada | Liquidadas | Ganadas | Neto (10 acc. c/u) | Pendientes |
 |---|---|---|---|---|---|
-| taker | sí | 1555 | 592 | US$-738.86 | 583 |
+| taker | sí | 1750 | 676 | US$-743.01 | 507 |
 | taker | no | 1830 | 735 | US$-566.68 | 0 |
-| maker | sí | 441 | 52 | US$-175.56 | 9516 |
+| maker | sí | 441 | 52 | US$-175.56 | 10032 |
 | maker | no | 7591 | 856 | US$-1577.04 | 110 |
-| cola_taker | sí | 819 | 17 | US$-124.95 | 285 |
+| cola_taker | sí | 913 | 21 | US$-122.25 | 251 |
 | cola_taker | no | 1195 | 37 | US$-24.20 | 0 |
-| cola_maker | sí | 83 | 2 | US$-8.88 | 1904 |
+| cola_maker | sí | 83 | 2 | US$-8.88 | 1999 |
 | cola_maker | no | 1299 | 32 | US$-78.78 | 19 |
 
-Taker en total: US$-1454.69. _Con la comisión vieja (0,05 para todo) sería US$-1627.24._
+Taker en total: US$-1456.15. _Con la comisión vieja (0,05 para todo) sería US$-1628.69._
 
 _Taker = compra al instante pagando comisión. Maker = orden en el libro, solo cuenta si alguien la habría tomado (sin comisión). Cola = cajas de ≤10 ¢ a las que el modelo les da ≥2,5 veces el precio. no80_90 = comprar el No de cajas todavía posibles que cotizan 10–20 ¢ (solo en el pronóstico del mismo día)._
 
 ## Pronóstico del mismo día (12 y 15 hs locales la máxima, 9 hs la mínima)
 
-Puntaje Brier (más bajo = mejor) en 5188 cajas liquidadas: **modelo 0.0932** vs **mercado 0.0735**.
-Series donde el modelo le gana al mercado (≥5 días): mín denver (9 días), máx buenos-aires (19 días), mín cape-town (5 días), máx atlanta (19 días), mín sao-paulo (11 días), mín ankara (8 días), mín munich (9 días), mín seattle (11 días), mín houston (10 días), mín mexico-city (13 días), mín chongqing (12 días), mín guangzhou (11 días), mín austin (14 días), mín dallas (7 días), mín shenzhen (10 días), mín moscow (8 días), mín karachi (6 días), mín san-francisco (10 días), mín wuhan (9 días), mín busan (6 días), mín istanbul (11 días), mín buenos-aires (5 días), mín toronto (6 días).
+Puntaje Brier (más bajo = mejor) en 5463 cajas liquidadas: **modelo 0.0933** vs **mercado 0.0738**.
+Series donde el modelo le gana al mercado (≥5 días): mín denver (10 días), máx buenos-aires (20 días), mín cape-town (6 días), mín sao-paulo (12 días), mín ankara (8 días), mín houston (11 días), mín seattle (12 días), mín moscow (9 días), mín mexico-city (13 días), mín dallas (8 días), mín munich (10 días), mín austin (15 días), mín guangzhou (12 días), mín shenzhen (11 días), mín karachi (7 días), mín san-francisco (11 días), mín chongqing (13 días), mín wuhan (10 días), mín busan (7 días), máx atlanta (20 días), mín toronto (7 días), mín istanbul (12 días), mín buenos-aires (5 días), mín milan (10 días).
 
 | Modo | Serie calibrada | Liquidadas | Ganadas | Neto (10 acc. c/u) | Pendientes |
 |---|---|---|---|---|---|
-| taker | no | 1657 | 380 | US$-900.73 | 215 |
+| taker | no | 1735 | 396 | US$-956.09 | 137 |
 | maker | no | 3169 | 382 | US$-397.61 | 2798 |
-| cola_taker | no | 816 | 19 | US$-111.91 | 110 |
+| cola_taker | no | 854 | 19 | US$-125.65 | 72 |
 | cola_maker | no | 1074 | 21 | US$-76.63 | 927 |
-| no80_90 | no | 654 | 459 | US$-1060.07 | 117 |
+| no80_90 | no | 702 | 490 | US$-1164.81 | 69 |
 
-Taker en total: US$-2072.72. _Con la comisión vieja (0,05 para todo) sería US$-2161.81._
+Taker en total: US$-2246.56. _Con la comisión vieja (0,05 para todo) sería US$-2335.65._
 
 _Taker = compra al instante pagando comisión. Maker = orden en el libro, solo cuenta si alguien la habría tomado (sin comisión). Cola = cajas de ≤10 ¢ a las que el modelo les da ≥2,5 veces el precio. no80_90 = comprar el No de cajas todavía posibles que cotizan 10–20 ¢ (solo en el pronóstico del mismo día)._
 
 ## Cripto en papel (Bitcoin / Ethereum: above, rango y toca; modelo de opciones)
 
-Operaciones: 460 (443 liquidadas, 166 ganadas). **Neto US$+40.93** sobre US$1576.96 invertidos (ROI +2.6 %). _Con la comisión vieja (0,05 para todo) sería US$+52.04._
-Brier en 1600 strikes: modelo 0.1384 vs mercado 0.1345.
+Operaciones: 460 (449 liquidadas, 169 ganadas). **Neto US$+38.82** sobre US$1608.54 invertidos (ROI +2.4 %). _Con la comisión vieja (0,05 para todo) sería US$+50.08._
+Brier en 1621 strikes: modelo 0.1369 vs mercado 0.1331.
 
 | Activo | Tipo | Liquidadas | Neto |
 |---|---|---|---|
 | BTC | above | 57 | US$+35.30 |
 | BTC | rango | 93 | US$+28.22 |
-| BTC | toca | 117 | US$-56.49 |
+| BTC | toca | 121 | US$-58.87 |
 | ETH | above | 37 | US$-9.37 |
 | ETH | rango | 66 | US$-5.68 |
-| ETH | toca | 73 | US$+48.95 |
+| ETH | toca | 75 | US$+49.22 |
 
 _Regla fija: comprar el lado que el modelo ve ≥5 puntos más barato, a 48/24/12/6/3/1 h del cierre (18/12/6/3/1 h en 'toca'), 10 acciones al precio real del libro, con comisión. Backtest may-oct: +6,7 % con 1 ¢ de deslizamiento (Ethereum +17 %, Bitcoin ~0 %)._
 
@@ -123,6 +123,6 @@ Prueba SP: 13 operaciones; como maker se habrían llenado 11, neto **US$-12.35**
 
 ## Recompensas de liquidez (estimación, últimas 24 h)
 
-- Buenos Aires: ~US$38/día con 100 acciones a 1 ¢ en todas las cajas del mercado de mañana (sin contar pérdidas por quedar 'tomado').
+- Buenos Aires: ~US$39/día con 100 acciones a 1 ¢ en todas las cajas del mercado de mañana (sin contar pérdidas por quedar 'tomado').
 - Sao Paulo: ~US$36/día con 100 acciones a 1 ¢ en todas las cajas del mercado de mañana (sin contar pérdidas por quedar 'tomado').
 
