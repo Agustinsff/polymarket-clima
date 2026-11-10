@@ -114,6 +114,23 @@ ventana vuelva a ser menor. Historia de medios en el estado (`medios`), cajas fi
 Costo medido: 22 % de los minutos cotizados sin compras, casi todo en las cajas que perdieron (Tokio 14 °C 81 %, Múnich
 76 %) y casi nada en las tranquilas (Tel Aviv 3–7 %). 0 = apagado. Se revisa con el markout el 14-nov.
 
+**El filtro también mira la hora anterior a entrar (10-nov-2026, pedido de Agus).** El filtro solo conocía el precio desde
+que el bot entraba a una caja, y los primeros 10 minutos no filtraba nada. Medido con los datos reales del 9 y 10-nov (44
+entradas a cajas): 11 de las 17 compras llenadas cayeron en la primera media hora tras entrar. Ahora, antes de entrar a
+una caja nueva (al completar cajas o al rotar), el bot carga la última hora del historial público del CLOB
+(`mercado.historia`, un punto por minuto, coincide con el medio del libro) en `medios` y aplica **la misma regla**: si la
+caja se movió `filtro_movimiento_c` o más en la hora, no entra y prueba la siguiente; la rotación tampoco suelta una caja
+para entrar a una que viene moviéndose. Como el historial queda cargado, el filtro de compras funciona desde el primer
+ciclo en la caja. Solo se consulta el historial de las cajas que de verdad entrarían (pasan efectivo y regla), una vez; si
+la consulta falla, se entra como antes. `filtro_movimiento_previo: false` lo apaga. Con la regla tal cual (movimiento neto
+de 6 ¢), en esas 44 entradas habría frenado 6 (entre ellas Manila 31 °C); no es un cambio de regla sino tapar el hueco.
+
+**Venta repuesta por la cantidad vieja (10-nov-2026).** Tras una venta parcial, el CLOB muestra el llenado en la orden
+antes de que la operación aparezca en "mis operaciones" (de donde sale el inventario). Si en ese ciclo había que renovar la
+venta (el medio se movió), el bot la reponía por el inventario viejo (Los Ángeles: 12,17 con 9,35 en la billetera) y el
+CLOB la rechazaba por saldo: contaba 1 error y se corregía solo al ciclo siguiente. Ahora `Real.ventas_sin_contar` resta
+del inventario lo que las ventas abiertas ya llenaron y todavía no se contó. No cambia ninguna regla.
+
 **Pérdida del día: costo de ese momento y hora de Uruguay (8-nov-2026).** El freno diario saltó a las 17:00Z con "−16,05"
 cuando la pérdida real del día era ≈ −5: cada venta se medía contra el costo medio ACTUAL del token, y al recomprar Tokio
 14 °C a 0,33 después de haber vendido a 0,12–0,26, las ventas de la mañana pasaron a contar como pérdida. Ahora `pnl(dia)`
