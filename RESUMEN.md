@@ -7,7 +7,7 @@ _Actualizado: 2026-11-10 20:44 (Montevideo). Todo es **en papel**: no se usa pla
 ⚠️ El cosechador no actualiza desde 2026-11-04 16:12 UTC.
 🔔 Polymarket cambió algo en **clima (otros)** (mercado de clima nuevo, ya no aparece el 2026-11-09 12:05 UTC): `what-intensity-will` y 1 más. Ver [reglas_informe.md](reglas_informe.md).
 
-- Última foto de liquidez: 2026-11-10T20:29:25
+- Última foto de liquidez: 2026-11-10T20:44:40
 - Monitor: mañana 2026-11-10, noche 2026-11-10
 - Prueba São Paulo: último día registrado 2026-11-10
 - Cosechador: último ciclo 2026-11-04 16:12 UTC, 88 mercados, 46 estaciones
