@@ -923,6 +923,21 @@ class PruebasEfectivo(unittest.TestCase):
         self.assertEqual(bot.est["efectivo"]["libre"], 17.5)                  # pero Z no esta elegida: cuenta como libre
         shutil.rmtree(d)
 
+    def test_rota_aunque_falten_cajas_por_efectivo(self):
+        """10-nov: con la plata en acciones el bot quedo con 2 cajas de 3 y una esperaba 0,275 US$/dia; la rotacion solo
+        corria con las 3 completas. Ahora rota igual: suelta la peor y sus compras abiertas pagan la que entra."""
+        compras_a = [{"id": "a1", "token": "si-A", "lado": "BUY", "precio": 0.29, "acciones": 25},
+                     {"id": "a2", "token": "no-A", "lado": "BUY", "precio": 0.66, "acciones": 25}]
+        bot, puestas, d = self._bot(30.0, abiertas=compras_a)
+        self.assertEqual(list(bot.elegir(AHORA)), ["A"])                     # 1 caja de 3: no hay plata para otra
+        bot.m.libros["si-B"] = ([(0.39, 30)], [(0.41, 30)])                  # B se aprieta (pozo 90)
+        bot.m.libros["si-A"] = ([(0.31, 5000), (0.30, 100)], [(0.32, 5000)])  # A se llena de rivales
+        self.assertEqual(list(bot.elegir(AHORA + timedelta(minutes=10))), ["A"])   # B no entra: 6,25 libres, necesita 24
+        self.assertEqual(list(bot.elegir(AHORA + timedelta(minutes=31))), ["B"])   # rota: las compras de A la pagan
+        self.assertIn("A", bot.est["rotadas"])
+        self.assertTrue(any("rotacion" in a for a in bot.avisos))
+        shutil.rmtree(d)
+
 
 class PruebasGuardiaMetar(unittest.TestCase):
     """Guardia METAR fina (8-nov-2026): soltar cajas ya decididas por la temperatura observada; piso de compra 0,10."""
