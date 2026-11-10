@@ -141,6 +141,14 @@ en el estado); después vende a medio + 1 tick, sin piso, y avisa por ntfy una v
 elegirse el reloj se borra. Al arrancar con este cambio las cajas ya soltadas empiezan sus 6 horas de cero. Una venta
 así puede disparar la ALERTA de "venta bajo el costo": es esperado. Sin la clave en la config: piso siempre, como antes.
 
+**El freno total cuenta las recompensas (10-nov-2026, decisión de Agus).** `freno_total_con_recompensas: true`: el freno
+total (`max_perdida_total`, −30) mira los llenados al costo MÁS las recompensas diarias cobradas, las que informa
+Polymarket y el bot anota a las 00:30 UTC (`perdida_total_freno`). Motivo: el 10-nov los llenados iban en −26,76, a 3
+dólares de apagar el bot, con 17,22 cobrados en recompensas y la cuenta a 1,5 de lo depositado. Con el cambio ese día
+el freno mira −9,54. Los reembolsos de comisión (5,75 hasta el 10-nov) no entran porque el bot no los lee: queda un
+margen a favor. La recompensa del día en curso tampoco entra hasta que Polymarket la paga. En papel se suman las
+estimadas. El resumen muestra el número que mira el freno. `false` (o borrar la línea): solo llenados, como antes.
+
 **La rotación corre también con menos cajas que `cajas` (10-nov-2026).** La rotación solo se evaluaba con las 3 cajas
 completas. Con la plata en acciones el bot quedó horas con 2 cajas, una de ellas Wellington 19 °C esperando 0,275
 US$/día, y no podía cambiarla: las candidatas "no entraban" por efectivo (necesitan ≈ US$ 24, había 17 libres) y la

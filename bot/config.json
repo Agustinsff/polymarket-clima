@@ -37,6 +37,7 @@
     "max_perdida_dia": 10,
     "freno_dia_cuenta_resueltas": false,
     "max_perdida_total": 30,
+    "freno_total_con_recompensas": true,
     "max_errores_seguidos": 10,
     "avisar_errores": 3,
     "guardia_metar": true,

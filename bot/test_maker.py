@@ -687,6 +687,35 @@ class PruebasFreno(unittest.TestCase):
         self.assertEqual(bot.freno(AHORA), "perdida total")
         shutil.rmtree(d)
 
+    def test_freno_total_cuenta_recompensas(self):
+        """10-nov (pedido de Agus): con freno_total_con_recompensas el freno total mira llenados + recompensas cobradas.
+        Llenados -26,76 con 17,22 cobrados = -9,54: no frena; sin la clave, -30 de llenados frena como antes."""
+        import types
+        d = tempfile.mkdtemp()
+        ej = types.SimpleNamespace(inventario=lambda: {}, abiertas=lambda: [], llenados=lambda: [],
+                                   cancelar_todo=lambda: None, nombre="real")
+        bot = maker.Maker(cfg(modo="real", max_perdida_total=30, freno_total_con_recompensas=True), m=MercadoFalso(),
+                          carpeta=d, ej=ej)
+        bot.avisar = lambda t: None
+        bot.anotar(momento_utc="2026-11-01 10:00:00", modo="real", evento="e", caja="c", condition_id="A", token="T1",
+                   lado="BUY", precio=0.5352, acciones=50, medio="", detalle="")          # 26,76 pagados, ya sin acciones
+        bot.est["recompensas"] = {"estimada": {"2026-11-09": 6.62}, "2026-11-07": 2.29, "2026-11-08": 9.95,
+                                  "2026-11-09": 4.98}
+        self.assertAlmostEqual(bot.pnl(), -26.76, places=2)
+        self.assertAlmostEqual(bot.perdida_total_freno(), -9.54, places=2)     # la estimada no se suma
+        bot.anotar(momento_utc="2026-11-01 11:00:00", modo="real", evento="e", caja="c", condition_id="A", token="T1",
+                   lado="BUY", precio=0.5, acciones=10, medio="", detalle="")              # llenados -31,76
+        self.assertIsNone(bot.freno(AHORA))                                    # con recompensas -14,54: sigue
+        self.assertFalse(bot.frenado())
+        bot.anotar(momento_utc="2026-11-01 12:00:00", modo="real", evento="e", caja="c", condition_id="A", token="T1",
+                   lado="BUY", precio=0.5, acciones=31, medio="", detalle="")              # llenados -47,26, neto -30,04
+        self.assertEqual(bot.freno(AHORA), "perdida total")
+        self.assertIn("llenados + recompensas", bot.frenado())
+        os.remove(bot.f_parar_auto)
+        bot.cfg["maker"]["freno_total_con_recompensas"] = False                # como antes: solo llenados
+        self.assertAlmostEqual(bot.perdida_total_freno(), bot.pnl(), places=2)
+        shutil.rmtree(d)
+
     def test_dia_en_hora_de_uruguay(self):
         """El 'dia' del freno es el de Uruguay (UTC-3): una venta a las 02:30Z del 9-nov cuenta para el 8-nov local."""
         import types
