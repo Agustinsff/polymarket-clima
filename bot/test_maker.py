@@ -36,6 +36,7 @@ class MercadoFalso:
                        "si-B": ([(0.20, 50)], [(0.40, 50)])}
         self.trades = {}
         self.ganadores = {}
+        self.historias, self.consultas_historia = {}, []   # token -> [(hace_seg, precio)]: historial publico del CLOB
         self.slug = "highest-temperature-in-x"
         self.S = self
 
@@ -53,6 +54,10 @@ class MercadoFalso:
 
     def libro(self, token):
         return self.libros[token]
+
+    def historia(self, token, segundos=3600, hasta=None):
+        self.consultas_historia.append(token)
+        return [(int(hasta) - hace, p) for hace, p in self.historias.get(token, []) if hace <= segundos]
 
     def ganador(self, cid):
         return self.ganadores.get(cid)
@@ -202,7 +207,8 @@ class SDKFalso:
 
     def place_limit_order(self, token_id, price, size, side, post_only):
         assert post_only
-        oid = f"o{len(self.ordenes) + len(self.cancel) + 1}"
+        self.n_ordenes = getattr(self, "n_ordenes", 0) + 1     # ids unicos, como en el CLOB (antes se repetian tras un llenado)
+        oid = f"o{self.n_ordenes}"
         self.ordenes[oid] = self.types.SimpleNamespace(id=oid, asset_id=token_id, condition_id="A", side=side, price=price,
                                                         original_size=size, size_matched="0")
         return self.types.SimpleNamespace(ok=True, order_id=oid)
@@ -1125,6 +1131,117 @@ class PruebasGuardiaMetar(unittest.TestCase):
         with open(os.path.join(d, "SIN_COMPRAS.txt"), "w", encoding="utf-8") as f:
             f.write("moscow\n")
         self.assertFalse(bot.sin_compras(c, t0 + timedelta(minutes=102)))
+        shutil.rmtree(d)
+
+
+class PruebasMovimientoPrevio(unittest.TestCase):
+    def test_no_entra_a_caja_que_venia_moviendose(self):
+        """10-nov: el filtro de movimiento no veia la hora anterior a entrar en una caja nueva. Con el historial publico,
+        una caja que se movio 6 c o mas en la ultima hora no se elige; cuando se calma, entra."""
+        d = tempfile.mkdtemp()
+        m = MercadoFalso()
+        m.historias["si-A"] = [(3000, 0.39), (1800, 0.35), (60, 0.315)]             # hace 50 min valia 0,39; ahora 0,315
+        bot = maker.Maker(cfg(), m=m, carpeta=d)
+        self.assertEqual(bot.elegir(AHORA), {})                                      # -7,5 c en la hora: no entra
+        self.assertEqual(m.consultas_historia, ["si-A"])
+        bot.elegir(AHORA + timedelta(minutes=1))                                     # no vuelve a pedir el historial
+        self.assertEqual(m.consultas_historia, ["si-A"])
+        self.assertEqual(bot.elegir(AHORA + timedelta(minutes=2)), {})
+        # una hora despues el precio esta quieto: entra, y el historial cargado sirve al filtro desde el primer ciclo
+        m.historias["si-A"] = [(3500, 0.315), (60, 0.315)]
+        despues = AHORA + timedelta(minutes=75)
+        self.assertEqual(list(bot.elegir(despues)), ["A"])
+        self.assertEqual(m.consultas_historia, ["si-A", "si-A"])
+        self.assertFalse(bot.sin_compras(bot.est["cajas"]["A"], despues))
+        shutil.rmtree(d)
+
+    def test_caja_quieta_entra_y_el_filtro_ve_la_hora_previa(self):
+        d = tempfile.mkdtemp()
+        m = MercadoFalso()
+        m.historias["si-A"] = [(3000, 0.27), (1800, 0.30), (60, 0.315)]             # +4,5 c: no llega al umbral
+        bot = maker.Maker(cfg(), m=m, carpeta=d)
+        self.assertEqual(list(bot.elegir(AHORA)), ["A"])
+        c = dict(bot.est["cajas"]["A"])
+        self.assertEqual(bot.movimiento(c, AHORA), 0.045)                            # ya no es None en el primer ciclo
+        c["medio"] = 0.34                                                            # 2 min despues sube: 7 c contra la hora previa
+        self.assertTrue(bot.sin_compras(c, AHORA + timedelta(minutes=2)))
+        shutil.rmtree(d)
+
+    def test_apagado_o_sin_historial_entra_como_antes(self):
+        d = tempfile.mkdtemp()
+        m = MercadoFalso()
+        m.historias["si-A"] = [(3500, 0.50), (60, 0.315)]
+        bot = maker.Maker(cfg(filtro_movimiento_previo=False), m=m, carpeta=d)
+        self.assertEqual(list(bot.elegir(AHORA)), ["A"])
+        self.assertEqual(m.consultas_historia, [])
+        shutil.rmtree(d)
+        d = tempfile.mkdtemp()
+        m = MercadoFalso()
+
+        def falla(token, segundos=3600, hasta=None):
+            raise RuntimeError("sin red")
+        m.historia = falla
+        bot = maker.Maker(cfg(), m=m, carpeta=d)
+        self.assertEqual(list(bot.elegir(AHORA)), ["A"])                             # sin historial no se bloquea la caja
+        shutil.rmtree(d)
+
+    def test_rotacion_saltea_la_candidata_que_se_mueve(self):
+        """La rotacion no suelta una caja para entrar a otra que viene moviendose (abajo tampoco entraria)."""
+        d = tempfile.mkdtemp()
+        m = MercadoFalso()
+        m.libros["si-B"] = ([(0.30, 5)], [(0.33, 5)])                                # B: apretada y casi sin rivales
+        bot = maker.Maker(cfg(cajas=1, rotar_cada_min=30), m=m, carpeta=d)
+        cand = {c["cid"]: c for c in maker.candidatas(bot.cfg, AHORA, m)}
+        maker.medir_libro(cand["A"], bot.cfg, m)
+        bot.est["cajas"] = {"A": cand["A"]}
+        bot.est["rotacion_ts"] = (AHORA - timedelta(minutes=31)).isoformat()
+        m.historias["si-B"] = [(3500, 0.40), (60, 0.315)]                            # B cayo 8,5 c en la hora
+        self.assertEqual(list(bot.elegir(AHORA)), ["A"])                             # no rota
+        self.assertNotIn("B", bot.est.get("rotadas", {}))
+        self.assertNotIn("A", bot.est.get("rotadas", {}))
+        m.historias["si-B"] = [(3500, 0.315), (60, 0.315)]                           # B quieta: ahora si rota
+        bot.est["rotacion_ts"] = (AHORA + timedelta(minutes=44)).isoformat()
+        self.assertEqual(list(bot.elegir(AHORA + timedelta(minutes=75))), ["B"])
+        shutil.rmtree(d)
+
+
+class PruebasVentaParcial(unittest.TestCase):
+    def test_venta_parcial_sin_contar_no_se_repone_por_la_cantidad_vieja(self):
+        """10-nov (Chicago, Los Angeles): el CLOB muestra la venta parcial en la orden antes de que aparezca en "mis
+        operaciones". El bot reponia la venta por el inventario viejo y el CLOB la rechazaba por saldo."""
+        bot, ej, m, d = bot_real()
+        bot.ciclo(AHORA)
+        oid = [o.id for o in ej.client.ordenes.values() if o.price == "0.66"][0]
+        ej.client.llenar(oid, 25)                                                    # compra 25 No
+        bot.ciclo(AHORA + timedelta(minutes=1))
+        venta = [o for o in ej.client.ordenes.values() if o.side == "SELL"][0]
+        self.assertEqual((venta.asset_id, float(venta.original_size)), ("no-A", 25.0))
+        venta.size_matched = "10"                                                    # vendio 10; la operacion aun no figura
+        ab = ej.abiertas()
+        self.assertEqual(ej.ventas_sin_contar(ab), {"no-A": 10.0})
+        m.libros["si-A"] = ([(0.32, 100), (0.25, 200)], [(0.35, 80), (0.40, 100)])   # el medio se movio: hay que renovar
+        bot.ciclo(AHORA + timedelta(minutes=2))
+        ventas = [o for o in ej.client.ordenes.values() if o.side == "SELL"]
+        self.assertFalse([o for o in ventas if float(o.original_size) > 15 + 1e-9])  # nunca ofrece mas de lo que queda
+        # cuando la operacion aparece, se descuenta una sola vez
+        ej.client.llenar("otra", 10, token="no-A", lado="SELL", precio="0.71")
+        ej.est["mis_ordenes"]["otra"] = int(time.time())
+        bot.ciclo(AHORA + timedelta(minutes=3))
+        self.assertAlmostEqual(ej.inventario()["no-A"], 15.0)
+        self.assertEqual(ej.ventas_sin_contar(ej.abiertas()), {})
+        shutil.rmtree(d)
+
+    def test_venta_parcial_ya_contada_no_se_descuenta_dos_veces(self):
+        bot, ej, m, d = bot_real()
+        bot.ciclo(AHORA)
+        oid = [o.id for o in ej.client.ordenes.values() if o.price == "0.66"][0]
+        ej.client.llenar(oid, 25)
+        bot.ciclo(AHORA + timedelta(minutes=1))
+        venta = [o for o in ej.client.ordenes.values() if o.side == "SELL"][0]
+        ej.client.llenar(venta.id, 10)                                               # venta parcial que si figura
+        bot.ciclo(AHORA + timedelta(minutes=2))
+        self.assertAlmostEqual(ej.inventario()["no-A"], 15.0)
+        self.assertEqual(ej.ventas_sin_contar(ej.abiertas()), {})
         shutil.rmtree(d)
 
 

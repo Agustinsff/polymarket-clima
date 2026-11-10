@@ -48,6 +48,14 @@ def libro(token):
     return bids, asks
 
 
+def historia(token, segundos=3600, hasta=None):
+    """[(unix, precio)] del ultimo rato del token: historial publico del CLOB, un punto por minuto (el medio del libro)."""
+    hasta = int(hasta or datetime.now(timezone.utc).timestamp())
+    r = S.get(f"{CLOB}/prices-history", params={"market": token, "startTs": hasta - int(segundos), "endTs": hasta,
+                                                "fidelity": 1}, timeout=20).json()
+    return [(int(x["t"]), float(x["p"])) for x in r.get("history", [])]
+
+
 def costo_compra(asks, acciones, tope=None):
     """Precio medio de comprar `acciones` recorriendo los asks sin pasar de `tope`. None si no alcanza."""
     falta, total = acciones, 0.0

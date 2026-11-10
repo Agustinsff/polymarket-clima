@@ -405,6 +405,23 @@ class Real:
         """Inventario propio (sin consultar nada): acciones que el bot compro y todavia tiene."""
         return {t: q for t, q in self.est["inv"].items() if q > 1e-6}
 
+    def ventas_sin_contar(self, abiertas):
+        """{token: acciones} que las ordenes de VENTA abiertas ya vendieron y el inventario todavia no desconto: el CLOB
+        muestra el llenado en la orden antes de que la operacion aparezca en "mis operaciones" (o se lleno entre que el
+        ciclo leyo los llenados y renueva las ordenes). 10-nov, Chicago y Los Angeles: tras una venta parcial el bot
+        repuso la venta por la cantidad vieja (12,17 con 9,35 en la billetera) y el CLOB la rechazo por saldo."""
+        contado = {}
+        for clave, v in self.est["vistos"].items():
+            oid = clave.rsplit(":", 1)[-1]
+            contado[oid] = contado.get(oid, 0) + abs(v[2])
+        out = {}
+        for o in abiertas:
+            if o["lado"] == "SELL":
+                falta = o.get("llenado", 0) - contado.get(o["id"], 0)
+                if falta > 1e-6:
+                    out[o["token"]] = round(out.get(o["token"], 0) + falta, 6)
+        return out
+
     def cid_de(self, token):
         return self.est["token_cid"].get(token)
 
@@ -730,10 +747,13 @@ class Maker:
             minimo = k.get("acciones_min_venta", 5)
             libres = [c for c in elegidas.values() if inv.get(c["si"], 0) < minimo and inv.get(c["no"], 0) < minimo]
             if ok and libres:
-                mejor = max(ok, key=lambda c: c["rec_pes"])
                 peor = min(libres, key=lambda c: c.get("rec_pes", 0))
                 r_peor = peor.get("rec_pes", 0)
-                if mejor["rec_pes"] >= max(k.get("rotar_factor", 3) * r_peor, r_peor + k.get("rotar_dif", 2)):
+                minimo_rec = max(k.get("rotar_factor", 3) * r_peor, r_peor + k.get("rotar_dif", 2))
+                # la mejor que no venga moviendose (abajo tampoco entraria): se miran solo las que justifican rotar
+                mejor = next((c for c in sorted(ok, key=lambda c: -c["rec_pes"])
+                              if c["rec_pes"] >= minimo_rec and not self.movida_antes_de_entrar(c, ahora)), None)
+                if mejor:
                     del elegidas[peor["cid"]]
                     rotadas[peor["cid"]] = ahora.isoformat()
                     txt = (f"rotacion: se suelta {peor['evento']} {peor['caja']} (rec. esperada {r_peor} US$/dia) por "
@@ -765,11 +785,16 @@ class Maker:
                 if libre is not None and necesita > libre:
                     log(f"no entra la caja {c['evento']} {c['caja']}: necesita US$ {necesita:.2f} y hay US$ {libre:.2f} libres")
                     continue
+                if self.movida_antes_de_entrar(c, ahora):                    # al final: lee el historial publico
+                    continue
                 if libre is not None:
                     libre = round(libre - necesita, 2)
                 elegidas[c["cid"]] = c
                 log(f"caja nueva: {c['evento']} {c['caja']} (medio {c['medio']}, spread {c['spread'] * 100:.1f} c, "
                     f"pozo {c['pozo']}, rec. esperada {c['rec_pes']} US$/dia)")
+        viejo = ahora.timestamp() - 60 * k.get("filtro_movimiento_min", 60) - 600
+        for cid in [cid for cid, h in self.est.get("medios", {}).items() if cid not in elegidas and (not h or h[-1][0] < viejo)]:
+            del self.est["medios"][cid]
         self.est["cajas"] = {cid: {k2: c[k2] for k2 in ("evento", "caja", "cid", "si", "no", "pozo", "v", "tam_min", "tick",
                                                          "fin", "medio", "spread", "tam", "rec_pes", "comp")}
                              for cid, c in elegidas.items()}
@@ -858,6 +883,35 @@ class Maker:
             return None
         return round(c["medio"] - viejo[1], 4)
 
+    def movida_antes_de_entrar(self, c, ahora):
+        """True si una caja que el bot todavia no cotiza se movio `filtro_movimiento_c` o mas en la ultima hora: no se
+        entra. El filtro de movimiento solo conocia el precio desde que el bot entraba a la caja y los primeros 10 min no
+        filtraba nada; 10-nov: 11 de las 17 compras llenadas cayeron en la primera media hora tras entrar a una caja.
+        Carga en el historial de medios la ultima hora del historial publico del CLOB (mercado.historia), asi el mismo
+        filtro, con la misma regla, ve tambien la hora anterior. `filtro_movimiento_previo` false lo apaga."""
+        k = self.cfg["maker"]
+        umbral = k.get("filtro_movimiento_c", 0.06)
+        if not umbral or not k.get("filtro_movimiento_previo", True) or not hasattr(self.m, "historia"):
+            return False
+        hist = self.est.setdefault("medios", {}).setdefault(c["cid"], [])
+        t = int(ahora.timestamp())
+        if not hist or t - hist[-1][0] > 600:               # caja nueva (o que dejamos de mirar): se carga la hora previa
+            ventana = 60 * k.get("filtro_movimiento_min", 60)
+            try:
+                puntos = self.m.historia(c["si"], ventana, t)
+            except Exception as ex:                         # noqa: BLE001  (sin historial se entra como antes)
+                log(f"no se pudo leer el historial de {c['evento']} {c['caja']}: {ex!r}")
+                return False
+            hist[:] = sorted([int(a), float(b)] for a, b in puntos if 0 <= t - int(a) <= ventana)
+        mov = self.movimiento(c, ahora)
+        if mov is None or abs(mov) < umbral - 1e-9:
+            return False
+        avisadas = self.__dict__.setdefault("_movidas", {})
+        if t - avisadas.get(c["cid"], 0) >= 1800:           # una linea cada media hora por caja, no una por ciclo
+            avisadas[c["cid"]] = t
+            log(f"no entra la caja {c['evento']} {c['caja']}: se movio {mov * 100:+.1f} c en la ultima hora")
+        return True
+
     def cajas_sin_compras(self):
         """Lineas de bot/SIN_COMPRAS.txt (fuera de git, se relee cada ciclo): cada una es un pedazo de texto del evento,
         la caja o el condition_id (sin importar mayusculas). Esas cajas siguen cotizando ventas pero no compran: es la
@@ -932,6 +986,10 @@ class Maker:
         ahora = ahora or datetime.now(timezone.utc)
         abiertas = self.ej.abiertas()
         inv = self.ej.inventario()
+        # lo que una venta abierta ya vendio y el inventario todavia no desconto no se puede volver a ofrecer
+        vendido = getattr(self.ej, "ventas_sin_contar", lambda a: {})(abiertas)
+        if vendido:
+            inv = {t: q for t, q in ((t, round(q - vendido.get(t, 0), 6)) for t, q in inv.items()) if q > 1e-6}
         quiero = []
         for c in elegidas.values():
             quieto = not self.sin_compras(c, ahora)
