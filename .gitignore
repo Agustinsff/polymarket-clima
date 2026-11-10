@@ -9,3 +9,7 @@ mm_*
 
 bot/secreto.cmd
 bot/SIN_COMPRAS.txt
+
+# log del bot en real (solo en la PC)
+bot/*.log
+bot/*.log.1

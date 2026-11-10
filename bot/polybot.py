@@ -30,8 +30,22 @@ COLS = ["momento_utc", "modo", "estrategia", "activo", "evento", "condition_id",
         "precio_max", "precio", "tasa", "min_al_cierre", "lleno", "ms", "detalle"]
 
 
+ARCHIVO_LOG = None      # el maker en real lo fija al arrancar: la consola guarda pocas lineas y despues no se puede revisar
+LOG_MAX_BYTES = 5_000_000
+
+
 def log(t):
-    print(f"{datetime.now(timezone.utc):%Y-%m-%d %H:%M:%S}Z {t}", flush=True)
+    linea = f"{datetime.now(timezone.utc):%Y-%m-%d %H:%M:%S}Z {t}"
+    print(linea, flush=True)
+    if not ARCHIVO_LOG:
+        return
+    try:                                    # el archivo nunca frena el bot
+        if os.path.exists(ARCHIVO_LOG) and os.path.getsize(ARCHIVO_LOG) > LOG_MAX_BYTES:
+            os.replace(ARCHIVO_LOG, ARCHIVO_LOG + ".1")      # se guarda uno anterior y se empieza de nuevo
+        with open(ARCHIVO_LOG, "a", encoding="utf-8") as f:
+            f.write(linea + "\n")
+    except OSError:
+        pass
 
 
 def avisar(texto):

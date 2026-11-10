@@ -1324,5 +1324,58 @@ class PruebasReinicioConfig(unittest.TestCase):
         shutil.rmtree(d)
 
 
+class PruebasLog(unittest.TestCase):
+    """10-nov: el log del bot real salia solo por la consola (unas 25 lineas visibles) y no se pudo saber por que se
+    dejaron dos cajas un minuto despues de una compra."""
+
+    def test_log_queda_en_archivo_y_rota(self):
+        import polybot
+        d = tempfile.mkdtemp()
+        f = os.path.join(d, "maker_real.log")
+        viejo, viejo_max = polybot.ARCHIVO_LOG, polybot.LOG_MAX_BYTES
+        try:
+            polybot.ARCHIVO_LOG = f
+            polybot.log("primera")
+            polybot.log("segunda")
+            lineas = open(f, encoding="utf-8").read().splitlines()
+            self.assertEqual(len(lineas), 2)
+            self.assertTrue(lineas[0].endswith("Z primera"))
+            polybot.LOG_MAX_BYTES = 10                       # ya paso el tope: guarda el anterior y empieza de nuevo
+            polybot.log("tercera")
+            self.assertEqual(len(open(f + ".1", encoding="utf-8").read().splitlines()), 2)
+            self.assertEqual(len(open(f, encoding="utf-8").read().splitlines()), 1)
+            polybot.ARCHIVO_LOG = os.path.join(d, "no", "existe", "x.log")
+            polybot.log("no rompe")                          # un archivo que no se puede abrir nunca frena el bot
+        finally:
+            polybot.ARCHIVO_LOG, polybot.LOG_MAX_BYTES = viejo, viejo_max
+            shutil.rmtree(d)
+
+    def test_sin_archivo_no_escribe(self):
+        import polybot
+        self.assertIsNone(polybot.ARCHIVO_LOG)               # solo el bucle en real lo fija
+
+    def test_dejar_una_caja_anota_el_motivo(self):
+        d = tempfile.mkdtemp()
+        m = MercadoFalso()
+        maker.avisar = lambda t: None
+        bot = maker.Maker(cfg(), m=m, carpeta=d)
+        lineas, viejo = [], maker.log
+        maker.log = lineas.append
+        try:
+            self.assertEqual(list(bot.elegir(AHORA)), ["A"])
+            m.libros["si-A"] = ([(0.20, 50)], [(0.40, 50)])   # una barrida deja el libro ancho
+            self.assertNotIn("A", bot.elegir(AHORA + timedelta(minutes=1)))
+            self.assertTrue(any("se deja la caja" in x and "medio 0.3" in x and "spread 20.0 c" in x for x in lineas), lineas)
+            lineas.clear()
+            self.assertEqual(list(bot.elegir(AHORA + timedelta(minutes=2))), [])
+            bot.est["cajas"]["A"] = {"evento": "e", "caja": "A", "cid": "A"}
+            m.libros["si-A"] = ([], [(0.40, 50)])             # sin compras en el libro
+            bot.elegir(AHORA + timedelta(minutes=3))
+            self.assertTrue(any("vacio de un lado" in x for x in lineas), lineas)
+        finally:
+            maker.log = viejo
+            shutil.rmtree(d)
+
+
 if __name__ == "__main__":
     unittest.main(verbosity=1)

@@ -131,6 +131,13 @@ venta (el medio se movió), el bot la reponía por el inventario viejo (Los Áng
 CLOB la rechazaba por saldo: contaba 1 error y se corregía solo al ciclo siguiente. Ahora `Real.ventas_sin_contar` resta
 del inventario lo que las ventas abiertas ya llenaron y todavía no se contó. No cambia ninguna regla.
 
+**Log en archivo y motivo al dejar una caja (10-nov-2026).** En real, todo lo que el bot escribe en la consola queda
+también en `bot\maker_real.log` (solo en la PC, no se sube; al pasar 5 MB se guarda el anterior como `.log.1` y empieza
+de nuevo). Antes el log vivía solo en la ventana, que muestra unas 25 líneas, y el 10-nov no se pudo saber por qué el bot
+dejó Houston 78-79 °F y Ciudad del Cabo 22 °C un minuto después de comprar. Además, la línea "se deja la caja ...: ya no
+cumple la regla" ahora dice el motivo: ya no está entre las candidatas, el libro quedó vacío de un lado, o el medio y el
+spread que midió. No cambia ninguna regla de compra ni de venta.
+
 **Pérdida del día: costo de ese momento y hora de Uruguay (8-nov-2026).** El freno diario saltó a las 17:00Z con "−16,05"
 cuando la pérdida real del día era ≈ −5: cada venta se medía contra el costo medio ACTUAL del token, y al recomprar Tokio
 14 °C a 0,33 después de haber vendido a 0,12–0,26, las ventas de la mañana pasaron a contar como pérdida. Ahora `pnl(dia)`

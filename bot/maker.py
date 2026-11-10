@@ -44,6 +44,7 @@ from zoneinfo import ZoneInfo
 CARPETA = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, CARPETA)
 import mercado  # noqa: E402
+import polybot  # noqa: E402
 from polybot import avisar, cargar_cfg, log  # noqa: E402
 import guardia_metar  # noqa: E402
 
@@ -719,7 +720,15 @@ class Maker:
                                                               and 0.03 <= cc.get("medio", 0) <= 0.97):
                 elegidas[cid] = cc
             else:
-                log(f"se deja la caja {c['evento']} {c['caja']}: ya no cumple la regla")
+                # el motivo queda escrito (10-nov: Houston 78-79 °F y Ciudad del Cabo 22 °C se dejaron un minuto despues
+                # de una compra y no se pudo saber por que)
+                if not cc:
+                    motivo = "ya no esta entre las candidatas"
+                elif "spread" not in cc:
+                    motivo = "el libro esta vacio de un lado"
+                else:
+                    motivo = f"medio {cc.get('medio')}, spread {cc['spread'] * 100:.1f} c"
+                log(f"se deja la caja {c['evento']} {c['caja']}: ya no cumple la regla ({motivo})")
         # rotacion (9-nov): las cajas que ya tenemos siguen aunque se llenen de rivales (Beijing 16 °C: rec. esperada 0,15
         # US$/dia con Estambul 13 °C a 16). Cada `rotar_cada_min` (30) se mide el resto; si la mejor caja nueva espera
         # `rotar_factor` (3) veces y `rotar_dif` (2) US$/dia mas que la peor que tenemos, se suelta la peor (sus acciones
@@ -1451,6 +1460,8 @@ def main():
         bot.resumen()
         return
     if que == "bucle":
+        if bot.modo == "real":              # todo lo que sale por la consola queda tambien en bot\maker_real.log
+            polybot.ARCHIVO_LOG = os.path.join(CARPETA, "maker_real.log")
         log(f"maker ({bot.modo}) arranca: {cfg['maker']['cajas']} cajas, US$ {cfg['maker']['capital_usd']}, "
             f"orden a {cfg['maker']['distancia'] * 100:.0f} c del medio")
         bot.pedido_reinicio()                               # un REINICIAR viejo no vale
