@@ -701,7 +701,11 @@ class Maker:
             del rotadas[cid]
         cada = k.get("rotar_cada_min", 30)
         ultima = self.est.setdefault("rotacion_ts", ahora.isoformat())   # la primera, 30 min despues de arrancar
-        if (cada and len(elegidas) >= k["cajas"] and elegidas
+        # (10-nov: tambien rota con menos cajas que `cajas`. Antes solo rotaba con las 3 completas, y con la plata en
+        # acciones el bot quedo horas con 2 cajas, una de ellas Wellington 19 °C esperando 0,275 US$/dia, sin poder
+        # cambiarla: las candidatas "no entraban" por efectivo y la rotacion ni se evaluaba. Al soltar la peor, sus
+        # compras abiertas cuentan como libres abajo y la mejor entra en su lugar.)
+        if (cada and elegidas
                 and (ahora - datetime.fromisoformat(ultima)).total_seconds() >= cada * 60):
             self.est["rotacion_ts"] = ahora.isoformat()
             resto = sorted((c for cid, c in cand.items() if cid not in elegidas and cid not in rotadas),

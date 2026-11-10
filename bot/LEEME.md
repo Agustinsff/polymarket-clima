@@ -141,6 +141,13 @@ en el estado); después vende a medio + 1 tick, sin piso, y avisa por ntfy una v
 elegirse el reloj se borra. Al arrancar con este cambio las cajas ya soltadas empiezan sus 6 horas de cero. Una venta
 así puede disparar la ALERTA de "venta bajo el costo": es esperado. Sin la clave en la config: piso siempre, como antes.
 
+**La rotación corre también con menos cajas que `cajas` (10-nov-2026).** La rotación solo se evaluaba con las 3 cajas
+completas. Con la plata en acciones el bot quedó horas con 2 cajas, una de ellas Wellington 19 °C esperando 0,275
+US$/día, y no podía cambiarla: las candidatas "no entraban" por efectivo (necesitan ≈ US$ 24, había 17 libres) y la
+rotación ni se medía. Ahora se mide igual cada `rotar_cada_min`; al soltar la peor (siempre una sin acciones), sus
+compras abiertas cuentan como libres y la mejor entra en su lugar. Las demás condiciones no cambian (3 veces y +2
+US$/día, de a una, la soltada no vuelve por 6 h).
+
 **Aviso "sin efectivo libre" (9-nov-2026).** La racha se cortaba en cualquier ciclo sin compras nuevas y el aviso volvía
 a salir (11 veces en 12 horas). Ahora, además de una vez por racha, no sale más de una vez cada `sin_saldo_aviso_horas`
 (6).
