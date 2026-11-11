@@ -165,6 +165,8 @@ en el estado); después vende a medio + 1 tick, sin piso, y avisa por ntfy una v
 elegirse el reloj se borra. Al arrancar con este cambio las cajas ya soltadas empiezan sus 6 horas de cero. Una venta
 así puede disparar la ALERTA de "venta bajo el costo": es esperado. Sin la clave en la config: piso siempre, como antes.
 
+**El piso de costo baja de 6 a 3 horas (11-nov-2026, decisión de Agus, a prueba).** `soltada_piso_horas: 3`. Con los llenados reales del 7 al 11-nov: de 25 ventas bajo el costo en cajas ya resueltas, 19 eran del lado que terminó perdiendo (vendiendo se perdieron 37,90; aguantando hasta la resolución, 77,70), así que soltar está bien. Y en las 9 ventas por piso vencido, 6 veces el precio era más alto al empezar la espera que al vender: esperar las 6 horas costó unos US$ 4 (número aproximado, sacado de los medios anotados al poner órdenes). Con 3 horas la plata vuelve antes a cotizar. Revisar con más datos el viernes 14-nov.
+
 **El freno total cuenta las recompensas (10-nov-2026, decisión de Agus).** `freno_total_con_recompensas: true`: el freno
 total (`max_perdida_total`, −30) mira los llenados al costo MÁS las recompensas diarias cobradas, las que informa
 Polymarket y el bot anota a las 00:30 UTC (`perdida_total_freno`). Motivo: el 10-nov los llenados iban en −26,76, a 3
