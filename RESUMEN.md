@@ -1,22 +1,24 @@
 # Resumen polymarket-clima
 
-_Actualizado: 2026-11-11 09:56 (Montevideo). Todo es **en papel**: no se usa plata real._
+_Actualizado: 2026-11-11 10:05 (Montevideo). Todo es **en papel**: no se usa plata real._
 
 ## Estado de las tareas
 
 ⚠️ El cosechador no actualiza desde 2026-11-04 16:12 UTC.
 
 - Última foto de liquidez: 2026-11-11T09:56:16
-- Monitor: mañana 2026-11-10, noche 2026-11-10
+- Monitor: mañana 2026-11-11, noche 2026-11-10
 - Prueba São Paulo: último día registrado 2026-11-10
 - Cosechador: último ciclo 2026-11-04 16:12 UTC, 88 mercados, 46 estaciones
 
 ## Temperatura máxima: mercado vs. modelo (BA y SP)
 
-Acumulado: la caja favorita del **mercado** acertó 22/54, la del **modelo** 12/54.
+Acumulado: la caja favorita del **mercado** acertó 23/56, la del **modelo** 12/56.
 
 | Día | Ciudad | Ganó | Favorita del mercado | Favorita del modelo |
 |---|---|---|---|---|
+| 2026-11-10 | Sao Paulo | 23°C | 23°C (34%) ✅ | 22°C (21%) ❌ |
+| 2026-11-10 | Buenos Aires | 25°C | 28°C (44%) ❌ | 27°C (22%) ❌ |
 | 2026-11-09 | Sao Paulo | 17°C | 17°C (39%) ✅ | 16°C (19%) ❌ |
 | 2026-11-09 | Buenos Aires | 26°C | 25°C (47%) ❌ | 25°C (23%) ❌ |
 | 2026-11-08 | Sao Paulo | 21°C | 20°C (36%) ❌ | 22°C (23%) ❌ |
@@ -25,8 +27,6 @@ Acumulado: la caja favorita del **mercado** acertó 22/54, la del **modelo** 12/
 | 2026-11-07 | Buenos Aires | 17°C | 19°C (42%) ❌ | 19°C (23%) ❌ |
 | 2026-11-06 | Sao Paulo | 28°C | 26°C (28%) ❌ | 25°C (23%) ❌ |
 | 2026-11-06 | Buenos Aires | 25°C | 26°C (41%) ❌ | 26°C (24%) ❌ |
-| 2026-11-05 | Sao Paulo | 26°C | 27°C (22%) ❌ | 29°C (17%) ❌ |
-| 2026-11-05 | Buenos Aires | 27°C | 27°C (52%) ✅ | 26°C (25%) ❌ |
 
 ## Prueba en papel São Paulo 14 hs (regla fija)
 
