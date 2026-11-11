@@ -651,6 +651,13 @@ class Maker:
             total += sum(float(v) for k, v in self.est.get("recompensas", {}).items() if k != "estimada")
         return round(total, 2)
 
+    def texto_total(self):
+        """Como va el freno TOTAL, para los avisos al celular: el mismo numero que mira el freno. (10-nov: el aviso decia
+        "Total al costo -29,31" al lado de un tope de -30, cuando el freno, que suma las recompensas, iba en -7,4.)"""
+        r = self.cfg["maker"]
+        con = " (con recompensas)" if r.get("freno_total_con_recompensas") else ""
+        return f"Freno total{con}: {self.perdida_total_freno():+.2f} de -{r['max_perdida_total']}"
+
     def frenado(self):
         for f in (self.f_parar, self.f_parar_auto):
             if os.path.exists(f):
@@ -676,7 +683,7 @@ class Maker:
                       f"{manana.astimezone(timezone.utc):%H:%M}Z)")
             if self.est.get("aviso_freno_dia") != dia:                 # un aviso por dia al celular (8-nov: paso sin verse)
                 self.est["aviso_freno_dia"] = dia
-                self.avisar(f"Maker ({self.modo}) FRENO DIARIO: {motivo}. Total al costo {self.pnl():+.2f}.")
+                self.avisar(f"Maker ({self.modo}) FRENO DIARIO: {motivo}. {self.texto_total()}.")
             return motivo
         if self.est.get("errores_seguidos", 0) >= r["max_errores_seguidos"]:
             self.parar(f"{self.est['errores_seguidos']} errores seguidos (ultimo: {self.est.get('ultimo_error', '?')})")
@@ -1145,7 +1152,7 @@ class Maker:
         if d <= -frac * r["max_perdida_dia"] and self.est.get("alerta_dia") != dia:
             self.est["alerta_dia"] = dia
             self.avisar(f"ALERTA Maker ({self.modo}): perdida del dia {d:+.2f} (hora de Uruguay), cerca del freno de "
-                        f"-{r['max_perdida_dia']}. Total al costo {self.pnl():+.2f}.")
+                        f"-{r['max_perdida_dia']}. {self.texto_total()}.")
 
     def fusionar_pares(self, ahora=None):
         """Canje de pares Si+No (9-nov, Agus: "aplica lo que veas necesario"). Si de una caja se tienen acciones de los

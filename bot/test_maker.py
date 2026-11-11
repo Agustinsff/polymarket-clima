@@ -709,6 +709,18 @@ class PruebasFreno(unittest.TestCase):
                                   "2026-11-09": 4.98}
         self.assertAlmostEqual(bot.pnl(), -26.76, places=2)
         self.assertAlmostEqual(bot.perdida_total_freno(), -9.54, places=2)     # la estimada no se suma
+        # los avisos al celular muestran ese mismo numero, no los llenados solos (10-nov: decia "Total al costo -29,31")
+        self.assertEqual(bot.texto_total(), "Freno total (con recompensas): -9.54 de -30")
+        avisos = []
+        bot.avisar = avisos.append
+        bot.cfg["maker"]["max_perdida_dia"] = 10
+        bot.perdida_dia_freno = lambda dia: -7.5
+        bot.alerta_dia(AHORA)
+        self.assertEqual(len(avisos), 1)
+        self.assertIn("Freno total (con recompensas): -9.54 de -30", avisos[0])
+        self.assertNotIn("Total al costo", avisos[0])
+        del bot.perdida_dia_freno
+        bot.avisar = lambda t: None
         bot.anotar(momento_utc="2026-11-01 11:00:00", modo="real", evento="e", caja="c", condition_id="A", token="T1",
                    lado="BUY", precio=0.5, acciones=10, medio="", detalle="")              # llenados -31,76
         self.assertIsNone(bot.freno(AHORA))                                    # con recompensas -14,54: sigue
@@ -720,6 +732,7 @@ class PruebasFreno(unittest.TestCase):
         os.remove(bot.f_parar_auto)
         bot.cfg["maker"]["freno_total_con_recompensas"] = False                # como antes: solo llenados
         self.assertAlmostEqual(bot.perdida_total_freno(), bot.pnl(), places=2)
+        self.assertTrue(bot.texto_total().startswith("Freno total: "))
         shutil.rmtree(d)
 
     def test_dia_en_hora_de_uruguay(self):
