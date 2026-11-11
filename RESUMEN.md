@@ -1,13 +1,13 @@
 # Resumen polymarket-clima
 
-_Actualizado: 2026-11-10 20:59 (Montevideo). Todo es **en papel**: no se usa plata real._
+_Actualizado: 2026-11-10 21:15 (Montevideo). Todo es **en papel**: no se usa plata real._
 
 ## Estado de las tareas
 
 ⚠️ El cosechador no actualiza desde 2026-11-04 16:12 UTC.
 🔔 Polymarket cambió algo en **clima (otros)** (mercado de clima nuevo, ya no aparece el 2026-11-09 12:05 UTC): `what-intensity-will` y 1 más. Ver [reglas_informe.md](reglas_informe.md).
 
-- Última foto de liquidez: 2026-11-10T20:59:49
+- Última foto de liquidez: 2026-11-10T21:14:59
 - Monitor: mañana 2026-11-10, noche 2026-11-10
 - Prueba São Paulo: último día registrado 2026-11-10
 - Cosechador: último ciclo 2026-11-04 16:12 UTC, 88 mercados, 46 estaciones
@@ -88,10 +88,10 @@ Series donde el modelo le gana al mercado (≥5 días): mín denver (10 días), 
 | Modo | Serie calibrada | Liquidadas | Ganadas | Neto (10 acc. c/u) | Pendientes |
 |---|---|---|---|---|---|
 | taker | no | 1735 | 396 | US$-956.09 | 175 |
-| maker | no | 3169 | 382 | US$-397.61 | 2908 |
-| cola_taker | no | 854 | 19 | US$-125.65 | 92 |
-| cola_maker | no | 1074 | 21 | US$-76.63 | 959 |
-| no80_90 | no | 702 | 490 | US$-1164.81 | 82 |
+| maker | no | 3169 | 382 | US$-397.61 | 2920 |
+| cola_taker | no | 854 | 19 | US$-125.65 | 93 |
+| cola_maker | no | 1074 | 21 | US$-76.63 | 960 |
+| no80_90 | no | 702 | 490 | US$-1164.81 | 83 |
 
 Taker en total: US$-2246.56. _Con la comisión vieja (0,05 para todo) sería US$-2335.65._
 
@@ -124,5 +124,5 @@ Prueba SP: 13 operaciones; como maker se habrían llenado 11, neto **US$-12.35**
 ## Recompensas de liquidez (estimación, últimas 24 h)
 
 - Buenos Aires: ~US$37/día con 100 acciones a 1 ¢ en todas las cajas del mercado de mañana (sin contar pérdidas por quedar 'tomado').
-- Sao Paulo: ~US$32/día con 100 acciones a 1 ¢ en todas las cajas del mercado de mañana (sin contar pérdidas por quedar 'tomado').
+- Sao Paulo: ~US$31/día con 100 acciones a 1 ¢ en todas las cajas del mercado de mañana (sin contar pérdidas por quedar 'tomado').
 
