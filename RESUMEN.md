@@ -1,12 +1,12 @@
 # Resumen polymarket-clima
 
-_Actualizado: 2026-11-11 14:49 (Montevideo). Todo es **en papel**: no se usa plata real._
+_Actualizado: 2026-11-11 15:04 (Montevideo). Todo es **en papel**: no se usa plata real._
 
 ## Estado de las tareas
 
 ⚠️ El cosechador no actualiza desde 2026-11-04 16:12 UTC.
 
-- Última foto de liquidez: 2026-11-11T14:49:24
+- Última foto de liquidez: 2026-11-11T15:04:33
 - Monitor: mañana 2026-11-11, noche 2026-11-10
 - Prueba São Paulo: último día registrado 2026-11-11
 - Cosechador: último ciclo 2026-11-04 16:12 UTC, 88 mercados, 46 estaciones
@@ -86,11 +86,11 @@ Series donde el modelo le gana al mercado (≥5 días): mín denver (10 días), 
 
 | Modo | Serie calibrada | Liquidadas | Ganadas | Neto (10 acc. c/u) | Pendientes |
 |---|---|---|---|---|---|
-| taker | no | 1821 | 415 | US$-1000.85 | 176 |
-| maker | no | 3169 | 382 | US$-397.61 | 3177 |
-| cola_taker | no | 904 | 20 | US$-136.11 | 82 |
-| cola_maker | no | 1074 | 21 | US$-76.63 | 1031 |
-| no80_90 | no | 744 | 515 | US$-1280.12 | 78 |
+| taker | no | 1821 | 415 | US$-1000.85 | 182 |
+| maker | no | 3169 | 382 | US$-397.61 | 3187 |
+| cola_taker | no | 904 | 20 | US$-136.11 | 87 |
+| cola_maker | no | 1074 | 21 | US$-76.63 | 1034 |
+| no80_90 | no | 744 | 515 | US$-1280.12 | 80 |
 
 Taker en total: US$-2417.07. _Con la comisión vieja (0,05 para todo) sería US$-2506.16._
 
@@ -122,6 +122,6 @@ Prueba SP: 13 operaciones; como maker se habrían llenado 11, neto **US$-12.35**
 
 ## Recompensas de liquidez (estimación, últimas 24 h)
 
-- Buenos Aires: ~US$23/día con 100 acciones a 1 ¢ en todas las cajas del mercado de mañana (sin contar pérdidas por quedar 'tomado').
+- Buenos Aires: ~US$22/día con 100 acciones a 1 ¢ en todas las cajas del mercado de mañana (sin contar pérdidas por quedar 'tomado').
 - Sao Paulo: ~US$40/día con 100 acciones a 1 ¢ en todas las cajas del mercado de mañana (sin contar pérdidas por quedar 'tomado').
 
