@@ -234,6 +234,9 @@ class Papel:
     def recompensa_dia(self, fecha):
         return None   # en papel se estima con la formula (ver Maker.resumen)
 
+    def reembolsos(self):
+        return None   # en papel no hay reembolsos de comision
+
 
 class Real:
     """SDK oficial polymarket-client 0.14.0 (verificado contra el codigo del SDK, sin plata):
@@ -267,6 +270,7 @@ class Real:
         client = SecureClient.create(private_key=os.environ["POLYMARKET_PRIVATE_KEY"],
                                      wallet=os.environ.get("POLYMARKET_WALLET") or None, api_key=relayer)
         log("cobro automatico (relayer): " + ("si" if relayer else "no, cobrar a mano en Portfolio -> Claim"))
+        self.m = m
         self._preparar(client, est, ops)
 
     @staticmethod
@@ -472,6 +476,28 @@ class Real:
     def recompensa_dia(self, fecha):
         return float(sum(float(e.earnings) for e in self.client.get_total_earnings_for_user_for_day(date=fecha)))
 
+    def reembolsos(self):
+        """Reembolsos de comision de maker que Polymarket ya pago a la cuenta, por dia UTC: {fecha: US$}. Los lee de la
+        actividad publica de la billetera (data-api /v2/activity?type=MAKER_REBATE; Polymarket los paga ~00:45 UTC).
+        None si no se sabe la billetera (POLYMARKET_WALLET). Solo cuenta los pagos desde DESDE_INICIAL."""
+        billetera = os.environ.get("POLYMARKET_WALLET")
+        if not billetera:
+            return None
+        r = (getattr(self, "m", None) or mercado).S.get(f"{DATA}/v2/activity", timeout=30,
+                                                         params={"user": billetera, "type": "MAKER_REBATE", "limit": 500})
+        r.raise_for_status()
+        r = r.json()
+        if isinstance(r, dict):
+            r = r.get("data") or []
+        por_dia = {}
+        for a in r:
+            usd, ts = float(a.get("usdcSize") or a.get("usdc_size") or 0), int(a.get("timestamp") or 0)
+            if a.get("type") != "MAKER_REBATE" or usd <= 0 or ts < self.DESDE_INICIAL:
+                continue
+            dia = datetime.fromtimestamp(ts, timezone.utc).strftime("%Y-%m-%d")
+            por_dia[dia] = round(por_dia.get(dia, 0) + usd, 4)
+        return por_dia
+
 
 # ---------------------------------------------------------------------------
 
@@ -644,18 +670,55 @@ class Maker:
         """Resultado que mira el freno TOTAL. Con freno_total_con_recompensas en true (decision de Agus 10-nov) son los
         llenados al costo MAS las recompensas diarias cobradas (las que informa Polymarket y anota `recompensas`): el
         10-nov los llenados iban en -26,76, a 3 del freno de -30, con 17,22 cobrados en recompensas y la cuenta a 1,5
-        de lo depositado. El freno estaba por apagar un bot que casi no perdia. Los reembolsos de comision no entran
-        (el bot no los lee). Sin la clave o en false: solo llenados, como antes."""
+        de lo depositado. El freno estaba por apagar un bot que casi no perdia. Sin la clave o en false: solo llenados,
+        como antes. Con freno_total_con_reembolsos en true (decision de Agus 11-nov) suma tambien los reembolsos de
+        comision de maker ya pagados (`leer_reembolsos`): el 11-nov el freno decia -6,16 con la cuenta +1,58 arriba de
+        lo depositado; la diferencia eran 7,40 de reembolsos que el bot no leia."""
         total = self.pnl()
         if self.cfg["maker"].get("freno_total_con_recompensas"):
             total += sum(float(v) for k, v in self.est.get("recompensas", {}).items() if k != "estimada")
+        if self.cfg["maker"].get("freno_total_con_reembolsos"):
+            total += self.reembolsos_cobrados()
         return round(total, 2)
+
+    def reembolsos_cobrados(self):
+        return sum(float(v) for v in self.est.get("reembolsos", {}).values())
+
+    def que_cuenta_freno(self, une=" y "):
+        """Que suma el freno total ademas de los llenados, para los textos: '', 'recompensas', 'recompensas y reembolsos'."""
+        r = self.cfg["maker"]
+        return une.join(n for n, k in (("recompensas", "freno_total_con_recompensas"),
+                                       ("reembolsos", "freno_total_con_reembolsos")) if r.get(k))
+
+    def leer_reembolsos(self, ahora):
+        """Una vez por hora relee los reembolsos de comision pagados (Real.reembolsos) y los guarda en el estado. Si la
+        lectura falla o viene vacia se queda con lo que ya tenia (el numero del freno no cambia por un error de red) y
+        reintenta a los 10 minutos."""
+        if not self.cfg["maker"].get("freno_total_con_reembolsos") or not hasattr(self.ej, "reembolsos"):
+            return
+        if ahora.timestamp() - self.est.get("reembolsos_leido", 0) < 3600:
+            return
+        self.est["reembolsos_leido"] = ahora.timestamp()
+        try:
+            nuevos = self.ej.reembolsos()
+        except Exception as ex:
+            log(f"no se pudieron leer los reembolsos de comision: {ex!r}")
+            self.est["reembolsos_leido"] = ahora.timestamp() - 3000
+            return
+        if not nuevos:
+            return
+        antes = self.reembolsos_cobrados()
+        self.est["reembolsos"] = {**self.est.get("reembolsos", {}), **nuevos}
+        if self.reembolsos_cobrados() > antes + 0.005:
+            log(f"reembolsos de comision cobrados: US$ {self.reembolsos_cobrados():.2f} "
+                f"(+{self.reembolsos_cobrados() - antes:.2f}): "
+                + ", ".join(f"{k} {v:.2f}" for k, v in sorted(self.est["reembolsos"].items())))
 
     def texto_total(self):
         """Como va el freno TOTAL, para los avisos al celular: el mismo numero que mira el freno. (10-nov: el aviso decia
         "Total al costo -29,31" al lado de un tope de -30, cuando el freno, que suma las recompensas, iba en -7,4.)"""
         r = self.cfg["maker"]
-        con = " (con recompensas)" if r.get("freno_total_con_recompensas") else ""
+        con = f" (con {self.que_cuenta_freno()})" if self.que_cuenta_freno() else ""
         return f"Freno total{con}: {self.perdida_total_freno():+.2f} de -{r['max_perdida_total']}"
 
     def frenado(self):
@@ -672,7 +735,7 @@ class Maker:
         if ahora.strftime("%Y-%m-%d %H:%M") > r["apagar_despues_de"]:
             return f"fecha de apagado {r['apagar_despues_de']}"
         if self.perdida_total_freno() <= -r["max_perdida_total"]:
-            con = " (llenados + recompensas)" if r.get("freno_total_con_recompensas") else ""
+            con = f" (llenados + {self.que_cuenta_freno(' + ')})" if self.que_cuenta_freno() else ""
             self.parar(f"perdida total{con} {self.perdida_total_freno():.2f} llego al tope {r['max_perdida_total']}")
             return "perdida total"
         dia = self.dia_local(ahora)
@@ -1348,6 +1411,7 @@ class Maker:
             self.est["errores_seguidos"] = self.est.get("errores_seguidos", 0) + errores if errores else 0
             self.est["ultimo_ciclo"] = ahora.strftime("%Y-%m-%d %H:%M:%S")
             self.recompensas(ahora)
+            self.leer_reembolsos(ahora)
             self.sigo_vivo(ahora)
         except SystemExit:
             raise
@@ -1394,6 +1458,7 @@ class Maker:
         rec = self.est["recompensas"]
         cobradas = {k: v for k, v in rec.items() if k != "estimada"}
         est = rec.get("estimada", {})
+        reemb = self.est.get("reembolsos", {})
         ops = self.ops()
         llen = [o for o in ops if o["lado"] in ("BUY", "SELL")]
         libre, cuenta, reservado = self.efectivo_libre()
@@ -1403,6 +1468,8 @@ class Maker:
                                                                      f"rec. esp. {c['rec_pes']}/día)" for c in self.est["cajas"].values()),
                f"- Recompensas cobradas (lo que dice Polymarket; en papel, estimadas): US$ {sum(cobradas.values()):.2f} en {len(cobradas)} días"
                + (": " + ", ".join(f"{k} {v:.2f}" for k, v in sorted(cobradas.items())) if cobradas else "."),
+               f"- Reembolsos de comisión de maker cobrados: US$ {sum(reemb.values()):.2f}"
+               + (": " + ", ".join(f"{k} {v:.2f}" for k, v in sorted(reemb.items())) if reemb else "."),
                f"- Estimación por fórmula (pesimista): " + ", ".join(f"{k} {v:.2f}" for k, v in sorted(est.items())),
                f"- Llenados: {len(llen)} ({sum(float(o['acciones']) for o in llen):.0f} acciones); cajas resueltas: {len(self.est['resultados'])}.",
                f"- Resultado del día (hora de Uruguay, ventas al costo de ese momento + cajas resueltas): US$ {self.pnl(self.dia_local(datetime.now(timezone.utc))):+.2f}; "
@@ -1412,11 +1479,11 @@ class Maker:
                f"Capital puesto ahora: US$ {self.capital_puesto():.2f}.",
                f"- Efectivo libre para comprar: {'?' if libre is None else f'US$ {libre:.2f}'} (en la cuenta "
                f"{'?' if cuenta is None else f'{cuenta:.2f}'}, reservado en compras {reservado:.2f}; sin tope: reinvierte lo que gana).",
-               f"- Neto = recompensas + realizado: US$ {sum(cobradas.values()) + self.pnl():+.2f}. "
+               f"- Neto = recompensas + reembolsos + realizado: US$ {sum(cobradas.values()) + sum(reemb.values()) + self.pnl():+.2f}. "
                f"Para el freno total: US$ {self.perdida_total_freno():+.2f} (tope −{self.cfg['maker']['max_perdida_total']}"
-               f"{', cuenta llenados + recompensas' if self.cfg['maker'].get('freno_total_con_recompensas') else ', solo llenados'}).",
+               f"{', cuenta llenados + ' + self.que_cuenta_freno(' + ') if self.que_cuenta_freno() else ', solo llenados'}).",
                f"- A PRECIO DE MERCADO (lo que muestra la web): acciones US$ {valor:.2f} (al costo {costo_inv:.2f}); llenados "
-               f"US$ {self.pnl(inventario=False) + valor:+.2f}; neto con recompensas US$ {sum(cobradas.values()) + self.pnl(inventario=False) + valor:+.2f}; "
+               f"US$ {self.pnl(inventario=False) + valor:+.2f}; neto con recompensas y reembolsos US$ {sum(cobradas.values()) + sum(reemb.values()) + self.pnl(inventario=False) + valor:+.2f}; "
                f"cuenta = efectivo + acciones = US$ {('?' if cuenta is None else f'{cuenta + valor:.2f}')}.",
                f"- Filtro de movimiento (sin compras): " + (", ".join(f"{v['caja']} ({v['evento']}, "
                                                                                + (f"a mano: '{v['a_mano']}'" if v.get("a_mano") else f"{v.get('movimiento', 0) * 100:+.1f} c")

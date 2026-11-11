@@ -169,9 +169,17 @@ así puede disparar la ALERTA de "venta bajo el costo": es esperado. Sin la clav
 total (`max_perdida_total`, −30) mira los llenados al costo MÁS las recompensas diarias cobradas, las que informa
 Polymarket y el bot anota a las 00:30 UTC (`perdida_total_freno`). Motivo: el 10-nov los llenados iban en −26,76, a 3
 dólares de apagar el bot, con 17,22 cobrados en recompensas y la cuenta a 1,5 de lo depositado. Con el cambio ese día
-el freno mira −9,54. Los reembolsos de comisión (5,75 hasta el 10-nov) no entran porque el bot no los lee: queda un
-margen a favor. La recompensa del día en curso tampoco entra hasta que Polymarket la paga. En papel se suman las
+el freno mira −9,54. La recompensa del día en curso no entra hasta que Polymarket la paga. En papel se suman las
 estimadas. El resumen muestra el número que mira el freno. `false` (o borrar la línea): solo llenados, como antes.
+
+**El freno total cuenta también los reembolsos de comisión (11-nov-2026, decisión de Agus).**
+`freno_total_con_reembolsos: true`: al número del freno total se le suman los reembolsos de comisión de maker que
+Polymarket ya pagó (los paga cerca de las 00:45 UTC). El bot los lee una vez por hora de la actividad pública de la
+billetera (`POLYMARKET_WALLET`, data-api `/v2/activity?type=MAKER_REBATE`) y los guarda en el estado (`reembolsos`);
+si la lectura falla se queda con lo último que leyó. Motivo: el 11-nov el freno decía −6,16 con la cuenta +1,58 arriba
+de lo depositado; la diferencia eran 7,40 de reembolsos (4,55 + 1,20 + 1,65) que el bot no leía, y el freno iba a saltar
+con una pérdida real de unos −22,6 en vez de −30. El resumen los muestra en una línea aparte y dentro del neto.
+`false` (o borrar la línea): no se leen ni se suman.
 
 **La rotación corre también con menos cajas que `cajas` (10-nov-2026).** La rotación solo se evaluaba con las 3 cajas
 completas. Con la plata en acciones el bot quedó horas con 2 cajas, una de ellas Wellington 19 °C esperando 0,275

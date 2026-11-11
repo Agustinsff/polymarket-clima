@@ -735,6 +735,87 @@ class PruebasFreno(unittest.TestCase):
         self.assertTrue(bot.texto_total().startswith("Freno total: "))
         shutil.rmtree(d)
 
+    def test_freno_total_cuenta_reembolsos(self):
+        """11-nov (pedido de Agus): con freno_total_con_reembolsos el freno total suma tambien los reembolsos de comision
+        de maker ya pagados. Se releen una vez por hora; si la lectura falla o viene vacia queda lo que ya habia."""
+        import types
+        d = tempfile.mkdtemp()
+        pagos = {"2026-11-09": 4.5494, "2026-11-10": 1.1992}
+        lecturas = []
+
+        def reembolsos():
+            lecturas.append(1)
+            if isinstance(pagos, Exception):
+                raise pagos
+            return pagos
+        ej = types.SimpleNamespace(inventario=lambda: {}, abiertas=lambda: [], llenados=lambda: [],
+                                   cancelar_todo=lambda: None, nombre="real", reembolsos=reembolsos)
+        bot = maker.Maker(cfg(modo="real", max_perdida_total=30, freno_total_con_recompensas=True,
+                              freno_total_con_reembolsos=True), m=MercadoFalso(), carpeta=d, ej=ej)
+        bot.avisar = lambda t: None
+        bot.anotar(momento_utc="2026-11-01 10:00:00", modo="real", evento="e", caja="c", condition_id="A", token="T1",
+                   lado="BUY", precio=0.5352, acciones=50, medio="", detalle="")          # llenados -26,76
+        bot.est["recompensas"] = {"estimada": {}, "2026-11-07": 2.29, "2026-11-08": 9.95, "2026-11-09": 4.98}
+        self.assertAlmostEqual(bot.perdida_total_freno(), -9.54, places=2)     # todavia no leyo reembolsos
+        bot.leer_reembolsos(AHORA)
+        self.assertAlmostEqual(bot.reembolsos_cobrados(), 5.7486, places=4)
+        self.assertAlmostEqual(bot.perdida_total_freno(), -3.79, places=2)     # -26,76 + 17,22 + 5,75
+        self.assertEqual(bot.texto_total(), "Freno total (con recompensas y reembolsos): -3.79 de -30")
+        bot.leer_reembolsos(AHORA + timedelta(minutes=30))                     # una vez por hora
+        self.assertEqual(len(lecturas), 1)
+        pagos = ConnectionError("sin red")                                     # falla: queda lo que habia, reintenta
+        bot.leer_reembolsos(AHORA + timedelta(minutes=61))
+        self.assertAlmostEqual(bot.reembolsos_cobrados(), 5.7486, places=4)
+        pagos = {}                                                             # vacio: tampoco borra
+        bot.leer_reembolsos(AHORA + timedelta(minutes=75))
+        self.assertEqual(len(lecturas), 3)
+        self.assertAlmostEqual(bot.reembolsos_cobrados(), 5.7486, places=4)
+        pagos = {"2026-11-09": 4.5494, "2026-11-10": 1.1992, "2026-11-11": 1.6519}
+        bot.leer_reembolsos(AHORA + timedelta(minutes=140))
+        self.assertAlmostEqual(bot.perdida_total_freno(), -2.14, places=2)
+        bot.resumen()
+        with open(bot.f_res, encoding="utf-8") as f:
+            texto = f.read()
+        self.assertIn("Reembolsos de comisión de maker cobrados: US$ 7.40", texto)
+        self.assertIn("cuenta llenados + recompensas + reembolsos", texto)
+        # el freno salta con llenados + recompensas + reembolsos
+        bot.anotar(momento_utc="2026-11-01 12:00:00", modo="real", evento="e", caja="c", condition_id="A", token="T1",
+                   lado="BUY", precio=0.5, acciones=56, medio="", detalle="")              # -2,14 - 28 = -30,14
+        self.assertEqual(bot.freno(AHORA), "perdida total")
+        self.assertIn("llenados + recompensas + reembolsos", bot.frenado())
+        os.remove(bot.f_parar_auto)
+        bot.cfg["maker"]["freno_total_con_reembolsos"] = False                 # sin la clave: como antes
+        self.assertAlmostEqual(bot.perdida_total_freno(), -37.54, places=2)
+        shutil.rmtree(d)
+
+    def test_reembolsos_de_la_actividad(self):
+        """Real.reembolsos suma por dia UTC los MAKER_REBATE de la actividad publica y descarta lo que no lo es."""
+        import types
+        t = lambda dia, h: int(datetime(2026, 11, dia, h, 45, tzinfo=timezone.utc).timestamp())
+        datos = {"data": [{"type": "MAKER_REBATE", "usdcSize": 1.6519, "timestamp": t(11, 0)},
+                          {"type": "MAKER_REBATE", "usdcSize": "1.1992", "timestamp": t(10, 0)},
+                          {"type": "MAKER_REBATE", "usdcSize": 0.5, "timestamp": t(10, 1)},
+                          {"type": "REWARD", "usdcSize": 9.0, "timestamp": t(10, 0)},
+                          {"type": "MAKER_REBATE", "usdcSize": 3.0, "timestamp": t(1, 0)}]}       # antes del bot
+        pedidos = []
+
+        def get(url, params=None, timeout=None):
+            pedidos.append((url, params))
+            return types.SimpleNamespace(json=lambda: datos, raise_for_status=lambda: None)
+        ej = maker.Real.__new__(maker.Real)
+        ej.m = types.SimpleNamespace(S=types.SimpleNamespace(get=get))
+        viejo = os.environ.pop("POLYMARKET_WALLET", None)
+        try:
+            self.assertIsNone(ej.reembolsos())                                 # sin billetera no adivina
+            os.environ["POLYMARKET_WALLET"] = "0xabc"
+            self.assertEqual(ej.reembolsos(), {"2026-11-11": 1.6519, "2026-11-10": 1.6992})
+            self.assertEqual(pedidos[0][1]["type"], "MAKER_REBATE")
+            self.assertEqual(pedidos[0][1]["user"], "0xabc")
+        finally:
+            os.environ.pop("POLYMARKET_WALLET", None)
+            if viejo:
+                os.environ["POLYMARKET_WALLET"] = viejo
+
     def test_dia_en_hora_de_uruguay(self):
         """El 'dia' del freno es el de Uruguay (UTC-3): una venta a las 02:30Z del 9-nov cuenta para el 8-nov local."""
         import types
