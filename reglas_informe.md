@@ -1,8 +1,8 @@
 # Reglas de los mercados de Polymarket
 
-Actualizado 2026-11-12 11:48 UTC por `reglas.py` (cada 3 h). Lo que Polymarket usa hoy en cada familia de mercados, y los cambios que se detectaron.
+Actualizado 2026-11-12 20:25 UTC por `reglas.py` (cada 3 h). Lo que Polymarket usa hoy en cada familia de mercados, y los cambios que se detectaron.
 
-🔔 Polymarket cambió algo en **clima (otros)** (mercado de clima nuevo, ya no aparece el 2026-11-12 11:48 UTC): `will-it-rain-during-the-brazilian-grand-prix`. Ver [reglas_informe.md](reglas_informe.md).
+🔔 Polymarket cambió algo en **clima (otros)** (mercado de clima nuevo, ya no aparece el 2026-11-12 20:25 UTC): `will-there-be-a-super-el-nino-this-winter` y 1 más. Ver [reglas_informe.md](reglas_informe.md).
 
 ## Comisiones
 
@@ -16,8 +16,8 @@ Comisión del taker = **tasa × p × (1 − p)** por acción. Desde el 23-oct ca
 | cripto ethereum-hit-price-daily | 1 | `feesEnabled=True feeType=crypto_fees_v2 feeSchedule={"exponent": 1, "rate": 0.07, "rebateRate": 0.2, "takerOnly": true} takerBaseFee=1000` (1) | 0.07 |
 | cripto ethereum-multi-strikes-weekly | 7 | `feesEnabled=True feeType=crypto_fees_v2 feeSchedule={"exponent": 1, "rate": 0.07, "rebateRate": 0.2, "takerOnly": true} takerBaseFee=1000` (7) | 0.07 |
 | cripto ethereum-neg-risk-weekly | 7 | `feesEnabled=True feeType=crypto_fees_v2 feeSchedule={"exponent": 1, "rate": 0.07, "rebateRate": 0.2, "takerOnly": true} takerBaseFee=1000` (7) | 0.07 |
-| temperatura máxima | 150 | `feesEnabled=True feeType=weather_fees feeSchedule={"exponent": 1, "rate": 0.05, "rebateRate": 0.25, "takerOnly": true} takerBaseFee=1000` (150) | 0.05 |
-| temperatura mínima | 105 | `feesEnabled=True feeType=weather_fees feeSchedule={"exponent": 1, "rate": 0.05, "rebateRate": 0.25, "takerOnly": true} takerBaseFee=1000` (105) | 0.05 |
+| temperatura máxima | 133 | `feesEnabled=True feeType=weather_fees feeSchedule={"exponent": 1, "rate": 0.05, "rebateRate": 0.25, "takerOnly": true} takerBaseFee=1000` (133) | 0.05 |
+| temperatura mínima | 91 | `feesEnabled=True feeType=weather_fees feeSchedule={"exponent": 1, "rate": 0.05, "rebateRate": 0.25, "takerOnly": true} takerBaseFee=1000` (91) | 0.05 |
 
 ## Fuente de resolución y parámetros
 
@@ -37,19 +37,19 @@ Comisión del taker = **tasa × p × (1 − p)** por acción. Desde el 23-oct ca
 | cripto ethereum-hit-price-daily | parámetros | `orden minima=5 tick=0.001` (1) | 2026-10-23 13:08 |
 | cripto ethereum-multi-strikes-weekly | fuente de resolución | `binance.com/en/trade/ETH_USDT` (7) | 2026-10-23 13:08 |
 | cripto ethereum-multi-strikes-weekly | parámetros | `orden minima=5 tick=0.001` (7) | 2026-10-23 13:08 |
-| cripto ethereum-multi-strikes-weekly | parámetros | `orden minima=5 tick=0.01` (6) | 2026-10-23 13:08 |
+| cripto ethereum-multi-strikes-weekly | parámetros | `orden minima=5 tick=0.01` (7) | 2026-10-23 13:08 |
 | cripto ethereum-neg-risk-weekly | fuente de resolución | `binance.com/en/trade/ETH_USDT` (7) | 2026-10-23 13:08 |
 | cripto ethereum-neg-risk-weekly | parámetros | `orden minima=5 tick=0.001` (7) | 2026-10-23 13:08 |
 | cripto ethereum-neg-risk-weekly | parámetros | `orden minima=5 tick=0.01` (7) | 2026-10-23 13:08 |
-| temperatura máxima | fuente de resolución | `aviationweather.gov/api/data/metar` (143) | 2026-10-23 13:08 |
+| temperatura máxima | fuente de resolución | `aviationweather.gov/api/data/metar` (126) | 2026-10-23 13:08 |
 | temperatura máxima | fuente de resolución | `wunderground.com/history/daily` (4) | 2026-10-23 13:08 |
 | temperatura máxima | fuente de resolución | `(sin fuente)` (3) | 2026-10-23 13:08 |
-| temperatura máxima | parámetros | `orden minima=5 tick=0.001` (146) | 2026-10-23 13:08 |
-| temperatura máxima | parámetros | `orden minima=5 tick=0.01` (127) | 2026-10-23 13:08 |
-| temperatura mínima | fuente de resolución | `aviationweather.gov/api/data/metar` (102) | 2026-10-23 13:08 |
+| temperatura máxima | parámetros | `orden minima=5 tick=0.001` (129) | 2026-10-23 13:08 |
+| temperatura máxima | parámetros | `orden minima=5 tick=0.01` (107) | 2026-10-23 13:08 |
+| temperatura mínima | fuente de resolución | `aviationweather.gov/api/data/metar` (88) | 2026-10-23 13:08 |
 | temperatura mínima | fuente de resolución | `(sin fuente)` (3) | 2026-10-23 13:08 |
-| temperatura mínima | parámetros | `orden minima=5 tick=0.01` (96) | 2026-10-23 13:08 |
-| temperatura mínima | parámetros | `orden minima=5 tick=0.001` (63) | 2026-10-23 13:08 |
+| temperatura mínima | parámetros | `orden minima=5 tick=0.01` (86) | 2026-10-23 13:08 |
+| temperatura mínima | parámetros | `orden minima=5 tick=0.001` (57) | 2026-10-23 13:08 |
 
 ## Mercados de clima que no son de temperatura diaria
 
@@ -88,12 +88,10 @@ Comisión del taker = **tasa × p × (1 − p)** por acción. Desde el 23-oct ca
 - `melbournes-wettest-month-of`: 1 abiertos (ej. `melbournes-wettest-month-of-2026`), visto desde 2026-10-23 13:08
 - `natural-disaster`: 1 abiertos (ej. `natural-disaster-in-2026`), visto desde 2026-10-23 13:08
 - `november`: 2 abiertos (ej. `november-2026-1st-2nd-or-3rd-hottest-on-record`), visto desde 2026-10-30 18:11
-- `october`: 2 abiertos (ej. `october-2026-temperature-increase-c-20260928t160000000z`), visto desde 2026-10-23 13:08
 - `peak-severe-drought`: 1 abiertos (ej. `peak-severe-drought-in-minas-gerais-during-the-coffee-growing-season`), visto desde 2026-10-23 13:08
 - `peak-wind-gust`: 1 abiertos (ej. `peak-wind-gust-in-the-worlds-windiest-city-in-november`), visto desde 2026-10-23 13:08
 - `phivolcs-raises-mayon-to-alert-level`: 1 abiertos (ej. `phivolcs-raises-mayon-to-alert-level-4-by`), visto desde 2026-11-03 19:47
 - `precipitation`: 6 abiertos (ej. `precipitation-in-hong-kong-in-november`), visto desde 2026-10-23 13:08
-- `state-d4-drought`: 1 abiertos (ej. `state-d4-drought-2026-11-10`), visto desde 2026-10-23 13:08
 - `us-tornadoes`: 1 abiertos (ej. `us-tornadoes-in-november-2026`), visto desde 2026-10-23 13:08
 - `vesuvius-eruption-with`: 1 abiertos (ej. `vesuvius-eruption-with-1-vei-in-2026`), visto desde 2026-10-23 13:08
 - `west-nile-neuroinvasive-cases-nyc`: 1 abiertos (ej. `west-nile-neuroinvasive-cases-nyc-2026-20260820104404`), visto desde 2026-10-23 13:08
@@ -104,7 +102,7 @@ Comisión del taker = **tasa × p × (1 − p)** por acción. Desde el 23-oct ca
 - `where-will`: 1 abiertos (ej. `where-will-2026-rank-among-the-hottest-years-on-record`), visto desde 2026-10-23 13:08
 - `where-will-a`: 1 abiertos (ej. `where-will-a-6pt0-magnitude-earthquake-occur-by-end-of-november`), visto desde 2026-10-23 13:08
 - `where-will-a-hurricane-make-landfall`: 1 abiertos (ej. `where-will-a-hurricane-make-landfall-in-the-us-during-the-2026-hurricane-season`), visto desde 2026-10-23 13:08
-- `where-will-it-rain`: 2 abiertos (ej. `where-will-it-rain-on-november-11-2026`), visto desde 2026-10-23 13:08
+- `where-will-it-rain`: 3 abiertos (ej. `where-will-it-rain-on-november-11-2026`), visto desde 2026-10-23 13:08
 - `which-countries-will-have-an-ebola-case`: 1 abiertos (ej. `which-countries-will-have-an-ebola-case-in-2026`), visto desde 2026-10-23 13:08
 - `will`: 1 abiertos (ej. `will-2-or-more-hurricanes-make-landfall-in-the-us-in-2026-20260721164140039`), visto desde 2026-10-23 13:08
 - `will-a-hurricane-make-landfall`: 1 abiertos (ej. `will-a-hurricane-make-landfall-in-hawaii-before-2027-20260721182828397`), visto desde 2026-10-23 13:08
@@ -119,12 +117,13 @@ Comisión del taker = **tasa × p × (1 − p)** por acción. Desde el 23-oct ca
 ## Ciudades con mercado de temperatura
 
 - **temperatura máxima** (51): amsterdam, ankara, atlanta, austin, beijing, buenos-aires, busan, cape-town, chengdu, chicago, chongqing, dallas, denver, guangzhou, helsinki, hong-kong, houston, istanbul, jeddah, jinan, karachi, kuala-lumpur, london, los-angeles, lucknow, madrid, manila, mexico-city, miami, milan, moscow, munich, nyc, panama-city, paris, qingdao, san-francisco, sao-paulo, seattle, seoul, shanghai, shenzhen, singapore, taipei, tel-aviv, tokyo, toronto, warsaw, wellington, wuhan, zhengzhou
-- **temperatura mínima** (45): amsterdam, ankara, atlanta, austin, beijing, buenos-aires, busan, cape-town, chengdu, chicago, chongqing, dallas, denver, guangzhou, helsinki, hong-kong, houston, istanbul, jeddah, karachi, london, los-angeles, lucknow, madrid, mexico-city, miami, milan, moscow, munich, nyc, paris, qingdao, san-francisco, sao-paulo, seattle, seoul, shanghai, shenzhen, taipei, tel-aviv, tokyo, toronto, warsaw, wellington, wuhan
+- **temperatura mínima** (38): amsterdam, ankara, atlanta, austin, beijing, buenos-aires, cape-town, chengdu, chicago, dallas, denver, helsinki, hong-kong, houston, istanbul, jeddah, karachi, london, los-angeles, madrid, mexico-city, miami, milan, moscow, munich, nyc, paris, san-francisco, sao-paulo, seattle, seoul, shanghai, shenzhen, tel-aviv, tokyo, toronto, warsaw, wellington
 
 ## Últimos cambios
 
 | Cuándo (UTC) | Familia | Qué | Cambio | Detalle | Origen |
 |---|---|---|---|---|---|
+| 2026-11-12 20:25 | clima (otros) | mercado de clima nuevo | ya no aparece | will-there-be-a-super-el-nino-this-winter | auto |
 | 2026-11-12 11:48 | clima (otros) | mercado de clima nuevo | ya no aparece | will-it-rain-during-the-brazilian-grand-prix | auto |
 | 2026-11-09 12:05 | clima (otros) | mercado de clima nuevo | ya no aparece | what-intensity-will | auto |
 | 2026-11-09 12:05 | clima (otros) | mercado de clima nuevo | ya no aparece | which-cities-face-tornado-risk | auto |
@@ -154,7 +153,6 @@ Comisión del taker = **tasa × p × (1 − p)** por acción. Desde el 23-oct ca
 | 2026-10-27 00:47 | temperatura máxima | reglamento | ya no aparece | To toggle between Fahrenheit and Celsius, click the "Switch to Metric Units" button until the relevant table displays °C. | auto |
 | 2026-10-27 00:47 | temperatura máxima | reglamento | ya no aparece | The resolution source for this market will be information from <estacion>, specifically the highest reading under the "Temp" column for all times on this day, available here: | auto |
 | 2026-10-27 00:47 | temperatura máxima | reglamento | ya no aparece | This market will resolve once the first data point for the following date has been published on the resolution source, or by #:# PM ET on the day following the observation date, whichever comes first. | auto |
-| 2026-10-27 00:47 | temperatura máxima | reglamento | ya no aparece | Revisions to temperatures recorded within this market's timeframe will be considered until the first datapoint for the following date has been published, after which any alterations will not be considered. | auto |
 
 ## Reglamento actual (frases comunes)
 
