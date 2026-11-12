@@ -1578,6 +1578,12 @@ def main():
                 time.sleep(max(cfg["maker"]["ciclo_seg"] - (time.time() - t0), 5))
         except KeyboardInterrupt:
             log("corte pedido (Ctrl+C o fin del tramo)")
+        except Exception:                   # noqa: BLE001
+            # un error que se escapa del ciclo cierra el bot y cancela las ordenes: que al menos quede escrito cual fue
+            # (12-nov 03:18Z: se cerro, cancelo y la ventana lo relanzo; el error solo salio por la consola)
+            import traceback
+            log("ERROR que cierra el bot: " + traceback.format_exc())
+            raise
         finally:
             bot.resumen()                   # con las ordenes todavia puestas, para que el capital se vea
             if reiniciar:
