@@ -860,7 +860,9 @@ class Maker:
                     continue
                 if self.decidida(c, ahora):
                     continue
-                necesita = round(c["tam"] * (1 - 2 * k["distancia"]), 2)     # las dos compras (Si + No) de la caja
+                necesita = self.necesita_caja(c)                             # las compras que de verdad se pondrian
+                if necesita <= 0:                                            # no se compraria ningun lado: no sirve
+                    continue
                 if libre is not None and necesita > libre:
                     # una linea cada media hora, no una por caja y por ciclo: el 11-nov eran 9.793 de las 9.927 lineas
                     # de maker_real.log y, como el archivo rota por tamano, borraban la historia util
@@ -1032,6 +1034,16 @@ class Maker:
             log(f"filtro de movimiento: {c['evento']} {c['caja']} se movio {mov * 100:+.1f} c en la ultima hora, "
                 f"sin compras hasta que se calme")
         return True
+
+    def necesita_caja(self, c):
+        """Efectivo que hace falta para entrar a una caja nueva: la suma de las compras que `cotizar` pondria sin
+        inventario. Antes se reservaban siempre las dos (Si + No = acciones x (1 - 2 x distancia), US$ 24), pero con el
+        piso (`precio_min_compra`) o el techo (`precio_max_compra`) un lado puede no comprarse: el 12-nov el bot estuvo
+        dos horas con 2 cajas teniendo US$ 22,24 libres. Si a la caja le falta algun dato, la cuenta de antes."""
+        try:
+            return round(sum(o[2] * o[3] for o in self.cotizar(c, {}) if o[1] == "BUY"), 2)
+        except (KeyError, TypeError):
+            return round(c["tam"] * (1 - 2 * self.cfg["maker"]["distancia"]), 2)
 
     def cotizar(self, c, inv, sin_compras=False):
         """Las dos ordenes que queremos en la caja: [(token, lado, precio, acciones, es_si)]. Con sin_compras solo ventas."""

@@ -1209,6 +1209,19 @@ class PruebasGuardiaMetar(unittest.TestCase):
         self.assertEqual(len(bot.cotizar({"si": "s", "no": "n", "medio": 0.3, "tick": 0.01, "tam": 25}, {})), 2)
         shutil.rmtree(d)
 
+    def test_necesita_solo_lo_que_compra(self):
+        """12-nov: para entrar a una caja se reserva solo lo que se va a comprar (con el techo, un lado puede faltar)."""
+        d = tempfile.mkdtemp()
+        bot = maker.Maker(cfg(), m=MercadoFalso(), carpeta=d)
+        c = {"si": "s", "no": "n", "medio": 0.38, "tick": 0.01, "tam": 25}
+        self.assertEqual(bot.necesita_caja(c), 24.0)                                # Si a 0,36 + No a 0,60
+        bot.cfg["maker"]["precio_max_compra"] = 0.6
+        self.assertEqual(bot.necesita_caja(c), 9.0)                                 # solo el Si a 0,36
+        c["medio"] = 0.5
+        self.assertEqual(bot.necesita_caja(c), 24.0)                                # 0,48 + 0,48: los dos lados
+        self.assertEqual(bot.necesita_caja({"tam": 25}), 24.0)                      # sin datos: la cuenta de antes
+        shutil.rmtree(d)
+
     def test_tope_inventario_por_lado(self):
         """Moscu 4 °C (8-nov): con 86 No ya comprados no sigue comprando No; el No que tiene si lo vende."""
         d = tempfile.mkdtemp()
