@@ -1039,6 +1039,12 @@ class Maker:
         # piso para comprar (8-nov, Chengdu): un lado por debajo de `precio_min_compra` (0,10) es casi siempre el que ya
         # se sabe que pierde; no se compra. Las ventas del inventario siguen.
         piso = self.cfg["maker"].get("precio_min_compra", 0.10)
+        # techo para comprar (12-nov, decision de Agus, a prueba): no se pone una compra a `precio_max_compra` (0,60) o
+        # mas. Con los 155 llenados reales del 7 al 12-nov las compras a 0,60 o mas perdieron 18,58 sobre US$ 418 (37
+        # compras) y el resto 13,62 sobre 554 (118); desde el 10-nov -5,94 (11) contra +1,35 (31): Kuala Lumpur 32 °C a
+        # 0,63 y Ciudad del Cabo 22 °C a 0,68. Ese lado queda sin cotizar (la caja puntua un tercio en la recompensa);
+        # las ventas del inventario siguen. Sin la clave o en 0: sin techo, como antes.
+        techo = self.cfg["maker"].get("precio_max_compra") or 2
         # tope de inventario por lado (8-nov, Moscu 4 °C: 110 No comprados a 0,38 en una caja, ≈US$ 42, mas de 4 veces el
         # freno diario). No se compra mas de un token cuando lo que ya tenemos mas la compra supera el tope (2 lotes por
         # defecto); la venta de ese inventario sigue. 0 = sin tope.
@@ -1055,14 +1061,14 @@ class Maker:
         if 0.01 <= p_si <= 0.99:
             if no >= tam:
                 ordenes.append((c["no"], "SELL", redondear(1 - p_si, tick, False), tam, False))
-            elif p_si >= piso - 1e-9 and cabe(si):
+            elif piso - 1e-9 <= p_si < techo - 1e-9 and cabe(si):
                 ordenes.append((c["si"], "BUY", p_si, tam, True))
         # lado "vender Si": si tenemos Si, lo vendemos; si no, compramos No
         p_no = redondear(1 - medio - d, tick, True)
         if 0.01 <= p_no <= 0.99:
             if si >= tam:
                 ordenes.append((c["si"], "SELL", redondear(1 - p_no, tick, False), tam, True))
-            elif p_no >= piso - 1e-9 and cabe(no):
+            elif piso - 1e-9 <= p_no < techo - 1e-9 and cabe(no):
                 ordenes.append((c["no"], "BUY", p_no, tam, False))
         return ordenes
 
