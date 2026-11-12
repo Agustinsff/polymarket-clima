@@ -27,7 +27,8 @@
   "maker": {
     "modo": "papel",
     "capital_usd": 100,
-    "cajas": 3,
+    "cajas": 6,
+    "tam_max_caja": 33.34,
     "acciones_min": 25,
     "distancia": 0.02,
     "spread_max": 0.05,

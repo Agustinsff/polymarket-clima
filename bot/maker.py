@@ -818,7 +818,7 @@ class Maker:
             self.est["rotacion_ts"] = ahora.isoformat()
             resto = sorted((c for cid, c in cand.items() if cid not in elegidas and cid not in rotadas),
                            key=lambda c: -c["pozo"])[:60]
-            ok = [c for c in resto if medir_libro(c, self.cfg, self.m) and c["tam"] <= k["capital_usd"] / k["cajas"]
+            ok = [c for c in resto if medir_libro(c, self.cfg, self.m) and c["tam"] <= self.tam_max()
                   and not self.decidida(c, ahora)]
             # solo se rota una caja sin acciones en mano (9-nov: Shenzhen 25 °C quedo con 25 No al rotar, sin poder
             # venderse bajo el costo, y el bot quedo con 2 cajas por falta de efectivo); con acciones sigue activa y vende
@@ -856,7 +856,7 @@ class Maker:
             for c in sorted(ok, key=lambda c: -c["rec_pes"]):
                 if len(elegidas) >= k["cajas"]:
                     break
-                if c["tam"] > k["capital_usd"] / k["cajas"]:
+                if c["tam"] > self.tam_max():
                     continue
                 if self.decidida(c, ahora):
                     continue
@@ -1034,6 +1034,13 @@ class Maker:
             log(f"filtro de movimiento: {c['evento']} {c['caja']} se movio {mov * 100:+.1f} c en la ultima hora, "
                 f"sin compras hasta que se calme")
         return True
+
+    def tam_max(self):
+        """Tamano maximo (acciones minimas de la recompensa) de una caja que se puede elegir. Antes era siempre
+        capital_usd / cajas; al subir `cajas` para no dejar plata parada (12-nov, 3 -> 6) esa cuenta dejaba afuera a
+        todas las cajas de 25 acciones (100 / 6 = 16,7). Con `tam_max_caja` en la config se fija aparte."""
+        k = self.cfg["maker"]
+        return k.get("tam_max_caja") or k["capital_usd"] / k["cajas"]
 
     def necesita_caja(self, c):
         """Efectivo que hace falta para entrar a una caja nueva: la suma de las compras que `cotizar` pondria sin
