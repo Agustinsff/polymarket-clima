@@ -816,6 +816,21 @@ class PruebasFreno(unittest.TestCase):
             if viejo:
                 os.environ["POLYMARKET_WALLET"] = viejo
 
+    def test_resumen_una_vez_por_media_hora(self):
+        """El resumen toca una vez por tramo de media hora aunque ningun ciclo caiga justo en el minuto 00 o 30."""
+        import types
+        d = tempfile.mkdtemp()
+        ej = types.SimpleNamespace(inventario=lambda: {}, abiertas=lambda: [], llenados=lambda: [],
+                                   cancelar_todo=lambda: None, nombre="real")
+        bot = maker.Maker(cfg(modo="real"), m=MercadoFalso(), carpeta=d, ej=ej)
+        t = datetime(2026, 11, 11, 11, 58, 57, tzinfo=timezone.utc)
+        self.assertTrue(bot.toca_resumen(t))                                   # primera pasada
+        self.assertFalse(bot.toca_resumen(t + timedelta(seconds=61)))          # 11:59:58, mismo tramo
+        self.assertTrue(bot.toca_resumen(t + timedelta(seconds=125)))          # 12:01:02: se salteo el minuto 00
+        self.assertFalse(bot.toca_resumen(t + timedelta(minutes=20)))
+        self.assertTrue(bot.toca_resumen(t + timedelta(minutes=32)))           # 12:30:57
+        shutil.rmtree(d)
+
     def test_dia_en_hora_de_uruguay(self):
         """El 'dia' del freno es el de Uruguay (UTC-3): una venta a las 02:30Z del 9-nov cuenta para el 8-nov local."""
         import types
