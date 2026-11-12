@@ -5,6 +5,7 @@ _Actualizado: 2026-11-12 08:53 (Montevideo). Todo es **en papel**: no se usa pla
 ## Estado de las tareas
 
 ⚠️ El cosechador no actualiza desde 2026-11-04 16:12 UTC.
+🔔 Polymarket cambió algo en **clima (otros)** (mercado de clima nuevo, ya no aparece el 2026-11-12 11:48 UTC): `will-it-rain-during-the-brazilian-grand-prix`. Ver [reglas_informe.md](reglas_informe.md).
 
 - Última foto de liquidez: 2026-11-12T08:53:20
 - Monitor: mañana 2026-11-11, noche 2026-11-11
