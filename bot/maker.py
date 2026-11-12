@@ -862,7 +862,12 @@ class Maker:
                     continue
                 necesita = round(c["tam"] * (1 - 2 * k["distancia"]), 2)     # las dos compras (Si + No) de la caja
                 if libre is not None and necesita > libre:
-                    log(f"no entra la caja {c['evento']} {c['caja']}: necesita US$ {necesita:.2f} y hay US$ {libre:.2f} libres")
+                    # una linea cada media hora, no una por caja y por ciclo: el 11-nov eran 9.793 de las 9.927 lineas
+                    # de maker_real.log y, como el archivo rota por tamano, borraban la historia util
+                    if ahora.timestamp() - self.__dict__.get("_sin_efectivo_ts", 0) >= 1800:
+                        self._sin_efectivo_ts = ahora.timestamp()
+                        log(f"no entra la caja {c['evento']} {c['caja']}: necesita US$ {necesita:.2f} y hay US$ {libre:.2f} "
+                            f"libres (lo mismo para las demas candidatas; se avisa cada 30 min)")
                     continue
                 if self.movida_antes_de_entrar(c, ahora):                    # al final: lee el historial publico
                     continue
@@ -1454,6 +1459,16 @@ class Maker:
             self.avisar(f"Maker ({self.modo}) {ayer}: recompensa {self.est['recompensas'][ayer]:.2f} US$, "
                    f"resultado de llenados {self.pnl(ayer):+.2f}, {len(self.est['cajas'])} cajas.")
 
+    def toca_resumen(self, ahora):
+        """True una vez por media hora (y en la primera pasada). Antes el resumen se escribia solo si un ciclo terminaba
+        justo en el minuto 00 o 30: con ciclos de 60 s y pico se salteaba (11-nov: sin resumen de 06:31Z a 11:25Z y
+        tampoco a las 12:00Z)."""
+        tramo = ahora.strftime("%Y-%m-%d %H:") + ("30" if ahora.minute >= 30 else "00")
+        if self.__dict__.get("_tramo_resumen") == tramo:
+            return False
+        self._tramo_resumen = tramo
+        return True
+
     def resumen(self):
         rec = self.est["recompensas"]
         cobradas = {k: v for k, v in rec.items() if k != "estimada"}
@@ -1552,7 +1567,7 @@ def main():
                 if motivo and "freno activo" in motivo or motivo == "perdida total" or motivo == "errores seguidos" \
                         or (motivo and motivo.startswith("fecha")):
                     break
-                if datetime.now(timezone.utc).minute % 30 == 0:
+                if bot.toca_resumen(datetime.now(timezone.utc)):
                     bot.resumen()
                 time.sleep(max(cfg["maker"]["ciclo_seg"] - (time.time() - t0), 5))
         except KeyboardInterrupt:
