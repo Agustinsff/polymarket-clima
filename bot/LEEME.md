@@ -165,6 +165,14 @@ en el estado); después vende a medio + 1 tick, sin piso, y avisa por ntfy una v
 elegirse el reloj se borra. Al arrancar con este cambio las cajas ya soltadas empiezan sus 6 horas de cero. Una venta
 así puede disparar la ALERTA de "venta bajo el costo": es esperado. Sin la clave en la config: piso siempre, como antes.
 
+**Hasta 6 cajas, que no quede plata parada (12-nov-2026, decisión de Agus).** `cajas: 6` y `tam_max_caja: 33.34`. El
+bot no carga más capital: una caja nueva entra solo si el efectivo libre (cuenta menos lo reservado en compras
+abiertas) cubre las compras que pondría en ella (`necesita_caja`). Con el techo de 0,60 muchas cajas compran un solo
+lado y cuestan menos de US$ 10, así que con 3 cajas quedaba plata sin usar (12-nov: 12,09 libres con 3, 8,64 con 4).
+`tam_max_caja` fija el tamaño máximo de caja, que antes era capital_usd / cajas y con 6 cajas dejaba afuera a todas.
+Más cajas son más órdenes puestas (más recompensa) y también más compras expuestas; los frenos de −10 y −30 no
+cambian. Revisar el 14-nov. Para volver atrás: `cajas: 3` (o 4).
+
 **Techo de compra en 0,60 (12-nov-2026, decisión de Agus, a prueba hasta la revisión del 14-nov).**
 `precio_max_compra: 0.60`: el bot no pone una compra a 0,60 o más. Ese lado de la caja queda sin cotizar y las ventas
 del inventario siguen igual. Motivo, con los 155 llenados reales del 7 al 12-nov (lotes FIFO por token): las compras a

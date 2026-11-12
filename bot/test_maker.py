@@ -1222,6 +1222,15 @@ class PruebasGuardiaMetar(unittest.TestCase):
         self.assertEqual(bot.necesita_caja({"tam": 25}), 24.0)                      # sin datos: la cuenta de antes
         shutil.rmtree(d)
 
+    def test_tam_max_no_depende_de_las_cajas(self):
+        """12-nov: con tam_max_caja el tamano maximo de caja no se achica al subir `cajas`."""
+        d = tempfile.mkdtemp()
+        bot = maker.Maker(cfg(capital_usd=100, cajas=6), m=MercadoFalso(), carpeta=d)
+        self.assertAlmostEqual(bot.tam_max(), 100 / 6)                              # sin la clave: como antes
+        bot.cfg["maker"]["tam_max_caja"] = 33.34
+        self.assertEqual(bot.tam_max(), 33.34)
+        shutil.rmtree(d)
+
     def test_tope_inventario_por_lado(self):
         """Moscu 4 °C (8-nov): con 86 No ya comprados no sigue comprando No; el No que tiene si lo vende."""
         d = tempfile.mkdtemp()
