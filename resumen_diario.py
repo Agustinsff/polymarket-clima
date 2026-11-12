@@ -44,6 +44,11 @@ from estaciones import TASA_VIEJA, fee, tasa_fila   # comision: la de cada opera
 CADA_15_MIN = {"liquidez.py", "hoy.py", "cripto.py"}   # una falla suelta se arregla sola en la vuelta siguiente
 
 
+# El workflow del cosechador esta deshabilitado a proposito desde el 4-nov-2026 (decision de Agus). Mientras siga asi, el
+# resumen y el vigia no avisan "el cosechador no actualiza". Al volver a prenderlo, poner False.
+COSECHADOR_APAGADO = True
+
+
 def alarmas(ahora_local):
     """Lista de problemas. La usan RESUMEN.md y el vigia (que abre un aviso en GitHub)."""
     rel = cargar_json("reloj_estado.json")
@@ -58,6 +63,8 @@ def alarmas(ahora_local):
     if ahora_local.hour * 60 + ahora_local.minute > 15 * 60 and rel.get("papel") != hoy:
         avisos.append(f"⚠️ La prueba de São Paulo de hoy no se registró (último: {rel.get('papel')}).")
     diag = cos.get("diagnostico") or {}
+    if COSECHADOR_APAGADO:                             # apagado a proposito: que no avise que no actualiza
+        diag = {}
     if diag.get("momento_utc"):
         t = datetime.strptime(diag["momento_utc"], "%Y-%m-%d %H:%M").replace(tzinfo=timezone.utc)
         if datetime.now(timezone.utc) - t > timedelta(hours=7):
