@@ -165,6 +165,15 @@ en el estado); después vende a medio + 1 tick, sin piso, y avisa por ntfy una v
 elegirse el reloj se borra. Al arrancar con este cambio las cajas ya soltadas empiezan sus 6 horas de cero. Una venta
 así puede disparar la ALERTA de "venta bajo el costo": es esperado. Sin la clave en la config: piso siempre, como antes.
 
+**Techo de compra en 0,60 (12-nov-2026, decisión de Agus, a prueba hasta la revisión del 14-nov).**
+`precio_max_compra: 0.60`: el bot no pone una compra a 0,60 o más. Ese lado de la caja queda sin cotizar y las ventas
+del inventario siguen igual. Motivo, con los 155 llenados reales del 7 al 12-nov (lotes FIFO por token): las compras a
+0,60 o más perdieron 18,58 sobre US$ 418 (37 compras) y el resto 13,62 sobre 554 (118); desde el 10-nov, −5,94 (11
+compras) contra +1,35 (31). Reservas: son pocas cajas (Kuala Lumpur 32 °C y Ciudad del Cabo 22 °C explican −6,50) y el
+bot de papel, con solo 5 compras caras, dio +2,60. Costo esperado: el 36 % del tiempo alguna caja tiene un lado a 0,60
+o más y con un solo lado Polymarket puntúa un tercio, cerca de US$ 1 por día menos de recompensa (estimado, no medido).
+Para apagarlo: `0` o borrar la línea.
+
 **El piso de costo baja de 6 a 3 horas (11-nov-2026, decisión de Agus, a prueba).** `soltada_piso_horas: 3`. Con los llenados reales del 7 al 11-nov: de 25 ventas bajo el costo en cajas ya resueltas, 19 eran del lado que terminó perdiendo (vendiendo se perdieron 37,90; aguantando hasta la resolución, 77,70), así que soltar está bien. Y en las 9 ventas por piso vencido, 6 veces el precio era más alto al empezar la espera que al vender: esperar las 6 horas costó unos US$ 4 (número aproximado, sacado de los medios anotados al poner órdenes). Con 3 horas la plata vuelve antes a cotizar. Revisar con más datos el viernes 14-nov.
 
 **El freno total cuenta las recompensas (10-nov-2026, decisión de Agus).** `freno_total_con_recompensas: true`: el freno

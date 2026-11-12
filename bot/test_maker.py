@@ -1189,6 +1189,26 @@ class PruebasGuardiaMetar(unittest.TestCase):
         self.assertEqual(len(bot.cotizar(c, {})), 2)
         shutil.rmtree(d)
 
+    def test_techo_de_compra(self):
+        """12-nov (pedido de Agus): con precio_max_compra 0,60 no se pone una compra a 0,60 o mas; las ventas siguen."""
+        d = tempfile.mkdtemp()
+        bot = maker.Maker(cfg(precio_max_compra=0.6), m=MercadoFalso(), carpeta=d)
+        c = {"si": "s", "no": "n", "medio": 0.38, "tick": 0.01, "tam": 25}
+        self.assertEqual(bot.cotizar(c, {}), [("s", "BUY", 0.36, 25, True)])        # el No a 0,60 no se compra
+        c["medio"] = 0.39
+        self.assertEqual([(x[0], x[1], x[2]) for x in bot.cotizar(c, {})],          # a 0,59 si
+                         [("s", "BUY", 0.37), ("n", "BUY", 0.59)])
+        c["medio"] = 0.66                                                           # ahora el caro es el Si (0,64)
+        self.assertEqual(bot.cotizar(c, {}), [("n", "BUY", 0.32, 25, False)])
+        o = bot.cotizar(c, {"n": 30})                                               # el No que tenemos se vende igual
+        self.assertEqual(o[0], ("n", "SELL", 0.36, 25, False))
+        c["medio"] = 0.30
+        o = bot.cotizar(c, {"s": 25})                                               # y el Si tambien (a 0,32)
+        self.assertEqual([(x[0], x[1]) for x in o], [("s", "BUY"), ("s", "SELL")])
+        bot.cfg["maker"]["precio_max_compra"] = 0                                   # 0 o sin la clave: sin techo
+        self.assertEqual(len(bot.cotizar({"si": "s", "no": "n", "medio": 0.3, "tick": 0.01, "tam": 25}, {})), 2)
+        shutil.rmtree(d)
+
     def test_tope_inventario_por_lado(self):
         """Moscu 4 °C (8-nov): con 86 No ya comprados no sigue comprando No; el No que tiene si lo vende."""
         d = tempfile.mkdtemp()
