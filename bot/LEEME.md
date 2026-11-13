@@ -331,5 +331,5 @@ mirarla en la web.
 
 ## Bot de papel "mercados quietos" (13-nov-2026)
 `bot/quietos.py`: el mismo maker en PAPEL sobre mercados con recompensa que no son de clima y se mueven poco. Reglas
-y veredicto (viernes 21-nov, 10:00 Uruguay) en `bot/quietos/REGLA.md`; parámetros propios en `bot/quietos/config.json`
+y veredicto (sábado 21-nov, 10:00 Uruguay) en `bot/quietos/REGLA.md`; parámetros propios en `bot/quietos/config.json`
 (no usa `bot/config.json`); archivos en `bot/quietos/`; corre en Actions con `maker_quietos.yml`. No toca `bot/maker.py`.
