@@ -45,7 +45,7 @@ no se pone ninguna orden real, no toca la config ni los archivos del maker real 
 
 ## Período y veredicto
 - Arranca el 13-nov-2026. Cuentan los **7 días completos de Uruguay del 14 al 20-nov**.
-- **Veredicto: viernes 21-nov-2026, 10:00 de Uruguay.**
+- **Veredicto: sábado 21-nov-2026, 10:00 de Uruguay.**
 - **Neto prudente** = resultado de llenados a mercado + 50 % de la recompensa estimada, en esos 7 días.
   - **PASA** (se le propone a Agus probarlo en real con una parte chica de la plata): neto prudente ≥ +1,00 US$/día
     en promedio **y** llenados a mercado no peores que −1,00 US$/día (que la recompensa no esté tapando pérdidas
