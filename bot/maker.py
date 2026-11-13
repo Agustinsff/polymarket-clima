@@ -1125,6 +1125,11 @@ class Maker:
         libre, _, _ = self.efectivo_libre([o for o in abiertas if o["id"] not in cancelar], inv)
         # ventas primero (no necesitan efectivo y lo liberan), compras despues y solo si entran en el efectivo libre
         rec = {cid: c.get("rec_pes", 0) for cid, c in elegidas.items()}
+        # lados del libro que quedan cubiertos en cada caja despues de esta pasada (para estimar la recompensa):
+        # comprar Si o vender No es el lado comprador; comprar No o vender Si, el vendedor
+        lados = self._lados = {}
+        for q in quedan:
+            lados.setdefault(q[0], set()).add((q[5] == "BUY") == q[8])
         for q in sorted(quiero, key=lambda q: (q[5] != "SELL", -rec.get(q[0], 0))):
             if q in quedan:
                 continue
@@ -1136,6 +1141,7 @@ class Maker:
                 libre = round(libre - precio * tam, 2)
             try:
                 oid = self.ej.colocar(token, cid, lado, precio, tam, es_si)
+                lados.setdefault(cid, set()).add((lado == "BUY") == es_si)
                 self.anotar(momento_utc=datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M:%S"), modo=self.modo,
                             evento=evento, caja=caja, condition_id=cid, token=token, lado=f"orden_{lado}", precio=precio,
                             acciones=tam, medio=medio, detalle=oid)
@@ -1463,6 +1469,18 @@ class Maker:
         elif n == 0:
             self.est["errores_avisados"] = False
 
+    def parte_cotizada(self, cid, c):
+        """Que parte de la recompensa esperada de la caja (`rec_pes`, calculada con los dos lados puestos) corresponde
+        a las ordenes que de verdad quedaron: 1 con los dos lados, 1/3 con uno solo (asi puntua Polymarket un solo
+        lado con el medio entre 0,10 y 0,90; afuera de eso, nada) y 0 sin ordenes. El 12-nov, con el techo de compra
+        y la plata en acciones, 5 de 6 cajas tenian un solo lado: la estimacion dio 8,67 y Polymarket pago 4,92."""
+        if not hasattr(self, "_lados"):                    # todavia no hubo una pasada de ordenes: como antes
+            return 1.0
+        n = len(self._lados.get(cid, ()))
+        if n >= 2:
+            return 1.0
+        return 1 / 3 if n == 1 and 0.10 <= c.get("medio", 0.5) <= 0.90 else 0.0
+
     def recompensas(self, ahora):
         """Una vez por dia (a las 00:30 UTC) anota la recompensa del dia anterior: real la informa Polymarket,
         papel la estima (promedio de rec_pes de las cajas que tuvimos, por el tiempo que las tuvimos)."""
@@ -1471,7 +1489,8 @@ class Maker:
         hoy = ahora.strftime("%Y-%m-%d")
         # acumulado estimado de hoy: suma de rec_pes de las cajas elegidas, prorrateado por ciclo
         ciclo = self.cfg["maker"]["ciclo_seg"] / 86400
-        est[hoy] = round(est.get(hoy, 0) + sum(c.get("rec_pes", 0) for c in self.est["cajas"].values()) * ciclo, 3)
+        est[hoy] = round(est.get(hoy, 0) + sum(c.get("rec_pes", 0) * self.parte_cotizada(cid, c)
+                                               for cid, c in self.est["cajas"].items()) * ciclo, 3)
         if ahora.hour == 0 and ahora.minute >= 30 and ayer not in self.est["recompensas"]:
             real = None
             try:
