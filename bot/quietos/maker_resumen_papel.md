@@ -1,9 +1,9 @@
-# Maker (papel) — 2026-11-13 08:16Z
+# Maker (papel) — 2026-11-13 09:12Z
 
-- Cajas ahora: 5: Will Quentin Johnston have 649.5+ receiving yards in the 2026-27 NFL regular season? (quentin-johnston-649pt5-receiving-yards-2026-27, medio 0.305, rec. esp. 0.774/día), Will Rockstar release GTA VI on PC after March 2027? (will-rockstar-release-gta-vi-on-pc-after-march-2027-20261021185317733, medio 0.685, rec. esp. 1.193/día), Will OpenAI be the second-best Code Arena | WebDev AI lab at the end of December 2026? (will-openai-be-the-second-best-code-arena-webdev-ai-lab-at-the-end-of-december-2026, medio 0.46, rec. esp. 1.001/día), Will South African inflation be greater than 5.0% in 2026? (will-south-african-inflation-be-greater-than-5pt0-in-2026, medio 0.445, rec. esp. 0.265/día), GTA VI Online released by March 31, 2027? (gta-vi-online-released-by-march-31-2027, medio 0.435, rec. esp. 8.558/día)
+- Cajas ahora: 6: Will Quentin Johnston have 649.5+ receiving yards in the 2026-27 NFL regular season? (quentin-johnston-649pt5-receiving-yards-2026-27, medio 0.305, rec. esp. 0.875/día), Will Rockstar release GTA VI on PC after March 2027? (will-rockstar-release-gta-vi-on-pc-after-march-2027-20261021185317733, medio 0.685, rec. esp. 1.034/día), Will OpenAI be the second-best Code Arena | WebDev AI lab at the end of December 2026? (will-openai-be-the-second-best-code-arena-webdev-ai-lab-at-the-end-of-december-2026, medio 0.465, rec. esp. 0.691/día), Will South African inflation be greater than 5.0% in 2026? (will-south-african-inflation-be-greater-than-5pt0-in-2026, medio 0.4445, rec. esp. 0.256/día), GTA VI Online released by March 31, 2027? (gta-vi-online-released-by-march-31-2027, medio 0.435, rec. esp. 0.821/día), Will Dani win the GMGN GGC Season 1 Grand Final? (will-dani-win-the-gmgn-ggc-season-1-grand-final, medio 0.495, rec. esp. 1.206/día)
 - Recompensas cobradas (lo que dice Polymarket; en papel, estimadas): US$ 0.00 en 0 días.
 - Reembolsos de comisión de maker cobrados: US$ 0.00.
-- Estimación por fórmula (pesimista): 2026-11-13 1.12
+- Estimación por fórmula (pesimista): 2026-11-13 1.23
 - Llenados: 0 (0 acciones); cajas resueltas: 0.
 - Resultado del día (hora de Uruguay, ventas al costo de ese momento + cajas resueltas): US$ +0.00; freno diario en −10. La recompensa diaria la informa Polymarket por día UTC.
 - Resultado realizado de los llenados (cobros − compras + ventas): US$ +0.00; contando las acciones en cartera al costo: US$ +0.00. Capital puesto ahora: US$ 95.00.
