@@ -1,12 +1,12 @@
 {
  "2026-11-13": {
-  "momento_utc": "2026-11-13 15:37",
-  "llenados_mercado": -0.21,
-  "acciones_mercado": 15.22,
+  "momento_utc": "2026-11-13 16:32",
+  "llenados_mercado": -0.47,
+  "acciones_mercado": 14.96,
   "acciones_costo": 15.43,
-  "recompensa_estimada_acum": 2.193,
+  "recompensa_estimada_acum": 2.336,
   "n_llenados": 1,
-  "cajas": 6,
+  "cajas": 4,
   "freno_diario_saltos": 0,
   "frenado": null
  }
