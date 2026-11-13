@@ -165,6 +165,18 @@ en el estado); después vende a medio + 1 tick, sin piso, y avisa por ntfy una v
 elegirse el reloj se borra. Al arrancar con este cambio las cajas ya soltadas empiezan sus 6 horas de cero. Una venta
 así puede disparar la ALERTA de "venta bajo el costo": es esperado. Sin la clave en la config: piso siempre, como antes.
 
+**Preferir cajas de dos lados y filtro rápido (13-nov-2026, decisión de Agus).**
+`preferir_dos_lados: true`: las cajas se ordenan y se rotan por `rec_efectiva`, que es la recompensa esperada entera si
+el bot puede comprar los dos lados y un tercio si el piso o el techo de compra dejan uno solo (así puntúa Polymarket
+un solo lado). Motivo: el 13-nov 5 de las 6 cajas tenían un solo lado (medio entre 0,20 y 0,38, el No costaba más de
+0,60), la estimación del 12-nov dio 8,67 y se cobraron 4,92. En la práctica gana una caja con el medio entre 0,40 y
+0,60 salvo que la otra espere más del triple.
+`filtro_rapido_c: 0.03` y `filtro_rapido_min: 15`: además del filtro de la hora (6 c), la caja queda sin compras, y no
+se entra a una caja nueva, si el medio se movió 3 c o más en los últimos 15 minutos. Las compras que pierden son las
+que se llenan cuando el precio arranca a moverse. `0` lo apaga.
+NO se cambió la distancia de 2 a 3 c: todos los mercados de temperatura tienen 4,5 c de ancho máximo de recompensa y
+el puntaje a 3 c es 0,111 contra 0,309 a 2 c (64 % menos recompensa por orden).
+
 **Hasta 6 cajas, que no quede plata parada (12-nov-2026, decisión de Agus).** `cajas: 6` y `tam_max_caja: 33.34`. El
 bot no carga más capital: una caja nueva entra solo si el efectivo libre (cuenta menos lo reservado en compras
 abiertas) cubre las compras que pondría en ella (`necesita_caja`). Con el techo de 0,60 muchas cajas compran un solo
