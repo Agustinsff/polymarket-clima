@@ -826,17 +826,17 @@ class Maker:
             minimo = k.get("acciones_min_venta", 5)
             libres = [c for c in elegidas.values() if inv.get(c["si"], 0) < minimo and inv.get(c["no"], 0) < minimo]
             if ok and libres:
-                peor = min(libres, key=lambda c: c.get("rec_pes", 0))
-                r_peor = peor.get("rec_pes", 0)
+                peor = min(libres, key=self.rec_efectiva)
+                r_peor = self.rec_efectiva(peor)
                 minimo_rec = max(k.get("rotar_factor", 3) * r_peor, r_peor + k.get("rotar_dif", 2))
                 # la mejor que no venga moviendose (abajo tampoco entraria): se miran solo las que justifican rotar
-                mejor = next((c for c in sorted(ok, key=lambda c: -c["rec_pes"])
-                              if c["rec_pes"] >= minimo_rec and not self.movida_antes_de_entrar(c, ahora)), None)
+                mejor = next((c for c in sorted(ok, key=lambda c: -self.rec_efectiva(c))
+                              if self.rec_efectiva(c) >= minimo_rec and not self.movida_antes_de_entrar(c, ahora)), None)
                 if mejor:
                     del elegidas[peor["cid"]]
                     rotadas[peor["cid"]] = ahora.isoformat()
                     txt = (f"rotacion: se suelta {peor['evento']} {peor['caja']} (rec. esperada {r_peor} US$/dia) por "
-                           f"{mejor['evento']} {mejor['caja']} ({mejor['rec_pes']})")
+                           f"{mejor['evento']} {mejor['caja']} ({self.rec_efectiva(mejor)})")
                     log(txt)
                     self.avisar(f"Maker ({self.modo}) {txt}.")
         # completar con las mejores del resto (medir solo las que no tenemos, ordenadas por pozo para no leer 1500 libros)
@@ -853,7 +853,7 @@ class Maker:
             resto = sorted((c for cid, c in cand.items() if cid not in elegidas and cid not in rotadas),
                            key=lambda c: -c["pozo"])[:60]
             ok = [c for c in resto if medir_libro(c, self.cfg, self.m)]
-            for c in sorted(ok, key=lambda c: -c["rec_pes"]):
+            for c in sorted(ok, key=lambda c: -self.rec_efectiva(c)):
                 if len(elegidas) >= k["cajas"]:
                     break
                 if c["tam"] > self.tam_max():
@@ -969,6 +969,24 @@ class Maker:
             return None
         return round(c["medio"] - viejo[1], 4)
 
+    def movimiento_rapido(self, c, ahora):
+        """Filtro rapido (13-nov, decision de Agus): cuanto se movio el medio en los ultimos `filtro_rapido_min` (15)
+        minutos, solo si llego a `filtro_rapido_c` (0,03); si no, None. El filtro de la hora (6 c) tarda en saltar y las
+        compras que pierden son las que se llenan justo cuando el precio arranca a moverse. Usa el mismo historial de
+        medios (hay que llamar antes a `movimiento`, que anota el medio de ahora). Sin la clave o en 0: apagado."""
+        k = self.cfg["maker"]
+        umbral = k.get("filtro_rapido_c")
+        if not umbral:
+            return None
+        ventana = 60 * k.get("filtro_rapido_min", 15)
+        t = int(ahora.timestamp())
+        hist = self.est.get("medios", {}).get(c["cid"], [])
+        viejo = next((x for x in hist if t - x[0] <= ventana), None)
+        if viejo is None or t - viejo[0] < min(300, ventana / 2):
+            return None
+        mov = round(c["medio"] - viejo[1], 4)
+        return mov if abs(mov) >= umbral - 1e-9 else None
+
     def movida_antes_de_entrar(self, c, ahora):
         """True si una caja que el bot todavia no cotiza se movio `filtro_movimiento_c` o mas en la ultima hora: no se
         entra. El filtro de movimiento solo conocia el precio desde que el bot entraba a la caja y los primeros 10 min no
@@ -989,13 +1007,15 @@ class Maker:
                 log(f"no se pudo leer el historial de {c['evento']} {c['caja']}: {ex!r}")
                 return False
             hist[:] = sorted([int(a), float(b)] for a, b in puntos if 0 <= t - int(a) <= ventana)
-        mov = self.movimiento(c, ahora)
+        mov, cuando = self.movimiento(c, ahora), "en la ultima hora"
         if mov is None or abs(mov) < umbral - 1e-9:
-            return False
+            mov, cuando = self.movimiento_rapido(c, ahora), f"en los ultimos {k.get('filtro_rapido_min', 15):g} min"
+            if mov is None:
+                return False
         avisadas = self.__dict__.setdefault("_movidas", {})
         if t - avisadas.get(c["cid"], 0) >= 1800:           # una linea cada media hora por caja, no una por ciclo
             avisadas[c["cid"]] = t
-            log(f"no entra la caja {c['evento']} {c['caja']}: se movio {mov * 100:+.1f} c en la ultima hora")
+            log(f"no entra la caja {c['evento']} {c['caja']}: se movio {mov * 100:+.1f} c {cuando}")
         return True
 
     def cajas_sin_compras(self):
@@ -1024,16 +1044,36 @@ class Maker:
         umbral = self.cfg["maker"].get("filtro_movimiento_c", 0.06)
         if not umbral:
             return False
-        mov = self.movimiento(c, ahora)
+        mov, cuando = self.movimiento(c, ahora), "en la ultima hora"
         if mov is None or abs(mov) < umbral - 1e-9:
-            return False
+            mov = self.movimiento_rapido(c, ahora)
+            cuando = f"en los ultimos {self.cfg['maker'].get('filtro_rapido_min', 15):g} min"
+            if mov is None:
+                return False
         activos = self.est.setdefault("filtro", {})
         if c["cid"] not in activos:
             activos[c["cid"]] = {"desde": ahora.strftime("%Y-%m-%d %H:%M:%S"), "evento": c["evento"], "caja": c["caja"],
                                  "movimiento": mov, "medio": c["medio"]}
-            log(f"filtro de movimiento: {c['evento']} {c['caja']} se movio {mov * 100:+.1f} c en la ultima hora, "
+            log(f"filtro de movimiento: {c['evento']} {c['caja']} se movio {mov * 100:+.1f} c {cuando}, "
                 f"sin compras hasta que se calme")
         return True
+
+    def rec_efectiva(self, c):
+        """Recompensa esperada de la caja contando los lados que el bot de verdad puede comprar. `rec_pes` supone los
+        dos lados puestos; con el piso (`precio_min_compra`) o el techo (`precio_max_compra`) un lado puede faltar, y
+        con un solo lado Polymarket puntua un tercio (medio entre 0,10 y 0,90; afuera, nada). El 13-nov 5 de las 6
+        cajas tenian un solo lado: se elegian por una recompensa que despues no se cobraba. Con `preferir_dos_lados`
+        en true (decision de Agus 13-nov) las cajas se ordenan y se rotan por este numero; sin la clave, por rec_pes."""
+        rec = c.get("rec_pes", 0)
+        if not self.cfg["maker"].get("preferir_dos_lados"):
+            return rec
+        try:
+            n = sum(1 for o in self.cotizar(c, {}) if o[1] == "BUY")
+        except (KeyError, TypeError):
+            return rec
+        if n >= 2:
+            return rec
+        return round(rec / 3, 3) if n == 1 and 0.10 <= c.get("medio", 0.5) <= 0.90 else 0.0
 
     def tam_max(self):
         """Tamano maximo (acciones minimas de la recompensa) de una caja que se puede elegir. Antes era siempre

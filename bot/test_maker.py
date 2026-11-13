@@ -1249,6 +1249,39 @@ class PruebasGuardiaMetar(unittest.TestCase):
         self.assertAlmostEqual(bot.est["recompensas"]["estimada"]["2026-11-13"], round(12.0 * 60 / 86400, 3), places=3)
         shutil.rmtree(d)
 
+    def test_rec_efectiva_prefiere_dos_lados(self):
+        """13-nov: con preferir_dos_lados una caja donde el techo deja un solo lado vale un tercio al elegir y rotar."""
+        d = tempfile.mkdtemp()
+        bot = maker.Maker(cfg(precio_max_compra=0.6), m=MercadoFalso(), carpeta=d)
+        un_lado = {"si": "s", "no": "n", "medio": 0.30, "tick": 0.01, "tam": 25, "rec_pes": 9.0}    # el No a 0,68 no se compra
+        dos = {"si": "s2", "no": "n2", "medio": 0.50, "tick": 0.01, "tam": 25, "rec_pes": 5.0}
+        self.assertEqual(bot.rec_efectiva(un_lado), 9.0)                            # sin la clave: como antes
+        bot.cfg["maker"]["preferir_dos_lados"] = True
+        self.assertEqual(bot.rec_efectiva(un_lado), 3.0)
+        self.assertEqual(bot.rec_efectiva(dos), 5.0)
+        self.assertEqual(max([un_lado, dos], key=bot.rec_efectiva), dos)            # ahora gana la de dos lados
+        self.assertEqual(bot.rec_efectiva({"si": "a", "no": "b", "medio": 0.05, "tick": 0.01, "tam": 25, "rec_pes": 9.0}), 0.0)
+        shutil.rmtree(d)
+
+    def test_filtro_rapido(self):
+        """13-nov: 3 c en 15 min frena las compras aunque en la hora no llegue a los 6 c."""
+        d = tempfile.mkdtemp()
+        bot = maker.Maker(cfg(filtro_movimiento_c=0.06, filtro_rapido_c=0.03, filtro_rapido_min=15), m=MercadoFalso(), carpeta=d)
+        c = {"cid": "A", "evento": "e", "caja": "c", "medio": 0.40, "si": "s", "no": "n"}
+        t0 = AHORA
+        for i in range(0, 41, 5):                                                   # 40 min quieto en 0,40
+            self.assertFalse(bot.sin_compras(dict(c), t0 + timedelta(minutes=i)))
+        self.assertFalse(bot.sin_compras(dict(c, medio=0.42), t0 + timedelta(minutes=45)))   # +2 c: nada
+        self.assertTrue(bot.sin_compras(dict(c, medio=0.435), t0 + timedelta(minutes=50)))   # +3,5 c en 15 min
+        self.assertIn("A", bot.est["filtro"])
+        self.assertFalse(bot.sin_compras(dict(c, medio=0.435), t0 + timedelta(minutes=70)))  # 15 min quieto: se calma
+        bot.cfg["maker"]["filtro_rapido_c"] = 0                                     # apagado: solo el de la hora
+        bot.est["medios"] = {}
+        for i in range(0, 41, 5):
+            bot.sin_compras(dict(c), t0 + timedelta(minutes=i))
+        self.assertFalse(bot.sin_compras(dict(c, medio=0.435), t0 + timedelta(minutes=50)))
+        shutil.rmtree(d)
+
     def test_tope_inventario_por_lado(self):
         """Moscu 4 °C (8-nov): con 86 No ya comprados no sigue comprando No; el No que tiene si lo vende."""
         d = tempfile.mkdtemp()
