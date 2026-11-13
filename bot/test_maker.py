@@ -1231,6 +1231,24 @@ class PruebasGuardiaMetar(unittest.TestCase):
         self.assertEqual(bot.tam_max(), 33.34)
         shutil.rmtree(d)
 
+    def test_estimacion_cuenta_los_lados_puestos(self):
+        """13-nov: la estimacion del dia cuenta entera la caja con los dos lados, un tercio con uno solo y nada sin
+        ordenes (el 12-nov estimo 8,67 con 5 de 6 cajas de un solo lado y Polymarket pago 4,92)."""
+        d = tempfile.mkdtemp()
+        bot = maker.Maker(cfg(), m=MercadoFalso(), carpeta=d)
+        c = {"medio": 0.3, "rec_pes": 9.0}
+        self.assertEqual(bot.parte_cotizada("A", c), 1.0)                           # antes de la primera pasada
+        bot._lados = {"A": {True, False}, "B": {True}}
+        self.assertEqual(bot.parte_cotizada("A", c), 1.0)
+        self.assertAlmostEqual(bot.parte_cotizada("B", c), 1 / 3)
+        self.assertEqual(bot.parte_cotizada("B", {"medio": 0.05}), 0.0)             # fuera de 0,10-0,90 un lado no puntua
+        self.assertEqual(bot.parte_cotizada("C", c), 0.0)                           # sin ordenes
+        bot.est["cajas"] = {"A": dict(c), "B": dict(c), "C": dict(c)}
+        bot.est["recompensas"] = {"estimada": {}}
+        bot.recompensas(datetime(2026, 11, 13, 12, 0, tzinfo=timezone.utc))
+        self.assertAlmostEqual(bot.est["recompensas"]["estimada"]["2026-11-13"], round(12.0 * 60 / 86400, 3), places=3)
+        shutil.rmtree(d)
+
     def test_tope_inventario_por_lado(self):
         """Moscu 4 °C (8-nov): con 86 No ya comprados no sigue comprando No; el No que tiene si lo vende."""
         d = tempfile.mkdtemp()
