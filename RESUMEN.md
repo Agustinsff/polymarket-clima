@@ -1,6 +1,6 @@
 # Resumen polymarket-clima
 
-_Actualizado: 2026-11-14 20:09 (Montevideo). Todo es **en papel**: no se usa plata real._
+_Actualizado: 2026-11-14 20:28 (Montevideo). Todo es **en papel**: no se usa plata real._
 
 ## Estado de las tareas
 
@@ -61,27 +61,27 @@ Nota: las operaciones de Ciudad del Cabo del 18-oct se hicieron con la regla vie
 
 ## Pronóstico vs. mercado (todas las ciudades, día anterior)
 
-Puntaje Brier (más bajo = mejor) en 10615 cajas liquidadas: **modelo 0.0877** vs **mercado 0.0732**.
+Puntaje Brier (más bajo = mejor) en 10624 cajas liquidadas: **modelo 0.0877** vs **mercado 0.0732**.
 Series donde el modelo le gana al mercado (≥5 días): mín karachi (18 días), mín dallas (7 días), mín chengdu (8 días), mín mexico-city (8 días), mín tel-aviv (8 días), mín hong-kong (22 días), máx buenos-aires (22 días), máx qingdao (22 días), máx dallas (22 días), mín sao-paulo (14 días), mín taipei (5 días).
 
 | Modo | Serie calibrada | Liquidadas | Ganadas | Neto (10 acc. c/u) | Pendientes |
 |---|---|---|---|---|---|
-| taker | sí | 2507 | 983 | US$-958.54 | 577 |
+| taker | sí | 2514 | 985 | US$-968.96 | 662 |
 | taker | no | 1830 | 735 | US$-566.68 | 0 |
-| maker | sí | 441 | 52 | US$-175.56 | 13374 |
+| maker | sí | 441 | 52 | US$-175.56 | 13747 |
 | maker | no | 7591 | 856 | US$-1577.04 | 110 |
-| cola_taker | sí | 1298 | 30 | US$-175.97 | 292 |
+| cola_taker | sí | 1298 | 30 | US$-175.97 | 330 |
 | cola_taker | no | 1195 | 37 | US$-24.20 | 0 |
-| cola_maker | sí | 83 | 2 | US$-8.88 | 2597 |
+| cola_maker | sí | 83 | 2 | US$-8.88 | 2667 |
 | cola_maker | no | 1299 | 32 | US$-78.78 | 19 |
 
-Taker en total: US$-1725.40. _Con la comisión vieja (0,05 para todo) sería US$-1897.94._
+Taker en total: US$-1735.81. _Con la comisión vieja (0,05 para todo) sería US$-1908.36._
 
 _Taker = compra al instante pagando comisión. Maker = orden en el libro, solo cuenta si alguien la habría tomado (sin comisión). Cola = cajas de ≤10 ¢ a las que el modelo les da ≥2,5 veces el precio. no80_90 = comprar el No de cajas todavía posibles que cotizan 10–20 ¢ (solo en el pronóstico del mismo día)._
 
 ## Pronóstico del mismo día (12 y 15 hs locales la máxima, 9 hs la mínima)
 
-Puntaje Brier (más bajo = mejor) en 6579 cajas liquidadas: **modelo 0.0933** vs **mercado 0.0742**.
+Puntaje Brier (más bajo = mejor) en 6582 cajas liquidadas: **modelo 0.0933** vs **mercado 0.0741**.
 Series donde el modelo le gana al mercado (≥5 días): mín denver (10 días), máx buenos-aires (24 días), máx london (24 días), mín cape-town (10 días), mín sao-paulo (16 días), mín seattle (14 días), máx denver (21 días), mín san-francisco (14 días), mín houston (13 días), mín ankara (11 días), mín buenos-aires (8 días), mín moscow (10 días), mín austin (18 días), mín mexico-city (15 días), mín chicago (16 días), mín munich (13 días), mín toronto (9 días), mín guangzhou (16 días), mín karachi (7 días), mín chongqing (16 días), mín wuhan (14 días), mín istanbul (16 días), mín amsterdam (14 días), mín milan (14 días), mín atlanta (15 días).
 
 | Modo | Serie calibrada | Liquidadas | Ganadas | Neto (10 acc. c/u) | Pendientes |
@@ -98,17 +98,17 @@ _Taker = compra al instante pagando comisión. Maker = orden en el libro, solo c
 
 ## Cripto en papel (Bitcoin / Ethereum: above, rango y toca; modelo de opciones)
 
-Operaciones: 549 (513 liquidadas, 220 ganadas). **Neto US$+55.78** sobre US$2094.69 invertidos (ROI +2.7 %). _Con la comisión vieja (0,05 para todo) sería US$+69.01._
-Brier en 2003 strikes: modelo 0.1425 vs mercado 0.1395.
+Operaciones: 549 (533 liquidadas, 233 ganadas). **Neto US$+94.75** sobre US$2183.58 invertidos (ROI +4.3 %). _Con la comisión vieja (0,05 para todo) sería US$+108.59._
+Brier en 2067 strikes: modelo 0.1481 vs mercado 0.1455.
 
 | Activo | Tipo | Liquidadas | Neto |
 |---|---|---|---|
-| BTC | above | 68 | US$+36.71 |
-| BTC | rango | 107 | US$+41.65 |
-| BTC | toca | 135 | US$-94.08 |
-| ETH | above | 45 | US$+4.53 |
-| ETH | rango | 77 | US$+19.57 |
-| ETH | toca | 81 | US$+47.39 |
+| BTC | above | 72 | US$+43.07 |
+| BTC | rango | 113 | US$+55.97 |
+| BTC | toca | 137 | US$-93.30 |
+| ETH | above | 47 | US$+11.91 |
+| ETH | rango | 80 | US$+33.42 |
+| ETH | toca | 84 | US$+43.69 |
 
 _Regla fija: comprar el lado que el modelo ve ≥5 puntos más barato, a 48/24/12/6/3/1 h del cierre (18/12/6/3/1 h en 'toca'), 10 acciones al precio real del libro, con comisión. Backtest may-oct: +6,7 % con 1 ¢ de deslizamiento (Ethereum +17 %, Bitcoin ~0 %)._
 
