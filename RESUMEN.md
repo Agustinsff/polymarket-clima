@@ -1,12 +1,12 @@
 # Resumen polymarket-clima
 
-_Actualizado: 2026-11-13 23:46 (Montevideo). Todo es **en papel**: no se usa plata real._
+_Actualizado: 2026-11-14 00:01 (Montevideo). Todo es **en papel**: no se usa plata real._
 
 ## Estado de las tareas
 
 🔔 Polymarket cambió algo en **clima (otros)** (mercado de clima nuevo, ya no aparece el 2026-11-12 20:25 UTC): `will-there-be-a-super-el-nino-this-winter` y 1 más. Ver [reglas_informe.md](reglas_informe.md).
 
-- Última foto de liquidez: 2026-11-13T23:46:28
+- Última foto de liquidez: 2026-11-14T00:01:37
 - Monitor: mañana 2026-11-13, noche 2026-11-13
 - Prueba São Paulo: último día registrado 2026-11-13
 - Cosechador: último ciclo 2026-11-04 16:12 UTC, 88 mercados, 46 estaciones
@@ -86,11 +86,11 @@ Series donde el modelo le gana al mercado (≥5 días): mín denver (10 días), 
 
 | Modo | Serie calibrada | Liquidadas | Ganadas | Neto (10 acc. c/u) | Pendientes |
 |---|---|---|---|---|---|
-| taker | no | 2022 | 462 | US$-1034.78 | 210 |
-| maker | no | 3169 | 382 | US$-397.61 | 3767 |
-| cola_taker | no | 996 | 25 | US$-121.93 | 97 |
-| cola_maker | no | 1074 | 21 | US$-76.63 | 1240 |
-| no80_90 | no | 830 | 572 | US$-1458.22 | 83 |
+| taker | no | 2022 | 462 | US$-1034.78 | 212 |
+| maker | no | 3169 | 382 | US$-397.61 | 3771 |
+| cola_taker | no | 996 | 25 | US$-121.93 | 99 |
+| cola_maker | no | 1074 | 21 | US$-76.63 | 1243 |
+| no80_90 | no | 830 | 572 | US$-1458.22 | 84 |
 
 Taker en total: US$-2614.94. _Con la comisión vieja (0,05 para todo) sería US$-2704.03._
 
@@ -122,6 +122,6 @@ Prueba SP: 13 operaciones; como maker se habrían llenado 11, neto **US$-12.35**
 
 ## Recompensas de liquidez (estimación, últimas 24 h)
 
-- Buenos Aires: ~US$22/día con 100 acciones a 1 ¢ en todas las cajas del mercado de mañana (sin contar pérdidas por quedar 'tomado').
+- Buenos Aires: ~US$21/día con 100 acciones a 1 ¢ en todas las cajas del mercado de mañana (sin contar pérdidas por quedar 'tomado').
 - Sao Paulo: ~US$24/día con 100 acciones a 1 ¢ en todas las cajas del mercado de mañana (sin contar pérdidas por quedar 'tomado').
 
