@@ -11,13 +11,13 @@
   "frenado": null
  },
  "2026-11-14": {
-  "momento_utc": "2026-11-14 05:24",
-  "llenados_mercado": 1.93,
-  "acciones_mercado": 17.36,
+  "momento_utc": "2026-11-14 06:18",
+  "llenados_mercado": 2.31,
+  "acciones_mercado": 17.74,
   "acciones_costo": 15.43,
-  "recompensa_estimada_acum": 4.829,
+  "recompensa_estimada_acum": 4.991,
   "n_llenados": 1,
-  "cajas": 4,
+  "cajas": 5,
   "freno_diario_saltos": 0,
   "frenado": null
  }
