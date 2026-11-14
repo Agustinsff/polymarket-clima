@@ -282,6 +282,29 @@ def bot_real(sdk=None, carpeta=None):
 
 
 class PruebasReal(unittest.TestCase):
+    def test_freno_diario_deja_ventas(self):
+        """14-nov: con freno_dia_deja_ventas el freno diario cancela las compras pero sigue vendiendo; sin la clave
+        cancela todo como antes. Frenado tambien anota la recompensa del dia anterior."""
+        bot, ej, m, d = bot_real()
+        bot.cfg["maker"]["freno_dia_deja_ventas"] = True
+        bot.ciclo(AHORA)
+        self.assertEqual(sorted(o.price for o in ej.client.ordenes.values()), ["0.29", "0.66"])
+        oid = [o.id for o in ej.client.ordenes.values() if o.price == "0.29"][0]
+        ej.client.llenar(oid, 25)                                               # compra 25 Si-A
+        bot.ciclo(AHORA + timedelta(minutes=1))
+        bot.perdida_dia_freno = lambda dia: -10.5
+        bot.ciclo(AHORA + timedelta(minutes=2))
+        lados = sorted(o.side for o in ej.client.ordenes.values())
+        self.assertEqual(lados, ["SELL"])                                       # quedo solo la venta del Si
+        self.assertTrue(bot._solo_ventas)
+        bot.cfg["maker"]["freno_dia_deja_ventas"] = False                       # como antes: cancela todo
+        bot.ciclo(AHORA + timedelta(minutes=3))
+        self.assertEqual(ej.client.ordenes, {})
+        bot.est["recompensas"] = {"estimada": {}}                               # frenado: igual anota la recompensa
+        bot.ciclo(datetime(2026, 11, 3, 0, 40, tzinfo=timezone.utc))
+        self.assertEqual(bot.est["recompensas"].get("2026-11-02"), 1.25)
+        shutil.rmtree(d)
+
     def test_real_con_sdk_falso(self):
         bot, ej, m, d = bot_real()
         bot.ciclo(AHORA)

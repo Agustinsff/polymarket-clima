@@ -165,6 +165,15 @@ en el estado); después vende a medio + 1 tick, sin piso, y avisa por ntfy una v
 elegirse el reloj se borra. Al arrancar con este cambio las cajas ya soltadas empiezan sus 6 horas de cero. Una venta
 así puede disparar la ALERTA de "venta bajo el costo": es esperado. Sin la clave en la config: piso siempre, como antes.
 
+**Vuelta atrás y prueba de una semana (14-nov-2026, decisión de Agus).** La revisión del 13-nov mostró que el techo
+de compra y las 6 cajas empeoraron: desde el techo, 32 compras perdieron 26,54; desde las 6 cajas, 20 compras, todas
+del Sí, perdieron 23,94, y el 13-nov saltó el freno diario con la cuenta en −14,67. Cambios: `cajas: 3`,
+`precio_max_compra: 0` (sin techo), `max_inventario_lado: 25` (antes 50: Miami 72-73 °F y Ankara 18 °C juntaron 50 y
+45 acciones del Sí mientras el precio caía) y `freno_dia_deja_ventas: true` (el freno diario cancela las compras pero
+deja vender; antes cancelaba todo y el bot quedaba con las acciones sin órdenes hasta la medianoche). Además, frenado
+el bot sigue anotando la recompensa y los reembolsos. Veredicto el 21-nov: si el neto de la semana no es positivo, se
+frena el bot.
+
 **Preferir cajas de dos lados y filtro rápido (13-nov-2026, decisión de Agus).**
 `preferir_dos_lados: true`: las cajas se ordenan y se rotan por `rec_efectiva`, que es la recompensa esperada entera si
 el bot puede comprar los dos lados y un tercio si el piso o el techo de compra dejan uno solo (así puntúa Polymarket
