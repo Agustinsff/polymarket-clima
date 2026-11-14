@@ -1,6 +1,6 @@
-# Maker (papel) — 2026-11-14 17:38Z
+# Maker (papel) — 2026-11-14 18:33Z
 
-- Cajas ahora: 3: 10°C (highest-temperature-in-london-on-november-16-2026, medio 0.17, rec. esp. 1.443/día), 9°C (highest-temperature-in-warsaw-on-november-16-2026, medio 0.435, rec. esp. 1.887/día), 80-81°F (highest-temperature-in-miami-on-november-16-2026, medio 0.59, rec. esp. 4.805/día)
+- Cajas ahora: 3: 10°C (highest-temperature-in-london-on-november-16-2026, medio 0.17, rec. esp. 1.311/día), 80-81°F (highest-temperature-in-miami-on-november-16-2026, medio 0.575, rec. esp. 0.243/día), 8°C (highest-temperature-in-warsaw-on-november-16-2026, medio 0.365, rec. esp. 2.851/día)
 - Recompensas cobradas (lo que dice Polymarket; en papel, estimadas): US$ 121.10 en 10 días: 2026-11-04 5.99, 2026-11-05 15.71, 2026-11-06 16.27, 2026-11-07 13.89, 2026-11-08 15.58, 2026-11-09 9.29, 2026-11-10 11.26, 2026-11-11 11.68, 2026-11-12 13.21, 2026-11-13 8.24
 - Reembolsos de comisión de maker cobrados: US$ 0.00.
 - Estimación por fórmula (pesimista): 2026-11-04 5.99, 2026-11-05 15.71, 2026-11-06 16.27, 2026-11-07 13.89, 2026-11-08 15.58, 2026-11-09 9.29, 2026-11-10 11.26, 2026-11-11 11.68, 2026-11-12 13.21, 2026-11-13 8.24, 2026-11-14 2.81
@@ -9,6 +9,6 @@
 - Resultado realizado de los llenados (cobros − compras + ventas): US$ -60.87; contando las acciones en cartera al costo: US$ -41.42. Capital puesto ahora: US$ 19.45.
 - Efectivo libre para comprar: US$ 80.55 (en la cuenta 80.55, reservado en compras 0.00; sin tope: reinvierte lo que gana).
 - Neto = recompensas + reembolsos + realizado: US$ +79.68. Para el freno total: US$ +79.68 (tope −30, cuenta llenados + recompensas + reembolsos).
-- A PRECIO DE MERCADO (lo que muestra la web): acciones US$ 14.78 (al costo 19.45); llenados US$ -46.09; neto con recompensas y reembolsos US$ +75.01; cuenta = efectivo + acciones = US$ 95.33.
+- A PRECIO DE MERCADO (lo que muestra la web): acciones US$ 14.48 (al costo 19.45); llenados US$ -46.39; neto con recompensas y reembolsos US$ +74.71; cuenta = efectivo + acciones = US$ 95.03.
 - Filtro de movimiento (sin compras): ninguna caja.
 - Freno: no.
