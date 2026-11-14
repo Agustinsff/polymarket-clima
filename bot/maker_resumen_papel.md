@@ -1,4 +1,4 @@
-# Maker (papel) — 2026-11-14 11:12Z
+# Maker (papel) — 2026-11-14 12:07Z
 
 - Cajas ahora: 6: 28°C (highest-temperature-in-shenzhen-on-november-15-2026, medio 0.13, rec. esp. 0.795/día), 72-73°F (highest-temperature-in-los-angeles-on-november-15-2026, medio 0.595, rec. esp. 2.868/día), 10°C (highest-temperature-in-amsterdam-on-november-15-2026, medio 0.577, rec. esp. 3.067/día), 18°C (highest-temperature-in-busan-on-november-16-2026, medio 0.465, rec. esp. 0.076/día), 10°C (highest-temperature-in-london-on-november-16-2026, medio 0.235, rec. esp. 3.795/día), 16°C (highest-temperature-in-seoul-on-november-16-2026, medio 0.335, rec. esp. 0.165/día)
 - Recompensas cobradas (lo que dice Polymarket; en papel, estimadas): US$ 121.10 en 10 días: 2026-11-04 5.99, 2026-11-05 15.71, 2026-11-06 16.27, 2026-11-07 13.89, 2026-11-08 15.58, 2026-11-09 9.29, 2026-11-10 11.26, 2026-11-11 11.68, 2026-11-12 13.21, 2026-11-13 8.24
