@@ -1032,6 +1032,8 @@ class Maker:
         """True si la caja esta 'en movimiento' (8-nov, Moscu/Munich/Tokio 14 °C): el medio se movio filtro_movimiento_c
         (0,06) o mas en la ultima hora, en cualquier direccion. Ahi no se ponen compras (las ventas siguen): las compras
         hechas con el precio en movimiento perdieron 5 c/accion a la hora; con el precio quieto ganaron 1,4 c. 0 = apagado."""
+        if getattr(self, "_solo_ventas", False):          # freno diario con ventas: ninguna caja compra
+            return True
         texto = f"{c.get('evento', '')} {c.get('caja', '')} {c.get('cid', '')}".lower()
         a_mano = [x for x in self.cajas_sin_compras() if x in texto]
         if a_mano:
@@ -1476,10 +1478,22 @@ class Maker:
             self.revisar_llenados(ahora)
             self.liquidar()
             self.fusionar_pares(ahora)
+            self._solo_ventas = False
             motivo = self.freno(ahora)
+            if motivo and motivo.startswith("perdida del dia") and self.cfg["maker"].get("freno_dia_deja_ventas"):
+                # freno diario con ventas (14-nov, decision de Agus): no compra mas hasta las 00:00 de Uruguay, pero
+                # sigue vendiendo lo que tiene. Antes cancelaba todo y el 13-nov el bot quedo 16 h con US$ 43 en
+                # acciones sin ninguna orden de venta. Las compras abiertas se cancelan en renovar (sin_compras).
+                self._solo_ventas = True
+                if ahora.timestamp() - self.__dict__.get("_solo_ventas_log", 0) >= 1800:
+                    self._solo_ventas_log = ahora.timestamp()
+                    log(f"solo ventas: {motivo}")
+                motivo = None
             if motivo:
                 log(f"no opera: {motivo}")
                 self.ej.cancelar_todo()
+                self.recompensas(ahora)          # 14-nov: frenado tambien anota la recompensa y los reembolsos
+                self.leer_reembolsos(ahora)      # (el 13-nov no se anoto 1,60 y el freno total no la conto)
                 self._guardar()
                 return motivo
             elegidas = self.elegir(ahora)
