@@ -1,8 +1,8 @@
 # Reglas de los mercados de Polymarket
 
-Actualizado 2026-11-14 18:28 UTC por `reglas.py` (cada 3 h). Lo que Polymarket usa hoy en cada familia de mercados, y los cambios que se detectaron.
+Actualizado 2026-11-14 22:43 UTC por `reglas.py` (cada 3 h). Lo que Polymarket usa hoy en cada familia de mercados, y los cambios que se detectaron.
 
-🔔 Polymarket cambió algo en **clima (otros)** (mercado de clima nuevo, ya no aparece el 2026-11-12 20:25 UTC): `will-there-be-a-super-el-nino-this-winter`. Ver [reglas_informe.md](reglas_informe.md).
+✅ Sin cambios en las últimas 48 h.
 
 ## Comisiones
 
@@ -16,8 +16,8 @@ Comisión del taker = **tasa × p × (1 − p)** por acción. Desde el 23-oct ca
 | cripto ethereum-hit-price-daily | 1 | `feesEnabled=True feeType=crypto_fees_v2 feeSchedule={"exponent": 1, "rate": 0.07, "rebateRate": 0.2, "takerOnly": true} takerBaseFee=1000` (1) | 0.07 |
 | cripto ethereum-multi-strikes-weekly | 7 | `feesEnabled=True feeType=crypto_fees_v2 feeSchedule={"exponent": 1, "rate": 0.07, "rebateRate": 0.2, "takerOnly": true} takerBaseFee=1000` (7) | 0.07 |
 | cripto ethereum-neg-risk-weekly | 7 | `feesEnabled=True feeType=crypto_fees_v2 feeSchedule={"exponent": 1, "rate": 0.07, "rebateRate": 0.2, "takerOnly": true} takerBaseFee=1000` (7) | 0.07 |
-| temperatura máxima | 136 | `feesEnabled=True feeType=weather_fees feeSchedule={"exponent": 1, "rate": 0.05, "rebateRate": 0.25, "takerOnly": true} takerBaseFee=1000` (136) | 0.05 |
-| temperatura mínima | 84 | `feesEnabled=True feeType=weather_fees feeSchedule={"exponent": 1, "rate": 0.05, "rebateRate": 0.25, "takerOnly": true} takerBaseFee=1000` (84) | 0.05 |
+| temperatura máxima | 127 | `feesEnabled=True feeType=weather_fees feeSchedule={"exponent": 1, "rate": 0.05, "rebateRate": 0.25, "takerOnly": true} takerBaseFee=1000` (127) | 0.05 |
+| temperatura mínima | 78 | `feesEnabled=True feeType=weather_fees feeSchedule={"exponent": 1, "rate": 0.05, "rebateRate": 0.25, "takerOnly": true} takerBaseFee=1000` (78) | 0.05 |
 
 ## Fuente de resolución y parámetros
 
@@ -30,7 +30,7 @@ Comisión del taker = **tasa × p × (1 − p)** por acción. Desde el 23-oct ca
 | cripto bitcoin-neg-risk-weekly | parámetros | `orden minima=5 tick=0.01` (5) | 2026-10-23 13:08 |
 | cripto btc-multi-strikes-weekly | fuente de resolución | `binance.com/en/trade/BTC_USDT` (7) | 2026-10-23 13:08 |
 | cripto btc-multi-strikes-weekly | parámetros | `orden minima=5 tick=0.001` (7) | 2026-10-23 13:08 |
-| cripto btc-multi-strikes-weekly | parámetros | `orden minima=5 tick=0.01` (6) | 2026-10-23 13:08 |
+| cripto btc-multi-strikes-weekly | parámetros | `orden minima=5 tick=0.01` (5) | 2026-10-23 13:08 |
 | cripto ethereum-hit-price-daily | fuente de resolución | `binance.com/en/trade/ETH_USDT` (1) | 2026-10-23 13:08 |
 | cripto ethereum-hit-price-daily | parámetros | `orden minima=5 tick=0.001` (1) | 2026-10-23 13:08 |
 | cripto ethereum-multi-strikes-weekly | fuente de resolución | `binance.com/en/trade/ETH_USDT` (7) | 2026-10-23 13:08 |
@@ -38,16 +38,16 @@ Comisión del taker = **tasa × p × (1 − p)** por acción. Desde el 23-oct ca
 | cripto ethereum-multi-strikes-weekly | parámetros | `orden minima=5 tick=0.01` (6) | 2026-10-23 13:08 |
 | cripto ethereum-neg-risk-weekly | fuente de resolución | `binance.com/en/trade/ETH_USDT` (7) | 2026-10-23 13:08 |
 | cripto ethereum-neg-risk-weekly | parámetros | `orden minima=5 tick=0.001` (7) | 2026-10-23 13:08 |
-| cripto ethereum-neg-risk-weekly | parámetros | `orden minima=5 tick=0.01` (7) | 2026-10-23 13:08 |
-| temperatura máxima | fuente de resolución | `aviationweather.gov/api/data/metar` (128) | 2026-10-23 13:08 |
+| cripto ethereum-neg-risk-weekly | parámetros | `orden minima=5 tick=0.01` (6) | 2026-10-23 13:08 |
+| temperatura máxima | fuente de resolución | `aviationweather.gov/api/data/metar` (119) | 2026-10-23 13:08 |
 | temperatura máxima | fuente de resolución | `wunderground.com/history/daily` (4) | 2026-10-23 13:08 |
 | temperatura máxima | fuente de resolución | `(sin fuente)` (4) | 2026-10-23 13:08 |
-| temperatura máxima | parámetros | `orden minima=5 tick=0.001` (132) | 2026-10-23 13:08 |
-| temperatura máxima | parámetros | `orden minima=5 tick=0.01` (108) | 2026-10-23 13:08 |
-| temperatura mínima | fuente de resolución | `aviationweather.gov/api/data/metar` (80) | 2026-10-23 13:08 |
+| temperatura máxima | parámetros | `orden minima=5 tick=0.001` (123) | 2026-10-23 13:08 |
+| temperatura máxima | parámetros | `orden minima=5 tick=0.01` (95) | 2026-10-23 13:08 |
+| temperatura mínima | fuente de resolución | `aviationweather.gov/api/data/metar` (74) | 2026-10-23 13:08 |
 | temperatura mínima | fuente de resolución | `(sin fuente)` (4) | 2026-10-23 13:08 |
-| temperatura mínima | parámetros | `orden minima=5 tick=0.01` (79) | 2026-10-23 13:08 |
-| temperatura mínima | parámetros | `orden minima=5 tick=0.001` (61) | 2026-10-23 13:08 |
+| temperatura mínima | parámetros | `orden minima=5 tick=0.01` (72) | 2026-10-23 13:08 |
+| temperatura mínima | parámetros | `orden minima=5 tick=0.001` (59) | 2026-10-23 13:08 |
 
 ## Mercados de clima que no son de temperatura diaria
 
@@ -57,7 +57,7 @@ Comisión del taker = **tasa × p × (1 − p)** por acción. Desde el 23-oct ca
 - `9pt0-or-above-earthquake-before`: 1 abiertos (ej. `9pt0-or-above-earthquake-before-2027`), visto desde 2026-10-23 13:08
 - `ai-data-center`: 1 abiertos (ej. `ai-data-center-in-space-by`), visto desde 2026-10-23 13:08
 - `all-time-pacific-category`: 1 abiertos (ej. `all-time-pacific-category-5-hurricane-record-broken-in-2026`), visto desde 2026-10-23 13:08
-- `biggest-earthquake`: 2 abiertos (ej. `biggest-earthquake-2026-11-13`), visto desde 2026-10-23 13:08
+- `biggest-earthquake`: 1 abiertos (ej. `biggest-earthquake-2026-11-14`), visto desde 2026-10-23 13:08
 - `blue-origin-new-glenn-launch`: 1 abiertos (ej. `blue-origin-new-glenn-launch-in-2026`), visto desde 2026-10-23 13:08
 - `california-winter`: 1 abiertos (ej. `california-winter-2026-27-wetter-or-drier`), visto desde 2026-10-23 13:08
 - `ebola-pandemic`: 1 abiertos (ej. `ebola-pandemic-in-2026`), visto desde 2026-10-23 13:08
@@ -94,13 +94,12 @@ Comisión del taker = **tasa × p × (1 − p)** por acción. Desde el 23-oct ca
 - `vesuvius-eruption-with`: 1 abiertos (ej. `vesuvius-eruption-with-1-vei-in-2026`), visto desde 2026-10-23 13:08
 - `west-nile-neuroinvasive-cases-nyc`: 1 abiertos (ej. `west-nile-neuroinvasive-cases-nyc-2026-20260820104404`), visto desde 2026-10-23 13:08
 - `what-will-the-peak-roni-be`: 1 abiertos (ej. `what-will-the-peak-roni-be-for-the-2026-27-el-nino-1786975502957`), visto desde 2026-10-23 13:08
-- `when-will-the-danube-river-return-to-normal-levels`: 1 abiertos (ej. `when-will-the-danube-river-return-to-normal-levels`), visto desde 2026-10-23 13:08
 - `when-will-the-next-hurricane-form`: 1 abiertos (ej. `when-will-the-next-hurricane-form-20261102120000000`), visto desde 2026-11-02 19:45
 - `when-will-the-rhine-river-return-to-normal-levels`: 1 abiertos (ej. `when-will-the-rhine-river-return-to-normal-levels`), visto desde 2026-10-23 13:08
 - `where-will`: 1 abiertos (ej. `where-will-2026-rank-among-the-hottest-years-on-record`), visto desde 2026-10-23 13:08
 - `where-will-a`: 1 abiertos (ej. `where-will-a-6pt0-magnitude-earthquake-occur-by-end-of-november`), visto desde 2026-10-23 13:08
 - `where-will-a-hurricane-make-landfall`: 1 abiertos (ej. `where-will-a-hurricane-make-landfall-in-the-us-during-the-2026-hurricane-season`), visto desde 2026-10-23 13:08
-- `where-will-it-rain`: 3 abiertos (ej. `where-will-it-rain-on-november-13-2026`), visto desde 2026-10-23 13:08
+- `where-will-it-rain`: 2 abiertos (ej. `where-will-it-rain-on-november-14-2026`), visto desde 2026-10-23 13:08
 - `which-countries-will-have-an-ebola-case`: 1 abiertos (ej. `which-countries-will-have-an-ebola-case-in-2026`), visto desde 2026-10-23 13:08
 - `will`: 1 abiertos (ej. `will-2-or-more-hurricanes-make-landfall-in-the-us-in-2026-20260721164140039`), visto desde 2026-10-23 13:08
 - `will-a-hurricane-make-landfall`: 1 abiertos (ej. `will-a-hurricane-make-landfall-in-hawaii-before-2027-20260721182828397`), visto desde 2026-10-23 13:08
