@@ -1,11 +1,11 @@
 # Resumen polymarket-clima
 
-_Actualizado: 2026-11-15 20:15 (Montevideo). Todo es **en papel**: no se usa plata real._
+_Actualizado: 2026-11-15 20:30 (Montevideo). Todo es **en papel**: no se usa plata real._
 
 ## Estado de las tareas
 
 🔔 Polymarket cambió algo en **clima (otros)** (mercado de clima nuevo, ya no aparece el 2026-11-15 16:34 UTC): `state-d4-drought` y 1 más. Ver [reglas_informe.md](reglas_informe.md).
-🔔 Polymarket cambió algo en **temperatura mínima** (ciudades, ya no aparece el 2026-11-15 16:34 UTC): `taipei` y 6 más. Ver [reglas_informe.md](reglas_informe.md).
+🔔 Polymarket cambió algo en **temperatura mínima** (ciudades, ya no aparece el 2026-11-15 23:09 UTC): `cape-town` y 8 más. Ver [reglas_informe.md](reglas_informe.md).
 
 - Última foto de liquidez: 2026-11-15T20:07:31
 - Monitor: mañana 2026-11-15, noche 2026-11-15
@@ -67,13 +67,13 @@ Series donde el modelo le gana al mercado (≥5 días): mín dallas (7 días), m
 
 | Modo | Serie calibrada | Liquidadas | Ganadas | Neto (10 acc. c/u) | Pendientes |
 |---|---|---|---|---|---|
-| taker | sí | 2716 | 1062 | US$-1157.29 | 552 |
+| taker | sí | 2716 | 1062 | US$-1157.29 | 648 |
 | taker | no | 1830 | 735 | US$-566.68 | 0 |
-| maker | sí | 441 | 52 | US$-175.56 | 14117 |
+| maker | sí | 441 | 52 | US$-175.56 | 14471 |
 | maker | no | 7591 | 856 | US$-1577.04 | 110 |
-| cola_taker | sí | 1405 | 30 | US$-213.40 | 272 |
+| cola_taker | sí | 1405 | 30 | US$-213.40 | 329 |
 | cola_taker | no | 1195 | 37 | US$-24.20 | 0 |
-| cola_maker | sí | 83 | 2 | US$-8.88 | 2738 |
+| cola_maker | sí | 83 | 2 | US$-8.88 | 2814 |
 | cola_maker | no | 1299 | 32 | US$-78.78 | 19 |
 
 Taker en total: US$-1961.57. _Con la comisión vieja (0,05 para todo) sería US$-2134.11._
@@ -99,16 +99,16 @@ _Taker = compra al instante pagando comisión. Maker = orden en el libro, solo c
 
 ## Cripto en papel (Bitcoin / Ethereum: above, rango y toca; modelo de opciones)
 
-Operaciones: 576 (547 liquidadas, 242 ganadas). **Neto US$+92.44** sobre US$2274.47 invertidos (ROI +4.1 %). _Con la comisión vieja (0,05 para todo) sería US$+106.69._
-Brier en 2084 strikes: modelo 0.1477 vs mercado 0.1449.
+Operaciones: 576 (553 liquidadas, 246 ganadas). **Neto US$+112.83** sobre US$2293.25 invertidos (ROI +4.9 %). _Con la comisión vieja (0,05 para todo) sería US$+127.32._
+Brier en 2134 strikes: modelo 0.1466 vs mercado 0.1441.
 
 | Activo | Tipo | Liquidadas | Neto |
 |---|---|---|---|
-| BTC | above | 72 | US$+43.07 |
-| BTC | rango | 113 | US$+55.97 |
+| BTC | above | 74 | US$+47.92 |
+| BTC | rango | 114 | US$+60.94 |
 | BTC | toca | 147 | US$-97.49 |
-| ETH | above | 47 | US$+11.91 |
-| ETH | rango | 80 | US$+33.42 |
+| ETH | above | 49 | US$+17.34 |
+| ETH | rango | 81 | US$+38.54 |
 | ETH | toca | 88 | US$+45.57 |
 
 _Regla fija: comprar el lado que el modelo ve ≥5 puntos más barato, a 48/24/12/6/3/1 h del cierre (18/12/6/3/1 h en 'toca'), 10 acciones al precio real del libro, con comisión. Backtest may-oct: +6,7 % con 1 ¢ de deslizamiento (Ethereum +17 %, Bitcoin ~0 %)._
