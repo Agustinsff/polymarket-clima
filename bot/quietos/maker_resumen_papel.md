@@ -1,9 +1,9 @@
-# Maker (papel) — 2026-11-15 06:12Z
+# Maker (papel) — 2026-11-15 07:08Z
 
-- Cajas ahora: 6: Anthropic IPO closing market cap above $1.5T? (anthropic-ipo-closing-market-cap-above-1pt5t, medio 0.3405, rec. esp. 0.552/día), Will Romeo Doubs have 4.5+ receiving touchdowns in the 2026-27 NFL regular season? (romeo-doubs-4pt5-receiving-touchdowns-2026-27, medio 0.605, rec. esp. 1.925/día), Will none of these people be impeached by December 31, 2027? (will-none-of-these-people-be-impeached-by-december-31-2027, medio 0.28, rec. esp. 1.096/día), Will Anthropic sell between 6% and 7% of its shares in its IPO? (will-anthropic-sell-between-6pct-and-7pct-of-its-shares-in-its-ipo, medio 0.6975, rec. esp. 1.834/día), Unit FDV above $200M one day after launch? (unit-fdv-above-200m-one-day-after-launch, medio 0.415, rec. esp. 0.853/día), OpenAI IPO closing market cap above $1.4T? (openai-ipo-closing-market-cap-above-1pt4t, medio 0.295, rec. esp. 1.189/día)
+- Cajas ahora: 4: Anthropic IPO closing market cap above $1.5T? (anthropic-ipo-closing-market-cap-above-1pt5t, medio 0.3405, rec. esp. 0.591/día), Will Romeo Doubs have 4.5+ receiving touchdowns in the 2026-27 NFL regular season? (romeo-doubs-4pt5-receiving-touchdowns-2026-27, medio 0.605, rec. esp. 1.176/día), Will Anthropic sell between 6% and 7% of its shares in its IPO? (will-anthropic-sell-between-6pct-and-7pct-of-its-shares-in-its-ipo, medio 0.6975, rec. esp. 1.884/día), OpenAI IPO closing market cap above $1.4T? (openai-ipo-closing-market-cap-above-1pt4t, medio 0.295, rec. esp. 1.189/día)
 - Recompensas cobradas (lo que dice Polymarket; en papel, estimadas): US$ 8.48 en 2 días: 2026-11-13 3.68, 2026-11-14 4.80
 - Reembolsos de comisión de maker cobrados: US$ 0.00.
-- Estimación por fórmula (pesimista): 2026-11-13 3.68, 2026-11-14 4.80, 2026-11-15 0.85
+- Estimación por fórmula (pesimista): 2026-11-13 3.68, 2026-11-14 4.80, 2026-11-15 0.99
 - Llenados: 1 (25 acciones); cajas resueltas: 0.
 - Resultado del día (hora de Uruguay, ventas al costo de ese momento + cajas resueltas): US$ +0.00; freno diario en −10. La recompensa diaria la informa Polymarket por día UTC.
 - Resultado realizado de los llenados (cobros − compras + ventas): US$ -15.43; contando las acciones en cartera al costo: US$ +0.00. Capital puesto ahora: US$ 93.88.
