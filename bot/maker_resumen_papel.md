@@ -1,6 +1,6 @@
-# Maker (papel) — 2026-11-15 01:54Z
+# Maker (papel) — 2026-11-15 02:49Z
 
-- Cajas ahora: 3: 58-59°F (highest-temperature-in-dallas-on-november-16-2026, medio 0.355, rec. esp. 1.631/día), 7°C (highest-temperature-in-helsinki-on-november-16-2026, medio 0.59, rec. esp. 0.883/día), 33°C (highest-temperature-in-karachi-on-november-16-2026, medio 0.565, rec. esp. 2.094/día)
+- Cajas ahora: 3: 58-59°F (highest-temperature-in-dallas-on-november-16-2026, medio 0.405, rec. esp. 6.705/día), 7°C (highest-temperature-in-helsinki-on-november-16-2026, medio 0.59, rec. esp. 1.402/día), 33°C (highest-temperature-in-karachi-on-november-16-2026, medio 0.55, rec. esp. 1.135/día)
 - Recompensas cobradas (lo que dice Polymarket; en papel, estimadas): US$ 123.92 en 11 días: 2026-11-04 5.99, 2026-11-05 15.71, 2026-11-06 16.27, 2026-11-07 13.89, 2026-11-08 15.58, 2026-11-09 9.29, 2026-11-10 11.26, 2026-11-11 11.68, 2026-11-12 13.21, 2026-11-13 8.24, 2026-11-14 2.81
 - Reembolsos de comisión de maker cobrados: US$ 0.00.
 - Estimación por fórmula (pesimista): 2026-11-04 5.99, 2026-11-05 15.71, 2026-11-06 16.27, 2026-11-07 13.89, 2026-11-08 15.58, 2026-11-09 9.29, 2026-11-10 11.26, 2026-11-11 11.68, 2026-11-12 13.21, 2026-11-13 8.24, 2026-11-14 2.81, 2026-11-15 0.00
