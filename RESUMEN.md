@@ -1,12 +1,12 @@
 # Resumen polymarket-clima
 
-_Actualizado: 2026-11-14 22:10 (Montevideo). Todo es **en papel**: no se usa plata real._
+_Actualizado: 2026-11-14 22:15 (Montevideo). Todo es **en papel**: no se usa plata real._
 
 ## Estado de las tareas
 
 ✅ Todo corriendo normalmente.
 
-- Última foto de liquidez: 2026-11-14T22:00:31
+- Última foto de liquidez: 2026-11-14T22:15:53
 - Monitor: mañana 2026-11-14, noche 2026-11-14
 - Prueba São Paulo: último día registrado 2026-11-14
 - Cosechador: último ciclo 2026-11-04 16:12 UTC, 88 mercados, 46 estaciones
