@@ -1,6 +1,6 @@
 # Reglas de los mercados de Polymarket
 
-Actualizado 2026-11-14 22:43 UTC por `reglas.py` (cada 3 h). Lo que Polymarket usa hoy en cada familia de mercados, y los cambios que se detectaron.
+Actualizado 2026-11-15 07:09 UTC por `reglas.py` (cada 3 h). Lo que Polymarket usa hoy en cada familia de mercados, y los cambios que se detectaron.
 
 ✅ Sin cambios en las últimas 48 h.
 
@@ -16,38 +16,40 @@ Comisión del taker = **tasa × p × (1 − p)** por acción. Desde el 23-oct ca
 | cripto ethereum-hit-price-daily | 1 | `feesEnabled=True feeType=crypto_fees_v2 feeSchedule={"exponent": 1, "rate": 0.07, "rebateRate": 0.2, "takerOnly": true} takerBaseFee=1000` (1) | 0.07 |
 | cripto ethereum-multi-strikes-weekly | 7 | `feesEnabled=True feeType=crypto_fees_v2 feeSchedule={"exponent": 1, "rate": 0.07, "rebateRate": 0.2, "takerOnly": true} takerBaseFee=1000` (7) | 0.07 |
 | cripto ethereum-neg-risk-weekly | 7 | `feesEnabled=True feeType=crypto_fees_v2 feeSchedule={"exponent": 1, "rate": 0.07, "rebateRate": 0.2, "takerOnly": true} takerBaseFee=1000` (7) | 0.07 |
-| temperatura máxima | 127 | `feesEnabled=True feeType=weather_fees feeSchedule={"exponent": 1, "rate": 0.05, "rebateRate": 0.25, "takerOnly": true} takerBaseFee=1000` (127) | 0.05 |
-| temperatura mínima | 78 | `feesEnabled=True feeType=weather_fees feeSchedule={"exponent": 1, "rate": 0.05, "rebateRate": 0.25, "takerOnly": true} takerBaseFee=1000` (78) | 0.05 |
+| temperatura máxima | 146 | `feesEnabled=True feeType=weather_fees feeSchedule={"exponent": 1, "rate": 0.05, "rebateRate": 0.25, "takerOnly": true} takerBaseFee=1000` (146) | 0.05 |
+| temperatura mínima | 93 | `feesEnabled=True feeType=weather_fees feeSchedule={"exponent": 1, "rate": 0.05, "rebateRate": 0.25, "takerOnly": true} takerBaseFee=1000` (93) | 0.05 |
 
 ## Fuente de resolución y parámetros
 
 | Familia | Qué | Variante (eventos o cajas) | Desde |
 |---|---|---|---|
 | cripto bitcoin-hit-price-daily | fuente de resolución | `binance.com/en/trade/BTC_USDT` (1) | 2026-10-23 13:08 |
+| cripto bitcoin-hit-price-daily | parámetros | `orden minima=5 tick=0.01` (1) | 2026-10-23 13:08 |
 | cripto bitcoin-hit-price-daily | parámetros | `orden minima=5 tick=0.001` (1) | 2026-10-23 13:08 |
 | cripto bitcoin-neg-risk-weekly | fuente de resolución | `binance.com/en/trade/BTC_USDT` (7) | 2026-10-23 13:08 |
 | cripto bitcoin-neg-risk-weekly | parámetros | `orden minima=5 tick=0.001` (7) | 2026-10-23 13:08 |
 | cripto bitcoin-neg-risk-weekly | parámetros | `orden minima=5 tick=0.01` (5) | 2026-10-23 13:08 |
 | cripto btc-multi-strikes-weekly | fuente de resolución | `binance.com/en/trade/BTC_USDT` (7) | 2026-10-23 13:08 |
 | cripto btc-multi-strikes-weekly | parámetros | `orden minima=5 tick=0.001` (7) | 2026-10-23 13:08 |
-| cripto btc-multi-strikes-weekly | parámetros | `orden minima=5 tick=0.01` (5) | 2026-10-23 13:08 |
+| cripto btc-multi-strikes-weekly | parámetros | `orden minima=5 tick=0.01` (4) | 2026-10-23 13:08 |
 | cripto ethereum-hit-price-daily | fuente de resolución | `binance.com/en/trade/ETH_USDT` (1) | 2026-10-23 13:08 |
+| cripto ethereum-hit-price-daily | parámetros | `orden minima=5 tick=0.01` (1) | 2026-10-23 13:08 |
 | cripto ethereum-hit-price-daily | parámetros | `orden minima=5 tick=0.001` (1) | 2026-10-23 13:08 |
 | cripto ethereum-multi-strikes-weekly | fuente de resolución | `binance.com/en/trade/ETH_USDT` (7) | 2026-10-23 13:08 |
 | cripto ethereum-multi-strikes-weekly | parámetros | `orden minima=5 tick=0.001` (7) | 2026-10-23 13:08 |
 | cripto ethereum-multi-strikes-weekly | parámetros | `orden minima=5 tick=0.01` (6) | 2026-10-23 13:08 |
 | cripto ethereum-neg-risk-weekly | fuente de resolución | `binance.com/en/trade/ETH_USDT` (7) | 2026-10-23 13:08 |
 | cripto ethereum-neg-risk-weekly | parámetros | `orden minima=5 tick=0.001` (7) | 2026-10-23 13:08 |
-| cripto ethereum-neg-risk-weekly | parámetros | `orden minima=5 tick=0.01` (6) | 2026-10-23 13:08 |
-| temperatura máxima | fuente de resolución | `aviationweather.gov/api/data/metar` (119) | 2026-10-23 13:08 |
+| cripto ethereum-neg-risk-weekly | parámetros | `orden minima=5 tick=0.01` (5) | 2026-10-23 13:08 |
+| temperatura máxima | fuente de resolución | `aviationweather.gov/api/data/metar` (137) | 2026-10-23 13:08 |
+| temperatura máxima | fuente de resolución | `(sin fuente)` (5) | 2026-10-23 13:08 |
 | temperatura máxima | fuente de resolución | `wunderground.com/history/daily` (4) | 2026-10-23 13:08 |
-| temperatura máxima | fuente de resolución | `(sin fuente)` (4) | 2026-10-23 13:08 |
-| temperatura máxima | parámetros | `orden minima=5 tick=0.001` (123) | 2026-10-23 13:08 |
-| temperatura máxima | parámetros | `orden minima=5 tick=0.01` (95) | 2026-10-23 13:08 |
-| temperatura mínima | fuente de resolución | `aviationweather.gov/api/data/metar` (74) | 2026-10-23 13:08 |
-| temperatura mínima | fuente de resolución | `(sin fuente)` (4) | 2026-10-23 13:08 |
-| temperatura mínima | parámetros | `orden minima=5 tick=0.01` (72) | 2026-10-23 13:08 |
-| temperatura mínima | parámetros | `orden minima=5 tick=0.001` (59) | 2026-10-23 13:08 |
+| temperatura máxima | parámetros | `orden minima=5 tick=0.001` (134) | 2026-10-23 13:08 |
+| temperatura máxima | parámetros | `orden minima=5 tick=0.01` (116) | 2026-10-23 13:08 |
+| temperatura mínima | fuente de resolución | `aviationweather.gov/api/data/metar` (88) | 2026-10-23 13:08 |
+| temperatura mínima | fuente de resolución | `(sin fuente)` (5) | 2026-10-23 13:08 |
+| temperatura mínima | parámetros | `orden minima=5 tick=0.01` (85) | 2026-10-23 13:08 |
+| temperatura mínima | parámetros | `orden minima=5 tick=0.001` (66) | 2026-10-23 13:08 |
 
 ## Mercados de clima que no son de temperatura diaria
 
