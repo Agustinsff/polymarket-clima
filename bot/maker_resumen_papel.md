@@ -1,14 +1,14 @@
-# Maker (papel) — 2026-11-15 18:25Z
+# Maker (papel) — 2026-11-15 19:20Z
 
-- Cajas ahora: 3: 7°C (highest-temperature-in-warsaw-on-november-17-2026, medio 0.36, rec. esp. 1.738/día), 17°C (highest-temperature-in-shanghai-on-november-17-2026, medio 0.29, rec. esp. 1.509/día), 56-57°F (highest-temperature-in-chicago-on-november-17-2026, medio 0.53, rec. esp. 1.114/día)
+- Cajas ahora: 3: 7°C (highest-temperature-in-warsaw-on-november-17-2026, medio 0.36, rec. esp. 1.526/día), 17°C (highest-temperature-in-shanghai-on-november-17-2026, medio 0.29, rec. esp. 1.399/día), 13°C (highest-temperature-in-amsterdam-on-november-17-2026, medio 0.305, rec. esp. 0.492/día)
 - Recompensas cobradas (lo que dice Polymarket; en papel, estimadas): US$ 123.92 en 11 días: 2026-11-04 5.99, 2026-11-05 15.71, 2026-11-06 16.27, 2026-11-07 13.89, 2026-11-08 15.58, 2026-11-09 9.29, 2026-11-10 11.26, 2026-11-11 11.68, 2026-11-12 13.21, 2026-11-13 8.24, 2026-11-14 2.81
 - Reembolsos de comisión de maker cobrados: US$ 0.00.
-- Estimación por fórmula (pesimista): 2026-11-04 5.99, 2026-11-05 15.71, 2026-11-06 16.27, 2026-11-07 13.89, 2026-11-08 15.58, 2026-11-09 9.29, 2026-11-10 11.26, 2026-11-11 11.68, 2026-11-12 13.21, 2026-11-13 8.24, 2026-11-14 2.81, 2026-11-15 3.79
+- Estimación por fórmula (pesimista): 2026-11-04 5.99, 2026-11-05 15.71, 2026-11-06 16.27, 2026-11-07 13.89, 2026-11-08 15.58, 2026-11-09 9.29, 2026-11-10 11.26, 2026-11-11 11.68, 2026-11-12 13.21, 2026-11-13 8.24, 2026-11-14 2.81, 2026-11-15 3.95
 - Llenados: 60 (653 acciones); cajas resueltas: 8.
 - Resultado del día (hora de Uruguay, ventas al costo de ese momento + cajas resueltas): US$ +0.00; freno diario en −10. La recompensa diaria la informa Polymarket por día UTC.
-- Resultado realizado de los llenados (cobros − compras + ventas): US$ -68.26; contando las acciones en cartera al costo: US$ -46.67. Capital puesto ahora: US$ 78.09.
-- Efectivo libre para comprar: US$ 21.91 (en la cuenta 78.41, reservado en compras 56.50; sin tope: reinvierte lo que gana).
+- Resultado realizado de los llenados (cobros − compras + ventas): US$ -68.26; contando las acciones en cartera al costo: US$ -46.67. Capital puesto ahora: US$ 54.09.
+- Efectivo libre para comprar: US$ 45.91 (en la cuenta 78.41, reservado en compras 32.50; sin tope: reinvierte lo que gana).
 - Neto = recompensas + reembolsos + realizado: US$ +77.25. Para el freno total: US$ +77.25 (tope −30, cuenta llenados + recompensas + reembolsos).
-- A PRECIO DE MERCADO (lo que muestra la web): acciones US$ 17.47 (al costo 21.59); llenados US$ -50.79; neto con recompensas y reembolsos US$ +73.13; cuenta = efectivo + acciones = US$ 95.88.
-- Filtro de movimiento (sin compras): ninguna caja.
+- A PRECIO DE MERCADO (lo que muestra la web): acciones US$ 17.37 (al costo 21.59); llenados US$ -50.89; neto con recompensas y reembolsos US$ +73.03; cuenta = efectivo + acciones = US$ 95.78.
+- Filtro de movimiento (sin compras): 13°C (highest-temperature-in-amsterdam-on-november-17-2026, +3.0 c desde 19:19Z).
 - Freno: no.
