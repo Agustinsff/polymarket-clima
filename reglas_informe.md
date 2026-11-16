@@ -1,9 +1,9 @@
 # Reglas de los mercados de Polymarket
 
-Actualizado 2026-11-15 23:09 UTC por `reglas.py` (cada 3 h). Lo que Polymarket usa hoy en cada familia de mercados, y los cambios que se detectaron.
+Actualizado 2026-11-16 07:14 UTC por `reglas.py` (cada 3 h). Lo que Polymarket usa hoy en cada familia de mercados, y los cambios que se detectaron.
 
 🔔 Polymarket cambió algo en **clima (otros)** (mercado de clima nuevo, ya no aparece el 2026-11-15 16:34 UTC): `state-d4-drought` y 1 más. Ver [reglas_informe.md](reglas_informe.md).
-🔔 Polymarket cambió algo en **temperatura mínima** (ciudades, ya no aparece el 2026-11-15 23:09 UTC): `cape-town` y 8 más. Ver [reglas_informe.md](reglas_informe.md).
+🔔 Polymarket cambió algo en **temperatura mínima** (ciudades, ya no aparece el 2026-11-16 07:14 UTC): `san-francisco` y 14 más. Ver [reglas_informe.md](reglas_informe.md).
 
 ## Comisiones
 
@@ -17,8 +17,8 @@ Comisión del taker = **tasa × p × (1 − p)** por acción. Desde el 23-oct ca
 | cripto ethereum-hit-price-daily | 1 | `feesEnabled=True feeType=crypto_fees_v2 feeSchedule={"exponent": 1, "rate": 0.07, "rebateRate": 0.2, "takerOnly": true} takerBaseFee=1000` (1) | 0.07 |
 | cripto ethereum-multi-strikes-weekly | 7 | `feesEnabled=True feeType=crypto_fees_v2 feeSchedule={"exponent": 1, "rate": 0.07, "rebateRate": 0.2, "takerOnly": true} takerBaseFee=1000` (7) | 0.07 |
 | cripto ethereum-neg-risk-weekly | 7 | `feesEnabled=True feeType=crypto_fees_v2 feeSchedule={"exponent": 1, "rate": 0.07, "rebateRate": 0.2, "takerOnly": true} takerBaseFee=1000` (7) | 0.07 |
-| temperatura máxima | 128 | `feesEnabled=True feeType=weather_fees feeSchedule={"exponent": 1, "rate": 0.05, "rebateRate": 0.25, "takerOnly": true} takerBaseFee=1000` (128) | 0.05 |
-| temperatura mínima | 79 | `feesEnabled=True feeType=weather_fees feeSchedule={"exponent": 1, "rate": 0.05, "rebateRate": 0.25, "takerOnly": true} takerBaseFee=1000` (79) | 0.05 |
+| temperatura máxima | 144 | `feesEnabled=True feeType=weather_fees feeSchedule={"exponent": 1, "rate": 0.05, "rebateRate": 0.25, "takerOnly": true} takerBaseFee=1000` (144) | 0.05 |
+| temperatura mínima | 91 | `feesEnabled=True feeType=weather_fees feeSchedule={"exponent": 1, "rate": 0.05, "rebateRate": 0.25, "takerOnly": true} takerBaseFee=1000` (91) | 0.05 |
 
 ## Fuente de resolución y parámetros
 
@@ -29,7 +29,7 @@ Comisión del taker = **tasa × p × (1 − p)** por acción. Desde el 23-oct ca
 | cripto bitcoin-hit-price-daily | parámetros | `orden minima=5 tick=0.001` (1) | 2026-10-23 13:08 |
 | cripto bitcoin-neg-risk-weekly | fuente de resolución | `binance.com/en/trade/BTC_USDT` (7) | 2026-10-23 13:08 |
 | cripto bitcoin-neg-risk-weekly | parámetros | `orden minima=5 tick=0.001` (7) | 2026-10-23 13:08 |
-| cripto bitcoin-neg-risk-weekly | parámetros | `orden minima=5 tick=0.01` (6) | 2026-10-23 13:08 |
+| cripto bitcoin-neg-risk-weekly | parámetros | `orden minima=5 tick=0.01` (5) | 2026-10-23 13:08 |
 | cripto btc-multi-strikes-weekly | fuente de resolución | `binance.com/en/trade/BTC_USDT` (7) | 2026-10-23 13:08 |
 | cripto btc-multi-strikes-weekly | parámetros | `orden minima=5 tick=0.001` (7) | 2026-10-23 13:08 |
 | cripto btc-multi-strikes-weekly | parámetros | `orden minima=5 tick=0.01` (5) | 2026-10-23 13:08 |
@@ -38,19 +38,19 @@ Comisión del taker = **tasa × p × (1 − p)** por acción. Desde el 23-oct ca
 | cripto ethereum-hit-price-daily | parámetros | `orden minima=5 tick=0.001` (1) | 2026-10-23 13:08 |
 | cripto ethereum-multi-strikes-weekly | fuente de resolución | `binance.com/en/trade/ETH_USDT` (7) | 2026-10-23 13:08 |
 | cripto ethereum-multi-strikes-weekly | parámetros | `orden minima=5 tick=0.001` (7) | 2026-10-23 13:08 |
-| cripto ethereum-multi-strikes-weekly | parámetros | `orden minima=5 tick=0.01` (7) | 2026-10-23 13:08 |
+| cripto ethereum-multi-strikes-weekly | parámetros | `orden minima=5 tick=0.01` (6) | 2026-10-23 13:08 |
 | cripto ethereum-neg-risk-weekly | fuente de resolución | `binance.com/en/trade/ETH_USDT` (7) | 2026-10-23 13:08 |
 | cripto ethereum-neg-risk-weekly | parámetros | `orden minima=5 tick=0.001` (7) | 2026-10-23 13:08 |
 | cripto ethereum-neg-risk-weekly | parámetros | `orden minima=5 tick=0.01` (6) | 2026-10-23 13:08 |
-| temperatura máxima | fuente de resolución | `aviationweather.gov/api/data/metar` (119) | 2026-10-23 13:08 |
-| temperatura máxima | fuente de resolución | `(sin fuente)` (5) | 2026-10-23 13:08 |
+| temperatura máxima | fuente de resolución | `aviationweather.gov/api/data/metar` (137) | 2026-10-23 13:08 |
 | temperatura máxima | fuente de resolución | `wunderground.com/history/daily` (4) | 2026-10-23 13:08 |
-| temperatura máxima | parámetros | `orden minima=5 tick=0.001` (124) | 2026-10-23 13:08 |
-| temperatura máxima | parámetros | `orden minima=5 tick=0.01` (98) | 2026-10-23 13:08 |
-| temperatura mínima | fuente de resolución | `aviationweather.gov/api/data/metar` (74) | 2026-10-23 13:08 |
-| temperatura mínima | fuente de resolución | `(sin fuente)` (5) | 2026-10-23 13:08 |
-| temperatura mínima | parámetros | `orden minima=5 tick=0.01` (66) | 2026-10-23 13:08 |
-| temperatura mínima | parámetros | `orden minima=5 tick=0.001` (64) | 2026-10-23 13:08 |
+| temperatura máxima | fuente de resolución | `(sin fuente)` (3) | 2026-10-23 13:08 |
+| temperatura máxima | parámetros | `orden minima=5 tick=0.001` (132) | 2026-10-23 13:08 |
+| temperatura máxima | parámetros | `orden minima=5 tick=0.01` (121) | 2026-10-23 13:08 |
+| temperatura mínima | fuente de resolución | `aviationweather.gov/api/data/metar` (88) | 2026-10-23 13:08 |
+| temperatura mínima | fuente de resolución | `(sin fuente)` (3) | 2026-10-23 13:08 |
+| temperatura mínima | parámetros | `orden minima=5 tick=0.01` (84) | 2026-10-23 13:08 |
+| temperatura mínima | parámetros | `orden minima=5 tick=0.001` (65) | 2026-10-23 13:08 |
 
 ## Mercados de clima que no son de temperatura diaria
 
@@ -122,6 +122,12 @@ Comisión del taker = **tasa × p × (1 − p)** por acción. Desde el 23-oct ca
 
 | Cuándo (UTC) | Familia | Qué | Cambio | Detalle | Origen |
 |---|---|---|---|---|---|
+| 2026-11-16 07:14 | temperatura mínima | ciudades | ya no aparece | san-francisco | auto |
+| 2026-11-16 07:14 | temperatura mínima | ciudades | ya no aparece | chicago | auto |
+| 2026-11-16 07:14 | temperatura mínima | ciudades | ya no aparece | atlanta | auto |
+| 2026-11-16 07:14 | temperatura mínima | ciudades | ya no aparece | dallas | auto |
+| 2026-11-16 07:14 | temperatura mínima | ciudades | ya no aparece | toronto | auto |
+| 2026-11-16 07:14 | temperatura mínima | ciudades | ya no aparece | buenos-aires | auto |
 | 2026-11-15 23:09 | temperatura mínima | ciudades | ya no aparece | cape-town | auto |
 | 2026-11-15 23:09 | temperatura mínima | ciudades | ya no aparece | istanbul | auto |
 | 2026-11-15 16:34 | clima (otros) | mercado de clima nuevo | ya no aparece | state-d4-drought | auto |
@@ -146,12 +152,6 @@ Comisión del taker = **tasa × p × (1 − p)** por acción. Desde el 23-oct ca
 | 2026-11-02 19:45 | clima (otros) | mercado de clima nuevo | ya no aparece | will-it-rain-during-the-united-states-grand-prix | auto |
 | 2026-11-02 19:45 | clima (otros) | mercado de clima nuevo | aparece | when-will-the-next-hurricane-form | auto |
 | 2026-11-02 06:47 | clima (otros) | mercado de clima nuevo | ya no aparece | what-intensity-will-arnab-reach | auto |
-| 2026-11-01 06:49 | clima (otros) | mercado de clima nuevo | ya no aparece | tornado | auto |
-| 2026-11-01 06:49 | temperatura mínima | comisión | aparece | feesEnabled=True feeType=weather_fees feeSchedule={"exponent": 1, "rate": 0.05, "rebateRate": 0.25, "takerOnly": true} takerBaseFee=1000 | auto |
-| 2026-10-30 18:11 | clima (otros) | mercado de clima nuevo | aparece | november | auto |
-| 2026-10-29 06:25 | clima (otros) | mercado de clima nuevo | ya no aparece | what-intensity-will-champi-reach | auto |
-| 2026-10-28 18:29 | temperatura máxima | fuente de resolución | ya no aparece | weather.gov/wrh/timeseries | auto |
-| 2026-10-28 00:43 | temperatura mínima | fuente de resolución | ya no aparece | weather.gov/wrh/timeseries | auto |
 
 ## Reglamento actual (frases comunes)
 
