@@ -1305,6 +1305,14 @@ class PruebasGuardiaMetar(unittest.TestCase):
         self.assertFalse(bot.sin_compras(dict(c, medio=0.435), t0 + timedelta(minutes=50)))
         shutil.rmtree(d)
 
+    def test_solo_eventos(self):
+        """16-nov: con solo_eventos las cajas de temperatura minima no entran como candidatas."""
+        m = MercadoFalso()
+        base = maker.candidatas(cfg(), AHORA, m)
+        self.assertTrue(base)
+        self.assertEqual(maker.candidatas(cfg(solo_eventos=base[0]["evento"]), AHORA, m), base)
+        self.assertEqual(maker.candidatas(cfg(solo_eventos="lowest-temperature"), AHORA, m), [])
+
     def test_tope_inventario_por_lado(self):
         """Moscu 4 °C (8-nov): con 86 No ya comprados no sigue comprando No; el No que tiene si lo vende."""
         d = tempfile.mkdtemp()
