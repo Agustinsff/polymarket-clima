@@ -83,8 +83,14 @@ def candidatas(cfg, ahora, m=mercado):
     """Cajas de temperatura que cumplen la regla, con su libro y la recompensa esperada pesimista."""
     c = cfg["maker"]
     out = []
+    solo = c.get("solo_eventos")
     for e in eventos_temperatura(m):
         if not e.get("endDate"):
+            continue
+        # 16-nov: Polymarket agrego mercados de temperatura MINIMA con el mismo tag; el bot los elegia como cajas y,
+        # con las compras pausadas a mano, ocupaban un lugar sin cotizar nada. `solo_eventos` (texto que tiene que estar
+        # en el slug del evento, p. ej. "highest-temperature") deja afuera el resto. Sin la clave: todos, como antes.
+        if solo and solo not in e.get("slug", ""):
             continue
         horas = (datetime.fromisoformat(e["endDate"].replace("Z", "+00:00")) - ahora).total_seconds() / 3600
         if horas < c["horas_min_fin"]:
