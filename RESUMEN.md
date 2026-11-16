@@ -1,6 +1,6 @@
 # Resumen polymarket-clima
 
-_Actualizado: 2026-11-16 19:53 (Montevideo). Todo es **en papel**: no se usa plata real._
+_Actualizado: 2026-11-16 20:05 (Montevideo). Todo es **en papel**: no se usa plata real._
 
 ## Estado de las tareas
 
@@ -8,7 +8,7 @@ _Actualizado: 2026-11-16 19:53 (Montevideo). Todo es **en papel**: no se usa pla
 🔔 Polymarket cambió algo en **temperatura mínima** (ciudades, ya no aparece el 2026-11-16 07:14 UTC): `san-francisco` y 14 más. Ver [reglas_informe.md](reglas_informe.md).
 
 - Última foto de liquidez: 2026-11-16T19:53:37
-- Monitor: mañana 2026-11-16, noche 2026-11-15
+- Monitor: mañana 2026-11-16, noche 2026-11-16
 - Prueba São Paulo: último día registrado 2026-11-16
 - Cosechador: último ciclo 2026-11-04 16:12 UTC, 88 mercados, 46 estaciones
 
