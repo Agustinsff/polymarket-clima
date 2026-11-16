@@ -1,13 +1,13 @@
 # Resumen polymarket-clima
 
-_Actualizado: 2026-11-16 10:29 (Montevideo). Todo es **en papel**: no se usa plata real._
+_Actualizado: 2026-11-16 10:44 (Montevideo). Todo es **en papel**: no se usa plata real._
 
 ## Estado de las tareas
 
 🔔 Polymarket cambió algo en **clima (otros)** (mercado de clima nuevo, ya no aparece el 2026-11-15 16:34 UTC): `state-d4-drought` y 1 más. Ver [reglas_informe.md](reglas_informe.md).
 🔔 Polymarket cambió algo en **temperatura mínima** (ciudades, ya no aparece el 2026-11-16 07:14 UTC): `san-francisco` y 14 más. Ver [reglas_informe.md](reglas_informe.md).
 
-- Última foto de liquidez: 2026-11-16T10:29:09
+- Última foto de liquidez: 2026-11-16T10:44:19
 - Monitor: mañana 2026-11-16, noche 2026-11-15
 - Prueba São Paulo: último día registrado 2026-11-15
 - Cosechador: último ciclo 2026-11-04 16:12 UTC, 88 mercados, 46 estaciones
@@ -99,7 +99,7 @@ _Taker = compra al instante pagando comisión. Maker = orden en el libro, solo c
 
 ## Cripto en papel (Bitcoin / Ethereum: above, rango y toca; modelo de opciones)
 
-Operaciones: 587 (574 liquidadas, 267 ganadas). **Neto US$+155.14** sobre US$2458.94 invertidos (ROI +6.3 %). _Con la comisión vieja (0,05 para todo) sería US$+170.19._
+Operaciones: 590 (574 liquidadas, 267 ganadas). **Neto US$+155.14** sobre US$2458.94 invertidos (ROI +6.3 %). _Con la comisión vieja (0,05 para todo) sería US$+170.19._
 Brier en 2172 strikes: modelo 0.1445 vs mercado 0.1424.
 
 | Activo | Tipo | Liquidadas | Neto |
@@ -123,6 +123,6 @@ Prueba SP: 13 operaciones; como maker se habrían llenado 11, neto **US$-12.35**
 
 ## Recompensas de liquidez (estimación, últimas 24 h)
 
-- Buenos Aires: ~US$13/día con 100 acciones a 1 ¢ en todas las cajas del mercado de mañana (sin contar pérdidas por quedar 'tomado').
+- Buenos Aires: ~US$12/día con 100 acciones a 1 ¢ en todas las cajas del mercado de mañana (sin contar pérdidas por quedar 'tomado').
 - Sao Paulo: ~US$14/día con 100 acciones a 1 ¢ en todas las cajas del mercado de mañana (sin contar pérdidas por quedar 'tomado').
 
