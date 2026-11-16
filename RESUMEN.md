@@ -1,13 +1,13 @@
 # Resumen polymarket-clima
 
-_Actualizado: 2026-11-15 21:47 (Montevideo). Todo es **en papel**: no se usa plata real._
+_Actualizado: 2026-11-15 22:02 (Montevideo). Todo es **en papel**: no se usa plata real._
 
 ## Estado de las tareas
 
 🔔 Polymarket cambió algo en **clima (otros)** (mercado de clima nuevo, ya no aparece el 2026-11-15 16:34 UTC): `state-d4-drought` y 1 más. Ver [reglas_informe.md](reglas_informe.md).
 🔔 Polymarket cambió algo en **temperatura mínima** (ciudades, ya no aparece el 2026-11-15 23:09 UTC): `cape-town` y 8 más. Ver [reglas_informe.md](reglas_informe.md).
 
-- Última foto de liquidez: 2026-11-15T21:47:31
+- Última foto de liquidez: 2026-11-15T22:02:41
 - Monitor: mañana 2026-11-15, noche 2026-11-15
 - Prueba São Paulo: último día registrado 2026-11-15
 - Cosechador: último ciclo 2026-11-04 16:12 UTC, 88 mercados, 46 estaciones
@@ -88,9 +88,9 @@ Series donde el modelo le gana al mercado (≥5 días): mín denver (11 días), 
 | Modo | Serie calibrada | Liquidadas | Ganadas | Neto (10 acc. c/u) | Pendientes |
 |---|---|---|---|---|---|
 | taker | no | 2230 | 506 | US$-1149.51 | 186 |
-| maker | no | 3169 | 382 | US$-397.61 | 4192 |
+| maker | no | 3169 | 382 | US$-397.61 | 4209 |
 | cola_taker | no | 1093 | 30 | US$-116.54 | 101 |
-| cola_maker | no | 1074 | 21 | US$-76.63 | 1398 |
+| cola_maker | no | 1074 | 21 | US$-76.63 | 1400 |
 | no80_90 | no | 907 | 620 | US$-1644.08 | 80 |
 
 Taker en total: US$-2910.13. _Con la comisión vieja (0,05 para todo) sería US$-2999.22._
@@ -123,6 +123,6 @@ Prueba SP: 13 operaciones; como maker se habrían llenado 11, neto **US$-12.35**
 
 ## Recompensas de liquidez (estimación, últimas 24 h)
 
-- Buenos Aires: ~US$13/día con 100 acciones a 1 ¢ en todas las cajas del mercado de mañana (sin contar pérdidas por quedar 'tomado').
+- Buenos Aires: ~US$12/día con 100 acciones a 1 ¢ en todas las cajas del mercado de mañana (sin contar pérdidas por quedar 'tomado').
 - Sao Paulo: ~US$16/día con 100 acciones a 1 ¢ en todas las cajas del mercado de mañana (sin contar pérdidas por quedar 'tomado').
 
