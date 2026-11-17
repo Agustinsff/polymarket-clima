@@ -48,6 +48,7 @@
     "max_inventario_lado": 25,
     "freno_dia_deja_ventas": true,
     "solo_eventos": "highest-temperature",
+    "rotar_con_acciones": true,
     "filtro_movimiento_c": 0.06,
     "filtro_movimiento_min": 60,
     "filtro_rapido_c": 0.03,

@@ -123,6 +123,21 @@ class Pruebas(unittest.TestCase):
         self.bot.cfg["maker"]["rotar_cada_min"] = 30
         self.assertEqual(list(self.bot.elegir(AHORA + timedelta(minutes=201))), ["A"])
 
+    def test_rota_con_acciones(self):
+        """17-nov: con rotar_con_acciones una caja con acciones tambien se suelta si otra paga mucho mas."""
+        self.bot.cfg["maker"]["cajas"] = 1
+        self.bot.avisar = lambda t: None
+        self.assertEqual(list(self.bot.elegir(AHORA)), ["A"])
+        self.m.libros["si-B"] = ([(0.39, 30)], [(0.41, 30)])                       # B se aprieta y tiene 90 de pozo
+        self.m.libros["si-A"] = ([(0.31, 5000), (0.30, 100)], [(0.32, 5000)])      # A se llena de rivales
+        self.bot.ej.est["inventario"]["no-A"] = 25.0                                 # y tiene acciones adentro
+        self.bot.est["rotacion_ts"] = AHORA.isoformat()
+        self.assertEqual(list(self.bot.elegir(AHORA + timedelta(minutes=31))), ["A"])   # sin la clave: no rota
+        self.bot.cfg["maker"]["rotar_con_acciones"] = True
+        self.bot.est["rotacion_ts"] = AHORA.isoformat()
+        self.assertEqual(list(self.bot.elegir(AHORA + timedelta(minutes=62))), ["B"])   # con la clave: rota
+        self.assertIn("A", self.bot.est["rotadas"])
+
     def test_cotiza_dos_compras(self):
         c = self.bot.elegir(AHORA)["A"]
         o = self.bot.cotizar(c, {})

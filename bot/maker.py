@@ -830,7 +830,12 @@ class Maker:
             # venderse bajo el costo, y el bot quedo con 2 cajas por falta de efectivo); con acciones sigue activa y vende
             inv = self.ej.inventario()
             minimo = k.get("acciones_min_venta", 5)
-            libres = [c for c in elegidas.values() if inv.get(c["si"], 0) < minimo and inv.get(c["no"], 0) < minimo]
+            # rotar_con_acciones (17-nov, decision de Agus): tambien se puede soltar una caja con acciones; pasa a
+            # soltada y esas acciones se venden como en cualquier caja soltada (piso de costo `soltada_piso_horas`).
+            # El 17-nov el bot quedo 8 h con 3 cajas de 0,9 a 2 US$/dia, todas con acciones, y US$ 36 sin usar.
+            con_acciones = k.get("rotar_con_acciones")
+            libres = [c for c in elegidas.values()
+                      if con_acciones or (inv.get(c["si"], 0) < minimo and inv.get(c["no"], 0) < minimo)]
             if ok and libres:
                 peor = min(libres, key=self.rec_efectiva)
                 r_peor = self.rec_efectiva(peor)
