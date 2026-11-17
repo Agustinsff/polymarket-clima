@@ -1,10 +1,10 @@
 # Resumen polymarket-clima
 
-_Actualizado: 2026-11-17 20:06 (Montevideo). Todo es **en papel**: no se usa plata real._
+_Actualizado: 2026-11-17 20:26 (Montevideo). Todo es **en papel**: no se usa plata real._
 
 ## Estado de las tareas
 
-🔔 Polymarket cambió algo en **temperatura mínima** (ciudades, ya no aparece el 2026-11-16 07:14 UTC): `san-francisco` y 7 más. Ver [reglas_informe.md](reglas_informe.md).
+🔔 Polymarket cambió algo en **temperatura mínima** (ciudades, ya no aparece el 2026-11-16 07:14 UTC): `san-francisco` y 5 más. Ver [reglas_informe.md](reglas_informe.md).
 
 - Última foto de liquidez: 2026-11-17T20:05:19
 - Monitor: mañana 2026-11-17, noche 2026-11-17
@@ -66,13 +66,13 @@ Series donde el modelo le gana al mercado (≥5 días): mín dallas (7 días), m
 
 | Modo | Serie calibrada | Liquidadas | Ganadas | Neto (10 acc. c/u) | Pendientes |
 |---|---|---|---|---|---|
-| taker | sí | 3119 | 1220 | US$-1348.59 | 530 |
+| taker | sí | 3119 | 1220 | US$-1348.59 | 621 |
 | taker | no | 1830 | 735 | US$-566.68 | 0 |
-| maker | sí | 441 | 52 | US$-175.56 | 15523 |
+| maker | sí | 441 | 52 | US$-175.56 | 15886 |
 | maker | no | 7591 | 856 | US$-1577.04 | 110 |
-| cola_taker | sí | 1603 | 37 | US$-220.29 | 282 |
+| cola_taker | sí | 1603 | 37 | US$-220.29 | 332 |
 | cola_taker | no | 1195 | 37 | US$-24.20 | 0 |
-| cola_maker | sí | 83 | 2 | US$-8.88 | 3040 |
+| cola_maker | sí | 83 | 2 | US$-8.88 | 3126 |
 | cola_maker | no | 1299 | 32 | US$-78.78 | 19 |
 
 Taker en total: US$-2159.76. _Con la comisión vieja (0,05 para todo) sería US$-2332.30._
@@ -98,16 +98,16 @@ _Taker = compra al instante pagando comisión. Maker = orden en el libro, solo c
 
 ## Cripto en papel (Bitcoin / Ethereum: above, rango y toca; modelo de opciones)
 
-Operaciones: 617 (595 liquidadas, 288 ganadas). **Neto US$+186.85** sobre US$2635.38 invertidos (ROI +7.1 %). _Con la comisión vieja (0,05 para todo) sería US$+202.43._
-Brier en 2254 strikes: modelo 0.1408 vs mercado 0.1390.
+Operaciones: 617 (607 liquidadas, 293 ganadas). **Neto US$+140.26** sobre US$2730.75 invertidos (ROI +5.1 %). _Con la comisión vieja (0,05 para todo) sería US$+156.19._
+Brier en 2318 strikes: modelo 0.1435 vs mercado 0.1414.
 
 | Activo | Tipo | Liquidadas | Neto |
 |---|---|---|---|
-| BTC | above | 77 | US$+52.06 |
-| BTC | rango | 120 | US$+68.23 |
+| BTC | above | 80 | US$+45.76 |
+| BTC | rango | 125 | US$+41.45 |
 | BTC | toca | 166 | US$-69.90 |
-| ETH | above | 50 | US$+19.70 |
-| ETH | rango | 82 | US$+40.88 |
+| ETH | above | 52 | US$+12.99 |
+| ETH | rango | 84 | US$+34.09 |
 | ETH | toca | 100 | US$+75.88 |
 
 _Regla fija: comprar el lado que el modelo ve ≥5 puntos más barato, a 48/24/12/6/3/1 h del cierre (18/12/6/3/1 h en 'toca'), 10 acciones al precio real del libro, con comisión. Backtest may-oct: +6,7 % con 1 ¢ de deslizamiento (Ethereum +17 %, Bitcoin ~0 %)._
@@ -123,5 +123,5 @@ Prueba SP: 13 operaciones; como maker se habrían llenado 11, neto **US$-12.35**
 ## Recompensas de liquidez (estimación, últimas 24 h)
 
 - Buenos Aires: ~US$18/día con 100 acciones a 1 ¢ en todas las cajas del mercado de mañana (sin contar pérdidas por quedar 'tomado').
-- Sao Paulo: ~US$15/día con 100 acciones a 1 ¢ en todas las cajas del mercado de mañana (sin contar pérdidas por quedar 'tomado').
+- Sao Paulo: ~US$16/día con 100 acciones a 1 ¢ en todas las cajas del mercado de mañana (sin contar pérdidas por quedar 'tomado').
 
