@@ -175,12 +175,13 @@ def armar(cfg=None, m=mercado):
     return bot, censo
 
 
-def foto_dia(bot, ahora=None):
+def foto_dia(bot, ahora=None, ruta=None):
     """Como va la cuenta (a precio de mercado) y la recompensa estimada acumulada; queda la ultima foto de cada dia de
     Uruguay. El veredicto compara la foto del 20-nov con la del 13-nov (ver REGLA.md)."""
     ahora = ahora or datetime.now(timezone.utc)
+    ruta = ruta or F_FOTOS
     try:
-        fotos = json.load(open(F_FOTOS, encoding="utf-8"))
+        fotos = json.load(open(ruta, encoding="utf-8"))
     except (OSError, ValueError):
         fotos = {}
     valor, costo = bot.valor_mercado()
@@ -194,12 +195,12 @@ def foto_dia(bot, ahora=None):
         "n_llenados": len(llen), "cajas": len(bot.est["cajas"]),
         "freno_diario_saltos": len(bot.est.get("saltos_freno_dia", [])),
         "frenado": bot.frenado()}
-    with open(F_FOTOS + ".tmp", "w", encoding="utf-8") as f:
+    with open(ruta + ".tmp", "w", encoding="utf-8") as f:
         json.dump(fotos, f, indent=1, ensure_ascii=False)
-    os.replace(F_FOTOS + ".tmp", F_FOTOS)
+    os.replace(ruta + ".tmp", ruta)
 
 
-def ciclo(bot, ahora=None):
+def ciclo(bot, ahora=None, ruta_fotos=None):
     ahora = ahora or datetime.now(timezone.utc)
     motivo = bot.ciclo(ahora)
     if motivo and "perdida del dia" in motivo:        # cuantas veces salto el freno diario (para el veredicto)
@@ -208,7 +209,7 @@ def ciclo(bot, ahora=None):
         if dia not in saltos:
             saltos.append(dia)
             bot._guardar()
-    foto_dia(bot, ahora)
+    foto_dia(bot, ahora, ruta_fotos)
     return motivo
 
 
