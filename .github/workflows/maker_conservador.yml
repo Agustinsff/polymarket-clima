@@ -1,0 +1,55 @@
+name: maker_conservador
+# Bot de PAPEL "conservador" de clima (bot/conservador.py, reglas en bot/conservador/REGLA.md): 20 acciones y filtro de 2 c.
+# No opera ni tiene billetera: solo lee la API publica. Encadenado como maker_bot.yml: ~5 h por corrida, sube los
+# archivos de bot/conservador/ cada ~55 min. Se apaga solo con "apagar_despues_de" de bot/conservador/config.json o si existe
+# bot/conservador/PARAR. No toca los archivos del maker real ni los del papel de clima.
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "53 */6 * * *"   # respaldo si la cadena se corta
+permissions:
+  contents: write
+  actions: write
+concurrency:
+  group: maker_conservador
+  cancel-in-progress: false
+jobs:
+  papel:
+    runs-on: ubuntu-latest
+    timeout-minutes: 355
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -r requirements.txt
+      - run: python bot/test_quietos.py && python bot/test_maker.py
+      - name: Configurar git
+        run: |
+          git config user.name "polymarket-clima-bot"
+          git config user.email "actions@users.noreply.github.com"
+      - name: Bot quietos en papel (6 tramos de 55 min, sube los archivos al final de cada uno)
+        run: |
+          for i in 1 2 3 4 5 6; do
+            [ -f bot/conservador/PARAR ] && break
+            [ -f bot/conservador/PARAR_maker_papel ] && break
+            timeout -s INT 3300 python bot/conservador.py bucle || true
+            # toda la carpeta: con un archivo que no existe (p. ej. PARAR_maker_papel) `git add` corta con error 128
+            git add -A bot/conservador/
+            git commit -qm "datos: bot conservador en papel $(date -u +%Y-%m-%dT%H:%MZ)" || true
+            for j in 1 2 3 4 5; do
+              git pull -q --rebase --autostash origin main && git push -q origin HEAD:main && break
+              sleep $((RANDOM % 20 + 5))
+            done
+          done
+      - name: Encadenar la proxima corrida
+        if: always()
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          [ -f bot/conservador/PARAR ] && exit 0
+          [ -f bot/conservador/PARAR_maker_papel ] && exit 0
+          if [ "$(date -u +%Y-%m-%d\ %H:%M)" \> "$(python -c "import json;print(json.load(open('bot/conservador/config.json'))['maker']['apagar_despues_de'])")" ]; then exit 0; fi
+          gh workflow run maker_conservador.yml --ref main -R ${{ github.repository }}
