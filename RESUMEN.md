@@ -1,13 +1,13 @@
 # Resumen polymarket-clima
 
-_Actualizado: 2026-11-18 13:50 (Montevideo). Todo es **en papel**: no se usa plata real._
+_Actualizado: 2026-11-18 14:05 (Montevideo). Todo es **en papel**: no se usa plata real._
 
 ## Estado de las tareas
 
 🔔 Polymarket cambió algo en **clima (otros)** (mercado de clima nuevo, aparece el 2026-11-18 01:17 UTC): `which-cities-will-get-more-snow-than-average-this-winter` y 1 más. Ver [reglas_informe.md](reglas_informe.md).
 🔔 Polymarket cambió algo en **clima (otros)** (mercado de clima nuevo, ya no aparece el 2026-11-18 01:17 UTC): `when-will-the-danube-river-return-to-normal-levels`. Ver [reglas_informe.md](reglas_informe.md).
 
-- Última foto de liquidez: 2026-11-18T13:50:08
+- Última foto de liquidez: 2026-11-18T14:05:18
 - Monitor: mañana 2026-11-18, noche 2026-11-17
 - Prueba São Paulo: último día registrado 2026-11-17
 - Cosechador: último ciclo 2026-11-04 16:12 UTC, 88 mercados, 46 estaciones
@@ -87,11 +87,11 @@ Series donde el modelo le gana al mercado (≥5 días): mín denver (11 días), 
 
 | Modo | Serie calibrada | Liquidadas | Ganadas | Neto (10 acc. c/u) | Pendientes |
 |---|---|---|---|---|---|
-| taker | no | 2509 | 561 | US$-1274.02 | 131 |
-| maker | no | 3169 | 382 | US$-397.61 | 4823 |
-| cola_taker | no | 1239 | 31 | US$-167.37 | 74 |
-| cola_maker | no | 1074 | 21 | US$-76.63 | 1595 |
-| no80_90 | no | 1022 | 695 | US$-1892.14 | 54 |
+| taker | no | 2509 | 561 | US$-1274.02 | 138 |
+| maker | no | 3169 | 382 | US$-397.61 | 4837 |
+| cola_taker | no | 1239 | 31 | US$-167.37 | 77 |
+| cola_maker | no | 1074 | 21 | US$-76.63 | 1598 |
+| no80_90 | no | 1022 | 695 | US$-1892.14 | 56 |
 
 Taker en total: US$-3333.54. _Con la comisión vieja (0,05 para todo) sería US$-3422.63._
 
