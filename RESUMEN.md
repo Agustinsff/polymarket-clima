@@ -1,9 +1,11 @@
 # Resumen polymarket-clima
 
-_Actualizado: 2026-11-17 22:28 (Montevideo). Todo es **en papel**: no se usa plata real._
+_Actualizado: 2026-11-17 22:35 (Montevideo). Todo es **en papel**: no se usa plata real._
 
 ## Estado de las tareas
 
+🔔 Polymarket cambió algo en **clima (otros)** (mercado de clima nuevo, aparece el 2026-11-18 01:17 UTC): `which-cities-will-get-more-snow-than-average-this-winter` y 1 más. Ver [reglas_informe.md](reglas_informe.md).
+🔔 Polymarket cambió algo en **clima (otros)** (mercado de clima nuevo, ya no aparece el 2026-11-18 01:17 UTC): `when-will-the-danube-river-return-to-normal-levels`. Ver [reglas_informe.md](reglas_informe.md).
 🔔 Polymarket cambió algo en **temperatura mínima** (ciudades, ya no aparece el 2026-11-16 07:14 UTC): `san-francisco` y 5 más. Ver [reglas_informe.md](reglas_informe.md).
 
 - Última foto de liquidez: 2026-11-17T22:28:39
