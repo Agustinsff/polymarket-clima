@@ -1,6 +1,6 @@
 # Resumen polymarket-clima
 
-_Actualizado: 2026-11-18 20:10 (Montevideo). Todo es **en papel**: no se usa plata real._
+_Actualizado: 2026-11-18 20:26 (Montevideo). Todo es **en papel**: no se usa plata real._
 
 ## Estado de las tareas
 
@@ -67,13 +67,13 @@ Series donde el modelo le gana al mercado (≥5 días): mín dallas (7 días), m
 
 | Modo | Serie calibrada | Liquidadas | Ganadas | Neto (10 acc. c/u) | Pendientes |
 |---|---|---|---|---|---|
-| taker | sí | 3303 | 1287 | US$-1479.52 | 538 |
+| taker | sí | 3303 | 1287 | US$-1479.52 | 645 |
 | taker | no | 1830 | 735 | US$-566.68 | 0 |
-| maker | sí | 441 | 52 | US$-175.56 | 16264 |
+| maker | sí | 441 | 52 | US$-175.56 | 16624 |
 | maker | no | 7591 | 856 | US$-1577.04 | 110 |
-| cola_taker | sí | 1695 | 37 | US$-254.62 | 296 |
+| cola_taker | sí | 1695 | 37 | US$-254.62 | 358 |
 | cola_taker | no | 1195 | 37 | US$-24.20 | 0 |
-| cola_maker | sí | 83 | 2 | US$-8.88 | 3236 |
+| cola_maker | sí | 83 | 2 | US$-8.88 | 3310 |
 | cola_maker | no | 1299 | 32 | US$-78.78 | 19 |
 
 Taker en total: US$-2325.03. _Con la comisión vieja (0,05 para todo) sería US$-2497.57._
@@ -99,12 +99,12 @@ _Taker = compra al instante pagando comisión. Maker = orden en el libro, solo c
 
 ## Cripto en papel (Bitcoin / Ethereum: above, rango y toca; modelo de opciones)
 
-Operaciones: 633 (617 liquidadas, 303 ganadas). **Neto US$+162.49** sobre US$2807.44 invertidos (ROI +5.8 %). _Con la comisión vieja (0,05 para todo) sería US$+178.73._
-Brier en 2346 strikes: modelo 0.1421 vs mercado 0.1402.
+Operaciones: 633 (618 liquidadas, 304 ganadas). **Neto US$+164.74** sobre US$2815.06 invertidos (ROI +5.9 %). _Con la comisión vieja (0,05 para todo) sería US$+181.02._
+Brier en 2400 strikes: modelo 0.1417 vs mercado 0.1400.
 
 | Activo | Tipo | Liquidadas | Neto |
 |---|---|---|---|
-| BTC | above | 80 | US$+45.76 |
+| BTC | above | 81 | US$+48.02 |
 | BTC | rango | 125 | US$+41.45 |
 | BTC | toca | 172 | US$-57.39 |
 | ETH | above | 52 | US$+12.99 |
