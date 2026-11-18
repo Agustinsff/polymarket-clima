@@ -1,6 +1,6 @@
 # Resumen polymarket-clima
 
-_Actualizado: 2026-11-18 10:08 (Montevideo). Todo es **en papel**: no se usa plata real._
+_Actualizado: 2026-11-18 10:31 (Montevideo). Todo es **en papel**: no se usa plata real._
 
 ## Estado de las tareas
 
@@ -62,54 +62,54 @@ Nota: las operaciones de Ciudad del Cabo del 18-oct se hicieron con la regla vie
 
 ## Pronóstico vs. mercado (todas las ciudades, día anterior)
 
-Puntaje Brier (más bajo = mejor) en 11986 cajas liquidadas: **modelo 0.0877** vs **mercado 0.0733**.
-Series donde el modelo le gana al mercado (≥5 días): mín dallas (7 días), mín karachi (21 días), mín chengdu (8 días), mín mexico-city (8 días), mín hong-kong (25 días), máx buenos-aires (25 días), máx dallas (25 días), mín sao-paulo (16 días), mín taipei (5 días).
+Puntaje Brier (más bajo = mejor) en 12391 cajas liquidadas: **modelo 0.0880** vs **mercado 0.0736**.
+Series donde el modelo le gana al mercado (≥5 días): mín dallas (7 días), mín chengdu (8 días), mín mexico-city (8 días), mín karachi (22 días), mín hong-kong (26 días), máx buenos-aires (26 días), máx dallas (26 días), mín sao-paulo (17 días), mín taipei (5 días).
 
 | Modo | Serie calibrada | Liquidadas | Ganadas | Neto (10 acc. c/u) | Pendientes |
 |---|---|---|---|---|---|
-| taker | sí | 3119 | 1220 | US$-1348.59 | 621 |
+| taker | sí | 3303 | 1287 | US$-1479.52 | 538 |
 | taker | no | 1830 | 735 | US$-566.68 | 0 |
-| maker | sí | 441 | 52 | US$-175.56 | 15886 |
+| maker | sí | 441 | 52 | US$-175.56 | 16264 |
 | maker | no | 7591 | 856 | US$-1577.04 | 110 |
-| cola_taker | sí | 1603 | 37 | US$-220.29 | 332 |
+| cola_taker | sí | 1695 | 37 | US$-254.62 | 296 |
 | cola_taker | no | 1195 | 37 | US$-24.20 | 0 |
-| cola_maker | sí | 83 | 2 | US$-8.88 | 3126 |
+| cola_maker | sí | 83 | 2 | US$-8.88 | 3236 |
 | cola_maker | no | 1299 | 32 | US$-78.78 | 19 |
 
-Taker en total: US$-2159.76. _Con la comisión vieja (0,05 para todo) sería US$-2332.30._
+Taker en total: US$-2325.03. _Con la comisión vieja (0,05 para todo) sería US$-2497.57._
 
 _Taker = compra al instante pagando comisión. Maker = orden en el libro, solo cuenta si alguien la habría tomado (sin comisión). Cola = cajas de ≤10 ¢ a las que el modelo les da ≥2,5 veces el precio. no80_90 = comprar el No de cajas todavía posibles que cotizan 10–20 ¢ (solo en el pronóstico del mismo día)._
 
 ## Pronóstico del mismo día (12 y 15 hs locales la máxima, 9 hs la mínima)
 
-Puntaje Brier (más bajo = mejor) en 7312 cajas liquidadas: **modelo 0.0935** vs **mercado 0.0745**.
-Series donde el modelo le gana al mercado (≥5 días): mín denver (11 días), máx buenos-aires (27 días), mín cape-town (10 días), mín sao-paulo (17 días), máx denver (24 días), mín seattle (17 días), mín houston (14 días), mín san-francisco (14 días), mín ankara (13 días), mín austin (21 días), mín buenos-aires (8 días), mín mexico-city (18 días), mín chicago (16 días), mín munich (13 días), mín toronto (9 días), mín guangzhou (16 días), mín madrid (17 días), mín karachi (7 días), mín chongqing (16 días), mín wuhan (14 días), mín istanbul (16 días), mín atlanta (15 días).
+Puntaje Brier (más bajo = mejor) en 7533 cajas liquidadas: **modelo 0.0935** vs **mercado 0.0745**.
+Series donde el modelo le gana al mercado (≥5 días): mín denver (11 días), máx buenos-aires (28 días), mín cape-town (10 días), mín sao-paulo (17 días), mín seattle (18 días), máx denver (25 días), mín houston (14 días), mín san-francisco (14 días), mín ankara (13 días), mín austin (22 días), mín buenos-aires (8 días), mín munich (14 días), mín mexico-city (19 días), mín chicago (16 días), mín toronto (9 días), mín guangzhou (16 días), mín karachi (7 días), mín chongqing (16 días), mín wuhan (14 días), mín istanbul (16 días), mín madrid (18 días), mín atlanta (15 días).
 
 | Modo | Serie calibrada | Liquidadas | Ganadas | Neto (10 acc. c/u) | Pendientes |
 |---|---|---|---|---|---|
-| taker | no | 2415 | 542 | US$-1228.05 | 221 |
+| taker | no | 2509 | 561 | US$-1274.02 | 127 |
 | maker | no | 3169 | 382 | US$-397.61 | 4792 |
-| cola_taker | no | 1193 | 31 | US$-147.32 | 117 |
+| cola_taker | no | 1239 | 31 | US$-167.37 | 71 |
 | cola_maker | no | 1074 | 21 | US$-76.63 | 1589 |
-| no80_90 | no | 984 | 670 | US$-1814.71 | 88 |
+| no80_90 | no | 1022 | 695 | US$-1892.14 | 50 |
 
-Taker en total: US$-3190.09. _Con la comisión vieja (0,05 para todo) sería US$-3279.18._
+Taker en total: US$-3333.54. _Con la comisión vieja (0,05 para todo) sería US$-3422.63._
 
 _Taker = compra al instante pagando comisión. Maker = orden en el libro, solo cuenta si alguien la habría tomado (sin comisión). Cola = cajas de ≤10 ¢ a las que el modelo les da ≥2,5 veces el precio. no80_90 = comprar el No de cajas todavía posibles que cotizan 10–20 ¢ (solo en el pronóstico del mismo día)._
 
 ## Cripto en papel (Bitcoin / Ethereum: above, rango y toca; modelo de opciones)
 
-Operaciones: 620 (607 liquidadas, 293 ganadas). **Neto US$+140.26** sobre US$2730.75 invertidos (ROI +5.1 %). _Con la comisión vieja (0,05 para todo) sería US$+156.19._
-Brier en 2318 strikes: modelo 0.1435 vs mercado 0.1414.
+Operaciones: 620 (617 liquidadas, 303 ganadas). **Neto US$+162.49** sobre US$2807.44 invertidos (ROI +5.8 %). _Con la comisión vieja (0,05 para todo) sería US$+178.73._
+Brier en 2346 strikes: modelo 0.1421 vs mercado 0.1402.
 
 | Activo | Tipo | Liquidadas | Neto |
 |---|---|---|---|
 | BTC | above | 80 | US$+45.76 |
 | BTC | rango | 125 | US$+41.45 |
-| BTC | toca | 166 | US$-69.90 |
+| BTC | toca | 172 | US$-57.39 |
 | ETH | above | 52 | US$+12.99 |
 | ETH | rango | 84 | US$+34.09 |
-| ETH | toca | 100 | US$+75.88 |
+| ETH | toca | 104 | US$+85.59 |
 
 _Regla fija: comprar el lado que el modelo ve ≥5 puntos más barato, a 48/24/12/6/3/1 h del cierre (18/12/6/3/1 h en 'toca'), 10 acciones al precio real del libro, con comisión. Backtest may-oct: +6,7 % con 1 ¢ de deslizamiento (Ethereum +17 %, Bitcoin ~0 %)._
 
