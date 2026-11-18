@@ -534,8 +534,12 @@ class Maker:
             return {"cajas": {}, "resultados": {}, "errores_seguidos": 0, "recompensas": {}, "costo": {}}
 
     def _guardar(self):
+        # 18-nov: un corte de luz agarro al bot guardando y el estado quedo lleno de ceros (NTFS: el rename se
+        # escribio antes que el contenido). fsync fuerza el contenido a disco antes de reemplazar el archivo.
         with open(self.f_est + ".tmp", "w", encoding="utf-8") as f:
             json.dump(self.est, f, indent=0)
+            f.flush()
+            os.fsync(f.fileno())
         os.replace(self.f_est + ".tmp", self.f_est)
 
     def anotar(self, **fila):
@@ -545,6 +549,8 @@ class Maker:
             if nuevo:
                 w.writerow(COLS)
             w.writerow([fila.get(c, "") for c in COLS])
+            f.flush()
+            os.fsync(f.fileno())
 
     def ops(self):
         if not os.path.exists(self.f_ops):
@@ -1614,8 +1620,11 @@ class Maker:
                                                                                + f" desde {v['desde'][11:16]}Z)"
                                                                      for v in self.est.get("filtro", {}).values()) or "ninguna caja") + ".",
                f"- Freno: {'ACTIVO — ' + self.frenado() if self.frenado() else 'no'}."]
-        with open(self.f_res, "w", encoding="utf-8") as f:
+        with open(self.f_res + ".tmp", "w", encoding="utf-8") as f:
             f.write("\n".join(lin) + "\n")
+            f.flush()
+            os.fsync(f.fileno())
+        os.replace(self.f_res + ".tmp", self.f_res)
         print("\n".join(lin))
 
 
