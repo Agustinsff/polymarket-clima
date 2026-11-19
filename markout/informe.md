@@ -1,4 +1,4 @@
-# Llenados del bot maker en real: ¿el precio se va a favor o en contra? (2026-11-18 10:24Z)
+# Llenados del bot maker en real: ¿el precio se va a favor o en contra? (2026-11-19 10:31Z)
 
 Regla: markout/REGLA.md. Llenados: 398 (5236 acciones) en 12 día(s); con 60 min de historia: 398. Positivo = a favor nuestro (ponderado por acciones; t = media simple / error típico).
 
@@ -147,9 +147,8 @@ Regla: markout/REGLA.md. Llenados: 398 (5236 acciones) en 12 día(s); con 60 min
 
 | grupo | n | acciones | antes ¢ | m5 ¢ | m30 ¢ | m60 ¢ | m180 ¢ | a la resolución ¢ (n) |
 |---|---|---|---|---|---|---|---|---|
-| 6–24 h | 6 | 44 | +0.6 | -0.2 (t -0.6) | -1.5 (t -2.1) | -3.6 (t -2.5) | -3.1 (t -1.2) | — |
-| >24 h | 24 | 234 | +1.9 | -0.4 (t -0.2) | -0.7 (t -1.1) | -0.6 (t -0.8) | -1.9 (t -1.4) | — |
-| sin fin | 368 | 4957 | +2.2 | -0.8 (t -1.8) | -0.6 (t +0.2) | -1.7 (t -0.1) | -2.4 (t -0.0) | — |
+| >24 h | 11 | 92 | +1.6 | +0.4 (t -0.9) | +0.4 (t -0.8) | -0.7 (t -1.5) | -3.3 (t -2.5) | — |
+| sin fin | 387 | 5144 | +2.2 | -0.8 (t -1.7) | -0.6 (t +0.1) | -1.6 (t -0.2) | -2.4 (t -0.0) | — |
 
 ### Corte de luz del 7-nov (órdenes que quedaron solas)
 
