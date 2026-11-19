@@ -7,7 +7,7 @@ _Actualizado: 2026-11-19 10:27 (Montevideo). Todo es **en papel**: no se usa pla
 🔔 Polymarket cambió algo en **clima (otros)** (mercado de clima nuevo, aparece el 2026-11-18 01:17 UTC): `which-cities-will-get-more-snow-than-average-this-winter` y 1 más. Ver [reglas_informe.md](reglas_informe.md).
 🔔 Polymarket cambió algo en **clima (otros)** (mercado de clima nuevo, ya no aparece el 2026-11-18 20:53 UTC): `biggest-earthquake` y 1 más. Ver [reglas_informe.md](reglas_informe.md).
 
-- Última foto de liquidez: 2026-11-19T10:08:26
+- Última foto de liquidez: 2026-11-19T10:27:48
 - Monitor: mañana 2026-11-19, noche 2026-11-18
 - Prueba São Paulo: último día registrado 2026-11-18
 - Cosechador: último ciclo 2026-11-04 16:12 UTC, 88 mercados, 46 estaciones
