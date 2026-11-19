@@ -634,3 +634,6 @@ momento_utc;activo;tipo;evento;horizonte;strike;condition_id;lado;precio;p_model
 2026-11-18 22:40:17;ETH;toca;what-price-will-ethereum-hit-on-november-18-2026;6;↓ 1,700;0x0c5b9c9b55bdf5d7034692754a7e73a976b2a2f8522ca053e00927c294950d9e;No;0.92;0.0183;10;0.07
 2026-11-19 01:43:59;BTC;toca;what-price-will-bitcoin-hit-on-november-18-2026;3;↓ 62,000;0x61dfab9cb45c7eee907cdae789229570793adab8cb4f0bc477daf76eb0cb4b0b;No;0.73;0.1578;10;0.07
 2026-11-19 01:43:59;BTC;toca;what-price-will-bitcoin-hit-on-november-18-2026;3;↓ 61,000;0x0c5be8321fa5ad39ab90394ae8f9a60b48b3bee4e8aa274dbc8245e4bc8b6cc2;No;0.941;0.0013;10;0.07
+2026-11-19 04:31:24;BTC;above;bitcoin-above-on-november-19-2026;12;62,000;0xc4bef464c8878a8c2eaa348d6a0864c6bbc4f00564f702d01c857442a62b142d;Yes;0.83;0.9012;10;0.07
+2026-11-19 04:31:24;BTC;rango;bitcoin-price-on-november-19-2026;12;<62,000;0xeae309d221bf0b72d4f7920b6000b89b91e3729ae6a94395f39afa2446db2fed;No;0.8382;0.0988;10;0.07
+2026-11-19 04:31:24;BTC;rango;bitcoin-price-on-november-19-2026;12;62,000-64,000;0x4cbc5dcd9fbad1c3092ee99cca9493a4708ef54e57da7ee6610286b147116f3f;Yes;0.5265;0.6062;10;0.07
