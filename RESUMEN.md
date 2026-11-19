@@ -1,6 +1,6 @@
 # Resumen polymarket-clima
 
-_Actualizado: 2026-11-19 20:08 (Montevideo). Todo es **en papel**: no se usa plata real._
+_Actualizado: 2026-11-19 20:29 (Montevideo). Todo es **en papel**: no se usa plata real._
 
 ## Estado de las tareas
 
@@ -67,13 +67,13 @@ Series donde el modelo le gana al mercado (≥5 días): mín dallas (7 días), m
 
 | Modo | Serie calibrada | Liquidadas | Ganadas | Neto (10 acc. c/u) | Pendientes |
 |---|---|---|---|---|---|
-| taker | sí | 3497 | 1354 | US$-1614.00 | 558 |
+| taker | sí | 3497 | 1354 | US$-1614.00 | 659 |
 | taker | no | 1830 | 735 | US$-566.68 | 0 |
-| maker | sí | 441 | 52 | US$-175.56 | 16992 |
+| maker | sí | 441 | 52 | US$-175.56 | 17338 |
 | maker | no | 7591 | 856 | US$-1577.04 | 110 |
-| cola_taker | sí | 1806 | 38 | US$-284.93 | 308 |
+| cola_taker | sí | 1806 | 38 | US$-284.93 | 362 |
 | cola_taker | no | 1195 | 37 | US$-24.20 | 0 |
-| cola_maker | sí | 83 | 2 | US$-8.88 | 3402 |
+| cola_maker | sí | 83 | 2 | US$-8.88 | 3488 |
 | cola_maker | no | 1299 | 32 | US$-78.78 | 19 |
 
 Taker en total: US$-2489.81. _Con la comisión vieja (0,05 para todo) sería US$-2662.35._
@@ -99,13 +99,13 @@ _Taker = compra al instante pagando comisión. Maker = orden en el libro, solo c
 
 ## Cripto en papel (Bitcoin / Ethereum: above, rango y toca; modelo de opciones)
 
-Operaciones: 651 (631 liquidadas, 317 ganadas). **Neto US$+187.76** sobre US$2920.94 invertidos (ROI +6.4 %). _Con la comisión vieja (0,05 para todo) sería US$+204.35._
-Brier en 2427 strikes: modelo 0.1405 vs mercado 0.1390.
+Operaciones: 651 (640 liquidadas, 326 ganadas). **Neto US$+212.32** sobre US$2985.32 invertidos (ROI +7.1 %). _Con la comisión vieja (0,05 para todo) sería US$+229.21._
+Brier en 2505 strikes: modelo 0.1395 vs mercado 0.1383.
 
 | Activo | Tipo | Liquidadas | Neto |
 |---|---|---|---|
-| BTC | above | 81 | US$+48.02 |
-| BTC | rango | 125 | US$+41.45 |
+| BTC | above | 84 | US$+51.15 |
+| BTC | rango | 131 | US$+62.87 |
 | BTC | toca | 181 | US$-39.73 |
 | ETH | above | 52 | US$+12.99 |
 | ETH | rango | 84 | US$+34.09 |
@@ -123,6 +123,6 @@ Prueba SP: 13 operaciones; como maker se habrían llenado 11, neto **US$-12.35**
 
 ## Recompensas de liquidez (estimación, últimas 24 h)
 
-- Buenos Aires: ~US$35/día con 100 acciones a 1 ¢ en todas las cajas del mercado de mañana (sin contar pérdidas por quedar 'tomado').
+- Buenos Aires: ~US$36/día con 100 acciones a 1 ¢ en todas las cajas del mercado de mañana (sin contar pérdidas por quedar 'tomado').
 - Sao Paulo: ~US$21/día con 100 acciones a 1 ¢ en todas las cajas del mercado de mañana (sin contar pérdidas por quedar 'tomado').
 
