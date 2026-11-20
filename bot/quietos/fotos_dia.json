@@ -77,11 +77,11 @@
   "frenado": null
  },
  "2026-11-20": {
-  "momento_utc": "2026-11-20 14:47",
-  "llenados_mercado": 4.11,
-  "acciones_mercado": 37.76,
+  "momento_utc": "2026-11-20 15:42",
+  "llenados_mercado": 5.86,
+  "acciones_mercado": 39.51,
   "acciones_costo": 34.25,
-  "recompensa_estimada_acum": 32.024,
+  "recompensa_estimada_acum": 32.125,
   "n_llenados": 9,
   "cajas": 5,
   "freno_diario_saltos": 0,
