@@ -1,11 +1,19 @@
 # Resumen polymarket-clima
 
-_Actualizado: 2026-11-20 23:50 (Montevideo). Todo es **en papel**: no se usa plata real._
+_Actualizado: 2026-11-20 23:54 (Montevideo). Todo es **en papel**: no se usa plata real._
 
 ## Estado de las tareas
 
 🔔 Polymarket cambió algo en **clima (otros)** (mercado de clima nuevo, aparece el 2026-11-19 20:57 UTC): `highest-st-johns-river-level-at-cocoa-by`. Ver [reglas_informe.md](reglas_informe.md).
 🔔 Polymarket cambió algo en **clima (otros)** (mercado de clima nuevo, ya no aparece el 2026-11-20 20:42 UTC): `when-will-the-rhine-river-return-to-normal-levels`. Ver [reglas_informe.md](reglas_informe.md).
+🔔 Polymarket cambió algo en **cripto bitcoin-hit-price-daily** (comisión, aparece el 2026-11-21 02:48 UTC): `feesEnabled=True feeType=crypto_fees_v2 feeSchedule={"exponent": 1, "rate": 0.01, "rebateRate": 0.2, "takerOnly": true} takerBaseFee=1000`. Ver [reglas_informe.md](reglas_informe.md).
+🔔 Polymarket cambió algo en **cripto bitcoin-neg-risk-weekly** (comisión, aparece el 2026-11-21 02:48 UTC): `feesEnabled=True feeType=crypto_fees_v2 feeSchedule={"exponent": 1, "rate": 0.01, "rebateRate": 0.2, "takerOnly": true} takerBaseFee=1000`. Ver [reglas_informe.md](reglas_informe.md).
+🔔 Polymarket cambió algo en **cripto btc-multi-strikes-weekly** (comisión, aparece el 2026-11-21 02:48 UTC): `feesEnabled=True feeType=crypto_fees_v2 feeSchedule={"exponent": 1, "rate": 0.01, "rebateRate": 0.2, "takerOnly": true} takerBaseFee=1000`. Ver [reglas_informe.md](reglas_informe.md).
+🔔 Polymarket cambió algo en **cripto ethereum-hit-price-daily** (comisión, aparece el 2026-11-21 02:48 UTC): `feesEnabled=True feeType=crypto_fees_v2 feeSchedule={"exponent": 1, "rate": 0.01, "rebateRate": 0.2, "takerOnly": true} takerBaseFee=1000`. Ver [reglas_informe.md](reglas_informe.md).
+🔔 Polymarket cambió algo en **cripto ethereum-multi-strikes-weekly** (comisión, aparece el 2026-11-21 02:48 UTC): `feesEnabled=True feeType=crypto_fees_v2 feeSchedule={"exponent": 1, "rate": 0.01, "rebateRate": 0.2, "takerOnly": true} takerBaseFee=1000`. Ver [reglas_informe.md](reglas_informe.md).
+🔔 Polymarket cambió algo en **cripto ethereum-neg-risk-weekly** (comisión, aparece el 2026-11-21 02:48 UTC): `feesEnabled=True feeType=crypto_fees_v2 feeSchedule={"exponent": 1, "rate": 0.01, "rebateRate": 0.2, "takerOnly": true} takerBaseFee=1000`. Ver [reglas_informe.md](reglas_informe.md).
+🔔 Polymarket cambió algo en **temperatura máxima** (comisión, aparece el 2026-11-21 02:48 UTC): `feesEnabled=True feeType=weather_fees feeSchedule={"exponent": 1, "rate": 0.01, "rebateRate": 0.25, "takerOnly": true} takerBaseFee=1000`. Ver [reglas_informe.md](reglas_informe.md).
+🔔 Polymarket cambió algo en **temperatura mínima** (comisión, aparece el 2026-11-21 02:48 UTC): `feesEnabled=True feeType=weather_fees feeSchedule={"exponent": 1, "rate": 0.01, "rebateRate": 0.25, "takerOnly": true} takerBaseFee=1000`. Ver [reglas_informe.md](reglas_informe.md).
 
 - Última foto de liquidez: 2026-11-20T23:49:54
 - Monitor: mañana 2026-11-20, noche 2026-11-20
