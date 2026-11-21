@@ -154,7 +154,11 @@ class Censo:
         out = {c["cid"]: dict(c) for c in self.ofrecidas}
         for cid in actuales:
             c = self.todas.get(cid)
-            if cid not in out and c and c["abierto"]:
+            # solo las que siguen fuera de la regla de exclusion (21-nov, prueba en real: al activar quietos el bot
+            # mantenia sus cajas de clima y con 2 cajas ocupadas nunca entraba una quieta). Las de clima se sueltan y,
+            # si tienen acciones, se venden como cualquier caja soltada.
+            fuera = set(self.cfg["quietos"]["etiquetas_fuera"])
+            if cid not in out and c and c["abierto"] and not c["partido"] and not set(c["etiquetas"]) & fuera:
                 horas = (datetime.fromisoformat(c["fin"].replace("Z", "+00:00")) - ahora).total_seconds() / 3600
                 if horas >= self.cfg["maker"]["horas_min_fin"]:
                     out[cid] = dict(c, horas=round(horas, 1))

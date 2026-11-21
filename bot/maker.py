@@ -1693,6 +1693,8 @@ def main():
         return
     bot = Maker(cfg)
     bot.f_cfg = os.path.join(CARPETA, "config.json")
+    if que == "bucle" and bot.modo == "real":       # antes de activar quietos, asi su aviso queda en maker_real.log
+        polybot.ARCHIVO_LOG = os.path.join(CARPETA, "maker_real.log")
     q = cfg_quietos_real(cfg)
     if q:
         activar_quietos(bot, q)
