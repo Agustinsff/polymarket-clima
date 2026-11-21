@@ -1,6 +1,6 @@
 # Resumen polymarket-clima
 
-_Actualizado: 2026-11-21 09:59 (Montevideo). Todo es **en papel**: no se usa plata real._
+_Actualizado: 2026-11-21 10:05 (Montevideo). Todo es **en papel**: no se usa plata real._
 
 ## Estado de las tareas
 
@@ -16,16 +16,18 @@ _Actualizado: 2026-11-21 09:59 (Montevideo). Todo es **en papel**: no se usa pla
 🔔 Polymarket cambió algo en **temperatura mínima** (comisión, aparece el 2026-11-21 02:48 UTC): `feesEnabled=True feeType=weather_fees feeSchedule={"exponent": 1, "rate": 0.01, "rebateRate": 0.25, "takerOnly": true} takerBaseFee=1000`. Ver [reglas_informe.md](reglas_informe.md).
 
 - Última foto de liquidez: 2026-11-21T09:59:23
-- Monitor: mañana 2026-11-20, noche 2026-11-20
+- Monitor: mañana 2026-11-21, noche 2026-11-20
 - Prueba São Paulo: último día registrado 2026-11-20
 - Cosechador: último ciclo 2026-11-04 16:12 UTC, 88 mercados, 46 estaciones
 
 ## Temperatura máxima: mercado vs. modelo (BA y SP)
 
-Acumulado: la caja favorita del **mercado** acertó 28/74, la del **modelo** 15/74.
+Acumulado: la caja favorita del **mercado** acertó 29/76, la del **modelo** 15/76.
 
 | Día | Ciudad | Ganó | Favorita del mercado | Favorita del modelo |
 |---|---|---|---|---|
+| 2026-11-20 | Sao Paulo | 34°C | 34°C (34%) ✅ | 32°C (26%) ❌ |
+| 2026-11-20 | Buenos Aires | 29°C or higher | 24°C (27%) ❌ | 25°C (21%) ❌ |
 | 2026-11-19 | Sao Paulo | 32°C | 32°C (44%) ✅ | 31°C (19%) ❌ |
 | 2026-11-19 | Buenos Aires | 29°C | 27°C (44%) ❌ | 28°C (19%) ❌ |
 | 2026-11-18 | Sao Paulo | 31°C | 32°C (33%) ❌ | 31°C (25%) ✅ |
@@ -34,8 +36,6 @@ Acumulado: la caja favorita del **mercado** acertó 28/74, la del **modelo** 15/
 | 2026-11-17 | Buenos Aires | 27°C | 28°C (34%) ❌ | 28°C (23%) ❌ |
 | 2026-11-16 | Sao Paulo | 26°C | 25°C (34%) ❌ | 26°C (24%) ✅ |
 | 2026-11-16 | Buenos Aires | 30°C | 28°C (38%) ❌ | 28°C (25%) ❌ |
-| 2026-11-15 | Sao Paulo | 31°C | 29°C (33%) ❌ | 30°C (24%) ❌ |
-| 2026-11-15 | Buenos Aires | 29°C | 28°C (38%) ❌ | 27°C (24%) ❌ |
 
 ## Prueba en papel São Paulo 14 hs (regla fija)
 
