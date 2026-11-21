@@ -1,6 +1,6 @@
 # Resumen polymarket-clima
 
-_Actualizado: 2026-11-21 10:29 (Montevideo). Todo es **en papel**: no se usa plata real._
+_Actualizado: 2026-11-21 10:45 (Montevideo). Todo es **en papel**: no se usa plata real._
 
 ## Estado de las tareas
 
@@ -15,7 +15,7 @@ _Actualizado: 2026-11-21 10:29 (Montevideo). Todo es **en papel**: no se usa pla
 🔔 Polymarket cambió algo en **temperatura máxima** (comisión, aparece el 2026-11-21 02:48 UTC): `feesEnabled=True feeType=weather_fees feeSchedule={"exponent": 1, "rate": 0.01, "rebateRate": 0.25, "takerOnly": true} takerBaseFee=1000`. Ver [reglas_informe.md](reglas_informe.md).
 🔔 Polymarket cambió algo en **temperatura mínima** (comisión, aparece el 2026-11-21 02:48 UTC): `feesEnabled=True feeType=weather_fees feeSchedule={"exponent": 1, "rate": 0.01, "rebateRate": 0.25, "takerOnly": true} takerBaseFee=1000`. Ver [reglas_informe.md](reglas_informe.md).
 
-- Última foto de liquidez: 2026-11-21T10:29:47
+- Última foto de liquidez: 2026-11-21T10:44:57
 - Monitor: mañana 2026-11-21, noche 2026-11-20
 - Prueba São Paulo: último día registrado 2026-11-20
 - Cosechador: último ciclo 2026-11-04 16:12 UTC, 88 mercados, 46 estaciones
@@ -107,7 +107,7 @@ _Taker = compra al instante pagando comisión. Maker = orden en el libro, solo c
 
 ## Cripto en papel (Bitcoin / Ethereum: above, rango y toca; modelo de opciones)
 
-Operaciones: 699 (689 liquidadas, 342 ganadas). **Neto US$-25.72** sobre US$3378.76 invertidos (ROI -0.8 %). _Con la comisión vieja (0,05 para todo) sería US$-7.63._
+Operaciones: 703 (689 liquidadas, 342 ganadas). **Neto US$-25.72** sobre US$3378.76 invertidos (ROI -0.8 %). _Con la comisión vieja (0,05 para todo) sería US$-7.63._
 Brier en 2631 strikes: modelo 0.1476 vs mercado 0.1443.
 
 | Activo | Tipo | Liquidadas | Neto |
