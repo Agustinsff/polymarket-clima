@@ -48,7 +48,9 @@ class Prueba(unittest.TestCase):
         propia = quietos.a_caja(mk("x", precio=0.85), AHORA)          # ya no cumpliria la entrada
         c.todas = {"x": propia}
         c.ofrecidas = [quietos.a_caja(mk("y"), AHORA)]
-        cids = {x["cid"] for x in c.candidatas(AHORA, ["x", "z"])}
+        clima = quietos.a_caja(mk("w", tags=("Weather", "Daily Temperature")), AHORA)   # caja de clima que ya tenia
+        c.todas["w"] = clima
+        cids = {x["cid"] for x in c.candidatas(AHORA, ["x", "z", "w"])}
         self.assertEqual(cids, {"x", "y"})
 
     def test_quietos_real(self):
