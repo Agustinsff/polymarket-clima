@@ -57,3 +57,8 @@ no se pone ninguna orden real, no toca la config ni los archivos del maker real 
 
 ## Cómo se apaga
 Archivo `bot/quietos/PARAR` (lo frena en la próxima pasada) o `apagar_despues_de` en la config (22-nov 00:00 Uruguay).
+
+## Después del veredicto (21-nov)
+Veredicto: **PASA** (neto prudente +3,07 US$/día, llenados +0,87/día, 10 llenados, freno 0). Agus eligió probarlo en
+real con poca plata (`bot/quietos_real.json`: 2 cajas de hasta 25 acciones, tope 25 por lado). El papel sigue corriendo
+igual hasta el 28-nov (`apagar_despues_de` 29-nov 03:00 UTC) solo para comparar con el real; no cambia el veredicto.

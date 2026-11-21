@@ -9,7 +9,7 @@
     "spread_max": 0.05,
     "horas_min_fin": 24,
     "ciclo_seg": 60,
-    "apagar_despues_de": "2026-11-22 03:00",
+    "apagar_despues_de": "2026-11-29 03:00",
     "max_perdida_dia": 10,
     "freno_dia_cuenta_resueltas": false,
     "max_perdida_total": 30,
