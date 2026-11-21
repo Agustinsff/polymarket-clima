@@ -97,8 +97,9 @@ def es_quieta(c, cfg):
 class Censo:
     """Lista de cajas quietas que se le ofrecen al bot. Se rehace cada `censo_cada_min` (60)."""
 
-    def __init__(self, cfg, m=mercado):
+    def __init__(self, cfg, m=mercado, f_censo=None):
         self.cfg, self.m = cfg, m
+        self.f_censo = f_censo or F_CENSO
         self.ts = 0
         self.ofrecidas = []          # cajas quietas, mejores primero
         self.todas = {}              # cid -> caja (todos los mercados con recompensa, para las cajas que ya tenemos)
@@ -135,7 +136,7 @@ class Censo:
     def guardar(self, ahora, n_todas, n_base, n_quietas):
         cols = ["censo_utc", "pregunta", "evento", "cid", "medio", "spread", "pozo", "v", "tam_min", "comp", "rec_pes",
                 "rango24", "mov1h", "dias_al_cierre"]
-        with open(F_CENSO, "w", encoding="utf-8", newline="") as f:
+        with open(self.f_censo, "w", encoding="utf-8", newline="") as f:
             w = csv.writer(f, delimiter=";")
             w.writerow(cols)
             w.writerow([ahora.strftime("%Y-%m-%d %H:%M"), f"(totales: {n_todas} con recompensa, {n_base} regla base, "

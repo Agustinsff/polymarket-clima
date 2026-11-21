@@ -109,6 +109,25 @@ def candidatas(cfg, ahora, m=mercado):
     return out
 
 
+F_QUIETOS_REAL = os.path.join(CARPETA, "quietos_real.json")
+
+
+def cfg_quietos_real(cfg, ruta=F_QUIETOS_REAL):
+    """Prueba en real de mercados quietos (21-nov-2026, decision de Agus tras el veredicto PASA del papel, ver
+    bot/quietos/REGLA.md): si el bot corre en REAL y bot/quietos_real.json dice "activo": true, devuelve ese archivo.
+    Su seccion "maker" pisa claves de config.json (menos cajas, sin guardia METAR...) y "censo" son las reglas de
+    entrada de bot/quietos.py; las cajas salen del censo de mercados quietos en vez de los eventos de temperatura.
+    En papel, sin el archivo o con "activo": false, None: el bot sigue igual que antes."""
+    if cfg["maker"].get("modo") != "real":
+        return None
+    try:
+        with open(ruta, encoding="utf-8") as f:
+            q = json.load(f)
+    except (OSError, ValueError):
+        return None
+    return q if q.get("activo") else None
+
+
 def medir_libro(c, cfg, m=mercado):
     """Completa la caja con medio, spread, competencia y recompensa esperada. False si no cumple la regla."""
     k = cfg["maker"]
@@ -519,6 +538,7 @@ class Maker:
         self.f_reiniciar = os.path.join(carpeta, "REINICIAR")
         self.f_sin_compras = os.path.join(carpeta, "SIN_COMPRAS.txt")   # cajas sin compras a mano (ver cajas_sin_compras)
         self.f_cfg = None                                   # ruta de config.json para releer (None: no relee)
+        self.quietos_real = None                            # bot/quietos_real.json si la prueba esta activa (main)
         self.guardia = None                                 # guardia METAR (se crea al primer uso; ver decidida())
         self.est = self._cargar()
         self.ej = ej or (Real(m, self.est, ops=self.ops) if self.modo == "real" else Papel(m, self.est))
@@ -1456,6 +1476,8 @@ class Maker:
         except (OSError, ValueError, KeyError) as ex:
             log(f"config.json no se pudo leer, sigo con la anterior: {ex!r}")
             return
+        if self.quietos_real:                              # la prueba de quietos en real pisa estas claves siempre
+            nueva = {**nueva, **self.quietos_real.get("maker", {})}
         vieja = self.cfg["maker"]
         cambios = {k: v for k, v in nueva.items() if k != "modo" and vieja.get(k) != v}
         if cambios:
@@ -1648,6 +1670,20 @@ def cargar_secretos(ruta=os.path.join(CARPETA, "secreto.cmd")):
     return n
 
 
+def activar_quietos(bot, q):
+    """Cambia la fuente de cajas del bot por el censo de mercados quietos (bot/quietos.py) con las claves de q."""
+    global candidatas
+    import quietos                                          # noqa: E402  (importa este modulo como `maker`)
+    bot.quietos_real = q
+    bot.cfg["maker"].update(q.get("maker", {}))
+    bot.cfg["quietos"] = q["censo"]
+    censo = quietos.Censo(bot.cfg, bot.m, f_censo=os.path.join(bot.carpeta, "censo_quietos_real.csv"))
+    candidatas = lambda cfg_, ahora, m_=None: censo.candidatas(ahora, list(bot.est.get("cajas", {})))  # noqa: E731
+    log(f"PRUEBA QUIETOS EN REAL: cajas de mercados quietos fuera de clima, hasta {bot.cfg['maker']['cajas']} cajas "
+        f"de {bot.cfg['maker'].get('tam_max_caja')} acciones como maximo (bot/quietos_real.json)")
+    return censo
+
+
 def main():
     cargar_secretos()
     cfg = cargar_cfg()
@@ -1657,6 +1693,9 @@ def main():
         return
     bot = Maker(cfg)
     bot.f_cfg = os.path.join(CARPETA, "config.json")
+    q = cfg_quietos_real(cfg)
+    if q:
+        activar_quietos(bot, q)
     if que == "resumen":
         bot.resumen()
         return

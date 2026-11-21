@@ -13,3 +13,4 @@ bot/SIN_COMPRAS.txt
 # log del bot en real (solo en la PC)
 bot/*.log
 bot/*.log.1
+bot/censo_quietos_real.csv

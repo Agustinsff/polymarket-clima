@@ -51,6 +51,38 @@ class Prueba(unittest.TestCase):
         cids = {x["cid"] for x in c.candidatas(AHORA, ["x", "z"])}
         self.assertEqual(cids, {"x", "y"})
 
+    def test_quietos_real(self):
+        import json
+        import tempfile
+        import maker
+        d = tempfile.mkdtemp()
+        ruta = os.path.join(d, "q.json")
+        json.dump({"activo": True, "maker": {"cajas": 2}, "censo": CFG["quietos"]}, open(ruta, "w"))
+        self.assertIsNone(maker.cfg_quietos_real({"maker": {"modo": "papel"}}, ruta))      # en papel nunca
+        self.assertTrue(maker.cfg_quietos_real({"maker": {"modo": "real"}}, ruta)["activo"])
+        self.assertIsNone(maker.cfg_quietos_real({"maker": {"modo": "real"}}, os.path.join(d, "no.json")))
+        json.dump({"activo": False}, open(ruta, "w"))
+        self.assertIsNone(maker.cfg_quietos_real({"maker": {"modo": "real"}}, ruta))
+
+    def test_activar_quietos(self):
+        import maker
+
+        class Bot:
+            cfg = {"maker": dict(CFG["maker"], cajas=3)}
+            m = None
+            carpeta = "/tmp"
+            est = {"cajas": {}}
+        b = Bot()
+        viejo = maker.candidatas
+        try:
+            censo = maker.activar_quietos(b, {"maker": {"cajas": 2}, "censo": CFG["quietos"]})
+            self.assertEqual(b.cfg["maker"]["cajas"], 2)
+            censo.ts = AHORA.timestamp() + 10 ** 9          # sin red: el censo no se rehace
+            censo.ofrecidas = [quietos.a_caja(mk("y"), AHORA)]
+            self.assertEqual([c["cid"] for c in maker.candidatas(b.cfg, AHORA)], ["y"])
+        finally:
+            maker.candidatas = viejo
+
 
 if __name__ == "__main__":
     unittest.main()
