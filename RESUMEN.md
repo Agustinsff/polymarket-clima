@@ -1,6 +1,6 @@
 # Resumen polymarket-clima
 
-_Actualizado: 2026-11-20 23:54 (Montevideo). Todo es **en papel**: no se usa plata real._
+_Actualizado: 2026-11-21 00:05 (Montevideo). Todo es **en papel**: no se usa plata real._
 
 ## Estado de las tareas
 
@@ -15,7 +15,7 @@ _Actualizado: 2026-11-20 23:54 (Montevideo). Todo es **en papel**: no se usa pla
 🔔 Polymarket cambió algo en **temperatura máxima** (comisión, aparece el 2026-11-21 02:48 UTC): `feesEnabled=True feeType=weather_fees feeSchedule={"exponent": 1, "rate": 0.01, "rebateRate": 0.25, "takerOnly": true} takerBaseFee=1000`. Ver [reglas_informe.md](reglas_informe.md).
 🔔 Polymarket cambió algo en **temperatura mínima** (comisión, aparece el 2026-11-21 02:48 UTC): `feesEnabled=True feeType=weather_fees feeSchedule={"exponent": 1, "rate": 0.01, "rebateRate": 0.25, "takerOnly": true} takerBaseFee=1000`. Ver [reglas_informe.md](reglas_informe.md).
 
-- Última foto de liquidez: 2026-11-20T23:49:54
+- Última foto de liquidez: 2026-11-21T00:05:11
 - Monitor: mañana 2026-11-20, noche 2026-11-20
 - Prueba São Paulo: último día registrado 2026-11-20
 - Cosechador: último ciclo 2026-11-04 16:12 UTC, 88 mercados, 46 estaciones
@@ -95,11 +95,11 @@ Series donde el modelo le gana al mercado (≥5 días): mín denver (12 días), 
 
 | Modo | Serie calibrada | Liquidadas | Ganadas | Neto (10 acc. c/u) | Pendientes |
 |---|---|---|---|---|---|
-| taker | no | 2664 | 590 | US$-1399.26 | 166 |
-| maker | no | 3169 | 382 | US$-397.61 | 5386 |
-| cola_taker | no | 1328 | 35 | US$-163.87 | 76 |
-| cola_maker | no | 1074 | 21 | US$-76.63 | 1758 |
-| no80_90 | no | 1083 | 734 | US$-2028.42 | 86 |
+| taker | no | 2664 | 590 | US$-1399.26 | 171 |
+| maker | no | 3169 | 382 | US$-397.61 | 5392 |
+| cola_taker | no | 1328 | 35 | US$-163.87 | 78 |
+| cola_maker | no | 1074 | 21 | US$-76.63 | 1759 |
+| no80_90 | no | 1083 | 734 | US$-2028.42 | 88 |
 
 Taker en total: US$-3591.55. _Con la comisión vieja (0,05 para todo) sería US$-3680.64._
 
@@ -132,5 +132,5 @@ Prueba SP: 13 operaciones; como maker se habrían llenado 11, neto **US$-12.35**
 ## Recompensas de liquidez (estimación, últimas 24 h)
 
 - Buenos Aires: ~US$21/día con 100 acciones a 1 ¢ en todas las cajas del mercado de mañana (sin contar pérdidas por quedar 'tomado').
-- Sao Paulo: ~US$25/día con 100 acciones a 1 ¢ en todas las cajas del mercado de mañana (sin contar pérdidas por quedar 'tomado').
+- Sao Paulo: ~US$24/día con 100 acciones a 1 ¢ en todas las cajas del mercado de mañana (sin contar pérdidas por quedar 'tomado').
 
